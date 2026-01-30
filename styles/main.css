@@ -1,0 +1,233 @@
+/* Jabbit Landing Page Styles */
+:root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --bg: #0f0f0f;
+    --bg-light: #1a1a1a;
+    --text: #ffffff;
+    --text-muted: #a1a1aa;
+    --accent: #22c55e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* CTA Button */
+.cta-button {
+    background: var(--primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.cta-button:hover {
+    background: var(--primary-dark);
+}
+
+.cta-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+/* Features */
+.features {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.feature h3 {
+    margin-bottom: 0.75rem;
+}
+
+.feature p {
+    color: var(--text-muted);
+}
+
+/* Privacy Section */
+.privacy-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--bg-light);
+}
+
+.privacy-section h2 {
+    margin-bottom: 1rem;
+}
+
+.privacy-section > p {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.privacy-points {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.privacy-points span {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Pricing */
+.pricing {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.pricing h2 {
+    margin-bottom: 2rem;
+}
+
+.price-card {
+    background: var(--bg-light);
+    padding: 3rem;
+    border-radius: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.price-label {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.price-note {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 1px solid var(--bg-light);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--text);
+}
+
+.footer-company {
+    color: var(--text-muted);
+}
+
+.footer-company a {
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    nav {
+        padding: 1rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .privacy-points {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
