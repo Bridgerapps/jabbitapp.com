@@ -4,88 +4,480 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jabbit - Peptide Tracking Made Simple</title>
-    <meta name="description" content="Track your peptide protocol with confidence. Smart injection tracking, vial management, and serum level visualization. Privacy-first, iCloud sync.">
-    <link rel="stylesheet" href="styles/main.css">
+    <meta name="description" content="Jabbit helps you track peptide injections, manage vials, calculate reconstitution, and monitor your progress. All data syncs via iCloud - we never store your information.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">🐰 Jabbit</div>
-            <a href="https://apps.apple.com/app/jabbit" class="cta-button">Download on App Store</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>Peptide Tracking Made Simple</h1>
-            <p class="subtitle">The complete toolkit for managing your peptide protocol. Track injections, manage vials, visualize serum levels, and monitor your progress—all synced securely via iCloud.</p>
-            <a href="https://apps.apple.com/app/jabbit" class="cta-button cta-large">Start Free Trial</a>
-        </section>
-
-        <section class="features">
-            <h2>Everything you need to stay organized</h2>
-            
-            <div class="feature-grid">
-                <div class="feature">
-                    <h3>🎯 Smart Injection Tracking</h3>
-                    <p>Log every injection with 14-zone site rotation. Get smart suggestions for your next site based on your history.</p>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-8">
+                    <a href="https://bridgerapps.com" class="text-xl font-bold text-gray-900">
+                        Bridger<span class="text-brand-500">Apps</span>
+                    </a>
+                    <span class="hidden sm:inline text-gray-300">|</span>
+                    <span class="hidden sm:inline font-semibold text-brand-600">Jabbit</span>
                 </div>
-                
-                <div class="feature">
-                    <h3>💉 Vial Management</h3>
-                    <p>Track multiple vials with built-in reconstitution calculator. Get exact mcg/unit concentrations instantly.</p>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition">Features</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
+                    <a href="#privacy" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
+                    <a href="#download" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600 transition">Download</a>
                 </div>
-                
-                <div class="feature">
-                    <h3>📅 Flexible Scheduling</h3>
-                    <p>Daily, EOD, 2x/week, custom schedules. Set reminders and never miss a dose.</p>
-                </div>
-                
-                <div class="feature">
-                    <h3>📈 Serum Level Charts</h3>
-                    <p>Visualize estimated serum levels based on pharmacokinetic data. See day, week, month, or 90-day trends.</p>
-                </div>
-                
-                <div class="feature">
-                    <h3>📚 Peptide Library</h3>
-                    <p>65+ peptides with half-life, time to peak, and dosing reference information.</p>
-                </div>
-                
-                <div class="feature">
-                    <h3>🔒 Privacy First</h3>
-                    <p>Your data syncs via your personal iCloud only. We never see or store your information.</p>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-gray-900 transition" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2">
+                <div class="flex flex-col space-y-4">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition">Features</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
+                    <a href="#privacy" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
+                    <a href="#download" class="text-brand-600 font-medium hover:text-brand-700 transition">Download</a>
                 </div>
             </div>
-        </section>
-
-        <section class="privacy-section">
-            <h2>Your privacy is not negotiable</h2>
-            <p>Health data is deeply personal. Jabbit was built from the ground up with a privacy-first architecture. Your data never touches our servers—ever.</p>
-            <div class="privacy-points">
-                <span>✓ iCloud sync only</span>
-                <span>✓ No server storage</span>
-                <span>✓ No tracking</span>
-            </div>
-        </section>
-
-        <section class="pricing">
-            <h2>Simple, transparent pricing</h2>
-            <div class="price-card">
-                <p class="price-label">Founding Member Pricing</p>
-                <p class="price"><span class="old-price">$19.99</span> $9.99/year</p>
-                <p class="price-note">14-day free trial • Cancel anytime</p>
-                <a href="https://apps.apple.com/app/jabbit" class="cta-button">Start Free Trial</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-links">
-            <a href="/privacy/">Privacy Policy</a>
-            <a href="/terms/">Terms of Service</a>
-            <a href="mailto:hello@bridgerapps.com">Contact</a>
         </div>
-        <p class="footer-company">Made with care by <a href="https://bridgerapps.com">Bridger Apps</a></p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 bg-gradient-to-b from-brand-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center px-3 py-1 bg-brand-100 text-brand-700 text-sm font-medium rounded-full mb-6">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        Privacy-First Design
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                        Peptide tracking
+                        <span class="text-brand-500">made simple</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        The complete toolkit for managing your peptide protocol. Track injections, manage vials, visualize serum levels, and monitor your progress—all synced securely via iCloud.
+                    </p>
+                    <div id="download" class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition">
+                            <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                            </svg>
+                            Download on App Store
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-auto bg-gray-900 rounded-[3rem] p-2 shadow-2xl">
+                            <img src="images/today.png" alt="Jabbit Today View showing serum level charts" class="w-full rounded-[2.5rem]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">See Jabbit in action</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A clean, intuitive interface designed for effortless daily tracking.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+                <!-- Today -->
+                <div class="text-center">
+                    <div class="bg-white rounded-2xl p-2 shadow-sm border border-gray-100 mb-3">
+                        <img src="images/today.png" alt="Today View" class="w-full rounded-xl">
+                    </div>
+                    <p class="text-sm font-medium text-gray-700">Today</p>
+                    <p class="text-xs text-gray-500">Serum levels & schedule</p>
+                </div>
+
+                <!-- Calendar -->
+                <div class="text-center">
+                    <div class="bg-white rounded-2xl p-2 shadow-sm border border-gray-100 mb-3">
+                        <img src="images/calendar.png" alt="Calendar View" class="w-full rounded-xl">
+                    </div>
+                    <p class="text-sm font-medium text-gray-700">Calendar</p>
+                    <p class="text-xs text-gray-500">Monthly overview</p>
+                </div>
+
+                <!-- Vials -->
+                <div class="text-center">
+                    <div class="bg-white rounded-2xl p-2 shadow-sm border border-gray-100 mb-3">
+                        <img src="images/vials.png" alt="Vials View" class="w-full rounded-xl">
+                    </div>
+                    <p class="text-sm font-medium text-gray-700">Vials</p>
+                    <p class="text-xs text-gray-500">Inventory tracking</p>
+                </div>
+
+                <!-- Progress -->
+                <div class="text-center">
+                    <div class="bg-white rounded-2xl p-2 shadow-sm border border-gray-100 mb-3">
+                        <img src="images/progress.png" alt="Progress View" class="w-full rounded-xl">
+                    </div>
+                    <p class="text-sm font-medium text-gray-700">Progress</p>
+                    <p class="text-xs text-gray-500">Photos & measurements</p>
+                </div>
+
+                <!-- Library -->
+                <div class="text-center">
+                    <div class="bg-white rounded-2xl p-2 shadow-sm border border-gray-100 mb-3">
+                        <img src="images/library.png" alt="Peptide Library" class="w-full rounded-xl">
+                    </div>
+                    <p class="text-sm font-medium text-gray-700">Library</p>
+                    <p class="text-xs text-gray-500">65+ peptides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Everything you need to manage your protocol</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Powerful features designed by people who understand the complexity of peptide tracking.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Injection Tracking -->
+                <div class="p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:bg-brand-50/50 transition">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Smart Injection Tracking</h3>
+                    <p class="text-gray-600">Log every injection with 14-zone site rotation. Get smart suggestions for your next site based on your history and optimal rotation patterns.</p>
+                </div>
+
+                <!-- Feature 2: Vial Management -->
+                <div class="p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:bg-brand-50/50 transition">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Vial Management & Calculator</h3>
+                    <p class="text-gray-600">Track multiple vials with built-in reconstitution calculator. Enter peptide amount and diluent volume to get exact mcg/unit concentrations instantly.</p>
+                </div>
+
+                <!-- Feature 3: Dosing Schedules -->
+                <div class="p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:bg-brand-50/50 transition">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Flexible Dosing Schedules</h3>
+                    <p class="text-gray-600">Choose from daily, every other day, 2x/week, 3x/week, weekly, 5-on-2-off, or fully custom schedules. Set preferred times and get reminders.</p>
+                </div>
+
+                <!-- Feature 4: Titration Plans -->
+                <div class="p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:bg-brand-50/50 transition">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Titration & Escalation</h3>
+                    <p class="text-gray-600">Plan multi-phase dose escalation with automatic phase advancement. Perfect for protocols that start low and gradually increase.</p>
+                </div>
+
+                <!-- Feature 5: Cycle Planning -->
+                <div class="p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:bg-brand-50/50 transition">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Cycle Planning</h3>
+                    <p class="text-gray-600">Configure weeks on and weeks off for cycling protocols. The app tracks where you are in your cycle and adjusts your schedule accordingly.</p>
+                </div>
+
+                <!-- Feature 6: Serum Level Charts -->
+                <div class="p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:bg-brand-50/50 transition">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Real-Time Serum Level Charts</h3>
+                    <p class="text-gray-600">Visualize estimated serum levels based on pharmacokinetic data. View day, week, month, or 90-day trends with smooth PK curve visualization.</p>
+                </div>
+
+                <!-- Feature 7: Progress Tracking -->
+                <div class="p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:bg-brand-50/50 transition">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Progress Tracking</h3>
+                    <p class="text-gray-600">Log weight, body measurements, and progress photos. Sync with Apple Health for automatic weight tracking. See your journey over time.</p>
+                </div>
+
+                <!-- Feature 8: Peptide Encyclopedia -->
+                <div class="p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:bg-brand-50/50 transition">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Peptide Encyclopedia</h3>
+                    <p class="text-gray-600">Built-in reference library with pharmacokinetic data including half-life, time to peak, and dosing guidelines for common peptides.</p>
+                </div>
+
+                <!-- Feature 9: iCloud Sync -->
+                <div class="p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:bg-brand-50/50 transition">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Private iCloud Sync</h3>
+                    <p class="text-gray-600">Your data syncs automatically across all your devices via your personal iCloud account. We never see or store your information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, transparent pricing</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Start with a free trial to explore all features. Then subscribe to unlock the full experience.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+                    <div>
+                        <div class="inline-flex items-center px-3 py-1 bg-brand-100 text-brand-700 text-sm font-medium rounded-full mb-4">
+                            Free Trial Available
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Jabbit Premium</h3>
+                        <p class="text-gray-600 mb-4">Full access to all features including serum level charts, titration plans, cycle planning, and unlimited peptide tracking.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-gray-600">
+                                <svg class="w-5 h-5 text-brand-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Unlimited injection tracking
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <svg class="w-5 h-5 text-brand-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Advanced serum level visualization
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <svg class="w-5 h-5 text-brand-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Titration and cycle planning
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <svg class="w-5 h-5 text-brand-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Progress photos and measurements
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <div class="inline-flex items-center px-3 py-1 bg-amber-100 text-amber-700 text-sm font-medium rounded-full mb-3">
+                            Founding Member Pricing
+                        </div>
+                        <p class="text-4xl font-bold text-gray-900 mb-1">$9.99<span class="text-lg font-normal text-gray-500">/year</span></p>
+                        <p class="text-sm text-gray-500 mb-4"><s>$19.99/year</s> — save 50%</p>
+                        <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-brand-500 text-white font-semibold rounded-xl hover:bg-brand-600 transition">
+                            Start 14-Day Free Trial
+                        </a>
+                        <p class="text-xs text-gray-400 mt-2">Then $9.99/year • Cancel anytime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-green-50 rounded-xl">
+                                <svg class="w-8 h-8 text-green-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold text-green-800">Your Data Stays Yours</p>
+                                    <p class="text-sm text-green-600">Stored only on your devices & iCloud</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-4 bg-blue-50 rounded-xl">
+                                <svg class="w-8 h-8 text-blue-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold text-blue-800">No Server Storage</p>
+                                    <p class="text-sm text-blue-600">We never see or store your data</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-4 bg-purple-50 rounded-xl">
+                                <svg class="w-8 h-8 text-purple-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"/>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold text-purple-800">No Health Data Tracking</p>
+                                    <p class="text-sm text-purple-600">Zero analytics on personal info</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Your privacy is not negotiable</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Health data is deeply personal. That's why Jabbit was built from the ground up with a privacy-first architecture. Your injection logs, vial data, and progress never touch our servers.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Everything syncs through your personal iCloud account, encrypted and accessible only to you. We couldn't see your data even if we wanted to.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/privacy/" class="inline-flex items-center text-brand-600 font-medium hover:text-brand-700">
+                            Read Privacy Policy
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="/terms/" class="inline-flex items-center text-gray-600 font-medium hover:text-gray-700">
+                            Terms of Service
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-brand-600">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to simplify your tracking?</h2>
+            <p class="text-brand-100 mb-8 text-lg">Download Jabbit today and take control of your peptide protocol.</p>
+            <a href="#" class="inline-flex items-center px-8 py-4 bg-white text-brand-600 font-semibold rounded-xl hover:bg-gray-100 transition shadow-lg">
+                <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                Download on App Store
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <a href="https://bridgerapps.com" class="text-xl font-bold">
+                        Bridger<span class="text-brand-400">Apps</span>
+                    </a>
+                    <p class="text-gray-400 mt-4 max-w-md">
+                        Thoughtfully crafted iOS applications with a focus on privacy and great user experience.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Jabbit</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="#download" class="hover:text-white transition">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/privacy/" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="/terms/" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="mailto:hello@bridgerapps.com" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    &copy; 2025 Bridger Apps. All rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Made with care in the USA
+                </p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.setAttribute('d', isOpen
+                ? 'M4 6h16M4 12h16M4 18h16'
+                : 'M6 18L18 6M6 6l12 12'
+            );
+        });
+
+        // Close menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+    </script>
 </body>
 </html>
