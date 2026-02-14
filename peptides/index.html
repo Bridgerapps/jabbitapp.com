@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peptide Database & Guides | Jabbit</title>
+    <meta name="description" content="Comprehensive peptide database with dosing protocols, half-lives, and tracking guides for BPC-157, TB-500, Semaglutide, and 65+ compounds.">
+    <link rel="canonical" href="https://jabbitapp.com/peptides/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4',
+                            300: '#5eead4', 400: '#2dd4bf', 500: '#14b8a6',
+                            600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-white text-gray-900">
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">Jabbit</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/guides/" class="text-gray-600 hover:text-gray-900">Guides</a>
+                    <a href="/peptides/" class="text-brand-600 font-medium">Peptides</a>
+                    <a href="/#download" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600">Download</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-24 pb-12 bg-gradient-to-b from-brand-50 to-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Peptide Database</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Detailed guides, dosing protocols, and tracking information for research peptides.</p>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-2xl font-bold mb-8">Featured Peptides</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <a href="/peptides/bpc-157.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-2xl font-bold">BPC-157</span>
+                    <span class="px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded">Healing</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-3">Body Protection Compound</p>
+                <p class="text-gray-600">250-500mcg daily • 4-6hr half-life • Localized healing</p>
+            </a>
+
+            <a href="/peptides/tb-500.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-2xl font-bold">TB-500</span>
+                    <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">Recovery</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-3">Thymosin Beta-4</p>
+                <p class="text-gray-600">2-5mg weekly • 7 day half-life • Systemic effects</p>
+            </a>
+
+            <a href="/peptides/semaglutide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-2xl font-bold">Semaglutide</span>
+                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">GLP-1</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-3">GLP-1 Receptor Agonist</p>
+                <p class="text-gray-600">0.25-2.4mg weekly • 7 day half-life • Titration required</p>
+            </a>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-8">
+            <h2 class="text-xl font-bold mb-4">Jabbit includes 65+ peptides</h2>
+            <p class="text-gray-600 mb-6">
+                Every peptide in Jabbit's library includes verified half-life data, dosing guidelines, 
+                and pharmacokinetic information. From common compounds to research peptides, 
+                we've got the data you need.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                <div class="space-y-2">
+                    <p class="font-medium text-gray-900">Growth</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>CJC-1295</li>
+                        <li>Ipamorelin</li>
+                        <li>Tesamorelin</li>
+                        <li>Sermorelin</li>
+                    </ul>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-medium text-gray-900">Healing</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>BPC-157</li>
+                        <li>TB-500</li>
+                        <li>GHK-Cu</li>
+                        <li>Pentosan</li>
+                    </ul>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-medium text-gray-900">Cognitive</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Semax</li>
+                        <li>Selank</li>
+                        <li>Dihexa</li>
+                        <li>P21</li>
+                    </ul>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-medium text-gray-900">Metabolic</p>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Semaglutide</li>
+                        <li>Tirzepatide</li>
+                        <li>AOD-9604</li>
+                        <li>5-Amino-1MQ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-50 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <a href="/" class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold">Jabbit</span>
+                </a>
+                <p class="text-gray-500 text-sm">© 2025 Jabbit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
