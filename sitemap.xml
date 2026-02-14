@@ -50,4 +50,49 @@
         <priority>0.9</priority>
         <changefreq>weekly</changefreq>
     </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/</loc>
+        <priority>0.8</priority>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/glp-1-injection-tracking-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/semaglutide-vs-tirzepatide.html</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/compounded-tirzepatide-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/peptide-site-rotation-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/peptide-reconstitution-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/features/</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/glp-1-side-effects-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/semaglutide-half-life.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>
