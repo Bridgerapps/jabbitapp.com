@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peptide Database & Guides | Jabbit</title>
-    <meta name="description" content="Comprehensive peptide database with dosing protocols, half-lives, and tracking guides for BPC-157, TB-500, Semaglutide, and 65+ compounds.">
+    <title>Peptide Research Database | Jabbit</title>
+    <meta name="description" content="Research-focused peptide database covering FDA decisions, clinical trials, regulatory status, and scientific developments. Informational resource for research peptides and approved therapeutics.">
     <link rel="canonical" href="https://jabbitapp.com/peptides/">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -39,8 +39,9 @@
                     <span class="text-xl font-bold text-gray-900">Jabbit</span>
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/guides/" class="text-gray-600 hover:text-gray-900">Guides</a>
+                    <a href="/guides/" class="text-gray-600 hover:text-gray-900">Research</a>
                     <a href="/peptides/" class="text-brand-600 font-medium">Peptides</a>
+                    <a href="/news/" class="text-gray-600 hover:text-gray-900">News</a>
                     <a href="/#download" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600">Download</a>
                 </div>
             </div>
@@ -49,85 +50,95 @@
 
     <div class="pt-24 pb-12 bg-gradient-to-b from-brand-50 to-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Peptide Database</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Detailed guides, dosing protocols, and tracking information for research peptides.</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Peptide Research Database</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">FDA decisions, clinical trials, and regulatory developments in peptide therapeutics.</p>
+            
+            <div class="bg-red-50 border border-red-200 rounded-lg p-4 mt-8 max-w-2xl mx-auto">
+                <p class="text-red-800 text-sm font-medium">⚠️ Informational Purposes Only</p>
+                <p class="text-red-700 text-sm mt-1">This database covers research compounds and FDA-approved medications for educational purposes. Not medical advice.</p>
+            </div>
         </div>
     </div>
 
     <div class="max-w-6xl mx-auto px-6 py-12">
-        <h2 class="text-2xl font-bold mb-8">Featured Peptides</h2>
+        <h2 class="text-2xl font-bold mb-8">FDA-Approved Therapeutics</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <a href="/peptides/semaglutide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-2xl font-bold">Semaglutide</span>
+                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">FDA Approved</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-3">Ozempic, Wegovy, Rybelsus</p>
+                <p class="text-gray-600">GLP-1 RA with proven cardiovascular outcomes. SELECT trial showed 20% MACE reduction.</p>
+            </a>
+
+            <!-- Placeholder for Tirzepatide -->
+            <div class="block bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-2xl font-bold text-gray-400">Tirzepatide</span>
+                    <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs font-medium rounded">Coming Soon</span>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Mounjaro, Zepbound</p>
+                <p class="text-gray-400">Dual GIP/GLP-1 agonist. SURMOUNT and SURPASS program results.</p>
+            </div>
+
+            <!-- Placeholder for Liraglutide -->
+            <div class="block bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-2xl font-bold text-gray-400">Liraglutide</span>
+                    <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs font-medium rounded">Coming Soon</span>
+                </div>
+                <p class="text-sm text-gray-400 mb-3">Victoza, Saxenda</p>
+                <p class="text-gray-400">Daily GLP-1 RA. First-in-class cardiovascular outcomes data.</p>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-8">Research Compounds</h2>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             <a href="/peptides/bpc-157.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
                 <div class="flex items-center justify-between mb-3">
                     <span class="text-2xl font-bold">BPC-157</span>
-                    <span class="px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded">Healing</span>
+                    <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded">Not Approved</span>
                 </div>
                 <p class="text-sm text-gray-500 mb-3">Body Protection Compound</p>
-                <p class="text-gray-600">250-500mcg daily • 4-6hr half-life • Localized healing</p>
+                <p class="text-gray-600">Synthetic gastric peptide. Extensive animal research; no human clinical trials.</p>
             </a>
 
             <a href="/peptides/tb-500.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
                 <div class="flex items-center justify-between mb-3">
                     <span class="text-2xl font-bold">TB-500</span>
-                    <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">Recovery</span>
+                    <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded">Not Approved</span>
                 </div>
-                <p class="text-sm text-gray-500 mb-3">Thymosin Beta-4</p>
-                <p class="text-gray-600">2-5mg weekly • 7 day half-life • Systemic effects</p>
-            </a>
-
-            <a href="/peptides/semaglutide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
-                <div class="flex items-center justify-between mb-3">
-                    <span class="text-2xl font-bold">Semaglutide</span>
-                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">GLP-1</span>
-                </div>
-                <p class="text-sm text-gray-500 mb-3">GLP-1 Receptor Agonist</p>
-                <p class="text-gray-600">0.25-2.4mg weekly • 7 day half-life • Titration required</p>
+                <p class="text-sm text-gray-500 mb-3">Thymosin Beta-4 fragment</p>
+                <p class="text-gray-600">Cell migration peptide. Limited clinical development; WADA prohibited.</p>
             </a>
         </div>
 
         <div class="bg-gray-50 rounded-2xl p-8">
-            <h2 class="text-xl font-bold mb-4">Jabbit includes 65+ peptides</h2>
+            <h2 class="text-xl font-bold mb-4">About This Database</h2>
             <p class="text-gray-600 mb-6">
-                Every peptide in Jabbit's library includes verified half-life data, dosing guidelines, 
-                and pharmacokinetic information. From common compounds to research peptides, 
-                we've got the data you need.
+                Jabbit's peptide database focuses on regulatory status, clinical trial outcomes, and scientific developments 
+                rather than usage protocols. We cover:
             </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                <div class="space-y-2">
-                    <p class="font-medium text-gray-900">Growth</p>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>CJC-1295</li>
-                        <li>Ipamorelin</li>
-                        <li>Tesamorelin</li>
-                        <li>Sermorelin</li>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold mb-2">For FDA-Approved Drugs</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>Approval history and pivotal trials</li>
+                        <li>Cardiovascular outcomes data</li>
+                        <li>Post-market safety updates</li>
+                        <li>Comparative effectiveness research</li>
                     </ul>
                 </div>
-                <div class="space-y-2">
-                    <p class="font-medium text-gray-900">Healing</p>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>BPC-157</li>
-                        <li>TB-500</li>
-                        <li>GHK-Cu</li>
-                        <li>Pentosan</li>
-                    </ul>
-                </div>
-                <div class="space-y-2">
-                    <p class="font-medium text-gray-900">Cognitive</p>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>Semax</li>
-                        <li>Selank</li>
-                        <li>Dihexa</li>
-                        <li>P21</li>
-                    </ul>
-                </div>
-                <div class="space-y-2">
-                    <p class="font-medium text-gray-900">Metabolic</p>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>Semaglutide</li>
-                        <li>Tirzepatide</li>
-                        <li>AOD-9604</li>
-                        <li>5-Amino-1MQ</li>
+                <div>
+                    <h3 class="font-semibold mb-2">For Research Compounds</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>Mechanism of action from literature</li>
+                        <li>Preclinical study summaries</li>
+                        <li>FDA regulatory status</li>
+                        <li>Clinical development obstacles</li>
                     </ul>
                 </div>
             </div>
