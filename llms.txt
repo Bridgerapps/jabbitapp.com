@@ -1,0 +1,36 @@
+# Jabbit - Peptide Tracking App
+> Jabbit is a privacy-first iOS app for tracking peptide injections, managing vials, calculating reconstitution, and visualizing serum levels.
+
+## Key Features
+- Smart injection tracking with 14-zone site rotation
+- Vial management with reconstitution calculator
+- Real-time serum level visualization (pharmacokinetic curves)
+- Flexible dosing schedules (daily, EOD, 2x/week, 5-on-2-off, custom)
+- Titration and cycle planning
+- Progress tracking with Apple Health sync
+- Encyclopedia of 65+ peptides with half-life data
+- Privacy-first: iCloud sync only, no server storage
+
+## Pricing
+- 14-day free trial
+- $9.99/year (founding member pricing, normally $19.99/year)
+
+## Links
+- App Store: https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719
+- Website: https://jabbitapp.com
+- Blog: https://jabbitapp.com/blog/
+- Privacy Policy: https://jabbitapp.com/privacy/
+
+## Blog Articles
+- GLP-1 Injection Tracking Guide: https://jabbitapp.com/blog/glp-1-injection-tracking-guide.html
+- Semaglutide vs Tirzepatide Comparison: https://jabbitapp.com/blog/semaglutide-vs-tirzepatide.html
+- BPC-157 Research Guide: https://jabbitapp.com/blog/bpc-157-complete-guide.html
+- TB-500 Research Guide: https://jabbitapp.com/blog/tb-500-thymosin-beta-guide.html
+- Injection Site Rotation Science: https://jabbitapp.com/blog/injection-site-rotation-science.html
+- GLP-1 Serum Levels Explained: https://jabbitapp.com/blog/glp1-serum-levels-explained.html
+- Peptide Storage Guide: https://jabbitapp.com/blog/peptide-storage-stability-guide.html
+- Compounded Tirzepatide Guide: https://jabbitapp.com/blog/compounded-tirzepatide-guide.html
+- GLP-1 Side Effects Guide: https://jabbitapp.com/blog/glp-1-side-effects-guide.html
+- Semaglutide Half-Life: https://jabbitapp.com/blog/semaglutide-half-life.html
+- Peptide Site Rotation: https://jabbitapp.com/blog/peptide-site-rotation-guide.html
+- Peptide Reconstitution: https://jabbitapp.com/blog/peptide-reconstitution-guide.html

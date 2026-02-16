@@ -95,4 +95,29 @@
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/bpc-157-complete-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/tb-500-thymosin-beta-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/injection-site-rotation-science.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/glp1-serum-levels-explained.html</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/peptide-storage-stability-guide.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>
