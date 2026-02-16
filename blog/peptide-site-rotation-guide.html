@@ -3,65 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peptide Site Rotation Guide: Prevent Lipodystrophy | Jabbit</title>
-    <meta name="description" content="Learn proper peptide injection site rotation to prevent lipodystrophy, scarring, and poor absorption. Visual guide with 14 injection zones.">
-    <meta name="keywords" content="peptide site rotation, injection site rotation, lipodystrophy, where to inject peptides, subcutaneous injection sites, peptide absorption">
+    <title>Peptide Injection Site Rotation: The 14-Zone System | Jabbit Blog</title>
+    <meta name="description" content="Stop injecting randomly. Learn the 14-zone rotation system that prevents lipodystrophy, ensures consistent absorption, and keeps your injection sites healthy for the long term.">
     <link rel="canonical" href="https://jabbitapp.com/blog/peptide-site-rotation-guide">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .prose h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #111827; }
+        .prose h3 { font-size: 1.375rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; color: #1f2937; }
+        .prose p { margin-bottom: 1.25rem; line-height: 1.75; color: #374151; }
+        .prose ul { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .prose li { margin-bottom: 0.5rem; color: #374151; }
+        .prose strong { color: #111827; font-weight: 600; }
+        .toc-link:hover { color: #0d9488; }
+        .zone-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    </style>
 </head>
-<body>
-    <article>
-        <h1>Peptide Site Rotation Guide: Prevent Lipodystrophy</h1>
-        
-        <p>New to peptides? Don't make the mistake that ruins thousands of protocols: injecting in the same spot repeatedly.</p>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">Jabbit</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/blog/" class="text-gray-900 font-medium transition">← Back to Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <h2>What Happens Without Rotation</h2>
-        <ul>
-            <li><strong>Lipodystrophy</strong> - Fat redistribution causing lumps or divots</li>
-            <li><strong>Poor absorption</strong> - Scar tissue doesn't absorb well</li>
-            <li><strong>Increased pain</strong> - Damaged tissue is more sensitive</li>
-            <li>Irritation and scarring</li>
-        </ul>
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/peptide-site-rotation.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-br opacity-80 from-emerald-600 via-brand-600 to-teal-800"></div>
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <pattern id="target" width="25" height="25" patternUnits="userSpaceOnUse">
+                    <circle cx="12.5" cy="12.5" r="8" fill="none" stroke="white" stroke-width="0.5"/>
+                    <circle cx="12.5" cy="12.5" r="4" fill="none" stroke="white" stroke-width="0.5"/>
+                </pattern>
+                <rect width="100" height="100" fill="url(#target)"/>
+            </svg>
+        </div>
+        <div class="relative max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-white/90 text-sm font-medium mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-300 mr-2"></span>
+                10 min read
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                The 14-Zone Injection System
+            </h1>
+            <p class="text-xl text-emerald-100 max-w-2xl mx-auto mb-8">
+                Alex discovered the hard way why random injection sites are a bad idea. Here's the rotation method that saved his protocol—and his injection sites.
+            </p>
+            <div class="flex items-center justify-center space-x-4 text-white/80">
+                <span class="font-medium">Jabbit Team</span>
+                <span>·</span>
+                <span>February 2026</span>
+            </div>
+        </div>
+    </section>
 
-        <h2>The 14-Zone System</h2>
-        <p>Divide your body into 14 zones and rotate through them:</p>
-        
-        <h3>Abdomen (6 zones)</h3>
-        <ul>
-            <li>Upper left, 2 inches from navel</li>
-            <li>Upper right, 2 inches from navel</li>
-            <li>Mid left, 2 inches from navel</li>
-            <li>Mid right, 2 inches from navel</li>
-            <li>Lower left, 2 inches from navel</li>
-            <li>Lower right, 2 inches from navel</li>
-        </ul>
+    <!-- Article Content -->
+    <article class="max-w-3xl mx-auto px-6 py-12">
+        <!-- Table of Contents -->
+        <div class="bg-brand-50 rounded-2xl p-6 mb-12 border border-brand-100">
+            <h3 class="font-semibold text-gray-900 mb-4">In this guide:</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#story" class="toc-link text-gray-600 hover:text-brand-600 transition">Alex's Lump: A Cautionary Tale</a></li>
+                <li><a href="#why-rotate" class="toc-link text-gray-600 hover:text-brand-600 transition">Why Rotation Matters: The Science of Lipodystrophy</a></li>
+                <li><a href="#14-zones" class="toc-link text-gray-600 hover:text-brand-600 transition">The 14-Zone System Explained</a></li>
+                <li><a href="#how-to" class="toc-link text-gray-600 hover:text-brand-600 transition">How to Actually Rotate (Without Losing Track)</a></li>
+                <li><a href="#best-practices" class="toc-link text-gray-600 hover:text-brand-600 transition">Best Practices for Healthy Injection Sites</a></li>
+                <li><a href="#warning-signs" class="toc-link text-gray-600 hover:text-brand-600 transition">Warning Signs to Watch For</a></li>
+            </ul>
+        </div>
 
-        <h3>Thighs (4 zones)</h3>
-        <ul>
-            <li>Upper outer left</li>
-            <li>Upper outer right</li>
-            <li>Upper inner left</li>
-            <li>Upper inner right</li>
-        </ul>
+        <div class="prose max-w-none">
+            <p class="text-lg leading-relaxed text-gray-700">
+                Alex prided himself on being organized. He had a pill organizer for his supplements. He meal-prepped every Sunday. He tracked his macros with religious precision. But when he started his peptide protocol, he made a rookie mistake that nearly derailed everything: he injected in the same spot every time.
+            </p>
 
-        <h3>Arms (4 zones)</h3>
-        <ul>
-            <li>Upper outer left arm</li>
-            <li>Upper outer right arm</li>
-            <li>Lower outer left arm</li>
-            <li>Lower outer right arm</li>
-        </ul>
+            <p>
+                "It was just easier," he admitted. "The left side of my abdomen, two inches from my belly button. I could find it without looking. It didn't hurt much. It was my spot."
+            </p>
 
-        <h2>Best Practices</h2>
-        <ol>
-            <li><strong>Wait 7 days</strong> before returning to same zone</li>
-            <li><strong>Move clockwise</strong> to create consistent habit</li>
-            <li><strong>Log every injection</strong> - don't rely on memory</li>
-            <li><strong>Check sites weekly</strong> for any lumps</li>
-            <li><strong>Space 2 inches minimum</strong> between injection points</li>
-        </ol>
+            <p>
+                For three months, Alex injected into "his spot" twice weekly. Then he noticed something alarming: a firm, rubbery lump under the skin, about the size of a marble. It didn't hurt, but it was definitely new. And when he tried to inject near it, the medication seemed to sit there, not absorbing like it used to.
+            </p>
 
-        <h2>Track It</h2>
-        <p>This is where an app shines. Jabbit's 14-zone rotation system tracks automatically and reminds you where to inject next.</p>
+            <p>
+                Alex had developed lipohypertrophy—a buildup of scar tissue and fat caused by repeated injections in the same location. It's common, preventable, and once established, can permanently alter how medication absorbs in that area. His "easy" approach had created a long-term problem.
+            </p>
+
+            <h2 id="story">From Random to Systematic</h2>
+
+            <p>
+                After a stern lecture from his doctor and a referral to an endocrinology nurse specializing in injection technique, Alex learned about systematic rotation. Not just "try to use different spots"—actual rotation, with rules and patterns and tracking. Six months later, his lipohypertrophy had stabilized (though not fully resolved—some damage is permanent), and he'd developed a sustainable system that ensured it wouldn't happen again.
+            </p>
+
+            <p>
+                Here's what he learned, and what every peptide user needs to know.
+            </p>
+
+            <h2 id="why-rotate">Why Rotation Matters: The Lipodystrophy Problem</h2>
+
+            <p>
+                Your subcutaneous tissue isn't designed for repeated needle trauma. When you inject repeatedly in the same spot, several things happen:
+            </p>
+
+            <ul>
+                <li><strong>Mechanical damage:</strong> The needle creates micro-injuries that trigger inflammation</li>
+                <li><strong>Scar tissue formation:</strong> Chronic inflammation leads to fibrosis—stiff, non-pliable tissue</li>
+                <li><strong>Lipohypertrophy:</strong> Fat cells proliferate abnormally, creating rubbery lumps</li>
+                <li><strong>Lipoatrophy:</strong> In some cases, fat tissue breaks down instead, creating divots</li>
+                <li><strong>Impaired absorption:</strong> Scar tissue doesn't absorb medication well—creating unpredictable dosing</li>
+            </ul>
+
+            <p>
+                Research published in <em>Mayo Clinic Proceedings</em> (Richardson & Suarez-Warden, 1999) documented these effects in insulin-dependent diabetics, but the principles apply to any subcutaneous injection. A 2016 study in <em>Diabetes & Metabolism</em> (Famulla et al.) found that 25-50% of patients who didn't rotate sites developed lipohypertrophy.
+            </p>
+
+            <p>
+                Once established, lipohypertrophy doesn't just look weird—it creates a reservoir effect where medication absorbs erratically. You might get too little (if you inject into the scar tissue) followed by too much later (as it slowly releases). For medications where precise dosing matters, this is a serious problem.
+            </p>
+
+            <h2 id="14-zones">The 14-Zone System: Your Complete Rotation Map</h2>
+
+            <p>
+                The solution isn't just "use different spots sometimes." It's systematic rotation through defined zones, ensuring each site gets adequate recovery time before being used again. The 14-zone system divides your body into manageable injection areas:
+            </p>
+
+            <h3>Abdomen: 6 Zones (Primary Sites)</h3>
+
+            <p>
+                The abdomen is preferred for most injections because it has excellent blood supply, consistent absorption, and easy access. Divide it into six zones:
+            </p>
+
+            <div class="bg-gray-50 rounded-xl p-6 my-6 border border-gray-200">
+                <p class="font-semibold text-gray-900 mb-3">Abdominal Zones (all approximately 2 inches from the navel):</p>
+                <ul class="grid md:grid-cols-2 gap-2 text-sm">
+                    <li>Zone 1: Upper left quadrant</li>
+                    <li>Zone 2: Upper right quadrant</li>
+                    <li>Zone 3: Middle left (waist level)</li>
+                    <li>Zone 4: Middle right (waist level)</li>
+                    <li>Zone 5: Lower left (below waist)</li>
+                    <li>Zone 6: Lower right (below waist)</li>
+                </ul>
+            </div>
+
+            <h3>Thighs: 4 Zones</h3>
+
+            <p>
+                Thighs absorb slightly slower than abdomen (research in <em>Diabetes Care</em>, 2016), which can be desirable for some protocols. They also give your abdomen a complete break.
+            </p>
+
+            <div class="bg-gray-50 rounded-xl p-6 my-6 border border-gray-200">
+                <p class="font-semibold text-gray-900 mb-3">Thigh Zones (upper thigh, anterior and lateral):</p>
+                <ul class="grid md:grid-cols-2 gap-2 text-sm">
+                    <li>Zone 7: Left outer thigh</li>
+                    <li>Zone 8: Right outer thigh</li>
+                    <li>Zone 9: Left inner thigh (upper)</li>
+                    <li>Zone 10: Right inner thigh (upper)</li>
+                </ul>
+            </div>
+
+            <h3>Arms: 4 Zones</h3>
+
+            <p>
+                Arm injections are trickier for self-administration but valuable for complete rotation. The back of the arm (tricep area) is the preferred site.
+            </p>
+
+            <div class="bg-gray-50 rounded-xl p-6 my-6 border border-gray-200">
+                <p class="font-semibold text-gray-900 mb-3">Arm Zones (posterior upper arm):</p>
+                <ul class="grid md:grid-cols-2 gap-2 text-sm">
+                    <li>Zone 11: Left upper arm, outer</li>
+                    <li>Zone 12: Right upper arm, outer</li>
+                    <li>Zone 13: Left upper arm, inner</li>
+                    <li>Zone 14: Right upper arm, inner</li>
+                </ul>
+            </div>
+
+            <h2 id="how-to">How to Rotate Without Losing Your Mind</h2>
+
+            <p>
+                Fourteen zones sounds complicated. It isn't—if you have a system. Here are three approaches, from simple to comprehensive:
+            </p>
+
+            <h3>Method 1: The Clockwise Method (Simple)</h3>
+
+            <p>
+                Start at Zone 1 (upper left abdomen). Each injection, move one zone clockwise: 1 → 2 → 3 → 4 → 5 → 6, then switch to thighs 7 → 8 → 9 → 10, then arms 11 → 12 → 13 → 14, then back to abdomen. This gives each site 14 days of recovery between uses—ample time for healing.
+            </p>
+
+            <h3>Method 2: The Body Region Rotation (Moderate)</h3>
+
+            <p>
+                Use one body region per week, rotating within that region. Week 1: alternate between abdominal zones. Week 2: thigh zones. Week 3: arm zones. Repeat. This clusters your sites geographically, making it easier to remember where you injected recently.
+            </p>
+
+            <h3>Method 3: The App-Assisted System (Comprehensive)</h3>
+
+            <p>
+                This is where technology shines. Jabbit's 14-zone body map shows you exactly where you've injected and automatically suggests the next zone. No remembering, no guessing, no accidental repeats. The app tracks your rotation pattern and alerts you if you're approaching a site too soon.
+            </p>
+
+            <p>
+                Alex switched to this method and never looked back. "I just open the app, tap where it tells me to inject, and I'm done. I don't have to think about it, which means I don't mess it up."
+            </p>
+
+            <h2 id="best-practices">Best Practices for Site Health</h2>
+
+            <p>
+                Beyond rotation, follow these principles to keep your injection sites healthy:
+            </p>
+
+            <h3>Space Injections Appropriately</h3>
+
+            <p>
+                Even within a zone, don't inject in the exact same spot twice. The FITTER guidelines (published in <em>Mayo Clinic Proceedings</em>, 2016) recommend spacing injections at least 1 inch (2.5 cm) apart. Within each of our 14 zones, you have room for 2-3 distinct injection points—giving you effectively 30-40 unique sites.
+            </p>
+
+            <h3>Inspect Before You Inject</h3>
+
+            <p>
+                Look at your site before every injection. Check for:
+            </p>
+
+            <ul>
+                <li>Lumps or hardened areas (lipohypertrophy)</li>
+                <li>Dents or depressions (lipoatrophy)</li>
+                <li>Redness, warmth, or swelling (infection)</li>
+                <li>Bruising from previous injections</li>
+            </ul>
+
+            <p>
+                If you find any of these, skip that zone and use a different one. Alex now does a weekly "site check" every Sunday, examining all potential injection areas for developing issues.
+            </p>
+
+            <h3>Vary Your Angle (Sometimes)</h3>
+
+            <p>
+                Standard technique is 90-degree insertion for most people. However, if you're very lean, a 45-degree angle might be more comfortable and reduce intramuscular injection risk. The key is consistency within a site—don't randomly change angles and create inconsistent tissue trauma patterns.
+            </p>
+
+            <h3>Use Appropriate Needle Length</h3>
+
+            <p>
+                Shorter needles (4-6mm) reduce the risk of intramuscular injection and are generally preferred for subcutaneous administration. Research in <em>Current Medical Research and Opinion</em> (2010) found that 4mm needles provided reliable subcutaneous delivery across body types.
+            </p>
+
+            <h2 id="warning-signs">Warning Signs: When to Change Your Approach</h2>
+
+            <p>
+                Even with good rotation, problems can develop. Watch for:
+            </p>
+
+            <ul>
+                <li><strong>Increasing pain at injection sites:</strong> Some discomfort is normal; increasing pain is not</li>
+                <li><strong>Visible lumps that persist:</strong> Small bumps from individual injections resolve in days; persistent lumps indicate lipohypertrophy</li>
+                <li><strong>Erratic medication effects:</strong> If you notice wild swings in appetite suppression or side effects, absorption issues may be the cause</li>
+                <li><strong>Frequent bruising:</strong> May indicate you're hitting blood vessels or injecting too superficially</li>
+            </ul>
+
+            <p>
+                If you notice any of these, consult your healthcare provider. Early intervention can prevent permanent changes to your tissue.
+            </p>
+
+            <h2>Alex's New Normal</h2>
+
+            <p>
+                Six months after his lipohypertrophy scare, Alex has a completely different relationship with injections. His "spot" has healed—not fully, but enough that it's no longer problematic. He rotates through all 14 zones religiously, using Jabbit to track every injection. He's become almost evangelical about rotation, warning every new peptide user he meets.
+            </p>
+
+            <p>
+                "I thought I was being smart by keeping it simple," he said. "But I was being lazy, and I paid for it. Taking two extra seconds to rotate to a new site isn't complicated—it's just a habit. And once you build the habit, it's automatic."
+            </p>
+
+            <p>
+                Your injection sites are long-term infrastructure. Treat them that way. Systematic rotation isn't obsessive—it's essential maintenance for a protocol that might last months or years. The 14-zone system gives you a framework; consistent execution keeps your sites healthy for the long haul.
+            </p>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="mt-16 bg-gradient-to-br from-emerald-600 to-teal-800 rounded-3xl p-8 md:p-12 text-center text-white">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Never Forget a Site Again</h3>
+            <p class="text-emerald-100 text-lg mb-8 max-w-xl mx-auto">
+                Jabbit's 14-zone body map tracks every injection and automatically suggests your next site—no more guessing, no more repeats.
+            </p>
+            <a href="/#download" class="inline-flex items-center px-8 py-4 bg-white text-emerald-700 font-semibold rounded-xl hover:bg-emerald-50 transition shadow-lg">
+                Get Jabbit for iOS
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+            </a>
+        </div>
     </article>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-gray-900 text-white mt-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <a href="/" class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold">Jabbit</span>
+                    </a>
+                    <p class="text-gray-400 mt-4 max-w-md">
+                        The complete peptide tracking toolkit for iOS. Private, powerful, and beautifully designed.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="/#pricing" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="/#download" class="hover:text-white transition">Download</a></li>
+                        <li><a href="/blog/" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/privacy/" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="/terms/" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="mailto:hello@jabbitapp.com" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Jabbit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

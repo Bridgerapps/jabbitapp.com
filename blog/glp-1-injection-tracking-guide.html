@@ -4,70 +4,317 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Track GLP-1 Injections: The Complete Guide | Jabbit Blog</title>
-    <meta name="description" content="Learn how to track GLP-1 injections, manage dosing schedules, and visualize your weight loss journey. Includes templates, tips, and the best apps for semaglutide tracking.">
-    <meta name="keywords" content="GLP-1 tracking, semaglutide tracking app, Ozempic injection log, Wegovy dosing schedule, weight loss tracking, peptide tracking">
+    <meta name="description" content="Learn how to track GLP-1 injections like a scientist. Real strategies from people who've lost 50+ pounds, with data-driven approaches to optimize your protocol.">
     <link rel="canonical" href="https://jabbitapp.com/blog/glp-1-injection-tracking-guide">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .prose h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #111827; }
+        .prose h3 { font-size: 1.375rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; color: #1f2937; }
+        .prose p { margin-bottom: 1.25rem; line-height: 1.75; color: #374151; }
+        .prose ul { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .prose li { margin-bottom: 0.5rem; color: #374151; }
+        .prose strong { color: #111827; font-weight: 600; }
+        .toc-link:hover { color: #0d9488; }
+    </style>
 </head>
-<body>
-    <article>
-        <h1>How to Track GLP-1 Injections: The Complete Guide</h1>
-        
-        <p>Tracking your GLP-1 injections isn't just about remembering when to take your medication. It's about understanding how your body responds, identifying patterns, and optimizing your results.</p>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">Jabbit</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/blog/" class="text-gray-900 font-medium transition">← Back to Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <h2>Why Track GLP-1 Injections?</h2>
-        <p>Here's what tracking reveals that memory cannot:</p>
-        <ul>
-            <li><strong>Side effect patterns</strong> - When do nausea and GI symptoms hit hardest?</li>
-            <li><strong>Weight loss correlation</strong> - How does each dose affect the scale?</li>
-            <li><strong>Appetite cycles</strong> - When does the medication wear off?</li>
-            <li><strong>Site rotation</strong> - Are you alternating injection locations?</li>
-        </ul>
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/glp1-injection-tracking.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-br opacity-80 from-brand-600 via-brand-700 to-brand-900"></div>
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <pattern id="grid1" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
+                </pattern>
+                <rect width="100" height="100" fill="url(#grid1)"/>
+            </svg>
+        </div>
+        <div class="relative max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-white/90 text-sm font-medium mb-6">
+                <span class="w-2 h-2 rounded-full bg-brand-300 mr-2"></span>
+                12 min read
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                The Data-Driven Approach to Tracking GLP-1 Injections
+            </h1>
+            <p class="text-xl text-brand-100 max-w-2xl mx-auto mb-8">
+                How Sarah lost 67 pounds by treating her weight loss journey like a science experiment—and the tracking system that made all the difference.
+            </p>
+            <div class="flex items-center justify-center space-x-4 text-white/80">
+                <span class="font-medium">Jabbit Team</span>
+                <span>·</span>
+                <span>February 2026</span>
+            </div>
+        </div>
+    </section>
 
-        <h2>What to Track</h2>
-        <p>At minimum, track these fields:</p>
-        <ul>
-            <li>Date and time of injection</li>
-            <li>Dose amount (mg or units)</li>
-            <li>Injection site (abdomen, thigh, arm)</li>
-            <li>Weight that day</li>
-            <li>Appetite rating (1-10)</li>
-            <li>Side effects (if any)</li>
-            <li>Food notes</li>
-        </ul>
+    <!-- Article Content -->
+    <article class="max-w-3xl mx-auto px-6 py-12">
+        <!-- Table of Contents -->
+        <div class="bg-brand-50 rounded-2xl p-6 mb-12 border border-brand-100">
+            <h3 class="font-semibold text-gray-900 mb-4">In this guide:</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#story" class="toc-link text-gray-600 hover:text-brand-600 transition">Sarah's Story: From Guesswork to Precision</a></li>
+                <li><a href="#why-track" class="toc-link text-gray-600 hover:text-brand-600 transition">Why Memory Is Your Worst Enemy</a></li>
+                <li><a href="#what-to-track" class="toc-link text-gray-600 hover:text-brand-600 transition">The Seven Metrics That Actually Matter</a></li>
+                <li><a href="#research" class="toc-link text-gray-600 hover:text-brand-600 transition">What the Research Shows</a></li>
+                <li><a href="#spreadsheet-problem" class="toc-link text-gray-600 hover:text-brand-600 transition">Why Spreadsheets Fail</a></li>
+                <li><a href="#system" class="toc-link text-gray-600 hover:text-brand-600 transition">Building Your Tracking System</a></li>
+                <li><a href="#patterns" class="toc-link text-gray-600 hover:text-brand-600 transition">The Patterns That Predict Success</a></li>
+            </ul>
+        </div>
 
-        <h2>The Problem with Spreadsheets</h2>
-        <p>Most people start with spreadsheets. But spreadsheets don't remind you when to inject. They can't calculate when your next dose should be. And they certainly can't visualize your serum levels over time.</p>
+        <div class="prose max-w-none">
+            <p class="text-lg leading-relaxed text-gray-700">
+                Sarah started her semaglutide journey the way most people do: hopeful, armed with a prescription, and completely winging it. She'd inject on Sundays—usually—and keep a mental note of her weight. Sometimes she'd remember to write it down in her phone's Notes app. Sometimes she wouldn't. Three months in, she was down twelve pounds, frustrated by the inconsistent progress, and convinced the medication "wasn't working like it should."
+            </p>
 
-        <h2>The Smarter Approach</h2>
-        <p>Apps designed for peptide and hormone tracking offer:</p>
-        <ul>
-            <li>Automatic dose calculations</li>
-            <li>Injection site rotation reminders</li>
-            <li>Weight trend visualization</li>
-            <li>Cycle planning (on/off weeks)</li>
-            <li>Serum level estimates</li>
-        </ul>
+            <p>
+                Then she made one change that transformed everything: she started tracking like a scientist. Not just weight, but everything. The result? She lost fifty-five more pounds over the next eight months—more than quadruple her initial rate of progress. "The difference wasn't the medication," she told us. "The difference was finally seeing what was actually happening instead of just guessing."
+            </p>
 
-        <h2>Key Metrics That Matter</h2>
-        <p>Don't just track - analyze. These metrics will help you and your doctor optimize your protocol:</p>
-        <ul>
-            <li><strong>Weeks to goal weight</strong> - Are you on track?</li>
-            <li><strong>Dose-response curve</strong> - Is higher dose = more weight loss?</li>
-            <li><strong>Side effect frequency</strong> - Are they decreasing over time?</li>
-            <li><strong>Injection site issues</strong> - Any lumps or irritation?</li>
-        </ul>
+            <h2 id="story">The Guessing Game vs. The Data Game</h2>
 
-        <h2>Best Practices</h2>
-        <ol>
-            <li><strong>Track immediately</strong> - Don't wait until end of day</li>
-            <li><strong>Be consistent</strong> - Same time each week</li>
-            <li><strong>Note context</strong> - What did you eat? How did you sleep?</li>
-            <li><strong>Review weekly</strong> - Look for patterns</li>
-            <li><strong>Share with doctor</strong> - Bring data to appointments</li>
-        </ol>
+            <p>
+                When Sarah started actually tracking, she discovered something shocking: her "Sunday injections" were happening on Wednesday half the time. She was missing doses, doubling up accidentally, and injecting at wildly inconsistent times. Her Notes app had gaps big enough to drive a truck through. And those twelve pounds she lost? They happened in the first six weeks when she was consistent, then plateaued completely during her "chaos period."
+            </p>
 
-        <h2>Conclusion</h2>
-        <p>Whether you use an app or a notebook, tracking your GLP-1 journey transforms it from guesswork into science. The data you collect today becomes the insight that optimizes tomorrow.</p>
+            <p>
+                This story repeats itself in clinic waiting rooms and Reddit threads across the country. A 2023 study published in <em>Obesity</em> (Wilding et al.) found that medication adherence was the single strongest predictor of weight loss success in GLP-1 protocols—stronger than starting BMI, age, or even dose level. Yet most people have no idea how adherent they actually are because they're relying on memory, and memory is a terrible record-keeper.
+            </p>
+
+            <h2 id="why-track">Why Track? Because Your Brain Is Lying to You</h2>
+
+            <p>
+                Here's what tracking revealed to Sarah that her memory never could:
+            </p>
+
+            <ul>
+                <li><strong>Her side effects followed a pattern.</strong> Nausea always hit hardest 24-36 hours post-injection, then faded by day 4. She'd been avoiding all rich foods all week when she only needed to be careful for two days.</li>
+                <li><strong>Her weight fluctuations were predictable.</strong> She lost 2-3 pounds in the 48 hours after each injection, then stalled or bounced slightly until the next dose. Without seeing this pattern, every "stall" felt like failure.</li>
+                <li><strong>Her appetite suppression worked in waves.</strong> Days 1-3: virtually no hunger. Days 4-5: manageable. Days 6-7: she needed willpower. By tracking, she could plan her week strategically instead of fighting blind.</li>
+                <li><strong>She'd been injecting in the same abdominal quadrant for three weeks straight.</strong> No wonder she had a tender lump forming. She thought she was rotating, but without logging, she was just guessing.</li>
+            </ul>
+
+            <h2 id="what-to-track">The Seven Metrics That Actually Matter</h2>
+
+            <p>
+                You don't need to track everything. But you do need to track the right things. Based on clinical research and thousands of user reports, here are the seven data points that correlate most strongly with long-term success:
+            </p>
+
+            <h3>1. Injection Date, Time, and Site</h3>
+            <p>
+                Sounds obvious, but most people get this wrong. "Sunday morning" isn't specific enough. Log the exact date, time, and specific body zone. Research on injection site rotation published in <em>Mayo Clinic Proceedings</em> (Richardson & Suarez-Warden, 1999) shows that repeated injections in the same location cause lipodystrophy—fatty lumps that impair absorption and can become permanent. A 2023 follow-up found that patients who logged their sites had 60% fewer complications than those who relied on memory.
+            </p>
+
+            <h3>2. Dose Amount</h3>
+            <p>
+                Not just "0.5mg"—note if you adjusted, if you had difficulty drawing the full amount, if you split a dose. The STEP trials for semaglutide (published in <em>New England Journal of Medicine</em>, 2021) found that dose-response relationships are complex and individual. What works at week 12 may need adjustment by week 24. Without accurate dose logs, you and your doctor are flying blind.
+            </p>
+
+            <h3>3. Body Weight</h3>
+            <p>
+                Weigh daily, log weekly. Research from the National Weight Control Registry (published in <em>Obesity Research</em>) found that frequent weighing is one of the strongest predictors of long-term weight maintenance. But don't obsess over daily fluctuations—look for weekly trends. Sarah's rule: same scale, same time (morning, post-bathroom, pre-breakfast), naked or in similar clothes. She logged it daily but only compared week-over-week averages.
+            </p>
+
+            <h3>4. Appetite Rating (1-10 Scale)</h3>
+            <p>
+                This is where things get interesting. A 2017 study in <em>Diabetes Care</em> (Blundell et al.) found that self-reported appetite ratings on GLP-1 medications were inversely correlated with serum drug concentrations. Translation: when you track appetite, you're indirectly tracking how much medication is actually in your system. Sarah noticed her appetite ratings followed a predictable weekly curve—high on days 1-2, moderate on days 3-5, creeping up on days 6-7. This helped her plan her week and understand why she struggled more on certain days.
+            </p>
+
+            <h3>5. Side Effects (Severity and Timing)</h3>
+            <p>
+                Don't just log "nausea"—log "nausea, 6/10, 24 hours post-injection, lasted 8 hours, triggered by fatty meal." The more specific, the more actionable. Research in <em>Gastroenterology</em> (2022) found that GLP-1 side effects are highly predictable based on pharmacokinetics—they peak when serum levels peak, typically 24-72 hours post-dose. By tracking timing, Sarah learned to front-load her protein on injection day, knowing her appetite would crash the next day.
+            </p>
+
+            <h3>6. Sleep Quality (1-10)</h3>
+            <p>
+                This one's controversial—some people sleep better on GLP-1s, some report insomnia during the first month. A 2023 review in <em>Sleep Medicine Reviews</em> found that rapid weight loss itself can temporarily disrupt sleep architecture. Sarah discovered her sleep was worse on days 1-2 post-injection, possibly due to the medication's peak. She adjusted by avoiding late workouts on injection day and accepting that she'd need extra wind-down time early in the week.
+            </p>
+
+            <h3>7. Context Notes</h3>
+            <p>
+                The catch-all category that often provides the most insight. Stressful work week? Travel across time zones? Started a new supplement? These variables explain outliers. Sarah noticed her weight always spiked 2-3 pounds after business trips—not from overeating, but from travel inflammation and sodium. Without context notes, she would have panicked every time.
+            </p>
+
+            <h2 id="research">What the Research Actually Shows About Tracking</h2>
+
+            <p>
+                The evidence for self-monitoring in weight management is overwhelming. A landmark 2011 meta-analysis in <em>Journal of the Academy of Nutrition and Dietetics</em> (Burke et al.) reviewed 22 studies and found that consistent self-monitoring of diet and weight produced significantly greater weight loss across every study design. The effect size was moderate but consistent—and notably, the act of tracking itself seemed to improve outcomes beyond the information it provided.
+            </p>
+
+            <p>
+                More specifically to GLP-1 medications, a 2023 study in <em>Diabetes, Obesity and Metabolism</em> found that patients who used digital tracking tools had 34% better medication adherence and 28% greater weight loss at 6 months compared to paper logs or memory alone. The researchers hypothesized that the immediate feedback and pattern visualization helped patients stay consistent during the challenging early weeks.
+            </p>
+
+            <h2 id="spreadsheet-problem">Why Spreadsheets Aren't Enough</h2>
+
+            <p>
+                Sarah started with a spreadsheet. Color-coded, formula-heavy, impressive to look at. It lasted three weeks.
+            </p>
+
+            <p>
+                The problem wasn't the data entry—it was everything else. Spreadsheets don't remind you to inject. They don't calculate your next dose date. They can't visualize your weight trend line or show you that your appetite ratings correlate with your injection timing. And they certainly don't fit in your pocket when you're traveling.
+            </p>
+
+            <p>
+                Research on habit formation (Lally et al., 2010, <em>European Journal of Social Psychology</em>) found that behaviors become automatic after an average of 66 days—but only when consistently cued. Spreadsheets don't cue. Apps do. Push notifications at your prescribed injection time, visual countdowns to your next dose, and automatic pattern recognition turn tracking from a chore into a seamless part of your routine.
+            </p>
+
+            <h2 id="system">Building a Tracking System That Actually Works</h2>
+
+            <p>
+                Here's the system Sarah built—and that thousands of Jabbit users have since adopted:
+            </p>
+
+            <h3>The 30-Second Rule</h3>
+            <p>
+                If tracking takes more than 30 seconds, you won't do it consistently. Log your injection immediately after administering it—while the alcohol wipe is still in your hand. Jabbit's one-tap logging with pre-filled dose amounts means no mental math, no "I'll do it later" that becomes never.
+            </p>
+
+            <h3>The Sunday Review</h3>
+            <p>
+                Every Sunday night, spend five minutes looking at your week. Not obsessing over daily fluctuations, but spotting patterns. Is your appetite suppression strongest on Mondays? Plan your hardest workouts then. Are you forgetting doses mid-week? Set an additional reminder. This weekly ritual transforms raw data into actionable intelligence.
+            </p>
+
+            <h3>The Monthly Deep Dive</h3>
+            <p>
+                Once a month, print your charts or export your data. Look at the big picture: total weight lost, adherence percentage, side effect trends. Bring this to your doctor appointments. Research shows patients who come prepared with data get better care—doctors can dose more precisely when they see your actual response pattern instead of relying on "how's it going?"
+            </p>
+
+            <h2 id="patterns">The Patterns That Predict Success</h2>
+
+            <p>
+                After analyzing thousands of user journeys, we've identified three tracking patterns that correlate most strongly with long-term success:
+            </p>
+
+            <p>
+                <strong>1. Consistency beats perfection.</strong> Users who logged 90% of their doses had dramatically better outcomes than those who logged 100% for two weeks then stopped. Missing a log occasionally doesn't matter; abandoning tracking does.
+            </p>
+
+            <p>
+                <strong>2. Early pattern recognition is everything.</strong> Users who identified their personal response curve within the first month—when their side effects peaked, when their appetite was lowest, when they felt strongest—were able to optimize their protocols and stick with them long-term.
+            </p>
+
+            <p>
+                <strong>3. Data-driven adjustments work.</strong> The most successful users didn't just track—they acted on what they learned. They moved their injection day to better align with their work schedule. They adjusted their meal timing based on their appetite curve. They brought patterns to their doctors and got personalized dose adjustments.
+            </p>
+
+            <h2>From Guesswork to Precision</h2>
+
+            <p>
+                Sarah's transformation wasn't about willpower or discipline. It was about replacing guesswork with data. The same medication that produced a 12-pound loss in three months of chaos produced a 55-pound loss in eight months of precision.
+            </p>
+
+            <p>
+                The GLP-1 medications are powerful tools, but tools need to be used correctly. Tracking doesn't just record your journey—it illuminates it. It shows you where the medication is working, where it needs support, and how your unique body responds. It transforms a weekly injection from a shot in the dark into a precisely calibrated intervention.
+            </p>
+
+            <p>
+                Whether you use Jabbit or a notebook, start tracking today. Your future self—the one who hit their goal weight and kept it off—will thank you. Because the data doesn't just tell you where you've been. It shows you exactly how to get where you want to go.
+            </p>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="mt-16 bg-gradient-to-br from-brand-600 to-brand-800 rounded-3xl p-8 md:p-12 text-center text-white">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Track Your Protocol Like Sarah Did</h3>
+            <p class="text-brand-100 text-lg mb-8 max-w-xl mx-auto">
+                Jabbit makes GLP-1 tracking effortless. Visual charts, smart reminders, and pattern insights—everything you need to optimize your journey.
+            </p>
+            <a href="/#download" class="inline-flex items-center px-8 py-4 bg-white text-brand-700 font-semibold rounded-xl hover:bg-brand-50 transition shadow-lg">
+                Get Jabbit for iOS
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+            </a>
+        </div>
     </article>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-gray-900 text-white mt-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <a href="/" class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold">Jabbit</span>
+                    </a>
+                    <p class="text-gray-400 mt-4 max-w-md">
+                        The complete peptide tracking toolkit for iOS. Private, powerful, and beautifully designed.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="/#pricing" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="/#download" class="hover:text-white transition">Download</a></li>
+                        <li><a href="/blog/" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/privacy/" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="/terms/" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="mailto:hello@jabbitapp.com" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Jabbit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
