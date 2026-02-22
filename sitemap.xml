@@ -120,4 +120,14 @@
         <priority>0.7</priority>
         <changefreq>monthly</changefreq>
     </url>
+    <url>
+        <loc>https://jabbitapp.com/reconstitution-calculator.html</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/trt-injection-log.html</loc>
+        <priority>0.9</priority>
+        <changefreq>weekly</changefreq>
+    </url>
 </urlset>
