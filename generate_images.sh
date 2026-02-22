@@ -1,8 +1,14 @@
 #!/bin/bash
 # Generate hero images for all 12 blog posts using Gemini Flash Image via OpenRouter
-set -e
+set -euo pipefail
 
-OR_KEY="REDACTED_OPENROUTER_KEY"
+OR_KEY="${OPENROUTER_API_KEY:-}"
+if [ -z "$OR_KEY" ]; then
+    echo "Error: OPENROUTER_API_KEY is not set"
+    echo "Set it with: export OPENROUTER_API_KEY='sk-or-v1-...'"
+    exit 1
+fi
+
 OUTDIR="/home/jabbit/.openclaw/workspace/jabbitapp.com/blog/images"
 mkdir -p "$OUTDIR"
 
