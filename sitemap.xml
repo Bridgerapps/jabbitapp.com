@@ -227,6 +227,11 @@
     </url>
     <url>
         <loc>https://jabbitapp.com/glp1-maintenance-dose-guide.html</loc>
+    <url>
+        <loc>https://jabbitapp.com/glp1-food-tracking-guide.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
