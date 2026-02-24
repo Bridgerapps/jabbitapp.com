@@ -27,6 +27,11 @@
         <changefreq>monthly</changefreq>
     </url>
     <url>
+        <loc>https://jabbitapp.com/glp1-fatigue-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
         <loc>https://jabbitapp.com/glp1-food-tracking-guide.html</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
