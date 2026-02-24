@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://jabbitapp.com/GLP1-hair-loss-guide.html</loc>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
     <url>
         <loc>https://jabbitapp.com/glp1-acid-reflux-guide.html</loc>
         <priority>0.8</priority>
@@ -106,6 +112,11 @@
         <changefreq>monthly</changefreq>
     </url>
     <url>
+        <loc>https://jabbitapp.com/glp1-sleep-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
         <loc>https://jabbitapp.com/glp1-swelling-guide.html</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
@@ -116,13 +127,153 @@
         <changefreq>monthly</changefreq>
     </url>
     <url>
+        <loc>https://jabbitapp.com/glp1-vomiting-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
         <loc>https://jabbitapp.com/</loc>
         <priority>1.0</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://jabbitapp.com/blog/</loc>
+        <loc>https://jabbitapp.com/reconstitution-calculator.html</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/trt-injection-log.html</loc>
         <priority>0.9</priority>
         <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/bpc-157-complete-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/compounded-tirzepatide-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/glp-1-injection-tracking-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/glp-1-side-effects-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/glp1-serum-levels-explained.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/injection-site-rotation-science.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/peptide-reconstitution-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/peptide-site-rotation-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/peptide-storage-stability-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/semaglutide-half-life.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/semaglutide-vs-tirzepatide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/blog/tb-500-thymosin-beta-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/peptides/bpc-157.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/peptides/cjc-1295.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/peptides/epitalon.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/peptides/ghk-cu.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/peptides/ipamorelin.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/peptides/semaglutide.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/peptides/tb-500.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/peptides/tesamorelin.html</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/privacy/</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/terms/</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/guides/</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/compare/</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/glp1/</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://jabbitapp.com/peptides/</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
     </url>
 </urlset>
