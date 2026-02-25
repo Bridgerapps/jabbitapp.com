@@ -336,4 +336,9 @@
         <priority>0.5</priority>
         <changefreq>monthly</changefreq>
     </url>
+    <url>
+        <loc>https://www.jabbitapp.com/glp1-birth-control-guide.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
