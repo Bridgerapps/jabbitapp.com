@@ -310,4 +310,8 @@
         <ns0:priority>0.5</ns0:priority>
         <ns0:changefreq>monthly</ns0:changefreq>
     </ns0:url>
-<url><loc>https://www.jabbitapp.com/glp1-cost-guide.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url></ns0:urlset>
+<url><loc>https://www.jabbitapp.com/glp1-cost-guide.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url></ns0:urlset>    <url>
+        <loc>https://www.jabbitapp.com/glp1-injection-timing-guide.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
