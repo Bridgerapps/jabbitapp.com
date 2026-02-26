@@ -26,6 +26,17 @@ Answer these 1x per week:
 3. What's ONE thing we could do differently that would actually drive usage?
 4. What blockers are keeping us from measuring real impact?
 
+## 🔧 Deep System Review (Weekly)
+Check and report on:
+1. Core files exist: MEMORY.md, REGRESSIONS.md, WORKFLOW_AUTO.md, USER.md, IDENTITY.md, SOUL.md, AGENTS.md
+2. Git status clean or expected
+3. Cron jobs: all enabled jobs last run OK
+4. Credentials: any new missing (scan for exposed secrets, verify env vars)
+5. Dependencies: any obvious version mismatches or outdated packages
+6. Blockers: any blockers requiring human action (push @Jon/@Tim)
+
+EOF
+
 ## Open Risks / Blockers Requiring Jon
 - Missing health telemetry inputs for lifespan optimization (labs + wearable + protocol deltas)
 - Missing App Store/Stripe read-only creds for real KPI reporting
