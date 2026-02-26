@@ -22,8 +22,9 @@ echo "Files before: $BEFORE"
 RETENTION_MMINS=$((RETENTION_DAYS * 1440))
 
 # Find and remove old classify queues (they're large and stale after processing)
-CLASSIFY_COUNT=$(find "$DATA_DIR" -name "classify_queue_*.json" -mmin +${RETENTION_MMINS} -type f 2>/dev/null | wc -l)
-find "$DATA_DIR" -name "classify_queue_*.json" -mmin +${RETENTION_MMINS} -type f -delete 2>/dev/null
+# Matches both classify_queue_*.json and engagement_queue_*.json
+CLASSIFY_COUNT=$(find "$DATA_DIR" \( -name "classify_queue_*.json" -o -name "engagement_queue_*.json" \) -mmin +${RETENTION_MMINS} -type f 2>/dev/null | wc -l)
+find "$DATA_DIR" \( -name "classify_queue_*.json" -o -name "engagement_queue_*.json" \) -mmin +${RETENTION_MMINS} -type f -delete 2>/dev/null
 echo "Removed: $CLASSIFY_COUNT old classify queues"
 
 # Find and remove old results files (kept for 7 days for analysis)

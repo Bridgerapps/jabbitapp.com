@@ -1,0 +1,38 @@
+[2026-02-25T11:52:54Z] New day detected (2026-02-24 → 2026-02-25), resetting circuit breaker
+[2026-02-25T11:52:54Z] Circuit breaker reset complete: failures_today=0, date=2026-02-25
+[2026-02-25T11:52:54Z] Current circuit breaker state:
+{
+  "last_failure": 1771974164,
+  "failures_today": 0,
+  "date": "2026-02-25"
+}
+[2026-02-25T13:53:18Z] Circuit breaker already up to date (date=2026-02-25)
+[2026-02-25T13:53:19Z] Current circuit breaker state:
+{
+  "last_failure": 1771974164,
+  "failures_today": 0,
+  "date": "2026-02-25"
+}
+[2026-02-26T01:48:47Z] New day detected (2026-02-25 → 2026-02-26), resetting circuit breaker
+[2026-02-26T01:48:47Z] Circuit breaker reset complete: failures_today=0, date=2026-02-26
+[2026-02-26T01:48:47Z] Current circuit breaker state:
+{
+  "last_failure": 1771974164,
+  "failures_today": 0,
+  "date": "2026-02-26"
+}
+[2026-02-26T03:00:01Z] Circuit breaker already up to date (date=2026-02-26)
+[2026-02-26T03:00:01Z] Current circuit breaker state:
+{
+  "last_failure": 1771974164,
+  "failures_today": 0,
+  "date": "2026-02-26"
+}
+[2026-02-26T05:53:07Z] New day detected (2026-02-24 → 2026-02-26), resetting circuit breaker
+[2026-02-26T05:53:07Z] Circuit breaker reset complete: failures_today=0, date=2026-02-26
+[2026-02-26T05:53:07Z] Current circuit breaker state:
+{
+  "last_failure": 1771952987,
+  "failures_today": 0,
+  "date": "2026-02-26"
+}
