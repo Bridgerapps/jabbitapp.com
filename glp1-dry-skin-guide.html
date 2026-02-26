@@ -13,7 +13,7 @@
     
     
 </head>
-<body onload="fetch('http://138.197.74.40:9000/track?page='+encodeURIComponent(window.location.pathname))>
+<body onload="fetch('http://138.197.74.40:9000/track?secret=jl8d9s7f6h5g4k3j2&page='+encodeURIComponent(window.location.pathname))>
     <header>
         <nav>
             <a href="/">← Back to Jabbit</a>
@@ -126,7 +126,7 @@
             <section class="cta">
                 <h2>Track Your GLP-1 Journey with Jabbit</h2>
                 <p>Jabbit helps you monitor side effects, track progress, and stay on top of your GLP-1 treatment. Download now:</p>
-                <p><a href="https://apps.apple.com" onclick="fetch('http://138.197.74.40:9000/track?page=/app-store-click');"class="button">Download on App Store</a></p>
+                <p><a href="https://apps.apple.com" onclick="fetch('http://138.197.74.40:9000/track?secret=jl8d9s7f6h5g4k3j2&page=/app-store-click');"class="button">Download on App Store</a></p>
             </section>
         </article>
     </main>
@@ -209,7 +209,7 @@
     </script>
     <script>
       try {
-        fetch("http://138.197.74.40:9000/track?page=" + encodeURIComponent(window.location.pathname));
+        fetch("http://138.197.74.40:9000/track?secret=jl8d9s7f6h5g4k3j2&page=" + encodeURIComponent(window.location.pathname));
       } catch(e) {}
     </script>
 </body>
