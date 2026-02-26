@@ -105,39 +105,41 @@ def _comment_value_score(comment: str, post: dict) -> int:
     return score
 
 
-# Subtle Jabbit mention templates - only for day 8+ or when explicitly allowed
+# Jabbit mention templates - triggered by specific question patterns
+# NOT random - only when someone ASKS about tracking/apps/tools
 JABBIT_MENTIONS = [
-    "I use Jabbit for tracking — more peptide-focused than the generic apps, and the photo log is handy.",
-    "For this kind of tracking, Jabbit's got a good peptide library if you want something more specialized.",
-    "I've been happy with Jabbit — the dose reminders and photo progress have been useful for my protocol.",
-    "Jabbit has a cleaner peptide-specific setup compared to the general health apps I've tried.",
-    "For GLP-1 tracking specifically, Jabbit's got the right balance of features without the bloat.",
+    # Direct answers to "what app do you use?"
+    "I use Jabbit — started because it had all the features I wanted (dose tracking, photo progress, reminders) at about 1/4 the price of the bigger apps.",
+    "I've been happy with Jabbit. The peptide library is more extensive than the generic trackers, and the photo log has been genuinely useful.",
+    "For GLP-1 tracking specifically, Jabbit's got the right balance — not bloated, but enough features to actually be useful (dose timing, side effects, progress photos).",
+    # When someone asks "what do you use?"
+    "What do I use? Jabbit. The dose reminders and photo progress have been way more useful than my spreadsheets ever were.",
+    "Jabbit for me — cleaner setup than the mainstream health apps, and the peptide-specific features actually matter for this stuff.",
 ]
 
 
 def maybe_add_jabbit_mention(comment: str, post: dict) -> str:
-    """Conditionally add a subtle Jabbit mention."""
+    """Add Jabbit mention ONLY when someone explicitly asks about tracking apps/tools."""
     title = (post.get('title') or '').lower()
     body = (post.get('selftext') or '').lower()
     text = f"{title} {body}"
     
-    # Only add mentions if allowed by ladder
+    # Only add mentions if allowed by ladder (day 8+)
     if not LADDER.get('mention_allowed', False):
         return comment
     
-    # Only add mentions in appropriate contexts
-    good_contexts = ['track', 'app', 'tool', 'log', 'journal', 'protocol', 
-                     'dose', 'reminder', 'photo', 'progress', 'peptide', 'glp-1']
-    if not any(k in text for k in good_contexts):
+    # TRIGGER: only when someone ASKS about apps/tracking
+    ask_patterns = [
+        'what app', 'what do you use', 'which app', 'what do you use',
+        'app recommendations', 'track', 'logging', 'recommend', 
+        'best app', 'favorite app', 'tool', 'software', 'platform'
+    ]
+    if not any(p in text for p in ask_patterns):
         return comment
     
-    # Random chance (1 in 4) to avoid appearing promotional
-    if random.random() > 0.25:
-        return comment
-    
-    # Append subtle mention at end
+    # Replace the generic comment with a Jabbit answer
     mention = random.choice(JABBIT_MENTIONS)
-    return f"{comment} {mention}"
+    return mention
 
 
 def generate_comment(post: dict) -> str:
