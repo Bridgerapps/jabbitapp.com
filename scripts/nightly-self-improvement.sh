@@ -30,7 +30,9 @@ Answer these 1x per week:
 Check and report on:
 1. Core files exist: MEMORY.md, REGRESSIONS.md, WORKFLOW_AUTO.md, USER.md, IDENTITY.md, SOUL.md, AGENTS.md
 2. Git status clean or expected
-3. Cron jobs: all enabled jobs last run OK
+3. Cron jobs: run `openclaw cron list` - check each enabled job shows "ok" not "failed" or stale (>24h old)
+   - Flag any jobs with 0 runs ever (never triggered)
+   - Flag any jobs with failed status
 4. Credentials: any new missing (scan for exposed secrets, verify env vars)
 5. Dependencies: any obvious version mismatches or outdated packages
 6. Blockers: any blockers requiring human action (push @Jon/@Tim)
