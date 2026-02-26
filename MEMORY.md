@@ -86,3 +86,10 @@ ALL work must be optimized toward the goal:
 - Every page, every feature, every action should move us toward that
 - If it doesn't serve the goal, don't do it
 - Review work before pushing - does this convert?
+
+## Quality & Taste
+- App subscriptions take time to see results - that's OK
+- What matters: quality and taste in EVERYTHING we do
+- Don't generate slop hoping it works
+- Have pride in the work - would I show this to someone I respect?
+- If it doesn't feel right, it probably isn't
