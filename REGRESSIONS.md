@@ -18,3 +18,5 @@ Load this every session. Keep each line as: **failure → guardrail**.
 - If a rule is superseded, mark it and add the replacement (don't silently delete).
 
 - [2026-02-26] Kept asking Jon for permission instead of just executing → **When a task is clear, execute first, report after. Only ask when truly stuck or risky.**
+
+- [2026-02-26] Edit tool reported failure but edit succeeded (context transition race condition) → Document: verify with `grep` after edits, don't trust error alone.
