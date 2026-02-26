@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-02-24T22:02:54.533877+00:00",
+  "total_considered": 93,
+  "action": "upvote_and_comment",
+  "selected": [
+    {
+      "post_id": "1rcyuru",
+      "subreddit": "Mounjaro",
+      "title": "Transformation so far",
+      "reddit_url": "https://reddit.com/r/Mounjaro/comments/1rcyuru/transformation_so_far/",
+      "upvote": true,
+      "comment": "This answers a lot of questions I had. Thanks!",
+      "score": 595,
+      "comments": 22
+    },
+    {
+      "post_id": "1rd8ayt",
+      "subreddit": "Ozempic",
+      "title": "Pray for me guys.",
+      "reddit_url": "https://reddit.com/r/Ozempic/comments/1rd8ayt/pray_for_me_guys/",
+      "upvote": true,
+      "comment": "This is really useful, thanks.",
+      "score": 52,
+      "comments": 39
+    },
+    {
+      "post_id": "1rdsx0w",
+      "subreddit": "Zepbound",
+      "title": "112lbs \u2b07\ufe0f",
+      "reddit_url": "https://reddit.com/r/Zepbound/comments/1rdsx0w/112lbs/",
+      "upvote": true,
+      "comment": "Great post \u2014 thanks for sharing your experience.",
+      "score": 97,
+      "comments": 5
+    },
+    {
+      "post_id": "1rdrwdt",
+      "subreddit": "tirzepatidecompound",
+      "title": "Got my shipment from Trillium \ud83c\udf89",
+      "reddit_url": "https://reddit.com/r/tirzepatidecompound/comments/1rdrwdt/got_my_shipment_from_trillium/",
+      "upvote": true,
+      "comment": "Good point. Appreciate you posting this.",
+      "score": 36,
+      "comments": 5
+    }
+  ]
+}
