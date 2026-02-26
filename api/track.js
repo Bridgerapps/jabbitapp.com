@@ -2,7 +2,7 @@
 // Deploy to Vercel as /api/track
 
 export default function handler(request, response) {
-  if (request.method !== 'POST') {
+  if (request.method !== 'POST' && request.method !== 'GET') {
     return response.status(405).json({ error: 'Method not allowed' });
   }
 
