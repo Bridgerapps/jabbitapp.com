@@ -20,3 +20,6 @@ Load this every session. Keep each line as: **failure → guardrail**.
 - [2026-02-26] Kept asking Jon for permission instead of just executing → **When a task is clear, execute first, report after. Only ask when truly stuck or risky.**
 
 - [2026-02-26] Edit tool reported failure but edit succeeded (context transition race condition) → Document: verify with `grep` after edits, don't trust error alone.
+
+- [2026-02-26] Generated bad site HTML without reviewing - caused ugly/simple pages to replace good design → **ALWAYS review code before pushing. Don't generate slop. Verify output looks right.**
+- [2026-02-26] Generated 60+ simple SEO pages that weren't aligned with goal (converting visitors to app downloads) → **Generate content that serves the goal, not just volume. Quality over quantity. Review before pushing.**
