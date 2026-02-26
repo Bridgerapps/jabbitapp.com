@@ -32,6 +32,7 @@ else
 fi
 
 # Cycle slot (0-2 for 8h intervals)
+HOUR=${HOUR:-$(date +%H)}
 SLOT=$(( (HOUR / 8) % 3 ))
 export REDDIT_CYCLE_SLOT=$SLOT
 
