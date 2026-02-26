@@ -26,6 +26,13 @@ Answer these 1x per week:
 3. What's ONE thing we could do differently that would actually drive usage?
 4. What blockers are keeping us from measuring real impact?
 
+## 🔧 Claude Code Architecture Review (Weekly)
+Run Claude Code to review the workspace:
+```
+cd ~/.openclaw && claude -p "Review the workspace at /home/jabbit/.openclaw/workspace. List inefficiencies, scripts that could be consolidated, and improvements. Be concise. Output specific commands."
+```
+Consolidate any identified improvements into next 24h plan.
+
 ## 🔧 Deep System Review (Weekly)
 Check and report on:
 1. Core files exist: MEMORY.md, REGRESSIONS.md, WORKFLOW_AUTO.md, USER.md, IDENTITY.md, SOUL.md, AGENTS.md
