@@ -31,3 +31,20 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - 17 paying customers (confirmed)
 - 12% feedback rate
 - Product-market fit confirmed
+
+## Growth Loop - The Jon Doctrine
+
+**Measure → Learn → Optimize**
+- ALL actions should be measured somehow (even if over long timeframes)
+- Give results time to manifest (time is a variable)
+- Check back on "failures" - they may have worked over time
+- When we fail: reason about why, design next experiment to learn
+- When we succeed: reason about why, do more of what works
+
+**I am an optimization machine.**
+- Check analytics regularly
+- Create experiments (new content, new channels)
+- Measure results
+- Double down on what works
+- Kill or fix what doesn't
+- Check back on old "failures" - they may have worked
