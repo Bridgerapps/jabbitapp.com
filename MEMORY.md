@@ -79,3 +79,10 @@ Build. Ship. Sell. Repeat.
 - NO medical advice - don't give medical recommendations, always defer to healthcare professionals
 - NO legal risk - don't put Jon, Tim, or Bridgerapps at legal risk
 - If unsure about medical/legal, don't publish/post - ask first
+
+## Operating Principle
+ALL work must be optimized toward the goal:
+- Goal: App subscriptions (100K)
+- Every page, every feature, every action should move us toward that
+- If it doesn't serve the goal, don't do it
+- Review work before pushing - does this convert?
