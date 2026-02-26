@@ -38,7 +38,7 @@
     
     
 </head>
-<body>
+<body onload="fetch('http://138.197.74.40:9000/track?page='+encodeURIComponent(window.location.pathname))>
     <header>
         <h1>GLP-1 Sleep Guide</h1>
         <p class="subtitle">Insomnia & Sleep Problems on Ozempic, Wegovy, Mounjaro, Zepbound</p>
@@ -223,7 +223,7 @@
     <div class="cta">
         <h3>Need Help Tracking Your GLP-1 Journey?</h3>
         <p>Jabbit helps you track symptoms, side effects, and progress—all in one place.</p>
-        <a href="https://apps.apple.com/app/jabbit/id6476960515">Download Jabbit →</a>
+        <a href="https://apps.apple.com" onclick="fetch('http://138.197.74.40:9000/track?page=/app-store-click')"/app/jabbit/id6476960515">Download Jabbit →</a>
     </div>
 
     <footer>

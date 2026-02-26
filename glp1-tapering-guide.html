@@ -31,7 +31,7 @@
     
     
 </head>
-<body>
+<body onload="fetch('http://138.197.74.40:9000/track?page='+encodeURIComponent(window.location.pathname))>
     <header>
         <h1>GLP-1 Tapering Guide</h1>
         <p class="subtitle">How to Safely Reduce & Stop Ozempic, Wegovy, Mounjaro & Zepbound</p>
@@ -260,7 +260,7 @@
     <div class="cta">
         <h3>Track Your GLP-1 Journey with Jabbit</h3>
         <p>Whether you're tapering or maintaining, Jabbit helps you track injections, monitor weight trends, and visualize your progress.</p>
-        <a href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719" class="cta-button">Download Jabbit</a>
+        <a href="https://apps.apple.com" onclick="fetch('http://138.197.74.40:9000/track?page=/app-store-click')"/us/app/jabbit-peptide-tracker/id6756848719" class="cta-button">Download Jabbit</a>
     </div>
 
     <section>

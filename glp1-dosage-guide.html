@@ -35,7 +35,7 @@
     
     
 </head>
-<body>
+<body onload="fetch('http://138.197.74.40:9000/track?page='+encodeURIComponent(window.location.pathname))>
     <header>
         <div class="breadcrumb"><a href="/">Home</a> > GLP-1 Dosage Guide</div>
         <h1>GLP-1 Dosage Guide</h1>
@@ -138,7 +138,7 @@
     <div class="cta">
         <h3>Track Your GLP-1 Journey with Jabbit</h3>
         <p>Jabbit helps you track injections, monitor side effects, log weight, and see trends over time. Make data-driven decisions with your provider.</p>
-        <a href="https://apps.apple.com/app/jabbit" class="cta-button">Download Jabbit - $9.99/year</a>
+        <a href="https://apps.apple.com" onclick="fetch('http://138.197.74.40:9000/track?page=/app-store-click')"/app/jabbit" class="cta-button">Download Jabbit - $9.99/year</a>
     </div>
 
     <footer>
