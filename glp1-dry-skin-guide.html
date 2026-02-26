@@ -11,7 +11,7 @@
     <meta property="og:type" content="article">
     <link rel="canonical" href="https://www.jabbitapp.com/glp1-dry-skin-guide.html">
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -206,6 +206,11 @@
         }
     </style>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

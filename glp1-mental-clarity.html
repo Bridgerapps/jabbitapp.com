@@ -35,7 +35,7 @@
         .breadcrumb a { color: #2d8659; text-decoration: none; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -143,6 +143,11 @@
         </footer>
     </div>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

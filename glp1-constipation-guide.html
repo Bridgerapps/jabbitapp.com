@@ -41,7 +41,7 @@
         .disclaimer { font-size: 0.8em; color: #888; margin-top: 20px; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -246,6 +246,11 @@
         <p class="disclaimer">This website is for informational purposes only. Consult your healthcare provider for medical advice.</p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

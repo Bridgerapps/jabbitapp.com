@@ -38,7 +38,7 @@
         .nav-links a:hover { text-decoration: underline; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <div class="hero">
@@ -221,6 +221,11 @@
         <a href="/glp1-cost-guide.html">GLP-1 Costs</a>
     </div>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

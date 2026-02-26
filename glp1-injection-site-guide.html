@@ -36,7 +36,7 @@
         tr:hover { background: #f5f5f5; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <div class="hero">
@@ -183,6 +183,11 @@
         <p>Available on iOS and Android.</p>
     </div>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

@@ -36,7 +36,7 @@
         footer { text-align: center; padding: 30px 0; color: #666; font-size: 0.9em; border-top: 1px solid #eee; margin-top: 50px; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -213,6 +213,11 @@
         <p>© 2026 Jabbit App — Your GLP-1 Companion</p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

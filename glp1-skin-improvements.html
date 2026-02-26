@@ -30,7 +30,7 @@
         footer { text-align: center; padding: 40px 0; color: #7f8c8d; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -124,6 +124,11 @@
         <p><small>Always consult your healthcare provider before starting or changing any medication regimen.</small></p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

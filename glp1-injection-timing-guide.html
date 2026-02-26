@@ -23,7 +23,7 @@
         @media (max-width: 600px) { .comparison { grid-template-columns: 1fr; } }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <h1>Best Time to Take GLP-1 Injections: Morning vs Night</h1>
@@ -122,6 +122,11 @@
         <p>© 2026 Jabbit — Your GLP-1 Resource</p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

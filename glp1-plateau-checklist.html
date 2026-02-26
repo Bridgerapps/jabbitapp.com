@@ -20,7 +20,7 @@
         .protocol-day { font-weight: 600; color: #1a1a2e; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <h1>GLP-1 Plateau Troubleshooting Checklist</h1>
@@ -82,6 +82,11 @@
     <hr style="margin: 40px 0 20px;">
     <p style="color: #666; font-size: 0.9rem;">Related: <a href="https://jabbitapp.com/glp1-acid-reflux-guide">GLP-1 Acid Reflux Guide</a> | <a href="https://jabbitapp.com">Jabbit - GLP-1 Tracking App</a></p>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

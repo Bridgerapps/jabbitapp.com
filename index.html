@@ -16,7 +16,7 @@
         .cta { background: #1a1a2e; color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <div class="hero">
@@ -75,6 +75,11 @@
         <p>© 2026 Jabbit — Free GLP-1 Tracker</p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

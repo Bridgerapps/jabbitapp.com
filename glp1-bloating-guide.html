@@ -31,7 +31,7 @@
         footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; margin-top: 40px; border-top: 1px solid #ddd; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -209,6 +209,11 @@
         <p>© 2026 Jabbit | <a href="https://www.jabbitapp.com">jabbitapp.com</a></p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

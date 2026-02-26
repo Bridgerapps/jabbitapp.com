@@ -31,7 +31,7 @@
         @media (max-width: 600px) { h1 { font-size: 1.8rem; } body { padding: 15px; } }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -148,6 +148,11 @@
         <p>© 2026 Jabbit App — Your GLP-1 Companion</p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

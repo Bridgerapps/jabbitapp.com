@@ -33,7 +33,7 @@
         @media (max-width: 600px) { h1 { font-size: 1.6em; } .content { padding: 20px; } }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -165,6 +165,11 @@
         <p>© 2026 Jabbit. This content is for informational purposes only and does not constitute medical advice. Always consult your healthcare provider before making changes to your medication regimen.</p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

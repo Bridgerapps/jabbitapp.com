@@ -30,7 +30,7 @@
         footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -167,6 +167,11 @@
         <p><em>This guide is for informational purposes only and does not constitute medical advice. Always consult your healthcare provider.</em></p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

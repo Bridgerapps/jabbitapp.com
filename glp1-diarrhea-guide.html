@@ -32,7 +32,7 @@
         footer { text-align: center; padding: 40px 0; margin-top: 60px; border-top: 1px solid #ddd; color: #666; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -164,6 +164,11 @@
         <p><a href="https://www.jabbitapp.com">Home</a> | <a href="https://www.jabbitapp.com/sitemap.xml">Sitemap</a></p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>

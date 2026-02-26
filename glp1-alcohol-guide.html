@@ -19,7 +19,7 @@
         footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 14px; }
     </style>
     
-    <script defer data-domain="jabbitapp.com" src="https://plausible.io/js/script.js"></script>
+    
 </head>
 <body>
     <h1>GLP-1 and Alcohol: Interactions, Risks, and Guidelines</h1>
@@ -211,6 +211,11 @@
         <p class="warning"><em>Disclaimer: This content is for informational purposes only and does not constitute medical advice. Always consult your healthcare provider before making changes to your medication or lifestyle.</em></p>
     </footer>
         .catch(() => {});
+    </script>
+    <script>
+      try {
+        fetch("https://jabbitapp.com/api/analytics/track?page=" + encodeURIComponent(window.location.pathname));
+      } catch(e) {}
     </script>
 </body>
 </html>
