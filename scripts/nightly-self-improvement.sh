@@ -19,9 +19,18 @@ cat > "$OUT" <<EOF
 ## Evidence (last 24h commits)
 $COMMITS
 
+## 🔴 Self-Reflection: Impact on Jabbit Usage
+Answer these 1x per week:
+1. What tangible impact did our work have on driving Jabbit users/revenue this week?
+2. What's actually moving the needle vs what just feels like "busy work"?
+3. What's ONE thing we could do differently that would actually drive usage?
+4. What blockers are keeping us from measuring real impact?
+
 ## Open Risks / Blockers Requiring Jon
 - Missing health telemetry inputs for lifespan optimization (labs + wearable + protocol deltas)
 - Missing App Store/Stripe read-only creds for real KPI reporting
+- Reddit karma too low to start comment distribution
+- No email capture on SEO pages
 
 ## Next 24h Proactive Plan
 1. Growth task with measurable awareness delta
