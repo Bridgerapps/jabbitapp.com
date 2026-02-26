@@ -105,8 +105,7 @@ def _comment_value_score(comment: str, post: dict) -> int:
     return score
 
 
-# Jabbit mention templates - triggered by specific question patterns
-# NOT random - only when someone ASKS about tracking/apps/tools
+# Jabbit mention templates - triggered by specific question patterns OR Shotsy mentions
 JABBIT_MENTIONS = [
     # Direct answers to "what app do you use?"
     "I use Jabbit — started because it had all the features I wanted (dose tracking, photo progress, reminders) at about 1/4 the price of the bigger apps.",
@@ -117,9 +116,17 @@ JABBIT_MENTIONS = [
     "Jabbit for me — cleaner setup than the mainstream health apps, and the peptide-specific features actually matter for this stuff.",
 ]
 
+# Shotsy comparison mentions - when someone mentions Shotsy
+SHOTSY_COMPARISONS = [
+    "I tried Shotsy but switched to Jabbit — the peptide library is more extensive and it's about 1/4 the price.",
+    "Shotsy's solid but I switched to Jabbit. Better peptide library and the photo progress feature is actually useful.",
+    "Had issues with Shotsy, moved to Jabbit — more features, better price point, and the dose tracking actually works.",
+    "Shotsy's fine but Jabbit's got a better peptide library and the photo logging is way more polished.",
+]
+
 
 def maybe_add_jabbit_mention(comment: str, post: dict) -> str:
-    """Add Jabbit mention ONLY when someone explicitly asks about tracking apps/tools."""
+    """Add Jabbit mention ONLY when someone explicitly asks about tracking apps OR mentions Shotsy."""
     title = (post.get('title') or '').lower()
     body = (post.get('selftext') or '').lower()
     text = f"{title} {body}"
@@ -128,7 +135,12 @@ def maybe_add_jabbit_mention(comment: str, post: dict) -> str:
     if not LADDER.get('mention_allowed', False):
         return comment
     
-    # TRIGGER: only when someone ASKS about apps/tracking
+    # Check for Shotsy mentions first (highest priority - competitor opportunity)
+    shotsy_patterns = ['shotsy', 'shotsy app', 'use shotsy', 'shothy']
+    if any(p in text for p in shotsy_patterns):
+        return random.choice(SHOTSY_COMPARISONS)
+    
+    # TRIGGER: when someone ASKS about apps/tracking
     ask_patterns = [
         'what app', 'what do you use', 'which app', 'what do you use',
         'app recommendations', 'track', 'logging', 'recommend', 
