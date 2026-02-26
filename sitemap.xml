@@ -17,6 +17,11 @@
         <changefreq>monthly</changefreq>
     </url>
     <url>
+        <loc>https://jabbitapp.com/glp1-flu-like-symptoms.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
         <loc>https://jabbitapp.com/glp1-brain-fog-guide.html</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
