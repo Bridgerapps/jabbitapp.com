@@ -22,17 +22,10 @@ echo "Files before: $BEFORE"
 RETENTION_MMINS=$((RETENTION_DAYS * 1440))
 
 # Find and remove old classify queues (they're large and stale after processing)
-# Matches both classify_queue_*.json and engagement_queue_*.json
-CLASSIFY_COUNT=$(find "$DATA_DIR" \( -name "classify_queue_*.json" -o -name "engagement_queue_*.json" \) -mmin +${RETENTION_MMINS} -type f 2>/dev/null | wc -l)
-find "$DATA_DIR" \( -name "classify_queue_*.json" -o -name "engagement_queue_*.json" \) -mmin +${RETENTION_MMINS} -type f -delete 2>/dev/null
-echo "Removed: $CLASSIFY_COUNT old classify queues"
-
-# Find and remove old results files (kept for 7 days for analysis)
-RESULTS_DAYS=7
-RESULTS_MMINS=$((RESULTS_DAYS * 1440))
-RESULTS_COUNT=$(find "$DATA_DIR" -name "results_*.json" -mmin +${RESULTS_MMINS} -type f 2>/dev/null | wc -l)
-find "$DATA_DIR" -name "results_*.json" -mmin +${RESULTS_MMINS} -type f -delete 2>/dev/null
-echo "Removed: $RESULTS_COUNT old results files (kept 7 days)"
+# Matches classify_queue_*.json, engagement_queue_*.json, engagement_*.json, and results_*.json
+CLASSIFY_COUNT=$(find "$DATA_DIR" \( -name "classify_queue_*.json" -o -name "engagement_queue_*.json" -o -name "engagement_*.json" -o -name "results_*.json" \) -mmin +${RETENTION_MMINS} -type f 2>/dev/null | wc -l)
+find "$DATA_DIR" \( -name "classify_queue_*.json" -o -name "engagement_queue_*.json" -o -name "engagement_*.json" -o -name "results_*.json" \) -mmin +${RETENTION_MMINS} -type f -delete 2>/dev/null
+echo "Removed: $CLASSIFY_COUNT old classify/engagement/results files"
 
 # Find and remove old raw posts (kept for 48h)
 RAW_DAYS=2
@@ -40,13 +33,6 @@ RAW_MMINS=$((RAW_DAYS * 1440))
 RAW_COUNT=$(find "$DATA_DIR" -name "posts_*.json" -mmin +${RAW_MMINS} -type f 2>/dev/null | wc -l)
 find "$DATA_DIR" -name "posts_*.json" -mmin +${RAW_MMINS} -type f -delete 2>/dev/null
 echo "Removed: $RAW_COUNT old raw posts (kept 48h)"
-
-# Find and remove old engagement files (kept for 3 days)
-ENG_DAYS=3
-ENG_MMINS=$((ENG_DAYS * 1440))
-ENG_COUNT=$(find "$DATA_DIR" -name "engagement_*.json" -mmin +${ENG_MMINS} -type f 2>/dev/null | wc -l)
-find "$DATA_DIR" -name "engagement_*.json" -mmin +${ENG_MMINS} -type f -delete 2>/dev/null
-echo "Removed: $ENG_COUNT old engagement files"
 
 # Count files after
 AFTER=$(find "$DATA_DIR" -name "*.json" -type f | wc -l)
