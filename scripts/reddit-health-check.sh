@@ -1,50 +1,76 @@
-#!/bin/bash
-# Reddit API Health Monitor
-# Checks Reddit API availability without running full engagement pipeline
-# Used to detect when rate limits clear or API becomes accessible
+#!/usr/bin/env bash
+# Reddit API Health Monitor (cookie+proxy aware)
+# Uses the same access path as warmup/comment scripts to avoid false DEGRADED from public 403s.
+set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-LOG_DIR="$SCRIPT_DIR/../data/reddit"
-SESSION_FILE="$SCRIPT_DIR/../.reddit-session"
+WS="${WS:-$SCRIPT_DIR/..}"
+LOG_DIR="$WS/data/reddit"
+SESSION_FILE="$WS/.reddit-session"
 
-# Create log directory
 mkdir -p "$LOG_DIR"
 
-# Load session cookie if available
-COOKIE=""
-if [ -f "$SESSION_FILE" ]; then
-    COOKIE=$(cat "$SESSION_FILE")
+# Optional proxy/session (same as runtime scripts)
+if [ -f "$WS/scripts/proxy.env" ]; then
+  # shellcheck disable=SC1090
+  source "$WS/scripts/proxy.env"
 fi
 
-# Test subreddits (lightweight check)
-TEST_SUBS=("Mounjaro" "Ozempic" "weightloss")
+COOKIE=""
+if [ -f "$SESSION_FILE" ]; then
+  COOKIE="$(tr -d '[:space:]' < "$SESSION_FILE")"
+fi
+
+UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
+# Match active engagement targets to avoid false negatives from unrelated subreddits.
+TEST_SUBS=("Mounjaro" "Ozempic" "Zepbound")
 RESULTS=()
-STATUS="OK"
+STATUS="WORKING"
 
 for sub in "${TEST_SUBS[@]}"; do
-    RESPONSE=$(curl -s -w "\n%{http_code}" -H "User-Agent: Mozilla/5.0" \
-        "https://www.reddit.com/r/$sub/new.json?limit=1" 2>/dev/null)
-    
-    HTTP_CODE=$(echo "$RESPONSE" | tail -1)
-    
-    if [ "$HTTP_CODE" = "200" ]; then
-        RESULTS+=("$sub:200")
-    elif [ "$HTTP_CODE" = "429" ]; then
-        RESULTS+=("$sub:429(RateLimited)")
-        STATUS="RATE_LIMITED"
-    elif [ "$HTTP_CODE" = "302" ]; then
-        RESULTS+=("$sub:302(Redirect)")
-        STATUS="REDIRECT"
-    else
-        RESULTS+=("$sub:$HTTP_CODE")
-        if [ "$STATUS" = "OK" ]; then
-            STATUS="DEGRADED"
-        fi
-    fi
+  curl_args=(
+    -s
+    -o /tmp/reddit-health-body.json
+    -w "%{http_code}"
+    -H "User-Agent: $UA"
+    --max-time 30
+    "https://www.reddit.com/r/$sub/new.json?limit=1"
+  )
+
+  if [ -n "${REDDIT_PROXY_URL:-}" ]; then
+    curl_args=( -x "$REDDIT_PROXY_URL" "${curl_args[@]}" )
+  fi
+  if [ -n "$COOKIE" ]; then
+    curl_args=( -H "Cookie: reddit_session=${COOKIE}" "${curl_args[@]}" )
+  fi
+
+  HTTP_CODE="$(curl "${curl_args[@]}" 2>/dev/null || echo 000)"
+
+  case "$HTTP_CODE" in
+    200)
+      RESULTS+=("$sub:200")
+      ;;
+    429)
+      RESULTS+=("$sub:429(RateLimited)")
+      STATUS="RATE_LIMITED"
+      ;;
+    302)
+      RESULTS+=("$sub:302(Redirect)")
+      [ "$STATUS" = "WORKING" ] && STATUS="DEGRADED"
+      ;;
+    403)
+      RESULTS+=("$sub:403")
+      [ "$STATUS" = "WORKING" ] && STATUS="DEGRADED"
+      ;;
+    *)
+      RESULTS+=("$sub:$HTTP_CODE")
+      [ "$STATUS" = "WORKING" ] && STATUS="DEGRADED"
+      ;;
+  esac
+
 done
 
-# Write status file
-TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+TIMESTAMP="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 cat > "$LOG_DIR/reddit-health.json" << EOF
 {
   "timestamp": "$TIMESTAMP",
@@ -53,7 +79,6 @@ cat > "$LOG_DIR/reddit-health.json" << EOF
 }
 EOF
 
-# Output result
 echo "=== Reddit Health Check ==="
 echo "Status: $STATUS"
 printf "Checks: %s\n" "${RESULTS[@]}"

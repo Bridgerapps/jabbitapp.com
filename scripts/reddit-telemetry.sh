@@ -67,25 +67,36 @@ if [ -f "$KARMA_FILE" ]; then
   karma_stale="$(jq -r '.stale // true' "$KARMA_FILE" 2>/dev/null || echo true)"
 fi
 
+# Load local reddit identity defaults if present
+if [ -f "$WS/scripts/reddit.env" ]; then
+  # shellcheck disable=SC1090
+  source "$WS/scripts/reddit.env"
+fi
+
+REDDIT_USERNAME="${REDDIT_USERNAME:-LongevityProtocol}"
+
 if [ -n "${REDDIT_USERNAME:-}" ]; then
   set +e
-  about_json="$(curl -sS -A 'Mozilla/5.0 (compatible; OpenClaw/1.0)' \
-    "https://www.reddit.com/user/${REDDIT_USERNAME}/about.json?raw_json=1" )"
+  curl_args=( -sS -A 'Mozilla/5.0 (compatible; OpenClaw/1.0)' "https://www.reddit.com/user/${REDDIT_USERNAME}/about.json?raw_json=1" )
+  if [ -f "$WS/scripts/proxy.env" ]; then
+    # shellcheck disable=SC1090
+    source "$WS/scripts/proxy.env"
+    if [ -n "${REDDIT_PROXY_URL:-}" ]; then
+      curl_args=( -x "$REDDIT_PROXY_URL" "${curl_args[@]}" )
+    fi
+  fi
+  if [ -f "$WS/.reddit-session" ]; then
+    cookie="$(tr -d '[:space:]' < "$WS/.reddit-session")"
+    if [ -n "$cookie" ]; then
+      curl_args=( -H "Cookie: reddit_session=${cookie}" "${curl_args[@]}" )
+    fi
+  fi
+  about_json="$(curl "${curl_args[@]}")"
   rc=$?
   set -e
 
   if [ $rc -eq 0 ] && [ -n "$about_json" ]; then
-    fetched="$(python3 - <<'PY'
-import json,sys
-s=sys.stdin.read()
-try:
-  d=json.loads(s)
-  k=d.get('data',{}).get('total_karma',None)
-  print('null' if k is None else str(int(k)))
-except Exception:
-  print('null')
-PY
-<<<"$about_json")"
+    fetched="$(printf '%s' "$about_json" | jq -r '.data.total_karma // "null"' 2>/dev/null || echo "null")"
 
     if [ "$fetched" != "null" ]; then
       karma_total="$fetched"

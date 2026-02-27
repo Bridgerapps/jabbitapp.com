@@ -1,20 +1,20 @@
 {
-  "last_check": "2026-02-27T22:09:10+00:00",
+  "last_check": "2026-02-27T22:33:30+00:00",
   "site_status": 200,
   "git_today": true,
-  "seo_pages": 19,
-  "reddit_status": "DEGRADED",
+  "seo_pages": 75,
+  "reddit_status": "WORKING",
   "reddit_fresh": true,
-  "reddit_age_seconds": 854,
+  "reddit_age_seconds": 2,
   "karma_total": null,
   "karma_stale": true,
-  "commits_24h": 33,
+  "commits_24h": 38,
   "disk_pct": 27,
-  "memory_free_mb": 2282,
+  "memory_free_mb": 1923,
   "issues": [
   ""
 ],
   "blockers": [
-  "Reddit API degraded - check scripts"
+  ""
 ]
 }
