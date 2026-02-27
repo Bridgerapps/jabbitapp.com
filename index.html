@@ -1,73 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jabbit - Your GLP-1 Weight Loss Companion</title>
-    <meta name="description" content="Track your GLP-1 weight loss journey with Jabbit. Get guides, tips, and support for Ozempic, Mounjaro, Wegovy, Zepbound, and other GLP-1 medications.">
-    <meta name="keywords" content="GLP-1, weight loss, Ozempic, Mounjaro, Wegovy, Zepbound, semaglutide, tirzepatide, tracking app">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        .hero { text-align: center; color: white; margin-bottom: 40px; }
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.3rem; opacity: 0.9; }
-        .tagline { background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px; margin: 30px 0; }
-        .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 40px; }
-        .link-card { background: white; padding: 20px; border-radius: 10px; text-decoration: none; color: #333; transition: transform 0.2s, box-shadow 0.2s; }
-        .link-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
-        .link-card h3 { color: #667eea; margin-bottom: 8px; }
-        .link-card p { font-size: 0.9rem; color: #666; }
-        .footer { text-align: center; color: white; opacity: 0.8; margin-top: 60px; font-size: 0.9rem; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jabbit — GLP‑1 tracking that stays private</title>
+  <meta name="description" content="Jabbit helps you stay consistent on GLP‑1s with simple tracking, reminders, progress logging, and a privacy‑first design. Educational guides included — not medical advice." />
+
+  <link rel="canonical" href="https://jabbitapp.com/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jabbitapp.com/" />
+  <meta property="og:title" content="Jabbit — GLP‑1 tracking that stays private" />
+  <meta property="og:description" content="Simple GLP‑1 tracking, progress logging, and practical guides — built with a privacy‑first architecture." />
+  <meta property="og:image" content="https://jabbitapp.com/images/today.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jabbit — GLP‑1 tracking that stays private" />
+  <meta name="twitter:description" content="Simple GLP‑1 tracking, progress logging, and practical guides — built with a privacy‑first architecture." />
+  <meta name="twitter:image" content="https://jabbitapp.com/images/today.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  </style>
 </head>
-<body>
-    <div class="container">
-        <div class="hero">
-            <h1>🦞 Jabbit</h1>
-            <p>Your GLP-1 Weight Loss Companion</p>
+
+<body class="bg-white text-gray-900">
+  <!-- Top nav -->
+  <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-brand-500 rounded-xl flex items-center justify-center shadow-sm">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <span class="text-xl font-bold tracking-tight">Jabbit</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+          <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
+          <a href="#privacy" class="text-gray-600 hover:text-gray-900">Privacy</a>
+          <a href="#guides" class="text-gray-600 hover:text-gray-900">Guides</a>
+          <a href="#download" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600">Download</a>
         </div>
-        
-        <div class="tagline">
-            <p>Track your GLP-1 medication journey with confidence. Expert guides, practical tips, and real-world support for Ozempic, Mounjaro, Wegovy, Zepbound, and more.</p>
-        </div>
-        
-        <div class="links">
-            <a href="glp1-comparison-guide.html" class="link-card">
-                <h3>📊 GLP-1 Comparison</h3>
-                <p>Ozempic vs Mounjaro vs Wegovy - which is right for you?</p>
-            </a>
-            <a href="glp-1-side-effects-guide.html" class="link-card">
-                <h3>⚠️ Side Effects Guide</h3>
-                <p>What to expect and how to manage common side effects</p>
-            </a>
-            <a href="glp1-cost-guide.html" class="link-card">
-                <h3>💰 Cost & Savings</h3>
-                <p>Find the best prices and savings programs</p>
-            </a>
-            <a href="glp1-kidney-health-guide.html" class="link-card">
-                <h3>🫘 Kidney Health</h3>
-                <p>FDA-approved semaglutide for CKD - what you need to know</p>
-            </a>
-            <a href="glp1-oral-pills-guide.html" class="link-card">
-                <h3>💊 Oral GLP-1 Pills</h3>
-                <p>The latest on orforglipron and other oral options</p>
-            </a>
-            <a href="glp1-fertility-guide.html" class="link-card">
-                <h3>👶 Fertility & Pregnancy</h3>
-                <p>GLP-1 effects on fertility and pregnancy planning</p>
-            </a>
-            <a href="glp1-stress-hrv-guide.html" class="link-card">
-                <h3>🧠 Stress, Anxiety & HRV</h3>
-                <p>Mental side effects and heart rate variability changes on GLP-1s</p>
-            </a>
-        </div>
-        
-        <div class="footer">
-            <p>© 2026 Jabbit - Your trusted GLP-1 resource</p>
-            <p>Always consult your healthcare provider before making medication decisions.</p>
-        </div>
+      </div>
     </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="pt-28 pb-12 bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-brand-100 text-brand-700 text-sm font-medium">
+            <span class="w-2 h-2 rounded-full bg-brand-500" aria-hidden="true"></span>
+            GLP‑1 tracking, simplified
+          </div>
+
+          <h1 class="mt-5 text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+            Stay consistent on your GLP‑1 journey —
+            <span class="text-brand-700">without giving up your privacy.</span>
+          </h1>
+
+          <p class="mt-5 text-lg text-gray-600 max-w-xl">
+            Jabbit is a clean, fast companion for staying on schedule, logging progress, and learning the basics.
+            Built for real life: quick logging, helpful visuals, and privacy‑first by design.
+          </p>
+
+          <div class="mt-7 flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719"
+              class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800"
+            >
+              <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+              </svg>
+              Download on the App Store
+            </a>
+            <a
+              href="#guides"
+              class="inline-flex items-center justify-center px-6 py-3 bg-white border border-gray-200 text-gray-900 font-semibold rounded-xl hover:border-gray-300"
+            >
+              Read the guides
+            </a>
+          </div>
+
+          <dl class="mt-8 grid sm:grid-cols-3 gap-4 text-sm">
+            <div class="bg-white rounded-xl border border-gray-100 p-4">
+              <dt class="font-semibold">Quick logging</dt>
+              <dd class="text-gray-600 mt-1">Stay consistent with a workflow that takes seconds.</dd>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 p-4">
+              <dt class="font-semibold">Progress tracking</dt>
+              <dd class="text-gray-600 mt-1">Weight, measurements, and photos — optional, on your terms.</dd>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 p-4">
+              <dt class="font-semibold">Privacy‑first</dt>
+              <dd class="text-gray-600 mt-1">Designed to keep your data under your control.</dd>
+            </div>
+          </dl>
+
+          <p class="mt-6 text-xs text-gray-500">
+            Educational only. Jabbit does not provide medical advice, diagnosis, or treatment. Always consult a licensed clinician.
+          </p>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative">
+            <div class="absolute -inset-6 bg-gradient-to-r from-brand-100 to-transparent blur-2xl opacity-70" aria-hidden="true"></div>
+            <div class="relative grid sm:grid-cols-2 gap-4">
+              <figure class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                <img src="/images/today.png" alt="Jabbit Today view showing schedule and status" class="w-full h-auto" loading="lazy" />
+                <figcaption class="px-4 py-3 text-sm text-gray-600">Today: stay on schedule at a glance</figcaption>
+              </figure>
+              <figure class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                <img src="/images/calendar.png" alt="Jabbit calendar view showing a monthly overview" class="w-full h-auto" loading="lazy" />
+                <figcaption class="px-4 py-3 text-sm text-gray-600">Calendar: see patterns over weeks</figcaption>
+              </figure>
+              <figure class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden sm:col-span-2">
+                <img src="/images/progress.png" alt="Jabbit progress tracking screen" class="w-full h-auto" loading="lazy" />
+                <figcaption class="px-4 py-3 text-sm text-gray-600">Progress: weight, measurements, and photos (optional)</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight">Everything you need for consistent GLP‑1 tracking</h2>
+        <p class="mt-3 text-gray-600">Focused features that help you stay organized — without the clutter.</p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:border-brand-200 transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold">Schedule & reminders</h3>
+          <p class="mt-2 text-gray-600">Set your routine and get gentle nudges so you don’t miss a dose.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:border-brand-200 transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6M7 8h10M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold">Simple logs</h3>
+          <p class="mt-2 text-gray-600">Keep clean notes on timing, dose, and what you noticed — in seconds.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:border-brand-200 transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold">Trends that make sense</h3>
+          <p class="mt-2 text-gray-600">See consistency and progress over time, without spreadsheets.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:border-brand-200 transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 .55-.45 1-1 1H7a1 1 0 01-1-1V7a1 1 0 011-1h4c.55 0 1 .45 1 1v4zm0 0v6m4-10h2a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2v-2" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold">Progress photos (optional)</h3>
+          <p class="mt-2 text-gray-600">If photos help you stay motivated, keep them organized and private.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:border-brand-200 transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-2v13" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold">Practical library</h3>
+          <p class="mt-2 text-gray-600">Plain‑English guides on side effects, timing, and common questions.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:border-brand-200 transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.66 0 3-1.34 3-3S13.66 5 12 5 9 6.34 9 8s1.34 3 3 3zm0 0c-3.33 0-6 1.34-6 3v3h12v-3c0-1.66-2.67-3-6-3z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold">No social pressure</h3>
+          <p class="mt-2 text-gray-600">No feeds, no performative sharing — just your plan and your data.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 rounded-2xl bg-gray-50 border border-gray-100 p-6">
+        <p class="text-sm text-gray-600">
+          <span class="font-semibold text-gray-900">Important:</span>
+          Jabbit is not a substitute for professional medical advice. Content is informational and may not apply to your situation.
+          If you have symptoms, side effects, or medication questions, talk to your healthcare provider.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gradient-to-b from-white to-brand-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight">Simple, transparent pricing</h2>
+        <p class="mt-3 text-gray-600">Start with a free trial. If it helps, keep it. If not, cancel anytime.</p>
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-2 gap-6 items-stretch">
+        <div class="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-bold">Jabbit Premium</h3>
+              <p class="mt-1 text-gray-600">Unlock the full experience.</p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-sm font-semibold">Free trial</span>
+          </div>
+
+          <ul class="mt-6 space-y-3 text-gray-700">
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 text-brand-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Full access to tracking and insights
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 text-brand-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Progress logging (weight, measurements, photos)
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 text-brand-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              New features as they ship
+            </li>
+          </ul>
+
+          <p class="mt-6 text-sm text-gray-500">Pricing is shown in the App Store before you subscribe.</p>
+
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <a href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719" class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800">Start free trial</a>
+            <a href="#privacy" class="inline-flex items-center justify-center px-6 py-3 bg-white border border-gray-200 text-gray-900 font-semibold rounded-xl hover:border-gray-300">How privacy works</a>
+          </div>
+
+          <p class="mt-4 text-xs text-gray-500">Cancel anytime in App Store settings.</p>
+        </div>
+
+        <div class="bg-gray-900 rounded-2xl p-8 text-white">
+          <h3 class="text-xl font-bold">What you get</h3>
+          <p class="mt-2 text-gray-300">A calm, focused app built to help you follow through — without needing another account to manage.</p>
+
+          <div class="mt-6 grid gap-4">
+            <div class="rounded-xl bg-white/5 border border-white/10 p-5">
+              <p class="font-semibold">Designed for speed</p>
+              <p class="mt-1 text-gray-300 text-sm">Log quickly, keep moving, and trust that your history is there when you need it.</p>
+            </div>
+            <div class="rounded-xl bg-white/5 border border-white/10 p-5">
+              <p class="font-semibold">Built for sensitive data</p>
+              <p class="mt-1 text-gray-300 text-sm">We aim to minimize collection and keep your data under your control.</p>
+            </div>
+            <div class="rounded-xl bg-white/5 border border-white/10 p-5">
+              <p class="font-semibold">Guides included</p>
+              <p class="mt-1 text-gray-300 text-sm">Clear educational content about GLP‑1 basics, side effects, and practical questions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section id="privacy" class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-5">
+          <h2 class="text-3xl font-bold tracking-tight">Privacy‑first design</h2>
+          <p class="mt-3 text-gray-600">
+            Health data is personal. Jabbit is built to keep tracking calm and private — without turning your journey into a data product.
+          </p>
+
+          <div class="mt-6 space-y-4">
+            <div class="flex gap-3">
+              <div class="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center flex-none">
+                <svg class="w-5 h-5 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.66 0 3-1.34 3-3S13.66 5 12 5 9 6.34 9 8s1.34 3 3 3z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2" /></svg>
+              </div>
+              <div>
+                <p class="font-semibold">Your data stays yours</p>
+                <p class="text-gray-600 text-sm">We design for minimal collection and clear control.</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div class="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center flex-none">
+                <svg class="w-5 h-5 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4" /></svg>
+              </div>
+              <div>
+                <p class="font-semibold">Security by default</p>
+                <p class="text-gray-600 text-sm">Sensitive info should be protected like it matters — because it does.</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div class="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center flex-none">
+                <svg class="w-5 h-5 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
+              </div>
+              <div>
+                <p class="font-semibold">No spammy feeds</p>
+                <p class="text-gray-600 text-sm">No social graph, no public posts — just a tool that helps you follow through.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a href="/privacy/" class="text-brand-700 font-semibold hover:text-brand-800">Read the privacy policy →</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+            <img src="/images/serum-demo.png" alt="Serum levels visualization in Jabbit" class="w-full h-auto" loading="lazy" />
+            <div class="p-6">
+              <p class="font-semibold">See your routine clearly</p>
+              <p class="mt-2 text-gray-600 text-sm">Helpful visuals are great — but they should live with you, not in some third‑party analytics dashboard.</p>
+              <p class="mt-4 text-xs text-gray-500">Screenshots are illustrative. Individual outcomes vary.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section id="guides" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-bold tracking-tight">Guides (educational)</h2>
+          <p class="mt-3 text-gray-600">Practical, plain‑English answers to common GLP‑1 questions. Informational only — not medical advice.</p>
+        </div>
+        <a href="/guides/" class="text-brand-700 font-semibold hover:text-brand-800">Browse all resources →</a>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/glp-1-side-effects-guide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-brand-700 font-bold" aria-hidden="true">⚠️</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">GLP‑1 side effects</h3>
+          <p class="text-gray-600">What’s common, what’s not, and when to talk to your clinician.</p>
+        </a>
+
+        <a href="/glp-1-injection-tracking-guide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-brand-700 font-bold" aria-hidden="true">💉</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Injection tracking basics</h3>
+          <p class="text-gray-600">How to build a routine you can follow for months.</p>
+        </a>
+
+        <a href="/glp1-cost-without-insurance.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-brand-700 font-bold" aria-hidden="true">💸</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Cost without insurance</h3>
+          <p class="text-gray-600">A clear breakdown of what affects price and options to explore.</p>
+        </a>
+
+        <a href="/glp1-kidney-health-guide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-brand-700 font-bold" aria-hidden="true">🫘</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Kidney health</h3>
+          <p class="text-gray-600">What the evidence says — and where people get confused.</p>
+        </a>
+
+        <a href="/glp1-fatigue-guide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-brand-700 font-bold" aria-hidden="true">😴</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Fatigue on GLP‑1s</h3>
+          <p class="text-gray-600">Common patterns and practical questions to bring to appointments.</p>
+        </a>
+
+        <a href="/glp1-stress-anxiety-hrv-guide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-brand-700 font-bold" aria-hidden="true">🧠</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Stress, anxiety & HRV</h3>
+          <p class="text-gray-600">What people report and how to think about it safely.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="download" class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-gray-900 rounded-3xl p-10 md:p-12 text-white overflow-hidden relative">
+        <div class="absolute -top-20 -right-20 w-64 h-64 bg-brand-500/30 blur-3xl" aria-hidden="true"></div>
+        <div class="relative grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Ready to make tracking feel easy?</h2>
+            <p class="mt-3 text-gray-300 text-lg max-w-2xl">
+              Download Jabbit and keep your GLP‑1 routine organized — with a calm interface and privacy‑first approach.
+            </p>
+            <div class="mt-7 flex flex-col sm:flex-row gap-3">
+              <a href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719" class="inline-flex items-center justify-center px-7 py-4 bg-brand-500 text-white font-semibold rounded-2xl hover:bg-brand-600">
+                Download on App Store
+              </a>
+              <a href="#pricing" class="inline-flex items-center justify-center px-7 py-4 bg-white/10 border border-white/20 text-white font-semibold rounded-2xl hover:bg-white/15">
+                See pricing
+              </a>
+            </div>
+            <p class="mt-4 text-xs text-gray-400">
+              Always consult your healthcare provider before making medication decisions.
+            </p>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+              <p class="font-semibold">Quick links</p>
+              <ul class="mt-4 space-y-2 text-sm">
+                <li><a class="text-gray-200 hover:text-white" href="/privacy/">Privacy Policy</a></li>
+                <li><a class="text-gray-200 hover:text-white" href="/terms/">Terms</a></li>
+                <li><a class="text-gray-200 hover:text-white" href="/guides/">Guides</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-gray-100 bg-white py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-brand-500 rounded-xl flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-bold">Jabbit</p>
+            <p class="text-sm text-gray-500">Privacy‑first GLP‑1 tracking & educational resources.</p>
+          </div>
+        </div>
+
+        <div class="text-sm text-gray-500 max-w-xl">
+          <p>
+            <span class="font-semibold text-gray-700">Disclaimer:</span>
+            The information on this site is for general educational purposes only and is not medical advice.
+            Always seek the advice of your physician or other qualified health provider with any questions.
+          </p>
+          <p class="mt-3">© 2026 Jabbit. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
