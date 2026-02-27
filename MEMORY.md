@@ -18,6 +18,13 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 
 ## Known Blockers
 - RESEND_API_KEY: fixed Feb 24
+- Proxy rotation: now automated via proxy-rotate.sh (tries US-1→US-2→US-3→US-4→US-5 on failure)
+
+## Memory Best Practices (Post-Compaction)
+- After ANY significant discussion about config/credentials/infrastructure: write key details to MEMORY.md immediately
+- Check MEMORY.md BEFORE asking about已知 things
+- On context reset: first read WORKFLOW_AUTO.md + today's memory file + MEMORY.md
+- Key files that persist: MEMORY.md, daily memory files, credentials in scripts/*.env
 - Replicate token: disabled, branch cleaned
 - Twitter autopost: blocked (queue exhausted)
 - Reddit karma: building (currently 1)
@@ -32,7 +39,26 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - 12% feedback rate
 - Product-market fit confirmed
 
-## Growth Loop - The Jon Doctrine
+## WebShare Proxy Configuration
+- Provider: WebShare.io (rotating residential proxies)
+- Current: US-3 (auto-rotated from US-1/US-2 due to connection issues)
+- Credentials in: scripts/proxy.env
+- Rotation script: scripts/proxy-rotate.sh (auto-tests and rotates on failure)
+- Pattern: jxrtqjko-US-1 through US-5 for subnets
+
+## Apple App Store API
+- Provider: App Store Connect API
+- Key ID: U32B72ACDS (with Sales and Trends permission)
+- Issuer ID: f99bb315-dd91-49b8-bc7f-24cf2b2ab80d
+- Vendor Number: 93886172
+- App ID: 6756848719 (Jabbit - Peptide Tracker)
+- Returns: gzip-compressed CSV, use Accept: application/a-gzip header
+- Current data: 2 units Jabbit Pro Annual ($12.88)
+- Provider: WebShare.io (rotating residential proxies)
+- Current: US-3 (auto-rotated from US-1/US-2 due to connection issues)
+- Credentials in: scripts/proxy.env
+- Rotation script: scripts/proxy-rotate.sh (auto-tests and rotates on failure)
+- Pattern: jxrtqjko-US-1 through US-5 for subnets
 
 **Measure → Learn → Optimize**
 - ALL actions should be measured somehow (even if over long timeframes)

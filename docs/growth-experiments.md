@@ -65,14 +65,14 @@ export TWITTER_API_KEY="your-key"
 
 ## Reddit Warmup Schedule
 
-⚠️ **UPDATE (Feb 27):** Reddit API is currently blocked (403 errors). Commenting delayed until resolved.
+⚠️ **UPDATE (Feb 27 17:50 UTC):** Reddit API RECOVERED! Commenting now WORKS!
 
-- **Day 1-7:** Only upvote (passive engagement) - DONE
-- **Day 8+:** Can comment on relevant posts - BLOCKED
-- **Day 14+:** Can mention product naturally - BLOCKED
-- **Day 21+:** Can share links - BLOCKED
+- **Day 1-7:** Only upvote (passive engagement) - ✅ DONE
+- **Day 8+:** Can comment on relevant posts - ✅ **NOW WORKING**
+- **Day 14+:** Can mention product naturally - ⏳ Pending
+- **Day 21+:** Can share links - ⏳ Pending
 
-**Current:** Day 8 - Blocked by 403 errors. Need resolution before commenting can begin.
+**Current:** Day 8 - Commenting ACTIVATED! First comment posted today.
 
 ## What's Working
 

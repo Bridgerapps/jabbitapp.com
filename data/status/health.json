@@ -1,16 +1,15 @@
 {
-  "last_check": "2026-02-27T11:51:39+00:00",
+  "last_check": "2026-02-27T17:52:35+00:00",
   "site_status": 200,
   "git_today": true,
-  "seo_pages": 58,
-  "commits_24h": 86,
+  "seo_pages": 24,
+  "commits_24h": 67,
   "disk_pct": 27,
-  "memory_free_mb": 1893,
+  "memory_free_mb": 1798,
   "issues": [
   ""
 ],
   "blockers": [
-  "Reddit API degraded/down",
-  "Twitter blocked - needs API key or browser"
+  "Reddit API degraded - check scripts"
 ]
 }

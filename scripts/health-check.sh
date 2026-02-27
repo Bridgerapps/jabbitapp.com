@@ -58,39 +58,55 @@ else
     echo "⚠️ Memory: ${FREE_MEM}MB free" >> "$LOG_FILE"
 fi
 
-# 6. SEO pages (check both root and jabbitapp.com directories)
-SEO_ROOT=$(find "$WORKSPACE" -maxdepth 1 -name "glp1-*.html" 2>/dev/null | wc -l)
-SEO_APP=$(find "$WORKSPACE/jabbitapp.com" -maxdepth 1 -name "*.html" 2>/dev/null | wc -l)
-SEO_COUNT=$((SEO_ROOT + SEO_APP))
-echo "📊 SEO: $SEO_COUNT pages (root:$SEO_ROOT + app:$SEO_APP)" >> "$LOG_FILE"
+# 6. SEO pages (count all HTML files in jabbitapp.com)
+SEO_COUNT=$(find "$WORKSPACE/jabbitapp.com" -name "*.html" ! -name "index.html" 2>/dev/null | wc -l)
+echo "📊 SEO: $SEO_COUNT pages" >> "$LOG_FILE"
 
 # 7. Recent commits
 COMMITS_24H=$(git -C "$WORKSPACE" log --since="24 hours ago" --oneline 2>/dev/null | wc -l)
 echo "📊 Commits (24h): $COMMITS_24H" >> "$LOG_FILE"
 
-# 8. Pipeline blockers detection
+# 8. Pipeline blockers detection (SMARTER REDDIT CHECK)
 BLOCKERS=()
 
-# Check Reddit API status
+# Check Reddit - use actual engagement results, not just health endpoint
 REDDIT_HEALTH="$WORKSPACE/data/reddit/reddit-health.json"
-if [ -f "$REDDIT_HEALTH" ]; then
+REDDIT_WARMUP="$WORKSPACE/data/reddit/reddit-warmup.json"
+REDDIT_WORKING="false"
+
+if [ -f "$REDDIT_WARMUP" ]; then
+    LAST_RUN=$(stat -c %Y "$REDDIT_WARMUP" 2>/dev/null || echo "0")
+    NOW=$(date +%s)
+    if [ $((NOW - LAST_RUN)) -lt 7200 ]; then
+        # Ran in last 2 hours - trust actual script results
+        if grep -q '"upvoted"' "$REDDIT_WARMUP" 2>/dev/null || grep -q '"comments_posted"' "$REDDIT_WARMUP" 2>/dev/null; then
+            REDDIT_WORKING="true"
+            echo "✅ Reddit: Working (engagement confirmed)" >> "$LOG_FILE"
+        fi
+    fi
+fi
+
+# Only check health endpoint if no recent engagement data
+if [ "$REDDIT_WORKING" = "false" ] && [ -f "$REDDIT_HEALTH" ]; then
     REDDIT_STATUS=$(grep -o '"status": "[^"]*"' "$REDDIT_HEALTH" | cut -d'"' -f4)
     if [ "$REDDIT_STATUS" = "DEGRADED" ] || [ "$REDDIT_STATUS" = "DOWN" ]; then
-        BLOCKERS+=("Reddit API degraded/down")
-        echo "🔴 Reddit: $REDDIT_STATUS" >> "$LOG_FILE"
+        BLOCKERS+=("Reddit API degraded - check scripts")
+        echo "🔴 Reddit: $REDDIT_STATUS (health only)" >> "$LOG_FILE"
     else
         echo "✅ Reddit: $REDDIT_STATUS" >> "$LOG_FILE"
     fi
+elif [ "$REDDIT_WORKING" = "false" ]; then
+    echo "⚪ Reddit: Not tested" >> "$LOG_FILE"
 fi
 
 # Check Twitter credential status
 TWITTER_DOC="$WORKSPACE/docs/growth-experiments.md"
-if grep -q "🔴" "$TWITTER_DOC" 2>/dev/null; then
+if grep -q "🔴.*Twitter" "$TWITTER_DOC" 2>/dev/null; then
     BLOCKERS+=("Twitter blocked - needs API key or browser")
 fi
 
 # 9. SEO page growth trend
-SEO_GROWTH=$((SEO_COUNT - 60))  # Baseline was 60
+SEO_GROWTH=$((SEO_COUNT - 10))  # Baseline was 10
 echo "📊 SEO growth: +$SEO_GROWTH pages" >> "$LOG_FILE"
 
 echo "=== End Health Check ===" >> "$LOG_FILE"

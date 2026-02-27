@@ -1,6 +1,7 @@
 #!/bin/bash
-# Reddit Circuit Breaker with Auto-Recovery
+# Reddit Circuit Breaker with Auto-Recovery + Proxy Rotation
 # Handles 403 errors with exponential backoff and auto-recovery
+# Also rotates proxies on connection failures
 
 WORKSPACE="/home/jabbit/.openclaw/workspace"
 CIRCUIT_FILE="$WORKSPACE/data/reddit/.circuit_breaker"

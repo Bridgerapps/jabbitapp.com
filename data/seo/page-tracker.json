@@ -1,0 +1,92 @@
+{
+  "last_updated": "2026-02-27T17:50:00Z",
+  "total_pages": 15,
+  "topics": [
+    {
+      "topic": "bpc-157",
+      "filename": "bpc-157-complete-guide.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "compounded-tirzepatide",
+      "filename": "compounded-tirzepatide-guide.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "glp-1-injection-tracking",
+      "filename": "glp-1-injection-tracking-guide.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "glp-1-side-effects",
+      "filename": "glp-1-side-effects-guide.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "glp-1-kidney-health",
+      "filename": "glp1-kidney-health-guide.html",
+      "created": "2026-02-27"
+    },
+    {
+      "topic": "glp-1-serum-levels",
+      "filename": "glp1-serum-levels-explained.html",
+      "created": "2026-02-27"
+    },
+    {
+      "topic": "injection-site-rotation",
+      "filename": "injection-site-rotation-science.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "peptide-reconstitution",
+      "filename": "peptide-reconstitution-guide.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "peptide-site-rotation",
+      "filename": "peptide-site-rotation-guide.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "peptide-storage-stability",
+      "filename": "peptide-storage-stability-guide.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "semaglutide-half-life",
+      "filename": "semaglutide-half-life.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "semaglutide-vs-tirzepatide",
+      "filename": "semaglutide-vs-tirzepatide.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "tb-500-thymosin",
+      "filename": "tb-500-thymosin-beta-guide.html",
+      "created": "2026-02-24"
+    },
+    {
+      "topic": "glp-1-alcohol",
+      "filename": "glp1-alcohol-guide.html",
+      "created": "2026-02-27"
+    },
+    {
+      "topic": "glp-1-fatigue",
+      "filename": "glp1-fatigue-guide.html",
+      "created": "2026-02-27"
+    }
+  ],
+  "suggested_topics": [
+    "glp-1-fatigue",
+    "glp-1-hair-loss",
+    "glp-1-constipation",
+    "glp-1-cost-without-insurance",
+    "glp-1-nausea",
+    "glp-1-dosing",
+    "glp-1-vs-ozempic",
+    "tirzepatide-side-effects",
+    "wegovy-vs-ozempic"
+  ]
+}
