@@ -45,7 +45,7 @@ for SUB in $TARGET_SUBS; do
   RESP=$(mktemp)
   curl -s -o "$RESP" -x "$REDDIT_PROXY_URL" \
     -H "Cookie: reddit_session=${COOKIE}" -H "User-Agent: $UA" -H 'Accept: application/json' \
-    --max-time 30 "https://www.reddit.com/r/${SUB}/new.json?limit=30" > "$RESP"
+    --max-time 30 "https://www.reddit.com/r/${SUB}/new.json?limit=30"
   
   # Find posts to upvote (skip our own, low engagement, too old)
   IDS=$(python3 - <<PY "$RESP"

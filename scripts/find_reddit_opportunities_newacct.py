@@ -23,6 +23,8 @@ MAX_AGE_HOURS = float(os.getenv("NEWACCT_MAX_AGE_HOURS", "18"))
 MIN_AGE_MINUTES = float(os.getenv("NEWACCT_MIN_AGE_MINUTES", "20"))
 MAX_PER_SUB = int(os.getenv("NEWACCT_MAX_PER_SUB", "3"))
 MAX_TOTAL = int(os.getenv("NEWACCT_MAX_TOTAL", "20"))
+DISCOVERY_USE_COOKIE = os.getenv("REDDIT_DISCOVERY_USE_COOKIE", "false").lower() in ("1", "true", "yes")
+DISCOVERY_COOKIE_FALLBACK = os.getenv("REDDIT_DISCOVERY_COOKIE_FALLBACK", "true").lower() in ("1", "true", "yes")
 
 
 def _load_env(path: str) -> dict:
@@ -43,7 +45,7 @@ def _load_env(path: str) -> dict:
     return out
 
 
-def _curl_json(url: str, proxy: str, cookie: str) -> dict:
+def _curl_json(url: str, proxy: str, cookie: str = "") -> dict:
     ua = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36"
     cmd = ["curl", "-sS", "--max-time", "30", "-A", ua, "-H", "Accept: application/json"]
     if proxy:
@@ -101,7 +103,23 @@ def main() -> int:
     reddit_env = _load_env(f"{ws}/scripts/reddit.env")
 
     proxy = proxy_env.get("REDDIT_PROXY_URL", "")
+    if (not proxy) or ("${" in proxy):
+        host = proxy_env.get("PROXY_HOST", "")
+        port = proxy_env.get("PROXY_PORT", "80")
+        user = proxy_env.get("PROXY_USER", "")
+        pwd = proxy_env.get("PROXY_PASS", "")
+        if host and user:
+            proxy = f"http://{user}:{pwd}@{host}:{port}"
+
     username = reddit_env.get("REDDIT_USERNAME", "LifespanMaxer")
+
+    use_cookie_discovery = DISCOVERY_USE_COOKIE
+    cookie_fallback = DISCOVERY_COOKIE_FALLBACK
+    if "REDDIT_DISCOVERY_USE_COOKIE" in reddit_env:
+        use_cookie_discovery = reddit_env.get("REDDIT_DISCOVERY_USE_COOKIE", "false").lower() in ("1", "true", "yes")
+    if "REDDIT_DISCOVERY_COOKIE_FALLBACK" in reddit_env:
+        cookie_fallback = reddit_env.get("REDDIT_DISCOVERY_COOKIE_FALLBACK", "true").lower() in ("1", "true", "yes")
+
     cookie = ""
     try:
         with open(f"{ws}/.reddit-session", "r", encoding="utf-8") as f:
@@ -118,8 +136,14 @@ def main() -> int:
 
     for sub in TARGET_SUBS:
         url = f"https://www.reddit.com/r/{sub}/new.json?limit=40"
-        data = _curl_json(url, proxy, cookie)
+        # Discovery defaults to no-cookie reads to reduce account linkage.
+        data = _curl_json(url, proxy, cookie if use_cookie_discovery else "")
         children = ((data.get("data") or {}).get("children") or [])[:40]
+
+        # Optional fallback to cookie-auth discovery when public reads are blocked/empty.
+        if not children and cookie_fallback and cookie and not use_cookie_discovery:
+            data = _curl_json(url, proxy, cookie)
+            children = ((data.get("data") or {}).get("children") or [])[:40]
 
         sub_candidates = []
         for p in children:
