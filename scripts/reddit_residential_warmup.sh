@@ -5,11 +5,11 @@ set -euo pipefail
 
 WS="/home/jabbit/.openclaw/workspace"
 source "$WS/scripts/proxy.env"
-source "$WS/scripts/reddit_ladder_params.sh" env
 if [ -f "$WS/scripts/reddit.env" ]; then
   # shellcheck disable=SC1090
   source "$WS/scripts/reddit.env"
 fi
+source "$WS/scripts/reddit_ladder_params.sh" env
 REDDIT_USERNAME="${REDDIT_USERNAME:-LifespanMaxer}"
 
 COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session")
