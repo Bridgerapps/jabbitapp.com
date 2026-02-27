@@ -1,0 +1,50 @@
+/* Jabbit shared site styles (lightweight on top of Tailwind CDN)
+   Goal: consistent nav/footer + readable long-form content (guides/blog). */
+
+:root{
+  --brand-50:#f0fdfa;
+  --brand-100:#ccfbf1;
+  --brand-200:#99f6e4;
+  --brand-300:#5eead4;
+  --brand-400:#2dd4bf;
+  --brand-500:#14b8a6;
+  --brand-600:#0d9488;
+  --brand-700:#0f766e;
+  --brand-800:#115e59;
+  --brand-900:#134e4a;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+/* Ensure anchor jumps account for fixed nav */
+section[id] { scroll-margin-top: 92px; }
+
+/* Long-form typography (prose without bringing in typography plugin) */
+.prose { font-size: 1.05rem; line-height: 1.85; color: #374151; }
+.prose p { margin: 0 0 1.15rem; }
+.prose ul, .prose ol { margin: 0 0 1.15rem; padding-left: 1.4rem; }
+.prose li { margin: 0.35rem 0; }
+.prose a { color: var(--brand-700); text-decoration: underline; text-underline-offset: 3px; }
+.prose a:hover { color: var(--brand-800); }
+.prose strong { color: #111827; font-weight: 650; }
+.prose h2 { margin-top: 2.2rem; margin-bottom: 0.8rem; font-size: 1.75rem; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; color: #111827; }
+.prose h3 { margin-top: 1.6rem; margin-bottom: 0.65rem; font-size: 1.35rem; line-height: 1.35; font-weight: 750; letter-spacing: -0.01em; color: #111827; }
+.prose h4 { margin-top: 1.3rem; margin-bottom: 0.5rem; font-size: 1.1rem; line-height: 1.45; font-weight: 700; color: #111827; }
+.prose blockquote { margin: 1.4rem 0; padding: 0.9rem 1rem; border-left: 4px solid #e5e7eb; background: #f9fafb; color: #374151; border-radius: 0.75rem; }
+.prose code { font-size: 0.95em; background: #f3f4f6; padding: 0.15rem 0.35rem; border-radius: 0.4rem; }
+.prose hr { border: 0; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
+
+/* Callouts used across guides */
+.callout { border: 1px solid #e5e7eb; background: #fff; border-radius: 1rem; padding: 1rem 1.1rem; }
+.callout--brand { border-color: #99f6e4; background: linear-gradient(135deg, rgba(240,253,250,1) 0%, rgba(255,255,255,1) 65%); }
+.callout--warning { border-color: #fed7aa; background: linear-gradient(135deg, rgba(255,247,237,1) 0%, rgba(255,255,255,1) 65%); }
+.callout__title { font-weight: 750; color: #111827; margin-bottom: 0.25rem; }
+.callout__text { color: #374151; }
+
+/* Simple card hover used on internal-link grids */
+.card-hover { transition: box-shadow 200ms ease, transform 200ms ease, border-color 200ms ease; }
+.card-hover:hover { transform: translateY(-1px); box-shadow: 0 12px 30px rgba(17,24,39,0.08); border-color: rgba(20,184,166,0.35); }
+
+/* Footer small print */
+.site-disclaimer { font-size: 0.875rem; line-height: 1.5; color: #6b7280; }
