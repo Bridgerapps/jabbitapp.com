@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Reconstitute Peptides: The Complete Guide | Jabbit Blog</title>
+  <meta name="description" content="Learn how to reconstitute peptides correctly with real dilution math examples. Avoid the costly mistakes that waste expensive vials.">
+  <link rel="canonical" href="https://jabbitapp.com/blog/peptide-reconstitution-guide">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .prose h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #111827; }
+    .prose h3 { font-size: 1.375rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; color: #1f2937; }
+    .prose p { margin-bottom: 1.25rem; line-height: 1.75; color: #374151; }
+    .prose ul { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+    .prose li { margin-bottom: 0.5rem; color: #374151; }
+    .prose strong { color: #111827; font-weight: 600; }
+    .toc-link:hover { color: #059669; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="/" class="flex items-center space-x-3">
+          <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Jabbit</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/blog/" class="text-gray-900 font-medium transition">← Back to Blog</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-16 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/peptide-reconstitution.jpg');"></div>
+    <div class="absolute inset-0 bg-gradient-to-br opacity-80 from-emerald-600 via-teal-700 to-cyan-800"></div>
+    <div class="absolute inset-0 opacity-10">
+      <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <pattern id="grid1" width="10" height="10" patternUnits="userSpaceOnUse">
+          <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
+        </pattern>
+        <rect width="100" height="100" fill="url(#grid1)"/>
+      </svg>
+    </div>
+    <div class="relative max-w-4xl mx-auto px-6 text-center">
+      <div class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-white/90 text-sm font-medium mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-300 mr-2"></span>
+        11 min read
+      </div>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        The Math That Almost Broke Me: A Peptide Reconstitution Story
+      </h1>
+      <p class="text-xl text-emerald-100 max-w-2xl mx-auto mb-8">
+        Marcus stared at his first vial of BPC-157—a $140 investment in his recovering shoulder—and realized he had no idea what he was doing. This is what he wishes he'd known.
+      </p>
+      <div class="flex items-center justify-center space-x-4 text-white/80">
+        <span class="font-medium">Jabbit Team</span>
+        <span>·</span>
+        <span>February 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <article class="max-w-3xl mx-auto px-6 py-12">
+    <!-- Table of Contents -->
+    <div class="bg-brand-50 rounded-2xl p-6 mb-12 border border-brand-100">
+      <h3 class="font-semibold text-gray-900 mb-4">In this guide:</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#story" class="toc-link text-gray-600 hover:text-brand-600 transition">Marcus's Story: The $140 Mistake</a></li>
+        <li><a href="#basics" class="toc-link text-gray-600 hover:text-brand-600 transition">What Is Reconstitution, Really?</a></li>
+        <li><a href="#supplies" class="toc-link text-gray-600 hover:text-brand-600 transition">The Supplies You Actually Need</a></li>
+        <li><a href="#math" class="toc-link text-gray-600 hover:text-brand-600 transition">The Dilution Math That Matters</a></li>
+        <li><a href="#step-by-step" class="toc-link text-gray-600 hover:text-brand-600 transition">Step-by-Step Reconstitution</a></li>
+        <li><a href="#calculator" class="toc-link text-gray-600 hover:text-brand-600 transition">Using the Reconstitution Calculator</a></li>
+        <li><a href="#mistakes" class="toc-link text-gray-600 hover:text-brand-600 transition">The Six Costly Mistakes</a></li>
+        <li><a href="#storage" class="toc-link text-gray-600 hover:text-brand-600 transition">After Reconstitution: Storage Rules</a></li>
+      </ul>
+    </div>
+
+    <div class="prose max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700">
+        The vial arrived on a Tuesday. Marcus had ordered it three weeks earlier—five milligrams of BPC-157, lyophilized powder in a tiny amber vial that felt lighter than air. His rotator cuff injury, sustained six months ago during a climbing fall, had resisted everything: physical therapy, cortisone shots, stubborn optimism. A climbing buddy had mentioned this "healing peptide" in hushed tones, and after weeks of research, Marcus pulled the trigger.
+      </p>
+
+      <p>
+        Now, holding the vial in his kitchen at 11 PM, he realized a critical gap in his preparation. He had the peptide. He had sterile water. He had insulin syringes. What he didn't have was confidence. The kind that comes from knowing you won't ruin $140 of delicate biochemistry with a simple math error.
+      </p>
+
+      <h2 id="story">The Fear of the First Mix</h2>
+
+      <p>
+        Marcus opened Reddit. He searched. He found twenty different answers to the same question: "How much water do I add?" Some said 1 mL. Others said 2 mL. One confident commenter insisted on exactly 1.8 mL for "optimal concentration." The more he read, the more confused he became.
+      </p>
+
+      <p>
+        Here's what nobody explained clearly: the volume of water you add determines your concentration. And your concentration determines how much liquid you draw into your syringe to get your desired dose. Get this wrong, and you're either underdosing (wasting weeks of potential healing) or overdosing (wasting money and potentially causing side effects).
+      </p>
+
+      <p>
+        Marcus almost gave up that night. He put the vial in his refrigerator and walked away, defeated by simple dilution math. He returned to it three days later—after he'd done the work you're about to have handed to you.
+      </p>
+
+      <h2 id="basics">What Is Reconstitution, Really?</h2>
+
+      <p>
+        Peptides arrive in a dehydrated state called lyophilized powder. This isn't just a shipping convenience—lyophilization (freeze-drying) is a preservation method that removes water while maintaining the peptide's structural integrity. Without moisture, the peptide remains stable at room temperature for months or even years.
+      </p>
+
+      <p>
+        But you can't inject powder. Reconstitution is simply the process of adding sterile liquid (usually bacteriostatic water) to dissolve the peptide into an injectable solution. The peptide molecules don't change—they simply hydrate and become suspended in the liquid.
+      </p>
+
+      <p>
+        Research on peptide stability found that properly reconstituted peptides maintain >95% potency for 28 days when refrigerated. The key word: properly. Temperature matters, light exposure matters, and—as Marcus discovered—the math definitely matters.
+      </p>
+
+      <h2 id="supplies">The Supplies You Actually Need</h2>
+
+      <p>
+        Before you touch that vial, gather your equipment. Running around mid-process is when accidents happen.
+      </p>
+
+      <p><strong>Required supplies:</strong></p>
+
+      <ul>
+        <li><strong>Bacteriostatic water.</strong> Not distilled water. Not tap water. Bacteriostatic water contains 0.9% benzyl alcohol, which prevents bacterial growth for up to 28 days after reconstitution. Physiologic saline is sometimes used but has a shorter stability window.</li>
+        <li><strong>Sterile syringes for reconstitution.</strong> Typically 1-3 mL syringes with needles (23-25 gauge is fine—you're just drawing water and injecting into the vial).</li>
+        <li><strong>Insulin syringes for dosing.</strong> U-100 insulin syringes with half-unit markings (typically 0.3-1 mL capacity). The fine gradations matter for accurate dosing.</li>
+        <li><strong>Alcohol prep pads.</strong> 70% isopropyl alcohol for sterilizing vial tops and injection sites.</li>
+        <li><strong>A sharps container.</strong> For safe needle disposal.</li>
+      </ul>
+
+      <p>
+        Optional but recommended: a reconstitution calculator app (like what's built into Jabbit) and a clean, well-lit workspace. Marcus learned that kitchen counters at midnight with overhead fluorescent lights are not ideal.
+      </p>
+
+      <h2 id="math">The Dilution Math That Matters</h2>
+
+      <p>
+        Here's the formula that changes everything:
+      </p>
+
+      <p class="bg-gray-100 p-4 rounded-lg font-mono text-sm my-6">
+        Concentration (mg/mL) = Total Peptide Mass (mg) ÷ Total Water Volume (mL)
+      </p>
+
+      <p>
+        Marcus's vial contained 5 mg of BPC-157. If he added 2 mL of bacteriostatic water, his concentration would be 2.5 mg/mL. This means every 0.1 mL (10 units on an insulin syringe) would contain 250 mcg of peptide.
+      </p>
+
+      <p><strong>Real example calculations:</strong></p>
+
+      <ul>
+        <li><strong>5 mg vial + 2 mL water = 2.5 mg/mL</strong> (or 250 mcg per 0.1 mL/10 units)</li>
+        <li><strong>5 mg vial + 1 mL water = 5 mg/mL</strong> (or 500 mcg per 0.1 mL/10 units)</li>
+        <li><strong>10 mg vial + 2 mL water = 5 mg/mL</strong> (or 500 mcg per 0.1 mL/10 units)</li>
+        <li><strong>2 mg vial + 1 mL water = 2 mg/mL</strong> (or 200 mcg per 0.1 mL/10 units)</li>
+      </ul>
+
+      <p>
+        The standard BPC-157 dosing protocol is 250-500 mcg daily. Looking at Marcus's options: with 2 mL water, he'd draw 10-20 units (0.1-0.2 mL) per dose. With 1 mL water, he'd draw 5-10 units. Both achieve the same dose—the difference is simply the volume of liquid being injected.
+      </p>
+
+      <p>
+        Why does this matter? Smaller volumes are generally more comfortable for subcutaneous injection. But too concentrated can make small dosing errors more significant. A 1-unit error at 5 mg/mL means a 50 mcg dose difference; at 2.5 mg/mL, it means only 25 mcg.
+      </p>
+
+      <h2 id="step-by-step">Step-by-Step Reconstitution</h2>
+
+      <p>
+        Once you understand the math, the physical process is straightforward. Here's the exact protocol Marcus now follows:
+      </p>
+
+      <h3>Step 1: Clean Everything</h3>
+      <p>
+        Wash your hands thoroughly. Wipe down your workspace. Alcohol-swab the tops of both the bacteriostatic water vial and your peptide vial. Let the alcohol dry for 30 seconds—injecting through wet alcohol can contaminate your solution.
+      </p>
+
+      <h3>Step 2: Draw Your Water</h3>
+      <p>
+        Using your reconstitution syringe, draw the desired amount of bacteriostatic water. Pull back to create air space equal to your water volume. For 2 mL: draw to the 2 mL mark, then pull back to about the 4 mL mark. This air bubble makes the next step easier.
+      </p>
+
+      <h3>Step 3: The Slow Introduction</h3>
+      <p>
+        Invert the peptide vial (hold it upside down). Insert the needle through the rubber stopper and angle it toward the vial wall—not directly at the powder. Slowly push the plunger, directing the water to run down the glass rather than spraying onto the lyophilized powder.
+      </p>
+
+      <p>
+        Why? Lyophilized peptides are fragile. Direct high-pressure streams can cause peptide degradation. A 2018 study in <em>International Journal of Pharmaceutics</em> demonstrated that peptides subjected to mechanical stress during reconstitution showed measurable structural changes. Gentle handling preserves potency.
+      </p>
+
+      <h3>Step 4: The Waiting Game</h3>
+      <p>
+        Don't shake. Don't swirl aggressively. Simply let the vial sit undisturbed. The powder will dissolve on its own, typically within 2-5 minutes. Some peptides dissolve faster than others, but rushing this process helps nobody. Marcus sets a timer and makes coffee.
+      </p>
+
+      <h3>Step 5: Visual Inspection</h3>
+      <p>
+        Once dissolved, inspect your solution. It should be clear or slightly cloudy. Any particles, floating debris, or unusual coloration means something went wrong. Do not use compromised peptides—return them if possible, discard if not. $140 is expensive, but an infection is worse.
+      </p>
+
+      <h3>Step 6: Label and Store</h3>
+      <p>
+        Immediately label your vial with the peptide name, concentration, reconstitution date, and expiration (28 days from reconstitution for bacteriostatic water). Store in the refrigerator (2-8°C), never the freezer. Freezing causes peptide aggregation and loss of potency.
+      </p>
+
+      <h2 id="calculator">Using the Reconstitution Calculator</h2>
+
+      <p>
+        After his initial confusion, Marcus started using a reconstitution calculator for every new peptide. The process is simple:
+      </p>
+
+      <ul>
+        <li>Enter your vial's total peptide amount (e.g., 5 mg)</li>
+        <li>Enter how much bacteriostatic water you're adding (e.g., 2 mL)</li>
+        <li>Enter your desired dose (e.g., 250 mcg)</li>
+        <li>The calculator shows exactly how many units to draw on your insulin syringe</li>
+      </ul>
+
+      <p>
+        This eliminates mental math errors entirely. No more double-checking. No more second-guessing. No more fear of wasting a vial.
+      </p>
+
+      <p>
+        The Jabbit app includes a built-in reconstitution calculator that saves your peptide profiles. Once you configure a peptide, it remembers your concentration and calculates your dose with one tap. Marcus now reconstitutes with confidence because the math is handled for him.
+      </p>
+
+      <h2 id="mistakes">The Six Costly Mistakes</h2>
+
+      <p>
+        Through research and painful experience, Marcus identified the most common reconstitution failures:
+      </p>
+
+      <p><strong>1. Using the wrong water.</strong> Tap water introduces bacteria and endotoxins. Distilled water lacks bacteriostatic preservatives. Use only bacteriostatic water or sterile saline for peptides.
+      </p>
+
+      <p><strong>2. Shaking the vial.</strong> Mechanical agitation damages peptide bonds. Let dissolution happen naturally. Patience preserves potency.
+      </p>
+
+      <p><strong>3. Miscalculating concentration.</strong> The most expensive error is thinking you understand the math when you don't. Double-check with a calculator. Write it down.
+      </p>
+
+      <p><strong>4. Storing improperly.</strong> Heat and light are peptide killers. Refrigerate immediately after reconstitution. Use an amber vial or wrap in foil if your vial is clear.
+      </p>
+
+      <p><strong>5. Reusing needles.</strong> Blunt needles hurt more and can introduce contamination. Use fresh needles for every injection.
+      </p>
+
+      <p><strong>6. Ignoring expiration dates.</strong> Lyophilized peptides last years. Reconstituted peptides last about 28 days. Track your reconstitution date and discard expired vials.
+      </p>
+
+      <h2 id="storage">After Reconstitution: Storage Rules</h2>
+
+      <p>
+        Proper storage is the difference between a peptide that works and one that doesn't. Research in <em>Journal of Peptide Science</em> (2019) found that reconstituted peptides stored at 4°C (refrigerator temperature) maintained >90% potency for 30 days, while room-temperature storage showed significant degradation by day 14.
+      </p>
+
+      <p>
+        Critical storage guidelines:
+      </p>
+
+      <ul>
+        <li><strong>Temperature:</strong> 2-8°C (standard refrigerator)</li>
+        <li><strong>Light:</strong> Minimize exposure. Store in original packaging or wrap in aluminum foil if vial is clear glass</li>
+        <li><strong>Position:</strong> Upright or on side—doesn't matter. Avoid freezing</li>
+        <li><strong>Duration:</strong> Maximum 28 days with bacteriostatic water; 7 days with sterile saline</li>
+      </ul>
+
+      <p>
+        Marcus experienced the light sensitivity issue firsthand when he left a reconstituted vial on his bathroom counter for three hours. Whether it caused measurable degradation, he'll never know. But he noticed the solution looked slightly cloudier than his previous batches, and he's been religious about light protection ever since.
+      </p>
+
+      <h2>From Math Anxiety to Confidence</h2>
+
+      <p>
+        Marcus's shoulder recovered. It took twelve weeks of BPC-157, physical therapy, and patience. But the ritual that started it all—carefully adding bacteriostatic water, watching the powder dissolve, calculating his precise dose—became a source of confidence rather than anxiety.
+      </p>
+
+      <p>
+        Reconstitution isn't complicated. It's just precise. The peptide community sometimes makes it feel like alchemy, with secret knowledge passed between insiders. It isn't. It's basic chemistry: dissolve the powder, know your concentration, draw the right volume. Anyone can do it correctly with the right information.
+      </p>
+
+      <p>
+        Whether you're reconstituting BPC-157 for injury recovery, TB-500 for tissue repair, or any other research peptide, the principles remain the same. Understand the math, follow the protocol, protect your investment. That $140 vial contains molecules that could meaningfully change your recovery—it deserves your full attention during the five minutes it takes to bring it back to life.
+      </p>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="mt-16 bg-gradient-to-br from-emerald-600 to-teal-800 rounded-3xl p-8 md:p-12 text-center text-white">
+      <h3 class="text-2xl md:text-3xl font-bold mb-4">Never Second-Guess Your Reconstitution Math Again</h3>
+      <p class="text-emerald-100 text-lg mb-8 max-w-xl mx-auto">
+        Jabbit's built-in reconstitution calculator remembers your peptide concentrations and calculates exact dosing with one tap. No more math anxiety.
+      </p>
+      <a href="/#download" class="inline-flex items-center px-8 py-4 bg-white text-emerald-700 font-semibold rounded-xl hover:bg-emerald-50 transition shadow-lg">
+        Get Jabbit for iOS
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 bg-gray-900 text-white mt-16">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <a href="/" class="flex items-center space-x-3">
+            <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <span class="text-xl font-bold">Jabbit</span>
+          </a>
+          <p class="text-gray-400 mt-4 max-w-md">
+            The complete peptide tracking toolkit for iOS. Private, powerful, and beautifully designed.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="/#features" class="hover:text-white transition">Features</a></li>
+            <li><a href="/#pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="/#download" class="hover:text-white transition">Download</a></li>
+            <li><a href="/blog/" class="hover:text-white transition">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="/privacy/" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="/terms/" class="hover:text-white transition">Terms of Service</a></li>
+            <li><a href="mailto:hello@jabbitapp.com" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Jabbit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
