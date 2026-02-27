@@ -14,6 +14,13 @@ echo "=== Health Check $(date) ===" >> "$LOG_FILE"
 
 ISSUES=()
 
+# Defaults so JSON always has stable keys
+REDDIT_STATUS="UNKNOWN"
+REDDIT_FRESH="false"
+REDDIT_AGE="null"
+KARMA_TOTAL="null"
+KARMA_STALE="true"
+
 # 1. Site health
 SITE_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://www.jabbitapp.com 2>/dev/null || echo "000")
 if [ "$SITE_CODE" = "200" ]; then
@@ -58,9 +65,10 @@ else
     echo "⚠️ Memory: ${FREE_MEM}MB free" >> "$LOG_FILE"
 fi
 
-# 6. SEO pages (count all HTML files in jabbitapp.com)
-SEO_COUNT=$(find "$WORKSPACE/jabbitapp.com" -name "*.html" ! -name "index.html" 2>/dev/null | wc -l)
-echo "📊 SEO: $SEO_COUNT pages" >> "$LOG_FILE"
+# 6. SEO pages (single source of truth)
+SEO_COUNT=$(bash "$WORKSPACE/scripts/seo-count.sh" 2>/dev/null | tr -d ' ' || echo 0)
+SEO_META=$(bash "$WORKSPACE/scripts/seo-count.sh" --json 2>/dev/null || echo '{}')
+echo "📊 SEO: $SEO_COUNT pages (method=$(echo "$SEO_META" | jq -r '.method // "unknown"'))" >> "$LOG_FILE"
 
 # 7. Recent commits
 COMMITS_24H=$(git -C "$WORKSPACE" log --since="24 hours ago" --oneline 2>/dev/null | wc -l)
@@ -69,33 +77,25 @@ echo "📊 Commits (24h): $COMMITS_24H" >> "$LOG_FILE"
 # 8. Pipeline blockers detection (SMARTER REDDIT CHECK)
 BLOCKERS=()
 
-# Check Reddit - use actual engagement results, not just health endpoint
-REDDIT_HEALTH="$WORKSPACE/data/reddit/reddit-health.json"
-REDDIT_WARMUP="$WORKSPACE/data/reddit/reddit-warmup.json"
-REDDIT_WORKING="false"
+# Check Reddit telemetry (canonical normalized output)
+REDDIT_CANON=$(bash "$WORKSPACE/scripts/reddit-telemetry.sh" 2>/dev/null || true)
+if [ -n "$REDDIT_CANON" ] && [ -f "$REDDIT_CANON" ]; then
+    REDDIT_STATUS=$(jq -r '.status // "UNKNOWN"' "$REDDIT_CANON")
+    REDDIT_FRESH=$(jq -r '.fresh // false' "$REDDIT_CANON")
+    REDDIT_AGE=$(jq -r '.age_seconds // null' "$REDDIT_CANON")
+    KARMA_TOTAL=$(jq -r '.karma.total // null' "$REDDIT_CANON")
+    KARMA_STALE=$(jq -r '.karma.stale // true' "$REDDIT_CANON")
 
-if [ -f "$REDDIT_WARMUP" ]; then
-    LAST_RUN=$(stat -c %Y "$REDDIT_WARMUP" 2>/dev/null || echo "0")
-    NOW=$(date +%s)
-    if [ $((NOW - LAST_RUN)) -lt 7200 ]; then
-        # Ran in last 2 hours - trust actual script results
-        if grep -q '"upvoted"' "$REDDIT_WARMUP" 2>/dev/null || grep -q '"comments_posted"' "$REDDIT_WARMUP" 2>/dev/null; then
-            REDDIT_WORKING="true"
-            echo "✅ Reddit: Working (engagement confirmed)" >> "$LOG_FILE"
-        fi
-    fi
-fi
-
-# Only check health endpoint if no recent engagement data
-if [ "$REDDIT_WORKING" = "false" ] && [ -f "$REDDIT_HEALTH" ]; then
-    REDDIT_STATUS=$(grep -o '"status": "[^"]*"' "$REDDIT_HEALTH" | cut -d'"' -f4)
-    if [ "$REDDIT_STATUS" = "DEGRADED" ] || [ "$REDDIT_STATUS" = "DOWN" ]; then
+    if [ "$REDDIT_FRESH" != "true" ]; then
+        BLOCKERS+=("Reddit telemetry stale")
+        echo "🟠 Reddit: $REDDIT_STATUS (stale; age_s=$REDDIT_AGE)" >> "$LOG_FILE"
+    elif [ "$REDDIT_STATUS" = "DEGRADED" ] || [ "$REDDIT_STATUS" = "DOWN" ]; then
         BLOCKERS+=("Reddit API degraded - check scripts")
-        echo "🔴 Reddit: $REDDIT_STATUS (health only)" >> "$LOG_FILE"
+        echo "🔴 Reddit: $REDDIT_STATUS (age_s=$REDDIT_AGE)" >> "$LOG_FILE"
     else
-        echo "✅ Reddit: $REDDIT_STATUS" >> "$LOG_FILE"
+        echo "✅ Reddit: $REDDIT_STATUS (age_s=$REDDIT_AGE)" >> "$LOG_FILE"
     fi
-elif [ "$REDDIT_WORKING" = "false" ]; then
+else
     echo "⚪ Reddit: Not tested" >> "$LOG_FILE"
 fi
 
@@ -118,6 +118,11 @@ cat > "$STATUS_FILE" << EOF
   "site_status": $SITE_CODE,
   "git_today": $([ "$LAST_PUSH" = "$TODAY" ] && echo "true" || echo "false"),
   "seo_pages": $SEO_COUNT,
+  "reddit_status": "${REDDIT_STATUS}",
+  "reddit_fresh": $REDDIT_FRESH,
+  "reddit_age_seconds": $REDDIT_AGE,
+  "karma_total": $KARMA_TOTAL,
+  "karma_stale": $KARMA_STALE,
   "commits_24h": $COMMITS_24H,
   "disk_pct": $DISK_PCT,
   "memory_free_mb": $FREE_MEM,
@@ -125,6 +130,41 @@ cat > "$STATUS_FILE" << EOF
   "blockers": $(printf '%s\n' "${BLOCKERS[@]}" | jq -R . | jq -s .)
 }
 EOF
+
+# Also update canonical system status file used by dashboards
+SYSTEMS_FILE="$WORKSPACE/data/status/systems.json"
+mkdir -p "$(dirname "$SYSTEMS_FILE")"
+
+# Preserve existing keys; update the ones this check owns.
+if [ -f "$SYSTEMS_FILE" ]; then
+  jq \
+    --arg last_check "$(date -Iseconds)" \
+    --arg reddit "$(echo "$REDDIT_STATUS" | tr '[:upper:]' '[:lower:]')" \
+    --argjson reddit_fresh "$REDDIT_FRESH" \
+    --argjson reddit_age_seconds "$REDDIT_AGE" \
+    --argjson seo_pages "$SEO_COUNT" \
+    --argjson karma_total "$KARMA_TOTAL" \
+    --argjson karma_stale "$KARMA_STALE" \
+    '.last_check=$last_check
+     | .reddit=$reddit
+     | .reddit_fresh=$reddit_fresh
+     | .reddit_age_seconds=$reddit_age_seconds
+     | .seo_pages=$seo_pages
+     | .karma_total=$karma_total
+     | .karma_stale=$karma_stale' \
+    "$SYSTEMS_FILE" > "$SYSTEMS_FILE.tmp" && mv "$SYSTEMS_FILE.tmp" "$SYSTEMS_FILE"
+else
+  jq -n \
+    --arg last_check "$(date -Iseconds)" \
+    --arg reddit "$(echo "$REDDIT_STATUS" | tr '[:upper:]' '[:lower:]')" \
+    --argjson reddit_fresh "$REDDIT_FRESH" \
+    --argjson reddit_age_seconds "$REDDIT_AGE" \
+    --argjson seo_pages "$SEO_COUNT" \
+    --argjson karma_total "$KARMA_TOTAL" \
+    --argjson karma_stale "$KARMA_STALE" \
+    '{last_check:$last_check, reddit:$reddit, reddit_fresh:$reddit_fresh, reddit_age_seconds:$reddit_age_seconds, seo_pages:$seo_pages, karma_total:$karma_total, karma_stale:$karma_stale}' \
+    > "$SYSTEMS_FILE"
+fi
 
 # Alert if issues found
 if [ ${#ISSUES[@]} -gt 0 ]; then

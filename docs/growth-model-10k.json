@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-02-27T22:00:00Z",
+  "goal_subscribers": 10000,
+  "baseline_subscribers": 17,
+  "gap": 9983,
+  "scenarios_days": [30, 60, 90, 180, 365],
+  "scenarios": {
+    "30": {"daily_net_adds": 332.77, "weekly_net_adds": 2329.27},
+    "60": {"daily_net_adds": 166.38, "weekly_net_adds": 1164.63},
+    "90": {"daily_net_adds": 110.92, "weekly_net_adds": 776.46},
+    "180": {"daily_net_adds": 55.46, "weekly_net_adds": 388.23},
+    "365": {"daily_net_adds": 27.35, "weekly_net_adds": 191.47}
+  },
+  "notes": [
+    "Baseline is last-known (17 paying customers) from MEMORY.md / docs/growth-experiments.md.",
+    "This is a simple linear net-adds model (does not account for churn, seasonality, channel ramp, or conversion rates)."
+  ]
+}

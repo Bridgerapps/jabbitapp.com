@@ -12,13 +12,9 @@ echo "Scanning: $JABBIT_DIR"
 GLP1_COUNT=$(ls -1 "$JABBIT_DIR"/glp1*.html 2>/dev/null | wc -l)
 echo "Found: $GLP1_COUNT GLP-1 pages"
 
-# Get sitemap URL count
-SITEMAP="$JABBIT_DIR/sitemap.xml"
-if [ -f "$SITEMAP" ]; then
-    SITEMAP_URLS=$(grep -c "<loc>" "$SITEMAP")
-else
-    SITEMAP_URLS="N/A"
-fi
+# Get sitemap URL count (canonical)
+SITEMAP_URLS=$(WS="/home/jabbit/.openclaw/workspace" SITE_DIR="$JABBIT_DIR" bash \
+  "/home/jabbit/.openclaw/workspace/scripts/seo-count.sh" 2>/dev/null | tr -d ' ' || echo "N/A")
 echo "Sitemap URLs: $SITEMAP_URLS"
 
 # List all GLP-1 pages

@@ -21,9 +21,7 @@ SITEMAP_URLS=0
 if [ -d "$SITE_DIR" ]; then
   GLP_PAGES=$(find "$SITE_DIR" -maxdepth 1 -type f -name 'glp1-*.html' | wc -l | tr -d ' ')
   LATEST_PAGES=$(find "$SITE_DIR" -maxdepth 1 -type f -name 'glp1-*.html' -printf '%T@ %f\n' | sort -nr | head -n 3 | awk '{print $2}')
-  if [ -f "$SITE_DIR/sitemap.xml" ]; then
-    SITEMAP_URLS=$(grep -c '<loc>' "$SITE_DIR/sitemap.xml" || true)
-  fi
+  SITEMAP_URLS=$(bash "$WS/scripts/seo-count.sh" 2>/dev/null | tr -d ' ' || echo 0)
 fi
 
 # Pipeline quick status

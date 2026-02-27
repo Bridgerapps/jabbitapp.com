@@ -1,11 +1,16 @@
 {
-  "last_check": "2026-02-27T17:52:35+00:00",
+  "last_check": "2026-02-27T22:09:10+00:00",
   "site_status": 200,
   "git_today": true,
-  "seo_pages": 24,
-  "commits_24h": 67,
+  "seo_pages": 19,
+  "reddit_status": "DEGRADED",
+  "reddit_fresh": true,
+  "reddit_age_seconds": 854,
+  "karma_total": null,
+  "karma_stale": true,
+  "commits_24h": 33,
   "disk_pct": 27,
-  "memory_free_mb": 1798,
+  "memory_free_mb": 2282,
   "issues": [
   ""
 ],

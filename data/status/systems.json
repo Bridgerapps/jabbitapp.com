@@ -1,1 +1,13 @@
-{"reddit": "working", "last_check": "2026-02-26T20:29:50+00:00", "warmup_cron": "active-30min", "seo_pages": 58, "analytics": "local-vps-port9000", "tracking": "pageviews+app-store-clicks", "goal": "app-subscriptions"}
+{
+  "reddit": "degraded",
+  "last_check": "2026-02-27T22:09:10+00:00",
+  "warmup_cron": "active-30min",
+  "seo_pages": 19,
+  "analytics": "local-vps-port9000",
+  "tracking": "pageviews+app-store-clicks",
+  "goal": "app-subscriptions",
+  "reddit_fresh": true,
+  "reddit_age_seconds": 854,
+  "karma_total": null,
+  "karma_stale": true
+}

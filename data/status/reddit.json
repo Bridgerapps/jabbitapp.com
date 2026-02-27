@@ -1,0 +1,18 @@
+{
+  "last_check": "2026-02-27T22:09:10+00:00",
+  "status": "DEGRADED",
+  "source_file": "data/reddit/reddit-health.json",
+  "reddit_timestamp": "2026-02-27T21:54:56Z",
+  "age_seconds": 854,
+  "fresh": true,
+  "checks": [
+    "Mounjaro:403",
+    "Ozempic:403",
+    "weightloss:403"
+  ],
+  "karma": {
+    "total": null,
+    "updated_at": "2026-02-27T22:05:34+00:00",
+    "stale": true
+  }
+}
