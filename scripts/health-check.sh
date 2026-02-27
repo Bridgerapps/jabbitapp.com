@@ -58,9 +58,11 @@ else
     echo "⚠️ Memory: ${FREE_MEM}MB free" >> "$LOG_FILE"
 fi
 
-# 6. SEO pages
-SEO_COUNT=$(find "$WORKSPACE" -maxdepth 1 -name "glp1-*.html" 2>/dev/null | wc -l)
-echo "📊 SEO: $SEO_COUNT pages" >> "$LOG_FILE"
+# 6. SEO pages (check both root and jabbitapp.com directories)
+SEO_ROOT=$(find "$WORKSPACE" -maxdepth 1 -name "glp1-*.html" 2>/dev/null | wc -l)
+SEO_APP=$(find "$WORKSPACE/jabbitapp.com" -maxdepth 1 -name "*.html" 2>/dev/null | wc -l)
+SEO_COUNT=$((SEO_ROOT + SEO_APP))
+echo "📊 SEO: $SEO_COUNT pages (root:$SEO_ROOT + app:$SEO_APP)" >> "$LOG_FILE"
 
 # 7. Recent commits
 COMMITS_24H=$(git -C "$WORKSPACE" log --since="24 hours ago" --oneline 2>/dev/null | wc -l)
