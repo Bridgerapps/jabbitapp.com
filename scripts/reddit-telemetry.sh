@@ -73,7 +73,7 @@ if [ -f "$WS/scripts/reddit.env" ]; then
   source "$WS/scripts/reddit.env"
 fi
 
-REDDIT_USERNAME="${REDDIT_USERNAME:-LongevityProtocol}"
+REDDIT_USERNAME="${REDDIT_USERNAME:-LifespanMaxer}"
 
 if [ -n "${REDDIT_USERNAME:-}" ]; then
   set +e

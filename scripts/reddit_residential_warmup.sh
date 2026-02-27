@@ -6,6 +6,11 @@ set -euo pipefail
 WS="/home/jabbit/.openclaw/workspace"
 source "$WS/scripts/proxy.env"
 source "$WS/scripts/reddit_ladder_params.sh" env
+if [ -f "$WS/scripts/reddit.env" ]; then
+  # shellcheck disable=SC1090
+  source "$WS/scripts/reddit.env"
+fi
+REDDIT_USERNAME="${REDDIT_USERNAME:-LifespanMaxer}"
 
 COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session")
 UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
@@ -54,7 +59,7 @@ now=datetime.now(UTC).timestamp()
 candidates=[]
 for p in (j.get('data') or {}).get('children',[]):
     d=p.get('data',{})
-    if d.get('author','')=='LongevityProtocol': continue
+    if d.get('author','')=='${REDDIT_USERNAME}': continue
     if d.get('score',0)<1: continue
     age_h=(now-d.get('created_utc',now))/3600
     if age_h>48: continue
