@@ -1,0 +1,7 @@
+{
+    "state": "OPEN",
+    "failure_count": 1,
+    "last_failure": "2026-02-27T13:54:15+00:00",
+    "retry_after": 120,
+    "reason": "DEGRADED"
+}
