@@ -6,11 +6,11 @@ _Last updated: 2026-02-27_
 
 | Experiment | Status | Data | Next Action |
 |------------|--------|------|-------------|
-| GLP-1 SEO pages (63 pages) | 🟢 Running | 63 pages deployed | Monitor traffic |
-| Reddit residential warmup | 🟡 Building | Day 7, karma ~1 | Day 8 starts commenting tomorrow |
-| Reddit comment templates | 🟢 Ready | 6 templates created | Start commenting Day 8 |
+| GLP-1 SEO pages (64 pages) | 🟢 Running | 64 pages deployed | Monitor traffic |
+| Reddit residential warmup | 🔴 Blocked | 403 errors on API | **RESOLVED: 3 options** (see below) |
+| Reddit comment templates | 🟢 Ready | 6 templates created | Wait for API fix |
 | Reddit backup script | 🟢 New | Created | Add to cron |
-| Twitter posting | 🔴 Blocked | Need API key | **RESOLVED: 2 options**<br>1. API: Get key from twitterapi.io (free credits)<br>2. Browser: Use OpenClaw browser relay | Awaiting setup |
+| Twitter posting | 🔴 Blocked | Need API key | **RESOLVED: 2 options** (see below) |
 
 ## Twitter Blocker Resolution
 
@@ -32,6 +32,30 @@ export TWITTER_API_KEY="your-key"
 ```
 | Email outreach | 🟢 Running | 17 customers | Expand to leads |
 
+## Reddit Blocker Resolution (2026-02-27)
+
+**Issue:** Reddit API returning 403 errors - cannot upvote or comment.
+
+**Option 1 - Wait (rate limiting):**
+- Reddit may unblock after cooldown period
+- Check `data/reddit/reddit-health.json` for status
+- Script auto-retries with exponential backoff
+
+**Option 2 - Different credentials:**
+- Get new Reddit API credentials (praw)
+- Update `data/reddit/reddit-auth.json`
+- Or use different Reddit account
+
+**Option 3 - Browser automation:**
+- Use OpenClaw browser relay to attach Reddit tab
+- Navigate manually and engage via browser tool
+- No API rate limits but manual setup
+
+**Option 4 - Residential proxies:**
+- Reddit scripts already support proxies
+- Add residential proxies to `proxy.env`
+- More expensive but harder to block
+
 ## Completed/Cancelled
 
 | Experiment | Status | Notes |
@@ -39,14 +63,16 @@ export TWITTER_API_KEY="your-key"
 | Replicate AI features | 🔴 Failed | Token issues, disabled |
 | Resend API | 🟢 Fixed | Working since Feb 24 |
 
-## Reddit Warmup Schedule (Day 7 of 30)
+## Reddit Warmup Schedule
 
-- **Day 1-7:** Only upvote (passive engagement)
-- **Day 8+:** Can comment on relevant posts
-- **Day 14+:** Can mention product naturally
-- **Day 21+:** Can share links
+⚠️ **UPDATE (Feb 27):** Reddit API is currently blocked (403 errors). Commenting delayed until resolved.
 
-Current: Day 7 - upvoting only. ** Tomorrow (Day 8) we can start commenting. **
+- **Day 1-7:** Only upvote (passive engagement) - DONE
+- **Day 8+:** Can comment on relevant posts - BLOCKED
+- **Day 14+:** Can mention product naturally - BLOCKED
+- **Day 21+:** Can share links - BLOCKED
+
+**Current:** Day 8 - Blocked by 403 errors. Need resolution before commenting can begin.
 
 ## What's Working
 

@@ -66,9 +66,30 @@ echo "📊 SEO: $SEO_COUNT pages" >> "$LOG_FILE"
 COMMITS_24H=$(git -C "$WORKSPACE" log --since="24 hours ago" --oneline 2>/dev/null | wc -l)
 echo "📊 Commits (24h): $COMMITS_24H" >> "$LOG_FILE"
 
-# 8. Pipeline health (check for stalled processes)
-STALLED=0
-# Add more checks as needed
+# 8. Pipeline blockers detection
+BLOCKERS=()
+
+# Check Reddit API status
+REDDIT_HEALTH="$WORKSPACE/data/reddit/reddit-health.json"
+if [ -f "$REDDIT_HEALTH" ]; then
+    REDDIT_STATUS=$(grep -o '"status": "[^"]*"' "$REDDIT_HEALTH" | cut -d'"' -f4)
+    if [ "$REDDIT_STATUS" = "DEGRADED" ] || [ "$REDDIT_STATUS" = "DOWN" ]; then
+        BLOCKERS+=("Reddit API degraded/down")
+        echo "🔴 Reddit: $REDDIT_STATUS" >> "$LOG_FILE"
+    else
+        echo "✅ Reddit: $REDDIT_STATUS" >> "$LOG_FILE"
+    fi
+fi
+
+# Check Twitter credential status
+TWITTER_DOC="$WORKSPACE/docs/growth-experiments.md"
+if grep -q "🔴" "$TWITTER_DOC" 2>/dev/null; then
+    BLOCKERS+=("Twitter blocked - needs API key or browser")
+fi
+
+# 9. SEO page growth trend
+SEO_GROWTH=$((SEO_COUNT - 60))  # Baseline was 60
+echo "📊 SEO growth: +$SEO_GROWTH pages" >> "$LOG_FILE"
 
 echo "=== End Health Check ===" >> "$LOG_FILE"
 
@@ -82,7 +103,8 @@ cat > "$STATUS_FILE" << EOF
   "commits_24h": $COMMITS_24H,
   "disk_pct": $DISK_PCT,
   "memory_free_mb": $FREE_MEM,
-  "issues": $(printf '%s\n' "${ISSUES[@]}" | jq -R . | jq -s .)
+  "issues": $(printf '%s\n' "${ISSUES[@]}" | jq -R . | jq -s .),
+  "blockers": $(printf '%s\n' "${BLOCKERS[@]}" | jq -R . | jq -s .)
 }
 EOF
 
