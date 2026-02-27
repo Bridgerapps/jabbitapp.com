@@ -17,6 +17,10 @@ This turns 1 slow agent doing everything → an army of workers executing in par
 If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
 
 ## Every Session
+## Before Any Task
+1. Check if we have done this before (memory_search)
+2. Review past decisions and context
+3. If already done, understand why before proceeding
 
 Before doing anything else:
 

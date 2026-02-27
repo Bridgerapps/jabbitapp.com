@@ -34,11 +34,29 @@ def load_proxy():
     """Load Reddit proxy from env."""
     try:
         with open('/home/jabbit/.openclaw/workspace/scripts/proxy.env') as f:
-            for line in f:
-                if line.startswith('REDDIT_PROXY_URL='):
-                    return line.split('=')[1].strip().strip('"')
-    except:
-        pass
+            content = f.read()
+            for line in content.split('\n'):
+                if line.startswith('export REDDIT_PROXY_URL='):
+                    return line.split('=')[1].strip().strip('"').strip("'")
+                if line.startswith('export PROXY_HOST='):
+                    # Build from components
+                    host = line.split('=')[1].strip().strip('"')
+                if line.startswith('export PROXY_USER='):
+                    user = line.split('=')[1].strip().strip('"')
+                if line.startswith('export PROXY_PASS='):
+                    password = line.split('=')[1].strip().strip('"')
+            # Try alternative: build from components
+            import os
+            lines = content.split('\n')
+            vars = {}
+            for line in lines:
+                if '=' in line and not line.startswith('#'):
+                    key, val = line.split('=', 1)
+                    vars[key] = val.strip().strip('"').strip("'")
+            if 'PROXY_HOST' in vars and 'PROXY_USER' in vars:
+                return f"http://{vars.get('PROXY_USER')}:{vars.get('PROXY_PASS')}@{vars.get('PROXY_HOST')}:{vars.get('PROXY_PORT', '80')}"
+    except Exception as e:
+        print(f"Proxy load error: {e}", flush=True)
     return ''
 
 def load_session():
@@ -53,16 +71,16 @@ def fetch_posts(subreddit, proxy, cookie, limit=50):
     """Fetch recent posts from a subreddit."""
     url = f'https://www.reddit.com/r/{subreddit}/new.json?limit={limit}'
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
         'Accept': 'application/json',
     }
-    if cookie:
-        headers['Cookie'] = f'reddit_session={cookie}'
     
-    cmd = ['curl', '-s', '-x', proxy, '-H', f'Cookie: reddit_session={cookie}', '-H', f'User-Agent: Mozilla/5.0']
+    cmd = ['curl', '-s', '--max-time', '30']
+    if proxy:
+        cmd.extend(['-x', proxy])
     for k, v in headers.items():
         cmd.extend(['-H', f'{k}: {v}'])
-    cmd.extend(['--max-time', '30', url])
+    cmd.extend([url])
     
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=35)

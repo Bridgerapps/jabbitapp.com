@@ -93,3 +93,9 @@ ALL work must be optimized toward the goal:
 - Don't generate slop hoping it works
 - Have pride in the work - would I show this to someone I respect?
 - If it doesn't feel right, it probably isn't
+
+## Learning Protocol
+- After completing significant work: document what was done and why in a summary file
+- Before starting any new task: check if we've already done this and review the reasoning
+- File naming: WORK_SUMMARY_YYYY-MM-DD.md or similar
+- Keep records of decisions and their context

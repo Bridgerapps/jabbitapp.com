@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-26T17:52:16Z",
+  "timestamp": "2026-02-27T03:49:22Z",
   "status": "DEGRADED",
   "checks": ["Mounjaro:403", "Ozempic:403", "weightloss:403"]
 }

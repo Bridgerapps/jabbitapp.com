@@ -33,7 +33,8 @@ fi
 
 # Cycle slot (0-2 for 8h intervals)
 HOUR=${HOUR:-$(date +%H)}
-SLOT=$(( (HOUR / 8) % 3 ))
+# Force decimal interpretation to avoid octal issues with 08/09
+SLOT=$(( (10#$HOUR / 8) % 3 ))
 export REDDIT_CYCLE_SLOT=$SLOT
 
 export MAX_UPVOTES

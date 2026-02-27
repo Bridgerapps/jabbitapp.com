@@ -6,9 +6,30 @@ _Last updated: 2026-02-27_
 
 | Experiment | Status | Data | Next Action |
 |------------|--------|------|-------------|
-| GLP-1 SEO pages (62 pages) | 🟢 Running | 62 pages deployed | Monitor traffic |
-| Reddit residential warmup | 🟡 Building | Day 7, karma ~1 | Continue until Day 8 mentions |
-| Twitter posting | 🔴 Blocked | Need API key | Awaiting Jon's setup |
+| GLP-1 SEO pages (63 pages) | 🟢 Running | 63 pages deployed | Monitor traffic |
+| Reddit residential warmup | 🟡 Building | Day 7, karma ~1 | Day 8 starts commenting tomorrow |
+| Reddit comment templates | 🟢 Ready | 6 templates created | Start commenting Day 8 |
+| Reddit backup script | 🟢 New | Created | Add to cron |
+| Twitter posting | 🔴 Blocked | Need API key | **RESOLVED: 2 options**<br>1. API: Get key from twitterapi.io (free credits)<br>2. Browser: Use OpenClaw browser relay | Awaiting setup |
+
+## Twitter Blocker Resolution
+
+**Option 1 - API (recommended for automation):**
+```bash
+# Sign up at https://twitterapi.io/ (free credits)
+export TWITTER_API_KEY="your-key-here"
+./scripts/twitter-api-io-post.sh "Hello world"
+```
+
+**Option 2 - Browser (no API key needed):**
+1. Open Twitter in Chrome
+2. Use OpenClaw browser relay to attach the tab
+3. Post manually or automate via browser tool
+
+**Once resolved, update:**
+```bash
+export TWITTER_API_KEY="your-key"
+```
 | Email outreach | 🟢 Running | 17 customers | Expand to leads |
 
 ## Completed/Cancelled

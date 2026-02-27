@@ -36,3 +36,7 @@
   "failures_today": 0,
   "date": "2026-02-26"
 }
+[2026-02-27T03:00:01Z] New day detected ( → 2026-02-27), resetting circuit breaker
+[2026-02-27T03:00:01Z] Circuit breaker reset complete: failures_today=0, date=2026-02-27
+[2026-02-27T03:00:01Z] Current circuit breaker state:
+[2026-02-27T03:49:23Z] New day detected ( → 2026-02-27), resetting circuit breaker
