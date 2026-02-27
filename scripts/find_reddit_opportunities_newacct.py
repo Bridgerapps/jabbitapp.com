@@ -9,6 +9,7 @@ post_id|title|selftext|subreddit|permalink|num_comments|age_hours
 
 import json
 import os
+import re
 import subprocess
 import time
 from datetime import datetime, UTC
@@ -62,6 +63,41 @@ def _curl_json(url: str, proxy: str, cookie: str = "") -> dict:
         return {}
 
 
+def _build_discovery_proxies(proxy_env: dict, action_proxy: str) -> list:
+    """Build discovery proxy list that avoids the current action subnet when possible."""
+    host = proxy_env.get("PROXY_HOST", "")
+    port = proxy_env.get("PROXY_PORT", "80")
+    user = proxy_env.get("PROXY_USER", "")
+    pwd = proxy_env.get("PROXY_PASS", "")
+
+    proxies = []
+    if host and user and "US-" in user:
+        m = re.search(r"US-(\d+)", user)
+        current = int(m.group(1)) if m else 0
+        prefix = re.sub(r"US-\d+", "US-", user)
+
+        # Prefer all other subnets first, then current subnet last.
+        for i in [1, 2, 3, 4, 5]:
+            if i == current:
+                continue
+            proxies.append(f"http://{prefix}{i}:{pwd}@{host}:{port}")
+        if current:
+            proxies.append(f"http://{prefix}{current}:{pwd}@{host}:{port}")
+
+    # Fallback to current action proxy if we couldn't build alternates.
+    if not proxies and action_proxy:
+        proxies = [action_proxy]
+
+    # De-dup while preserving order.
+    seen = set()
+    out = []
+    for p in proxies:
+        if p and p not in seen:
+            seen.add(p)
+            out.append(p)
+    return out
+
+
 def _score(d: dict) -> float:
     comments = d.get("num_comments", 0) or 0
     created = d.get("created_utc", 0) or 0
@@ -102,14 +138,16 @@ def main() -> int:
     proxy_env = _load_env(f"{ws}/scripts/proxy.env")
     reddit_env = _load_env(f"{ws}/scripts/reddit.env")
 
-    proxy = proxy_env.get("REDDIT_PROXY_URL", "")
-    if (not proxy) or ("${" in proxy):
+    action_proxy = proxy_env.get("REDDIT_PROXY_URL", "")
+    if (not action_proxy) or ("${" in action_proxy):
         host = proxy_env.get("PROXY_HOST", "")
         port = proxy_env.get("PROXY_PORT", "80")
         user = proxy_env.get("PROXY_USER", "")
         pwd = proxy_env.get("PROXY_PASS", "")
         if host and user:
-            proxy = f"http://{user}:{pwd}@{host}:{port}"
+            action_proxy = f"http://{user}:{pwd}@{host}:{port}"
+
+    discovery_proxies = _build_discovery_proxies(proxy_env, action_proxy)
 
     username = reddit_env.get("REDDIT_USERNAME", "LifespanMaxer")
 
@@ -134,15 +172,17 @@ def main() -> int:
     now = datetime.now(UTC).timestamp()
     picks = []
 
-    for sub in TARGET_SUBS:
+    for idx, sub in enumerate(TARGET_SUBS):
         url = f"https://www.reddit.com/r/{sub}/new.json?limit=40"
+        discovery_proxy = discovery_proxies[idx % len(discovery_proxies)] if discovery_proxies else action_proxy
+
         # Discovery defaults to no-cookie reads to reduce account linkage.
-        data = _curl_json(url, proxy, cookie if use_cookie_discovery else "")
+        data = _curl_json(url, discovery_proxy, cookie if use_cookie_discovery else "")
         children = ((data.get("data") or {}).get("children") or [])[:40]
 
         # Optional fallback to cookie-auth discovery when public reads are blocked/empty.
         if not children and cookie_fallback and cookie and not use_cookie_discovery:
-            data = _curl_json(url, proxy, cookie)
+            data = _curl_json(url, discovery_proxy, cookie)
             children = ((data.get("data") or {}).get("children") or [])[:40]
 
         sub_candidates = []
