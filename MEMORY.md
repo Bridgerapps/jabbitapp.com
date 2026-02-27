@@ -33,7 +33,7 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Execution: no permission prompts for routine internal fixes
 - Voice: distinctive, not corporate drone
 - Updates: periodic operator updates every 12h with explicit asks
-- Model routing preference (2026-02-27): keep primary on `openai-codex/gpt-5.3-codex`, first fallback on `openai-codex/gpt-5.2`, and avoid MiniMax fallbacks/cron models unless Jon explicitly asks.
+- Model routing preference (2026-02-27): OpenAI-only routing. Keep primary on `openai-codex/gpt-5.3-codex`, only fallback on `openai-codex/gpt-5.2`, and avoid MiniMax/Kimi/OpenRouter/Anthropic models unless Jon explicitly asks.
 
 ## Product Metrics
 - 17 paying customers (confirmed)
