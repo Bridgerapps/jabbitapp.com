@@ -34,6 +34,7 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Voice: distinctive, not corporate drone
 - Updates: periodic operator updates every 12h with explicit asks
 - Model routing preference (2026-02-27): OpenAI-only routing. Keep primary on `openai-codex/gpt-5.3-codex`, only fallback on `openai-codex/gpt-5.2`, and avoid MiniMax/Kimi/OpenRouter/Anthropic models unless Jon explicitly asks.
+- Latency preference (2026-02-27): set `thinkingDefault` to `minimal`; use high thinking only when task complexity justifies it.
 
 ## Product Metrics
 - 17 paying customers (confirmed)
