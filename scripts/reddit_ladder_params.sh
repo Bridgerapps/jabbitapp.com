@@ -7,7 +7,14 @@
 # Day 8+: Subtle mentions allowed (only in relevant contexts, 1 in 4 chance, never promotional)
 # The mention style you wanted: "I use Jabbit..." not "You should use Jabbit..."
 
-REDDIT_WARMUP_START="${REDDIT_WARMUP_START:-2026-02-21}"
+# Load runtime identity/settings if present so standalone calls are consistent.
+WS="/home/jabbit/.openclaw/workspace"
+if [ -f "$WS/scripts/reddit.env" ]; then
+  # shellcheck disable=SC1090
+  source "$WS/scripts/reddit.env"
+fi
+
+REDDIT_WARMUP_START="${REDDIT_WARMUP_START:-2026-02-27}"
 export REDDIT_WARMUP_START
 
 # Calculate current warmup day
