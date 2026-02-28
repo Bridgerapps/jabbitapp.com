@@ -241,6 +241,8 @@ def generate_comment(post: dict) -> str:
             "Most useful comparison here is timing: last injection vs symptom start, plus what changed that week.",
             "Pattern that helps most is injection timing + sleep/hydration + food intake on symptom days.",
             "The strongest replies in symptom threads include exact timeline, dose history, and severity trend.",
+            "What separates useful replies from noise is timing + severity trend, not just yes/no symptom reports.",
+            "If people post symptom timing relative to shot day, this thread becomes way more actionable.",
         ]
         if anchor:
             opts.append(f"Given the {anchor} context, timing and dose history are the key comparison points.")
@@ -252,6 +254,8 @@ def generate_comment(post: dict) -> str:
             "Best signal in dose threads is week-by-week timeline, not just current mg.",
             "What usually clarifies dose questions is previous dose duration, change timing, and symptom pattern.",
             "Dose comparisons are most useful when people include exact week count at each dose level.",
+            "Current mg alone is low-signal; week count + recent changes usually explain most of the difference.",
+            "The high-value replies usually include: prior dose length, change date, and what happened after.",
         ]
         if anchor:
             opts.append(f"Given {anchor}, week-by-week timeline is more useful than one-number comparisons.")
@@ -271,6 +275,8 @@ def generate_comment(post: dict) -> str:
             "Most useful replies on this topic include dose, time on medication, and what changed that week.",
             "Best comparison signal is timeline: injection timing, symptom start, and any recent dose change.",
             "Replies are strongest when people include exact timing and dose context instead of one-liners.",
+            "Useful thread if people share specifics (timing, dose history, and what shifted recently).",
+            "You’ll get better answers here if replies include timeline + dose context, not just quick takes.",
         ]
         if anchor:
             opts.append(f"Given the {anchor} context, timeline details matter more than general takes.")
@@ -278,8 +284,14 @@ def generate_comment(post: dict) -> str:
 
     # Fallback
     if anchor:
-        return maybe_add_jabbit_mention(f"Given the {anchor} context, timeline + dose history are the most useful comparison points.", post)
-    return maybe_add_jabbit_mention("Most useful replies here include exact timeline, dose history, and what changed that week.", post)
+        return maybe_add_jabbit_mention(random.choice([
+            f"Given the {anchor} context, timeline + dose history are the most useful comparison points.",
+            f"With {anchor} in play, replies are best when they include timing and recent changes.",
+        ]), post)
+    return maybe_add_jabbit_mention(random.choice([
+        "Most useful replies here include exact timeline, dose history, and what changed that week.",
+        "High-signal replies in this sub usually include timing, dose context, and symptom trend.",
+    ]), post)
 
 
 def build_value_comment(post: dict, attempts: int = 12) -> str:
