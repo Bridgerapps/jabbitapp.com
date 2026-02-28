@@ -163,33 +163,41 @@ SHOTSY_COMPARISONS = [
     "I was on Shotsy before; Jabbit ended up better for me: more features, full peptide library, lower monthly cost.",
 ]
 
+APP_ASK_MENTION_PROB = 0.35
+
 
 def maybe_add_jabbit_mention(comment: str, post: dict) -> str:
-    """Add Jabbit mention ONLY when someone explicitly asks about tracking apps OR mentions Shotsy."""
+    """Mention Jabbit selectively: competitor mentions always, app-ask threads sometimes."""
     title = (post.get('title') or '').lower()
     body = (post.get('selftext') or '').lower()
     text = f"{title} {body}"
-    
+
     # Only add mentions if allowed by ladder (day 8+)
     if not LADDER.get('mention_allowed', False):
         return comment
-    
-    # Check for Shotsy mentions first (highest priority - competitor opportunity)
+
+    # Competitor mention: direct answer is high intent.
     shotsy_patterns = ['shotsy', 'shotsy app', 'use shotsy', 'shothy']
     if any(p in text for p in shotsy_patterns):
         return random.choice(SHOTSY_COMPARISONS)
-    
-    # TRIGGER: when someone ASKS about apps/tracking
+
+    # Tight trigger for app-question intent only (avoid broad shilling).
     ask_patterns = [
-        'what app', 'what do you use', 'which app', 'what do you use',
-        'app recommendations', 'track', 'logging', 'recommend', 
-        'best app', 'favorite app', 'tool', 'software', 'platform'
+        'what app do you use', 'which app do you use', 'what app', 'best app for',
+        'app recommendation', 'recommend an app', 'tracking app', 'what tracker',
+        'any app for', 'favorite app for'
     ]
     if not any(p in text for p in ask_patterns):
         return comment
-    
-    # Replace the generic comment with a Jabbit answer
+
+    # Don't mention every time even when asked; keep ratio natural.
+    if random.random() > APP_ASK_MENTION_PROB:
+        return comment
+
+    # Keep contribution-first tone; add mention as a short direct answer.
     mention = random.choice(JABBIT_MENTIONS)
+    if comment and len(comment.split()) >= 10:
+        return f"{comment} {mention}"
     return mention
 
 
