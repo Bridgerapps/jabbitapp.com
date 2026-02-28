@@ -9,11 +9,12 @@ Behavior:
 - Treat /home/jabbit/.openclaw/workspace/jabbitapp.com/*.html as source of truth.
 - Maintain existing topic entries (do not rename topics).
 - Add missing entries for any HTML file not present in the tracker (by filename match).
-- Update total_pages + last_updated.
+- Update total_pages.
+- IMPORTANT: Idempotent — do NOT rewrite the tracker (or bump last_updated) when no
+  changes are required.
 
 Notes:
-- This is intentionally conservative: it will NOT delete entries (in case a page is
-  temporarily removed or renamed); it only adds + updates counts.
+- Conservative: it will NOT delete entries; it only adds + updates counts.
 
 Usage:
   python3 scripts/seo-sync-tracker.py
@@ -23,6 +24,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import pathlib
 from datetime import datetime, timezone
@@ -54,6 +56,8 @@ def main() -> int:
     if TRACKER.exists():
         tracker = json.loads(TRACKER.read_text(encoding="utf-8"))
 
+    orig = copy.deepcopy(tracker)
+
     topics: list[dict] = list(tracker.get("topics") or [])
     existing_by_filename = {t.get("filename"): t for t in topics if t.get("filename")}
 
@@ -64,7 +68,6 @@ def main() -> int:
         if p.name in existing_by_filename:
             continue
 
-        # Conservative default topic: stem (filename without .html)
         topics.append(
             {
                 "topic": p.stem,
@@ -74,12 +77,21 @@ def main() -> int:
         )
         added += 1
 
-    # Update summary fields
-    tracker["topics"] = topics
-    tracker["total_pages"] = len([p for p in html_files if p.is_file() and p.name != "index.html"])
-    tracker["last_updated"] = iso_now()
+    total_pages = len([p for p in html_files if p.is_file() and p.name != "index.html"])
 
-    if not args.dry_run:
+    tracker["topics"] = topics
+    tracker["total_pages"] = total_pages
+
+    changed = False
+    if (not TRACKER.exists()) or added > 0:
+        changed = True
+    if orig.get("total_pages") != total_pages:
+        changed = True
+
+    if changed:
+        tracker["last_updated"] = iso_now()
+
+    if (not args.dry_run) and changed:
         TRACKER.parent.mkdir(parents=True, exist_ok=True)
         TRACKER.write_text(json.dumps(tracker, indent=2, sort_keys=False) + "\n", encoding="utf-8")
 
@@ -90,9 +102,10 @@ def main() -> int:
                 "site_dir": str(SITE_DIR),
                 "tracker": str(TRACKER),
                 "html_files": len(html_files),
-                "total_pages": tracker["total_pages"],
+                "total_pages": total_pages,
                 "topics_entries": len(topics),
                 "added": added,
+                "changed": changed,
                 "dry_run": bool(args.dry_run),
             },
             indent=2,
