@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GLP-1 Injection Tracker (Private) — Jabbit</title>
+  <meta name="description" content="Track GLP-1 injections (Ozempic/Wegovy/Mounjaro/Zepbound) with a simple log + reminders — built privacy-first with iCloud sync." />
+  <meta name="keywords" content="GLP-1 injection tracker, semaglutide tracker, tirzepatide tracker, Ozempic tracker, Wegovy tracker, Mounjaro tracker, Zepbound tracker, injection log" />
+  <link rel="canonical" href="https://jabbitapp.com/glp1-injection-tracker.html" />
+
+  <!-- Minimal, fast CSS (no build step) -->
+  <style>
+    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --brand2:#14b8a6; --border:#e2e8f0; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+    a{ color:var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width:920px; margin:0 auto; padding:28px 18px 60px; }
+    .hero{ background:linear-gradient(135deg, #0f172a 0%, #0b4a44 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 10px 30px rgba(2,6,23,.15); }
+    .hero h1{ margin:0 0 10px; font-size:2.1rem; line-height:1.2; }
+    .hero p{ margin:0; color:rgba(255,255,255,.9); font-size:1.05rem; }
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; font-weight:700; border:1px solid transparent; }
+    .btnPrimary{ background:var(--brand2); color:#062a27; }
+    .btnPrimary:hover{ filter:brightness(.95); text-decoration:none; }
+    .btnGhost{ background:transparent; color:#fff; border-color:rgba(255,255,255,.35); }
+    .btnGhost:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
+
+    .grid{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; }
+    @media(min-width:900px){ .grid{ grid-template-columns: 1.2fr .8fr; } }
+
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
+    h2{ margin:18px 0 10px; font-size:1.35rem; }
+    h3{ margin:14px 0 8px; font-size:1.1rem; }
+    ul{ margin:8px 0 0 18px; }
+    .muted{ color:var(--muted); }
+    .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px 12px; border-radius:10px; }
+
+    table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
+    th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
+    th{ background:#f1f5f9; }
+
+    footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
+    .small{ font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>GLP‑1 injection tracker (private by default)</h1>
+      <p>Log injection dates, doses (as prescribed), and progress — with reminders — without handing your personal health log to a random server.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/glp-1-injection-tracking-guide.html">Read: Injection tracking guide</a>
+      </div>
+      <p class="small" style="margin-top:12px; opacity:.9;">Educational only. Jabbit does not provide medical advice. Always follow your clinician’s instructions.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What to track (simple, useful, not obsessive)</h2>
+        <p class="muted">A good injection log helps you answer “what changed?” when you’re adjusting routines or troubleshooting side effects — without guessing.</p>
+
+        <h3>Core fields</h3>
+        <ul>
+          <li><strong>Date & time</strong> (when you injected)</li>
+          <li><strong>Medication</strong> (e.g., semaglutide / tirzepatide brand)</li>
+          <li><strong>Dose</strong> (exactly as prescribed)</li>
+          <li><strong>Injection site</strong> (to support rotation habits)</li>
+          <li><strong>Notes</strong> (symptoms, meals, sleep, anything unusual)</li>
+        </ul>
+
+        <h2>Printable injection log template</h2>
+        <div class="note">
+          <strong>Tip:</strong> If you want a “minimum viable” system, track <em>only</em> date/time + dose + site + one note. Consistency beats detail.
+        </div>
+
+        <table aria-label="GLP-1 injection log template">
+          <thead>
+            <tr>
+              <th style="width:18%">Date</th>
+              <th style="width:14%">Time</th>
+              <th style="width:22%">Medication</th>
+              <th style="width:14%">Dose</th>
+              <th style="width:18%">Site</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>____ / ____ / ____</td>
+              <td>____ : ____</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>____________</td>
+            </tr>
+            <tr>
+              <td>____ / ____ / ____</td>
+              <td>____ : ____</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>____________</td>
+            </tr>
+            <tr>
+              <td>____ / ____ / ____</td>
+              <td>____ : ____</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>____________</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Why people like Jabbit for GLP‑1 tracking</h2>
+        <ul>
+          <li><strong>Reminders + schedule</strong> so you don’t miss a week.</li>
+          <li><strong>Progress logging</strong> (photos / measurements) in one place.</li>
+          <li><strong>Privacy‑first architecture</strong>: your data syncs through <em>your</em> iCloud — not a Jabbit server storing your logs.</li>
+          <li><strong>Reference library</strong> with practical, educational guides.</li>
+        </ul>
+
+        <p class="muted">If you want deeper reading, start here: <a href="/glp-1-side-effects-guide.html">GLP‑1 side effects guide</a> and <a href="/injection-site-rotation-science.html">injection site rotation science</a>.</p>
+      </article>
+
+      <aside class="card">
+        <h2>Quick checklist</h2>
+        <ul>
+          <li>Pick a consistent injection day/time.</li>
+          <li>Set a reminder you’ll actually notice.</li>
+          <li>Log immediately after injecting (don’t “do it later”).</li>
+          <li>Rotate sites in a simple pattern.</li>
+        </ul>
+
+        <h3>Want zero friction?</h3>
+        <p class="muted">Download Jabbit and start tracking in under a minute.</p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
+
+        <h3>Not medical advice</h3>
+        <p class="muted">This page is educational and does not replace care from a licensed clinician. For dosing/schedule questions, follow your prescriber.</p>
+
+        <p class="muted"><a href="/">← Back to Jabbit</a></p>
+      </aside>
+    </section>
+
+    <footer>
+      <p><strong>Note:</strong> If you’re trying to optimize your tracking setup (not your medication), a log + reminder system is usually enough.</p>
+    </footer>
+  </main>
+
+  
+  
+  
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+    <li><a href="/glp1-dosing-schedule.html">GLP-1 dosing schedules (reference for what to log)</a></li>
+    <li><a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking guide</a></li>
+    <li><a href="/glp1-constipation-guide.html">GLP-1 constipation guide (track symptoms after dose changes)</a></li>
+    </ul>
+  </section>
+</body>
+</html>
