@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-02-28T15:52:26Z",
+  "updated": "2026-02-28T17:52:52Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -204,6 +204,155 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for logging)"
+        }
+      ]
+    },
+    {
+      "file": "bpc-157-complete-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "compounded-tirzepatide-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-stress-anxiety-hrv-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-stress-hrv-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp1-stress-anxiety-hrv-guide.html",
+          "text": "Stress/HRV on GLP-1 (what to track + patterns)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-reconstitution-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        },
+        {
+          "href": "/peptide-site-rotation-guide.html",
+          "text": "Peptide site rotation guide (practical rotation patterns)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-site-rotation-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-storage-stability-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-site-rotation-guide.html",
+          "text": "Peptide site rotation guide (practical rotation patterns)"
+        }
+      ]
+    },
+    {
+      "file": "peptides-compounding-list-update.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "tb-500-thymosin-beta-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
         }
       ]
     }

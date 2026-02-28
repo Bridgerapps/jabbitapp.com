@@ -36,6 +36,11 @@ ROBOTS_SITEMAP_OK="null"
 INTERNAL_LINK_AUDIT_OK="null"
 INTERNAL_LINK_BROKEN_COUNT="null"
 
+# Related-links coverage defaults
+RELATED_LINKS_COVERAGE_OK="null"
+RELATED_LINKS_MISSING_COUNT="null"
+RELATED_LINKS_SUGGESTED_COUNT="null"
+
 # FAQ JSON-LD audit defaults
 FAQ_JSONLD_AUDIT_OK="null"
 FAQ_JSONLD_CHANGED_COUNT="null"
@@ -171,7 +176,33 @@ else
     INTERNAL_LINK_BROKEN_COUNT="null"
 fi
 
-# 6e. FAQ JSON-LD audit (ensure FAQPage structured data stays synced)
+# 6e. Related-links coverage (ensure every content page has a rule; index.html exempt)
+RL_COVERAGE_JSON=$(python3 "$WORKSPACE/scripts/related-links-suggest.py" --json 2>/dev/null || true)
+if [ -z "$RL_COVERAGE_JSON" ]; then
+    RL_COVERAGE_JSON='{}'
+fi
+
+if echo "$RL_COVERAGE_JSON" | jq -e . >/dev/null 2>&1; then
+    RELATED_LINKS_MISSING_COUNT=$(echo "$RL_COVERAGE_JSON" | jq -r '.missing_count // null')
+    RELATED_LINKS_SUGGESTED_COUNT=$(echo "$RL_COVERAGE_JSON" | jq -r '.suggested_count // null')
+
+    if [ "$RELATED_LINKS_MISSING_COUNT" = "0" ]; then
+        RELATED_LINKS_COVERAGE_OK="true"
+        echo "✅ Related links coverage: OK" >> "$LOG_FILE"
+    else
+        RELATED_LINKS_COVERAGE_OK="false"
+        echo "⚠️ Related links coverage: missing=${RELATED_LINKS_MISSING_COUNT:-?}" >> "$LOG_FILE"
+        ISSUES+=("Related-links coverage: missing=${RELATED_LINKS_MISSING_COUNT:-?}")
+    fi
+else
+    echo "⚠️ Related links coverage: output not JSON" >> "$LOG_FILE"
+    ISSUES+=("Related-links coverage check failed to run")
+    RELATED_LINKS_COVERAGE_OK="false"
+    RELATED_LINKS_MISSING_COUNT="null"
+    RELATED_LINKS_SUGGESTED_COUNT="null"
+fi
+
+# 6f. FAQ JSON-LD audit (ensure FAQPage structured data stays synced)
 FAQ_AUDIT_JSON=$(python3 "$WORKSPACE/scripts/faq-jsonld-sync.py" --check --json 2>/dev/null || true)
 if [ -z "$FAQ_AUDIT_JSON" ]; then
     FAQ_AUDIT_JSON='{}'
@@ -215,6 +246,11 @@ fi
 # Internal link audit blocker signal
 if [ "$INTERNAL_LINK_AUDIT_OK" = "false" ]; then
     BLOCKERS+=("Broken internal links")
+fi
+
+# Related-links coverage blocker signal
+if [ "$RELATED_LINKS_COVERAGE_OK" = "false" ]; then
+    BLOCKERS+=("Related-links coverage missing")
 fi
 
 # FAQ JSON-LD audit blocker signal
@@ -271,6 +307,9 @@ cat > "$STATUS_FILE" << EOF
   "robots_sitemap_ok": $ROBOTS_SITEMAP_OK,
   "internal_link_audit_ok": $INTERNAL_LINK_AUDIT_OK,
   "internal_link_broken_count": $INTERNAL_LINK_BROKEN_COUNT,
+  "related_links_coverage_ok": $RELATED_LINKS_COVERAGE_OK,
+  "related_links_missing_count": $RELATED_LINKS_MISSING_COUNT,
+  "related_links_suggested_count": $RELATED_LINKS_SUGGESTED_COUNT,
   "faq_jsonld_audit_ok": $FAQ_JSONLD_AUDIT_OK,
   "faq_jsonld_changed_count": $FAQ_JSONLD_CHANGED_COUNT,
   "faq_jsonld_error_count": $FAQ_JSONLD_ERROR_COUNT,
@@ -307,6 +346,9 @@ if [ -f "$SYSTEMS_FILE" ]; then
     --argjson robots_sitemap_ok "$ROBOTS_SITEMAP_OK" \
     --argjson internal_link_audit_ok "$INTERNAL_LINK_AUDIT_OK" \
     --argjson internal_link_broken_count "$INTERNAL_LINK_BROKEN_COUNT" \
+    --argjson related_links_coverage_ok "$RELATED_LINKS_COVERAGE_OK" \
+    --argjson related_links_missing_count "$RELATED_LINKS_MISSING_COUNT" \
+    --argjson related_links_suggested_count "$RELATED_LINKS_SUGGESTED_COUNT" \
     --argjson faq_jsonld_audit_ok "$FAQ_JSONLD_AUDIT_OK" \
     --argjson faq_jsonld_changed_count "$FAQ_JSONLD_CHANGED_COUNT" \
     --argjson faq_jsonld_error_count "$FAQ_JSONLD_ERROR_COUNT" \
@@ -325,6 +367,9 @@ if [ -f "$SYSTEMS_FILE" ]; then
      | .robots_sitemap_ok=$robots_sitemap_ok
      | .internal_link_audit_ok=$internal_link_audit_ok
      | .internal_link_broken_count=$internal_link_broken_count
+     | .related_links_coverage_ok=$related_links_coverage_ok
+     | .related_links_missing_count=$related_links_missing_count
+     | .related_links_suggested_count=$related_links_suggested_count
      | .faq_jsonld_audit_ok=$faq_jsonld_audit_ok
      | .faq_jsonld_changed_count=$faq_jsonld_changed_count
      | .faq_jsonld_error_count=$faq_jsonld_error_count
@@ -346,6 +391,9 @@ else
     --argjson robots_sitemap_ok "$ROBOTS_SITEMAP_OK" \
     --argjson internal_link_audit_ok "$INTERNAL_LINK_AUDIT_OK" \
     --argjson internal_link_broken_count "$INTERNAL_LINK_BROKEN_COUNT" \
+    --argjson related_links_coverage_ok "$RELATED_LINKS_COVERAGE_OK" \
+    --argjson related_links_missing_count "$RELATED_LINKS_MISSING_COUNT" \
+    --argjson related_links_suggested_count "$RELATED_LINKS_SUGGESTED_COUNT" \
     --argjson faq_jsonld_audit_ok "$FAQ_JSONLD_AUDIT_OK" \
     --argjson faq_jsonld_changed_count "$FAQ_JSONLD_CHANGED_COUNT" \
     --argjson faq_jsonld_error_count "$FAQ_JSONLD_ERROR_COUNT" \
@@ -364,6 +412,9 @@ else
       robots_sitemap_ok:$robots_sitemap_ok,
       internal_link_audit_ok:$internal_link_audit_ok,
       internal_link_broken_count:$internal_link_broken_count,
+      related_links_coverage_ok:$related_links_coverage_ok,
+      related_links_missing_count:$related_links_missing_count,
+      related_links_suggested_count:$related_links_suggested_count,
       faq_jsonld_audit_ok:$faq_jsonld_audit_ok,
       faq_jsonld_changed_count:$faq_jsonld_changed_count,
       faq_jsonld_error_count:$faq_jsonld_error_count,

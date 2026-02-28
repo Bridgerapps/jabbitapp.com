@@ -31,6 +31,11 @@ WS = pathlib.Path("/home/jabbit/.openclaw/workspace")
 SITE_DIR = WS / "jabbitapp.com"
 RULES_FILE = WS / "data" / "seo" / "related-links.json"
 
+# Pages that intentionally do NOT get a related-links block (different layout / already acts as hub).
+EXEMPT_FILES = {
+    "index.html",
+}
+
 
 def iso_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -88,6 +93,19 @@ def suggest_links(filename: str) -> list[dict]:
             "text": "GLP-1 side effects guide (what to expect + when to call)",
         })
 
+    # GLP-1 medication pages that don't start with "glp" in filename.
+    if any(k in fn for k in ["tirzepatide", "semaglutide", "ozempic", "wegovy", "mounjaro", "zepbound", "compounded"]):
+        if fn != "glp-1-side-effects-guide.html":
+            links.append({
+                "href": "/glp-1-side-effects-guide.html",
+                "text": "GLP-1 side effects guide (what to expect + when to call)",
+            })
+        if fn != "glp1-dosing-schedule.html":
+            links.append({
+                "href": "/glp1-dosing-schedule.html",
+                "text": "GLP-1 dosing schedules (reference for what to log)",
+            })
+
     if ("stress" in fn or "hrv" in fn) and fn != "glp1-stress-anxiety-hrv-guide.html":
         links.append({
             "href": "/glp1-stress-anxiety-hrv-guide.html",
@@ -135,7 +153,7 @@ def main() -> int:
     covered = {r.get("file") for r in rules if r.get("file")}
 
     html_files = sorted([p.name for p in SITE_DIR.glob("*.html") if p.is_file()])
-    missing = [fn for fn in html_files if fn not in covered]
+    missing = [fn for fn in html_files if fn not in covered and fn not in EXEMPT_FILES]
 
     suggestions: list[dict] = []
     for fn in missing[: args.limit]:
@@ -157,6 +175,8 @@ def main() -> int:
         "rules_file": str(RULES_FILE),
         "html_files": len(html_files),
         "covered": len(covered),
+        "exempt_files": sorted(EXEMPT_FILES),
+        "missing_count": len(missing),
         "missing": missing,
         "suggested_count": len(suggestions),
         "suggestions": suggestions,
@@ -170,7 +190,8 @@ def main() -> int:
         for s in suggestions[:20]:
             print(f"  - {s['file']}: {', '.join([l['href'] for l in s['links']])}")
 
-    if args.check and suggestions:
+    # Coverage check: fail if there are *any* uncovered pages (after exemptions).
+    if args.check and (len(missing) > 0):
         return 2
 
     return 0

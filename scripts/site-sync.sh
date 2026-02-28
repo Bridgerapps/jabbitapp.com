@@ -28,6 +28,8 @@ run_audit() {
   bash "$WS/scripts/html-seo-audit.sh" >/dev/null
   bash "$WS/scripts/sitemap-audit.sh" >/dev/null
   python3 "$WS/scripts/internal-link-audit.py" >/dev/null
+  # Ensure every content page has a related-links rule (index.html exempt).
+  python3 "$WS/scripts/related-links-suggest.py" --check --json >/dev/null
   # Ensure FAQ JSON-LD is up-to-date (no-op when already synced).
   python3 "$WS/scripts/faq-jsonld-sync.py" --check --json >/dev/null
 }

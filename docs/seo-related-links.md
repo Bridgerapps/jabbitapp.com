@@ -61,6 +61,17 @@ Notes:
 - Suggestions are filename-heuristic based; review link text before publishing.
 - The script is intentionally conservative (only suggests rules when it can generate ≥2 useful links).
 
+## Coverage check (reliability)
+
+We also use `related-links-suggest.py` as a **coverage** check: it fails when any non-exempt page under `jabbitapp.com/` lacks a rule.
+
+Exemptions (different layout / already acts as hub):
+- `index.html`
+
+This check is wired into:
+- `scripts/site-sync.sh verify`
+- `scripts/health-check.sh`
+
 ## Reliability check (broken internal links)
 
 - Script: `scripts/internal-link-audit.py`
