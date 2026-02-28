@@ -26,6 +26,7 @@ MAX_PER_SUB = int(os.getenv("NEWACCT_MAX_PER_SUB", "3"))
 MAX_TOTAL = int(os.getenv("NEWACCT_MAX_TOTAL", "20"))
 DISCOVERY_USE_COOKIE = os.getenv("REDDIT_DISCOVERY_USE_COOKIE", "false").lower() in ("1", "true", "yes")
 DISCOVERY_COOKIE_FALLBACK = os.getenv("REDDIT_DISCOVERY_COOKIE_FALLBACK", "true").lower() in ("1", "true", "yes")
+NEGATIVE_BLACKLIST_PATH = "/home/jabbit/.openclaw/workspace/data/reddit/negative-post-blacklist.txt"
 
 
 def _load_env(path: str) -> dict:
@@ -172,6 +173,16 @@ def main() -> int:
     now = datetime.now(UTC).timestamp()
     picks = []
 
+    negative_blacklist = set()
+    try:
+        with open(NEGATIVE_BLACKLIST_PATH, "r", encoding="utf-8") as f:
+            for line in f:
+                x = line.strip()
+                if x:
+                    negative_blacklist.add(x)
+    except FileNotFoundError:
+        pass
+
     for idx, sub in enumerate(TARGET_SUBS):
         url = f"https://www.reddit.com/r/{sub}/new.json?limit=40"
         discovery_proxy = discovery_proxies[idx % len(discovery_proxies)] if discovery_proxies else action_proxy
@@ -191,6 +202,9 @@ def main() -> int:
             if not d:
                 continue
             if (d.get("author") or "") == username:
+                continue
+            post_id = (d.get("id") or "").strip()
+            if post_id and post_id in negative_blacklist:
                 continue
             if d.get("locked") or d.get("over_18"):
                 continue

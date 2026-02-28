@@ -38,6 +38,9 @@ fi
 COMMENTS_POSTED=0
 SEEN_SUBS=""
 
+# Refresh blacklist from recent negative-scored comments so we avoid re-engaging bad-fit threads.
+bash "$WS/scripts/reddit_negative_feedback_blacklist.sh" >/tmp/reddit-blacklist.out 2>/dev/null || true
+
 echo "Finding conservative opportunities for new account..."
 OPP_FILE=$(mktemp)
 python3 "$WS/scripts/find_reddit_opportunities_newacct.py" > "$OPP_FILE" 2>/dev/null || true
