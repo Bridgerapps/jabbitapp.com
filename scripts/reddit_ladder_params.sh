@@ -23,9 +23,16 @@ NOW_TS=$(date +%s)
 DAYS_SINCE_START=$(( (NOW_TS - WARMUP_START_TS) / 86400 ))
 export REDDIT_WARMUP_DAY=$((DAYS_SINCE_START + 1))
 
+# Mention warmup gate (override in scripts/reddit.env if needed)
+REDDIT_MENTION_START_DAY="${REDDIT_MENTION_START_DAY:-4}"
+
 # Comment limits by warmup day
-if [ "$REDDIT_WARMUP_DAY" -le 7 ]; then
+if [ "$REDDIT_WARMUP_DAY" -le 3 ]; then
     MAX_UPVOTES=2
+    MAX_COMMENTS=1
+    JABBIT_MENTION_ALLOWED=false
+elif [ "$REDDIT_WARMUP_DAY" -lt "$REDDIT_MENTION_START_DAY" ]; then
+    MAX_UPVOTES=3
     MAX_COMMENTS=1
     JABBIT_MENTION_ALLOWED=false
 elif [ "$REDDIT_WARMUP_DAY" -le 14 ]; then
