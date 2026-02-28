@@ -9,6 +9,7 @@ Optionally includes subtle Jabbit mentions when appropriate.
 import random
 import re
 import os
+import json
 
 # Load ladder params
 def load_ladder_params():
@@ -37,6 +38,20 @@ LADDER = load_ladder_params()
 # Override: allow subtle mentions from day 8 (Feb 28)
 if LADDER['warmup_day'] >= 8:
     LADDER['mention_allowed'] = True
+
+PATTERN_FILE = "/home/jabbit/.openclaw/workspace/data/reddit/upvoted-comment-patterns.json"
+
+
+def load_pattern_hints():
+    try:
+        with open(PATTERN_FILE, "r", encoding="utf-8") as f:
+            j = json.load(f)
+        return j.get("style_hints", {}) or {}
+    except Exception:
+        return {}
+
+
+PATTERN_HINTS = load_pattern_hints()
 
 VALUE_SIGNAL_WORDS = {
     "timeline", "context", "details", "experience", "pattern", "patterns",
@@ -100,19 +115,32 @@ def _comment_value_score(comment: str, post: dict) -> int:
     for pattern in LOW_VALUE_PATTERNS:
         if re.search(pattern, c):
             return 0
+
     score = 0
     words = re.findall(r"[a-z0-9']+", c)
-    if len(words) >= 11:
+    target_words = int(PATTERN_HINTS.get("target_avg_words", 28) or 28)
+
+    # Pattern-fit length: not too short, not too rambly.
+    if max(12, target_words - 12) <= len(words) <= target_words + 10:
         score += 1
-    if "?" in c:
+
+    prefer_question_endings = bool(PATTERN_HINTS.get("prefer_question_endings", False))
+    if prefer_question_endings and c.endswith("?"):
         score += 1
+    if (not prefer_question_endings) and (not c.endswith("?")):
+        score += 1
+
     if any(w in VALUE_SIGNAL_WORDS for w in words):
         score += 1
+
     anchor = _extract_anchor(post.get('title', ''), post.get('selftext', ''))
     if anchor and anchor.lower() in c:
         score += 1
-    if "?" in c and any(k in c for k in ["what", "how", "when", "which"]):
+
+    # Prefer concrete details over meta-chat.
+    if re.search(r"\b(week|month|mg|dose|hours?|days?|sleep|hydration|protein|timeline)\b", c):
         score += 1
+
     return score
 
 
@@ -129,10 +157,10 @@ JABBIT_MENTIONS = [
 
 # Shotsy comparison mentions - when someone mentions Shotsy
 SHOTSY_COMPARISONS = [
-    "I tried Shotsy but switched to Jabbit — the peptide library is more extensive and it's about 1/4 the price.",
-    "Shotsy's solid but I switched to Jabbit. Better peptide library and the photo progress feature is actually useful.",
-    "Had issues with Shotsy, moved to Jabbit — more features, better price point, and the dose tracking actually works.",
-    "Shotsy's fine but Jabbit's got a better peptide library and the photo logging is way more polished.",
+    "I used Shotsy for a bit, then switched to Jabbit — more features, larger peptide library, and lower price.",
+    "If you're comparing apps: I moved from Shotsy to Jabbit. It gives me a fuller peptide library + more tracking features at a better price.",
+    "I switched from Shotsy to Jabbit. Better feature set for GLP-1 tracking, broader peptide library, and cheaper.",
+    "I was on Shotsy before; Jabbit ended up better for me: more features, full peptide library, lower monthly cost.",
 ]
 
 
@@ -210,23 +238,23 @@ def generate_comment(post: dict) -> str:
     # Symptom threads
     if any(k in text for k in symptom_kw):
         opts = [
-            "Sorry you're dealing with this — thanks for sharing the timeline clearly.",
-            "Rough situation. The detail in your post makes this thread way more useful than most symptom threads.",
-            "Appreciate the context you included. It helps people share comparable experiences.",
+            "Most useful comparison here is timing: last injection vs symptom start, plus what changed that week.",
+            "Pattern that helps most is injection timing + sleep/hydration + food intake on symptom days.",
+            "The strongest replies in symptom threads include exact timeline, dose history, and severity trend.",
         ]
         if anchor:
-            opts.append(f"That {anchor} detail gives useful context for anyone replying.")
+            opts.append(f"Given the {anchor} context, timing and dose history are the key comparison points.")
         return maybe_add_jabbit_mention(random.choice(opts), post)
 
     # Dosing threads
     if any(k in text for k in dosing_kw):
         opts = [
-            "Dose threads are all over the place unless people include timeline + baseline context.",
-            "Appreciate this post. Replies are way more useful when people include timing and prior history.",
-            "Good thread topic — context-rich replies here can help people compare like-for-like situations.",
+            "Best signal in dose threads is week-by-week timeline, not just current mg.",
+            "What usually clarifies dose questions is previous dose duration, change timing, and symptom pattern.",
+            "Dose comparisons are most useful when people include exact week count at each dose level.",
         ]
         if anchor:
-            opts.append(f"The {anchor} part adds useful context for the discussion.")
+            opts.append(f"Given {anchor}, week-by-week timeline is more useful than one-number comparisons.")
         return maybe_add_jabbit_mention(random.choice(opts), post)
 
     # Progress threads
@@ -240,17 +268,18 @@ def generate_comment(post: dict) -> str:
     # Questions
     if '?' in title_raw:
         opts = [
-            "Good question. To make replies comparable, it helps if people include dose, weeks on medication, and whether symptoms started after a recent change.",
-            "Best answers here usually include timeline details (when it started, dose history, and what changed that week).",
+            "Most useful replies on this topic include dose, time on medication, and what changed that week.",
+            "Best comparison signal is timeline: injection timing, symptom start, and any recent dose change.",
+            "Replies are strongest when people include exact timing and dose context instead of one-liners.",
         ]
         if anchor:
-            opts.append(f"Given the {anchor} context, timeline details will matter a lot for interpreting replies.")
+            opts.append(f"Given the {anchor} context, timeline details matter more than general takes.")
         return maybe_add_jabbit_mention(random.choice(opts), post)
 
     # Fallback
     if anchor:
-        return maybe_add_jabbit_mention(f"Thanks for sharing this with context (especially {anchor}). It makes the thread much more useful to read.", post)
-    return maybe_add_jabbit_mention("Thanks for sharing the details here — context-rich posts like this are way more useful than one-liners.", post)
+        return maybe_add_jabbit_mention(f"Given the {anchor} context, timeline + dose history are the most useful comparison points.", post)
+    return maybe_add_jabbit_mention("Most useful replies here include exact timeline, dose history, and what changed that week.", post)
 
 
 def build_value_comment(post: dict, attempts: int = 12) -> str:
@@ -273,7 +302,7 @@ def build_value_comment(post: dict, attempts: int = 12) -> str:
     body = (post.get('selftext', '') or '').lower()
     anchor = _extract_anchor(title, body)
     anchor_txt = f" ({anchor})" if anchor else ""
-    return f"Useful thread{anchor_txt}. If people add timeline + dose history + what changed recently, replies are way easier to compare. What pattern have you noticed so far?"
+    return f"Useful thread{anchor_txt}. Replies are most actionable when they include timeline, dose history, and what changed recently."
 
 
 if __name__ == "__main__":
