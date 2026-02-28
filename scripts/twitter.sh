@@ -1,6 +1,21 @@
 #!/usr/bin/env bash
 # Unified Twitter script
 
+set -euo pipefail
+
+WS="/home/jabbit/.openclaw/workspace"
+
+# Optional local env (local-only file; do not commit secrets)
+if [ -f "$WS/scripts/twitter.env" ]; then
+  set -a
+  # shellcheck disable=SC1090
+  source "$WS/scripts/twitter.env"
+  set +a
+fi
+
+# Back-compat alias
+: "${TWITTER_API_KEY:=${TWITTERAPI_KEY:-}}"
+
 ACTION="${1:-status}"
 
 case "$ACTION" in

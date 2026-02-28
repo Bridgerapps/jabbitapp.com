@@ -8,6 +8,9 @@ scripts/proxy.env
 scripts/*.env
 scripts/*.env.*
 
+# Allow committed examples
+!scripts/twitter.env.example
+
 # Gmail state (local)
 data/email/inbox_state.json
 

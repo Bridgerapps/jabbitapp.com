@@ -34,7 +34,7 @@ SITE_DIR = WS / "jabbitapp.com"
 RULES_FILE = WS / "data" / "seo" / "related-links.json"
 
 SECTION_RE = re.compile(
-    r"<section\s+id=\"related-links\"[^>]*>.*?</section>\s*",
+    r"\n\s*<section\s+id=\"related-links\"[^>]*>.*?</section>\s*",
     re.IGNORECASE | re.DOTALL,
 )
 
@@ -53,7 +53,6 @@ def build_section(links: list[dict]) -> str:
         ]
     )
     return (
-        "\n"
         "  <section id=\"related-links\">\n"
         "    <h2>Related</h2>\n"
         "    <ul>\n"
@@ -67,7 +66,9 @@ def place_section(html: str, section_html: str) -> tuple[str, str]:
     """Return (new_html, placement)"""
     # If already present, replace
     if SECTION_RE.search(html):
-        return (SECTION_RE.sub(section_html, html, count=1), "replaced")
+        # SECTION_RE includes the leading newline/whitespace before the section; add back a
+        # single newline so repeated runs don’t accumulate blank lines.
+        return (SECTION_RE.sub("\n" + section_html, html, count=1), "replaced")
 
     # Prefer before sources
     # NOTE: avoid using "\\b" after a quote; it doesn't match reliably.
@@ -75,16 +76,16 @@ def place_section(html: str, section_html: str) -> tuple[str, str]:
     m = re.search(r"\n\s*<div\s+class=\"source\"(?=[\s>])", html, flags=re.IGNORECASE)
     if m:
         idx = m.start()
-        return (html[:idx] + section_html + html[idx:], "inserted_before_source")
+        return (html[:idx] + "\n" + section_html + html[idx:], "inserted_before_source")
 
     # Fallback: before </body>
     m = re.search(r"</body\s*>", html, flags=re.IGNORECASE)
     if m:
         idx = m.start()
-        return (html[:idx] + section_html + html[idx:], "inserted_before_body_close")
+        return (html[:idx] + "\n" + section_html + html[idx:], "inserted_before_body_close")
 
     # Worst case: append
-    return (html + section_html, "appended")
+    return (html + "\n" + section_html, "appended")
 
 
 def main() -> int:

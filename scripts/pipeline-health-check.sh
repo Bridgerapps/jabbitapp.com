@@ -10,7 +10,7 @@ set -euo pipefail
 
 WORKSPACE="/home/jabbit/.openclaw/workspace"
 REDIS_DIR="${WORKSPACE}/data/reddit"
-TODAY="$(date +%Y-%m-%d)"
+TODAY="$(date -u +%Y-%m-%d)"
 
 DEEP=0
 if [ "${1:-}" = "--deep" ]; then
@@ -20,6 +20,64 @@ fi
 say_ok()   { echo "  ✅ $*"; }
 say_warn() { echo "  ⚠️  $*"; }
 say_bad()  { echo "  ❌ $*"; }
+
+# Print Git status for a repo (path provided). This avoids false “pushed today”
+# by comparing HEAD vs upstream tracking branch, when available.
+git_report() {
+  local repo_path="$1"
+  local label="$2"
+
+  if ! git -C "$repo_path" rev-parse --git-dir >/dev/null 2>&1; then
+    say_warn "$label: not a git repo"
+    return 0
+  fi
+
+  local upstream=""
+  upstream="$(git -C "$repo_path" rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null || true)"
+
+  local behind=0
+  local ahead=0
+  if [ -n "$upstream" ]; then
+    # rev-list output: "<behind> <ahead>" when using "upstream...HEAD"
+    read -r behind ahead < <(git -C "$repo_path" rev-list --left-right --count "${upstream}...HEAD" 2>/dev/null || echo "0 0")
+  fi
+
+  # Dirty working tree detection (staged/unstaged/untracked)
+  local dirty=0
+  if ! git -C "$repo_path" diff --quiet 2>/dev/null; then dirty=1; fi
+  if ! git -C "$repo_path" diff --cached --quiet 2>/dev/null; then dirty=1; fi
+  if [ -n "$(git -C "$repo_path" ls-files --others --exclude-standard 2>/dev/null | head -1 || true)" ]; then dirty=1; fi
+
+  if [ -z "$upstream" ]; then
+    say_warn "$label: no upstream tracking branch"
+  else
+    if [ "${ahead:-0}" -eq 0 ] 2>/dev/null && [ "${behind:-0}" -eq 0 ] 2>/dev/null; then
+      say_ok "$label: up to date with $upstream"
+    else
+      # We keep it simple + actionable.
+      if [ "${ahead:-0}" -gt 0 ] 2>/dev/null && [ "${behind:-0}" -gt 0 ] 2>/dev/null; then
+        say_warn "$label: diverged (ahead $ahead, behind $behind)"
+      elif [ "${ahead:-0}" -gt 0 ] 2>/dev/null; then
+        say_warn "$label: ahead of $upstream by $ahead commit(s) (needs push)"
+      elif [ "${behind:-0}" -gt 0 ] 2>/dev/null; then
+        say_warn "$label: behind $upstream by $behind commit(s) (needs pull)"
+      fi
+    fi
+
+    # “Pushed today” only when up-to-date AND upstream HEAD commit date is today.
+    local upstream_date=""
+    upstream_date="$(git -C "$repo_path" log -1 --date=format:%Y-%m-%d --format=%cd "$upstream" 2>/dev/null | head -1 || true)"
+    if [ "${ahead:-0}" -eq 0 ] 2>/dev/null && [ "${behind:-0}" -eq 0 ] 2>/dev/null && [ "$upstream_date" = "$TODAY" ]; then
+      say_ok "$label: pushed today"
+    elif [ -n "$upstream_date" ]; then
+      echo "  $label: upstream last commit $upstream_date"
+    fi
+  fi
+
+  if [ "$dirty" -eq 1 ] 2>/dev/null; then
+    say_warn "$label: working tree has uncommitted changes"
+  fi
+}
 
 echo "=== Pipeline Health Check ==="
 echo "Date: $TODAY"
@@ -37,19 +95,18 @@ else
 fi
 
 # GitHub Sync
+# NOTE: We report *truthful* sync status against the upstream branch.
+# (Previously this used last commit date as a proxy and could say “pushed today” even when ahead.)
 echo ""
 echo "📦 GitHub:"
 cd "$WORKSPACE" 2>/dev/null || true
 if git rev-parse --git-dir >/dev/null 2>&1; then
   say_ok "Git repo initialized"
-  # Proxy for "pushed today": last commit date in UTC.
-  LAST_COMMIT="$(git log -1 --date=format:%Y-%m-%d --format=%cd 2>/dev/null | head -1 || true)"
-  if [ "$LAST_COMMIT" = "$TODAY" ]; then
-    say_ok "Pushed today"
-  elif [ -n "$LAST_COMMIT" ]; then
-    say_warn "Last push: $LAST_COMMIT"
-  else
-    say_warn "No commits found"
+  git_report "$WORKSPACE" "root"
+
+  # Submodule/site repo (if present)
+  if [ -d "$WORKSPACE/jabbitapp.com" ] && git -C "$WORKSPACE/jabbitapp.com" rev-parse --git-dir >/dev/null 2>&1; then
+    git_report "$WORKSPACE/jabbitapp.com" "jabbitapp.com"
   fi
 else
   say_bad "Git not initialized"
