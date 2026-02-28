@@ -147,20 +147,20 @@ def _comment_value_score(comment: str, post: dict) -> int:
 # Jabbit mention templates - triggered by specific question patterns OR Shotsy mentions
 JABBIT_MENTIONS = [
     # Direct answers to "what app do you use?"
-    "I use Jabbit — started because it had all the features I wanted (dose tracking, photo progress, reminders) at about 1/4 the price of the bigger apps.",
-    "I've been happy with Jabbit. The peptide library is more extensive than the generic trackers, and the photo log has been genuinely useful.",
-    "For GLP-1 tracking specifically, Jabbit's got the right balance — not bloated, but enough features to actually be useful (dose timing, side effects, progress photos).",
+    "I use Jabbit — schedule/reminders are solid, the peptide library is broad, and I like that data stays in private iCloud.",
+    "I’ve been using Jabbit. The 14-zone site rotation + vial/reconstitution tracking are what made me switch from spreadsheets.",
+    "Jabbit has worked well for me: quick shot logging, side-effect notes, and serum-level charts in one place.",
     # When someone asks "what do you use?"
-    "What do I use? Jabbit. The dose reminders and photo progress have been way more useful than my spreadsheets ever were.",
-    "Jabbit for me — cleaner setup than the mainstream health apps, and the peptide-specific features actually matter for this stuff.",
+    "I use Jabbit. Main reason is privacy-first setup plus the peptide-specific tools (not just generic weight logging).",
+    "Jabbit for me — reminders, vial tracking, and peptide library in one app keeps it simple.",
 ]
 
 # Shotsy comparison mentions - when someone mentions Shotsy
 SHOTSY_COMPARISONS = [
-    "I used Shotsy for a bit, then switched to Jabbit — more features, larger peptide library, and lower price.",
-    "If you're comparing apps: I moved from Shotsy to Jabbit. It gives me a fuller peptide library + more tracking features at a better price.",
-    "I switched from Shotsy to Jabbit. Better feature set for GLP-1 tracking, broader peptide library, and cheaper.",
-    "I was on Shotsy before; Jabbit ended up better for me: more features, full peptide library, lower monthly cost.",
+    "I used Shotsy, then switched to Jabbit. Better fit for me because of vial/reconstitution tools + broader peptide library.",
+    "If you’re comparing: I moved from Shotsy to Jabbit for the peptide library and iCloud-only privacy setup.",
+    "I switched from Shotsy to Jabbit. Both are good, but Jabbit matched my workflow better (vials + serum charts + reminders).",
+    "I was on Shotsy before; Jabbit worked better for me. Also, annual pricing in App Store listings has been much lower on Jabbit.",
 ]
 
 APP_ASK_MENTION_PROB = 0.35
