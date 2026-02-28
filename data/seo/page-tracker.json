@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-02-27T17:50:00Z",
-  "total_pages": 15,
+  "last_updated": "2026-02-28T11:50:19Z",
+  "total_pages": 22,
   "topics": [
     {
       "topic": "bpc-157",
@@ -76,12 +76,46 @@
       "topic": "glp-1-fatigue",
       "filename": "glp1-fatigue-guide.html",
       "created": "2026-02-27"
+    },
+    {
+      "topic": "glp1-cost-without-insurance",
+      "filename": "glp1-cost-without-insurance.html",
+      "created": "2026-02-28"
+    },
+    {
+      "topic": "glp1-dosing-schedule",
+      "filename": "glp1-dosing-schedule.html",
+      "created": "2026-02-28"
+    },
+    {
+      "topic": "glp1-injection-tracker",
+      "filename": "glp1-injection-tracker.html",
+      "created": "2026-02-28"
+    },
+    {
+      "topic": "glp1-stress-anxiety-hrv-guide",
+      "filename": "glp1-stress-anxiety-hrv-guide.html",
+      "created": "2026-02-28"
+    },
+    {
+      "topic": "glp1-stress-hrv-guide",
+      "filename": "glp1-stress-hrv-guide.html",
+      "created": "2026-02-28"
+    },
+    {
+      "topic": "peptides-compounding-list-update",
+      "filename": "peptides-compounding-list-update.html",
+      "created": "2026-02-28"
+    },
+    {
+      "topic": "glp-1-constipation",
+      "filename": "glp1-constipation-guide.html",
+      "created": "2026-02-28"
     }
   ],
   "suggested_topics": [
     "glp-1-fatigue",
     "glp-1-hair-loss",
-    "glp-1-constipation",
     "glp-1-cost-without-insurance",
     "glp-1-nausea",
     "glp-1-dosing",

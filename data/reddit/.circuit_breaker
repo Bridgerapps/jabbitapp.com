@@ -1,7 +1,0 @@
-{
-    "state": "OPEN",
-    "failure_count": 2,
-    "last_failure": "2026-02-27T15:52:14+00:00",
-    "retry_after": 240,
-    "reason": "Recovery test failed - still DEGRADED"
-}

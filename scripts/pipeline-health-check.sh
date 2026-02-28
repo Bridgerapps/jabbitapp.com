@@ -25,8 +25,9 @@ echo "📦 GitHub:"
 cd "$WORKSPACE" 2>/dev/null
 if git rev-parse --git-dir > /dev/null 2>&1; then
     echo "  ✅ Git repo initialized"
-    # Check if last push was today
-    LAST_PUSH=$(git log -1 --format='%Y-%m-%d' --before="23:59" 2>/dev/null | head -1)
+    # Check if last commit (proxy for "last push") was today
+    # (git log --format expects placeholders like %cd, not strftime tokens)
+    LAST_PUSH=$(git log -1 --date=format:%Y-%m-%d --format=%cd 2>/dev/null | head -1)
     if [ "$LAST_PUSH" = "$TODAY" ]; then
         echo "  ✅ Pushed today"
     else

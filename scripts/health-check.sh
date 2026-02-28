@@ -13,6 +13,7 @@ mkdir -p "$WORKSPACE/data/status"
 echo "=== Health Check $(date) ===" >> "$LOG_FILE"
 
 ISSUES=()
+BLOCKERS=()
 
 # Defaults so JSON always has stable keys
 REDDIT_STATUS="UNKNOWN"
@@ -20,6 +21,21 @@ REDDIT_FRESH="false"
 REDDIT_AGE="null"
 KARMA_TOTAL="null"
 KARMA_STALE="true"
+
+# HTML SEO audit defaults
+HTML_SEO_AUDIT_OK="null"
+HTML_SEO_ISSUE_COUNT="null"
+
+# Sitemap audit defaults
+SITEMAP_AUDIT_OK="null"
+SITEMAP_MISSING_COUNT="null"
+SITEMAP_EXTRA_COUNT="null"
+ROBOTS_SITEMAP_OK="null"
+
+# Internal link audit defaults
+INTERNAL_LINK_AUDIT_OK="null"
+INTERNAL_LINK_BROKEN_COUNT="null"
+
 
 # 1. Site health
 SITE_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://www.jabbitapp.com 2>/dev/null || echo "000")
@@ -70,12 +86,102 @@ SEO_COUNT=$(bash "$WORKSPACE/scripts/seo-count.sh" 2>/dev/null | tr -d ' ' || ec
 SEO_META=$(bash "$WORKSPACE/scripts/seo-count.sh" --json 2>/dev/null || echo '{}')
 echo "📊 SEO: $SEO_COUNT pages (method=$(echo "$SEO_META" | jq -r '.method // "unknown"'))" >> "$LOG_FILE"
 
+# 6b. HTML SEO basics audit (title/description/canonical/h1)
+HTML_AUDIT_JSON=$(bash "$WORKSPACE/scripts/html-seo-audit.sh" --json 2>/dev/null || true)
+if [ -z "$HTML_AUDIT_JSON" ]; then
+    HTML_AUDIT_JSON='{}'
+fi
+
+if echo "$HTML_AUDIT_JSON" | jq -e . >/dev/null 2>&1; then
+    HTML_SEO_ISSUE_COUNT=$(echo "$HTML_AUDIT_JSON" | jq -r '.issue_count // null')
+
+    if [ "$HTML_SEO_ISSUE_COUNT" = "0" ]; then
+        HTML_SEO_AUDIT_OK="true"
+        echo "✅ HTML SEO: OK" >> "$LOG_FILE"
+    else
+        HTML_SEO_AUDIT_OK="false"
+        echo "⚠️ HTML SEO: issues=${HTML_SEO_ISSUE_COUNT:-?}" >> "$LOG_FILE"
+        ISSUES+=("HTML SEO audit: issues=${HTML_SEO_ISSUE_COUNT:-?}")
+    fi
+else
+    echo "⚠️ HTML SEO: audit output not JSON" >> "$LOG_FILE"
+    ISSUES+=("HTML SEO audit failed to run")
+    HTML_SEO_AUDIT_OK="false"
+    HTML_SEO_ISSUE_COUNT="null"
+fi
+
+# 6c. Sitemap audit (sitemap.xml vs local html)
+SITEMAP_AUDIT_JSON=$(bash "$WORKSPACE/scripts/sitemap-audit.sh" --json 2>/dev/null || true)
+if [ -z "$SITEMAP_AUDIT_JSON" ]; then
+    SITEMAP_AUDIT_JSON='{}'
+fi
+
+if echo "$SITEMAP_AUDIT_JSON" | jq -e . >/dev/null 2>&1; then
+    SITEMAP_AUDIT_OK=$(echo "$SITEMAP_AUDIT_JSON" | jq -r '.ok // null')
+    SITEMAP_MISSING_COUNT=$(echo "$SITEMAP_AUDIT_JSON" | jq -r '.missing_count // null')
+    SITEMAP_EXTRA_COUNT=$(echo "$SITEMAP_AUDIT_JSON" | jq -r '.extra_count // null')
+
+    ROBOTS_POINTS=$(echo "$SITEMAP_AUDIT_JSON" | jq -r '.robots_points // "unknown"')
+    if [ "$ROBOTS_POINTS" = "ok" ]; then
+        ROBOTS_SITEMAP_OK="true"
+    else
+        ROBOTS_SITEMAP_OK="false"
+    fi
+
+    if [ "$SITEMAP_AUDIT_OK" = "true" ]; then
+        echo "✅ Sitemap: OK" >> "$LOG_FILE"
+    else
+        echo "⚠️ Sitemap: missing=${SITEMAP_MISSING_COUNT:-?} extra=${SITEMAP_EXTRA_COUNT:-?} robots=${ROBOTS_POINTS}" >> "$LOG_FILE"
+        ISSUES+=("Sitemap mismatch: missing=${SITEMAP_MISSING_COUNT:-?} extra=${SITEMAP_EXTRA_COUNT:-?}")
+        BLOCKERS+=("Sitemap mismatch")
+    fi
+else
+    echo "⚠️ Sitemap: audit output not JSON" >> "$LOG_FILE"
+    ISSUES+=("Sitemap audit failed to run")
+    SITEMAP_AUDIT_OK="false"
+    SITEMAP_MISSING_COUNT="null"
+    SITEMAP_EXTRA_COUNT="null"
+    ROBOTS_SITEMAP_OK="null"
+fi
+
+# 6d. Internal link audit (ensure no broken internal .html hrefs)
+LINK_AUDIT_JSON=$(python3 "$WORKSPACE/scripts/internal-link-audit.py" --json 2>/dev/null || true)
+if [ -z "$LINK_AUDIT_JSON" ]; then
+    LINK_AUDIT_JSON='{}'
+fi
+
+if echo "$LINK_AUDIT_JSON" | jq -e . >/dev/null 2>&1; then
+    INTERNAL_LINK_BROKEN_COUNT=$(echo "$LINK_AUDIT_JSON" | jq -r '.broken_count // null')
+    if [ "$INTERNAL_LINK_BROKEN_COUNT" = "0" ]; then
+        INTERNAL_LINK_AUDIT_OK="true"
+        echo "✅ Internal links: OK" >> "$LOG_FILE"
+    else
+        INTERNAL_LINK_AUDIT_OK="false"
+        echo "⚠️ Internal links: broken=${INTERNAL_LINK_BROKEN_COUNT:-?}" >> "$LOG_FILE"
+        ISSUES+=("Internal link audit: broken=${INTERNAL_LINK_BROKEN_COUNT:-?}")
+    fi
+else
+    echo "⚠️ Internal links: audit output not JSON" >> "$LOG_FILE"
+    ISSUES+=("Internal link audit failed to run")
+    INTERNAL_LINK_AUDIT_OK="false"
+    INTERNAL_LINK_BROKEN_COUNT="null"
+fi
+
 # 7. Recent commits
 COMMITS_24H=$(git -C "$WORKSPACE" log --since="24 hours ago" --oneline 2>/dev/null | wc -l)
 echo "📊 Commits (24h): $COMMITS_24H" >> "$LOG_FILE"
 
 # 8. Pipeline blockers detection (SMARTER REDDIT CHECK)
-BLOCKERS=()
+
+# Add HTML SEO audit as a blocker signal
+if [ "$HTML_SEO_AUDIT_OK" = "false" ]; then
+    BLOCKERS+=("HTML SEO issues present")
+fi
+
+# Internal link audit blocker signal
+if [ "$INTERNAL_LINK_AUDIT_OK" = "false" ]; then
+    BLOCKERS+=("Broken internal links")
+fi
 
 # Check Reddit telemetry (canonical normalized output)
 REDDIT_CANON=$(bash "$WORKSPACE/scripts/reddit-telemetry.sh" 2>/dev/null || true)
@@ -118,6 +224,14 @@ cat > "$STATUS_FILE" << EOF
   "site_status": $SITE_CODE,
   "git_today": $([ "$LAST_PUSH" = "$TODAY" ] && echo "true" || echo "false"),
   "seo_pages": $SEO_COUNT,
+  "html_seo_audit_ok": $HTML_SEO_AUDIT_OK,
+  "html_seo_issue_count": $HTML_SEO_ISSUE_COUNT,
+  "sitemap_audit_ok": $SITEMAP_AUDIT_OK,
+  "sitemap_missing_count": $SITEMAP_MISSING_COUNT,
+  "sitemap_extra_count": $SITEMAP_EXTRA_COUNT,
+  "robots_sitemap_ok": $ROBOTS_SITEMAP_OK,
+  "internal_link_audit_ok": $INTERNAL_LINK_AUDIT_OK,
+  "internal_link_broken_count": $INTERNAL_LINK_BROKEN_COUNT,
   "reddit_status": "${REDDIT_STATUS}",
   "reddit_fresh": $REDDIT_FRESH,
   "reddit_age_seconds": $REDDIT_AGE,
@@ -126,8 +240,8 @@ cat > "$STATUS_FILE" << EOF
   "commits_24h": $COMMITS_24H,
   "disk_pct": $DISK_PCT,
   "memory_free_mb": $FREE_MEM,
-  "issues": $(printf '%s\n' "${ISSUES[@]}" | jq -R . | jq -s .),
-  "blockers": $(printf '%s\n' "${BLOCKERS[@]}" | jq -R . | jq -s .)
+  "issues": $({ if [ ${#ISSUES[@]} -gt 0 ]; then printf '%s\n' "${ISSUES[@]}" | jq -R . | jq -s .; else echo '[]'; fi; }),
+  "blockers": $({ if [ ${#BLOCKERS[@]} -gt 0 ]; then printf '%s\n' "${BLOCKERS[@]}" | jq -R . | jq -s .; else echo '[]'; fi; })
 }
 EOF
 
@@ -143,6 +257,14 @@ if [ -f "$SYSTEMS_FILE" ]; then
     --argjson reddit_fresh "$REDDIT_FRESH" \
     --argjson reddit_age_seconds "$REDDIT_AGE" \
     --argjson seo_pages "$SEO_COUNT" \
+    --argjson html_seo_audit_ok "$HTML_SEO_AUDIT_OK" \
+    --argjson html_seo_issue_count "$HTML_SEO_ISSUE_COUNT" \
+    --argjson sitemap_audit_ok "$SITEMAP_AUDIT_OK" \
+    --argjson sitemap_missing_count "$SITEMAP_MISSING_COUNT" \
+    --argjson sitemap_extra_count "$SITEMAP_EXTRA_COUNT" \
+    --argjson robots_sitemap_ok "$ROBOTS_SITEMAP_OK" \
+    --argjson internal_link_audit_ok "$INTERNAL_LINK_AUDIT_OK" \
+    --argjson internal_link_broken_count "$INTERNAL_LINK_BROKEN_COUNT" \
     --argjson karma_total "$KARMA_TOTAL" \
     --argjson karma_stale "$KARMA_STALE" \
     '.last_check=$last_check
@@ -150,6 +272,14 @@ if [ -f "$SYSTEMS_FILE" ]; then
      | .reddit_fresh=$reddit_fresh
      | .reddit_age_seconds=$reddit_age_seconds
      | .seo_pages=$seo_pages
+     | .html_seo_audit_ok=$html_seo_audit_ok
+     | .html_seo_issue_count=$html_seo_issue_count
+     | .sitemap_audit_ok=$sitemap_audit_ok
+     | .sitemap_missing_count=$sitemap_missing_count
+     | .sitemap_extra_count=$sitemap_extra_count
+     | .robots_sitemap_ok=$robots_sitemap_ok
+     | .internal_link_audit_ok=$internal_link_audit_ok
+     | .internal_link_broken_count=$internal_link_broken_count
      | .karma_total=$karma_total
      | .karma_stale=$karma_stale' \
     "$SYSTEMS_FILE" > "$SYSTEMS_FILE.tmp" && mv "$SYSTEMS_FILE.tmp" "$SYSTEMS_FILE"
@@ -160,9 +290,31 @@ else
     --argjson reddit_fresh "$REDDIT_FRESH" \
     --argjson reddit_age_seconds "$REDDIT_AGE" \
     --argjson seo_pages "$SEO_COUNT" \
+    --argjson html_seo_audit_ok "$HTML_SEO_AUDIT_OK" \
+    --argjson html_seo_issue_count "$HTML_SEO_ISSUE_COUNT" \
+    --argjson sitemap_audit_ok "$SITEMAP_AUDIT_OK" \
+    --argjson sitemap_missing_count "$SITEMAP_MISSING_COUNT" \
+    --argjson sitemap_extra_count "$SITEMAP_EXTRA_COUNT" \
+    --argjson robots_sitemap_ok "$ROBOTS_SITEMAP_OK" \
+    --argjson internal_link_audit_ok "$INTERNAL_LINK_AUDIT_OK" \
+    --argjson internal_link_broken_count "$INTERNAL_LINK_BROKEN_COUNT" \
     --argjson karma_total "$KARMA_TOTAL" \
     --argjson karma_stale "$KARMA_STALE" \
-    '{last_check:$last_check, reddit:$reddit, reddit_fresh:$reddit_fresh, reddit_age_seconds:$reddit_age_seconds, seo_pages:$seo_pages, karma_total:$karma_total, karma_stale:$karma_stale}' \
+    '{last_check:$last_check,
+      reddit:$reddit,
+      reddit_fresh:$reddit_fresh,
+      reddit_age_seconds:$reddit_age_seconds,
+      seo_pages:$seo_pages,
+      html_seo_audit_ok:$html_seo_audit_ok,
+      html_seo_issue_count:$html_seo_issue_count,
+      sitemap_audit_ok:$sitemap_audit_ok,
+      sitemap_missing_count:$sitemap_missing_count,
+      sitemap_extra_count:$sitemap_extra_count,
+      robots_sitemap_ok:$robots_sitemap_ok,
+      internal_link_audit_ok:$internal_link_audit_ok,
+      internal_link_broken_count:$internal_link_broken_count,
+      karma_total:$karma_total,
+      karma_stale:$karma_stale}' \
     > "$SYSTEMS_FILE"
 fi
 

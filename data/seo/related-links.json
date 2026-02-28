@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "updated": "2026-02-28T11:50:20Z",
+  "rules": [
+    {
+      "file": "glp-1-side-effects-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (link symptoms to weeks/dose)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp1-constipation-guide.html",
+          "text": "GLP-1 constipation guide (practical relief + red flags)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-constipation-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + symptoms)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-cost-without-insurance.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP\u20111 injection tracker (helps you stay consistent)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP\u20111 dosing schedules (for logging & reminders)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-dosing-schedule.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP\u20111 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP\u20111 injection tracking guide (site rotation, logging tips)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide"
+        },
+        {
+          "href": "/glp1-constipation-guide.html",
+          "text": "GLP-1 constipation guide (track symptoms after dose changes)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-half-life.html",
+      "links": [
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP\u20111 dosing schedules (for logging & reminders)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP\u20111 injection tracker (free, privacy\u2011first)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-vs-tirzepatide.html",
+      "links": [
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP\u20111 dosing schedules (Ozempic/Wegovy/Mounjaro/Zepbound)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP\u20111 injection tracker (log injections + dose changes)"
+        }
+      ]
+    }
+  ]
+}
