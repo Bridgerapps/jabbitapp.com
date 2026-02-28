@@ -54,8 +54,14 @@ MEDICAL_ADVICE_PATTERNS = [
 LOW_VALUE_PATTERNS = [
     r"\bthanks for sharing\b", r"\bappreciate you posting\b",
     r"\breally useful, thanks\b", r"\bsolid info here\b",
-    r"\bfollowing this thread\b", r"\bgood point\.?$",
+    r"\bfollowing this thread\b", r"\bfollowing this one\b", r"\bgood point\.?$",
     r"\bmost useful replies usually include\b", r"\bworth collecting answers with context\b",
+]
+
+# Avoid auto-commenting on sensitive acute-health threads where generic comments get downvoted.
+SENSITIVE_SKIP_KEYWORDS = [
+    "shingles", "emergency", "chest pain", "faint", "fainting", "suicidal",
+    "pregnan", "miscarriage", "seizure", "stroke", "hospital",
 ]
 
 
@@ -78,6 +84,11 @@ def _violates_medical_advice_policy(comment: str) -> bool:
     if not c:
         return True
     return any(re.search(p, c) for p in MEDICAL_ADVICE_PATTERNS)
+
+
+def _should_skip_post(post: dict) -> bool:
+    text = f"{post.get('title','')} {post.get('selftext','')}".lower()
+    return any(k in text for k in SENSITIVE_SKIP_KEYWORDS)
 
 
 def _comment_value_score(comment: str, post: dict) -> int:
@@ -228,10 +239,13 @@ def generate_comment(post: dict) -> str:
 
     # Questions
     if '?' in title_raw:
-        return maybe_add_jabbit_mention(random.choice([
-            "Good question. Replies are most useful when people include timeline + background so it's actually comparable.",
-            "Following this one — hoping people share specific context, not just one-line reactions.",
-        ]), post)
+        opts = [
+            "Good question. To make replies comparable, it helps if people include dose, weeks on medication, and whether symptoms started after a recent change.",
+            "Best answers here usually include timeline details (when it started, dose history, and what changed that week).",
+        ]
+        if anchor:
+            opts.append(f"Given the {anchor} context, timeline details will matter a lot for interpreting replies.")
+        return maybe_add_jabbit_mention(random.choice(opts), post)
 
     # Fallback
     if anchor:
@@ -241,6 +255,9 @@ def generate_comment(post: dict) -> str:
 
 def build_value_comment(post: dict, attempts: int = 12) -> str:
     """Generate comment with value gate."""
+    if _should_skip_post(post):
+        return ""
+
     used_comments = set()
     for _ in range(max(1, attempts)):
         candidate = generate_comment(post)
@@ -256,7 +273,7 @@ def build_value_comment(post: dict, attempts: int = 12) -> str:
     body = (post.get('selftext', '') or '').lower()
     anchor = _extract_anchor(title, body)
     anchor_txt = f" ({anchor})" if anchor else ""
-    return f"Thanks for sharing the context{anchor_txt}. For anyone replying, adding timeline + background usually makes answers way more useful. What part has been most confusing so far?"
+    return f"Useful thread{anchor_txt}. If people add timeline + dose history + what changed recently, replies are way easier to compare. What pattern have you noticed so far?"
 
 
 if __name__ == "__main__":
