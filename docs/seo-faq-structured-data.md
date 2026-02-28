@@ -21,6 +21,9 @@ We maintain a small script in `scripts/` that can:
 1) extract FAQ dt/dd pairs from an HTML file, and
 2) generate a JSON-LD `<script type="application/ld+json">…</script>` block.
 
+We also maintain a **batch sync** helper so we don’t forget this step on new pages:
+- `scripts/faq-jsonld-sync.py` — scans `jabbitapp.com/` and injects/updates FAQ JSON-LD anywhere a `<dl class="faq">` exists.
+
 ### Usage
 
 Print the JSON-LD `<script>` block (copy/paste into HTML):
@@ -38,6 +41,16 @@ python3 scripts/faqpage_jsonld_from_dl.py jabbitapp.com/<page>.html --inplace
 Notes:
 - The script targets the first `<dl class="faq">` and generates a Schema.org `FAQPage`.
 - In `--inplace` mode it inserts before `</head>` when possible and uses `id="faq-jsonld"` for safe replacement.
+
+Batch sync (recommended):
+
+```bash
+# Apply to all pages under jabbitapp.com/
+python3 scripts/faq-jsonld-sync.py
+
+# Verify everything is already synced (non-zero exit if drift)
+python3 scripts/faq-jsonld-sync.py --check --json
+```
 
 ## After you edit pages
 

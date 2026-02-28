@@ -25,3 +25,4 @@ Load this every session. Keep each line as: **failure → guardrail**.
 - [2026-02-26] Generated 60+ simple SEO pages that weren't aligned with goal (converting visitors to app downloads) → **Generate content that serves the goal, not just volume. Quality over quantity. Review before pushing.**
 
 - [2026-02-26] Website became trash because I generated pages without reviewing, comparing to existing good design, or verifying they serve the goal → **Before generating ANY content: review it, compare to existing good work, verify it serves the goal. Never assume generated content is good.**
+- [2026-02-28] FAQ JSON-LD injection was non-idempotent due to a bad regex (would insert/accumulate changes every run) → **Prefer idempotent transforms; add a --check mode + wire into health/site-sync so drift is caught immediately.**

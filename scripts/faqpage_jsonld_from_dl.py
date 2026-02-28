@@ -148,21 +148,24 @@ def render_jsonld_script(data, *, indent: int, script_id: str | None) -> str:
     json.loads(json_str)
 
     id_attr = f' id="{script_id}"' if script_id else ""
+    # NOTE: avoid adding extra blank lines after the closing </script>.
+    # This keeps in-place replacement stable/idempotent when the surrounding HTML
+    # already has its own whitespace/newlines.
     return "\n".join(
         [
             f'<script type="application/ld+json"{id_attr}>',
             json_str,
             "</script>",
-            "",
         ]
-    )
+    ) + "\n"
 
 
 def _replace_or_insert_script(html: str, *, script_id: str, script_block: str) -> tuple[str, bool]:
     # Replace existing script with the same id, if present.
     # Non-greedy DOTALL to cover pretty-printed JSON.
     pat = re.compile(
-        r"<script(?P<attrs>[^>]*?)>\\s*(?P<body>.*?)\\s*</script>",
+        # Include trailing whitespace so replacement is idempotent (doesn't accumulate blank lines).
+        r"<script(?P<attrs>[^>]*?)>\s*(?P<body>.*?)\s*</script>\s*",
         flags=re.IGNORECASE | re.DOTALL,
     )
 
@@ -171,16 +174,23 @@ def _replace_or_insert_script(html: str, *, script_id: str, script_block: str) -
         if "application/ld+json" not in attrs_l:
             return False
         # Require explicit id match for safety.
-        return re.search(rf"\\bid=['\"]{re.escape(script_id)}['\"]", attrs, flags=re.IGNORECASE) is not None
+        return re.search(rf"\bid=['\"]{re.escape(script_id)}['\"]", attrs, flags=re.IGNORECASE) is not None
 
-    m = None
-    for cand in pat.finditer(html):
-        if is_target(cand.group("attrs")):
-            m = cand
-            break
+    # Replace ALL matching blocks to prevent duplicates if a prior run inserted multiple.
+    replaced_any = False
 
-    if m:
-        new_html = html[: m.start()] + script_block + html[m.end() :]
+    def repl(m: re.Match) -> str:
+        nonlocal replaced_any
+        if is_target(m.group("attrs")):
+            # Keep exactly one copy of the target script.
+            if not replaced_any:
+                replaced_any = True
+                return script_block
+            return ""
+        return m.group(0)
+
+    new_html, _n = pat.subn(repl, html)
+    if replaced_any:
         return new_html, True
 
     # Otherwise insert into <head> if possible, else before </body>, else append.

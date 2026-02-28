@@ -1,85 +1,113 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Unified Pipeline Health Check
-# Runs in seconds, provides quick status of all components
+# Runs in seconds, provides quick status of all components.
+#
+# Usage:
+#   bash scripts/pipeline-health-check.sh        # fast checks
+#   bash scripts/pipeline-health-check.sh --deep # also run SEO audits (still read-only)
+
+set -euo pipefail
 
 WORKSPACE="/home/jabbit/.openclaw/workspace"
 REDIS_DIR="${WORKSPACE}/data/reddit"
-TODAY=$(date +%Y-%m-%d)
+TODAY="$(date +%Y-%m-%d)"
+
+DEEP=0
+if [ "${1:-}" = "--deep" ]; then
+  DEEP=1
+fi
+
+say_ok()   { echo "  ✅ $*"; }
+say_warn() { echo "  ⚠️  $*"; }
+say_bad()  { echo "  ❌ $*"; }
 
 echo "=== Pipeline Health Check ==="
 echo "Date: $TODAY"
 echo ""
 
-# Site Health
+# Site Health (timeouts so this never hangs)
 echo "🌐 Site:"
-HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://www.jabbitapp.com/ 2>/dev/null)
+HTTP_CODE="$(curl -sS -o /dev/null -w "%{http_code}" --connect-timeout 3 --max-time 6 https://www.jabbitapp.com/ 2>/dev/null || true)"
 if [ "$HTTP_CODE" = "200" ]; then
-    echo "  ✅ jabbitapp.com ($HTTP_CODE)"
+  say_ok "jabbitapp.com ($HTTP_CODE)"
+elif [ -z "$HTTP_CODE" ]; then
+  say_bad "jabbitapp.com (no response)"
 else
-    echo "  ❌ jabbitapp.com ($HTTP_CODE)"
+  say_bad "jabbitapp.com ($HTTP_CODE)"
 fi
 
 # GitHub Sync
 echo ""
 echo "📦 GitHub:"
-cd "$WORKSPACE" 2>/dev/null
-if git rev-parse --git-dir > /dev/null 2>&1; then
-    echo "  ✅ Git repo initialized"
-    # Check if last commit (proxy for "last push") was today
-    # (git log --format expects placeholders like %cd, not strftime tokens)
-    LAST_PUSH=$(git log -1 --date=format:%Y-%m-%d --format=%cd 2>/dev/null | head -1)
-    if [ "$LAST_PUSH" = "$TODAY" ]; then
-        echo "  ✅ Pushed today"
-    else
-        echo "  ⚠️  Last push: $LAST_PUSH"
-    fi
+cd "$WORKSPACE" 2>/dev/null || true
+if git rev-parse --git-dir >/dev/null 2>&1; then
+  say_ok "Git repo initialized"
+  # Proxy for "pushed today": last commit date in UTC.
+  LAST_COMMIT="$(git log -1 --date=format:%Y-%m-%d --format=%cd 2>/dev/null | head -1 || true)"
+  if [ "$LAST_COMMIT" = "$TODAY" ]; then
+    say_ok "Pushed today"
+  elif [ -n "$LAST_COMMIT" ]; then
+    say_warn "Last push: $LAST_COMMIT"
+  else
+    say_warn "No commits found"
+  fi
 else
-    echo "  ❌ Git not initialized"
+  say_bad "Git not initialized"
 fi
 
 # Circuit Breaker
 echo ""
 echo "🔄 Circuit Breaker:"
 if [ -f "${REDIS_DIR}/.circuit_breaker" ]; then
-    # Try JSON format first, then plain text
-    CB_DATE=$(grep -o '"date": "[^"]*"' "${REDIS_DIR}/.circuit_breaker" | cut -d'"' -f4)
-    if [ -z "$CB_DATE" ]; then
-        CB_DATE=$(cat "${REDIS_DIR}/.circuit_breaker" 2>/dev/null | tr -d '[:space:]')
-    fi
-    if [ "$CB_DATE" = "$TODAY" ]; then
-        echo "  ✅ Reset today"
-    else
-        echo "  ⚠️  Stale: $CB_DATE"
-    fi
+  # Try JSON format first, then plain text.
+  CB_DATE="$(python3 - <<'PY' 2>/dev/null || true
+import json, pathlib
+p = pathlib.Path('/home/jabbit/.openclaw/workspace/data/reddit/.circuit_breaker')
+try:
+  doc = json.loads(p.read_text())
+  print((doc.get('date') or '').strip())
+except Exception:
+  pass
+PY
+)"
+  if [ -z "$CB_DATE" ]; then
+    CB_DATE="$(tr -d '[:space:]' < "${REDIS_DIR}/.circuit_breaker" 2>/dev/null || true)"
+  fi
+
+  if [ "$CB_DATE" = "$TODAY" ]; then
+    say_ok "Reset today"
+  else
+    say_warn "Stale: ${CB_DATE:-unknown}"
+  fi
 else
-    echo "  ❌ Missing"
+  say_bad "Missing"
 fi
 
 # Data Directory
 echo ""
 echo "💾 Data:"
 if [ -d "$REDIS_DIR" ]; then
-    SIZE=$(du -sh "$REDIS_DIR" 2>/dev/null | cut -f1)
-    echo "  Reddit data: $SIZE"
-    
-    # Check for stale files (older than 2 days = 2880 minutes)
-    STALE=$(find "$REDIS_DIR" -name "*.json" -mmin +2880 2>/dev/null | wc -l)
-    if [ "$STALE" -gt 0 ]; then
-        echo "  ⚠️  $STALE stale files (>2 days)"
-    else
-        echo "  ✅ No stale files"
-    fi
+  SIZE="$(du -sh "$REDIS_DIR" 2>/dev/null | cut -f1 || true)"
+  echo "  Reddit data: ${SIZE:-unknown}"
+
+  # Check for stale files (older than 2 days = 2880 minutes)
+  STALE="$(find "$REDIS_DIR" -type f -name "*.json" -mmin +2880 2>/dev/null | wc -l | tr -d ' ' || true)"
+  if [ "${STALE:-0}" -gt 0 ] 2>/dev/null; then
+    say_warn "$STALE stale files (>2 days)"
+  else
+    say_ok "No stale files"
+  fi
 else
-    echo "  ❌ Reddit data missing"
+  say_bad "Reddit data missing"
 fi
 
 # Email
 echo ""
 echo "📧 Email:"
-if [ -n "$RESEND_API_KEY" ]; then
-    echo "  ✅ API key configured"
+if [ -n "${RESEND_API_KEY:-}" ]; then
+  say_ok "API key configured"
 else
-    echo "  ❌ No API key"
+  say_bad "No API key"
 fi
 
 # Twitter
@@ -87,24 +115,43 @@ echo ""
 echo "🐦 Twitter:"
 TWITTER_STATE="${WORKSPACE}/data/twitter_post_state.json"
 if [ -f "$TWITTER_STATE" ]; then
-    LAST_POST=$(grep -o '"last_post_time": [^,]*' "$TWITTER_STATE" | cut -d' ' -f2)
-    if [ -n "$LAST_POST" ]; then
-        echo "  Last post: $LAST_POST"
-    else
-        echo "  ⚠️  No successful posts"
-    fi
+  LAST_POST=""
+  if command -v jq >/dev/null 2>&1; then
+    LAST_POST="$(jq -r '.last_post_time // empty' "$TWITTER_STATE" 2>/dev/null || true)"
+    if [ "$LAST_POST" = "null" ]; then LAST_POST=""; fi
+  fi
+  if [ -z "$LAST_POST" ]; then
+    # fallback (best-effort)
+    LAST_POST="$(grep -o '"last_post_time"\s*:\s*[^,}]*' "$TWITTER_STATE" 2>/dev/null | head -1 | cut -d: -f2- | tr -d ' "' || true)"
+    if [ "$LAST_POST" = "null" ]; then LAST_POST=""; fi
+  fi
+
+  if [ -n "$LAST_POST" ]; then
+    echo "  Last post: $LAST_POST"
+  else
+    say_warn "No successful posts"
+  fi
 else
-    echo "  ❌ No state file"
+  say_bad "No state file"
 fi
 
 # Disk & Memory
 echo ""
 echo "💻 System:"
-DISK=$(df -h /home/jabbit | tail -1 | awk '{print $5}' | sed 's/%//')
-echo "  Disk: ${DISK}%"
+DISK="$(df -h /home/jabbit 2>/dev/null | tail -1 | awk '{print $5}' | sed 's/%//' || true)"
+echo "  Disk: ${DISK:-?}%"
 
-MEM_AVAIL=$(free -m | awk 'NR==2{print $7}')
-echo "  Memory available: ${MEM_AVAIL}MB"
+MEM_AVAIL="$(free -m 2>/dev/null | awk 'NR==2{print $7}' || true)"
+echo "  Memory available: ${MEM_AVAIL:-?}MB"
+
+if [ "$DEEP" = "1" ]; then
+  echo ""
+  echo "🔍 SEO Audits (deep, read-only):"
+  if bash "$WORKSPACE/scripts/html-seo-audit.sh" >/dev/null 2>&1; then say_ok "html-seo-audit"; else say_bad "html-seo-audit"; fi
+  if bash "$WORKSPACE/scripts/sitemap-audit.sh" >/dev/null 2>&1; then say_ok "sitemap-audit"; else say_bad "sitemap-audit"; fi
+  if python3 "$WORKSPACE/scripts/internal-link-audit.py" >/dev/null 2>&1; then say_ok "internal-link-audit"; else say_bad "internal-link-audit"; fi
+  if python3 "$WORKSPACE/scripts/faq-jsonld-sync.py" --check --json >/dev/null 2>&1; then say_ok "faq-jsonld-sync"; else say_bad "faq-jsonld-sync"; fi
+fi
 
 echo ""
 echo "=== Summary ==="

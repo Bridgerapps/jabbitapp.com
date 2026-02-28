@@ -19,6 +19,8 @@ cmd="${1:-all}"
 run_sync() {
   python3 "$WS/scripts/seo-sync-tracker.py" >/dev/null
   python3 "$WS/scripts/related-links-sync.py" >/dev/null
+  # Keep FAQPage structured data in sync for any pages that include <dl class="faq">.
+  python3 "$WS/scripts/faq-jsonld-sync.py" >/dev/null
   python3 "$WS/scripts/generate-sitemap.py" >/dev/null
 }
 
@@ -26,6 +28,8 @@ run_audit() {
   bash "$WS/scripts/html-seo-audit.sh" >/dev/null
   bash "$WS/scripts/sitemap-audit.sh" >/dev/null
   python3 "$WS/scripts/internal-link-audit.py" >/dev/null
+  # Ensure FAQ JSON-LD is up-to-date (no-op when already synced).
+  python3 "$WS/scripts/faq-jsonld-sync.py" --check --json >/dev/null
 }
 
 case "$cmd" in

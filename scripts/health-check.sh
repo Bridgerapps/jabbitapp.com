@@ -36,6 +36,10 @@ ROBOTS_SITEMAP_OK="null"
 INTERNAL_LINK_AUDIT_OK="null"
 INTERNAL_LINK_BROKEN_COUNT="null"
 
+# FAQ JSON-LD audit defaults
+FAQ_JSONLD_AUDIT_OK="null"
+FAQ_JSONLD_CHANGED_COUNT="null"
+FAQ_JSONLD_ERROR_COUNT="null"
 
 # 1. Site health
 SITE_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://www.jabbitapp.com 2>/dev/null || echo "000")
@@ -167,6 +171,36 @@ else
     INTERNAL_LINK_BROKEN_COUNT="null"
 fi
 
+# 6e. FAQ JSON-LD audit (ensure FAQPage structured data stays synced)
+FAQ_AUDIT_JSON=$(python3 "$WORKSPACE/scripts/faq-jsonld-sync.py" --check --json 2>/dev/null || true)
+if [ -z "$FAQ_AUDIT_JSON" ]; then
+    FAQ_AUDIT_JSON='{}'
+fi
+
+if echo "$FAQ_AUDIT_JSON" | jq -e . >/dev/null 2>&1; then
+    FAQ_JSONLD_CHANGED_COUNT=$(echo "$FAQ_AUDIT_JSON" | jq -r '.changed_count // null')
+    FAQ_JSONLD_ERROR_COUNT=$(echo "$FAQ_AUDIT_JSON" | jq -r '.error_count // null')
+
+    if [ "$FAQ_JSONLD_ERROR_COUNT" != "0" ] && [ "$FAQ_JSONLD_ERROR_COUNT" != "null" ]; then
+        FAQ_JSONLD_AUDIT_OK="false"
+        echo "⚠️ FAQ JSON-LD: errors=${FAQ_JSONLD_ERROR_COUNT:-?}" >> "$LOG_FILE"
+        ISSUES+=("FAQ JSON-LD audit: errors=${FAQ_JSONLD_ERROR_COUNT:-?}")
+    elif [ "$FAQ_JSONLD_CHANGED_COUNT" = "0" ]; then
+        FAQ_JSONLD_AUDIT_OK="true"
+        echo "✅ FAQ JSON-LD: OK" >> "$LOG_FILE"
+    else
+        FAQ_JSONLD_AUDIT_OK="false"
+        echo "⚠️ FAQ JSON-LD: needs_sync=${FAQ_JSONLD_CHANGED_COUNT:-?}" >> "$LOG_FILE"
+        ISSUES+=("FAQ JSON-LD out of sync: needs_sync=${FAQ_JSONLD_CHANGED_COUNT:-?}")
+    fi
+else
+    echo "⚠️ FAQ JSON-LD: audit output not JSON" >> "$LOG_FILE"
+    ISSUES+=("FAQ JSON-LD audit failed to run")
+    FAQ_JSONLD_AUDIT_OK="false"
+    FAQ_JSONLD_CHANGED_COUNT="null"
+    FAQ_JSONLD_ERROR_COUNT="null"
+fi
+
 # 7. Recent commits
 COMMITS_24H=$(git -C "$WORKSPACE" log --since="24 hours ago" --oneline 2>/dev/null | wc -l)
 echo "📊 Commits (24h): $COMMITS_24H" >> "$LOG_FILE"
@@ -181,6 +215,11 @@ fi
 # Internal link audit blocker signal
 if [ "$INTERNAL_LINK_AUDIT_OK" = "false" ]; then
     BLOCKERS+=("Broken internal links")
+fi
+
+# FAQ JSON-LD audit blocker signal
+if [ "$FAQ_JSONLD_AUDIT_OK" = "false" ]; then
+    BLOCKERS+=("FAQ JSON-LD out of sync")
 fi
 
 # Check Reddit telemetry (canonical normalized output)
@@ -232,6 +271,9 @@ cat > "$STATUS_FILE" << EOF
   "robots_sitemap_ok": $ROBOTS_SITEMAP_OK,
   "internal_link_audit_ok": $INTERNAL_LINK_AUDIT_OK,
   "internal_link_broken_count": $INTERNAL_LINK_BROKEN_COUNT,
+  "faq_jsonld_audit_ok": $FAQ_JSONLD_AUDIT_OK,
+  "faq_jsonld_changed_count": $FAQ_JSONLD_CHANGED_COUNT,
+  "faq_jsonld_error_count": $FAQ_JSONLD_ERROR_COUNT,
   "reddit_status": "${REDDIT_STATUS}",
   "reddit_fresh": $REDDIT_FRESH,
   "reddit_age_seconds": $REDDIT_AGE,
@@ -265,6 +307,9 @@ if [ -f "$SYSTEMS_FILE" ]; then
     --argjson robots_sitemap_ok "$ROBOTS_SITEMAP_OK" \
     --argjson internal_link_audit_ok "$INTERNAL_LINK_AUDIT_OK" \
     --argjson internal_link_broken_count "$INTERNAL_LINK_BROKEN_COUNT" \
+    --argjson faq_jsonld_audit_ok "$FAQ_JSONLD_AUDIT_OK" \
+    --argjson faq_jsonld_changed_count "$FAQ_JSONLD_CHANGED_COUNT" \
+    --argjson faq_jsonld_error_count "$FAQ_JSONLD_ERROR_COUNT" \
     --argjson karma_total "$KARMA_TOTAL" \
     --argjson karma_stale "$KARMA_STALE" \
     '.last_check=$last_check
@@ -280,6 +325,9 @@ if [ -f "$SYSTEMS_FILE" ]; then
      | .robots_sitemap_ok=$robots_sitemap_ok
      | .internal_link_audit_ok=$internal_link_audit_ok
      | .internal_link_broken_count=$internal_link_broken_count
+     | .faq_jsonld_audit_ok=$faq_jsonld_audit_ok
+     | .faq_jsonld_changed_count=$faq_jsonld_changed_count
+     | .faq_jsonld_error_count=$faq_jsonld_error_count
      | .karma_total=$karma_total
      | .karma_stale=$karma_stale' \
     "$SYSTEMS_FILE" > "$SYSTEMS_FILE.tmp" && mv "$SYSTEMS_FILE.tmp" "$SYSTEMS_FILE"
@@ -298,6 +346,9 @@ else
     --argjson robots_sitemap_ok "$ROBOTS_SITEMAP_OK" \
     --argjson internal_link_audit_ok "$INTERNAL_LINK_AUDIT_OK" \
     --argjson internal_link_broken_count "$INTERNAL_LINK_BROKEN_COUNT" \
+    --argjson faq_jsonld_audit_ok "$FAQ_JSONLD_AUDIT_OK" \
+    --argjson faq_jsonld_changed_count "$FAQ_JSONLD_CHANGED_COUNT" \
+    --argjson faq_jsonld_error_count "$FAQ_JSONLD_ERROR_COUNT" \
     --argjson karma_total "$KARMA_TOTAL" \
     --argjson karma_stale "$KARMA_STALE" \
     '{last_check:$last_check,
@@ -313,6 +364,9 @@ else
       robots_sitemap_ok:$robots_sitemap_ok,
       internal_link_audit_ok:$internal_link_audit_ok,
       internal_link_broken_count:$internal_link_broken_count,
+      faq_jsonld_audit_ok:$faq_jsonld_audit_ok,
+      faq_jsonld_changed_count:$faq_jsonld_changed_count,
+      faq_jsonld_error_count:$faq_jsonld_error_count,
       karma_total:$karma_total,
       karma_stale:$karma_stale}' \
     > "$SYSTEMS_FILE"

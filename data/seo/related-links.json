@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-02-28T11:50:20Z",
+  "updated": "2026-02-28T15:52:26Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -102,6 +102,108 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "GLP\u20111 injection tracker (log injections + dose changes)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-fatigue-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log fatigue vs dose/week)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp1-stress-anxiety-hrv-guide.html",
+          "text": "Stress/HRV on GLP-1 (what to track + patterns)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-kidney-health-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log hydration + symptoms)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for dose changes)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (signals to watch + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-serum-levels-explained.html",
+      "links": [
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (timing & dose changes)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (logging tips)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (keep your history consistent)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-alcohol-guide.html",
+      "links": [
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (nausea, GI, fatigue, etc.)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (note alcohol, symptoms, sleep)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "injection-site-rotation-science.html",
+      "links": [
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (track site + dose over time)"
+        },
+        {
+          "href": "/peptide-site-rotation-guide.html",
+          "text": "Peptide site rotation guide (practical rotation patterns)"
+        }
+      ]
+    },
+    {
+      "file": "glp-1-injection-tracking-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/injection-site-rotation-science.html",
+          "text": "Injection site rotation science (what matters + why)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for logging)"
         }
       ]
     }

@@ -47,6 +47,20 @@ Apply (write in-place):
 python3 scripts/related-links-sync.py --json
 ```
 
+## Auto-suggest missing rules
+
+If new pages are added, you can generate suggestions (or append them) using:
+
+```bash
+python3 scripts/related-links-suggest.py --json
+python3 scripts/related-links-suggest.py --check
+python3 scripts/related-links-suggest.py --write --json
+```
+
+Notes:
+- Suggestions are filename-heuristic based; review link text before publishing.
+- The script is intentionally conservative (only suggests rules when it can generate ≥2 useful links).
+
 ## Reliability check (broken internal links)
 
 - Script: `scripts/internal-link-audit.py`
