@@ -17,6 +17,16 @@ MIN_POST_COMMENTS = int(os.getenv("PATTERN_MIN_POST_COMMENTS", "20"))
 MIN_COMMENT_SCORE = int(os.getenv("PATTERN_MIN_COMMENT_SCORE", "5"))
 MAX_COMMENTS = int(os.getenv("PATTERN_MAX_COMMENTS", "120"))
 
+DISCUSSION_KEYWORDS = [
+    "?", "side effect", "symptom", "dose", "dosing", "plateau", "stall", "insurance",
+    "coverage", "pa", "nausea", "constipation", "diarrhea", "fatigue", "anxiety", "sleep",
+    "timing", "injection", "week", "month", "mg",
+]
+EXCLUDE_POST_KEYWORDS = [
+    "progress pic", "before and after", "face to face", "monthly update", "transformation",
+    "down ", "lost ", "photo", "pics", "skin removal pics",
+]
+
 
 def load_env(path: str) -> dict:
     out = {}
@@ -145,9 +155,14 @@ def main():
         chosen = []
         for p in children:
             d = p.get("data") or {}
+            title = (d.get("title") or "").lower()
             if (d.get("num_comments") or 0) < MIN_POST_COMMENTS:
                 continue
             if d.get("stickied"):
+                continue
+            if any(k in title for k in EXCLUDE_POST_KEYWORDS):
+                continue
+            if not any(k in title for k in DISCUSSION_KEYWORDS):
                 continue
             chosen.append(d)
             if len(chosen) >= TOP_POSTS_PER_SUB:
