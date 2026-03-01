@@ -9,6 +9,7 @@ Goals:
 
 from __future__ import annotations
 
+import argparse
 import os
 import re
 import subprocess
@@ -157,7 +158,7 @@ def score_comment(c: Cand, comment: str) -> int:
     return s
 
 
-def main() -> int:
+def main(auto_post: bool = False) -> int:
     # refresh blacklist best-effort
     subprocess.run(['bash', str(BLACKLIST_REFRESH)], capture_output=True, text=True, timeout=45)
 
@@ -195,7 +196,14 @@ def main() -> int:
         print(f"no_post reason=low_quality best_score={best_score} threshold={threshold} post_id={best.post_id} metrics={metrics_line}")
         return 0
 
-    # Post exactly one.
+    # Review-only mode by default: do NOT auto-post unless explicitly enabled.
+    if not auto_post:
+        print(f"approved_no_post post_id={best.post_id} subreddit={best.subreddit} score={best_score} threshold={threshold} url={best.permalink}")
+        print(f"comment={best_comment}")
+        print(metrics_line)
+        return 0
+
+    # Post exactly one (explicit mode only).
     p = subprocess.run(
         ['bash', str(POST_SCRIPT), best.post_id, best_comment],
         capture_output=True,
@@ -216,4 +224,7 @@ def main() -> int:
 
 
 if __name__ == '__main__':
-    raise SystemExit(main())
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--post', action='store_true', help='Actually post approved comment (default: review only)')
+    args = parser.parse_args()
+    raise SystemExit(main(auto_post=args.post))
