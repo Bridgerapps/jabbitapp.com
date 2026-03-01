@@ -30,34 +30,57 @@ OPPORTUNITY_PATTERNS = {
     ]
 }
 
-def load_proxy():
-    """Load Reddit proxy from env."""
+PROXY_ENV = "/home/jabbit/.openclaw/workspace/scripts/proxy.env"
+VAR_RE = re.compile(r"\$\{([A-Za-z_][A-Za-z0-9_]*)\}")
+
+
+def _expand_vars(val: str, vars: dict[str, str]) -> str:
+    return VAR_RE.sub(lambda m: vars.get(m.group(1), os.environ.get(m.group(1), m.group(0))), val)
+
+
+def load_proxy() -> str:
+    """Load Reddit proxy URL from proxy.env.
+
+    Note: proxy.env may define REDDIT_PROXY_URL using ${VAR} placeholders.
+    We parse + expand those placeholders so curl gets a real URL.
+    """
     try:
-        with open('/home/jabbit/.openclaw/workspace/scripts/proxy.env') as f:
-            content = f.read()
-            for line in content.split('\n'):
-                if line.startswith('export REDDIT_PROXY_URL='):
-                    return line.split('=')[1].strip().strip('"').strip("'")
-                if line.startswith('export PROXY_HOST='):
-                    # Build from components
-                    host = line.split('=')[1].strip().strip('"')
-                if line.startswith('export PROXY_USER='):
-                    user = line.split('=')[1].strip().strip('"')
-                if line.startswith('export PROXY_PASS='):
-                    password = line.split('=')[1].strip().strip('"')
-            # Try alternative: build from components
-            import os
-            lines = content.split('\n')
-            vars = {}
-            for line in lines:
-                if '=' in line and not line.startswith('#'):
-                    key, val = line.split('=', 1)
-                    vars[key] = val.strip().strip('"').strip("'")
-            if 'PROXY_HOST' in vars and 'PROXY_USER' in vars:
-                return f"http://{vars.get('PROXY_USER')}:{vars.get('PROXY_PASS')}@{vars.get('PROXY_HOST')}:{vars.get('PROXY_PORT', '80')}"
+        if not os.path.exists(PROXY_ENV):
+            return ""
+
+        vars: dict[str, str] = {}
+        with open(PROXY_ENV, "r", encoding="utf-8") as f:
+            for raw in f:
+                line = raw.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if line.startswith("export "):
+                    line = line[len("export ") :]
+                if "=" not in line:
+                    continue
+                k, v = line.split("=", 1)
+                k = k.strip()
+                v = v.strip().strip('"').strip("'")
+                v = _expand_vars(v, vars)
+                vars[k] = v
+
+        proxy = (vars.get("REDDIT_PROXY_URL") or "").strip()
+        # If it still contains ${...}, ignore and build from components.
+        if proxy and ("${" not in proxy):
+            return proxy
+
+        host = (vars.get("PROXY_HOST") or "").strip()
+        port = (vars.get("PROXY_PORT") or "80").strip()
+        user = (vars.get("PROXY_USER") or "").strip()
+        password = (vars.get("PROXY_PASS") or "").strip()
+
+        if host and user:
+            return f"http://{user}:{password}@{host}:{port}"
+
     except Exception as e:
         print(f"Proxy load error: {e}", flush=True)
-    return ''
+
+    return ""
 
 def load_session():
     """Load Reddit session cookie."""

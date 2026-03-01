@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-02-28T23:53:10Z",
-  "total_pages": 22,
+  "last_updated": "2026-03-01T01:54:50Z",
+  "total_pages": 23,
   "topics": [
     {
       "topic": "bpc-157",
@@ -111,6 +111,11 @@
       "topic": "glp-1-constipation",
       "filename": "glp1-constipation-guide.html",
       "created": "2026-02-28"
+    },
+    {
+      "topic": "shotsy-alternative",
+      "filename": "shotsy-alternative.html",
+      "created": "2026-03-01"
     }
   ],
   "suggested_topics": [

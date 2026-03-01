@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-02-28T23:52:59Z",
+  "updated": "2026-03-01T01:54:50Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -353,6 +353,23 @@
         {
           "href": "/peptide-storage-stability-guide.html",
           "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "shotsy-alternative.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
         }
       ]
     }

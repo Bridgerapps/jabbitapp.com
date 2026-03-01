@@ -74,6 +74,17 @@ def suggest_links(filename: str) -> list[dict]:
             "text": "GLP-1 dosing schedules (reference for what to log)",
         })
 
+    # Competitor/alternative pages are still GLP-1 intent; treat them like GLP pages.
+    if "shotsy" in fn:
+        links.append({
+            "href": "/glp1-dosing-schedule.html",
+            "text": "GLP-1 dosing schedules (reference for what to log)",
+        })
+        links.append({
+            "href": "/glp-1-injection-tracking-guide.html",
+            "text": "GLP-1 injection tracking guide (rotation + logging)",
+        })
+
     # Cluster-specific
     if "injection" in fn and fn != "glp-1-injection-tracking-guide.html":
         links.append({

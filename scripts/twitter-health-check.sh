@@ -45,39 +45,36 @@ else
   echo "⚠️  TWITTER_API_KEY not set (TwitterAPI.io lane not configured)"
 fi
 
-# --- Late.com / Twitter API best-effort tests ---
+# --- Late.com lane (Late API) best-effort tests ---
+# Late API keys authenticate against Late's API — they are NOT Twitter bearer tokens.
+# So we test Late's API directly (not api.twitter.com).
 if [ -n "${LATE_API_KEY:-}" ]; then
   echo ""
-  echo "Test 1: Twitter API via Late key (counts endpoint)"
-  RESULT1=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $LATE_API_KEY" \
-    "https://api.twitter.com/2/tweets/counts/recent" 2>/dev/null || true)
-  if [ "$RESULT1" = "200" ]; then
-    echo "✅ Late lane: WORKING (HTTP $RESULT1)"
+  echo "Test 1: Late API /v1/me (auth + JSON response)"
+
+  BODY_FILE="$(mktemp)"
+  HTTP_CODE=$(curl -s -o "$BODY_FILE" -w "%{http_code}" \
+    -H "Authorization: Bearer $LATE_API_KEY" \
+    --max-time 30 \
+    "https://late.com/api/v1/me" 2>/dev/null || echo 000)
+
+  CONTENT_TYPE=$(curl -s -o /dev/null -w "%{content_type}" \
+    -H "Authorization: Bearer $LATE_API_KEY" \
+    --max-time 30 \
+    "https://late.com/api/v1/me" 2>/dev/null || true)
+
+  if [ "$HTTP_CODE" = "200" ] && echo "$CONTENT_TYPE" | grep -qi "application/json"; then
+    echo "✅ Late lane: WORKING (HTTP 200, JSON)"
     LATE_OK=true
   else
-    echo "❌ Late lane: BLOCKED/FAIL (HTTP ${RESULT1:-000})"
+    if echo "$CONTENT_TYPE" | grep -qi "text/html"; then
+      echo "❌ Late lane: BLOCKED (HTML/JS challenge likely; HTTP ${HTTP_CODE:-000})"
+    else
+      echo "❌ Late lane: FAIL (HTTP ${HTTP_CODE:-000}; content-type: ${CONTENT_TYPE:-unknown})"
+    fi
   fi
 
-  echo ""
-  echo "Test 2: Twitter API via Late key (users/me endpoint)"
-  RESULT2=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $LATE_API_KEY" \
-    "https://api.twitter.com/2/users/me" 2>/dev/null || true)
-  if [ "$RESULT2" = "200" ]; then
-    echo "✅ users/me: WORKING (HTTP $RESULT2)"
-    LATE_OK=true
-  else
-    echo "❌ users/me: BLOCKED/FAIL (HTTP ${RESULT2:-000})"
-  fi
-
-  echo ""
-  echo "Test 3: Detect HTML/JS challenge (content-type check)"
-  RESULT3=$(curl -s -w "%{content_type}" -o /dev/null -H "Authorization: Bearer $LATE_API_KEY" \
-    "https://api.twitter.com/2/tweets/counts/recent" 2>/dev/null || true)
-  if echo "$RESULT3" | grep -q "text/html"; then
-    echo "⚠️  JS/HTML challenge detected (likely automation blocked)"
-  else
-    echo "✅ No HTML challenge detected (or request failed in another way)"
-  fi
+  rm -f "$BODY_FILE" >/dev/null 2>&1 || true
 fi
 
 # --- TwitterAPI.io lane ---
