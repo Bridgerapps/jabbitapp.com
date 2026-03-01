@@ -33,6 +33,8 @@
   // Analytics
   // ---------
   const APP_STORE_RE = /apps\.apple\.com\/.*\/id6756848719/i;
+  const DIRECT_FALLBACK = 'http://138.197.74.40:9000/track';
+  const DIRECT_SECRET = 'jl8d9s7f6h5g4k3j2';
 
   const sendTrack = (event, target = '') => {
     const payload = {
@@ -61,7 +63,19 @@
       body: JSON.stringify(payload),
       keepalive: true,
       credentials: 'omit',
-    }).catch(() => {});
+    }).catch(() => {
+      // Fallback: direct pixel hit to local analytics endpoint.
+      // Note: may be blocked by browser mixed-content policy on strict HTTPS contexts.
+      const q = new URLSearchParams({
+        secret: DIRECT_SECRET,
+        event,
+        page: payload.page,
+        target: target || '',
+        ref: payload.ref || '',
+      });
+      const img = new Image();
+      img.src = `${DIRECT_FALLBACK}?${q.toString()}`;
+    });
   };
 
   // One pageview per page load
