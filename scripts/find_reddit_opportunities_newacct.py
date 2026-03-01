@@ -18,6 +18,7 @@ TARGET_SUBS = [
     "Mounjaro", "Ozempic", "Zepbound", "Semaglutide", "Wegovy", "GLP1", "weightloss", "biohackers", "longevity"
 ]
 SHOTSY_FILE = "/home/jabbit/.openclaw/workspace/data/reddit/shotsy-opportunities.json"
+SHOTSY_WATCHLIST = "/home/jabbit/.openclaw/workspace/data/reddit/shotsy-watch-subreddits.txt"
 
 MIN_COMMENTS = int(os.getenv("NEWACCT_MIN_COMMENTS", "3"))
 MAX_COMMENTS = int(os.getenv("NEWACCT_MAX_COMMENTS", "40"))
@@ -135,14 +136,36 @@ def _safe(s: str) -> str:
     return (s or "").replace("|", "/").replace("\n", " ").replace("\r", " ").strip()
 
 
-def _load_shotsy_subs(max_subs: int = 6):
+def _load_shotsy_subs(max_subs: int = 50):
+    subs = []
+
+    # Prefer explicit watchlist (all known subs where Shotsy was mentioned).
+    try:
+        with open(SHOTSY_WATCHLIST, "r", encoding="utf-8") as f:
+            for raw in f:
+                s = raw.strip()
+                if s:
+                    subs.append(s)
+    except Exception:
+        pass
+
+    # Fallback/augment from latest opportunities file.
     try:
         with open(SHOTSY_FILE, "r", encoding="utf-8") as f:
             j = json.load(f)
-        subs = [s for s in (j.get("tracked_subreddits") or []) if isinstance(s, str) and s.strip()]
-        return subs[:max_subs]
+        subs.extend([s for s in (j.get("tracked_subreddits") or []) if isinstance(s, str) and s.strip()])
     except Exception:
-        return []
+        pass
+
+    # De-dup preserve order.
+    out = []
+    seen = set()
+    for s in subs:
+        if s not in seen:
+            seen.add(s)
+            out.append(s)
+
+    return out[:max_subs]
 
 
 def main() -> int:

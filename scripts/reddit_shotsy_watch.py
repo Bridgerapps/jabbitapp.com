@@ -13,7 +13,7 @@ from pathlib import Path
 WS = Path('/home/jabbit/.openclaw/workspace')
 OUT = WS / 'data' / 'reddit' / 'shotsy-opportunities.json'
 LIMIT = int(os.getenv('SHOTSY_WATCH_LIMIT', '80'))
-SUBS_MAX = int(os.getenv('SHOTSY_WATCH_SUBS_MAX', '8'))
+SUBS_MAX = int(os.getenv('SHOTSY_WATCH_SUBS_MAX', '999'))
 
 
 def load_env(path: Path) -> dict:
@@ -24,8 +24,17 @@ def load_env(path: Path) -> dict:
         line = raw.strip()
         if not line or line.startswith('#') or '=' not in line:
             continue
+        if line.startswith('export '):
+            line = line[len('export '):]
         k, v = line.split('=', 1)
         env[k.strip()] = v.strip().strip('"').strip("'")
+
+    # Resolve simple ${VAR} placeholders (single pass is enough for this env file).
+    for k, v in list(env.items()):
+        for ref_k, ref_v in env.items():
+            v = v.replace('${' + ref_k + '}', ref_v)
+        env[k] = v
+
     return env
 
 
@@ -104,8 +113,10 @@ def main() -> int:
             'num_comments': d.get('num_comments', 0),
         })
 
-    # Prioritize subs with more same-day mentions.
-    ranked_subs = sorted(sub_counts.keys(), key=lambda s: sub_counts[s], reverse=True)[:SUBS_MAX]
+    # Prioritize subs with more same-day mentions; keep all by default.
+    ranked_subs = sorted(sub_counts.keys(), key=lambda s: sub_counts[s], reverse=True)
+    if SUBS_MAX > 0:
+        ranked_subs = ranked_subs[:SUBS_MAX]
 
     payload = {
         'generated_at': int(now.timestamp()),
