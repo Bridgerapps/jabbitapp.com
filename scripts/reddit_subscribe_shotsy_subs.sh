@@ -5,8 +5,9 @@ set -euo pipefail
 WS="/home/jabbit/.openclaw/workspace"
 JSON="$WS/data/reddit/shotsy-opportunities.json"
 WATCHLIST="$WS/data/reddit/shotsy-watch-subreddits.txt"
+COMMUNITY_WATCHLIST="$WS/data/reddit/community-watch-subreddits.txt"
 
-[ -f "$JSON" ] || [ -f "$WATCHLIST" ] || { echo "subscribed=0 checked=0"; exit 0; }
+[ -f "$JSON" ] || [ -f "$WATCHLIST" ] || [ -f "$COMMUNITY_WATCHLIST" ] || { echo "subscribed=0 checked=0"; exit 0; }
 
 source "$WS/scripts/proxy.env" 2>/dev/null || true
 COOKIE=""
@@ -23,9 +24,14 @@ args=(-sS -A "$UA" -H 'Accept: application/json')
 mh=$(curl "${args[@]}" -H "Cookie: reddit_session=${COOKIE}" "https://www.reddit.com/api/me.json?raw_json=1" | jq -r '.data.modhash // empty')
 [ -n "$mh" ] || { echo "subscribed=0 checked=0"; exit 0; }
 
-MAX_SUBS=${SHOTSY_SUBSCRIBE_MAX:-50}
-if [ -f "$WATCHLIST" ]; then
-  mapfile -t subs < <(grep -v '^\s*$' "$WATCHLIST" | head -n "$MAX_SUBS")
+MAX_SUBS=${SHOTSY_SUBSCRIBE_MAX:-120}
+if [ -f "$WATCHLIST" ] || [ -f "$COMMUNITY_WATCHLIST" ]; then
+  mapfile -t subs < <(
+    {
+      [ -f "$WATCHLIST" ] && grep -v '^\s*$' "$WATCHLIST"
+      [ -f "$COMMUNITY_WATCHLIST" ] && grep -v '^\s*$' "$COMMUNITY_WATCHLIST"
+    } | awk '!seen[$0]++' | head -n "$MAX_SUBS"
+  )
 else
   mapfile -t subs < <(jq -r '.tracked_subreddits[]? // empty' "$JSON" | head -n "$MAX_SUBS")
 fi
