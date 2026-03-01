@@ -30,12 +30,20 @@ SITE_OK=$(echo "$HEALTH_OUT" | grep -q 'jabbitapp.com (200)' && echo 'ok' || ech
 TWITTER_OK=$(echo "$HEALTH_OUT" | grep -q 'Twitter:' && echo "$HEALTH_OUT" | grep -q '❌' && echo 'blocked' || echo 'ok')
 
 # Needs-from-Jon detection
+# Load App Store env file (cron shells are often minimal and miss exported vars).
+if [ -f "$WS/scripts/appstore.env" ]; then
+  # shellcheck disable=SC1090
+  source "$WS/scripts/appstore.env" || true
+fi
+
 ASKS=()
 [ -f "$WS/data/health/latest_metrics.json" ] || ASKS+=("Share latest health snapshot (sleep avg, resting HR, weight trend, BP, glucose).")
 [ -f "$WS/data/health/latest_labs.md" ] || ASKS+=("Drop latest labs/biomarker panel (or photos) so I can update the longevity tracker.")
 [ -f "$WS/data/health/protocol-current.md" ] || ASKS+=("Confirm current protocol changes this week (doses, compounds, cadence, side effects).")
+
+# KPI preference: paid installs from App Store are primary; Stripe asks are intentionally deferred.
+# Only request App Store creds if still truly missing after env-file load.
 [ -n "${APPSTORE_KEY_ID:-}" ] || ASKS+=("Provide App Store Connect read-only API creds so daily download/review metrics are real, not placeholders.")
-[ -n "${STRIPE_API_KEY:-}" ] || ASKS+=("Provide Stripe read-only key so revenue/LTV reporting is automated.")
 
 printf "# Operator Update — %s\n\n" "$NOW_UTC"
 printf "## What I learned / self-improved\n"
