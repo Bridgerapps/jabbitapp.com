@@ -14,7 +14,7 @@ from googleapiclient.errors import HttpError
 STATE_PATH = Path("/home/jabbit/.openclaw/workspace/data/email/inbox_state.json")
 TOKEN_PATH = Path(os.path.expanduser(os.getenv("GMAIL_OAUTH_TOKEN_PATH", "~/.openclaw/credentials/gmail_token.json")))
 CLIENT_PATH = Path(os.path.expanduser(os.getenv("GMAIL_OAUTH_CLIENT_PATH", "~/.openclaw/credentials/gmail_oauth.json")))
-SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
+SCOPES = ["https://mail.google.com/"]
 MAX_FETCH = int(os.getenv("GMAIL_POLL_MAX", "20"))
 
 OTP_RE = re.compile(r"\b(\d{4,8})\b")
