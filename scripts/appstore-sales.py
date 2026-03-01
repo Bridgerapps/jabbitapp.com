@@ -187,6 +187,16 @@ if __name__ == "__main__":
     result = fetch_sales()
     if result:
         print(f"📊 App Store Sales Report")
+        report_date = result.get('report_date')
+        if report_date:
+            try:
+                rd = datetime.fromisoformat(report_date).date()
+                lag_days = (datetime.now(ZoneInfo('America/Los_Angeles')).date() - rd).days
+                print(f"  Report date (PT): {report_date} (lag: {lag_days} day{'s' if lag_days != 1 else ''})")
+            except Exception:
+                print(f"  Report date (PT): {report_date}")
+        else:
+            print("  Report date (PT): unavailable")
         print(f"  Units: {result['units']}")
         print(f"  Revenue: ${result['revenue']:.2f}")
         for product, stats in result['products'].items():
