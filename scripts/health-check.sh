@@ -10,6 +10,13 @@ STATUS_FILE="$WORKSPACE/data/status/health.json"
 mkdir -p "$WORKSPACE/logs"
 mkdir -p "$WORKSPACE/data/status"
 
+# Prevent overlapping health-check runs (cron collisions / manual runs)
+LOCK_FILE="$WORKSPACE/data/status/health-check.lock"
+if command -v flock >/dev/null 2>&1; then
+  exec 9>"$LOCK_FILE"
+  flock -n 9 || exit 0
+fi
+
 echo "=== Health Check $(date) ===" >> "$LOG_FILE"
 
 ISSUES=()
@@ -47,7 +54,7 @@ FAQ_JSONLD_CHANGED_COUNT="null"
 FAQ_JSONLD_ERROR_COUNT="null"
 
 # 1. Site health
-SITE_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://www.jabbitapp.com 2>/dev/null || echo "000")
+SITE_CODE=$(curl -s --connect-timeout 5 --max-time 10 -o /dev/null -w "%{http_code}" https://www.jabbitapp.com 2>/dev/null || echo "000")
 if [ "$SITE_CODE" = "200" ]; then
     echo "✅ Site: HTTP $SITE_CODE" >> "$LOG_FILE"
 else
@@ -55,14 +62,80 @@ else
     ISSUES+=("Site down: HTTP $SITE_CODE")
 fi
 
-# 2. Git sync - check if pushed today
-LAST_PUSH=$(git -C "$WORKSPACE" log -1 --format=%cd --date=format:%Y-%m-%d 2>/dev/null)
+# 2. Git sync (truthful upstream comparison)
 TODAY=$(date +%Y-%m-%d)
-if [ "$LAST_PUSH" = "$TODAY" ]; then
-    echo "✅ Git: Pushed today" >> "$LOG_FILE"
+GIT_UPSTREAM=""
+GIT_AHEAD=0
+GIT_BEHIND=0
+GIT_DIRTY=false
+GIT_DIRTY_COUNT=0
+GIT_DIRTY_FILES_JSON='[]'
+GIT_UPSTREAM_DATE=""
+GIT_SYNC_OK=false
+GIT_PUSHED_TODAY=false
+
+if git -C "$WORKSPACE" rev-parse --git-dir >/dev/null 2>&1; then
+    GIT_UPSTREAM="$(git -C "$WORKSPACE" rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null || true)"
+
+    if [ -n "$GIT_UPSTREAM" ]; then
+        read -r GIT_BEHIND GIT_AHEAD < <(git -C "$WORKSPACE" rev-list --left-right --count "${GIT_UPSTREAM}...HEAD" 2>/dev/null || echo "0 0")
+        GIT_UPSTREAM_DATE="$(git -C "$WORKSPACE" log -1 --date=format:%Y-%m-%d --format=%cd "$GIT_UPSTREAM" 2>/dev/null | head -1 || true)"
+
+        if [ "${GIT_AHEAD:-0}" -eq 0 ] 2>/dev/null && [ "${GIT_BEHIND:-0}" -eq 0 ] 2>/dev/null; then
+            GIT_SYNC_OK=true
+        fi
+
+        if [ "$GIT_SYNC_OK" = true ] && [ "$GIT_UPSTREAM_DATE" = "$TODAY" ]; then
+            GIT_PUSHED_TODAY=true
+        fi
+
+        if [ "$GIT_SYNC_OK" = true ]; then
+            echo "✅ Git: Up to date with $GIT_UPSTREAM" >> "$LOG_FILE"
+        else
+            echo "⚠️ Git: ahead=${GIT_AHEAD:-0} behind=${GIT_BEHIND:-0} vs $GIT_UPSTREAM" >> "$LOG_FILE"
+            if [ "${GIT_AHEAD:-0}" -gt 0 ] 2>/dev/null; then
+                ISSUES+=("Git needs push (ahead ${GIT_AHEAD} vs ${GIT_UPSTREAM})")
+            fi
+            if [ "${GIT_BEHIND:-0}" -gt 0 ] 2>/dev/null; then
+                ISSUES+=("Git needs pull/rebase (behind ${GIT_BEHIND} vs ${GIT_UPSTREAM})")
+                BLOCKERS+=("Git behind upstream")
+            fi
+        fi
+
+        if [ "$GIT_PUSHED_TODAY" = true ]; then
+            echo "✅ Git: Pushed today" >> "$LOG_FILE"
+        else
+            echo "ℹ️ Git: upstream last commit ${GIT_UPSTREAM_DATE:-unknown}" >> "$LOG_FILE"
+        fi
+
+    else
+        echo "⚠️ Git: No upstream tracking branch" >> "$LOG_FILE"
+        ISSUES+=("Git has no upstream tracking branch")
+    fi
+
+    # Dirty working tree
+    if ! git -C "$WORKSPACE" diff --quiet 2>/dev/null; then GIT_DIRTY=true; fi
+    if ! git -C "$WORKSPACE" diff --cached --quiet 2>/dev/null; then GIT_DIRTY=true; fi
+    if [ -n "$(git -C "$WORKSPACE" ls-files --others --exclude-standard 2>/dev/null | head -1 || true)" ]; then GIT_DIRTY=true; fi
+
+    if [ "$GIT_DIRTY" = true ]; then
+        # Provide a small, actionable summary for dashboards/logs.
+        # Keep it bounded so status JSON stays small.
+        GIT_DIRTY_COUNT=$(git -C "$WORKSPACE" status --porcelain 2>/dev/null | wc -l | tr -d ' ' || echo 0)
+        GIT_DIRTY_FILES_JSON=$(
+          git -C "$WORKSPACE" status --porcelain 2>/dev/null \
+            | sed -E 's/^.. //' \
+            | head -n 25 \
+            | jq -R . \
+            | jq -s . 2>/dev/null || echo '[]'
+        )
+
+        echo "⚠️ Git: Working tree dirty (files=${GIT_DIRTY_COUNT})" >> "$LOG_FILE"
+        ISSUES+=("Git working tree has uncommitted changes")
+    fi
 else
-    echo "⚠️ Git: Last push $LAST_PUSH" >> "$LOG_FILE"
-    ISSUES+=("Git not pushed today")
+    echo "⚠️ Git: Not a git repo" >> "$LOG_FILE"
+    ISSUES+=("Git repo missing")
 fi
 
 # 3. Reddit data
@@ -265,7 +338,9 @@ if [ -n "$REDDIT_CANON" ] && [ -f "$REDDIT_CANON" ]; then
     REDDIT_FRESH=$(jq -r '.fresh // false' "$REDDIT_CANON")
     REDDIT_AGE=$(jq -r '.age_seconds // null' "$REDDIT_CANON")
     KARMA_TOTAL=$(jq -r '.karma.total // null' "$REDDIT_CANON")
-    KARMA_STALE=$(jq -r '.karma.stale // true' "$REDDIT_CANON")
+    # NOTE: jq's `//` treats `false` as a fallback trigger, so don't use it for booleans
+    # where `false` is a valid value.
+    KARMA_STALE=$(jq -r 'if .karma.stale == null then true else .karma.stale end' "$REDDIT_CANON")
 
     if [ "$REDDIT_FRESH" != "true" ]; then
         BLOCKERS+=("Reddit telemetry stale")
@@ -297,7 +372,15 @@ cat > "$STATUS_FILE" << EOF
 {
   "last_check": "$(date -Iseconds)",
   "site_status": $SITE_CODE,
-  "git_today": $([ "$LAST_PUSH" = "$TODAY" ] && echo "true" || echo "false"),
+  "git_today": $(if [ "${GIT_PUSHED_TODAY:-false}" = "true" ] || [ "${GIT_PUSHED_TODAY:-false}" = true ]; then echo true; else echo false; fi),
+  "git_sync_ok": $(if [ "${GIT_SYNC_OK:-false}" = "true" ] || [ "${GIT_SYNC_OK:-false}" = true ]; then echo true; else echo false; fi),
+  "git_upstream": "${GIT_UPSTREAM}",
+  "git_upstream_date": "${GIT_UPSTREAM_DATE}",
+  "git_ahead": ${GIT_AHEAD:-0},
+  "git_behind": ${GIT_BEHIND:-0},
+  "git_dirty": $(if [ "${GIT_DIRTY:-false}" = "true" ] || [ "${GIT_DIRTY:-false}" = true ]; then echo true; else echo false; fi),
+  "git_dirty_count": ${GIT_DIRTY_COUNT:-0},
+  "git_dirty_files": ${GIT_DIRTY_FILES_JSON:-[]},
   "seo_pages": $SEO_COUNT,
   "html_seo_audit_ok": $HTML_SEO_AUDIT_OK,
   "html_seo_issue_count": $HTML_SEO_ISSUE_COUNT,

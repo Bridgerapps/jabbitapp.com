@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-01T01:54:50Z",
+  "updated": "2026-03-01T09:49:06Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -80,6 +80,23 @@
       ]
     },
     {
+      "file": "zepbound-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (generic)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
       "file": "semaglutide-half-life.html",
       "links": [
         {
@@ -102,6 +119,10 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "GLP\u20111 injection tracker (log injections + dose changes)"
+        },
+        {
+          "href": "/zepbound-injection-tracker.html",
+          "text": "Zepbound injection tracker (private log + reminders)"
         }
       ]
     },
@@ -370,6 +391,57 @@
         {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
+    },
+    {
+      "file": "mounjaro-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "wegovy-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "ozempic-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
         }
       ]
     }

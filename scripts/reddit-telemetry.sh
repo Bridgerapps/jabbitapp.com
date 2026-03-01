@@ -64,7 +64,9 @@ karma_source="last-known"
 if [ -f "$KARMA_FILE" ]; then
   karma_total="$(jq -r '.total_karma // null' "$KARMA_FILE" 2>/dev/null || echo null)"
   karma_updated_at="$(jq -r '.updated_at // ""' "$KARMA_FILE" 2>/dev/null || echo "")"
-  karma_stale="$(jq -r '.stale // true' "$KARMA_FILE" 2>/dev/null || echo true)"
+  # NOTE: jq's `//` treats `false` as a fallback trigger, so don't use it for booleans
+  # where `false` is a valid value.
+  karma_stale="$(jq -r 'if .stale == null then true else .stale end' "$KARMA_FILE" 2>/dev/null || echo true)"
 fi
 
 # Load local reddit identity defaults if present
@@ -76,33 +78,75 @@ fi
 REDDIT_USERNAME="${REDDIT_USERNAME:-LifespanMaxer}"
 
 if [ -n "${REDDIT_USERNAME:-}" ]; then
-  set +e
-  curl_args=( -sS -A 'Mozilla/5.0 (compatible; OpenClaw/1.0)' "https://www.reddit.com/user/${REDDIT_USERNAME}/about.json?raw_json=1" )
+  url="https://www.reddit.com/user/${REDDIT_USERNAME}/about.json?raw_json=1"
+  ua='Mozilla/5.0 (compatible; OpenClaw/1.0)'
+
+  # Optional proxy + session cookie.
+  REDDIT_PROXY_URL=""
   if [ -f "$WS/scripts/proxy.env" ]; then
     # shellcheck disable=SC1090
-    source "$WS/scripts/proxy.env"
-    if [ -n "${REDDIT_PROXY_URL:-}" ]; then
+    source "$WS/scripts/proxy.env" 2>/dev/null || true
+    REDDIT_PROXY_URL="${REDDIT_PROXY_URL:-}"
+  fi
+
+  cookie=""
+  if [ -f "$WS/.reddit-session" ]; then
+    cookie="$(tr -d '[:space:]' < "$WS/.reddit-session" 2>/dev/null || true)"
+  fi
+
+  fetch_once() {
+    local use_proxy="$1"  # "1" or "0"
+
+    curl_args=(
+      -sS
+      --connect-timeout 3
+      --max-time 8
+      -A "$ua"
+    )
+
+    if [ "$use_proxy" = "1" ] && [ -n "${REDDIT_PROXY_URL:-}" ]; then
       curl_args=( -x "$REDDIT_PROXY_URL" "${curl_args[@]}" )
     fi
-  fi
-  if [ -f "$WS/.reddit-session" ]; then
-    cookie="$(tr -d '[:space:]' < "$WS/.reddit-session")"
     if [ -n "$cookie" ]; then
       curl_args=( -H "Cookie: reddit_session=${cookie}" "${curl_args[@]}" )
     fi
+
+    set +e
+    about_json="$(curl "${curl_args[@]}" "$url" 2>/dev/null)"
+    rc=$?
+    set -e
+
+    if [ $rc -ne 0 ] || [ -z "$about_json" ]; then
+      return 1
+    fi
+
+    fetched="$(printf '%s' "$about_json" | jq -r '.data.total_karma // empty' 2>/dev/null || true)"
+    if [ -z "$fetched" ]; then
+      return 1
+    fi
+
+    karma_total="$fetched"
+    karma_updated_at="$now_iso"
+    karma_source="reddit-about"
+    return 0
+  }
+
+  # Attempt with proxy (if configured) then fall back to direct.
+  if ! fetch_once 1; then
+    fetch_once 0 || true
   fi
-  about_json="$(curl "${curl_args[@]}")"
-  rc=$?
-  set -e
+fi
 
-  if [ $rc -eq 0 ] && [ -n "$about_json" ]; then
-    fetched="$(printf '%s' "$about_json" | jq -r '.data.total_karma // "null"' 2>/dev/null || echo "null")"
-
-    if [ "$fetched" != "null" ]; then
-      karma_total="$fetched"
-      karma_updated_at="$now_iso"
+# Compute staleness from timestamp rather than a single request outcome.
+# This prevents the dashboard from flapping on transient network/429 errors.
+karma_stale=true
+if [ "${karma_total:-null}" != "null" ] && [ -n "${karma_updated_at:-}" ]; then
+  ts_epoch="$(date -u -d "$karma_updated_at" +%s 2>/dev/null || echo 0)"
+  if [ "$ts_epoch" -gt 0 ] 2>/dev/null; then
+    age=$(( now_epoch - ts_epoch ))
+    # Consider karma fresh if we've fetched it successfully within 24h.
+    if [ "$age" -le $((24*3600)) ] 2>/dev/null; then
       karma_stale=false
-      karma_source="reddit-about"
     fi
   fi
 fi

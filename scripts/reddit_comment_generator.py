@@ -80,6 +80,25 @@ SENSITIVE_SKIP_KEYWORDS = [
 ]
 
 
+def _has_kw(text: str, kws: list[str]) -> bool:
+    """Keyword/intent match with word-boundary safety.
+
+    Avoids substring false-positives like 'pa' matching 'pants'.
+    """
+    t = (text or "").lower()
+    for kw in kws:
+        k = (kw or "").lower().strip()
+        if not k:
+            continue
+        if " " in k:
+            if k in t:
+                return True
+        else:
+            if re.search(rf"\\b{re.escape(k)}\\b", t):
+                return True
+    return False
+
+
 def _extract_anchor(title: str, body: str) -> str:
     text = f"{title} {body}".lower()
     m = re.search(r"\b(\d+(?:\.\d+)?)\s*mg\b", text)
@@ -217,7 +236,7 @@ def generate_comment(post: dict) -> str:
     insurance_kw = ['insurance', 'coverage', 'pa', 'prior auth', 'denied', 'approved']
 
     # Insurance threads
-    if any(k in text for k in insurance_kw):
+    if _has_kw(text, insurance_kw):
         opts = [
             "A lot of people don't realize coverage can hinge on continuation-of-care criteria, not just current weight. If regain shows up with documented prior response, some plans do re-approve.",
             "Insurance outcomes are all over the place by plan. The most useful replies include exact denial/approval language, not just yes/no.",
@@ -229,7 +248,7 @@ def generate_comment(post: dict) -> str:
         return maybe_add_jabbit_mention(random.choice(opts), post)
 
     # Research threads
-    if any(k in text for k in research_kw):
+    if _has_kw(text, research_kw):
         return maybe_add_jabbit_mention(random.choice([
             "Interesting signal. I'm mostly curious what part is human evidence vs preclinical at this point.",
             "Good share. Effect size + timeframe context usually changes how people interpret these findings.",
@@ -237,14 +256,14 @@ def generate_comment(post: dict) -> str:
         ]), post)
 
     # Sourcing threads  
-    if any(k in text for k in sourcing_kw):
+    if _has_kw(text, sourcing_kw):
         return maybe_add_jabbit_mention(random.choice([
             "For sourcing threads, specific experience details are way more useful than one-line endorsements.",
             "Would love to see replies include concrete details (timing, communication, verification), not just yes/no takes.",
         ]), post)
 
     # Symptom threads
-    if any(k in text for k in symptom_kw):
+    if _has_kw(text, symptom_kw):
         opts = [
             "Most useful comparison here is timing: last injection vs symptom start, plus what changed that week.",
             "Pattern that helps most is injection timing + sleep/hydration + food intake on symptom days.",
@@ -257,7 +276,7 @@ def generate_comment(post: dict) -> str:
         return maybe_add_jabbit_mention(random.choice(opts), post)
 
     # Dosing threads
-    if any(k in text for k in dosing_kw):
+    if _has_kw(text, dosing_kw):
         opts = [
             "Best signal in dose threads is week-by-week timeline, not just current mg.",
             "What usually clarifies dose questions is previous dose duration, change timing, and symptom pattern.",
@@ -270,7 +289,7 @@ def generate_comment(post: dict) -> str:
         return maybe_add_jabbit_mention(random.choice(opts), post)
 
     # Progress threads
-    if any(k in text for k in progress_kw):
+    if _has_kw(text, progress_kw):
         return maybe_add_jabbit_mention(random.choice([
             "Huge milestone — thanks for sharing real context instead of just a headline result.",
             "Love these progress updates. The timeline detail makes this genuinely useful for others.",
