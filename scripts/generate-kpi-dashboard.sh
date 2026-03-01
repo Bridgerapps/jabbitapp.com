@@ -11,6 +11,21 @@ LINES=$(git -C "$WS" log --since='24 hours ago' --numstat --pretty=format: 2>/de
 GLP=$(find "$WS/jabbitapp.com" -maxdepth 1 -type f -name 'glp1-*.html' 2>/dev/null | wc -l | tr -d ' ')
 SITEMAP=$(bash "$WS/scripts/seo-count.sh" 2>/dev/null | tr -d ' ' || echo 0)
 
+# Site analytics (local)
+SITE_PAGEVIEWS_TODAY="n/a"
+SITE_APPSTORE_CLICKS_TODAY="n/a"
+SITE_PAGEVIEWS_YDAY="n/a"
+SITE_APPSTORE_CLICKS_YDAY="n/a"
+if [ -x "$WS/scripts/site-analytics-status.sh" ]; then
+  bash "$WS/scripts/site-analytics-status.sh" >/dev/null 2>&1 || true
+fi
+if [ -f "$WS/data/status/site-analytics.json" ] && jq -e '.ok == true' "$WS/data/status/site-analytics.json" >/dev/null 2>&1; then
+  SITE_PAGEVIEWS_TODAY=$(jq -r '.today_pageviews // 0' "$WS/data/status/site-analytics.json")
+  SITE_APPSTORE_CLICKS_TODAY=$(jq -r '.today_app_store_clicks // 0' "$WS/data/status/site-analytics.json")
+  SITE_PAGEVIEWS_YDAY=$(jq -r '.yesterday_pageviews // 0' "$WS/data/status/site-analytics.json")
+  SITE_APPSTORE_CLICKS_YDAY=$(jq -r '.yesterday_app_store_clicks // 0' "$WS/data/status/site-analytics.json")
+fi
+
 cat > "$OUT" <<EOF
 # KPI DASHBOARD — $(date -u +%Y-%m-%d)
 
@@ -25,6 +40,8 @@ _Generated: ${NOW}_
 | Lines added / removed (24h) | $LINES |
 | GLP-1 pages live | $GLP |
 | Sitemap URLs | $SITEMAP |
+| Site visits today / yesterday | $SITE_PAGEVIEWS_TODAY / $SITE_PAGEVIEWS_YDAY |
+| App Store clicks today / yesterday | $SITE_APPSTORE_CLICKS_TODAY / $SITE_APPSTORE_CLICKS_YDAY |
 
 ## 🎯 Focus
 - Ship growth output with measurable distribution impact
