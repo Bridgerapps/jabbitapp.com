@@ -17,6 +17,7 @@ from datetime import datetime, UTC
 TARGET_SUBS = [
     "Mounjaro", "Ozempic", "Zepbound", "Semaglutide", "Wegovy", "GLP1", "weightloss", "biohackers", "longevity"
 ]
+SHOTSY_FILE = "/home/jabbit/.openclaw/workspace/data/reddit/shotsy-opportunities.json"
 
 MIN_COMMENTS = int(os.getenv("NEWACCT_MIN_COMMENTS", "3"))
 MAX_COMMENTS = int(os.getenv("NEWACCT_MAX_COMMENTS", "40"))
@@ -134,6 +135,16 @@ def _safe(s: str) -> str:
     return (s or "").replace("|", "/").replace("\n", " ").replace("\r", " ").strip()
 
 
+def _load_shotsy_subs(max_subs: int = 6):
+    try:
+        with open(SHOTSY_FILE, "r", encoding="utf-8") as f:
+            j = json.load(f)
+        subs = [s for s in (j.get("tracked_subreddits") or []) if isinstance(s, str) and s.strip()]
+        return subs[:max_subs]
+    except Exception:
+        return []
+
+
 def main() -> int:
     ws = "/home/jabbit/.openclaw/workspace"
     proxy_env = _load_env(f"{ws}/scripts/proxy.env")
@@ -183,7 +194,10 @@ def main() -> int:
     except FileNotFoundError:
         pass
 
-    for idx, sub in enumerate(TARGET_SUBS):
+    dynamic_shotsy_subs = _load_shotsy_subs(max_subs=6)
+    scan_subs = list(dict.fromkeys(TARGET_SUBS + dynamic_shotsy_subs))
+
+    for idx, sub in enumerate(scan_subs):
         url = f"https://www.reddit.com/r/{sub}/new.json?limit=40"
         discovery_proxy = discovery_proxies[idx % len(discovery_proxies)] if discovery_proxies else action_proxy
 

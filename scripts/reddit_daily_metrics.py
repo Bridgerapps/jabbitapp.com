@@ -12,6 +12,7 @@ from pathlib import Path
 
 WS = Path('/home/jabbit/.openclaw/workspace')
 BASELINE_DIR = WS / 'data' / 'reddit' / 'daily-baseline'
+SHOTSY_FILE = WS / 'data' / 'reddit' / 'shotsy-opportunities.json'
 
 
 def load_env(path: Path) -> dict:
@@ -101,7 +102,19 @@ def main() -> int:
 
     day_gain = int(total_karma) - int(baseline)
 
-    print(f'total_karma={int(total_karma)} new_karma_today={day_gain} jabbit_mentions_today={mentions_today}')
+    competitor_mentions_today = 0
+    try:
+        sj = json.loads(SHOTSY_FILE.read_text(encoding='utf-8'))
+        competitor_mentions_today = int(sj.get('mentions_today') or 0)
+    except Exception:
+        competitor_mentions_today = 0
+
+    print(
+        f'total_karma={int(total_karma)} '
+        f'new_karma_today={day_gain} '
+        f'jabbit_mentions_today={mentions_today} '
+        f'competitor_mentions_today={competitor_mentions_today}'
+    )
     return 0
 
 
