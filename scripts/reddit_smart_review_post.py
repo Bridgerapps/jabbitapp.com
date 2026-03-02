@@ -25,7 +25,10 @@ POSTED_LOG = WS / 'data' / 'reddit' / 'posted-ids.txt'
 
 ALLOWED_SUBS = {'mounjaro', 'ozempic', 'zepbound', 'wegovy', 'semaglutide', 'glp1', 'glp-1'}
 RISK_RE = re.compile(r"shingles|emergency|chest pain|faint|suicid|pregnan|miscarriage|seizure|stroke|hospital|where can i buy|vendor|scam", re.I)
-LOW_VALUE_RE = re.compile(r"following this|thanks for sharing|good point\.?$", re.I)
+LOW_VALUE_RE = re.compile(
+    r"following this|thanks for sharing|good point\.?$|\breplies\b|\bthis thread\b|\bmost useful\b|\bhigh-signal\b",
+    re.I,
+)
 APP_INTENT_RE = re.compile(r"what app|tracking app|tracker app|app recommendation|shotsy", re.I)
 
 
@@ -100,6 +103,17 @@ def load_candidates() -> list[Cand]:
     return out
 
 
+def direct_value_fallback(title: str, body: str) -> str:
+    text = f"{title} {body}".lower()
+    if re.search(r'insurance|coverage|prior auth|denied|approved', text):
+        return "If you can share the exact denial/approval wording plus timeline, people can give much better next-step advice."
+    if re.search(r'side effect|symptom|nausea|fatigue|constipation|reflux|anxiety', text):
+        return "Helpful details are: time since last dose, current mg, hydration/food that day, and whether symptoms are improving or worsening."
+    if re.search(r'maintenance|goal weight|dose|mg|titrate|restart', text):
+        return "What helps most is a week-by-week timeline: dose, appetite change, weight trend, and side effects after each change."
+    return "Can you share your dose, timing, and what changed this week? That context makes advice much more accurate."
+
+
 def gen_comment(title: str, body: str) -> str:
     code = (
         "import os,sys;"
@@ -115,7 +129,10 @@ def gen_comment(title: str, body: str) -> str:
         env={**os.environ, 'T': title, 'B': body},
         timeout=40,
     )
-    return (p.stdout or '').strip()
+    c = (p.stdout or '').strip()
+    if not c or LOW_VALUE_RE.search(c):
+        c = direct_value_fallback(title, body)
+    return c
 
 
 def mention_jabbit_if_fit(comment: str, text: str, total_karma: int) -> str:
