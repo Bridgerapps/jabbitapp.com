@@ -32,9 +32,22 @@ args=(-sS -A "$UA" -H "Accept: application/json")
 AUTH_PROXY="${AUTH_REDDIT_PROXY_URL:-${REDDIT_PROXY_URL:-}}"
 [ -n "${AUTH_PROXY:-}" ] && args=(-x "$AUTH_PROXY" "${args[@]}")
 
+fetch_modhash() {
+  curl "${args[@]}" -H "Cookie: reddit_session=${COOKIE}" "https://www.reddit.com/api/me.json?raw_json=1" \
+    | jq -r '.data.modhash // empty'
+}
+
 # fetch modhash
-mh=$(curl "${args[@]}" -H "Cookie: reddit_session=${COOKIE}" "https://www.reddit.com/api/me.json?raw_json=1" \
-  | jq -r '.data.modhash // empty')
+mh=$(fetch_modhash)
+if [ -z "$mh" ]; then
+  # one-time auth proxy rotation on blocked/invalid path
+  bash "$WS/scripts/reddit-proxy-rotate-target.sh" auth >/dev/null 2>&1 || true
+  source "$WS/scripts/proxy.env" 2>/dev/null || true
+  AUTH_PROXY="${AUTH_REDDIT_PROXY_URL:-${REDDIT_PROXY_URL:-}}"
+  args=(-sS -A "$UA" -H "Accept: application/json")
+  [ -n "${AUTH_PROXY:-}" ] && args=(-x "$AUTH_PROXY" "${args[@]}")
+  mh=$(fetch_modhash)
+fi
 if [ -z "$mh" ]; then
   # fallback path
   mh=$(curl "${args[@]}" -H "Cookie: reddit_session=${COOKIE}" "https://www.reddit.com/r/Mounjaro/new.json?limit=1" \
