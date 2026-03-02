@@ -11,9 +11,13 @@ POST_ID="$1"
 COMMENT_TEXT="$2"
 WS="/home/jabbit/.openclaw/workspace"
 
-# Hard safety gate: only allow posting when explicitly approved by quality-review step.
+# Hard safety gates: explicit quality + explicit manual intent required.
 if [ "${REDDIT_QUALITY_GATE:-}" != "approved" ]; then
   echo "error: quality gate not approved (set REDDIT_QUALITY_GATE=approved)" >&2
+  exit 1
+fi
+if [ "${REDDIT_MANUAL_POST:-}" != "true" ]; then
+  echo "error: manual post flag missing (set REDDIT_MANUAL_POST=true)" >&2
   exit 1
 fi
 

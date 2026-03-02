@@ -3,6 +3,13 @@
 set -euo pipefail
 
 WS="/home/jabbit/.openclaw/workspace"
+
+# Safety default: never run authenticated subscribe automation unless explicitly enabled.
+if [ "${REDDIT_ALLOW_AUTH_AUTOMATION:-false}" != "true" ]; then
+  echo "subscribed=0 checked=0 blocked=auth_automation_disabled"
+  exit 0
+fi
+
 JSON="$WS/data/reddit/shotsy-opportunities.json"
 WATCHLIST="$WS/data/reddit/shotsy-watch-subreddits.txt"
 COMMUNITY_WATCHLIST="$WS/data/reddit/community-watch-subreddits.txt"

@@ -2,6 +2,13 @@
 set -euo pipefail
 
 WS="/home/jabbit/.openclaw/workspace"
+
+# Safety default: block authenticated automation unless explicitly allowed.
+if [ "${REDDIT_ALLOW_AUTH_AUTOMATION:-false}" != "true" ]; then
+  echo "TRACKING_BLOCKED: auth_automation_disabled"
+  exit 0
+fi
+
 OUT_DIR="$WS/data/reddit"
 STATE_FILE="$OUT_DIR/poodpound-comment-progress.json"
 mkdir -p "$OUT_DIR"
