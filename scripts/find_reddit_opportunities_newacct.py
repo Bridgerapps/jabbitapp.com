@@ -202,7 +202,7 @@ def main() -> int:
     except Exception:
         pass
 
-    if not cookie:
+    if not cookie and (use_cookie_discovery or cookie_fallback):
         print("ERROR: missing .reddit-session", flush=True)
         return 1
 
