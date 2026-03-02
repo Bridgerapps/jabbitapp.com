@@ -30,6 +30,8 @@ LOW_VALUE_RE = re.compile(
     re.I,
 )
 APP_INTENT_RE = re.compile(r"what app|tracking app|tracker app|app recommendation|shotsy", re.I)
+QUESTION_HEAVY_RE = re.compile(r"\?$")
+GENERIC_META_RE = re.compile(r"\b(replies|thread|context|one-liners?)\b", re.I)
 
 
 @dataclass
@@ -105,13 +107,40 @@ def load_candidates() -> list[Cand]:
 
 def direct_value_fallback(title: str, body: str) -> str:
     text = f"{title} {body}".lower()
+
+    if re.search(r'meat aversion|food aversion|protein aversion', text):
+        return "A lot of people do better with lighter protein during this phase (Greek yogurt, shakes, eggs, fish) and smaller portions spread through the day."
     if re.search(r'insurance|coverage|prior auth|denied|approved', text):
-        return "If you can share the exact denial/approval wording plus timeline, people can give much better next-step advice."
+        return "If you post the exact denial/approval wording plus timeline, people can share much more specific playbooks that actually worked."
+    if re.search(r'switching|restart|maintenance|goal weight|dose|mg|titrate', text):
+        return "Best comparison data is week-by-week: dose, appetite/noise, weight trend, and side effects after each change."
     if re.search(r'side effect|symptom|nausea|fatigue|constipation|reflux|anxiety', text):
-        return "Helpful details are: time since last dose, current mg, hydration/food that day, and whether symptoms are improving or worsening."
-    if re.search(r'maintenance|goal weight|dose|mg|titrate|restart', text):
-        return "What helps most is a week-by-week timeline: dose, appetite change, weight trend, and side effects after each change."
-    return "Can you share your dose, timing, and what changed this week? That context makes advice much more accurate."
+        return "Useful context to add: hours since last dose, current mg, hydration/food that day, and whether symptoms are improving or getting worse."
+
+    return "Can you add dose, timing, and what changed this week? Those details usually make replies far more useful."
+
+
+def rewrite_comment(title: str, body: str, draft: str) -> str:
+    """Force concrete, direct-value style. No meta commentary."""
+    text = f"{title} {body}".lower()
+    d = (draft or '').strip()
+
+    # Replace meta/generic drafts outright.
+    if (not d) or LOW_VALUE_RE.search(d) or GENERIC_META_RE.search(d):
+        return direct_value_fallback(title, body)
+
+    # If draft is only a question, upgrade with concrete value.
+    if QUESTION_HEAVY_RE.search(d) and len(d.split()) < 20:
+        return direct_value_fallback(title, body)
+
+    # Topic-specific upgrades to avoid blandness.
+    if re.search(r'meat aversion|food aversion|protein aversion', text):
+        return "Meat aversion is common on GLP-1s; many people tolerate lighter protein better (Greek yogurt, shakes, eggs, fish) and smaller portions through the day."
+
+    if re.search(r'switching.*ozempic|switching|restart', text):
+        return "When people share prior dose + gap length + first 2-week response after switching, it becomes much easier to compare what to expect."
+
+    return d
 
 
 def gen_comment(title: str, body: str) -> str:
@@ -129,10 +158,8 @@ def gen_comment(title: str, body: str) -> str:
         env={**os.environ, 'T': title, 'B': body},
         timeout=40,
     )
-    c = (p.stdout or '').strip()
-    if not c or LOW_VALUE_RE.search(c):
-        c = direct_value_fallback(title, body)
-    return c
+    base = (p.stdout or '').strip()
+    return rewrite_comment(title, body, base)
 
 
 def mention_jabbit_if_fit(comment: str, text: str, total_karma: int) -> str:
@@ -167,10 +194,14 @@ def score_comment(c: Cand, comment: str) -> int:
         s -= 10
 
     # Context anchor bonus.
-    anchors = ['insurance', 'coverage', 'dose', 'mg', 'maintenance', 'side effect', 'symptom', 'timeline']
+    anchors = ['insurance', 'coverage', 'dose', 'mg', 'maintenance', 'side effect', 'symptom', 'timeline', 'week-by-week', 'protein']
     blob = f"{comment} {txt}".lower()
     if any(a in blob for a in anchors):
         s += 2
+
+    # Penalize generic wording that lacks direct practical value.
+    if not re.search(r'\b(dose|mg|timeline|hydration|protein|side effects?|denial|approval|week)\b', comment.lower()):
+        s -= 3
 
     return s
 
