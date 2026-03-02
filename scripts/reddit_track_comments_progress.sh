@@ -43,23 +43,30 @@ if [ "$code" != "200" ]; then
   exit 1
 fi
 
-python3 - <<'PY' "$TMP" "$STATE_FILE" "$TARGET_USER"
-import json,sys,datetime
-src,state,user=sys.argv[1],sys.argv[2],sys.argv[3]
-now=datetime.datetime.utcnow().replace(microsecond=0).isoformat()+"Z"
+TRACK_RECENT_HOURS="${TRACK_RECENT_HOURS:-96}"
+
+python3 - <<'PY' "$TMP" "$STATE_FILE" "$TARGET_USER" "$TRACK_RECENT_HOURS"
+import json,sys,datetime,time
+src,state,user,recent_h=sys.argv[1],sys.argv[2],sys.argv[3],float(sys.argv[4])
+now_dt=datetime.datetime.now(datetime.UTC)
+now=now_dt.timestamp()
+cutoff=now-(recent_h*3600)
+now_iso=now_dt.replace(microsecond=0).isoformat().replace('+00:00','Z')
 j=json.load(open(src))
 children=((j.get('data') or {}).get('children') or [])
 current=[]
 for ch in children:
     d=ch.get('data') or {}
     cid=d.get('id','')
+    created=float(d.get('created_utc') or 0)
     if not cid: continue
+    if created < cutoff: continue
     current.append({
         'id': cid,
         'score': int(d.get('score') or 0),
         'subreddit': d.get('subreddit',''),
         'permalink': 'https://reddit.com'+(d.get('permalink') or ''),
-        'created_utc': int(d.get('created_utc') or 0),
+        'created_utc': int(created),
         'body': (d.get('body') or '').replace('\n',' ')[:160]
     })
 
@@ -82,11 +89,11 @@ for e in current:
         if d!=0:
             changes.append({'id':e['id'],'delta':d,'score':e['score'],'new':False,'permalink':e['permalink'],'subreddit':e['subreddit']})
 
-out={'tracked_user':user,'updated_at_utc':now,'count':len(current),'comments':current}
+out={'tracked_user':user,'updated_at_utc':now_iso,'recent_hours':recent_h,'count':len(current),'comments':current}
 json.dump(out,open(state,'w'),indent=2)
 
 # Print compact summary
-print(f"TRACKING: u/{user} comments={len(current)} updated={now}")
+print(f"TRACKING: u/{user} recent_hours={int(recent_h)} comments={len(current)} updated={now_iso}")
 if not changes:
     print('CHANGES: none since last snapshot')
 else:
