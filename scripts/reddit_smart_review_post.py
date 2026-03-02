@@ -29,6 +29,7 @@ WATCHLIST_FILES = [
     '/home/jabbit/.openclaw/workspace/data/reddit/community-watch-subreddits.txt',
 ]
 RISK_RE = re.compile(r"shingles|emergency|chest pain|faint|suicid|pregnan|miscarriage|seizure|stroke|hospital|where can i buy|vendor|scam", re.I)
+TOPIC_GATE_RE = re.compile(r"glp-?1|mounjaro|zepbound|ozempic|wegovy|semaglutide|tirzepatide|retatrutide|peptide|bpc-?157|tb-?500|longevity", re.I)
 LOW_VALUE_RE = re.compile(
     r"following this|thanks for sharing|good point\.?$|\breplies\b|\bthis thread\b|\bmost useful\b|\bhigh-signal\b|pattern that helps most",
     re.I,
@@ -89,8 +90,8 @@ def load_allowed_subs() -> set[str]:
             s = raw.strip().lower()
             if s:
                 subs.add(s)
-    # Filter obvious non-target noise.
-    deny = {'pizza', 'biohackers', 'longevity', 'weightloss'}
+    # Keep broad communities, only block obvious irrelevant noise.
+    deny = {'pizza'}
     return {s for s in subs if s not in deny}
 
 
@@ -129,6 +130,8 @@ def direct_value_fallback(title: str, body: str) -> str:
 
     if re.search(r'meat aversion|food aversion|protein aversion', text):
         return "A lot of people do better with lighter protein during this phase (Greek yogurt, shakes, eggs, fish) and smaller portions spread through the day."
+    if re.search(r'peptide|bpc-?157|tb-?500|stack|cycle|retatrutide|tirzepatide', text):
+        return "Highest-value comparison is protocol tracking: compound, dose timing, sleep/recovery, side effects, and objective trend markers week by week."
     if re.search(r'insurance|coverage|prior auth|denied|approved', text):
         return "If you post the exact denial/approval wording plus timeline, people can share much more specific playbooks that actually worked."
     if re.search(r'needle|pen needle|tips|purchase needles', text):
@@ -167,6 +170,9 @@ def rewrite_comment(title: str, body: str, draft: str) -> str:
 
     if re.search(r'travel|flying|airport|tsa|trip', text):
         return "Travel tip: keep pens in carry-on (not checked bags), use a small insulated pouch, and keep your prescription label photo handy for security."
+
+    if re.search(r'peptide|bpc-?157|tb-?500|stack|cycle|retatrutide|tirzepatide|longevity', text):
+        return "For peptide/longevity threads, the useful details are protocol timeline, objective markers, and side-effect trend—not just before/after claims."
 
     if re.search(r'switching.*ozempic|switching|restart', text):
         return "When people share prior dose + gap length + first 2-week response after switching, it becomes much easier to compare what to expect."
@@ -258,6 +264,8 @@ def main(auto_post: bool = False) -> int:
             continue
         if RISK_RE.search(text):
             continue
+        if not TOPIC_GATE_RE.search(text):
+            continue
 
         comment = gen_comment(c.title, c.body)
         comment = mention_jabbit_if_fit(comment, text, total_karma)
@@ -272,6 +280,7 @@ def main(auto_post: bool = False) -> int:
 
     # Strict quality threshold while recovering.
     threshold = 7 if total_karma < 1 else 6
+    auto_post_min_score = int(os.getenv('REDDIT_AUTO_POST_MIN_SCORE', '9'))
     approved = [(sc, c, cm) for (sc, c, cm) in candidates if sc >= threshold]
 
     if not approved:
@@ -290,6 +299,9 @@ def main(auto_post: bool = False) -> int:
         return 0
 
     best_score, best, best_comment = approved[0]
+    if best_score < auto_post_min_score:
+        print(f"no_post reason=auto_post_score_guard best_score={best_score} min={auto_post_min_score} post_id={best.post_id} metrics={metrics_line}")
+        return 0
 
     # Post exactly one (explicit mode only).
     p = subprocess.run(
