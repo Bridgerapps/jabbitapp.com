@@ -43,6 +43,8 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Visual progress is amplified in the last few pounds (each pound shows more).
 - Reframed away from scale obsession after chasing weekly numbers became counterproductive.
 - Current strategy: slow/steady approach and monthly trend focus instead of weekly fluctuations.
+- Travel strategy: aim for maintenance or ~300 calorie deficit, enjoy the trip/food, but track everything.
+- Critical guardrail: actively avoid binge episodes; binge risk management is a top priority.
 
 ## Product Metrics
 - 17 paying customers (confirmed)
