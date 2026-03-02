@@ -3,12 +3,6 @@ set -euo pipefail
 
 WS="/home/jabbit/.openclaw/workspace"
 
-# Safety default: block authenticated automation unless explicitly allowed.
-if [ "${REDDIT_ALLOW_AUTH_AUTOMATION:-false}" != "true" ]; then
-  echo "TRACKING_BLOCKED: auth_automation_disabled"
-  exit 0
-fi
-
 OUT_DIR="$WS/data/reddit"
 STATE_FILE="$OUT_DIR/poodpound-comment-progress.json"
 mkdir -p "$OUT_DIR"
@@ -22,13 +16,26 @@ fi
 
 TARGET_USER="${1:-PoodPound}"
 LIMIT="${2:-30}"
-COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session")
+USE_COOKIE_AUTH="${USE_COOKIE_AUTH:-false}"
+
+# Safety default: authenticated automation must be explicitly allowed.
+if [ "$USE_COOKIE_AUTH" = "true" ] && [ "${REDDIT_ALLOW_AUTH_AUTOMATION:-false}" != "true" ]; then
+  echo "TRACKING_BLOCKED: auth_automation_disabled"
+  exit 0
+fi
+
+COOKIE=""
+if [ "$USE_COOKIE_AUTH" = "true" ] && [ -f "$WS/.reddit-session" ]; then
+  COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session")
+fi
 UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
 
 TMP=$(mktemp)
-code=$(curl -s -o "$TMP" -w '%{http_code}' -x "$REDDIT_PROXY_URL" \
-  -H "Cookie: reddit_session=${COOKIE}" -H "User-Agent: $UA" -H 'Accept: application/json' \
-  --max-time 30 "https://www.reddit.com/user/${TARGET_USER}/comments.json?limit=${LIMIT}&raw_json=1")
+CURL_ARGS=(-s -o "$TMP" -w '%{http_code}' -x "$REDDIT_PROXY_URL" -H "User-Agent: $UA" -H 'Accept: application/json' --max-time 30)
+if [ -n "$COOKIE" ]; then
+  CURL_ARGS+=(-H "Cookie: reddit_session=${COOKIE}")
+fi
+code=$(curl "${CURL_ARGS[@]}" "https://www.reddit.com/user/${TARGET_USER}/comments.json?limit=${LIMIT}&raw_json=1")
 
 if [ "$code" != "200" ]; then
   echo "ERROR: comments fetch failed HTTP $code"
