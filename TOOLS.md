@@ -52,4 +52,6 @@ Add whatever helps you do your job. This is your cheat sheet.
 - Then add concise personal context only if relevant.
 - Keep comments practical and human-sounding.
 - If full post/top comments are unavailable, ask for pasted content rather than guessing.
+- Never claim a first-person experience unless Tim explicitly gave that fact.
+- When uncertain, ask Tim for a detail instead of filling gaps with assumptions/speculation.
 
