@@ -39,6 +39,7 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Reddit voice preference (2026-03-02): comments should be conversational and direct; avoid filler phrases and over-structured bullet-list style.
 
 ## Tim Personal Context for Reddit (Verified)
+- Reddit username: u/PoodPound
 - Final-loss phase is harder: large calorie deficits now cause high hunger, and scale loss is slower.
 - Visual progress is amplified in the last few pounds (each pound shows more).
 - Reframed away from scale obsession after chasing weekly numbers became counterproductive.
