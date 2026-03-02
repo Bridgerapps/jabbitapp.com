@@ -16,6 +16,12 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 
+STOPWORDS = {
+    'the','and','for','with','from','that','this','your','have','been','into','about','what','when','where','while',
+    'just','more','most','very','really','they','them','then','than','were','also','some','many','much','only',
+    'dose','doses','week','weeks','side','effects','effect','people'
+}
+
 WS = Path('/home/jabbit/.openclaw/workspace')
 FINDER = WS / 'scripts' / 'find_reddit_opportunities_newacct.py'
 METRICS = WS / 'scripts' / 'reddit_daily_metrics.py'
@@ -216,6 +222,31 @@ def mention_jabbit_if_fit(comment: str, text: str, total_karma: int) -> str:
     return (comment + tail).strip()
 
 
+def _tokens(s: str) -> list[str]:
+    return re.findall(r"[a-zA-Z][a-zA-Z0-9\-]{2,}", (s or '').lower())
+
+
+def _keyword_overlap_score(title: str, body: str, comment: str) -> int:
+    source = [t for t in _tokens(f"{title} {body}") if t not in STOPWORDS]
+    target = set(t for t in _tokens(comment) if t not in STOPWORDS)
+    # prioritize terms that are likely thread-specific
+    uniq = []
+    seen = set()
+    for t in source:
+        if t not in seen:
+            seen.add(t)
+            uniq.append(t)
+    focus = set(uniq[:20])
+    overlap = len(focus & target)
+    if overlap >= 4:
+        return 3
+    if overlap >= 2:
+        return 2
+    if overlap == 1:
+        return 0
+    return -2
+
+
 def score_comment(c: Cand, comment: str) -> int:
     if not comment:
         return -999
@@ -249,8 +280,13 @@ def score_comment(c: Cand, comment: str) -> int:
         s += 2
 
     # Penalize generic wording that lacks direct practical value.
-    if not re.search(r'\b(dose|mg|timeline|hydration|protein|side effects?|denial|approval|week)\b', comment.lower()):
+    if not re.search(r'\b(dose|mg|timeline|hydration|protein|side effects?|denial|approval|week|protocol|sleep|recovery)\b', comment.lower()):
         s -= 3
+
+    # Penalize stale templated phrasing and reward thread-specific overlap.
+    if comment.lower().startswith('best comparison data is week-by-week'):
+        s -= 2
+    s += _keyword_overlap_score(c.title, c.body, comment)
 
     return s
 
@@ -265,6 +301,7 @@ def main(auto_post: bool = False) -> int:
     allowed_subs = load_allowed_subs()
 
     candidates = []
+    seen_comment_text = {}
     for c in load_candidates():
         text = f"{c.title} {c.body}"
         sub = c.subreddit.lower()
@@ -282,6 +319,10 @@ def main(auto_post: bool = False) -> int:
         comment = gen_comment(c.title, c.body)
         comment = mention_jabbit_if_fit(comment, text, total_karma)
         sc = score_comment(c, comment)
+        key = re.sub(r'\s+', ' ', comment.strip().lower())
+        if key in seen_comment_text:
+            sc -= 3
+        seen_comment_text[key] = seen_comment_text.get(key, 0) + 1
         candidates.append((sc, c, comment))
 
     if not candidates:
