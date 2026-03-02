@@ -143,3 +143,4 @@ ALL work must be optimized toward the goal:
 - Reddit medical-tone refinement (2026-03-02): do not overuse provider-referral language. Give practical, non-alarmist actions first; use provider escalation only when risk or persistence threshold is met.
 - Knowledge growth loop (2026-03-02): proactively ask Tim for missing personal-experience details when needed for authenticity, then store verified facts for future comment drafting
 - Comment-targeting refinement (2026-03-02): when OP asks a narrow social-proof question (e.g., 'anyone with no side effects?'), answer that directly and mirror the current comment thread before adding guidance.
+- Reddit opportunity strategy (2026-03-02): prioritize threads where a natural tracking-tool mention fits; target ~1–2 organic Jabbit mentions/day (not every post, avoid forced promotion).
