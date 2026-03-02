@@ -56,4 +56,7 @@ Add whatever helps you do your job. This is your cheat sheet.
 - Never claim a first-person experience unless Tim explicitly gave that fact.
 - When uncertain, ask Tim for a detail instead of filling gaps with assumptions/speculation.
 - Engagement learning loop: when a top-upvoted comment pattern is observed, extract the tactic and run it by Tim for approval before reusing it.
+- Do not default to “ask your provider/doctor” in every health comment; reserve that for serious-risk scenarios.
+- For routine questions, prioritize practical self-management suggestions first; mention provider escalation only as a fallback trigger.
+- Personal-experience loop: when a draft would benefit from Tim-specific history not yet known, ask Tim targeted follow-up questions and store verified details for future drafts.
 

@@ -130,3 +130,5 @@ ALL work must be optimized toward the goal:
 - Keep records of decisions and their context
 - Reddit drafting rule (2026-03-02): use **intra-post context** before writing — read the post body + top comments, then answer the exact asked question first; do not draft from title alone
 - Reddit style refinement (2026-03-02): avoid filler phrases; favor direct, useful responses. Track high-upvote comment patterns and get Tim approval before reusing any inferred engagement tactic
+- Reddit medical-tone refinement (2026-03-02): do not overuse provider-referral language. Give practical, non-alarmist actions first; use provider escalation only when risk or persistence threshold is met.
+- Knowledge growth loop (2026-03-02): proactively ask Tim for missing personal-experience details when needed for authenticity, then store verified facts for future comment drafting
