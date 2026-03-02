@@ -20,9 +20,9 @@ TARGET_SUBS = [
 SHOTSY_FILE = "/home/jabbit/.openclaw/workspace/data/reddit/shotsy-opportunities.json"
 SHOTSY_WATCHLIST = "/home/jabbit/.openclaw/workspace/data/reddit/shotsy-watch-subreddits.txt"
 
-MIN_COMMENTS = int(os.getenv("NEWACCT_MIN_COMMENTS", "3"))
-MAX_COMMENTS = int(os.getenv("NEWACCT_MAX_COMMENTS", "40"))
-MAX_AGE_HOURS = float(os.getenv("NEWACCT_MAX_AGE_HOURS", "18"))
+MIN_COMMENTS = int(os.getenv("NEWACCT_MIN_COMMENTS", "2"))
+MAX_COMMENTS = int(os.getenv("NEWACCT_MAX_COMMENTS", "80"))
+MAX_AGE_HOURS = float(os.getenv("NEWACCT_MAX_AGE_HOURS", "24"))
 MIN_AGE_MINUTES = float(os.getenv("NEWACCT_MIN_AGE_MINUTES", "20"))
 MAX_PER_SUB = int(os.getenv("NEWACCT_MAX_PER_SUB", "3"))
 MAX_TOTAL = int(os.getenv("NEWACCT_MAX_TOTAL", "20"))
@@ -217,7 +217,7 @@ def main() -> int:
     except FileNotFoundError:
         pass
 
-    dynamic_shotsy_subs = _load_shotsy_subs(max_subs=6)
+    dynamic_shotsy_subs = _load_shotsy_subs(max_subs=30)
     scan_subs = list(dict.fromkeys(TARGET_SUBS + dynamic_shotsy_subs))
 
     for idx, sub in enumerate(scan_subs):

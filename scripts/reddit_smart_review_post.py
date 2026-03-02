@@ -24,6 +24,10 @@ POST_SCRIPT = WS / 'scripts' / 'reddit_post_comment.sh'
 POSTED_LOG = WS / 'data' / 'reddit' / 'posted-ids.txt'
 
 ALLOWED_SUBS = {'mounjaro', 'ozempic', 'zepbound', 'wegovy', 'semaglutide', 'glp1', 'glp-1'}
+WATCHLIST_FILES = [
+    '/home/jabbit/.openclaw/workspace/data/reddit/shotsy-watch-subreddits.txt',
+    '/home/jabbit/.openclaw/workspace/data/reddit/community-watch-subreddits.txt',
+]
 RISK_RE = re.compile(r"shingles|emergency|chest pain|faint|suicid|pregnan|miscarriage|seizure|stroke|hospital|where can i buy|vendor|scam", re.I)
 LOW_VALUE_RE = re.compile(
     r"following this|thanks for sharing|good point\.?$|\breplies\b|\bthis thread\b|\bmost useful\b|\bhigh-signal\b|pattern that helps most",
@@ -73,6 +77,21 @@ def add_posted_id(pid: str):
     POSTED_LOG.parent.mkdir(parents=True, exist_ok=True)
     with POSTED_LOG.open('a', encoding='utf-8') as f:
         f.write(pid + '\n')
+
+
+def load_allowed_subs() -> set[str]:
+    subs = {s.lower() for s in ALLOWED_SUBS}
+    for p in WATCHLIST_FILES:
+        fp = Path(p)
+        if not fp.exists():
+            continue
+        for raw in fp.read_text(encoding='utf-8', errors='ignore').splitlines():
+            s = raw.strip().lower()
+            if s:
+                subs.add(s)
+    # Filter obvious non-target noise.
+    deny = {'pizza', 'biohackers', 'longevity', 'weightloss'}
+    return {s for s in subs if s not in deny}
 
 
 def load_candidates() -> list[Cand]:
@@ -225,11 +244,13 @@ def main(auto_post: bool = False) -> int:
     total_karma, day_gain, metrics_line = parse_metrics()
     posted = load_posted_ids()
 
+    allowed_subs = load_allowed_subs()
+
     candidates = []
     for c in load_candidates():
         text = f"{c.title} {c.body}"
         sub = c.subreddit.lower()
-        if sub not in ALLOWED_SUBS:
+        if sub not in allowed_subs:
             continue
         if c.post_id in posted:
             continue
