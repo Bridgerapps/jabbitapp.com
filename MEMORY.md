@@ -129,3 +129,4 @@ ALL work must be optimized toward the goal:
 - File naming: WORK_SUMMARY_YYYY-MM-DD.md or similar
 - Keep records of decisions and their context
 - Reddit drafting rule (2026-03-02): use **intra-post context** before writing — read the post body + top comments, then answer the exact asked question first; do not draft from title alone
+- Reddit style refinement (2026-03-02): avoid filler phrases; favor direct, useful responses. Track high-upvote comment patterns and get Tim approval before reusing any inferred engagement tactic

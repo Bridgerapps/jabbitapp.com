@@ -49,9 +49,11 @@ Add whatever helps you do your job. This is your cheat sheet.
 - Tone: write like an experienced community member, not a lecturer.
 - Prefer conversational paragraphs over list formatting.
 - At most one short bullet list when truly useful; otherwise no lists.
+- Avoid filler openers (e.g., "Totally fair question") unless they add real value.
 - Then add concise personal context only if relevant.
 - Keep comments practical and human-sounding.
 - If full post/top comments are unavailable, ask for pasted content rather than guessing.
 - Never claim a first-person experience unless Tim explicitly gave that fact.
 - When uncertain, ask Tim for a detail instead of filling gaps with assumptions/speculation.
+- Engagement learning loop: when a top-upvoted comment pattern is observed, extract the tactic and run it by Tim for approval before reusing it.
 
