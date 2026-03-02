@@ -9,7 +9,8 @@ UA="Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36"
 username="${REDDIT_USERNAME:-LifespanMaxer}"
 
 args=(-sS -A "$UA")
-[ -n "${REDDIT_PROXY_URL:-}" ] && args=(-x "$REDDIT_PROXY_URL" "${args[@]}")
+AUTH_PROXY="${AUTH_REDDIT_PROXY_URL:-${REDDIT_PROXY_URL:-}}"
+[ -n "${AUTH_PROXY:-}" ] && args=(-x "$AUTH_PROXY" "${args[@]}")
 
 me=$(curl "${args[@]}" -H "Cookie: reddit_session=${COOKIE}" "https://www.reddit.com/api/me.json")
 me_name=$(printf "%s" "$me" | jq -r '.data.name // empty')

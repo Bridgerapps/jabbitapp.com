@@ -42,7 +42,7 @@ def load_proxy() -> str:
         for rk, rv in env.items():
             v = v.replace('${' + rk + '}', rv)
         env[k] = v
-    return env.get('REDDIT_PROXY_URL', '')
+    return env.get('DISCOVERY_REDDIT_PROXY_URL', '') or env.get('REDDIT_PROXY_URL', '')
 
 
 def fetch_json(url: str, proxy: str) -> dict:

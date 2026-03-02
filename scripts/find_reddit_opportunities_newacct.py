@@ -68,8 +68,8 @@ def _curl_json(url: str, proxy: str, cookie: str = "") -> dict:
         return {}
 
 
-def _build_discovery_proxies(proxy_env: dict, action_proxy: str) -> list:
-    """Build discovery proxy list that avoids the current action subnet when possible."""
+def _build_discovery_proxies(proxy_env: dict, fallback_proxy: str) -> list:
+    """Build discovery proxy list; always prefer dedicated discovery subnet."""
     host = proxy_env.get("PROXY_HOST", "")
     port = proxy_env.get("PROXY_PORT", "80")
     user = proxy_env.get("PROXY_USER", "")
@@ -90,8 +90,8 @@ def _build_discovery_proxies(proxy_env: dict, action_proxy: str) -> list:
             proxies.append(f"http://{prefix}{current}:{pwd}@{host}:{port}")
 
     # Fallback to current action proxy if we couldn't build alternates.
-    if not proxies and action_proxy:
-        proxies = [action_proxy]
+    if not proxies and fallback_proxy:
+        proxies = [fallback_proxy]
 
     # De-dup while preserving order.
     seen = set()
@@ -175,16 +175,16 @@ def main() -> int:
     proxy_env = _load_env(f"{ws}/scripts/proxy.env")
     reddit_env = _load_env(f"{ws}/scripts/reddit.env")
 
-    action_proxy = proxy_env.get("REDDIT_PROXY_URL", "")
-    if (not action_proxy) or ("${" in action_proxy):
+    discovery_primary = proxy_env.get("DISCOVERY_REDDIT_PROXY_URL", "") or proxy_env.get("REDDIT_PROXY_URL", "")
+    if (not discovery_primary) or ("${" in discovery_primary):
         host = proxy_env.get("PROXY_HOST", "")
         port = proxy_env.get("PROXY_PORT", "80")
-        user = proxy_env.get("PROXY_USER", "")
+        user = proxy_env.get("DISCOVERY_PROXY_USER", "") or proxy_env.get("PROXY_USER", "")
         pwd = proxy_env.get("PROXY_PASS", "")
         if host and user:
-            action_proxy = f"http://{user}:{pwd}@{host}:{port}"
+            discovery_primary = f"http://{user}:{pwd}@{host}:{port}"
 
-    discovery_proxies = _build_discovery_proxies(proxy_env, action_proxy)
+    discovery_proxies = _build_discovery_proxies(proxy_env, discovery_primary)
 
     username = reddit_env.get("REDDIT_USERNAME", "LifespanMaxer")
 
@@ -224,7 +224,7 @@ def main() -> int:
 
     for idx, sub in enumerate(scan_subs):
         url = f"https://www.reddit.com/r/{sub}/new.json?limit=40"
-        discovery_proxy = discovery_proxies[idx % len(discovery_proxies)] if discovery_proxies else action_proxy
+        discovery_proxy = discovery_proxies[idx % len(discovery_proxies)] if discovery_proxies else discovery_primary
 
         # Discovery defaults to no-cookie reads to reduce account linkage.
         data = _curl_json(url, discovery_proxy, cookie if use_cookie_discovery else "")

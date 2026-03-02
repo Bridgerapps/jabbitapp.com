@@ -39,12 +39,13 @@ def load_env(path: Path) -> dict:
 
 
 def resolve_proxy(proxy_env: dict) -> str:
-    p = proxy_env.get('REDDIT_PROXY_URL', '')
+    # Discovery path must use discovery proxy, never auth proxy.
+    p = proxy_env.get('DISCOVERY_REDDIT_PROXY_URL', '') or proxy_env.get('REDDIT_PROXY_URL', '')
     if p and '${' not in p:
         return p
     host = proxy_env.get('PROXY_HOST', '')
     port = proxy_env.get('PROXY_PORT', '80')
-    user = proxy_env.get('PROXY_USER', '')
+    user = proxy_env.get('DISCOVERY_PROXY_USER', '') or proxy_env.get('PROXY_USER', '')
     pwd = proxy_env.get('PROXY_PASS', '')
     if host and user:
         return f'http://{user}:{pwd}@{host}:{port}'

@@ -19,7 +19,8 @@ fi
 
 UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
 args=(-sS -A "$UA" -H 'Accept: application/json')
-[ -n "${REDDIT_PROXY_URL:-}" ] && args=(-x "$REDDIT_PROXY_URL" "${args[@]}")
+AUTH_PROXY="${AUTH_REDDIT_PROXY_URL:-${REDDIT_PROXY_URL:-}}"
+[ -n "${AUTH_PROXY:-}" ] && args=(-x "$AUTH_PROXY" "${args[@]}")
 
 # Fetch modhash
 mh=$(curl "${args[@]}" -H "Cookie: reddit_session=${COOKIE}" "https://www.reddit.com/api/me.json?raw_json=1" | jq -r '.data.modhash // empty')
