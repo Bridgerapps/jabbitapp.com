@@ -10,10 +10,12 @@ Goals:
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import subprocess
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 
 STOPWORDS = {
@@ -28,6 +30,7 @@ METRICS = WS / 'scripts' / 'reddit_daily_metrics.py'
 BLACKLIST_REFRESH = WS / 'scripts' / 'reddit_negative_feedback_blacklist.sh'
 POST_SCRIPT = WS / 'scripts' / 'reddit_post_comment.sh'
 POSTED_LOG = WS / 'data' / 'reddit' / 'posted-ids.txt'
+POST_LEDGER = WS / 'data' / 'reddit' / 'posted-comments-ledger.jsonl'
 
 ALLOWED_SUBS = {'mounjaro', 'ozempic', 'zepbound', 'wegovy', 'semaglutide', 'glp1', 'glp-1'}
 WATCHLIST_FILES = [
@@ -85,6 +88,21 @@ def add_posted_id(pid: str):
     POSTED_LOG.parent.mkdir(parents=True, exist_ok=True)
     with POSTED_LOG.open('a', encoding='utf-8') as f:
         f.write(pid + '\n')
+
+
+def append_post_ledger(post_id: str, subreddit: str, permalink: str, comment: str, score: int, posted_name: str = ''):
+    POST_LEDGER.parent.mkdir(parents=True, exist_ok=True)
+    row = {
+        'ts_utc': datetime.now(timezone.utc).isoformat(),
+        'post_id': post_id,
+        'subreddit': subreddit,
+        'permalink': permalink,
+        'draft_score': score,
+        'comment': comment,
+        'reddit_name': posted_name,
+    }
+    with POST_LEDGER.open('a', encoding='utf-8') as f:
+        f.write(json.dumps(row, ensure_ascii=False) + '\n')
 
 
 def load_allowed_subs() -> set[str]:
@@ -366,7 +384,7 @@ def main(auto_post: bool = False) -> int:
         ['bash', str(POST_SCRIPT), best.post_id, best_comment],
         capture_output=True,
         text=True,
-        env={**os.environ, 'REDDIT_QUALITY_GATE': 'approved'},
+        env={**os.environ, 'REDDIT_QUALITY_GATE': 'approved', 'REDDIT_MANUAL_POST': 'true'},
         timeout=60,
     )
     if p.returncode != 0:
@@ -374,7 +392,13 @@ def main(auto_post: bool = False) -> int:
         print(f"post_failed post_id={best.post_id} score={best_score} err={err}")
         return 0
 
+    posted_name = ''
+    m_name = re.search(r'posted=([^\s]+)', (p.stdout or ''))
+    if m_name:
+        posted_name = m_name.group(1)
+
     add_posted_id(best.post_id)
+    append_post_ledger(best.post_id, best.subreddit, best.permalink, best_comment, best_score, posted_name)
     print(f"posted post_id={best.post_id} subreddit={best.subreddit} score={best_score} url={best.permalink}")
     print(f"comment={best_comment}")
     print(run(['python3', str(METRICS)], timeout=30).stdout.strip())
