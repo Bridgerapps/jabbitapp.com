@@ -1,0 +1,87 @@
+{
+  "generated_at_utc": "2026-03-02T12:34:42Z",
+  "A_current_scanner": [
+    {
+      "subreddit": "glp1",
+      "type": "shotsy",
+      "score": 115,
+      "comments": 6,
+      "title": "MyFitnessPal upgrade for GLP-1",
+      "url": "https://reddit.com/r/glp1/comments/1rfru3j/myfitnesspal_upgrade_for_glp1/"
+    },
+    {
+      "subreddit": "Semaglutide",
+      "type": "app_recommendation",
+      "score": 65,
+      "comments": 10,
+      "title": "10lbs down in 2 weeks! I started my journey on Valentine's Day and built a free",
+      "url": "https://reddit.com/r/Semaglutide/comments/1rhn98k/10lbs_down_in_2_weeks_i_started_my_journey_on/"
+    },
+    {
+      "subreddit": "Biohackers",
+      "type": "app_recommendation",
+      "score": 55,
+      "comments": 1,
+      "title": "Raw HRV tracking app (no scores, no stress labels) for recovery &amp; biohacking",
+      "url": "https://reddit.com/r/Biohackers/comments/1ri8thu/raw_hrv_tracking_app_no_scores_no_stress_labels/"
+    },
+    {
+      "subreddit": "Biohackers",
+      "type": "question",
+      "score": 45,
+      "comments": 38,
+      "title": "How to get enough protein without eating meat?",
+      "url": "https://reddit.com/r/Biohackers/comments/1rillqz/how_to_get_enough_protein_without_eating_meat/"
+    },
+    {
+      "subreddit": "Biohackers",
+      "type": "question",
+      "score": 45,
+      "comments": 12,
+      "title": "Peptides?",
+      "url": "https://reddit.com/r/Biohackers/comments/1ripb8x/peptides/"
+    }
+  ],
+  "B_engagement_band": [
+    {
+      "subreddit": "Zepbound",
+      "score": 10,
+      "comments": 46,
+      "ratio": 4.6,
+      "title": "Price increase",
+      "url": "https://reddit.com/r/Zepbound/comments/1ri6ce9/price_increase/"
+    },
+    {
+      "subreddit": "tirzepatidecompound",
+      "score": 12,
+      "comments": 52,
+      "ratio": 4.333333333333333,
+      "title": "New dr tomorrow-nervous",
+      "url": "https://reddit.com/r/tirzepatidecompound/comments/1rid1ni/new_dr_tomorrownervous/"
+    },
+    {
+      "subreddit": "biohackers",
+      "score": 14,
+      "comments": 58,
+      "ratio": 4.142857142857143,
+      "title": "Build immunity against norovirus",
+      "url": "https://reddit.com/r/Biohackers/comments/1rhzgrq/build_immunity_against_norovirus/"
+    },
+    {
+      "subreddit": "biohackers",
+      "score": 15,
+      "comments": 61,
+      "ratio": 4.066666666666666,
+      "title": "Anyone who stopped caffeine/nicotine consumption is there any usefull benefits?",
+      "url": "https://reddit.com/r/Biohackers/comments/1ri5w36/anyone_who_stopped_caffeinenicotine_consumption/"
+    },
+    {
+      "subreddit": "Peptides",
+      "score": 9,
+      "comments": 36,
+      "ratio": 4.0,
+      "title": "Bac water",
+      "url": "https://reddit.com/r/Peptides/comments/1ric8dw/bac_water/"
+    }
+  ]
+}
