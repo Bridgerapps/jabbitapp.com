@@ -26,7 +26,7 @@ POSTED_LOG = WS / 'data' / 'reddit' / 'posted-ids.txt'
 ALLOWED_SUBS = {'mounjaro', 'ozempic', 'zepbound', 'wegovy', 'semaglutide', 'glp1', 'glp-1'}
 RISK_RE = re.compile(r"shingles|emergency|chest pain|faint|suicid|pregnan|miscarriage|seizure|stroke|hospital|where can i buy|vendor|scam", re.I)
 LOW_VALUE_RE = re.compile(
-    r"following this|thanks for sharing|good point\.?$|\breplies\b|\bthis thread\b|\bmost useful\b|\bhigh-signal\b",
+    r"following this|thanks for sharing|good point\.?$|\breplies\b|\bthis thread\b|\bmost useful\b|\bhigh-signal\b|pattern that helps most",
     re.I,
 )
 APP_INTENT_RE = re.compile(r"what app|tracking app|tracker app|app recommendation|shotsy", re.I)
@@ -112,12 +112,18 @@ def direct_value_fallback(title: str, body: str) -> str:
         return "A lot of people do better with lighter protein during this phase (Greek yogurt, shakes, eggs, fish) and smaller portions spread through the day."
     if re.search(r'insurance|coverage|prior auth|denied|approved', text):
         return "If you post the exact denial/approval wording plus timeline, people can share much more specific playbooks that actually worked."
+    if re.search(r'needle|pen needle|tips|purchase needles', text):
+        return "Use only pen needles compatible with your device and confirm gauge/length from the manufacturer insert; pharmacies can usually match the exact spec same-day."
+    if re.search(r'travel|flying|airport|tsa|trip', text):
+        return "For travel, keep pens in your carry-on, use an insulated pouch, and bring a copy/photo of your prescription label in case security asks."
+    if re.search(r'zero side effects|no side effects', text):
+        return "No side effects can happen, especially early; the useful thing is tracking appetite, hydration, and bowel pattern week to week so changes are obvious if they show up later."
     if re.search(r'switching|restart|maintenance|goal weight|dose|mg|titrate', text):
         return "Best comparison data is week-by-week: dose, appetite/noise, weight trend, and side effects after each change."
     if re.search(r'side effect|symptom|nausea|fatigue|constipation|reflux|anxiety', text):
         return "Useful context to add: hours since last dose, current mg, hydration/food that day, and whether symptoms are improving or getting worse."
 
-    return "Can you add dose, timing, and what changed this week? Those details usually make replies far more useful."
+    return "Add your current dose, timing, and one concrete change this week; that usually gets much better practical replies."
 
 
 def rewrite_comment(title: str, body: str, draft: str) -> str:
@@ -136,6 +142,12 @@ def rewrite_comment(title: str, body: str, draft: str) -> str:
     # Topic-specific upgrades to avoid blandness.
     if re.search(r'meat aversion|food aversion|protein aversion', text):
         return "Meat aversion is common on GLP-1s; many people tolerate lighter protein better (Greek yogurt, shakes, eggs, fish) and smaller portions through the day."
+
+    if re.search(r'needle|pen needle|tips|purchase needles', text):
+        return "Use pen needles that match your device spec (gauge/length from the insert); most pharmacies can match the exact type if you show the pen model."
+
+    if re.search(r'travel|flying|airport|tsa|trip', text):
+        return "Travel tip: keep pens in carry-on (not checked bags), use a small insulated pouch, and keep your prescription label photo handy for security."
 
     if re.search(r'switching.*ozempic|switching|restart', text):
         return "When people share prior dose + gap length + first 2-week response after switching, it becomes much easier to compare what to expect."
@@ -221,7 +233,7 @@ def main(auto_post: bool = False) -> int:
             continue
         if c.post_id in posted:
             continue
-        if c.comments < 3 or c.comments > 35:
+        if c.comments < 2 or c.comments > 80:
             continue
         if RISK_RE.search(text):
             continue
@@ -236,20 +248,27 @@ def main(auto_post: bool = False) -> int:
         return 0
 
     candidates.sort(key=lambda x: x[0], reverse=True)
-    best_score, best, best_comment = candidates[0]
 
     # Strict quality threshold while recovering.
     threshold = 7 if total_karma < 1 else 6
-    if best_score < threshold:
-        print(f"no_post reason=low_quality best_score={best_score} threshold={threshold} post_id={best.post_id} metrics={metrics_line}")
+    approved = [(sc, c, cm) for (sc, c, cm) in candidates if sc >= threshold]
+
+    if not approved:
+        top_sc, top_c, _ = candidates[0]
+        print(f"no_post reason=low_quality best_score={top_sc} threshold={threshold} post_id={top_c.post_id} metrics={metrics_line}")
         return 0
 
-    # Review-only mode by default: do NOT auto-post unless explicitly enabled.
+    # Review-only mode by default: surface multiple high-quality opportunities.
     if not auto_post:
-        print(f"approved_no_post post_id={best.post_id} subreddit={best.subreddit} score={best_score} threshold={threshold} url={best.permalink}")
-        print(f"comment={best_comment}")
+        top_n = approved[:3]
+        print(f"approved_no_post count={len(top_n)} threshold={threshold}")
+        for i, (sc, c, cm) in enumerate(top_n, start=1):
+            print(f"candidate_{i} post_id={c.post_id} subreddit={c.subreddit} score={sc} url={c.permalink}")
+            print(f"comment_{i}={cm}")
         print(metrics_line)
         return 0
+
+    best_score, best, best_comment = approved[0]
 
     # Post exactly one (explicit mode only).
     p = subprocess.run(
