@@ -138,7 +138,7 @@ def _safe(s: str) -> str:
     return (s or "").replace("|", "/").replace("\n", " ").replace("\r", " ").strip()
 
 
-def _load_shotsy_subs(max_subs: int = 50):
+def _load_shotsy_subs(max_subs: int = 200):
     subs = []
 
     # Prefer explicit watchlist (all known subs where Shotsy was mentioned).
@@ -219,7 +219,7 @@ def main() -> int:
     except FileNotFoundError:
         pass
 
-    dynamic_shotsy_subs = _load_shotsy_subs(max_subs=30)
+    dynamic_shotsy_subs = _load_shotsy_subs(max_subs=200)
     scan_subs = list(dict.fromkeys(TARGET_SUBS + dynamic_shotsy_subs))
 
     for idx, sub in enumerate(scan_subs):

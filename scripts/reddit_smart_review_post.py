@@ -36,7 +36,7 @@ WATCHLIST_FILES = [
     '/home/jabbit/.openclaw/workspace/data/reddit/research-peptide-biohacking-subs.txt',
 ]
 RISK_RE = re.compile(r"shingles|emergency|chest pain|faint|suicid|pregnan|miscarriage|seizure|stroke|hospital|where can i buy|vendor|scam", re.I)
-TOPIC_GATE_RE = re.compile(r"glp-?1|mounjaro|zepbound|ozempic|wegovy|semaglutide|tirzepatide|retatrutide|peptide|bpc-?157|tb-?500|longevity", re.I)
+TOPIC_GATE_RE = re.compile(r"glp-?1|mounjaro|zepbound|ozempic|wegovy|semaglutide|tirzepatide|retatrutide|peptide|bpc-?157|tb-?500|longevity|shotsy|tracker|tracking app|ios app|android app|saas", re.I)
 LOW_VALUE_RE = re.compile(
     r"following this|thanks for sharing|good point\.?$|\breplies\b|\bthis thread\b|\bmost useful\b|\bhigh-signal\b|pattern that helps most",
     re.I,
@@ -135,6 +135,8 @@ def load_candidates() -> list[Cand]:
 def direct_value_fallback(title: str, body: str) -> str:
     text = f"{title} {body}".lower()
 
+    if re.search(r'shotsy|tracking app|tracker app|app recommendation|ios app|android app|saas', text):
+        return "If you compare apps, highest-signal details are reminder reliability, export/history quality, and how fast logging works during a normal week."
     if re.search(r'meat aversion|food aversion|protein aversion', text):
         return "A lot of people do better with lighter protein during this phase (Greek yogurt, shakes, eggs, fish) and smaller portions spread through the day."
     if re.search(r'peptide|bpc-?157|tb-?500|stack|cycle|retatrutide|tirzepatide', text):
@@ -173,6 +175,9 @@ def rewrite_comment(title: str, body: str, draft: str) -> str:
         return direct_value_fallback(title, body)
 
     # Topic-specific upgrades to avoid blandness.
+    if re.search(r'shotsy|tracking app|tracker app|app recommendation|ios app|android app|saas', text):
+        return "Useful app comparisons usually include reminder reliability, export quality, and how quickly you can log doses/check-ins in real-world use."
+
     if re.search(r'meat aversion|food aversion|protein aversion', text):
         return "Meat aversion is common on GLP-1s; many people tolerate lighter protein better (Greek yogurt, shakes, eggs, fish) and smaller portions through the day."
 

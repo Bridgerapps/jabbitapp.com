@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Refresh full subreddit watchlist where 'Shotsy' is mentioned.
+"""Refresh full subreddit watchlist where 'Shotsy' is mentioned in last 90 days.
 
-Looks across multiple Reddit search windows (day/week/month/year) and writes:
+Uses Reddit search (t=year), paginates result pages, then filters posts by created_utc >= now-90d.
+Writes:
 - data/reddit/shotsy-watch-subreddits.txt
 - data/reddit/shotsy-watch-subreddits.json
 """
@@ -9,6 +10,7 @@ Looks across multiple Reddit search windows (day/week/month/year) and writes:
 from __future__ import annotations
 
 import json
+import time
 from pathlib import Path
 import importlib.util
 
@@ -25,38 +27,57 @@ def main() -> int:
 
     proxy = mod.resolve_proxy(mod.load_env(WS / 'scripts' / 'proxy.env'))
 
-    windows = ['day', 'week', 'month', 'year']
+    cutoff = time.time() - (90 * 24 * 3600)
     counts = {}
-    by_window = {}
+    kept_posts = 0
+    scanned_posts = 0
 
-    for t in windows:
-        url = f'https://www.reddit.com/search.json?q=shotsy&sort=new&t={t}&type=link&limit=100&raw_json=1'
+    # Reddit search does not support 90d directly; use year window + pagination then filter by age.
+    after = None
+    pages = 0
+    max_pages = 12
+    while pages < max_pages:
+        base = 'https://www.reddit.com/search.json?q=shotsy&sort=new&t=year&type=link&limit=100&raw_json=1'
+        url = base + (f'&after={after}' if after else '')
         j = mod.curl_json(url, proxy=proxy, cookie='')
-        children = ((j.get('data') or {}).get('children') or [])
+        data = j.get('data') or {}
+        children = data.get('children') or []
+        if not children:
+            break
 
-        sub_counts = {}
         for c in children:
             d = c.get('data') or {}
+            scanned_posts += 1
+            created = float(d.get('created_utc') or 0)
+            if created and created < cutoff:
+                continue
+
             text = f"{d.get('title','')} {d.get('selftext','')}".lower()
             if 'shotsy' not in text:
                 continue
+
             sub = (d.get('subreddit') or '').strip()
-            # Keep only proper subreddit names.
             if not sub or sub.lower().startswith('u_'):
                 continue
-            sub_counts[sub] = sub_counts.get(sub, 0) + 1
-            counts[sub] = counts.get(sub, 0) + 1
 
-        by_window[t] = sub_counts
+            counts[sub] = counts.get(sub, 0) + 1
+            kept_posts += 1
+
+        after = data.get('after')
+        pages += 1
+        if not after:
+            break
 
     ranked = [k for k, _ in sorted(counts.items(), key=lambda kv: kv[1], reverse=True)]
 
     OUT_TXT.parent.mkdir(parents=True, exist_ok=True)
     OUT_TXT.write_text('\n'.join(ranked) + ('\n' if ranked else ''), encoding='utf-8')
     OUT_JSON.write_text(json.dumps({
-        'windows': windows,
+        'window_days': 90,
+        'method': 'reddit_search_year_plus_created_utc_filter',
+        'scanned_posts': scanned_posts,
+        'kept_posts': kept_posts,
         'counts_total': counts,
-        'counts_by_window': by_window,
         'subreddits': ranked,
     }, indent=2), encoding='utf-8')
 
