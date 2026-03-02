@@ -38,3 +38,12 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+## Reddit Comment Drafting Rule (Tim)
+
+- Match the **exact question in the post first** before adding broader context.
+- First 1-2 lines should directly answer what OP asked.
+- Avoid generic “blanket” advice when OP asked a narrow question.
+- Then add concise personal context only if relevant.
+- Keep comments practical: what worked, what to track, what trend to watch.
+
