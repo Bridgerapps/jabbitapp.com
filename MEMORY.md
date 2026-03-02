@@ -36,6 +36,13 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Model routing preference (2026-02-27): OpenAI-only routing. Keep primary on `openai-codex/gpt-5.3-codex`, only fallback on `openai-codex/gpt-5.2`, and avoid MiniMax/Kimi/OpenRouter/Anthropic models unless Jon explicitly asks.
 - Latency preference (2026-02-27): set `thinkingDefault` to `minimal`; use high thinking only when task complexity justifies it.
 - Metrics preference (2026-02-28): treat paid installs (App Store data) as the primary KPI for now; defer Stripe/LTV asks until later.
+- Reddit voice preference (2026-03-02): comments should be conversational and direct; avoid filler phrases and over-structured bullet-list style.
+
+## Tim Personal Context for Reddit (Verified)
+- Final-loss phase is harder: large calorie deficits now cause high hunger, and scale loss is slower.
+- Visual progress is amplified in the last few pounds (each pound shows more).
+- Reframed away from scale obsession after chasing weekly numbers became counterproductive.
+- Current strategy: slow/steady approach and monthly trend focus instead of weekly fluctuations.
 
 ## Product Metrics
 - 17 paying customers (confirmed)
