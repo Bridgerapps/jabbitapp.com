@@ -45,6 +45,7 @@ Add whatever helps you do your job. This is your cheat sheet.
 - First 1-2 lines should directly answer what OP asked.
 - Read the post body (not just title) before drafting.
 - Review top comments to match conversation context before drafting.
+- If commenters are converging on one angle, align with that thread and add value there (don’t pivot to a different topic).
 - Avoid generic “blanket” advice when OP asked a narrow question.
 - Tone: write like an experienced community member, not a lecturer.
 - Prefer conversational paragraphs over list formatting.
