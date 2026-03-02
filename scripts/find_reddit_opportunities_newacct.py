@@ -16,7 +16,7 @@ from datetime import datetime, UTC
 
 TARGET_SUBS = [
     "Mounjaro", "Ozempic", "Zepbound", "Semaglutide", "Wegovy", "GLP1",
-    "Peptides", "PeptidesForWeightLoss", "Retatrutide", "TirzepatideRX",
+    "Peptides", "ResearchPeptides", "PeptidesForWeightLoss", "Retatrutide", "TirzepatideRX",
     "biohackers", "longevity", "Nootropics", "Supplements"
 ]
 SHOTSY_FILE = "/home/jabbit/.openclaw/workspace/data/reddit/shotsy-opportunities.json"

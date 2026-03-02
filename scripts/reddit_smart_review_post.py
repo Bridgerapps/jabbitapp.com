@@ -27,6 +27,7 @@ ALLOWED_SUBS = {'mounjaro', 'ozempic', 'zepbound', 'wegovy', 'semaglutide', 'glp
 WATCHLIST_FILES = [
     '/home/jabbit/.openclaw/workspace/data/reddit/shotsy-watch-subreddits.txt',
     '/home/jabbit/.openclaw/workspace/data/reddit/community-watch-subreddits.txt',
+    '/home/jabbit/.openclaw/workspace/data/reddit/research-peptide-biohacking-subs.txt',
 ]
 RISK_RE = re.compile(r"shingles|emergency|chest pain|faint|suicid|pregnan|miscarriage|seizure|stroke|hospital|where can i buy|vendor|scam", re.I)
 TOPIC_GATE_RE = re.compile(r"glp-?1|mounjaro|zepbound|ozempic|wegovy|semaglutide|tirzepatide|retatrutide|peptide|bpc-?157|tb-?500|longevity", re.I)
@@ -131,6 +132,10 @@ def direct_value_fallback(title: str, body: str) -> str:
     if re.search(r'meat aversion|food aversion|protein aversion', text):
         return "A lot of people do better with lighter protein during this phase (Greek yogurt, shakes, eggs, fish) and smaller portions spread through the day."
     if re.search(r'peptide|bpc-?157|tb-?500|stack|cycle|retatrutide|tirzepatide', text):
+        if re.search(r'stack|cycle|combine|combo', text):
+            return "If you want useful feedback, log one-variable changes only (compound, dose, timing), plus sleep and training load; stacks hide what’s actually causing effects."
+        if re.search(r'pain|injury|recovery', text):
+            return "For recovery threads, the useful signal is a dated symptom/function log (pain, ROM, training tolerance) alongside dose/timing changes."
         return "Highest-value comparison is protocol tracking: compound, dose timing, sleep/recovery, side effects, and objective trend markers week by week."
     if re.search(r'insurance|coverage|prior auth|denied|approved', text):
         return "If you post the exact denial/approval wording plus timeline, people can share much more specific playbooks that actually worked."
@@ -171,8 +176,8 @@ def rewrite_comment(title: str, body: str, draft: str) -> str:
     if re.search(r'travel|flying|airport|tsa|trip', text):
         return "Travel tip: keep pens in carry-on (not checked bags), use a small insulated pouch, and keep your prescription label photo handy for security."
 
-    if re.search(r'peptide|bpc-?157|tb-?500|stack|cycle|retatrutide|tirzepatide|longevity', text):
-        return "For peptide/longevity threads, the useful details are protocol timeline, objective markers, and side-effect trend—not just before/after claims."
+    if re.search(r'peptide|bpc-?157|tb-?500|stack|cycle|retatrutide|tirzepatide|longevity|biohack', text):
+        return "For peptide/longevity threads, useful detail is protocol timeline + objective markers + side-effect trend, not just before/after claims."
 
     if re.search(r'switching.*ozempic|switching|restart', text):
         return "When people share prior dose + gap length + first 2-week response after switching, it becomes much easier to compare what to expect."
@@ -223,7 +228,14 @@ def score_comment(c: Cand, comment: str) -> int:
         s += 1
     if c.comments >= 5 and c.comments <= 25:
         s += 2
-    if c.age_h >= 0.5 and c.age_h <= 12:
+    if c.age_h >= 0.3 and c.age_h <= 10:
+        s += 2
+
+    # Growth proxy: comment velocity (views are unavailable, so use comments/hour).
+    vel = c.comments / max(c.age_h, 0.35)
+    if vel >= 6:
+        s += 3
+    elif vel >= 3:
         s += 2
     if LOW_VALUE_RE.search(comment):
         s -= 6

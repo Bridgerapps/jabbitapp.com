@@ -6,8 +6,9 @@ WS="/home/jabbit/.openclaw/workspace"
 JSON="$WS/data/reddit/shotsy-opportunities.json"
 WATCHLIST="$WS/data/reddit/shotsy-watch-subreddits.txt"
 COMMUNITY_WATCHLIST="$WS/data/reddit/community-watch-subreddits.txt"
+RESEARCH_WATCHLIST="$WS/data/reddit/research-peptide-biohacking-subs.txt"
 
-[ -f "$JSON" ] || [ -f "$WATCHLIST" ] || [ -f "$COMMUNITY_WATCHLIST" ] || { echo "subscribed=0 checked=0"; exit 0; }
+[ -f "$JSON" ] || [ -f "$WATCHLIST" ] || [ -f "$COMMUNITY_WATCHLIST" ] || [ -f "$RESEARCH_WATCHLIST" ] || { echo "subscribed=0 checked=0"; exit 0; }
 
 source "$WS/scripts/proxy.env" 2>/dev/null || true
 COOKIE=""
@@ -33,11 +34,12 @@ SLEEP_MAX=${SHOTSY_SUBSCRIBE_SLEEP_MAX:-14}
 STATE_FILE="$WS/data/reddit/subscription-activity.json"
 mkdir -p "$WS/data/reddit"
 
-if [ -f "$WATCHLIST" ] || [ -f "$COMMUNITY_WATCHLIST" ]; then
+if [ -f "$WATCHLIST" ] || [ -f "$COMMUNITY_WATCHLIST" ] || [ -f "$RESEARCH_WATCHLIST" ]; then
   mapfile -t subs < <(
     {
       [ -f "$WATCHLIST" ] && grep -v '^\s*$' "$WATCHLIST"
       [ -f "$COMMUNITY_WATCHLIST" ] && grep -v '^\s*$' "$COMMUNITY_WATCHLIST"
+      [ -f "$RESEARCH_WATCHLIST" ] && grep -v '^\s*$' "$RESEARCH_WATCHLIST"
     } | awk '!seen[$0]++' | head -n "$MAX_SUBS"
   )
 else
