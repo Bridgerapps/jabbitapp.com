@@ -37,6 +37,7 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Latency preference (2026-02-27): set `thinkingDefault` to `minimal`; use high thinking only when task complexity justifies it.
 - Metrics preference (2026-02-28): treat paid installs (App Store data) as the primary KPI for now; defer Stripe/LTV asks until later.
 - Reddit voice preference (2026-03-02): comments should be conversational and direct; avoid filler phrases and over-structured bullet-list style.
+- Reddit execution preference (2026-03-03): zero Reddit automation. All Reddit actions must be manual, single-action, and explicitly executed by Jabby in-session.
 
 ## Tim Personal Context for Reddit (Verified)
 - Reddit username: u/PoodPound
