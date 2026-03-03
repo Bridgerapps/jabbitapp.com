@@ -71,6 +71,12 @@ resp=$(curl "${args[@]}" \
   --data-urlencode 'api_type=json' \
   "https://www.reddit.com/api/comment")
 
+# Hard-validate response shape to prevent false-positive "posted=ok".
+if ! printf '%s' "$resp" | jq -e '.json' >/dev/null 2>&1; then
+  echo "error: non-json reddit response from /api/comment" >&2
+  exit 1
+fi
+
 errs=$(printf '%s' "$resp" | jq -c '.json.errors // []')
 if [ "$errs" != "[]" ]; then
   echo "error: reddit returned errors: $errs" >&2
@@ -78,4 +84,9 @@ if [ "$errs" != "[]" ]; then
 fi
 
 name=$(printf '%s' "$resp" | jq -r '.json.data.things[0].data.name // empty')
-echo "posted=${name:-ok} post_id=${POST_ID}"
+if [ -z "$name" ] || ! printf '%s' "$name" | grep -q '^t1_'; then
+  echo "error: reddit did not return a valid comment fullname" >&2
+  exit 1
+fi
+
+echo "posted=${name} post_id=${POST_ID}"
