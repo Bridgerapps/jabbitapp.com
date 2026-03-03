@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-02T21:37:46Z",
+  "updated": "2026-03-03T21:37:50Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -493,6 +493,23 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "Injection tracker (log products, dates, and notes)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-shortage-resolved-what-it-means.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
         }
       ]
     }

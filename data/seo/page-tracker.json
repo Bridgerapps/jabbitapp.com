@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-02T21:36:28Z",
-  "total_pages": 30,
+  "last_updated": "2026-03-03T21:36:26Z",
+  "total_pages": 31,
   "topics": [
     {
       "topic": "bpc-157",
@@ -151,6 +151,11 @@
       "topic": "fda-compounded-glp1-enforcement-2026",
       "filename": "fda-compounded-glp1-enforcement-2026.html",
       "created": "2026-03-02"
+    },
+    {
+      "topic": "semaglutide-shortage-resolved-what-it-means",
+      "filename": "semaglutide-shortage-resolved-what-it-means.html",
+      "created": "2026-03-03"
     }
   ],
   "suggested_topics": [
