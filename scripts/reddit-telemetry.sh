@@ -89,10 +89,8 @@ if [ -n "${REDDIT_USERNAME:-}" ]; then
     REDDIT_PROXY_URL="${REDDIT_PROXY_URL:-}"
   fi
 
+  # Policy: telemetry must never read auth cookies.
   cookie=""
-  if [ -f "$WS/.reddit-session" ]; then
-    cookie="$(tr -d '[:space:]' < "$WS/.reddit-session" 2>/dev/null || true)"
-  fi
 
   fetch_once() {
     local use_proxy="$1"  # "1" or "0"
@@ -107,9 +105,7 @@ if [ -n "${REDDIT_USERNAME:-}" ]; then
     if [ "$use_proxy" = "1" ] && [ -n "${REDDIT_PROXY_URL:-}" ]; then
       curl_args=( -x "$REDDIT_PROXY_URL" "${curl_args[@]}" )
     fi
-    if [ -n "$cookie" ]; then
-      curl_args=( -H "Cookie: reddit_session=${cookie}" "${curl_args[@]}" )
-    fi
+    # Do NOT send Cookie headers from telemetry (public-only).
 
     set +e
     about_json="$(curl "${curl_args[@]}" "$url" 2>/dev/null)"

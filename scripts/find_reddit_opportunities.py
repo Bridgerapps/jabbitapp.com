@@ -82,16 +82,10 @@ def load_proxy() -> str:
 
     return ""
 
-def load_session():
-    """Load Reddit session cookie."""
-    try:
-        with open('/home/jabbit/.openclaw/workspace/.reddit-session') as f:
-            return f.read().strip()
-    except:
-        return ''
+# Policy: discovery scripts must be public/no-cookie by default.
 
-def fetch_posts(subreddit, proxy, cookie, limit=50):
-    """Fetch recent posts from a subreddit."""
+def fetch_posts(subreddit, proxy, limit=50):
+    """Fetch recent posts from a subreddit (public-only)."""
     url = f'https://www.reddit.com/r/{subreddit}/new.json?limit={limit}'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
@@ -162,18 +156,13 @@ def score_post(post_data):
 def find_opportunities():
     """Main function to find Reddit opportunities."""
     proxy = load_proxy()
-    cookie = load_session()
-    
-    if not cookie:
-        print("ERROR: No Reddit session cookie found")
-        return []
     
     all_posts = []
     
     # Fetch from all target subs
     for sub in TARGET_SUBS:
         print(f"Checking r/{sub}...", flush=True)
-        posts = fetch_posts(sub, proxy, cookie)
+        posts = fetch_posts(sub, proxy)
         
         for p in posts:
             d = p.get('data', {})

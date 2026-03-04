@@ -28,13 +28,12 @@ def load_env(path: Path) -> dict:
     return env
 
 
-def curl_json(url: str, proxy: str = '', cookie: str = ''):
+def curl_json(url: str, proxy: str = ''):
+    """Public-only fetch. Never sends reddit_session cookies."""
     ua = 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
     cmd = ['curl', '-sS', '--max-time', '30', '-A', ua, '-H', 'Accept: application/json']
     if proxy:
         cmd += ['-x', proxy]
-    if cookie:
-        cmd += ['-H', f'Cookie: reddit_session={cookie}']
     cmd += [url]
     p = subprocess.run(cmd, capture_output=True, text=True)
     if p.returncode != 0 or not p.stdout.strip():
@@ -58,23 +57,18 @@ def main() -> int:
         if host and user:
             proxy = f'http://{user}:{pwd}@{host}:{port}'
 
-    cookie = ''
-    cookie_path = WS / '.reddit-session'
-    if cookie_path.exists():
-        cookie = cookie_path.read_text(encoding='utf-8', errors='ignore').strip()
-
     username = reddit_env.get('REDDIT_USERNAME', 'LifespanMaxer')
 
-    me = curl_json('https://www.reddit.com/api/me.json?raw_json=1', proxy=proxy, cookie=cookie)
-    total_karma = ((me.get('data') or {}).get('total_karma'))
+    # Public-only metrics (safe for cron): use /about.json without cookies.
+    about = curl_json(f'https://www.reddit.com/user/{username}/about.json?raw_json=1', proxy=proxy)
+    total_karma = ((about.get('data') or {}).get('total_karma'))
     if total_karma is None:
-        # Fallback to 0 if auth failed; keep output shape stable.
         total_karma = 0
 
     now = dt.datetime.now(dt.timezone.utc)
     day_start = now.replace(hour=0, minute=0, second=0, microsecond=0).timestamp()
 
-    comments = curl_json(f'https://www.reddit.com/user/{username}/comments.json?limit=200&raw_json=1', proxy=proxy, cookie=cookie)
+    comments = curl_json(f'https://www.reddit.com/user/{username}/comments.json?limit=200&raw_json=1', proxy=proxy)
     children = ((comments.get('data') or {}).get('children') or [])
 
     mentions_today = 0

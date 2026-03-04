@@ -4,10 +4,16 @@ set -euo pipefail
 
 WS="/home/jabbit/.openclaw/workspace"
 
-# Safety default: never run authenticated subscribe automation unless explicitly enabled.
-if [ "${REDDIT_ALLOW_AUTH_AUTOMATION:-false}" != "true" ]; then
-  echo "subscribed=0 checked=0 blocked=auth_automation_disabled"
-  exit 0
+# Authenticated actions are MANUAL-ONLY by policy.
+# This script is only safe when invoked explicitly by a human in-session.
+if [ "${REDDIT_MANUAL_AUTH:-}" != "true" ] || [ "${REDDIT_MANUAL_SUBSCRIBE:-}" != "true" ]; then
+  echo "subscribed=0 checked=0 blocked=manual_only"
+  echo "hint: set REDDIT_MANUAL_AUTH=true REDDIT_MANUAL_SUBSCRIBE=true and run interactively" >&2
+  exit 2
+fi
+if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+  echo "subscribed=0 checked=0 blocked=noninteractive" >&2
+  exit 2
 fi
 
 JSON="$WS/data/reddit/shotsy-opportunities.json"
@@ -20,14 +26,18 @@ RESEARCH_WATCHLIST="$WS/data/reddit/research-peptide-biohacking-subs.txt"
 source "$WS/scripts/proxy.env" 2>/dev/null || true
 COOKIE=""
 if [ -f "$WS/.reddit-session" ]; then
-  COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session")
+  COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session" 2>/dev/null || true)
 fi
-[ -n "$COOKIE" ] || { echo "subscribed=0 checked=0"; exit 0; }
+[ -n "$COOKIE" ] || { echo "subscribed=0 checked=0 missing_cookie"; exit 2; }
 
 UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
 args=(-sS -A "$UA" -H 'Accept: application/json')
 AUTH_PROXY="${AUTH_REDDIT_PROXY_URL:-${REDDIT_PROXY_URL:-}}"
-[ -n "${AUTH_PROXY:-}" ] && args=(-x "$AUTH_PROXY" "${args[@]}")
+if [ -z "${AUTH_PROXY:-}" ]; then
+  echo "subscribed=0 checked=0 blocked=missing_auth_proxy" >&2
+  exit 2
+fi
+args=(-x "$AUTH_PROXY" "${args[@]}")
 
 # Fetch modhash
 mh=$(curl "${args[@]}" -H "Cookie: reddit_session=${COOKIE}" "https://www.reddit.com/api/me.json?raw_json=1" | jq -r '.data.modhash // empty')

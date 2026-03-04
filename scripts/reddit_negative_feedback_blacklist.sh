@@ -9,16 +9,13 @@ TMP=$(mktemp)
 
 source "$WS/scripts/proxy.env" 2>/dev/null || true
 source "$WS/scripts/reddit.env" 2>/dev/null || true
+# Policy: this script must be safe for unattended runs (public-only; no cookie reads).
 COOKIE=""
-if [ -f "$WS/.reddit-session" ]; then
-  COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session" 2>/dev/null || true)
-fi
 UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
 USERNAME="${REDDIT_USERNAME:-LifespanMaxer}"
 
 args=(-sS -A "$UA" -H "Accept: application/json")
 [ -n "${REDDIT_PROXY_URL:-}" ] && args=(-x "$REDDIT_PROXY_URL" "${args[@]}")
-[ -n "$COOKIE" ] && args=(-H "Cookie: reddit_session=${COOKIE}" "${args[@]}")
 
 resp=$(curl "${args[@]}" "https://www.reddit.com/user/${USERNAME}/comments.json?limit=100&raw_json=1" || true)
 printf '%s' "$resp" > "$TMP"

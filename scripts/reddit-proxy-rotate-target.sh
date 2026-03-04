@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MODE="${1:-auth}"  # auth|discovery
+MODE="${1:-discovery}"  # discovery only (auth rotation disabled)
 WS="/home/jabbit/.openclaw/workspace"
 ENV_FILE="$WS/scripts/proxy.env"
 COOKIE_FILE="$WS/.reddit-session"
+
+# HARD REQUIREMENT (Jon 2026-03-04): do NOT rotate IP for authenticated Reddit traffic.
+# This script may only rotate discovery proxies. Auth proxy rotation is disabled.
+if [ "$MODE" = "auth" ]; then
+  echo "error: auth proxy rotation disabled (use stable auth IP/subnet)" >&2
+  exit 2
+fi
 
 [ -f "$ENV_FILE" ] || { echo "error: missing $ENV_FILE"; exit 1; }
 source "$ENV_FILE"
@@ -23,16 +30,6 @@ current_subnet=$(echo "$current" | grep -oE 'US-[0-9]+' || true)
 build_url() {
   local user="$1"
   echo "http://${user}:${PROXY_PASS}@${PROXY_HOST}:${PROXY_PORT}"
-}
-
-test_auth() {
-  local url="$1"
-  local cookie=""
-  [ -f "$COOKIE_FILE" ] && cookie=$(tr -d '[:space:]' < "$COOKIE_FILE")
-  [ -n "$cookie" ] || return 1
-  local out
-  out=$(curl -sS --max-time 18 -x "$url" -A 'Mozilla/5.0' -H "Cookie: reddit_session=${cookie}" "https://www.reddit.com/api/me.json?raw_json=1" || true)
-  echo "$out" | jq -e '.data.name' >/dev/null 2>&1
 }
 
 test_discovery() {
@@ -54,11 +51,7 @@ for s in "${order[@]}"; do
   user="jxrtqjko-${s}"
   url=$(build_url "$user")
   ok=1
-  if [ "$MODE" = "auth" ]; then
-    test_auth "$url" && ok=0 || ok=1
-  else
-    test_discovery "$url" && ok=0 || ok=1
-  fi
+  test_discovery "$url" && ok=0 || ok=1
 
   if [ "$ok" -eq 0 ]; then
     # Update selected proxy user in env file

@@ -4,7 +4,26 @@
 set -euo pipefail
 
 WS="/home/jabbit/.openclaw/workspace"
-source "$WS/scripts/proxy.env"
+
+# Authenticated Reddit actions are MANUAL-ONLY by policy.
+if [ "${REDDIT_MANUAL_AUTH:-}" != "true" ]; then
+  echo "error: auth is manual-only (set REDDIT_MANUAL_AUTH=true)" >&2
+  exit 2
+fi
+if [ "${REDDIT_MANUAL_POST:-}" != "true" ]; then
+  echo "error: posting is manual-only (set REDDIT_MANUAL_POST=true)" >&2
+  exit 2
+fi
+if [ "${REDDIT_QUALITY_GATE:-}" != "approved" ]; then
+  echo "error: quality gate not approved (set REDDIT_QUALITY_GATE=approved)" >&2
+  exit 2
+fi
+if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+  echo "error: refusing non-interactive auth run" >&2
+  exit 2
+fi
+
+source "$WS/scripts/proxy.env" 2>/dev/null || true
 if [ -f "$WS/scripts/reddit.env" ]; then
   # shellcheck disable=SC1090
   source "$WS/scripts/reddit.env"
@@ -12,14 +31,25 @@ fi
 source "$WS/scripts/reddit_ladder_params.sh" env
 REDDIT_USERNAME="${REDDIT_USERNAME:-LifespanMaxer}"
 
-COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session")
+COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session" 2>/dev/null || true)
+if [ -z "$COOKIE" ]; then
+  echo "error: missing .reddit-session cookie" >&2
+  exit 2
+fi
 UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
+
+# Stable auth path only (no rotation).
+AUTH_PROXY="${AUTH_REDDIT_PROXY_URL:-${REDDIT_PROXY_URL:-}}"
+if [ -z "${AUTH_PROXY:-}" ]; then
+  echo "error: missing AUTH_REDDIT_PROXY_URL (stable auth IP required)" >&2
+  exit 2
+fi
 
 echo "ladder_day=$REDDIT_WARMUP_DAY slot=$REDDIT_CYCLE_SLOT max_comments=$MAX_COMMENTS"
 
 # Fetch modhash for commenting
 TMP=$(mktemp)
-code=$(curl -s -o "$TMP" -w '%{http_code}' -x "$REDDIT_PROXY_URL" \
+code=$(curl -s -o "$TMP" -w '%{http_code}' -x "$AUTH_PROXY" \
   -H "Cookie: reddit_session=${COOKIE}" -H "User-Agent: $UA" -H 'Accept: application/json' \
   --max-time 30 "https://www.reddit.com/r/Mounjaro/new.json?limit=1")
 MODHASH=$(python3 - <<'PY' "$TMP"
@@ -78,7 +108,7 @@ PY
     continue
   fi
 
-  RESULT=$(curl -s -x "$REDDIT_PROXY_URL" \
+  RESULT=$(curl -s -x "$AUTH_PROXY" \
     -H "Cookie: reddit_session=${COOKIE}" -H "User-Agent: $UA" \
     -H 'Content-Type: application/x-www-form-urlencoded' \
     --data-urlencode "thing_id=t3_${POST_ID}" \

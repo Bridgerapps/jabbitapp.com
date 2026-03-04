@@ -26,10 +26,11 @@ MIN_COMMENTS = int(os.getenv("NEWACCT_MIN_COMMENTS", "2"))
 MAX_COMMENTS = int(os.getenv("NEWACCT_MAX_COMMENTS", "80"))
 MAX_AGE_HOURS = float(os.getenv("NEWACCT_MAX_AGE_HOURS", "24"))
 MIN_AGE_MINUTES = float(os.getenv("NEWACCT_MIN_AGE_MINUTES", "20"))
-MAX_PER_SUB = int(os.getenv("NEWACCT_MAX_PER_SUB", "3"))
-MAX_TOTAL = int(os.getenv("NEWACCT_MAX_TOTAL", "20"))
+MAX_PER_SUB = int(os.getenv("NEWACCT_MAX_PER_SUB", "5"))
+MAX_TOTAL = int(os.getenv("NEWACCT_MAX_TOTAL", "60"))
+MAX_SUBS = int(os.getenv("NEWACCT_MAX_SUBS", "80"))
 DISCOVERY_USE_COOKIE = os.getenv("REDDIT_DISCOVERY_USE_COOKIE", "false").lower() in ("1", "true", "yes")
-DISCOVERY_COOKIE_FALLBACK = os.getenv("REDDIT_DISCOVERY_COOKIE_FALLBACK", "true").lower() in ("1", "true", "yes")
+DISCOVERY_COOKIE_FALLBACK = os.getenv("REDDIT_DISCOVERY_COOKIE_FALLBACK", "false").lower() in ("1", "true", "yes")
 NEGATIVE_BLACKLIST_PATH = "/home/jabbit/.openclaw/workspace/data/reddit/negative-post-blacklist.txt"
 
 
@@ -188,12 +189,10 @@ def main() -> int:
 
     username = reddit_env.get("REDDIT_USERNAME", "LifespanMaxer")
 
+    # Only honor process env vars for cookie-based discovery. Do NOT enable via config files,
+    # so cron/automations can't accidentally flip discovery into authenticated mode.
     use_cookie_discovery = DISCOVERY_USE_COOKIE
     cookie_fallback = DISCOVERY_COOKIE_FALLBACK
-    if "REDDIT_DISCOVERY_USE_COOKIE" in reddit_env:
-        use_cookie_discovery = reddit_env.get("REDDIT_DISCOVERY_USE_COOKIE", "false").lower() in ("1", "true", "yes")
-    if "REDDIT_DISCOVERY_COOKIE_FALLBACK" in reddit_env:
-        cookie_fallback = reddit_env.get("REDDIT_DISCOVERY_COOKIE_FALLBACK", "true").lower() in ("1", "true", "yes")
 
     cookie = ""
     try:
@@ -202,9 +201,14 @@ def main() -> int:
     except Exception:
         pass
 
-    if not cookie and (use_cookie_discovery or cookie_fallback):
-        print("ERROR: missing .reddit-session", flush=True)
-        return 1
+    # Policy: cookie-based discovery is AUTHENTICATED and therefore MANUAL-ONLY.
+    if use_cookie_discovery or cookie_fallback:
+        if os.getenv("REDDIT_MANUAL_AUTH", "").lower() not in ("1", "true", "yes"):
+            print("ERROR: cookie discovery is manual-only (set REDDIT_MANUAL_AUTH=true)", flush=True)
+            return 2
+        if not cookie:
+            print("ERROR: missing .reddit-session", flush=True)
+            return 1
 
     now = datetime.now(UTC).timestamp()
     picks = []
@@ -220,23 +224,37 @@ def main() -> int:
         pass
 
     dynamic_shotsy_subs = _load_shotsy_subs(max_subs=200)
-    scan_subs = list(dict.fromkeys(TARGET_SUBS + dynamic_shotsy_subs))
+    scan_subs = list(dict.fromkeys(TARGET_SUBS + dynamic_shotsy_subs))[:MAX_SUBS]
 
     for idx, sub in enumerate(scan_subs):
-        url = f"https://www.reddit.com/r/{sub}/new.json?limit=40"
         discovery_proxy = discovery_proxies[idx % len(discovery_proxies)] if discovery_proxies else discovery_primary
 
-        # Discovery defaults to no-cookie reads to reduce account linkage.
-        data = _curl_json(url, discovery_proxy, cookie if use_cookie_discovery else "")
-        children = ((data.get("data") or {}).get("children") or [])[:40]
+        # Pull multiple listing modes for broader opportunity coverage.
+        all_children = []
+        seen_ids = set()
+        for mode in ("new", "hot", "rising"):
+            url = f"https://www.reddit.com/r/{sub}/{mode}.json?limit=40"
 
-        # Optional fallback to cookie-auth discovery when public reads are blocked/empty.
-        if not children and cookie_fallback and cookie and not use_cookie_discovery:
-            data = _curl_json(url, discovery_proxy, cookie)
+            # Discovery defaults to no-cookie reads to reduce account linkage.
+            data = _curl_json(url, discovery_proxy, cookie if use_cookie_discovery else "")
             children = ((data.get("data") or {}).get("children") or [])[:40]
 
+            # Optional fallback to cookie-auth discovery when public reads are blocked/empty.
+            if not children and cookie_fallback and cookie and not use_cookie_discovery:
+                data = _curl_json(url, discovery_proxy, cookie)
+                children = ((data.get("data") or {}).get("children") or [])[:40]
+
+            for p in children:
+                d = p.get("data") or {}
+                pid = (d.get("id") or "").strip()
+                if pid and pid in seen_ids:
+                    continue
+                if pid:
+                    seen_ids.add(pid)
+                all_children.append(p)
+
         sub_candidates = []
-        for p in children:
+        for p in all_children:
             d = p.get("data") or {}
             if not d:
                 continue

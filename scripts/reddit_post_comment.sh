@@ -11,13 +11,23 @@ POST_ID="$1"
 COMMENT_TEXT="$2"
 WS="/home/jabbit/.openclaw/workspace"
 
-# Hard safety gates: explicit quality + explicit manual intent required.
+# Hard safety gates: authenticated actions are MANUAL-ONLY.
+# - Requires explicit intent flags
+# - Refuses non-interactive execution unless explicitly overridden
 if [ "${REDDIT_QUALITY_GATE:-}" != "approved" ]; then
   echo "error: quality gate not approved (set REDDIT_QUALITY_GATE=approved)" >&2
   exit 1
 fi
 if [ "${REDDIT_MANUAL_POST:-}" != "true" ]; then
   echo "error: manual post flag missing (set REDDIT_MANUAL_POST=true)" >&2
+  exit 1
+fi
+if [ "${REDDIT_MANUAL_AUTH:-}" != "true" ]; then
+  echo "error: auth is manual-only (set REDDIT_MANUAL_AUTH=true)" >&2
+  exit 1
+fi
+if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+  echo "error: refusing non-interactive auth run (set REDDIT_ALLOW_NONINTERACTIVE_AUTH=true to override)" >&2
   exit 1
 fi
 
@@ -44,13 +54,9 @@ fetch_modhash() {
 # fetch modhash
 mh=$(fetch_modhash)
 if [ -z "$mh" ]; then
-  # one-time auth proxy rotation on blocked/invalid path
-  bash "$WS/scripts/reddit-proxy-rotate-target.sh" auth >/dev/null 2>&1 || true
-  source "$WS/scripts/proxy.env" 2>/dev/null || true
-  AUTH_PROXY="${AUTH_REDDIT_PROXY_URL:-${REDDIT_PROXY_URL:-}}"
-  args=(-sS -A "$UA" -H "Accept: application/json")
-  [ -n "${AUTH_PROXY:-}" ] && args=(-x "$AUTH_PROXY" "${args[@]}")
-  mh=$(fetch_modhash)
+  # Do NOT rotate auth IP/subnet automatically.
+  # If this fails, re-run manually after fixing cookie/proxy (stable auth IP) or waiting out rate limits.
+  mh=""
 fi
 if [ -z "$mh" ]; then
   # fallback path

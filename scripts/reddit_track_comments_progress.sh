@@ -18,10 +18,16 @@ TARGET_USER="${1:-PoodPound}"
 LIMIT="${2:-30}"
 USE_COOKIE_AUTH="${USE_COOKIE_AUTH:-false}"
 
-# Safety default: authenticated automation must be explicitly allowed.
-if [ "$USE_COOKIE_AUTH" = "true" ] && [ "${REDDIT_ALLOW_AUTH_AUTOMATION:-false}" != "true" ]; then
-  echo "TRACKING_BLOCKED: auth_automation_disabled"
-  exit 0
+# If cookie auth is enabled, treat it as an authenticated action => MANUAL-ONLY.
+if [ "$USE_COOKIE_AUTH" = "true" ]; then
+  if [ "${REDDIT_MANUAL_AUTH:-}" != "true" ]; then
+    echo "TRACKING_BLOCKED: manual_only (set REDDIT_MANUAL_AUTH=true)"
+    exit 2
+  fi
+  if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+    echo "TRACKING_BLOCKED: noninteractive"
+    exit 2
+  fi
 fi
 
 COOKIE=""

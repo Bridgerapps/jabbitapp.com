@@ -2,6 +2,21 @@
 set -euo pipefail
 
 WS="/home/jabbit/.openclaw/workspace"
+
+# Authenticated Reddit actions are MANUAL-ONLY by policy.
+if [ "${REDDIT_MANUAL_AUTH:-}" != "true" ]; then
+  echo "error: auth is manual-only (set REDDIT_MANUAL_AUTH=true)" >&2
+  exit 2
+fi
+if [ "${REDDIT_MANUAL_VOTE:-}" != "true" ]; then
+  echo "error: voting is manual-only (set REDDIT_MANUAL_VOTE=true)" >&2
+  exit 2
+fi
+if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+  echo "error: refusing non-interactive auth run" >&2
+  exit 2
+fi
+
 STATE_DIR="$WS/data/reddit"
 STATE_FILE="$STATE_DIR/user-comment-upvote-state.json"
 mkdir -p "$STATE_DIR"
@@ -14,12 +29,22 @@ if [ -f "$WS/scripts/reddit.env" ]; then
 fi
 
 TARGET_USER="${1:-${TARGET_USER:-PoodPound}}"
-COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session")
+COOKIE=$(tr -d '[:space:]' < "$WS/.reddit-session" 2>/dev/null || true)
+if [ -z "$COOKIE" ]; then
+  echo "error: missing .reddit-session cookie" >&2
+  exit 2
+fi
 UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
+
+AUTH_PROXY="${AUTH_REDDIT_PROXY_URL:-${REDDIT_PROXY_URL:-}}"
+if [ -z "${AUTH_PROXY:-}" ]; then
+  echo "error: missing AUTH_REDDIT_PROXY_URL (stable auth IP required)" >&2
+  exit 2
+fi
 
 # Get modhash
 TMP=$(mktemp)
-code=$(curl -s -o "$TMP" -w '%{http_code}' -x "$REDDIT_PROXY_URL" \
+code=$(curl -s -o "$TMP" -w '%{http_code}' -x "$AUTH_PROXY" \
   -H "Cookie: reddit_session=${COOKIE}" -H "User-Agent: $UA" -H 'Accept: application/json' \
   --max-time 30 "https://www.reddit.com/r/Mounjaro/new.json?limit=1")
 
@@ -56,7 +81,7 @@ PY
 fi
 
 RESP=$(mktemp)
-code=$(curl -s -o "$RESP" -w '%{http_code}' -x "$REDDIT_PROXY_URL" \
+code=$(curl -s -o "$RESP" -w '%{http_code}' -x "$AUTH_PROXY" \
   -H "Cookie: reddit_session=${COOKIE}" -H "User-Agent: $UA" -H 'Accept: application/json' \
   --max-time 30 "https://www.reddit.com/user/${TARGET_USER}/comments.json?limit=50")
 
@@ -101,7 +126,7 @@ SUB=$(printf '%s' "$PICK" | cut -f2)
 LINK=$(printf '%s' "$PICK" | cut -f3)
 BODY=$(printf '%s' "$PICK" | cut -f4-)
 
-curl -s -x "$REDDIT_PROXY_URL" \
+curl -s -x "$AUTH_PROXY" \
   -H "Cookie: reddit_session=${COOKIE}" -H "User-Agent: $UA" \
   --data "id=t1_${COMMENT_ID}&dir=1&uh=${MODHASH}&api_type=json" \
   --max-time 20 "https://www.reddit.com/api/vote" >/dev/null

@@ -1,31 +1,26 @@
 #!/usr/bin/env bash
-# Reddit API Health Monitor (cookie+proxy aware)
-# Uses the same access path as warmup/comment scripts to avoid false DEGRADED from public 403s.
+# Reddit Public Health Monitor (NO AUTH)
+# Policy: must never read .reddit-session or send Cookie headers.
+# Purpose: detect general availability / rate limiting for discovery paths.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WS="${WS:-$SCRIPT_DIR/..}"
 LOG_DIR="$WS/data/reddit"
-SESSION_FILE="$WS/.reddit-session"
-
 mkdir -p "$LOG_DIR"
 
-# Optional proxy/session (same as runtime scripts)
+# Optional proxy (discovery only)
 if [ -f "$WS/scripts/proxy.env" ]; then
   # shellcheck disable=SC1090
-  source "$WS/scripts/proxy.env"
-fi
-
-COOKIE=""
-if [ -f "$SESSION_FILE" ]; then
-  COOKIE="$(tr -d '[:space:]' < "$SESSION_FILE")"
+  source "$WS/scripts/proxy.env" 2>/dev/null || true
 fi
 
 UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36'
-# Match active engagement targets to avoid false negatives from unrelated subreddits.
 TEST_SUBS=("Mounjaro" "Ozempic" "Zepbound")
 RESULTS=()
 STATUS="WORKING"
+
+DISCOVERY_PROXY="${DISCOVERY_REDDIT_PROXY_URL:-${REDDIT_PROXY_URL:-}}"
 
 for sub in "${TEST_SUBS[@]}"; do
   curl_args=(
@@ -33,15 +28,13 @@ for sub in "${TEST_SUBS[@]}"; do
     -o /tmp/reddit-health-body.json
     -w "%{http_code}"
     -H "User-Agent: $UA"
-    --max-time 30
-    "https://www.reddit.com/r/$sub/new.json?limit=1"
+    -H "Accept: application/json"
+    --max-time 20
+    "https://www.reddit.com/r/$sub/new.json?limit=1&raw_json=1"
   )
 
-  if [ -n "${REDDIT_PROXY_URL:-}" ]; then
-    curl_args=( -x "$REDDIT_PROXY_URL" "${curl_args[@]}" )
-  fi
-  if [ -n "$COOKIE" ]; then
-    curl_args=( -H "Cookie: reddit_session=${COOKIE}" "${curl_args[@]}" )
+  if [ -n "${DISCOVERY_PROXY:-}" ]; then
+    curl_args=( -x "$DISCOVERY_PROXY" "${curl_args[@]}" )
   fi
 
   HTTP_CODE="$(curl "${curl_args[@]}" 2>/dev/null || echo 000)"
@@ -79,7 +72,7 @@ cat > "$LOG_DIR/reddit-health.json" << EOF
 }
 EOF
 
-echo "=== Reddit Health Check ==="
+echo "=== Reddit Health Check (public-only) ==="
 echo "Status: $STATUS"
 printf "Checks: %s\n" "${RESULTS[@]}"
 echo "Log: $LOG_DIR/reddit-health.json"
