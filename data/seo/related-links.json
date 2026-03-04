@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-04T14:37:43Z",
+  "updated": "2026-03-04T21:37:40Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -527,6 +527,23 @@
         {
           "href": "/fda-compounded-glp1-enforcement-2026.html",
           "text": "FDA enforcement on compounded GLP-1s (plain-language explainer)"
+        }
+      ]
+    },
+    {
+      "file": "glp-1-compounded-telehealth-fda-warning-letters.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
         }
       ]
     }

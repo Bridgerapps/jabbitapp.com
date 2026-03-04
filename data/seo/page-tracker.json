@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-04T14:37:02Z",
-  "total_pages": 32,
+  "last_updated": "2026-03-04T21:36:32Z",
+  "total_pages": 33,
   "topics": [
     {
       "topic": "bpc-157",
@@ -160,6 +160,11 @@
     {
       "topic": "unitedhealth-subsidiary-disclosure-cut-2026",
       "filename": "unitedhealth-subsidiary-disclosure-cut-2026.html",
+      "created": "2026-03-04"
+    },
+    {
+      "topic": "glp-1-compounded-telehealth-fda-warning-letters",
+      "filename": "glp-1-compounded-telehealth-fda-warning-letters.html",
       "created": "2026-03-04"
     }
   ],
