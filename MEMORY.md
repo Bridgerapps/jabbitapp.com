@@ -39,6 +39,7 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Reddit voice preference (2026-03-02): comments should be conversational and direct; avoid filler phrases and over-structured bullet-list style.
 - Reddit operations preference (2026-03-04): all authenticated Reddit interactions should be handled manually by Jabby (no unattended automation for authenticated actions).
 - Reddit workflow preference (2026-03-04): Jabby should independently find Reddit post opportunities; authenticated execution remains manual by Jabby.
+- Reddit sourcing preference (2026-03-04): surface opportunities via the unauthenticated pipeline, then execute authenticated actions manually.
 - Reddit execution preference (2026-03-03): zero Reddit automation. All Reddit actions must be manual, single-action, and explicitly executed by Jabby in-session.
 
 ## Tim Personal Context for Reddit (Verified)
