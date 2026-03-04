@@ -18,7 +18,7 @@ if [ "${REDDIT_QUALITY_GATE:-}" != "approved" ]; then
   echo "error: quality gate not approved (set REDDIT_QUALITY_GATE=approved)" >&2
   exit 2
 fi
-if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+if ! [ -t 0 ]; then
   echo "error: refusing non-interactive auth run" >&2
   exit 2
 fi

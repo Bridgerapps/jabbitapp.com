@@ -12,7 +12,7 @@ if [ "${REDDIT_MANUAL_VOTE:-}" != "true" ]; then
   echo "error: voting is manual-only (set REDDIT_MANUAL_VOTE=true)" >&2
   exit 2
 fi
-if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+if ! [ -t 0 ]; then
   echo "error: refusing non-interactive auth run" >&2
   exit 2
 fi

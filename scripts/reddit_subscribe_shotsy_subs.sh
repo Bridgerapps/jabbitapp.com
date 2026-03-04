@@ -11,7 +11,7 @@ if [ "${REDDIT_MANUAL_AUTH:-}" != "true" ] || [ "${REDDIT_MANUAL_SUBSCRIBE:-}" !
   echo "hint: set REDDIT_MANUAL_AUTH=true REDDIT_MANUAL_SUBSCRIBE=true and run interactively" >&2
   exit 2
 fi
-if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+if ! [ -t 0 ]; then
   echo "subscribed=0 checked=0 blocked=noninteractive" >&2
   exit 2
 fi

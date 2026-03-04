@@ -24,7 +24,7 @@ if [ "$USE_COOKIE_AUTH" = "true" ]; then
     echo "TRACKING_BLOCKED: manual_only (set REDDIT_MANUAL_AUTH=true)"
     exit 2
   fi
-  if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+  if ! [ -t 0 ]; then
     echo "TRACKING_BLOCKED: noninteractive"
     exit 2
   fi

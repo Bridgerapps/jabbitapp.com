@@ -18,7 +18,7 @@ if [ "${REDDIT_MANUAL_AUTH:-}" = "true" ] && [ "${REDDIT_MANUAL_HEALTHCHECK_AUTH
   manual_auth=true
 fi
 
-if [ "$manual_auth" = true ] && ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
+if [ "$manual_auth" = true ] && ! [ -t 0 ]; then
   echo "error: refusing non-interactive auth healthcheck" >&2
   exit 2
 fi

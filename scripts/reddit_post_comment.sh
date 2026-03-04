@@ -26,8 +26,8 @@ if [ "${REDDIT_MANUAL_AUTH:-}" != "true" ]; then
   echo "error: auth is manual-only (set REDDIT_MANUAL_AUTH=true)" >&2
   exit 1
 fi
-if ! [ -t 0 ] && [ "${REDDIT_ALLOW_NONINTERACTIVE_AUTH:-}" != "true" ]; then
-  echo "error: refusing non-interactive auth run (set REDDIT_ALLOW_NONINTERACTIVE_AUTH=true to override)" >&2
+if ! [ -t 0 ]; then
+  echo "error: refusing non-interactive auth run" >&2
   exit 1
 fi
 
