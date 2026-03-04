@@ -36,6 +36,7 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Model routing preference (2026-02-27): OpenAI-only routing. Keep primary on `openai-codex/gpt-5.3-codex`, only fallback on `openai-codex/gpt-5.2`, and avoid MiniMax/Kimi/OpenRouter/Anthropic models unless Jon explicitly asks.
 - Latency preference (2026-02-27): set `thinkingDefault` to `minimal`; use high thinking only when task complexity justifies it.
 - Metrics preference (2026-02-28): treat paid installs (App Store data) as the primary KPI for now; defer Stripe/LTV asks until later.
+- Latency metric interpretation (2026-03-04): there is no lag state; if availability is unavailable, treat lag as exactly zero.
 - Reddit voice preference (2026-03-02): comments should be conversational and direct; avoid filler phrases and over-structured bullet-list style.
 - Reddit operations preference (2026-03-04): all authenticated Reddit interactions should be handled manually by Jabby (no unattended automation for authenticated actions).
 - Reddit workflow preference (2026-03-04): Jabby should independently find Reddit post opportunities; authenticated execution remains manual by Jabby.
