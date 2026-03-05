@@ -1,6 +1,21 @@
+const fs = require('fs');
+
+function loadAnalyticsSecret() {
+  if (process.env.ANALYTICS_SECRET) return String(process.env.ANALYTICS_SECRET);
+  try {
+    const p = '/home/jabbit/analytics/.env';
+    if (!fs.existsSync(p)) return '';
+    const raw = fs.readFileSync(p, 'utf8');
+    const m = raw.match(/^ANALYTICS_SECRET=(.*)$/m);
+    return m ? String(m[1]).trim() : '';
+  } catch {
+    return '';
+  }
+}
+
 module.exports = async (_req, res) => {
-  const ANALYTICS_BASE = process.env.ANALYTICS_BASE || 'http://138.197.74.40:9000';
-  const ANALYTICS_SECRET = process.env.ANALYTICS_SECRET || '';
+  const ANALYTICS_BASE = process.env.ANALYTICS_BASE || 'http://127.0.0.1:9000';
+  const ANALYTICS_SECRET = loadAnalyticsSecret();
 
   if (!ANALYTICS_SECRET) {
     res.status(500).json({ ok: false, error: 'analytics secret missing' });

@@ -33,8 +33,6 @@
   // Analytics
   // ---------
   const APP_STORE_RE = /apps\.apple\.com\/.*\/id6756848719/i;
-  const DIRECT_FALLBACK = 'http://138.197.74.40:9000/track';
-  const DIRECT_SECRET = 'jl8d9s7f6h5g4k3j2';
 
   const sendTrack = (event, target = '') => {
     const payload = {
@@ -64,17 +62,16 @@
       keepalive: true,
       credentials: 'omit',
     }).catch(() => {
-      // Fallback: direct pixel hit to local analytics endpoint.
-      // Note: may be blocked by browser mixed-content policy on strict HTTPS contexts.
+      // Fallback: GET "pixel" hit to our same-origin proxy endpoint.
+      // (No secrets in the browser; server will attach secret when forwarding.)
       const q = new URLSearchParams({
-        secret: DIRECT_SECRET,
         event,
         page: payload.page,
         target: target || '',
         ref: payload.ref || '',
       });
       const img = new Image();
-      img.src = `${DIRECT_FALLBACK}?${q.toString()}`;
+      img.src = `/api/track?${q.toString()}`;
     });
   };
 
