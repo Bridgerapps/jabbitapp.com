@@ -37,13 +37,9 @@ if [ -f "$WS/scripts/appstore.env" ]; then
 fi
 
 ASKS=()
-[ -f "$WS/data/health/latest_metrics.json" ] || ASKS+=("Share latest health snapshot (sleep avg, resting HR, weight trend, BP, glucose).")
-[ -f "$WS/data/health/latest_labs.md" ] || ASKS+=("Drop latest labs/biomarker panel (or photos) so I can update the longevity tracker.")
-[ -f "$WS/data/health/protocol-current.md" ] || ASKS+=("Confirm current protocol changes this week (doses, compounds, cadence, side effects).")
-
 # KPI preference: paid installs from App Store are primary; Stripe asks are intentionally deferred.
 # Only request App Store creds if still truly missing after env-file load.
-[ -n "${APPSTORE_KEY_ID:-}" ] || ASKS+=("Provide App Store Connect read-only API creds so daily download/review metrics are real, not placeholders.")
+[ -n "${APPSTORE_KEY_ID:-}" ] || ASKS+=("Provide App Store Connect read-only API creds so paid-install reporting stays first-party and reliable.")
 
 printf "# Operator Update — %s\n\n" "$NOW_UTC"
 printf "## What I learned / self-improved\n"
@@ -62,14 +58,16 @@ if [ -n "$LATEST_PAGES" ]; then
 fi
 
 echo
-printf "## Life extension play progress\n"
-printf -- "- Site health: %s | Twitter distribution lane: %s\n" "$SITE_OK" "$TWITTER_OK"
-printf -- "- Current system still over-indexes on publishing. I am now forcing explicit data asks in every operator update until telemetry is connected.\n"
+printf "## Parallel execution framework status\n"
+printf -- "- Lane A (SEO awareness): active\n"
+printf -- "- Lane B (conversion optimization): active\n"
+printf -- "- Lane C (ops/telemetry reliability): site=%s | twitter_lane=%s\n" "$SITE_OK" "$TWITTER_OK"
+printf -- "- Source-of-truth KPI: paid installs (App Store).\n"
 
 echo
-printf "## Asks from you (required to optimize lifespan instead of guessing)\n"
+printf "## Asks from you (only true blockers)\n"
 if [ ${#ASKS[@]} -eq 0 ]; then
-  echo "- No blocking asks right now."
+  echo "- No blocker from you right now."
 else
   for a in "${ASKS[@]}"; do
     echo "- $a"
@@ -78,4 +76,4 @@ fi
 
 echo
 printf "## Next push\n"
-printf -- "- I will keep shipping growth + reliability every cycle, and include measurable deltas + asks in each periodic update.\n"
+printf -- "- Continue parallel lane execution; prioritize changes that increase paid installs or improve signal quality.\n"
