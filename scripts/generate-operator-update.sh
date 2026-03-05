@@ -76,4 +76,4 @@ fi
 
 echo
 printf "## Next push\n"
-printf -- "- Continue parallel lane execution; prioritize changes that increase paid installs or improve signal quality.\n"
+printf -- "- Continue parallel lane execution; prioritize changes that increase App Store installs or improve signal quality.\n"
