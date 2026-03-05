@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-04T21:37:40Z",
+  "updated": "2026-03-05T13:25:01Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -41,11 +41,11 @@
       "links": [
         {
           "href": "/glp1-injection-tracker.html",
-          "text": "GLP\u20111 injection tracker (helps you stay consistent)"
+          "text": "GLP‑1 injection tracker (helps you stay consistent)"
         },
         {
           "href": "/glp1-dosing-schedule.html",
-          "text": "GLP\u20111 dosing schedules (for logging & reminders)"
+          "text": "GLP‑1 dosing schedules (for logging & reminders)"
         }
       ]
     },
@@ -54,11 +54,11 @@
       "links": [
         {
           "href": "/glp1-injection-tracker.html",
-          "text": "GLP\u20111 injection tracker (log doses + reminders)"
+          "text": "GLP‑1 injection tracker (log doses + reminders)"
         },
         {
           "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP\u20111 injection tracking guide (site rotation, logging tips)"
+          "text": "GLP‑1 injection tracking guide (site rotation, logging tips)"
         }
       ]
     },
@@ -101,11 +101,11 @@
       "links": [
         {
           "href": "/glp1-dosing-schedule.html",
-          "text": "GLP\u20111 dosing schedules (for logging & reminders)"
+          "text": "GLP‑1 dosing schedules (for logging & reminders)"
         },
         {
           "href": "/glp1-injection-tracker.html",
-          "text": "GLP\u20111 injection tracker (free, privacy\u2011first)"
+          "text": "GLP‑1 injection tracker (free, privacy‑first)"
         }
       ]
     },
@@ -114,11 +114,11 @@
       "links": [
         {
           "href": "/glp1-dosing-schedule.html",
-          "text": "GLP\u20111 dosing schedules (Ozempic/Wegovy/Mounjaro/Zepbound)"
+          "text": "GLP‑1 dosing schedules (Ozempic/Wegovy/Mounjaro/Zepbound)"
         },
         {
           "href": "/glp1-injection-tracker.html",
-          "text": "GLP\u20111 injection tracker (log injections + dose changes)"
+          "text": "GLP‑1 injection tracker (log injections + dose changes)"
         },
         {
           "href": "/zepbound-injection-tracker.html",
@@ -544,6 +544,74 @@
         {
           "href": "/glp-1-side-effects-guide.html",
           "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-injection-reminder-app.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
+    },
+    {
+      "file": "massachusetts-state-workers-glp1-coverage-ended-2026.html",
+      "links": [
+        {
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "GLP-1 cost without insurance (pricing reality + options)"
+        },
+        {
+          "href": "/unitedhealth-subsidiary-disclosure-cut-2026.html",
+          "text": "Health plan disclosures (what changed + why it matters)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (keep a consistent history)"
+        }
+      ]
+    },
+    {
+      "file": "great-value-cottage-cheese-recall-not-fully-pasteurized.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recalls: how to read a recall notice (example)"
+        },
+        {
+          "href": "/terms",
+          "text": "Terms"
+        },
+        {
+          "href": "/privacy",
+          "text": "Privacy"
+        }
+      ]
+    },
+    {
+      "file": "tirzepatide-half-life.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
         }
       ]
     }
