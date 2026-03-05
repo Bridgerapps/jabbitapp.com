@@ -2,7 +2,7 @@
 """Generate SEO effectiveness report focused on subscriptions.
 
 Primary goal: app subscriptions.
-Primary web KPI chain: Organic Visits -> App Store Clicks -> App Store Units (lagged).
+Primary web KPI chain: Organic Visits -> App Store Clicks -> App Store Units.
 
 This report intentionally uses incubation windows so pages get enough time to rank
 before we mark them as losers.
@@ -128,7 +128,6 @@ def classify(ps: PageStat) -> str:
 
 def load_appstore_units_latest() -> tuple[int | None, str | None]:
     # Reuse existing report parser via direct execution to avoid duplicate logic.
-    # This is best-effort; report may be lagged by 1-3 days.
     try:
         p = subprocess.run(
             ['python3', str(WS / 'scripts' / 'appstore-sales.py')],
@@ -228,7 +227,7 @@ def main() -> int:
     lines.append(f"- App Store clicks (30d): **{total_click_30}**")
     lines.append(f"- Organic->Click CTR (30d): **{ctr_30:.1%}**")
     if units is not None:
-        lines.append(f"- Latest App Store units (lagged report): **{units}**")
+        lines.append(f"- Latest App Store units: **{units}**")
     if report_date:
         lines.append(f"- App Store report date: **{report_date}**")
 

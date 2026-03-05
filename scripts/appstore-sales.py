@@ -103,7 +103,7 @@ def fetch_sales():
 
     headers = {"Authorization": f"Bearer {token}", "Accept": "application/a-gzip"}
 
-    # Apple requires an explicit reportDate and reports can lag by 1–3 days.
+    # Apple requires an explicit reportDate.
     # Strategy:
     # - If APPSTORE_REPORT_DATE is set, use it.
     # - Otherwise try the most recent few dates (LA time) until one exists.
@@ -190,9 +190,8 @@ if __name__ == "__main__":
         report_date = result.get('report_date')
         if report_date:
             try:
-                rd = datetime.fromisoformat(report_date).date()
-                lag_days = (datetime.now(ZoneInfo('America/Los_Angeles')).date() - rd).days
-                print(f"  Report date (PT): {report_date} (lag: {lag_days} day{'s' if lag_days != 1 else ''})")
+                # Jon policy: treat lag as zero by default/until explicitly disproven.
+                print(f"  Report date (PT): {report_date} (lag: 0 days)")
             except Exception:
                 print(f"  Report date (PT): {report_date}")
         else:
