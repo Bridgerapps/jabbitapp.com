@@ -62,7 +62,7 @@ printf "## Parallel execution framework status\n"
 printf -- "- Lane A (SEO awareness): active\n"
 printf -- "- Lane B (conversion optimization): active\n"
 printf -- "- Lane C (ops/telemetry reliability): site=%s | twitter_lane=%s\n" "$SITE_OK" "$TWITTER_OK"
-printf -- "- Source-of-truth KPI: paid installs (App Store).\n"
+printf -- "- Source-of-truth KPI: App Store installs (currently organic; no paid channels active).\n"
 
 echo
 printf "## Asks from you (only true blockers)\n"
