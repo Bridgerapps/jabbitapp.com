@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-05T14:40:14Z",
+  "updated": "2026-03-05T14:40:54Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -41,11 +41,11 @@
       "links": [
         {
           "href": "/glp1-injection-tracker.html",
-          "text": "GLP‑1 injection tracker (helps you stay consistent)"
+          "text": "GLP\u20111 injection tracker (helps you stay consistent)"
         },
         {
           "href": "/glp1-dosing-schedule.html",
-          "text": "GLP‑1 dosing schedules (for logging & reminders)"
+          "text": "GLP\u20111 dosing schedules (for logging & reminders)"
         }
       ]
     },
@@ -54,11 +54,11 @@
       "links": [
         {
           "href": "/glp1-injection-tracker.html",
-          "text": "GLP‑1 injection tracker (log doses + reminders)"
+          "text": "GLP\u20111 injection tracker (log doses + reminders)"
         },
         {
           "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP‑1 injection tracking guide (site rotation, logging tips)"
+          "text": "GLP\u20111 injection tracking guide (site rotation, logging tips)"
         }
       ]
     },
@@ -101,11 +101,11 @@
       "links": [
         {
           "href": "/glp1-dosing-schedule.html",
-          "text": "GLP‑1 dosing schedules (for logging & reminders)"
+          "text": "GLP\u20111 dosing schedules (for logging & reminders)"
         },
         {
           "href": "/glp1-injection-tracker.html",
-          "text": "GLP‑1 injection tracker (free, privacy‑first)"
+          "text": "GLP\u20111 injection tracker (free, privacy\u2011first)"
         }
       ]
     },
@@ -114,11 +114,11 @@
       "links": [
         {
           "href": "/glp1-dosing-schedule.html",
-          "text": "GLP‑1 dosing schedules (Ozempic/Wegovy/Mounjaro/Zepbound)"
+          "text": "GLP\u20111 dosing schedules (Ozempic/Wegovy/Mounjaro/Zepbound)"
         },
         {
           "href": "/glp1-injection-tracker.html",
-          "text": "GLP‑1 injection tracker (log injections + dose changes)"
+          "text": "GLP\u20111 injection tracker (log injections + dose changes)"
         },
         {
           "href": "/zepbound-injection-tracker.html",
@@ -629,6 +629,23 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "Injection tracker (log products, dates, and notes)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-injection-reminder.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
         }
       ]
     }
