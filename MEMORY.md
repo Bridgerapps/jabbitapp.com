@@ -43,6 +43,7 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Reddit workflow preference (2026-03-04): Jabby should independently find Reddit post opportunities; authenticated execution remains manual by Jabby.
 - Reddit sourcing preference (2026-03-04): surface opportunities via the unauthenticated pipeline, then execute authenticated actions manually.
 - Reddit execution preference (2026-03-03): zero Reddit automation. All Reddit actions must be manual, single-action, and explicitly executed by Jabby in-session.
+- Communication preference (2026-03-05): if Tim asks for a change, include the latest current setup state in the response to him.
 
 ## Tim Personal Context for Reddit (Verified)
 - Reddit username: u/PoodPound
