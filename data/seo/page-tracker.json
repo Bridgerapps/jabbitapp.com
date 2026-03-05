@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-05T13:07:20Z",
-  "total_pages": 34,
+  "last_updated": "2026-03-05T14:36:21Z",
+  "total_pages": 38,
   "topics": [
     {
       "topic": "bpc-157",
@@ -170,6 +170,31 @@
     {
       "topic": "massachusetts-state-workers-glp1-coverage-ended-2026",
       "filename": "massachusetts-state-workers-glp1-coverage-ended-2026.html",
+      "created": "2026-03-05"
+    },
+    {
+      "topic": "glp1-injection-reminder-app",
+      "filename": "glp1-injection-reminder-app.html",
+      "created": "2026-03-05"
+    },
+    {
+      "topic": "great-value-cottage-cheese-recall-not-fully-pasteurized",
+      "filename": "great-value-cottage-cheese-recall-not-fully-pasteurized.html",
+      "created": "2026-03-05"
+    },
+    {
+      "topic": "tirzepatide-half-life",
+      "filename": "tirzepatide-half-life.html",
+      "created": "2026-03-05"
+    },
+    {
+      "topic": "semaglutide-injection-reminder",
+      "filename": "semaglutide-injection-reminder.html",
+      "created": "2026-03-05"
+    },
+    {
+      "topic": "fda-recalls-undeclared-tadalafil-sildenafil-rhino-boner-bears",
+      "filename": "fda-recalls-undeclared-tadalafil-sildenafil-rhino-boner-bears.html",
       "created": "2026-03-05"
     }
   ],

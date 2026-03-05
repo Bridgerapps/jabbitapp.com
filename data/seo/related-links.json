@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-05T13:25:01Z",
+  "updated": "2026-03-05T14:40:14Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -612,6 +612,23 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "fda-recalls-undeclared-tadalafil-sildenafil-rhino-boner-bears.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recall alerts: undeclared tadalafil/sildenafil in supplements (guide)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what to track + why it matters)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Injection tracker (log products, dates, and notes)"
         }
       ]
     }
