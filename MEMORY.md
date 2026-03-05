@@ -38,6 +38,7 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Metrics preference (2026-02-28): treat paid installs (App Store data) as the primary KPI for now; defer Stripe/LTV asks until later.
 - Latency metric interpretation (2026-03-04): there is no lag state; default assumption (until proven otherwise): if availability is unavailable, treat lag as exactly zero.
 - Reddit voice preference (2026-03-02): comments should be conversational and direct; avoid filler phrases and over-structured bullet-list style.
+- Lag-days policy (2026-03-05): there are no lag days.
 - Reddit operations preference (2026-03-04): all authenticated Reddit interactions should be handled manually by Jabby (no unattended automation for authenticated actions).
 - Reddit workflow preference (2026-03-04): Jabby should independently find Reddit post opportunities; authenticated execution remains manual by Jabby.
 - Reddit sourcing preference (2026-03-04): surface opportunities via the unauthenticated pipeline, then execute authenticated actions manually.
