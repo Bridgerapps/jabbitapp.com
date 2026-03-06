@@ -55,6 +55,7 @@ echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
       if (.yesterday|type)=="object" then (.yesterday.app_store_click // 0) else 0 end
     ),
     top_pages: (.topPages // []),
+    top_pageviews: (.topPageviews // .topPages // []),
     top_click_pages: (.topClickPages // [])
   }
 ' > "$OUT"

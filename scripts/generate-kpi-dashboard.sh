@@ -38,13 +38,13 @@ if [ -f "$WS/data/status/site-analytics.json" ] && jq -e '.ok == true' "$WS/data
   SITE_APPSTORE_CLICKS_TODAY=$(jq -r '.today_app_store_clicks // 0' "$WS/data/status/site-analytics.json")
   SITE_PAGEVIEWS_YDAY=$(jq -r '.yesterday_pageviews // 0' "$WS/data/status/site-analytics.json")
   SITE_APPSTORE_CLICKS_YDAY=$(jq -r '.yesterday_app_store_clicks // 0' "$WS/data/status/site-analytics.json")
-  TEST_PAGEVIEWS=$(jq -r '[.top_pages[]? | select((.page // "") | test("health-test|test"; "i")) | (.count // 0)] | add // 0' "$WS/data/status/site-analytics.json")
+  TEST_PAGEVIEWS=$(jq -r '[.top_pageviews[]? | select((.page // "") | test("health-test|test"; "i")) | (.count // 0)] | add // 0' "$WS/data/status/site-analytics.json")
   TEST_APPSTORE_CLICKS=$(jq -r '[.top_click_pages[]? | select((.page // "") | test("health-test|test"; "i")) | (.count // 0)] | add // 0' "$WS/data/status/site-analytics.json")
   CLEAN_PAGEVIEWS=$(( TOTAL_PAGEVIEWS - TEST_PAGEVIEWS ))
   CLEAN_APPSTORE_CLICKS=$(( TOTAL_APPSTORE_CLICKS - TEST_APPSTORE_CLICKS ))
   if [ "$CLEAN_PAGEVIEWS" -lt 0 ]; then CLEAN_PAGEVIEWS=0; fi
   if [ "$CLEAN_APPSTORE_CLICKS" -lt 0 ]; then CLEAN_APPSTORE_CLICKS=0; fi
-  TOP_PAGES=$(jq -r '[.top_pages[]? | (.page // "?") + " (" + ((.count // 0)|tostring) + ")"] | .[0:3] | join(", ") | if .=="" then "n/a" else . end' "$WS/data/status/site-analytics.json")
+  TOP_PAGES=$(jq -r '[.top_pageviews[]? | (.page // "?") + " (" + ((.count // 0)|tostring) + ")"] | .[0:3] | join(", ") | if .=="" then "n/a" else . end' "$WS/data/status/site-analytics.json")
   TOP_CLICK_PAGES=$(jq -r '[.top_click_pages[]? | (.page // "?") + " (" + ((.count // 0)|tostring) + ")"] | .[0:3] | join(", ") | if .=="" then "n/a" else . end' "$WS/data/status/site-analytics.json")
 fi
 
