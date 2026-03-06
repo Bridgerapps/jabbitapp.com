@@ -54,7 +54,7 @@ FAQ_JSONLD_CHANGED_COUNT="null"
 FAQ_JSONLD_ERROR_COUNT="null"
 
 # 1. Site health
-SITE_CODE=$(curl -s --connect-timeout 5 --max-time 10 -o /dev/null -w "%{http_code}" https://www.jabbitapp.com 2>/dev/null || echo "000")
+SITE_CODE=$(curl -s --connect-timeout 5 --max-time 10 -o /dev/null -w "%{http_code}" https://jabbitapp.com 2>/dev/null || echo "000")
 if [ "$SITE_CODE" = "200" ]; then
     echo "✅ Site: HTTP $SITE_CODE" >> "$LOG_FILE"
 else

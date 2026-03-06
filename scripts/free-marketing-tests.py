@@ -20,7 +20,7 @@ WS = Path('/home/jabbit/.openclaw/workspace')
 DOCS = WS / 'docs'
 STATUS = WS / 'data' / 'status' / 'marketing-tests.json'
 
-BASE = 'https://www.jabbitapp.com'
+BASE = 'https://jabbitapp.com'
 PAGES = [
     '/',
     '/shotsy-alternative.html',

@@ -85,7 +85,7 @@ echo ""
 
 # Site Health (timeouts so this never hangs)
 echo "🌐 Site:"
-HTTP_CODE="$(curl -sS -o /dev/null -w "%{http_code}" --connect-timeout 3 --max-time 6 https://www.jabbitapp.com/ 2>/dev/null || true)"
+HTTP_CODE="$(curl -sS -o /dev/null -w "%{http_code}" --connect-timeout 3 --max-time 6 https://jabbitapp.com/ 2>/dev/null || true)"
 if [ "$HTTP_CODE" = "200" ]; then
   say_ok "jabbitapp.com ($HTTP_CODE)"
 elif [ -z "$HTTP_CODE" ]; then

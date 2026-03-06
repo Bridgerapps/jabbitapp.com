@@ -5,7 +5,7 @@ Checks:
 - For each href pointing to an on-site HTML page, confirm the target file exists.
 - Handles:
   - Relative links: /foo.html, foo.html
-  - Same-site absolute: https://jabbitapp.com/foo.html, https://www.jabbitapp.com/foo.html
+  - Same-site absolute: https://jabbitapp.com/foo.html, https://jabbitapp.com/foo.html
 - Ignores:
   - mailto:, tel:, javascript:
   - external domains
