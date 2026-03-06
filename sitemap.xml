@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/index.html</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -151,14 +151,14 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jabbitapp.com/peptide-reconstitution-calculator</loc>
+    <loc>https://jabbitapp.com/peptide-reconstitution-calculator.html</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jabbitapp.com/peptide-reconstitution-guide.html</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -231,6 +231,12 @@
   <url>
     <loc>https://jabbitapp.com/wegovy-injection-tracker.html</loc>
     <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jabbitapp.com/zealand-roche-amylin-obesity-phase2-data-market-reaction.html</loc>
+    <lastmod>2026-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
