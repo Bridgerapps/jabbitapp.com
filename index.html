@@ -23,6 +23,56 @@
   }
   </script>
 
+  <!-- FAQ schema (helps eligible rich results; keep claims conservative) -->
+  <script type="application/ld+json" id="faqpage-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Jabbit work for Ozempic, Wegovy, Mounjaro, or Zepbound?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jabbit is designed for GLP‑1 routines and can be used to track typical weekly injection schedules (for example semaglutide or tirzepatide). Always follow your prescriber’s instructions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to create an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. You can download Jabbit and start tracking without creating an account or providing an email address."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is my data stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your logs are stored on your devices and sync through your personal iCloud account. Jabbit does not run a server that stores your personal logs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I cancel anytime?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Subscriptions are managed through the App Store, and you can cancel at any time from your Apple ID settings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this medical advice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Jabbit provides educational information and tracking tools. It does not provide medical advice, diagnosis, or treatment."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jabbitapp.com/" />
@@ -87,6 +137,7 @@
           <a href="/guides/" class="text-gray-600 hover:text-gray-900 transition">Guides / Blog</a>
           <a href="#pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
           <a href="#privacy" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
+          <a href="#faq" class="text-gray-600 hover:text-gray-900 transition">FAQ</a>
           <a href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719" data-track="nav_app_store" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600 transition">App Store</a>
         </div>
 
@@ -105,6 +156,7 @@
           <a href="/guides/" class="text-gray-600 hover:text-gray-900 transition">Guides / Blog</a>
           <a href="#pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
           <a href="#privacy" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
+          <a href="#faq" class="text-gray-600 hover:text-gray-900 transition">FAQ</a>
           <a href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719" data-track="mobile_nav_app_store" class="text-brand-700 font-semibold hover:text-brand-800 transition">App Store</a>
         </div>
       </div>
@@ -512,6 +564,79 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section id="faq" class="py-20 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">FAQ</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Quick answers to the most common questions before you download.</p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm px-6 py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-gray-900">
+            <span>Does Jabbit work for Ozempic, Wegovy, Mounjaro, or Zepbound?</span>
+            <span class="text-brand-600 transition group-open:rotate-180" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-600 leading-relaxed">
+            Jabbit is built for GLP‑1 routines and typical weekly injection schedules (for example semaglutide or tirzepatide). Always follow your prescriber’s instructions.
+            If you’re deciding what to track, these guides may help:
+            <a class="text-brand-700 font-semibold hover:text-brand-800" href="/glp1-dosing-schedule.html">GLP‑1 dosing schedules</a>
+            and
+            <a class="text-brand-700 font-semibold hover:text-brand-800" href="/glp-1-injection-tracking-guide.html">injection tracking basics</a>.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm px-6 py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-gray-900">
+            <span>Do I need to create an account?</span>
+            <span class="text-brand-600 transition group-open:rotate-180" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-600 leading-relaxed">
+            No. Download and start tracking — no email, no sign‑up. Sync happens through your iCloud account.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm px-6 py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-gray-900">
+            <span>Where is my data stored?</span>
+            <span class="text-brand-600 transition group-open:rotate-180" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-600 leading-relaxed">
+            Your logs are stored on your devices and sync through your personal iCloud account. We don’t run a server that stores your personal logs.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm px-6 py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-gray-900">
+            <span>Can I cancel anytime?</span>
+            <span class="text-brand-600 transition group-open:rotate-180" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-600 leading-relaxed">
+            Yes. Subscriptions are managed through the App Store, and you can cancel at any time from your Apple ID settings.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm px-6 py-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-gray-900">
+            <span>Is this medical advice?</span>
+            <span class="text-brand-600 transition group-open:rotate-180" aria-hidden="true">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-600 leading-relaxed">
+            No. Jabbit provides educational information and tracking tools — not medical advice, diagnosis, or treatment.
+          </div>
+        </details>
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719" data-track="faq_app_store" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 bg-brand-600 text-white font-semibold rounded-xl hover:bg-brand-700 transition">
+          Download on App Store
+        </a>
+        <p class="mt-3 text-xs text-gray-500">Start 14‑day free trial • Then $9.99/year • Cancel anytime</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Final CTA -->
   <section class="py-20 px-6 bg-brand-600">
     <div class="max-w-4xl mx-auto text-center">
@@ -540,6 +665,7 @@
           <ul class="space-y-2 text-gray-400">
             <li><a href="/guides/" class="hover:text-white transition">Guides / Blog</a></li>
             <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
             <li><a href="https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719" class="hover:text-white transition">App Store</a></li>
           </ul>
         </div>
