@@ -107,6 +107,18 @@
     sendTrack('pageview');
   }
 
+  // Normalize App Store link behavior (always new tab + safe rel)
+  // This reduces "page lost" friction and keeps outbound clicks consistent across older pages.
+  try {
+    document.querySelectorAll('a[href]').forEach((a) => {
+      const href = a.getAttribute('href') || '';
+      if (!APP_STORE_RE.test(href)) return;
+      a.setAttribute('target', '_blank');
+      const rel = (a.getAttribute('rel') || '').toLowerCase();
+      if (!rel.includes('noopener')) a.setAttribute('rel', `${rel ? rel + ' ' : ''}noopener noreferrer`.trim());
+    });
+  } catch (_) {}
+
   // Basic engagement: scroll depth (helps us prioritize pages that actually get read)
   // Fires at most once per threshold.
   try {
