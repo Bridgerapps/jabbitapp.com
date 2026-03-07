@@ -234,7 +234,7 @@
       text.appendChild(sub);
 
       const cta = document.createElement('a');
-      cta.href = 'https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719';
+      cta.href = 'https://apps.apple.com/app/id6756848719';
       cta.target = '_blank';
       cta.rel = 'noopener noreferrer';
       cta.dataset.track = 'inline_top_banner';
@@ -364,7 +364,7 @@
         inner.style.gap = '10px';
 
         const cta = document.createElement('a');
-        cta.href = 'https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719';
+        cta.href = 'https://apps.apple.com/app/id6756848719';
         cta.target = '_blank';
         cta.rel = 'noopener noreferrer';
         cta.dataset.track = isHome ? 'sticky_cta_home' : 'sticky_cta';

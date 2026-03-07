@@ -19,7 +19,7 @@ This is a **do-this-exactly** runbook to:
 
 - You can log into **Apple Ads** with the Apple ID that has permission to advertise the Jabbit app.
 - You have:
-  - App Store app link (for reference): https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719
+  - App Store app link (for reference): https://apps.apple.com/app/id6756848719
   - A credit card ready to add (required even if you intend to only spend the credit).
 
 ---

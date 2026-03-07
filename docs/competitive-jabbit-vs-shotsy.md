@@ -25,7 +25,7 @@ Purpose: give Jabby a factual, repeatable positioning doc for Reddit and other c
   - site/schema references: `$9.99/year` founding price
 
 Sources:
-- https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719
+- https://apps.apple.com/app/id6756848719
 - `/home/jabbit/.openclaw/workspace/jabbitapp.com/llms.txt`
 - `/home/jabbit/.openclaw/workspace/jabbitapp.com/_includes/schema-head.html`
 - `/home/jabbit/.openclaw/workspace/jabbitapp.com/index.html`

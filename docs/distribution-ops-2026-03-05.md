@@ -26,7 +26,7 @@ Use this framing in every post/message: **“private GLP‑1 tracking with no ac
 
 **Comment draft:**
 > If your main goal is consistency, the simplest setup is: recurring reminder for shot day + a quick log right after.
-> If you prefer an actual app, **Jabbit** is iOS and is built to be privacy-first (no account/email; logs sync via your iCloud). App Store: https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719
+> If you prefer an actual app, **Jabbit** is iOS and is built to be privacy-first (no account/email; logs sync via your iCloud). App Store: https://apps.apple.com/app/id6756848719
 
 **Checklist:**
 - Only post where it’s clearly relevant.
@@ -41,7 +41,7 @@ Use this framing in every post/message: **“private GLP‑1 tracking with no ac
 - “If you want a tracker but don’t want to hand your info to a random server… here’s an iOS app that uses *your iCloud* and doesn’t require an account.”
 
 **Suggested post copy (edit to match each group’s rules):**
-> I built/found an iOS GLP‑1 tracker called **Jabbit** that’s intentionally **privacy-first**: no account, no email, and your logs sync via **your iCloud** (not a company server). If anyone wants a simple way to stay consistent with schedule/reminders + progress logging, here’s the App Store link: https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719
+> I built/found an iOS GLP‑1 tracker called **Jabbit** that’s intentionally **privacy-first**: no account, no email, and your logs sync via **your iCloud** (not a company server). If anyone wants a simple way to stay consistent with schedule/reminders + progress logging, here’s the App Store link: https://apps.apple.com/app/id6756848719
 
 **Checklist:**
 - Search group rules for “no links”; if needed, post without link and add link in comments.
@@ -59,7 +59,7 @@ Use this framing in every post/message: **“private GLP‑1 tracking with no ac
 
 **DM script:**
 > Hey — quick one. I work on an iOS GLP‑1 tracker called **Jabbit**. It’s deliberately **privacy-first** (no account/email; logs sync via the user’s iCloud, not our servers). If you ever share tools that help people stay consistent with schedule/reminders + progress logging, happy to send a short blurb + App Store link.
-> https://apps.apple.com/us/app/jabbit-peptide-tracker/id6756848719
+> https://apps.apple.com/app/id6756848719
 
 **Checklist:**
 - Keep it short.
