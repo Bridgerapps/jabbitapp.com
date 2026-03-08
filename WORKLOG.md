@@ -24,3 +24,4 @@ Lightweight running log of actions taken (UTC).
 - 07:05Z — Growth loop: enriched podcast leads with direct emails (On The Pen, GLP‑1 Tribe) + created a 3-touch manual send queue doc for Jon.
 
 
+- 08:05Z — Self-improvement loop: audited last 5 runs (podcast/outreach repetition); added lead/sendQueue ledger + audit script; updated growth playbook to require state advancement; committed changes.
