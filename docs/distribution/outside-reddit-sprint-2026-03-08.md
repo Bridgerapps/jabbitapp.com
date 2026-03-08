@@ -31,6 +31,12 @@ Mix: GLP-1 coaches, peptide communities, newsletters, creators.
 
 **Podcast list (separate doc):** `docs/distribution/podcast-outreach-leads-2026-03-08.md`
 
+### plussidez
+- Target: **The Plus SideZ** (GLP-1 & Metabolic Health)
+- Contact path: IG DM **@theplussidezpodcast** (or host IG: @dmfkimonglp1 / @mrskatcarter)
+- Linktree (proof + links): https://linktr.ee/theplussidez
+- Angle: “tiny free injection log + reminders resource link for your listeners (non-medical; no dosing guidance).”
+
 1) **My GLP1 Coach** (coaching)
    - URL: https://www.myglp1coach.com/about/
    - Why-fit: Explicitly serves Mounjaro/Zepbound/Ozempic/Wegovy clients; a “free tracker resource” improves adherence + reduces support burden (“when was my last shot / which site did I use?”).

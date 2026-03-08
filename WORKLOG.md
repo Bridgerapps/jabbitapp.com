@@ -10,6 +10,7 @@ Lightweight running log of actions taken (UTC).
 - 23:05Z — Growth loop: built 3 clinic/program outreach leads + contact paths + permission-based outreach copy.
 
 ## 2026-03-08
+- 16:07Z — Growth loop: flagged 3 overdue ready_to_send touches (On The Pen, GLP-1 Tribe, GLP-1 Hub) + added new podcast IG lead (The Plus SideZ) to ledger + updated outside-reddit sprint doc.
 - 00:05Z — Growth loop: generated KPI dashboard for 2026-03-08; drafted 2 listicle/backlink outreach targets (NewBeauty, LearnMuscles) + a manual Reddit execution plan for a high-intent “tracker app” thread.
 
 - 01:05Z — Growth loop: created 24h action queue (manual Reddit + coach/clinic outreach DM copy). Noted Brave web_search rate limit (429).
@@ -32,3 +33,4 @@ Lightweight running log of actions taken (UTC).
 - 11:05Z — Growth loop: advanced manual sendQueue with follow-up touches (#2/#3) for podcast outreach (On The Pen, GLP-1 Tribe) + added GLP-1 Hub contact page to ledger.
 - 12:05Z — Growth loop: created a send-now brief + promoted today’s 3 outreach items to ready_to_send in ledger (2 emails + 1 IG DM).
 - 13:58Z — Strategy: wrote `docs/jabbit-distribution-os-2026-03-08.md` and `docs/jabbit-distribution-execution-board-2026-03-08.md` to formalize the distribution system beyond SEO (endpoints, pipelines, metrics, cadence, worker lanes, and Jon’s highest-leverage role).
+- 14:05Z — Growth loop: created partner-kit one-pager + UTM conventions docs to make outbound outreach faster + measurable; queued as immediate assets for today’s manual sends.
