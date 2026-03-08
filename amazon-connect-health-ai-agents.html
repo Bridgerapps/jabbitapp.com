@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Connect Health AI Agents (Mar 2026): What Was Announced, What It Actually Means, and What to Watch</title>
+  <meta name="description" content="A practical, plain-English breakdown of Amazon’s healthcare AI agents for Amazon Connect Health — what they claim to automate, what’s likely real vs marketing, and what patients and clinics should watch next." />
+  <link rel="canonical" href="https://jabbitapp.com/amazon-connect-health-ai-agents.html" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 860px; margin: 0 auto; padding: 20px; background: #f9f9f9; }
+    h1 { font-size: 2.05em; color: #1a1a2e; margin-bottom: 10px; }
+    h2 { color: #16213e; margin: 30px 0 12px; font-size: 1.45em; }
+    h3 { color: #0f3460; margin: 18px 0 8px; font-size: 1.1em; }
+    p { margin: 10px 0; }
+    ul { margin: 10px 0 10px 22px; }
+    .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 34px 26px; border-radius: 12px; margin-bottom: 22px; }
+    .hero h1 { color: white; }
+    .hero p { font-size: 1.05em; opacity: 0.92; }
+    .note { background: #ffffff; border-left: 4px solid #3b82f6; padding: 14px 18px; margin: 18px 0; border-radius: 0 10px 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .warning { background: #fff3e0; border-left: 4px solid #ff9800; padding: 14px 18px; margin: 18px 0; border-radius: 0 10px 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .cta { background: #ffffff; padding: 18px; border-radius: 12px; margin: 22px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .cta-button { display: inline-block; background: #e94560; color: white; padding: 12px 18px; border-radius: 10px; text-decoration: none; font-weight: 700; margin-top: 10px; }
+    .cta-button:hover { background: #d63651; }
+    .faq { background: white; padding: 18px; border-radius: 12px; margin: 18px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .faq-item { margin: 12px 0; }
+    .source { font-size:  0.9em; color: #666; margin-top: 26px; padding-top: 16px; border-top: 1px solid #ddd; }
+    code { background: #fff; padding: 2px 6px; border-radius: 6px; }
+    .tag { display: inline-block; background: #eef2ff; color: #1e3a8a; padding: 4px 10px; border-radius: 999px; font-size: 0.85em; margin-right: 8px; }
+  </style>
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <div class="hero">
+    <span class="tag">Breaking topic</span>
+    <span class="tag">Healthcare AI</span>
+    <h1>Amazon Connect Health AI Agents (Mar 2026)</h1>
+    <p>What Amazon announced, what it likely does in practice, and the checklist to tell “real workflow change” from “demo theater.”</p>
+  </div>
+
+  <p style="font-size: 0.95em; color: #555;"><em>
+    Disclaimer: This page is for informational purposes only and is not medical, legal, or financial advice. Product capabilities and policies can change quickly; verify details with the vendor and your healthcare organization’s compliance/security team.
+  </em></p>
+
+  <p>
+    Amazon (AWS) coverage in early March 2026 highlighted a suite of <strong>healthcare AI agents</strong> tied to <strong>Amazon Connect Health</strong>.
+    If you’re a patient, a clinician, or you work in operations, the high-intent question is usually:
+    <strong>“Will this actually make scheduling, refills, prior auth, and ‘phone-tag’ better — or is it just new jargon?”</strong>
+  </p>
+
+  <div class="note">
+    <strong>Fast take:</strong> The value of “AI agents” in healthcare isn’t the model — it’s whether the tool is connected to the real systems (phone, chat, EHR, ticketing, pharmacy workflows), has tight guardrails, and reliably escalates to humans.
+  </div>
+
+  <h2>What is Amazon Connect Health (in plain English)?</h2>
+  <p>
+    <strong>Amazon Connect</strong> is AWS’s contact-center platform (calls, chat, routing, analytics) used by many organizations.
+    <strong>Amazon Connect Health</strong> is the healthcare-focused packaging of that idea: a way for health systems and vendors to run patient communications through a modern “contact center” layer.
+  </p>
+
+  <h2>What “healthcare AI agents” usually try to do</h2>
+  <p>
+    When a vendor says “AI agents,” they typically mean task-focused automations that can take an intent ("I need a refill") and drive a workflow.
+    In healthcare operations, common targets include:
+  </p>
+  <ul>
+    <li><strong>Scheduling + rescheduling</strong> (finding openings, confirming details, reminders)</li>
+    <li><strong>Symptom/intake triage</strong> (routing to the right team; not diagnosis)</li>
+    <li><strong>Call summaries</strong> and structured notes for staff follow-up</li>
+    <li><strong>Benefits / coverage questions</strong> and where to send forms</li>
+    <li><strong>Medication logistics</strong> like “where is my prescription?” or “what’s the next step?” (often requires pharmacy/EHR integration)</li>
+  </ul>
+
+  <div class="warning">
+    <strong>Important distinction:</strong> An “agent” that only chats is very different from an “agent” that can securely <em>take action</em> (e.g., create an appointment request, open a ticket, verify identity, route to the right queue). In healthcare, action requires serious governance.
+  </div>
+
+  <h2>What to watch (the 7-point reality check)</h2>
+  <p>
+    If you’re deciding whether this announcement matters, these are the questions that separate a durable product from a press cycle:
+  </p>
+  <ul>
+    <li><strong>Integration depth:</strong> Does it connect to the EHR, scheduling, CRM/ticketing, and phone routing — or is it a bolt-on chatbot?</li>
+    <li><strong>Identity + consent:</strong> How does it verify a patient, handle proxies/caregivers, and log consent?</li>
+    <li><strong>Escalation rules:</strong> When does it hand off to a human, and how clean is the handoff context?</li>
+    <li><strong>Auditability:</strong> Can a compliance team review transcripts, prompts, and actions taken?</li>
+    <li><strong>Safety guardrails:</strong> Does it avoid diagnosing and instead route appropriately (especially for urgent symptoms)?</li>
+    <li><strong>Operational metrics:</strong> Are they reporting real outcomes (handle time, abandonment, resolution rate) rather than demos?</li>
+    <li><strong>Rollout scope:</strong> Is this live in production with named customers, or “available for preview”?</li>
+  </ul>
+
+  <h2>What this could mean for patients (good and bad)</h2>
+  <h3>Potential upside</h3>
+  <ul>
+    <li>Less waiting on hold, faster call-backs, and fewer repeated explanations</li>
+    <li>Clearer next steps after calls (summaries, reminders, follow-ups)</li>
+    <li>More consistent after-hours routing for routine requests</li>
+  </ul>
+
+  <h3>Potential downside</h3>
+  <ul>
+    <li>More “automated walls” if escalation is stingy or confusing</li>
+    <li>Inaccurate summaries that create rework (or frustration)</li>
+    <li>Uneven experience across clinics depending on how well it’s configured</li>
+  </ul>
+
+  <div class="cta">
+    <strong>One thing you can control: your own timeline.</strong>
+    <p>
+      Even with better contact centers, a lot of healthcare friction comes from missing context: dates, doses, symptoms, and what happened last time.
+      Jabbit helps you keep a simple, personal record so calls and appointments are easier.
+    </p>
+    <a class="cta-button" href="https://apps.apple.com/app/id6756848719">Download Jabbit on the App Store</a>
+  </div>
+
+  <h2>Glossary</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <h3>Contact center</h3>
+      <p>The system that routes calls/chats, tracks queues, and helps staff handle incoming requests.</p>
+    </div>
+    <div class="faq-item">
+      <h3>AI agent</h3>
+      <p>A task-focused automation that can interpret a request and (sometimes) take actions across connected systems. In healthcare, trustworthy agents need strict guardrails and strong audit trails.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Escalation</h3>
+      <p>The rule set for handing a conversation to a human — ideally with context so the patient doesn’t have to start over.</p>
+    </div>
+  </div>
+
+  <p class="source">
+    Sources (news coverage):
+    <br />
+    - Healthcare Dive (Mar 5, 2026):
+    <a href="https://www.healthcaredive.com/news/amazon-web-services-launch-amazon-connect-health-ai-agent/813796/" rel="nofollow">https://www.healthcaredive.com/news/amazon-web-services-launch-amazon-connect-health-ai-agent/813796/</a>
+  </p>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+    <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (keep a clean timeline for visits)</a></li>
+    <li><a href="/glp1-injection-reminder-app.html">GLP-1 injection reminders (reduce missed doses)</a></li>
+    <li><a href="/guides/">Guides hub (practical GLP-1 help)</a></li>
+    </ul>
+  </section>
+</body>
+</html>
