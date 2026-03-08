@@ -54,11 +54,13 @@ FAQ_JSONLD_CHANGED_COUNT="null"
 FAQ_JSONLD_ERROR_COUNT="null"
 
 # 1. Site health
-SITE_CODE=$(curl -s --connect-timeout 5 --max-time 10 -o /dev/null -w "%{http_code}" https://jabbitapp.com 2>/dev/null || echo "000")
-if [ "$SITE_CODE" = "200" ]; then
-    echo "✅ Site: HTTP $SITE_CODE" >> "$LOG_FILE"
+SITE_URL="https://jabbit.app/"
+# Follow redirects and evaluate the final status code (avoid false positives on 301/302/307).
+SITE_CODE=$(curl -sS -L --connect-timeout 5 --max-time 10 -o /dev/null -w "%{http_code}" "$SITE_URL" 2>/dev/null || echo "000")
+if [ "$SITE_CODE" -ge 200 ] 2>/dev/null && [ "$SITE_CODE" -lt 400 ] 2>/dev/null; then
+    echo "✅ Site: HTTP $SITE_CODE ($SITE_URL)" >> "$LOG_FILE"
 else
-    echo "❌ Site: HTTP $SITE_CODE" >> "$LOG_FILE"
+    echo "❌ Site: HTTP $SITE_CODE ($SITE_URL)" >> "$LOG_FILE"
     ISSUES+=("Site down: HTTP $SITE_CODE")
 fi
 
