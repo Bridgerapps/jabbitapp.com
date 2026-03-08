@@ -1,68 +1,60 @@
 # Breaking Topics Radar (last 72h)
 
-_As of: 2026-03-08 06:20 UTC_  
-Scope: informational only (no medical advice). Built from multiple public sources; if a source is unavailable/blocked, the radar continues.
+_Last updated: 2026-03-08 18:20 UTC. Informational only; not medical advice._
 
-## Top 5 topics
-
-### 1) FDA leadership change: Vinay Prasad to depart FDA (vaccines + cell/gene)
-- **Why it matters for subscriptions:** Regulatory personnel changes are “category-wide” events: they reshape perceived approval/oversight risk across vaccines, cell & gene therapy, and other high-volatility therapy areas. This is exactly the kind of thing that makes users subscribe for ongoing updates/interpretation.
-- **Suggested page slug:** `/topic/fda-vinay-prasad-departure`
-- **Confidence:** **High**
+## 1) FDA escalates enforcement on compounded GLP‑1 marketing (telehealth + compounding)
+- **Topic:** FDA warning letters to dozens of telehealth companies over allegedly false/misleading marketing of compounded GLP‑1 products (e.g., semaglutide/tirzepatide).
+- **Why it matters for subscriptions:** If Jabbit’s subscription value prop touches access, affordability, or continuity of therapy (especially GLP‑1 demand), enforcement news spikes intent (“where can I get it safely/legitimately?”, “will my provider/pharmacy still ship?”). This kind of regulatory headline reliably drives: (a) high-volume search, (b) fear/uncertainty churn, and (c) comparison-shopping across programs.
+- **Suggested page slug:** `/glp1-compounding-fda-warning-letters-2026`
+- **Confidence:** **High** (multiple mainstream confirmations + consistent story framing)
 - **Sources:**
-  - Fierce Biotech — “FDA’s Vinay Prasad to depart agency at the end of April” (Mar 6, 2026) — https://www.fiercebiotech.com/biotech/fdas-vinay-prasad-depart-agency-end-april
+  - Reuters (2026-03-03): https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-warns-30-telehealth-firms-over-misleading-marketing-compounded-glp1-drugs-2026-03-03/
+  - The Hill (2026-03-03): https://thehill.com/policy/healthcare/5765337-fda-telehealth-companies-compounded-glp-1/
+  - Pharmaceutical Technology summary: https://www.pharmtech.com/view/why-the-fda-issued-30-warning-letters-to-telehealth-sites-marketing-compounded-glp-1s
+  - Reddit discussion surface (r/medicine): https://www.reddit.com/r/medicine/comments/1rk3qda/fda_sends_warning_to_30_telehealth_companies/
 
-### 2) Big pharma M&A: Servier to acquire Day One Biopharmaceuticals (~$2.5B) for glioma drug Ojemda
-- **Why it matters for subscriptions:** M&A is a recurring “what changes now?” trigger: drug access, commercial rollout, payer coverage posture, and competitive landscape. Subscription users tend to want a living tracker (deal terms, timelines, pipeline implications).
-- **Suggested page slug:** `/topic/servier-acquires-day-one-ojemda`
-- **Confidence:** **High**
+## 2) Novo Nordisk + Hims & Hers distribution deal ends a public feud
+- **Topic:** Reports that Novo Nordisk will sell obesity drugs via Hims & Hers’ platform, ending a dispute that had escalated into a legal fight.
+- **Why it matters for subscriptions:** This is a “category-shaping” distribution headline: it changes consumer expectations about who can legitimately sell branded GLP‑1s (and at what price/terms), and it increases the likelihood of copycat partnerships. Expect a surge in comparisons (“Hims vs X”) and shopping behavior—prime for subscription capture via transparent pricing, logistics reliability, and eligibility flow clarity.
+- **Suggested page slug:** `/novo-hims-obesity-drug-partnership-2026`
+- **Confidence:** **High** (Reuters + multiple syndications + active Reddit chatter)
 - **Sources:**
-  - Fierce Biotech — “Servier to widen rare cancer offerings with $2.5B buyout of Day One and glioma drug Ojemda” (Mar 6, 2026) — https://www.fiercebiotech.com/pharma/servier-adopt-sibling-voranigo-25b-purchase-day-one-and-its-childhood-brain-tumor-med
+  - Reuters (2026-03-07): https://www.reuters.com/business/healthcare-pharmaceuticals/novo-hims-resolve-dispute-will-sell-obesity-drugs-together-bloomberg-news-2026-03-07/
+  - Yahoo Finance (Reuters syndication): https://www.yahoo.com/news/articles/novo-hims-resolve-dispute-sell-010352387.html
+  - MarketScreener (Reuters pickup): https://www.marketscreener.com/news/novo-and-hims-to-sell-obesity-drugs-together-as-feud-ends-bloomberg-news-reports-ce7e5fd8d08af621
+  - Reddit discussion surface (r/stocks): https://www.reddit.com/r/stocks/comments/1rn0ml7/novo_and_hims_to_sell_obesity_drugs_together_as/
 
-### 3) Obesity drug race: Zealand reports phase 2 weight-loss results + tolerability claims for Roche-partnered amylin analog
-- **Why it matters for subscriptions:** Weight-loss therapeutics remain a constant consumer + investor attention magnet. New trial readouts can quickly change “best-in-class” narratives and trigger lots of downstream questions (what it is, how it differs vs GLP-1s, what timelines look like). Great fit for an explainer page with ongoing updates.
-- **Suggested page slug:** `/topic/zealand-roche-amylin-obesity-phase2`
-- **Confidence:** **Med** (single outlet summary in feed; would be higher if corroborated by additional open sources)
+## 3) PBM reform provisions in the Consolidated Appropriations Act of 2026 ripple through pharmacy economics
+- **Topic:** Continued coverage of PBM reform measures (rebate pass-through, contract/dispute mechanisms, transparency) in/around the 2026 appropriations bill framework.
+- **Why it matters for subscriptions:** Anything that changes PBM contracting, spread pricing, audit rights, or pharmacy reimbursement pressure changes the consumer’s perceived “out-of-pocket stability.” Subscription products win when they can explain (simply) what’s changing and offer predictability (price locks, clear fulfillment options, proactive coverage messaging).
+- **Suggested page slug:** `/pbm-reform-2026-appropriations-what-changes`
+- **Confidence:** **Medium** (high signal that policy is moving; details vary by write-up and are easy to misinterpret)
 - **Sources:**
-  - Fierce Biotech — “Setting a new bar? Zealand touts 'placebo-like tolerability' for Roche-partnered weight loss drug” (Mar 5, 2026) — https://www.fiercebiotech.com/biotech/sets-new-bar-zealand-touts-placebo-tolerability-roche-partnered-weight-loss-drug
+  - Managed Healthcare Executive explainer: https://www.managedhealthcareexecutive.com/view/7-things-you-need-to-know-about-the-pbm-reforms-signed-into-law-this-week
+  - Ogletree analysis: https://ogletree.com/insights-resources/blog-posts/pbm-reforms-may-open-a-new-era-for-group-health-plan-sponsors/
+  - Local policy coverage example (state-level momentum): https://www.wlbt.com/2026/03/04/pbm-reform-bill-advances-senate-committee-with-rewritten-language/
 
-### 4) Healthcare AI operationalization: Amazon launches a suite of healthcare AI agents (Amazon Connect Health)
-- **Why it matters for subscriptions:** “AI in healthcare” is shifting from hype to workflow deployment. Users subscribe when they can’t keep up with: which vendors are shipping real tools, what they claim to automate (scheduling, summaries, coding), and how it impacts patient experience and provider operations.
-- **Suggested page slug:** `/topic/amazon-connect-health-ai-agents`
-- **Confidence:** **High**
+## 4) Medicare drug price negotiation implementation chatter shifts to “cash-flow and operational friction”
+- **Topic:** New round of industry commentary emphasizing operational impacts (timing of payments, pharmacy cash-flow, plan sponsor implications) as negotiated prices take effect for the first tranche.
+- **Why it matters for subscriptions:** This is the kind of “behind the scenes” policy that consumers experience as confusing pharmacy counter moments (unexpected pricing, switching, delays). Subscription products can convert by promising fewer surprises: benefit-check workflows, proactive refill management, and plain-language explainers.
+- **Suggested page slug:** `/medicare-negotiated-drug-prices-2026-what-to-expect`
+- **Confidence:** **Medium** (theme is consistent, but consumer-visible effects vary; details depend on plan/pharmacy)
 - **Sources:**
-  - Healthcare Dive — “Amazon launches suite of healthcare AI agents” (Mar 5, 2026) — https://www.healthcaredive.com/news/amazon-web-services-launch-amazon-connect-health-ai-agent/813796/
+  - Drug Topics (NCPA cash-flow framing in MDPNP context): https://www.drugtopics.com/view/ncpa-advocates-for-medicare-drug-price-negotiation-program-overhaul-due-to-pharmacy-cash-flow
+  - Pharmaceutical Commerce FAQ / overview: https://www.pharmaceuticalcommerce.com/view/faq-inflation-reduction-act-medicare-drug-pricing
 
-### 5) 340B tensions escalate: Hospitals urge regulators to halt drugmakers’ expanded 340B claims-data requirements
-- **Why it matters for subscriptions:** 340B policy fights create rapid-moving uncertainty for hospitals, PBMs, drugmakers, and patients. When policies shift, audiences want: what changed, who is affected, and what to watch next (litigation/regulator responses).
-- **Suggested page slug:** `/topic/340b-expanded-claims-data-dispute`
-- **Confidence:** **High**
+## 5) FDA warning letter over Ozempic advertising (misleading claims allegation)
+- **Topic:** FDA warns Novo Nordisk regarding allegedly false/misleading claims in an Ozempic TV advertisement (and related comparative impressions).
+- **Why it matters for subscriptions:** GLP‑1 demand is increasingly marketing-driven. When regulators publicly challenge claims, consumers often search for: “what does it actually do?”, “is it for me?”, “how do I get it?”, and “what are the real costs?”—all high-intent queries that a subscription funnel can capture with compliant, informational content and clear next steps.
+- **Suggested page slug:** `/fda-warning-letter-ozempic-advertising-2026`
+- **Confidence:** **High** (Reuters + broad pickup)
 - **Sources:**
-  - Healthcare Dive — “Hospitals urge regulators to halt drugmakers’ expanded 340B data policies” (Mar 5, 2026) — https://www.healthcaredive.com/news/american-hospital-association-340B-expanded-data-requirements-hrsa-novo-nordisk-eli-lilly/813973/
-
-## Additional signals (useful, but not top-5)
-
-- **HHS information blocking enforcement heating up** (policy/regulatory angle that can drive subscriber interest among health IT / providers):
-  - Healthcare Dive — “HHS gets serious on information blocking enforcement” (Mar 5, 2026) — https://www.healthcaredive.com/news/hhs-gets-serious-on-information-blocking-enforcement/813909/
-
-- **NIH research comms (not necessarily ‘breaking’ consumer news, but good evergreen explainers):**
-  - NIH — “Automated CT scan analysis could fast-track clinical assessments” (Mar 4, 2026) — https://www.nih.gov/news-events/news-releases/automated-ct-scan-analysis-could-fast-track-clinical-assessments
-
-## FDA recall / safety surface (attempted; best available)
-
-- **openFDA enforcement reports:** no enforcement items surfaced with a report_date window limited to the last ~72h via openFDA; the most recently available enforcement items in the APIs appear dated late Feb 2026 (e.g., report_date 20260225 / 20260218 depending on dataset entry). This section is included to ensure the FDA surface is checked each run even when there’s no fresh change.
-  - openFDA (drug enforcement, sorted by report_date desc): https://api.fda.gov/drug/enforcement.json?limit=10&sort=report_date:desc
-  - openFDA (food enforcement, sorted by report_date desc): https://api.fda.gov/food/enforcement.json?limit=10&sort=report_date:desc
-  - openFDA (device enforcement, sorted by report_date desc): https://api.fda.gov/device/enforcement.json?limit=10&sort=report_date:desc
-
-## Reddit trend surface (attempted; best available)
-
-- Direct Reddit HTML access was blocked in one fetch path, but subreddit RSS feeds were accessible. Recent high-velocity posts on r/Health included:
-  - “World’s 1st stem-cell treatment for Parkinson’s approved in Japan” (posted Mar 8, 2026) — https://www.reddit.com/r/Health/comments/1rnwf4u/worlds_1st_stemcell_treatment_for_parkinsons/
-  - “Measles is 'worse than expected' in Utah, officials say” (posted Mar 6, 2026) — https://www.reddit.com/r/Health/comments/1rmsdz0/measles_is_worse_than_expected_in_utah_officials/
-  - Feed: https://www.reddit.com/r/Health/.rss
+  - Reuters (2026-03-03): https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-warns-novo-second-time-about-misleading-ozempic-advertising-2026-03-03/
+  - U.S. News (Reuters syndication): https://money.usnews.com/investing/news/articles/2026-03-03/us-fda-warns-novo-for-second-time-about-misleading-drug-advertising
+  - Yahoo Finance pickup: https://finance.yahoo.com/news/novo-nordisk-gets-fda-warning-171656108.html
 
 ---
 
-### Notes on source coverage
-- **Reuters:** attempted via web search, but search API rate-limited during this run; radar proceeded using other sources.
+## Notes / guardrails
+- This radar is **informational only** and intentionally avoids medical advice.
+- Source availability varies by publisher; if one outlet is inaccessible at runtime, the topic should still be trackable via other corroborating sources.

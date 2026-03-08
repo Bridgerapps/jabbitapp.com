@@ -45,6 +45,11 @@ Preferred hourly outputs:
 - A **single** high-intent Reddit thread plan (subreddit + search query + comment angle + where a Jabbit mention fits naturally).
 - A measurement check that prevents self-deception (test traffic, broken tracking, stale App Store report date).
 
+**Brief de-dupe rule (new):**
+- Keep **one** canonical “send-now brief” per day.
+- If you need to adjust priorities, **update the existing brief** instead of writing a fresh one.
+- Use: `scripts/manual-growth-loop/send-now-brief-latest.sh` (creates `docs/distribution/send-now-brief-latest.md` symlink)
+
 **Anti-stall rule (new):** every run must *advance state* somewhere.
 - Update `data/status/manual-growth-loop-ledger.json` with at least one of:
   - a new lead (with contact path) OR

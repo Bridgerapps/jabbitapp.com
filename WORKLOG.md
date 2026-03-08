@@ -10,8 +10,10 @@ Lightweight running log of actions taken (UTC).
 - 23:05Z — Growth loop: built 3 clinic/program outreach leads + contact paths + permission-based outreach copy.
 
 ## 2026-03-08
+- 21:06Z — Growth loop: drafted 3 coach/clinic outreach messages (Legg Day, Chickadee, My Nutrition Studio) + promoted them to ready_to_send in manual-growth-loop-ledger.
 - 16:07Z — Growth loop: flagged 3 overdue ready_to_send touches (On The Pen, GLP-1 Tribe, GLP-1 Hub) + added new podcast IG lead (The Plus SideZ) to ledger + updated outside-reddit sprint doc.
 - 00:05Z — Growth loop: generated KPI dashboard for 2026-03-08; drafted 2 listicle/backlink outreach targets (NewBeauty, LearnMuscles) + a manual Reddit execution plan for a high-intent “tracker app” thread.
+- 19:05Z — Growth loop: re-checked KPI dashboard + generated 10-minute send plan for 3 overdue ready_to_send outreach items; marked them as overduePingedUtc in ledger (no send claimed).
 
 - 01:05Z — Growth loop: created 24h action queue (manual Reddit + coach/clinic outreach DM copy). Noted Brave web_search rate limit (429).
 
@@ -37,3 +39,6 @@ Lightweight running log of actions taken (UTC).
 
 - 17:05Z — Growth loop: found Plus SideZ contact email (kim@theplussidez.com); created updated send-now brief + manual send queue (v2); upgraded Plus SideZ item to ready_to_send in ledger.
 - 18:05Z — Self-improvement loop: audited last 5 runs (queue-building repetition, low execution); added ledger-summary script + updated playbook with backlog-first rule.
+- 20:05Z — Growth loop: created 10-minute send-now checklist brief for 3 overdue outreach items; verified UTM landing page resolves (200 → www); updated ledger to point overdue items at refreshed brief.
+- 22:05Z — Growth loop: refreshed ledger timestamps for all ready_to_send items + generated a new 10-minute send-now brief (prioritized 3 emails) for immediate manual execution.
+- 23:05Z — Self-improvement loop: audited last 5 runs (brief churn + low state change); added `send-now-brief-latest` symlink script + playbook de-dupe rule; staged repo for commit.
