@@ -37,6 +37,13 @@ Preferred hourly outputs:
 - A **single** high-intent Reddit thread plan (subreddit + search query + comment angle + where a Jabbit mention fits naturally).
 - A measurement check that prevents self-deception (test traffic, broken tracking, stale App Store report date).
 
+**Anti-stall rule (new):** every run must *advance state* somewhere.
+- Update `data/status/manual-growth-loop-ledger.json` with at least one of:
+  - a new lead (with contact path) OR
+  - a sendQueue item (who/what/when) OR
+  - a follow-up action (nextTouch)
+This prevents “infinite copy packs” and makes follow-ups the default.
+
 ## 5) Self-improvement run (every 5th)
 Checklist:
 - What repeated in the last 5 runs?

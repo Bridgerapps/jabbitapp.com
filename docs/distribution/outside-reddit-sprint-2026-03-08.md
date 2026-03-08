@@ -29,6 +29,8 @@ Examples:
 
 Mix: GLP-1 coaches, peptide communities, newsletters, creators.
 
+**Podcast list (separate doc):** `docs/distribution/podcast-outreach-leads-2026-03-08.md`
+
 1) **My GLP1 Coach** (coaching)
    - URL: https://www.myglp1coach.com/about/
    - Why-fit: Explicitly serves Mounjaro/Zepbound/Ozempic/Wegovy clients; a “free tracker resource” improves adherence + reduces support burden (“when was my last shot / which site did I use?”).

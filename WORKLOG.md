@@ -17,3 +17,10 @@ Lightweight running log of actions taken (UTC).
 - 02:05Z — Growth loop: created clinic/coach outreach pack (Restore Hyper Wellness + WeightWatchers + coach template) for manual distribution.
 
 - 03:05Z — Self-improvement loop: audited last 5 runs for repetition (copy-pack heavy, low measurement/follow-up); added `docs/manual-growth-loop-playbook.md` guardrails (taxonomy + de-dupe + 429 fallback + D/M requirement).
+
+- 04:05Z — Growth loop: ran measurement refresh (site analytics status + regenerated KPI dashboard) and drafted a 3-touch manual send queue (GLP‑1 Hub + Restore + 1 coach).
+- 05:05Z — Growth loop: sourced 2 GLP-1 podcast distribution targets (GLP-1 Hub + Plus SideZ) + 1 high-intent Reddit thread link (WW GLP-1 tracker); drafted 3-touch manual outreach queue.
+- 06:05Z — Growth loop: added a podcast outreach leads doc (GLP‑1 Tribe + GLP‑1 Hub + Plus SideZ) with compliance-safe pitch + UTM links.
+- 07:05Z — Growth loop: enriched podcast leads with direct emails (On The Pen, GLP‑1 Tribe) + created a 3-touch manual send queue doc for Jon.
+
+
