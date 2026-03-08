@@ -6,6 +6,10 @@ Purpose: keep the hourly loop **distribution-first**, non-repetitive, and tied t
 - `WORKLOG.md` (what we actually did)
 - `docs/kpi-YYYY-MM-DD.md` (north star + funnel health)
 - `MEMORY.md` (hard rules + preferences)
+- `data/status/manual-growth-loop-ledger.json` (what’s actually queued)
+
+Fast check (recommended at the top of every run):
+- `scripts/manual-growth-loop/ledger-next.sh` → shows overdue + next-24h sendQueue items.
 
 ## 1) Action taxonomy (for de-dupe)
 When choosing actions, tag each one:
