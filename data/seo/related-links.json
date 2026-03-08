@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-05T14:40:54Z",
+  "updated": "2026-03-08T02:04:55Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -646,6 +646,74 @@
         {
           "href": "/glp-1-side-effects-guide.html",
           "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-reconstitution-calculator.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "fda-in-home-opioid-disposal-rfi-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses, notes, and reminders)"
+        },
+        {
+          "href": "/glp-1-compounded-telehealth-fda-warning-letters.html",
+          "text": "FDA warning letters on compounded GLP-1 telehealth marketing"
+        },
+        {
+          "href": "/guides/",
+          "text": "GLP-1 guides hub (practical explainers)"
+        }
+      ]
+    },
+    {
+      "file": "fda-national-priority-voucher-tec-dara-approval.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (stay consistent during medication changes)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (what to log by week)"
+        },
+        {
+          "href": "/guides/",
+          "text": "GLP-1 guides hub (evidence-focused explainers)"
+        }
+      ]
+    },
+    {
+      "file": "zealand-roche-amylin-obesity-phase2-data-market-reaction.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (track response over time)"
+        },
+        {
+          "href": "/semaglutide-vs-tirzepatide.html",
+          "text": "Semaglutide vs tirzepatide (differences that matter)"
+        },
+        {
+          "href": "/guides/",
+          "text": "GLP-1 guides hub (side effects, dosing, and adherence)"
         }
       ]
     }
