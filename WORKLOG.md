@@ -34,3 +34,6 @@ Lightweight running log of actions taken (UTC).
 - 12:05Z — Growth loop: created a send-now brief + promoted today’s 3 outreach items to ready_to_send in ledger (2 emails + 1 IG DM).
 - 13:58Z — Strategy: wrote `docs/jabbit-distribution-os-2026-03-08.md` and `docs/jabbit-distribution-execution-board-2026-03-08.md` to formalize the distribution system beyond SEO (endpoints, pipelines, metrics, cadence, worker lanes, and Jon’s highest-leverage role).
 - 14:05Z — Growth loop: created partner-kit one-pager + UTM conventions docs to make outbound outreach faster + measurable; queued as immediate assets for today’s manual sends.
+
+- 17:05Z — Growth loop: found Plus SideZ contact email (kim@theplussidez.com); created updated send-now brief + manual send queue (v2); upgraded Plus SideZ item to ready_to_send in ledger.
+- 18:05Z — Self-improvement loop: audited last 5 runs (queue-building repetition, low execution); added ledger-summary script + updated playbook with backlog-first rule.

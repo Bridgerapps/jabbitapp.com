@@ -23,6 +23,10 @@ When choosing actions, tag each one:
 Hard anti-busywork rule:
 - In any 3-action run, **at least 1** must be **D** or **M**. If we can’t do D (because it requires humans), we do M.
 
+**Backlog-first rule (new):**
+- If the ledger has **any** `ready_to_send` items, *do not* spend the run sourcing new leads or writing more copy.
+- Instead, produce a **10-minute send plan** (who sends what, where, with links) and/or do **M** (measurement) so we can attribute outcomes.
+
 ## 2) Non-repetition guardrail
 Before acting, scan the last ~5 WORKLOG entries and avoid repeating the same taxonomy two runs in a row.
 Examples:
