@@ -50,22 +50,18 @@ Jon
 
 ---
 
-## 3) GLP-1 Hub (next step: find best contact)
-Target page:
-- Apple Podcasts: https://podcasts.apple.com/us/podcast/glp-1-hub-support-community-and-weight-loss/id1798502905
+## 3) GLP-1 Hub (Instagram DM)
+IG: @glp1hub (https://www.instagram.com/glp1hub)
 
-Next manual step:
-- Open Apple Podcasts page → click creator link / socials → grab an email or IG handle.
-
-Template to use once contact is found:
-Subject: Tiny free GLP‑1 routine resource for your listeners (non-medical)
-
-Hi {{Name}} — quick one.
+DM copy (paste as-is):
+Hi Ana — quick one.
 
 I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (date/time, injection site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
 
-If you ever do a “resources” mention, feel free to drop this in show notes:
+If you ever share resources, feel free to drop this link in show notes:
 https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast&utm_medium=show_notes&utm_campaign=outside_reddit_2026-03-08&utm_content=glp1_hub
+
+If you tell me whether most listeners are Ozempic/Wegovy vs Zepbound/Mounjaro, I can send a perfectly-matched page.
 
 Thanks —
 Jon

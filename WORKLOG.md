@@ -25,3 +25,9 @@ Lightweight running log of actions taken (UTC).
 
 
 - 08:05Z — Self-improvement loop: audited last 5 runs (podcast/outreach repetition); added lead/sendQueue ledger + audit script; updated growth playbook to require state advancement; committed changes.
+
+- 09:05Z — Growth loop: checked analytics snapshot + advanced manual-growth-loop-ledger (3 podcast leads, 2 email sendQueue drafts w/ times).
+- 10:05Z — Growth loop: found GLP‑1 Hub contact path (IG @glp1hub), added IG DM sendQueue item, and updated send-queue doc + ledger.
+
+- 11:05Z — Growth loop: advanced manual sendQueue with follow-up touches (#2/#3) for podcast outreach (On The Pen, GLP-1 Tribe) + added GLP-1 Hub contact page to ledger.
+- 12:05Z — Growth loop: created a send-now brief + promoted today’s 3 outreach items to ready_to_send in ledger (2 emails + 1 IG DM).
