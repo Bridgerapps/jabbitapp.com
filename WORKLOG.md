@@ -31,3 +31,4 @@ Lightweight running log of actions taken (UTC).
 
 - 11:05Z — Growth loop: advanced manual sendQueue with follow-up touches (#2/#3) for podcast outreach (On The Pen, GLP-1 Tribe) + added GLP-1 Hub contact page to ledger.
 - 12:05Z — Growth loop: created a send-now brief + promoted today’s 3 outreach items to ready_to_send in ledger (2 emails + 1 IG DM).
+- 13:58Z — Strategy: wrote `docs/jabbit-distribution-os-2026-03-08.md` and `docs/jabbit-distribution-execution-board-2026-03-08.md` to formalize the distribution system beyond SEO (endpoints, pipelines, metrics, cadence, worker lanes, and Jon’s highest-leverage role).
