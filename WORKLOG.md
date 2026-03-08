@@ -15,3 +15,5 @@ Lightweight running log of actions taken (UTC).
 - 01:05Z — Growth loop: created 24h action queue (manual Reddit + coach/clinic outreach DM copy). Noted Brave web_search rate limit (429).
 
 - 02:05Z — Growth loop: created clinic/coach outreach pack (Restore Hyper Wellness + WeightWatchers + coach template) for manual distribution.
+
+- 03:05Z — Self-improvement loop: audited last 5 runs for repetition (copy-pack heavy, low measurement/follow-up); added `docs/manual-growth-loop-playbook.md` guardrails (taxonomy + de-dupe + 429 fallback + D/M requirement).
