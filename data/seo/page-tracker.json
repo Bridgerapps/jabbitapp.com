@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-06T14:36:33Z",
-  "total_pages": 40,
+  "last_updated": "2026-03-08T13:36:32Z",
+  "total_pages": 43,
   "topics": [
     {
       "topic": "bpc-157",
@@ -206,6 +206,21 @@
       "topic": "zealand-roche-amylin-obesity-phase2-data-market-reaction",
       "filename": "zealand-roche-amylin-obesity-phase2-data-market-reaction.html",
       "created": "2026-03-06"
+    },
+    {
+      "topic": "amazon-connect-health-ai-agents",
+      "filename": "amazon-connect-health-ai-agents.html",
+      "created": "2026-03-08"
+    },
+    {
+      "topic": "fda-in-home-opioid-disposal-rfi-2026",
+      "filename": "fda-in-home-opioid-disposal-rfi-2026.html",
+      "created": "2026-03-08"
+    },
+    {
+      "topic": "fda-national-priority-voucher-tec-dara-approval",
+      "filename": "fda-national-priority-voucher-tec-dara-approval.html",
+      "created": "2026-03-08"
     }
   ],
   "suggested_topics": [

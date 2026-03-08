@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-08T02:04:55Z",
+  "updated": "2026-03-08T13:37:47Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -714,6 +714,23 @@
         {
           "href": "/guides/",
           "text": "GLP-1 guides hub (side effects, dosing, and adherence)"
+        }
+      ]
+    },
+    {
+      "file": "amazon-connect-health-ai-agents.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (keep a clean timeline for visits)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "GLP-1 injection reminders (reduce missed doses)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (practical GLP-1 help)"
         }
       ]
     }
