@@ -75,3 +75,18 @@ After send:
 
 - Instagram DM: @glp1hub (ledger id: `send-2026-03-08-glp1hub-1`)
   - DM copy: `docs/distribution/manual-send-queue-2026-03-08-1705Z.md#3`
+  - After send:
+    - `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-glp1hub-1 --yes`
+
+## Next up (remaining ready_to_send)
+
+- Instagram DM: @legg_day (ledger id: `send-2026-03-08-leggday-1`)
+  - After send:
+    - `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-leggday-1 --yes`
+- Contact form: Chickadee Weightloss (ledger id: `send-2026-03-08-chickadee-1`)
+  - https://chickadeeweightloss.com/contact-me/
+  - After send:
+    - `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-chickadee-1 --yes`
+- Email: My Nutrition Studio (ledger id: `send-2026-03-08-mynutritionstudio-1`)
+  - After send:
+    - `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-mynutritionstudio-1 --yes`
