@@ -9,7 +9,11 @@ Purpose: keep the hourly loop **distribution-first**, non-repetitive, and tied t
 - `data/status/manual-growth-loop-ledger.json` (what’s actually queued)
 
 Fast check (recommended at the top of every run):
+- `scripts/manual-growth-loop/preflight.sh` → shows next iteration/mode + ledger queue counts (no mutations)
 - `scripts/manual-growth-loop/ledger-next.sh` → shows overdue + next-24h sendQueue items.
+
+Reliability tip:
+- Record each run in `data/status/manual-growth-loop-history.json` via `scripts/manual-growth-loop/record-run.sh` (makes self-improvement audits faster, reduces repetition)
 
 ## 1) Action taxonomy (for de-dupe)
 When choosing actions, tag each one:

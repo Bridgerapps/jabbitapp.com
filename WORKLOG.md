@@ -45,3 +45,4 @@ Lightweight running log of actions taken (UTC).
 
 ## 2026-03-09
 - 05:05Z — Growth loop: refreshed send-now brief (Plus SideZ + On The Pen + GLP-1 Tribe) with proper UTM conventions; repointed send-now-brief-latest; verified landing resolves (200).
+- 07:05Z — Growth loop: re-validated ready_to_send queue + verified all 3 podcast UTMs resolve (200 after redirect); next step is manual send of the 3 emails and marking sent in ledger.
