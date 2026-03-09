@@ -42,3 +42,6 @@ Lightweight running log of actions taken (UTC).
 - 20:05Z — Growth loop: created 10-minute send-now checklist brief for 3 overdue outreach items; verified UTM landing page resolves (200 → www); updated ledger to point overdue items at refreshed brief.
 - 22:05Z — Growth loop: refreshed ledger timestamps for all ready_to_send items + generated a new 10-minute send-now brief (prioritized 3 emails) for immediate manual execution.
 - 23:05Z — Self-improvement loop: audited last 5 runs (brief churn + low state change); added `send-now-brief-latest` symlink script + playbook de-dupe rule; staged repo for commit.
+
+## 2026-03-09
+- 05:05Z — Growth loop: refreshed send-now brief (Plus SideZ + On The Pen + GLP-1 Tribe) with proper UTM conventions; repointed send-now-brief-latest; verified landing resolves (200).
