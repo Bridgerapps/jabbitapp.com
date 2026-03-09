@@ -35,7 +35,9 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Updates: periodic operator updates every 12h with explicit asks
 - Model routing preference (2026-02-27): OpenAI-only routing. Keep primary on `openai-codex/gpt-5.3-codex`, only fallback on `openai-codex/gpt-5.2`, and avoid MiniMax/Kimi/OpenRouter/Anthropic models unless Jon explicitly asks.
 - Latency preference (2026-02-27): set `thinkingDefault` to `minimal`; use high thinking only when task complexity justifies it.
-- Metrics preference (2026-02-28): treat paid installs (App Store data) as the primary KPI for now; defer Stripe/LTV asks until later.
+- Metrics preference (2026-02-28, superseded 2026-03-09): initially treated paid installs as the primary KPI.
+- Metrics preference (2026-03-09): prioritize installs now; do not optimize/report around paid yet. Conversion optimization can come later.
+- Ownership preference (2026-03-09): Jabby owns SEO direction and should make the call instead of asking Jon to choose the metric framing.
 - Latency metric interpretation (2026-03-04): there is no lag state; default assumption (until proven otherwise): if availability is unavailable, treat lag as exactly zero.
 - Reddit voice preference (2026-03-02): comments should be conversational and direct; avoid filler phrases and over-structured bullet-list style.
 - Lag-days policy (2026-03-05): there are no lag days.

@@ -1,6 +1,6 @@
 # Manual Growth Loop — Playbook
 
-Purpose: keep the hourly loop **distribution-first**, non-repetitive, and tied to **paid installs**.
+Purpose: keep the hourly loop **distribution-first**, non-repetitive, and tied to **installs** (track paid, but optimize for installs first).
 
 ## 0) Inputs (always read)
 - `WORKLOG.md` (what we actually did)
