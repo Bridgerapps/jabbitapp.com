@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-08T13:37:47Z",
+  "updated": "2026-03-09T13:37:07Z",
   "rules": [
     {
       "file": "glp-1-side-effects-guide.html",
@@ -731,6 +731,23 @@
         {
           "href": "/guides/",
           "text": "Guides hub (practical GLP-1 help)"
+        }
+      ]
+    },
+    {
+      "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder app guide (how to set a routine that actually sticks)"
+        },
+        {
+          "href": "/semaglutide-injection-reminder.html",
+          "text": "Reminder setup patterns (calendar windows, backups, and consistency)"
         }
       ]
     }
