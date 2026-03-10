@@ -44,8 +44,18 @@ Lightweight running log of actions taken (UTC).
 - 23:05Z — Self-improvement loop: audited last 5 runs (brief churn + low state change); added `send-now-brief-latest` symlink script + playbook de-dupe rule; staged repo for commit.
 
 ## 2026-03-09
+- 20:05Z — Growth loop: incremented run counter; re-ran preflight + execution gate; surfaced top-3 manual sends + mark-sent commands (brief already prepared).
+
+- 17:05Z — Growth loop: fixed missing docs/send-now-brief-latest symlink; re-ran execution gate + ledger summary (7 ready_to_send); surfaced top-3 email sends to execute + mark-sent commands.
 - 05:05Z — Growth loop: refreshed send-now brief (Plus SideZ + On The Pen + GLP-1 Tribe) with proper UTM conventions; repointed send-now-brief-latest; verified landing resolves (200).
 - 07:05Z — Growth loop: re-validated ready_to_send queue + verified all 3 podcast UTMs resolve (200 after redirect); next step is manual send of the 3 emails and marking sent in ledger.
 - 10:05Z — Growth loop: regenerated ready_to_send snapshot (7 items) and confirmed top 3 email sends still point to latest send-now brief; no new website work.
 - 11:05Z — Growth loop: updated send-now-brief-latest to include the remaining 4 ready_to_send items (glp1hub + legg_day + chickadee + mynutritionstudio) with mark-sent commands; re-verified ledger summary.
 - 13:05Z — Growth loop: ran ledger summary + confirmed 7 ready_to_send are still queued against send-now-brief-latest; noted next iteration (50) is self-improvement (preflight guardrail).
+
+- 15:05Z — Growth loop: ran ledger summary + execution gate; confirmed 7 ready_to_send and send-now-brief-latest path; next step is manual send + mark sent.
+- 16:05Z — Growth loop: incremented run counter; re-read KPI + WORKLOG + MEMORY; revalidated ledger summary + execution gate (7 ready_to_send) and confirmed send-now-brief-latest points at 2026-03-09-1205Z.
+- 18:05Z — Growth loop: incremented run counter; re-read KPI + WORKLOG + MEMORY; verified ledger summary (7 ready_to_send) + preflight shows next run is self-improvement (55); queued top-3 manual sends (Plus SideZ, On The Pen, GLP-1 Tribe) with mark-sent commands.
+- 21:05Z — Growth loop: incremented run counter; ran execution gate (7 ready_to_send) + re-surfaced top send-now order; verified mark-sendqueue-sent helper script.
+
+- 23:05Z — Growth loop: ran ledger summary + execution gate (7 ready_to_send); re-surfaced top-3 manual sends + mark-sent commands; incremented counter to 59.

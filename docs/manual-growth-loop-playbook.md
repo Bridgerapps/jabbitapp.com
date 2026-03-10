@@ -10,6 +10,7 @@ Purpose: keep the hourly loop **distribution-first**, non-repetitive, and tied t
 
 Fast check (recommended at the top of every run):
 - `scripts/manual-growth-loop/preflight.sh` → shows next iteration/mode + ledger queue counts (no mutations)
+- `scripts/manual-growth-loop/ensure-kpi-today.sh` → creates today’s `docs/kpi-YYYY-MM-DD.md` if missing (safe, idempotent)
 - `scripts/manual-growth-loop/execution-gate.sh` → hard-stops the loop if anything is `ready_to_send` (prevents “brief churn”)
 - `scripts/manual-growth-loop/ledger-next.sh` → shows overdue + next-24h sendQueue items.
 - `scripts/manual-growth-loop/stale-ready-to-send-nudge.sh` → prints a ready-to-send “nudge payload” if the queue is stagnating (rate-limited by a local state file).
