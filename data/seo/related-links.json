@@ -1,7 +1,24 @@
 {
   "version": 1,
-  "updated": "2026-03-09T13:37:07Z",
+  "updated": "2026-03-10T13:37:12Z",
   "rules": [
+    {
+      "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
+      "links": [
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "GLP-1 injection reminder app (set reminders)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + notes)"
+        },
+        {
+          "href": "/fda-compounded-glp1-enforcement-2026.html",
+          "text": "FDA enforcement on non-approved compounded GLP-1s (2026)"
+        }
+      ]
+    },
     {
       "file": "glp-1-side-effects-guide.html",
       "links": [
