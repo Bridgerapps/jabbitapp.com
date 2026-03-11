@@ -23,7 +23,7 @@ When choosing actions, tag each one:
 - **D** = distribution execution (DMs/emails posted *manually by Jon/Tim/Jabby in-session*)
 - **L** = lead discovery (identify targets + contact path)
 - **C** = copy pack (templates, outreach scripts)
-- **R** = Reddit opportunity (unauthenticated sourcing only; execution remains manual)
+- **R** = Reddit opportunity (unauthenticated sourcing only; execution remains manual; prioritize high-intent comments over attempts at viral posting)
 - **M** = measurement/instrumentation (analytics sanity, App Store reporting, KPI refresh)
 - **CRO** = on-site conversion improvement (max 1 website push/day)
 
@@ -50,6 +50,7 @@ If `web_search` rate limits (429) or is flaky:
 Preferred hourly outputs:
 - A short **manual send queue**: 3 targets + exact message + when to send + expected outcome.
 - A **single** high-intent Reddit thread plan (subreddit + search query + comment angle + where a Jabbit mention fits naturally).
+- Prefer Reddit plans where the comment is useful even **without** the Jabbit mention. Mentions are earned relevance, not the payload.
 - A measurement check that prevents self-deception (test traffic, broken tracking, stale App Store report date).
 
 **Brief de-dupe rule (new):**
