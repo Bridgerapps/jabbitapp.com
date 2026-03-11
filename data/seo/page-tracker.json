@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-10T13:36:28Z",
-  "total_pages": 45,
+  "last_updated": "2026-03-11T13:36:45Z",
+  "total_pages": 46,
   "topics": [
     {
       "topic": "bpc-157",
@@ -231,6 +231,11 @@
       "topic": "fda-glp1-compounding-crackdown-hims-wegovy-pill",
       "filename": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
       "created": "2026-03-10"
+    },
+    {
+      "topic": "fda-biosimilar-guidance-2026-03",
+      "filename": "fda-biosimilar-guidance-2026-03.html",
+      "created": "2026-03-11"
     }
   ],
   "suggested_topics": [
