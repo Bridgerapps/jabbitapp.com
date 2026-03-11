@@ -33,6 +33,7 @@ _Your curated memories, like a human's long-term memory. Updated after each sess
 - Execution: no permission prompts for routine internal fixes
 - Voice: distinctive, not corporate drone
 - Updates: periodic operator updates every 12h with explicit asks
+- Medical-content framing (2026-03-11): everywhere, default to "not medical advice" and use a harm-reduction framing rather than directive medical advice.
 - Model routing preference (2026-02-27): OpenAI-only routing. Keep primary on `openai-codex/gpt-5.3-codex`, only fallback on `openai-codex/gpt-5.2`, and avoid MiniMax/Kimi/OpenRouter/Anthropic models unless Jon explicitly asks.
 - Latency preference (2026-02-27): set `thinkingDefault` to `minimal`; use high thinking only when task complexity justifies it.
 - Metrics preference (2026-02-28, superseded 2026-03-09): initially treated paid installs as the primary KPI.
@@ -124,7 +125,7 @@ Build. Ship. Sell. Repeat.
 - Goal: app subscriptions
 
 ## Iron Rules
-- NO medical advice - don't give medical recommendations, always defer to healthcare professionals
+- NO medical advice - default rule everywhere. Frame content as harm reduction / general educational information, not diagnosis, treatment, or medical recommendations.
 - NO legal risk - don't put Jon, Tim, or Bridgerapps at legal risk
 - If unsure about medical/legal, don't publish/post - ask first
 
