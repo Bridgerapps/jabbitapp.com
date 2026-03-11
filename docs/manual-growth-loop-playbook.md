@@ -51,6 +51,7 @@ Preferred hourly outputs:
 - A short **manual send queue**: 3 targets + exact message + when to send + expected outcome.
 - A **single** high-intent Reddit thread plan (subreddit + search query + comment angle + where a Jabbit mention fits naturally).
 - Prefer Reddit plans where the comment is useful even **without** the Jabbit mention. Mentions are earned relevance, not the payload.
+- If Reddit is the chosen lane for the run, the output must point to `docs/reddit-daily-execution-checklist.md` and name **one** thread to either post on now or explicitly skip with reason. No multi-thread draft piles.
 - A measurement check that prevents self-deception (test traffic, broken tracking, stale App Store report date).
 
 **Brief de-dupe rule (new):**
