@@ -44,5 +44,11 @@ jq -r '
 
 echo
 
+# Keep a copy/paste pack up to date for the human doing the send.
+if [[ -e "$BRIEF_LINK" ]]; then
+  "$ROOT/scripts/manual-growth-loop/ensure-send-now-pack-latest.sh" >/dev/null 2>&1 || true
+fi
+
 echo "Rule: do NOT create new leads/copy/briefs until these are sent + marked sent."
+echo "send-now pack: $ROOT/docs/send-now-pack-latest.txt"
 exit 33
