@@ -76,7 +76,15 @@ Rule:
 - one comment
 - no batching
 - no automation
+- use the **verified endpoint only**, and use it sparingly
+- do not do extra auth checks, retries, or side actions unless genuinely needed
 - verify the comment is actually live
+
+Auth-path rule:
+- treat every authenticated Reddit action as expensive trust-wise
+- discovery should stay unauthenticated whenever possible
+- auth posting should be a single deliberate action, not a session full of poking around
+- if the verified endpoint is flaky, stop; don’t hammer it
 
 ### 6) Log the result immediately
 Record:

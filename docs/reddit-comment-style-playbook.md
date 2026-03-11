@@ -59,6 +59,13 @@ Source data: `data/reddit/upvoted-comment-patterns.json` (public/no-cookie minin
 +  - natural fit for tracking / adherence / side-effect logging
 +  - low cringe risk for a Jabbit mention
 
+## Auth + posting caution
+
+- Use the verified/authenticated posting endpoint only when necessary, and with care.
+- Repeated auth checks, retries, rotations, or extra endpoint pokes can create a bot-like trust pattern.
+- Keep discovery/public reading unauthenticated whenever possible.
+- On the auth path, favor one deliberate post over a burst of "just checking" actions.
+
 ## Automation hooks
 
 - Pattern miner cron refreshes this style baseline every 6h.
