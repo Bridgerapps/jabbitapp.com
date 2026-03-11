@@ -78,3 +78,7 @@ Lightweight running log of actions taken (UTC).
 - 08:05Z — Growth loop: iteration 29; read KPI/WORKLOG/MEMORY; ran ledger summary + stale-ready-to-send nudge; re-surfaced top-3 manual sends + mark-sent commands.
 
 - 09:05Z — Self-improvement loop: audited last 5 runs (queue stagnation); added deps-check + stale-ready report scripts; wired deps-check into preflight; verified scripts; queued commit.
+
+## 2026-03-11
+- 16:05Z — Growth loop: iteration 36; ran preflight gate (STOP stale ready_to_send=7); refreshed send-now-brief-latest + regenerated send-now-pack-latest; re-surfaced top-3 manual sends + mark-sent helper.
+- 20:05Z — Self-improvement loop: audited last 5 runs (queue still stale); upgraded manual-growth-loop preflight to also hard-stop on aged ready_to_send items via stale-ready-report (24h threshold) to prevent endless churn.
