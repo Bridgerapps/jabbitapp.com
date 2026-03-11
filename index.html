@@ -141,12 +141,15 @@
           <a href="https://apps.apple.com/app/id6756848719" data-track="nav_app_store" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600 transition">App Store</a>
         </div>
 
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-gray-900 transition" aria-label="Toggle menu" aria-expanded="false">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
+        <!-- Mobile App Store CTA + Menu Button -->
+        <div class="md:hidden flex items-center gap-2">
+          <a href="https://apps.apple.com/app/id6756848719" data-track="mobile_nav_inline_app_store" class="px-3 py-2 bg-brand-500 text-white text-sm font-semibold rounded-lg hover:bg-brand-600 transition">Get the app</a>
+          <button id="mobile-menu-btn" class="p-2 text-gray-600 hover:text-gray-900 transition" aria-label="Toggle menu" aria-expanded="false">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- Mobile Navigation -->
