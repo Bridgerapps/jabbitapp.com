@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-10T13:37:12Z",
+  "updated": "2026-03-11T13:37:37Z",
   "rules": [
     {
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
@@ -765,6 +765,23 @@
         {
           "href": "/semaglutide-injection-reminder.html",
           "text": "Reminder setup patterns (calendar windows, backups, and consistency)"
+        }
+      ]
+    },
+    {
+      "file": "fda-biosimilar-guidance-2026-03.html",
+      "links": [
+        {
+          "href": "/massachusetts-state-workers-glp1-coverage-ended-2026.html",
+          "text": "Coverage changes: what to track (real-world example)"
+        },
+        {
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "Medication costs without insurance (pricing reality + what to log)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Medication tracker (log product, dates, and notes)"
         }
       ]
     }
