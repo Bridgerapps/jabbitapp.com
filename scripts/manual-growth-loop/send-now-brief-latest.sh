@@ -15,8 +15,8 @@ fi
 
 # Prefer today's brief; fallback to most recent overall.
 TODAY_UTC="$(date -u +%F)"
-LATEST_TODAY="$(ls -1t "$DIR"/send-now-brief-${TODAY_UTC}-*.md 2>/dev/null | head -n 1 || true)"
-LATEST_ANY="$(ls -1t "$DIR"/send-now-brief-*.md 2>/dev/null | head -n 1 || true)"
+LATEST_TODAY="$(ls -1t "$DIR"/send-now-brief-${TODAY_UTC}-*.md 2>/dev/null | grep -v 'send-now-brief-latest\.md' | head -n 1 || true)"
+LATEST_ANY="$(ls -1t "$DIR"/send-now-brief-*.md 2>/dev/null | grep -v 'send-now-brief-latest\.md' | head -n 1 || true)"
 
 TARGET="${LATEST_TODAY:-$LATEST_ANY}"
 
