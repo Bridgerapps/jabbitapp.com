@@ -1,0 +1,62 @@
+SEND NOW (TOP 3 EMAILS)
+
+1) The Plus SideZ
+To: kim@theplussidez.com
+Subject: Tiny non-medical GLP-1 shot log + reminders your listeners can use
+
+Hi Kim — quick one.
+
+I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (shot date/time, site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
+
+If you ever share listener resources, feel free to drop this link in show notes:
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_plussidez&utm_medium=email&utm_campaign=20260309_t1
+
+If you tell me whether your audience skews Ozempic vs Zepbound vs Mounjaro, I can send a perfectly-matched link + 1-sentence blurb.
+
+Thanks —
+Jon
+
+After send:
+  bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-09-plussidez-1 --yes
+
+----------------------------------------
+
+2) On The Pen
+To: dave@onthepen.com
+Subject: Tiny free GLP‑1 injection log resource for your listeners (non-medical)
+
+Hi Dave — quick one.
+
+I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (shot date/time, injection site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
+
+If you ever share a “resources” link, feel free to drop this in show notes:
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_onthepen&utm_medium=email&utm_campaign=20260309_t1
+
+If you tell me whether your audience skews Ozempic vs Zepbound vs Mounjaro, I can send a perfectly-matched link.
+
+Thanks —
+Jon
+
+After send:
+  bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-onthepen-1 --yes
+
+----------------------------------------
+
+3) GLP-1 Tribe
+To: hello@glp1tribe.com
+Subject: Free GLP‑1 routine tracker for your listeners (simple + non-medical)
+
+Hi — quick one.
+
+I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (shot date/time, injection site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
+
+If you ever share a “resources” link, feel free to use:
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_glp1tribe&utm_medium=email&utm_campaign=20260309_t1
+
+Happy to swap in an Ozempic/Zepbound/Mounjaro-specific link + 1-sentence blurb if you tell me what most of your listeners use.
+
+Thanks —
+Jon
+
+After send:
+  bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-glp1tribe-1 --yes

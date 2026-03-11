@@ -1,0 +1,70 @@
+# Send-now pack — 2026-03-11 03:05Z
+
+Goal: ship distribution (manual sends) that can convert to installs inside ~72h.
+
+## 10-minute send order (top 3 by oldest ready_to_send)
+
+### 1) Email — On The Pen (dave@onthepen.com)
+Ledger id: `send-2026-03-08-onthepen-1`
+
+Subject: Tiny free GLP‑1 injection log resource for your listeners (non-medical)
+
+Body (paste as-is):
+Hi Dave — quick one.
+
+I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (shot date/time, injection site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
+
+If you ever share a “resources” link, feel free to drop this in show notes:
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_onthepen&utm_medium=email&utm_campaign=20260309_t1
+
+If you tell me whether your audience skews Ozempic vs Zepbound vs Mounjaro, I can send a perfectly-matched link.
+
+Thanks —
+Jon
+
+After send:
+- `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-onthepen-1 --yes`
+
+---
+
+### 2) Email — GLP-1 Tribe (hello@glp1tribe.com)
+Ledger id: `send-2026-03-08-glp1tribe-1`
+
+Subject: Free GLP‑1 routine tracker for your listeners (simple + non-medical)
+
+Body (paste as-is):
+Hi — quick one.
+
+I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (shot date/time, injection site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
+
+If you ever share a “resources” link, feel free to use:
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_glp1tribe&utm_medium=email&utm_campaign=20260309_t1
+
+Happy to swap in an Ozempic/Zepbound/Mounjaro-specific link + 1-sentence blurb if you tell me what most of your listeners use.
+
+Thanks —
+Jon
+
+After send:
+- `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-glp1tribe-1 --yes`
+
+---
+
+### 3) Instagram DM — GLP-1 Hub (@glp1hub)
+Ledger id: `send-2026-03-08-glp1hub-1`
+
+DM copy (paste as-is):
+Hi Ana — quick one.
+
+I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (date/time, injection site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
+
+If you ever share resources, feel free to drop this link in show notes:
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast&utm_medium=show_notes&utm_campaign=outside_reddit_2026-03-08&utm_content=glp1_hub
+
+If you tell me whether most listeners are Ozempic/Wegovy vs Zepbound/Mounjaro, I can send a perfectly-matched page.
+
+Thanks —
+Jon
+
+After send:
+- `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-glp1hub-1 --yes`

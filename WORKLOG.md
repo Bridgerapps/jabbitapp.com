@@ -74,3 +74,7 @@ Lightweight running log of actions taken (UTC).
 - 17:05Z — Growth loop: iteration 14; revalidated ledger summary (7 ready_to_send) + regenerated docs/send-now-pack-latest.txt from brief (top-3 email pack). Next: manual send top-3 and mark sent.
 - 20:06Z — Growth loop: iteration 17; execution gate STOP (7 ready_to_send); confirmed send-now-brief-latest + pack; stale nudge within threshold.
 - 22:05Z — Growth loop: iteration 19; ran preflight + ready_to_send snapshot (7); confirmed stale-ready-to-send within threshold; next run (20) is self-improvement.
+
+- 08:05Z — Growth loop: iteration 29; read KPI/WORKLOG/MEMORY; ran ledger summary + stale-ready-to-send nudge; re-surfaced top-3 manual sends + mark-sent commands.
+
+- 09:05Z — Self-improvement loop: audited last 5 runs (queue stagnation); added deps-check + stale-ready report scripts; wired deps-check into preflight; verified scripts; queued commit.

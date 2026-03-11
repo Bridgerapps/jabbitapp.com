@@ -17,6 +17,12 @@ need() {
 need "$WORKLOG" || exit 1
 need "$LEDGER" || exit 1
 
+# Fail fast on missing deps (cron environments can differ).
+"$ROOT/scripts/manual-growth-loop/deps-check.sh" >/tmp/manual-growth-loop-deps.txt 2>&1 || {
+  cat /tmp/manual-growth-loop-deps.txt >&2 || true
+  exit 2
+}
+
 # Read counter WITHOUT mutating it (cron/job runner owns increments).
 iter=$(jq -r '.count // 0' "$COUNTER" 2>/dev/null || echo 0)
 next=$((iter+1))

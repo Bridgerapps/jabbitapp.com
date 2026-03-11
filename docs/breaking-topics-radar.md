@@ -1,65 +1,52 @@
-# Breaking Topics Radar (last 72h)
+# Breaking Topics Radar (Jabbit) — last 72h
 
-**Window:** 2026-03-06 12:20 UTC → 2026-03-09 12:20 UTC (rolling 72h)  
-**Goal:** Identify fast-moving health / healthcare topics that could justify *new Jabbit subscription pages* (informational only; no medical advice).  
-**Method:** Pulled headlines/snippets from multiple sources (regulators, major news, trade press, Reddit trend surface). If a source blocked automated fetching, I still used reputable search-index snippets and/or alternate sources.
-
----
+**As of:** 2026-03-11 06:20 UTC  
+**Window:** last ~72 hours (with a few “near-window” items where coverage is still driving current discussion)  
+**Purpose:** Identify fast-moving stories that could shift consumer intent and subscription conversion for Jabbit. Informational only — **not medical advice**.
 
 ## Top 5 topics
 
-### 1) FDA vaccines/biologics leadership shake-up (Vinay Prasad stepping down)
-- **Topic:** FDA’s vaccines & biologics chief (CBER director) to leave in April.
-- **Why it matters for subscriptions:** Regulatory leadership changes tend to trigger waves of confusion/concern about vaccine policy, approval standards, and “what changes next.” People search for explainers, timelines, and plain-English summaries of what CBER controls (vaccines, gene therapies, blood products) and what *actually* changes vs. media noise.
-- **Suggested page slug:** `/news/fda-cber-vinay-prasad-step-down-what-it-means`
-- **Confidence:** **High** (major outlet + direct report)
+### 1) Novo Nordisk + Hims & Hers partnership to sell branded Wegovy/Ozempic via telehealth (self-pay pricing)
+- **Why it matters for subscriptions:** A major pharma brand using a subscription-native telehealth funnel normalizes “platform” distribution and pushes the market toward *branded-at-transparent-self-pay* pricing. This will likely increase consumer search intent around “official / FDA‑approved” options, pricing, and “where to buy,” and it raises the bar on trust/compliance messaging for any subscription health product.
+- **Suggested page slug:** `/novo-hims-wegovy-ozempic-telehealth-pricing`
+- **Confidence:** **High**
 - **Sources:**
-  - Reuters (Mar 6, 2026): https://www.reuters.com/business/healthcare-pharmaceuticals/fda-vaccines-chief-vinay-prasad-step-down-april-2026-03-06/
-  - NBC News (Mar 6, 2026): https://www.nbcnews.com/health/health-news/fda-vaccine-chief-leave-second-time-rcna262170
+  - Reuters (2026-03-09): Novo strikes deal for Hims to sell Wegovy/Ozempic; lawsuit withdrawn (with reservation) — https://www.reuters.com/legal/litigation/novo-nordisk-strikes-deal-hims-sell-wegovy-ozempic-drops-lawsuit-2026-03-09/
+  - Reddit trend surface (discussion/visibility signal): r/stocks thread on partnership and shares move — https://www.reddit.com/r/stocks/comments/1rn0ml7/novo_and_hims_to_sell_obesity_drugs_together_as/
+
+### 2) FDA enforcement pressure on telehealth marketing of compounded GLP‑1s (30 warning letters)
+- **Why it matters for subscriptions:** This sharpens consumer skepticism and increases searches around legality, safety, “compounded vs branded,” and “telehealth scams.” For Jabbit, it’s an opportunity to publish **clear, compliance-first explainer content** and strengthen trust signals (what you do/don’t do, how you vet partners, what “FDA‑approved” actually means in marketing language).
+- **Suggested page slug:** `/fda-warning-letters-telehealth-compounded-glp1-marketing`
+- **Confidence:** **High**
+- **Sources:**
+  - Reuters (2026-03-03): FDA warns 30 telehealth firms over misleading marketing of compounded GLP‑1s — https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-warns-30-telehealth-firms-over-misleading-marketing-compounded-glp1-drugs-2026-03-03/
+  - The Hill summary (secondary coverage): https://thehill.com/policy/healthcare/5765337-fda-telehealth-companies-compounded-glp-1/
+
+### 3) Walgreens launches a weight-management telehealth offering with **no monthly fee** (per-visit pricing)
+- **Why it matters for subscriptions:** A mass-market retailer testing a *non-subscription* pricing model ($49/visit, no monthly fee) can shift consumer expectations (“why pay monthly?”) and force subscription brands to justify the membership value (access, continuity, bundled services, convenience, outcomes tracking). Also creates SEO demand for comparisons: “Walgreens vs Ro vs Hims,” “monthly fee vs pay-per-visit,” etc.
+- **Suggested page slug:** `/walgreens-weight-management-telehealth-no-monthly-fee`
+- **Confidence:** **Medium** (story is a few days outside the strict 72h window but still appears to be actively referenced in current GLP‑1/telehealth discourse)
+- **Sources:**
+  - Healthcare Brew (2026-03-05): Walgreens enters the weight loss, telehealth markets — https://www.healthcare-brew.com/stories/2026/03/05/walgreens-weight-loss-telehealth-markets
+
+### 4) Medicare telehealth “lifeline” narrative: spending package extends/adjusts flexibilities (audio-only, coverage continuity)
+- **Why it matters for subscriptions:** Policy changes that keep telehealth reimbursement/coverage stable tend to increase provider and patient comfort with remote care. Even if Jabbit targets self-pay, the broader normalization boosts top-of-funnel intent (“telehealth is staying”). It’s also a strong hook for B2B partnership pages (employers/clinics) and content around eligibility/coverage trends (kept informational).
+- **Suggested page slug:** `/medicare-telehealth-flexibilities-extended-2026-spending-bill`
+- **Confidence:** **Medium** (multiple summaries point to the same direction; primary source access was inconsistent)
+- **Sources:**
+  - Commerce & Industry Association of NJ (2026-03-06): summary of Medicare telehealth flexibilities extended through 2027 — https://www.cianj.org/2026/03/06/medicare-telehealth-flexibilities-extended-through-2027-telehealth-gets-a-two-year-lifeline-in-fiscal-year-2026-spending-package/
+  - Virginia Telehealth Network policy update (context/roundup): https://www.ehealthvirginia.org/2026-state-and-federal-telehealth-policy-update/
+
+### 5) Market chatter: Teladoc upgraded / “telehealth is investable again” mini-cycle
+- **Why it matters for subscriptions:** These analyst-upgrade/news spikes correlate with renewed mainstream attention to “telehealth 2.0” themes (AI triage, hybrid care, employer distribution). For Jabbit, this is an SEO window for *category education* pages (“what’s changed since 2020 telehealth”) and positioning content (“how subscriptions fit the new telehealth stack”).
+- **Suggested page slug:** `/teladoc-upgrade-telehealth-2026-ai-hybrid-care`
+- **Confidence:** **Low–Medium** (finance coverage is fragmented and often syndicated; still useful as a trend signal)
+- **Sources:**
+  - FinancialContent / StockStory syndication (2026-03-10): “Why Teladoc (TDOC) stock is up today” — https://markets.financialcontent.com/stocks/article/stockstory-2026-3-10-why-teladoc-tdoc-stock-is-up-today
+  - GuruFocus roundup (2026-03-10): notes upgrades and 2026 outlook framing — https://www.gurufocus.com/news/8694647/teladoc-tdoc-upgraded-to-buy-by-deutsche-bank
 
 ---
 
-### 2) Autism advisory board meeting canceled (politicization + research funding uncertainty)
-- **Topic:** U.S. Interagency Autism Coordinating Committee (IACC) will not hold its scheduled March meeting.
-- **Why it matters for subscriptions:** Autism policy/research is an emotionally charged topic; disruptions to official coordination bodies create an information gap. People look for “what the IACC is,” what it influences (research priorities, federal coordination), and what cancellation signals for near-term initiatives.
-- **Suggested page slug:** `/news/autism-iacc-meeting-canceled-march-2026`
-- **Confidence:** **High** (major outlet + direct report)
-- **Sources:**
-  - Reuters (Mar 7, 2026): https://www.reuters.com/business/healthcare-pharmaceuticals/us-autism-advisory-board-will-not-meet-march-scheduled-health-agency-says-2026-03-07/
-
----
-
-### 3) FDA approval: expanded production/availability angle for PSMA PET prostate-cancer imaging
-- **Topic:** FDA approves Lantheus’ new formulation of its PSMA PET prostate cancer imaging agent (Pylarify TruVu) intended to increase production capacity and distribution efficiency.
-- **Why it matters for subscriptions:** Even when the underlying “test” isn’t new, *access* and *availability* changes drive search spikes (“Is this available near me yet?”, “What changed?”, “Will it affect scheduling/coverage?”). A subscriber page can track rollout timing, what Pylarify/PSMA PET scans are, and what the new formulation changes operationally.
-- **Suggested page slug:** `/fda/pylarify-truvu-approval-access`
-- **Confidence:** **High** (FDA approval reported by major outlet)
-- **Sources:**
-  - Reuters (Mar 6, 2026): https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-approves-lantheus-new-prostate-cancer-imaging-formulation-2026-03-06/
-
----
-
-### 4) Weight-loss drug market expansion: China approves Pfizer GLP-1 (ecnoglutide / “Xianweiying”) for weight management
-- **Topic:** China approval of Pfizer-partnered GLP-1 for long-term weight management in overweight/obese adults.
-- **Why it matters for subscriptions:** GLP-1 interest remains massive. Even non‑US approvals create “when will it come here?” searches and competitive-comparison shopping (weekly injection, efficacy, pricing, availability). A subscription page can track the product’s status by region and put it in context vs. semaglutide/tirzepatide.
-- **Suggested page slug:** `/glp1/pfizer-ecnoglutide-xianweiying-china-approval`
-- **Confidence:** **Medium-High** (major outlet; but impact on US consumers is indirect)
-- **Sources:**
-  - Reuters (Mar 6, 2026): https://www.reuters.com/business/healthcare-pharmaceuticals/china-approves-pfizer-glp-1-drug-weight-management-2026-03-06/
-
----
-
-### 5) ADHD stimulant shortage narrative persists (brand status vs. generic availability) + Reddit trend surface on pharmacy filling friction
-- **Topic:** Ongoing ADHD stimulant supply/access issues: even when brand names come off shortage lists, generics and “pharmacy policy” friction continue.
-- **Why it matters for subscriptions:** This is a recurring, high-intent consumer problem (people trying to fill scripts, understand substitution, and navigate pharmacy constraints). A Jabbit page that neutrally explains “why shortages persist,” “brand vs generic availability,” and “common pharmacy constraints” can convert well because the user is actively searching while frustrated.
-- **Suggested page slug:** `/adhd/stimulant-shortage-2026-pharmacy-filling-issues`
-- **Confidence:** **Medium** (trend consistent; some sources are paywalled/blocked from full-text fetch)
-- **Sources:**
-  - AJMC snippet (published ~7 hours ago via search index): https://www.ajmc.com/view/us-adhd-stimulant-shortage-highlights-growing-challenges-in-adult-treatment
-  - Reddit trend surface (r/ADHD; ~3 days ago): https://www.reddit.com/r/ADHD/comments/1rmeqf1/my_pharmacy_wont_fill_my_script_if_i_dont_get/
-
----
-
-## Notes / caveats
-- Some trade outlets are behind bot protection from this environment; when that happened, I treated it as **non-fatal** and continued with other sources + search-index snippets.
-- This radar is **informational only** and not medical advice.
+## Notes / reliability
+- This radar intentionally mixes **primary/regulatory**, **wire/news**, **trade outlets**, and **Reddit visibility** to approximate what’s shaping consumer intent.
+- Some sources (notably paywalled or Cloudflare-protected trade sites) were not consistently accessible; when that happened, the radar continues with alternate reputable summaries.
