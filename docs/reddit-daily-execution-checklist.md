@@ -82,7 +82,8 @@ Rule:
 
 Auth-path rule:
 - treat every authenticated Reddit action as expensive trust-wise
-- discovery should stay unauthenticated whenever possible
+- every part of the Reddit workflow that can run **without auth and without home IP** must run that way
+- discovery, reading, thread selection, drafting, scoring, and review should stay unauthenticated whenever possible
 - auth posting should be a single deliberate action, not a session full of poking around
 - if the verified endpoint is flaky, stop; don’t hammer it
 
