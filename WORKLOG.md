@@ -82,3 +82,6 @@ Lightweight running log of actions taken (UTC).
 ## 2026-03-11
 - 16:05Z — Growth loop: iteration 36; ran preflight gate (STOP stale ready_to_send=7); refreshed send-now-brief-latest + regenerated send-now-pack-latest; re-surfaced top-3 manual sends + mark-sent helper.
 - 20:05Z — Self-improvement loop: audited last 5 runs (queue still stale); upgraded manual-growth-loop preflight to also hard-stop on aged ready_to_send items via stale-ready-report (24h threshold) to prevent endless churn.
+
+## 2026-03-12
+- 00:05Z — Growth loop: iteration 44; execution gate STOP (7 ready_to_send, streak=20); refreshed send-now-pack-latest; re-surfaced top-3 manual sends + mark-sent helper.

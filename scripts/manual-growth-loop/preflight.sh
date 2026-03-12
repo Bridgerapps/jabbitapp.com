@@ -50,6 +50,8 @@ else
     cat /tmp/manual-growth-loop-stagnation.txt
     echo "STOP: stale ready_to_send queue — send + mark sent before creating new work"
     echo "hint: run $ROOT/scripts/manual-growth-loop/stale-ready-to-send-nudge.sh"
+    echo "hint: if this has been stuck for days, generate a send-only escalation brief:"
+    echo "      $ROOT/scripts/manual-growth-loop/escalate-stale-ready.sh"
     exit 33
   fi
   # Unknown error: surface it, but don't block the whole system.
