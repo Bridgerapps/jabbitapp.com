@@ -13,6 +13,7 @@ WS="/home/jabbit/.openclaw/workspace"
 LEDGER="$WS/data/status/manual-growth-loop-ledger.json"
 STATE="$WS/data/status/manual-growth-loop-nudge.json"
 PACK_LATEST="$WS/docs/send-now-pack-latest.txt"
+MAILTO_LATEST="$WS/docs/send-now-mailto-links-latest.md"
 
 THRESHOLD_SECONDS="${THRESHOLD_SECONDS:-14400}" # 4h default
 TOP_N="${TOP_N:-3}"
@@ -93,6 +94,13 @@ if [[ -f "$PACK_LATEST" ]]; then
   pack_hint="\nCopy/paste pack: docs/send-now-pack-latest.txt"
 fi
 
+mailto_hint=""
+if [[ -f "$MAILTO_LATEST" ]]; then
+  mailto_hint="\nOne-click email drafts: docs/send-now-mailto-links-latest.md"
+else
+  mailto_hint="\nTip: generate one-click email drafts: bash scripts/manual-growth-loop/generate-send-now-mailto-links.sh"
+fi
+
 escalation=""
 if [[ "$oldest_age_sec" -ge "$ESCALATE_AGE_SECONDS" || "$unchanged_nudges" -ge "$ESCALATE_NUDGES" ]]; then
   escalation="ESCALATION: queue is stale (oldest_age_sec=${oldest_age_sec}, unchangedNudges=${unchanged_nudges}). Either send top-3 now or explicitly deprioritize/close leads so the loop can move."
@@ -103,7 +111,7 @@ NUDGE_READY_TO_SEND
 You have $ready_count outreach items ready to send (oldest_age_sec=$oldest_age_sec). If you can do one 10-minute burst now, do these (top $TOP_N):
 
 $items
-$pack_hint
+$pack_hint$mailto_hint
 
 After sending, mark them sent in the ledger (so the loop can advance state).
 $escalation

@@ -50,3 +50,11 @@ logs/
 output/
 .tmp/
 *.tmp
+/tmp/
+tmp/
+
+# --- Generated distribution execution artifacts (local) ---
+docs/send-now-mailto-links-*.md
+docs/send-now-mailto-links-latest.md
+docs/distribution/stale-ready-escalation-*.md
+docs/distribution/stale-ready-escalation-latest.md
