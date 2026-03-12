@@ -88,13 +88,14 @@ Auth-path rule:
 - if the verified endpoint is flaky, stop; don’t hammer it
 
 ### 6) Log the result immediately
-Record:
+Update `data/status/reddit-daily-check.json` with:
 - date
 - subreddit
 - permalink
 - whether Jabbit was mentioned
 - why this thread was chosen
 - 24h follow-up check due time
+- or, if skipping, an explicit `skip_reason`
 
 ## 24h follow-up
 

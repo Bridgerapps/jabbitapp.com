@@ -1,6 +1,7 @@
 # HEARTBEAT.md
 
 Keep this short. Heartbeats are for lightweight operator checks, not long projects.
+They are the **watchdog layer**, not the primary execution engine.
 
 ## Rules
 - If nothing below needs action, reply exactly: `HEARTBEAT_OK`
@@ -8,6 +9,7 @@ Keep this short. Heartbeats are for lightweight operator checks, not long projec
 - Don’t resurrect old tasks from prior chats unless explicitly listed here
 - Prefer checking existing local status/docs before doing anything noisy
 - Traction over artifacts: don’t create new plans/docs unless they unblock action
+- If a recurring task needs guaranteed timing, put it on cron and point it at a board/ledger instead of relying on heartbeat luck
 
 ## On each heartbeat, do at most ONE of these
 
