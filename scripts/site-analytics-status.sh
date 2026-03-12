@@ -18,6 +18,11 @@ if [ -z "$ANALYTICS_SECRET" ]; then
   exit 0
 fi
 
+# Best-effort: ensure the local analytics service is running before querying it.
+if [ -x "$WS/scripts/analytics-server-ensure.sh" ]; then
+  bash "$WS/scripts/analytics-server-ensure.sh" >/dev/null 2>&1 || true
+fi
+
 RAW="$(curl -sS --max-time 10 "http://127.0.0.1:9000/stats?secret=${ANALYTICS_SECRET}" || true)"
 if ! echo "$RAW" | jq -e . >/dev/null 2>&1; then
   jq -n --arg ts "$(date -Iseconds)" --arg raw "${RAW:0:400}" '{ok:false,last_check:$ts,error:"stats_unavailable",raw:$raw}' > "$OUT"
