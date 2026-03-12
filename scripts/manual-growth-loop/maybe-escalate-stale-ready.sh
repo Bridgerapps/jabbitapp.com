@@ -24,13 +24,8 @@ now_epoch=$(date -u +%s)
 
 last_epoch=0
 if [ -n "$last" ] && [ "$last" != "null" ]; then
-  last_epoch=$(python3 - <<PY
-import datetime
-s='$last'
-if s.endswith('Z'): s=s[:-1]+'+00:00'
-print(int(datetime.datetime.fromisoformat(s).timestamp()))
-PY
-  )
+  # Prefer coreutils date over python for portability in cron shells.
+  last_epoch=$(date -u -d "$last" +%s 2>/dev/null || echo 0)
 fi
 
 age=$((now_epoch-last_epoch))
