@@ -13,6 +13,11 @@ if [[ ! -e "$BRIEF_LINK" ]]; then
   exit 1
 fi
 
-# Always rewrite (idempotent) so the pack never drifts.
+# Rewrite only if content changed (avoid churn in hourly loops).
+if [[ -f "$OUT" ]] && cmp -s "$BRIEF_LINK" "$OUT"; then
+  echo "ok: $OUT already matches $BRIEF_LINK (no-op)"
+  exit 0
+fi
+
 cat "$BRIEF_LINK" > "$OUT"
-echo "ok: wrote $OUT from $BRIEF_LINK"
+echo "ok: updated $OUT from $BRIEF_LINK"
