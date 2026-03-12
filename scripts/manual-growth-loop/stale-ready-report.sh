@@ -5,8 +5,29 @@ set -euo pipefail
 # Safe: read-only; prints a concise report.
 
 WS="/home/jabbit/.openclaw/workspace"
-LEDGER="${1:-$WS/data/status/manual-growth-loop-ledger.json}"
+LEDGER_DEFAULT="$WS/data/status/manual-growth-loop-ledger.json"
+LEDGER="$LEDGER_DEFAULT"
 THRESHOLD_SECONDS="${THRESHOLD_SECONDS:-86400}" # 24h
+
+# Args:
+#   stale-ready-report.sh [--hours N] [ledgerPath]
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --hours)
+      shift
+      [[ $# -gt 0 ]] || { echo "ERR: --hours requires a value" >&2; exit 2; }
+      THRESHOLD_SECONDS=$(( $1 * 3600 ))
+      shift
+      ;;
+    -h|--help)
+      echo "Usage: $(basename "$0") [--hours N] [ledgerPath]"; exit 0
+      ;;
+    *)
+      LEDGER="$1"
+      shift
+      ;;
+  esac
+done
 
 if [[ ! -f "$LEDGER" ]]; then
   echo "ERR: missing ledger: $LEDGER" >&2
