@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-11T13:36:45Z",
-  "total_pages": 46,
+  "last_updated": "2026-03-12T13:36:23Z",
+  "total_pages": 47,
   "topics": [
     {
       "topic": "bpc-157",
@@ -236,6 +236,11 @@
       "topic": "fda-biosimilar-guidance-2026-03",
       "filename": "fda-biosimilar-guidance-2026-03.html",
       "created": "2026-03-11"
+    },
+    {
+      "topic": "fda-recall-primal-herbs-undeclared-sildenafil",
+      "filename": "fda-recall-primal-herbs-undeclared-sildenafil.html",
+      "created": "2026-03-12"
     }
   ],
   "suggested_topics": [

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-11T13:37:37Z",
+  "updated": "2026-03-12T13:37:40Z",
   "rules": [
     {
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
@@ -782,6 +782,23 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "Medication tracker (log product, dates, and notes)"
+        }
+      ]
+    },
+    {
+      "file": "fda-recall-primal-herbs-undeclared-sildenafil.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recall alerts: undeclared tadalafil/sildenafil in supplements (guide)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Labeling + tracking basics (simple templates)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking log: products, dates, and notes"
         }
       ]
     }
