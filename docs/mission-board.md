@@ -38,6 +38,8 @@ Purpose: one small source of truth for what matters, what state it is in, what t
   - `data/status/manual-growth-loop-ledger.json`
   - `data/status/manual-growth-loop-stagnation.json`
   - `docs/distribution/send-now-brief-latest.md`
+  - `docs/distribution-daily-log.md`
+  - `data/status/distribution-daily-check.json`
 
 ## 3) Reddit / trust surface
 - **Owner:** Jabby
@@ -85,6 +87,9 @@ When multiple things are wrong, prioritize in this order:
 2. **Execution backlog clearance**
 3. **One real trust-surface action (Reddit/manual distribution)**
 4. **Only then new assets/pages/tools**
+
+## Review frame
+Use `docs/mission-board-review-checklist.md` for recurring reviews/summaries so they come from the same operator frame every time.
 
 ## Done definitions
 - **Measurement integrity:** feed is fresh and believable
