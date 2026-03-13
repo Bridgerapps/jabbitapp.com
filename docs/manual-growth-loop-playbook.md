@@ -9,6 +9,7 @@ Purpose: keep the hourly loop **distribution-first**, non-repetitive, and tied t
 - `data/status/manual-growth-loop-ledger.json` (what’s actually queued)
 
 Fast check (recommended at the top of every run):
+- `scripts/manual-growth-loop/operator-next.sh` → prints the **single** next move (normal vs self-improvement vs SEND-ONLY)
 - `scripts/manual-growth-loop/preflight.sh` → shows next iteration/mode + ledger queue counts (no mutations)
 - `scripts/manual-growth-loop/ensure-kpi-today.sh` → creates today’s `docs/kpi-YYYY-MM-DD.md` if missing (safe, idempotent)
 - `scripts/manual-growth-loop/execution-gate.sh` → hard-stops the loop if anything is `ready_to_send` (prevents “brief churn”)
