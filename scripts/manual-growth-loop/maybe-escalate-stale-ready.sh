@@ -14,13 +14,23 @@ need "$LEDGER"
 mkdir -p "$(dirname "$STATE")"
 
 if [ ! -f "$STATE" ]; then
-  printf '{"lastEscalationUtc":null}\n' > "$STATE"
+  printf '{"lastEscalationUtc":null,"lastLedgerFingerprint":null}\n' > "$STATE"
 fi
 
 min_interval_sec="${MIN_INTERVAL_SECONDS:-21600}" # default: 6h
 
 last=$(jq -r '.lastEscalationUtc // empty' "$STATE" 2>/dev/null || true)
+last_fp=$(jq -r '.lastLedgerFingerprint // empty' "$STATE" 2>/dev/null || true)
 now_epoch=$(date -u +%s)
+
+# Compute current ledger fingerprint; if the queue hasn't changed since last escalation,
+# don't generate a new brief even if the time window elapsed.
+cur_fp=$(jq -c '.sendQueues | sort_by(.leadId, .whenUtc, .status, .channel, .to, (.subject // ""))' "$LEDGER" | sha256sum | awk '{print $1}')
+
+if [ -n "$last_fp" ] && [ "$last_fp" != "null" ] && [ "$last_fp" = "$cur_fp" ]; then
+  echo "SKIP: ledger unchanged since last escalation (fingerprint=$cur_fp)"
+  exit 0
+fi
 
 last_epoch=0
 if [ -n "$last" ] && [ "$last" != "null" ]; then
@@ -41,7 +51,7 @@ out=$(bash "$ROOT/scripts/manual-growth-loop/escalate-stale-ready.sh" "$LEDGER")
 if echo "$out" | grep -q '^WROTE:'; then
   now_utc=$(date -u +%FT%TZ)
   tmp=$(mktemp)
-  jq --arg t "$now_utc" '.lastEscalationUtc=$t' "$STATE" > "$tmp" && mv "$tmp" "$STATE"
+  jq --arg t "$now_utc" --arg fp "$cur_fp" '.lastEscalationUtc=$t | .lastLedgerFingerprint=$fp' "$STATE" > "$tmp" && mv "$tmp" "$STATE"
 fi
 
 echo "$out"
