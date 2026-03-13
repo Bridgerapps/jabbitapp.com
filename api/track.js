@@ -16,8 +16,28 @@ function loadAnalyticsSecret() {
   }
 }
 
+async function chooseAnalyticsBase() {
+  // Prefer explicitly configured base.
+  if (process.env.ANALYTICS_BASE) return String(process.env.ANALYTICS_BASE);
+
+  // If we're running on the same host as the analytics daemon, localhost is fastest.
+  // Otherwise (e.g. Vercel/edge/serverless), localhost won't work — fall back to the public endpoint.
+  const localhost = 'http://127.0.0.1:9000';
+  try {
+    const ac = new AbortController();
+    const t = setTimeout(() => ac.abort(), 800);
+    const r = await fetch(`${localhost}/health`, { signal: ac.signal });
+    clearTimeout(t);
+    const j = await r.json().catch(() => null);
+    if (r.ok && j && j.ok === true) return localhost;
+  } catch (_) {}
+
+  // NOTE: If this IP changes, set ANALYTICS_BASE in the deployment environment.
+  return 'http://138.197.74.40:9000';
+}
+
 module.exports = async (req, res) => {
-  const ANALYTICS_BASE = process.env.ANALYTICS_BASE || 'http://127.0.0.1:9000';
+  const ANALYTICS_BASE = await chooseAnalyticsBase();
   const ANALYTICS_SECRET = loadAnalyticsSecret();
 
   if (!ANALYTICS_SECRET) {
