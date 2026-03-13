@@ -62,14 +62,29 @@ CTR_CLEAN=$(pct "$CLEAN_APPSTORE_CLICKS" "$CLEAN_PAGEVIEWS")
 CTR_TODAY=$(pct "$SITE_APPSTORE_CLICKS_TODAY" "$SITE_PAGEVIEWS_TODAY")
 CTR_YDAY=$(pct "$SITE_APPSTORE_CLICKS_YDAY" "$SITE_PAGEVIEWS_YDAY")
 
-# App Store units/revenue snapshot
-APP_REPORT=$(python3 "$WS/scripts/appstore-sales.py" 2>/dev/null || true)
-APP_UNITS=$(echo "$APP_REPORT" | awk -F': ' '/Units:/ {print $2; exit}' | tr -d '\r')
-APP_REVENUE=$(echo "$APP_REPORT" | awk -F': ' '/Revenue:/ {print $2; exit}' | tr -d '\r')
-APP_DATE=$(echo "$APP_REPORT" | sed -n 's/^  Report date (PT): //p' | head -n1 | tr -d '\r')
-APP_UNITS=${APP_UNITS:-unknown}
-APP_REVENUE=${APP_REVENUE:-unknown}
-APP_DATE=${APP_DATE:-unknown}
+# App Store installs/downloads (best available: Sales Reports "Units")
+APPSTORE_OK=false
+APPSTORE_SUSPECT=false
+APPSTORE_SUSPECT_REASONS=""
+APP_UNITS="unknown"
+APP_REVENUE="unknown"
+APP_DATE="unknown"
+
+if [ -x "$WS/scripts/appstore-sales-status.sh" ]; then
+  bash "$WS/scripts/appstore-sales-status.sh" >/dev/null 2>&1 || true
+fi
+
+if [ -f "$WS/data/status/appstore-sales.json" ]; then
+  if jq -e '.ok == true' "$WS/data/status/appstore-sales.json" >/dev/null 2>&1; then
+    APPSTORE_OK=true
+    APPSTORE_SUSPECT=$(jq -r '.suspect // false' "$WS/data/status/appstore-sales.json")
+    APPSTORE_SUSPECT_REASONS=$(jq -r '(.suspect_reasons // []) | join(", ")' "$WS/data/status/appstore-sales.json")
+
+    APP_UNITS=$(jq -r '.units // "unknown"' "$WS/data/status/appstore-sales.json")
+    APP_REVENUE=$(jq -r '.revenue_usd // "unknown"' "$WS/data/status/appstore-sales.json")
+    APP_DATE=$(jq -r '.report_date // "unknown"' "$WS/data/status/appstore-sales.json")
+  fi
+fi
 
 # Daily execution truth (manual lanes)
 REDDIT_CHECK="$WS/data/status/reddit-daily-check.json"
@@ -110,9 +125,10 @@ _Generated: ${NOW}_
 
 ## 🎯 North Star (Installs / Downloads)
 
-- **Primary metric:** installs/downloads (best available proxy).
+- **Primary metric:** installs/downloads (best available: App Store Connect Sales Reports → Units).
+- App Store sales status: $(if $APPSTORE_OK; then echo "OK"; else echo "BROKEN"; fi)$(if [ "$APPSTORE_SUSPECT" = "true" ]; then echo " — SUSPECT${APPSTORE_SUSPECT_REASONS:+ ($APPSTORE_SUSPECT_REASONS)}"; fi)
 - App Store report date (PT): ${APP_DATE}
-- **Units (sales-report proxy; may undercount free installs):** ${APP_UNITS}
+- **Units (App Units / downloads):** ${APP_UNITS}
 - Revenue (secondary): ${APP_REVENUE}
 
 ## 🔁 Funnel Health (Site → App Store Click)

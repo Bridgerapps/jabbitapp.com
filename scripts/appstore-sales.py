@@ -184,19 +184,40 @@ def fetch_sales():
     }
 
 if __name__ == "__main__":
+    import argparse
+    import json
+
+    ap = argparse.ArgumentParser(description="Fetch Apple App Store Connect Sales (summary daily) report.")
+    ap.add_argument("--json", action="store_true", help="Emit machine-readable JSON")
+    args = ap.parse_args()
+
     result = fetch_sales()
-    if result:
-        print(f"📊 App Store Sales Report")
-        report_date = result.get('report_date')
-        if report_date:
-            try:
-                # Jon policy: treat lag as zero by default/until explicitly disproven.
-                print(f"  Report date (PT): {report_date} (lag: 0 days)")
-            except Exception:
-                print(f"  Report date (PT): {report_date}")
-        else:
-            print("  Report date (PT): unavailable")
-        print(f"  Units: {result['units']}")
-        print(f"  Revenue: ${result['revenue']:.2f}")
-        for product, stats in result['products'].items():
-            print(f"  {product}: {stats['units']} units, ${stats['revenue']:.2f}")
+    if not result:
+        if args.json:
+            print(json.dumps({"ok": False, "error": "fetch_failed"}))
+        raise SystemExit(1)
+
+    if args.json:
+        out = {
+            "ok": True,
+            "metric": "sales_reports_units",
+            "report_date": result.get("report_date"),
+            "units": int(result.get("units") or 0),
+            "revenue_usd": float(result.get("revenue") or 0),
+            "products": result.get("products") or {},
+            "timestamp": result.get("timestamp"),
+        }
+        print(json.dumps(out, sort_keys=True))
+        raise SystemExit(0)
+
+    print(f"📊 App Store Sales Report")
+    report_date = result.get('report_date')
+    if report_date:
+        # Jon policy: treat lag as zero by default/until explicitly disproven.
+        print(f"  Report date (PT): {report_date} (lag: 0 days)")
+    else:
+        print("  Report date (PT): unavailable")
+    print(f"  Units: {result['units']}")
+    print(f"  Revenue: ${result['revenue']:.2f}")
+    for product, stats in result['products'].items():
+        print(f"  {product}: {stats['units']} units, ${stats['revenue']:.2f}")

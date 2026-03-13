@@ -32,13 +32,18 @@ fi
 
 echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
   def _unique_pages(arr): [arr[]? | .page? // empty] | unique;
-  def _suspect_reasons(total_events; top_pages):
+  def _suspect_reasons(total_events; top_pages; pageviews; clicks):
     (
       []
       + (if (total_events|tonumber) < 10 then ["low_total_events(<10)"] else [] end)
       + (
           if (_unique_pages(top_pages) | length) == 1 and (_unique_pages(top_pages)[0] == "/") then
             ["only_root_page_seen"]
+          else [] end
+        )
+      + (
+          if (pageviews|tonumber) > 0 and (clicks|tonumber) > (pageviews|tonumber) then
+            ["clicks_gt_pageviews"]
           else [] end
         )
     );
@@ -77,7 +82,7 @@ echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
         top_pageviews: ($raw.topPageviews // $raw.topPages // []),
         top_click_pages: ($raw.topClickPages // [])
       }
-      | .suspect_reasons = _suspect_reasons(.total_events; .top_pages)
+      | .suspect_reasons = _suspect_reasons(.total_events; .top_pages; .pageviews_total; .app_store_clicks_total)
       | .suspect = (.suspect_reasons | length > 0)
     )
 ' > "$OUT"
