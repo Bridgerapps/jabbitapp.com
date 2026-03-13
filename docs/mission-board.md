@@ -17,8 +17,8 @@ Purpose: one small source of truth for what matters, what state it is in, what t
 - **Owner:** Jabby
 - **State:** blocked / suspect
 - **What matters:** we need honest install + traffic visibility or we optimize blind.
-- **Current blocker:** `data/status/site-analytics.json` is reporting all zeros; likely ingestion/tracking failure, not literal zero demand.
-- **Next physical action:** trace the writer/collector for `site-analytics.json`, confirm source path/credentials/event flow, and restore non-zero reporting or explicitly mark the feed broken.
+- **Current blocker:** site analytics is **decision-unsafe**: it may return `ok=true` while still being **suspect** (e.g., only root page seen / extremely low event volume). We must treat that as a broken signal until disproven.
+- **Next physical action:** trace the writer/collector for `site-analytics.json`, confirm real-world event ingestion (not just health pings), and keep the status explicitly **OK vs BROKEN vs SUSPECT** (never silently implying zero).
 - **Last touched:** 2026-03-12 00:19 UTC
 - **Success measure:** analytics file updates on schedule with plausible non-zero/stated-null data; executive summaries stop carrying a measurement-integrity warning.
 - **State files / evidence:**
@@ -31,7 +31,7 @@ Purpose: one small source of truth for what matters, what state it is in, what t
 - **State:** execution backlog
 - **What matters:** installs move fastest when the existing ready-to-send queue gets cleared.
 - **Current blocker:** 7 `ready_to_send` items are sitting in the growth ledger; system is generating nudges faster than sends happen.
-- **Next physical action:** clear the top 3 ready-to-send sends, starting with On The Pen, GLP-1 Tribe, and one coach/clinic contact.
+- **Next physical action:** clear the top 3 ready-to-send sends (On The Pen, GLP-1 Tribe, and one coach/clinic contact) and log the day via `scripts/distribution-daily-check-set.sh` (optionally marking the ledger item `sent`).
 - **Last touched:** 2026-03-12 00:05 UTC
 - **Success measure:** ready-to-send backlog drops from 7 to <=3; follow-up states logged cleanly; installs can be tied back to outreach.
 - **State files / evidence:**
@@ -45,8 +45,8 @@ Purpose: one small source of truth for what matters, what state it is in, what t
 - **Owner:** Jabby
 - **State:** not in a clean daily execution rhythm
 - **What matters:** one useful manual comment/day or an explicit logged skip; no draft piles.
-- **Current blocker:** telemetry is stale and the daily action loop is not being logged as a hard yes/no.
-- **Next physical action:** run one deliberate daily execution check: either identify/post one high-value manual comment or log an explicit skip with reason and next follow-up time.
+- **Current blocker:** the daily action loop can end in an ambiguous state (posted=false + empty skip_reason), which reads like “we did nothing” without admitting we skipped.
+- **Next physical action:** every day, end with an explicit truth via `scripts/reddit-daily-check-set.sh` (POSTED or SKIPPED with reason + follow-up due time).
 - **Last touched:** 2026-03-11 13:37 UTC
 - **Success measure:** daily log shows `posted=1` or `skip_reason=<clear reason>` every day; 24h follow-up logged; telemetry freshness restored.
 - **State files / evidence:**

@@ -13,6 +13,10 @@ No silent days.
 Use local runtime state at:
 - `data/status/distribution-daily-check.json`
 
+Preferred write path (forcing function):
+- executed: `scripts/distribution-daily-check-set.sh execute --channel <...> --target <...> --queueId <...> --outcome "sent" --mark-ledger-sent`
+- skipped: `scripts/distribution-daily-check-set.sh skip --reason "..."`
+
 Keep it untracked. It is operating state, not durable documentation.
 
 ## What to log

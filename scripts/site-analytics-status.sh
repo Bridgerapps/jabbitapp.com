@@ -31,38 +31,55 @@ if ! echo "$RAW" | jq -e . >/dev/null 2>&1; then
 fi
 
 echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
-  {
-    ok: true,
-    last_check: $ts,
-    total_events: (.totalEvents // .total // 0),
-    pageviews_total: (
-      if (.eventCounts|type)=="object" then (.eventCounts.pageview // 0)
-      else 0 end
-    ),
-    app_store_clicks_total: (
-      if (.eventCounts|type)=="object" then (.eventCounts.app_store_click // 0)
-      else 0 end
-    ),
-    today_pageviews: (
-      if (.today|type)=="object" then (.today.pageview // 0)
-      elif (.today|type)=="number" then .today
-      else 0 end
-    ),
-    today_app_store_clicks: (
-      if (.today|type)=="object" then (.today.app_store_click // 0) else 0 end
-    ),
-    yesterday_pageviews: (
-      if (.yesterday|type)=="object" then (.yesterday.pageview // 0)
-      elif (.yesterday|type)=="number" then .yesterday
-      else 0 end
-    ),
-    yesterday_app_store_clicks: (
-      if (.yesterday|type)=="object" then (.yesterday.app_store_click // 0) else 0 end
-    ),
-    top_pages: (.topPages // []),
-    top_pageviews: (.topPageviews // .topPages // []),
-    top_click_pages: (.topClickPages // [])
-  }
+  def _unique_pages(arr): [arr[]? | .page? // empty] | unique;
+  def _suspect_reasons(total_events; top_pages):
+    (
+      []
+      + (if (total_events|tonumber) < 10 then ["low_total_events(<10)"] else [] end)
+      + (
+          if (_unique_pages(top_pages) | length) == 1 and (_unique_pages(top_pages)[0] == "/") then
+            ["only_root_page_seen"]
+          else [] end
+        )
+    );
+
+  . as $raw
+  | (
+      {
+        ok: true,
+        last_check: $ts,
+        total_events: ($raw.totalEvents // $raw.total // 0),
+        pageviews_total: (
+          if ($raw.eventCounts|type)=="object" then ($raw.eventCounts.pageview // 0)
+          else 0 end
+        ),
+        app_store_clicks_total: (
+          if ($raw.eventCounts|type)=="object" then ($raw.eventCounts.app_store_click // 0)
+          else 0 end
+        ),
+        today_pageviews: (
+          if ($raw.today|type)=="object" then ($raw.today.pageview // 0)
+          elif ($raw.today|type)=="number" then $raw.today
+          else 0 end
+        ),
+        today_app_store_clicks: (
+          if ($raw.today|type)=="object" then ($raw.today.app_store_click // 0) else 0 end
+        ),
+        yesterday_pageviews: (
+          if ($raw.yesterday|type)=="object" then ($raw.yesterday.pageview // 0)
+          elif ($raw.yesterday|type)=="number" then $raw.yesterday
+          else 0 end
+        ),
+        yesterday_app_store_clicks: (
+          if ($raw.yesterday|type)=="object" then ($raw.yesterday.app_store_click // 0) else 0 end
+        ),
+        top_pages: ($raw.topPages // []),
+        top_pageviews: ($raw.topPageviews // $raw.topPages // []),
+        top_click_pages: ($raw.topClickPages // [])
+      }
+      | .suspect_reasons = _suspect_reasons(.total_events; .top_pages)
+      | .suspect = (.suspect_reasons | length > 0)
+    )
 ' > "$OUT"
 
 echo "$OUT"

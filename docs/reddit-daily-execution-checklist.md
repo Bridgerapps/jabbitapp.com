@@ -87,15 +87,14 @@ Auth-path rule:
 - auth posting should be a single deliberate action, not a session full of poking around
 - if the verified endpoint is flaky, stop; don’t hammer it
 
-### 6) Log the result immediately
-Update `data/status/reddit-daily-check.json` with:
-- date
-- subreddit
-- permalink
-- whether Jabbit was mentioned
-- why this thread was chosen
-- 24h follow-up check due time
-- or, if skipping, an explicit `skip_reason`
+### 6) Log the result immediately (forcing function)
+Do **not** leave this ambiguous.
+
+Preferred (safe) path:
+- If posted: `scripts/reddit-daily-check-set.sh post --subreddit r/<sub> --thread_url "https://..." --jabbit_mentioned false --why "..." --followup_due_utc "..."`
+- If skipping: `scripts/reddit-daily-check-set.sh skip --reason "..." --followup_due_utc "..."`
+
+(These write `data/status/reddit-daily-check.json` so dashboards can surface **posted vs explicit skip** instead of silently implying zero.)
 
 ## 24h follow-up
 

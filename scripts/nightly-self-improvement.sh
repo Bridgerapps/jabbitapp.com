@@ -17,7 +17,7 @@ cat > "$OUT" <<EOF
 ## What mattered for downloads today
 - Read KPI first: $KPI_FILE
 - Did we increase site→App Store click-through on top-traffic pages?
-- Did we increase paid installs (units/revenue), not just output volume?
+- Did we increase installs/downloads (don’t confuse revenue with installs), not just output volume?
 
 ## Repeated failures captured
 - Review REGRESSIONS.md and append any new failure → guardrail lines.
@@ -27,7 +27,7 @@ cat > "$OUT" <<EOF
 $COMMITS
 
 ## Weekly hard questions (no fluff)
-1. Which changes moved paid installs vs looked busy?
+1. Which changes moved installs/downloads vs looked busy?
 2. Which scripts/pages consumed effort with zero measurable lift?
 3. What do we stop doing next week?
 4. What one experiment has highest expected lift in 72h?
