@@ -10,8 +10,15 @@ fi
 
 now=$(date -u +%FT%TZ)
 
+# Fingerprint to detect "no-change" churn across runs.
+fingerprint=$(jq -c '
+  .sendQueues
+  | sort_by(.leadId, .whenUtc, .status, .channel, .to, (.subject // ""))
+' "$LEDGER" | sha256sum | awk '{print $1}')
+
 echo "# manual-growth-loop ledger summary"
 echo "now: $now"
+echo "fingerprint: $fingerprint"
 
 echo
 

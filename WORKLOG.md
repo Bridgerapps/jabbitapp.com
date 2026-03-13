@@ -92,3 +92,7 @@ Lightweight running log of actions taken (UTC).
 - 13:05Z — Growth loop: iteration 57; preflight STOP (stale ready_to_send=7); ran stale-ready nudge + generated fresh escalation brief; verified send-now-pack-latest no-op.
 - 18:05Z — Growth loop: iteration 62; preflight STOP (stale ready_to_send=7); regenerated send-now mailto links + re-surfaced top-3 sends via stale-ready nudge.
 - 19:05Z — Growth loop: iteration 63; preflight STOP (stale ready_to_send=7, streak=35); regenerated send-now mailto links (latest) + re-surfaced ready_to_send order.
+
+## 2026-03-13
+- 00:05Z — Growth loop: iteration 68; created KPI for today + refreshed send-now mailto links (latest) + ran stale-ready nudge + ledger summary (7 ready_to_send).
+- 02:05Z — Self-improvement loop: audited repetition (stale ready_to_send → artifact churn); added ledger fingerprint to `ledger-summary.sh` to detect no-change runs.
