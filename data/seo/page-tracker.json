@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-12T13:36:23Z",
-  "total_pages": 47,
+  "last_updated": "2026-03-13T13:36:32Z",
+  "total_pages": 48,
   "topics": [
     {
       "topic": "bpc-157",
@@ -241,6 +241,11 @@
       "topic": "fda-recall-primal-herbs-undeclared-sildenafil",
       "filename": "fda-recall-primal-herbs-undeclared-sildenafil.html",
       "created": "2026-03-12"
+    },
+    {
+      "topic": "compounded-tirzepatide-impurities-quality-questions",
+      "filename": "compounded-tirzepatide-impurities-quality-questions.html",
+      "created": "2026-03-13"
     }
   ],
   "suggested_topics": [
