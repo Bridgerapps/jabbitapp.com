@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-13T13:36:32Z",
-  "total_pages": 48,
+  "last_updated": "2026-03-14T13:36:32Z",
+  "total_pages": 49,
   "topics": [
     {
       "topic": "bpc-157",
@@ -246,6 +246,11 @@
       "topic": "compounded-tirzepatide-impurities-quality-questions",
       "filename": "compounded-tirzepatide-impurities-quality-questions.html",
       "created": "2026-03-13"
+    },
+    {
+      "topic": "omnipod-5-pod-correction-march-2026",
+      "filename": "omnipod-5-pod-correction-march-2026.html",
+      "created": "2026-03-14"
     }
   ],
   "suggested_topics": [

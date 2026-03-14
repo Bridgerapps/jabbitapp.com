@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-13T13:37:19Z",
+  "updated": "2026-03-14T13:37:13Z",
   "rules": [
     {
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
@@ -816,6 +816,23 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "omnipod-5-pod-correction-march-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Private log + timeline (helpful when troubleshooting devices)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder setup patterns (follow-ups, reorder reminders)"
+        },
+        {
+          "href": "/privacy/",
+          "text": "Privacy policy (how your data is handled)"
         }
       ]
     }
