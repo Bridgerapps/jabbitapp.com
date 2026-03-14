@@ -18,7 +18,7 @@ Fast check (recommended at the top of every run):
 - `scripts/manual-growth-loop/stale-ready-to-send-nudge.sh` → prints a ready-to-send “nudge payload” if the queue is stagnating (rate-limited by a local state file).
 
 Reliability tip:
-- Record each run in `data/status/manual-growth-loop-history.json` via `scripts/manual-growth-loop/record-run.sh` (makes self-improvement audits faster, reduces repetition)
+- Record each run via `scripts/manual-growth-loop/record-run.sh` (writes both `data/status/manual-growth-loop-history.json` + `data/logs/manual-growth-loop.jsonl` for easy tail/grep)
 
 ## 1) Action taxonomy (for de-dupe)
 When choosing actions, tag each one:

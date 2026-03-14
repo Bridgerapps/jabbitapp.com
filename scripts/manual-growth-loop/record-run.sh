@@ -7,6 +7,7 @@ set -euo pipefail
 
 ROOT="/home/jabbit/.openclaw/workspace"
 HIST="$ROOT/data/status/manual-growth-loop-history.json"
+JSONL="$ROOT/data/logs/manual-growth-loop.jsonl"
 
 iteration=""
 mode=""
@@ -28,9 +29,12 @@ if [ -z "$iteration" ] || [ -z "$mode" ]; then
   exit 2
 fi
 
-mkdir -p "$(dirname "$HIST")"
+mkdir -p "$(dirname "$HIST")" "$(dirname "$JSONL")"
 if [ ! -f "$HIST" ]; then
   echo '[]' > "$HIST"
+fi
+if [ ! -f "$JSONL" ]; then
+  : > "$JSONL"
 fi
 
 ts=$(date -u +%FT%TZ)
@@ -46,20 +50,27 @@ NODE
   )
 fi
 
-HIST="$HIST" TS="$ts" ITER="$iteration" MODE="$mode" NOTE="$note" TAGS_JSON="$TAGS_JSON" node - <<'NODE'
+HIST="$HIST" JSONL="$JSONL" TS="$ts" ITER="$iteration" MODE="$mode" NOTE="$note" TAGS_JSON="$TAGS_JSON" node - <<'NODE'
 const fs = require('fs');
-const p = process.env.HIST;
+const histPath = process.env.HIST;
+const jsonlPath = process.env.JSONL;
 const ts = process.env.TS;
 const iteration = Number(process.env.ITER);
 const mode = process.env.MODE;
 const note = process.env.NOTE || '';
 const tags = JSON.parse(process.env.TAGS_JSON || '[]');
 
+const entry = { ts, iteration, mode, tags, note };
+
 let arr;
-try { arr = JSON.parse(fs.readFileSync(p,'utf8')); } catch { arr = []; }
-arr.push({ ts, iteration, mode, tags, note });
+try { arr = JSON.parse(fs.readFileSync(histPath,'utf8')); } catch { arr = []; }
+arr.push(entry);
 // keep last 200 entries to avoid unbounded growth
 if (arr.length > 200) arr = arr.slice(arr.length - 200);
-fs.writeFileSync(p, JSON.stringify(arr, null, 2) + '\n');
-console.log(`ok: appended (n=${arr.length})`);
+fs.writeFileSync(histPath, JSON.stringify(arr, null, 2) + '\n');
+
+// Also append to JSONL for easy tail/grep in ops.
+fs.appendFileSync(jsonlPath, JSON.stringify(entry) + '\n');
+
+console.log(`ok: recorded (history_n=${arr.length})`);
 NODE
