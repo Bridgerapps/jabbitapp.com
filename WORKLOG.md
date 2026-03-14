@@ -99,3 +99,6 @@ Lightweight running log of actions taken (UTC).
 - 03:05Z — Growth loop: iteration 71; preflight STOP (stale ready_to_send=7, streak=40); ran stale-ready nudge + generated fresh stale-ready escalation brief (latest symlink).
 - 04:05Z — Growth loop: iteration 72; preflight STOP (stale ready_to_send=7, streak=41); ran stale-ready nudge (no-op within threshold); incremented counter.
 - 09:05Z — Growth loop: iteration 77; execution gate STOP (7 ready_to_send, streak=45); generated fresh stale-ready escalation brief (latest symlink) + refreshed send-now mailto links (no new leads).
+
+## 2026-03-14
+- 14:06Z — Growth loop: created 3 new podcast outreach drafts (Fat Science + Mamamia Well + Hungry For More) with UTMs in docs/distribution/manual-send-queue-2026-03-14-1405Z.md; counter=106.

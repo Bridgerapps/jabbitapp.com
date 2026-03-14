@@ -1,0 +1,59 @@
+# Manual send queue — 2026-03-14 14:05Z
+
+Goal: generate 1–3 partner touches that can plausibly drive installs inside 72h.
+
+## New leads (draft -> planned)
+
+### 1) Fat Science Podcast — questions@fatsciencepodcast.com / dr.c@fatsciencepodcast.com
+Pitch: free, non-medical GLP‑1 injection log resource for listeners (show notes / resources page).
+
+- Subject: Tiny free GLP‑1 injection log resource for your listeners (non-medical)
+- Link: https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_fatscience&utm_medium=email&utm_campaign=20260314_t1
+- Body (short):
+  Hi — quick one. I built a free, non-medical GLP‑1 injection log / dose timeline page that some listeners might find handy when they’re trying to remember dates + doses.
+
+  If you keep a “resources” list or show notes links, feel free to include it:
+  https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_fatscience&utm_medium=email&utm_campaign=20260314_t1
+
+  If you’d rather I format it as 1–2 lines for show notes, tell me your preferred style and I’ll send a clean snippet.
+
+  (Not medical advice — purely tracking/logging.)
+
+After approval + send:
+- `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-14-fatscience-1 --yes`
+
+---
+
+### 2) Mamamia “Well.” podcast — well@mamamia.com.au
+Pitch: offer the same free log resource as a “listener tool” (super low ask).
+
+- Subject: Free GLP‑1 injection log link (for show notes/resources)
+- Link: https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_mamamia_well&utm_medium=email&utm_campaign=20260314_t1
+- Body (short):
+  Hi Well. team — I’ve got a free, non-medical GLP‑1 injection log / dose timeline page that’s meant to help people track shot dates + doses quickly.
+
+  If you maintain a resources list for GLP‑1 episodes, you’re welcome to include it:
+  https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_mamamia_well&utm_medium=email&utm_campaign=20260314_t1
+
+  If it’s useful, I can also send a 1–2 sentence “show notes” blurb in your exact style.
+
+After approval + send:
+- `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-14-mamamiawell-1 --yes`
+
+---
+
+### 3) Hungry For More podcast — thehungryformorepodcast@gmail.com
+Pitch: same resource, framed as “shot log” for listeners on GLP‑1s.
+
+- Subject: Free GLP‑1 shot log / dose timeline link (non-medical)
+- Link: https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_hungryformore&utm_medium=email&utm_campaign=20260314_t1
+- Body (short):
+  Hi — quick resource for any listeners using GLP‑1s: I built a free, non-medical injection log / dose timeline page so people can keep dates + doses straight.
+
+  If you ever share tools/resources in show notes, here’s the link:
+  https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_hungryformore&utm_medium=email&utm_campaign=20260314_t1
+
+  Happy to rewrite as a tighter show-notes snippet if you tell me your format.
+
+After approval + send:
+- `bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-14-hungryformore-1 --yes`

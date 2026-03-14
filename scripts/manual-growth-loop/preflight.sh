@@ -60,8 +60,8 @@ fi
 
 # Second hard guardrail: block on *aged* ready_to_send items (not just streak).
 # Rationale: a single run could miss the streak threshold, but anything >24h old must be acted on.
-THRESHOLD_SECONDS="${THRESHOLD_SECONDS:-86400}" \
-  "$ROOT/scripts/manual-growth-loop/stale-ready-report.sh" "$LEDGER" >/tmp/manual-growth-loop-stale-ready.txt 2>&1 || true
+THRESHOLD_SECONDS="${THRESHOLD_SECONDS:-86400}"
+"$ROOT/scripts/manual-growth-loop/stale-ready-report.sh" "$LEDGER" >/tmp/manual-growth-loop-stale-ready.txt 2>&1 || true
 if ! grep -q "^STALE_READY_REPORT: none" /tmp/manual-growth-loop-stale-ready.txt; then
   cat /tmp/manual-growth-loop-stale-ready.txt
   echo "STOP: ready_to_send items are older than ${THRESHOLD_SECONDS}s — send/close + mark state before new work"
