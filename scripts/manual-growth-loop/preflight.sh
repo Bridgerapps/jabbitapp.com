@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT="/home/jabbit/.openclaw/workspace"
-WORKLOG="$ROOT/WORKLOG.md"
+HISTORY="$ROOT/data/status/manual-growth-loop-history.json"
 LEDGER="$ROOT/data/status/manual-growth-loop-ledger.json"
 COUNTER="$ROOT/data/status/manual-growth-loop-counter.json"
 
@@ -14,7 +14,10 @@ need() {
   fi
 }
 
-need "$WORKLOG" || exit 1
+if [ ! -f "$HISTORY" ]; then
+  mkdir -p "$(dirname "$HISTORY")"
+  echo '[]' > "$HISTORY"
+fi
 need "$LEDGER" || exit 1
 
 # Fail fast on missing deps (cron environments can differ).

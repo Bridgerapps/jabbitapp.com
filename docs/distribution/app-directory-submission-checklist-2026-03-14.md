@@ -17,7 +17,7 @@ Do 3–5 manual submissions in ~20 minutes, with consistent messaging + tracking
 1) Open target submission page
 2) If they require the App Store URL, include it **plus** the UTM landing page above
 3) Screenshot/receipt: capture confirmation page or submission email (manual)
-4) Log completion: append a line to WORKLOG.md (which directory + timestamp)
+4) Log completion in runtime state or history (not `WORKLOG.md`): append a short entry to `data/status/manual-growth-loop-history.json` or `data/logs/manual-growth-loop.jsonl` with directory + timestamp
 
 ## Targets (start here)
 - https://alternativeto.net/

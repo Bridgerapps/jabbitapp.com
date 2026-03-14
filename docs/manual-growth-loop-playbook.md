@@ -3,7 +3,7 @@
 Purpose: keep the hourly loop **distribution-first**, non-repetitive, and tied to **installs** (track paid, but optimize for installs first).
 
 ## 0) Inputs (always read)
-- `WORKLOG.md` (what we actually did)
+- `data/status/manual-growth-loop-history.json` (recent run history / what actually advanced)
 - `docs/kpi-YYYY-MM-DD.md` (north star + funnel health)
 - `MEMORY.md` (hard rules + preferences)
 - `data/status/manual-growth-loop-ledger.json` (what’s actually queued)
@@ -37,7 +37,7 @@ Hard anti-busywork rule:
 - Instead, produce a **10-minute send plan** (who sends what, where, with links) and/or do **M** (measurement) so we can attribute outcomes.
 
 ## 2) Non-repetition guardrail
-Before acting, scan the last ~5 WORKLOG entries and avoid repeating the same taxonomy two runs in a row.
+Before acting, scan the last ~5 entries in `data/status/manual-growth-loop-history.json` and avoid repeating the same taxonomy two runs in a row.
 Examples:
 - If the last run was mostly **C** (copy packs), the next run should be **L** or **M**.
 - If we already generated clinic outreach copy this cycle, the next run should find *new* leads or create a *manual send plan*.
@@ -46,7 +46,7 @@ Examples:
 If `web_search` rate limits (429) or is flaky:
 1. Switch to **local docs + existing lead lists** (don’t stall the run).
 2. Use **web_fetch** only for 1–2 known URLs (targeted, low volume).
-3. Capture the failure in WORKLOG + add a “retry later” note (don’t loop).
+3. Capture the failure in `data/status/manual-growth-loop-history.json` or `data/logs/manual-growth-loop.jsonl` + add a “retry later” note (don’t loop).
 
 ## 4) Output that actually moves installs (72h lens)
 Preferred hourly outputs:
