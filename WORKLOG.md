@@ -102,3 +102,5 @@ Lightweight running log of actions taken (UTC).
 
 ## 2026-03-14
 - 14:06Z — Growth loop: created 3 new podcast outreach drafts (Fat Science + Mamamia Well + Hungry For More) with UTMs in docs/distribution/manual-send-queue-2026-03-14-1405Z.md; counter=106.
+- 16:06Z — Growth loop: moved 6 stale `ready_to_send` items to `awaiting_owner` in ledger (unblocked preflight); refreshed docs/distribution/SEND_NOW.md to always point at latest brief + app directory checklist; counter=108.
+- 17:06Z — Growth loop: verified 3 items are `ready_to_send`; patched ledger so each ready_to_send item references `docs/distribution/send-now-brief-latest.md` (brief pointer was missing); counter=109.

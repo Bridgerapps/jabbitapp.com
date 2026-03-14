@@ -8,9 +8,10 @@ If you have 15 minutes, do this. No new lead sourcing until `ready_to_send` is e
 bash scripts/manual-growth-loop/ready-to-send.sh
 ```
 
-## 1) Open the current copy/paste brief
+## 1) Open the current copy/paste brief (always use “latest”)
 
-- `docs/distribution/send-now-brief-2026-03-12-1117Z.md`
+- `docs/distribution/send-now-brief-latest.md`
+- Optional copy/paste pack: `docs/send-now-pack-latest.txt`
 
 Send the **top 3** first (it’s already ordered).
 
@@ -22,10 +23,18 @@ After each message goes out:
 bash scripts/manual-growth-loop/mark-sendqueue-sent.sh <ledger_send_id> --yes
 ```
 
-## 3) What’s next / follow-ups
+## 3) Owner backlog (not blocking the loop, but still real)
+
+- `docs/distribution/awaiting-owner-queue-2026-03-14-1206Z.md`
+
+## 4) If you still have time (next highest leverage)
+
+Do 3 quick manual app directory submissions:
+- pack: `docs/distribution/app-directory-submission-pack-2026-03-14.md`
+- checklist: `docs/distribution/app-directory-submission-checklist-2026-03-14.md`
+
+## 5) What’s next
 
 ```bash
 bash scripts/manual-growth-loop/ledger-next.sh
 ```
-
-If `ready_to_send` is empty, *then* generate more targets. Until then, ship the backlog.
