@@ -26,6 +26,10 @@ need "$LEDGER" || exit 1
   exit 2
 }
 
+# Reconcile state drift (counter can advance without record-run entries).
+# This keeps audits reliable even if a run increments the counter manually.
+"$ROOT/scripts/manual-growth-loop/reconcile-run-state.sh" >/tmp/manual-growth-loop-reconcile.txt 2>&1 || true
+
 # Read counter WITHOUT mutating it (cron/job runner owns increments).
 iter=$(jq -r '.count // 0' "$COUNTER" 2>/dev/null || echo 0)
 next=$((iter+1))
