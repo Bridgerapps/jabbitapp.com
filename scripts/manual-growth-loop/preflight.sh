@@ -37,6 +37,16 @@ draft=$(jq -r '[.sendQueues[] | select(.status=="draft_needed")] | length' "$LED
 
 now=$(date -u +%FT%TZ)
 
+# Reliability hint: detect when the counter is advancing but run history isn't being recorded.
+last_hist_iter=$(jq -r 'if (type=="array" and length>0) then .[-1].iteration else null end' "$HISTORY" 2>/dev/null || echo null)
+if [ "$last_hist_iter" != "null" ]; then
+  gap=$(( iter - last_hist_iter ))
+  if [ "$gap" -ge 2 ]; then
+    echo "WARN: counter is ahead of recorded history (counter.current=$iter, history.last=$last_hist_iter, gap=$gap)."
+    echo "      Fix: use scripts/manual-growth-loop/start-run.sh (preferred) or record-run.sh every run."
+  fi
+fi
+
 echo "now: $now"
 echo "counter.current: $iter"
 echo "iteration.next: $next"
