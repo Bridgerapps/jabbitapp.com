@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-14T13:37:13Z",
+  "updated": "2026-03-15T13:37:03Z",
   "rules": [
     {
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
@@ -829,6 +829,23 @@
         {
           "href": "/glp1-injection-reminder-app.html",
           "text": "Reminder setup patterns (follow-ups, reorder reminders)"
+        },
+        {
+          "href": "/privacy/",
+          "text": "Privacy policy (how your data is handled)"
+        }
+      ]
+    },
+    {
+      "file": "leucovorin-wellcovorin-fda-approval-cerebral-folate-deficiency.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Simple medication tracking (dates, notes, changes)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder app guide (building a routine that sticks)"
         },
         {
           "href": "/privacy/",

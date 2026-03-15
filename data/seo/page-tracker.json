@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-14T13:36:32Z",
-  "total_pages": 49,
+  "last_updated": "2026-03-15T13:36:16Z",
+  "total_pages": 50,
   "topics": [
     {
       "topic": "bpc-157",
@@ -251,6 +251,11 @@
       "topic": "omnipod-5-pod-correction-march-2026",
       "filename": "omnipod-5-pod-correction-march-2026.html",
       "created": "2026-03-14"
+    },
+    {
+      "topic": "leucovorin-wellcovorin-fda-approval-cerebral-folate-deficiency",
+      "filename": "leucovorin-wellcovorin-fda-approval-cerebral-folate-deficiency.html",
+      "created": "2026-03-15"
     }
   ],
   "suggested_topics": [
