@@ -1,62 +1,49 @@
 SEND NOW (TOP 3 EMAILS)
 
-1) The Plus SideZ
-To: kim@theplussidez.com
-Subject: Tiny non-medical GLP-1 shot log + reminders your listeners can use
-
-Hi Kim — quick one.
-
-I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (shot date/time, site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
-
-If you ever share listener resources, feel free to drop this link in show notes:
-https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_plussidez&utm_medium=email&utm_campaign=20260309_t1
-
-If you tell me whether your audience skews Ozempic vs Zepbound vs Mounjaro, I can send a perfectly-matched link + 1-sentence blurb.
-
-Thanks —
-Jon
-
-After send:
-  bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-09-plussidez-1 --yes
-
-----------------------------------------
-
-2) On The Pen
-To: dave@onthepen.com
+1) Fat Science Podcast
+To: questions@fatsciencepodcast.com
 Subject: Tiny free GLP‑1 injection log resource for your listeners (non-medical)
 
-Hi Dave — quick one.
+Hi — quick one. I built a free, non-medical GLP‑1 injection log / dose timeline page that some listeners might find handy when they’re trying to remember dates + doses.
 
-I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (shot date/time, injection site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
+If you keep a “resources” list or show notes links, feel free to include it:
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_fatscience&utm_medium=email&utm_campaign=20260314_t1
 
-If you ever share a “resources” link, feel free to drop this in show notes:
-https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_onthepen&utm_medium=email&utm_campaign=20260309_t1
+If you’d rather I format it as 1–2 lines for show notes, tell me your preferred style and I’ll send a clean snippet.
 
-If you tell me whether your audience skews Ozempic vs Zepbound vs Mounjaro, I can send a perfectly-matched link.
-
-Thanks —
-Jon
+(Not medical advice — purely tracking/logging.)
 
 After send:
-  bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-onthepen-1 --yes
+  bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-14-fatscience-1 --yes
 
 ----------------------------------------
 
-3) GLP-1 Tribe
-To: hello@glp1tribe.com
-Subject: Free GLP‑1 routine tracker for your listeners (simple + non-medical)
+2) Mamamia “Well.”
+To: well@mamamia.com.au
+Subject: Free GLP‑1 injection log link (for show notes/resources)
 
-Hi — quick one.
+Hi Well. team — I’ve got a free, non-medical GLP‑1 injection log / dose timeline page that’s meant to help people track shot dates + doses quickly.
 
-I’m building Jabbit, a simple iPhone-friendly **GLP‑1 injection log + reminders** (shot date/time, injection site rotation, and notes). It’s intentionally non-medical: no dosing guidance, no injection technique — just a clean routine tracker.
+If you maintain a resources list for GLP‑1 episodes, you’re welcome to include it:
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_mamamia_well&utm_medium=email&utm_campaign=20260314_t1
 
-If you ever share a “resources” link, feel free to use:
-https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_glp1tribe&utm_medium=email&utm_campaign=20260309_t1
-
-Happy to swap in an Ozempic/Zepbound/Mounjaro-specific link + 1-sentence blurb if you tell me what most of your listeners use.
-
-Thanks —
-Jon
+If it’s useful, I can also send a 1–2 sentence “show notes” blurb in your exact style.
 
 After send:
-  bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-08-glp1tribe-1 --yes
+  bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-14-mamamiawell-1 --yes
+
+----------------------------------------
+
+3) Hungry For More
+To: thehungryformorepodcast@gmail.com
+Subject: Free GLP‑1 shot log / dose timeline link (non-medical)
+
+Hi — quick resource for any listeners using GLP‑1s: I built a free, non-medical injection log / dose timeline page so people can keep dates + doses straight.
+
+If you ever share tools/resources in show notes, here’s the link:
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_hungryformore&utm_medium=email&utm_campaign=20260314_t1
+
+Happy to rewrite as a tighter show-notes snippet if you tell me your format.
+
+After send:
+  bash scripts/manual-growth-loop/mark-sendqueue-sent.sh send-2026-03-14-hungryformore-1 --yes
