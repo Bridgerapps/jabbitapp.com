@@ -25,6 +25,10 @@ while [ $# -gt 0 ]; do
   esac
 done
 
+# Patch any gaps first (e.g. if the counter was advanced without record-run).
+# This keeps audit-last-5 and JSONL telemetry reliable.
+bash "$ROOT/scripts/manual-growth-loop/reconcile-run-state.sh" >/dev/null || true
+
 iteration=$(bash "$ROOT/scripts/manual-growth-loop/increment-counter.sh" "$COUNTER")
 
 mode="growth"
