@@ -70,7 +70,11 @@ else
   if [ "$code" -eq 10 ]; then
     cat /tmp/manual-growth-loop-stagnation.txt
     echo "STOP: stale ready_to_send queue — send + mark sent before creating new work"
-    echo "hint: run $ROOT/scripts/manual-growth-loop/stale-ready-to-send-nudge.sh"
+    echo
+    # Reduce decision load: print the actual nudge payload inline.
+    # (Safe: no external sends; only prints suggestions + updates local nudge state.)
+    FORCE=1 "$ROOT/scripts/manual-growth-loop/stale-ready-to-send-nudge.sh" || true
+    echo
     echo "hint: if this has been stuck for days, generate a send-only escalation brief (rate-limited):"
     echo "      $ROOT/scripts/manual-growth-loop/maybe-escalate-stale-ready.sh"
     exit 33
@@ -86,6 +90,8 @@ THRESHOLD_SECONDS="${THRESHOLD_SECONDS:-86400}"
 if ! grep -q "^STALE_READY_REPORT: none" /tmp/manual-growth-loop-stale-ready.txt; then
   cat /tmp/manual-growth-loop-stale-ready.txt
   echo "STOP: ready_to_send items are older than ${THRESHOLD_SECONDS}s — send/close + mark state before new work"
+  echo
+  FORCE=1 "$ROOT/scripts/manual-growth-loop/stale-ready-to-send-nudge.sh" || true
   exit 33
 fi
 

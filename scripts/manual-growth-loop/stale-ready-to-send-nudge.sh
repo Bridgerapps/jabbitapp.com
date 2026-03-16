@@ -59,7 +59,8 @@ fi
 
 # Nudge only if the queue hasn't changed AND we've waited long enough.
 # (If count changed, we allow a nudge immediately because it's new work.)
-if [[ "$ready_count" -eq "$last_ready" && "$delta" -lt "$THRESHOLD_SECONDS" ]]; then
+# If FORCE=1, always print the nudge payload (used by preflight STOP to reduce decision load).
+if [[ "${FORCE:-0}" != "1" && "$ready_count" -eq "$last_ready" && "$delta" -lt "$THRESHOLD_SECONDS" ]]; then
   echo "OK: ready_to_send unchanged ($ready_count) but within threshold (${delta}s < ${THRESHOLD_SECONDS}s)"
   exit 0
 fi
