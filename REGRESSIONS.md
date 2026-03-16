@@ -11,6 +11,7 @@ Load this every session. Keep each line as: **failure → guardrail**.
 - [2026-02-25] Posted generic low-effort Reddit comments and got zero engagement → **Generate context-specific comments and target fresher medium-size threads (not old mega-threads) for visibility.**
 - [2026-02-25] Posted a comment that crossed into medical/lifestyle advice → **Reddit comments must be non-prescriptive: ask clarifying/context questions, share discussion framing, never tell people what to do medically.**
 - [2026-02-26] Replicate token leaked in old git branches → **Never commit secrets to git; use env vars; scan before push.**
+- [2026-03-16] Nearly sent outbound email from the wrong sender/domain due to inherited config assumptions → **Release-blocking pre-send check: explicitly verify From name/email/domain + Reply-To + link domains before any send; never trust inherited config for brand identity; do a test send to self first.**
 
 ## How to maintain
 - Add new entries immediately after meaningful failures.
