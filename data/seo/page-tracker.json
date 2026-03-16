@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-15T13:36:16Z",
-  "total_pages": 50,
+  "last_updated": "2026-03-16T13:36:29Z",
+  "total_pages": 51,
   "topics": [
     {
       "topic": "bpc-157",
@@ -256,6 +256,11 @@
       "topic": "leucovorin-wellcovorin-fda-approval-cerebral-folate-deficiency",
       "filename": "leucovorin-wellcovorin-fda-approval-cerebral-folate-deficiency.html",
       "created": "2026-03-15"
+    },
+    {
+      "topic": "omnipod-5-pod-recall-correction-under-delivery-insulet-2026",
+      "filename": "omnipod-5-pod-recall-correction-under-delivery-insulet-2026.html",
+      "created": "2026-03-16"
     }
   ],
   "suggested_topics": [
