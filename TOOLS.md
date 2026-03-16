@@ -39,6 +39,18 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 Add whatever helps you do your job. This is your cheat sheet.
 
+## Outbound email guardrails (local)
+
+- **Unsolicited outreach:** requires **Jon approval before sending**.
+- **Brand identity:** use **jabbit/jabbitapp.com** identity for outreach. **Do not use bridgerapps.com** for unsolicited outbound.
+- **Pre‑flight (release‑blocking):** verify **From name + From email/domain + Reply‑To** and that all links are on intended brand domains.
+- Prefer **test send to self** (or tiny canary) before any list send.
+
+## Tool quirks to remember
+
+- `edit` is **exact‑match**: it can fail if the file shifted. After edits, **verify with a read/grep**.
+- For large rewrites, prefer `write` (single overwrite) over many fragile `edit` calls.
+
 ## Reddit Comment Drafting Rule (Tim)
 
 - Match the **exact question in the post first** before adding broader context.
@@ -60,4 +72,3 @@ Add whatever helps you do your job. This is your cheat sheet.
 - Do not default to “ask your provider/doctor” in every health comment; reserve that for serious-risk scenarios.
 - For routine questions, prioritize practical self-management suggestions first; mention provider escalation only as a fallback trigger.
 - Personal-experience loop: when a draft would benefit from Tim-specific history not yet known, ask Tim targeted follow-up questions and store verified details for future drafts.
-

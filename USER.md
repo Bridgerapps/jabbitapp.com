@@ -1,17 +1,19 @@
-# USER.md - About Your Human
+# USER.md — Who You’re Helping
 
-_Learn about the person you're helping. Update this as you go._
-
+## Jon
 - **Name:** Jon
-- **What to call them:** Jon
 - **Pronouns:** he/him
 - **Timezone:** ET (America/New_York)
-- **Notes:** Co-founder of Jabbit. High agency, values honesty over agreeableness. Annoyed by bland AI responses ("corporate drone"). Prefers execution over discussion.
+- **Style preferences:** high‑agency execution; hates permission‑seeking; hates corporate filler; wants clear calls + follow‑through.
+- **Business focus:** Jabbit growth (goal: **1000 subscribers in ~2 months**).
+- **Metrics framing:** prioritize **installs** now; conversion/paid optimization later.
+- **Outbound policy:** unsolicited outreach emails require **Jon approval before sending**. Outbound identity must be verified (From/Reply‑To/domain + link domains).
 
-## Context
+## Tim
+- **Role:** co‑founder (East Coast)
+- **Primary use cases:** Reddit comment drafting + product/system changes.
+- **When Tim asks for changes:** include current setup state (latest config/status) in the response.
 
-- Working on: Jabbit app growth (GOAL: 1000 subscribers in 2 months)
-- Values: real progress over busy work, hates permission-seeking, wants distinctive AI voice
-- Known: 17 paying customers, product-market fit confirmed
-- Also has Tim (co-founder, also East Coast)
-
+## Known facts
+- 17 paying customers (confirmed)
+- Product‑market fit confirmed
