@@ -8,13 +8,24 @@ HISTORY_JSON="$ROOT/data/status/manual-growth-loop-history.json"
 HISTORY_JSONL="$ROOT/data/logs/manual-growth-loop.jsonl"
 
 print_last5() {
+  # Prefer JSONL, but de-dupe by iteration so "start" and "finish" records don't crowd out distinct runs.
   if [ -s "$HISTORY_JSONL" ]; then
-    lc=$(wc -l < "$HISTORY_JSONL" | tr -d ' ')
-    if [ "${lc:-0}" -ge 5 ]; then
-      echo "# Last 5 runs (from JSONL; most recent first)"
-      tail -n 5 "$HISTORY_JSONL" | tac
-      return 0
-    fi
+    echo "# Last 5 distinct iterations (from JSONL; most recent first)"
+    HISTORY_JSONL="$HISTORY_JSONL" node - <<'NODE'
+const fs = require('fs');
+const p = process.env.HISTORY_JSONL;
+const lines = fs.readFileSync(p,'utf8').trim().split(/\n+/).filter(Boolean);
+const parsed = [];
+for (const ln of lines) {
+  try { parsed.push(JSON.parse(ln)); } catch {}
+}
+// Keep only the most recent record per iteration.
+const byIter = new Map();
+for (const e of parsed) byIter.set(String(e.iteration), e);
+const uniq = [...byIter.values()].sort((a,b)=> (a.ts||'').localeCompare(b.ts||'')).reverse();
+for (const e of uniq.slice(0,5)) console.log(JSON.stringify(e));
+NODE
+    return 0
   fi
 
   if [ -s "$HISTORY_JSON" ]; then
