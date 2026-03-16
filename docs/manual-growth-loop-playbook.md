@@ -18,8 +18,9 @@ Fast check (recommended at the top of every run):
 - `scripts/manual-growth-loop/stale-ready-to-send-nudge.sh` → prints a ready-to-send “nudge payload” if the queue is stagnating (rate-limited by a local state file).
 
 Reliability tip:
-- Preferred entrypoint: `scripts/manual-growth-loop/start-run.sh` → increments the canonical counter, computes mode, updates `data/status/manual-growth-loop-latest.json`, and records the run.
-- If you use `start-run.sh`, **do not** separately run `increment-counter.sh` in the same run (prevents double-increment bugs).
+- Preferred entrypoint: `scripts/manual-growth-loop/run.sh` → calls `start-run.sh` (increments + records) and then runs `preflight.sh` (guardrails) so we don’t forget steps.
+- Under the hood: `scripts/manual-growth-loop/start-run.sh` increments the canonical counter, computes mode, updates `data/status/manual-growth-loop-latest.json`, and records the run.
+- If you use `start-run.sh` (directly), **do not** separately run `increment-counter.sh` in the same run (prevents double-increment bugs).
 - If you’re doing something custom, record each run via `scripts/manual-growth-loop/record-run.sh` (writes both `data/status/manual-growth-loop-history.json` + `data/logs/manual-growth-loop.jsonl` for easy tail/grep)
 
 ## 1) Action taxonomy (for de-dupe)
