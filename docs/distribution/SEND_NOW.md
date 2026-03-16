@@ -8,6 +8,15 @@ If you have 15 minutes, do this. No new lead sourcing until `ready_to_send` is e
 bash scripts/manual-growth-loop/ready-to-send.sh
 ```
 
+## Sender boundary (hard rule)
+
+Jabbit outbound must **never** send from any Adprax domain/sender.
+If you’re using any automated sender, sanity-check before sending:
+
+```bash
+bash scripts/manual-growth-loop/guard-no-adprax-sender.sh
+```
+
 ## 1) Open the current copy/paste brief (always use “latest”)
 
 - `docs/distribution/send-now-brief-latest.md`

@@ -26,6 +26,10 @@ need "$LEDGER" || exit 1
   exit 2
 }
 
+# Hard boundary: Jabbit outbound must never use Adprax sender/domain.
+# (If someone reintroduces an automated sender later, this guard should catch it.)
+"$ROOT/scripts/manual-growth-loop/guard-no-adprax-sender.sh" || exit $?
+
 # Reconcile state drift (counter can advance without record-run entries).
 # This keeps audits reliable even if a run increments the counter manually.
 "$ROOT/scripts/manual-growth-loop/reconcile-run-state.sh" >/tmp/manual-growth-loop-reconcile.txt 2>&1 || true

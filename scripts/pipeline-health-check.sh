@@ -167,6 +167,14 @@ else
   say_bad "No API key"
 fi
 
+# Guardrail: ensure we are not configured to send from Adprax.
+# (Jabbit + Adprax are different apps; never cross the streams.)
+if bash "$WORKSPACE/scripts/manual-growth-loop/guard-no-adprax-sender.sh" >/dev/null 2>&1; then
+  say_ok "Sender domain boundary (no Adprax sender detected)"
+else
+  say_bad "Sender domain boundary violated (Adprax sender detected)"
+fi
+
 # Twitter
 echo ""
 echo "🐦 Twitter:"
