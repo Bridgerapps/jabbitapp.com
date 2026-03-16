@@ -40,6 +40,7 @@ const root = '/home/jabbit/.openclaw/workspace';
 const histPath = `${root}/data/status/manual-growth-loop-history.json`;
 const latestPath = `${root}/data/status/manual-growth-loop-latest.json`;
 const jsonlPath = `${root}/data/logs/manual-growth-loop.jsonl`;
+const driftPath = `${root}/data/status/manual-growth-loop-drift.json`;
 
 const count = Number(process.env.COUNT||0);
 const last = Number(process.env.LAST||0);
@@ -69,6 +70,16 @@ fs.writeFileSync(histPath, JSON.stringify(hist, null, 2) + '\n');
 
 const latest = { ts, iteration: count, mode: (count % 5 === 0) ? 'self-improvement' : 'growth' };
 fs.writeFileSync(latestPath, JSON.stringify(latest, null, 2) + '\n');
+
+// Drift telemetry: how often we have to reconcile gaps.
+let drift = { lastTs: null, reconciledEvents: 0, lastAppended: 0, lastFrom: 0, lastTo: 0 };
+try { drift = JSON.parse(fs.readFileSync(driftPath,'utf8')); } catch {}
+drift.lastTs = ts;
+drift.reconciledEvents = Number(drift.reconciledEvents||0) + 1;
+drift.lastAppended = appended;
+drift.lastFrom = last;
+drift.lastTo = count;
+fs.writeFileSync(driftPath, JSON.stringify(drift, null, 2) + '\n');
 
 console.log(`ok: reconciled gap (history.last=${last} -> counter=${count}; appended=${appended})`);
 NODE
