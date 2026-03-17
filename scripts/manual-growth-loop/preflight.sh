@@ -75,6 +75,10 @@ else
     # (Safe: no external sends; only prints suggestions + updates local nudge state.)
     FORCE=1 "$ROOT/scripts/manual-growth-loop/stale-ready-to-send-nudge.sh" || true
     echo
+    # Reduce back-and-forth: generate a single owner-facing ping (rate-limited) with preflight + mark-sent cmds.
+    "$ROOT/scripts/manual-growth-loop/maybe-generate-owner-send-ping.sh" || true
+    echo "owner ping: $ROOT/data/status/owner-send-ping-latest.txt"
+    echo
     echo "hint: generate a send-only escalation brief (rate-limited):"
     echo "      $ROOT/scripts/manual-growth-loop/maybe-escalate-stale-ready.sh"
     echo
@@ -103,6 +107,8 @@ if ! grep -q "^STALE_READY_REPORT: none" /tmp/manual-growth-loop-stale-ready.txt
   echo "STOP: ready_to_send items are older than ${THRESHOLD_SECONDS}s — send/close + mark state before new work"
   echo
   FORCE=1 "$ROOT/scripts/manual-growth-loop/stale-ready-to-send-nudge.sh" || true
+  "$ROOT/scripts/manual-growth-loop/maybe-generate-owner-send-ping.sh" || true
+  echo "owner ping: $ROOT/data/status/owner-send-ping-latest.txt"
   exit 33
 fi
 
