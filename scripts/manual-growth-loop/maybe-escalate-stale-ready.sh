@@ -2,7 +2,8 @@
 set -euo pipefail
 
 # Rate-limited wrapper around escalate-stale-ready.sh
-# Purpose: prevent endless churn of new escalation briefs when the queue is stuck.
+# Purpose: prevent endless churn of new escalation briefs when the queue is stuck,
+# while still allowing periodic re-escalation when nothing has changed.
 
 ROOT="/home/jabbit/.openclaw/workspace"
 LEDGER="${1:-$ROOT/data/status/manual-growth-loop-ledger.json}"
@@ -23,14 +24,8 @@ last=$(jq -r '.lastEscalationUtc // empty' "$STATE" 2>/dev/null || true)
 last_fp=$(jq -r '.lastLedgerFingerprint // empty' "$STATE" 2>/dev/null || true)
 now_epoch=$(date -u +%s)
 
-# Compute current ledger fingerprint; if the queue hasn't changed since last escalation,
-# don't generate a new brief even if the time window elapsed.
+# Compute current ledger fingerprint.
 cur_fp=$(jq -c '.sendQueues | sort_by(.leadId, .whenUtc, .status, .channel, .to, (.subject // ""))' "$LEDGER" | sha256sum | awk '{print $1}')
-
-if [ -n "$last_fp" ] && [ "$last_fp" != "null" ] && [ "$last_fp" = "$cur_fp" ]; then
-  echo "SKIP: ledger unchanged since last escalation (fingerprint=$cur_fp)"
-  exit 0
-fi
 
 last_epoch=0
 if [ -n "$last" ] && [ "$last" != "null" ]; then
@@ -42,6 +37,13 @@ age=$((now_epoch-last_epoch))
 if [ "$last_epoch" -gt 0 ] && [ "$age" -lt "$min_interval_sec" ]; then
   echo "SKIP: escalation rate-limited (last=${last}, age=${age}s < ${min_interval_sec}s)"
   exit 0
+fi
+
+# If the queue hasn't changed since last escalation AND we're still within the rate-limit
+# window, we skip. If we're *past* the window, we allow a periodic re-escalation even
+# with the same fingerprint (otherwise we can get stuck forever).
+if [ -n "$last_fp" ] && [ "$last_fp" != "null" ] && [ "$last_fp" = "$cur_fp" ]; then
+  echo "NOTE: ledger unchanged since last escalation (fingerprint=$cur_fp) — allowing re-escalation because rate-limit window elapsed"
 fi
 
 # Run escalation (it will decide based on THRESHOLD_SEC whether to write anything)

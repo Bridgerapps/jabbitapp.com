@@ -75,8 +75,19 @@ else
     # (Safe: no external sends; only prints suggestions + updates local nudge state.)
     FORCE=1 "$ROOT/scripts/manual-growth-loop/stale-ready-to-send-nudge.sh" || true
     echo
-    echo "hint: if this has been stuck for days, generate a send-only escalation brief (rate-limited):"
+    echo "hint: generate a send-only escalation brief (rate-limited):"
     echo "      $ROOT/scripts/manual-growth-loop/maybe-escalate-stale-ready.sh"
+    echo
+    # If nudges are repeating, create/refresh an escalation brief sooner (12h) to reduce stall time.
+    # This is still non-sending and rate-limited, but it gives the owner a clean, current send burst.
+    # (Uses the nudge state JSON written by stale-ready-to-send-nudge.sh.)
+    NUDGE_STATE="$ROOT/data/status/manual-growth-loop-nudge.json"
+    if [ -f "$NUDGE_STATE" ]; then
+      unchanged=$(jq -r '.unchangedNudges // 0' "$NUDGE_STATE" 2>/dev/null || echo 0)
+      if [ "$unchanged" -ge 10 ]; then
+        THRESHOLD_SEC=43200 MIN_INTERVAL_SECONDS=21600 "$ROOT/scripts/manual-growth-loop/maybe-escalate-stale-ready.sh" || true
+      fi
+    fi
     exit 33
   fi
   # Unknown error: surface it, but don't block the whole system.
