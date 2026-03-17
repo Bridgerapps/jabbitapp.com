@@ -35,6 +35,11 @@
     ul{ margin:8px 0 0 18px; }
     .muted{ color:var(--muted); }
     .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px 12px; border-radius:10px; }
+    .miniProof{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:16px; }
+    .miniProof div{ background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:10px 12px; }
+    .miniProof strong{ display:block; color:#fff; font-size:.98rem; }
+    .miniProof span{ color:rgba(255,255,255,.82); font-size:.92rem; }
+    .inlineCta{ margin-top:18px; padding:14px; border:1px solid var(--border); border-radius:14px; background:#f8fafc; }
 
     table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
     th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
@@ -98,6 +103,11 @@
         <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="tracker_ozempic_hero" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
         <a class="btn btnGhost" href="/glp-1-injection-tracking-guide.html">Read: Injection tracking guide</a>
       </div>
+      <div class="miniProof" aria-label="Why people use an Ozempic tracker">
+        <div><strong>Never guess your last shot</strong><span>Keep dates, dose, and notes in one place.</span></div>
+        <div><strong>Private by default</strong><span>iCloud sync instead of a random health-data silo.</span></div>
+        <div><strong>Built for routine</strong><span>Reminders + site rotation notes without overcomplicating it.</span></div>
+      </div>
       <p class="small" style="margin-top:12px; opacity:.95;"><strong>Free download.</strong> iCloud sync. No account required.</p>
       <p class="small" style="margin-top:10px; opacity:.9;">Educational only. Jabbit does not provide medical advice. Always follow your clinician’s instructions.</p>
     </section>
@@ -119,6 +129,12 @@
         <h2>Printable injection log template</h2>
         <div class="note">
           <strong>Tip:</strong> If you want “minimum viable tracking,” log <em>only</em> date/time + site + one note. Consistency beats detail.
+        </div>
+
+        <div class="inlineCta">
+          <strong>Want this without paper friction?</strong>
+          <p class="muted" style="margin:6px 0 10px;">Jabbit turns this same log into a simple private routine: reminder, dose/date history, site notes, and one-tap updates after each shot.</p>
+          <p style="margin:0;"><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="tracker_ozempic_template_cta" target="_blank" rel="noopener noreferrer">Get the free iPhone app</a></p>
         </div>
 
         <table aria-label="Ozempic injection log template">
