@@ -40,6 +40,11 @@ next=$((iter+1))
 mode="growth"
 if (( next % 5 == 0 )); then mode="self-improvement"; fi
 
+# Before doing any STOP checks, auto-demote stale ready_to_send items.
+# This prevents endless "STOP" loops when the owner isn't in a send window.
+# Default threshold aligns with stale-ready-report (24h) but can be overridden.
+"$ROOT/scripts/manual-growth-loop/auto-demote-stale-ready.sh" "$LEDGER" >/tmp/manual-growth-loop-auto-demote.txt 2>&1 || true
+
 ready=$(jq -r '[.sendQueues[] | select(.status=="ready_to_send")] | length' "$LEDGER")
 draft=$(jq -r '[.sendQueues[] | select(.status=="draft_needed")] | length' "$LEDGER")
 
