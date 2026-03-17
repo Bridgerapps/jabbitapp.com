@@ -45,4 +45,10 @@ else
   echo "preflight: ok (code=$code)"
 fi
 
+# Reliability upgrade: cron-driven runs often start with an empty note.
+# Auto-append a FINISH record summarizing the preflight outcome so audits don't go blank.
+if [ -z "$note" ]; then
+  bash "$ROOT/scripts/manual-growth-loop/auto-finish.sh" --preflight-code "$code" >/dev/null 2>&1 || true
+fi
+
 exit 0
