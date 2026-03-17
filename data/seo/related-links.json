@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-16T13:37:22Z",
+  "updated": "2026-03-17T13:37:02Z",
   "rules": [
     {
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
@@ -867,6 +867,23 @@
         {
           "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
           "text": "Staying organized during a supply disruption (refill plan + notes)"
+        }
+      ]
+    },
+    {
+      "file": "omnipod-5-pods-medical-device-correction-internal-tubing-tear.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Private log + timeline (helpful when troubleshooting devices)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder setup patterns (follow-ups, reorder reminders)"
+        },
+        {
+          "href": "/privacy/",
+          "text": "Privacy policy (how your data is handled)"
         }
       ]
     }

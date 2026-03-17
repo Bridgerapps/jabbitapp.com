@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-16T13:36:29Z",
-  "total_pages": 51,
+  "last_updated": "2026-03-17T13:36:18Z",
+  "total_pages": 52,
   "topics": [
     {
       "topic": "bpc-157",
@@ -261,6 +261,11 @@
       "topic": "omnipod-5-pod-recall-correction-under-delivery-insulet-2026",
       "filename": "omnipod-5-pod-recall-correction-under-delivery-insulet-2026.html",
       "created": "2026-03-16"
+    },
+    {
+      "topic": "omnipod-5-pods-medical-device-correction-internal-tubing-tear",
+      "filename": "omnipod-5-pods-medical-device-correction-internal-tubing-tear.html",
+      "created": "2026-03-17"
     }
   ],
   "suggested_topics": [
