@@ -56,6 +56,8 @@ fi
 
 ready=$(jq -r '[.sendQueues[] | select(.status=="ready_to_send")] | length' "$LEDGER")
 draft=$(jq -r '[.sendQueues[] | select(.status=="draft_needed")] | length' "$LEDGER")
+awaiting=$(jq -r '[.sendQueues[] | select(.status=="awaiting_owner")] | length' "$LEDGER")
+planned=$(jq -r '[.sendQueues[] | select(.status=="planned")] | length' "$LEDGER")
 
 now=$(date -u +%FT%TZ)
 
@@ -73,7 +75,27 @@ echo "now: $now"
 echo "counter.current: $iter"
 echo "iteration.run: $run_iter"
 echo "mode: $mode"
-echo "ledger: ready_to_send=$ready draft_needed=$draft"
+echo "ledger: ready_to_send=$ready draft_needed=$draft awaiting_owner=$awaiting planned=$planned"
+
+# Write an at-a-glance ledger summary into latest.json so downstream tools (and humans)
+# don't need to re-parse the ledger file.
+# Safe: local-only state pointer.
+if [ -f "$LATEST" ]; then
+  NOW="$now" READY="$ready" DRAFT="$draft" AWAITING="$awaiting" PLANNED="$planned" node - <<'NODE'
+const fs = require('fs');
+const p = '/home/jabbit/.openclaw/workspace/data/status/manual-growth-loop-latest.json';
+let cur = {};
+try { cur = JSON.parse(fs.readFileSync(p, 'utf8')); } catch {}
+cur.ledger = {
+  ready_to_send: Number(process.env.READY),
+  draft_needed: Number(process.env.DRAFT),
+  awaiting_owner: Number(process.env.AWAITING),
+  planned: Number(process.env.PLANNED),
+};
+cur.preflight = { observedUtc: process.env.NOW };
+fs.writeFileSync(p, JSON.stringify(cur, null, 2) + '\n');
+NODE
+fi
 
 # Hard guardrail: if ready_to_send is stagnant, do NOT generate more work.
 # This prevents the loop from endlessly producing briefs/copy without state advancement.

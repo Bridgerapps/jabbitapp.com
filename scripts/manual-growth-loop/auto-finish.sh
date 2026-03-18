@@ -61,6 +61,10 @@ case "$code" in
     note="Preflight indicates self-improvement mode. Next: audit last 5 runs + apply 1 process upgrade."
     tags="R"
     ;;
+  0)
+    note="Preflight completed (code=0). ready_to_send=${ready} (oldest=${oldest}). Next: run safe default actions (no posting/sending): scripts/manual-growth-loop/growth-default-actions.sh"
+    tags="R"
+    ;;
   *)
     note="Preflight completed (code=${code}). ready_to_send=${ready} (oldest=${oldest})."
     tags="R"
