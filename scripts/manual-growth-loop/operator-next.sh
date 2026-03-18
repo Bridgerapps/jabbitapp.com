@@ -19,6 +19,7 @@ echo "---"
 case "$code" in
   0)
     echo "NEXT: run normal growth actions (preflight OK)"
+    echo "hint: safe default (no posting/sending): $ROOT/scripts/manual-growth-loop/growth-default-actions.sh"
     ;;
   22)
     echo "NEXT: self-improvement run (iteration%5==0) — do NOT do normal tasks first"

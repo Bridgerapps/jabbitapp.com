@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# growth-default-actions.sh
+#
+# Purpose: when preflight is OK (and we're not blocked on sends), run a small,
+# repeatable set of *safe* growth actions that produce fresh opportunity/measurement
+# state without doing any external authenticated posting/sending.
+#
+# This exists to prevent "growth" iterations from degenerating into no-op runs
+# (counter advances; history records "preflight ok"; nothing actually changes).
+#
+# Guardrails:
+# - NO automated posting/sending.
+# - Prefer writing ephemeral outputs to data/status/*.json (or JSONL), not WORKLOG/docs.
+# - Keep it to <=3 actions.
+
+ROOT="/home/jabbit/.openclaw/workspace"
+
+# Ensure we're not in a STOP/self-improvement state.
+set +e
+"$ROOT/scripts/manual-growth-loop/preflight.sh" >/tmp/manual-growth-loop-preflight.txt 2>&1
+code=$?
+set -e
+
+if [ "$code" -ne 0 ]; then
+  echo "growth-default-actions: preflight not OK (exit=$code) — refusing to run." >&2
+  echo "--- preflight output ---" >&2
+  cat /tmp/manual-growth-loop-preflight.txt >&2 || true
+  exit "$code"
+fi
+
+# Action 1) Measurement snapshot (keeps KPI dashboard honest downstream)
+# Writes: data/status/site-analytics.json
+bash "$ROOT/scripts/site-analytics-status.sh" >/dev/null
+
+# Action 2) Reddit opportunity scouting (manual-only execution later)
+# Writes: data/status/reddit-opps-*.json + reddit-opps-latest.json
+bash "$ROOT/scripts/reddit-daily-check-set.sh" >/dev/null
+
+# Action 3) Distribution backlog / directory submission pack refresh
+# Writes: data/status/app-directory-submissions.json + pack
+bash "$ROOT/scripts/distribution-daily-check-set.sh" >/dev/null
+
+echo "growth-default-actions: OK (measurement + reddit opps + distribution check)"
