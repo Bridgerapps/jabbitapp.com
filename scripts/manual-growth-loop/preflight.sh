@@ -34,11 +34,20 @@ need "$LEDGER" || exit 1
 # This keeps audits reliable even if a run increments the counter manually.
 "$ROOT/scripts/manual-growth-loop/reconcile-run-state.sh" >/tmp/manual-growth-loop-reconcile.txt 2>&1 || true
 
-# Read counter WITHOUT mutating it (cron/job runner owns increments).
+# Determine iteration/mode for *this* run.
+# IMPORTANT: start-run.sh increments the counter before calling preflight.
+# So we must NOT compute mode from (counter.current+1) here (off-by-one).
+LATEST="$ROOT/data/status/manual-growth-loop-latest.json"
 iter=$(jq -r '.count // 0' "$COUNTER" 2>/dev/null || echo 0)
-next=$((iter+1))
+run_iter="$iter"
 mode="growth"
-if (( next % 5 == 0 )); then mode="self-improvement"; fi
+if [ -f "$LATEST" ]; then
+  run_iter=$(jq -r '.iteration // empty' "$LATEST" 2>/dev/null || echo "$iter")
+  mode=$(jq -r '.mode // "growth"' "$LATEST" 2>/dev/null || echo "growth")
+else
+  # Fallback: infer mode from the counter value.
+  if (( iter % 5 == 0 )); then mode="self-improvement"; fi
+fi
 
 # Before doing any STOP checks, auto-demote stale ready_to_send items.
 # This prevents endless "STOP" loops when the owner isn't in a send window.
@@ -62,7 +71,7 @@ fi
 
 echo "now: $now"
 echo "counter.current: $iter"
-echo "iteration.next: $next"
+echo "iteration.run: $run_iter"
 echo "mode: $mode"
 echo "ledger: ready_to_send=$ready draft_needed=$draft"
 
