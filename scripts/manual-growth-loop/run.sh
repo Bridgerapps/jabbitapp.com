@@ -46,9 +46,18 @@ else
 fi
 
 # Reliability upgrade: cron-driven runs often start with an empty note.
-# Auto-append a FINISH record summarizing the preflight outcome so audits don't go blank.
+# If preflight is OK, run a safe default action set so growth iterations actually advance state.
+# Otherwise, auto-append a FINISH record summarizing the preflight outcome so audits don't go blank.
 if [ -z "$note" ]; then
-  bash "$ROOT/scripts/manual-growth-loop/auto-finish.sh" --preflight-code "$code" >/dev/null 2>&1 || true
+  if [ $code -eq 0 ]; then
+    # Safe, non-authenticated, non-sending actions only.
+    out=$(bash "$ROOT/scripts/manual-growth-loop/growth-default-actions.sh" 2>&1 || true)
+    bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
+      --tags "M,R,L" \
+      --note "Ran growth-default-actions (measurement + reddit opps + distribution check). Output: ${out//\n/ }"
+  else
+    bash "$ROOT/scripts/manual-growth-loop/auto-finish.sh" --preflight-code "$code" >/dev/null 2>&1 || true
+  fi
 fi
 
 exit 0
