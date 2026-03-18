@@ -20,15 +20,22 @@ mkdir -p "$OUT_DIR"
 
 NOW_UTC=$(date -u +%FT%TZ)
 
-# Pull top N ready_to_send items (oldest first)
-ITEMS_JSON=$(jq -c --argjson n "$LIMIT" '
+# Prefer ready_to_send. If none exist, fall back to awaiting_owner so Jon still has a clear next action.
+READY_JSON=$(jq -c --argjson n "$LIMIT" '
   .sendQueues
   | map(select(.status=="ready_to_send"))
   | sort_by(.whenUtc)
   | .[0:$n]
 ' "$LEDGER")
+READY_COUNT=$(jq 'length' <<<"$READY_JSON")
 
-COUNT=$(jq 'length' <<<"$ITEMS_JSON")
+AWAITING_JSON=$(jq -c --argjson n "$LIMIT" '
+  .sendQueues
+  | map(select(.status=="awaiting_owner"))
+  | sort_by(.awaitingOwnerUtc // .updatedUtc // "9999-12-31T00:00:00Z")
+  | .[0:$n]
+' "$LEDGER")
+AWAITING_COUNT=$(jq 'length' <<<"$AWAITING_JSON")
 
 {
   echo "MANUAL SEND PING (generated $NOW_UTC)"
@@ -44,11 +51,15 @@ COUNT=$(jq 'length' <<<"$ITEMS_JSON")
   echo "- Copy/paste pack: docs/send-now-pack-latest.txt"
   echo "- One-click mailto drafts: docs/send-now-mailto-links-latest.md"
   echo
-  if [ "$COUNT" -eq 0 ]; then
-    echo "No ready_to_send items found."
+
+  if [ "$READY_COUNT" -gt 0 ]; then
+    echo "TOP READY_TO_SEND ($READY_COUNT shown):"
+    jq -r '.[] | "- id: \(.id)\n  channel: \(.channel)\n  to: \(.to)\n  subject: \(.subject // "(none)")\n  brief: \(.brief // "(none)")\n  mark sent: scripts/manual-growth-loop/mark-sendqueue-sent.sh \(.id) --yes\n"' <<<"$READY_JSON"
+  elif [ "$AWAITING_COUNT" -gt 0 ]; then
+    echo "NO ready_to_send items. TOP AWAITING_OWNER ($AWAITING_COUNT shown):"
+    jq -r '.[] | "- id: \(.id)\n  channel: \(.channel)\n  to: \(.to)\n  subject: \(.subject // "(none)")\n  brief: \(.brief // "(none)")\n  after sending: scripts/manual-growth-loop/mark-sendqueue-sent.sh \(.id) --yes\n"' <<<"$AWAITING_JSON"
   else
-    echo "TOP READY_TO_SEND ($COUNT shown):"
-    jq -r '.[] | "- id: \(.id)\n  channel: \(.channel)\n  to: \(.to)\n  subject: \(.subject // "(none)")\n  brief: \(.brief // "(none)")\n  mark sent: scripts/manual-growth-loop/mark-sendqueue-sent.sh \(.id) --yes\n"' <<<"$ITEMS_JSON"
+    echo "No ready_to_send or awaiting_owner items found."
   fi
 } | tee "$OUT_FILE"
 
