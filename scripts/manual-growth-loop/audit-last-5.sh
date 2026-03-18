@@ -66,6 +66,23 @@ done
 
 echo
 
+echo "# Self-improvement debt (did we actually do it?)"
+# Heuristic: if a self-improvement run ends with the generic "Next: ...self-improvement" note,
+# it likely means we *didn't* perform the audit/process upgrade.
+si_n=$(printf "%s\n" "$LAST5" | grep -c '"mode":"self-improvement"' || true)
+si_unfinished=$(printf "%s\n" "$LAST5" | grep -c 'Preflight indicates self-improvement mode' || true)
+si_finished=$(printf "%s\n" "$LAST5" | grep -c 'SELF-IMPROVEMENT:' || true)
+if [ "$si_n" -gt 0 ]; then
+  echo "- self-improvement runs in last5: $si_n (finished=$si_finished unfinished=$si_unfinished)"
+  if [ "$si_unfinished" -gt 0 ]; then
+    echo "- fix: run scripts/manual-growth-loop/self-improvement-run.sh"
+  fi
+else
+  echo "- none in last5"
+fi
+
+echo
+
 echo "# Queue stagnation check (ledger)"
 if [ -f "$LEDGER" ]; then
   now=$(date -u +%s)

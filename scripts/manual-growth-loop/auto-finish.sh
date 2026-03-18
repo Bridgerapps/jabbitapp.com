@@ -58,7 +58,7 @@ case "$code" in
     tags="R"
     ;;
   22)
-    note="Preflight indicates self-improvement mode. Next: audit last 5 runs + apply 1 process upgrade."
+    note="Preflight indicates self-improvement mode. Next: run scripts/manual-growth-loop/self-improvement-run.sh (audit last 5 + apply 1 safe upgrade + record finish)."
     tags="R"
     ;;
   0)
