@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-17T13:37:02Z",
+  "updated": "2026-03-18T13:37:58Z",
   "rules": [
     {
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
@@ -884,6 +884,23 @@
         {
           "href": "/privacy/",
           "text": "Privacy policy (how your data is handled)"
+        }
+      ]
+    },
+    {
+      "file": "aldeyra-eye-disorder-drug-fda-declines-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder app guide (how to set a routine that actually sticks)"
+        },
+        {
+          "href": "/semaglutide-injection-reminder.html",
+          "text": "Reminder setup patterns (calendar windows, backups, and consistency)"
         }
       ]
     }

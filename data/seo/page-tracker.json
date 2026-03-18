@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-17T13:36:18Z",
-  "total_pages": 52,
+  "last_updated": "2026-03-18T13:36:17Z",
+  "total_pages": 53,
   "topics": [
     {
       "topic": "bpc-157",
@@ -266,6 +266,11 @@
       "topic": "omnipod-5-pods-medical-device-correction-internal-tubing-tear",
       "filename": "omnipod-5-pods-medical-device-correction-internal-tubing-tear.html",
       "created": "2026-03-17"
+    },
+    {
+      "topic": "aldeyra-eye-disorder-drug-fda-declines-2026-03",
+      "filename": "aldeyra-eye-disorder-drug-fda-declines-2026-03.html",
+      "created": "2026-03-18"
     }
   ],
   "suggested_topics": [
