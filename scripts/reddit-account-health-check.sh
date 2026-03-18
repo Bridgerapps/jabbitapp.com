@@ -48,10 +48,18 @@ pub_args=("${base_args[@]}")
 
 # --- Public visibility check (unauthenticated) ---
 pub=$(curl "${pub_args[@]}" "https://www.reddit.com/user/${username}/about.json?raw_json=1" || true)
+
+# Reddit sometimes returns a blocked HTML page for public profile endpoints from some networks.
+# Do not misclassify that as account trouble.
+if printf "%s" "$pub" | grep -qiE 'whoa there, pardner|request has been blocked due to a network policy|<html'; then
+  echo "Reddit public-profile check blocked by network policy; account status unknown from unauthenticated profile probe."
+  exit 0
+fi
+
 pub_err=$(printf "%s" "$pub" | jq -r '.error // 0' 2>/dev/null || echo 0)
 
 if [ "$pub_err" = "404" ]; then
-  echo "Reddit visibility alert: public profile returns 404 (possible shadow restriction)."
+  echo "Reddit visibility alert: public profile returns 404 (possible profile restriction or username mismatch)."
   exit 0
 fi
 

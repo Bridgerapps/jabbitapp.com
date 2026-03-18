@@ -35,8 +35,9 @@ fi
 bash "$ROOT/scripts/site-analytics-status.sh" >/dev/null
 
 # Action 2) Reddit opportunity scouting (manual-only execution later)
-# Writes: data/status/reddit-opps-*.json + reddit-opps-latest.json
-bash "$ROOT/scripts/reddit-daily-check-set.sh" >/dev/null
+# Writes: data/status/reddit-opps-*.json + reddit-opps-latest.json and reviewed candidate output
+REDDIT_DISCOVERY_USE_COOKIE=false REDDIT_DISCOVERY_COOKIE_FALLBACK=false \
+  python3 "$ROOT/scripts/reddit_smart_review_post.py" >/dev/null 2>&1 || true
 
 # Action 3) Distribution backlog / directory submission pack refresh
 # Writes: data/status/app-directory-submissions.json + pack

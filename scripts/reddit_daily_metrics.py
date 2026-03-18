@@ -60,8 +60,15 @@ def main() -> int:
     username = reddit_env.get('REDDIT_USERNAME', 'LifespanMaxer')
 
     # Public-only metrics (safe for cron): use /about.json without cookies.
+    # If Reddit blocks that endpoint from this network, preserve last-known karma instead of silently zeroing.
     about = curl_json(f'https://www.reddit.com/user/{username}/about.json?raw_json=1', proxy=proxy)
     total_karma = ((about.get('data') or {}).get('total_karma'))
+    if total_karma is None:
+        try:
+            kt = json.loads((WS / 'data' / 'karma-tracker.json').read_text(encoding='utf-8'))
+            total_karma = kt.get('total_karma')
+        except Exception:
+            total_karma = None
     if total_karma is None:
         total_karma = 0
 
