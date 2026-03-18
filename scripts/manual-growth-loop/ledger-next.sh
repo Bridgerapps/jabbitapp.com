@@ -14,7 +14,8 @@ window_epoch="$((now_epoch + window_hours*3600))"
 
 # Output: concise next items + overdue ready_to_send
 jq -r --argjson now "$now_epoch" --argjson win "$window_epoch" '
-  def to_epoch: ( .whenUtc | sub("\\.[0-9]+Z$";"Z") | fromdateiso8601 );
+  # Some items (e.g. contact_form drafts) may not have whenUtc yet; treat as far-future so they sort last.
+  def to_epoch: ( (.whenUtc // "9999-12-31T00:00:00Z") | sub("\\.[0-9]+Z$";"Z") | fromdateiso8601 );
 
   .sendQueues
   | map(. + {whenEpoch: (to_epoch)})

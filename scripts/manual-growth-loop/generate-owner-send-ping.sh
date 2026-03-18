@@ -33,7 +33,7 @@ COUNT=$(jq 'length' <<<"$ITEMS_JSON")
 {
   echo "MANUAL SEND PING (generated $NOW_UTC)"
   echo
-  echo "Context: Growth loop is hard-stopped until ready_to_send drains. These are the oldest items."
+  echo "Context: These are the next outbound touches awaiting your approval/send (nothing is auto-sent)."
   echo
   echo "PRE-FLIGHT (release-blocking):"
   echo "- Verify From name + From email/domain + Reply-To are correct (use jabbit/jabbitapp.com for outreach)"
