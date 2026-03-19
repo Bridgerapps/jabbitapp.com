@@ -54,17 +54,19 @@ if [ -z "$note" ]; then
     out=$(bash "$ROOT/scripts/manual-growth-loop/growth-default-actions.sh" 2>&1 || true)
 
     LAST_OUT="$ROOT/data/status/growth-default-actions-last.json"
-    ran_m=0; ran_r=0; ran_l=0
+    ran_m=0; ran_r=0; ran_l=0; ran_p=0
     if [ -f "$LAST_OUT" ]; then
       ran_m=$(jq -r '.ran.measurement // false' "$LAST_OUT" 2>/dev/null | grep -qi true && echo 1 || echo 0)
       ran_r=$(jq -r '.ran.reddit // false' "$LAST_OUT" 2>/dev/null | grep -qi true && echo 1 || echo 0)
       ran_l=$(jq -r '.ran.packs // false' "$LAST_OUT" 2>/dev/null | grep -qi true && echo 1 || echo 0)
+      ran_p=$(jq -r '.ran.owner_ping // false' "$LAST_OUT" 2>/dev/null | grep -qi true && echo 1 || echo 0)
     fi
 
     finish_tags=""
     [ "$ran_m" -eq 1 ] && finish_tags="${finish_tags}M,"
     [ "$ran_r" -eq 1 ] && finish_tags="${finish_tags}R,"
     [ "$ran_l" -eq 1 ] && finish_tags="${finish_tags}L,"
+    [ "$ran_p" -eq 1 ] && finish_tags="${finish_tags}P,"
     finish_tags=${finish_tags%,}
 
     out_one=$(printf "%s" "$out" | tr '\n' ' ')
