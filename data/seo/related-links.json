@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-18T13:37:58Z",
+  "updated": "2026-03-19T13:37:11Z",
   "rules": [
     {
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
@@ -901,6 +901,23 @@
         {
           "href": "/semaglutide-injection-reminder.html",
           "text": "Reminder setup patterns (calendar windows, backups, and consistency)"
+        }
+      ]
+    },
+    {
+      "file": "lilly-retatrutide-late-stage-diabetes-trial-results-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + notes)"
+        },
+        {
+          "href": "/semaglutide-vs-tirzepatide.html",
+          "text": "Semaglutide vs tirzepatide (differences that matter)"
+        },
+        {
+          "href": "/guides/",
+          "text": "GLP-1 guides hub (practical explainers)"
         }
       ]
     }
