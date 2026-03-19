@@ -19,8 +19,10 @@ fi
 mkdir -p "$OUT_DIR"
 
 NOW_UTC=$(date -u +%FT%TZ)
+TOP3_FILE="$OUT_DIR/manual-growth-loop-awaiting-owner-top3-latest.json"
 
-# Prefer ready_to_send. If none exist, fall back to awaiting_owner so Jon still has a clear next action.
+# Prefer ready_to_send. If none exist, prefer the curated awaiting_owner top-3 shortlist (if present),
+# otherwise fall back to a naive awaiting_owner sort so Jon still has a clear next action.
 READY_JSON=$(jq -c --argjson n "$LIMIT" '
   .sendQueues
   | map(select(.status=="ready_to_send"))
@@ -41,6 +43,12 @@ AWAITING_JSON=$(jq -c --argjson n "$LIMIT" '
   | map(del(.__priority))
   | .[0:$n]
 ' "$LEDGER")
+
+if [ "$READY_COUNT" -eq 0 ] && [ -f "$TOP3_FILE" ]; then
+  # Shape the curated shortlist into the same shape used below.
+  AWAITING_JSON=$(jq -c --argjson n "$LIMIT" '.top3 | .[0:$n] | map({id: .sendQueueId, channel, to, subject, brief})' "$TOP3_FILE")
+fi
+
 AWAITING_COUNT=$(jq 'length' <<<"$AWAITING_JSON")
 
 {
