@@ -115,8 +115,25 @@ else
   echo "growth-default-actions: skip distribution packs (cooldown)" >&2
 fi
 
+NOOP_NEXT_FILE="$ROOT/data/status/growth-default-actions-noop-next.txt"
+
 if [ "$ran_any" -eq 0 ]; then
   echo "growth-default-actions: NOOP (all actions in cooldown windows)" >&2
+
+  # Reliability upgrade: if we can't run any default actions, still surface the
+  # single highest-leverage *manual* next step (without mutating tracked docs).
+  {
+    echo "ts_utc: $(date -u +%FT%TZ)"
+    echo "reason: all default actions in cooldown windows"
+    echo
+    echo "--- operator-next ---"
+    bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" 2>/dev/null || true
+    echo
+    echo "--- ledger-next ---"
+    bash "$ROOT/scripts/manual-growth-loop/ledger-next.sh" 2>/dev/null || true
+  } >"$NOOP_NEXT_FILE" 2>/dev/null || true
+
+  echo "growth-default-actions: wrote noop next step -> $NOOP_NEXT_FILE" >&2
 else
   echo "growth-default-actions: OK (ran at least 1 action; cooldowns active)"
 fi

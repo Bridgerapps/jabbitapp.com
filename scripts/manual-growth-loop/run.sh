@@ -52,9 +52,12 @@ if [ -z "$note" ]; then
   if [ $code -eq 0 ]; then
     # Safe, non-authenticated, non-sending actions only.
     out=$(bash "$ROOT/scripts/manual-growth-loop/growth-default-actions.sh" 2>&1 || true)
+    out_one=$(printf "%s" "$out" | tr '\n' ' ')
+    # keep history notes short + readable
+    out_one=${out_one:0:900}
     bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
       --tags "M,R,L" \
-      --note "Ran growth-default-actions (measurement + reddit opps + distribution check). Output: ${out//\n/ }"
+      --note "Ran growth-default-actions (measurement + reddit opps + distribution check). Output: $out_one"
   else
     bash "$ROOT/scripts/manual-growth-loop/auto-finish.sh" --preflight-code "$code" >/dev/null 2>&1 || true
   fi
