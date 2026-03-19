@@ -4,7 +4,7 @@ set -euo pipefail
 LEDGER="${LEDGER:-/home/jabbit/.openclaw/workspace/data/status/manual-growth-loop-ledger.json}"
 OUT_DIR="${OUT_DIR:-/home/jabbit/.openclaw/workspace/data/status}"
 OUT_FILE="${OUT_FILE:-$OUT_DIR/owner-send-ping-latest.txt}"
-LIMIT="${LIMIT:-3}"
+LIMIT="${LIMIT:-5}"
 
 if ! command -v jq >/dev/null 2>&1; then
   echo "jq is required" >&2
@@ -32,7 +32,13 @@ READY_COUNT=$(jq 'length' <<<"$READY_JSON")
 AWAITING_JSON=$(jq -c --argjson n "$LIMIT" '
   .sendQueues
   | map(select(.status=="awaiting_owner"))
-  | sort_by(.awaitingOwnerUtc // .updatedUtc // "9999-12-31T00:00:00Z")
+  | map(. + {__priority:(
+      if (.awaitingOwnerReason=="needs-approval") then 0
+      elif (.awaitingOwnerReason=="stale-ready-auto-demote") then 1
+      else 2 end
+    )})
+  | sort_by(.__priority, (.awaitingOwnerUtc // .updatedUtc // "9999-12-31T00:00:00Z"))
+  | map(del(.__priority))
   | .[0:$n]
 ' "$LEDGER")
 AWAITING_COUNT=$(jq 'length' <<<"$AWAITING_JSON")
