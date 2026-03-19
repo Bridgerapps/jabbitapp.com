@@ -32,15 +32,16 @@ fi
 
 # Action 1) Measurement snapshot (keeps KPI dashboard honest downstream)
 # Writes: data/status/site-analytics.json
-bash "$ROOT/scripts/site-analytics-status.sh" >/dev/null
+timeout 45s bash "$ROOT/scripts/site-analytics-status.sh" >/dev/null || true
 
 # Action 2) Reddit opportunity scouting (manual-only execution later)
 # Writes: data/status/reddit-opps-*.json + reddit-opps-latest.json and reviewed candidate output
+# Guard: this occasionally hangs on network/auth checks — hard-timeout to keep cron reliable.
 REDDIT_DISCOVERY_USE_COOKIE=false REDDIT_DISCOVERY_COOKIE_FALLBACK=false \
-  python3 "$ROOT/scripts/reddit_smart_review_post.py" >/dev/null 2>&1 || true
+  timeout 45s python3 "$ROOT/scripts/reddit_smart_review_post.py" >/dev/null 2>&1 || true
 
-# Action 3) Distribution backlog / directory submission pack refresh
-# Writes: data/status/app-directory-submissions.json + pack
-bash "$ROOT/scripts/distribution-daily-check-set.sh" >/dev/null
+# Action 3) Refresh distribution packs (copy/paste snippets; no posting)
+# Writes: output/distribution-pack-*.md
+timeout 45s bash "$ROOT/scripts/generate-distribution-packs.sh" >/dev/null || true
 
-echo "growth-default-actions: OK (measurement + reddit opps + distribution check)"
+echo "growth-default-actions: OK (measurement + reddit opps + distribution packs)"
