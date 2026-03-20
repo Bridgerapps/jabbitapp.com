@@ -32,6 +32,14 @@ report_txt="$OUTDIR/manual-growth-loop-self-improvement-${iteration}-${ts}.txt"
   echo "## audit-last-5"
   bash "$ROOT/scripts/manual-growth-loop/audit-last-5.sh" || true
   echo
+  echo "## operator-next (preflight-derived)"
+  bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" || true
+  echo
+  if [ -f "$ROOT/data/status/growth-default-actions-noop-next.txt" ]; then
+    echo "## latest noop-next (if recent runs were cooldown NOOPs)"
+    sed -n '1,200p' "$ROOT/data/status/growth-default-actions-noop-next.txt" || true
+    echo
+  fi
   echo "## recommended process upgrades (operator picks 1-3)"
   echo "- When mode=self-improvement, ALWAYS run this script, then record-finish with what changed."
   echo "- Prefer upgrades that reduce repeat loops: stronger STOP reasons, better next-action surfacing, fewer empty runs."
