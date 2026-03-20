@@ -82,12 +82,14 @@ mark_ran() {
 }
 
 write_last_out() {
-  # Usage: write_last_out <ran_measure> <ran_reddit> <ran_packs> <ran_owner_ping> <noop_reason>
+  # Usage: write_last_out <ran_measure> <ran_reddit> <ran_packs> <ran_owner_ping> <noop_reason> [next_eligible_in_seconds] [next_eligible_at_utc]
   local ran_measure="$1"
   local ran_reddit="$2"
   local ran_packs="$3"
   local ran_owner_ping="$4"
   local noop_reason="$5"
+  local next_in="${6:-}"
+  local next_at="${7:-}"
 
   mkdir -p "$(dirname "$LAST_OUT")"
   jq -n \
@@ -98,7 +100,16 @@ write_last_out() {
     --argjson owner_ping "$ran_owner_ping" \
     --arg noop_reason "$noop_reason" \
     --arg noop_next_file "$NOOP_NEXT_FILE" \
-    '{ts_utc:$ts_utc, ran:{measurement:$measurement, reddit:$reddit, packs:$packs, owner_ping:$owner_ping}, noop_reason:($noop_reason|select(length>0)), noop_next_file:$noop_next_file}' \
+    --arg next_eligible_in_seconds "${next_in}" \
+    --arg next_eligible_at_utc "${next_at}" \
+    '{
+      ts_utc:$ts_utc,
+      ran:{measurement:$measurement, reddit:$reddit, packs:$packs, owner_ping:$owner_ping},
+      noop_reason:($noop_reason|select(length>0)),
+      noop_next_file:$noop_next_file,
+      next_eligible_in_seconds:(($next_eligible_in_seconds|select(length>0))|tonumber?),
+      next_eligible_at_utc:($next_eligible_at_utc|select(length>0))
+    }' \
     >"$LAST_OUT"
 }
 
@@ -245,7 +256,7 @@ if [ "$ran_any" -eq 0 ]; then
     echo "growth-default-actions: noop next unchanged (not rewriting)" >&2
   fi
 
-  write_last_out 0 0 0 0 "all_in_cooldown"
+  write_last_out 0 0 0 0 "all_in_cooldown" "$next_in" "$next_at"
 else
   write_last_out "$ran_measure" "$ran_reddit" "$ran_packs" "$ran_owner_ping" ""
   echo "growth-default-actions: OK (ran at least 1 action; cooldowns active)"

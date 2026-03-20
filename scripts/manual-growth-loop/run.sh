@@ -73,8 +73,19 @@ if [ -z "$note" ]; then
     out_one=${out_one:0:900}
 
     if [ -z "$finish_tags" ]; then
-      bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
-        --note "FINISH: growth-default-actions NOOP (all in cooldown). See data/status/growth-default-actions-noop-next.txt. Output: $out_one"
+      # Keep the history note compact; detailed next-steps live in growth-default-actions-noop-next.txt
+      next_at=""
+      next_in=""
+      if [ -f "$LAST_OUT" ]; then
+        next_at=$(jq -r '.next_eligible_at_utc // empty' "$LAST_OUT" 2>/dev/null || true)
+        next_in=$(jq -r '.next_eligible_in_seconds // empty' "$LAST_OUT" 2>/dev/null || true)
+      fi
+
+      extra=""
+      [ -n "$next_at" ] && extra=" next_eligible_at_utc=$next_at"
+      [ -n "$next_in" ] && extra="${extra} next_eligible_in_seconds=$next_in"
+
+      bash "$ROOT/scripts/manual-growth-loop/record-finish.sh"         --note "FINISH: growth-default-actions NOOP (cooldowns). See data/status/growth-default-actions-noop-next.txt.${extra}"
     else
       bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
         --tags "$finish_tags" \
