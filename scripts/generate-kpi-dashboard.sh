@@ -62,6 +62,18 @@ CTR_CLEAN=$(pct "$CLEAN_APPSTORE_CLICKS" "$CLEAN_PAGEVIEWS")
 CTR_TODAY=$(pct "$SITE_APPSTORE_CLICKS_TODAY" "$SITE_PAGEVIEWS_TODAY")
 CTR_YDAY=$(pct "$SITE_APPSTORE_CLICKS_YDAY" "$SITE_PAGEVIEWS_YDAY")
 
+# If instrumentation is flagged suspect, don't present CTR numbers as real KPIs.
+CTR_TOTAL_OUT="$CTR_TOTAL"
+CTR_CLEAN_OUT="$CTR_CLEAN"
+CTR_TODAY_OUT="$CTR_TODAY"
+CTR_YDAY_OUT="$CTR_YDAY"
+if $SITE_OK && [ "$SITE_SUSPECT" = "true" ]; then
+  CTR_TOTAL_OUT="n/a (suspect)"
+  CTR_CLEAN_OUT="n/a (suspect)"
+  CTR_TODAY_OUT="n/a (suspect)"
+  CTR_YDAY_OUT="n/a (suspect)"
+fi
+
 # App Store installs/downloads (best available: Sales Reports "Units")
 APPSTORE_OK=false
 APPSTORE_SUSPECT=false
@@ -139,13 +151,13 @@ _Generated: ${NOW}_
 |-----|-------|
 | Total pageviews | $(if $SITE_OK; then echo "${TOTAL_PAGEVIEWS}"; else echo "unknown"; fi) |
 | Total App Store clicks | $(if $SITE_OK; then echo "${TOTAL_APPSTORE_CLICKS}"; else echo "unknown"; fi) |
-| Total click-through rate | $(if $SITE_OK; then echo "${CTR_TOTAL}"; else echo "n/a"; fi) |
+| Total click-through rate | $(if $SITE_OK; then echo "${CTR_TOTAL_OUT}"; else echo "n/a"; fi) |
 | Clean pageviews / clicks (excludes test pages) | $(if $SITE_OK; then echo "${CLEAN_PAGEVIEWS} / ${CLEAN_APPSTORE_CLICKS}"; else echo "unknown"; fi) |
-| Clean click-through rate | $(if $SITE_OK; then echo "${CTR_CLEAN}"; else echo "n/a"; fi) |
+| Clean click-through rate | $(if $SITE_OK; then echo "${CTR_CLEAN_OUT}"; else echo "n/a"; fi) |
 | Today pageviews / clicks | $(if $SITE_OK; then echo "${SITE_PAGEVIEWS_TODAY} / ${SITE_APPSTORE_CLICKS_TODAY}"; else echo "unknown"; fi) |
-| Today click-through rate | $(if $SITE_OK; then echo "${CTR_TODAY}"; else echo "n/a"; fi) |
+| Today click-through rate | $(if $SITE_OK; then echo "${CTR_TODAY_OUT}"; else echo "n/a"; fi) |
 | Yesterday pageviews / clicks | $(if $SITE_OK; then echo "${SITE_PAGEVIEWS_YDAY} / ${SITE_APPSTORE_CLICKS_YDAY}"; else echo "unknown"; fi) |
-| Yesterday click-through rate | $(if $SITE_OK; then echo "${CTR_YDAY}"; else echo "n/a"; fi) |
+| Yesterday click-through rate | $(if $SITE_OK; then echo "${CTR_YDAY_OUT}"; else echo "n/a"; fi) |
 
 ## 🔍 Traffic & Click Concentration
 
