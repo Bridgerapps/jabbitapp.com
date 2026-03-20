@@ -169,25 +169,83 @@ fi
 
 ran_any=$((ran_measure + ran_reddit + ran_packs + ran_owner_ping))
 
+remaining_seconds() {
+  # Usage: remaining_seconds <key> <cooldown_seconds>
+  # Returns 0 if eligible now; otherwise positive seconds remaining.
+  local key="$1"
+  local cooldown="$2"
+  local last
+  last=$(last_epoch "$key")
+  if [ "$last" -eq 0 ]; then
+    echo 0
+    return
+  fi
+  local age=$((now_epoch - last))
+  if [ "$age" -ge "$cooldown" ]; then
+    echo 0
+  else
+    echo $((cooldown - age))
+  fi
+}
+
+next_eligible_in() {
+  # Minimum remaining seconds across actions (0 means something eligible now).
+  local r
+  local min=999999999
+  for spec in \
+    "measurement:$COOLDOWN_MEASUREMENT" \
+    "reddit:$COOLDOWN_REDDIT" \
+    "packs:$COOLDOWN_PACKS" \
+    "owner_ping:$COOLDOWN_OWNER_PING"; do
+    local key=${spec%%:*}
+    local cd=${spec##*:}
+    r=$(remaining_seconds "$key" "$cd")
+    if [ "$r" -lt "$min" ]; then
+      min="$r"
+    fi
+  done
+  if [ "$min" -eq 999999999 ]; then
+    echo 0
+  else
+    echo "$min"
+  fi
+}
+
 if [ "$ran_any" -eq 0 ]; then
   echo "growth-default-actions: NOOP (all actions in cooldown windows)" >&2
 
-  # Reliability: if we can't run any default actions, still surface the
-  # single highest-leverage *manual* next step (without mutating tracked docs).
+  # Avoid rewriting the same NOOP guidance every hour (reduces churn + makes audits cleaner).
+  tmp_noop=$(mktemp)
+  next_in=$(next_eligible_in)
+  next_at="$(date -u -d "@$((now_epoch + next_in))" +%FT%TZ 2>/dev/null || true)"
+
   {
     echo "ts_utc: $now_iso"
     echo "reason: all default actions in cooldown windows"
+    echo "next_eligible_in_seconds: $next_in"
+    [ -n "$next_at" ] && echo "next_eligible_at_utc: $next_at"
     echo
     echo "--- operator-next ---"
     bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" 2>/dev/null || true
     echo
     echo "--- ledger-next ---"
     bash "$ROOT/scripts/manual-growth-loop/ledger-next.sh" 2>/dev/null || true
-  } >"$NOOP_NEXT_FILE" 2>/dev/null || true
+  } >"$tmp_noop" 2>/dev/null || true
+
+  if [ -f "$NOOP_NEXT_FILE" ] && sha256sum "$NOOP_NEXT_FILE" "$tmp_noop" >/dev/null 2>&1; then
+    # sha256sum returns non-zero on diff; but doesn't print in this mode.
+    :
+  fi
+
+  if [ ! -f "$NOOP_NEXT_FILE" ] || ! cmp -s "$NOOP_NEXT_FILE" "$tmp_noop"; then
+    mv "$tmp_noop" "$NOOP_NEXT_FILE"
+    echo "growth-default-actions: wrote noop next step -> $NOOP_NEXT_FILE" >&2
+  else
+    rm -f "$tmp_noop"
+    echo "growth-default-actions: noop next unchanged (not rewriting)" >&2
+  fi
 
   write_last_out 0 0 0 0 "all_in_cooldown"
-
-  echo "growth-default-actions: wrote noop next step -> $NOOP_NEXT_FILE" >&2
 else
   write_last_out "$ran_measure" "$ran_reddit" "$ran_packs" "$ran_owner_ping" ""
   echo "growth-default-actions: OK (ran at least 1 action; cooldowns active)"
