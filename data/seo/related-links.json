@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-19T13:37:11Z",
+  "updated": "2026-03-20T13:37:05Z",
   "rules": [
     {
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
@@ -918,6 +918,23 @@
         {
           "href": "/guides/",
           "text": "GLP-1 guides hub (practical explainers)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-patent-expiry-india-generics-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
         }
       ]
     }
