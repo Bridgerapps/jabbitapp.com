@@ -33,11 +33,18 @@ if [ -x "$WS/scripts/site-analytics-status.sh" ]; then
   bash "$WS/scripts/site-analytics-status.sh" >/dev/null 2>&1 || true
 fi
 
+SITE_STATUS="BROKEN"
+SITE_DATA=false
+
 if [ -f "$WS/data/status/site-analytics.json" ]; then
   SITE_ERROR=$(jq -r '.error // ""' "$WS/data/status/site-analytics.json" 2>/dev/null || echo "")
-  if jq -e '.ok == true' "$WS/data/status/site-analytics.json" >/dev/null 2>&1; then
-    SITE_OK=true
-    SITE_SUSPECT=$(jq -r '.suspect // false' "$WS/data/status/site-analytics.json")
+  SITE_STATUS=$(jq -r '.status // (if .ok==true then "OK" else "BROKEN" end)' "$WS/data/status/site-analytics.json" 2>/dev/null || echo "BROKEN")
+
+  if [ "$SITE_STATUS" = "OK" ] || [ "$SITE_STATUS" = "SUSPECT" ]; then
+    SITE_DATA=true
+    if [ "$SITE_STATUS" = "OK" ]; then SITE_OK=true; fi
+
+    SITE_SUSPECT=$(jq -r '(.suspect // (.status=="SUSPECT"))' "$WS/data/status/site-analytics.json")
     SITE_SUSPECT_REASONS=$(jq -r '(.suspect_reasons // []) | join(", ")' "$WS/data/status/site-analytics.json")
 
     TOTAL_PAGEVIEWS=$(jq -r '.pageviews_total // 0' "$WS/data/status/site-analytics.json")
@@ -145,19 +152,19 @@ _Generated: ${NOW}_
 
 ## 🔁 Funnel Health (Site → App Store Click)
 
-- Site analytics status: $(if $SITE_OK; then echo "OK"; else echo "BROKEN${SITE_ERROR:+ ($SITE_ERROR)}"; fi)$(if [ "$SITE_SUSPECT" = "true" ]; then echo " — SUSPECT${SITE_SUSPECT_REASONS:+ ($SITE_SUSPECT_REASONS)}"; fi)
+- Site analytics status: ${SITE_STATUS}$(if [ "$SITE_STATUS" = "BROKEN" ] && [ -n "$SITE_ERROR" ]; then echo " ($SITE_ERROR)"; fi)$(if [ "$SITE_STATUS" = "SUSPECT" ]; then echo " (${SITE_SUSPECT_REASONS:-suspect})"; fi)
 
 | KPI | Value |
 |-----|-------|
-| Total pageviews | $(if $SITE_OK; then echo "${TOTAL_PAGEVIEWS}"; else echo "unknown"; fi) |
-| Total App Store clicks | $(if $SITE_OK; then echo "${TOTAL_APPSTORE_CLICKS}"; else echo "unknown"; fi) |
-| Total click-through rate | $(if $SITE_OK; then echo "${CTR_TOTAL_OUT}"; else echo "n/a"; fi) |
-| Clean pageviews / clicks (excludes test pages) | $(if $SITE_OK; then echo "${CLEAN_PAGEVIEWS} / ${CLEAN_APPSTORE_CLICKS}"; else echo "unknown"; fi) |
-| Clean click-through rate | $(if $SITE_OK; then echo "${CTR_CLEAN_OUT}"; else echo "n/a"; fi) |
-| Today pageviews / clicks | $(if $SITE_OK; then echo "${SITE_PAGEVIEWS_TODAY} / ${SITE_APPSTORE_CLICKS_TODAY}"; else echo "unknown"; fi) |
-| Today click-through rate | $(if $SITE_OK; then echo "${CTR_TODAY_OUT}"; else echo "n/a"; fi) |
-| Yesterday pageviews / clicks | $(if $SITE_OK; then echo "${SITE_PAGEVIEWS_YDAY} / ${SITE_APPSTORE_CLICKS_YDAY}"; else echo "unknown"; fi) |
-| Yesterday click-through rate | $(if $SITE_OK; then echo "${CTR_YDAY_OUT}"; else echo "n/a"; fi) |
+| Total pageviews | $(if $SITE_DATA; then echo "${TOTAL_PAGEVIEWS}"; else echo "unknown"; fi) |
+| Total App Store clicks | $(if $SITE_DATA; then echo "${TOTAL_APPSTORE_CLICKS}"; else echo "unknown"; fi) |
+| Total click-through rate | $(if $SITE_DATA; then echo "${CTR_TOTAL_OUT}"; else echo "n/a"; fi) |
+| Clean pageviews / clicks (excludes test pages) | $(if $SITE_DATA; then echo "${CLEAN_PAGEVIEWS} / ${CLEAN_APPSTORE_CLICKS}"; else echo "unknown"; fi) |
+| Clean click-through rate | $(if $SITE_DATA; then echo "${CTR_CLEAN_OUT}"; else echo "n/a"; fi) |
+| Today pageviews / clicks | $(if $SITE_DATA; then echo "${SITE_PAGEVIEWS_TODAY} / ${SITE_APPSTORE_CLICKS_TODAY}"; else echo "unknown"; fi) |
+| Today click-through rate | $(if $SITE_DATA; then echo "${CTR_TODAY_OUT}"; else echo "n/a"; fi) |
+| Yesterday pageviews / clicks | $(if $SITE_DATA; then echo "${SITE_PAGEVIEWS_YDAY} / ${SITE_APPSTORE_CLICKS_YDAY}"; else echo "unknown"; fi) |
+| Yesterday click-through rate | $(if $SITE_DATA; then echo "${CTR_YDAY_OUT}"; else echo "n/a"; fi) |
 
 ## 🔍 Traffic & Click Concentration
 

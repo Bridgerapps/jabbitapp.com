@@ -13,7 +13,7 @@ if [ -z "$ANALYTICS_SECRET" ] && [ -f "/home/jabbit/analytics/.env" ]; then
 fi
 
 if [ -z "$ANALYTICS_SECRET" ]; then
-  jq -n --arg ts "$(date -Iseconds)" '{ok:false,last_check:$ts,error:"missing_analytics_secret"}' > "$OUT"
+  jq -n --arg ts "$(date -Iseconds)" '{status:"BROKEN",ok:false,last_check:$ts,error:"missing_analytics_secret",suspect:false,suspect_reasons:[]}' > "$OUT"
   echo "$OUT"
   exit 0
 fi
@@ -25,7 +25,7 @@ fi
 
 RAW="$(curl -sS --max-time 10 "http://127.0.0.1:9000/stats?secret=${ANALYTICS_SECRET}" || true)"
 if ! echo "$RAW" | jq -e . >/dev/null 2>&1; then
-  jq -n --arg ts "$(date -Iseconds)" --arg raw "${RAW:0:400}" '{ok:false,last_check:$ts,error:"stats_unavailable",raw:$raw}' > "$OUT"
+  jq -n --arg ts "$(date -Iseconds)" --arg raw "${RAW:0:400}" '{status:"BROKEN",ok:false,last_check:$ts,error:"stats_unavailable",raw:$raw,suspect:false,suspect_reasons:[]}' > "$OUT"
   echo "$OUT"
   exit 0
 fi
@@ -51,6 +51,7 @@ echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
   . as $raw
   | (
       {
+        status: "OK",
         ok: true,
         last_check: $ts,
         total_events: ($raw.totalEvents // $raw.total // 0),
@@ -84,6 +85,8 @@ echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
       }
       | .suspect_reasons = _suspect_reasons(.total_events; .top_pages; .pageviews_total; .app_store_clicks_total)
       | .suspect = (.suspect_reasons | length > 0)
+      | .status = (if .suspect then "SUSPECT" else "OK" end)
+      | .ok = (.status == "OK")
     )
 ' > "$OUT"
 
