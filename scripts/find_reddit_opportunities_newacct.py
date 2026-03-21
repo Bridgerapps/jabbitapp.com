@@ -28,7 +28,9 @@ MAX_AGE_HOURS = float(os.getenv("NEWACCT_MAX_AGE_HOURS", "24"))
 MIN_AGE_MINUTES = float(os.getenv("NEWACCT_MIN_AGE_MINUTES", "20"))
 MAX_PER_SUB = int(os.getenv("NEWACCT_MAX_PER_SUB", "5"))
 MAX_TOTAL = int(os.getenv("NEWACCT_MAX_TOTAL", "60"))
-MAX_SUBS = int(os.getenv("NEWACCT_MAX_SUBS", "80"))
+MAX_SUBS = int(os.getenv("NEWACCT_MAX_SUBS", "12"))
+# This script is called under tight cron timeouts; keep default wall-time low.
+TIME_BUDGET_SECONDS = float(os.getenv("NEWACCT_TIME_BUDGET_SECONDS", "35"))
 DISCOVERY_USE_COOKIE = os.getenv("REDDIT_DISCOVERY_USE_COOKIE", "false").lower() in ("1", "true", "yes")
 DISCOVERY_COOKIE_FALLBACK = os.getenv("REDDIT_DISCOVERY_COOKIE_FALLBACK", "false").lower() in ("1", "true", "yes")
 NEGATIVE_BLACKLIST_PATH = "/home/jabbit/.openclaw/workspace/data/reddit/negative-post-blacklist.txt"
@@ -54,7 +56,13 @@ def _load_env(path: str) -> dict:
 
 def _curl_json(url: str, proxy: str, cookie: str = "") -> dict:
     ua = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36"
-    cmd = ["curl", "-sS", "--max-time", "30", "-A", ua, "-H", "Accept: application/json"]
+    cmd = [
+        "curl", "-sS",
+        "--connect-timeout", "4",
+        "--max-time", "8",
+        "-A", ua,
+        "-H", "Accept: application/json",
+    ]
     if proxy:
         cmd += ["-x", proxy]
     if cookie:
@@ -226,13 +234,19 @@ def main() -> int:
     dynamic_shotsy_subs = _load_shotsy_subs(max_subs=200)
     scan_subs = list(dict.fromkeys(TARGET_SUBS + dynamic_shotsy_subs))[:MAX_SUBS]
 
+    t0 = time.time()
+
     for idx, sub in enumerate(scan_subs):
+        if (time.time() - t0) > TIME_BUDGET_SECONDS:
+            break
         discovery_proxy = discovery_proxies[idx % len(discovery_proxies)] if discovery_proxies else discovery_primary
 
         # Pull multiple listing modes for broader opportunity coverage.
         all_children = []
         seen_ids = set()
         for mode in ("new", "hot", "rising"):
+            if (time.time() - t0) > TIME_BUDGET_SECONDS:
+                break
             url = f"https://www.reddit.com/r/{sub}/{mode}.json?limit=40"
 
             # Discovery defaults to no-cookie reads to reduce account linkage.
