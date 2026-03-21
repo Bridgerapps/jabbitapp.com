@@ -20,8 +20,12 @@ Other utilities:
   cleanup  Cleanup reddit workspace artifacts
   params   Print ladder params
 
-DEPRECATED (will refuse):
+DEPRECATED / REMOVED FOR SAFETY:
   comment  (old auto-comment scripts; policy requires manual-only)
+
+Policy split:
+  - automated/no-auth: discovery, drafting, run-file generation
+  - manual/auth: reading live thread, browser/app posting, verification, logging
 EOF
 }
 

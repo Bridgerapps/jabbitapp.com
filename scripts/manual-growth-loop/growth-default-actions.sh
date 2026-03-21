@@ -149,10 +149,9 @@ else
 fi
 
 # Action 2) Reddit opportunity scouting (manual-only execution later)
-# Writes: data/status/reddit-opps-*.json + reddit-opps-latest.json
+# Writes: data/reddit/runs/*.json via the canonical no-auth manual-discover path
 if should_run "reddit" "$COOLDOWN_REDDIT"; then
-  if REDDIT_DISCOVERY_USE_COOKIE=false REDDIT_DISCOVERY_COOKIE_FALLBACK=false \
-    timeout 45s python3 "$ROOT/scripts/reddit_smart_review_post.py" >/dev/null 2>&1; then
+  if timeout 90s bash "$ROOT/scripts/reddit.sh" manual discover --limit 8 --expires-min 360 >/dev/null 2>&1; then
     mark_ran "reddit"
     ran_reddit=1
   else

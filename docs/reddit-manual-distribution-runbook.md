@@ -5,6 +5,12 @@
 - Reading the live thread, posting, and verifying results must be done by a human.
 - No cookie/session automation, no background posting.
 
+## Hard separation (to avoid bot-ban behavior)
+- **Automated / no-auth lane:** opportunity discovery, candidate scoring, draft generation, run-file creation.
+- **Manual / auth-adjacent lane:** opening the live thread, reading context, posting in browser/app, copying the final comment permalink, and logging the result.
+- Automated jobs must never call cookie-based post/upvote/subscribe scripts.
+- Manual posting must never rely on stale cron output; always start from a fresh discover run.
+
 ## Why this exists
 We had stale opportunity packs + overlapping scripts that looked like they were "posting" but were either:
 - operating on old candidate files, or
