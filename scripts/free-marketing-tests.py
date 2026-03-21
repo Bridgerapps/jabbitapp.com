@@ -3,7 +3,7 @@
 
 Focus: subscription funnel readiness (visit -> App Store click).
 Outputs:
-- docs/free-marketing-tests-YYYY-MM-DD.md
+- data/status/free-marketing-tests-YYYY-MM-DD.md (ephemeral; not tracked)
 - data/status/marketing-tests.json
 """
 
@@ -17,7 +17,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 WS = Path('/home/jabbit/.openclaw/workspace')
-DOCS = WS / 'docs'
+REPORT_DIR = WS / 'data' / 'status'
 STATUS = WS / 'data' / 'status' / 'marketing-tests.json'
 
 BASE = 'https://jabbitapp.com'
@@ -114,7 +114,7 @@ def score_page(r: PageResult) -> tuple[int, int]:
 
 
 def main() -> int:
-    DOCS.mkdir(parents=True, exist_ok=True)
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
     STATUS.parent.mkdir(parents=True, exist_ok=True)
 
     rows: list[PageResult] = []
@@ -148,7 +148,7 @@ def main() -> int:
     overall = (total_pass / total_checks) if total_checks else 0.0
 
     now = datetime.now(timezone.utc)
-    report = DOCS / f'free-marketing-tests-{now.date().isoformat()}.md'
+    report = REPORT_DIR / f'free-marketing-tests-{now.date().isoformat()}.md'
 
     lines = []
     lines.append(f"# Free Marketing Tests — {now.date().isoformat()}\n")
