@@ -1,7 +1,177 @@
 {
   "version": 1,
-  "updated": "2026-03-20T13:37:05Z",
+  "updated": "2026-03-21T13:37:22Z",
   "rules": [
+    {
+      "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder app guide (how to set a routine that actually sticks)"
+        },
+        {
+          "href": "/semaglutide-injection-reminder.html",
+          "text": "Reminder setup patterns (calendar windows, backups, and consistency)"
+        }
+      ]
+    },
+    {
+      "file": "aldeyra-eye-disorder-drug-fda-declines-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder app guide (how to set a routine that actually sticks)"
+        },
+        {
+          "href": "/semaglutide-injection-reminder.html",
+          "text": "Reminder setup patterns (calendar windows, backups, and consistency)"
+        }
+      ]
+    },
+    {
+      "file": "amazon-connect-health-ai-agents.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (keep a clean timeline for visits)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "GLP-1 injection reminders (reduce missed doses)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (practical GLP-1 help)"
+        }
+      ]
+    },
+    {
+      "file": "bpc-157-complete-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "carbidopa-levodopa-vitamin-b6-deficiency-seizure-warning-2026.html",
+      "links": [
+        {
+          "href": "/omnipod-5-pods-medical-device-correction-internal-tubing-tear.html",
+          "text": "Medical device correction explainer (what to document + how to track it)"
+        },
+        {
+          "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
+          "text": "Refill tracking checklist (a practical template you can reuse)"
+        },
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recall explainer (how to save lot/product details for follow-up)"
+        }
+      ]
+    },
+    {
+      "file": "compounded-tirzepatide-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "compounded-tirzepatide-impurities-quality-questions.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "fda-biosimilar-guidance-2026-03.html",
+      "links": [
+        {
+          "href": "/massachusetts-state-workers-glp1-coverage-ended-2026.html",
+          "text": "Coverage changes: what to track (real-world example)"
+        },
+        {
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "Medication costs without insurance (pricing reality + what to log)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Medication tracker (log product, dates, and notes)"
+        }
+      ]
+    },
+    {
+      "file": "fda-compounded-glp1-enforcement-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "fda-compounded-glp1-restrictions-misleading-ads.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
     {
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
       "links": [
@@ -20,6 +190,125 @@
       ]
     },
     {
+      "file": "fda-in-home-opioid-disposal-rfi-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses, notes, and reminders)"
+        },
+        {
+          "href": "/glp-1-compounded-telehealth-fda-warning-letters.html",
+          "text": "FDA warning letters on compounded GLP-1 telehealth marketing"
+        },
+        {
+          "href": "/guides/",
+          "text": "GLP-1 guides hub (practical explainers)"
+        }
+      ]
+    },
+    {
+      "file": "fda-national-priority-voucher-tec-dara-approval.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (stay consistent during medication changes)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (what to log by week)"
+        },
+        {
+          "href": "/guides/",
+          "text": "GLP-1 guides hub (evidence-focused explainers)"
+        }
+      ]
+    },
+    {
+      "file": "fda-recall-primal-herbs-undeclared-sildenafil.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recall alerts: undeclared tadalafil/sildenafil in supplements (guide)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Labeling + tracking basics (simple templates)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking log: products, dates, and notes"
+        }
+      ]
+    },
+    {
+      "file": "fda-recalls-undeclared-tadalafil-sildenafil-rhino-boner-bears.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recall alerts: undeclared tadalafil/sildenafil in supplements (guide)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what to track + why it matters)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Injection tracker (log products, dates, and notes)"
+        }
+      ]
+    },
+    {
+      "file": "fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+      "links": [
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what to track + why it matters)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (labeling + practical tracking tips)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Injection tracker (log products, dates, and notes)"
+        }
+      ]
+    },
+    {
+      "file": "glp-1-compounded-telehealth-fda-warning-letters.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "glp-1-injection-tracking-guide.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/injection-site-rotation-science.html",
+          "text": "Injection site rotation science (what matters + why)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for logging)"
+        }
+      ]
+    },
+    {
       "file": "glp-1-side-effects-guide.html",
       "links": [
         {
@@ -33,6 +322,23 @@
         {
           "href": "/glp1-constipation-guide.html",
           "text": "GLP-1 constipation guide (practical relief + red flags)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-alcohol-guide.html",
+      "links": [
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (nausea, GI, fatigue, etc.)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (note alcohol, symptoms, sleep)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
         }
       ]
     },
@@ -80,70 +386,6 @@
       ]
     },
     {
-      "file": "glp1-injection-tracker.html",
-      "links": [
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        },
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide"
-        },
-        {
-          "href": "/glp1-constipation-guide.html",
-          "text": "GLP-1 constipation guide (track symptoms after dose changes)"
-        }
-      ]
-    },
-    {
-      "file": "zepbound-injection-tracker.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (generic)"
-        },
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "semaglutide-half-life.html",
-      "links": [
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP\u20111 dosing schedules (for logging & reminders)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP\u20111 injection tracker (free, privacy\u2011first)"
-        }
-      ]
-    },
-    {
-      "file": "semaglutide-vs-tirzepatide.html",
-      "links": [
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP\u20111 dosing schedules (Ozempic/Wegovy/Mounjaro/Zepbound)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP\u20111 injection tracker (log injections + dose changes)"
-        },
-        {
-          "href": "/zepbound-injection-tracker.html",
-          "text": "Zepbound injection tracker (private log + reminders)"
-        }
-      ]
-    },
-    {
       "file": "glp1-fatigue-guide.html",
       "links": [
         {
@@ -157,6 +399,40 @@
         {
           "href": "/glp1-stress-anxiety-hrv-guide.html",
           "text": "Stress/HRV on GLP-1 (what to track + patterns)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-injection-reminder-app.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide"
+        },
+        {
+          "href": "/glp1-constipation-guide.html",
+          "text": "GLP-1 constipation guide (track symptoms after dose changes)"
         }
       ]
     },
@@ -195,91 +471,6 @@
       ]
     },
     {
-      "file": "glp1-alcohol-guide.html",
-      "links": [
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (nausea, GI, fatigue, etc.)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (note alcohol, symptoms, sleep)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "injection-site-rotation-science.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (rotation + logging)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (track site + dose over time)"
-        },
-        {
-          "href": "/peptide-site-rotation-guide.html",
-          "text": "Peptide site rotation guide (practical rotation patterns)"
-        }
-      ]
-    },
-    {
-      "file": "glp-1-injection-tracking-guide.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/injection-site-rotation-science.html",
-          "text": "Injection site rotation science (what matters + why)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for logging)"
-        }
-      ]
-    },
-    {
-      "file": "bpc-157-complete-guide.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
-        },
-        {
-          "href": "/peptide-storage-stability-guide.html",
-          "text": "Peptide storage & stability guide (what matters)"
-        }
-      ]
-    },
-    {
-      "file": "compounded-tirzepatide-guide.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
       "file": "glp1-stress-anxiety-hrv-guide.html",
       "links": [
         {
@@ -306,6 +497,193 @@
         {
           "href": "/glp1-stress-anxiety-hrv-guide.html",
           "text": "Stress/HRV on GLP-1 (what to track + patterns)"
+        }
+      ]
+    },
+    {
+      "file": "great-value-cottage-cheese-recall-not-fully-pasteurized.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recalls: how to read a recall notice (example)"
+        },
+        {
+          "href": "/terms",
+          "text": "Terms"
+        },
+        {
+          "href": "/privacy",
+          "text": "Privacy"
+        }
+      ]
+    },
+    {
+      "file": "injection-site-rotation-science.html",
+      "links": [
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (track site + dose over time)"
+        },
+        {
+          "href": "/peptide-site-rotation-guide.html",
+          "text": "Peptide site rotation guide (practical rotation patterns)"
+        }
+      ]
+    },
+    {
+      "file": "leucovorin-wellcovorin-fda-approval-cerebral-folate-deficiency.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Simple medication tracking (dates, notes, changes)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder app guide (building a routine that sticks)"
+        },
+        {
+          "href": "/privacy/",
+          "text": "Privacy policy (how your data is handled)"
+        }
+      ]
+    },
+    {
+      "file": "lilly-retatrutide-late-stage-diabetes-trial-results-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + notes)"
+        },
+        {
+          "href": "/semaglutide-vs-tirzepatide.html",
+          "text": "Semaglutide vs tirzepatide (differences that matter)"
+        },
+        {
+          "href": "/guides/",
+          "text": "GLP-1 guides hub (practical explainers)"
+        }
+      ]
+    },
+    {
+      "file": "massachusetts-state-workers-glp1-coverage-ended-2026.html",
+      "links": [
+        {
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "GLP-1 cost without insurance (pricing reality + options)"
+        },
+        {
+          "href": "/unitedhealth-subsidiary-disclosure-cut-2026.html",
+          "text": "Health plan disclosures (what changed + why it matters)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (keep a consistent history)"
+        }
+      ]
+    },
+    {
+      "file": "mounjaro-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "omnipod-5-pod-correction-march-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Private log + timeline (helpful when troubleshooting devices)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder setup patterns (follow-ups, reorder reminders)"
+        },
+        {
+          "href": "/privacy/",
+          "text": "Privacy policy (how your data is handled)"
+        }
+      ]
+    },
+    {
+      "file": "omnipod-5-pod-recall-correction-under-delivery-insulet-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple log for dates, notes, and patterns"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder app guide (set a routine that actually sticks)"
+        },
+        {
+          "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
+          "text": "Staying organized during a supply disruption (refill plan + notes)"
+        }
+      ]
+    },
+    {
+      "file": "omnipod-5-pods-medical-device-correction-internal-tubing-tear.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Private log + timeline (helpful when troubleshooting devices)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder setup patterns (follow-ups, reorder reminders)"
+        },
+        {
+          "href": "/privacy/",
+          "text": "Privacy policy (how your data is handled)"
+        }
+      ]
+    },
+    {
+      "file": "ozempic-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-reconstitution-calculator.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
         }
       ]
     },
@@ -378,19 +756,83 @@
       ]
     },
     {
-      "file": "tb-500-thymosin-beta-guide.html",
+      "file": "semaglutide-half-life.html",
+      "links": [
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP\u20111 dosing schedules (for logging & reminders)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP\u20111 injection tracker (free, privacy\u2011first)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-injection-reminder.html",
       "links": [
         {
           "href": "/glp1-injection-tracker.html",
           "text": "GLP-1 injection tracker (log doses + reminders)"
         },
         {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
         },
         {
-          "href": "/peptide-storage-stability-guide.html",
-          "text": "Peptide storage & stability guide (what matters)"
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-patent-expiry-india-generics-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-shortage-resolved-what-it-means.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-vs-tirzepatide.html",
+      "links": [
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP\u20111 dosing schedules (Ozempic/Wegovy/Mounjaro/Zepbound)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP\u20111 injection tracker (log injections + dose changes)"
+        },
+        {
+          "href": "/zepbound-injection-tracker.html",
+          "text": "Zepbound injection tracker (private log + reminders)"
         }
       ]
     },
@@ -412,109 +854,24 @@
       ]
     },
     {
-      "file": "mounjaro-injection-tracker.html",
+      "file": "tb-500-thymosin-beta-guide.html",
       "links": [
         {
           "href": "/glp1-injection-tracker.html",
           "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (rotation + logging)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        }
-      ]
-    },
-    {
-      "file": "wegovy-injection-tracker.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (rotation + logging)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        }
-      ]
-    },
-    {
-      "file": "ozempic-injection-tracker.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (rotation + logging)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        }
-      ]
-    },
-    {
-      "file": "fda-compounded-glp1-restrictions-misleading-ads.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "fda-compounded-glp1-enforcement-2026.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
-      "links": [
-        {
-          "href": "/peptide-storage-stability-guide.html",
-          "text": "Peptide storage & stability guide (what to track + why it matters)"
         },
         {
           "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (labeling + practical tracking tips)"
+          "text": "Peptide reconstitution guide (step-by-step)"
         },
         {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Injection tracker (log products, dates, and notes)"
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
         }
       ]
     },
     {
-      "file": "semaglutide-shortage-resolved-what-it-means.html",
+      "file": "tirzepatide-half-life.html",
       "links": [
         {
           "href": "/glp1-injection-tracker.html",
@@ -548,109 +905,7 @@
       ]
     },
     {
-      "file": "glp-1-compounded-telehealth-fda-warning-letters.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        }
-      ]
-    },
-    {
-      "file": "glp1-injection-reminder-app.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        },
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (rotation + logging)"
-        }
-      ]
-    },
-    {
-      "file": "massachusetts-state-workers-glp1-coverage-ended-2026.html",
-      "links": [
-        {
-          "href": "/glp1-cost-without-insurance.html",
-          "text": "GLP-1 cost without insurance (pricing reality + options)"
-        },
-        {
-          "href": "/unitedhealth-subsidiary-disclosure-cut-2026.html",
-          "text": "Health plan disclosures (what changed + why it matters)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (keep a consistent history)"
-        }
-      ]
-    },
-    {
-      "file": "great-value-cottage-cheese-recall-not-fully-pasteurized.html",
-      "links": [
-        {
-          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
-          "text": "FDA recalls: how to read a recall notice (example)"
-        },
-        {
-          "href": "/terms",
-          "text": "Terms"
-        },
-        {
-          "href": "/privacy",
-          "text": "Privacy"
-        }
-      ]
-    },
-    {
-      "file": "tirzepatide-half-life.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "fda-recalls-undeclared-tadalafil-sildenafil-rhino-boner-bears.html",
-      "links": [
-        {
-          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
-          "text": "FDA recall alerts: undeclared tadalafil/sildenafil in supplements (guide)"
-        },
-        {
-          "href": "/peptide-storage-stability-guide.html",
-          "text": "Peptide storage & stability guide (what to track + why it matters)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Injection tracker (log products, dates, and notes)"
-        }
-      ]
-    },
-    {
-      "file": "semaglutide-injection-reminder.html",
+      "file": "wegovy-injection-tracker.html",
       "links": [
         {
           "href": "/glp1-injection-tracker.html",
@@ -663,57 +918,6 @@
         {
           "href": "/glp-1-side-effects-guide.html",
           "text": "GLP-1 side effects guide (what to expect + when to call)"
-        }
-      ]
-    },
-    {
-      "file": "peptide-reconstitution-calculator.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
-        },
-        {
-          "href": "/peptide-storage-stability-guide.html",
-          "text": "Peptide storage & stability guide (what matters)"
-        }
-      ]
-    },
-    {
-      "file": "fda-in-home-opioid-disposal-rfi-2026.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses, notes, and reminders)"
-        },
-        {
-          "href": "/glp-1-compounded-telehealth-fda-warning-letters.html",
-          "text": "FDA warning letters on compounded GLP-1 telehealth marketing"
-        },
-        {
-          "href": "/guides/",
-          "text": "GLP-1 guides hub (practical explainers)"
-        }
-      ]
-    },
-    {
-      "file": "fda-national-priority-voucher-tec-dara-approval.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (stay consistent during medication changes)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (what to log by week)"
-        },
-        {
-          "href": "/guides/",
-          "text": "GLP-1 guides hub (evidence-focused explainers)"
         }
       ]
     },
@@ -735,202 +939,15 @@
       ]
     },
     {
-      "file": "amazon-connect-health-ai-agents.html",
+      "file": "zepbound-injection-tracker.html",
       "links": [
         {
           "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (keep a clean timeline for visits)"
+          "text": "GLP-1 injection tracker (generic)"
         },
         {
-          "href": "/glp1-injection-reminder-app.html",
-          "text": "GLP-1 injection reminders (reduce missed doses)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub (practical GLP-1 help)"
-        }
-      ]
-    },
-    {
-      "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
-        },
-        {
-          "href": "/glp1-injection-reminder-app.html",
-          "text": "Reminder app guide (how to set a routine that actually sticks)"
-        },
-        {
-          "href": "/semaglutide-injection-reminder.html",
-          "text": "Reminder setup patterns (calendar windows, backups, and consistency)"
-        }
-      ]
-    },
-    {
-      "file": "fda-biosimilar-guidance-2026-03.html",
-      "links": [
-        {
-          "href": "/massachusetts-state-workers-glp1-coverage-ended-2026.html",
-          "text": "Coverage changes: what to track (real-world example)"
-        },
-        {
-          "href": "/glp1-cost-without-insurance.html",
-          "text": "Medication costs without insurance (pricing reality + what to log)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Medication tracker (log product, dates, and notes)"
-        }
-      ]
-    },
-    {
-      "file": "fda-recall-primal-herbs-undeclared-sildenafil.html",
-      "links": [
-        {
-          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
-          "text": "FDA recall alerts: undeclared tadalafil/sildenafil in supplements (guide)"
-        },
-        {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Labeling + tracking basics (simple templates)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking log: products, dates, and notes"
-        }
-      ]
-    },
-    {
-      "file": "compounded-tirzepatide-impurities-quality-questions.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "omnipod-5-pod-correction-march-2026.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Private log + timeline (helpful when troubleshooting devices)"
-        },
-        {
-          "href": "/glp1-injection-reminder-app.html",
-          "text": "Reminder setup patterns (follow-ups, reorder reminders)"
-        },
-        {
-          "href": "/privacy/",
-          "text": "Privacy policy (how your data is handled)"
-        }
-      ]
-    },
-    {
-      "file": "leucovorin-wellcovorin-fda-approval-cerebral-folate-deficiency.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Simple medication tracking (dates, notes, changes)"
-        },
-        {
-          "href": "/glp1-injection-reminder-app.html",
-          "text": "Reminder app guide (building a routine that sticks)"
-        },
-        {
-          "href": "/privacy/",
-          "text": "Privacy policy (how your data is handled)"
-        }
-      ]
-    },
-    {
-      "file": "omnipod-5-pod-recall-correction-under-delivery-insulet-2026.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: a simple log for dates, notes, and patterns"
-        },
-        {
-          "href": "/glp1-injection-reminder-app.html",
-          "text": "Reminder app guide (set a routine that actually sticks)"
-        },
-        {
-          "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
-          "text": "Staying organized during a supply disruption (refill plan + notes)"
-        }
-      ]
-    },
-    {
-      "file": "omnipod-5-pods-medical-device-correction-internal-tubing-tear.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Private log + timeline (helpful when troubleshooting devices)"
-        },
-        {
-          "href": "/glp1-injection-reminder-app.html",
-          "text": "Reminder setup patterns (follow-ups, reorder reminders)"
-        },
-        {
-          "href": "/privacy/",
-          "text": "Privacy policy (how your data is handled)"
-        }
-      ]
-    },
-    {
-      "file": "aldeyra-eye-disorder-drug-fda-declines-2026-03.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
-        },
-        {
-          "href": "/glp1-injection-reminder-app.html",
-          "text": "Reminder app guide (how to set a routine that actually sticks)"
-        },
-        {
-          "href": "/semaglutide-injection-reminder.html",
-          "text": "Reminder setup patterns (calendar windows, backups, and consistency)"
-        }
-      ]
-    },
-    {
-      "file": "lilly-retatrutide-late-stage-diabetes-trial-results-2026-03.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + notes)"
-        },
-        {
-          "href": "/semaglutide-vs-tirzepatide.html",
-          "text": "Semaglutide vs tirzepatide (differences that matter)"
-        },
-        {
-          "href": "/guides/",
-          "text": "GLP-1 guides hub (practical explainers)"
-        }
-      ]
-    },
-    {
-      "file": "semaglutide-patent-expiry-india-generics-2026.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide"
         },
         {
           "href": "/glp1-dosing-schedule.html",
