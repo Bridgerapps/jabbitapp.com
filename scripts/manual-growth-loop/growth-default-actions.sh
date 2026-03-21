@@ -23,10 +23,10 @@ LAST_OUT="$ROOT/data/status/growth-default-actions-last.json"
 NOOP_NEXT_FILE="$ROOT/data/status/growth-default-actions-noop-next.txt"
 
 # Cooldowns (seconds). Goal: reduce hourly repetition + artifact churn.
-COOLDOWN_MEASUREMENT=$((6*60*60))  # 6h
-COOLDOWN_REDDIT=$((6*60*60))       # 6h
+COOLDOWN_MEASUREMENT=$((2*60*60))  # 2h (avoid long NOOP streaks)
+COOLDOWN_REDDIT=$((2*60*60))       # 2h (avoid long NOOP streaks)
 COOLDOWN_PACKS=$((24*60*60))       # 24h
-COOLDOWN_OWNER_PING=$((6*60*60))   # 6h
+COOLDOWN_OWNER_PING=$((2*60*60))   # 2h (owner backlog can be large)
 
 now_epoch=$(date -u +%s)
 now_iso=$(date -u +%FT%TZ)
