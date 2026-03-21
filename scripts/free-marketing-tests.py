@@ -3,7 +3,7 @@
 
 Focus: subscription funnel readiness (visit -> App Store click).
 Outputs:
-- data/status/free-marketing-tests-YYYY-MM-DD.md (ephemeral; not tracked)
+- data/status/free-marketing-tests-YYYY-MM-DD.md (ephemeral)
 - data/status/marketing-tests.json
 """
 
