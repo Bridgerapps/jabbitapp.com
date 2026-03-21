@@ -42,6 +42,10 @@ $COMMITS
 1. One instrumentation integrity task
 2. One CRO change on highest-traffic page
 3. One distribution test with explicit kill criteria
+
+## Execute-first rule
+- Before writing more analysis, run: `scripts/manual-growth-loop/act-on-issues.sh`
+- Only report an issue if it is external-send gated, risky, or still broken after the local fix pass
 EOF
 
 echo "self-improvement:ok:$OUT"
