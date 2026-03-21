@@ -138,9 +138,12 @@ ran_owner_ping=0
 # Action 1) Measurement snapshot (keeps KPI dashboard honest downstream)
 # Writes: data/status/site-analytics.json
 if should_run "measurement" "$COOLDOWN_MEASUREMENT"; then
-  timeout 45s bash "$ROOT/scripts/site-analytics-status.sh" >/dev/null || true
-  mark_ran "measurement"
-  ran_measure=1
+  if timeout 45s bash "$ROOT/scripts/site-analytics-status.sh" >/dev/null; then
+    mark_ran "measurement"
+    ran_measure=1
+  else
+    echo "growth-default-actions: measurement command failed (will not start cooldown)" >&2
+  fi
 else
   echo "growth-default-actions: skip measurement (cooldown)" >&2
 fi
@@ -148,10 +151,13 @@ fi
 # Action 2) Reddit opportunity scouting (manual-only execution later)
 # Writes: data/status/reddit-opps-*.json + reddit-opps-latest.json
 if should_run "reddit" "$COOLDOWN_REDDIT"; then
-  REDDIT_DISCOVERY_USE_COOKIE=false REDDIT_DISCOVERY_COOKIE_FALLBACK=false \
-    timeout 45s python3 "$ROOT/scripts/reddit_smart_review_post.py" >/dev/null 2>&1 || true
-  mark_ran "reddit"
-  ran_reddit=1
+  if REDDIT_DISCOVERY_USE_COOKIE=false REDDIT_DISCOVERY_COOKIE_FALLBACK=false \
+    timeout 45s python3 "$ROOT/scripts/reddit_smart_review_post.py" >/dev/null 2>&1; then
+    mark_ran "reddit"
+    ran_reddit=1
+  else
+    echo "growth-default-actions: reddit scouting failed (will not start cooldown)" >&2
+  fi
 else
   echo "growth-default-actions: skip reddit opps (cooldown)" >&2
 fi
@@ -159,9 +165,12 @@ fi
 # Action 3) Refresh distribution packs (copy/paste snippets; no posting)
 # Writes: output/distribution-pack-*.md
 if should_run "packs" "$COOLDOWN_PACKS"; then
-  timeout 45s bash "$ROOT/scripts/generate-distribution-packs.sh" >/dev/null || true
-  mark_ran "packs"
-  ran_packs=1
+  if timeout 45s bash "$ROOT/scripts/generate-distribution-packs.sh" >/dev/null; then
+    mark_ran "packs"
+    ran_packs=1
+  else
+    echo "growth-default-actions: distribution packs generation failed (will not start cooldown)" >&2
+  fi
 else
   echo "growth-default-actions: skip distribution packs (cooldown)" >&2
 fi
@@ -170,10 +179,14 @@ fi
 # This is low-cost, doesn't require Brave, and makes the next manual step obvious.
 # Writes: data/status/owner-send-ping-latest.txt
 if should_run "owner_ping" "$COOLDOWN_OWNER_PING"; then
-  # The script self-rate-limits; we still treat a run as "attempted" for cooldown.
-  timeout 30s bash "$ROOT/scripts/manual-growth-loop/maybe-generate-owner-send-ping.sh" >/dev/null 2>&1 || true
-  mark_ran "owner_ping"
-  ran_owner_ping=1
+  # The script self-rate-limits; only start our cooldown if it actually refreshed.
+  out_owner=$(timeout 30s bash "$ROOT/scripts/manual-growth-loop/maybe-generate-owner-send-ping.sh" 2>&1 || true)
+  if echo "$out_owner" | grep -q "^OK:"; then
+    mark_ran "owner_ping"
+    ran_owner_ping=1
+  else
+    echo "growth-default-actions: owner ping not refreshed (fresh or failed)" >&2
+  fi
 else
   echo "growth-default-actions: skip owner ping (cooldown)" >&2
 fi
