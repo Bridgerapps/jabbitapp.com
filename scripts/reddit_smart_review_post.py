@@ -315,6 +315,13 @@ def score_comment(c: Cand, comment: str) -> int:
 
 
 def main(auto_post: bool = False) -> int:
+    # Policy guard: no unattended authenticated automation.
+    if auto_post:
+        print(
+            "error: --post is disabled (manual-only policy). Use: bash scripts/reddit.sh manual discover/prepare/log",
+            flush=True,
+        )
+        return 2
     # refresh blacklist best-effort
     subprocess.run(['bash', str(BLACKLIST_REFRESH)], capture_output=True, text=True, timeout=45)
 

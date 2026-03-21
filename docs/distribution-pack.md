@@ -25,3 +25,4 @@ bash scripts/generate-distribution-packs.sh
 - Output is *draft text* only. No posting.
 - Snippets reuse `<title>`, meta description, and first `<h1>` verbatim from the HTML to avoid inventing claims.
 - When using Reddit drafts, follow each subreddit’s self-promo rules and avoid medical advice.
+- Reddit manual workflow runbook: `docs/reddit-manual-distribution-runbook.md`.
