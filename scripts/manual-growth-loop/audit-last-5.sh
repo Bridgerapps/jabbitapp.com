@@ -19,16 +19,40 @@ const parsed = [];
 for (const ln of lines) {
   try { parsed.push(JSON.parse(ln)); } catch {}
 }
-// Keep only the most recent record per iteration (by timestamp),
-// so a late-written "start" record can't overwrite a "finish" record.
+
+const ignoreIter = (process.env.IGNORE_ITERATION || '').trim();
+
+// Keep only the best record per iteration (prefer FINISH/non-empty notes),
+// and optionally ignore the current in-progress iteration.
+function score(e) {
+  let s = 0;
+  const note = (e.note || '');
+  const tags = Array.isArray(e.tags) ? e.tags : [];
+  if (tags.length) s += 1;
+  if (note.trim().length) s += 2;
+  if (/\bFINISH\b/.test(note)) s += 2;
+  if (/SELF-IMPROVEMENT:/.test(note)) s += 1;
+  return s;
+}
+
 const byIter = new Map();
 for (const e of parsed) {
   const k = String(e.iteration);
+  if (ignoreIter && k === ignoreIter) continue;
+
   const prev = byIter.get(k);
+  if (!prev) { byIter.set(k, e); continue; }
+
+  const s1 = score(prev);
+  const s2 = score(e);
+  if (s2 > s1) { byIter.set(k, e); continue; }
+  if (s2 < s1) continue;
+
   const ets = (e.ts || '');
-  const pts = (prev && (prev.ts || '')) || '';
-  if (!prev || ets.localeCompare(pts) > 0) byIter.set(k, e);
+  const pts = (prev.ts || '');
+  if (ets.localeCompare(pts) > 0) byIter.set(k, e);
 }
+
 const uniq = [...byIter.values()].sort((a,b)=> (a.ts||'').localeCompare(b.ts||'')).reverse();
 for (const e of uniq.slice(0,5)) console.log(JSON.stringify(e));
 NODE

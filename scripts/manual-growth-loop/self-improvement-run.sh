@@ -30,7 +30,7 @@ report_txt="$OUTDIR/manual-growth-loop-self-improvement-${iteration}-${ts}.txt"
   echo "mode: ${mode}"
   echo
   echo "## audit-last-5"
-  bash "$ROOT/scripts/manual-growth-loop/audit-last-5.sh" || true
+  IGNORE_ITERATION="$iteration" bash "$ROOT/scripts/manual-growth-loop/audit-last-5.sh" || true
   echo
   echo "## operator-next (preflight-derived)"
   bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" || true
