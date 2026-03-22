@@ -52,6 +52,27 @@ bash "$ROOT/scripts/manual-growth-loop/act-on-issues.sh" >/dev/null 2>&1 || true
     sed -n '1,200p' "$ROOT/data/status/growth-default-actions-noop-next.txt" || true
     echo
   fi
+
+  echo "## git working tree (diagnostic)"
+  if git -C "$ROOT" diff --quiet && [ -z "$(git -C "$ROOT" status --porcelain)" ]; then
+    echo "clean: true"
+  else
+    echo "clean: false"
+    git_dirty_report="$OUTDIR/git-dirty-${iteration}-${ts}.txt"
+    {
+      echo "ts_utc: $(date -u +%FT%TZ)"
+      echo "iteration: ${iteration}"
+      echo "---"
+      echo "git status --porcelain:"
+      git -C "$ROOT" status --porcelain || true
+      echo
+      echo "git diff --stat:"
+      git -C "$ROOT" diff --stat || true
+    } >"$git_dirty_report"
+    echo "wrote: ${git_dirty_report##$ROOT/}"
+  fi
+  echo
+
   echo "## recommended process upgrades (operator picks 1-3)"
   echo "- When mode=self-improvement, ALWAYS run this script, then record-finish with what changed."
   echo "- Prefer upgrades that reduce repeat loops: stronger STOP reasons, better next-action surfacing, fewer empty runs."
