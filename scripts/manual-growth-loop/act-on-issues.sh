@@ -36,7 +36,45 @@ if bash "$ROOT/scripts/site-analytics-status.sh" >/dev/null 2>&1; then
   ran_site_analytics=true
 fi
 
-# 4) If Reddit telemetry is stale/unknown, refresh the public health probe + canonical status.
+# 4) Auto-fix common low-risk SEO blockers (keeps health-check green without manual babysitting).
+#    - Sitemap mismatch is usually just a stale sitemap.xml.
+#    - Related-links coverage missing is usually a missing rule for a new page.
+#    These are safe local fixes (no external sends).
+if [ -f "$HEALTH" ]; then
+  sitemap_missing=$(jq -r '.sitemap_missing_count // 0' "$HEALTH" 2>/dev/null || echo 0)
+  if [ "$sitemap_missing" != "0" ]; then
+    python3 "$ROOT/scripts/generate-sitemap.py" >/dev/null 2>&1 || true
+  fi
+
+  rl_missing=$(jq -r '.related_links_missing_count // 0' "$HEALTH" 2>/dev/null || echo 0)
+  if [ "$rl_missing" != "0" ]; then
+    # Apply suggested related-links rules for missing pages (idempotent).
+    python3 - <<'PY' >/dev/null 2>&1 || true
+import json
+from pathlib import Path
+root = Path('/home/jabbit/.openclaw/workspace')
+res = json.loads((__import__('subprocess').check_output(['python3', str(root/'scripts/related-links-suggest.py'), '--json'])).decode('utf-8'))
+rules_path = root/'data/seo/related-links.json'
+if not rules_path.exists():
+    raise SystemExit(0)
+data = json.loads(rules_path.read_text())
+rules = data.get('rules', [])
+existing = {r.get('file') for r in rules if isinstance(r, dict)}
+for s in res.get('suggestions', []):
+    f = s.get('file')
+    links = s.get('links')
+    if f and f not in existing and isinstance(links, list) and links:
+        rules.append({'file': f, 'links': links})
+        existing.add(f)
+if rules != data.get('rules', []):
+    data['rules'] = rules
+    data['updated'] = __import__('datetime').datetime.utcnow().replace(microsecond=0).isoformat() + 'Z'
+    rules_path.write_text(json.dumps(data, indent=2) + '\n')
+PY
+  fi
+fi
+
+# 5) If Reddit telemetry is stale/unknown, refresh the public health probe + canonical status.
 reddit_fresh=$(jq -r '.reddit_fresh // false' "$SYSTEMS" 2>/dev/null || echo false)
 reddit_status=$(jq -r '.reddit // "unknown"' "$SYSTEMS" 2>/dev/null || echo unknown)
 if [ "$reddit_fresh" != "true" ] || [ "$reddit_status" = "unknown" ]; then

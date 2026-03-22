@@ -954,6 +954,19 @@
           "text": "GLP-1 dosing schedules (reference for what to log)"
         }
       ]
+    },
+    {
+      "file": "injection-protocol-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
     }
   ]
 }
