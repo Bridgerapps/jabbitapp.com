@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-21T13:36:13Z",
-  "total_pages": 56,
+  "last_updated": "2026-03-23T13:36:26Z",
+  "total_pages": 58,
   "topics": [
     {
       "topic": "bpc-157",
@@ -286,6 +286,16 @@
       "topic": "carbidopa-levodopa-vitamin-b6-deficiency-seizure-warning-2026",
       "filename": "carbidopa-levodopa-vitamin-b6-deficiency-seizure-warning-2026.html",
       "created": "2026-03-21"
+    },
+    {
+      "topic": "injection-protocol-tracker",
+      "filename": "injection-protocol-tracker.html",
+      "created": "2026-03-21"
+    },
+    {
+      "topic": "wegovy-7-2mg-fda-approval-priority-voucher-april-2026",
+      "filename": "wegovy-7-2mg-fda-approval-priority-voucher-april-2026.html",
+      "created": "2026-03-23"
     }
   ],
   "suggested_topics": [

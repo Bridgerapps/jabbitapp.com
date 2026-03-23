@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-21T13:37:22Z",
+  "updated": "2026-03-23T13:37:23Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -965,6 +965,23 @@
         {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
+    },
+    {
+      "file": "wegovy-7-2mg-fda-approval-priority-voucher-april-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
         }
       ]
     }
