@@ -73,10 +73,14 @@ bash "$ROOT/scripts/manual-growth-loop/act-on-issues.sh" >/dev/null 2>&1 || true
   fi
   echo
 
+  echo "## research (cached operator patterns; avoid rate-limit churn)"
+  bash "$ROOT/scripts/manual-growth-loop/research-openclaw-patterns.sh" 2>/dev/null || true
+  echo
+
   echo "## recommended process upgrades (operator picks 1-3)"
   echo "- When mode=self-improvement, ALWAYS run this script, then record-finish with what changed."
   echo "- Prefer upgrades that reduce repeat loops: stronger STOP reasons, better next-action surfacing, fewer empty runs."
-  echo "- Keep outputs ephemeral unless it changes system state: write to data/status or scripts/, not WORKLOG." 
+  echo "- Keep outputs ephemeral unless it changes system state: write to data/status or scripts/, not WORKLOG."
 } | tee "$report_txt" >/dev/null
 
 # Record a finish note that this iteration executed the self-improvement harness.
