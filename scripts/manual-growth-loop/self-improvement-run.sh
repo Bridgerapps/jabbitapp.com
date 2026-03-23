@@ -28,6 +28,20 @@ act_json="$OUTDIR/manual-growth-loop-act-on-issues-last.json"
 # Crucial: self-improvement should change system state when it safely can.
 bash "$ROOT/scripts/manual-growth-loop/act-on-issues.sh" >/dev/null 2>&1 || true
 
+# Guardrail: self-improvement runs must not leave the repo dirty due to accidental edits
+# to tracked docs. If a background step dirties docs/ without an explicit intent to ship,
+# revert it so subsequent runs stay reliable and we don't "silently accumulate" diffs.
+# Override by setting ALLOW_DOC_MUTATIONS=1 in the environment.
+if [ "${ALLOW_DOC_MUTATIONS:-0}" != "1" ]; then
+  dirty_paths=$(git -C "$ROOT" status --porcelain | awk '{print $2}' || true)
+  if echo "$dirty_paths" | grep -q '^docs/breaking-topics-radar.md$'; then
+    # Only auto-revert if this is the *only* dirty file.
+    if [ "$(echo "$dirty_paths" | sed '/^$/d' | wc -l | tr -d ' ')" = "1" ]; then
+      git -C "$ROOT" checkout -- docs/breaking-topics-radar.md >/dev/null 2>&1 || true
+    fi
+  fi
+fi
+
 {
   echo "self-improvement-report"
   echo "ts_utc: $(date -u +%FT%TZ)"
