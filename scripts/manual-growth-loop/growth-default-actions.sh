@@ -28,6 +28,10 @@ COOLDOWN_REDDIT=$((2*60*60))       # 2h (avoid rate-limit + repetition)
 COOLDOWN_PACKS=$((24*60*60))       # 24h
 COOLDOWN_OWNER_PING=$((4*60*60))   # 4h (owner backlog can be large)
 
+# Grace window to avoid false NOOPs when schedules drift by a few seconds.
+# Example: job runs at 22:05:06 and then 23:05:05 → age=3599s (looks ineligible at 1h).
+COOLDOWN_GRACE_SECONDS=90
+
 now_epoch=$(date -u +%s)
 now_iso=$(date -u +%FT%TZ)
 
@@ -69,7 +73,14 @@ should_run() {
     return 0
   fi
   local age=$((now_epoch - last))
-  [ "$age" -ge "$cooldown" ]
+  local effective=$cooldown
+  # Apply grace so near-boundary runs don't get stuck NOOPing.
+  if [ "$effective" -gt "$COOLDOWN_GRACE_SECONDS" ]; then
+    effective=$((effective - COOLDOWN_GRACE_SECONDS))
+  else
+    effective=0
+  fi
+  [ "$age" -ge "$effective" ]
 }
 
 mark_ran() {
