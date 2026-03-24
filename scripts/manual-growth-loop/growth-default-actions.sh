@@ -189,13 +189,14 @@ fi
 # This is low-cost, doesn't require Brave, and makes the next manual step obvious.
 # Writes: data/status/owner-send-ping-latest.txt
 if should_run "owner_ping" "$COOLDOWN_OWNER_PING"; then
-  # The script self-rate-limits; only start our cooldown if it actually refreshed.
+  # The script self-rate-limits; treat SKIP (already fresh) as a successful run so
+  # we still start our cooldown and avoid repeated hourly NOOPs.
   out_owner=$(timeout 30s bash "$ROOT/scripts/manual-growth-loop/maybe-generate-owner-send-ping.sh" 2>&1 || true)
-  if echo "$out_owner" | grep -q "^OK:"; then
+  if echo "$out_owner" | grep -qE "^(OK:|SKIP:)"; then
     mark_ran "owner_ping"
     ran_owner_ping=1
   else
-    echo "growth-default-actions: owner ping not refreshed (fresh or failed)" >&2
+    echo "growth-default-actions: owner ping failed ($out_owner)" >&2
   fi
 else
   echo "growth-default-actions: skip owner ping (cooldown)" >&2
