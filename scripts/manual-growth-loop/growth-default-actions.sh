@@ -206,6 +206,7 @@ ran_any=$((ran_measure + ran_reddit + ran_packs + ran_owner_ping))
 remaining_seconds() {
   # Usage: remaining_seconds <key> <cooldown_seconds>
   # Returns 0 if eligible now; otherwise positive seconds remaining.
+  # NOTE: Mirrors should_run()'s grace behavior so NOOP guidance doesn't lie.
   local key="$1"
   local cooldown="$2"
   local last
@@ -215,10 +216,18 @@ remaining_seconds() {
     return
   fi
   local age=$((now_epoch - last))
-  if [ "$age" -ge "$cooldown" ]; then
+
+  local effective=$cooldown
+  if [ "$effective" -gt "$COOLDOWN_GRACE_SECONDS" ]; then
+    effective=$((effective - COOLDOWN_GRACE_SECONDS))
+  else
+    effective=0
+  fi
+
+  if [ "$age" -ge "$effective" ]; then
     echo 0
   else
-    echo $((cooldown - age))
+    echo $((effective - age))
   fi
 }
 
@@ -258,6 +267,12 @@ if [ "$ran_any" -eq 0 ]; then
     echo "reason: all default actions in cooldown windows"
     echo "next_eligible_in_seconds: $next_in"
     [ -n "$next_at" ] && echo "next_eligible_at_utc: $next_at"
+    echo
+    echo "--- cooldowns (seconds remaining; 0=eligible) ---"
+    echo "measurement: $(remaining_seconds measurement "$COOLDOWN_MEASUREMENT")"
+    echo "reddit: $(remaining_seconds reddit "$COOLDOWN_REDDIT")"
+    echo "packs: $(remaining_seconds packs "$COOLDOWN_PACKS")"
+    echo "owner_ping: $(remaining_seconds owner_ping "$COOLDOWN_OWNER_PING")"
     echo
     echo "--- operator-next ---"
     bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" 2>/dev/null || true
