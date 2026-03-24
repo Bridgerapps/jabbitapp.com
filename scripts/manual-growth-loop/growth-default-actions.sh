@@ -26,7 +26,7 @@ NOOP_NEXT_FILE="$ROOT/data/status/growth-default-actions-noop-next.txt"
 COOLDOWN_MEASUREMENT=$((60*60))   # 1h (aligns with hourly loop; prevents endless NOOPs)
 COOLDOWN_REDDIT=$((2*60*60))       # 2h (avoid rate-limit + repetition)
 COOLDOWN_PACKS=$((24*60*60))       # 24h
-COOLDOWN_OWNER_PING=$((4*60*60))   # 4h (owner backlog can be large)
+COOLDOWN_OWNER_PING=$((60*60))      # 1h (cheap + usually SKIP/no-op; prevents empty hourly runs)
 
 # Grace window to avoid false NOOPs when schedules drift by a few seconds.
 # Example: job runs at 22:05:06 and then 23:05:05 → age=3599s (looks ineligible at 1h).
