@@ -27,6 +27,7 @@ COOLDOWN_MEASUREMENT=$((60*60))   # 1h (aligns with hourly loop; prevents endles
 COOLDOWN_REDDIT=$((2*60*60))       # 2h (avoid rate-limit + repetition)
 COOLDOWN_PACKS=$((24*60*60))       # 24h
 COOLDOWN_OWNER_PING=$((60*60))      # 1h (cheap + usually SKIP/no-op; prevents empty hourly runs)
+COOLDOWN_NEXTPACK=$((15*60))        # 15m (fallback so we never have fully empty runs)
 
 # Grace window to avoid false NOOPs when schedules drift by a few seconds.
 # Example: job runs at 22:05:06 and then 23:05:05 → age=3599s (looks ineligible at 1h).
@@ -38,7 +39,7 @@ now_iso=$(date -u +%FT%TZ)
 init_state() {
   if [ ! -f "$STATE" ]; then
     mkdir -p "$(dirname "$STATE")"
-    printf '{"measurement":null,"reddit":null,"packs":null,"owner_ping":null}\n' >"$STATE"
+    printf '{"measurement":null,"reddit":null,"packs":null,"owner_ping":null,"nextpack":null}\n' >"$STATE"
     return
   fi
 
@@ -46,6 +47,12 @@ init_state() {
   if ! jq -e '.owner_ping? // empty' "$STATE" >/dev/null 2>&1; then
     tmp=$(mktemp)
     jq '. + {owner_ping:(.owner_ping // null)}' "$STATE" >"$tmp"
+    mv "$tmp" "$STATE"
+  fi
+
+  if ! jq -e '.nextpack? // empty' "$STATE" >/dev/null 2>&1; then
+    tmp=$(mktemp)
+    jq '. + {nextpack:(.nextpack // null)}' "$STATE" >"$tmp"
     mv "$tmp" "$STATE"
   fi
 }
@@ -93,14 +100,15 @@ mark_ran() {
 }
 
 write_last_out() {
-  # Usage: write_last_out <ran_measure> <ran_reddit> <ran_packs> <ran_owner_ping> <noop_reason> [next_eligible_in_seconds] [next_eligible_at_utc]
+  # Usage: write_last_out <ran_measure> <ran_reddit> <ran_packs> <ran_owner_ping> <ran_nextpack> <noop_reason> [next_eligible_in_seconds] [next_eligible_at_utc]
   local ran_measure="$1"
   local ran_reddit="$2"
   local ran_packs="$3"
   local ran_owner_ping="$4"
-  local noop_reason="$5"
-  local next_in="${6:-}"
-  local next_at="${7:-}"
+  local ran_nextpack="$5"
+  local noop_reason="$6"
+  local next_in="${7:-}"
+  local next_at="${8:-}"
 
   mkdir -p "$(dirname "$LAST_OUT")"
   jq -n \
@@ -109,13 +117,14 @@ write_last_out() {
     --argjson reddit "$ran_reddit" \
     --argjson packs "$ran_packs" \
     --argjson owner_ping "$ran_owner_ping" \
+    --argjson nextpack "$ran_nextpack" \
     --arg noop_reason "$noop_reason" \
     --arg noop_next_file "$NOOP_NEXT_FILE" \
     --arg next_eligible_in_seconds "${next_in}" \
     --arg next_eligible_at_utc "${next_at}" \
     '{
       ts_utc:$ts_utc,
-      ran:{measurement:$measurement, reddit:$reddit, packs:$packs, owner_ping:$owner_ping},
+      ran:{measurement:$measurement, reddit:$reddit, packs:$packs, owner_ping:$owner_ping, nextpack:$nextpack},
       noop_reason:($noop_reason|select(length>0)),
       noop_next_file:$noop_next_file,
       next_eligible_in_seconds:(($next_eligible_in_seconds|select(length>0))|tonumber?),
@@ -135,7 +144,7 @@ if [ "$code" -ne 0 ]; then
   echo "--- preflight output ---" >&2
   cat /tmp/manual-growth-loop-preflight.txt >&2 || true
   # still emit last_out so caller can tag accurately
-  write_last_out 0 0 0 0 "preflight_not_ok"
+  write_last_out 0 0 0 0 0 "preflight_not_ok"
   exit "$code"
 fi
 
@@ -145,6 +154,7 @@ ran_measure=0
 ran_reddit=0
 ran_packs=0
 ran_owner_ping=0
+ran_nextpack=0
 
 # Action 1) Measurement snapshot (keeps KPI dashboard honest downstream)
 # Writes: data/status/site-analytics.json
@@ -202,7 +212,7 @@ else
   echo "growth-default-actions: skip owner ping (cooldown)" >&2
 fi
 
-ran_any=$((ran_measure + ran_reddit + ran_packs + ran_owner_ping))
+ran_any=$((ran_measure + ran_reddit + ran_packs + ran_owner_ping + ran_nextpack))
 
 remaining_seconds() {
   # Usage: remaining_seconds <key> <cooldown_seconds>
@@ -240,7 +250,8 @@ next_eligible_in() {
     "measurement:$COOLDOWN_MEASUREMENT" \
     "reddit:$COOLDOWN_REDDIT" \
     "packs:$COOLDOWN_PACKS" \
-    "owner_ping:$COOLDOWN_OWNER_PING"; do
+    "owner_ping:$COOLDOWN_OWNER_PING" \
+    "nextpack:$COOLDOWN_NEXTPACK"; do
     local key=${spec%%:*}
     local cd=${spec##*:}
     r=$(remaining_seconds "$key" "$cd")
@@ -256,6 +267,27 @@ next_eligible_in() {
 }
 
 if [ "$ran_any" -eq 0 ]; then
+  # Fallback: even when all core actions are in cooldown, write a compact “next action pack”
+  # so hourly runs still produce a useful artifact and don't look dead in audits.
+  if should_run "nextpack" "$COOLDOWN_NEXTPACK"; then
+    nextpack_file="$ROOT/data/status/growth-nextpack-latest.txt"
+    tmp_pack=$(mktemp)
+    {
+      echo "ts_utc: $now_iso"
+      echo
+      echo "--- operator-next ---"
+      bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" 2>/dev/null || true
+      echo
+      echo "--- ledger-next ---"
+      bash "$ROOT/scripts/manual-growth-loop/ledger-next.sh" 2>/dev/null || true
+    } >"$tmp_pack"
+    mv "$tmp_pack" "$nextpack_file"
+    mark_ran "nextpack"
+    ran_nextpack=1
+    ran_any=1
+    echo "growth-default-actions: fallback nextpack -> $nextpack_file" >&2
+  fi
+
   echo "growth-default-actions: NOOP (all actions in cooldown windows)" >&2
 
   # Avoid rewriting the same NOOP guidance every hour (reduces churn + makes audits cleaner).
@@ -274,6 +306,7 @@ if [ "$ran_any" -eq 0 ]; then
     echo "reddit: $(remaining_seconds reddit "$COOLDOWN_REDDIT")"
     echo "packs: $(remaining_seconds packs "$COOLDOWN_PACKS")"
     echo "owner_ping: $(remaining_seconds owner_ping "$COOLDOWN_OWNER_PING")"
+    echo "nextpack: $(remaining_seconds nextpack "$COOLDOWN_NEXTPACK")"
     echo
     echo "--- operator-next ---"
     bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" 2>/dev/null || true
@@ -295,8 +328,8 @@ if [ "$ran_any" -eq 0 ]; then
     echo "growth-default-actions: noop next unchanged (not rewriting)" >&2
   fi
 
-  write_last_out 0 0 0 0 "all_in_cooldown" "$next_in" "$next_at"
+  write_last_out 0 0 0 0 "$ran_nextpack" "all_in_cooldown" "$next_in" "$next_at"
 else
-  write_last_out "$ran_measure" "$ran_reddit" "$ran_packs" "$ran_owner_ping" ""
+  write_last_out "$ran_measure" "$ran_reddit" "$ran_packs" "$ran_owner_ping" "$ran_nextpack" ""
   echo "growth-default-actions: OK (ran at least 1 action; cooldowns active)"
 fi
