@@ -339,7 +339,9 @@ if [ "$ran_any" -eq 0 ]; then
     echo "growth-default-actions: noop next unchanged (not rewriting)" >&2
   fi
 
-  write_last_out 0 0 0 0 "$ran_nextpack" "all_in_cooldown" "$next_in" "$next_at"
+  # We *did* produce a useful fallback artifact (nextpack/noop-next). Treat this as a successful run
+  # for audit purposes; avoid labeling the hour as a pure NOOP.
+  write_last_out 0 0 0 0 "$ran_nextpack" "" "$next_in" "$next_at"
 else
   write_last_out "$ran_measure" "$ran_reddit" "$ran_packs" "$ran_owner_ping" "$ran_nextpack" ""
   echo "growth-default-actions: OK (ran at least 1 action; cooldowns active)"
