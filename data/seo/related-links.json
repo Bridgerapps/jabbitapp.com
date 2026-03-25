@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-24T13:37:18Z",
+  "updated": "2026-03-25T13:38:45Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -999,6 +999,23 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
+      "links": [
+        {
+          "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
+          "text": "Supply disruptions: refill tracking checklist"
+        },
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recall explainer (what to save + how to follow up)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log"
         }
       ]
     }
