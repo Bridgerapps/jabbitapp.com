@@ -125,10 +125,10 @@ write_last_out() {
     '{
       ts_utc:$ts_utc,
       ran:{measurement:$measurement, reddit:$reddit, packs:$packs, owner_ping:$owner_ping, nextpack:$nextpack},
-      noop_reason:($noop_reason|select(length>0)),
+      noop_reason:($noop_reason | if length>0 then . else null end),
       noop_next_file:$noop_next_file,
-      next_eligible_in_seconds:(($next_eligible_in_seconds|select(length>0))|tonumber?),
-      next_eligible_at_utc:($next_eligible_at_utc|select(length>0))
+      next_eligible_in_seconds:($next_eligible_in_seconds | if length>0 then (tonumber?) else null end),
+      next_eligible_at_utc:($next_eligible_at_utc | if length>0 then . else null end)
     }' \
     >"$LAST_OUT"
 }
