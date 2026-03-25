@@ -269,26 +269,37 @@ next_eligible_in() {
 if [ "$ran_any" -eq 0 ]; then
   # Fallback: even when all core actions are in cooldown, write a compact “next action pack”
   # so hourly runs still produce a useful artifact and don't look dead in audits.
-  if should_run "nextpack" "$COOLDOWN_NEXTPACK"; then
-    nextpack_file="$ROOT/data/status/growth-nextpack-latest.txt"
-    tmp_pack=$(mktemp)
-    {
-      echo "ts_utc: $now_iso"
-      echo
-      echo "--- operator-next ---"
-      bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" 2>/dev/null || true
-      echo
-      echo "--- ledger-next ---"
-      bash "$ROOT/scripts/manual-growth-loop/ledger-next.sh" 2>/dev/null || true
-    } >"$tmp_pack"
+  # Always produce a “next action pack” when core actions are cooling down.
+  # This prevents long streaks of empty hourly runs. We also avoid churn by only
+  # rewriting the file when content actually changes.
+  nextpack_file="$ROOT/data/status/growth-nextpack-latest.txt"
+  tmp_pack=$(mktemp)
+  {
+    echo "ts_utc: $now_iso"
+    echo
+    echo "--- operator-next ---"
+    bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" 2>/dev/null || true
+    echo
+    echo "--- ledger-next ---"
+    bash "$ROOT/scripts/manual-growth-loop/ledger-next.sh" 2>/dev/null || true
+  } >"$tmp_pack"
+
+  if [ ! -f "$nextpack_file" ] || ! cmp -s "$nextpack_file" "$tmp_pack"; then
     mv "$tmp_pack" "$nextpack_file"
-    mark_ran "nextpack"
-    ran_nextpack=1
-    ran_any=1
     echo "growth-default-actions: fallback nextpack -> $nextpack_file" >&2
+  else
+    rm -f "$tmp_pack"
+    echo "growth-default-actions: nextpack unchanged (not rewriting)" >&2
   fi
 
-  echo "growth-default-actions: NOOP (all actions in cooldown windows)" >&2
+  mark_ran "nextpack"
+  ran_nextpack=1
+  ran_any=1
+
+  # Only call it a NOOP if we couldn't even produce the fallback pack.
+  if [ "$ran_nextpack" -eq 0 ]; then
+    echo "growth-default-actions: NOOP (all actions in cooldown windows)" >&2
+  fi
 
   # Avoid rewriting the same NOOP guidance every hour (reduces churn + makes audits cleaner).
   tmp_noop=$(mktemp)
