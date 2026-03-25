@@ -56,11 +56,17 @@ if [ -z "$note" ]; then
     LAST_OUT="$ROOT/data/status/growth-default-actions-last.json"
     ran_m=0; ran_r=0; ran_l=0; ran_p=0; ran_n=0
     if [ -f "$LAST_OUT" ]; then
-      ran_m=$(jq -r '.ran.measurement // false' "$LAST_OUT" 2>/dev/null | grep -qi true && echo 1 || echo 0)
-      ran_r=$(jq -r '.ran.reddit // false' "$LAST_OUT" 2>/dev/null | grep -qi true && echo 1 || echo 0)
-      ran_l=$(jq -r '.ran.packs // false' "$LAST_OUT" 2>/dev/null | grep -qi true && echo 1 || echo 0)
-      ran_p=$(jq -r '.ran.owner_ping // false' "$LAST_OUT" 2>/dev/null | grep -qi true && echo 1 || echo 0)
-      ran_n=$(jq -r '.ran.nextpack // false' "$LAST_OUT" 2>/dev/null | grep -qi true && echo 1 || echo 0)
+      # growth-default-actions-last.json stores 0/1 ints (not booleans). Treat >=1 as true.
+      ran_m=$(jq -r '.ran.measurement // 0' "$LAST_OUT" 2>/dev/null || echo 0)
+      ran_r=$(jq -r '.ran.reddit // 0' "$LAST_OUT" 2>/dev/null || echo 0)
+      ran_l=$(jq -r '.ran.packs // 0' "$LAST_OUT" 2>/dev/null || echo 0)
+      ran_p=$(jq -r '.ran.owner_ping // 0' "$LAST_OUT" 2>/dev/null || echo 0)
+      ran_n=$(jq -r '.ran.nextpack // 0' "$LAST_OUT" 2>/dev/null || echo 0)
+      [[ "$ran_m" =~ ^[0-9]+$ ]] || ran_m=0
+      [[ "$ran_r" =~ ^[0-9]+$ ]] || ran_r=0
+      [[ "$ran_l" =~ ^[0-9]+$ ]] || ran_l=0
+      [[ "$ran_p" =~ ^[0-9]+$ ]] || ran_p=0
+      [[ "$ran_n" =~ ^[0-9]+$ ]] || ran_n=0
     fi
 
     finish_tags=""
