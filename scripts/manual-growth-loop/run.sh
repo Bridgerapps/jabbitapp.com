@@ -93,11 +93,12 @@ if [ -z "$note" ]; then
       [ -n "$next_at" ] && extra=" next_eligible_at_utc=$next_at"
       [ -n "$next_in" ] && extra="${extra} next_eligible_in_seconds=$next_in"
 
-      bash "$ROOT/scripts/manual-growth-loop/record-finish.sh"         --note "FINISH: growth-default-actions NOOP (cooldowns). See data/status/growth-default-actions-noop-next.txt.${extra}"
+      bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
+        --note "growth-default-actions NOOP (cooldowns). See data/status/growth-default-actions-noop-next.txt.${extra}"
     else
       bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
         --tags "$finish_tags" \
-        --note "FINISH: Ran growth-default-actions. Tags=[$finish_tags]. Output: $out_one"
+        --note "Ran growth-default-actions. Tags=[$finish_tags]. Output: $out_one"
     fi
   elif [ $code -eq 22 ]; then
     # Reliability: if it's a self-improvement iteration, actually run the harness
