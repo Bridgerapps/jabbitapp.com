@@ -141,3 +141,29 @@ if [ -f "$LEDGER" ]; then
 else
   echo "- ledger missing (skipped): $LEDGER"
 fi
+
+echo
+
+echo "# Cooldown churn check (last5)"
+# Heuristic: if most recent growth runs are just default-actions with cooldown skips,
+# we should tighten the loop (either relax cooldowns, lower schedule frequency, or
+# ensure a cheap always-eligible action exists).
+cd_packs=$(printf "%s\n" "$LAST5" | grep -c 'skip distribution packs (cooldown)' || true)
+cd_reddit=$(printf "%s\n" "$LAST5" | grep -c 'skip reddit opps (cooldown)' || true)
+cd_measure=$(printf "%s\n" "$LAST5" | grep -c 'skip measurement (cooldown)' || true)
+
+printf -- "- cooldown_skips: measurement=%s reddit=%s packs=%s\n" "$cd_measure" "$cd_reddit" "$cd_packs"
+
+if [ -f "$ROOT/data/status/growth-default-actions-noop-next.txt" ]; then
+  next_in=$(grep -E '^next_eligible_in_seconds:' "$ROOT/data/status/growth-default-actions-noop-next.txt" | awk '{print $2}' | tail -n 1 || true)
+  next_at=$(grep -E '^next_eligible_at_utc:' "$ROOT/data/status/growth-default-actions-noop-next.txt" | awk '{print $2}' | tail -n 1 || true)
+  if [ -n "$next_in" ] || [ -n "$next_at" ]; then
+    echo "- next_eligible_hint: in_seconds=${next_in:-unknown} at_utc=${next_at:-unknown}"
+  fi
+fi
+
+# Suggest a single concrete improvement when churn is high.
+# Threshold: if >=3 of last5 mention cooldown skips for BOTH reddit and packs.
+if [ "$cd_reddit" -ge 3 ] && [ "$cd_packs" -ge 3 ]; then
+  echo "- hint: last5 are mostly cooldown-bound; consider (a) running this loop every 2h instead of hourly, or (b) making one low-cost action always eligible (e.g., owner_ping or nextpack) without rewriting artifacts unless changed."
+fi
