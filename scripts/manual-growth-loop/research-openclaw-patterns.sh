@@ -44,10 +44,12 @@ fi
   echo "updated_utc: $(date -u +%FT%TZ)"
   echo
   echo "## Patterns we will follow"
-  echo "- Prefer isolated cron agentTurn jobs for stateless chores; main-session systemEvent jobs must be fully self-contained."
-  echo "- Every loop should either (a) advance state or (b) STOP with a single, concrete next action that advances state."
-  echo "- Reduce empty runs: align cooldowns with schedule (hourly loop should have >=1 cheap action eligible each hour)."
-  echo "- When a loop is blocked on human action, generate a stable ‘owner pack’ artifact once, then rate-limit nudges (don’t churn new drafts)."
+  echo "- Reliability = evidence: every run should leave behind durable, inspectable artifacts (JSONL run log + any local side-effects) so we can explain/verify what happened later."
+  echo "- Single-writer invariant: serialize state changes through one lane/session at a time; avoid multi-turn cron flows that depend on yield/resume."
+  echo "- Prefer isolated cron agentTurn jobs for stateless chores; reserve main-session systemEvent jobs for work that truly needs main context, and pick wakeMode deliberately (now vs next-heartbeat)."
+  echo "- Every loop should either (a) advance state or (b) STOP with a single, concrete owner/action that advances state (no draft churn)."
+  echo "- Reduce empty runs: align cooldowns with schedule (hourly loop should have ≥1 cheap eligible action); if both scouting lanes are cooling down, pivot to backlog/measurement integrity checks." 
+  echo "- When blocked on human action, generate a stable ‘owner pack’ artifact once, then rate-limit nudges (don’t churn new drafts)."
   echo
   echo "## Known edge cases / gotchas (recent)"
   echo "- Cron main-session jobs can fail to wake/process injected systemEvents in some versions (systemEvent sits until next heartbeat/user message). Mitigation: prefer sessionTarget=\"isolated\" + payload.kind=\"agentTurn\" with delivery.mode=announce/webhook for anything that must deliver reliably." 
@@ -62,8 +64,9 @@ fi
   fi
   echo
   echo "## External references (for the next deliberate research run)"
-  echo "- https://openclawlab.com/en/docs/automation/cron-jobs/ (canonical shapes + concepts)"
-  echo "- https://openclaw-setup.me/blog/openclaw-internals/openclaw-cron-jobs-guide/ (architecture + session targets)"
+  echo "- https://openclawlab.com/en/docs/automation/cron-jobs/ (cron concepts: wakeMode, delivery modes, storage)"
+  echo "- https://openclawlab.com/en/docs/automation/cron-vs-heartbeat/ (when to use which)"
+  echo "- https://theagentstack.substack.com/p/openclaw-architecture-part-6-reliability (reliability/observability: lanes, dedupe, evidence bundles)"
   echo "- https://github.com/openclaw/openclaw/issues/11726 (main sessionTarget wake bug report)"
   echo "- https://github.com/openclaw/openclaw/issues/46298"
   echo "- https://github.com/openclaw/openclaw/issues/49572"
