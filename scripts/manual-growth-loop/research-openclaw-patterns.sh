@@ -50,7 +50,8 @@ fi
   echo "- When a loop is blocked on human action, generate a stable ‘owner pack’ artifact once, then rate-limit nudges (don’t churn new drafts)."
   echo
   echo "## Known edge cases / gotchas (recent)"
-  echo "- cron + isolated sessions: sessions_yield behavior has had regressions/bugs in recent OpenClaw releases; avoid designing cron flows that require multi-turn yield/resume. Prefer delivery=announce/webhook for results, and keep runs single-turn deterministic."
+  echo "- Cron main-session jobs can fail to wake/process injected systemEvents in some versions (systemEvent sits until next heartbeat/user message). Mitigation: prefer sessionTarget=\"isolated\" + payload.kind=\"agentTurn\" with delivery.mode=announce/webhook for anything that must deliver reliably." 
+  echo "- cron + isolated sessions: sessions_yield behavior has had regressions/bugs in some OpenClaw releases; avoid designing cron flows that require multi-turn yield/resume. Prefer delivery=announce/webhook for results, and keep runs single-turn deterministic."
   echo
   echo "## Local docs to keep in mind"
   if [ -f "$ROOT/docs/cron-edit-safety.md" ]; then
@@ -61,7 +62,9 @@ fi
   fi
   echo
   echo "## External references (for the next deliberate research run)"
-  echo "- https://openclaw-setup.me/blog/openclaw-internals/openclaw-cron-jobs-guide/"
+  echo "- https://openclawlab.com/en/docs/automation/cron-jobs/ (canonical shapes + concepts)"
+  echo "- https://openclaw-setup.me/blog/openclaw-internals/openclaw-cron-jobs-guide/ (architecture + session targets)"
+  echo "- https://github.com/openclaw/openclaw/issues/11726 (main sessionTarget wake bug report)"
   echo "- https://github.com/openclaw/openclaw/issues/46298"
   echo "- https://github.com/openclaw/openclaw/issues/49572"
 } >"$CACHE"
