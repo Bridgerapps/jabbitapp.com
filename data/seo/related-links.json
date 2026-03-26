@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-25T13:38:45Z",
+  "updated": "2026-03-26T13:37:39Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1016,6 +1016,23 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "Tracking basics: a simple medication log"
+        }
+      ]
+    },
+    {
+      "file": "insulin-pricing-35-cap-ftc-settlement-policy-roundup-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "Medication costs without insurance (pricing reality + what to track)"
+        },
+        {
+          "href": "/massachusetts-state-workers-glp1-coverage-ended-2026.html",
+          "text": "Coverage changes explainer (what to check + what to save)"
+        },
+        {
+          "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
+          "text": "Refill friction checklist (calls, claim codes, and documentation)"
         }
       ]
     }

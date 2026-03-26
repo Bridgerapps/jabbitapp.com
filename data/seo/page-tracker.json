@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-25T13:38:20Z",
-  "total_pages": 60,
+  "last_updated": "2026-03-26T13:36:45Z",
+  "total_pages": 61,
   "topics": [
     {
       "topic": "bpc-157",
@@ -311,6 +311,11 @@
       "topic": "childrens-ibuprofen-recall-contamination-complaints-2026-03",
       "filename": "childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
       "created": "2026-03-25"
+    },
+    {
+      "topic": "insulin-pricing-35-cap-ftc-settlement-policy-roundup-2026-03",
+      "filename": "insulin-pricing-35-cap-ftc-settlement-policy-roundup-2026-03.html",
+      "created": "2026-03-26"
     }
   ],
   "suggested_topics": [
