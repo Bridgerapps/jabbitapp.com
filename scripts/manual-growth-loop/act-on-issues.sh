@@ -12,7 +12,15 @@ ran_health=false
 ran_kpi=false
 ran_site_analytics=false
 ran_reddit_refresh=false
+ran_git_commit=false
 ran_git_push=false
+
+git_dirty_files_before=""
+
+git_dirty_before=$(git -C "$ROOT" status --porcelain 2>/dev/null | wc -l | tr -d ' ')
+if [ "${git_dirty_before:-0}" != "0" ]; then
+  git_dirty_files_before=$(git -C "$ROOT" status --porcelain 2>/dev/null | sed -n '1,200p' || true)
+fi
 
 health_before='{}'
 if [ -f "$HEALTH" ]; then
@@ -83,7 +91,42 @@ if [ "$reddit_fresh" != "true" ] || [ "$reddit_status" = "unknown" ]; then
   ran_reddit_refresh=true
 fi
 
-# 5) If repo is ahead but clean and not behind, push automatically.
+# 6) Reliability upgrade: if we created *only* low-risk, deterministic local files, auto-commit them.
+#    This reduces recurring health-check noise (git_dirty) and keeps the loop auditable.
+#    Guardrail: refuse to commit if unexpected paths are modified.
+commit_whitelist_regex='^(docs/kpi-[0-9]{4}-[0-9]{2}-[0-9]{2}\\.md|data/status/|data/seo/related-links\\.json|site/sitemap\\.xml)$'
+
+git_dirty=$(git -C "$ROOT" status --porcelain 2>/dev/null | wc -l | tr -d ' ')
+if [ "${git_dirty:-0}" != "0" ]; then
+  changed_files=$(git -C "$ROOT" status --porcelain 2>/dev/null | awk '{print $2}' | sed '/^$/d' || true)
+  unexpected=""
+  while IFS= read -r f; do
+    [ -z "$f" ] && continue
+    if ! echo "$f" | grep -Eq "$commit_whitelist_regex"; then
+      unexpected+="$f\n"
+    fi
+  done <<<"$changed_files"
+
+  if [ -z "$unexpected" ]; then
+    # Stage only the expected files.
+    git -C "$ROOT" add -A -- \
+      docs/kpi-*.md \
+      data/status \
+      data/seo/related-links.json \
+      site/sitemap.xml \
+      >/dev/null 2>&1 || true
+
+    if git -C "$ROOT" diff --cached --quiet; then
+      :
+    else
+      if git -C "$ROOT" commit -m "chore: auto-fix health/KPI status" >/dev/null 2>&1; then
+        ran_git_commit=true
+      fi
+    fi
+  fi
+fi
+
+# 7) If repo is ahead but clean and not behind, push automatically.
 #    This is internal-only and lowers recurring health noise.
 repo_dirty=$(git -C "$ROOT" status --porcelain 2>/dev/null | wc -l | tr -d ' ')
 read -r behind ahead < <(git -C "$ROOT" rev-list --left-right --count origin/main...HEAD 2>/dev/null || echo '0 0')
@@ -93,12 +136,18 @@ if [ "$repo_dirty" = "0" ] && [ "${ahead:-0}" -gt 0 ] 2>/dev/null && [ "${behind
   fi
 fi
 
-# Final refresh so status files reflect any fixes/pushes we applied.
+# Final refresh so status files reflect any fixes/commit/push we applied.
 bash "$ROOT/scripts/health-check.sh" >/dev/null 2>&1 || true
 
 health_after='{}'
 if [ -f "$HEALTH" ]; then
   health_after=$(cat "$HEALTH" 2>/dev/null || echo '{}')
+fi
+
+git_dirty_after=$(git -C "$ROOT" status --porcelain 2>/dev/null | wc -l | tr -d ' ')
+git_dirty_files_after=""
+if [ "${git_dirty_after:-0}" != "0" ]; then
+  git_dirty_files_after=$(git -C "$ROOT" status --porcelain 2>/dev/null | sed -n '1,200p' || true)
 fi
 
 jq -n \
@@ -107,14 +156,17 @@ jq -n \
   --argjson ran_kpi "$ran_kpi" \
   --argjson ran_site_analytics "$ran_site_analytics" \
   --argjson ran_reddit_refresh "$ran_reddit_refresh" \
+  --argjson ran_git_commit "$ran_git_commit" \
   --argjson ran_git_push "$ran_git_push" \
   --argjson health_before "$health_before" \
   --argjson health_after "$health_after" \
-  '{
+  --arg git_dirty_files_before "$git_dirty_files_before" \
+  --arg git_dirty_files_after "$git_dirty_files_after" \
+  ' {
     ts_utc:$ts,
-    ran:{health:$ran_health,kpi:$ran_kpi,site_analytics:$ran_site_analytics,reddit_refresh:$ran_reddit_refresh,git_push:$ran_git_push},
-    before:{issues:($health_before.issues // []),blockers:($health_before.blockers // []),git_sync_ok:($health_before.git_sync_ok // null),git_ahead:($health_before.git_ahead // null),git_behind:($health_before.git_behind // null),git_dirty:($health_before.git_dirty // null)},
-    after:{issues:($health_after.issues // []),blockers:($health_after.blockers // []),git_sync_ok:($health_after.git_sync_ok // null),git_ahead:($health_after.git_ahead // null),git_behind:($health_after.git_behind // null),git_dirty:($health_after.git_dirty // null)}
+    ran:{health:$ran_health,kpi:$ran_kpi,site_analytics:$ran_site_analytics,reddit_refresh:$ran_reddit_refresh,git_commit:$ran_git_commit,git_push:$ran_git_push},
+    before:{issues:($health_before.issues // []),blockers:($health_before.blockers // []),git_sync_ok:($health_before.git_sync_ok // null),git_ahead:($health_before.git_ahead // null),git_behind:($health_before.git_behind // null),git_dirty:($health_before.git_dirty // null),git_dirty_files:($git_dirty_files_before | if length>0 then . else null end)},
+    after:{issues:($health_after.issues // []),blockers:($health_after.blockers // []),git_sync_ok:($health_after.git_sync_ok // null),git_ahead:($health_after.git_ahead // null),git_behind:($health_after.git_behind // null),git_dirty:($health_after.git_dirty // null),git_dirty_files:($git_dirty_files_after | if length>0 then . else null end)}
   }' > "$OUT"
 
 echo "$OUT"
