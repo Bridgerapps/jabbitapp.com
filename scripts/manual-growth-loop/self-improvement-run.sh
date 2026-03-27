@@ -61,6 +61,11 @@ fi
   echo "## operator-next (preflight-derived)"
   bash "$ROOT/scripts/manual-growth-loop/operator-next.sh" || true
   echo
+
+  echo "## churn-report (last 24 distinct iterations)"
+  bash "$ROOT/scripts/manual-growth-loop/churn-report.sh" 2>/dev/null || true
+  echo
+
   if [ -f "$ROOT/data/status/growth-default-actions-noop-next.txt" ]; then
     echo "## latest noop-next (if recent runs were cooldown NOOPs)"
     sed -n '1,200p' "$ROOT/data/status/growth-default-actions-noop-next.txt" || true
