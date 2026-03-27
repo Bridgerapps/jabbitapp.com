@@ -46,12 +46,18 @@ fs.writeFileSync(p, JSON.stringify(entry, null, 2) + '\n');
 console.log(`ok: latest -> ${p}`);
 NODE
 
-# Record the run for audit trails (even if note is empty).
+# Record the run for audit trails.
 # Tags are optional; keep them short and meaningful (M=measurement, D=distribution, R=reliability).
+# Reliability: avoid blank JSONL entries by always recording a non-empty note.
+start_note="$note"
+if [ -z "$start_note" ]; then
+  start_note="START"
+fi
+
 bash "$ROOT/scripts/manual-growth-loop/record-run.sh" \
   --iteration "$iteration" \
   --mode "$mode" \
   ${tags:+--tags "$tags"} \
-  ${note:+--note "$note"}
+  --note "$start_note"
 
 echo "iteration=${iteration} mode=${mode}"
