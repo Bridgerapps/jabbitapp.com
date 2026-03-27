@@ -72,8 +72,11 @@ if [ -z "$note" ]; then
     finish_tags=""
     [ "$ran_m" -eq 1 ] && finish_tags="${finish_tags}M,"
     [ "$ran_r" -eq 1 ] && finish_tags="${finish_tags}R,"
-    [ "$ran_l" -eq 1 ] && finish_tags="${finish_tags}L,"
-    [ "$ran_p" -eq 1 ] && finish_tags="${finish_tags}P,"
+    # "packs" == distribution packs refresh
+    [ "$ran_l" -eq 1 ] && finish_tags="${finish_tags}D,"
+    # owner_ping == owner approval/sends ping pack refresh
+    [ "$ran_p" -eq 1 ] && finish_tags="${finish_tags}O,"
+    # nextpack == fallback next-actions pack (when everything else is cooling down)
     [ "$ran_n" -eq 1 ] && finish_tags="${finish_tags}N,"
     finish_tags=${finish_tags%,}
 
