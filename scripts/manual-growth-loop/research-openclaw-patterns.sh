@@ -2,20 +2,26 @@
 set -euo pipefail
 
 # research-openclaw-patterns.sh
-# Purpose: lightweight "research" step for self-improvement runs.
+# Purpose: lightweight research step for self-improvement runs.
 # - Avoids hammering web search (rate-limited)
 # - Caches an operator-pattern snippet under data/status/
-# - Always includes pointers to local reliability docs in-repo
+# - Seeds from local docs + *occasionally* refreshed external docs
 #
 # NOTE: This script intentionally does *not* call web_search/web_fetch itself.
 # In OpenClaw, those are chat-tools, not shell tools. When we do external research
-# in a self-improvement run, we should paste distilled findings into the cache
+# in a deliberate self-improvement run, we paste distilled findings into the cache
 # (below) and let the cache fan out to future runs.
 
 ROOT="/home/jabbit/.openclaw/workspace"
 OUTDIR="$ROOT/data/status"
 CACHE="$OUTDIR/openclaw-operator-patterns-cache.md"
-MAX_AGE_SECONDS=$((12*60*60))
+
+# Default cache TTL: 24h (self-improvement runs are every 5 hours; 12h TTL caused
+# needless churn without meaningfully improving execution quality).
+MAX_AGE_SECONDS=$((24*60*60))
+
+# Bump this when cache content format/sections change so old caches regenerate.
+CACHE_SCHEMA="cache_schema: 2"
 
 now_epoch=$(date -u +%s)
 
@@ -28,48 +34,52 @@ cache_age_ok() {
   [ "$age" -lt "$MAX_AGE_SECONDS" ]
 }
 
+cache_schema_ok() {
+  [ -f "$CACHE" ] || return 1
+  grep -q "$CACHE_SCHEMA" "$CACHE" 2>/dev/null
+}
+
 mkdir -p "$OUTDIR"
 
-if cache_age_ok; then
+# FORCE_REFRESH=1 bypasses TTL (for deliberate operator refreshes).
+if [ "${FORCE_REFRESH:-0}" != "1" ] && cache_age_ok && cache_schema_ok; then
   cat "$CACHE"
   exit 0
 fi
 
 # Brave/web_search can be rate-limited in this environment.
-# Keep this cache seeded from local docs + a small curated set of patterns.
+# Keep the cache mostly stable; refresh only when we have new, high-signal findings.
 
 {
   echo "# OpenClaw operator patterns (cached)"
   echo
+  echo "$CACHE_SCHEMA"
   echo "updated_utc: $(date -u +%FT%TZ)"
   echo
-  echo "## Patterns we will follow"
-  echo "- Reliability = evidence: every run should leave behind durable, inspectable artifacts (JSONL run log + any local side-effects) so we can explain/verify what happened later."
-  echo "- Single-writer invariant: serialize state changes through one lane/session at a time; avoid multi-turn cron flows that depend on yield/resume."
-  echo "- Prefer isolated cron agentTurn jobs for stateless chores; reserve main-session systemEvent jobs for work that truly needs main context, and pick wakeMode deliberately (now vs next-heartbeat)."
-  echo "- Every loop should either (a) advance state or (b) STOP with a single, concrete owner/action that advances state (no draft churn)."
-  echo "- Reduce empty runs: align cooldowns with schedule (hourly loop should have ≥1 cheap eligible action); if both scouting lanes are cooling down, pivot to backlog/measurement integrity checks." 
-  echo "- When blocked on human action, generate a stable ‘owner pack’ artifact once, then rate-limit nudges (don’t churn new drafts)."
+  echo "## Reliability-first patterns we will follow"
+  echo "- Evidence bundle: every run should leave inspectable artifacts (JSONL run log + any local side-effects) so audits are trivial."
+  echo "- No empty loops: each loop either (a) advances state or (b) STOPs with a single owner/action that advances state (no draft churn)."
+  echo "- Rate-limit nudges: when blocked on a human, generate one stable 'owner pack' artifact and throttle follow-ups; don't regenerate new drafts hourly."
+  echo "- Cooldowns must match cadence: an hourly job needs ≥1 cheap eligible action; if all lanes are cooling down, pivot to measurement integrity/backlog maintenance."
   echo
-  echo "## Known edge cases / gotchas (recent)"
-  echo "- Cron main-session jobs can fail to wake/process injected systemEvents in some versions (systemEvent sits until next heartbeat/user message). Mitigation: prefer sessionTarget=\"isolated\" + payload.kind=\"agentTurn\" with delivery.mode=announce/webhook for anything that must deliver reliably." 
-  echo "- cron + isolated sessions: sessions_yield behavior has had regressions/bugs in some OpenClaw releases; avoid designing cron flows that require multi-turn yield/resume. Prefer delivery=announce/webhook for results, and keep runs single-turn deterministic."
+  echo "## Cron/heartbeat execution model (distilled)"
+  echo "- Cron runs inside the Gateway; jobs persist under ~/.openclaw/cron/jobs.json (manual edits only safe when gateway is stopped)."
+  echo "- Main session jobs enqueue a systemEvent; depending on wakeMode they run immediately (wakeMode=now) or on the next heartbeat (wakeMode=next-heartbeat)."
+  echo "- Isolated jobs run a dedicated agent turn in cron:<jobId> and (by default) deliver via delivery.mode=announce unless disabled."
+  echo "- Delivery modes: announce | webhook | none (use webhook for machine delivery, announce for chat delivery)."
+  echo
+  echo "## Known reliability bug (important)"
+  echo "- Reported: sessionTarget=main systemEvent jobs can inject the event but not reliably wake the agent until a heartbeat/user message occurs (OpenClaw 2026.2.x reports)."
+  echo "  Mitigation: prefer sessionTarget=isolated + payload.kind=agentTurn + delivery.mode=announce/webhook for time-sensitive delivery."
   echo
   echo "## Local docs to keep in mind"
-  if [ -f "$ROOT/docs/cron-edit-safety.md" ]; then
-    echo "- docs/cron-edit-safety.md (job storage + safe edits)"
-  fi
-  if [ -f "$ROOT/docs/manual-growth-loop-playbook.md" ]; then
-    echo "- docs/manual-growth-loop-playbook.md (guardrails + de-dupe)"
-  fi
+  [ -f "$ROOT/docs/cron-edit-safety.md" ] && echo "- docs/cron-edit-safety.md (job storage + safe edits)"
+  [ -f "$ROOT/docs/manual-growth-loop-playbook.md" ] && echo "- docs/manual-growth-loop-playbook.md (guardrails + de-dupe)"
   echo
-  echo "## External references (for the next deliberate research run)"
-  echo "- https://openclawlab.com/en/docs/automation/cron-jobs/ (cron concepts: wakeMode, delivery modes, storage)"
-  echo "- https://openclawlab.com/en/docs/automation/cron-vs-heartbeat/ (when to use which)"
-  echo "- https://theagentstack.substack.com/p/openclaw-architecture-part-6-reliability (reliability/observability: lanes, dedupe, evidence bundles)"
-  echo "- https://github.com/openclaw/openclaw/issues/11726 (main sessionTarget wake bug report)"
-  echo "- https://github.com/openclaw/openclaw/issues/46298"
-  echo "- https://github.com/openclaw/openclaw/issues/49572"
+  echo "## Source links (operator verification)"
+  echo "- https://openclawlab.com/en/docs/automation/cron-jobs/"
+  echo "- https://openclawlab.com/en/docs/automation/cron-vs-heartbeat/"
+  echo "- https://github.com/openclaw/openclaw/issues/11726"
 } >"$CACHE"
 
 cat "$CACHE"
