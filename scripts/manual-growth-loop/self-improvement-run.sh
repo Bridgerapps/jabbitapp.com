@@ -66,6 +66,10 @@ fi
   bash "$ROOT/scripts/manual-growth-loop/churn-report.sh" 2>/dev/null || true
   echo
 
+  echo "## cooldown-health (are we wasting hourly runs?)"
+  bash "$ROOT/scripts/manual-growth-loop/cooldown-health.sh" 2>/dev/null || true
+  echo
+
   if [ -f "$ROOT/data/status/growth-default-actions-noop-next.txt" ]; then
     echo "## latest noop-next (if recent runs were cooldown NOOPs)"
     sed -n '1,200p' "$ROOT/data/status/growth-default-actions-noop-next.txt" || true
