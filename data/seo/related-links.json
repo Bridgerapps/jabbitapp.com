@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-26T13:37:39Z",
+  "updated": "2026-03-27T13:37:29Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1033,6 +1033,23 @@
         {
           "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
           "text": "Refill friction checklist (calls, claim codes, and documentation)"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (keep a clean medication timeline)"
+        },
+        {
+          "href": "/semaglutide-vs-tirzepatide.html",
+          "text": "Semaglutide vs tirzepatide (a practical comparison)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (side effects, tracking, and adherence)"
         }
       ]
     }

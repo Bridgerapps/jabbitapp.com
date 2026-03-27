@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-26T13:36:45Z",
-  "total_pages": 61,
+  "last_updated": "2026-03-27T13:36:30Z",
+  "total_pages": 62,
   "topics": [
     {
       "topic": "bpc-157",
@@ -316,6 +316,11 @@
       "topic": "insulin-pricing-35-cap-ftc-settlement-policy-roundup-2026-03",
       "filename": "insulin-pricing-35-cap-ftc-settlement-policy-roundup-2026-03.html",
       "created": "2026-03-26"
+    },
+    {
+      "topic": "retatrutide-transcend-t2d-1-phase-3-topline-results-2026",
+      "filename": "retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html",
+      "created": "2026-03-27"
     }
   ],
   "suggested_topics": [
