@@ -168,7 +168,19 @@ def main() -> int:
     md.append("- If there’s an active thread asking for ‘what app / what tracker’, use a Reddit draft above.")
     md.append("- If Twitter is blocked, queue these drafts until TWITTER_API_KEY or browser relay is configured.")
 
-    out_path.write_text("\n".join(md) + "\n", encoding="utf-8")
+    content = "\n".join(md) + "\n"
+
+    # Avoid churn: only rewrite the pack if content actually changed.
+    if out_path.exists():
+        try:
+            if out_path.read_text(encoding="utf-8", errors="replace") == content:
+                print(f"distribution_pack:skip_unchanged:{out_path}")
+                return 0
+        except Exception:
+            # If we can't read existing output, fall back to writing a fresh file.
+            pass
+
+    out_path.write_text(content, encoding="utf-8")
     print(f"distribution_pack:ok:{out_path}")
     return 0
 
