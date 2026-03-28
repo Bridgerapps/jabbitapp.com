@@ -21,7 +21,7 @@ CACHE="$OUTDIR/openclaw-operator-patterns-cache.md"
 MAX_AGE_SECONDS=$((24*60*60))
 
 # Bump this when cache content format/sections change so old caches regenerate.
-CACHE_SCHEMA="cache_schema: 3"
+CACHE_SCHEMA="cache_schema: 4"
 
 now_epoch=$(date -u +%s)
 
@@ -74,8 +74,9 @@ fi
   echo
   echo "## Cron delivery gotcha: empty announce summaries"
   echo "- Several operator reports: cron jobs can ‘run’ but delivery/announce is silent when the agent returns an empty/near-empty summary."
+  echo "- Mechanism: the *announce agent* is a separate LLM call that forwards the cron agent’s visible text. If the cron agent’s visible text is empty/garbage, announce completes instantly and nothing gets delivered."
   echo "- Common cause: thinking enabled (even ‘minimal/low’) → all work happens in hidden thinking and the visible response is empty."
-  echo "  Mitigation: set cron job thinking=off (for both the cron agent and any announce agent), and add a guard that the final response contains the deliverable payload."
+  echo "  Mitigation: set cron job thinking=off, and add a guard that the final response contains the deliverable payload (non-empty)."
   echo
   echo "## Local docs to keep in mind"
   [ -f "$ROOT/docs/cron-edit-safety.md" ] && echo "- docs/cron-edit-safety.md (job storage + safe edits)"
@@ -84,6 +85,7 @@ fi
   echo "## Source links (operator verification)"
   echo "- https://openclawlab.com/en/docs/automation/cron-jobs/"
   echo "- https://openclawlab.com/en/docs/automation/cron-vs-heartbeat/"
+  echo "- https://dev.to/arezvov/openclaw-troubleshooting-no-reply-from-agent-workflowautomd-and-silent-delivery-failures-9jn"
   echo "- https://github.com/openclaw/openclaw/issues/11726"
 } >"$CACHE"
 
