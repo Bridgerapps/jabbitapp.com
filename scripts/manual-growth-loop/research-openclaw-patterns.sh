@@ -21,7 +21,7 @@ CACHE="$OUTDIR/openclaw-operator-patterns-cache.md"
 MAX_AGE_SECONDS=$((24*60*60))
 
 # Bump this when cache content format/sections change so old caches regenerate.
-CACHE_SCHEMA="cache_schema: 2"
+CACHE_SCHEMA="cache_schema: 3"
 
 now_epoch=$(date -u +%s)
 
@@ -71,6 +71,11 @@ fi
   echo "## Known reliability bug (important)"
   echo "- Reported: sessionTarget=main systemEvent jobs can inject the event but not reliably wake the agent until a heartbeat/user message occurs (OpenClaw 2026.2.x reports)."
   echo "  Mitigation: prefer sessionTarget=isolated + payload.kind=agentTurn + delivery.mode=announce/webhook for time-sensitive delivery."
+  echo
+  echo "## Cron delivery gotcha: empty announce summaries"
+  echo "- Several operator reports: cron jobs can ‘run’ but delivery/announce is silent when the agent returns an empty/near-empty summary."
+  echo "- Common cause: thinking enabled (even ‘minimal/low’) → all work happens in hidden thinking and the visible response is empty."
+  echo "  Mitigation: set cron job thinking=off (for both the cron agent and any announce agent), and add a guard that the final response contains the deliverable payload."
   echo
   echo "## Local docs to keep in mind"
   [ -f "$ROOT/docs/cron-edit-safety.md" ] && echo "- docs/cron-edit-safety.md (job storage + safe edits)"
