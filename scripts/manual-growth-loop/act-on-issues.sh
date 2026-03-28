@@ -14,6 +14,7 @@ ran_site_analytics=false
 ran_reddit_refresh=false
 ran_git_commit=false
 ran_git_push=false
+git_push_error=""
 
 git_dirty_files_before=""
 
@@ -131,9 +132,14 @@ fi
 repo_dirty=$(git -C "$ROOT" status --porcelain 2>/dev/null | wc -l | tr -d ' ')
 read -r behind ahead < <(git -C "$ROOT" rev-list --left-right --count origin/main...HEAD 2>/dev/null || echo '0 0')
 if [ "$repo_dirty" = "0" ] && [ "${ahead:-0}" -gt 0 ] 2>/dev/null && [ "${behind:-0}" = "0" ]; then
-  if git -C "$ROOT" push origin main >/dev/null 2>&1; then
+  push_err=$(mktemp)
+  if git -C "$ROOT" push origin main >/dev/null 2>"$push_err"; then
     ran_git_push=true
+  else
+    # Capture the error for the self-improvement report (prevents silent push failures).
+    git_push_error=$(sed -n '1,200p' "$push_err" | tr -d '\r' || true)
   fi
+  rm -f "$push_err" >/dev/null 2>&1 || true
 fi
 
 # Final refresh so status files reflect any fixes/commit/push we applied.
@@ -158,6 +164,7 @@ jq -n \
   --argjson ran_reddit_refresh "$ran_reddit_refresh" \
   --argjson ran_git_commit "$ran_git_commit" \
   --argjson ran_git_push "$ran_git_push" \
+  --arg git_push_error "$git_push_error" \
   --argjson health_before "$health_before" \
   --argjson health_after "$health_after" \
   --arg git_dirty_files_before "$git_dirty_files_before" \
@@ -166,7 +173,8 @@ jq -n \
     ts_utc:$ts,
     ran:{health:$ran_health,kpi:$ran_kpi,site_analytics:$ran_site_analytics,reddit_refresh:$ran_reddit_refresh,git_commit:$ran_git_commit,git_push:$ran_git_push},
     before:{issues:($health_before.issues // []),blockers:($health_before.blockers // []),git_sync_ok:($health_before.git_sync_ok // null),git_ahead:($health_before.git_ahead // null),git_behind:($health_before.git_behind // null),git_dirty:($health_before.git_dirty // null),git_dirty_files:($git_dirty_files_before | if length>0 then . else null end)},
-    after:{issues:($health_after.issues // []),blockers:($health_after.blockers // []),git_sync_ok:($health_after.git_sync_ok // null),git_ahead:($health_after.git_ahead // null),git_behind:($health_after.git_behind // null),git_dirty:($health_after.git_dirty // null),git_dirty_files:($git_dirty_files_after | if length>0 then . else null end)}
+    after:{issues:($health_after.issues // []),blockers:($health_after.blockers // []),git_sync_ok:($health_after.git_sync_ok // null),git_ahead:($health_after.git_ahead // null),git_behind:($health_after.git_behind // null),git_dirty:($health_after.git_dirty // null),git_dirty_files:($git_dirty_files_after | if length>0 then . else null end)},
+    git_push_error:($git_push_error | if length>0 then . else null end)
   }' > "$OUT"
 
 echo "$OUT"
