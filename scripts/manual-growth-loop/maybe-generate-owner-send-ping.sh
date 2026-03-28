@@ -23,6 +23,13 @@ if [ "$last_epoch" -ne 0 ] && [ "$age" -lt "$MIN_INTERVAL_SECONDS" ]; then
   exit 0
 fi
 
+# Refresh the curated awaiting_owner shortlist first (cheap, reduces owner confusion)
+# Only if we have a ledger (no-op if missing).
+if [ -f "$ROOT/data/status/manual-growth-loop-ledger.json" ]; then
+  OUT_DIR="$(dirname "$OUT_FILE")" LIMIT="$LIMIT" \
+    "$ROOT/scripts/manual-growth-loop/generate-awaiting-owner-top3.sh" >/dev/null 2>&1 || true
+fi
+
 OUT_DIR="$(dirname "$OUT_FILE")" OUT_FILE="$OUT_FILE" LIMIT="$LIMIT" \
   "$ROOT/scripts/manual-growth-loop/generate-owner-send-ping.sh" >/dev/null
 
