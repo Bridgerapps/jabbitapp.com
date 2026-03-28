@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-27T13:36:30Z",
-  "total_pages": 62,
+  "last_updated": "2026-03-28T13:36:50Z",
+  "total_pages": 63,
   "topics": [
     {
       "topic": "bpc-157",
@@ -321,6 +321,11 @@
       "topic": "retatrutide-transcend-t2d-1-phase-3-topline-results-2026",
       "filename": "retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html",
       "created": "2026-03-27"
+    },
+    {
+      "topic": "awiqli-once-weekly-basal-insulin-fda-approval-2026-03",
+      "filename": "awiqli-once-weekly-basal-insulin-fda-approval-2026-03.html",
+      "created": "2026-03-28"
     }
   ],
   "suggested_topics": [

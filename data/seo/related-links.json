@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-27T13:37:29Z",
+  "updated": "2026-03-28T13:38:08Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -54,6 +54,23 @@
       ]
     },
     {
+      "file": "awiqli-once-weekly-basal-insulin-fda-approval-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Medication tracker (log dates, doses, and notes)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder patterns (recurring + backup reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "Tracking guide (what to log + site rotation)"
+        }
+      ]
+    },
+    {
       "file": "bpc-157-complete-guide.html",
       "links": [
         {
@@ -84,6 +101,23 @@
         {
           "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
           "text": "FDA recall explainer (how to save lot/product details for follow-up)"
+        }
+      ]
+    },
+    {
+      "file": "childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
+      "links": [
+        {
+          "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
+          "text": "Supply disruptions: refill tracking checklist"
+        },
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recall explainer (what to save + how to follow up)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log"
         }
       ]
     },
@@ -518,6 +552,36 @@
       ]
     },
     {
+      "file": "india-semaglutide-generics-ozempic-wegovy-launches-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "injection-protocol-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
+    },
+    {
       "file": "injection-site-rotation-science.html",
       "links": [
         {
@@ -531,6 +595,23 @@
         {
           "href": "/peptide-site-rotation-guide.html",
           "text": "Peptide site rotation guide (practical rotation patterns)"
+        }
+      ]
+    },
+    {
+      "file": "insulin-pricing-35-cap-ftc-settlement-policy-roundup-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "Medication costs without insurance (pricing reality + what to track)"
+        },
+        {
+          "href": "/massachusetts-state-workers-glp1-coverage-ended-2026.html",
+          "text": "Coverage changes explainer (what to check + what to save)"
+        },
+        {
+          "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
+          "text": "Refill friction checklist (calls, claim codes, and documentation)"
         }
       ]
     },
@@ -756,6 +837,23 @@
       ]
     },
     {
+      "file": "retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (keep a clean medication timeline)"
+        },
+        {
+          "href": "/semaglutide-vs-tirzepatide.html",
+          "text": "Semaglutide vs tirzepatide (a practical comparison)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (side effects, tracking, and adherence)"
+        }
+      ]
+    },
+    {
       "file": "semaglutide-half-life.html",
       "links": [
         {
@@ -905,6 +1003,23 @@
       ]
     },
     {
+      "file": "wegovy-7-2mg-fda-approval-priority-voucher-april-2026.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
       "file": "wegovy-injection-tracker.html",
       "links": [
         {
@@ -952,104 +1067,6 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "injection-protocol-tracker.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (rotation + logging)"
-        }
-      ]
-    },
-    {
-      "file": "wegovy-7-2mg-fda-approval-priority-voucher-april-2026.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "india-semaglutide-generics-ozempic-wegovy-launches-2026-03.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
-      "links": [
-        {
-          "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
-          "text": "Supply disruptions: refill tracking checklist"
-        },
-        {
-          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
-          "text": "FDA recall explainer (what to save + how to follow up)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: a simple medication log"
-        }
-      ]
-    },
-    {
-      "file": "insulin-pricing-35-cap-ftc-settlement-policy-roundup-2026-03.html",
-      "links": [
-        {
-          "href": "/glp1-cost-without-insurance.html",
-          "text": "Medication costs without insurance (pricing reality + what to track)"
-        },
-        {
-          "href": "/massachusetts-state-workers-glp1-coverage-ended-2026.html",
-          "text": "Coverage changes explainer (what to check + what to save)"
-        },
-        {
-          "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
-          "text": "Refill friction checklist (calls, claim codes, and documentation)"
-        }
-      ]
-    },
-    {
-      "file": "retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (keep a clean medication timeline)"
-        },
-        {
-          "href": "/semaglutide-vs-tirzepatide.html",
-          "text": "Semaglutide vs tirzepatide (a practical comparison)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub (side effects, tracking, and adherence)"
         }
       ]
     }
