@@ -343,6 +343,10 @@ if [ "$ran_any" -eq 0 ]; then
   # for audit purposes; avoid labeling the hour as a pure NOOP.
   write_last_out 0 0 0 0 "$ran_nextpack" "" "$next_in" "$next_at"
 else
+  # Reliability: if we actually ran actions, ensure we don't leave stale NOOP guidance around.
+  # (Operators read growth-default-actions-noop-next.txt; if it lingers, it lies.)
+  rm -f "$NOOP_NEXT_FILE" 2>/dev/null || true
+
   write_last_out "$ran_measure" "$ran_reddit" "$ran_packs" "$ran_owner_ping" "$ran_nextpack" ""
   echo "growth-default-actions: OK (ran at least 1 action; cooldowns active)"
 fi
