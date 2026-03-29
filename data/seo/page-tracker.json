@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-28T13:36:50Z",
-  "total_pages": 63,
+  "last_updated": "2026-03-29T13:36:37Z",
+  "total_pages": 64,
   "topics": [
     {
       "topic": "bpc-157",
@@ -326,6 +326,11 @@
       "topic": "awiqli-once-weekly-basal-insulin-fda-approval-2026-03",
       "filename": "awiqli-once-weekly-basal-insulin-fda-approval-2026-03.html",
       "created": "2026-03-28"
+    },
+    {
+      "topic": "kresladi-rocket-pharma-lad-i-gene-therapy-fda-approval-2026-03",
+      "filename": "kresladi-rocket-pharma-lad-i-gene-therapy-fda-approval-2026-03.html",
+      "created": "2026-03-29"
     }
   ],
   "suggested_topics": [

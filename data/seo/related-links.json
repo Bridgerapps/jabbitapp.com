@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-28T13:38:08Z",
+  "updated": "2026-03-29T13:38:30Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -612,6 +612,23 @@
         {
           "href": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
           "text": "Refill friction checklist (calls, claim codes, and documentation)"
+        }
+      ]
+    },
+    {
+      "file": "kresladi-rocket-pharma-lad-i-gene-therapy-fda-approval-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: keep a clean timeline (dates, notes, decisions)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder patterns: recurring tasks + follow-ups that don\u2019t slip"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub: practical organization workflows"
         }
       ]
     },
