@@ -26,7 +26,8 @@ report_txt="$OUTDIR/manual-growth-loop-self-improvement-${iteration}-${ts}.txt"
 act_json="$OUTDIR/manual-growth-loop-act-on-issues-last.json"
 
 # Crucial: self-improvement should change system state when it safely can.
-bash "$ROOT/scripts/manual-growth-loop/act-on-issues.sh" >/dev/null 2>&1 || true
+# Rate-limit heavy local maintenance if nothing has changed recently.
+bash "$ROOT/scripts/manual-growth-loop/act-on-issues-rate-limited.sh" >/dev/null 2>&1 || true
 
 # Guardrail: self-improvement runs must not leave the repo dirty due to accidental edits
 # to tracked docs. If a background step dirties docs/ without an explicit intent to ship,
