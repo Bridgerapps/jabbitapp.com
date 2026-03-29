@@ -127,7 +127,22 @@ if [ "${git_dirty:-0}" != "0" ]; then
   fi
 fi
 
-# 7) If repo is ahead but clean and not behind, push automatically.
+# 7) Guardrail: prevent accidental tracked-doc churn from blocking auto-push.
+#    We've seen background checks touch docs/breaking-topics-radar.md opportunistically.
+#    In self-improvement mode we want the repo clean + auditable; revert that file if it's
+#    the only dirty path and the operator didn't explicitly allow doc mutations.
+if [ "${ALLOW_DOC_MUTATIONS:-0}" != "1" ]; then
+  dirty_paths=$(git -C "$ROOT" status --porcelain | awk '{print $2}' | sed '/^$/d' || true)
+  if echo "$dirty_paths" | grep -q '^docs/breaking-topics-radar.md$'; then
+    if [ "$(echo "$dirty_paths" | wc -l | tr -d ' ')" = "1" ]; then
+      git -C "$ROOT" checkout -- docs/breaking-topics-radar.md >/dev/null 2>&1 || true
+      # Re-run health-check so git status fields in the report reflect the revert.
+      bash "$ROOT/scripts/health-check.sh" >/dev/null 2>&1 || true
+    fi
+  fi
+fi
+
+# 8) If repo is ahead but clean and not behind, push automatically.
 #    This is internal-only and lowers recurring health noise.
 repo_dirty=$(git -C "$ROOT" status --porcelain 2>/dev/null | wc -l | tr -d ' ')
 read -r behind ahead < <(git -C "$ROOT" rev-list --left-right --count origin/main...HEAD 2>/dev/null || echo '0 0')
