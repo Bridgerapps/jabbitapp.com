@@ -19,7 +19,7 @@ Hey Dave — quick follow-up.
 If it’s ever useful for show notes, Jabbit is a simple **GLP‑1 injection log + reminders** (date/time, site rotation, notes). Non-medical, no dosing guidance.
 
 Link (UTM’d for your audience):
-https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast&utm_medium=show_notes&utm_campaign=outside_reddit_2026-03-08&utm_content=on_the_pen
+https://jabbitapp.com/glp1-injection-tracker.html?utm_source=podcast_onthepen&utm_medium=email&utm_campaign=20260311_t2
 
 If you tell me what most listeners use (Ozempic/Wegovy vs Zepbound/Mounjaro), I’ll swap in a tighter page.
 
