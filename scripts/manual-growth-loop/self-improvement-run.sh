@@ -97,6 +97,8 @@ fi
   echo
 
   echo "## research (cached operator patterns; avoid rate-limit churn)"
+  # Keep a tiny local cache of key operator docs so audits don't depend on live fetches.
+  bash "$ROOT/scripts/manual-growth-loop/refresh-openclaw-docs.sh" 2>/dev/null || true
   bash "$ROOT/scripts/manual-growth-loop/research-openclaw-patterns.sh" 2>/dev/null || true
   echo
 
