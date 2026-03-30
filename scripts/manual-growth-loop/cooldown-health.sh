@@ -124,5 +124,9 @@ printf -- "cooldown-health @ %s\n" "$now_utc"
 printf -- "- remaining_sec: measurement=%s reddit=%s packs=%s owner_ping=%s nextpack=%s (min=%s)\n" \
   "$rem_measure" "$rem_reddit" "$rem_packs" "$rem_owner" "$rem_nextpack" "$min_rem"
 printf -- "- recent cooldown_bound runs (last 24 iters): %s\n" "$cooldown_bound_runs"
+# Extra hint: if >50% of recent runs were cooldown-bound, the cron is mostly spinning.
+if [[ "$cooldown_bound_runs" =~ ^[0-9]+$ ]] && [ "$cooldown_bound_runs" -ge 12 ]; then
+  printf -- "- recommendation: reduce cooldowns or add a cheap always-eligible lane; >50%% of recent runs were cooldown-bound\n"
+fi
 printf -- "- recommended cron interval: %s\n" "$rec"
 printf -- "- wrote: %s\n" "${OUT##$ROOT/}"
