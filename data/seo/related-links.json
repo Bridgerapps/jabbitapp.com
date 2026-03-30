@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-29T13:38:30Z",
+  "updated": "2026-03-30T13:38:01Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1084,6 +1084,23 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "mifepristone-online-sales-senate-probe-fda-pressure-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Protocol tracker template (questions, notes, and changes over time)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder app guide (how to set a routine that actually sticks)"
         }
       ]
     }
