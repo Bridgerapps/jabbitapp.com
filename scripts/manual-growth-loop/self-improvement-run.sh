@@ -103,6 +103,10 @@ fi
   bash "$ROOT/scripts/manual-growth-loop/research-openclaw-patterns.sh" 2>/dev/null || true
   echo
 
+  echo "## cron sanity (delivery reliability settings)"
+  bash "$ROOT/scripts/manual-growth-loop/cron-sanity-check.sh" 2>/dev/null || true
+  echo
+
   echo "## recommended process upgrades (operator picks 1-3)"
   echo "- When mode=self-improvement, ALWAYS run this script, then record-finish with what changed."
   echo "- Prefer upgrades that reduce repeat loops: stronger STOP reasons, better next-action surfacing, fewer empty runs."
