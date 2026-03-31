@@ -29,17 +29,26 @@ act_json="$OUTDIR/manual-growth-loop-act-on-issues-last.json"
 # Rate-limit heavy local maintenance if nothing has changed recently.
 bash "$ROOT/scripts/manual-growth-loop/act-on-issues-rate-limited.sh" >/dev/null 2>&1 || true
 
-# Guardrail: self-improvement runs must not leave the repo dirty due to accidental
-# doc generation. If any file under docs/ gets created/modified without explicit
-# intent to ship, revert/remove it so subsequent runs stay reliable.
-# Override by setting ALLOW_DOC_MUTATIONS=1 in the environment.
+## Guardrail: self-improvement runs must not leave the repo dirty due to accidental
+## doc generation.
+##
+## Exception: some self-improvement tasks *intentionally* regenerate safe, internal
+## docs (e.g., breaking-topics-radar.md). We allow a small allowlist.
+## Override entirely by setting ALLOW_DOC_MUTATIONS=1 in the environment.
 if [ "${ALLOW_DOC_MUTATIONS:-0}" != "1" ]; then
+  # Keep this list tiny and explicit.
+  allow_docs_regex='^(docs/breaking-topics-radar\.md)$'
+
   dirty_lines=$(git -C "$ROOT" status --porcelain || true)
   # For untracked docs/*, remove them. For modified/staged docs/*, checkout.
+  # But do NOT revert allowlisted doc paths.
   echo "$dirty_lines" | awk '{print $1" "$2}' | while read -r st p; do
     [ -z "${p:-}" ] && continue
     case "$p" in
       docs/*)
+        if echo "$p" | grep -Eq "$allow_docs_regex"; then
+          continue
+        fi
         if [ "$st" = "??" ]; then
           git -C "$ROOT" clean -f -- "$p" >/dev/null 2>&1 || true
         else
