@@ -104,9 +104,10 @@ if [ -z "$note" ]; then
         --note "Ran growth-default-actions. Tags=[$finish_tags]. Output: $out_one"
     fi
   elif [ $code -eq 22 ]; then
-    # Reliability: if it's a self-improvement iteration, actually run the harness
-    # so the run isn't just a blank preflight log.
-    bash "$ROOT/scripts/manual-growth-loop/self-improvement-run.sh" >/dev/null 2>&1 || true
+    # Self-improvement mode: DO NOT auto-run the harness here.
+    # The operator/cron turn should run self-improvement explicitly (so we don’t double-run
+    # and double-record FINISH notes).
+    :
   else
     bash "$ROOT/scripts/manual-growth-loop/auto-finish.sh" --preflight-code "$code" >/dev/null 2>&1 || true
   fi
