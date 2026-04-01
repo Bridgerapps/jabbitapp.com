@@ -59,6 +59,20 @@ if [ "${ALLOW_DOC_MUTATIONS:-0}" != "1" ]; then
   done
 fi
 
+## Guardrail: even allowlisted docs should not leave the repo dirty across runs.
+## If an allowlisted doc is modified, capture it as an ephemeral artifact and reset.
+allow_docs_regex='^(docs/breaking-topics-radar\.md)$'
+dirty_lines=$(git -C "$ROOT" status --porcelain || true)
+echo "$dirty_lines" | awk '{print $1" "$2}' | while read -r st p; do
+  [ -z "${p:-}" ] && continue
+  if echo "$p" | grep -Eq "$allow_docs_regex"; then
+    mkdir -p "$OUTDIR"
+    snap="$OUTDIR/allowlisted-doc-snapshot-${iteration}-${ts}.patch"
+    git -C "$ROOT" diff -- "$p" > "$snap" 2>/dev/null || true
+    git -C "$ROOT" checkout -- "$p" >/dev/null 2>&1 || true
+  fi
+done
+
 {
   echo "self-improvement-report"
   echo "ts_utc: $(date -u +%FT%TZ)"

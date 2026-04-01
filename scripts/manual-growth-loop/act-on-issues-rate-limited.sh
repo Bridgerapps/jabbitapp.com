@@ -27,8 +27,15 @@ health_fingerprint() {
     echo "missing_health" | sha256sum | awk '{print $1}'
     return
   fi
+
   # Only include fields that indicate material operator work.
-  jq -c '{issues:(.issues//[]),blockers:(.blockers//[]),git_dirty:(.git_dirty//null),git_ahead:(.git_ahead//null),git_behind:(.git_behind//null)}' \
+  # IMPORTANT: include a git working-tree fingerprint too.
+  # Otherwise, a dirty repo (e.g., allowlisted docs mutation) can persist across
+  # rate-limited self-improvement runs and never get cleaned up.
+  git_dirty_fp=$(git -C "$ROOT" status --porcelain 2>/dev/null | sha256sum | awk '{print $1}')
+
+  jq -c --arg gd "$git_dirty_fp" \
+    '{issues:(.issues//[]),blockers:(.blockers//[]),git_dirty:(.git_dirty//null),git_ahead:(.git_ahead//null),git_behind:(.git_behind//null),git_dirty_fp:$gd}' \
     "$HEALTH" 2>/dev/null | sha256sum | awk '{print $1}'
 }
 
