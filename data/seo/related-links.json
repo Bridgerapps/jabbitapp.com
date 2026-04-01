@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-03-31T13:37:42Z",
+  "updated": "2026-04-01T13:37:22Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -552,6 +552,23 @@
       ]
     },
     {
+      "file": "immunitybio-anktiva-fda-warning-letter-misleading-claims-2026-03.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Medication + appointment log template (keep your timeline clean)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Simple tracker (dates, doses, notes \u2014 useful beyond GLP\u20111s)"
+        },
+        {
+          "href": "/privacy/",
+          "text": "Privacy policy (how Jabbit handles data)"
+        }
+      ]
+    },
+    {
       "file": "india-semaglutide-generics-ozempic-wegovy-launches-2026-03.html",
       "links": [
         {
@@ -680,6 +697,23 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "GLP-1 injection tracker (keep a consistent history)"
+        }
+      ]
+    },
+    {
+      "file": "mifepristone-online-sales-senate-probe-fda-pressure-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Protocol tracker template (questions, notes, and changes over time)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "Reminder app guide (how to set a routine that actually sticks)"
         }
       ]
     },
@@ -1037,6 +1071,23 @@
       ]
     },
     {
+      "file": "wegovy-hd-7-2mg-fda-approval-national-priority-voucher-2026-03.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
       "file": "wegovy-injection-tracker.html",
       "links": [
         {
@@ -1080,40 +1131,6 @@
         {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "mifepristone-online-sales-senate-probe-fda-pressure-2026-03.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
-        },
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Protocol tracker template (questions, notes, and changes over time)"
-        },
-        {
-          "href": "/glp1-injection-reminder-app.html",
-          "text": "Reminder app guide (how to set a routine that actually sticks)"
-        }
-      ]
-    },
-    {
-      "file": "wegovy-hd-7-2mg-fda-approval-national-priority-voucher-2026-03.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
         },
         {
           "href": "/glp1-dosing-schedule.html",
