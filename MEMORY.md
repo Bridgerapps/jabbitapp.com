@@ -13,6 +13,7 @@ Curated, durable rules + facts. Keep it tight.
 - **External sends are gated:** anything that leaves the machine (email/post/DM) needs explicit intent/approval and pre‑flight checks.
 - **Outbound identity is release‑blocking (2026‑03‑16):** for any send, explicitly verify **From name + From email/domain + Reply‑To** and that **all links** point to the intended brand domains. Never trust inherited defaults. Prefer a **test send to self/canary** first.
 - **Unsolicited email policy (2026‑03‑13):** unsolicited outreach requires **Jon approval before send**. Use **jabbit/jabbitapp.com** identity for outreach; **do not use bridgerapps.com** for unsolicited outbound (support/operational only).
+- **Compounding-work rule (2026-04-11):** if Jon asks for a type of work that is likely to recur, prototype it manually on 3-10 real items, review output with him, then codify it into one MECE owner skill in `workspace/skills/`. If it should run automatically, add cron. If he has to ask twice for the same class of work, that is failure.
 - **Measurement honesty:** never present inferred numbers as facts. Always cite source (endpoint/log/CSV) + confidence; if tracking is degraded, say **unknown** and fix measurement first.
 - **Health content:** harm‑reduction / educational framing; non‑diagnostic, non‑prescriptive. Never give medical advice.
 - **Reddit:** manual‑only for authenticated actions. One deliberate action at a time: review → craft → post → verify → report. Minimize auth pokes to reduce ban risk.
