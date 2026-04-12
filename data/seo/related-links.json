@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-01T13:37:22Z",
+  "updated": "2026-04-12T13:37:27Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1135,6 +1135,23 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "vital-nutrients-aller-c-recall-undeclared-allergens-2026-04.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "How to respond to FDA supplement recalls (practical checklist)"
+        },
+        {
+          "href": "/fda-recall-primal-herbs-undeclared-sildenafil.html",
+          "text": "Another FDA recall example (what to document, how to verify)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: keep a simple log with dates, photos, and notes"
         }
       ]
     }
