@@ -33,7 +33,8 @@ jq -r \
        delivery_mode:(.delivery.mode // null),
        delivery_channel:(.delivery.channel // null),
        delivery_to:(.delivery.to // null),
-       warn_delivery_none:(if (.delivery.mode // "none") == "none" then true else false end)
+       warn_delivery_none:(if (.delivery.mode // "none") == "none" then true else false end),
+       warn_delivery_mismatch:(if ((.sessionTarget // "") == "isolated") and ((.delivery.mode // "none") == "none") then "isolated+delivery.none -> likely silent (no announce/webhook)" else null end)
      })
    | if length==0 then "cron-sanity-check: no matching jobs" else ("cron-sanity-check: matching jobs=" + (length|tostring) + "\n" + (tojson)) end' \
   "$JOBS_FILE" 2>/dev/null || echo "cron-sanity-check: jq failed (jobs.json schema changed?)"
