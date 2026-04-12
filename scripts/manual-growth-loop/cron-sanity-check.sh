@@ -33,6 +33,10 @@ jq -r \
        delivery_mode:(.delivery.mode // null),
        delivery_channel:(.delivery.channel // null),
        delivery_to:(.delivery.to // null),
+       wakeMode:(.wakeMode // null),
+       delivery_mode:(.delivery.mode // null),
+       delivery_channel:(.delivery.channel // null),
+       delivery_to:(.delivery.to // null),
        warn_delivery_none:(if (.delivery.mode // "none") == "none" then true else false end),
        warn_delivery_mismatch:(if ((.sessionTarget // "") == "isolated") and ((.delivery.mode // "none") == "none") then "isolated+delivery.none -> likely silent (no announce/webhook)" else null end)
      })
