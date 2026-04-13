@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-12T13:37:27Z",
+  "updated": "2026-04-13T13:38:39Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -50,6 +50,23 @@
         {
           "href": "/guides/",
           "text": "Guides hub (practical GLP-1 help)"
+        }
+      ]
+    },
+    {
+      "file": "hospitals-patient-chatbots-patientgpt-epic-emmie-2026-04.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
+        },
+        {
+          "href": "/shotsy-alternative.html",
+          "text": "Shotsy alternative (simple tracking for busy weeks)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
         }
       ]
     },
