@@ -187,8 +187,8 @@ jq -n \
   ' {
     ts_utc:$ts,
     ran:{health:$ran_health,kpi:$ran_kpi,site_analytics:$ran_site_analytics,reddit_refresh:$ran_reddit_refresh,git_commit:$ran_git_commit,git_push:$ran_git_push},
-    before:{issues:($health_before.issues // []),blockers:($health_before.blockers // []),git_sync_ok:($health_before.git_sync_ok // null),git_ahead:($health_before.git_ahead // null),git_behind:($health_before.git_behind // null),git_dirty:($health_before.git_dirty // null),git_dirty_files:($git_dirty_files_before | if length>0 then . else null end)},
-    after:{issues:($health_after.issues // []),blockers:($health_after.blockers // []),git_sync_ok:($health_after.git_sync_ok // null),git_ahead:($health_after.git_ahead // null),git_behind:($health_after.git_behind // null),git_dirty:($health_after.git_dirty // null),git_dirty_files:($git_dirty_files_after | if length>0 then . else null end)},
+    before:{issues:($health_before.issues // []),blockers:($health_before.blockers // []),git_sync_ok:($health_before.git_sync_ok // null),git_ahead:($health_before.git_ahead // null),git_behind:($health_before.git_behind // null),git_dirty:($health_before.git_dirty // null),git_dirty_files:($git_dirty_files_before | if length>0 then (split("\n") | map(select(length>0))) else null end)},
+    after:{issues:($health_after.issues // []),blockers:($health_after.blockers // []),git_sync_ok:($health_after.git_sync_ok // null),git_ahead:($health_after.git_ahead // null),git_behind:($health_after.git_behind // null),git_dirty:($health_after.git_dirty // null),git_dirty_files:($git_dirty_files_after | if length>0 then (split("\n") | map(select(length>0))) else null end)},
     git_push_error:($git_push_error | if length>0 then . else null end)
   }' > "$OUT"
 
