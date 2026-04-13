@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospitals Launch Patient-Facing Chatbots (Apr 2026): What They Do, What They Don’t, and How to Use Them Safely</title>
+  <meta name="description" content="A practical guide to hospital patient chatbots (for example, ‘PatientGPT’ style pilots): what problems they aim to solve, common limits, privacy questions to ask, and a simple checklist to avoid getting stuck in portal chaos." />
+  <link rel="canonical" href="https://jabbitapp.com/hospitals-patient-chatbots-patientgpt-epic-emmie-2026-04.html" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 860px; margin: 0 auto; padding: 20px; background: #f9f9f9; }
+    h1 { font-size: 2.05em; color: #1a1a2e; margin-bottom: 10px; }
+    h2 { color: #16213e; margin: 30px 0 12px; font-size: 1.45em; }
+    h3 { color: #0f3460; margin: 18px 0 8px; font-size: 1.1em; }
+    p { margin: 10px 0; }
+    ul { margin: 10px 0 10px 22px; }
+    .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 34px 26px; border-radius: 12px; margin-bottom: 22px; }
+    .hero h1 { color: white; }
+    .hero p { font-size: 1.05em; opacity: 0.92; }
+    .note { background: #ffffff; border-left: 4px solid #3b82f6; padding: 14px 18px; margin: 18px 0; border-radius: 0 10px 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .warning { background: #fff3e0; border-left: 4px solid #ff9800; padding: 14px 18px; margin: 18px 0; border-radius: 0 10px 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .cta { background: #ffffff; padding: 18px; border-radius: 12px; margin: 22px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .cta-button { display: inline-block; background: #e94560; color: white; padding: 12px 18px; border-radius: 10px; text-decoration: none; font-weight: 700; margin-top: 10px; }
+    .cta-button:hover { background: #d63651; }
+    .faq { background: white; padding: 18px; border-radius: 12px; margin: 18px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .faq-item { margin: 12px 0; }
+    .source { font-size:  0.9em; color: #666; margin-top: 26px; padding-top: 16px; border-top: 1px solid #ddd; }
+    code { background: #fff; padding: 2px 6px; border-radius: 6px; }
+    .tag { display: inline-block; background: #eef2ff; color: #1e3a8a; padding: 4px 10px; border-radius: 999px; font-size: 0.85em; margin-right: 8px; }
+  </style>
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <div class="hero">
+    <span class="tag">Breaking topic</span>
+    <span class="tag">Patient portals</span>
+    <span class="tag">Healthcare AI</span>
+    <h1>Hospitals Launch Patient-Facing Chatbots (Apr 2026)</h1>
+    <p>What these chatbots are good for, where they fail, and the simple “don’t get lost” checklist for patients and caregivers.</p>
+  </div>
+
+  <p style="font-size: 0.95em; color: #555;"><em>
+    Disclaimer: This page is for informational purposes only and is not medical or legal advice. For urgent or emergency symptoms, use your local emergency number or seek in-person care.
+    Chatbots and portal tools can be wrong, incomplete, or out of date.
+  </em></p>
+
+  <p>
+    More hospitals are rolling out <strong>patient-facing chatbots</strong> as a front door for common questions: scheduling, directions, prep instructions, “where do I find X,” and sometimes even message routing.
+    If you’ve ever felt stuck bouncing between phone trees, portals, and different clinic numbers, the promise is obvious.
+  </p>
+
+  <div class="note">
+    <strong>Fast take:</strong> A hospital chatbot is usually best at <em>navigation</em> (finding the right place, form, or phone number) and basic next steps.
+    It is often weak at <em>complex, patient-specific context</em> unless it’s tightly integrated with your chart and has clear escalation rules.
+  </div>
+
+  <h2>What a “hospital patient chatbot” typically is (plain English)</h2>
+  <p>
+    Think of it as a conversational layer on top of a hospital’s existing systems (websites, portals, scheduling tools, and messaging).
+    Depending on the rollout, it might:
+  </p>
+  <ul>
+    <li>Answer common logistics questions (parking, directions, clinic hours)</li>
+    <li>Point you to the right department for a task (refills, records, billing)</li>
+    <li>Help you find the correct portal page or form</li>
+    <li>Collect intake info and route it to a team (not a diagnosis)</li>
+    <li>Escalate to a human, or generate a message/ticket for follow-up</li>
+  </ul>
+
+  <h2>The high-intent reasons people search for this</h2>
+  <ul>
+    <li>“My hospital has a chatbot, should I trust it?”</li>
+    <li>“Will it replace calling?”</li>
+    <li>“Is it reading my medical record?”</li>
+    <li>“How do I get to a human?”</li>
+    <li>“How do I keep everything straight across multiple portals?”</li>
+  </ul>
+
+  <div class="warning">
+    <strong>Rule of thumb:</strong> Treat chatbots like a helpful receptionist, not a clinician.
+    Use them for routing and logistics, and assume anything important needs confirmation from your care team or written instructions in your official portal/after-visit summary.
+  </div>
+
+  <h2>The 9-point patient checklist (so you don’t waste time)</h2>
+  <ul>
+    <li><strong>Start with your goal:</strong> “Schedule,” “refill,” “records,” “billing,” “prep instructions,” or “message my care team.”</li>
+    <li><strong>Ask how to reach a human:</strong> “How do I talk to a person about this?” Save that path.</li>
+    <li><strong>Ask where it’s pulling info from:</strong> “Are you using my chart/portal data, or general info?”</li>
+    <li><strong>Confirm identity requirements:</strong> If it asks for sensitive info, check whether you’re logged in and on the real hospital domain.</li>
+    <li><strong>Don’t paste full histories:</strong> Share only what’s needed to route (dates, clinic name, basic reason). Keep the rest for your appointment.</li>
+    <li><strong>Get a receipt:</strong> If it created a message/ticket, ask for a reference number or confirmation.</li>
+    <li><strong>Capture the outcome:</strong> Write down what it told you to do (who to call, what form, what timeframe).</li>
+    <li><strong>Watch for “hallucinated confidence”:</strong> If it sounds certain but gives no source, verify in the portal or by phone.</li>
+    <li><strong>Escalate fast when it matters:</strong> If you’re stuck in loops or something is time-sensitive, go to phone or in-person support.</li>
+  </ul>
+
+  <h2>Privacy: the practical questions to ask</h2>
+  <p>
+    You do not need to become a security expert, but you should ask a few simple questions before sharing sensitive details:
+  </p>
+  <ul>
+    <li>Is this chatbot inside the authenticated patient portal, or on a public webpage?</li>
+    <li>Does it store transcripts, and who can see them?</li>
+    <li>Does it say it’s for “information only,” and how does it handle urgent symptoms?</li>
+    <li>Can you opt out, and is there a phone alternative?</li>
+  </ul>
+
+  <div class="cta">
+    <strong>The real unlock: keep your own clean timeline.</strong>
+    <p>
+      Chatbots, portals, and phone calls are easier when you have your facts in one place: dates, meds, questions, and what each clinic told you.
+      Jabbit helps you keep a simple personal record so you can stop repeating yourself.
+    </p>
+    <a class="cta-button" href="https://apps.apple.com/app/id6756848719">Download Jabbit on the App Store</a>
+  </div>
+
+  <h2>What to do if you’re a caregiver helping someone else</h2>
+  <p>
+    Caregiving is where portals break the most.
+    If you’re acting as a proxy, your quickest path is usually:
+    <strong>verify proxy access rules</strong> (each hospital is different), then keep a shared notes/timeline so calls don’t rely on memory.
+  </p>
+
+  <h2>Glossary</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <h3>Patient portal</h3>
+      <p>The hospital’s website/app where you can view results, messages, appointments, and documents.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Escalation</h3>
+      <p>The rules for handing your request to a human team, ideally with enough context that you don’t have to start over.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Transcript</h3>
+      <p>The saved record of what was said to the chatbot. Some systems store this for auditing and follow-up.</p>
+    </div>
+  </div>
+
+  <p class="source">
+    Source:
+    <br />
+    - STAT (Apr 13, 2026):
+    <a href="https://www.statnews.com/2026/04/13/hospitals-launch-chatbots-creating-new-funnel-for-patients/?utm_campaign=rss" rel="nofollow">https://www.statnews.com/2026/04/13/hospitals-launch-chatbots-creating-new-funnel-for-patients/</a>
+  </p>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+    <li><a href="/injection-protocol-tracker.html">Appointment notes + protocols tracker (keep what you were told in one place)</a></li>
+    <li><a href="/shotsy-alternative.html">Shotsy alternative (simple tracking for busy weeks)</a></li>
+    <li><a href="/guides/">Guides hub</a></li>
+    </ul>
+  </section>
+</body>
+</html>
