@@ -11,6 +11,7 @@ THRESHOLD_SECONDS="${THRESHOLD_SECONDS:-86400}" # 24h
 
 # Args:
 #   stale-ready-report.sh [--hours N] [ledgerPath]
+#   stale-ready-report.sh [--threshold-hours N] [ledgerPath]   # alias
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --hours)
@@ -19,8 +20,14 @@ while [[ $# -gt 0 ]]; do
       THRESHOLD_SECONDS=$(( $1 * 3600 ))
       shift
       ;;
+    --threshold-hours)
+      shift
+      [[ $# -gt 0 ]] || { echo "ERR: --threshold-hours requires a value" >&2; exit 2; }
+      THRESHOLD_SECONDS=$(( $1 * 3600 ))
+      shift
+      ;;
     -h|--help)
-      echo "Usage: $(basename "$0") [--hours N] [ledgerPath]"; exit 0
+      echo "Usage: $(basename "$0") [--hours N|--threshold-hours N] [ledgerPath]"; exit 0
       ;;
     *)
       LEDGER="$1"
