@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-13T13:36:55Z",
-  "total_pages": 69,
+  "last_updated": "2026-04-14T13:36:47Z",
+  "total_pages": 70,
   "topics": [
     {
       "topic": "bpc-157",
@@ -356,6 +356,11 @@
       "topic": "hospitals-patient-chatbots-patientgpt-epic-emmie-2026-04",
       "filename": "hospitals-patient-chatbots-patientgpt-epic-emmie-2026-04.html",
       "created": "2026-04-13"
+    },
+    {
+      "topic": "filspari-sparsentan-fsgs-fda-expanded-approval-2026-04",
+      "filename": "filspari-sparsentan-fsgs-fda-expanded-approval-2026-04.html",
+      "created": "2026-04-14"
     }
   ],
   "suggested_topics": [
