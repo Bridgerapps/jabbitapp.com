@@ -104,10 +104,14 @@ if [ -z "$note" ]; then
         --note "Ran growth-default-actions. Tags=[$finish_tags]. Output: $out_one"
     fi
   elif [ $code -eq 22 ]; then
-    # Self-improvement mode: DO NOT auto-run the harness here.
-    # The operator/cron turn should run self-improvement explicitly (so we don’t double-run
-    # and double-record FINISH notes).
-    :
+    # Self-improvement mode: run the self-improvement harness so cron runs are complete
+    # (leaves a FINISH record + artifacts). The harness is rate-limited and safe-local.
+    out=$(bash "$ROOT/scripts/manual-growth-loop/self-improvement-run.sh" 2>&1 || true)
+    out_one=$(printf "%s" "$out" | tr '\n' ' ')
+    out_one=${out_one:0:900}
+    bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
+      --tags "R,P" \
+      --note "SELF-IMPROVEMENT: ran self-improvement-run.sh. Output: $out_one"
   else
     bash "$ROOT/scripts/manual-growth-loop/auto-finish.sh" --preflight-code "$code" >/dev/null 2>&1 || true
   fi
