@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-14T13:37:49Z",
+  "updated": "2026-04-15T13:37:52Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1186,6 +1186,23 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "Tracking basics: keep a simple log with dates, photos, and notes"
+        }
+      ]
+    },
+    {
+      "file": "avlayah-denali-hunter-syndrome-fda-accelerated-approval-2026-03.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep a clean timeline)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple log for dates, notes, and patterns"
+        },
+        {
+          "href": "/fda-biosimilar-guidance-2026-03.html",
+          "text": "How to read FDA/regulatory headlines (what changes, what doesn\u2019t)"
         }
       ]
     }
