@@ -1,67 +1,60 @@
 # Jabbit Breaking-Topic Radar (last 72h)
 
-**Window:** 2026-03-24 → 2026-03-27 (UTC)
+**Window:** 2026-04-13 → 2026-04-16 (UTC)
 
 **Scope:** Informational trend-surfacing for potential Jabbit subscription-driving pages/features. **Not medical advice.**
 
-## TL;DR
-- **FDA actions + approvals dominated the last 72h**, with several high-salience items for consumers: a **first-ever once-weekly basal insulin** approval (Novo), plus multiple **accelerated approvals** in rare disease / oncology.
-- A notable **FDA enforcement move on drug advertising claims** (ImmunityBio) is a high-intent “what’s real / what changed?” moment that drives searches and patient confusion—exactly where an organizing product can convert.
-
----
-
 ## Top 5 topics (last 72h)
 
-### 1) FDA approves Novo Nordisk’s Awiqli (insulin icodec-abae), a first-ever once-weekly basal insulin for adults with type 2 diabetes
-- **Why it matters for subscriptions:** Any shift that changes injection cadence from **daily → weekly** creates immediate demand for: routine planning, reminders, refill pacing, dose-day adherence, and “what changed vs my prior regimen?” documentation (informational tracking, not clinical guidance).
-- **Suggested page slug:** `awiqli-once-weekly-basal-insulin-fda-approval-2026-03`
+### 1) FDA expands approval of Travere’s Filspari (sparsentan) for focal segmental glomerulosclerosis (FSGS)
+- **Why it matters for subscriptions:** New approvals in rare / complex chronic conditions create an immediate “organize the chaos” moment: tracking appointments, lab results, insurance paperwork, medication changes, and a clean timeline patients/caregivers can reference.
+- **Suggested page slug:** `filspari-sparsentan-fsgs-fda-expanded-approval-2026-04`
 - **Confidence:** **High**
 - **Sources:**
-  - Reuters (2026-03-26): https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-approves-novos-insulin-injection-type-2-diabetes-2026-03-26/
-  - Novo Nordisk press release via PR Newswire (2026-03-26): https://www.prnewswire.com/news-releases/fda-approves-novo-nordisks-awiqli-the-first-and-only-once-weekly-basal-insulin-treatment-for-adults-with-type-2-diabetes-302726839.html
+  - Reuters (2026-04-13): https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-expands-approval-travere-therapeutics-drug-rare-kidney-disease-2026-04-13/
 
 ---
 
-### 2) FDA warning letter: ImmunityBio told to stop/take down consumer-facing materials that FDA says were false or misleading about its cancer therapy (Anktiva)
-- **Why it matters for subscriptions:** These events trigger spikes in searches like “is this legit?”, “what did the FDA say?”, and “what am I actually taking?”—leading to strong subscription intent for a **single place to store a meds list, visit notes, and a simple timeline of changes/claims** (informational only).
-- **Suggested page slug:** `immunitybio-anktiva-fda-warning-letter-misleading-claims-2026-03`
+### 2) FDA requires post-marketing studies and seeks additional liver-injury data for Eli Lilly’s newly approved obesity pill Foundayo
+- **Why it matters for subscriptions:** Big launches plus safety monitoring updates drive high-intent searches (“what changed,” “what does FDA require now,” “what should I keep track of”). Jabbit can convert by offering a simple place to log medication history, side effects/symptoms (informational journaling), lab/visit reminders, and questions to bring to appointments.
+- **Suggested page slug:** `foundayo-fda-postmarketing-studies-liver-injury-data-request-2026-04`
 - **Confidence:** **High**
 - **Sources:**
-  - Reuters (2026-03-24): https://www.reuters.com/business/healthcare-pharmaceuticals/immunitybio-shares-fall-fda-warning-letter-over-cancer-therapy-claims-ad-2026-03-24/
+  - Reuters (2026-04-14): https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-requires-lilly-conduct-post-marketing-studies-obesity-pill-2026-04-14/
+  - Reddit trend surface (discussion volume around Foundayo pricing/coverage): https://www.reddit.com/r/Zepbound/comments/1sjz2x1/losing_my_parents_insurance_because_im_turning_26/
 
 ---
 
-### 3) FDA accelerated approval: Denali’s Avlayah (enzyme replacement therapy) for pediatric patients with Hunter syndrome (neurologic symptoms)
-- **Why it matters for subscriptions:** Rare disease caregivers are forced into “project management mode” (infusions, appointments, insurance paperwork, symptom journaling). New approvals create immediate onboarding complexity—prime for subscriptions centered on **care plans, reminders, document storage, and change logs**.
-- **Suggested page slug:** `avlayah-denali-hunter-syndrome-fda-accelerated-approval-2026-03`
+### 3) FDA to convene an expert panel on whether compounders should be allowed broader access to popular injectable peptides (for example BPC-157, TB-500)
+- **Why it matters for subscriptions:** This is a large, messy consumer-interest category (“peptides”) where people juggle sourcing, dosing chatter, and safety uncertainty. Subscription intent is high for an organizer that helps users keep a personal inventory, spending history, and notes/timelines in one place (without making claims or giving guidance).
+- **Suggested page slug:** `fda-peptides-compounding-advisory-panel-bpc-157-tb-500-2026-04`
 - **Confidence:** **High**
 - **Sources:**
-  - Reuters (2026-03-25): https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-approves-denalis-genetic-disorder-therapy-2026-03-25/
+  - Reuters (2026-04-15): https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-convene-expert-panel-decide-broader-access-some-peptides-2026-04-15/
+  - Reddit trend surface (recent high-engagement peptide threads): https://www.reddit.com/r/Biohackers/comments/1sjspik/bpc_to_cycle_or_not/
 
 ---
 
-### 4) FDA accelerated approval: Rocket Pharma’s Kresladi gene therapy for severe Leukocyte Adhesion Deficiency-I (LAD-I)
-- **Why it matters for subscriptions:** Similar caregiver “coordination overload” dynamic—plus gene therapy brings intense tracking needs: specialized-center scheduling, documentation, and longitudinal notes (again: organizational support, not clinical advice).
-- **Suggested page slug:** `kresladi-rocket-pharma-lad-i-gene-therapy-fda-approval-2026-03`
-- **Confidence:** **High**
+### 4) Mail-order dominates mifepristone dispensing in telehealth-allowed states (new analysis reported in JAMA)
+- **Why it matters for subscriptions:** Policy and access changes create operational complexity, especially across state rules and telehealth workflows. A neutral “how access works now” explainer paired with document storage (prescriptions, visit notes, receipts) and reminders can drive subscriptions.
+- **Suggested page slug:** `mifepristone-mail-order-telehealth-dispensing-trends-2026-04`
+- **Confidence:** **Medium**
 - **Sources:**
-  - Reuters (2026-03-27): https://www.reuters.com/business/healthcare-pharmaceuticals/rocket-pharma-shares-climb-fda-approves-first-therapy-deadly-childhood-disorder-2026-03-27/
+  - Reuters (2026-04-13): https://www.reuters.com/business/healthcare-pharmaceuticals/mail-order-dominates-us-abortion-pill-dispensing-2026-04-13/
+  - JAMA (as cited by Reuters): https://jamanetwork.com/journals/jama/article-abstract/2847577
 
 ---
 
-### 5) FDA approval: Corcept’s relacorilant (Lifyorli) + nab-paclitaxel for platinum-resistant epithelial ovarian cancer
-- **Why it matters for subscriptions:** New oncology approvals often create near-term patient/caregiver demand for **treatment schedule organization, side-effect journaling (informational), lab/visit tracking, and insurance/refill reminders**. A “new option exists” moment is also a high-intent search window.
-- **Suggested page slug:** `lifyorli-relacorilant-fda-approval-platinum-resistant-ovarian-cancer-2026-03`
+### 5) FDA reminds 2,200+ sponsors/researchers to disclose clinical trial results on ClinicalTrials.gov (crackdown on missing results)
+- **Why it matters for subscriptions:** Trust and transparency moments drive “I need a single source of truth” behavior. A page that explains (plainly) what trial-result disclosure is, how to check a product’s evidence trail, and how to track one’s own treatment history/notes can convert.
+- **Suggested page slug:** `fda-clinical-trial-results-disclosure-2200-sponsors-reminder-2026-04`
 - **Confidence:** **High**
 - **Sources:**
-  - Reuters (2026-03-25): https://www.reuters.com/business/healthcare-pharmaceuticals/corcept-therapeutics-shares-surge-lead-drug-gets-fda-nod-ovarian-cancer-2026-03-25/
+  - FDA news release (2026-04-13): https://www.fda.gov/news-events/press-announcements/fda-reminds-more-2200-sponsors-and-researchers-disclose-trial-results
+  - STAT (2026-04-13): https://www.statnews.com/pharmalot/2026/04/13/fda-nudges-drugmakers-report-missing-clinical-trial-data/
 
 ---
-
-## FDA signal check (safety communications)
-- FDA’s Drug Safety Communications page shows **no new postings within this 72h window**.
-- Most recent posting on the index at time of writing: **03-20-2026** (carbidopa/levodopa vitamin B6 deficiency + seizure warning).
-- Source (FDA index): https://www.fda.gov/drugs/drug-safety-and-availability/drug-safety-communications
 
 ## Notes on coverage / resilience
-- This radar is intentionally multi-source (FDA + Reuters + trade/press releases + Reddit trend surface). Some trade outlets are intermittently unavailable due to anti-bot protections; the run should still complete using accessible sources.
+- Multi-source intent: FDA + Reuters + trade outlets + Reddit trend surface.
+- Some trade sites and Reddit pages may intermittently block automated fetches; this radar uses whatever sources are reachable at runtime and continues on partial failure.
