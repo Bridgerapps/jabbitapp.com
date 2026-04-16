@@ -193,6 +193,17 @@ if should_run "packs" "$COOLDOWN_PACKS"; then
   fi
 else
   echo "growth-default-actions: skip distribution packs (cooldown)" >&2
+
+  # Fallback: if packs are in a long cooldown, do a lightweight, install-linked action
+  # so hourly runs don't devolve into churn. Safe: local-only, uses existing rate-limits.
+  if should_run "measurement" "$COOLDOWN_MEASUREMENT"; then
+    echo "growth-default-actions: packs cooldown active, running measurement refresh fallback" >&2
+    bash "$ROOT/scripts/manual-growth-loop/act-on-issues-rate-limited.sh" >/dev/null 2>&1 || true
+    # Note: act-on-issues decides whether to run measurement/KPI/etc. We still
+    # count this as a measurement run when it executes successfully downstream.
+    mark_ran "measurement"
+    ran_measure=1
+  fi
 fi
 
 # Action 4) When we have awaiting_owner backlog, refresh the owner ping pack.
