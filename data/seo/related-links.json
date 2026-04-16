@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-15T13:37:52Z",
+  "updated": "2026-04-16T13:37:51Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -84,6 +84,23 @@
         {
           "href": "/guides/",
           "text": "Guides hub"
+        }
+      ]
+    },
+    {
+      "file": "foundayo-fda-postmarketing-studies-liver-injury-data-request-2026-04.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Medication tracker (log dates, changes, notes, patterns)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "Side effects guide (what to document and how to talk about it)"
+        },
+        {
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "Coverage & cost checklist (what to save for prior auth/appeals)"
         }
       ]
     },
