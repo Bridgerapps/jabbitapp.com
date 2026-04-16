@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# deps: grep/sed/awk/coreutils. Prefer ripgrep if present, but do not require it.
+# This script is used by cron self-improvement; missing optional deps must not fail the run.
+
 ROOT="/home/jabbit/.openclaw/workspace"
 WORKLOG="${1:-$ROOT/WORKLOG.md}"
 LEDGER="${LEDGER:-$ROOT/data/status/manual-growth-loop-ledger.json}"
