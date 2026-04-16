@@ -326,11 +326,6 @@ if [ "$ran_any" -eq 0 ]; then
     bash "$ROOT/scripts/manual-growth-loop/ledger-next.sh" 2>/dev/null || true
   } >"$tmp_noop" 2>/dev/null || true
 
-  if [ -f "$NOOP_NEXT_FILE" ] && sha256sum "$NOOP_NEXT_FILE" "$tmp_noop" >/dev/null 2>&1; then
-    # sha256sum returns non-zero on diff; but doesn't print in this mode.
-    :
-  fi
-
   if [ ! -f "$NOOP_NEXT_FILE" ] || ! cmp -s "$NOOP_NEXT_FILE" "$tmp_noop"; then
     mv "$tmp_noop" "$NOOP_NEXT_FILE"
     echo "growth-default-actions: wrote noop next step -> $NOOP_NEXT_FILE" >&2
