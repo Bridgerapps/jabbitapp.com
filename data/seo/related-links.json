@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-16T13:37:51Z",
+  "updated": "2026-04-17T13:37:42Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -80,6 +80,23 @@
         {
           "href": "/shotsy-alternative.html",
           "text": "Shotsy alternative (simple tracking for busy weeks)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
+        }
+      ]
+    },
+    {
+      "file": "fda-clinical-trial-results-disclosure-2200-sponsors-reminder-2026-04.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
         },
         {
           "href": "/guides/",

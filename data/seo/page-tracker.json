@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-16T13:36:35Z",
-  "total_pages": 72,
+  "last_updated": "2026-04-17T13:36:47Z",
+  "total_pages": 73,
   "topics": [
     {
       "topic": "bpc-157",
@@ -371,6 +371,11 @@
       "topic": "foundayo-fda-postmarketing-studies-liver-injury-data-request-2026-04",
       "filename": "foundayo-fda-postmarketing-studies-liver-injury-data-request-2026-04.html",
       "created": "2026-04-16"
+    },
+    {
+      "topic": "fda-clinical-trial-results-disclosure-2200-sponsors-reminder-2026-04",
+      "filename": "fda-clinical-trial-results-disclosure-2200-sponsors-reminder-2026-04.html",
+      "created": "2026-04-17"
     }
   ],
   "suggested_topics": [
