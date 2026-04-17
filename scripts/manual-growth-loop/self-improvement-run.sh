@@ -152,6 +152,13 @@ fi
 
 bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
   --tags "R,P" \
-  --note "SELF-IMPROVEMENT: ran self-improvement-run.sh, applied safe local fixes=[${ran_summary}], and wrote ${report_txt##$ROOT/}. Next: only escalate issues that truly require owner action." 
+  --note "SELF-IMPROVEMENT: ran self-improvement-run.sh, applied safe local fixes=[${ran_summary}], and wrote ${report_txt##$ROOT/}. Next: only escalate issues that truly require owner action."
+
+# Guardrail: if the JSONL log contains an unusual number of lines for the same
+# iteration, warn loudly. This helps catch accidental double-finishes.
+count=$(grep -c "\"iteration\":${iteration}" "$ROOT/data/logs/manual-growth-loop.jsonl" 2>/dev/null | tr -d ' ' || echo 0)
+if [ "$count" -gt 3 ]; then
+  echo "warning: unusually high JSONL line count for iteration=${iteration} (count=${count}); check for duplicate self-improvement finishes" >&2
+fi
 
 echo "wrote: $report_txt"
