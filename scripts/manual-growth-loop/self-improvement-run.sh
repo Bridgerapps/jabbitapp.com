@@ -8,6 +8,12 @@ set -euo pipefail
 # - writes a small, timestamped report to data/status/
 # - records a FINISH note indicating what changed
 # Safe: local-only writes (data/status + run history). No external sends.
+#
+# IMPORTANT:
+# Self-improvement does NOT count unless it reduces a real bottleneck or creates
+# clearly better externally visible output. Script polish, logging, and guardrails
+# are secondary. Owner-gated outbound and unexecuted trust-surface work outrank
+# internal loop polish.
 
 ROOT="/home/jabbit/.openclaw/workspace"
 LATEST="$ROOT/data/status/manual-growth-loop-latest.json"
@@ -141,6 +147,12 @@ done
   echo "- When mode=self-improvement, ALWAYS run this script, then record-finish with what changed."
   echo "- Prefer upgrades that reduce repeat loops: stronger STOP reasons, better next-action surfacing, fewer empty runs."
   echo "- Keep outputs ephemeral unless it changes system state: write to data/status or scripts/, not WORKLOG."
+  echo
+  echo "## business-impact test (mandatory)"
+  echo "- What bottleneck did this remove?"
+  echo "- What externally visible output improved?"
+  echo "- Did this increase the chance of installs or just improve process hygiene?"
+  echo "- If the answer is 'process only', do not present it as meaningful self-improvement."
 } | tee "$report_txt" >/dev/null
 
 # Record a finish note that this iteration executed the self-improvement harness.
@@ -152,7 +164,7 @@ fi
 
 bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
   --tags "R,P" \
-  --note "SELF-IMPROVEMENT: ran self-improvement-run.sh, applied safe local fixes=[${ran_summary}], and wrote ${report_txt##$ROOT/}. Next: only escalate issues that truly require owner action."
+  --note "SELF-IMPROVEMENT: ran self-improvement-run.sh, applied safe local fixes=[${ran_summary}], and wrote ${report_txt##$ROOT/}. Do not count this as meaningful improvement unless it removed a bottleneck or improved externally visible output. Next: only escalate issues that truly require owner action."
 
 # Guardrail: if the JSONL log contains an unusual number of lines for the same
 # iteration, warn loudly. This helps catch accidental double-finishes.

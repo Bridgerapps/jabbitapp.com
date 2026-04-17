@@ -47,14 +47,20 @@ Purpose: force every operator summary/review to come from the same frame instead
 
 ## Output format
 Keep it concise and decision-useful:
-- **What changed**
-- **What is blocked**
-- **Likely cause**
-- **Confidence**
+- **What shipped**
+- **What moved installs**
+- **What got stuck**
+- **What was fake progress**
 - **Single highest-leverage next action**
+
+If a section is empty, say that plainly.
+If attribution is weak, say **unknown**.
 
 ## Anti-fake-progress rules
 - Do not create new plans if queue backlog exists.
 - Do not praise activity that did not move state.
 - If measurement is broken, lead with that.
 - If nothing materially changed, say that plainly.
+- Do not count script/cron/logging/guardrail changes as “self-improvement” unless they clearly removed a bottleneck or changed externally visible output.
+- Do not imply SEO shipped = downloads moved unless attribution is actually supported.
+- Treat blocked owner approvals and unexecuted manual trust-surface work as the real bottleneck when present.

@@ -22,7 +22,8 @@ Curated, durable rules + facts. Keep it tight.
 - **Tone:** sharp, human, not corporate; no validation‑fluff openers.
 - **Latency / thinking:** keep default reasoning minimal; escalate only when complexity/risk warrants.
 - **Model routing:** OpenAI‑only. Primary `openai-codex/gpt-5.3-codex`; fallback `openai-codex/gpt-5.2`.
-- **Updates cadence:** periodic operator updates (roughly 12h) with explicit asks when blocked.
+- **Updates cadence:** one operator update per day by default, around 5pm ET, unless there is a real blocker or materially new information.
+- **Daily update format (2026-04-17):** report only: what shipped, what moved installs, what got stuck, what was fake progress, next action.
 - **Product metric framing (2026‑03‑09):** prioritize **installs** now; paid conversion optimization later.
 - **When Tim asks for a change:** include current setup state (config/status) in the reply.
 
