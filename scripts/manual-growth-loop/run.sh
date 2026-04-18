@@ -106,12 +106,9 @@ if [ -z "$note" ]; then
   elif [ $code -eq 22 ]; then
     # Self-improvement mode: run the self-improvement harness so cron runs are complete
     # (leaves a FINISH record + artifacts). The harness is rate-limited and safe-local.
-    out=$(bash "$ROOT/scripts/manual-growth-loop/self-improvement-run.sh" 2>&1 || true)
-    out_one=$(printf "%s" "$out" | tr '\n' ' ')
-    out_one=${out_one:0:900}
-    bash "$ROOT/scripts/manual-growth-loop/record-finish.sh" \
-      --tags "R,P" \
-      --note "SELF-IMPROVEMENT: ran self-improvement-run.sh. Output: $out_one"
+    # IMPORTANT: self-improvement-run.sh already records its own FINISH line.
+    # Do not record another FINISH here, or JSONL audits will show duplicates.
+    bash "$ROOT/scripts/manual-growth-loop/self-improvement-run.sh" 2>&1 || true
   else
     bash "$ROOT/scripts/manual-growth-loop/auto-finish.sh" --preflight-code "$code" >/dev/null 2>&1 || true
   fi
