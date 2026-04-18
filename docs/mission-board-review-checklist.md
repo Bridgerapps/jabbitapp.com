@@ -53,6 +53,8 @@ Keep it concise and decision-useful:
 - **What was fake progress**
 - **Single highest-leverage next action**
 
+Also fold in any notable cron-job output here instead of sending separate routine updates.
+
 If a section is empty, say that plainly.
 If attribution is weak, say **unknown**.
 
