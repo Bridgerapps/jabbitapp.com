@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-17T13:37:42Z",
+  "updated": "2026-04-18T13:37:37Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -93,6 +93,23 @@
         {
           "href": "/injection-protocol-tracker.html",
           "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
+        }
+      ]
+    },
+    {
+      "file": "fda-testosterone-therapy-low-libido-idiopathic-hypogonadism-2026-04.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + labs tracker (keep your plan and results in one place)"
         },
         {
           "href": "/glp1-injection-tracker.html",
