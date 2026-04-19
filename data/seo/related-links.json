@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-18T13:37:37Z",
+  "updated": "2026-04-19T13:37:33Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -203,6 +203,23 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "Tracking basics: a simple medication log"
+        }
+      ]
+    },
+    {
+      "file": "fda-recall-hub-botulism-undeclared-drugs-contamination-2026-04.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recalls and undeclared ingredients: what to save and how to verify"
+        },
+        {
+          "href": "/childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
+          "text": "Recall checklist example: how to match lot numbers and product details"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: keep a clean timeline and notes (helpful in any safety follow-up)"
         }
       ]
     },
