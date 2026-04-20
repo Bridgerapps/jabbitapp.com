@@ -32,7 +32,7 @@ fi
 
 echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
   def _unique_pages(arr): [arr[]? | .page? // empty] | unique;
-  def _suspect_reasons(total_events; top_pages; pageviews; clicks):
+  def _suspect_reasons(total_events; top_pages; pageviews; clicks; last_event_at):
     (
       []
       + (if (total_events|tonumber) < 10 then ["low_total_events(<10)"] else [] end)
@@ -46,6 +46,11 @@ echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
             ["clicks_gt_pageviews"]
           else [] end
         )
+      + (
+          if (last_event_at // "") != "" and (((now - ((last_event_at | fromdateiso8601)? // now)) / 86400) > 3) then
+            ["stale_last_event(>3d)"]
+          else [] end
+        )
     );
 
   . as $raw
@@ -54,6 +59,7 @@ echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
         status: "OK",
         ok: true,
         last_check: $ts,
+        last_event_at: ($raw.lastEventAt // null),
         total_events: ($raw.totalEvents // $raw.total // 0),
         pageviews_total: (
           if ($raw.eventCounts|type)=="object" then ($raw.eventCounts.pageview // 0)
@@ -83,7 +89,7 @@ echo "$RAW" | jq --arg ts "$(date -Iseconds)" '
         top_pageviews: ($raw.topPageviews // $raw.topPages // []),
         top_click_pages: ($raw.topClickPages // [])
       }
-      | .suspect_reasons = _suspect_reasons(.total_events; .top_pages; .pageviews_total; .app_store_clicks_total)
+      | .suspect_reasons = _suspect_reasons(.total_events; .top_pages; .pageviews_total; .app_store_clicks_total; .last_event_at)
       | .suspect = (.suspect_reasons | length > 0)
       | .status = (if .suspect then "SUSPECT" else "OK" end)
       | .ok = (.status == "OK")

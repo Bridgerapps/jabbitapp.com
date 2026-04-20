@@ -33,6 +33,7 @@
   // Analytics
   // ---------
   const APP_STORE_RE = /apps\.apple\.com\/.*\/id6756848719/i;
+  const recentTrackKeys = new Map();
 
   // ----------------------
   // iOS Smart App Banner
@@ -65,6 +66,13 @@
       ref: document.referrer || '',
       ts: Date.now(),
     };
+
+    // Guard against duplicate click events from nested handlers or rapid taps.
+    const dedupeKey = `${payload.event}|${payload.page}|${payload.target}`;
+    const now = Date.now();
+    const lastSentAt = recentTrackKeys.get(dedupeKey) || 0;
+    if (now - lastSentAt < 1500) return;
+    recentTrackKeys.set(dedupeKey, now);
 
     // Prefer same-origin proxy endpoint to avoid mixed-content issues.
     const url = '/api/track';

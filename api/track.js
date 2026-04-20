@@ -39,11 +39,7 @@ async function chooseAnalyticsBase() {
 module.exports = async (req, res) => {
   const ANALYTICS_BASE = await chooseAnalyticsBase();
   const ANALYTICS_SECRET = loadAnalyticsSecret();
-
-  if (!ANALYTICS_SECRET) {
-    res.status(500).json({ ok: false, error: 'analytics secret missing' });
-    return;
-  }
+  const upstreamPath = ANALYTICS_SECRET ? '/track' : '/track-public';
 
   try {
     const body = req.method === 'POST' ? (req.body || {}) : (req.query || {});
@@ -55,14 +51,20 @@ module.exports = async (req, res) => {
       ref: String(body.ref || req.headers.referer || ''),
     };
 
-    const r = await fetch(`${ANALYTICS_BASE}/track`, {
+    const headers = {
+      'content-type': 'application/json',
+      'user-agent': req.headers['user-agent'] || 'jabbit-proxy',
+      'x-forwarded-for': req.headers['x-forwarded-for'] || req.socket?.remoteAddress || '',
+    };
+    if (ANALYTICS_SECRET) {
+      headers['x-analytics-secret'] = ANALYTICS_SECRET;
+    }
+    if (req.headers.origin) headers.origin = req.headers.origin;
+    if (req.headers.referer) headers.referer = req.headers.referer;
+
+    const r = await fetch(`${ANALYTICS_BASE}${upstreamPath}`, {
       method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-        'x-analytics-secret': ANALYTICS_SECRET,
-        'user-agent': req.headers['user-agent'] || 'jabbit-proxy',
-        'x-forwarded-for': req.headers['x-forwarded-for'] || req.socket?.remoteAddress || '',
-      },
+      headers,
       body: JSON.stringify(payload),
     });
 
