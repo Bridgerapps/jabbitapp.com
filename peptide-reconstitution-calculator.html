@@ -4,16 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Peptide Reconstitution Calculator (mg → mL → Syringe Units) | Jabbit</title>
-  <meta name="description" content="Instantly calculate peptide concentration and how many U-100 insulin syringe units to draw after reconstituting a vial. Educational only — not medical advice." />
+  <meta name="description" content="Science-first peptide reconstitution calculator for concentration, injection volume, and U-100 syringe units. Clear presets, live interpretation, and educational safety checks." />
   <link rel="canonical" href="https://jabbitapp.com/peptide-reconstitution-calculator" />
+  <meta name="robots" content="noindex" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Peptide Reconstitution Calculator | Jabbit" />
-  <meta property="og:description" content="Calculate concentration (mg/mL) and U-100 syringe units from vial amount, diluent volume, and target dose. Educational only." />
+  <meta property="og:description" content="Calculate peptide concentration, exact draw volume, and U-100 insulin syringe units with clear interpretation and safety-minded guidance." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jabbitapp.com/peptide-reconstitution-calculator" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,17 +21,25 @@
         extend: {
           colors: {
             brand: {
-              50: '#ecfdf5',
-              100: '#d1fae5',
-              200: '#a7f3d0',
-              300: '#6ee7b7',
-              400: '#34d399',
-              500: '#10b981',
-              600: '#059669',
-              700: '#047857',
-              800: '#065f46',
-              900: '#064e3b',
+              50: '#effcf8',
+              100: '#d7f7ee',
+              200: '#aeeedb',
+              300: '#7adfbe',
+              400: '#42c79c',
+              500: '#20ad81',
+              600: '#168a67',
+              700: '#146e54',
+              800: '#145846',
+              900: '#13493b',
+            },
+            ink: {
+              950: '#09111b'
             }
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(15, 23, 42, 0.08)',
+            card: '0 14px 36px rgba(15, 23, 42, 0.08)',
+            glow: '0 12px 30px rgba(32, 173, 129, 0.18)'
           }
         }
       }
@@ -42,11 +48,67 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/site.css" />
   <script defer src="/assets/site.js"></script>
 
-  <!-- FAQ schema (JSON-LD) -->
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(215, 247, 238, 0.9), transparent 26%),
+        radial-gradient(circle at top right, rgba(226, 232, 240, 0.75), transparent 22%),
+        linear-gradient(180deg, #f8fafc 0%, #ffffff 28%, #f8fafc 100%);
+    }
+    .glass-panel {
+      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.86);
+    }
+    .metric-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,250,252,0.94));
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.05);
+    }
+    .input-shell {
+      border: 1px solid #dbe3ee;
+      background: rgba(255,255,255,0.92);
+      transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+    }
+    .input-shell:focus-within {
+      border-color: rgba(32, 173, 129, 0.8);
+      box-shadow: 0 0 0 4px rgba(32, 173, 129, 0.12);
+      transform: translateY(-1px);
+    }
+    .preset-btn,
+    .segmented-btn {
+      transition: all 160ms ease;
+    }
+    .preset-btn[aria-pressed="true"],
+    .segmented-btn[aria-pressed="true"] {
+      background: linear-gradient(135deg, #20ad81, #168a67);
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 10px 24px rgba(32, 173, 129, 0.24);
+    }
+    .result-highlight {
+      background: linear-gradient(135deg, #10251e 0%, #163329 55%, #1c4a39 100%);
+    }
+    .helper-note strong {
+      color: #0f172a;
+    }
+    .formula-badge {
+      font-variant-numeric: tabular-nums;
+    }
+    @media (max-width: 1023px) {
+      .sticky-results {
+        position: static;
+      }
+    }
+  </style>
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -57,15 +119,15 @@
           "name": "What does a peptide reconstitution calculator do?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It converts your vial amount (mg) and diluent volume (mL) into a concentration (mg/mL), then converts a target dose (mcg) into an injection volume (mL) and U-100 insulin syringe units (where 100 units = 1 mL)."
+            "text": "It converts your vial amount and diluent volume into a concentration, then translates a target dose into mL and U-100 insulin syringe units so the draw amount is easier to interpret."
           }
         },
         {
           "@type": "Question",
-          "name": "How do U-100 syringe units relate to mL?",
+          "name": "What syringe does this calculator assume?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "On a U-100 insulin syringe, 100 units equals 1 mL. So 10 units equals 0.1 mL, and 5 units equals 0.05 mL."
+            "text": "This calculator assumes a U-100 insulin syringe, where 100 units equals 1 mL. If your syringe is different, only use the mL result unless a clinician or pharmacist confirms the conversion."
           }
         },
         {
@@ -73,302 +135,506 @@
           "name": "Is this calculator medical advice?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. This page is educational only and cannot verify your medication, syringe type, or prescription. Always follow your clinician or pharmacist instructions."
+            "text": "No. It is educational only and cannot verify your vial labeling, prescription, or syringe type. If your label or instructions differ, stop and confirm before drawing anything."
           }
         }
       ]
     }
   </script>
 </head>
-<body class="bg-white text-gray-900">
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-6 py-4">
-      <div class="flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3">
-          <div class="w-9 h-9 bg-brand-500 rounded-xl flex items-center justify-center shadow-sm" aria-hidden="true">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <span class="text-xl font-bold tracking-tight">Jabbit</span>
-        </a>
-
-        <div class="hidden md:flex items-center space-x-8">
-          <a href="/" class="text-gray-600 hover:text-gray-900 transition">Home</a>
-          <a href="/guides/" class="text-gray-600 hover:text-gray-900 transition">Guides</a>
-          <a href="/privacy/" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
-          <a href="/terms/" class="text-gray-600 hover:text-gray-900 transition">Terms</a>
-          <a href="https://apps.apple.com/app/id6756848719" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600 transition">App Store</a>
-        </div>
-
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-gray-900 transition" aria-label="Toggle menu" aria-expanded="false">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+<body class="text-slate-900 antialiased">
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/60 bg-white/75 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <a href="/" class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-500 shadow-glow" aria-hidden="true">
+          <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-        </button>
+        </div>
+        <span class="text-xl font-bold tracking-tight">Jabbit</span>
+      </a>
+
+      <div class="hidden items-center space-x-8 md:flex">
+        <a href="/" class="text-sm font-medium text-slate-600 transition hover:text-slate-950">Home</a>
+        <a href="/guides/" class="text-sm font-medium text-slate-600 transition hover:text-slate-950">Guides</a>
+        <a href="/privacy/" class="text-sm font-medium text-slate-600 transition hover:text-slate-950">Privacy</a>
+        <a href="/terms/" class="text-sm font-medium text-slate-600 transition hover:text-slate-950">Terms</a>
+        <a href="https://apps.apple.com/app/id6756848719" class="rounded-xl bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">App Store</a>
       </div>
 
-      <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2">
-        <div class="flex flex-col space-y-4">
-          <a href="/" class="text-gray-600 hover:text-gray-900 transition">Home</a>
-          <a href="/guides/" class="text-gray-600 hover:text-gray-900 transition">Guides</a>
-          <a href="/privacy/" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
-          <a href="/terms/" class="text-gray-600 hover:text-gray-900 transition">Terms</a>
-          <a href="https://apps.apple.com/app/id6756848719" class="text-brand-700 font-semibold hover:text-brand-800 transition">App Store</a>
-        </div>
+      <button id="mobile-menu-btn" class="rounded-xl p-2 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 md:hidden" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="mx-auto hidden max-w-6xl px-6 pb-4 md:hidden">
+      <div class="glass-panel flex flex-col gap-4 rounded-2xl border border-slate-200 px-4 py-4 shadow-card">
+        <a href="/" class="text-sm font-medium text-slate-700">Home</a>
+        <a href="/guides/" class="text-sm font-medium text-slate-700">Guides</a>
+        <a href="/privacy/" class="text-sm font-medium text-slate-700">Privacy</a>
+        <a href="/terms/" class="text-sm font-medium text-slate-700">Terms</a>
+        <a href="https://apps.apple.com/app/id6756848719" class="text-sm font-semibold text-brand-700">App Store</a>
       </div>
     </div>
   </nav>
 
-  <main class="pt-28 pb-20">
-    <section class="max-w-6xl mx-auto px-6">
-      <div class="grid lg:grid-cols-2 gap-10 items-start">
-        <div>
-          <p class="inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-100 rounded-full px-3 py-1">
-            Educational tool
-          </p>
-          <h1 class="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">
-            Peptide Reconstitution Calculator
-          </h1>
-          <p class="mt-4 text-lg text-gray-600 leading-relaxed">
-            Enter your vial amount and how much diluent you added. Then enter a target dose to get the exact
-            <span class="font-semibold text-gray-800">mL</span> and <span class="font-semibold text-gray-800">U-100 insulin syringe units</span>
-            to draw.
-          </p>
-
-          <div class="mt-6 flex flex-col sm:flex-row gap-3">
-            <a href="https://apps.apple.com/app/id6756848719" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-brand-500 text-white font-semibold hover:bg-brand-600 transition">
-              Download Jabbit
-            </a>
-            <a href="/peptide-reconstitution-guide.html" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-gray-200 text-gray-800 font-semibold hover:bg-gray-50 transition">
-              Read the full guide
-            </a>
+  <main class="pb-20 pt-24 sm:pt-28">
+    <section class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(360px,420px)] lg:gap-8">
+        <div class="space-y-6">
+          <div class="glass-panel inline-flex items-center gap-2 rounded-full border border-brand-100 px-3 py-1.5 text-sm font-semibold text-brand-800 shadow-sm">
+            Educational tool, science-first by design
           </div>
 
-          <div class="mt-8 rounded-2xl border border-gray-200 bg-white p-5">
-            <p class="text-sm text-gray-700">
-              <span class="font-semibold">Disclaimer:</span> informational only. This calculator can’t verify your medication, syringe type,
-              prescription, or labeling. Always follow your clinician/pharmacist instructions. If anything doesn’t match your label, stop and confirm.
+          <div class="max-w-3xl">
+            <h1 class="text-4xl font-extrabold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+              Peptide reconstitution, made easy to verify.
+            </h1>
+            <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+              Enter the vial amount, how much diluent you added, and your target dose. You’ll get the exact concentration,
+              the draw volume in mL, and the matching <span class="font-semibold text-slate-900">U-100 syringe units</span>, with live interpretation so the math is easier to trust.
             </p>
           </div>
 
-          <div class="mt-4 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-            <p class="text-sm font-semibold text-blue-900">What this tool knows, and what it doesn’t</p>
-            <ul class="mt-2 space-y-2 text-sm text-blue-900/90 list-disc list-inside">
-              <li>It does the dilution math for a U-100 syringe correctly and transparently.</li>
-              <li>It does <strong>not</strong> confirm that your vial, concentration, syringe type, or prescribed dose is appropriate.</li>
-              <li>For technique and handling, pair this with the <a href="/peptide-reconstitution-guide.html" class="font-semibold underline hover:no-underline">full reconstitution guide</a> and your product labeling.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Calculator -->
-        <div class="rounded-3xl border border-gray-200 bg-white shadow-sm overflow-hidden">
-          <div class="p-6 sm:p-8 border-b border-gray-100">
-            <h2 class="text-2xl font-bold tracking-tight">Calculator</h2>
-            <p class="mt-2 text-sm text-gray-600">Assumes a U-100 syringe (100 units = 1 mL).</p>
-          </div>
-
-          <div class="p-6 sm:p-8">
-            <div class="grid sm:grid-cols-2 gap-4">
-              <label class="block">
-                <span class="text-sm font-semibold text-gray-800">Vial amount (mg)</span>
-                <input id="vialMg" inputmode="decimal" class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-200" value="5" />
-              </label>
-
-              <label class="block">
-                <span class="text-sm font-semibold text-gray-800">Diluent added (mL)</span>
-                <input id="diluentMl" inputmode="decimal" class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-200" value="2" />
-              </label>
-
-              <label class="block sm:col-span-2">
-                <span class="text-sm font-semibold text-gray-800">Target dose (mcg)</span>
-                <input id="doseMcg" inputmode="decimal" class="mt-2 w-full rounded-xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-200" value="250" />
-              </label>
+          <div class="grid gap-3 sm:grid-cols-3">
+            <div class="metric-card rounded-3xl p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Step 1</p>
+              <p class="mt-2 text-sm font-semibold text-slate-900">Set your vial and diluent</p>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Use presets or type the exact values from your label and mixing plan.</p>
             </div>
+            <div class="metric-card rounded-3xl p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Step 2</p>
+              <p class="mt-2 text-sm font-semibold text-slate-900">Choose the target dose</p>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Dose is entered in mcg, which is how many protocols are written.</p>
+            </div>
+            <div class="metric-card rounded-3xl p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Step 3</p>
+              <p class="mt-2 text-sm font-semibold text-slate-900">Cross-check the draw</p>
+              <p class="mt-1 text-sm leading-6 text-slate-600">See mL, units, and what each syringe mark means at your dilution.</p>
+            </div>
+          </div>
 
-            <div id="errorBox" class="hidden mt-4 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800"></div>
-
-            <div class="mt-6 grid gap-3">
-              <div class="rounded-2xl bg-gray-50 border border-gray-100 p-5">
-                <p class="text-xs uppercase tracking-wide text-gray-500">Concentration</p>
-                <p class="mt-1 text-2xl font-bold"><span id="concentration">—</span> <span class="text-base font-semibold text-gray-600">mg/mL</span></p>
-              </div>
-
-              <div class="grid sm:grid-cols-2 gap-3">
-                <div class="rounded-2xl bg-gray-50 border border-gray-100 p-5">
-                  <p class="text-xs uppercase tracking-wide text-gray-500">Volume to draw</p>
-                  <p class="mt-1 text-2xl font-bold"><span id="mlPerDose">—</span> <span class="text-base font-semibold text-gray-600">mL</span></p>
+          <div class="grid gap-4 md:grid-cols-[minmax(0,1fr)_240px]">
+            <div class="glass-panel rounded-[2rem] border border-white/80 p-4 shadow-soft sm:p-6">
+              <div class="flex flex-col gap-4 border-b border-slate-200/80 pb-5 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Calculator</p>
+                  <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-950">Live dose conversion</h2>
+                  <p class="mt-2 text-sm leading-6 text-slate-600">All outputs update instantly. This calculator assumes a U-100 insulin syringe for unit conversion.</p>
                 </div>
-                <div class="rounded-2xl bg-gray-50 border border-gray-100 p-5">
-                  <p class="text-xs uppercase tracking-wide text-gray-500">U-100 syringe units</p>
-                  <p class="mt-1 text-2xl font-bold"><span id="units">—</span> <span class="text-base font-semibold text-gray-600">units</span></p>
+                <div class="rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+                  <span class="font-semibold">Always compare with your vial label.</span><br />
+                  If instructions do not match, stop and confirm.
                 </div>
               </div>
 
-              <div class="rounded-2xl border border-gray-200 bg-white p-5">
-                <p class="text-sm text-gray-700">
-                  Quick reference: <span class="font-semibold">10 units = 0.10 mL</span>, <span class="font-semibold">5 units = 0.05 mL</span> (U-100).
-                </p>
-                <p class="mt-2 text-xs text-gray-500" id="roundingNote">We show two decimals for mL and one decimal for units. If your syringe only marks whole units, round carefully.</p>
+              <div class="mt-6 space-y-6">
+                <div>
+                  <div class="flex items-center justify-between gap-4">
+                    <div>
+                      <h3 class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-500">Common vial setups</h3>
+                      <p class="mt-1 text-sm text-slate-600">Tap a preset, then fine-tune if needed.</p>
+                    </div>
+                  </div>
+                  <div class="mt-3 grid gap-2 sm:grid-cols-2 xl:grid-cols-4">
+                    <button type="button" class="preset-btn rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left text-sm font-semibold text-slate-700" data-vial="5" data-diluent="2">5 mg + 2 mL</button>
+                    <button type="button" class="preset-btn rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left text-sm font-semibold text-slate-700" data-vial="10" data-diluent="2">10 mg + 2 mL</button>
+                    <button type="button" class="preset-btn rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left text-sm font-semibold text-slate-700" data-vial="10" data-diluent="4">10 mg + 4 mL</button>
+                    <button type="button" class="preset-btn rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left text-sm font-semibold text-slate-700" data-vial="15" data-diluent="3">15 mg + 3 mL</button>
+                  </div>
+                </div>
+
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <label class="block">
+                    <span class="text-sm font-semibold text-slate-900">Vial amount</span>
+                    <div class="input-shell mt-2 flex items-center rounded-2xl px-4 py-3">
+                      <input id="vialMg" inputmode="decimal" class="w-full border-0 bg-transparent p-0 text-lg font-semibold text-slate-950 focus:outline-none focus:ring-0" value="5" aria-describedby="vialHelp" />
+                      <span class="ml-3 text-sm font-semibold text-slate-500">mg</span>
+                    </div>
+                    <p id="vialHelp" class="mt-2 text-sm text-slate-500">Total peptide in the vial before mixing.</p>
+                  </label>
+
+                  <label class="block">
+                    <span class="text-sm font-semibold text-slate-900">Diluent added</span>
+                    <div class="input-shell mt-2 flex items-center rounded-2xl px-4 py-3">
+                      <input id="diluentMl" inputmode="decimal" class="w-full border-0 bg-transparent p-0 text-lg font-semibold text-slate-950 focus:outline-none focus:ring-0" value="2" aria-describedby="diluentHelp" />
+                      <span class="ml-3 text-sm font-semibold text-slate-500">mL</span>
+                    </div>
+                    <p id="diluentHelp" class="mt-2 text-sm text-slate-500">How much bacteriostatic water or other diluent you actually added.</p>
+                  </label>
+                </div>
+
+                <div>
+                  <div class="flex flex-wrap items-center justify-between gap-3">
+                    <label class="block flex-1 min-w-[220px]">
+                      <span class="text-sm font-semibold text-slate-900">Target dose</span>
+                      <div class="input-shell mt-2 flex items-center rounded-2xl px-4 py-3">
+                        <input id="doseMcg" inputmode="decimal" class="w-full border-0 bg-transparent p-0 text-lg font-semibold text-slate-950 focus:outline-none focus:ring-0" value="250" aria-describedby="doseHelp" />
+                        <span class="ml-3 text-sm font-semibold text-slate-500">mcg</span>
+                      </div>
+                    </label>
+                    <div class="min-w-[200px]">
+                      <p class="text-sm font-semibold text-slate-900">Quick doses</p>
+                      <div class="mt-2 flex flex-wrap gap-2">
+                        <button type="button" class="segmented-btn rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700" data-dose="100">100 mcg</button>
+                        <button type="button" class="segmented-btn rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700" data-dose="250">250 mcg</button>
+                        <button type="button" class="segmented-btn rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700" data-dose="500">500 mcg</button>
+                        <button type="button" class="segmented-btn rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700" data-dose="1000">1,000 mcg</button>
+                      </div>
+                    </div>
+                  </div>
+                  <p id="doseHelp" class="mt-2 text-sm text-slate-500">Dose stays in mcg, then converts to mg behind the scenes so the formula is easy to audit.</p>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-slate-50/80 p-4">
+                  <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <p class="text-sm font-semibold text-slate-900">Syringe type</p>
+                      <p class="mt-1 text-sm text-slate-600">Unit conversion below is only valid for U-100 syringes.</p>
+                    </div>
+                    <div class="inline-flex rounded-2xl border border-slate-200 bg-white p-1 shadow-sm">
+                      <button type="button" class="segmented-btn rounded-xl px-4 py-2 text-sm font-semibold" aria-pressed="true">U-100</button>
+                      <button type="button" class="cursor-not-allowed rounded-xl px-4 py-2 text-sm font-semibold text-slate-400" aria-disabled="true">Other</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="errorBox" class="hidden rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-medium text-rose-900"></div>
+
+                <div class="grid gap-3 lg:grid-cols-3">
+                  <div class="metric-card rounded-3xl p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Concentration</p>
+                    <p class="mt-3 text-3xl font-extrabold tracking-tight text-slate-950"><span id="concentration">—</span></p>
+                    <p class="mt-1 text-sm font-medium text-slate-500">mg per mL after mixing</p>
+                  </div>
+                  <div class="metric-card rounded-3xl p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Volume to draw</p>
+                    <p class="mt-3 text-3xl font-extrabold tracking-tight text-slate-950"><span id="mlPerDose">—</span></p>
+                    <p class="mt-1 text-sm font-medium text-slate-500">mL for your target dose</p>
+                  </div>
+                  <div class="metric-card rounded-3xl p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">U-100 units</p>
+                    <p class="mt-3 text-3xl font-extrabold tracking-tight text-slate-950"><span id="units">—</span></p>
+                    <p class="mt-1 text-sm font-medium text-slate-500">units on the syringe</p>
+                  </div>
+                </div>
+
+                <div class="grid gap-3 md:grid-cols-2">
+                  <div class="rounded-3xl border border-slate-200 bg-white p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Interpretation</p>
+                    <p id="summaryLine" class="mt-3 text-base font-semibold leading-7 text-slate-900">Enter values to generate a clear draw summary.</p>
+                    <p id="microSummary" class="mt-2 text-sm leading-6 text-slate-600">We’ll also show how much peptide each syringe unit represents at this dilution.</p>
+                  </div>
+                  <div class="rounded-3xl border border-slate-200 bg-white p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Rounding check</p>
+                    <p id="roundingLine" class="mt-3 text-base font-semibold leading-7 text-slate-900">Useful when your syringe only marks whole units.</p>
+                    <p id="roundingSupport" class="mt-2 text-sm leading-6 text-slate-600">Exact values are shown above. Round only if your syringe markings require it.</p>
+                  </div>
+                </div>
+
+                <div class="grid gap-3 lg:grid-cols-[1.2fr_0.8fr]">
+                  <div class="rounded-3xl border border-slate-200 bg-white p-5">
+                    <div class="flex items-start justify-between gap-4">
+                      <div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">How the formula is behaving</p>
+                        <p class="mt-2 text-sm leading-6 text-slate-600">These cues help spot awkward dilutions before you draw.</p>
+                      </div>
+                    </div>
+                    <div class="mt-4 grid gap-3 sm:grid-cols-3">
+                      <div class="rounded-2xl bg-slate-50 p-4">
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Per unit</p>
+                        <p class="mt-2 text-2xl font-bold text-slate-950"><span id="mcgPerUnit">—</span></p>
+                        <p class="mt-1 text-sm text-slate-500">mcg in each U-100 unit</p>
+                      </div>
+                      <div class="rounded-2xl bg-slate-50 p-4">
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Per 10 units</p>
+                        <p class="mt-2 text-2xl font-bold text-slate-950"><span id="mcgPerTenUnits">—</span></p>
+                        <p class="mt-1 text-sm text-slate-500">mcg in 0.10 mL</p>
+                      </div>
+                      <div class="rounded-2xl bg-slate-50 p-4">
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Approx doses / vial</p>
+                        <p class="mt-2 text-2xl font-bold text-slate-950"><span id="dosesPerVial">—</span></p>
+                        <p class="mt-1 text-sm text-slate-500">at this target dose</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rounded-3xl border border-slate-200 bg-white p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Quick reference</p>
+                    <ul class="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+                      <li><span class="font-semibold text-slate-900">100 units</span> = 1.00 mL</li>
+                      <li><span class="font-semibold text-slate-900">10 units</span> = 0.10 mL</li>
+                      <li><span class="font-semibold text-slate-900">5 units</span> = 0.05 mL</li>
+                      <li><span class="font-semibold text-slate-900">1 unit</span> = 0.01 mL</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="mt-6 flex flex-col sm:flex-row gap-3">
-              <a href="/glp1-injection-tracker.html" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-gray-200 text-gray-800 font-semibold hover:bg-gray-50 transition">
-                Track injections with reminders
-              </a>
-              <a href="/peptide-storage-stability-guide.html" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-gray-200 text-gray-800 font-semibold hover:bg-gray-50 transition">
-                Storage & stability guide
-              </a>
-            </div>
+            <aside class="sticky-results space-y-4 lg:sticky lg:top-28">
+              <div class="result-highlight overflow-hidden rounded-[2rem] text-white shadow-soft">
+                <div class="border-b border-white/10 px-5 py-4">
+                  <p class="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-100/90">At a glance</p>
+                  <h2 class="mt-2 text-2xl font-bold tracking-tight">Your draw summary</h2>
+                </div>
+                <div class="space-y-4 px-5 py-5">
+                  <div>
+                    <p class="text-sm text-emerald-100/85">Target dose</p>
+                    <p class="mt-1 text-3xl font-extrabold tracking-tight"><span id="stickyDose">—</span> <span class="text-lg font-semibold text-emerald-100/90">mcg</span></p>
+                  </div>
+                  <div class="grid grid-cols-2 gap-3">
+                    <div class="rounded-2xl bg-white/8 p-4">
+                      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-100/80">mL</p>
+                      <p class="mt-2 text-2xl font-bold"><span id="stickyMl">—</span></p>
+                    </div>
+                    <div class="rounded-2xl bg-white/8 p-4">
+                      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-100/80">Units</p>
+                      <p class="mt-2 text-2xl font-bold"><span id="stickyUnits">—</span></p>
+                    </div>
+                  </div>
+                  <div class="rounded-2xl bg-white/8 p-4 text-sm leading-6 text-emerald-50/95">
+                    <p id="stickyInterpretation">Exact conversion appears here once your vial, diluent, and target dose are set.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="glass-panel rounded-[2rem] border border-white/80 p-5 shadow-card">
+                <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Example workflows</p>
+                <div class="mt-4 space-y-3">
+                  <button type="button" class="example-card w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left transition hover:border-brand-200 hover:shadow-md" data-vial="5" data-diluent="2" data-dose="250">
+                    <p class="text-sm font-semibold text-slate-900">5 mg vial, 2 mL diluent, 250 mcg dose</p>
+                    <p class="mt-1 text-sm text-slate-600">A common starter example with an easy 10-unit draw.</p>
+                  </button>
+                  <button type="button" class="example-card w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left transition hover:border-brand-200 hover:shadow-md" data-vial="10" data-diluent="2" data-dose="500">
+                    <p class="text-sm font-semibold text-slate-900">10 mg vial, 2 mL diluent, 500 mcg dose</p>
+                    <p class="mt-1 text-sm text-slate-600">Higher concentration, still lands on a tidy 10-unit draw.</p>
+                  </button>
+                  <button type="button" class="example-card w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left transition hover:border-brand-200 hover:shadow-md" data-vial="10" data-diluent="4" data-dose="250">
+                    <p class="text-sm font-semibold text-slate-900">10 mg vial, 4 mL diluent, 250 mcg dose</p>
+                    <p class="mt-1 text-sm text-slate-600">More diluted, easier for small dose adjustments.</p>
+                  </button>
+                </div>
+              </div>
+
+              <div class="glass-panel rounded-[2rem] border border-white/80 p-5 shadow-card">
+                <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Sanity checks</p>
+                <ul id="sanityChecks" class="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+                  <li class="helper-note rounded-2xl border border-slate-200 bg-white px-4 py-3">Use positive values only.</li>
+                  <li class="helper-note rounded-2xl border border-slate-200 bg-white px-4 py-3">If the page shows an unexpectedly tiny or huge draw volume, revisit the dilution.</li>
+                  <li class="helper-note rounded-2xl border border-slate-200 bg-white px-4 py-3">Only the mL result is universal. Units depend on syringe type.</li>
+                </ul>
+              </div>
+            </aside>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Supporting copy -->
-      <section class="mt-14 rounded-3xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
-        <div class="grid lg:grid-cols-3 gap-6 text-sm text-gray-700">
-          <div>
-            <h2 class="text-lg font-bold text-gray-900">What we know</h2>
-            <p class="mt-2">The math is straightforward: vial amount divided by diluent volume gives concentration, and U-100 syringes map 100 units to 1 mL.</p>
+    <section class="mx-auto mt-14 max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(300px,0.95fr)]">
+        <div class="glass-panel rounded-[2rem] border border-white/80 p-6 shadow-soft sm:p-8">
+          <div class="max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">How the math works</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Simple enough to audit by hand</h2>
+            <p class="mt-4 text-base leading-7 text-slate-600">The calculator is deliberately transparent. You can check each step with a basic calculator if you want a second confirmation.</p>
           </div>
-          <div>
-            <h2 class="text-lg font-bold text-gray-900">What we don’t know</h2>
-            <p class="mt-2">A calculator cannot verify sterility, product quality, labeling accuracy, or whether the intended dose matches clinician or pharmacist instructions.</p>
-          </div>
-          <div>
-            <h2 class="text-lg font-bold text-gray-900">Primary-source orientation</h2>
-            <p class="mt-2">When in doubt, check the product label, pharmacy directions, and our <a href="/peptide-storage-stability-guide.html" class="font-semibold text-brand-700 hover:text-brand-800">storage guide</a> before relying on internet screenshots.</p>
-          </div>
-        </div>
-      </section>
-
-      <div class="mt-14 grid lg:grid-cols-3 gap-8">
-        <div class="lg:col-span-2">
-          <h2 class="text-2xl font-bold tracking-tight">How the math works (in plain English)</h2>
-          <div class="mt-4 space-y-4 text-gray-700 leading-relaxed">
-            <p>
-              Reconstitution is just dilution. Your vial has a total amount of peptide (in <span class="font-semibold">mg</span>),
-              and you add a volume of diluent (in <span class="font-semibold">mL</span>). That creates a concentration:
-            </p>
-            <p class="rounded-2xl bg-gray-50 border border-gray-100 p-4 font-mono text-sm">
-              concentration (mg/mL) = vial amount (mg) ÷ diluent volume (mL)
-            </p>
-            <p>
-              Then you convert your target dose from <span class="font-semibold">mcg</span> to <span class="font-semibold">mg</span>
-              (1,000 mcg = 1 mg) and compute the injection volume in mL.
-            </p>
+          <div class="mt-6 grid gap-4 md:grid-cols-3">
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">1. Concentration</p>
+              <p class="formula-badge mt-3 rounded-2xl bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900">vial mg ÷ diluent mL</p>
+              <p class="mt-3 text-sm leading-6 text-slate-600">Example: 5 mg ÷ 2 mL = 2.5 mg/mL.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">2. Dose in mg</p>
+              <p class="formula-badge mt-3 rounded-2xl bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900">dose mcg ÷ 1,000</p>
+              <p class="mt-3 text-sm leading-6 text-slate-600">Example: 250 mcg = 0.25 mg.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">3. Draw volume</p>
+              <p class="formula-badge mt-3 rounded-2xl bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900">dose mg ÷ mg per mL</p>
+              <p class="mt-3 text-sm leading-6 text-slate-600">Then multiply mL by 100 for U-100 units.</p>
+            </div>
           </div>
         </div>
 
-        <aside class="rounded-3xl border border-gray-200 bg-white p-6">
-          <h3 class="text-lg font-bold">Pro tip</h3>
-          <p class="mt-2 text-sm text-gray-600">
-            Pick a dilution that makes your typical dose land on easy syringe marks. The goal is fewer tiny decimals and fewer chances
-            to misread a line.
-          </p>
-          <div class="mt-5 rounded-2xl bg-brand-50 border border-brand-100 p-4">
-            <p class="text-sm text-brand-900">
-              Jabbit saves your vial profiles so you don’t redo the math every time.
-            </p>
-            <a class="mt-3 inline-flex w-full items-center justify-center px-4 py-2 rounded-xl bg-brand-500 text-white font-semibold hover:bg-brand-600 transition" href="https://apps.apple.com/app/id6756848719">
-              Get the app
-            </a>
+        <aside class="glass-panel rounded-[2rem] border border-white/80 p-6 shadow-soft sm:p-8">
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Why people like this layout</p>
+          <div class="mt-5 space-y-4 text-sm leading-7 text-slate-600">
+            <div class="rounded-2xl border border-slate-200 bg-white p-4">
+              <p class="font-semibold text-slate-900">Presets reduce setup friction</p>
+              <p class="mt-1">Start from common vial and diluent combinations, then adjust only what is different.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-4">
+              <p class="font-semibold text-slate-900">Interpretation beats raw numbers</p>
+              <p class="mt-1">Seeing mcg per unit and the nearest whole-unit mark makes the output more usable in the real world.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-4">
+              <p class="font-semibold text-slate-900">Trust cues are built in</p>
+              <p class="mt-1">The page warns when a dose exceeds the vial contents or when the draw volume looks awkwardly tiny or unusually large.</p>
+            </div>
           </div>
         </aside>
       </div>
+    </section>
 
-      <!-- FAQ -->
-      <section class="mt-16">
-        <h2 class="text-2xl font-bold tracking-tight">FAQ</h2>
-        <div class="mt-6 grid gap-4">
-          <details class="group rounded-2xl border border-gray-200 bg-white p-5">
-            <summary class="cursor-pointer font-semibold text-gray-900 flex items-center justify-between">
-              What syringe does this assume?
-              <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
-            </summary>
-            <p class="mt-3 text-gray-700">U-100 insulin syringes (100 units = 1 mL). If your syringe is U-40 or something else, don’t use the unit output.</p>
-          </details>
+    <section class="mx-auto mt-14 max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
+        <div class="glass-panel rounded-[2rem] border border-white/80 p-6 shadow-soft sm:p-8">
+          <h2 class="text-3xl font-bold tracking-tight text-slate-950">FAQ</h2>
+          <div class="mt-6 space-y-4">
+            <details class="group rounded-3xl border border-slate-200 bg-white p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
+                What syringe does this assume?
+                <span class="text-slate-400 transition group-open:rotate-180">▾</span>
+              </summary>
+              <p class="mt-3 text-sm leading-7 text-slate-600">U-100 insulin syringes only. On U-100, 100 units equals 1 mL. If your syringe is U-40 or something else, rely on the mL result unless a clinician or pharmacist confirms the conversion.</p>
+            </details>
 
-          <details class="group rounded-2xl border border-gray-200 bg-white p-5">
-            <summary class="cursor-pointer font-semibold text-gray-900 flex items-center justify-between">
-              Why are there different dilution recommendations online?
-              <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
-            </summary>
-            <p class="mt-3 text-gray-700">Different vial sizes, target doses, and preferences for injection volume lead to different “best” dilutions. The calculator doesn’t pick a dilution — it just makes the math explicit.</p>
-          </details>
+            <details class="group rounded-3xl border border-slate-200 bg-white p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
+                Why do different dilution examples exist online?
+                <span class="text-slate-400 transition group-open:rotate-180">▾</span>
+              </summary>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Because the best dilution depends on the vial size, the dose range you need, and how easy you want the syringe marks to be to read. This calculator does not prescribe a dilution, it simply makes the math explicit.</p>
+            </details>
 
-          <details class="group rounded-2xl border border-gray-200 bg-white p-5">
-            <summary class="cursor-pointer font-semibold text-gray-900 flex items-center justify-between">
-              Where can I learn the full reconstitution process?
-              <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
-            </summary>
-            <p class="mt-3 text-gray-700">Start with our <a class="text-brand-700 font-semibold hover:text-brand-800" href="/peptide-reconstitution-guide.html">complete peptide reconstitution guide</a> and keep the calculator open while you configure your vial.</p>
-          </details>
+            <details class="group rounded-3xl border border-slate-200 bg-white p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
+                Is this medical advice?
+                <span class="text-slate-400 transition group-open:rotate-180">▾</span>
+              </summary>
+              <p class="mt-3 text-sm leading-7 text-slate-600">No. This is educational only. It cannot verify your medication, vial labeling, prescription, or your syringe. Follow your clinician or pharmacist instructions and stop if anything does not match the label in front of you.</p>
+            </details>
+          </div>
         </div>
-      </section>
+
+        <aside class="glass-panel rounded-[2rem] border border-white/80 p-6 shadow-soft sm:p-8">
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Keep going</p>
+          <div class="mt-5 space-y-3">
+            <a href="/peptide-reconstitution-guide.html" class="block rounded-2xl border border-slate-200 bg-white px-4 py-4 text-sm font-semibold text-slate-900 transition hover:border-brand-200 hover:text-brand-800">Read the full reconstitution guide</a>
+            <a href="/peptide-storage-stability-guide.html" class="block rounded-2xl border border-slate-200 bg-white px-4 py-4 text-sm font-semibold text-slate-900 transition hover:border-brand-200 hover:text-brand-800">Storage and stability guide</a>
+            <a href="/glp1-injection-tracker.html" class="block rounded-2xl border border-slate-200 bg-white px-4 py-4 text-sm font-semibold text-slate-900 transition hover:border-brand-200 hover:text-brand-800">Track injections with reminders</a>
+          </div>
+          <div class="mt-6 rounded-3xl border border-brand-100 bg-brand-50 p-5">
+            <p class="text-sm font-semibold text-brand-900">Jabbit helps you save repeat vial setups</p>
+            <p class="mt-2 text-sm leading-6 text-brand-900/80">Useful if you keep reaching for the same dilution and dose conversion more than once.</p>
+            <a href="https://apps.apple.com/app/id6756848719" class="mt-4 inline-flex w-full items-center justify-center rounded-2xl bg-slate-950 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Download the app</a>
+          </div>
+        </aside>
+      </div>
     </section>
   </main>
 
-  <!-- Footer (matches site) -->
-  <footer class="border-t border-gray-100 bg-white">
-    <div class="max-w-6xl mx-auto px-6 py-12">
-      <div class="grid md:grid-cols-3 gap-10">
+  <footer class="border-t border-slate-200/80 bg-white/80 backdrop-blur-sm">
+    <div class="mx-auto max-w-6xl px-6 py-12">
+      <div class="grid gap-10 md:grid-cols-3">
         <div>
           <a href="/" class="flex items-center gap-3">
-            <div class="w-9 h-9 bg-brand-500 rounded-xl flex items-center justify-center" aria-hidden="true">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-500" aria-hidden="true">
+              <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <span class="text-xl font-bold tracking-tight">Jabbit</span>
           </a>
-          <p class="mt-4 text-sm text-gray-600">The complete peptide tracking toolkit for iOS. Private, powerful, and beautifully designed.</p>
+          <p class="mt-4 text-sm leading-6 text-slate-600">The private peptide and injection tracking toolkit for iPhone, designed to reduce friction without obscuring the details.</p>
         </div>
 
         <div>
-          <h3 class="font-semibold text-gray-900">Product</h3>
+          <h3 class="font-semibold text-slate-900">Product</h3>
           <ul class="mt-4 space-y-2 text-sm">
-            <li><a class="text-gray-600 hover:text-gray-900 transition" href="/#features">Features</a></li>
-            <li><a class="text-gray-600 hover:text-gray-900 transition" href="/#pricing">Pricing</a></li>
-            <li><a class="text-gray-600 hover:text-gray-900 transition" href="/#download">Download</a></li>
-            <li><a class="text-gray-600 hover:text-gray-900 transition" href="/blog/">Blog</a></li>
+            <li><a class="text-slate-600 transition hover:text-slate-950" href="/#features">Features</a></li>
+            <li><a class="text-slate-600 transition hover:text-slate-950" href="/#pricing">Pricing</a></li>
+            <li><a class="text-slate-600 transition hover:text-slate-950" href="/#download">Download</a></li>
+            <li><a class="text-slate-600 transition hover:text-slate-950" href="/blog/">Blog</a></li>
           </ul>
         </div>
 
         <div>
-          <h3 class="font-semibold text-gray-900">Legal</h3>
+          <h3 class="font-semibold text-slate-900">Legal</h3>
           <ul class="mt-4 space-y-2 text-sm">
-            <li><a class="text-gray-600 hover:text-gray-900 transition" href="/privacy/">Privacy Policy</a></li>
-            <li><a class="text-gray-600 hover:text-gray-900 transition" href="/terms/">Terms of Service</a></li>
-            <li><a class="text-gray-600 hover:text-gray-900 transition" href="mailto:hello@jabbitapp.com">Contact</a></li>
+            <li><a class="text-slate-600 transition hover:text-slate-950" href="/privacy/">Privacy Policy</a></li>
+            <li><a class="text-slate-600 transition hover:text-slate-950" href="/terms/">Terms of Service</a></li>
+            <li><a class="text-slate-600 transition hover:text-slate-950" href="mailto:hello@jabbitapp.com">Contact</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="mt-10 pt-8 border-t border-gray-100 text-sm text-gray-500">© 2026 Jabbit. All rights reserved.</div>
+      <div class="mt-10 border-t border-slate-200 pt-8 text-sm text-slate-500">© 2026 Jabbit. All rights reserved.</div>
     </div>
   </footer>
 
   <script>
+    const ids = ['vialMg', 'diluentMl', 'doseMcg'];
+    const exampleSelectors = ['.preset-btn', '.segmented-btn[data-dose]', '.example-card'];
+
     function parsePositiveFloat(value) {
-      const n = Number(String(value).trim());
-      if (!Number.isFinite(n) || n <= 0) return null;
-      return n;
+      const normalized = String(value).replace(/,/g, '').trim();
+      const number = Number(normalized);
+      if (!Number.isFinite(number) || number <= 0) return null;
+      return number;
     }
 
-    function roundTo(n, decimals) {
-      const factor = Math.pow(10, decimals);
-      return Math.round(n * factor) / factor;
+    function roundTo(number, decimals) {
+      const factor = 10 ** decimals;
+      return Math.round(number * factor) / factor;
     }
 
-    function fmt(n, decimals) {
+    function fmt(number, decimals) {
       return new Intl.NumberFormat(undefined, {
         minimumFractionDigits: decimals,
-        maximumFractionDigits: decimals
-      }).format(n);
+        maximumFractionDigits: decimals,
+      }).format(number);
+    }
+
+    function setText(id, value) {
+      document.getElementById(id).textContent = value;
+    }
+
+    function setScenario(vial, diluent, dose) {
+      if (vial !== undefined) document.getElementById('vialMg').value = vial;
+      if (diluent !== undefined) document.getElementById('diluentMl').value = diluent;
+      if (dose !== undefined) document.getElementById('doseMcg').value = dose;
+      update();
+    }
+
+    function updatePresetStates(vialMg, diluentMl, doseMcg) {
+      document.querySelectorAll('.preset-btn').forEach((button) => {
+        const match = Number(button.dataset.vial) === vialMg && Number(button.dataset.diluent) === diluentMl;
+        button.setAttribute('aria-pressed', String(match));
+      });
+
+      document.querySelectorAll('.segmented-btn[data-dose]').forEach((button) => {
+        const match = Number(button.dataset.dose) === doseMcg;
+        button.setAttribute('aria-pressed', String(match));
+      });
+    }
+
+    function setInvalidState(message) {
+      const errorBox = document.getElementById('errorBox');
+      errorBox.textContent = message;
+      errorBox.classList.remove('hidden');
+
+      ['concentration', 'mlPerDose', 'units', 'mcgPerUnit', 'mcgPerTenUnits', 'dosesPerVial', 'stickyDose', 'stickyMl', 'stickyUnits'].forEach((id) => setText(id, '—'));
+      setText('summaryLine', 'Enter valid positive values in all three fields.');
+      setText('microSummary', 'Double-check the vial amount, diluent volume, and target dose.');
+      setText('roundingLine', 'Rounding guidance appears once a valid draw is calculated.');
+      setText('roundingSupport', 'If the numbers on your label do not match the page, stop and confirm before drawing.');
+      setText('stickyInterpretation', 'Exact conversion appears here once your vial, diluent, and target dose are set.');
+      renderChecks([
+        'Use positive values only.',
+        'Only the mL result is universal. Units depend on syringe type.',
+        'If your vial label or instructions differ, stop and verify before using any conversion.',
+      ]);
+    }
+
+    function renderChecks(lines) {
+      document.getElementById('sanityChecks').innerHTML = lines.map((line) => (
+        `<li class="helper-note rounded-2xl border border-slate-200 bg-white px-4 py-3">${line}</li>`
+      )).join('');
     }
 
     function update() {
@@ -376,55 +642,93 @@
       const diluentMl = parsePositiveFloat(document.getElementById('diluentMl').value);
       const doseMcg = parsePositiveFloat(document.getElementById('doseMcg').value);
 
-      const errorBox = document.getElementById('errorBox');
+      updatePresetStates(vialMg || -1, diluentMl || -1, doseMcg || -1);
 
       if (!vialMg || !diluentMl || !doseMcg) {
-        errorBox.textContent = 'Enter positive numbers for all fields.';
-        errorBox.classList.remove('hidden');
-        document.getElementById('concentration').textContent = '—';
-        document.getElementById('mlPerDose').textContent = '—';
-        document.getElementById('units').textContent = '—';
-        return;
+        return setInvalidState('Enter positive numbers for vial amount, diluent, and target dose.');
       }
 
-      const concentration = vialMg / diluentMl; // mg/mL
       const doseMg = doseMcg / 1000;
-
-      if (concentration <= 0) {
-        errorBox.textContent = 'Concentration must be greater than zero.';
-        errorBox.classList.remove('hidden');
-        return;
+      if (doseMg > vialMg) {
+        return setInvalidState('The target dose is larger than the total peptide amount in the vial. Check the units and label before proceeding.');
       }
 
+      const concentration = vialMg / diluentMl;
       const mlPerDose = doseMg / concentration;
-      const units = mlPerDose * 100; // U-100: 100 units per 1 mL
+      const units = mlPerDose * 100;
+      const mcgPerUnit = concentration * 10;
+      const dosesPerVial = vialMg / doseMg;
 
-      if (!Number.isFinite(mlPerDose) || mlPerDose <= 0 || !Number.isFinite(units) || units <= 0) {
-        errorBox.textContent = 'These inputs produce an invalid dose volume. Double-check your numbers.';
-        errorBox.classList.remove('hidden');
-        return;
+      if (![concentration, mlPerDose, units, mcgPerUnit, dosesPerVial].every(Number.isFinite) || mlPerDose <= 0 || units <= 0) {
+        return setInvalidState('These inputs produce an invalid draw volume. Double-check the vial amount, diluent volume, and target dose.');
       }
 
-      errorBox.classList.add('hidden');
+      if (mlPerDose > diluentMl || units > 100 * diluentMl) {
+        return setInvalidState('The requested dose would require more liquid than is available after mixing. Double-check the numbers before relying on this result.');
+      }
 
-      document.getElementById('concentration').textContent = fmt(roundTo(concentration, 3), 3);
-      document.getElementById('mlPerDose').textContent = fmt(roundTo(mlPerDose, 3), 3);
-      document.getElementById('units').textContent = fmt(roundTo(units, 1), 1);
+      document.getElementById('errorBox').classList.add('hidden');
+
+      setText('concentration', `${fmt(roundTo(concentration, 3), 3)} mg/mL`);
+      setText('mlPerDose', `${fmt(roundTo(mlPerDose, 3), 3)} mL`);
+      setText('units', `${fmt(roundTo(units, 1), 1)} units`);
+      setText('mcgPerUnit', fmt(roundTo(mcgPerUnit, 1), 1));
+      setText('mcgPerTenUnits', fmt(roundTo(mcgPerUnit * 10, 1), 1));
+      setText('dosesPerVial', fmt(roundTo(dosesPerVial, dosesPerVial < 10 ? 1 : 0), dosesPerVial < 10 ? 1 : 0));
+      setText('stickyDose', fmt(roundTo(doseMcg, 0), 0));
+      setText('stickyMl', fmt(roundTo(mlPerDose, 3), 3));
+      setText('stickyUnits', fmt(roundTo(units, 1), 1));
+
+      const nearestWholeUnit = Math.round(units);
+      const roundedDoseMcg = nearestWholeUnit * mcgPerUnit;
+      const diffMcg = roundedDoseMcg - doseMcg;
+      const diffSign = diffMcg > 0 ? '+' : '';
+
+      setText('summaryLine', `${fmt(roundTo(doseMcg, 0), 0)} mcg corresponds to ${fmt(roundTo(mlPerDose, 3), 3)} mL, which is ${fmt(roundTo(units, 1), 1)} units on a U-100 syringe.`);
+      setText('microSummary', `At this dilution, each unit delivers ${fmt(roundTo(mcgPerUnit, 1), 1)} mcg, and every 10 units deliver ${fmt(roundTo(mcgPerUnit * 10, 1), 1)} mcg.`);
+      setText('roundingLine', `If your syringe only marks whole units, the nearest mark is ${nearestWholeUnit} units.`);
+      setText('roundingSupport', `${nearestWholeUnit} units would deliver about ${fmt(roundTo(roundedDoseMcg, 1), 1)} mcg (${diffSign}${fmt(roundTo(diffMcg, 1), 1)} mcg vs target).`);
+      setText('stickyInterpretation', `${fmt(roundTo(units, 1), 1)} units = ${fmt(roundTo(mlPerDose, 3), 3)} mL for ${fmt(roundTo(doseMcg, 0), 0)} mcg at ${fmt(roundTo(concentration, 3), 3)} mg/mL.`);
+
+      const checks = [
+        '<strong>U-100 only:</strong> unit output assumes 100 units = 1 mL.',
+        `<strong>Per unit:</strong> 1 unit contains about ${fmt(roundTo(mcgPerUnit, 1), 1)} mcg at this dilution.`,
+      ];
+
+      if (mlPerDose < 0.05) {
+        checks.push('<strong>Tiny draw volume:</strong> under 0.05 mL can be harder to measure consistently. Consider whether a gentler dilution would be easier to read.');
+      } else if (mlPerDose > 0.5) {
+        checks.push('<strong>Larger draw volume:</strong> over 0.50 mL is still valid mathematically, but many people prefer a more concentrated mix for smaller injection volume.');
+      } else {
+        checks.push('<strong>Readable draw:</strong> this volume sits in a range many people find easier to line up on a U-100 syringe.');
+      }
+
+      if (Math.abs(diffMcg) >= mcgPerUnit / 2 && Math.abs(diffMcg) >= 10) {
+        checks.push('<strong>Whole-unit rounding matters:</strong> if your syringe does not show half units, use extra care because rounding changes the delivered dose noticeably.');
+      } else {
+        checks.push('<strong>Rounding is modest:</strong> the nearest whole-unit mark stays fairly close to the exact target.');
+      }
+
+      renderChecks(checks);
     }
 
-    ['vialMg', 'diluentMl', 'doseMcg'].forEach((id) => {
+    ids.forEach((id) => {
       document.getElementById(id).addEventListener('input', update);
+    });
+
+    document.querySelectorAll('.preset-btn').forEach((button) => {
+      button.addEventListener('click', () => setScenario(button.dataset.vial, button.dataset.diluent));
+    });
+
+    document.querySelectorAll('.segmented-btn[data-dose]').forEach((button) => {
+      button.addEventListener('click', () => setScenario(undefined, undefined, button.dataset.dose));
+    });
+
+    document.querySelectorAll('.example-card').forEach((button) => {
+      button.addEventListener('click', () => setScenario(button.dataset.vial, button.dataset.diluent, button.dataset.dose));
     });
 
     update();
   </script>
-  <section id="related-links">
-    <h2>Related</h2>
-    <ul>
-    <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (log doses + reminders)</a></li>
-    <li><a href="/peptide-reconstitution-guide.html">Peptide reconstitution guide (step-by-step)</a></li>
-    <li><a href="/peptide-storage-stability-guide.html">Peptide storage & stability guide (what matters)</a></li>
-    </ul>
-  </section>
 </body>
 </html>
