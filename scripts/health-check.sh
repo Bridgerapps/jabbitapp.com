@@ -54,7 +54,7 @@ FAQ_JSONLD_CHANGED_COUNT="null"
 FAQ_JSONLD_ERROR_COUNT="null"
 
 # 1. Site health
-SITE_URL="https://jabbit.app/"
+SITE_URL="https://jabbitapp.com/"
 # Follow redirects and evaluate the final status code (avoid false positives on 301/302/307).
 SITE_CODE=$(curl -sS -L --connect-timeout 5 --max-time 10 -o /dev/null -w "%{http_code}" "$SITE_URL" 2>/dev/null || echo "000")
 if [ "$SITE_CODE" -ge 200 ] 2>/dev/null && [ "$SITE_CODE" -lt 400 ] 2>/dev/null; then
