@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peptide Research Database | Jabbit</title>
-    <meta name="description" content="Research-focused peptide database covering FDA decisions, clinical trials, regulatory status, and scientific developments. Informational resource for research peptides and approved therapeutics.">
+    <title>Peptide Evidence Hub: Approved Therapeutics vs Research Compounds | Jabbit</title>
+    <meta name="description" content="Evidence-first peptide hub separating FDA-approved therapeutics from research-only compounds, with clear approval framing, evidence limits, and primary-source links.">
     <link rel="canonical" href="https://jabbitapp.com/peptides/">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -51,106 +51,168 @@
     </nav>
 
     <div class="pt-24 pb-12 bg-gradient-to-b from-brand-50 to-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Peptide Research Database</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">FDA decisions, clinical trials, and regulatory developments in peptide therapeutics.</p>
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Peptide Evidence Hub</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">A science-first directory that separates approved therapeutics from research-only compounds, and makes the evidence boundary obvious.</p>
 
             <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="https://apps.apple.com/app/id6756848719" data-track="peptides_hero_app_store" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition">Download Jabbit (App Store)</a>
-              <a href="/guides/" data-track-internal="peptides_hero_guides" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 font-semibold hover:border-gray-300 transition">Browse GLP‑1 guides</a>
+                <a href="#approved" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition">Browse approved therapeutics</a>
+                <a href="#research" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 font-semibold hover:border-gray-300 transition">Browse research-only compounds</a>
             </div>
-            <p class="mt-3 text-xs text-gray-500">Educational only — not medical advice.</p>
-            
-            <div class="bg-red-50 border border-red-200 rounded-lg p-4 mt-8 max-w-2xl mx-auto">
-                <p class="text-red-800 text-sm font-medium">⚠️ Informational Purposes Only</p>
-                <p class="text-red-700 text-sm mt-1">This database covers research compounds and FDA-approved medications for educational purposes. Not medical advice.</p>
+            <p class="mt-3 text-xs text-gray-500">Educational only, not medical advice.</p>
+
+            <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-8 max-w-3xl mx-auto text-left">
+                <p class="text-amber-900 text-sm font-medium">How this hub is organized</p>
+                <p class="text-amber-800 text-sm mt-1">We do not treat “peptide” as a single credibility bucket. Some peptides are FDA-approved drugs with labeled indications. Others are research compounds with little or no human efficacy data. Those are different evidence situations, and this hub keeps them separate.</p>
             </div>
         </div>
     </div>
 
     <div class="max-w-6xl mx-auto px-6 py-12">
-        <h2 class="text-2xl font-bold mb-8">FDA-Approved Therapeutics</h2>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            <a href="/peptides/semaglutide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
-                <div class="flex items-center justify-between mb-3">
-                    <span class="text-2xl font-bold">Semaglutide</span>
-                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">FDA Approved</span>
-                </div>
-                <p class="text-sm text-gray-500 mb-3">Ozempic, Wegovy, Rybelsus</p>
-                <p class="text-gray-600">GLP-1 RA with proven cardiovascular outcomes. SELECT trial showed 20% MACE reduction.</p>
-            </a>
-
-            <!-- Placeholder for Tirzepatide -->
-            <div class="block bg-gray-50 rounded-2xl p-6 border border-gray-200">
-                <div class="flex items-center justify-between mb-3">
-                    <span class="text-2xl font-bold text-gray-400">Tirzepatide</span>
-                    <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs font-medium rounded">Coming Soon</span>
-                </div>
-                <p class="text-sm text-gray-400 mb-3">Mounjaro, Zepbound</p>
-                <p class="text-gray-400">Dual GIP/GLP-1 agonist. SURMOUNT and SURPASS program results.</p>
+        <section class="grid lg:grid-cols-3 gap-6 mb-16">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                <p class="text-sm text-gray-500 mb-2">What we prioritize</p>
+                <p class="text-lg font-semibold">Approval status, study quality, and source transparency</p>
             </div>
-
-            <!-- Placeholder for Liraglutide -->
-            <div class="block bg-gray-50 rounded-2xl p-6 border border-gray-200">
-                <div class="flex items-center justify-between mb-3">
-                    <span class="text-2xl font-bold text-gray-400">Liraglutide</span>
-                    <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs font-medium rounded">Coming Soon</span>
-                </div>
-                <p class="text-sm text-gray-400 mb-3">Victoza, Saxenda</p>
-                <p class="text-gray-400">Daily GLP-1 RA. First-in-class cardiovascular outcomes data.</p>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                <p class="text-sm text-gray-500 mb-2">What we avoid</p>
+                <p class="text-lg font-semibold">Hypey protocol talk, miracle language, and evidence inflation</p>
             </div>
-        </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                <p class="text-sm text-gray-500 mb-2">Best next step</p>
+                <p class="text-lg font-semibold">Start with labels, trials, and PubMed when a claim matters</p>
+            </div>
+        </section>
 
-        <h2 class="text-2xl font-bold mb-8">Research Compounds</h2>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            <a href="/peptides/bpc-157.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
-                <div class="flex items-center justify-between mb-3">
-                    <span class="text-2xl font-bold">BPC-157</span>
-                    <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded">Not Approved</span>
-                </div>
-                <p class="text-sm text-gray-500 mb-3">Body Protection Compound</p>
-                <p class="text-gray-600">Synthetic gastric peptide. Extensive animal research; no human clinical trials.</p>
-            </a>
-
-            <a href="/peptides/tb-500.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
-                <div class="flex items-center justify-between mb-3">
-                    <span class="text-2xl font-bold">TB-500</span>
-                    <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded">Not Approved</span>
-                </div>
-                <p class="text-sm text-gray-500 mb-3">Thymosin Beta-4 fragment</p>
-                <p class="text-gray-600">Cell migration peptide. Limited clinical development; WADA prohibited.</p>
-            </a>
-        </div>
-
-        <div class="bg-gray-50 rounded-2xl p-8">
-            <h2 class="text-xl font-bold mb-4">About This Database</h2>
-            <p class="text-gray-600 mb-6">
-                Jabbit's peptide database focuses on regulatory status, clinical trial outcomes, and scientific developments 
-                rather than usage protocols. We cover:
-            </p>
-            <div class="grid md:grid-cols-2 gap-6">
+        <section id="approved" class="mb-16 scroll-mt-28">
+            <div class="flex items-end justify-between gap-4 mb-8 flex-wrap">
                 <div>
-                    <h3 class="font-semibold mb-2">For FDA-Approved Drugs</h3>
-                    <ul class="space-y-2 text-gray-600 text-sm">
-                        <li>Approval history and pivotal trials</li>
-                        <li>Cardiovascular outcomes data</li>
-                        <li>Post-market safety updates</li>
-                        <li>Comparative effectiveness research</li>
-                    </ul>
+                    <h2 class="text-2xl font-bold">Approved therapeutics</h2>
+                    <p class="text-gray-600 mt-2">These pages cover peptides that have an actual regulatory approval history, but still require indication-specific reading.</p>
                 </div>
-                <div>
-                    <h3 class="font-semibold mb-2">For Research Compounds</h3>
-                    <ul class="space-y-2 text-gray-600 text-sm">
-                        <li>Mechanism of action from literature</li>
-                        <li>Preclinical study summaries</li>
-                        <li>FDA regulatory status</li>
-                        <li>Clinical development obstacles</li>
-                    </ul>
+                <span class="px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium">Higher-evidence category</span>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="/peptides/semaglutide.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+                    <div class="flex items-center justify-between mb-3 gap-3">
+                        <span class="text-2xl font-bold">Semaglutide</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">FDA approved</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Ozempic, Wegovy, Rybelsus</p>
+                    <p class="text-gray-600">Large clinical program with labeled indications and major cardiovascular outcomes data.</p>
+                </a>
+
+                <a href="/peptides/tesamorelin.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+                    <div class="flex items-center justify-between mb-3 gap-3">
+                        <span class="text-2xl font-bold">Tesamorelin</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">FDA approved, narrow use</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">EGRIFTA category</p>
+                    <p class="text-gray-600">Approved in a specific HIV-associated lipodystrophy setting, not for broad physique or wellness claims.</p>
+                </a>
+
+                <div class="block bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <div class="flex items-center justify-between mb-3 gap-3">
+                        <span class="text-2xl font-bold text-gray-400">More approved peptides</span>
+                        <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs font-medium rounded">Coming soon</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-3">Labeled therapies only</p>
+                    <p class="text-gray-400">We will add new pages when we can clearly ground them in labels, trial programs, and primary sources.</p>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="research" class="mb-16 scroll-mt-28">
+            <div class="flex items-end justify-between gap-4 mb-8 flex-wrap">
+                <div>
+                    <h2 class="text-2xl font-bold">Research-only compounds</h2>
+                    <p class="text-gray-600 mt-2">These pages exist to summarize literature and regulatory status, not to imply approved human use.</p>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-red-100 text-red-700 text-sm font-medium">Lower-evidence category</span>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="/peptides/bpc-157.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+                    <div class="flex items-center justify-between mb-3 gap-3">
+                        <span class="text-2xl font-bold">BPC-157</span>
+                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded">Not approved</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Body Protection Compound</p>
+                    <p class="text-gray-600">Mostly animal and preclinical literature, with major human evidence gaps.</p>
+                </a>
+
+                <a href="/peptides/tb-500.html" class="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition">
+                    <div class="flex items-center justify-between mb-3 gap-3">
+                        <span class="text-2xl font-bold">TB-500</span>
+                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded">Not approved</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-3">Thymosin beta-4 fragment</p>
+                    <p class="text-gray-600">Commonly discussed online, but far from the evidence bar of approved therapeutics.</p>
+                </a>
+
+                <div class="block bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <div class="flex items-center justify-between mb-3 gap-3">
+                        <span class="text-2xl font-bold text-gray-400">More research pages</span>
+                        <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs font-medium rounded">Selective rollout</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-3">Only where context is clear</p>
+                    <p class="text-gray-400">We would rather publish fewer pages than blur the line between research compounds and approved medications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid lg:grid-cols-2 gap-6 mb-16">
+            <div class="bg-blue-50 rounded-2xl p-8 border border-blue-100">
+                <h2 class="text-xl font-bold mb-4">What we know</h2>
+                <ul class="space-y-3 text-gray-700 text-sm">
+                    <li>Some peptide therapeutics have strong regulatory and trial support.</li>
+                    <li>Some popular compounds remain mostly preclinical or lightly studied.</li>
+                    <li>Approval status and evidence quality are not interchangeable.</li>
+                    <li>Compounding and gray-market availability do not create FDA approval.</li>
+                </ul>
+            </div>
+            <div class="bg-red-50 rounded-2xl p-8 border border-red-100">
+                <h2 class="text-xl font-bold mb-4">What we do not know, or refuse to fake certainty about</h2>
+                <ul class="space-y-3 text-gray-700 text-sm">
+                    <li>Whether early or animal-only signals will translate into clinical benefit in humans.</li>
+                    <li>Whether off-label online use cases match labeled safety and efficacy data.</li>
+                    <li>Whether anecdote-heavy demand reflects durable evidence.</li>
+                    <li>Whether a compound is “credible” just because it is discussed everywhere.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-gray-50 rounded-2xl p-8 mb-16 border border-gray-100">
+            <h2 class="text-xl font-bold mb-4">Primary-source orientation</h2>
+            <div class="grid md:grid-cols-3 gap-6 text-sm text-gray-700">
+                <div>
+                    <p class="font-semibold text-gray-900 mb-2">For approved drugs</p>
+                    <p>Start with FDA labels, pivotal trial publications, and major safety communications.</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-900 mb-2">For research compounds</p>
+                    <p>Check whether the literature is animal-only, early-stage, uncontrolled, or absent in humans.</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-900 mb-2">For regulatory context</p>
+                    <p>Use enforcement letters, shortage notices, and formal policy updates instead of vendor claims.</p>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                <a href="/peptides-compounding-list-update.html" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-gray-200 text-gray-800 font-semibold hover:bg-white transition">Compounding policy watch</a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-gray-200 text-gray-800 font-semibold hover:bg-white transition">Search PubMed</a>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 rounded-2xl p-8">
+            <h2 class="text-xl font-bold mb-4">Why Jabbit covers this carefully</h2>
+            <p class="text-gray-600 mb-6 max-w-3xl">Jabbit is a tracking and organization product. The editorial standard here is simple: help readers understand labels, evidence, and uncertainty without turning the category into marketing theater.</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a href="https://apps.apple.com/app/id6756848719" data-track="peptides_bottom_app_store" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition">Download Jabbit</a>
+                <a href="/peptide-reconstitution-calculator" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 font-semibold hover:border-gray-300 transition">Open the reconstitution calculator</a>
+            </div>
+        </section>
     </div>
 
     <footer class="bg-gray-50 py-12">
@@ -164,7 +226,7 @@
                     </div>
                     <span class="text-xl font-bold">Jabbit</span>
                 </a>
-                <p class="text-gray-500 text-sm">© 2025 Jabbit. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">© 2026 Jabbit. All rights reserved.</p>
             </div>
         </div>
     </footer>
