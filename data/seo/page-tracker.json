@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-19T13:36:40Z",
-  "total_pages": 75,
+  "last_updated": "2026-04-20T13:36:58Z",
+  "total_pages": 76,
   "topics": [
     {
       "topic": "bpc-157",
@@ -386,6 +386,11 @@
       "topic": "fda-recall-hub-botulism-undeclared-drugs-contamination-2026-04",
       "filename": "fda-recall-hub-botulism-undeclared-drugs-contamination-2026-04.html",
       "created": "2026-04-19"
+    },
+    {
+      "topic": "fda-warning-letters-telehealth-compounded-glp1-marketing-2026-04",
+      "filename": "fda-warning-letters-telehealth-compounded-glp1-marketing-2026-04.html",
+      "created": "2026-04-20"
     }
   ],
   "suggested_topics": [
