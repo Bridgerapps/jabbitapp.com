@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-20T13:37:30Z",
+  "updated": "2026-04-21T13:38:08Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1288,6 +1288,23 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "aligned-medical-angio-pack-rotating-adapter-recall-2026-04.html",
+      "links": [
+        {
+          "href": "/childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
+          "text": "Recall checklist example: what to check and what to document"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Keep a clean timeline (photos, notes, and follow-ups)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (practical organizing workflows)"
         }
       ]
     }
