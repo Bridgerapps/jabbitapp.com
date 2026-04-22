@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-21T13:38:08Z",
+  "updated": "2026-04-22T13:37:30Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -97,6 +97,23 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
+        }
+      ]
+    },
+    {
+      "file": "fda-semaglutide-shortage-ended-compounding-legal-update-2026-04.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (dates, notes, patterns)"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Protocol + appointment notes tracker (keep instructions in one place)"
         },
         {
           "href": "/guides/",
