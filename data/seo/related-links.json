@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-22T13:37:30Z",
+  "updated": "2026-04-23T13:40:16Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1322,6 +1322,23 @@
         {
           "href": "/guides/",
           "text": "Guides hub (practical organizing workflows)"
+        }
+      ]
+    },
+    {
+      "file": "idvynso-doravirine-islatravir-fda-approval-2026-04.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
         }
       ]
     }
