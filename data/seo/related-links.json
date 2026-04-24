@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-23T13:40:16Z",
+  "updated": "2026-04-24T13:37:49Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1339,6 +1339,23 @@
         {
           "href": "/guides/",
           "text": "Guides hub"
+        }
+      ]
+    },
+    {
+      "file": "amazon-one-medical-glp1-management-program-2026-04.html",
+      "links": [
+        {
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "Cost + coverage checklist (what to save for prior auth/appeals)"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep decisions and instructions in one place)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (practical organizing workflows)"
         }
       ]
     }
