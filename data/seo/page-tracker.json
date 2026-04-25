@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-24T13:36:58Z",
-  "total_pages": 80,
+  "last_updated": "2026-04-25T13:36:55Z",
+  "total_pages": 81,
   "topics": [
     {
       "topic": "bpc-157",
@@ -411,6 +411,11 @@
       "topic": "amazon-one-medical-glp1-management-program-2026-04",
       "filename": "amazon-one-medical-glp1-management-program-2026-04.html",
       "created": "2026-04-24"
+    },
+    {
+      "topic": "cms-fda-rapid-coverage-pathway-breakthrough-devices-2026-04",
+      "filename": "cms-fda-rapid-coverage-pathway-breakthrough-devices-2026-04.html",
+      "created": "2026-04-25"
     }
   ],
   "suggested_topics": [

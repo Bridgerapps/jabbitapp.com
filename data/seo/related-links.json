@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-24T13:37:49Z",
+  "updated": "2026-04-25T13:37:45Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -37,6 +37,23 @@
       ]
     },
     {
+      "file": "aligned-medical-angio-pack-rotating-adapter-recall-2026-04.html",
+      "links": [
+        {
+          "href": "/childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
+          "text": "Recall checklist example: what to check and what to document"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Keep a clean timeline (photos, notes, and follow-ups)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (practical organizing workflows)"
+        }
+      ]
+    },
+    {
       "file": "amazon-connect-health-ai-agents.html",
       "links": [
         {
@@ -54,104 +71,36 @@
       ]
     },
     {
-      "file": "hospitals-patient-chatbots-patientgpt-epic-emmie-2026-04.html",
+      "file": "amazon-one-medical-glp1-management-program-2026-04.html",
       "links": [
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
-        },
-        {
-          "href": "/shotsy-alternative.html",
-          "text": "Shotsy alternative (simple tracking for busy weeks)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub"
-        }
-      ]
-    },
-    {
-      "file": "filspari-sparsentan-fsgs-fda-expanded-approval-2026-04.html",
-      "links": [
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
-        },
-        {
-          "href": "/shotsy-alternative.html",
-          "text": "Shotsy alternative (simple tracking for busy weeks)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub"
-        }
-      ]
-    },
-    {
-      "file": "fda-clinical-trial-results-disclosure-2200-sponsors-reminder-2026-04.html",
-      "links": [
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub"
-        }
-      ]
-    },
-    {
-      "file": "fda-semaglutide-shortage-ended-compounding-legal-update-2026-04.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (dates, notes, patterns)"
-        },
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Protocol + appointment notes tracker (keep instructions in one place)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub"
-        }
-      ]
-    },
-    {
-      "file": "fda-testosterone-therapy-low-libido-idiopathic-hypogonadism-2026-04.html",
-      "links": [
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Appointment notes + labs tracker (keep your plan and results in one place)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub"
-        }
-      ]
-    },
-    {
-      "file": "foundayo-fda-postmarketing-studies-liver-injury-data-request-2026-04.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Medication tracker (log dates, changes, notes, patterns)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "Side effects guide (what to document and how to talk about it)"
-        },
         {
           "href": "/glp1-cost-without-insurance.html",
-          "text": "Coverage & cost checklist (what to save for prior auth/appeals)"
+          "text": "Cost + coverage checklist (what to save for prior auth/appeals)"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep decisions and instructions in one place)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (practical organizing workflows)"
+        }
+      ]
+    },
+    {
+      "file": "avlayah-denali-hunter-syndrome-fda-accelerated-approval-2026-03.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep a clean timeline)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple log for dates, notes, and patterns"
+        },
+        {
+          "href": "/fda-biosimilar-guidance-2026-03.html",
+          "text": "How to read FDA/regulatory headlines (what changes, what doesn\u2019t)"
         }
       ]
     },
@@ -224,19 +173,19 @@
       ]
     },
     {
-      "file": "fda-recall-hub-botulism-undeclared-drugs-contamination-2026-04.html",
+      "file": "cms-fda-rapid-coverage-pathway-breakthrough-devices-2026-04.html",
       "links": [
         {
-          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
-          "text": "FDA recalls and undeclared ingredients: what to save and how to verify"
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "Coverage + cost checklist (what to save for prior auth/appeals)"
         },
         {
-          "href": "/childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
-          "text": "Recall checklist example: how to match lot numbers and product details"
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointments + protocol notes tracker (keep instructions and paperwork together)"
         },
         {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: keep a clean timeline and notes (helpful in any safety follow-up)"
+          "href": "/guides/",
+          "text": "Guides hub (practical tracking and admin checklists)"
         }
       ]
     },
@@ -288,6 +237,23 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "Medication tracker (log product, dates, and notes)"
+        }
+      ]
+    },
+    {
+      "file": "fda-clinical-trial-results-disclosure-2200-sponsors-reminder-2026-04.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
         }
       ]
     },
@@ -377,6 +343,23 @@
       ]
     },
     {
+      "file": "fda-recall-hub-botulism-undeclared-drugs-contamination-2026-04.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "FDA recalls and undeclared ingredients: what to save and how to verify"
+        },
+        {
+          "href": "/childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
+          "text": "Recall checklist example: how to match lot numbers and product details"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: keep a clean timeline and notes (helpful in any safety follow-up)"
+        }
+      ]
+    },
+    {
       "file": "fda-recall-primal-herbs-undeclared-sildenafil.html",
       "links": [
         {
@@ -424,6 +407,91 @@
         {
           "href": "/glp1-injection-tracker.html",
           "text": "Injection tracker (log products, dates, and notes)"
+        }
+      ]
+    },
+    {
+      "file": "fda-semaglutide-shortage-ended-compounding-legal-update-2026-04.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (dates, notes, patterns)"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Protocol + appointment notes tracker (keep instructions in one place)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
+        }
+      ]
+    },
+    {
+      "file": "fda-testosterone-therapy-low-libido-idiopathic-hypogonadism-2026-04.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + labs tracker (keep your plan and results in one place)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
+        }
+      ]
+    },
+    {
+      "file": "fda-warning-letters-telehealth-compounded-glp1-marketing-2026-04.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "filspari-sparsentan-fsgs-fda-expanded-approval-2026-04.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
+        },
+        {
+          "href": "/shotsy-alternative.html",
+          "text": "Shotsy alternative (simple tracking for busy weeks)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
+        }
+      ]
+    },
+    {
+      "file": "foundayo-fda-postmarketing-studies-liver-injury-data-request-2026-04.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Medication tracker (log dates, changes, notes, patterns)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "Side effects guide (what to document and how to talk about it)"
+        },
+        {
+          "href": "/glp1-cost-without-insurance.html",
+          "text": "Coverage & cost checklist (what to save for prior auth/appeals)"
         }
       ]
     },
@@ -667,6 +735,40 @@
         {
           "href": "/privacy",
           "text": "Privacy"
+        }
+      ]
+    },
+    {
+      "file": "hospitals-patient-chatbots-patientgpt-epic-emmie-2026-04.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
+        },
+        {
+          "href": "/shotsy-alternative.html",
+          "text": "Shotsy alternative (simple tracking for busy weeks)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
+        }
+      ]
+    },
+    {
+      "file": "idvynso-doravirine-islatravir-fda-approval-2026-04.html",
+      "links": [
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub"
         }
       ]
     },
@@ -1173,6 +1275,23 @@
       ]
     },
     {
+      "file": "vital-nutrients-aller-c-recall-undeclared-allergens-2026-04.html",
+      "links": [
+        {
+          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+          "text": "How to respond to FDA supplement recalls (practical checklist)"
+        },
+        {
+          "href": "/fda-recall-primal-herbs-undeclared-sildenafil.html",
+          "text": "Another FDA recall example (what to document, how to verify)"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Tracking basics: keep a simple log with dates, photos, and notes"
+        }
+      ]
+    },
+    {
       "file": "wegovy-7-2mg-fda-approval-priority-voucher-april-2026.html",
       "links": [
         {
@@ -1254,108 +1373,6 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "vital-nutrients-aller-c-recall-undeclared-allergens-2026-04.html",
-      "links": [
-        {
-          "href": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
-          "text": "How to respond to FDA supplement recalls (practical checklist)"
-        },
-        {
-          "href": "/fda-recall-primal-herbs-undeclared-sildenafil.html",
-          "text": "Another FDA recall example (what to document, how to verify)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: keep a simple log with dates, photos, and notes"
-        }
-      ]
-    },
-    {
-      "file": "avlayah-denali-hunter-syndrome-fda-accelerated-approval-2026-03.html",
-      "links": [
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Appointment notes + protocols tracker (keep a clean timeline)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: a simple log for dates, notes, and patterns"
-        },
-        {
-          "href": "/fda-biosimilar-guidance-2026-03.html",
-          "text": "How to read FDA/regulatory headlines (what changes, what doesn\u2019t)"
-        }
-      ]
-    },
-    {
-      "file": "fda-warning-letters-telehealth-compounded-glp1-marketing-2026-04.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "aligned-medical-angio-pack-rotating-adapter-recall-2026-04.html",
-      "links": [
-        {
-          "href": "/childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
-          "text": "Recall checklist example: what to check and what to document"
-        },
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Keep a clean timeline (photos, notes, and follow-ups)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub (practical organizing workflows)"
-        }
-      ]
-    },
-    {
-      "file": "idvynso-doravirine-islatravir-fda-approval-2026-04.html",
-      "links": [
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Appointment notes + protocols tracker (keep what you were told in one place)"
-        },
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "Tracking basics: a simple medication log (dates, notes, patterns)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub"
-        }
-      ]
-    },
-    {
-      "file": "amazon-one-medical-glp1-management-program-2026-04.html",
-      "links": [
-        {
-          "href": "/glp1-cost-without-insurance.html",
-          "text": "Cost + coverage checklist (what to save for prior auth/appeals)"
-        },
-        {
-          "href": "/injection-protocol-tracker.html",
-          "text": "Appointment notes + protocols tracker (keep decisions and instructions in one place)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub (practical organizing workflows)"
         }
       ]
     }
