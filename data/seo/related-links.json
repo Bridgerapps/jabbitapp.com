@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-25T13:37:45Z",
+  "updated": "2026-04-26T13:37:41Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -46,6 +46,23 @@
         {
           "href": "/injection-protocol-tracker.html",
           "text": "Keep a clean timeline (photos, notes, and follow-ups)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (practical organizing workflows)"
+        }
+      ]
+    },
+    {
+      "file": "french-broad-chocolate-bettes-bake-sale-bonbons-undeclared-walnuts-recall-2026-04.html",
+      "links": [
+        {
+          "href": "/fda-recall-hub-botulism-undeclared-drugs-contamination-2026-04.html",
+          "text": "Recall hub: how to stay organized across FDA alerts"
+        },
+        {
+          "href": "/childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
+          "text": "Recall checklist example: what to check and what to document"
         },
         {
           "href": "/guides/",
