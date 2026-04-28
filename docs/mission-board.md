@@ -1,6 +1,6 @@
 # Mission Board
 
-_Last updated: 2026-03-12 UTC_
+_Last updated: 2026-04-28 UTC_
 
 Purpose: one small source of truth for what matters, what state it is in, what the next physical action is, and what counts as done.
 
@@ -28,53 +28,50 @@ Purpose: one small source of truth for what matters, what state it is in, what t
 
 ## 2) Distribution / installs
 - **Owner:** Jon + Jabby
-- **State:** execution backlog
-- **What matters:** installs move fastest when the existing ready-to-send queue gets cleared.
-- **Current blocker:** 7 `ready_to_send` items are sitting in the growth ledger; system is generating nudges faster than sends happen.
-- **Next physical action:** clear the top 3 ready-to-send sends (On The Pen, GLP-1 Tribe, and one coach/clinic contact) and log the day via `scripts/distribution-daily-check-set.sh` (optionally marking the ledger item `sent`).
-- **Last touched:** 2026-03-12 00:05 UTC
-- **Success measure:** ready-to-send backlog drops from 7 to <=3; follow-up states logged cleanly; installs can be tied back to outreach.
+- **State:** hard blocked
+- **What matters:** installs will not move from outbound until the sender identity is real and usable.
+- **Current blocker:** unsolicited outreach is blocked because sender identity is still `jabbit@bridgerapps.com`, not `@jabbitapp.com`. That means we keep talking about distribution without actually being able to execute it safely.
+- **Next physical action:** finish the `@jabbitapp.com` sender setup (From + Reply-To + domain verification), run one test send to self, then resume manual distribution.
+- **Last touched:** 2026-04-28 15:00 UTC
+- **Success measure:** outbound is unblocked with verified `@jabbitapp.com` identity and one successful canary send; only then do we judge outreach throughput.
 - **State files / evidence:**
-  - `data/status/manual-growth-loop-ledger.json`
-  - `data/status/manual-growth-loop-stagnation.json`
-  - `docs/distribution/send-now-brief-latest.md`
-  - `docs/distribution-daily-log.md`
   - `data/status/distribution-daily-check.json`
+  - `docs/distribution-daily-log.md`
+  - `data/status/manual-growth-loop-ledger.json`
 
 ## 3) Reddit / trust surface
-- **Owner:** Jabby
-- **State:** not in a clean daily execution rhythm
-- **What matters:** one useful manual comment/day or an explicit logged skip; no draft piles.
-- **Current blocker:** the daily action loop can end in an ambiguous state (posted=false + empty skip_reason), which reads like “we did nothing” without admitting we skipped.
-- **Next physical action:** every day, end with an explicit truth via `scripts/reddit-daily-check-set.sh` (POSTED or SKIPPED with reason + follow-up due time).
-- **Last touched:** 2026-03-11 13:37 UTC
-- **Success measure:** daily log shows `posted=1` or `skip_reason=<clear reason>` every day; 24h follow-up logged; telemetry freshness restored.
+- **Owner:** Jon + Jabby
+- **State:** stalled
+- **What matters:** one real manual high-intent comment beats a week of passive monitoring.
+- **Current blocker:** no actual manual Reddit action has been executed, so this lane is generating zero learning while still consuming attention in summaries.
+- **Next physical action:** do one deliberate comment in a tracking/adherence/logging-fit thread, paste the URL here, then log the outcome and schedule exactly one 24h follow-up.
+- **Last touched:** 2026-04-28 15:00 UTC
+- **Success measure:** one real thread URL logged, one follow-up logged, and at least one observable reply/upvote/click outcome to learn from.
 - **State files / evidence:**
   - `docs/reddit-daily-execution-checklist.md`
-  - `data/status/reddit.json`
   - `data/status/reddit-daily-check.json`
 
 ## 4) Product / tool leverage
 - **Owner:** Jabby
-- **State:** opportunistic, not currently the bottleneck
-- **What matters:** only ship product/site changes that clearly lift installs or retention.
-- **Current blocker:** measurement integrity is weak, so product/SEO changes are harder to judge honestly.
-- **Next physical action:** do not spin up broad product work until analytics honesty is restored; when unblocked, ship the single highest-leverage conversion or utility improvement.
-- **Last touched:** 2026-03-11 13:37 UTC
-- **Success measure:** shipped change tied to a specific metric hypothesis (install CTR, retention behavior, or user trust signal).
+- **State:** reset in progress
+- **What matters:** ship fewer changes, but tie each one to an install hypothesis on pages that already get real traffic.
+- **Current blocker:** we spent the last two weeks producing many breaking-topic SEO pages, but traffic stayed tiny and attribution stayed weak. That was output, not proof.
+- **Next physical action:** pause the breaking-topic SEO factory. Keep only focused conversion work on the homepage and the top existing high-intent pages until traffic or installs justify reopening the content lane.
+- **Last touched:** 2026-04-28 15:00 UTC
+- **Success measure:** each shipped page change is attached to an explicit hypothesis on an already-viewed page; no new low-signal SEO pages ship by default.
 - **State files / evidence:**
-  - `docs/breaking-topics-radar.md`
+  - `docs/kpi-YYYY-MM-DD.md`
   - `docs/seo-effectiveness-YYYY-MM-DD.md`
-  - `WORKLOG.md`
+  - `data/status/site-analytics.json`
 
 ## 5) Ops hygiene
 - **Owner:** Jabby
 - **State:** needs cleanup
-- **What matters:** hidden repo state and stale telemetry create false confidence and execution drag.
-- **Current blocker:** repo is ahead by 6 commits and dirty; healthcheck flags both.
-- **Next physical action:** commit/reconcile current changes, push cleanly, and keep healthcheck green.
-- **Last touched:** 2026-03-11 13:37 UTC
-- **Success measure:** `git ahead=0 dirty=false` in health output; no recurring git hygiene alerts.
+- **What matters:** dirty repos and unpushed state keep making summaries noisier than they should be.
+- **Current blocker:** repo is still ahead and dirty because automation keeps touching generated SEO/support files faster than the system closes the loop.
+- **Next physical action:** after pausing low-signal SEO automation, reconcile the remaining dirty files, commit intentional changes only, and push cleanly.
+- **Last touched:** 2026-04-28 15:00 UTC
+- **Success measure:** `git ahead=0 dirty=false` in health output and daily summaries stop repeating the same hygiene warning.
 - **State files / evidence:**
   - `data/status/health.json`
   - `data/status/systems.json`
@@ -84,9 +81,10 @@ Purpose: one small source of truth for what matters, what state it is in, what t
 ## Daily forcing-function order
 When multiple things are wrong, prioritize in this order:
 1. **Measurement honesty**
-2. **Execution backlog clearance**
+2. **Unblock sender identity / execution ability**
 3. **One real trust-surface action (Reddit/manual distribution)**
-4. **Only then new assets/pages/tools**
+4. **Focused conversion work on existing traffic pages**
+5. **Only then new assets/pages/tools**
 
 ## Review frame
 Use `docs/mission-board-review-checklist.md` for recurring reviews/summaries so they come from the same operator frame every time.
