@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-27T13:37:02Z",
+  "updated": "2026-04-28T13:36:54Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1390,6 +1390,40 @@
         {
           "href": "/glp1-dosing-schedule.html",
           "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "tandem-mobi-insulin-pump-correction-fda-2026-04.html",
+      "links": [
+        {
+          "href": "/omnipod-5-pods-medical-device-correction-internal-tubing-tear.html",
+          "text": "Medical device correction explainer (what to document + how to track it)"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep instructions and follow-ups in one place)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (practical organizing workflows)"
+        }
+      ]
+    },
+    {
+      "file": "tandem-mobi-insulin-pump-correction-malfunction-12-software-update-2026-04.html",
+      "links": [
+        {
+          "href": "/omnipod-5-pods-medical-device-correction-internal-tubing-tear.html",
+          "text": "Medical device correction explainer (what to document + how to track it)"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Appointment notes + protocols tracker (keep instructions and follow-ups in one place)"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides hub (practical organizing workflows)"
         }
       ]
     }

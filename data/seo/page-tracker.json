@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-27T13:37:02Z",
-  "total_pages": 83,
+  "last_updated": "2026-04-28T13:36:09Z",
+  "total_pages": 84,
   "topics": [
     {
       "topic": "bpc-157",
@@ -426,6 +426,11 @@
       "topic": "tandem-mobi-insulin-pump-correction-malfunction-12-software-update-2026-04",
       "filename": "tandem-mobi-insulin-pump-correction-malfunction-12-software-update-2026-04.html",
       "created": "2026-04-27"
+    },
+    {
+      "topic": "tandem-mobi-insulin-pump-correction-fda-2026-04",
+      "filename": "tandem-mobi-insulin-pump-correction-fda-2026-04.html",
+      "created": "2026-04-28"
     }
   ],
   "suggested_topics": [
