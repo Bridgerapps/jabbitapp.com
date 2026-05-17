@@ -240,12 +240,12 @@
       text.style.minWidth = '220px';
 
       const title = document.createElement('div');
-      title.textContent = 'Try Jabbit — private GLP‑1 tracking (no account)';
+      title.textContent = 'Track GLP-1 doses + symptoms privately on iPhone';
       title.style.fontWeight = '750';
       title.style.color = '#0f172a';
 
       const sub = document.createElement('div');
-      sub.textContent = 'Reminders, logs, progress — syncs through your iCloud (not our servers).';
+      sub.textContent = 'Dose log, side effects, progress, and reminders in one place. No account. Syncs through your iCloud.';
       sub.style.fontSize = '13px';
       sub.style.color = '#334155';
       sub.style.marginTop = '2px';
@@ -258,7 +258,7 @@
       cta.target = '_blank';
       cta.rel = 'noopener noreferrer';
       cta.dataset.track = 'inline_top_banner';
-      cta.textContent = 'Get on App Store';
+      cta.textContent = 'Start free trial';
       cta.style.display = 'inline-flex';
       cta.style.alignItems = 'center';
       cta.style.justifyContent = 'center';
@@ -289,7 +289,7 @@
       };
 
       const linksLabel = document.createElement('span');
-      linksLabel.textContent = 'Popular:';
+      linksLabel.textContent = 'Popular trackers:';
       linksLabel.style.color = '#475569';
       linksLabel.style.fontWeight = '600';
 
@@ -388,7 +388,7 @@
         cta.target = '_blank';
         cta.rel = 'noopener noreferrer';
         cta.dataset.track = isHome ? 'sticky_cta_home' : 'sticky_cta';
-        cta.textContent = 'Get Jabbit on the App Store';
+        cta.textContent = isHome ? 'Start tracking on iPhone' : 'Track this in Jabbit';
         cta.style.flex = '1';
         cta.style.display = 'inline-flex';
         cta.style.alignItems = 'center';
