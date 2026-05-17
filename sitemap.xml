@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/fda-compounded-glp1-enforcement-2026.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -188,7 +188,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/glp-1-injection-tracking-guide.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -200,7 +200,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/glp1-alcohol-guide.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -236,12 +236,6 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/glp1-injection-tracker.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jabbitapp.com/glp1-missed-dose-tracker.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -253,6 +247,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jabbitapp.com/glp1-missed-dose-tracker.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://jabbitapp.com/glp1-serum-levels-explained.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -260,13 +260,13 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/glp1-stress-anxiety-hrv-guide.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jabbitapp.com/glp1-stress-hrv-guide.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/index.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -397,6 +397,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jabbitapp.com/peptide-space-hub.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://jabbitapp.com/peptide-storage-stability-guide.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -405,6 +411,12 @@
   <url>
     <loc>https://jabbitapp.com/peptides-compounding-list-update.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jabbitapp.com/retatrutide-timeline.html</loc>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -446,19 +458,19 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/shotsy-alternative.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jabbitapp.com/tandem-mobi-insulin-pump-correction-fda-2026-04.html</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jabbitapp.com/tandem-mobi-insulin-pump-correction-malfunction-12-software-update-2026-04.html</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -512,7 +524,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/zepbound-injection-tracker.html</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
