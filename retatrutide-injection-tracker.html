@@ -57,6 +57,39 @@
   }
   </script>
 
+  <script type="application/ld+json" id="faq-jsonld">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Does Jabbit tell me what dose to take or when to titrate?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. Jabbit is a tracker (log + reminders). For dosing, titration, and missed-dose decisions, follow your prescriber and the medication’s labeling or study protocol."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Can I track side effects and timing?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes — log what you felt and when. A simple onset → peak → resolved note is often enough to spot patterns you can discuss with a clinician."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Is this private?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Jabbit is privacy-first: your data syncs via your iCloud account. Jabbit isn’t a server collecting your injection history."
+        }
+      }
+    ]
+  }
+  </script>
+
   <script defer src="/assets/site.js"></script>
 </head>
 <body>
@@ -115,6 +148,15 @@
           <li>If you’re tracking symptoms too, link your injection timestamp to a simple daily rating.</li>
         </ul>
 
+        <h2>Missed or late dose notes (what to log)</h2>
+        <p class="muted">If your timing changes, you don’t need perfect detail — just enough to explain “what happened” later.</p>
+        <ul>
+          <li><strong>Planned day/time</strong> vs <strong>actual day/time</strong></li>
+          <li><strong>Reason</strong> (travel, forgot, side effects, supply)</li>
+          <li><strong>What you did next</strong> (as directed by your clinician/protocol)</li>
+          <li><strong>Any symptoms</strong> you noticed after the timing change</li>
+        </ul>
+
         <h2>Prefer a private app instead of a spreadsheet?</h2>
         <p>Jabbit is built for dose history + reminders + notes in one timeline, synced via your iCloud (no account required).</p>
         <div class="ctaRow" style="margin-top:12px;">
@@ -148,4 +190,3 @@
   </main>
 </body>
 </html>
-
