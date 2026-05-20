@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Peptide Protocol Tracker: Schedule, Dose Log, Side Effects Notes (iPhone) | Jabbit</title>
+  <meta name="description" content="A practical peptide protocol tracking template: schedule, dose log, and side effects notes — plus an iPhone tracker with reminders (private iCloud sync)." />
+  <meta name="keywords" content="peptide protocol tracker, peptide schedule tracker, peptide dose log, peptide side effects log, injection protocol tracker, peptide tracker app" />
+  <link rel="canonical" href="https://jabbitapp.com/peptide-protocol-tracker.html" />
+
+  <style>
+    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --brand2:#14b8a6; --border:#e2e8f0; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+    a{ color:var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width:920px; margin:0 auto; padding:28px 18px 60px; }
+    .hero{ background:linear-gradient(135deg, #0f172a 0%, #0b4a44 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 10px 30px rgba(2,6,23,.15); }
+    .hero h1{ margin:0 0 10px; font-size:2.1rem; line-height:1.2; }
+    .hero p{ margin:0; color:rgba(255,255,255,.9); font-size:1.05rem; }
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; font-weight:700; border:1px solid transparent; }
+    .btnPrimary{ background:var(--brand2); color:#062a27; }
+    .btnPrimary:hover{ filter:brightness(.95); text-decoration:none; }
+    .btnGhost{ background:transparent; color:#fff; border-color:rgba(255,255,255,.35); }
+    .btnGhost:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
+
+    .grid{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; }
+    @media(min-width:900px){ .grid{ grid-template-columns: 1.2fr .8fr; } }
+
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
+    h2{ margin:18px 0 10px; font-size:1.35rem; }
+    h3{ margin:14px 0 8px; font-size:1.1rem; }
+    ul{ margin:8px 0 0 18px; }
+    .muted{ color:var(--muted); }
+    .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px 12px; border-radius:10px; }
+
+    table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
+    th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
+    th{ background:#f1f5f9; }
+
+    footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
+    .small{ font-size:.9rem; }
+  </style>
+
+  <script type="application/ld+json" id="webpage-jsonld">
+  {"@context":"https://schema.org","@type":"WebPage","name":"Peptide Protocol Tracker: Schedule, Dose Log, Side Effects Notes (iPhone) | Jabbit","url":"https://www.jabbitapp.com/peptide-protocol-tracker.html","description":"A practical peptide protocol tracking template: schedule, dose log, and side effects notes — plus an iPhone tracker with reminders (private iCloud sync).","isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},"publisher":{"@type":"Organization","name":"Bridger Apps"}}
+  </script>
+
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Peptide protocol tracker (schedule + dose log)</h1>
+      <p>A calm way to keep timestamps, notes, and patterns in one place — especially when you’re tracking more than a single weekly injection.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer" data-track="app_store_click:peptide_protocol_tracker:hero">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/peptide-space-hub.html">Peptide hub</a>
+      </div>
+      <p class="small" style="margin-top:12px; opacity:.9;">Educational only. Jabbit does not provide medical advice. Always follow your clinician’s instructions.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What to track (high-signal, low-effort)</h2>
+        <p class="muted">Most “is it working?” or “is this a side effect?” questions become easier when you can see a simple timeline.</p>
+
+        <h3>1) Your schedule (the anchor)</h3>
+        <table aria-label="Protocol schedule template">
+          <thead>
+            <tr>
+              <th style="width:20%">Day</th>
+              <th style="width:20%">Time</th>
+              <th style="width:30%">Action</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mon / Tue / …</td>
+              <td>____ : ____</td>
+              <td>Injection / dose (as prescribed)</td>
+              <td>Meals / sleep / travel / stress</td>
+            </tr>
+            <tr>
+              <td>Mon / Tue / …</td>
+              <td>____ : ____</td>
+              <td>Reminder / check-in</td>
+              <td>How you felt / appetite / energy</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>2) Dose / injection log template</h3>
+        <table aria-label="Dose log template">
+          <thead>
+            <tr>
+              <th style="width:18%">Date</th>
+              <th style="width:14%">Time</th>
+              <th style="width:14%">Dose</th>
+              <th style="width:18%">Site</th>
+              <th style="width:18%">Batch / notes</th>
+              <th>Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>____ / ____ / ____</td>
+              <td>____ : ____</td>
+              <td>As prescribed</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>Sleep / meals / travel / stress</td>
+            </tr>
+            <tr>
+              <td>____ / ____ / ____</td>
+              <td>____ : ____</td>
+              <td>As prescribed</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>Sleep / meals / travel / stress</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>3) Side effects notes (timing beats memory)</h3>
+        <p class="muted">If you only write down one thing: write down <em>when</em> it started relative to your last dose.</p>
+        <table aria-label="Side effects notes template">
+          <thead>
+            <tr>
+              <th style="width:22%">Time since dose</th>
+              <th style="width:28%">Symptom</th>
+              <th style="width:14%">Severity</th>
+              <th style="width:20%">Trigger guess</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+ 6h / + 1d / + 3d</td>
+              <td>____________</td>
+              <td>0–10</td>
+              <td>meal / sleep / stress</td>
+              <td>____________</td>
+            </tr>
+            <tr>
+              <td>+ 6h / + 1d / + 3d</td>
+              <td>____________</td>
+              <td>0–10</td>
+              <td>meal / sleep / stress</td>
+              <td>____________</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note" style="margin-top:14px;">
+          <strong>Shortcut:</strong> If you’re tracking a specific medication, use a drug-specific page (example: <a href="/retatrutide-tracker.html">retatrutide tracker</a>) and keep the same “schedule + dose + timeline” structure.
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Use cases</h2>
+        <ul>
+          <li>Daily / EOD schedules</li>
+          <li>Multi-step titration routines</li>
+          <li>Inventory + timing (vials, open dates, remaining volume)</li>
+          <li>Site rotation patterns</li>
+        </ul>
+
+        <h2 style="margin-top:16px;">Try it in Jabbit</h2>
+        <p class="muted">If you want reminders + a private timeline you can actually review later:</p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer" data-track="app_store_click:peptide_protocol_tracker:sidebar" style="width:100%;">Download Jabbit</a></p>
+
+        <h2 style="margin-top:16px;">Related pages</h2>
+        <ul>
+          <li><a href="/injection-protocol-tracker.html">Injection protocol tracker</a></li>
+          <li><a href="/peptide-dose-log.html">Peptide dose log template</a></li>
+          <li><a href="/peptide-reconstitution-calculator/">Peptide reconstitution calculator</a></li>
+          <li><a href="/glp1-injection-tracker.html">GLP‑1 injection tracker</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <footer>
+      <p class="small">Educational only — Jabbit does not provide medical advice, diagnosis, or treatment. Always consult a licensed clinician.</p>
+    </footer>
+  </main>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+      <li><a href="/peptide-space-hub.html">Peptide hub</a></li>
+      <li><a href="/retatrutide-tracker.html">Retatrutide tracker (dose log + side effects timeline)</a></li>
+      <li><a href="/injection-protocol-tracker.html">Injection protocol tracker (private + reminders)</a></li>
+    </ul>
+  </section>
+</body>
+</html>
+
