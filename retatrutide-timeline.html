@@ -23,6 +23,12 @@
     .timeline li{ border-left:3px solid #99f6e4; padding:0 0 18px 16px; margin-left:8px; position:relative; }
     .timeline li::before{ content:''; width:10px; height:10px; background:#0d9488; border-radius:50%; position:absolute; left:-6px; top:6px; }
     .note{ background:#ecfeff; border-left:4px solid #0d9488; padding:12px; border-radius:10px; }
+    .ctaRow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border-radius:12px; font-weight:700; border:1px solid rgba(255,255,255,.25); }
+    .btnPrimary{ background:#0d9488; color:#062b27; border-color:#0d9488; }
+    .btnGhost{ background:rgba(255,255,255,.06); color:#fff; }
+    .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    @media (max-width:760px){ .grid2{ grid-template-columns:1fr; } }
     footer{ margin-top:28px; color:var(--muted); font-size:.95rem; }
   </style>
   <script defer src="/assets/site.js"></script>
@@ -32,7 +38,42 @@
     <section class="hero">
       <h1>Retatrutide timeline: what happened, what it means, and what still isn’t known</h1>
       <p>This page is a timeline, not a pitch. It tracks trial milestones, official updates, and source-backed context around retatrutide so readers can separate real developments from hype.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/retatrutide-tracker.html">Retatrutide tracker (log doses & effects)</a>
+      </div>
       <p class="small">Educational only. No treatment, dosing, or longevity recommendations.</p>
+    </section>
+
+    <section class="card">
+      <h2>Fast path: what to track week to week (logging checklist)</h2>
+      <p class="muted">If you’re trying to make sense of “is anything changing yet?”, a simple log is more useful than memory. This is about tracking and organization, not medical advice.</p>
+      <div class="grid2">
+        <div>
+          <h3>Basics</h3>
+          <ul>
+            <li>Dose date + time (and if it was early/late)</li>
+            <li>Injection site + notes (rotation)</li>
+            <li>Appetite / satiety notes</li>
+            <li>Nausea, constipation, reflux (if any)</li>
+            <li>Sleep + energy</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Helpful if you’re already measuring</h3>
+          <ul>
+            <li>Weight trend (weekly is often enough)</li>
+            <li>Waist or fit/size notes (optional)</li>
+            <li>Glucose/A1C-related notes if relevant to you</li>
+            <li>“Context” notes: travel, stress, illness, alcohol</li>
+          </ul>
+        </div>
+      </div>
+      <p class="muted">Start here:</p>
+      <ul>
+        <li><a href="/retatrutide-tracker.html">Retatrutide tracker hub</a> (routes to dose log, side-effect log, missed dose, and dose timing)</li>
+        <li><a href="/injection-protocol-tracker.html">Injection protocol tracker</a> (simple template for consistent logging)</li>
+      </ul>
     </section>
 
     <section class="card">
@@ -74,6 +115,12 @@
         <li>Any label-relevant warning/contraindication detail</li>
         <li>Coverage and access implications if/when status changes</li>
       </ul>
+      <p class="muted">If you’re tracking your own timeline, these are the pages people tend to need most:</p>
+      <ul>
+        <li><a href="/retatrutide-side-effect-log.html">Retatrutide side-effect log (what to record)</a></li>
+        <li><a href="/retatrutide-missed-dose-tracker.html">Retatrutide missed dose tracker</a></li>
+        <li><a href="/retatrutide-dose-timing-morning-vs-night.html">Retatrutide dose timing (morning vs night)</a></li>
+      </ul>
     </section>
 
     <section class="card">
@@ -88,6 +135,7 @@
     <section class="card">
       <h2>Related coverage</h2>
       <ul>
+        <li><a href="/retatrutide-tracker.html">Retatrutide tracker: log doses, symptoms, and timing</a></li>
         <li><a href="/peptide-space-hub.html">Peptide science, news, and policy hub</a></li>
         <li><a href="/lilly-retatrutide-late-stage-diabetes-trial-results-2026-03.html">Retatrutide late-stage trial update</a></li>
         <li><a href="/peptides-compounding-list-update.html">Compounding policy timeline</a></li>
@@ -101,6 +149,7 @@
         <li><a href="https://www.reuters.com/business/healthcare-pharmaceuticals/" target="_blank" rel="noopener noreferrer">Reuters healthcare/pharma coverage for context</a></li>
       </ul>
       <p>This page is for informational use only and is not medical advice.</p>
+      <p><a href="https://apps.apple.com/app/id6756848719">Download Jabbit on the App Store</a> (track doses, timing, and side effects in one place).</p>
     </footer>
   </main>
   <section id="related-links">
