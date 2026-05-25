@@ -308,7 +308,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/index.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -542,7 +542,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/shotsy-alternative.html</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -567,6 +567,12 @@
   <url>
     <loc>https://jabbitapp.com/tirzepatide-half-life.html</loc>
     <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jabbitapp.com/tirzepatide-injection-tracker.html</loc>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -615,6 +621,12 @@
   <url>
     <loc>https://jabbitapp.com/zealand-roche-amylin-obesity-phase2-data-market-reaction.html</loc>
     <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jabbitapp.com/zepbound-dose-log.html</loc>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
