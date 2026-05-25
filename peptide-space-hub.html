@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peptide Science, News, and Policy Hub | Jabbit</title>
-  <meta name="description" content="A clean reference hub for peptide science, GLP-1 news, compounding policy, and timeline pages. Focused on sources, uncertainty, and what actually changed." />
-  <meta name="keywords" content="peptide science, GLP-1 news, retatrutide timeline, peptide policy, compounding policy, semaglutide news, tirzepatide science" />
+  <title>Peptide Tracking Hub: Dose Logs, Protocol Templates, Timelines | Jabbit</title>
+  <meta name="description" content="A practical, non-medical peptide tracking hub: dose logs, protocol templates, side-effect timelines, missed-dose checklists, and tracker pages for GLP-1 and obesity-med routines." />
+  <meta name="keywords" content="peptide tracker, peptide tracking, peptide dose log, peptide protocol tracker, injection log template, missed dose tracker, retatrutide tracker, GLP-1 tracking, side effect log" />
   <link rel="canonical" href="https://jabbitapp.com/peptide-space-hub.html" />
   <style>
     :root{ --bg:#f8fafc; --card:#fff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --border:#e2e8f0; }
@@ -16,6 +16,10 @@
     .hero h1{ margin:0 0 10px; font-size:2.2rem; line-height:1.15; }
     .hero p{ margin:0; color:rgba(255,255,255,.92); font-size:1.05rem; }
     .note{ margin-top:14px; font-size:.95rem; color:rgba(255,255,255,.88); }
+    .ctaRow{ margin-top:16px; display:flex; flex-wrap:wrap; gap:10px; }
+    .ctaBtn{ display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border-radius:12px; font-weight:800; border:1px solid rgba(255,255,255,.22); color:#fff; background:rgba(255,255,255,.12); }
+    .ctaBtn:hover{ text-decoration:none; background:rgba(255,255,255,.18); }
+    .ctaBtn.primary{ background:#ffffff; color:#0f172a; border-color:#ffffff; }
     .grid{ display:grid; grid-template-columns:1fr; gap:18px; margin-top:22px; }
     @media(min-width:900px){ .grid{ grid-template-columns:1fr 1fr; } }
     .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
@@ -29,84 +33,94 @@
 <body>
   <main class="wrap">
     <section class="hero">
-      <h1>Peptide science, news, and policy, without the hype</h1>
-      <p>This hub is where Jabbit covers the peptide space as a reference surface: timelines, trial updates, compounding policy, and practical tracking context. We prioritize source quality, uncertainty, and what actually changed.</p>
-      <p class="note">Educational only. No dosing, treatment, or longevity recommendations. Human data, official documents, and real policy changes come first.</p>
+      <h1>Peptide tracking hub: logs, templates, and timelines</h1>
+      <p>Use this page to navigate the peptide tracking cluster: simple dose logs, protocol templates, missed-dose checklists, side-effect timelines, and drug-specific tracker pages.</p>
+      <div class="ctaRow">
+        <a class="ctaBtn primary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer" data-track="app_store_click:peptide_space_hub:hero">Get Jabbit on the App Store</a>
+        <a class="ctaBtn" href="/retatrutide-tracker.html" data-track="hub_click:retatrutide_tracker:hero">Open the retatrutide tracker hub</a>
+      </div>
+      <p class="note">Non-medical only: logging, reminders, templates, and “what happened when.” No dosing guidance or treatment advice.</p>
     </section>
 
     <section class="grid">
       <article class="card">
-        <h2>How we cover this space</h2>
-        <div class="pill">Science</div><div class="pill">News</div><div class="pill">Policy</div><div class="pill">Timelines</div>
+        <h2>Start here (most searched)</h2>
+        <div class="pill">Trackers</div><div class="pill">Logs</div><div class="pill">Missed Dose</div><div class="pill">Side-Effects</div>
         <ul>
-          <li><strong>Science:</strong> human trial results, safety signals, mechanisms, and what remains unknown.</li>
-          <li><strong>News:</strong> meaningful launches, shortages, company moves, and major updates only.</li>
-          <li><strong>Policy:</strong> FDA actions, compounding rules, enforcement, payer shifts, and regulatory fights.</li>
-          <li><strong>Timelines:</strong> what happened, when it happened, and where the source document lives.</li>
+          <li><a href="/peptide-dose-log.html">Peptide dose log</a> — a clean template for date/time, amount, site, and notes.</li>
+          <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a> — track “what I’m running” over time without guessing later.</li>
+          <li><a href="/peptide-side-effect-log.html">Peptide side-effect log</a> — a symptom timeline you can correlate to schedule changes.</li>
+          <li><a href="/glp-1-injection-tracking-guide.html">GLP‑1 injection tracking guide</a> — what to record so your history stays usable.</li>
         </ul>
-        <p class="muted">If a claim cannot be tied to an official source, journal publication, or clearly identified primary report, it does not get presented as fact here.</p>
+        <p class="muted">Goal: reduce “I think I took it last Tuesday?” and make your timeline obvious: what changed, when, and what happened next.</p>
       </article>
 
       <aside class="card">
-        <h2>What Jabbit adds</h2>
+        <h2>Missed dose & dose timing</h2>
         <ul>
-          <li>Turns noisy headlines into a clean timeline.</li>
-          <li>Keeps “known vs unknown” explicit.</li>
-          <li>Links peptide news back to what users may want to track over time.</li>
-          <li>Avoids hypey biohacker claims and vague “healthspan” promises.</li>
+          <li><a href="/ozempic-missed-dose-tracker.html">Ozempic missed dose tracker</a> — log what happened + set a clean next reminder.</li>
+          <li><a href="/retatrutide-missed-dose-tracker.html">Retatrutide missed dose tracker</a> — a checklist-style log for late/forgotten doses.</li>
+          <li><a href="/semaglutide-missed-dose-tracker.html">Semaglutide missed dose tracker</a> — keep the history consistent across refills/travel.</li>
+          <li><a href="/tirzepatide-missed-dose-tracker.html">Tirzepatide missed dose tracker</a> — track timing and notes without medical claims.</li>
         </ul>
-        <p class="muted">If you want the product side: <a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a> and <a href="/glp-1-injection-tracking-guide.html">tracking guide</a>.</p>
+        <p class="muted">When your schedule gets messy, a good log is basically insurance: it preserves context for you (and avoids accidental double-logging).</p>
       </aside>
 
       <article class="card">
-        <h2>Timelines</h2>
+        <h2>Drug-specific tracker pages</h2>
         <ul>
-          <li><a href="/retatrutide-timeline.html">Retatrutide timeline</a> — trial milestones, safety context, and what to watch next.</li>
-          <li><a href="/peptides-compounding-list-update.html">Compounding policy timeline</a> — FDA actions, shortages, and what changed operationally.</li>
+          <li><a href="/retatrutide-injection-tracker.html">Retatrutide injection tracker</a> — what to log + a simple template.</li>
+          <li><a href="/tirzepatide-injection-tracker.html">Tirzepatide injection tracker</a> — tracking basics for weekly injections.</li>
+          <li><a href="/ozempic-injection-tracker.html">Ozempic injection tracker</a> — keep your weekly history tidy.</li>
+          <li><a href="/wegovy-injection-tracker.html">Wegovy injection tracker</a> — track dose history + reminders.</li>
+          <li><a href="/zepbound-injection-tracker.html">Zepbound injection tracker</a> — log schedule, site rotation, and notes.</li>
         </ul>
       </article>
 
       <article class="card">
-        <h2>Science and trial explainers</h2>
+        <h2>Side-effect timelines (non-medical logs)</h2>
         <ul>
-          <li><a href="/retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html">Retatrutide Phase 3 topline explainer</a></li>
-          <li><a href="/lilly-retatrutide-late-stage-diabetes-trial-results-2026-03.html">Late-stage retatrutide diabetes trial update</a></li>
-          <li><a href="/semaglutide-vs-tirzepatide.html">Semaglutide vs tirzepatide</a></li>
-          <li><a href="/glp1-serum-levels-explained.html">GLP-1 serum levels explained</a></li>
+          <li><a href="/glp-1-side-effects-guide.html">GLP‑1 side effects guide</a> — plain-language overview + what to log.</li>
+          <li><a href="/glp-1-side-effect-log.html">GLP‑1 side-effect log</a> — a printable-style tracking template.</li>
+          <li><a href="/retatrutide-side-effect-log.html">Retatrutide side-effect log</a> — symptom timeline + context fields.</li>
+          <li><a href="/retatrutide-timeline.html">Retatrutide timeline</a> — track “what happened when” for major updates.</li>
+        </ul>
+        <p class="muted">These pages focus on journaling and correlation (date/time → symptom notes), not medical interpretation.</p>
+      </article>
+
+      <article class="card">
+        <h2>Protocol & reconstitution utilities</h2>
+        <ul>
+          <li><a href="/peptide-protocol-tracker.html">Protocol tracker</a> — keep versions of your plan (dates, notes, what changed).</li>
+          <li><a href="/peptide-reconstitution-calculator.html">Reconstitution calculator</a> — simple math helpers, not recommendations.</li>
+          <li><a href="/peptide-site-rotation-guide.html">Site rotation guide</a> — track location so you don’t guess later.</li>
+          <li><a href="/peptide-storage-stability-guide.html">Storage & stability guide</a> — what matters for tracking and labels.</li>
         </ul>
       </article>
 
       <article class="card">
-        <h2>Behavior and side-effects cluster</h2>
+        <h2>Templates you can copy</h2>
         <ul>
-          <li><a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress, anxiety, and HRV</a></li>
-          <li><a href="/glp1-stress-hrv-guide.html">Stress/HRV quick guide</a></li>
-          <li><a href="/glp1-alcohol-guide.html">GLP-1 and alcohol</a></li>
-          <li><a href="/glp-1-side-effects-guide.html">GLP-1 side effects guide</a></li>
+          <li><strong>Minimum viable log:</strong> date/time, product, amount, injection site, notes.</li>
+          <li><strong>Change log:</strong> dose change, refill/lot, travel day, schedule slip, new symptom.</li>
+          <li><strong>Side-effect timeline:</strong> onset time, duration, severity (simple 1–5), context notes.</li>
+          <li><strong>Reminder rule:</strong> one next reminder you trust (avoid duplicate alarms).</li>
         </ul>
-      </article>
-
-      <article class="card">
-        <h2>Evidence rules</h2>
-        <ul>
-          <li>Human trial data beats animal or speculative claims.</li>
-          <li>Official labels and FDA documents beat social clips.</li>
-          <li>Topline results are not the same as full peer-reviewed data.</li>
-          <li>“May,” “might,” and “unknown” are valid outcomes.</li>
-        </ul>
+        <p class="muted">If you want the app version, <a href="/glp1-injection-tracker.html">GLP‑1 injection tracker</a> is the main product page with features + screenshots.</p>
       </article>
     </section>
 
     <footer>
-      <p>This hub is for informational use only and does not provide medical advice, diagnosis, treatment, or product recommendations.</p>
+      <p>This hub is for informational use only and does not provide medical advice, diagnosis, treatment, or product recommendations. It focuses on tracking, reminders, and templates.</p>
     </footer>
   </main>
   <section id="related-links">
     <h2>Related</h2>
     <ul>
-    <li><a href="/peptide-reconstitution-guide.html">Peptide reconstitution guide (step-by-step)</a></li>
-    <li><a href="/peptide-storage-stability-guide.html">Peptide storage & stability guide (what matters)</a></li>
-    <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (log doses + reminders)</a></li>
+    <li><a href="/retatrutide-tracker.html">Retatrutide tracker hub (logs + templates)</a></li>
+    <li><a href="/peptide-dose-log.html">Peptide dose log template</a></li>
+    <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></li>
+    <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (features + screenshots)</a></li>
     </ul>
   </section>
 </body>
