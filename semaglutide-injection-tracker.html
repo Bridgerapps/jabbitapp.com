@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Semaglutide Injection Tracker App for iPhone (Private + Reminders) | Jabbit</title>
+  <meta name="description" content="Track semaglutide injections with reminders, dose logs, and site rotation notes in a private iCloud-synced tracker app for iPhone." />
+  <meta name="keywords" content="semaglutide injection tracker, semaglutide injection log, semaglutide reminders, semaglutide tracker app, injection site rotation, GLP-1 injection tracker" />
+  <link rel="canonical" href="https://jabbitapp.com/semaglutide-injection-tracker.html" />
+
+  <style>
+    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --brand2:#14b8a6; --border:#e2e8f0; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+    a{ color:var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width:920px; margin:0 auto; padding:28px 18px 60px; }
+    .hero{ background:linear-gradient(135deg, #0f172a 0%, #0b4a44 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 10px 30px rgba(2,6,23,.15); }
+    .hero h1{ margin:0 0 10px; font-size:2.1rem; line-height:1.2; }
+    .hero p{ margin:0; color:rgba(255,255,255,.9); font-size:1.05rem; }
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; font-weight:700; border:1px solid transparent; }
+    .btnPrimary{ background:var(--brand2); color:#062a27; }
+    .btnPrimary:hover{ filter:brightness(.95); text-decoration:none; }
+    .btnGhost{ background:transparent; color:#fff; border-color:rgba(255,255,255,.35); }
+    .btnGhost:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
+
+    .grid{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; }
+    @media(min-width:900px){ .grid{ grid-template-columns: 1.2fr .8fr; } }
+
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
+    h2{ margin:18px 0 10px; font-size:1.35rem; }
+    h3{ margin:14px 0 8px; font-size:1.1rem; }
+    ul{ margin:8px 0 0 18px; }
+    .muted{ color:var(--muted); }
+    .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px 12px; border-radius:10px; }
+    .miniProof{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:16px; }
+    .miniProof div{ background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:10px 12px; }
+    .miniProof strong{ display:block; color:#fff; font-size:.98rem; }
+    .miniProof span{ color:rgba(255,255,255,.82); font-size:.92rem; }
+    .inlineCta{ margin-top:18px; padding:14px; border:1px solid var(--border); border-radius:14px; background:#f8fafc; }
+
+    table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
+    th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
+    th{ background:#f1f5f9; }
+
+    dl.faq{ margin:0; }
+    dl.faq dt{ font-weight:800; margin-top:12px; }
+    dl.faq dd{ margin:6px 0 0; color:var(--muted); }
+
+    footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
+    .small{ font-size:.9rem; }
+  </style>
+
+  <script defer src="/assets/site.js"></script>
+<script type="application/ld+json" id="faq-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this only for a specific brand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — semaglutide is the medication, and different people encounter it under different brand contexts. Jabbit is built for tracking workflows, not brand-specific dosing guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jabbit tell me what dose to take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Jabbit is a tracker (log + reminders). For dose and timing decisions, follow your prescriber and the medication labeling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I track side effects over time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — log symptoms and context (sleep, meals, stress). The goal is a clear timeline you can discuss with a clinician."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Semaglutide injection tracker (weekly reminders + quick logs)</h1>
+      <p>Track weekly injections, keep a simple dose log, and build a clean timeline you can share with your clinician — privately on iPhone.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/glp1-injection-tracker.html">GLP‑1 injection tracker hub</a>
+      </div>
+      <div class="miniProof">
+        <div><strong>Reminder + log</strong><span>So you don’t “forget and guess” later</span></div>
+        <div><strong>Site rotation notes</strong><span>Build a simple rotation habit</span></div>
+        <div><strong>Privacy-first</strong><span>Sync via your iCloud</span></div>
+      </div>
+      <p class="small" style="margin-top:12px; opacity:.9;">Educational only. Jabbit does not provide medical advice. Always follow your prescriber’s instructions for dose and timing.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What to track (keep it lightweight)</h2>
+        <p class="muted">A tracker is most useful when it’s fast. Focus on the few fields that make your timeline reliable.</p>
+        <ul>
+          <li><strong>Date & time</strong></li>
+          <li><strong>Medication</strong> (semaglutide, plus brand if relevant)</li>
+          <li><strong>Dose</strong> (as prescribed)</li>
+          <li><strong>Injection site</strong> (rotation pattern)</li>
+          <li><strong>1 short note</strong> (sleep, appetite, nausea, travel, etc.)</li>
+        </ul>
+
+        <h2>A weekly reminder setup that survives real life</h2>
+        <div class="note">
+          <strong>Practical tip:</strong> set a primary reminder and a backup reminder 12–24 hours later.
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Reminder</th>
+              <th>When</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Primary</strong></td>
+              <td>Your usual injection day/time</td>
+              <td>Consistency + fewer missed weeks</td>
+            </tr>
+            <tr>
+              <td><strong>Backup</strong></td>
+              <td>12–24 hours later</td>
+              <td>Travel, busy days, notification fatigue</td>
+            </tr>
+            <tr>
+              <td><strong>Log prompt</strong></td>
+              <td>Right after injecting</td>
+              <td>Avoid “I’ll log it later” drift</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="inlineCta">
+          <strong>Want an even simpler flow?</strong>
+          <p class="muted" style="margin:8px 0 0;">If your main problem is consistency, start with reminders. If your main problem is patterns (side effects, appetite changes, missed doses), add notes to build a timeline.</p>
+          <p style="margin:12px 0 0;"><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Get Jabbit</a></p>
+        </div>
+
+        <h2>Common related intents</h2>
+        <ul>
+          <li><a href="/semaglutide-missed-dose-tracker.html">Semaglutide missed dose tracker</a></li>
+          <li><a href="/semaglutide-injection-reminder.html">Semaglutide injection reminders</a></li>
+          <li><a href="/glp-1-injection-tracking-guide.html">GLP‑1 injection tracking guide</a></li>
+          <li><a href="/glp-1-side-effects-guide.html">GLP‑1 side effects guide</a></li>
+        </ul>
+
+        <h2>FAQ</h2>
+        <dl class="faq">
+          <dt>Is this only for a specific brand?</dt>
+          <dd>No — semaglutide is the medication, and different people encounter it under different brand contexts. Jabbit is built for tracking workflows, not brand-specific dosing guidance.</dd>
+
+          <dt>Does Jabbit tell me what dose to take?</dt>
+          <dd>No. Jabbit is a tracker (log + reminders). For dose and timing decisions, follow your prescriber and the medication labeling.</dd>
+
+          <dt>Can I track side effects over time?</dt>
+          <dd>Yes — log symptoms and context (sleep, meals, stress). The goal is a clear timeline you can discuss with a clinician.</dd>
+        </dl>
+      </article>
+
+      <aside class="card">
+        <h2>Quick checklist</h2>
+        <ul>
+          <li>Pick an injection day/time you can repeat.</li>
+          <li>Set a primary + backup reminder.</li>
+          <li>Log immediately after injecting.</li>
+          <li>Rotate sites in a simple pattern.</li>
+        </ul>
+
+        <h3>Get the app</h3>
+        <p class="muted">Download Jabbit and start tracking in under a minute.</p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
+
+        <h3>Not medical advice</h3>
+        <p class="muted">This page is educational and does not replace care from a licensed clinician.</p>
+
+        <p class="muted"><a href="/">← Back to Jabbit</a></p>
+      </aside>
+    </section>
+
+    <footer>
+      <p><strong>Sources:</strong></p>
+      <ul>
+        <li><a href="https://www.novo-pi.com/ozempic.pdf" target="_blank" rel="noopener noreferrer">Novo Nordisk: Ozempic Prescribing Information (PDF)</a></li>
+        <li><a href="https://www.novo-pi.com/wegovy.pdf" target="_blank" rel="noopener noreferrer">Novo Nordisk: Wegovy Prescribing Information (PDF)</a></li>
+      </ul>
+      <p class="small">This page is for education and tracking workflow only. No dosing instructions are provided.</p>
+    </footer>
+  </main>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+    <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (log doses + reminders)</a></li>
+    <li><a href="/semaglutide-injection-reminder.html">Semaglutide injection reminders</a></li>
+    <li><a href="/semaglutide-missed-dose-tracker.html">Semaglutide missed dose tracker</a></li>
+    </ul>
+  </section>
+</body>
+</html>

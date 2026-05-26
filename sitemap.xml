@@ -308,7 +308,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/index.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -525,6 +525,12 @@
   <url>
     <loc>https://jabbitapp.com/semaglutide-injection-reminder.html</loc>
     <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jabbitapp.com/semaglutide-injection-tracker.html</loc>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
