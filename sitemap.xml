@@ -391,12 +391,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jabbitapp.com/mounjaro-missed-dose-tracker.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://jabbitapp.com/omnipod-5-pod-correction-march-2026.html</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -488,7 +482,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/peptides-compounding-list-update.html</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -656,6 +650,12 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/tirzepatide-missed-dose-tracker.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jabbitapp.com/tirzepatide-side-effect-log.html</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
