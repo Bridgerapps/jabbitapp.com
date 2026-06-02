@@ -549,7 +549,6 @@
   <url>
     <loc>https://jabbitapp.com/retatrutide-missed-dose-tracker.html</loc>
     <lastmod>2026-06-01</lastmod>
-<<<<<<< HEAD
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -562,15 +561,12 @@
   <url>
     <loc>https://jabbitapp.com/retatrutide-protocol-tracker.html</loc>
     <lastmod>2026-06-01</lastmod>
-=======
->>>>>>> 8893db6 (seo: expand peptide tracking volume on peptide-side-effect-timeline.html)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jabbitapp.com/retatrutide-side-effect-log.html</loc>
     <lastmod>2026-06-01</lastmod>
-<<<<<<< HEAD
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -589,8 +585,6 @@
   <url>
     <loc>https://jabbitapp.com/retatrutide-storage-stability-guide.html</loc>
     <lastmod>2026-06-01</lastmod>
-=======
->>>>>>> 8893db6 (seo: expand peptide tracking volume on peptide-side-effect-timeline.html)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
