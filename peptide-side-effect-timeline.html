@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Peptide Side-Effect Timeline Template (What to Track + When) | Jabbit</title>
+  <meta name="description" content="A practical, non-medical peptide side-effect timeline template: what to log at 0–24h, 1–3d, 3–7d, and weekly so you can spot patterns instead of guessing." />
+  <meta name="keywords" content="peptide side effect timeline, peptide symptom timeline, peptide side effects timeline, symptom log template, what to track after injection, side effect journal app" />
+  <link rel="canonical" href="https://jabbitapp.com/peptide-side-effect-timeline.html" />
+
+  <style>
+    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --brand2:#14b8a6; --border:#e2e8f0; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+    a{ color:var(--brand); text-decoration:none; } a:hover{ text-decoration:underline; }
+    .wrap{ max-width:980px; margin:0 auto; padding:28px 18px 60px; }
+    .hero{ background:linear-gradient(135deg, #0f172a 0%, #0b4a44 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 10px 30px rgba(2,6,23,.15); }
+    .hero h1{ margin:0 0 10px; font-size:2.15rem; line-height:1.18; }
+    .hero p{ margin:0; color:rgba(255,255,255,.92); font-size:1.05rem; }
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:16px; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; font-weight:800; border:1px solid transparent; }
+    .btnPrimary{ background:var(--brand2); color:#062a27; }
+    .btnPrimary:hover{ filter:brightness(.96); text-decoration:none; }
+    .btnGhost{ background:transparent; color:#fff; border-color:rgba(255,255,255,.35); }
+    .btnGhost:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
+
+    .grid{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; }
+    @media(min-width:940px){ .grid{ grid-template-columns: 1.25fr .75fr; } }
+
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
+    h2{ margin:18px 0 10px; font-size:1.35rem; }
+    h3{ margin:14px 0 8px; font-size:1.1rem; }
+    ul{ margin:8px 0 0 18px; }
+    .muted{ color:var(--muted); }
+    .small{ font-size:.92rem; }
+    .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px; border-radius:10px; }
+    .warn{ background:#fff7ed; border-left:4px solid #fb923c; padding:12px; border-radius:10px; }
+    .pill{ display:inline-block; padding:4px 9px; border-radius:999px; font-size:.82rem; font-weight:800; border:1px solid var(--border); background:#f1f5f9; }
+
+    table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
+    th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
+    th{ background:#f1f5f9; }
+
+    footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
+  </style>
+
+  <script type="application/ld+json" id="webpage-jsonld">
+  {"@context":"https://schema.org","@type":"WebPage","name":"Peptide Side-Effect Timeline Template (What to Track + When) | Jabbit","url":"https://www.jabbitapp.com/peptide-side-effect-timeline.html","description":"A practical, non-medical peptide side-effect timeline template: what to log at 0–24h, 1–3d, 3–7d, and weekly so you can spot patterns instead of guessing.","isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},"publisher":{"@type":"Organization","name":"Bridger Apps"}}
+  </script>
+
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="pill" style="border-color:rgba(255,255,255,.25); background:rgba(255,255,255,.08); color:#fff;">Tracking template</span>
+      <h1>Peptide side‑effect timeline: what to track (and when)</h1>
+      <p>Most “side effects” aren’t a single event — they’re a <strong>time pattern</strong>. This page gives you a clean timeline template (0–24h → 1–3d → 3–7d → weekly) so you can connect timing to symptoms without relying on memory.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/peptide-protocol-tracker.html">Peptide protocol tracker</a>
+      </div>
+      <p class="small" style="margin-top:12px; opacity:.9;">Educational only. No diagnosis, dosing guidance, or treatment advice.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Why a timeline beats a symptom list</h2>
+        <p class="muted">Two people can report the same symptom (“nausea”) but mean totally different situations. A timeline makes the details concrete:</p>
+        <ul>
+          <li><strong>Onset:</strong> when it started relative to dose/injection</li>
+          <li><strong>Peak:</strong> when it felt worst</li>
+          <li><strong>Duration:</strong> how long it lasted</li>
+          <li><strong>Context:</strong> what else changed (sleep, food, travel, illness, training)</li>
+        </ul>
+
+        <div class="note" style="margin-top:14px;">
+          <strong>Practical goal:</strong> make it easy to answer “Is this consistent?” and “Did it change after something changed?” without guessing.
+        </div>
+
+        <h2 id="template">Peptide symptom timeline template (copy/paste)</h2>
+        <p class="muted">Use this with any peptide or injectable protocol. Keep it boring and consistent — it’s a tracking tool, not a story.</p>
+
+        <table aria-label="Peptide symptom timeline template">
+          <thead>
+            <tr>
+              <th style="width:18%;">Window</th>
+              <th style="width:30%;">What to log</th>
+              <th style="width:20%;">How to rate</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>0–24 hours</strong><br><span class="muted small">Same day</span></td>
+              <td>
+                <ul>
+                  <li>Exact time taken (and route/site if injected)</li>
+                  <li>Immediate sensations (if any) + onset time</li>
+                  <li>Sleepiness/energy changes</li>
+                  <li>GI notes: nausea, reflux, fullness</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Severity 0–10</li>
+                  <li>Start time + end time</li>
+                  <li>“Peak at” time</li>
+                </ul>
+              </td>
+              <td class="muted">Separates “right after” effects from next-day effects; helps you see fast-onset patterns.</td>
+            </tr>
+            <tr>
+              <td><strong>1–3 days</strong><br><span class="muted small">Day 1–3</span></td>
+              <td>
+                <ul>
+                  <li>New symptoms (and exact day/time started)</li>
+                  <li>Appetite/satiety notes</li>
+                  <li>Hydration + bowel pattern notes</li>
+                  <li>Headache/fatigue (if present)</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>1 daily rating per symptom (0–10)</li>
+                  <li>Note if improving vs worsening</li>
+                </ul>
+              </td>
+              <td class="muted">Many people confuse “random” discomfort with “day-after” patterning; this window makes the curve visible.</td>
+            </tr>
+            <tr>
+              <td><strong>3–7 days</strong><br><span class="muted small">Remainder of week</span></td>
+              <td>
+                <ul>
+                  <li>Does anything recur at the same day/time each cycle?</li>
+                  <li>Sleep quality, training, stress notes</li>
+                  <li>Injection-site reaction notes (if applicable)</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>One “overall week” symptom score (0–10)</li>
+                  <li>Mark “quiet days” vs “spiky days”</li>
+                </ul>
+              </td>
+              <td class="muted">Helps you detect weekly rhythm and reduces the “I felt bad sometime this week” problem.</td>
+            </tr>
+            <tr>
+              <td><strong>Weekly</strong><br><span class="muted small">Review</span></td>
+              <td>
+                <ul>
+                  <li>What changed this week vs last week?</li>
+                  <li>Any missed/late doses or schedule changes</li>
+                  <li>Any new vial/lot, travel, illness, alcohol</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Win/loss note: “better, same, worse”</li>
+                  <li>Top 1–2 confounders</li>
+                </ul>
+              </td>
+              <td class="muted">Weekly review turns logging into decisions: what stays the same next week so you can learn something.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>What to log (minimum viable fields)</h2>
+        <p class="muted">If you only track 6 things, track these. They solve 90% of “what happened?” questions.</p>
+        <ul>
+          <li><strong>Date + time</strong> (dose/injection)</li>
+          <li><strong>Compound</strong> (what it was)</li>
+          <li><strong>Amount</strong> (as prescribed or as chosen — this page doesn’t advise)</li>
+          <li><strong>Route + site</strong> (if injected) and any site reaction</li>
+          <li><strong>Symptoms + severity</strong> (0–10) and onset time</li>
+          <li><strong>Context notes</strong> (sleep, meals, hydration, training, stress, illness, travel)</li>
+        </ul>
+
+        <h2>How to make your log actually usable</h2>
+        <ul>
+          <li><strong>Write in timestamps, not vibes:</strong> “started 6pm” beats “later”.</li>
+          <li><strong>Log the absence:</strong> “no symptoms today” is valuable data.</li>
+          <li><strong>Don’t change five things at once:</strong> if everything changes, the log can’t teach you anything.</li>
+          <li><strong>Keep one baseline metric:</strong> one daily symptom score or one “overall day” score is enough.</li>
+        </ul>
+      </article>
+
+      <aside class="card">
+        <h2>Use with your tracker setup</h2>
+        <p class="muted">If you want a clean way to store this without spreadsheets, these pages map to a simple logging workflow:</p>
+        <ul>
+          <li><a href="/peptide-dose-log.html">Peptide dose log template</a> (dose/time + notes)</li>
+          <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a> (routine + reminders + rotation)</li>
+          <li><a href="/injection-protocol-tracker.html">Injection protocol tracker</a> (site rotation + consistency)</li>
+        </ul>
+
+        <h3 style="margin-top:16px;">If reconstitution is involved</h3>
+        <p class="muted">Small prep details can matter for troubleshooting. Log them so you don’t have to reconstruct history later.</p>
+        <ul>
+          <li><a href="/peptide-reconstitution-guide.html">Peptide reconstitution guide</a></li>
+          <li><a href="/peptide-reconstitution-calculator.html">Peptide reconstitution calculator</a></li>
+        </ul>
+
+        <div class="note" style="margin-top:16px;">
+          <strong>Best starter workflow:</strong> log the dose/injection, then add a symptom entry only if something changes. This keeps tracking sustainable.
+        </div>
+
+        <div class="ctaRow" style="margin-top:16px;">
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Get Jabbit</a>
+          <a class="btn" style="border:1px solid var(--border); background:#fff; color:var(--brand);" href="/peptide-dose-log.html">Use the dose log</a>
+        </div>
+
+        <h2 style="margin-top:18px;">When to escalate (non‑medical)</h2>
+        <div class="warn">
+          <p style="margin:0 0 8px;"><strong>If symptoms feel severe, sudden, or scary, seek urgent medical care.</strong></p>
+          <p class="muted small" style="margin:0;">This page is for tracking and communication — not for making medical decisions.</p>
+        </div>
+
+        <footer>
+          <span class="pill">Private by default</span>
+          <span class="pill">No account required</span>
+        </footer>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+      <h2>Weekly review prompts (fast, useful)</h2>
+      <ul>
+        <li>Do symptoms cluster in a consistent window (0–24h vs 1–3d)?</li>
+        <li>Did you change anything else the same week (sleep, travel, diet, training, illness)?</li>
+        <li>Do “quiet days” share a pattern you can repeat?</li>
+        <li>Did a new vial/lot or reconstitution batch start this week?</li>
+      </ul>
+      <p class="muted">If you want a structured place for these notes, start with <a href="/peptide-protocol-tracker.html">the peptide protocol tracker</a> and keep your timeline alongside your dose history.</p>
+    </section>
+
+    <footer class="muted small">
+      <p><strong>Disclaimer:</strong> Educational only. This page does not diagnose, treat, cure, or prevent any disease. It does not provide dosing instructions.</p>
+      <p>App Store: <a href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Jabbit — Peptide Tracker</a>.</p>
+    </footer>
+  </main>
+
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+      <li><a href="/peptide-dose-log.html">Peptide dose log template</a></li>
+      <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></li>
+      <li><a href="/peptide-reconstitution-guide.html">Peptide reconstitution guide</a></li>
+      <li><a href="/injection-site-rotation-science.html">Injection site rotation science</a></li>
+    </ul>
+  </section>
+</body>
+</html>
