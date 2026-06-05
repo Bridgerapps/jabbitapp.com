@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-04-28T13:36:54Z",
+  "updated": "2026-06-05T20:58:03Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1207,6 +1207,23 @@
       ]
     },
     {
+      "file": "semaglutide-side-effect-timeline.html",
+      "links": [
+        {
+          "href": "/semaglutide-injection-tracker.html",
+          "text": "Semaglutide injection tracker (dose history + reminders)"
+        },
+        {
+          "href": "/semaglutide-missed-dose-tracker.html",
+          "text": "Semaglutide missed dose tracker (what to log if the week shifts)"
+        },
+        {
+          "href": "/glp1-stress-anxiety-hrv-guide.html",
+          "text": "GLP-1 stress, anxiety, and HRV guide (when symptoms feel more autonomic)"
+        }
+      ]
+    },
+    {
       "file": "semaglutide-vs-tirzepatide.html",
       "links": [
         {
@@ -1424,6 +1441,1285 @@
         {
           "href": "/guides/",
           "text": "Guides hub (practical organizing workflows)"
+        }
+      ]
+    },
+    {
+      "file": "glp-1-side-effect-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-alcohol-craving-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-dose-timing-morning-vs-night.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-low-hrv-after-injection.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-nausea-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "mounjaro-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "mounjaro-side-effect-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "mounjaro-side-effect-timeline.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "ozempic-dose-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "ozempic-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "ozempic-side-effect-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "ozempic-side-effect-timeline.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-appetite-energy-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-batch-lot-vendor-notes-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-dose-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-morning-vs-night-injection-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-protocol-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-recovery-sleep-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-routine-drift-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-side-effect-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-side-effect-timeline.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "peptide-space-hub.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/peptide-reconstitution-guide.html",
+          "text": "Peptide reconstitution guide (step-by-step)"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage & stability guide (what matters)"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-constipation-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-constipation-guide.html",
+          "text": "GLP-1 constipation guide (practical relief + red flags)"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-injection-reminder-app.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-injection-reminder.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-side-effects-timeline.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-anxiety-hrv-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "tirzepatide-anxiety-hrv-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "tirzepatide-injection-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide (rotation + logging)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        }
+      ]
+    },
+    {
+      "file": "tirzepatide-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "tirzepatide-side-effect-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "tirzepatide-side-effect-timeline.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "wegovy-anxiety-hrv-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "wegovy-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "wegovy-side-effect-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "wegovy-side-effect-timeline.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "zepbound-anxiety-hrv-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "zepbound-dose-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "zepbound-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "zepbound-side-effect-log.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "zepbound-side-effect-timeline.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "gambling-urge-tracker-glp1.html",
+      "links": [
+        {
+          "href": "/glp1-alcohol-craving-tracker.html",
+          "text": "Alcohol craving tracker (log urges, sleep, stress, and GLP-1 context)"
+        },
+        {
+          "href": "/glp1-stress-anxiety-hrv-guide.html",
+          "text": "GLP-1 stress, anxiety, and HRV guide"
+        },
+        {
+          "href": "/injection-protocol-tracker.html",
+          "text": "Protocol tracker (keep structured private notes)"
+        }
+      ]
+    },
+    {
+      "file": "life-extension-protocol-tracker.html",
+      "links": [
+        {
+          "href": "/peptide-protocol-tracker.html",
+          "text": "Peptide protocol tracker (routine, timing, and notes)"
+        },
+        {
+          "href": "/peptide-dose-log.html",
+          "text": "Peptide dose log (track what changed and when)"
+        },
+        {
+          "href": "/glp1-stress-hrv-guide.html",
+          "text": "GLP-1 stress and HRV guide (recovery signals to log)"
+        }
+      ]
+    },
+    {
+      "file": "transition-off-glp1-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-missed-dose-tracker.html",
+          "text": "GLP-1 missed-dose tracker (keep the medication timeline clear)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedule guide (reference for what changed)"
+        },
+        {
+          "href": "/glp1-injection-reminder-app.html",
+          "text": "GLP-1 reminder app (maintain a reliable routine)"
+        }
+      ]
+    },
+    {
+      "file": "cagrilintide-dosing-schedule.html",
+      "links": [
+        {
+          "href": "/cagrilintide-tracker.html",
+          "text": "Cagrilintide tracker (log dose timing and notes)"
+        },
+        {
+          "href": "/cagrilintide-missed-dose-tracker.html",
+          "text": "Cagrilintide missed-dose tracker"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Injection tracker (private routine log)"
+        }
+      ]
+    },
+    {
+      "file": "cagrilintide-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/cagrilintide-tracker.html",
+          "text": "Cagrilintide tracker (keep a clean timeline)"
+        },
+        {
+          "href": "/cagrilintide-dosing-schedule.html",
+          "text": "Cagrilintide dosing schedule guide"
+        },
+        {
+          "href": "/glp1-missed-dose-tracker.html",
+          "text": "GLP-1 missed-dose tracker"
+        }
+      ]
+    },
+    {
+      "file": "cagrilintide-tracker.html",
+      "links": [
+        {
+          "href": "/cagrilintide-dosing-schedule.html",
+          "text": "Cagrilintide dosing schedule guide"
+        },
+        {
+          "href": "/cagrilintide-missed-dose-tracker.html",
+          "text": "Cagrilintide missed-dose tracker"
+        },
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "Injection tracker (private routine log)"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-dose-log.html",
+      "links": [
+        {
+          "href": "/retatrutide-tracker.html",
+          "text": "Retatrutide tracker (dose, symptoms, and notes)"
+        },
+        {
+          "href": "/retatrutide-dosing-schedule.html",
+          "text": "Retatrutide dosing schedule guide"
+        },
+        {
+          "href": "/retatrutide-missed-dose-tracker.html",
+          "text": "Retatrutide missed-dose tracker"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-dose-timing-morning-vs-night.html",
+      "links": [
+        {
+          "href": "/retatrutide-dose-log.html",
+          "text": "Retatrutide dose log"
+        },
+        {
+          "href": "/retatrutide-tracker.html",
+          "text": "Retatrutide tracker"
+        },
+        {
+          "href": "/retatrutide-side-effect-timeline.html",
+          "text": "Retatrutide side-effect timeline"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-dosing-schedule.html",
+      "links": [
+        {
+          "href": "/retatrutide-dose-log.html",
+          "text": "Retatrutide dose log"
+        },
+        {
+          "href": "/retatrutide-missed-dose-tracker.html",
+          "text": "Retatrutide missed-dose tracker"
+        },
+        {
+          "href": "/retatrutide-injection-tracker.html",
+          "text": "Retatrutide injection tracker"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-missed-dose-tracker.html",
+      "links": [
+        {
+          "href": "/retatrutide-dosing-schedule.html",
+          "text": "Retatrutide dosing schedule guide"
+        },
+        {
+          "href": "/retatrutide-dose-log.html",
+          "text": "Retatrutide dose log"
+        },
+        {
+          "href": "/retatrutide-tracker.html",
+          "text": "Retatrutide tracker"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-nausea-tracker.html",
+      "links": [
+        {
+          "href": "/retatrutide-side-effect-timeline.html",
+          "text": "Retatrutide side-effect timeline"
+        },
+        {
+          "href": "/retatrutide-dose-log.html",
+          "text": "Retatrutide dose log"
+        },
+        {
+          "href": "/glp1-nausea-tracker.html",
+          "text": "GLP-1 nausea tracker"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-protocol-tracker.html",
+      "links": [
+        {
+          "href": "/retatrutide-tracker.html",
+          "text": "Retatrutide tracker"
+        },
+        {
+          "href": "/retatrutide-dose-log.html",
+          "text": "Retatrutide dose log"
+        },
+        {
+          "href": "/peptide-protocol-tracker.html",
+          "text": "Peptide protocol tracker"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-side-effect-log.html",
+      "links": [
+        {
+          "href": "/retatrutide-side-effect-timeline.html",
+          "text": "Retatrutide side-effect timeline"
+        },
+        {
+          "href": "/retatrutide-dose-log.html",
+          "text": "Retatrutide dose log"
+        },
+        {
+          "href": "/glp-1-side-effect-log.html",
+          "text": "GLP-1 side-effect log"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-side-effect-timeline.html",
+      "links": [
+        {
+          "href": "/retatrutide-side-effect-log.html",
+          "text": "Retatrutide side-effect log"
+        },
+        {
+          "href": "/retatrutide-nausea-tracker.html",
+          "text": "Retatrutide nausea tracker"
+        },
+        {
+          "href": "/retatrutide-constipation-tracker.html",
+          "text": "Retatrutide constipation tracker"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-storage-stability-guide.html",
+      "links": [
+        {
+          "href": "/retatrutide-tracker.html",
+          "text": "Retatrutide tracker"
+        },
+        {
+          "href": "/peptide-storage-stability-guide.html",
+          "text": "Peptide storage and stability guide"
+        },
+        {
+          "href": "/peptide-batch-lot-vendor-notes-log.html",
+          "text": "Peptide batch, lot, and vendor notes log"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-timeline.html",
+      "links": [
+        {
+          "href": "/retatrutide-side-effect-timeline.html",
+          "text": "Retatrutide side-effect timeline"
+        },
+        {
+          "href": "/retatrutide-dose-log.html",
+          "text": "Retatrutide dose log"
+        },
+        {
+          "href": "/retatrutide-what-to-track.html",
+          "text": "Retatrutide: what to track"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-tracker.html",
+      "links": [
+        {
+          "href": "/retatrutide-dose-log.html",
+          "text": "Retatrutide dose log"
+        },
+        {
+          "href": "/retatrutide-injection-tracker.html",
+          "text": "Retatrutide injection tracker"
+        },
+        {
+          "href": "/retatrutide-what-to-track.html",
+          "text": "Retatrutide: what to track"
+        }
+      ]
+    },
+    {
+      "file": "retatrutide-what-to-track.html",
+      "links": [
+        {
+          "href": "/retatrutide-tracker.html",
+          "text": "Retatrutide tracker"
+        },
+        {
+          "href": "/retatrutide-side-effect-timeline.html",
+          "text": "Retatrutide side-effect timeline"
+        },
+        {
+          "href": "/retatrutide-dose-log.html",
+          "text": "Retatrutide dose log"
+        }
+      ]
+    },
+    {
+      "file": "glp1-anhedonia-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-craving-timeline.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-low-libido-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-mood-impulse-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-alcohol-cravings.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "stopping-zepbound-mounjaro-maintenance.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "what-happens-when-you-stop-wegovy.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "biological-age-test-tracker.html",
+      "links": [
+        {
+          "href": "/longevity-biomarker-tracker.html",
+          "text": "Longevity biomarker tracker (labs, HRV, sleep, and protocol context)"
+        },
+        {
+          "href": "/life-extension-protocol-tracker.html",
+          "text": "Life extension protocol tracker"
+        },
+        {
+          "href": "/peptide-protocol-tracker.html",
+          "text": "Peptide protocol tracker"
+        }
+      ]
+    },
+    {
+      "file": "longevity-biomarker-tracker.html",
+      "links": [
+        {
+          "href": "/biological-age-test-tracker.html",
+          "text": "Biological age test tracker"
+        },
+        {
+          "href": "/life-extension-protocol-tracker.html",
+          "text": "Life extension protocol tracker"
+        },
+        {
+          "href": "/glp1-stress-hrv-guide.html",
+          "text": "GLP-1 stress and HRV guide"
+        }
+      ]
+    },
+    {
+      "file": "weight-maintenance-after-stopping-glp1.html",
+      "links": [
+        {
+          "href": "/transition-off-glp1-tracker.html",
+          "text": "Transition off GLP-1 tracker"
+        },
+        {
+          "href": "/what-happens-when-you-stop-wegovy.html",
+          "text": "What happens when you stop Wegovy?"
+        },
+        {
+          "href": "/stopping-zepbound-mounjaro-maintenance.html",
+          "text": "Stopping Zepbound or Mounjaro maintenance tracker"
+        }
+      ]
+    },
+    {
+      "file": "glp1-food-enjoyment-anhedonia.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "glp1-longevity-labs-tracker.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "semaglutide-sexual-side-effects.html",
+      "links": [
+        {
+          "href": "/glp1-injection-tracker.html",
+          "text": "GLP-1 injection tracker (log doses + reminders)"
+        },
+        {
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide (what to expect + when to call)"
+        },
+        {
+          "href": "/glp1-dosing-schedule.html",
+          "text": "GLP-1 dosing schedules (reference for what to log)"
+        }
+      ]
+    },
+    {
+      "file": "appetite-coming-back-after-glp1.html",
+      "links": [
+        {
+          "href": "/transition-off-glp1-tracker.html",
+          "text": "Transition off GLP-1 tracker"
+        },
+        {
+          "href": "/weight-maintenance-after-stopping-glp1.html",
+          "text": "Weight maintenance after stopping GLP-1s"
+        },
+        {
+          "href": "/glp1-craving-timeline.html",
+          "text": "GLP-1 craving timeline"
+        }
+      ]
+    },
+    {
+      "file": "tapering-off-glp1-evidence.html",
+      "links": [
+        {
+          "href": "/transition-off-glp1-tracker.html",
+          "text": "Transition off GLP-1 tracker"
+        },
+        {
+          "href": "/appetite-coming-back-after-glp1.html",
+          "text": "Appetite coming back after GLP-1s"
+        },
+        {
+          "href": "/what-happens-when-you-stop-wegovy.html",
+          "text": "What happens when you stop Wegovy?"
         }
       ]
     }
