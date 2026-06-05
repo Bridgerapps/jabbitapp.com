@@ -508,6 +508,32 @@ else
     > "$SYSTEMS_FILE"
 fi
 
+# Refresh repo-state fields that older status files may already contain.
+# These used to be preserved without being updated, which left stale
+# site_repo_detached/site_repo_dirty values after repo cleanup.
+if git -C "$WORKSPACE" rev-parse --git-dir >/dev/null 2>&1; then
+  SITE_REPO_BRANCH="$(git -C "$WORKSPACE" rev-parse --abbrev-ref HEAD 2>/dev/null || echo UNKNOWN)"
+  if [ "$SITE_REPO_BRANCH" = "HEAD" ]; then
+    SITE_REPO_DETACHED=true
+    SITE_REPO_BRANCH="DETACHED"
+  else
+    SITE_REPO_DETACHED=false
+  fi
+  SITE_REPO_DIRTY=false
+  if ! git -C "$WORKSPACE" diff --quiet 2>/dev/null; then SITE_REPO_DIRTY=true; fi
+  if ! git -C "$WORKSPACE" diff --cached --quiet 2>/dev/null; then SITE_REPO_DIRTY=true; fi
+  if [ -n "$(git -C "$WORKSPACE" ls-files --others --exclude-standard 2>/dev/null | head -1 || true)" ]; then SITE_REPO_DIRTY=true; fi
+
+  jq \
+    --arg site_repo_branch "$SITE_REPO_BRANCH" \
+    --argjson site_repo_detached "$SITE_REPO_DETACHED" \
+    --argjson site_repo_dirty "$SITE_REPO_DIRTY" \
+    '.site_repo_branch=$site_repo_branch
+     | .site_repo_detached=$site_repo_detached
+     | .site_repo_dirty=$site_repo_dirty' \
+    "$SYSTEMS_FILE" > "$SYSTEMS_FILE.tmp" && mv "$SYSTEMS_FILE.tmp" "$SYSTEMS_FILE"
+fi
+
 # Alert if issues found
 if [ ${#ISSUES[@]} -gt 0 ]; then
     echo ""
