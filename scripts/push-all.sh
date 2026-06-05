@@ -53,6 +53,20 @@ push_repo() {
   read -r behind ahead < <(git -C "$repo" rev-list --left-right --count "${upstream}...HEAD" 2>/dev/null || echo "0 0")
 
   if [ "${behind:-0}" -gt 0 ] 2>/dev/null; then
+    # This workspace currently has a self-nested checkout: root and
+    # jabbitapp.com share the same remote, while root records jabbitapp.com
+    # as a gitlink. After root pushes the pointer commit, the nested checkout
+    # is naturally "behind" that pointer commit even when it is exactly at the
+    # commit root records. Treat that state as clean and non-pushable.
+    if [ "$name" = "jabbitapp.com" ] && [ "${ahead:-0}" -eq 0 ] 2>/dev/null; then
+      local recorded head
+      recorded="$(git -C "$WS" ls-tree HEAD jabbitapp.com 2>/dev/null | awk '{print $3}')"
+      head="$(git -C "$repo" rev-parse HEAD 2>/dev/null || true)"
+      if [ -n "$recorded" ] && [ "$recorded" = "$head" ]; then
+        say "$name: at root-recorded commit ($head); upstream pointer is newer, nothing to push"
+        return 0
+      fi
+    fi
     die "$name is behind upstream by $behind commit(s) (pull/rebase first)"
   fi
 

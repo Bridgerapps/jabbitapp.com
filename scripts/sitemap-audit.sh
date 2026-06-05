@@ -35,9 +35,12 @@ mapfile -t LOC_FILES < <(grep -oE '<loc>[^<]+' "$SITEMAP" \
 mapfile -t HTML_FILES < <(find "$SITE_DIR" -maxdepth 1 -type f -name '*.html' -printf '%f\n' | sort -u)
 
 # Compute missing/extra
+loc_blob="$(printf '%s\n' "${LOC_FILES[@]}")"
+html_blob="$(printf '%s\n' "${HTML_FILES[@]}")"
+
 missing=()
 for f in "${HTML_FILES[@]}"; do
-  if ! printf '%s\n' "${LOC_FILES[@]}" | grep -qx "$f"; then
+  if ! grep -Fxq -- "$f" <<< "$loc_blob"; then
     missing+=("$f")
   fi
 done
@@ -45,7 +48,7 @@ done
 extra=()
 for f in "${LOC_FILES[@]}"; do
   [ -z "$f" ] && continue
-  if ! printf '%s\n' "${HTML_FILES[@]}" | grep -qx "$f"; then
+  if ! grep -Fxq -- "$f" <<< "$html_blob"; then
     extra+=("$f")
   fi
 done
