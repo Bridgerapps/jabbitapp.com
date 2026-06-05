@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLP-1 Low HRV After Injection: What to Track, What It May Mean | Jabbit</title>
+  <meta name="description" content="Seeing lower HRV after a GLP-1 injection? This practical Jabbit guide shows what to log after the shot, how to separate dose patterns from sleep, hydration, and under-fueling, and when to escalate unusual symptoms." />
+  <meta name="keywords" content="GLP-1 low HRV after injection, low HRV semaglutide, low HRV tirzepatide, HRV after Wegovy injection, HRV after Zepbound shot, GLP-1 wearable changes, GLP-1 stress tracker" />
+  <link rel="canonical" href="https://jabbitapp.com/glp1-low-hrv-after-injection.html" />
+
+  <style>
+    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#2563eb; --brand2:#1d4ed8; --soft:#eff6ff; --border:#e2e8f0; --warn:#f97316; --warnbg:#fff7ed; --good:#0f766e; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+    a{ color:var(--brand2); }
+    .wrap{ max-width:940px; margin:0 auto; padding:28px 18px 56px; }
+    .hero{ background:linear-gradient(135deg,#0f172a 0%,#1d4ed8 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 12px 32px rgba(15,23,42,.16); }
+    .eyebrow{ display:inline-block; padding:5px 10px; border-radius:999px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); font-size:.84rem; }
+    .hero h1{ margin:12px 0 10px; font-size:2.2rem; line-height:1.15; }
+    .hero p{ margin:0; color:rgba(255,255,255,.92); font-size:1.05rem; }
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; font-weight:800; text-decoration:none; border:1px solid transparent; }
+    .btnPrimary{ background:#fff; color:#0f172a; }
+    .btnGhost{ background:transparent; color:#fff; border-color:rgba(255,255,255,.35); }
+    .btnGhost:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
+    .heroProof{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:16px; }
+    .heroProof div{ background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:10px 12px; }
+    .heroProof strong{ display:block; color:#fff; font-size:.98rem; }
+    .heroProof span{ color:rgba(255,255,255,.84); font-size:.92rem; }
+    .small{ margin-top:12px; font-size:.93rem; color:rgba(255,255,255,.88); }
+    .grid{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; }
+    @media(min-width:900px){ .grid{ grid-template-columns:1.2fr .8fr; } }
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
+    h2{ margin:18px 0 10px; font-size:1.35rem; }
+    h3{ margin:14px 0 8px; font-size:1.08rem; }
+    p{ margin:0 0 12px; }
+    ul{ margin:8px 0 14px 20px; }
+    li{ margin-bottom:8px; }
+    .note{ background:var(--soft); border-left:4px solid var(--brand); padding:12px; border-radius:10px; margin:14px 0; }
+    .warning{ background:var(--warnbg); border-left:4px solid var(--warn); padding:12px; border-radius:10px; margin:14px 0; }
+    .muted{ color:var(--muted); }
+    .trackerGrid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:12px; }
+    .trackerCard{ display:block; background:#f8fafc; border:1px solid var(--border); border-radius:12px; padding:14px; text-decoration:none; color:inherit; }
+    .trackerCard:hover{ border-color:#93c5fd; text-decoration:none; }
+    .trackerCard strong{ display:block; margin-bottom:4px; color:#111827; }
+    table{ width:100%; border-collapse:collapse; margin-top:10px; }
+    th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
+    th{ background:#f1f5f9; }
+    dl.faq{ margin:0; }
+    dl.faq dt{ font-weight:800; margin-top:12px; }
+    dl.faq dd{ margin:6px 0 0; color:var(--muted); }
+    .cta{ background:linear-gradient(135deg,var(--good) 0%,#115e59 100%); color:#fff; border-radius:16px; padding:22px 20px; margin-top:18px; }
+    .cta h2{ margin-top:0; color:#fff; }
+    .cta p{ color:rgba(255,255,255,.92); }
+    .cta a{ color:#fff; font-weight:800; }
+    footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
+  </style>
+
+  <script type="application/ld+json" id="faq-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is low HRV after a GLP-1 injection always a medication problem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Lower HRV can reflect sleep loss, dehydration, illness, alcohol, hard training, more stress, or eating much less than usual. Look at repeated patterns across several dose weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I log if HRV drops after injection day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Log injection timing, dose, resting heart rate, HRV trend, sleep, hydration, food intake, caffeine, GI symptoms, and a simple stress note. That makes the timeline more interpretable later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Jabbit diagnose what caused the HRV drop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Jabbit is for organizing the week so you can see whether there is a real pattern worth discussing. It is not a medical device or diagnosis tool."
+      }
+    }
+  ]
+}
+</script>
+<script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">High-intent GLP-1 tracker query</span>
+      <h1>Low HRV after a GLP-1 injection: how to track the pattern without overreacting</h1>
+      <p>If your wearable shows lower HRV the day after a semaglutide or tirzepatide shot, the useful question is not "is this normal?" in isolation. It is whether the drop repeats across dose weeks, and what else was happening in the same window.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_low_hrv_after_injection_top" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/glp1-injection-tracker.html" data-track-internal="glp1_low_hrv_after_injection_hero_tracker">Open the GLP-1 injection tracker</a>
+      </div>
+      <div class="heroProof">
+        <div><strong>Shot timing + HRV</strong><span>Keep injection day next to your wearable trend</span></div>
+        <div><strong>Context tags</strong><span>Sleep, hydration, food intake, caffeine, GI symptoms</span></div>
+        <div><strong>Week-to-week comparison</strong><span>Separate one bad reading from a repeatable pattern</span></div>
+      </div>
+      <p class="small">Educational only. Jabbit is a private tracking workflow, not a diagnosis or treatment tool.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="note">
+          <strong>Best fit for Jabbit:</strong> this query usually comes from people trying to connect an injection event to a wearable change. That is a tracking problem first. Jabbit is useful here because it keeps dose timing, symptoms, and context in the same timeline.
+        </div>
+
+        <h2>What low HRV after injection can and cannot tell you</h2>
+        <p class="muted">A lower HRV reading after a GLP-1 shot does not automatically mean the medication is harming you. HRV is noisy. It often falls when recovery is strained, sleep is worse, intake is lower, hydration slips, or GI symptoms stack on top of normal life stress.</p>
+        <p class="muted">What matters more is whether the same pattern shows up across multiple injection weeks, especially after dose increases or harder side-effect weeks.</p>
+
+        <div class="warning">
+          <strong>Use trend logic, not single-reading logic:</strong> if you are only reacting to one morning score, you will usually over-interpret the data. Compare 2-4 weeks, not one rough day.
+        </div>
+
+        <h2>What to log right after the shot</h2>
+        <ul>
+          <li><strong>Injection date and exact time</strong> so you can line up the first 24-72 hours cleanly</li>
+          <li><strong>Dose level and whether it changed</strong> because escalation weeks often create noisier patterns</li>
+          <li><strong>HRV trend and resting heart rate</strong> using your own baseline, not someone else’s</li>
+          <li><strong>Sleep quality and duration</strong> because bad sleep can drag HRV down fast</li>
+          <li><strong>Hydration and food intake</strong> especially if nausea or low appetite followed the shot</li>
+          <li><strong>Caffeine, alcohol, illness, travel, or hard training</strong> because they can dominate the signal</li>
+          <li><strong>GI symptoms and stress notes</strong> so the wearable pattern has context attached</li>
+        </ul>
+
+        <h2>Simple low-HRV-after-injection template</h2>
+        <p class="muted">Keep it factual. The point is to make the week readable later.</p>
+        <table aria-label="Low HRV after injection tracking template">
+          <thead>
+            <tr>
+              <th style="width:14%">Window</th>
+              <th style="width:18%">Dose timing</th>
+              <th style="width:15%">HRV / RHR</th>
+              <th style="width:16%">Symptoms</th>
+              <th>Context tags</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pre-shot</td>
+              <td>Baseline dose plan</td>
+              <td>Normal baseline</td>
+              <td>How you felt before injection</td>
+              <td>Sleep, stress, workout load</td>
+            </tr>
+            <tr>
+              <td>Day 0-1</td>
+              <td>Actual shot time</td>
+              <td>Any HRV drop? RHR up?</td>
+              <td>Nausea, jittery, wired, calm, none</td>
+              <td>Hydration, calories, caffeine, GI issues</td>
+            </tr>
+            <tr>
+              <td>Day 2-3</td>
+              <td>On schedule?</td>
+              <td>Recovering or still low?</td>
+              <td>Stress score 0-10</td>
+              <td>Sleep debt, work stress, illness</td>
+            </tr>
+            <tr>
+              <td>Day 4-7</td>
+              <td>Next shot approaching</td>
+              <td>Back to baseline?</td>
+              <td>Appetite, energy, recovery</td>
+              <td>Travel, alcohol, late meals, exercise</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>How to read the pattern without fooling yourself</h2>
+        <ul>
+          <li><strong>Compare the same window each week.</strong> Day 1 after injection is more useful than comparing random mornings.</li>
+          <li><strong>Mark dose changes clearly.</strong> If the dose went up, treat that week as its own context.</li>
+          <li><strong>Separate low HRV from low intake.</strong> If appetite crashed and you barely ate or drank, the wearable change may be broader recovery stress, not a clean medication effect.</li>
+          <li><strong>Tag schedule drift.</strong> If the shot was late, skipped, or restarted, use the <a href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_low_hrv_after_injection_missed_dose">missed-dose tracker</a> so the week still makes sense later.</li>
+        </ul>
+
+        <h2>Choose the tracker path that matches the question</h2>
+        <div class="trackerGrid">
+          <a class="trackerCard" href="/glp-1-side-effect-log.html" data-track-internal="glp1_low_hrv_after_injection_side_effect_log">
+            <strong>GLP-1 side-effect log</strong>
+            <span>Best if the HRV change sits next to nausea, reflux, constipation, or a wired feeling.</span>
+          </a>
+          <a class="trackerCard" href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_low_hrv_after_injection_cluster_guide">
+            <strong>Stress, anxiety, and HRV guide</strong>
+            <span>Use this if the bigger question is whether the week felt more stressed, anxious, or recovery-impaired overall.</span>
+          </a>
+          <a class="trackerCard" href="/wegovy-anxiety-hrv-tracker.html" data-track-internal="glp1_low_hrv_after_injection_wegovy">
+            <strong>Wegovy-specific page</strong>
+            <span>Better fit if you want the semaglutide-branded version of this same tracking problem.</span>
+          </a>
+          <a class="trackerCard" href="/tirzepatide-anxiety-hrv-tracker.html" data-track-internal="glp1_low_hrv_after_injection_tirzepatide">
+            <strong>Tirzepatide-specific page</strong>
+            <span>Use this when the real question is Zepbound or Mounjaro week structure.</span>
+          </a>
+        </div>
+
+        <div class="cta">
+          <h2>Track the shot week, not just the symptom</h2>
+          <p>If this keeps happening after injection day, put the dose, wearable trend, side effects, and context in one place. That is the fastest way to see whether the pattern is real enough to discuss, or just chaotic in retrospect.</p>
+          <p><a href="https://apps.apple.com/app/id6756848719" data-track="glp1_low_hrv_after_injection_bottom" target="_blank" rel="noopener noreferrer">Start tracking in Jabbit</a></p>
+          <p style="margin-top:8px;">Need the entry point first? Use the <a href="/glp1-injection-tracker.html" data-track-internal="glp1_low_hrv_after_injection_bottom_tracker">GLP-1 injection tracker</a>.</p>
+        </div>
+
+        <h2>When to escalate rather than keep self-analyzing</h2>
+        <div class="warning">
+          <strong>Get clinical help promptly</strong> if the pattern comes with chest pain, fainting, severe shortness of breath, inability to keep fluids down, or mental symptoms that feel intense or unsafe.
+        </div>
+        <p class="muted">For less urgent situations, a clean 2-4 week log is often more useful than trying to remember what happened on each dose day. This page is educational only and does not tell you what medication changes to make.</p>
+
+        <h2>FAQ</h2>
+        <dl class="faq">
+          <dt>Is low HRV after a GLP-1 injection always a medication problem?</dt>
+          <dd>No. Lower HRV can reflect sleep loss, dehydration, illness, alcohol, hard training, more stress, or eating much less than usual. Look at repeated patterns across several dose weeks.</dd>
+
+          <dt>What should I log if HRV drops after injection day?</dt>
+          <dd>Log injection timing, dose, resting heart rate, HRV trend, sleep, hydration, food intake, caffeine, GI symptoms, and a simple stress note. That makes the timeline more interpretable later.</dd>
+
+          <dt>Does Jabbit diagnose what caused the HRV drop?</dt>
+          <dd>No. Jabbit is for organizing the week so you can see whether there is a real pattern worth discussing. It is not a medical device or diagnosis tool.</dd>
+        </dl>
+
+        <h2>Sources and evidence anchors</h2>
+        <ul>
+          <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215256s024lbl.pdf" target="_blank" rel="noopener noreferrer">Wegovy (semaglutide) U.S. prescribing information</a></li>
+          <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/209637s025lbl.pdf" target="_blank" rel="noopener noreferrer">Ozempic (semaglutide) U.S. prescribing information</a></li>
+          <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215866s031lbl.pdf" target="_blank" rel="noopener noreferrer">Mounjaro (tirzepatide) U.S. prescribing information</a></li>
+          <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/217806Orig1s020lbl.pdf" target="_blank" rel="noopener noreferrer">Zepbound (tirzepatide) U.S. prescribing information</a></li>
+        </ul>
+      </article>
+
+      <aside class="card">
+        <h2>Quick start</h2>
+        <ul>
+          <li>Log the shot time.</li>
+          <li>Add next-morning HRV and resting HR.</li>
+          <li>Tag hydration, calories, sleep, and GI symptoms.</li>
+          <li>Review after 2-4 weeks, not one dip.</li>
+        </ul>
+
+        <h3>Best paired pages</h3>
+        <ul>
+          <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a></li>
+          <li><a href="/glp-1-side-effect-log.html">GLP-1 side-effect log</a></li>
+          <li><a href="/glp1-stress-hrv-guide.html">GLP-1 stress + HRV quick guide</a></li>
+          <li><a href="/zepbound-anxiety-hrv-tracker.html">Zepbound anxiety + HRV tracker</a></li>
+        </ul>
+
+        <h3>Why this page exists</h3>
+        <p class="muted">People searching this phrase usually want a structured way to compare injection day against wearable fallout. That is closer to Jabbit’s tracking value than broad educational content alone.</p>
+
+        <h3>One-line guardrail</h3>
+        <p class="muted">A lower HRV reading after a shot is a data point, not a conclusion.</p>
+      </aside>
+    </section>
+
+    <footer>
+      <p>© 2026 Jabbit. Educational content only. Not medical advice.</p>
+    </footer>
+  </main>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+    <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (log doses + reminders)</a></li>
+    <li><a href="/glp1-dosing-schedule.html">GLP-1 dosing schedules (reference for what to log)</a></li>
+    <li><a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking guide (rotation + logging)</a></li>
+    </ul>
+  </section>
+</body>
+</html>

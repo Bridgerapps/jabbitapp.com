@@ -86,12 +86,45 @@
             padding: 16px;
             margin-top: 24px;
         }
+        .intent-hub {
+            background: #ffffff;
+            border: 1px solid #dbeafe;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 18px 0 22px;
+            box-shadow: 0 3px 16px rgba(37,99,235,.08);
+        }
+        .intent-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .intent-card {
+            display: block;
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 14px;
+            color: inherit;
+            text-decoration: none;
+        }
+        .intent-card:hover { border-color: #93c5fd; text-decoration: none; }
+        .intent-card strong {
+            display: block;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+        .intent-card span { color: #475569; font-size: 0.95em; }
         footer {
             margin-top: 40px;
             border-top: 1px solid #d1d5db;
             padding-top: 20px;
             color: #6b7280;
             font-size: 0.95rem;
+        }
+        @media (max-width: 760px) {
+            .intent-grid { grid-template-columns: 1fr; }
         }
     </style>
 <script type="application/ld+json" id="faq-jsonld">
@@ -158,6 +191,29 @@
 	    <div class="note">
 	        <strong>Fast start:</strong> use the <a href="/glp1-injection-tracker.html" data-track-internal="glp1_stress_quick_inline_injection_tracker">GLP-1 injection tracker</a> and keep your <a href="/glp1-dosing-schedule.html" data-track-internal="glp1_stress_quick_inline_dosing_schedule">dosing schedule</a> next to your wearable metrics.
 	    </div>
+
+    <div class="intent-hub">
+        <h2>Choose the tracker path that fits the pattern</h2>
+        <p>If this search started because of semaglutide anxiety, a tirzepatide heart-rate shift, or a late shot that muddied the pattern, jump into the tighter tracker page instead of keeping everything in one generic note.</p>
+        <div class="intent-grid">
+            <a class="intent-card" href="/semaglutide-injection-tracker.html" data-track-internal="glp1_stress_quick_intent_semaglutide">
+                <strong>Semaglutide tracker</strong>
+                <span>Best for Ozempic or Wegovy dose timing, resting HR, HRV, and symptom comparisons week to week.</span>
+            </a>
+            <a class="intent-card" href="/tirzepatide-injection-tracker.html" data-track-internal="glp1_stress_quick_intent_tirzepatide">
+                <strong>Tirzepatide tracker</strong>
+                <span>Use this when the question is Zepbound or Mounjaro pattern changes, appetite shifts, and recovery differences.</span>
+            </a>
+            <a class="intent-card" href="/glp-1-side-effect-log.html" data-track-internal="glp1_stress_quick_intent_side_effect_log">
+                <strong>Side-effect log</strong>
+                <span>Better fit if you want symptom severity, onset, and timeline notes attached to each dose week.</span>
+            </a>
+            <a class="intent-card" href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_stress_quick_intent_missed_dose">
+                <strong>Missed-dose tracker</strong>
+                <span>Useful if a late shot, skipped week, or restart made the stress or HRV pattern harder to interpret.</span>
+            </a>
+        </div>
+    </div>
 
     <div class="note">
         <strong>Evidence standard:</strong> this page uses official prescribing information and conservative interpretation of wearable-style trends. Community reports are included as anecdotes only, not proof.
