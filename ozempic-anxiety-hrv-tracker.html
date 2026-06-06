@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ozempic Anxiety, HRV, and Resting Heart Rate Tracker | Jabbit</title>
+  <meta name="description" content="A practical Ozempic anxiety and HRV tracking page: what to log, how to compare resting heart rate and stress patterns after injection, and which Jabbit tracker pages fit best." />
+  <meta name="keywords" content="Ozempic anxiety tracker, Ozempic HRV tracker, Ozempic resting heart rate, anxiety after Ozempic injection, Ozempic symptom log, semaglutide anxiety tracker, Ozempic side effect timeline" />
+  <link rel="canonical" href="https://jabbitapp.com/ozempic-anxiety-hrv-tracker.html" />
+
+  <style>
+    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --brand2:#14b8a6; --border:#e2e8f0; --warn:#f97316; --link:#0f766e; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width:960px; margin:0 auto; padding:28px 18px 60px; }
+    .hero{ background:linear-gradient(135deg,#0f172a 0%,#0b4a44 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 10px 30px rgba(2,6,23,.15); }
+    .hero h1{ margin:0 0 10px; font-size:2.2rem; line-height:1.2; }
+    .hero p{ margin:0; color:rgba(255,255,255,.92); font-size:1.05rem; }
+    .pill{ display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); font-size:.85rem; color:rgba(255,255,255,.95); }
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; font-weight:700; border:1px solid transparent; }
+    .btnPrimary{ background:var(--brand2); color:#062a27; }
+    .btnPrimary:hover{ filter:brightness(.95); text-decoration:none; }
+    .btnGhost{ background:transparent; color:#fff; border-color:rgba(255,255,255,.35); }
+    .btnGhost:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
+    .small{ font-size:.92rem; }
+    .proof{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:16px; }
+    .proof div{ background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:10px 12px; }
+    .proof strong{ display:block; color:#fff; font-size:.98rem; }
+    .proof span{ color:rgba(255,255,255,.82); font-size:.92rem; }
+    .grid{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; }
+    @media(min-width:900px){ .grid{ grid-template-columns:1.2fr .8fr; } }
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
+    h2{ margin:18px 0 10px; font-size:1.35rem; }
+    h3{ margin:14px 0 8px; font-size:1.1rem; }
+    ul{ margin:8px 0 0 18px; }
+    li{ margin-bottom:8px; }
+    .muted{ color:var(--muted); }
+    .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px; border-radius:10px; }
+    .warning{ background:#fff7ed; border-left:4px solid var(--warn); padding:12px; border-radius:10px; }
+    .hub{ background:#f8fafc; border:1px solid var(--border); border-radius:14px; padding:14px; margin-top:16px; }
+    .hub ul{ margin-top:10px; }
+    table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
+    th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
+    th{ background:#f1f5f9; }
+    dl.faq{ margin:0; }
+    dl.faq dt{ font-weight:800; margin-top:12px; }
+    dl.faq dd{ margin:6px 0 0; color:var(--muted); }
+    footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
+  </style>
+
+  <script type="application/ld+json" id="faq-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can Ozempic affect anxiety, resting heart rate, or HRV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some people report changes in anxiety, resting heart rate, or HRV while using Ozempic, especially around dose changes or weeks with poor sleep, low intake, dehydration, or higher stress. Tracking helps separate patterns from guesswork."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is most useful to log after an Ozempic injection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A simple weekly timeline: injection date and time, dose, resting heart rate, HRV trend, anxiety or stress score, sleep quality, hydration, caffeine, and any GI symptoms or unusual schedule changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this a treatment guide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This page is educational and focused on pattern tracking only. For treatment or dosing decisions, follow your prescriber and medication labeling."
+      }
+    }
+  ]
+}
+</script>
+<script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="pill">Drug-specific tracker intent</span>
+      <h1>Ozempic anxiety, HRV, and resting heart rate tracker</h1>
+      <p>If Ozempic weeks keep leaving you asking "was that the injection, the dose increase, poor sleep, or something else?", this page is for building a cleaner pattern log instead of reconstructing it later from memory.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="ozempic_anxiety_hrv_tracker_top" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/ozempic-injection-tracker.html" data-track-internal="ozempic_anxiety_hrv_hero_tracker">Ozempic injection tracker</a>
+      </div>
+      <div class="proof">
+        <div><strong>One timeline</strong><span>Dose, symptoms, sleep, HRV, and context in one place</span></div>
+        <div><strong>Better pattern reading</strong><span>See whether stress changes cluster after injection or across the full week</span></div>
+        <div><strong>Private workflow</strong><span>Keep wearable notes and medication notes together</span></div>
+      </div>
+      <p class="small" style="margin-top:12px; opacity:.9;">Educational only. Not medical advice. Jabbit is a tracking workflow, not a treatment tool.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Why this page exists</h2>
+        <p class="muted">People searching for Ozempic anxiety, higher resting heart rate, or HRV drops are usually trying to answer a practical pattern question: what changed this week, and did it line up with the shot? That is a better fit for Jabbit than broad health curiosity because the useful next step is a cleaner log.</p>
+
+        <div class="note">
+          <strong>Best use case:</strong> pair this page with the <a href="/ozempic-injection-tracker.html" data-track-internal="ozempic_anxiety_hrv_note_injection">Ozempic injection tracker</a> so injection timing, notes, and symptoms stay together instead of getting split across apps.
+        </div>
+
+        <h2>What to track each Ozempic week</h2>
+        <ul>
+          <li><strong>Injection timestamp</strong> and whether the week was on schedule, early, or late</li>
+          <li><strong>Dose level</strong> and whether it was a recent increase or restart week</li>
+          <li><strong>Resting heart rate</strong> trend, especially morning baseline from the same wearable source</li>
+          <li><strong>HRV trend</strong> viewed as a multi-day pattern rather than one noisy reading</li>
+          <li><strong>Anxiety or stress score</strong> using a simple 0-10 daily note</li>
+          <li><strong>Context tags</strong> like poor sleep, low intake, dehydration, caffeine, alcohol, illness, travel, or harder workouts</li>
+          <li><strong>GI symptoms</strong> because nausea, reflux, constipation, or low intake can change how the week feels</li>
+        </ul>
+
+        <div class="warning">
+          <strong>Important framing:</strong> this is a tracking aid, not a diagnosis. The goal is to make the timeline more honest and more useful later, not to treat every wearable change as an Ozempic effect.
+        </div>
+
+        <h2>Simple Ozempic anxiety + HRV log template</h2>
+        <p class="muted">Keep the log factual and repeatable. The boring entries are what make the pattern useful later.</p>
+        <table aria-label="Ozempic anxiety and HRV tracker template">
+          <thead>
+            <tr>
+              <th style="width:14%">Day</th>
+              <th style="width:16%">Injection / dose</th>
+              <th style="width:14%">Resting HR</th>
+              <th style="width:14%">HRV trend</th>
+              <th style="width:12%">Stress 0-10</th>
+              <th>Context notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Day 0</td><td>____________</td><td>____________</td><td>____________</td><td>__</td><td>Sleep, caffeine, hydration, GI symptoms</td></tr>
+            <tr><td>Day 1</td><td>On time / late?</td><td>____________</td><td>____________</td><td>__</td><td>Appetite, nausea, meals, work stress</td></tr>
+            <tr><td>Day 2-3</td><td>Dose stable?</td><td>____________</td><td>____________</td><td>__</td><td>Exercise tolerance, fluids, sleep debt</td></tr>
+            <tr><td>Day 4-7</td><td>Next dose prep</td><td>____________</td><td>____________</td><td>__</td><td>Recovery, appetite rebound, weekly trend</td></tr>
+          </tbody>
+        </table>
+
+        <h2>How to read the week without overfitting</h2>
+        <ul>
+          <li><strong>Look for clusters, not single spikes.</strong> One rough night means less than a repeatable Day 1-2 pattern across multiple weeks.</li>
+          <li><strong>Mark dose changes clearly.</strong> Escalation or restart weeks often create the messiest signal, so they need the cleanest note.</li>
+          <li><strong>Tag confounders.</strong> Poor sleep, under-eating, dehydration, illness, and stimulant sensitivity can dominate HRV and anxiety changes.</li>
+          <li><strong>Separate schedule drift from side effects.</strong> If the injection was late or skipped, use the <a href="/ozempic-missed-dose-tracker.html" data-track-internal="ozempic_anxiety_hrv_missed_dose">Ozempic missed-dose tracker</a> so the week stays interpretable.</li>
+        </ul>
+
+        <div class="hub">
+          <strong>Related tracker paths</strong>
+          <ul>
+            <li><a href="/ozempic-injection-tracker.html" data-track-internal="ozempic_anxiety_hrv_related_injection">Ozempic injection tracker</a> for dose history, reminders, and site rotation notes</li>
+            <li><a href="/ozempic-resting-heart-rate-timeline.html" data-track-internal="ozempic_anxiety_hrv_related_rhr">Ozempic resting heart rate timeline</a> if the main question is wearable trend timing</li>
+            <li><a href="/ozempic-side-effect-log.html" data-track-internal="ozempic_anxiety_hrv_related_log">Ozempic side effect log</a> if the week is more about symptoms than wearables</li>
+            <li><a href="/ozempic-side-effect-timeline.html" data-track-internal="ozempic_anxiety_hrv_related_timeline">Ozempic side effect timeline</a> for a broader week-by-week symptom view</li>
+            <li><a href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="ozempic_anxiety_hrv_related_glp1">GLP-1 stress, anxiety, and HRV guide</a> for the broader query family that is already pulling traffic</li>
+          </ul>
+        </div>
+
+        <h2>Why this is a strong Jabbit fit</h2>
+        <p class="muted">If your real question is "what changed after the shot?", a reminder-only tool is not enough. Jabbit works better when you need dose timing, notes, symptoms, and context in the same private workflow. That is especially true for Ozempic users trying to compare weeks instead of isolated events.</p>
+
+        <p style="margin-top:16px;">
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="ozempic_anxiety_hrv_tracker_bottom" target="_blank" rel="noopener noreferrer">Track the week in Jabbit</a>
+        </p>
+
+        <h2>FAQ</h2>
+        <dl class="faq">
+          <dt>Can Ozempic affect anxiety, resting heart rate, or HRV?</dt>
+          <dd>Some people report changes in anxiety, resting heart rate, or HRV while using Ozempic, especially around dose changes or weeks with poor sleep, low intake, dehydration, or higher stress. Tracking helps separate patterns from guesswork.</dd>
+
+          <dt>What is most useful to log after an Ozempic injection?</dt>
+          <dd>A simple weekly timeline: injection date and time, dose, resting heart rate, HRV trend, anxiety or stress score, sleep quality, hydration, caffeine, and any GI symptoms or unusual schedule changes.</dd>
+
+          <dt>Is this a treatment guide?</dt>
+          <dd>No. This page is educational and focused on pattern tracking only. For treatment or dosing decisions, follow your prescriber and medication labeling.</dd>
+        </dl>
+      </article>
+
+      <aside class="card">
+        <h2>Quick start</h2>
+        <ul>
+          <li>Log the Ozempic injection date, time, and dose.</li>
+          <li>Add morning resting heart rate and HRV trend from the same wearable source.</li>
+          <li>Use one daily anxiety or stress score, even on calm days.</li>
+          <li>Tag sleep, hydration, caffeine, food intake, illness, travel, and missed-dose weeks.</li>
+        </ul>
+
+        <h3>Use this page when</h3>
+        <p class="muted">Your search includes Ozempic anxiety, HRV drop, resting heart rate up, stress after injection, palpitations, wired feeling, or dose-change timing.</p>
+
+        <h3>Use a different page when</h3>
+        <ul>
+          <li><a href="/ozempic-resting-heart-rate-timeline.html">Ozempic resting heart rate timeline</a> for a heart-rate-first query</li>
+          <li><a href="/ozempic-side-effect-log.html">Ozempic side effect log</a> for broader symptom notes</li>
+          <li><a href="/semaglutide-anxiety-hrv-tracker.html">Semaglutide anxiety and HRV tracker</a> if the molecule matters more than the brand</li>
+        </ul>
+
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="ozempic_anxiety_hrv_tracker_aside" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
+        <p class="small muted">Educational only. Jabbit does not diagnose symptoms or recommend treatment changes.</p>
+      </aside>
+    </section>
+
+    <footer>
+      <p><strong>Keywords this page targets:</strong> Ozempic anxiety tracker, Ozempic HRV tracker, Ozempic resting heart rate, anxiety after Ozempic injection, Ozempic symptom log.</p>
+      <p class="small">Use this page to build the first clean timeline, then move the recurring workflow into Jabbit.</p>
+    </footer>
+  </main>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+      <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (log doses + reminders)</a></li>
+      <li><a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress, anxiety, and HRV guide</a></li>
+      <li><a href="/ozempic-injection-tracker.html">Ozempic injection tracker</a></li>
+    </ul>
+  </section>
+</body>
+</html>
