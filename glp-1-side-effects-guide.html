@@ -1,370 +1,292 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GLP-1 Side Effects: The Complete Survival Guide | Jabbit Blog</title>
-  <meta name="description" content="Nausea, vomiting, GI distress—GLP-1 side effects are real. Here's evidence-based strategies to manage them without giving up on the medication that could change your life.">
-  <link rel="canonical" href="https://jabbitapp.com/blog/glp-1-side-effects-guide">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#f0fdfa',
-              100: '#ccfbf1',
-              200: '#99f6e4',
-              300: '#5eead4',
-              400: '#2dd4bf',
-              500: '#14b8a6',
-              600: '#0d9488',
-              700: '#0f766e',
-              800: '#115e59',
-              900: '#134e4a',
-            }
-          }
-        }
-      }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GLP-1 Side Effect Timeline Hub | Jabbit</title>
+  <meta name="description" content="A practical GLP-1 side effect timeline hub: what to log after each injection, when to use a missed-dose tracker instead, and which drug-specific timeline page fits best." />
+  <meta name="keywords" content="GLP-1 side effect timeline, GLP-1 symptom tracker, GLP-1 side effects guide, Ozempic side effect timeline, Wegovy side effect timeline, tirzepatide side effect tracker, semaglutide symptom timeline" />
+  <link rel="canonical" href="https://jabbitapp.com/glp-1-side-effects-guide.html" />
+  <style>
+    :root{
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#dbe4ee;
+      --brand:#0f766e;
+      --brand-dark:#115e59;
+      --accent:#dcfce7;
+      --warning:#fff7ed;
+      --shadow:0 12px 32px rgba(15,23,42,.08);
     }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(15,118,110,.12), transparent 26%),
+        linear-gradient(180deg, #ecfeff 0%, var(--bg) 220px);
+      line-height:1.65;
+    }
+    a{color:var(--brand-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    .hero{
+      background:linear-gradient(135deg,#0f172a 0%,#0f766e 58%,#115e59 100%);
+      color:#fff;
+      border-radius:28px;
+      padding:30px;
+      box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.14);
+      font-size:.84rem;
+      text-transform:uppercase;
+      letter-spacing:.05em;
+      margin-bottom:12px;
+    }
+    h1{font-size:clamp(2.1rem,4vw,3.4rem);line-height:1.08;margin:0 0 14px}
+    h2{font-size:1.35rem;line-height:1.2;margin:0 0 12px}
+    h3{font-size:1.05rem;line-height:1.25;margin:0 0 8px}
+    p{margin:0 0 14px}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:700;
+      border:1px solid transparent;
+    }
+    .btnPrimary{background:#fff;color:#0f172a}
+    .btnGhost{background:transparent;color:#fff;border-color:rgba(255,255,255,.34)}
+    .small{font-size:.92rem}
+    .muted{color:var(--muted)}
+    .grid{
+      display:grid;
+      grid-template-columns:minmax(0,2fr) minmax(280px,1fr);
+      gap:20px;
+      margin-top:24px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .intentCard{
+      display:block;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);
+      min-height:100%;
+    }
+    .intentCard:hover{
+      text-decoration:none;
+      border-color:#cbd5e1;
+      box-shadow:0 10px 24px rgba(15,23,42,.08);
+    }
+    ul{padding-left:20px;margin:0}
+    li{margin:6px 0}
+    .note,.warning{
+      padding:14px;
+      border-radius:14px;
+      margin:14px 0;
+    }
+    .note{background:var(--accent);border-left:4px solid var(--brand)}
+    .warning{background:var(--warning);border-left:4px solid #c2410c}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      overflow:hidden;
+      background:#fff;
+    }
+    th,td{
+      padding:10px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{background:#f1f5f9}
+    tr:last-child td{border-bottom:none}
+    .linkList a{
+      display:block;
+      padding:11px 12px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      margin-bottom:10px;
+      background:#fff;
+    }
+    .linkList a:hover{text-decoration:none}
+    footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+    @media (max-width: 860px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"GLP-1 Side Effect Timeline Hub | Jabbit",
+    "url":"https://jabbitapp.com/glp-1-side-effects-guide.html",
+    "description":"A practical GLP-1 side effect timeline hub: what to log after each injection, when to use a missed-dose tracker instead, and which drug-specific timeline page fits best.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://jabbitapp.com/"}
+  }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/site.css" />
   <script defer src="/assets/site.js"></script>
 </head>
-<body class="bg-white text-gray-900">
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-6 py-4">
-      <div class="flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3">
-          <div class="w-9 h-9 bg-brand-500 rounded-xl flex items-center justify-center shadow-sm" aria-hidden="true">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <span class="text-xl font-bold tracking-tight">Jabbit</span>
-        </a>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">GLP-1 side effects • timeline hub</div>
+      <h1>GLP-1 side effect timeline hub</h1>
+      <p>This page is for people trying to make sense of side effects without guessing from memory. The useful move is usually not another generic explainer. It is a cleaner timeline: dose day, hours since injection, symptom pattern, and any schedule drift that could have changed the week.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_top" target="_blank" rel="noopener noreferrer">Track side effects in Jabbit</a>
+        <a class="btn btnGhost" href="/glp1-injection-tracker.html">Open the GLP-1 injection tracker</a>
+      </div>
+      <p class="small" style="margin-top:12px;opacity:.9;">Educational only. Jabbit helps you log patterns; it does not tell you what dose to take or when to take it.</p>
+    </section>
 
-        <div class="hidden md:flex items-center space-x-8">
-          <a href="/" class="text-gray-600 hover:text-gray-900 transition">Home</a>
-          <a href="/guides/" class="text-gray-600 hover:text-gray-900 transition">Guides</a>
-          <a href="/privacy/" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
-          <a href="/terms/" class="text-gray-600 hover:text-gray-900 transition">Terms</a>
-          <a href="https://apps.apple.com/app/id6756848719" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600 transition">App Store</a>
+    <section class="grid">
+      <article class="card">
+        <div class="warning">
+          <strong>Not medical advice:</strong> this hub is for organizing your own notes. Severe or fast-worsening symptoms, dehydration, chest pain, fainting, or other urgent concerns are not a tracking-only problem.
         </div>
 
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-gray-900 transition" aria-label="Toggle menu" aria-expanded="false">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
+        <h2>Start with the right page shape</h2>
+        <p class="muted">Queries about side effects usually split into four different jobs. Picking the right one makes the timeline clearer and improves the odds that the page matches what the user actually wants.</p>
+        <table aria-label="GLP-1 side effect page chooser">
+          <thead>
+            <tr>
+              <th>What the user is really asking</th>
+              <th>Best page type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"What changed after this week's injection?"</td>
+              <td>Use a <strong>side-effect timeline</strong>.</td>
+            </tr>
+            <tr>
+              <td>"I was late, skipped, or moved my shot."</td>
+              <td>Use a <strong>missed-dose or routine-change tracker</strong>.</td>
+            </tr>
+            <tr>
+              <td>"I need one place for dose, symptoms, and reminders."</td>
+              <td>Use the <a href="/glp1-injection-tracker.html"><strong>GLP-1 injection tracker</strong></a>.</td>
+            </tr>
+            <tr>
+              <td>"The pattern is anxiety, HRV, stress, or heart rate."</td>
+              <td>Use the <a href="/glp1-stress-anxiety-hrv-guide.html"><strong>stress/anxiety/HRV guide</strong></a> or its drug-specific pages.</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2">
-        <div class="flex flex-col space-y-4">
-          <a href="/" class="text-gray-600 hover:text-gray-900 transition">Home</a>
-          <a href="/guides/" class="text-gray-600 hover:text-gray-900 transition">Guides</a>
-          <a href="/privacy/" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
-          <a href="/terms/" class="text-gray-600 hover:text-gray-900 transition">Terms</a>
-          <a href="https://apps.apple.com/app/id6756848719" class="text-brand-700 font-semibold hover:text-brand-800 transition">App Store</a>
+        <div class="note">
+          <strong>High-signal logging rule:</strong> symptoms are more useful when you record them relative to the last dose. "Nausea on Wednesday" is vague. "Nausea started 18 hours after injection and faded by Day 3" is a pattern.
         </div>
-      </div>
-    </div>
-  </nav>
 
-<!-- Hero Section -->
-  <section class="relative pt-32 pb-16 overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/glp1-side-effects.jpg');"></div>
-    <div class="absolute inset-0 bg-gradient-to-br opacity-80 from-rose-500 via-pink-600 to-purple-700"></div>
-    <div class="absolute inset-0 opacity-10">
-      <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <pattern id="waves1" width="20" height="20" patternUnits="userSpaceOnUse">
-          <path d="M0 10 Q5 5 10 10 T20 10" fill="none" stroke="white" stroke-width="0.5"/>
-        </pattern>
-        <rect width="100" height="100" fill="url(#waves1)"/>
-      </svg>
-    </div>
-    <div class="relative max-w-4xl mx-auto px-6 text-center">
-      <div class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-white/90 text-sm font-medium mb-6">
-        <span class="w-2 h-2 rounded-full bg-pink-300 mr-2"></span>
-        13 min read
-      </div>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-        The GLP-1 Side Effect Survival Guide
-      </h1>
-      <p class="text-xl text-pink-100 max-w-2xl mx-auto mb-8">
-        David almost quit his semaglutide protocol after week 2. Six months later, he'd lost 54 pounds. Here's how he survived the rough start—and how you can too.
-      </p>
-      <div class="flex items-center justify-center space-x-4 text-white/80">
-        <span class="font-medium">Jabbit Team</span>
-        <span>·</span>
-        <span>February 2026</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Article Content -->
-  <article class="max-w-3xl mx-auto px-6 py-12">
-    <p class="text-sm text-gray-600 italic mb-8">This article is for informational purposes only and is not medical advice. Always talk with a licensed healthcare professional before making changes to prescription medications or how you take them.</p>
-
-    <div class="callout callout--brand mb-10">
-      <div class="callout__title">Want a clean timeline for symptoms + doses?</div>
-      <div class="callout__text">
-        Jabbit is a privacy‑first GLP‑1 tracker for iPhone (iCloud sync — no server storing your personal logs). Use it to log dose timing, injection site rotation, and notes you can bring to appointments.
-      </div>
-      <div class="mt-4 flex flex-col sm:flex-row gap-3">
-        <a href="https://apps.apple.com/app/id6756848719" data-track="guide_side_effects_top" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition">
-          Download Jabbit (App Store)
-        </a>
-        <a href="/glp-1-injection-tracking-guide.html" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 font-semibold hover:border-gray-300 transition">
-          Read: Injection tracking guide
-        </a>
-      </div>
-      <div class="mt-3 text-xs text-gray-500">Educational only — not medical advice.</div>
-    </div>
-
-    <!-- Table of Contents -->
-    <div class="bg-brand-50 rounded-2xl p-6 mb-12 border border-brand-100">
-      <h3 class="font-semibold text-gray-900 mb-4">In this guide:</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#story" class="toc-link text-gray-600 hover:text-brand-600 transition">David's Week 2 Crisis</a></li>
-        <li><a href="#why" class="toc-link text-gray-600 hover:text-brand-600 transition">Why GLP-1s Cause Side Effects (The Science)</a></li>
-        <li><a href="#timeline" class="toc-link text-gray-600 hover:text-brand-600 transition">The Side Effect Timeline: What to Expect When</a></li>
-        <li><a href="#strategies" class="toc-link text-gray-600 hover:text-brand-600 transition">Evidence-Based Management Strategies</a></li>
-        <li><a href="#dosing" class="toc-link text-gray-600 hover:text-brand-600 transition">The "Start Low, Go Slow" Doctrine</a></li>
-        <li><a href="#red-flags" class="toc-link text-gray-600 hover:text-brand-600 transition">Red Flags: When to Call Your Doctor</a></li>
-      </ul>
-    </div>
-
-    <div class="prose max-w-none">
-      <p class="text-lg leading-relaxed text-gray-700">
-        David still remembers the morning he nearly quit. It was day 12 of his first semaglutide dose—just 0.25mg, the starter amount everyone said was "barely even a real dose." He'd woken up nauseous, which wasn't new. He'd skipped breakfast, which also wasn't new. But then he tried to eat lunch—a simple turkey sandwich, nothing exotic—and his body rejected it so violently he ended up on his bathroom floor, sweating and shaking, wondering what the hell he'd done to himself.
-      </p>
-
-      <p>
-        He'd read about side effects, of course. Everyone did. The warnings were right there in the medication guide: nausea, vomiting, diarrhea, constipation. But reading about them and experiencing them were different universes. At that moment, face pressed against cool bathroom tile, David was done. He was calling his doctor Monday and stopping this experiment.
-      </p>
-
-      <p>
-        But he didn't. Instead, he made three changes that transformed his experience. Six months later, he'd lost 54 pounds and rated the side effects a "2 out of 10"—manageable, predictable, and absolutely worth the results. Here's what he learned, backed by clinical research, about navigating the GLP-1 side effect gauntlet.
-      </p>
-
-      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 text-sm text-amber-800">
-        <strong>Note:</strong> Names and details have been changed for privacy. Stories are based on common experiences reported by GLP-1 and peptide users in online communities and clinical settings.
-      </div>
-
-      <h2 id="story">Why Side Effects Hit So Hard (And Why They Get Better)</h2>
-
-      <p>
-        David's experience wasn't unusual. In major clinical trials (including STEP and SURMOUNT), gastrointestinal symptoms like nausea, diarrhea, and vomiting were among the most commonly reported side effects. They’re not random—they’re often predictable responses to a drug that changes appetite signaling and digestion.
-      </p>
-
-      <p>
-        The key insight David missed initially: side effects aren't random. They follow predictable patterns based on pharmacokinetics—how the drug builds up in your system, peaks, and clears. Understanding this timeline is the first step to managing it.
-      </p>
-
-      <h2 id="why">The Physiology: What GLP-1s Actually Do to Your Gut</h2>
-
-      <p>
-        GLP-1 receptor agonists work, in part, by slowing gastric emptying—how quickly food leaves your stomach. In studies, semaglutide has been shown to slow this process, which can make a “normal” meal feel uncomfortably heavy. That sandwich David ate? It likely sat in his stomach much longer than he expected, triggering stretch receptors and nausea pathways.
-      </p>
-
-      <p>
-        The drug also affects the brain's vomiting centers and the vagus nerve, which controls gut-brain communication. A 2022 study in <em>Diabetes Care</em> mapped how GLP-1 receptors in the area postrema (the brain's "chemoreceptor trigger zone") mediate nausea. Essentially, your brain thinks you've been poisoned and tries to expel the "toxin."
-      </p>
-
-      <p>
-        The good news? This effect is often dose-dependent and many people develop tolerance over time. As your body adapts to slower gastric emptying, the nausea signal can become less intense. In trials and real-world reports, GI side effects tend to be most noticeable early on (especially during dose increases) and often ease as weeks pass.
-      </p>
-
-      <h2 id="timeline">The Side Effect Timeline: Your Week-by-Week Roadmap</h2>
-
-      <p>
-        David started tracking everything—symptoms, timing, severity, triggers. When he overlaid this with his dosing schedule, a clear pattern emerged. Here's what the data shows:
-      </p>
-
-      <h3>Weeks 1-2: The Honeymoon (Or Not)</h3>
-      <p>
-        At 0.25mg, many people feel minimal effects. The dose is intentionally subtherapeutic—designed to introduce your body to the drug gently. Some feel nothing. Others, like David, find even this small amount triggers significant symptoms. It varies by individual sensitivity, not weakness or failure.
-      </p>
-
-      <h3>Weeks 3-4: The Peak</h3>
-      <p>
-        This is typically the hardest period. You've had multiple doses building up in your system. If you've titrated up to 0.5mg, the stronger dose meets accumulated drug from previous weeks. Serum levels haven't reached steady state yet—they're still climbing. According to pharmacokinetic data, this is when side effects peak for most users.
-      </p>
-
-      <h3>Weeks 5-8: The Adjustment</h3>
-      <p>
-        Side effects begin declining as your body adapts. Many users report a "switch" moment around week 6-7 when things suddenly get easier. This isn't placebo—it's genuine physiological adaptation. Gastric motility partially normalizes, and central nervous system sensitivity decreases.
-      </p>
-
-      <h3>Months 3+: The New Normal</h3>
-      <p>
-        By month 3, most users have minimal side effects. Some have none at all. The medication is working—appetite suppression, weight loss, metabolic improvements—but your body has learned to coexist with it. David rated his side effects "1-2 out of 10" by month 4, with only occasional mild nausea after large meals.
-      </p>
-
-      <h2 id="strategies">Evidence-Based Management Strategies</h2>
-
-      <p>
-        David tried a dozen "hacks" he found online. Most did nothing. A few actually made things worse. But several strategies have legitimate research support:
-      </p>
-
-      <h3>1. The 70% Rule (Portion Control)</h3>
-      <p>
-        The #1 trigger for vomiting on GLP-1s is overeating. Your stomach empties slowly—eating a normal-sized meal overwhelms it. Research in <em>Appetite</em> (2018) found that GLP-1 agonists increased satiety signals, but they didn't eliminate the habit of eating until full.
-      </p>
-
-      <p>
-        David's solution: the 70% rule. One practical approach is to pause when you feel you’re around 70% of your usual portion, wait 1520 minutes, and then decide whether you actually want more. For him, this reduced the “I ate one bite too many” episodes that often triggered vomiting.
-      </p>
-
-      <h3>2. Front-Load Your Protein</h3>
-      <p>
-        Your appetite is highest in the first 24-48 hours after injection, then declines as serum levels peak. Research in <em>The American Journal of Clinical Nutrition</em> (2019) found that protein intake early in GLP-1 treatment predicted long-term success—partially because people could eat more comfortably before appetite suppression peaked.
-      </p>
-
-      <p>
-        David started injecting on Sunday evenings. Monday and Tuesday, when his appetite was still relatively normal, he'd prioritize protein-dense meals. By Wednesday-Thursday, when the appetite suppression hit hardest, he'd already met his protein goals and could coast on lighter fare.
-      </p>
-
-      <h3>3. Identify Your Personal Trigger Foods</h3>
-      <p>
-        High-fat meals are a common trigger. Fat delays gastric emptying even further—and GLP-1s can amplify this effect—so some people notice more nausea after rich or greasy foods.
-      </p>
-
-      <p>
-        But individual triggers vary. David discovered that dairy, not fat, was his nemesis. A cheeseburger was fine; a milkshake was a guaranteed 4-hour nausea marathon. Through careful tracking in Jabbit—logging meals alongside symptom severity—he built a "safe foods" list and a "danger foods" list that was personal to him.
-      </p>
-
-      <h3>4. Time Your Injection Strategically</h3>
-      <p>
-        Most people inject and forget. But timing matters. Your peak side effects typically hit 24-48 hours post-injection—right when serum levels peak. David moved his injection from Sunday morning to Sunday evening. His worst symptom days became Monday-Tuesday, when work kept him busy and distracted. By Friday evening—social dinner time—he felt nearly normal.
-      </p>
-
-      <h3>5. Stay Hydrated, But Smartly</h3>
-      <p>
-        Dehydration worsens nausea, creating a vicious cycle. But drinking large volumes quickly can trigger vomiting when your stomach is already slow. The solution: small, frequent sips throughout the day. David carried a water bottle everywhere and aimed for 2-3 sips every 10 minutes rather than chugging.
-      </p>
-
-      <h3>6. OTC Relief That Actually Works</h3>
-      <p>
-        Ginger has legitimate antiemetic properties. A 2016 meta-analysis in <em>Integrative Medicine Insights</em> found ginger effective for nausea with minimal side effects. David kept ginger chews in his pocket and ginger tea at his desk.
-      </p>
-
-      <p>
-        For more severe symptoms, prescription options exist. Ondansetron (Zofran) is commonly prescribed for GLP-1 nausea, though it can cause constipation—a trade-off. Some providers use proton pump inhibitors for acid reflux symptoms that often accompany GLP-1 use.
-      </p>
-
-      <h2 id="dosing">The "Start Low, Go Slow" Doctrine</h2>
-
-      <p>
-        The FDA-approved titration schedules exist for a reason—but they're minimums, not maximums. Research shows that extending time at each dose level significantly improves tolerability.
-      </p>
-
-      <p>
-        David stayed at 0.25mg for 6 weeks instead of the recommended 4. He only moved up when he'd had a full week with minimal symptoms. This extended timeline added 4 weeks to his journey, but he avoided the escalation of symptoms that causes many people to quit.
-      </p>
-
-      <p>
-        Some retrospective research suggests that slower titration can improve tolerability for some patientsand better tolerability can support better long-term adherence.
-      </p>
-
-      <p>
-        If you're struggling, talk to your doctor about slowing down. There's no prize for reaching 2.4mg fastest. The goal is sustainable, long-term adherence.
-      </p>
-
-      <h2 id="red-flags">Red Flags: When Side Effects Aren't Normal</h2>
-
-      <p>
-        Most GLP-1 side effects are annoying but benign. Some warrant prompt medical evaluation. Consider contacting a clinician or urgent care if you experience:
-      </p>
-
-      <ul>
-        <li><strong>Severe, persistent vomiting</strong> (can't keep fluids down for 24+ hours)</li>
-        <li><strong>Signs of dehydration</strong> (dizziness, dark urine, rapid heartbeat, confusion)</li>
-        <li><strong>Severe abdominal pain</strong> (especially upper right quadrant—potential gallbladder issues)</li>
-        <li><strong>Yellowing of skin/eyes</strong> (potential liver issues)</li>
-        <li><strong>Symptoms of pancreatitis</strong> (severe abdominal pain radiating to back, fever, vomiting)</li>
-      </ul>
-
-      <p>
-        These are uncommon but potentially serious. GLP-1 labels and trial data include warnings about pancreatitis and gallbladder-related issues. If something feels significantly off (especially severe abdominal pain or persistent vomiting), getting evaluated sooner rather than later is the safer move.
-      </p>
-
-      <h2>The Light at the End of the Tunnel</h2>
-
-      <p>
-        David's bathroom floor moment passed. With strategic changes and patience, his side effects became manageable, then minimal, then nearly nonexistent. The 54 pounds he lost transformed his health, energy, and confidence. He'll tell anyone who asks: "The first month sucks. It just does. But it's temporary, and the results are permanent if you stick with it."
-      </p>
-
-      <p>
-        The key is knowing what to expect, having a plan, and tracking everything so you can optimize. Side effects aren't a sign the medication isn't working—they're often a sign it <em>is</em> working, changing your physiology in the ways that drive weight loss. Your job is to navigate the transition period intelligently, with data, strategy, and support.
-      </p>
-
-      <p>
-        You can do hard things. Twelve weeks of discomfort for years of improved health is a trade worth making. Just go in with your eyes open, your strategies ready, and your doctor on speed dial if you need support.
-      </p>
-    </div>
-
-    <!-- CTA Section -->
-    <div class="mt-16 bg-gradient-to-br from-rose-500 to-purple-700 rounded-3xl p-8 md:p-12 text-center text-white">
-      <h3 class="text-2xl md:text-3xl font-bold mb-4">Track Symptoms, Find Patterns</h3>
-      <p class="text-rose-100 text-lg mb-8 max-w-xl mx-auto">
-        Jabbit helps you log side effects alongside your dosing schedule, so you can identify triggers and optimize your protocol.
-      </p>
-      <a href="/#download" class="inline-flex items-center px-8 py-4 bg-white text-rose-600 font-semibold rounded-xl hover:bg-rose-50 transition shadow-lg">
-        Get Jabbit for iOS
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-        </svg>
-      </a>
-    </div>
-  </article>
-
-  <!-- Footer -->
-  <footer class="py-12 px-6 bg-gray-900 text-white mt-16">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-4 gap-8 mb-8">
-        <div class="md:col-span-2">
-          <a href="/" class="flex items-center space-x-3">
-            <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </div>
-            <span class="text-xl font-bold">Jabbit</span>
+        <h2>Choose the timeline page that matches your medication</h2>
+        <div class="cards">
+          <a class="intentCard" href="/semaglutide-side-effect-timeline.html">
+            <strong>Semaglutide side-effect timeline</strong>
+            <p class="muted">For semaglutide users comparing dose day, symptom timing, and week-by-week changes.</p>
           </a>
-          <p class="text-gray-400 mt-4 max-w-md">
-            The complete peptide tracking toolkit for iOS. Private, powerful, and beautifully designed.
-          </p>
+          <a class="intentCard" href="/tirzepatide-side-effect-timeline.html">
+            <strong>Tirzepatide side-effect timeline</strong>
+            <p class="muted">Use when the molecule matters more than the brand label.</p>
+          </a>
+          <a class="intentCard" href="/ozempic-side-effect-timeline.html">
+            <strong>Ozempic side-effect timeline</strong>
+            <p class="muted">Good fit for brand-specific nausea, fatigue, or appetite-pattern queries.</p>
+          </a>
+          <a class="intentCard" href="/wegovy-side-effect-timeline.html">
+            <strong>Wegovy side-effect timeline</strong>
+            <p class="muted">Best for semaglutide users searching by the Wegovy brand.</p>
+          </a>
+          <a class="intentCard" href="/mounjaro-side-effect-timeline.html">
+            <strong>Mounjaro side-effect timeline</strong>
+            <p class="muted">Tighter fit for Mounjaro week-structure and symptom logging.</p>
+          </a>
+          <a class="intentCard" href="/zepbound-side-effect-timeline.html">
+            <strong>Zepbound side-effect timeline</strong>
+            <p class="muted">Use when the week changed after a Zepbound shot and you want a clear symptom record.</p>
+          </a>
+          <a class="intentCard" href="/retatrutide-side-effect-timeline.html">
+            <strong>Retatrutide side-effect timeline</strong>
+            <p class="muted">Secondary peptide cluster for retatrutide-specific timeline intent.</p>
+          </a>
+          <a class="intentCard" href="/peptide-side-effect-timeline.html">
+            <strong>Peptide side-effect timeline</strong>
+            <p class="muted">Broader peptide workflow page when the query is not GLP-1-brand specific.</p>
+          </a>
         </div>
-        <div>
-          <h4 class="font-semibold mb-4">Product</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="/#features" class="hover:text-white transition">Features</a></li>
-            <li><a href="/#pricing" class="hover:text-white transition">Pricing</a></li>
-            <li><a href="/#download" class="hover:text-white transition">Download</a></li>
-            <li><a href="/blog/" class="hover:text-white transition">Blog</a></li>
-          </ul>
+
+        <h2>What to log on a side-effect timeline</h2>
+        <ul>
+          <li><strong>Dose context:</strong> injection date, time, and whether it was a starter week, increase week, restart, or normal repeat.</li>
+          <li><strong>Symptom window:</strong> 0 to 24 hours, 1 to 3 days, and the rest of the week.</li>
+          <li><strong>Pattern modifiers:</strong> sleep debt, meals, hydration, alcohol, travel, exercise load, stress, or illness.</li>
+          <li><strong>Schedule drift:</strong> whether the shot was late, missed, or moved to a different day.</li>
+          <li><strong>Outcome:</strong> improved, stable, worse, or unclear compared with the prior week.</li>
+        </ul>
+
+        <h2>When the real problem is timing, not side effects</h2>
+        <p class="muted">A lot of "side effect" searches are actually schedule-confusion searches. If the week drifted, route into the timing page first so the symptom notes stay interpretable.</p>
+        <ul>
+          <li><a href="/glp1-missed-dose-tracker.html"><strong>GLP-1 missed-dose tracker</strong></a> for broad late or skipped dose intent.</li>
+          <li><a href="/semaglutide-late-dose-routine-change.html"><strong>Semaglutide late-dose routine change</strong></a> when semaglutide timing slipped.</li>
+          <li><a href="/ozempic-changing-injection-day.html"><strong>Ozempic changing injection day</strong></a> for long-term weekday shifts.</li>
+          <li><a href="/wegovy-changing-injection-day.html"><strong>Wegovy changing injection day</strong></a> for semaglutide brand-specific routine moves.</li>
+        </ul>
+
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_bottom" target="_blank" rel="noopener noreferrer">Get Jabbit on the App Store</a></p>
+      </article>
+
+      <aside class="card">
+        <h2>Nearest tracker pages</h2>
+        <div class="linkList">
+          <a href="/glp1-injection-tracker.html"><strong>GLP-1 injection tracker</strong><br /><span class="muted">Dose timestamps, reminders, and one clean place for notes.</span></a>
+          <a href="/glp1-stress-anxiety-hrv-guide.html"><strong>Stress, anxiety, HRV guide</strong><br /><span class="muted">The strongest non-home winner and the right branch for autonomic or wearable-pattern searches.</span></a>
+          <a href="/glp1-missed-dose-tracker.html"><strong>GLP-1 missed-dose tracker</strong><br /><span class="muted">Use when late or skipped timing makes the symptom week hard to read.</span></a>
+          <a href="/peptide-protocol-tracker.html"><strong>Peptide protocol tracker</strong><br /><span class="muted">Best fit when the user is managing a broader protocol instead of one simple weekly shot.</span></a>
         </div>
-        <div>
-          <h4 class="font-semibold mb-4">Legal</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="/privacy/" class="hover:text-white transition">Privacy Policy</a></li>
-            <li><a href="/terms/" class="hover:text-white transition">Terms of Service</a></li>
-            <li><a href="mailto:hello@jabbitapp.com" class="hover:text-white transition">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-        <p>&copy; 2025 Jabbit. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+
+        <h2 style="margin-top:18px;">Why Jabbit fits this intent</h2>
+        <p class="muted">Users searching side-effect timelines usually need private dose history, note-taking, and schedule context in one place. That is a better fit for Jabbit than a generic article because the pattern often depends on timing, not just symptom names.</p>
+        <ul>
+          <li>Track dose day and symptom day together</li>
+          <li>Keep missed-dose weeks from muddying the timeline</li>
+          <li>Review patterns across several injections instead of one bad day</li>
+        </ul>
+
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_sidebar" target="_blank" rel="noopener noreferrer">Download Jabbit</a></p>
+      </aside>
+    </section>
+
+    <footer>
+      <p class="small"><strong>Keywords targeted:</strong> GLP-1 side effect timeline, GLP-1 symptom tracker, GLP-1 side effects guide, side effect timeline after semaglutide or tirzepatide, GLP-1 tracker app.</p>
+      <p class="small">Educational only. No dosing instructions, no prescriptive coaching, and no attempt to diagnose symptoms from a web page.</p>
+    </footer>
+  </main>
   <section id="related-links">
     <h2>Related</h2>
     <ul>
