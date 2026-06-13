@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peptide Protocol Tracker: Log Schedule, Stack, Side Effects, and Missed Doses | Jabbit</title>
-  <meta name="description" content="A practical peptide protocol tracker for logging schedules, stack changes, dose timing, side effects, routine drift, and missed doses. Includes templates plus an iPhone tracker app." />
-  <meta name="keywords" content="peptide protocol tracker, peptide log, peptide stack tracker, peptide schedule tracker, peptide cycle tracker, peptide side effect tracker, peptide missed dose log, peptide tracker app" />
+  <title>Peptide Protocol Tracker: Log Stack, Cycle, Schedule, and Missed Doses | Jabbit</title>
+  <meta name="description" content="A practical peptide protocol tracker for logging stack changes, cycle notes, schedule anchors, side effects, routine drift, and missed doses. Includes templates plus an iPhone tracker app." />
+  <meta name="keywords" content="peptide protocol tracker, peptide stack tracker, peptide cycle tracker, peptide schedule tracker, peptide protocol log, peptide side effect tracker, peptide missed dose log, peptide tracker app" />
   <link rel="canonical" href="https://jabbitapp.com/peptide-protocol-tracker.html" />
   <style>
     :root{
@@ -203,9 +203,9 @@
   {
     "@context":"https://schema.org",
     "@type":"WebPage",
-    "name":"Peptide Protocol Tracker: Log Schedule, Stack, Side Effects, and Missed Doses | Jabbit",
+    "name":"Peptide Protocol Tracker: Log Stack, Cycle, Schedule, and Missed Doses | Jabbit",
     "url":"https://www.jabbitapp.com/peptide-protocol-tracker.html",
-    "description":"A practical peptide protocol tracker for logging schedules, stack changes, dose timing, side effects, routine drift, and missed doses. Includes templates plus an iPhone tracker app.",
+    "description":"A practical peptide protocol tracker for logging stack changes, cycle notes, schedule anchors, side effects, routine drift, and missed doses. Includes templates plus an iPhone tracker app.",
     "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
     "publisher":{"@type":"Organization","name":"Bridger Apps"}
   }
@@ -220,7 +220,15 @@
         "name":"What should a peptide protocol tracker include?",
         "acceptedAnswer":{
           "@type":"Answer",
-          "text":"A high-signal tracker usually includes schedule anchors, exact timestamps, the compound or stack, dose as prescribed, injection site, side effects with timing, routine drift, and missed-dose notes."
+          "text":"A high-signal tracker usually includes schedule anchors, exact timestamps, the compound or stack, cycle or phase notes, dose as prescribed, injection site, side effects with timing, routine drift, and missed-dose notes."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How is a peptide protocol tracker different from a simple dose log?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"A dose log is narrower. A protocol tracker also captures stack changes, cycle notes, missed-dose recovery, symptoms over time, and routine context like sleep, travel, or training."
         }
       },
       {
@@ -238,6 +246,14 @@
           "@type":"Answer",
           "text":"A protocol tracker is more useful when you need schedule history, stack notes, symptom timing, missed-dose context, and freeform observations in one place instead of only a reminder."
         }
+      },
+      {
+        "@type":"Question",
+        "name":"Can this work as a peptide stack tracker or cycle tracker?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes. This page is designed for people who want to keep stack combinations, cycle phases, start and stop dates, and symptom changes in the same timeline."
+        }
       }
     ]
   }
@@ -249,10 +265,10 @@
     <section class="hero">
       <span class="eyebrow">Peptide logging and protocol intent</span>
       <h1>Peptide protocol tracker</h1>
-      <p class="heroIntro">Use this when the real job is not just remembering a shot. It is keeping schedule anchors, stack changes, side-effect timing, missed doses, and routine drift in one clean record you can actually review later.</p>
+      <p class="heroIntro">Use this when the real job is not just remembering a shot. It is keeping stack changes, cycle phases, schedule anchors, side-effect timing, missed doses, and routine drift in one clean record you can actually review later.</p>
       <div class="heroStats">
-        <div><strong>Best for</strong><span>Peptide schedules, stacks, dose notes, and timeline reviews</span></div>
-        <div><strong>High-signal fields</strong><span>Timestamp, compound, side effects, context, and schedule drift</span></div>
+        <div><strong>Best for</strong><span>Peptide schedules, stacks, cycle notes, and timeline reviews</span></div>
+        <div><strong>High-signal fields</strong><span>Timestamp, compound, phase, side effects, context, and schedule drift</span></div>
         <div><strong>Why it fits Jabbit</strong><span>Broader protocol tracking than a reminder-only app like Shotsy</span></div>
       </div>
       <div class="ctaRow">
@@ -266,16 +282,25 @@
     <section class="grid">
       <article class="card">
         <h2>Why a peptide protocol tracker helps</h2>
-        <p class="muted">Most peptide questions are timing questions or context questions. Was the rough day tied to a dose change, a late shot, poor sleep, travel, a second compound, or something else? A protocol tracker is how you stop guessing.</p>
+        <p class="muted">Most peptide questions are timing questions or context questions. Was the rough day tied to a dose change, a late shot, a new stack, a different cycle phase, poor sleep, travel, or something else? A protocol tracker is how you stop guessing.</p>
 
         <div class="note">
-          <strong>Best use case:</strong> use this page when you want one workflow for schedule, stack, side effects, and missed-dose context rather than separate notes scattered across reminders, screenshots, and a generic notes app.
+          <strong>Best use case:</strong> use this page when you want one workflow for schedule, stack, cycle, side effects, and missed-dose context rather than separate notes scattered across reminders, screenshots, and a generic notes app.
+        </div>
+
+        <h2>What this page is really for</h2>
+        <p class="muted">People searching for a peptide protocol tracker usually are not looking for theory. They are trying to keep a protocol readable across weeks: what was taken, what changed, what symptoms showed up, and whether the week stayed on plan. That makes this page a better fit than a plain reminder page.</p>
+        <div class="cards">
+          <a class="intentCard" href="/peptide-dose-log.html" data-track-internal="peptide_protocol_tracker_router_dose_log_top"><strong>Peptide dose log</strong><br /><span class="muted">Use when the main job is exact dose and timestamp history.</span></a>
+          <a class="intentCard" href="/peptide-routine-drift-log.html" data-track-internal="peptide_protocol_tracker_router_routine_top"><strong>Routine drift log</strong><br /><span class="muted">Best when the schedule moved and you want a clean recovery trail.</span></a>
+          <a class="intentCard" href="/retatrutide-protocol-tracker.html" data-track-internal="peptide_protocol_tracker_router_retatrutide_protocol_top"><strong>Retatrutide protocol tracker</strong><br /><span class="muted">A closer fit for drug-specific protocol and symptom logging.</span></a>
         </div>
 
         <h2>What to log every time</h2>
         <ul>
           <li><strong>Exact timestamp:</strong> date and time, not just the day.</li>
           <li><strong>Compound or stack:</strong> what you were tracking that day and whether anything changed.</li>
+          <li><strong>Cycle or phase:</strong> start week, pause, restart, titration window, or other phase label.</li>
           <li><strong>Dose as prescribed:</strong> write it exactly as given without freehand conversion.</li>
           <li><strong>Injection site or route:</strong> especially if you rotate sites or compare irritation patterns.</li>
           <li><strong>Context:</strong> meals, sleep, travel, alcohol, stress, training, illness, or unusual routine changes.</li>
@@ -293,16 +318,35 @@
             <tr>
               <th style="width:15%">Date</th>
               <th style="width:15%">Time</th>
-              <th style="width:20%">Compound / stack</th>
+              <th style="width:18%">Compound / stack</th>
+              <th style="width:13%">Phase</th>
               <th style="width:14%">Dose</th>
-              <th style="width:14%">Site / route</th>
+              <th style="width:12%">Site / route</th>
               <th>Context or change notes</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>____ / ____ / ____</td><td>____ : ____</td><td>____________</td><td>____________</td><td>____________</td><td>Sleep / meals / travel / stress / routine drift</td></tr>
-            <tr><td>____ / ____ / ____</td><td>____ : ____</td><td>____________</td><td>____________</td><td>____________</td><td>Stack change / missed dose / symptom context</td></tr>
-            <tr><td>____ / ____ / ____</td><td>____ : ____</td><td>____________</td><td>____________</td><td>____________</td><td>Batch note / schedule shift / handling note</td></tr>
+            <tr><td>____ / ____ / ____</td><td>____ : ____</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>Sleep / meals / travel / stress / routine drift</td></tr>
+            <tr><td>____ / ____ / ____</td><td>____ : ____</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>Stack change / missed dose / symptom context</td></tr>
+            <tr><td>____ / ____ / ____</td><td>____ : ____</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>Batch note / schedule shift / handling note</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Weekly protocol review template</h2>
+        <p class="muted">A protocol tracker earns its keep in the weekly review. This is where you decide whether the log still makes sense or whether the week got too messy to compare cleanly.</p>
+        <table aria-label="Weekly peptide protocol review template">
+          <thead>
+            <tr>
+              <th style="width:18%">Weekly check</th>
+              <th style="width:32%">What to review</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Schedule integrity</strong></td><td>Did the week stay on the planned anchor, or did it drift?</td><td class="muted">Separates stable weeks from late-dose or pause weeks.</td></tr>
+            <tr><td><strong>Stack changes</strong></td><td>Did any compound start, stop, or change place in the routine?</td><td class="muted">Helps explain sudden symptom changes without guesswork.</td></tr>
+            <tr><td><strong>Symptom pattern</strong></td><td>Which symptoms repeated at the same time after the dose?</td><td class="muted">Makes week-over-week comparisons usable later.</td></tr>
+            <tr><td><strong>Confounders</strong></td><td>Travel, illness, poor sleep, alcohol, training spikes, or prep issues</td><td class="muted">Prevents blaming the protocol for a week that was noisy for other reasons.</td></tr>
           </tbody>
         </table>
 
@@ -345,7 +389,7 @@
         <div class="cards">
           <a class="intentCard" href="/peptide-side-effect-timeline.html" data-track-internal="peptide_protocol_tracker_router_timeline"><strong>Peptide side-effect timeline</strong><br /><span class="muted">Use when the main question is symptom timing rather than the full schedule.</span></a>
           <a class="intentCard" href="/peptide-missed-dose-tracker.html" data-track-internal="peptide_protocol_tracker_router_missed"><strong>Peptide missed-dose tracker</strong><br /><span class="muted">Best when the protocol slipped and you want a cleaner record of the drift.</span></a>
-          <a class="intentCard" href="/retatrutide-tracker.html" data-track-internal="peptide_protocol_tracker_router_retatrutide"><strong>Retatrutide tracker</strong><br /><span class="muted">Use when the search is molecule-specific and you want dose plus side-effect logging.</span></a>
+          <a class="intentCard" href="/retatrutide-protocol-tracker.html" data-track-internal="peptide_protocol_tracker_router_retatrutide"><strong>Retatrutide protocol tracker</strong><br /><span class="muted">Use when the search is molecule-specific and you want protocol, dose, and side-effect logging together.</span></a>
           <a class="intentCard" href="/tirzepatide-injection-tracker.html" data-track-internal="peptide_protocol_tracker_router_tirzepatide"><strong>Tirzepatide injection tracker</strong><br /><span class="muted">A better fit for drug-specific injection history and reminders.</span></a>
           <a class="intentCard" href="/semaglutide-injection-tracker.html" data-track-internal="peptide_protocol_tracker_router_semaglutide"><strong>Semaglutide injection tracker</strong><br /><span class="muted">For weekly semaglutide history, dose dates, and quick note capture.</span></a>
           <a class="intentCard" href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="peptide_protocol_tracker_router_hrv"><strong>Stress, anxiety, and HRV guide</strong><br /><span class="muted">Branch here when the protocol question is really about recovery, HRV, or a wired feeling.</span></a>
@@ -380,6 +424,7 @@
         <h3>Useful companion pages</h3>
         <div class="checklist">
           <a href="/glp1-injection-tracker.html"><strong>GLP-1 injection tracker</strong><br /><span class="muted">Dose dates, reminders, and quick note capture.</span></a>
+          <a href="/retatrutide-protocol-tracker.html"><strong>Retatrutide protocol tracker</strong><br /><span class="muted">Drug-specific protocol logging for the retatrutide branch.</span></a>
           <a href="/peptide-side-effect-timeline.html"><strong>Peptide side-effect timeline</strong><br /><span class="muted">Symptom timing from 0-24h through later days.</span></a>
           <a href="/peptide-morning-vs-night-injection-log.html"><strong>Peptide morning vs night log</strong><br /><span class="muted">Compare routine timing without guessing.</span></a>
           <a href="/peptide-missed-dose-tracker.html"><strong>Peptide missed-dose tracker</strong><br /><span class="muted">Keep late, skipped, and drifted weeks readable.</span></a>
