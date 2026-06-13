@@ -3,121 +3,340 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eli Lilly Retatrutide Late-Stage Diabetes Trial Results (Mar 2026): What the Headlines Mean + What to Track</title>
-  <meta name="description" content="A practical, plain-English explainer of the March 2026 retatrutide late-stage diabetes trial headlines — plus a simple checklist for what to track next (without medical advice)." />
+  <title>Retatrutide Trial Headlines: What to Track Instead of Guessing | Jabbit</title>
+  <meta name="description" content="Retatrutide trial headlines create questions about timing, side effects, routines, and what to log next. This educational page turns that curiosity into a practical tracking workflow." />
+  <meta name="keywords" content="retatrutide tracker, retatrutide what to track, retatrutide trial results, retatrutide side effect timeline, retatrutide dose log, retatrutide protocol tracker" />
   <link rel="canonical" href="https://jabbitapp.com/lilly-retatrutide-late-stage-diabetes-trial-results-2026-03.html" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 860px; margin: 0 auto; padding: 20px; background: #f9f9f9; }
-    h1 { font-size: 2.05em; color: #1a1a2e; margin-bottom: 10px; }
-    h2 { color: #16213e; margin: 30px 0 12px; font-size: 1.45em; }
-    h3 { color: #0f3460; margin: 18px 0 8px; font-size: 1.1em; }
-    p { margin: 10px 0; }
-    ul { margin: 10px 0 10px 22px; }
-    .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 34px 26px; border-radius: 12px; margin-bottom: 22px; }
-    .hero h1 { color: white; }
-    .hero p { font-size: 1.05em; opacity: 0.92; }
-    .note { background: #ffffff; border-left: 4px solid #3b82f6; padding: 14px 18px; margin: 18px 0; border-radius: 0 10px 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
-    .warning { background: #fff3e0; border-left: 4px solid #ff9800; padding: 14px 18px; margin: 18px 0; border-radius: 0 10px 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
-    .cta { background: #ffffff; padding: 18px; border-radius: 12px; margin: 22px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
-    .cta-button { display: inline-block; background: #e94560; color: white; padding: 12px 18px; border-radius: 10px; text-decoration: none; font-weight: 700; margin-top: 10px; }
-    .cta-button:hover { background: #d63651; }
-    .faq { background: white; padding: 18px; border-radius: 12px; margin: 18px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
-    .faq-item { margin: 12px 0; }
-    .source { font-size: 0.9em; color: #666; margin-top: 26px; padding-top: 16px; border-top: 1px solid #ddd; }
-    code { background: #fff; padding: 2px 6px; border-radius: 6px; }
-    .tag { display: inline-block; background: #eef2ff; color: #1e3a8a; padding: 4px 10px; border-radius: 999px; font-size: 0.85em; margin-right: 8px; }
+    :root{
+      --bg:#f4f8fb;
+      --card:#ffffff;
+      --ink:#102033;
+      --muted:#5a6c80;
+      --line:#d7e2ec;
+      --brand:#0f766e;
+      --brand-dark:#115e59;
+      --hero-deep:#0f172a;
+      --hero-mid:#134e4a;
+      --hero-soft:#2dd4bf;
+      --warn:#fff7ed;
+      --warn-line:#ea580c;
+      --note:#ecfeff;
+      --note-line:#0891b2;
+      --shadow:0 18px 44px rgba(15,23,42,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
+      color:var(--ink);
+      line-height:1.65;
+      background:
+        radial-gradient(circle at top right, rgba(45,212,191,.14), transparent 24%),
+        linear-gradient(180deg,#eef6f8 0%,var(--bg) 320px);
+    }
+    a{color:var(--brand-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border-radius:30px;
+      padding:36px;
+      color:#fff;
+      background:linear-gradient(135deg,var(--hero-deep) 0%,var(--hero-mid) 64%,var(--brand) 100%);
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-80px;
+      bottom:-120px;
+      width:280px;
+      height:280px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.22) 0%, rgba(255,255,255,0) 68%);
+    }
+    .eyebrow{
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.2);
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:.8rem;
+      margin-bottom:12px;
+    }
+    h1{font-size:clamp(2.2rem,4.8vw,3.5rem);line-height:1.03;margin:0 0 14px}
+    h2{font-size:1.45rem;line-height:1.2;margin:0 0 12px}
+    h3{font-size:1.08rem;line-height:1.25;margin:0 0 8px}
+    p{margin:0 0 14px}
+    .heroIntro{max-width:760px;color:rgba(255,255,255,.92);font-size:1.05rem}
+    .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:18px}
+    .proof div{padding:14px;border-radius:16px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08)}
+    .proof strong,.proof span{display:block}
+    .proof span{color:rgba(255,255,255,.82);font-size:.92rem}
+    .ctaRow{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:800;
+      border:1px solid transparent;
+    }
+    .btnPrimary{background:#fff;color:#0f172a}
+    .btnGhost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.28)}
+    .btn:hover{text-decoration:none}
+    .small{font-size:.93rem}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(300px,.95fr);gap:22px;margin-top:24px;align-items:start}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .warning,.note,.ctaPanel{
+      padding:16px;
+      border-radius:16px;
+      margin:16px 0;
+    }
+    .warning{background:var(--warn);border-left:4px solid var(--warn-line)}
+    .note{background:var(--note);border-left:4px solid var(--note-line)}
+    .ctaPanel{background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);color:#fff}
+    .ctaPanel p{color:rgba(255,255,255,.92)}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+    .intentCard{
+      display:block;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);
+      color:inherit;
+    }
+    .intentCard:hover{text-decoration:none;border-color:#b7c6d8;box-shadow:0 10px 24px rgba(15,23,42,.08)}
+    .intentCard strong{display:block;margin-bottom:5px}
+    ul,ol{padding-left:21px;margin:0 0 14px}
+    li{margin:7px 0}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:12px 0 18px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      overflow:hidden;
+      background:#fff;
+    }
+    th,td{
+      padding:11px 12px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{background:#f1f5f9}
+    tr:last-child td{border-bottom:none}
+    .linkList a{
+      display:block;
+      padding:12px 13px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      margin-bottom:10px;
+      background:#fff;
+      color:inherit;
+    }
+    .linkList a:hover{text-decoration:none;border-color:#b7c6d8}
+    footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+    #related-links{max-width:1120px;margin:0 auto;padding:0 24px 40px}
+    #related-links ul{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:20px 20px 20px 38px;
+    }
+    @media (max-width: 920px){ .grid{grid-template-columns:1fr} }
+    @media (max-width: 560px){
+      .wrap{padding:16px}
+      .hero,.card{padding:20px}
+      .btn{width:100%}
+      #related-links{padding:0 16px 32px}
+    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Retatrutide Trial Headlines: What to Track Instead of Guessing | Jabbit",
+    "url":"https://jabbitapp.com/lilly-retatrutide-late-stage-diabetes-trial-results-2026-03.html",
+    "description":"Retatrutide trial headlines create questions about timing, side effects, routines, and what to log next. This educational page turns that curiosity into a practical tracking workflow.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://jabbitapp.com/"}
+  }
+  </script>
   <script defer src="/assets/site.js"></script>
 </head>
 <body>
-  <div class="hero">
-    <span class="tag">Breaking topic</span>
-    <span class="tag">Next-gen weight-loss meds</span>
-    <span class="tag">Diabetes trials</span>
-    <h1>Eli Lilly’s retatrutide headlines (Mar 2026): what happened + what to track</h1>
-    <p>A plain-English explainer of the news — and a practical checklist for staying organized without spiraling.</p>
-  </div>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Retatrutide tracker intent</div>
+      <h1>Retatrutide trial headlines: what to track instead of guessing</h1>
+      <p class="heroIntro">Most people landing on retatrutide news are not really looking for market commentary. They want to know what matters for their own timeline: dose timing, symptom changes, routine drift, and whether a pattern is real enough to log. This page is a practical tracking hub, not treatment advice.</p>
+      <div class="proof">
+        <div><strong>Best-fit query</strong><span>Retatrutide tracker, side-effect timeline, dose log, protocol notes</span></div>
+        <div><strong>Why this page exists</strong><span>Convert stale news intent into a useful tracking workflow</span></div>
+        <div><strong>What it does not do</strong><span>No dosing advice, no prescribing claims, no hype loop</span></div>
+      </div>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_trial_tracker_top" target="_blank" rel="noopener noreferrer">Open Jabbit in the App Store</a>
+        <a class="btn btnGhost" href="/retatrutide-tracker.html">Retatrutide tracker</a>
+        <a class="btn btnGhost" href="/retatrutide-protocol-tracker.html">Retatrutide protocol tracker</a>
+      </div>
+      <p class="small" style="margin-top:12px;color:rgba(255,255,255,.85);">Educational only. This page helps organize tracking questions. It does not tell you what medication to start, stop, or change.</p>
+    </section>
 
-  <p style="font-size: 0.95em; color: #555;"><em>
-    Disclaimer: This page is for informational purposes only and is not medical, legal, or financial advice. Do not start, stop, or change any medication based on news coverage. For personal medical guidance, consult a licensed clinician.
-  </em></p>
+    <section class="grid">
+      <article class="card">
+        <h2>Why rewrite a news page into a tracker page?</h2>
+        <p class="muted">Trial headlines usually create the same downstream questions: what should I write down, how do I compare weeks, and how do I avoid relying on memory when timing shifts or symptoms stack together? That is a better fit for Jabbit than another headline summary.</p>
 
-  <p>
-    If you landed here, you’re probably trying to answer a high-intent question like:
-    <strong>“Does this mean retatrutide is the ‘next big thing’ after today’s GLP‑1s — and when would it matter?”</strong>
-    In March 2026, news coverage reported late-stage (Phase 3) trial results involving <strong>Eli Lilly’s retatrutide</strong>, highlighting reductions in blood sugar and weight.
-  </p>
+        <div class="warning">
+          <strong>Important boundary:</strong> retatrutide regulatory status and availability can change. This page is not a recommendation to use any investigational or prescription product. It is a tracking workflow only.
+        </div>
 
-  <div class="note">
-    <strong>Quick reality check:</strong> Trial headlines can be directionally useful, but they’re not a personal treatment plan. The highest-leverage move for most people is still: keep your current meds and routine organized, and bring clear questions to your next appointment.
-  </div>
+        <h2>If retatrutide is on your radar, these are the useful things to log</h2>
+        <table aria-label="Retatrutide tracking fields">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Why it matters</th>
+              <th>Best page</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Injection date and exact time</td>
+              <td>Turns vague symptom memories into a real timeline.</td>
+              <td><a href="/retatrutide-injection-tracker.html">Retatrutide injection tracker</a></td>
+            </tr>
+            <tr>
+              <td>Weekly dose history</td>
+              <td>Keeps schedule changes and comparisons from getting muddy.</td>
+              <td><a href="/retatrutide-dose-log.html">Retatrutide dose log</a></td>
+            </tr>
+            <tr>
+              <td>Missed or late dose notes</td>
+              <td>Separates routine drift from a normal stable week.</td>
+              <td><a href="/retatrutide-missed-dose-tracker.html">Retatrutide missed-dose tracker</a></td>
+            </tr>
+            <tr>
+              <td>Side effects with timestamps</td>
+              <td>Lets you compare onset, peak, and recovery instead of guessing.</td>
+              <td><a href="/retatrutide-side-effect-timeline.html">Retatrutide side-effect timeline</a></td>
+            </tr>
+            <tr>
+              <td>Protocol or routine changes</td>
+              <td>Useful when the bigger question is consistency over weeks, not one shot.</td>
+              <td><a href="/retatrutide-protocol-tracker.html">Retatrutide protocol tracker</a></td>
+            </tr>
+          </tbody>
+        </table>
 
-  <h2>What is retatrutide (in plain English)?</h2>
-  <p>
-    Retatrutide is an investigational medication discussed in the context of weight and metabolic health. You’ll often see it described as “next-gen” because it targets multiple biological pathways.
-    The key point for consumers: <strong>it’s not the same thing as your current prescription</strong>, and “promising results” does not automatically mean “available soon” or “right for me.”
-  </p>
+        <div class="note">
+          <strong>High-signal rule:</strong> if you log only five things, log date, time, dose context, symptom timing, and what changed that week.
+        </div>
 
-  <div class="warning">
-    <strong>Important:</strong> Many drugs in the news are <strong>not yet approved</strong> for general use (or may be approved later with specific indications). Availability, coverage, and prescribing rules can differ a lot from what headlines imply.
-  </div>
+        <h2>Choose the retatrutide page that matches the job</h2>
+        <div class="cards">
+          <a class="intentCard" href="/retatrutide-tracker.html">
+            <strong>Retatrutide tracker</strong>
+            <span class="muted">Best starting point if you want one page that explains the whole logging workflow.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-side-effect-timeline.html">
+            <strong>Side-effect timeline</strong>
+            <span class="muted">Best when your real question is what happened on Day 0, Day 1, or later in the week.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-missed-dose-tracker.html">
+            <strong>Missed-dose tracker</strong>
+            <span class="muted">Best when travel, supply issues, or forgetting changed the rhythm of the week.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-dose-timing-morning-vs-night.html">
+            <strong>Dose timing guide</strong>
+            <span class="muted">Best when you are comparing routines and want cleaner notes, not a prescription.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-anxiety-hrv-tracker.html">
+            <strong>Anxiety / HRV tracker</strong>
+            <span class="muted">Best when the pattern feels more like stress, recovery, or autonomic change than GI symptoms.</span>
+          </a>
+          <a class="intentCard" href="/peptide-protocol-tracker.html">
+            <strong>Peptide protocol tracker</strong>
+            <span class="muted">Best when you need one timeline across multiple compounds or longer-running routines.</span>
+          </a>
+        </div>
 
-  <h2>Why do these headlines drive so much search (and stress)?</h2>
-  <p>
-    Weight-loss and diabetes medication news tends to create three immediate, very human needs:
-  </p>
-  <ul>
-    <li><strong>Clarity:</strong> “Is this better than what I’m on?”</li>
-    <li><strong>Timing:</strong> “When could it actually affect real prescriptions?”</li>
-    <li><strong>Logistics:</strong> “How do I manage refills, dose changes, and side effects in the meantime?”</li>
-  </ul>
+        <h2>Simple retatrutide weekly review template</h2>
+        <p class="muted">This is the minimum useful review if you are trying to learn from your timeline rather than just collect notes.</p>
+        <ol>
+          <li>Did the dose happen when planned?</li>
+          <li>Did any symptom appear in a repeatable window after the dose?</li>
+          <li>Was this a stable week, a late-dose week, or a routine-change week?</li>
+          <li>Did stress, poor sleep, illness, travel, or unusual meals confuse the picture?</li>
+          <li>What page should hold next week’s notes: dose log, side-effect timeline, or protocol tracker?</li>
+        </ol>
 
-  <h2>What to track next (a simple checklist)</h2>
-  <p>
-    If you want to follow this story without doomscrolling, track a few concrete items. These are organization questions — not medical advice:
-  </p>
-  <ul>
-    <li><strong>Trial details in one place:</strong> name of the study, phase, primary endpoints, and the patient population described in coverage.</li>
-    <li><strong>Timing signals:</strong> when a company expects to share more data, submit filings, or present at major conferences.</li>
-    <li><strong>How results are framed:</strong> look for specifics (numbers, timeframes) rather than adjectives (“breakthrough,” “stunning”).</li>
-    <li><strong>Practical availability questions:</strong> any mention of manufacturing scale, shortages, or rollout plans.</li>
-    <li><strong>Your own baseline log:</strong> current medication name, dose schedule, refill cadence, and non-clinical notes you want to remember.</li>
-  </ul>
+        <div class="ctaPanel">
+          <h2 style="color:#fff;">Track the pattern instead of rereading the headlines</h2>
+          <p>Jabbit is strongest when the real job is keeping dose dates, missed-dose notes, symptom timing, and routine changes together in one private iPhone workflow.</p>
+          <div class="ctaRow" style="margin-top:0;">
+            <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_trial_tracker_mid" target="_blank" rel="noopener noreferrer">Get Jabbit on the App Store</a>
+            <a class="btn btnGhost" href="/glp1-injection-tracker.html">See the GLP-1 tracker app page</a>
+          </div>
+        </div>
 
-  <div class="cta">
-    <strong>Want a calmer way to track meds and refills?</strong>
-    <p>
-      Jabbit helps you keep a simple timeline of <strong>medication name + dose + date + notes</strong> and set reminders so you don’t have to hold everything in your head.
-    </p>
-    <a class="cta-button" href="https://apps.apple.com/app/id6756848719">Download Jabbit on the App Store</a>
-  </div>
+        <h2>How this connects to the broader peptide tracking cluster</h2>
+        <ul>
+          <li><strong>Drug-specific workflow:</strong> use <a href="/retatrutide-tracker.html">retatrutide tracker</a> pages when the question is molecule-specific.</li>
+          <li><strong>Protocol depth:</strong> branch into <a href="/retatrutide-protocol-tracker.html">retatrutide protocol tracker</a> or <a href="/peptide-protocol-tracker.html">peptide protocol tracker</a> when the job is long-term routine management.</li>
+          <li><strong>Symptom timing:</strong> branch into <a href="/retatrutide-side-effect-timeline.html">retatrutide side-effect timeline</a> or <a href="/retatrutide-anxiety-hrv-tracker.html">retatrutide anxiety / HRV tracker</a> when the week needs more detail.</li>
+          <li><strong>Schedule drift:</strong> use <a href="/retatrutide-missed-dose-tracker.html">retatrutide missed-dose tracker</a> before you try to compare weeks.</li>
+        </ul>
 
-  <h2>Good questions to write down (for your next appointment)</h2>
-  <div class="faq">
-    <div class="faq-item">
-      <h3>“What would need to be true for a new medication to be relevant for me?”</h3>
-      <p>Write down your goals, constraints (cost, convenience), and what you’ve tried. The point is to have a focused conversation instead of reacting to headlines.</p>
-    </div>
-    <div class="faq-item">
-      <h3>“What should I track between visits?”</h3>
-      <p>Ask what inputs matter most for your situation (e.g., adherence, symptoms you’ve noticed, timing). Then track those consistently.</p>
-    </div>
-    <div class="faq-item">
-      <h3>“How should I handle refills and interruptions?”</h3>
-      <p>If availability is a concern, it’s useful to have a documented refill cadence and a plan for what to do if you miss doses (your clinician can advise for your case).</p>
-    </div>
-  </div>
+        <h2>Source context</h2>
+        <p class="muted">The original slug came from March 2026 retatrutide trial-result coverage. The current page keeps that context but shifts the page toward practical tracking intent, which is closer to what Jabbit actually solves.</p>
+        <ul>
+          <li><a href="https://www.reuters.com/business/healthcare-pharmaceuticals/lillys-next-gen-obesity-drug-shows-reduction-blood-sugar-levels-trial-2026-03-19/" target="_blank" rel="noopener noreferrer nofollow">Reuters trial coverage</a></li>
+          <li><a href="https://www.cnbc.com/2026/03/19/eli-lillys-obesity-drug-retatrutide-clears-late-stage-diabetes-trial.html" target="_blank" rel="noopener noreferrer nofollow">CNBC trial coverage</a></li>
+        </ul>
+      </article>
 
-  <p class="source">
-    Sources (news coverage):
-    <br />
-    - Reuters (Mar 19, 2026):
-    <a href="https://www.reuters.com/business/healthcare-pharmaceuticals/lillys-next-gen-obesity-drug-shows-reduction-blood-sugar-levels-trial-2026-03-19/" rel="nofollow">https://www.reuters.com/business/healthcare-pharmaceuticals/lillys-next-gen-obesity-drug-shows-reduction-blood-sugar-levels-trial-2026-03-19/</a>
-    <br />
-    - CNBC (Mar 19, 2026):
-    <a href="https://www.cnbc.com/2026/03/19/eli-lillys-obesity-drug-retatrutide-clears-late-stage-diabetes-trial.html" rel="nofollow">https://www.cnbc.com/2026/03/19/eli-lillys-obesity-drug-retatrutide-clears-late-stage-diabetes-trial.html</a>
-  </p>
+      <aside class="card">
+        <h2>Fast links</h2>
+        <p class="muted">Pick the page that matches the exact thing you are trying to track.</p>
+        <div class="linkList">
+          <a href="/retatrutide-tracker.html"><strong>Retatrutide tracker</strong><br /><span class="muted">The main hub for dose, notes, and side-effect routing.</span></a>
+          <a href="/retatrutide-injection-tracker.html"><strong>Retatrutide injection tracker</strong><br /><span class="muted">Dose timing, reminders, and shot history.</span></a>
+          <a href="/retatrutide-side-effect-timeline.html"><strong>Retatrutide side-effect timeline</strong><br /><span class="muted">Week-by-week symptom structure.</span></a>
+          <a href="/retatrutide-missed-dose-tracker.html"><strong>Retatrutide missed-dose tracker</strong><br /><span class="muted">Late-dose and schedule-drift notes.</span></a>
+          <a href="/retatrutide-protocol-tracker.html"><strong>Retatrutide protocol tracker</strong><br /><span class="muted">Routine changes, stacks, and longer-cycle notes.</span></a>
+          <a href="/peptide-protocol-tracker.html"><strong>Peptide protocol tracker</strong><br /><span class="muted">Broader protocol logging across compounds.</span></a>
+        </div>
+
+        <h2 style="margin-top:18px;">App Store CTA</h2>
+        <p class="muted">Use Jabbit if you want reminders, notes, and a private timeline on iPhone instead of scattered screenshots and mental notes.</p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_trial_tracker_side" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
+
+        <h3>Boundary check</h3>
+        <p class="muted">This page is educational and organization-focused. It does not interpret trial headlines as personal medical advice.</p>
+      </aside>
+    </section>
+
+    <footer>
+      <p><strong>Disclaimer:</strong> Educational content only. Jabbit does not provide medical advice, diagnosis, or treatment.</p>
+    </footer>
+  </main>
   <section id="related-links">
     <h2>Related</h2>
     <ul>
