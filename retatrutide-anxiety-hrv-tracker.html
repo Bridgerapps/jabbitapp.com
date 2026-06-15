@@ -4,102 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Retatrutide Anxiety, Stress, and HRV Tracker | Jabbit</title>
-  <meta name="description" content="Educational retatrutide anxiety and HRV tracking page: what to log around injection timing, stress spikes, resting heart rate, and wearable changes so the pattern is easier to review later." />
-  <meta name="keywords" content="retatrutide anxiety tracker, retatrutide HRV tracker, retatrutide stress tracker, retatrutide resting heart rate, anxiety after retatrutide injection, retatrutide symptom log" />
+  <title>Retatrutide Anxiety, HRV, and Resting Heart Rate Tracker | Jabbit</title>
+  <meta name="description" content="A practical retatrutide anxiety and HRV tracking page: what to log, how to compare resting heart rate and wearable patterns across the week, and which Jabbit tracker pages fit best." />
+  <meta name="keywords" content="retatrutide anxiety, retatrutide HRV, retatrutide resting heart rate, retatrutide tracker, retatrutide side effect timeline, peptide HRV tracker" />
   <link rel="canonical" href="https://jabbitapp.com/retatrutide-anxiety-hrv-tracker.html" />
 
   <style>
-    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --brand2:#14b8a6; --border:#e2e8f0; --warn:#f97316; --link:#0f766e; }
+    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --brand2:#14b8a6; --border:#e2e8f0; --warn:#f97316; }
     *{ box-sizing:border-box; }
     body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
-    a{ color:var(--link); text-decoration:none; }
+    a{ color:var(--brand); text-decoration:none; }
     a:hover{ text-decoration:underline; }
-    .wrap{ max-width:960px; margin:0 auto; padding:28px 18px 60px; }
-    .hero{ background:linear-gradient(135deg,#0f172a 0%,#0b4a44 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 10px 30px rgba(2,6,23,.15); }
-    .hero h1{ margin:0 0 10px; font-size:2.2rem; line-height:1.2; }
+    .wrap{ max-width:940px; margin:0 auto; padding:28px 18px 60px; }
+    .hero{ background:linear-gradient(135deg, #0f172a 0%, #0b4a44 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 10px 30px rgba(2,6,23,.15); }
+    .hero h1{ margin:0 0 10px; font-size:2.1rem; line-height:1.2; }
     .hero p{ margin:0; color:rgba(255,255,255,.92); font-size:1.05rem; }
-    .pill{ display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); font-size:.85rem; color:rgba(255,255,255,.95); }
     .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
     .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; font-weight:700; border:1px solid transparent; }
     .btnPrimary{ background:var(--brand2); color:#062a27; }
     .btnPrimary:hover{ filter:brightness(.95); text-decoration:none; }
     .btnGhost{ background:transparent; color:#fff; border-color:rgba(255,255,255,.35); }
     .btnGhost:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
-    .small{ font-size:.92rem; }
-    .proof{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:16px; }
-    .proof div{ background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:10px 12px; }
-    .proof strong{ display:block; color:#fff; font-size:.98rem; }
-    .proof span{ color:rgba(255,255,255,.82); font-size:.92rem; }
+    .pill{ display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); font-size:.85rem; color:rgba(255,255,255,.95); }
+    .small{ font-size:.9rem; }
+    .proof{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-top:16px; }
+    .proof div{ background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius:14px; padding:12px; }
+    .proof strong,.proof span{ display:block; }
+    .proof span{ color:rgba(255,255,255,.85); font-size:.92rem; }
+
     .grid{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; }
-    @media(min-width:900px){ .grid{ grid-template-columns:1.2fr .8fr; } }
+    @media(min-width:900px){ .grid{ grid-template-columns: 1.25fr .75fr; } }
     .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
     h2{ margin:18px 0 10px; font-size:1.35rem; }
     h3{ margin:14px 0 8px; font-size:1.1rem; }
     ul{ margin:8px 0 0 18px; }
-    li{ margin-bottom:8px; }
     .muted{ color:var(--muted); }
     .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px; border-radius:10px; }
     .warning{ background:#fff7ed; border-left:4px solid var(--warn); padding:12px; border-radius:10px; }
-    .hub{ background:#f8fafc; border:1px solid var(--border); border-radius:14px; padding:14px; margin-top:16px; }
-    .hub ul{ margin-top:10px; }
+    .hub{ background:#f8fafc; border:1px solid var(--border); border-radius:12px; padding:14px; }
     table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
     th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
     th{ background:#f1f5f9; }
-    dl.faq{ margin:0; }
-    dl.faq dt{ font-weight:800; margin-top:12px; }
-    dl.faq dd{ margin:6px 0 0; color:var(--muted); }
     footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
   </style>
 
   <script type="application/ld+json" id="faq-jsonld">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can retatrutide weeks feel different in terms of stress, anxiety, HRV, or resting heart rate?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some people want to compare stress, anxiety, HRV, or resting heart rate patterns around retatrutide injection timing, dose changes, poor sleep, lower intake, dehydration, illness, or travel. Tracking helps separate a repeatable pattern from one noisy week."
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can retatrutide affect anxiety, resting heart rate, or HRV?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some people want to compare retatrutide weeks with anxiety, resting heart rate, or HRV changes. That does not prove cause. Sleep, hydration, low intake, caffeine, illness, schedule drift, and life stress can all shift the pattern."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I log if a retatrutide week feels wired or off?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use a simple weekly timeline: injection date and time, dose, resting heart rate, HRV trend, anxiety or stress score, sleep quality, hydration, caffeine, and any GI symptoms or schedule changes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Jabbit tell me what caused the change?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Jabbit is for organizing your timeline, not diagnosing cause or giving treatment advice."
+        }
       }
-    },
-    {
-      "@type": "Question",
-      "name": "What is most useful to log on a retatrutide anxiety and HRV tracker?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Log the injection date and time, dose, resting heart rate trend, HRV trend, a simple stress or anxiety score, sleep, hydration, caffeine, food intake, exercise, and other symptoms so the full week is easier to interpret."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does this page give dosing advice?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. This page is educational and focused on pattern tracking only. It does not tell you when to inject, whether to change dose, or how to treat symptoms."
-      }
-    }
-  ]
-}
-</script>
-<script defer src="/assets/site.js"></script>
+    ]
+  }
+  </script>
+  <script type="application/ld+json" id="webpage-jsonld">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Retatrutide Anxiety, HRV, and Resting Heart Rate Tracker | Jabbit",
+    "url":"https://www.jabbitapp.com/retatrutide-anxiety-hrv-tracker.html",
+    "description":"A practical retatrutide anxiety and HRV tracking page: what to log, how to compare resting heart rate and wearable patterns across the week, and which Jabbit tracker pages fit best.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
+    "publisher":{"@type":"Organization","name":"Bridger Apps"}
+  }
+  </script>
+
+  <script defer src="/assets/site.js"></script>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
-      <span class="pill">Retatrutide tracker intent</span>
-      <h1>Retatrutide anxiety, stress, and HRV tracker</h1>
-      <p>If you keep wondering whether a stressed-out week matched retatrutide timing, a dose change, poor sleep, or something else entirely, the useful move is a cleaner timeline instead of guessing from memory later.</p>
+      <span class="pill">Brand-specific tracker intent</span>
+      <h1>Retatrutide anxiety, HRV, and resting heart rate tracker</h1>
+      <p>If retatrutide weeks keep leaving you asking "was that the shot, the lower intake, poor sleep, or something else?", this page is for building a cleaner pattern log instead of reconstructing it later from memory.</p>
       <div class="ctaRow">
-        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_anxiety_hrv_top" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
-        <a class="btn btnGhost" href="/retatrutide-injection-tracker.html" data-track-internal="retatrutide_anxiety_hrv_hero_tracker">Retatrutide injection tracker</a>
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_anxiety_hrv_tracker_top" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/retatrutide-injection-tracker.html">Retatrutide injection tracker</a>
       </div>
       <div class="proof">
-        <div><strong>One timeline</strong><span>Keep dose timing, symptoms, sleep, HRV, and context together</span></div>
-        <div><strong>Less overfitting</strong><span>Compare multi-day patterns instead of reacting to one watch reading</span></div>
-        <div><strong>Harm-reduction framing</strong><span>Track what happened without turning the page into treatment advice</span></div>
+        <div><strong>One timeline</strong><span>Dose, symptoms, sleep, HRV, and context in one place</span></div>
+        <div><strong>Better pattern reading</strong><span>See whether the shift follows injection day or the whole week</span></div>
+        <div><strong>Private workflow</strong><span>Move the recurring log into Jabbit instead of scattered notes</span></div>
       </div>
       <p class="small" style="margin-top:12px; opacity:.9;">Educational only. Not medical advice. Jabbit is a tracking workflow, not a treatment tool.</p>
     </section>
@@ -107,34 +115,34 @@
     <section class="grid">
       <article class="card">
         <h2>Why this page exists</h2>
-        <p class="muted">Searches around retatrutide anxiety, HRV drops, and higher resting heart rate usually come from a pattern question, not abstract curiosity. People want to know what changed this week, whether it lined up with injection timing, and what other factors might explain it.</p>
+        <p class="muted">People searching for retatrutide anxiety, higher resting heart rate, or lower HRV are usually trying to answer a pattern question, not a news question. They want to know whether the week looked different after the shot and what else moved at the same time.</p>
 
         <div class="note">
-          <strong>Best fit:</strong> pair this page with the <a href="/retatrutide-injection-tracker.html" data-track-internal="retatrutide_anxiety_hrv_note_tracker">Retatrutide injection tracker</a> so the injection timestamp, dose notes, and symptom context live in one place.
+          <strong>Best use case:</strong> pair this page with the <a href="/retatrutide-injection-tracker.html" data-track-internal="retatrutide_anxiety_hrv_note_injection">retatrutide injection tracker</a> so injection timing, notes, and symptoms stay together instead of getting split across apps.
         </div>
 
-        <h2>What to track each week</h2>
+        <h2>What to track each retatrutide week</h2>
         <ul>
-          <li><strong>Injection timestamp</strong> and whether the week was on time, late, or otherwise unusual</li>
-          <li><strong>Dose level</strong> with a clear note if it was a recent increase, restart, or experiment in routine</li>
-          <li><strong>Resting heart rate trend</strong> from the same wearable source each morning when possible</li>
-          <li><strong>HRV trend</strong> across several days rather than one isolated reading</li>
-          <li><strong>Stress or anxiety score</strong> using a repeatable daily number or short note</li>
-          <li><strong>Context tags</strong> like poor sleep, low intake, dehydration, caffeine, alcohol, illness, travel, or heavy training</li>
-          <li><strong>Other symptoms</strong> such as nausea, reflux, constipation, fatigue, headache, or appetite changes</li>
+          <li><strong>Injection timestamp</strong> and whether the week was on schedule, early, or late</li>
+          <li><strong>Dose level</strong> and whether it was a recent increase or restart</li>
+          <li><strong>Resting heart rate</strong> trend, especially your usual morning baseline</li>
+          <li><strong>HRV trend</strong> from the same wearable source, read as a multi-day pattern rather than one number</li>
+          <li><strong>Anxiety or stress score</strong> using a simple 0-10 daily note</li>
+          <li><strong>Context tags</strong> like poor sleep, low intake, dehydration, caffeine, alcohol, illness, or travel</li>
+          <li><strong>GI symptoms</strong> because nausea, reflux, constipation, or under-eating can amplify stress signals</li>
         </ul>
 
         <div class="warning">
-          <strong>Important framing:</strong> the goal is not to blame every wearable shift on retatrutide. The goal is to preserve enough context that a real pattern, or the absence of one, is easier to see later.
+          <strong>Important framing:</strong> this is a tracking aid, not a diagnosis. The goal is to make the timeline more honest and more useful for later decisions, not to self-interpret every wearable blip as a medication effect.
         </div>
 
         <h2>Simple retatrutide anxiety + HRV log template</h2>
-        <p class="muted">Keep entries factual, boring, and consistent. That is what makes the weekly comparison useful.</p>
+        <p class="muted">Keep the log factual and boring. That is what makes it useful later.</p>
         <table aria-label="Retatrutide anxiety and HRV tracker template">
           <thead>
             <tr>
               <th style="width:14%">Day</th>
-              <th style="width:18%">Injection / dose</th>
+              <th style="width:16%">Injection / dose</th>
               <th style="width:14%">Resting HR</th>
               <th style="width:14%">HRV trend</th>
               <th style="width:12%">Stress 0-10</th>
@@ -142,88 +150,141 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>Day 0</td><td>____________</td><td>____________</td><td>____________</td><td>__</td><td>Sleep, hydration, caffeine, GI symptoms</td></tr>
-            <tr><td>Day 1</td><td>On time / late?</td><td>____________</td><td>____________</td><td>__</td><td>Food intake, stressors, travel, exercise</td></tr>
-            <tr><td>Day 2-3</td><td>Dose stable?</td><td>____________</td><td>____________</td><td>__</td><td>Appetite, illness, alcohol, recovery</td></tr>
-            <tr><td>Day 4-7</td><td>Next week prep</td><td>____________</td><td>____________</td><td>__</td><td>Weekly trend, rebound, schedule drift</td></tr>
+            <tr>
+              <td>Day 0</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>__</td>
+              <td>Sleep, caffeine, hydration, GI symptoms</td>
+            </tr>
+            <tr>
+              <td>Day 1</td>
+              <td>On time / late?</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>__</td>
+              <td>Appetite, nausea, meals, work stress</td>
+            </tr>
+            <tr>
+              <td>Day 2-3</td>
+              <td>Dose stable?</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>__</td>
+              <td>Exercise tolerance, fluids, sleep debt</td>
+            </tr>
+            <tr>
+              <td>Day 4-7</td>
+              <td>Next dose prep</td>
+              <td>____________</td>
+              <td>____________</td>
+              <td>__</td>
+              <td>Recovery, appetite rebound, weekly trend</td>
+            </tr>
           </tbody>
         </table>
 
-        <h2>How to read the pattern without overreacting</h2>
+        <h2>How to read the week without fooling yourself</h2>
         <ul>
-          <li><strong>Look for repeatable timing.</strong> A similar Day 1 or Day 2 pattern across several weeks is more useful than one bad night.</li>
-          <li><strong>Mark dose changes clearly.</strong> Escalation, pause, and restart weeks create noisier signals and need better notes.</li>
-          <li><strong>Tag confounders aggressively.</strong> Sleep debt, under-eating, dehydration, illness, and stimulant use can dominate HRV and anxiety changes.</li>
-          <li><strong>Separate schedule drift from symptom drift.</strong> If the week was late, skipped, or moved, use the <a href="/retatrutide-missed-dose-tracker.html" data-track-internal="retatrutide_anxiety_hrv_missed">retatrutide missed-dose tracker</a> or <a href="/retatrutide-changing-injection-day.html" data-track-internal="retatrutide_anxiety_hrv_change_day">changing-injection-day log</a> so the timeline stays interpretable.</li>
+          <li><strong>Look for clusters, not drama.</strong> One rough wearable reading means less than a repeatable Day 1-2 pattern across multiple weeks.</li>
+          <li><strong>Mark dose changes aggressively.</strong> Escalation or restart weeks usually create the messiest signal, so they need the clearest note.</li>
+          <li><strong>Track intake and hydration.</strong> Under-eating, dehydration, and poor sleep can look like a medication problem when the pattern is really broader recovery strain.</li>
+          <li><strong>Watch for missed-dose noise.</strong> If timing moved, use the <a href="/retatrutide-missed-dose-tracker.html" data-track-internal="retatrutide_anxiety_hrv_missed_dose">retatrutide missed-dose tracker</a> so the week still makes sense later.</li>
         </ul>
 
+        <h2>Pattern questions this page helps answer</h2>
         <div class="hub">
-          <strong>Related tracker paths</strong>
           <ul>
-            <li><a href="/retatrutide-tracker.html" data-track-internal="retatrutide_anxiety_hrv_related_main">Retatrutide tracker</a> for the main dose, note, and symptom timeline</li>
-            <li><a href="/retatrutide-injection-tracker.html" data-track-internal="retatrutide_anxiety_hrv_related_injection">Retatrutide injection tracker</a> for timestamps, reminders, and logging the week cleanly</li>
-            <li><a href="/retatrutide-side-effect-log.html" data-track-internal="retatrutide_anxiety_hrv_related_log">Retatrutide side effect log</a> if the main issue is symptoms beyond HRV or anxiety</li>
-            <li><a href="/retatrutide-late-dose-routine-change.html" data-track-internal="retatrutide_anxiety_hrv_related_late">Retatrutide late-dose routine change</a> if the signal may be driven by a delayed week</li>
-            <li><a href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="retatrutide_anxiety_hrv_related_glp1_guide">GLP-1 stress, anxiety, and HRV guide</a> for the broader query family</li>
-            <li><a href="/glp1-injection-tracker.html" data-track-internal="retatrutide_anxiety_hrv_related_glp1_tracker">GLP-1 injection tracker</a> if you want a non-drug-specific logging page</li>
+            <li>Does anxiety or a wired feeling cluster in the first 24-72 hours after injection?</li>
+            <li>Do higher resting heart rate weeks line up with dose increases or poor recovery weeks?</li>
+            <li>Is low HRV showing up alongside nausea, low intake, or sleep disruption rather than by itself?</li>
+            <li>Do retatrutide weeks look different when your timing slips?</li>
           </ul>
         </div>
 
-        <h2>Why this is strong tracker intent</h2>
-        <p class="muted">If the real question is “what changed after the shot?”, a basic reminder app is not enough. This intent maps better to one private workflow that combines injection timing, notes, symptom tracking, and wearable context.</p>
+        <h2>Retatrutide week structure to compare</h2>
+        <table aria-label="Retatrutide week structure">
+          <thead>
+            <tr>
+              <th>Window</th>
+              <th>What to compare</th>
+              <th>Useful tags</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Injection day</td>
+              <td>Pre-dose stress, hydration, caffeine, and how you felt before the shot</td>
+              <td>Dose, time, sleep, baseline HR</td>
+            </tr>
+            <tr>
+              <td>Day 1-2</td>
+              <td>Whether nausea, lower appetite, anxiety, or wearable changes cluster right after the shot</td>
+              <td>HRV trend, resting HR, GI symptoms, calories, fluids</td>
+            </tr>
+            <tr>
+              <td>Day 3-4</td>
+              <td>Whether symptoms fade, linger, or switch into a stress or fatigue pattern</td>
+              <td>Sleep debt, exercise tolerance, work stress, bowel changes</td>
+            </tr>
+            <tr>
+              <td>Day 5-7</td>
+              <td>Whether the week normalizes or appetite rebounds before the next injection</td>
+              <td>Recovery, cravings, schedule drift, next-shot prep</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Best next pages in this cluster</h2>
+        <ul>
+          <li><a href="/retatrutide-resting-heart-rate-timeline.html" data-track-internal="retatrutide_anxiety_hrv_related_rhr">Retatrutide resting heart rate timeline</a> if the main question is wearable trend timing</li>
+          <li><a href="/retatrutide-tracker.html" data-track-internal="retatrutide_anxiety_hrv_related_tracker">Retatrutide tracker</a> for the broader dose and notes workflow</li>
+          <li><a href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="retatrutide_anxiety_hrv_related_hub">GLP-1 stress, anxiety, and HRV guide</a> for the broader query family already pulling traffic</li>
+          <li><a href="/glp1-injection-tracker.html" data-track-internal="retatrutide_anxiety_hrv_related_app_page">GLP-1 injection tracker</a> if you want the app-first workflow</li>
+        </ul>
 
         <p style="margin-top:16px;">
-          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_anxiety_hrv_bottom" target="_blank" rel="noopener noreferrer">Track the pattern in Jabbit</a>
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_anxiety_hrv_tracker_bottom" target="_blank" rel="noopener noreferrer">Track the week in Jabbit</a>
         </p>
-
-        <h2>FAQ</h2>
-        <dl class="faq">
-          <dt>Can retatrutide weeks feel different in terms of stress, anxiety, HRV, or resting heart rate?</dt>
-          <dd>Some people want to compare stress, anxiety, HRV, or resting heart rate patterns around retatrutide injection timing, dose changes, poor sleep, lower intake, dehydration, illness, or travel. Tracking helps separate a repeatable pattern from one noisy week.</dd>
-
-          <dt>What is most useful to log on a retatrutide anxiety and HRV tracker?</dt>
-          <dd>Log the injection date and time, dose, resting heart rate trend, HRV trend, a simple stress or anxiety score, sleep, hydration, caffeine, food intake, exercise, and other symptoms so the full week is easier to interpret.</dd>
-
-          <dt>Does this page give dosing advice?</dt>
-          <dd>No. This page is educational and focused on pattern tracking only. It does not tell you when to inject, whether to change dose, or how to treat symptoms.</dd>
-        </dl>
       </article>
 
       <aside class="card">
         <h2>Quick start</h2>
+        <ol>
+          <li>Log the dose timestamp first.</li>
+          <li>Add one morning resting heart rate and one stress score each day.</li>
+          <li>Tag any weird week: travel, illness, late dose, bad sleep, low intake.</li>
+          <li>Review 2-4 weeks together before calling it a pattern.</li>
+        </ol>
+
+        <h3>Best paired pages</h3>
         <ul>
-          <li>Log the retatrutide injection date, time, and dose.</li>
-          <li>Add morning resting heart rate and HRV trend from the same wearable source.</li>
-          <li>Use one daily stress or anxiety score, even on uneventful days.</li>
-          <li>Tag sleep, hydration, caffeine, intake changes, illness, travel, and late-dose weeks.</li>
+          <li><a href="/retatrutide-injection-tracker.html">Retatrutide injection tracker</a></li>
+          <li><a href="/retatrutide-resting-heart-rate-timeline.html">Retatrutide resting heart rate timeline</a></li>
+          <li><a href="/retatrutide-missed-dose-tracker.html">Retatrutide missed dose tracker</a></li>
         </ul>
 
-        <h3>Use this page when</h3>
-        <p class="muted">Your search includes retatrutide anxiety, HRV drop, higher resting heart rate, stress after injection, palpitations, wired feeling, or wearable changes around shot timing.</p>
+        <h3>Why Jabbit fits</h3>
+        <p class="muted">A reminder helps you take the shot. A timeline helps you understand the week after it. Jabbit is stronger when the job is pattern recognition over time, not just a single reminder.</p>
 
-        <h3>Use a different page when</h3>
-        <ul>
-          <li><a href="/retatrutide-side-effect-log.html">Retatrutide side effect log</a> for broader symptom journaling</li>
-          <li><a href="/retatrutide-missed-dose-tracker.html">Retatrutide missed-dose tracker</a> for skipped or broken weeks</li>
-          <li><a href="/glp-1-side-effect-log.html">GLP-1 side effect log</a> for a molecule-agnostic symptom timeline</li>
-        </ul>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_anxiety_hrv_tracker_aside" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
 
-        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_anxiety_hrv_aside" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
-        <p class="small muted">Educational only. Jabbit does not diagnose symptoms or recommend treatment changes.</p>
+        <p class="small muted">Educational only. Jabbit is a tracking workflow, not a treatment tool.</p>
       </aside>
     </section>
 
     <footer>
-      <p><strong>Keywords this page targets:</strong> retatrutide anxiety tracker, retatrutide HRV tracker, retatrutide stress tracker, retatrutide resting heart rate, anxiety after retatrutide injection.</p>
-      <p class="small">Use this page to build the first clean timeline, then keep the recurring workflow in Jabbit.</p>
+      <p class="small"><strong>Keywords this page targets:</strong> retatrutide anxiety, retatrutide HRV, retatrutide resting heart rate, retatrutide tracker, peptide HRV tracker.</p>
+      <p class="small">A clean timeline helps you see whether stress, HRV, and resting heart rate changes actually follow a retatrutide pattern or just feel chaotic in retrospect.</p>
     </footer>
   </main>
   <section id="related-links">
     <h2>Related</h2>
     <ul>
     <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (log doses + reminders)</a></li>
-    <li><a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress, anxiety, and HRV guide (compare broader patterns)</a></li>
-    <li><a href="/injection-protocol-tracker.html">Injection protocol tracker (organize notes across compounds)</a></li>
+    <li><a href="/glp1-stress-anxiety-hrv-guide.html">Stress/HRV on GLP-1 (what to track + patterns)</a></li>
+    <li><a href="/retatrutide-resting-heart-rate-timeline.html">Retatrutide resting heart rate timeline (compare wearable shifts by week)</a></li>
     </ul>
   </section>
 </body>
