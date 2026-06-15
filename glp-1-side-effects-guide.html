@@ -3,27 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GLP-1 Side Effects by Week: Timeline Tracker, HRV, Missed Dose, and Peptide Routing | Jabbit</title>
-  <meta name="description" content="Track GLP-1 side effects by week with a practical timeline hub for semaglutide, tirzepatide, Ozempic, Wegovy, Mounjaro, Zepbound, retatrutide, and broader peptide logging. Includes HRV, resting heart rate, missed-dose, and protocol-tracker routes." />
-  <meta name="keywords" content="GLP-1 side effects by week, GLP-1 side effects timeline tracker, GLP-1 symptoms by week, GLP-1 side effect tracker, Ozempic side effect timeline, Wegovy side effect timeline, Mounjaro side effect timeline, Zepbound side effect timeline, semaglutide side effect tracker, tirzepatide side effect tracker, retatrutide side effect timeline, peptide side effect timeline, missed dose side effects" />
+  <title>GLP-1 Side Effects by Week: Timeline, Missed Dose, HRV, and Tracker Routes | Jabbit</title>
+  <meta name="description" content="Track GLP-1 side effects by week with a practical timeline hub. Learn what to log, how to separate dose-day patterns from schedule drift, and which Jabbit tracker page fits nausea, fatigue, HRV, anxiety, and drug-specific timelines." />
+  <meta name="keywords" content="GLP-1 side effects by week, GLP-1 side effects timeline, GLP-1 symptom tracker, GLP-1 nausea timeline, GLP-1 fatigue tracker, GLP-1 anxiety HRV, missed dose side effects, Ozempic side effect timeline, Wegovy side effect timeline, Mounjaro side effect timeline, Zepbound side effect timeline" />
   <link rel="canonical" href="https://jabbitapp.com/glp-1-side-effects-guide.html" />
   <style>
     :root{
-      --bg:#f3f7fb;
+      --bg:#f4f7fb;
       --card:#ffffff;
       --ink:#102033;
-      --muted:#57677a;
-      --line:#d8e1ec;
+      --muted:#5c6b7a;
+      --line:#d7e2eb;
       --brand:#0f766e;
       --brand-dark:#115e59;
-      --brand-soft:#e7faf6;
-      --accent:#1d4ed8;
-      --accent-soft:#e8f0ff;
+      --brand-soft:#e8faf7;
       --hero-deep:#0f172a;
       --hero-mid:#134e4a;
-      --hero-soft:#2dd4bf;
-      --warn-bg:#fff7ed;
+      --hero-glow:#2dd4bf;
+      --warn:#fff7ed;
       --warn-line:#ea580c;
+      --note:#eff6ff;
+      --note-line:#2563eb;
       --shadow:0 18px 44px rgba(15,23,42,.08);
     }
     *{box-sizing:border-box}
@@ -32,8 +32,8 @@
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
       color:var(--ink);
       background:
-        radial-gradient(circle at top left, rgba(45,212,191,.12), transparent 28%),
-        linear-gradient(180deg,#eef7f7 0%,var(--bg) 280px);
+        radial-gradient(circle at top left, rgba(45,212,191,.10), transparent 30%),
+        linear-gradient(180deg,#edf7f6 0%,var(--bg) 280px);
       line-height:1.65;
     }
     a{color:var(--brand-dark);text-decoration:none}
@@ -42,52 +42,39 @@
     .hero{
       background:linear-gradient(135deg,var(--hero-deep) 0%,var(--hero-mid) 62%,#0f766e 100%);
       color:#fff;
-      border-radius:32px;
+      border-radius:30px;
       padding:36px;
-      box-shadow:var(--shadow);
       position:relative;
       overflow:hidden;
+      box-shadow:var(--shadow);
     }
     .hero::after{
       content:"";
       position:absolute;
-      width:320px;
-      height:320px;
-      right:-110px;
-      bottom:-140px;
+      right:-120px;
+      bottom:-150px;
+      width:340px;
+      height:340px;
       border-radius:50%;
-      background:radial-gradient(circle, rgba(255,255,255,.2) 0%, rgba(255,255,255,0) 68%);
+      background:radial-gradient(circle, rgba(255,255,255,.22) 0%, rgba(255,255,255,0) 70%);
     }
     .eyebrow{
       display:inline-block;
-      padding:6px 11px;
+      padding:6px 12px;
       border-radius:999px;
-      border:1px solid rgba(255,255,255,.2);
-      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.10);
       text-transform:uppercase;
-      letter-spacing:.06em;
-      font-size:.82rem;
+      letter-spacing:.07em;
+      font-size:.78rem;
+      font-weight:800;
       margin-bottom:12px;
     }
-    h1{font-size:clamp(2.2rem,4.5vw,3.6rem);line-height:1.03;margin:0 0 14px}
+    h1{font-size:clamp(2.2rem,4.6vw,3.5rem);line-height:1.03;margin:0 0 14px}
     h2{font-size:1.45rem;line-height:1.2;margin:0 0 12px}
-    h3{font-size:1.08rem;line-height:1.25;margin:0 0 8px}
+    h3{font-size:1.05rem;line-height:1.25;margin:0 0 8px}
     p{margin:0 0 14px}
-    .heroIntro{max-width:790px;font-size:1.06rem;color:rgba(255,255,255,.92)}
-    .heroProof{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-      gap:12px;
-      margin-top:18px;
-    }
-    .heroProof div{
-      border:1px solid rgba(255,255,255,.16);
-      background:rgba(255,255,255,.08);
-      border-radius:16px;
-      padding:14px;
-    }
-    .heroProof strong,.heroProof span{display:block}
-    .heroProof span{font-size:.93rem;color:rgba(255,255,255,.84)}
+    .heroIntro{max-width:820px;font-size:1.06rem;color:rgba(255,255,255,.92)}
     .ctaRow{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
     .btn{
       display:inline-flex;
@@ -101,16 +88,30 @@
     }
     .btnPrimary{background:#fff;color:#0f172a}
     .btnPrimary:hover{filter:brightness(.98);text-decoration:none}
-    .btnGhost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.3)}
+    .btnGhost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.32)}
     .btnGhost:hover{background:rgba(255,255,255,.14);text-decoration:none}
+    .heroProof{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:12px;
+      margin-top:20px;
+    }
+    .heroProof div{
+      background:rgba(255,255,255,.09);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:16px;
+      padding:14px;
+    }
+    .heroProof strong,.heroProof span{display:block}
+    .heroProof span{font-size:.93rem;color:rgba(255,255,255,.85)}
     .small{font-size:.93rem}
     .muted{color:var(--muted)}
     .grid{
       display:grid;
       grid-template-columns:minmax(0,1.85fr) minmax(300px,.95fr);
       gap:22px;
-      margin-top:24px;
       align-items:start;
+      margin-top:24px;
     }
     .card{
       background:var(--card);
@@ -119,21 +120,19 @@
       padding:24px;
       box-shadow:var(--shadow);
     }
-    .warning,.note,.ctaPanel,.comparePanel{
-      padding:16px;
+    .warning,.note,.ctaPanel{
       border-radius:16px;
+      padding:16px;
       margin:16px 0;
     }
-    .warning{background:var(--warn-bg);border-left:4px solid var(--warn-line)}
-    .note{background:var(--brand-soft);border-left:4px solid var(--brand)}
-    .comparePanel{background:var(--accent-soft);border-left:4px solid var(--accent)}
+    .warning{background:var(--warn);border-left:4px solid var(--warn-line)}
+    .note{background:var(--note);border-left:4px solid var(--note-line)}
     .ctaPanel{
       background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
       color:#fff;
-      border:1px solid rgba(15,118,110,.2);
-      box-shadow:none;
+      border:1px solid rgba(15,118,110,.18);
     }
-    .ctaPanel p{color:rgba(255,255,255,.9)}
+    .ctaPanel p{color:rgba(255,255,255,.90)}
     .cards{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -142,19 +141,20 @@
     }
     .intentCard{
       display:block;
+      min-height:100%;
+      padding:16px;
       border:1px solid var(--line);
       border-radius:18px;
-      padding:16px;
       background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);
       color:inherit;
-      min-height:100%;
     }
     .intentCard:hover{
       text-decoration:none;
-      border-color:#b7c6d8;
+      border-color:#b8c7d9;
       box-shadow:0 10px 24px rgba(15,23,42,.08);
     }
     .intentCard strong{display:block;margin-bottom:5px}
+    .intentCard span{display:block;color:var(--muted);font-size:.95rem}
     ul,ol{padding-left:21px;margin:0 0 14px}
     li{margin:7px 0}
     table{
@@ -175,24 +175,10 @@
     }
     th{background:#f1f5f9}
     tr:last-child td{border-bottom:none}
-    .linkList a{
-      display:block;
-      padding:12px 13px;
-      border:1px solid var(--line);
-      border-radius:14px;
-      margin-bottom:10px;
-      background:#fff;
-      color:inherit;
-    }
-    .linkList a:hover{text-decoration:none;border-color:#b7c6d8}
     .faq dt{font-weight:800;margin-top:14px}
     .faq dd{margin:6px 0 0;color:var(--muted)}
     footer{margin-top:24px;color:var(--muted);font-size:.95rem}
-    #related-links{
-      max-width:1160px;
-      margin:0 auto;
-      padding:0 24px 42px;
-    }
+    #related-links{max-width:1160px;margin:0 auto;padding:0 24px 42px}
     #related-links ul{
       background:#fff;
       border:1px solid var(--line);
@@ -200,10 +186,8 @@
       box-shadow:var(--shadow);
       padding:20px 20px 20px 38px;
     }
-    @media (max-width: 920px){
-      .grid{grid-template-columns:1fr}
-    }
-    @media (max-width: 560px){
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+    @media (max-width:560px){
       .wrap{padding:16px}
       .hero,.card{padding:20px}
       .btn{width:100%}
@@ -216,13 +200,12 @@
   {
     "@context":"https://schema.org",
     "@type":"WebPage",
-    "name":"GLP-1 Side Effects by Week: Timeline Tracker, HRV, Missed Dose, and Peptide Routing | Jabbit",
+    "name":"GLP-1 Side Effects by Week: Timeline, Missed Dose, HRV, and Tracker Routes | Jabbit",
     "url":"https://jabbitapp.com/glp-1-side-effects-guide.html",
-    "description":"Track GLP-1 side effects by week with a practical timeline hub for semaglutide, tirzepatide, Ozempic, Wegovy, Mounjaro, Zepbound, retatrutide, and broader peptide logging. Includes HRV, resting heart rate, missed-dose, and protocol-tracker routes.",
+    "description":"Track GLP-1 side effects by week with a practical timeline hub. Learn what to log, how to separate dose-day patterns from schedule drift, and which Jabbit tracker page fits nausea, fatigue, HRV, anxiety, and drug-specific timelines.",
     "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://jabbitapp.com/"}
   }
   </script>
-  <script defer src="/assets/site.js"></script>
   <script type="application/ld+json" id="faq-jsonld">
 {
   "@context": "https://schema.org",
@@ -233,438 +216,220 @@
       "name": "Do GLP-1 side effects always follow the same day-by-day pattern?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Many people are searching for a timeline because the pattern is inconsistent. That is exactly why a simple weekly log is more useful than trying to remember the week afterward."
+        "text": "No. The useful move is not assuming a universal timeline. It is logging your own week clearly enough to see whether symptoms cluster after dose day, after a dose increase, after a late dose, or for unrelated reasons like poor sleep or dehydration."
       }
     },
     {
       "@type": "Question",
-      "name": "Should I track anxiety or HRV on the same timeline as nausea or fatigue?",
+      "name": "Should anxiety, HRV, and resting heart rate live on the same timeline as nausea or fatigue?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The timeline is stronger when symptoms and context live together. If the signal looks more autonomic than digestive, branch into the dedicated stress, anxiety, and HRV page."
+        "text": "Usually yes. A combined timeline helps separate digestive symptoms, stress, low intake, poor sleep, and wearable changes instead of forcing you to guess later."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need a separate tracker for late-dose weeks?",
+      "name": "Do missed-dose weeks need their own tracker?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Usually yes. A moved injection can distort the whole week, so it helps to keep those weeks clearly labeled in the missed-dose tracker."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I just want the app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use Jabbit if you want the timeline itself to be the system: injections, side effects, notes, and schedule changes together in one place."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I am comparing GLP-1 side effects with retatrutide or a broader peptide routine?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Do not force all of that into one generic side-effects note. Use the retatrutide tracker or the peptide protocol tracker when your logging problem is wider than one branded GLP-1 week."
+        "text": "Usually yes. A late or skipped injection can distort the whole week, so it helps to label that week clearly instead of treating it like a normal pattern."
       }
     }
   ]
 }
 </script>
+<script defer src="/assets/site.js"></script>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
-      <span class="eyebrow">Timeline hub for tracker intent</span>
-      <h1>GLP-1 side effects by week: what to log, and where to go next</h1>
-      <p class="heroIntro">This page is for the question behind most side-effect searches: <strong>when exactly did it start, what changed that week, and which tracker should I use next?</strong> Use it as a routing hub for week-by-week GLP-1 side-effect logging, especially when the real follow-up is anxiety and HRV, resting-heart-rate drift, missed-dose timing, retatrutide symptom timing, or a broader peptide protocol log.</p>
+      <span class="eyebrow">Side-effect timeline hub</span>
+      <h1>GLP-1 side effects by week: build a cleaner timeline, then branch to the right tracker</h1>
+      <p class="heroIntro">The highest-signal question is usually not "what are the side effects?" It is "what changed this week, when did it start, and did it line up with dose timing, a missed dose, poor sleep, low intake, dehydration, or a dose increase?" This page is built to route that question into the right Jabbit tracking workflow.</p>
       <div class="ctaRow">
-        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hero_app_store" target="_blank" rel="noopener noreferrer">Open Jabbit in the App Store</a>
-        <a class="btn btnGhost" href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_hero_tracker">Open the GLP-1 injection tracker</a>
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_hero_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
+        <a class="btn btnGhost" href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_hub_hero_tracker">GLP-1 injection tracker</a>
       </div>
       <div class="heroProof">
-        <div>
-          <strong>Best for</strong>
-          <span>People trying to compare side effects to shot day, sleep, meals, stress, and routine shifts</span>
-        </div>
-        <div>
-          <strong>Highest-signal branch</strong>
-          <span>Stress, anxiety, HRV, resting-heart-rate, and missed-dose branches when the pattern feels more specific than generic GI noise</span>
-        </div>
-        <div>
-          <strong>Do not guess from memory</strong>
-          <span>Separate stable weeks from late-dose, travel, illness, or schedule-drift weeks</span>
-        </div>
+        <div><strong>Week-by-week structure</strong><span>Keep dose timing, symptoms, and context on one timeline instead of scattered notes.</span></div>
+        <div><strong>Missed-dose clarity</strong><span>Separate normal weeks from late, skipped, or restart weeks before you overread the pattern.</span></div>
+        <div><strong>Better routing</strong><span>Branch into nausea, HRV, anxiety, fatigue, or drug-specific pages only after the main question is clear.</span></div>
       </div>
+      <p class="small" style="margin-top:14px;color:rgba(255,255,255,.88)">Educational only. Jabbit helps you track patterns; it does not diagnose symptoms or recommend treatment changes.</p>
     </section>
 
     <section class="grid">
       <article class="card">
-        <div class="warning">
-          <strong>Educational only:</strong> this page is a tracking workflow, not treatment advice. It does not tell you how to dose or respond medically. If symptoms feel severe, sudden, or unsafe, seek licensed clinical care.
-        </div>
+        <div class="warning"><strong>Safety framing:</strong> this page is for logging and pattern-reading, not treatment advice. If symptoms feel severe, rapidly worsening, or urgent, seek appropriate medical care.</div>
 
-        <h2>How this page should work</h2>
-        <p class="muted">Generic “side effects” pages are often too broad to be useful. The better move is to log the week, then branch into the page that matches the pattern you are actually seeing.</p>
+        <h2>Start with the timeline, not the theory</h2>
+        <p class="muted">Generic side-effect lists are weak because they rarely answer the real problem. Most people want to know whether a symptom clusters on Day 1-2 after the shot, shows up after a dose increase, or only appears on chaotic weeks with travel, low intake, poor sleep, dehydration, constipation, alcohol, or stress.</p>
+        <p>A useful GLP-1 side-effect page should route fast into a logging workflow. That is the job of this hub.</p>
 
-        <div class="cards">
-          <a class="intentCard" href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_router_stress">
-            <strong>Stress, anxiety, HRV changes</strong>
-            <span>Use this when the signal looks like jitteriness, a wired feeling, poor recovery, or lower HRV after the shot.</span>
-          </a>
-          <a class="intentCard" href="/glp1-resting-heart-rate-timeline.html" data-track-internal="glp1_side_effects_router_rhr">
-            <strong>Resting heart rate timeline</strong>
-            <span>Use this when the question is whether higher resting heart rate follows dose day or a rough week.</span>
-          </a>
-          <a class="intentCard" href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_router_missed_dose">
-            <strong>Missed-dose or late-dose week</strong>
-            <span>Use this when a delayed shot changed the whole timeline and you need to label the week clearly.</span>
-          </a>
-          <a class="intentCard" href="/glp-1-side-effect-log.html" data-track-internal="glp1_side_effects_router_log">
-            <strong>Simple symptom log</strong>
-            <span>Use this when you mainly need one place to log onset, severity, and context without brand-specific detail.</span>
-          </a>
-        </div>
+        <div class="note"><strong>Best Jabbit setup:</strong> log the dose in the <a href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_hub_note_tracker">GLP-1 injection tracker</a>, then add symptom notes on the same week so you can compare dose timing, missed doses, sleep, food, hydration, and stress in one place.</div>
 
-        <h2>What to log every week</h2>
-        <p class="muted">The goal is not a diary. The goal is a repeatable timeline you can compare across weeks.</p>
-        <ul>
-          <li><strong>Injection timestamp:</strong> exact date and time, plus whether the shot was on schedule, early, or late</li>
-          <li><strong>Week label:</strong> stable week, travel week, dose-change week, missed-dose week, or illness week</li>
-          <li><strong>Symptoms:</strong> nausea, reflux, constipation, diarrhea, fatigue, appetite swings, headache, sleep changes, or mood changes</li>
-          <li><strong>Severity and timing:</strong> when it started, when it peaked, and when it faded</li>
-          <li><strong>Context:</strong> hydration, meal size, alcohol, stress, poor sleep, travel, illness, or unusually low intake</li>
-          <li><strong>Wearables:</strong> resting heart rate, HRV, sleep scores, and any “felt weird” notes that line up with them</li>
-        </ul>
-
-        <div class="note">
-          <strong>Most common mistake:</strong> people compare one messy week to another messy week. If the schedule drifted, use the <a href="/glp1-missed-dose-tracker.html">missed-dose tracker</a>. If the signal feels more like stress, anxiety, HRV, or elevated pulse, branch into the dedicated autonomic pages instead of treating it like a generic side-effect week.
-        </div>
-
-        <h2>Use this page like a router, not a dead-end guide</h2>
-        <p class="muted">The side-effect query is usually the first search, not the last one. Most people need one tighter next page once they see which pattern keeps repeating.</p>
-        <div class="cards">
-          <a class="intentCard" href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_router_second_pass_stress">
-            <strong>Wired, anxious, poor recovery</strong>
-            <span>Go here when the real story is jitteriness, lower HRV, higher resting heart rate, or a stress spike after injection.</span>
-          </a>
-          <a class="intentCard" href="/glp1-low-hrv-after-injection.html" data-track-internal="glp1_side_effects_router_second_pass_low_hrv">
-            <strong>Low HRV after injection</strong>
-            <span>Use this when the wearable pattern is more obvious than the symptom list and you want a tighter timing view.</span>
-          </a>
-          <a class="intentCard" href="/glp-1-side-effect-log.html" data-track-internal="glp1_side_effects_router_second_pass_log">
-            <strong>Simple side-effect log</strong>
-            <span>Best if you need a clean symptom timeline first and do not yet know which branch deserves its own page.</span>
-          </a>
-          <a class="intentCard" href="/glp1-injection-reminder-app.html" data-track-internal="glp1_side_effects_router_second_pass_reminder_app">
-            <strong>Reminder + tracker app path</strong>
-            <span>Start here if the problem is partly routine drift and you want reminders, notes, and week-over-week tracking in one workflow.</span>
-          </a>
-        </div>
-
-        <h2>GLP-1 side-effects timeline template</h2>
-        <table aria-label="GLP-1 side effects timeline template">
+        <h2>What to log on every GLP-1 side-effect week</h2>
+        <table aria-label="GLP-1 side effect timeline fields">
           <thead>
             <tr>
-              <th style="width:16%">Timeline window</th>
-              <th style="width:26%">What to log</th>
-              <th style="width:28%">What often gets confused</th>
+              <th>Field</th>
+              <th>Why it matters</th>
               <th>Best next page</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Shot day</td>
-              <td>Injection time, site, baseline appetite, hydration, sleep debt, stress load, and whether the shot was on time</td>
-              <td>A rough day that already started before the injection or a week that was never stable to begin with</td>
-              <td><a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a></td>
+              <td><strong>Injection timestamp</strong></td>
+              <td>Defines whether symptoms cluster after dose day or after schedule drift.</td>
+              <td><a href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_hub_table_injection">GLP-1 injection tracker</a></td>
             </tr>
             <tr>
-              <td>First 24 hours</td>
-              <td>Onset of nausea, reflux, fullness, fatigue, jittery feeling, appetite shifts, resting HR changes, or lower HRV</td>
-              <td>Low intake, dehydration, caffeine, or poor sleep showing up later as “med side effects”</td>
-              <td><a href="/glp1-stress-anxiety-hrv-guide.html">Stress, anxiety, and HRV guide</a></td>
+              <td><strong>Missed, late, or restart week</strong></td>
+              <td>Prevents you from comparing an abnormal week to your normal pattern.</td>
+              <td><a href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_hub_table_missed">GLP-1 missed dose tracker</a></td>
             </tr>
             <tr>
-              <td>Days 2 to 3</td>
-              <td>Peak severity, bowel changes, appetite suppression, sleep disruption, rising resting heart rate, lower HRV, and routine friction</td>
-              <td>Stress, illness, alcohol, or a bad sleep night driving the same pattern</td>
-              <td><a href="/glp1-resting-heart-rate-timeline.html">Resting-heart-rate timeline</a></td>
+              <td><strong>Main symptom + severity</strong></td>
+              <td>Turns "I felt off" into a timeline you can actually review later.</td>
+              <td><a href="/glp-1-side-effect-log.html" data-track-internal="glp1_side_effects_hub_table_log">GLP-1 side effect log</a></td>
             </tr>
             <tr>
-              <td>Days 4 to 6</td>
-              <td>Whether symptoms are settling, whether appetite is normalizing, whether wearables recover, and whether a late shot distorted the week</td>
-              <td>Assuming “better now” proves the same trigger caused the whole week</td>
-              <td><a href="/glp-1-side-effect-log.html">GLP-1 side-effect log</a></td>
+              <td><strong>Stress, anxiety, HRV, resting HR</strong></td>
+              <td>Useful when the week feels wired, recovery-impaired, or more autonomic than digestive.</td>
+              <td><a href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_hub_table_hrv">GLP-1 stress, anxiety, and HRV guide</a></td>
             </tr>
             <tr>
-              <td>Next dose window</td>
-              <td>Compare this week to the last stable week, tag late-dose or routine drift, and note if the next week needs a protocol or missed-dose label</td>
-              <td>Comparing a restart, travel week, or late-dose week to a stable on-time week</td>
-              <td><a href="/glp1-missed-dose-tracker.html">Missed-dose tracker</a></td>
+              <td><strong>Food, hydration, sleep, alcohol</strong></td>
+              <td>These often explain the roughest weeks better than the medication alone.</td>
+              <td><a href="/glp1-stress-hrv-guide.html" data-track-internal="glp1_side_effects_hub_table_context">GLP-1 stress and HRV guide</a></td>
             </tr>
           </tbody>
         </table>
 
-        <h2>Week labels that make the timeline readable</h2>
-        <p class="muted">Most side-effect logs improve immediately when each week gets a simple label before you write anything else.</p>
-        <div class="cards">
-          <div class="intentCard">
-            <strong>Stable week</strong>
-            <span>On-time injection, routine normal, no major travel or illness. Use this as the comparison week.</span>
-          </div>
-          <div class="intentCard">
-            <strong>Late-dose week</strong>
-            <span>Use the <a href="/glp1-missed-dose-tracker.html">missed-dose tracker</a> if schedule drift likely changed the whole pattern.</span>
-          </div>
-          <div class="intentCard">
-            <strong>Dose-change week</strong>
-            <span>Keep extra notes on appetite, fatigue, anxiety, HRV, and any change in recovery or sleep.</span>
-          </div>
-          <div class="intentCard">
-            <strong>Protocol-friction week</strong>
-            <span>Use a wider log when side effects overlap with stacks, peptide routines, or experiment-style tracking.</span>
-          </div>
-        </div>
-
-        <h2>Which page owns the pattern you are seeing?</h2>
-        <p class="muted">This keeps the hub from swallowing more specific intent. Use the page family that matches the real question, not just the first query you typed.</p>
-        <table aria-label="Side-effect query family router">
+        <h2>Simple GLP-1 side-effect timeline by week</h2>
+        <table aria-label="GLP-1 side effects by week template">
           <thead>
             <tr>
-              <th style="width:24%">If your real question is...</th>
-              <th style="width:24%">Best page family</th>
-              <th style="width:26%">Best fit when...</th>
-              <th>Start here</th>
+              <th>Window</th>
+              <th>What to compare</th>
+              <th>Useful notes</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>“What side effects showed up this week?”</td>
-              <td>Side-effect timeline</td>
-              <td>You want a week-by-week log for one GLP-1 or brand.</td>
-              <td><a href="/ozempic-side-effect-timeline.html">Drug-specific side-effect timelines</a></td>
+              <td><strong>Baseline week</strong></td>
+              <td>What the normal week feels like before a start, restart, or dose increase.</td>
+              <td>Sleep, appetite, bowel pattern, stress, wearable baseline.</td>
             </tr>
             <tr>
-              <td>“Was that anxiety, low HRV, or a stress spike after the shot?”</td>
-              <td>Autonomic / wearable branch</td>
-              <td>The pattern feels wired, recovery-related, or more obvious in HRV and resting-heart-rate data.</td>
-              <td><a href="/glp1-stress-anxiety-hrv-guide.html">Stress, anxiety, and HRV guide</a></td>
+              <td><strong>Injection day</strong></td>
+              <td>Whether the dose was on time, early, late, or part of a restart.</td>
+              <td>Dose level, exact time, hydration, pre-dose symptoms.</td>
             </tr>
             <tr>
-              <td>“My shot was late, and now the week makes no sense.”</td>
-              <td>Missed-dose / schedule-drift branch</td>
-              <td>Schedule timing changed and you need to label the whole week correctly.</td>
-              <td><a href="/glp1-missed-dose-tracker.html">GLP-1 missed-dose tracker</a></td>
+              <td><strong>Day 1-2</strong></td>
+              <td>Whether nausea, reflux, low appetite, fatigue, anxiety, or heart-rate changes cluster right after the shot.</td>
+              <td>Food intake, fluids, sleep, constipation, caffeine, stress.</td>
             </tr>
             <tr>
-              <td>“This might be retatrutide-specific.”</td>
-              <td>Drug-specific tracker + timeline</td>
-              <td>You want retatrutide logging, reminders, notes, and side-effect timing in one branch.</td>
-              <td><a href="/retatrutide-tracker.html">Retatrutide tracker</a></td>
+              <td><strong>Day 3-4</strong></td>
+              <td>Whether the pattern fades, lingers, or turns into a broader bad week.</td>
+              <td>Recovery, exercise tolerance, bowel pattern, workload, illness.</td>
             </tr>
             <tr>
-              <td>“This is broader than one med. I need a peptide protocol log.”</td>
-              <td>Peptide logging / protocol branch</td>
-              <td>The week includes stacks, routine drift, experiment notes, or broader peptide symptom tracking.</td>
-              <td><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></td>
+              <td><strong>Day 5-7</strong></td>
+              <td>Whether symptoms return toward baseline or drift into the next injection window.</td>
+              <td>Late meals, alcohol, travel, schedule drift, appetite rebound.</td>
             </tr>
           </tbody>
         </table>
 
-        <h2>Week-by-week routing: use the page that matches the pattern</h2>
-        <h3>If the question is “why do I feel wired, anxious, or off?”</h3>
-        <p>Start with the <a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress, anxiety, and HRV guide</a>. That page is better for autonomic patterns than a generic side-effect checklist, especially if your wearable data changed around the same time.</p>
-
-        <h3>If the question is “did my resting heart rate rise after the injection?”</h3>
-        <p>Use the broader <a href="/glp1-resting-heart-rate-timeline.html">GLP-1 resting-heart-rate timeline</a>, then branch into a molecule or brand page if that is how you search and log:</p>
-        <ul>
-          <li><a href="/semaglutide-resting-heart-rate-timeline.html" data-track-internal="glp1_side_effects_rhr_semaglutide">Semaglutide resting-heart-rate timeline</a></li>
-          <li><a href="/tirzepatide-resting-heart-rate-timeline.html" data-track-internal="glp1_side_effects_rhr_tirzepatide">Tirzepatide resting-heart-rate timeline</a></li>
-          <li><a href="/ozempic-resting-heart-rate-timeline.html" data-track-internal="glp1_side_effects_rhr_ozempic">Ozempic resting-heart-rate timeline</a></li>
-          <li><a href="/wegovy-resting-heart-rate-timeline.html" data-track-internal="glp1_side_effects_rhr_wegovy">Wegovy resting-heart-rate timeline</a></li>
-        </ul>
-        <p class="muted">For Mounjaro or Zepbound searches specifically, use the <a href="/tirzepatide-resting-heart-rate-timeline.html" data-track-internal="glp1_side_effects_rhr_tirzepatide_brand_bridge">tirzepatide resting-heart-rate timeline</a> together with the brand-specific anxiety and HRV trackers below. That already covers the highest-signal tirzepatide pattern without forcing another thin parity page.</p>
-
-        <h3>If the question is “the week went sideways because my shot was late”</h3>
-        <p>Use the <a href="/glp1-missed-dose-tracker.html">GLP-1 missed-dose tracker</a>. That keeps a schedule-shift week separate from your normal pattern and gives you a better record for appointments later.</p>
-
-        <h3>If the question is “I want the brand-specific timeline page”</h3>
-        <p>Go directly to the drug page that matches your search intent:</p>
-        <ul>
-          <li><a href="/semaglutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_timeline_semaglutide">Semaglutide side-effect timeline</a></li>
-          <li><a href="/tirzepatide-side-effect-timeline.html" data-track-internal="glp1_side_effects_timeline_tirzepatide">Tirzepatide side-effect timeline</a></li>
-          <li><a href="/ozempic-side-effect-timeline.html" data-track-internal="glp1_side_effects_timeline_ozempic">Ozempic side-effect timeline</a></li>
-          <li><a href="/wegovy-side-effect-timeline.html" data-track-internal="glp1_side_effects_timeline_wegovy">Wegovy side-effect timeline</a></li>
-          <li><a href="/mounjaro-side-effect-timeline.html" data-track-internal="glp1_side_effects_timeline_mounjaro">Mounjaro side-effect timeline</a></li>
-          <li><a href="/zepbound-side-effect-timeline.html" data-track-internal="glp1_side_effects_timeline_zepbound">Zepbound side-effect timeline</a></li>
-          <li><a href="/retatrutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_timeline_retatrutide">Retatrutide side-effect timeline</a></li>
-        </ul>
-
-        <h3>If the question is “I need the anxiety or HRV branch for my brand”</h3>
-        <p>The current winning cluster is the stress, anxiety, HRV, and wearable-pattern branch. If that is what brought you here, use the tighter page for the exact drug name you search:</p>
-        <ul>
-          <li><a href="/ozempic-anxiety-hrv-tracker.html" data-track-internal="glp1_side_effects_anxiety_ozempic">Ozempic anxiety and HRV tracker</a></li>
-          <li><a href="/wegovy-anxiety-hrv-tracker.html" data-track-internal="glp1_side_effects_anxiety_wegovy">Wegovy anxiety and HRV tracker</a></li>
-          <li><a href="/mounjaro-anxiety-hrv-tracker.html" data-track-internal="glp1_side_effects_anxiety_mounjaro">Mounjaro anxiety and HRV tracker</a></li>
-          <li><a href="/zepbound-anxiety-hrv-tracker.html" data-track-internal="glp1_side_effects_anxiety_zepbound">Zepbound anxiety and HRV tracker</a></li>
-          <li><a href="/semaglutide-anxiety-hrv-tracker.html" data-track-internal="glp1_side_effects_anxiety_semaglutide">Semaglutide anxiety and HRV tracker</a></li>
-          <li><a href="/tirzepatide-anxiety-hrv-tracker.html" data-track-internal="glp1_side_effects_anxiety_tirzepatide">Tirzepatide anxiety and HRV tracker</a></li>
-        </ul>
-
-        <h3>If the question is “this is really a peptide protocol or retatrutide tracking problem”</h3>
-        <p>Some searchers start on a GLP-1 side-effect query but really need a wider logging workflow. That is especially true when the week includes stacks, routine drift, experimental peptide logging, or retatrutide-specific questions.</p>
-        <ul>
-          <li><a href="/peptide-protocol-tracker.html" data-track-internal="glp1_side_effects_protocol_peptide">Peptide protocol tracker</a> for cycle notes, stack changes, routine drift, and missed-dose context in one log</li>
-          <li><a href="/peptide-side-effect-timeline.html" data-track-internal="glp1_side_effects_protocol_peptide_timeline">Peptide side-effect timeline</a> if the question is broader than one GLP-1 brand</li>
-          <li><a href="/peptide-morning-vs-night-injection-log.html" data-track-internal="glp1_side_effects_protocol_peptide_timing">Peptide morning-vs-night injection log</a> if the real question is whether timing changes the whole week</li>
-          <li><a href="/retatrutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_protocol_retatrutide_timeline">Retatrutide side-effect timeline</a> for week-by-week symptom timing</li>
-          <li><a href="/retatrutide-tracker.html" data-track-internal="glp1_side_effects_protocol_retatrutide_tracker">Retatrutide tracker</a> for the full injection, note, and reminder workflow</li>
-        </ul>
-
-        <div class="note">
-          <strong>Why this branch matters:</strong> not every qualified searcher identifies strictly with a branded GLP-1 query. Some are comparing semaglutide, tirzepatide, retatrutide, or broader peptide routines and want one private place to track symptoms, timing, and protocol changes together.
-        </div>
-
-        <div class="comparePanel">
-          <strong>Natural competitor framing:</strong> if you came here looking for a Shotsy-style injection log, the higher-fit move for side-effect questions is Jabbit’s broader timeline workflow. Side effects usually make sense only when dose timing, notes, sleep, stress, and wearable changes sit in one place, not in a reminder-only view.
+        <h2>Pick the branch that matches the real search intent</h2>
+        <div class="cards">
+          <a class="intentCard" href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_hub_card_hrv">
+            <strong>Stress, anxiety, HRV, or resting heart rate</strong>
+            <span>Use this when the week feels wired, recovery drops, or wearables changed around dose day.</span>
+          </a>
+          <a class="intentCard" href="/glp-1-side-effect-log.html" data-track-internal="glp1_side_effects_hub_card_log">
+            <strong>Generic symptom log</strong>
+            <span>Best for nausea, reflux, constipation, fatigue, or a broader symptom journal.</span>
+          </a>
+          <a class="intentCard" href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_hub_card_missed">
+            <strong>Missed dose or late injection</strong>
+            <span>Start here if the rough week followed a skipped, moved, or restarted dose.</span>
+          </a>
+          <a class="intentCard" href="/ozempic-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_card_ozempic">
+            <strong>Ozempic-specific timeline</strong>
+            <span>Use this when the search is brand-specific and the main question is Ozempic timing.</span>
+          </a>
+          <a class="intentCard" href="/wegovy-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_card_wegovy">
+            <strong>Wegovy-specific timeline</strong>
+            <span>Use this when the query is Wegovy-specific and you want a cleaner week-by-week route.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_card_retatrutide">
+            <strong>Retatrutide side-effect timeline</strong>
+            <span>Use this when the search moves beyond GLP-1 brands into peptide or retatrutide tracking intent.</span>
+          </a>
         </div>
 
         <div class="ctaPanel">
-          <h2>Track the full week, not just the shot</h2>
-          <p>Jabbit is strongest when you need one private timeline for injections, side effects, missed-dose weeks, stress notes, and wearable changes.</p>
-          <div class="ctaRow">
-            <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_mid_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
-            <a class="btn btnGhost" href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_mid_tracker">See the injection tracker page</a>
-          </div>
+          <h2 style="color:#fff">Use the app when the timeline matters more than generic advice</h2>
+          <p>If the real question is "what changed after the shot?", Jabbit is a better fit than a reminder-only workflow because dose timing, symptoms, notes, and schedule changes can live together in one private timeline.</p>
+          <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_mid_app_store" target="_blank" rel="noopener noreferrer">Track GLP-1 side effects in Jabbit</a></p>
         </div>
 
-        <h2>Best tracker pages from here</h2>
-        <div class="cards">
-          <a class="intentCard" href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_cards_injection">
-            <strong>GLP-1 injection tracker</strong>
-            <span>Log shot timing, reminders, site rotation, and notes in one workflow.</span>
-          </a>
-          <a class="intentCard" href="/semaglutide-injection-tracker.html" data-track-internal="glp1_side_effects_cards_semaglutide">
-            <strong>Semaglutide tracker</strong>
-            <span>Use this if you want the semaglutide-specific dose and symptom workflow.</span>
-          </a>
-          <a class="intentCard" href="/tirzepatide-injection-tracker.html" data-track-internal="glp1_side_effects_cards_tirzepatide">
-            <strong>Tirzepatide tracker</strong>
-            <span>Use this if your questions are really Mounjaro or Zepbound timeline questions.</span>
-          </a>
-          <a class="intentCard" href="/peptide-protocol-tracker.html" data-track-internal="glp1_side_effects_cards_protocol">
-            <strong>Peptide protocol tracker</strong>
-            <span>Use this when you want a wider peptide logging workflow instead of a single medication view.</span>
-          </a>
-          <a class="intentCard" href="/retatrutide-tracker.html" data-track-internal="glp1_side_effects_cards_retatrutide">
-            <strong>Retatrutide tracker</strong>
-            <span>Use this when the side-effect question is really retatrutide timing, reminders, and notes over multiple weeks.</span>
-          </a>
-        </div>
+        <h2>Why this adds more than a generic side-effect explainer</h2>
+        <ul>
+          <li><strong>It routes into proven winners.</strong> The stress, anxiety, and HRV cluster is already the clearest non-home traffic signal.</li>
+          <li><strong>It captures missed-dose and timing intent.</strong> Those queries map directly to reminder, log, and note behavior.</li>
+          <li><strong>It stays flexible across brands and peptides.</strong> Users can branch from generic GLP-1 questions into Ozempic, Wegovy, tirzepatide, Zepbound, or retatrutide pages without dead-ending.</li>
+        </ul>
 
         <h2>FAQ</h2>
         <dl class="faq">
           <dt>Do GLP-1 side effects always follow the same day-by-day pattern?</dt>
-          <dd>No. Many people are searching for a timeline because the pattern is inconsistent. That is exactly why a simple weekly log is more useful than trying to remember the week afterward.</dd>
-
-          <dt>Should I track anxiety or HRV on the same timeline as nausea or fatigue?</dt>
-          <dd>Yes. The timeline is stronger when symptoms and context live together. If the signal looks more autonomic than digestive, branch into the dedicated <a href="/glp1-stress-anxiety-hrv-guide.html">stress, anxiety, and HRV page</a>.</dd>
-
-          <dt>Do I need a separate tracker for late-dose weeks?</dt>
-          <dd>Usually yes. A moved injection can distort the whole week, so it helps to keep those weeks clearly labeled in the <a href="/glp1-missed-dose-tracker.html">missed-dose tracker</a>.</dd>
-
-          <dt>What if I just want the app?</dt>
-          <dd>Use Jabbit if you want the timeline itself to be the system: injections, side effects, notes, and schedule changes together in one place.</dd>
-
-          <dt>What if I am comparing GLP-1 side effects with retatrutide or a broader peptide routine?</dt>
-          <dd>Do not force all of that into one generic side-effects note. Use the <a href="/retatrutide-tracker.html">retatrutide tracker</a> or the <a href="/peptide-protocol-tracker.html">peptide protocol tracker</a> when your logging problem is wider than one branded GLP-1 week.</dd>
+          <dd>No. The useful move is not assuming a universal timeline. It is logging your own week clearly enough to see whether symptoms cluster after dose day, after a dose increase, after a late dose, or for unrelated reasons like poor sleep or dehydration.</dd>
+          <dt>Should anxiety, HRV, and resting heart rate live on the same timeline as nausea or fatigue?</dt>
+          <dd>Usually yes. A combined timeline helps separate digestive symptoms, stress, low intake, poor sleep, and wearable changes instead of forcing you to guess later.</dd>
+          <dt>Do missed-dose weeks need their own tracker?</dt>
+          <dd>Usually yes. A late or skipped injection can distort the whole week, so it helps to label that week clearly instead of treating it like a normal pattern.</dd>
         </dl>
       </article>
 
       <aside class="card">
-        <h2>Fast paths</h2>
-        <div class="linkList">
-          <a href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_aside_stress">
-            <strong>Stress, anxiety, HRV guide</strong><br />
-            <span class="muted">Best if the issue feels wired, restless, or recovery-related.</span>
-          </a>
-          <a href="/glp1-resting-heart-rate-timeline.html" data-track-internal="glp1_side_effects_aside_rhr">
-            <strong>Resting-heart-rate timeline</strong><br />
-            <span class="muted">Best if you are comparing pulse changes across the week.</span>
-          </a>
-          <a href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_aside_missed">
-            <strong>Missed-dose tracker</strong><br />
-            <span class="muted">Best if a late shot changed the whole pattern.</span>
-          </a>
-          <a href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_aside_tracker">
-            <strong>GLP-1 injection tracker</strong><br />
-            <span class="muted">Best if you want the core app workflow first.</span>
-          </a>
-        </div>
+        <h2>Quick start</h2>
+        <ol>
+          <li>Log the injection date, time, and dose first.</li>
+          <li>Add the main symptom and a simple 0-10 severity score.</li>
+          <li>Tag missed doses, sleep, hydration, food intake, alcohol, and stress.</li>
+          <li>Review 2-4 weeks together before calling it a pattern.</li>
+        </ol>
 
-        <h2>Brand-specific routes</h2>
+        <h2>Best paired pages</h2>
         <ul>
-          <li><a href="/ozempic-anxiety-hrv-tracker.html">Ozempic anxiety and HRV tracker</a></li>
-          <li><a href="/wegovy-anxiety-hrv-tracker.html">Wegovy anxiety and HRV tracker</a></li>
-          <li><a href="/mounjaro-anxiety-hrv-tracker.html">Mounjaro anxiety and HRV tracker</a></li>
-          <li><a href="/zepbound-anxiety-hrv-tracker.html">Zepbound anxiety and HRV tracker</a></li>
+          <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a></li>
+          <li><a href="/glp1-missed-dose-tracker.html">GLP-1 missed dose tracker</a></li>
+          <li><a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress, anxiety, and HRV guide</a></li>
+          <li><a href="/glp-1-side-effect-log.html">GLP-1 side effect log</a></li>
+          <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></li>
         </ul>
 
-        <h2>Peptide and retatrutide routes</h2>
-        <div class="linkList">
-          <a href="/retatrutide-tracker.html" data-track-internal="glp1_side_effects_aside_retatrutide_tracker">
-            <strong>Retatrutide tracker</strong><br />
-            <span class="muted">Best if you want the retatrutide-specific injection, symptom, and reminder workflow.</span>
-          </a>
-          <a href="/retatrutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_aside_retatrutide_timeline">
-            <strong>Retatrutide side-effect timeline</strong><br />
-            <span class="muted">Best if the query is week-by-week retatrutide symptom timing.</span>
-          </a>
-          <a href="/peptide-protocol-tracker.html" data-track-internal="glp1_side_effects_aside_peptide_protocol">
-            <strong>Peptide protocol tracker</strong><br />
-            <span class="muted">Best for broader peptide logging, stack notes, and routine drift.</span>
-          </a>
-        </div>
-
-        <h2>Fastest brand-specific timeline handoff</h2>
-        <p class="muted">If you already know the drug name in your search, skip the generic hub and go straight to the tighter week-by-week page.</p>
-        <div class="linkList">
-          <a href="/ozempic-side-effect-timeline.html" data-track-internal="glp1_side_effects_aside_ozempic_timeline">
-            <strong>Ozempic side-effect timeline</strong><br />
-            <span class="muted">Best when you want the Ozempic-specific symptom sequence and next-step tracker links.</span>
-          </a>
-          <a href="/wegovy-side-effect-timeline.html" data-track-internal="glp1_side_effects_aside_wegovy_timeline">
-            <strong>Wegovy side-effect timeline</strong><br />
-            <span class="muted">Best when the question is Wegovy timing, dose-week changes, or what to compare against the last stable week.</span>
-          </a>
-          <a href="/mounjaro-side-effect-timeline.html" data-track-internal="glp1_side_effects_aside_mounjaro_timeline">
-            <strong>Mounjaro side-effect timeline</strong><br />
-            <span class="muted">Best for Mounjaro-specific pattern tracking when the issue is not just “generic GLP-1 side effects.”</span>
-          </a>
-          <a href="/zepbound-side-effect-timeline.html" data-track-internal="glp1_side_effects_aside_zepbound_timeline">
-            <strong>Zepbound side-effect timeline</strong><br />
-            <span class="muted">Best for Zepbound users comparing side effects to shot timing, stress, appetite changes, and routine drift.</span>
-          </a>
-        </div>
-
-        <h2>Quick weekly checklist</h2>
+        <h2>Drug-specific paths</h2>
         <ul>
-          <li>Log the shot first.</li>
-          <li>Add one symptom score per day.</li>
-          <li>Tag anything unusual: travel, illness, late dose, heavy meal, alcohol, bad sleep.</li>
-          <li>Check wearables only in context, not in isolation.</li>
-          <li>Compare to the last stable week, not the noisiest week.</li>
+          <li><a href="/ozempic-side-effect-timeline.html">Ozempic side effect timeline</a></li>
+          <li><a href="/wegovy-side-effect-timeline.html">Wegovy side effect timeline</a></li>
+          <li><a href="/zepbound-side-effect-timeline.html">Zepbound side effect timeline</a></li>
+          <li><a href="/mounjaro-side-effect-timeline.html">Mounjaro side effect timeline</a></li>
+          <li><a href="/retatrutide-side-effect-timeline.html">Retatrutide side effect timeline</a></li>
         </ul>
 
-        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_aside_app_store" target="_blank" rel="noopener noreferrer">Get Jabbit in the App Store</a></p>
-        <p class="small muted">Educational only. Jabbit is a private tracking tool, not a treatment or dosing tool.</p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_aside_app_store" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
+        <p class="small muted">Educational only. Jabbit does not diagnose symptoms or recommend treatment changes.</p>
       </aside>
     </section>
 
     <footer>
-      <p class="small">Related search intent covered here: GLP-1 side effects timeline, side effects by week, side effects after injection, Ozempic side effects timeline, Wegovy side effects timeline, missed-dose side effects, HRV and resting-heart-rate changes after GLP-1 injections, retatrutide side effects timeline, and peptide protocol side-effect logging.</p>
-      <p class="small">© Jabbit</p>
+      <p><strong>Keywords this page targets:</strong> GLP-1 side effects by week, GLP-1 side effects timeline, missed dose side effects, GLP-1 anxiety HRV, Ozempic side effect timeline, Wegovy side effect timeline.</p>
     </footer>
   </main>
   <section id="related-links">
