@@ -3,146 +3,330 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Retatrutide Side-Effect Timeline (Day-by-Day After the Shot) | Jabbit</title>
-  <meta name="description" content="An educational, non-medical retatrutide side-effect timeline: what to log day-by-day after an injection, how to spot patterns across weeks, and a simple tracking template you can use in Jabbit." />
-  <meta name="keywords" content="retatrutide side effect timeline, retatrutide nausea timeline, retatrutide side effects by day, retatrutide symptoms after injection, retatrutide logging template, retatrutide tracker app" />
+  <title>Retatrutide Side-Effect Timeline (What to Track Week by Week) | Jabbit</title>
+  <meta name="description" content="A practical, non-medical retatrutide side-effect timeline: what to log after each dose, how to separate day-by-day symptoms from missed-dose or protocol drift, and which Jabbit tracker page fits best." />
+  <meta name="keywords" content="retatrutide side effect timeline, retatrutide side effects by week, retatrutide symptom timeline, retatrutide nausea timeline, retatrutide tracker, retatrutide missed dose tracker, retatrutide protocol tracker" />
   <link rel="canonical" href="https://jabbitapp.com/retatrutide-side-effect-timeline.html" />
   <style>
-    :root{ --bg:#f8fafc; --card:#fff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --border:#e2e8f0; }
-    *{ box-sizing:border-box; } body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; }
-    a{ color:var(--brand); text-decoration:none; } a:hover{ text-decoration:underline; }
-    .wrap{ max-width:920px; margin:0 auto; padding:28px 18px 60px; }
-    .hero{ background:linear-gradient(135deg,#0f172a 0%,#0b4a44 100%); color:#fff; border-radius:18px; padding:32px 26px; }
-    .hero h1{ margin:0 0 10px; font-size:2.05rem; line-height:1.18; }
+    :root{
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --brand:#0d9488;
+      --brand2:#14b8a6;
+      --line:#e2e8f0;
+      --hero1:#0f172a;
+      --hero2:#0b4a44;
+      --soft:#ecfeff;
+      --softline:#0d9488;
+      --shadow:0 10px 30px rgba(2,6,23,.08);
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.65;
+    }
+    a{ color:var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width:980px; margin:0 auto; padding:28px 18px 60px; }
+    .hero{
+      background:linear-gradient(135deg,var(--hero1) 0%,var(--hero2) 100%);
+      color:#fff;
+      border-radius:22px;
+      padding:34px 28px;
+      box-shadow:var(--shadow);
+    }
+    .hero h1{ margin:0 0 10px; font-size:2.2rem; line-height:1.15; }
     .hero p{ margin:0; color:rgba(255,255,255,.92); }
-    .small{ font-size:.92rem; opacity:.9; margin-top:10px !important; }
-    .pill{ display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.12); color:#fff; font-weight:700; font-size:.88rem; margin-bottom:10px; }
-    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; margin-top:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
-    h2{ margin:0 0 10px; font-size:1.3rem; } h3{ margin:0 0 8px; font-size:1.06rem; }
-    .muted{ color:var(--muted); } ul,ol{ margin:8px 0 0 18px; }
-    .ctaRow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
-    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border-radius:12px; font-weight:800; border:1px solid rgba(255,255,255,.25); }
-    .btnPrimary{ background:#0d9488; color:#062b27; border-color:#0d9488; }
-    .btnGhost{ background:rgba(255,255,255,.06); color:#fff; }
-    .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-    @media (max-width:760px){ .grid2{ grid-template-columns:1fr; } }
-    .timeline{ list-style:none; margin:0; padding:0; }
-    .timeline li{ border-left:3px solid #99f6e4; padding:0 0 16px 16px; margin-left:8px; position:relative; }
-    .timeline li::before{ content:''; width:10px; height:10px; background:#0d9488; border-radius:50%; position:absolute; left:-6px; top:6px; }
-    .note{ background:#ecfeff; border-left:4px solid #0d9488; padding:12px; border-radius:10px; }
-    code{ font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; font-size:.95em; background:#f1f5f9; padding:2px 6px; border-radius:8px; }
-    footer{ margin-top:28px; color:var(--muted); font-size:.95rem; }
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      color:#fff;
+      font-size:.86rem;
+      font-weight:800;
+      margin-bottom:12px;
+    }
+    .small{ font-size:.92rem; }
+    .muted{ color:var(--muted); }
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:12px 16px;
+      border-radius:12px;
+      font-weight:800;
+      border:1px solid transparent;
+    }
+    .btnPrimary{ background:var(--brand2); color:#062a27; }
+    .btnPrimary:hover{ text-decoration:none; filter:brightness(.97); }
+    .btnGhost{ background:rgba(255,255,255,.07); color:#fff; border-color:rgba(255,255,255,.28); }
+    .btnGhost:hover{ text-decoration:none; background:rgba(255,255,255,.12); }
+    .grid{ display:grid; grid-template-columns:1.35fr .85fr; gap:18px; margin-top:18px; }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+      box-shadow:var(--shadow);
+    }
+    h2{ margin:0 0 10px; font-size:1.34rem; }
+    h3{ margin:14px 0 8px; font-size:1.05rem; }
+    p{ margin:0 0 14px; }
+    ul,ol{ margin:8px 0 14px 18px; }
+    li{ margin:7px 0; }
+    .note{
+      background:var(--soft);
+      border-left:4px solid var(--softline);
+      border-radius:12px;
+      padding:14px;
+      margin:14px 0;
+    }
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+    .intentCard{
+      display:block;
+      padding:15px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);
+      color:inherit;
+    }
+    .intentCard:hover{
+      text-decoration:none;
+      border-color:#b7c7d9;
+      box-shadow:0 8px 20px rgba(2,6,23,.06);
+    }
+    .intentCard strong{ display:block; margin-bottom:5px; }
+    .intentCard span{ display:block; color:var(--muted); font-size:.94rem; }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:12px 0 18px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      overflow:hidden;
+      background:#fff;
+    }
+    th,td{
+      border-bottom:1px solid var(--line);
+      padding:10px 11px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{ background:#f1f5f9; }
+    tr:last-child td{ border-bottom:none; }
+    footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
+    #related-links{ max-width:980px; margin:0 auto; padding:0 18px 34px; }
+    #related-links ul{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:18px 18px 18px 36px;
+    }
+    @media (max-width:860px){ .grid{ grid-template-columns:1fr; } }
+    @media (max-width:560px){
+      .wrap{ padding:16px; }
+      .hero,.card{ padding:18px; }
+      .btn{ width:100%; }
+      #related-links{ padding:0 16px 28px; }
+    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Retatrutide Side-Effect Timeline (What to Track Week by Week) | Jabbit",
+    "url":"https://www.jabbitapp.com/retatrutide-side-effect-timeline.html",
+    "description":"A practical, non-medical retatrutide side-effect timeline: what to log after each dose, how to separate day-by-day symptoms from missed-dose or protocol drift, and which Jabbit tracker page fits best.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"}
+  }
+  </script>
   <script defer src="/assets/site.js"></script>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
-      <div class="pill">Timeline intent • practical logging</div>
-      <h1>Retatrutide side-effect timeline (day-by-day after the shot)</h1>
-      <p>This page is an educational timeline template: a simple way to <strong>log what happens after each injection</strong> so you can see patterns across weeks (instead of guessing from memory).</p>
+      <span class="pill">Retatrutide tracker intent</span>
+      <h1>Retatrutide side-effect timeline: what to track week by week</h1>
+      <p>This page is for the real question behind the search: what changed after the dose, when did it start, and was it a normal symptom week, a missed-dose week, or a broader protocol-change week?</p>
       <div class="ctaRow">
-        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="reta_timeline_hero" target="_blank" rel="noopener noreferrer">Get Jabbit (App Store)</a>
-        <a class="btn btnGhost" href="/retatrutide-injection-tracker.html">Retatrutide injection tracker</a>
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="app_store_click:retatrutide_side_effect_timeline:hero" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/retatrutide-tracker.html">Retatrutide tracker hub</a>
       </div>
-      <p class="small">Educational only. Not medical advice. Retatrutide is investigational; this page is about keeping a clean timeline for discussion with a licensed clinician.</p>
+      <p class="small" style="margin-top:12px;">Educational only. Not medical advice. Retatrutide is investigational, so the useful move is keeping a clean timeline for your own review or for discussion with a licensed clinician.</p>
     </section>
 
-    <section class="card">
-      <h2>Quick answer: what this timeline is for</h2>
-      <p class="muted">People search “timeline” when they’re trying to answer: <em>when did it start?</em> <em>when does it peak?</em> <em>is it getting better?</em> The most useful thing you can do is log consistently.</p>
-      <div class="grid2">
-        <div>
-          <h3>Track after every injection</h3>
-          <ul>
-            <li>Injection date + time (and if it was early/late)</li>
-            <li>Symptoms (nausea, reflux, constipation/diarrhea, fatigue, headache)</li>
-            <li>Appetite / satiety notes</li>
-            <li>Hydration + meals (high-level: “light”, “heavy”, “late”, “spicy”)</li>
-            <li>Sleep quality</li>
-          </ul>
+    <section class="grid">
+      <article class="card">
+        <h2>Start with the timeline, not the theory</h2>
+        <p class="muted">A weak log blurs everything together. A useful log separates symptom timing from schedule drift, dose notes, sleep, stress, hydration, appetite, and any broader peptide-protocol changes.</p>
+        <div class="note">
+          <strong>Best setup:</strong> log the injection in the <a href="/retatrutide-injection-tracker.html">retatrutide injection tracker</a>, keep dose-history detail in the <a href="/retatrutide-dose-log.html">retatrutide dose log</a>, and use this page when the main question is the symptom pattern across the week.
         </div>
-        <div>
-          <h3>Add context when it matters</h3>
-          <ul>
-            <li>Stress, travel, illness</li>
-            <li>Alcohol (if any)</li>
-            <li>New meds/supplements</li>
-            <li>Constipation interventions (what you tried, not a recommendation)</li>
-            <li>Anything unusual that week</li>
-          </ul>
+
+        <h2>What to log on every retatrutide symptom week</h2>
+        <table aria-label="Retatrutide timeline fields">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Why it matters</th>
+              <th>Best next page</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Dose timestamp</strong></td>
+              <td>Shows whether symptoms cluster right after the shot or later in the week.</td>
+              <td><a href="/retatrutide-injection-tracker.html">Retatrutide injection tracker</a></td>
+            </tr>
+            <tr>
+              <td><strong>Main symptom + severity</strong></td>
+              <td>Turns a vague bad week into something comparable across multiple weeks.</td>
+              <td><a href="/retatrutide-side-effect-log.html">Retatrutide side-effect log</a></td>
+            </tr>
+            <tr>
+              <td><strong>Missed, late, or restarted week</strong></td>
+              <td>Prevents you from comparing an abnormal week to your normal pattern.</td>
+              <td><a href="/retatrutide-missed-dose-tracker.html">Retatrutide missed dose tracker</a></td>
+            </tr>
+            <tr>
+              <td><strong>Stress, anxiety, HRV, resting HR</strong></td>
+              <td>Useful when the week feels wired, recovery changes, or wearable metrics drift with symptoms.</td>
+              <td><a href="/retatrutide-anxiety-hrv-tracker.html">Retatrutide anxiety and HRV tracker</a></td>
+            </tr>
+            <tr>
+              <td><strong>Protocol or stack change</strong></td>
+              <td>Important when the week involved travel, routine drift, other compounds, or a broader peptide workflow.</td>
+              <td><a href="/retatrutide-protocol-tracker.html">Retatrutide protocol tracker</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Simple retatrutide side-effect timeline by week</h2>
+        <table aria-label="Retatrutide week by week timeline">
+          <thead>
+            <tr>
+              <th>Window</th>
+              <th>What to compare</th>
+              <th>Useful notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Baseline week</strong></td>
+              <td>What a normal week feels like before a start, restart, or schedule change.</td>
+              <td>Appetite, bowel pattern, sleep, stress, wearable baseline.</td>
+            </tr>
+            <tr>
+              <td><strong>Dose day</strong></td>
+              <td>Whether the injection was on time, early, late, or part of a reset week.</td>
+              <td>Dose level, exact time, site, hydration, pre-dose notes.</td>
+            </tr>
+            <tr>
+              <td><strong>Day 1-2</strong></td>
+              <td>Whether nausea, reflux, fatigue, anxiety, or heart-rate changes cluster right after the shot.</td>
+              <td>Food intake, fluids, sleep, stress, constipation, caffeine.</td>
+            </tr>
+            <tr>
+              <td><strong>Day 3-4</strong></td>
+              <td>Whether the pattern fades, lingers, or broadens into a worse overall week.</td>
+              <td>Recovery, appetite, bowel pattern, workload, travel, illness.</td>
+            </tr>
+            <tr>
+              <td><strong>Day 5-7</strong></td>
+              <td>Whether symptoms settle back toward baseline or drift into the next injection window.</td>
+              <td>Late meals, alcohol, routine drift, missed-dose planning, appetite rebound.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Pick the branch that matches the real retatrutide search intent</h2>
+        <div class="cards">
+          <a class="intentCard" href="/retatrutide-side-effect-log.html">
+            <strong>Retatrutide side-effect log</strong>
+            <span>Use this when you need a simpler symptom journal instead of a full week-by-week interpretation page.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-missed-dose-tracker.html">
+            <strong>Missed dose or late injection</strong>
+            <span>Start here if the rough week followed a skipped, delayed, or restarted dose.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-anxiety-hrv-tracker.html">
+            <strong>Anxiety, HRV, or resting heart rate</strong>
+            <span>Use this when the week feels more autonomic, wearable-driven, or stress-patterned than digestive.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-resting-heart-rate-timeline.html">
+            <strong>Resting heart rate timeline</strong>
+            <span>Best fit when the main question is whether your wearable pattern moved with injection timing.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-dose-log.html">
+            <strong>Dose log</strong>
+            <span>Use this when the main problem is keeping the history clean across schedule or amount changes.</span>
+          </a>
+          <a class="intentCard" href="/retatrutide-protocol-tracker.html">
+            <strong>Protocol tracker</strong>
+            <span>Best for broader peptide workflow, experiment notes, and routine drift that makes a symptom week harder to read.</span>
+          </a>
         </div>
-      </div>
-      <p class="muted">Related trackers:</p>
-      <ul>
-        <li><a href="/retatrutide-missed-dose-tracker.html">Retatrutide missed dose tracker</a> (what to log when timing changes)</li>
-        <li><a href="/retatrutide-side-effect-log.html">Retatrutide side effect log</a> (simple symptom tracking template)</li>
-        <li><a href="/injection-protocol-tracker.html">Injection protocol tracker</a> (routine consistency template)</li>
-      </ul>
-    </section>
 
-    <section class="card">
-      <h2>Day-by-day timeline template (copy this)</h2>
-      <p class="muted">Use this as a checklist. The point is consistency and pattern-finding, not diagnosing anything.</p>
-      <ol class="timeline">
-        <li>
-          <h3>Day 0 (injection day)</h3>
-          <p class="muted">Log time, site, and a baseline note: how you felt before the shot. If you eat differently on shot day, note it as context.</p>
-        </li>
-        <li>
-          <h3>Day 1</h3>
-          <p class="muted">Log appetite changes, nausea/reflux, bowel changes, fatigue, and sleep. If symptoms are present, rate them (0–10) so “worse/better” is measurable.</p>
-        </li>
-        <li>
-          <h3>Day 2</h3>
-          <p class="muted">Keep logging the same fields. Many people misread normal day-to-day variability as a “trend” unless the log is consistent.</p>
-        </li>
-        <li>
-          <h3>Day 3–4</h3>
-          <p class="muted">This is where patterns often show up: does nausea cluster on certain days? Does constipation build across multiple days? Does sleep change after a heavy meal?</p>
-        </li>
-        <li>
-          <h3>Day 5–6</h3>
-          <p class="muted">Log whether things are returning to baseline. If you’re early/late on the next dose, capture that change so you can interpret the week.</p>
-        </li>
-        <li>
-          <h3>Day 7 (next dose window)</h3>
-          <p class="muted">Compare week-to-week: <code>Week N</code> vs <code>Week N+1</code>. If anything changed (timing, travel, stress, meals), write one sentence. Context beats guessing.</p>
-        </li>
-      </ol>
-      <div class="note" style="margin-top:12px;">
-        <strong>Simple rule:</strong> if you want “timeline” clarity, log the same fields every day for 14 days. A messy log produces messy conclusions.
-      </div>
-    </section>
+        <div class="note">
+          <strong>Pattern-reading rule:</strong> if the week was late, skipped, restarted, or mixed with broader protocol changes, tag that clearly first. Otherwise you risk treating schedule drift like a side-effect pattern.
+        </div>
 
-    <section class="card">
-      <h2>Week-by-week: why symptoms can shift over time</h2>
-      <p class="muted">A common “timeline” confusion is mixing <em>day-by-day after injection</em> with <em>week-by-week across schedule changes</em>. Your log should separate them.</p>
-      <ul>
-        <li><strong>New routine effects:</strong> appetite and meal patterns often change first.</li>
-        <li><strong>Behavior confounders:</strong> travel, stress, sleep disruption, and meal timing can mimic medication effects.</li>
-        <li><strong>Schedule confounders:</strong> early/late injections change the week’s rhythm; log it explicitly.</li>
-      </ul>
-      <p class="muted">If you need a dedicated place to record “what changed this week,” use the protocol tracker:</p>
-      <p><a href="/injection-protocol-tracker.html"><strong>Injection protocol tracker</strong></a> <span class="muted">→ reminders, rotation notes, and consistency</span></p>
-    </section>
+        <div class="ctaRow" style="margin-top:8px;">
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="app_store_click:retatrutide_side_effect_timeline:body" target="_blank" rel="noopener noreferrer">Track the week in Jabbit</a>
+          <a class="btn" style="border-color:var(--line); background:#fff; color:var(--brand);" href="/retatrutide-injection-tracker.html">Open the injection tracker</a>
+        </div>
 
-    <section class="card">
-      <h2>What to do with the data (non-medical)</h2>
-      <ul>
-        <li>Bring your log to appointments instead of relying on memory.</li>
-        <li>Use the log to spot triggers: meal timing, stress, alcohol, and sleep shifts.</li>
-        <li>If you’re comparing weeks, compare <strong>like with like</strong> (same day-of-week, similar meals, similar sleep).</li>
-      </ul>
-      <div class="ctaRow" style="margin-top:14px;">
-        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="reta_timeline_mid" target="_blank" rel="noopener noreferrer">Track it in Jabbit</a>
-        <a class="btn btnGhost" href="/retatrutide-missed-dose-tracker.html">Missed dose tracker</a>
-      </div>
+        <h2>Why this page adds more than a generic timeline</h2>
+        <ul>
+          <li><strong>It routes into tracker intent.</strong> The user can move directly into injection, missed-dose, protocol, or side-effect logging workflows.</li>
+          <li><strong>It separates symptom timing from schedule drift.</strong> That is more useful than a generic "what to expect" page.</li>
+          <li><strong>It fits retatrutide-specific curiosity without becoming generic peptide news.</strong> The page stays inside practical logging behavior.</li>
+        </ul>
+      </article>
+
+      <aside class="card">
+        <h2>Quick start</h2>
+        <ol>
+          <li>Log the injection date, time, and dose first.</li>
+          <li>Add the main symptom and a simple 0-10 severity score.</li>
+          <li>Tag missed doses, sleep, stress, hydration, and appetite shifts.</li>
+          <li>Review 2-4 weeks together before calling it a pattern.</li>
+        </ol>
+
+        <h2>Best paired pages</h2>
+        <ul>
+          <li><a href="/retatrutide-tracker.html">Retatrutide tracker hub</a></li>
+          <li><a href="/retatrutide-injection-tracker.html">Retatrutide injection tracker</a></li>
+          <li><a href="/retatrutide-side-effect-log.html">Retatrutide side-effect log</a></li>
+          <li><a href="/retatrutide-missed-dose-tracker.html">Retatrutide missed dose tracker</a></li>
+          <li><a href="/retatrutide-anxiety-hrv-tracker.html">Retatrutide anxiety and HRV tracker</a></li>
+          <li><a href="/retatrutide-protocol-tracker.html">Retatrutide protocol tracker</a></li>
+        </ul>
+
+        <h2>App route</h2>
+        <p class="muted">If the real question is "what changed after the shot?", Jabbit works better than a reminder-only flow because timing, symptoms, and notes stay on one private timeline.</p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="app_store_click:retatrutide_side_effect_timeline:aside" target="_blank" rel="noopener noreferrer" style="width:100%;">Open App Store</a></p>
+      </aside>
     </section>
 
     <footer>
-      <p>This page is informational and is not medical advice.</p>
-      <p><a href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a> to log injection timing, symptoms, and notes in one place.</p>
+      <p><strong>Keywords this page targets:</strong> retatrutide side effect timeline, retatrutide side effects by week, retatrutide symptom timeline, retatrutide missed dose tracker, retatrutide protocol tracker.</p>
+      <p>Educational only. Jabbit does not provide medical advice, diagnosis, or treatment.</p>
     </footer>
   </main>
   <section id="related-links">
