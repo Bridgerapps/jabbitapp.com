@@ -399,6 +399,49 @@
           </a>
         </div>
 
+        <h2>Best next page by medication or tracking problem</h2>
+        <table aria-label="GLP-1 and peptide side effect routing matrix">
+          <thead>
+            <tr>
+              <th>Intent</th>
+              <th>Best next page</th>
+              <th>Why it is the better fit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Retatrutide tracker intent</strong></td>
+              <td><a href="/retatrutide-tracker.html" data-track-internal="glp1_side_effects_hub_matrix_retatrutide_tracker">Retatrutide tracker</a></td>
+              <td>Use this when the side-effect question is really about keeping dose timing, symptom timing, and protocol notes on one retatrutide-specific timeline.</td>
+            </tr>
+            <tr>
+              <td><strong>Retatrutide symptom week</strong></td>
+              <td><a href="/retatrutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_matrix_retatrutide_timeline">Retatrutide side-effect timeline</a></td>
+              <td>Better when the main need is a week-by-week symptom pattern instead of a broad tracker hub.</td>
+            </tr>
+            <tr>
+              <td><strong>Peptide logging or protocol drift</strong></td>
+              <td><a href="/peptide-protocol-tracker.html" data-track-internal="glp1_side_effects_hub_matrix_peptide_protocol">Peptide protocol tracker</a></td>
+              <td>Best fit when more than one compound, a broader protocol, or routine drift makes the week hard to interpret.</td>
+            </tr>
+            <tr>
+              <td><strong>Missed dose or timing change</strong></td>
+              <td><a href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_hub_matrix_missed_dose">GLP-1 missed dose tracker</a></td>
+              <td>Labels abnormal weeks clearly before you compare symptoms to normal schedule weeks.</td>
+            </tr>
+            <tr>
+              <td><strong>Morning vs night / routine comparison</strong></td>
+              <td><a href="/glp1-dose-timing-morning-vs-night.html" data-track-internal="glp1_side_effects_hub_matrix_timing">GLP-1 dose timing: morning vs night</a></td>
+              <td>Use this when the symptom question is really whether routine timing changed the week.</td>
+            </tr>
+            <tr>
+              <td><strong>Drug-specific tracker intent</strong></td>
+              <td><a href="/semaglutide-injection-tracker.html" data-track-internal="glp1_side_effects_hub_matrix_semaglutide_tracker">Semaglutide injection tracker</a>, <a href="/tirzepatide-injection-tracker.html" data-track-internal="glp1_side_effects_hub_matrix_tirzepatide_tracker">tirzepatide injection tracker</a>, <a href="/retatrutide-injection-tracker.html" data-track-internal="glp1_side_effects_hub_matrix_retatrutide_injection">retatrutide injection tracker</a></td>
+              <td>Better when the user wants a clean dose log first and will add symptom tracking on top of it.</td>
+            </tr>
+          </tbody>
+        </table>
+
         <div class="ctaPanel">
           <h2 style="color:#fff">Use the app when the timeline matters more than generic advice</h2>
           <p>If the real question is "what changed after the shot?", Jabbit is a better fit than a reminder-only workflow because dose timing, symptoms, HRV or anxiety notes, missed-dose context, and peptide protocol drift can live together in one private timeline.</p>
@@ -430,6 +473,7 @@
           <li><strong>It routes into proven winners.</strong> The stress, anxiety, and HRV cluster is already the clearest non-home traffic signal.</li>
           <li><strong>It captures missed-dose and timing intent.</strong> Those queries map directly to reminder, log, and note behavior.</li>
           <li><strong>It broadens qualified peptide coverage.</strong> Users can branch from generic GLP-1 questions into semaglutide, Ozempic, Wegovy, tirzepatide, retatrutide, or broader peptide protocol pages without dead-ending.</li>
+          <li><strong>It absorbs adjacent tracker families.</strong> Retatrutide tracker intent, peptide protocol logging, and dose-timing questions can all enter through the same hub without creating another stale parity page.</li>
         </ul>
 
         <h2>FAQ</h2>
