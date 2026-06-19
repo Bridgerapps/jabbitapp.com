@@ -234,6 +234,14 @@
         "@type": "Answer",
         "text": "Usually yes. A late or skipped injection can distort the whole week, so it helps to label that week clearly instead of treating it like a normal pattern."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Why use a tracker app instead of a reminder-only app for GLP-1 side effects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the useful question is usually not just whether you took the shot. It is whether dose timing, missed-dose labels, symptom severity, HRV or resting-heart-rate notes, sleep, hydration, and protocol context all changed in the same window. A reminder-only workflow is narrower than that."
+      }
     }
   ]
 }
@@ -245,7 +253,7 @@
     <section class="hero">
       <span class="eyebrow">Side-effect timeline router</span>
       <h1>GLP-1 side effects by week: a tracker hub for missed doses, HRV changes, and peptide protocol drift</h1>
-      <p class="heroIntro">The useful question is rarely just "what are the side effects?" It is usually "did this line up with the shot, a missed dose, a dose increase, anxiety or HRV changes, a brand-specific timeline, or a broader peptide protocol shift?" This page is built to route that question into the strongest Jabbit tracking workflow instead of leaving it as a generic symptom search.</p>
+      <p class="heroIntro">The useful question is rarely just "what are the side effects?" It is usually "did this line up with the shot, a missed dose, a dose increase, anxiety or HRV changes, a brand-specific timeline, or a broader peptide protocol shift?" This page is built to route that question into the strongest Jabbit tracking workflow instead of leaving it as a generic symptom search. That matters because the best-fit traffic here is not casual curiosity. It is people trying to compare one week to another without rebuilding the whole timeline from memory.</p>
       <div class="ctaRow">
         <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_hero_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
         <a class="btn btnGhost" href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_hub_hero_tracker">GLP-1 injection tracker</a>
@@ -487,6 +495,40 @@
           <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_mid_app_store" target="_blank" rel="noopener noreferrer">Track GLP-1 side effects in Jabbit</a></p>
         </div>
 
+        <h2>Why this query fits Jabbit better than a reminder-only app</h2>
+        <p class="muted">A lot of users reaching this page are comparing tracker apps, even if they do not search that phrase directly. The decision point is usually whether they need a simple reminder or a fuller week-by-week log.</p>
+        <table aria-label="Jabbit versus reminder-only app comparison for side effect tracking">
+          <thead>
+            <tr>
+              <th>If the question is...</th>
+              <th>Reminder-only app</th>
+              <th>Jabbit workflow</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Did I take the shot on time?</strong></td>
+              <td>Usually enough if timing is the only problem.</td>
+              <td>Also works, but adds dose history and notes so the week stays reviewable later.</td>
+            </tr>
+            <tr>
+              <td><strong>Why did this week feel worse?</strong></td>
+              <td>Usually too thin because it does not keep symptom severity, context, and week labels together.</td>
+              <td>Keeps dose timing, symptom timing, missed-dose labels, food, hydration, sleep, stress, and protocol notes on one private timeline.</td>
+            </tr>
+            <tr>
+              <td><strong>Was this a missed-dose, anxiety/HRV, or retatrutide-style protocol week?</strong></td>
+              <td>Often turns into scattered screenshots or Notes app fragments.</td>
+              <td>Routes cleanly into the <a href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_hub_compare_missed">missed-dose tracker</a>, <a href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_hub_compare_hrv">stress and HRV guide</a>, or <a href="/retatrutide-tracker.html" data-track-internal="glp1_side_effects_hub_compare_retatrutide">retatrutide tracker</a>.</td>
+            </tr>
+            <tr>
+              <td><strong>Do I need more than what a basic app like Shotsy covers?</strong></td>
+              <td>Good when the job is mostly reminders and simple medication history.</td>
+              <td>Better when side effects, protocol drift, peptide context, and week-by-week comparisons are the main job.</td>
+            </tr>
+          </tbody>
+        </table>
+
         <h2>When this query is really about obesity-medication or peptide tracking</h2>
         <p class="muted">A lot of "GLP-1 side effects" searches are really trying to answer one of five narrower questions: "was this semaglutide or tirzepatide specific?", "did the week go sideways because timing changed?", "did my wearable metrics move with the symptoms?", "is this actually retatrutide tracker intent?", or "is this broader than one medication and I need a protocol log?" Those are better tracker queries than generic explainer queries.</p>
         <div class="note"><strong>Useful split:</strong> if you are comparing one branded medication week to another, stay on the drug-specific timeline pages. If you are managing broader protocol context, stacked compounds, or a gray-market-adjacent peptide workflow, use the <a href="/peptide-protocol-tracker.html" data-track-internal="glp1_side_effects_hub_protocol_split">protocol tracker</a> and the <a href="/peptide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_protocol_split_timeline">peptide side-effect timeline</a> so the symptom history stays coherent.</div>
@@ -529,6 +571,8 @@
           <dd>Usually yes. A combined timeline helps separate digestive symptoms, stress, low intake, poor sleep, and wearable changes instead of forcing you to guess later.</dd>
           <dt>Do missed-dose weeks need their own tracker?</dt>
           <dd>Usually yes. A late or skipped injection can distort the whole week, so it helps to label that week clearly instead of treating it like a normal pattern.</dd>
+          <dt>Why use a tracker app instead of a reminder-only app for GLP-1 side effects?</dt>
+          <dd>Because the useful question is usually not just whether you took the shot. It is whether dose timing, missed-dose labels, symptom severity, HRV or resting-heart-rate notes, sleep, hydration, and protocol context all changed in the same window. A reminder-only workflow is narrower than that.</dd>
         </dl>
       </article>
 
