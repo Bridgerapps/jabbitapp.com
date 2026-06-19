@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tirzepatide Dose Log (Weekly Shot Tracker + Titration Notes) | Jabbit</title>
+  <meta name="description" content="A practical, non-medical tirzepatide dose log for Mounjaro or Zepbound: what to record each week, how to keep titration and timing changes readable, and a printable template you can also track in Jabbit." />
+  <meta name="keywords" content="tirzepatide dose log, tirzepatide dose tracker, tirzepatide shot log, tirzepatide titration log, weekly tirzepatide tracker, Mounjaro dose log, Zepbound dose log, tirzepatide logging app" />
+  <link rel="canonical" href="https://jabbitapp.com/tirzepatide-dose-log.html" />
+
+  <style>
+    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --brand2:#14b8a6; --border:#e2e8f0; --warn:#f97316; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+    a{ color:var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width:940px; margin:0 auto; padding:28px 18px 60px; }
+    .hero{ background:linear-gradient(135deg, #0f172a 0%, #0b4a44 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 10px 30px rgba(2,6,23,.15); }
+    .hero h1{ margin:0 0 10px; font-size:2.1rem; line-height:1.2; }
+    .hero p{ margin:0; color:rgba(255,255,255,.92); font-size:1.05rem; }
+    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; font-weight:700; border:1px solid transparent; }
+    .btnPrimary{ background:var(--brand2); color:#062a27; }
+    .btnPrimary:hover{ filter:brightness(.95); text-decoration:none; }
+    .btnGhost{ background:transparent; color:#fff; border-color:rgba(255,255,255,.35); }
+    .btnGhost:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
+    .pill{ display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); font-size:.85rem; color:rgba(255,255,255,.95); }
+    .small{ font-size:.9rem; }
+    .grid{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; }
+    @media(min-width:900px){ .grid{ grid-template-columns: 1.25fr .75fr; } }
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
+    h2{ margin:18px 0 10px; font-size:1.35rem; }
+    h3{ margin:14px 0 8px; font-size:1.1rem; }
+    ul,ol{ margin:8px 0 0 18px; }
+    .muted{ color:var(--muted); }
+    .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px; border-radius:10px; }
+    .warning{ background:#fff7ed; border-left:4px solid var(--warn); padding:12px; border-radius:10px; }
+    table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
+    th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
+    th{ background:#f1f5f9; }
+    dl.faq{ margin:10px 0 0; }
+    dl.faq dt{ font-weight:800; margin-top:12px; }
+    dl.faq dd{ margin:6px 0 0; color:var(--muted); }
+    footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
+  </style>
+
+  <script type="application/ld+json" id="webpage-jsonld">
+  {"@context":"https://schema.org","@type":"WebPage","name":"Tirzepatide Dose Log (Weekly Shot Tracker + Titration Notes) | Jabbit","url":"https://www.jabbitapp.com/tirzepatide-dose-log.html","description":"A practical, non-medical tirzepatide dose log for Mounjaro or Zepbound: what to record each week, how to keep titration and timing changes readable, and a printable template you can also track in Jabbit.","isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},"publisher":{"@type":"Organization","name":"Bridger Apps"}}
+  </script>
+
+  <script type="application/ld+json" id="faq-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does this page tell me what dose to take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It is a logging template only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I write if the week got messy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keep it simple: what changed, when it changed, and what you noticed after it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why not just use reminders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because reminders do not explain the week afterward. A dose log plus notes does."
+      }
+    }
+  ]
+}
+</script>
+<script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="pill">Drug-specific tracker intent</span>
+      <h1>Tirzepatide dose log</h1>
+      <p>If you keep asking “what changed this week?”, a dose log is the useful layer. Record dose, timing, site, and the one or two context notes that make the week readable later.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="tirzepatide_dose_log_hero_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/tirzepatide-injection-tracker.html" data-track-internal="tirzepatide_dose_log_hero_tracker">Open the tirzepatide tracker</a>
+      </div>
+      <p class="small" style="margin-top:12px; opacity:.92;">Educational only. This page helps with logging and organization, not medication decisions.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What to log every tirzepatide week</h2>
+        <ul>
+          <li><strong>Injection date and time</strong> so the week has a clear anchor.</li>
+          <li><strong>Product and dose</strong> whether you use Mounjaro or Zepbound.</li>
+          <li><strong>Injection site</strong> if you want a simple rotation record too.</li>
+          <li><strong>Timing drift</strong> like a late dose, missed dose, restart, or routine change.</li>
+          <li><strong>One short note</strong> about symptoms, appetite, sleep, stress, meals, travel, or illness.</li>
+        </ul>
+
+        <div class="note" style="margin-top:14px;">
+          <strong>Useful rule:</strong> a clean dose log is better than a perfect diary. Date, dose, and one factual sentence usually beats a long backfilled note.
+        </div>
+
+        <h2>Printable tirzepatide dose log template</h2>
+        <table aria-label="Tirzepatide dose log template">
+          <thead>
+            <tr>
+              <th style="width:16%">Week of</th>
+              <th style="width:18%">Injection day/time</th>
+              <th style="width:14%">Dose</th>
+              <th style="width:14%">Site</th>
+              <th style="width:18%">What changed</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>____ / ____ / ____</td>
+              <td>__________</td>
+              <td>__________</td>
+              <td>__________</td>
+              <td>__________</td>
+              <td>__________</td>
+            </tr>
+            <tr>
+              <td>____ / ____ / ____</td>
+              <td>__________</td>
+              <td>__________</td>
+              <td>__________</td>
+              <td>__________</td>
+              <td>__________</td>
+            </tr>
+            <tr>
+              <td>____ / ____ / ____</td>
+              <td>__________</td>
+              <td>__________</td>
+              <td>__________</td>
+              <td>__________</td>
+              <td>__________</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>When a tirzepatide dose log adds real value</h2>
+        <p class="muted">The highest-fit tirzepatide searches are usually not broad curiosity. They are people trying to reconstruct a pattern: a different dose week, a rough appetite week, a late injection, a side-effect flare, or a routine drift that made the whole timeline fuzzy.</p>
+        <ul>
+          <li><strong>Use the <a href="/tirzepatide-missed-dose-tracker.html">missed-dose tracker</a></strong> if the question starts with “I was late” or “I skipped a week.”</li>
+          <li><strong>Use the <a href="/tirzepatide-dose-timing-morning-vs-night.html">dose timing page</a></strong> if the comparison is really about morning versus night.</li>
+          <li><strong>Use the <a href="/tirzepatide-side-effect-log.html">side-effect log</a></strong> or <a href="/tirzepatide-side-effect-timeline.html">side-effect timeline</a> if the main question is symptom onset, peak, and fade.</li>
+          <li><strong>Use the <a href="/injection-protocol-tracker.html">injection protocol tracker</a></strong> if the week involves reminders, stack changes, routine drift, or more than one injectable workflow.</li>
+        </ul>
+
+        <h2>Why Jabbit fits this better than a reminder-only flow</h2>
+        <p class="muted">A reminder helps you take the shot. Jabbit is better when you want the broader story in one place: dose, timing, side effects, private notes, schedule changes, and protocol context. That is also where Jabbit is a stronger fit than a narrower Shotsy-style reminder workflow.</p>
+
+        <div class="warning" style="margin-top:14px;">
+          <strong>No dosing advice here:</strong> this page does not tell you when to increase, decrease, skip, restart, or substitute a dose. Use clinician guidance and product labeling for medical decisions.
+        </div>
+
+        <h2>Best paired pages in this cluster</h2>
+        <ul>
+          <li><a href="/tirzepatide-injection-tracker.html">Tirzepatide injection tracker</a> for the broader weekly log.</li>
+          <li><a href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a> if the search is brand-specific.</li>
+          <li><a href="/zepbound-injection-tracker.html">Zepbound injection tracker</a> if the search is brand-specific.</li>
+          <li><a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress, anxiety, and HRV guide</a> if the “dose” question is really a symptom-pattern question.</li>
+        </ul>
+
+        <p style="margin-top:18px;">
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="tirzepatide_dose_log_bottom_app_store" target="_blank" rel="noopener noreferrer">Track tirzepatide weeks in Jabbit</a>
+        </p>
+      </article>
+
+      <aside class="card">
+        <h2>Quick start</h2>
+        <ol>
+          <li>Log the dose right after the injection.</li>
+          <li>Write one note if the week was different.</li>
+          <li>Tag late or missed weeks clearly.</li>
+          <li>Review the pattern before your next refill or appointment.</li>
+        </ol>
+
+        <h3>App path</h3>
+        <p class="muted">Start with the tirzepatide tracker, then layer missed-dose or side-effect pages only when the week needs more structure.</p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="tirzepatide_dose_log_aside_app_store" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
+
+        <h3>FAQ</h3>
+        <dl class="faq">
+          <dt>Does this page tell me what dose to take?</dt>
+          <dd>No. It is a logging template only.</dd>
+
+          <dt>What should I write if the week got messy?</dt>
+          <dd>Keep it simple: what changed, when it changed, and what you noticed after it.</dd>
+
+          <dt>Why not just use reminders?</dt>
+          <dd>Because reminders do not explain the week afterward. A dose log plus notes does.</dd>
+        </dl>
+
+        <p class="muted" style="margin-top:16px;"><a href="/">← Back to Jabbit</a></p>
+      </aside>
+    </section>
+
+    <footer>
+      <p><strong>Sources:</strong></p>
+      <ul>
+        <li><a href="https://pi.lilly.com/us/mounjaro-uspi.pdf" target="_blank" rel="noopener noreferrer">Mounjaro Prescribing Information (PDF)</a></li>
+        <li><a href="https://pi.lilly.com/us/zepbound-uspi.pdf" target="_blank" rel="noopener noreferrer">Zepbound Prescribing Information (PDF)</a></li>
+      </ul>
+      <p class="small">This page is for education and tracking workflow only.</p>
+    </footer>
+  </main>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+    <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (log doses + reminders)</a></li>
+    <li><a href="/glp-1-side-effects-guide.html">GLP-1 side effects guide (what to expect + when to call)</a></li>
+    <li><a href="/glp1-dosing-schedule.html">GLP-1 dosing schedules (reference for what to log)</a></li>
+    </ul>
+  </section>
+</body>
+</html>
