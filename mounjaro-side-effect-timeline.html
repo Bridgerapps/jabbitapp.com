@@ -4,47 +4,181 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Mounjaro Side Effect Timeline (What to Log Week by Week) | Jabbit</title>
-  <meta name="description" content="A practical, non-medical Mounjaro side effect timeline: what to log on injection day through the rest of the week, how to compare dose-change weeks, and how to keep symptoms plus timing together in Jabbit." />
+  <title>Mounjaro Side Effect Timeline (Week-by-Week Logging Template) | Jabbit</title>
+  <meta name="description" content="A Mounjaro-specific side effect timeline for week-by-week logging: what to track on dose day, the next 24 to 72 hours, later-week routine drift, and when to branch into injection, missed-dose, symptom-log, or resting-heart-rate tracking." />
   <meta name="keywords" content="Mounjaro side effect timeline, Mounjaro week by week side effects, Mounjaro symptom timeline, tirzepatide side effect timeline, Mounjaro tracker, Mounjaro side effect tracker" />
   <link rel="canonical" href="https://jabbitapp.com/mounjaro-side-effect-timeline.html" />
 
   <style>
-    :root{ --bg:#f8fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --brand:#0d9488; --brand2:#14b8a6; --border:#e2e8f0; --warn:#f97316; }
-    *{ box-sizing:border-box; }
-    body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
-    a{ color:var(--brand); text-decoration:none; }
-    a:hover{ text-decoration:underline; }
-    .wrap{ max-width:940px; margin:0 auto; padding:28px 18px 60px; }
-    .hero{ background:linear-gradient(135deg, #0f172a 0%, #0b4a44 100%); color:#fff; border-radius:18px; padding:34px 26px; box-shadow:0 10px 30px rgba(2,6,23,.15); }
-    .hero h1{ margin:0 0 10px; font-size:2.1rem; line-height:1.2; }
-    .hero p{ margin:0; color:rgba(255,255,255,.92); font-size:1.05rem; }
-    .ctaRow{ display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
-    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; font-weight:700; border:1px solid transparent; }
-    .btnPrimary{ background:var(--brand2); color:#062a27; }
-    .btnPrimary:hover{ filter:brightness(.95); text-decoration:none; }
-    .btnGhost{ background:transparent; color:#fff; border-color:rgba(255,255,255,.35); }
-    .btnGhost:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
-    .pill{ display:inline-block; padding:2px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); font-size:.85rem; color:rgba(255,255,255,.95); }
-    .small{ font-size:.9rem; }
-    .grid{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px; }
-    @media(min-width:900px){ .grid{ grid-template-columns: 1.25fr .75fr; } }
-    .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:0 3px 16px rgba(2,6,23,.05); }
-    h2{ margin:18px 0 10px; font-size:1.35rem; }
-    h3{ margin:14px 0 8px; font-size:1.1rem; }
-    ul{ margin:8px 0 0 18px; }
-    .muted{ color:var(--muted); }
-    .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px; border-radius:10px; }
-    .warning{ background:#fff7ed; border-left:4px solid var(--warn); padding:12px; border-radius:10px; }
-    table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
-    th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
-    th{ background:#f1f5f9; }
-    .timelineList li{ margin-bottom:8px; }
-    footer{ margin-top:24px; color:var(--muted); font-size:.95rem; }
+    :root{
+      --bg:#eef6f6;
+      --card:#ffffff;
+      --ink:#102032;
+      --muted:#52606d;
+      --line:#d6e2e8;
+      --brand:#0f766e;
+      --brand-dark:#115e59;
+      --brand-soft:#e8f6f4;
+      --hero-a:#0f172a;
+      --hero-b:#134e4a;
+      --hero-c:#0f766e;
+      --warn:#fff7ed;
+      --warn-line:#ea580c;
+      --info:#eff6ff;
+      --info-line:#2563eb;
+      --shadow:0 18px 44px rgba(15,23,42,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(45,212,191,.14), transparent 28%),
+        linear-gradient(180deg,#e8f3f3 0%,var(--bg) 260px);
+      line-height:1.65;
+    }
+    a{color:var(--brand-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      padding:38px;
+      border-radius:28px;
+      color:#fff;
+      background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 56%,var(--hero-c) 100%);
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-90px;
+      bottom:-120px;
+      width:320px;
+      height:320px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.16) 0%, rgba(255,255,255,0) 72%);
+    }
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:6px 11px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.08);
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:.78rem;
+      font-weight:800;
+    }
+    h1{margin:0 0 12px;font-size:clamp(2.1rem,4.3vw,3.25rem);line-height:1.04}
+    h2{margin:0 0 12px;font-size:1.42rem;line-height:1.18}
+    h3{margin:0 0 8px;font-size:1.08rem;line-height:1.24}
+    p{margin:0 0 14px}
+    .heroIntro{max-width:820px;font-size:1.06rem;color:rgba(255,255,255,.92)}
+    .ctaRow{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:800;
+      border:1px solid transparent;
+    }
+    .btnPrimary{background:#fff;color:#0f172a}
+    .btnPrimary:hover{text-decoration:none;filter:brightness(.98)}
+    .btnGhost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.28)}
+    .btnGhost:hover{background:rgba(255,255,255,.14);text-decoration:none}
+    .heroGrid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:12px;
+      margin-top:20px;
+    }
+    .heroGrid div{
+      padding:14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.09);
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .heroGrid strong,.heroGrid span{display:block}
+    .heroGrid span{font-size:.93rem;color:rgba(255,255,255,.84)}
+    .small{font-size:.93rem}
+    .muted{color:var(--muted)}
+    .layout{
+      display:grid;
+      grid-template-columns:minmax(0,1.8fr) minmax(290px,.95fr);
+      gap:22px;
+      align-items:start;
+      margin-top:24px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .warning,.info,.ctaPanel{
+      border-radius:16px;
+      padding:16px;
+      margin:16px 0;
+    }
+    .warning{background:var(--warn);border-left:4px solid var(--warn-line)}
+    .info{background:var(--info);border-left:4px solid var(--info-line)}
+    .ctaPanel{
+      background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
+      color:#fff;
+    }
+    .ctaPanel p{color:rgba(255,255,255,.92)}
+    ul{padding-left:20px;margin:0 0 14px}
+    li{margin:7px 0}
+    .jumpGrid,.routeGrid,.phaseGrid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin:18px 0;
+    }
+    .jumpCard,.routeCard,.phaseCard{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      background:#fbfefe;
+    }
+    .phaseCard{background:linear-gradient(180deg,#fbffff 0%,#f6fbfb 100%)}
+    .routeCard h3,.jumpCard h3,.phaseCard h3{margin-bottom:6px}
+    .routeCard p,.jumpCard p,.phaseCard p{margin-bottom:10px}
+    .tableWrap{overflow-x:auto;margin:16px 0}
+    table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden}
+    th,td{padding:12px 14px;border:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#f4f8f8}
+    .toc{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      background:#f9fcfc;
+      margin:18px 0 10px;
+    }
+    .toc ul{margin-bottom:0}
+    .asideList{list-style:none;padding:0;margin:0}
+    .asideList li{
+      padding:12px 0;
+      border-bottom:1px solid var(--line);
+    }
+    .asideList li:last-child{border-bottom:0}
+    footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+    @media (max-width:940px){
+      .layout{grid-template-columns:1fr}
+      .hero{padding:30px 24px}
+      .card{padding:20px}
+    }
   </style>
 
   <script type="application/ld+json" id="webpage-jsonld">
-  {"@context":"https://schema.org","@type":"WebPage","name":"Mounjaro Side Effect Timeline (What to Log Week by Week) | Jabbit","url":"https://www.jabbitapp.com/mounjaro-side-effect-timeline.html","description":"A practical, non-medical Mounjaro side effect timeline: what to log on injection day through the rest of the week, how to compare dose-change weeks, and how to keep symptoms plus timing together in Jabbit.","isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},"publisher":{"@type":"Organization","name":"Bridger Apps"}}
+  {"@context":"https://schema.org","@type":"WebPage","name":"Mounjaro Side Effect Timeline (Week-by-Week Logging Template) | Jabbit","url":"https://www.jabbitapp.com/mounjaro-side-effect-timeline.html","description":"A Mounjaro-specific side effect timeline for week-by-week logging: what to track on dose day, the next 24 to 72 hours, later-week routine drift, and when to branch into injection, missed-dose, symptom-log, or resting-heart-rate tracking.","isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},"publisher":{"@type":"Organization","name":"Bridger Apps"}}
   </script>
 
   <script defer src="/assets/site.js"></script>
@@ -52,167 +186,233 @@
 <body>
   <main class="wrap">
     <section class="hero">
-      <span class="pill">Drug-specific tracker intent</span>
+      <span class="eyebrow">Mounjaro tracking cluster</span>
       <h1>Mounjaro side effect timeline</h1>
-      <p>If you keep asking whether a rough patch started on injection day, the next morning, or later in the week, this page is the logging template. The goal is cleaner pattern recognition across weekly tirzepatide use, not treatment advice.</p>
+      <p class="heroIntro">This page is for one job: helping you log when Mounjaro side effects show up during the week, what else changed around that window, and which tracker page to use next. It is Mounjaro-specific, non-medical, and designed for pattern recognition rather than advice.</p>
       <div class="ctaRow">
-        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="mounjaro_side_effect_timeline_top" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
-        <a class="btn btnGhost" href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a>
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="mounjaro_side_effect_timeline_top" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
+        <a class="btn btnGhost" href="/mounjaro-injection-tracker.html">Open Mounjaro injection tracker</a>
       </div>
-      <p class="small" style="margin-top:12px; opacity:.9;">Educational only. For dosing, missed-dose decisions, or treatment changes, follow your prescriber and the medication labeling.</p>
+      <div class="heroGrid">
+        <div>
+          <strong>Dose day</strong>
+          <span>Log the injection timestamp, site, and anything unusual right away.</span>
+        </div>
+        <div>
+          <strong>24 to 72 hours</strong>
+          <span>Capture onset, peak, and whether symptoms behave the same each week.</span>
+        </div>
+        <div>
+          <strong>Late week</strong>
+          <span>Tag routine drift, rebound hunger, poor sleep, stress, or a late next dose.</span>
+        </div>
+      </div>
+      <p class="small" style="margin-top:16px;color:rgba(255,255,255,.86);">Educational tracking workflow only. For medical decisions, dosing, or missed-dose instructions, use your clinician and official labeling.</p>
     </section>
 
-    <section class="grid">
+    <section class="layout">
       <article class="card">
-        <h2>Why a Mounjaro timeline helps</h2>
-        <p class="muted">Many Mounjaro questions are really timing questions. A symptom log gets more useful when it sits beside injection day, dose changes, meal disruption, sleep, stress, and schedule drift instead of living in separate notes.</p>
-
-        <div class="note">
-          <strong>Best use case:</strong> pair this page with your <a href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a> so dose timing and symptom timing stay in one workflow.
+        <div class="toc">
+          <h2>On this page</h2>
+          <ul>
+            <li><a href="#why">Why this timeline works better than a generic symptom note</a></li>
+            <li><a href="#week-phases">How to log a Mounjaro week by phase</a></li>
+            <li><a href="#template">A simple weekly template</a></li>
+            <li><a href="#route">Which Mounjaro tracker to use next</a></li>
+            <li><a href="#routine">How to tag dose timing, routine drift, and messy weeks</a></li>
+          </ul>
         </div>
 
-        <h2>What to log every week</h2>
-        <ul>
-          <li><strong>Injection timestamp</strong> and whether the shot happened on the planned day</li>
-          <li><strong>Symptoms</strong> such as nausea, reflux, constipation, diarrhea, fatigue, appetite shifts, headache, or sleep disruption</li>
-          <li><strong>Severity</strong> on a 0-10 scale</li>
-          <li><strong>Onset, peak, and resolution</strong> even if the times are approximate</li>
-          <li><strong>Context</strong> like travel, poor sleep, unusually large meals, alcohol, illness, or high-stress days</li>
-          <li><strong>What changed that week</strong> so you do not compare a stable week to a dose-change week</li>
-        </ul>
+        <h2 id="why">Why this page exists</h2>
+        <p>Searches for a “Mounjaro side effect timeline” are usually not asking for a generic side-effect list. The real question is timing: did nausea start on injection day, did fatigue hit the next morning, did a stressful low-sleep week muddy the signal, or did the pattern only show up after a later dose time?</p>
+        <p class="muted">That is why this page stays narrow. It does not try to replace the broader <a href="/glp-1-side-effects-guide.html">GLP-1 side effects hub</a>, and it does not re-explain the full HRV/anxiety topic. It focuses on how to log a Mounjaro week cleanly enough that you can compare like with like later.</p>
+
+        <div class="info">
+          <strong>Best setup:</strong> keep this timeline paired with your <a href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a> so the symptom note lives next to injection time, dose history, and site rotation instead of in separate apps.
+        </div>
+
+        <h2 id="week-phases">How to log a Mounjaro week by phase</h2>
+        <div class="phaseGrid">
+          <section class="phaseCard">
+            <h3>Phase 1: dose day</h3>
+            <p>Log the exact injection timestamp, dose amount, injection site, and whether this was your normal day and time.</p>
+            <ul>
+              <li>Tag anything unusual: travel, a rushed meal, dehydration, alcohol, poor sleep, illness, or heavy exercise.</li>
+              <li>Do not wait until the next day to reconstruct this. Dose-time accuracy is the anchor for the rest of the week.</li>
+            </ul>
+          </section>
+          <section class="phaseCard">
+            <h3>Phase 2: next 24 to 72 hours</h3>
+            <p>This is where many people notice the most obvious Mounjaro timing patterns, especially around GI symptoms, appetite suppression, fatigue, or sleep changes.</p>
+            <ul>
+              <li>Write the first symptom start time, not just the worst moment.</li>
+              <li>Note peak severity separately from total duration.</li>
+            </ul>
+          </section>
+          <section class="phaseCard">
+            <h3>Phase 3: later-week drift</h3>
+            <p>The useful question later in the week is whether the signal is fading normally or getting mixed up by routine drift.</p>
+            <ul>
+              <li>Tag rebound hunger, constipation, late-week fatigue, rough sleep, or a changed routine.</li>
+              <li>If the next shot is late, record that immediately instead of treating it like a normal week.</li>
+            </ul>
+          </section>
+        </div>
 
         <div class="warning">
-          <strong>Safety note:</strong> this page is a tracking aid, not a treatment guide. If symptoms feel severe, sudden, or unsafe, seek urgent care.
+          <strong>Safety note:</strong> this page is a tracking tool, not treatment advice. If symptoms feel severe, sudden, or unsafe, seek urgent medical care.
         </div>
 
-        <h2>Simple Mounjaro symptom timeline template</h2>
-        <p class="muted">Keep it boring and consistent. Short factual notes are more useful than trying to reconstruct the week later.</p>
-        <table aria-label="Mounjaro side effect timeline template">
-          <thead>
-            <tr>
-              <th style="width:14%">Day</th>
-              <th style="width:18%">Injection / event time</th>
-              <th style="width:20%">Symptom</th>
-              <th style="width:10%">0-10</th>
-              <th style="width:18%">When it peaked</th>
-              <th>Context notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Day 0</td><td>____________</td><td>____________</td><td>__</td><td>____________</td><td>____________</td></tr>
-            <tr><td>Day 1</td><td>____________</td><td>____________</td><td>__</td><td>____________</td><td>____________</td></tr>
-            <tr><td>Day 2-3</td><td>____________</td><td>____________</td><td>__</td><td>____________</td><td>____________</td></tr>
-            <tr><td>Day 4-6</td><td>____________</td><td>____________</td><td>__</td><td>____________</td><td>____________</td></tr>
-          </tbody>
-        </table>
-
-        <h2>Day-by-day prompts</h2>
-        <ul class="timelineList">
-          <li><strong>Day 0: injection day.</strong> Log the exact injection time, dose, site, and anything unusual around food, hydration, sleep, or stress.</li>
-          <li><strong>Day 1:</strong> note whether symptoms start quickly or stay quiet. This is when mild nausea, reflux, low appetite, or fatigue are easiest to forget if you do not write them down.</li>
-          <li><strong>Day 2-3:</strong> mark what actually peaked and when. If the rough patch starts later than expected, that lag is useful signal.</li>
-          <li><strong>Day 4-6:</strong> capture whether symptoms are fading, lingering, or changing into a different pattern like lower energy, bowel changes, or rough sleep.</li>
-          <li><strong>Day 7 / next injection window:</strong> compare this week with the prior one before the next shot. If the schedule drifted, tag that instead of treating it as a normal week.</li>
-        </ul>
-
-        <h2>Mounjaro side effects week by week</h2>
-        <p class="muted">This is not a prediction tool. It is a structure for comparing your own weeks instead of borrowing someone else’s experience.</p>
-        <ul class="timelineList">
-          <li><strong>Week 1:</strong> establish your baseline week with injection day, appetite changes, GI symptoms, fatigue, and sleep notes.</li>
-          <li><strong>Week 2:</strong> check whether the same symptom shows up at the same point in the week. Repeating timing matters more than one bad day.</li>
-          <li><strong>Week 3:</strong> separate medication timing from life timing. Travel, illness, stress, skipped meals, and disrupted sleep can muddy the pattern fast.</li>
-          <li><strong>Week 4 and later:</strong> compare stable-dose weeks against dose-change weeks. Do not flatten them into one bucket.</li>
-        </ul>
-
-        <h2>Useful symptom buckets to tag</h2>
-        <ul>
-          <li><strong>GI pattern:</strong> nausea, reflux, bloating, constipation, diarrhea, or food aversion.</li>
-          <li><strong>Energy pattern:</strong> fatigue, low motivation, shakier workouts, or slower recovery.</li>
-          <li><strong>Appetite pattern:</strong> delayed meals, very low intake, rebound hunger later in the week, or trouble hitting protein targets.</li>
-          <li><strong>Stress or recovery pattern:</strong> restless sleep, higher stress, lower HRV, or a more wired feeling than usual. Compare those weeks with the <a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress, anxiety, and HRV guide</a>.</li>
-        </ul>
-
-        <h2>Stable week vs dose-change week</h2>
-        <div class="note">
-          <strong>Common logging mistake:</strong> treating every Mounjaro week as directly comparable. A stable week, a late-dose week, and a dose-increase week should usually be reviewed separately.
+        <h2 id="template">Weekly Mounjaro side effect timeline template</h2>
+        <p class="muted">Short factual entries beat long explanations. The goal is a reusable pattern log, not a perfect diary.</p>
+        <div class="tableWrap">
+          <table aria-label="Mounjaro side effect timeline template">
+            <thead>
+              <tr>
+                <th>Week phase</th>
+                <th>What to log</th>
+                <th>Why it matters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Injection day</td>
+                <td>Timestamp, dose, site, planned vs actual day, immediate context</td>
+                <td>Gives you a stable reference point for onset and comparison</td>
+              </tr>
+              <tr>
+                <td>Day 1</td>
+                <td>First symptom onset, severity 0 to 10, appetite and energy changes</td>
+                <td>Separates same-day effects from next-day effects</td>
+              </tr>
+              <tr>
+                <td>Days 2 to 3</td>
+                <td>Peak symptom window, bowel changes, reflux, nausea, fatigue, sleep notes</td>
+                <td>Shows whether the rough patch repeats at the same point each week</td>
+              </tr>
+              <tr>
+                <td>Days 4 to 6</td>
+                <td>Lingering symptoms, rebound hunger, routine disruption, recovery signals</td>
+                <td>Prevents late-week drift from getting blamed on the wrong cause</td>
+              </tr>
+              <tr>
+                <td>Next injection window</td>
+                <td>Whether the week was stable, delayed, messy, or affected by a dose change</td>
+                <td>Keeps baseline weeks separate from non-baseline weeks</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <table aria-label="Stable week versus dose-change week comparison">
-          <thead>
-            <tr>
-              <th>Week type</th>
-              <th>What to tag</th>
-              <th>Why it matters</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Stable dose week</td>
-              <td>Normal injection day, usual meals, usual sleep, usual routine</td>
-              <td>Best reference point for your baseline pattern</td>
-            </tr>
-            <tr>
-              <td>Dose-change week</td>
-              <td>New dose, stronger GI symptoms, bigger appetite shift, recovery changes</td>
-              <td>Helps you avoid comparing adaptation weeks to normal weeks</td>
-            </tr>
-            <tr>
-              <td>Late-dose or disrupted week</td>
-              <td>Schedule drift, travel, illness, unusual stress, missed meals</td>
-              <td>Prevents false conclusions about what caused the rough week</td>
-            </tr>
-          </tbody>
-        </table>
 
-        <h2>What to tag when the week was messy</h2>
+        <h2>What to tag each week</h2>
         <ul>
-          <li><strong>Dose changes:</strong> keep a separate note in your <a href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a> so later comparisons stay clean.</li>
-          <li><strong>Late injections:</strong> use the <a href="/mounjaro-missed-dose-tracker.html">Mounjaro missed dose tracker</a> so the timeline still makes sense when you look back.</li>
-          <li><strong>Side-effect clusters:</strong> pair this page with the <a href="/mounjaro-side-effect-log.html">Mounjaro side effect log</a> if you want a faster symptom list plus freeform notes.</li>
-          <li><strong>Stress-pattern weeks:</strong> if the week feels more like anxiety, poor recovery, or sleep disruption than GI symptoms, compare against the <a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress and HRV guide</a>.</li>
+          <li><strong>Symptom label:</strong> nausea, reflux, constipation, diarrhea, low appetite, fatigue, headache, sleep disruption, or injection-site irritation.</li>
+          <li><strong>Severity:</strong> use one consistent 0 to 10 scale instead of changing your wording every week.</li>
+          <li><strong>Timing:</strong> onset, peak, resolution, and whether it was tied to dose day or later.</li>
+          <li><strong>Week type:</strong> stable week, dose-change week, late-dose week, travel week, illness week, or high-stress week.</li>
+          <li><strong>Routine context:</strong> unusually small intake, a heavy meal, dehydration, alcohol, poor sleep, or long travel.</li>
         </ul>
 
-        <h2>Why this fits Jabbit</h2>
-        <p class="muted">Jabbit is strongest when the real job is pattern recognition over time: injection dates, reminders, symptoms, schedule drift, and notes in one private iPhone workflow. That is a better fit than a reminder-only tool when your question is really “what changed this week?”</p>
-        <p class="muted">If someone is comparing Jabbit with a narrower tracker like Shotsy, the difference on this query is workflow depth. Jabbit lets you keep reminders, dose history, missed-dose context, side effects, and freeform notes together instead of splitting the week across tools.</p>
+        <h2 id="route">Route the week to the right Mounjaro page</h2>
+        <div class="routeGrid">
+          <section class="routeCard">
+            <h3><a href="/mounjaro-side-effect-log.html">Mounjaro side effect log</a></h3>
+            <p>Use this when the main job is symptom capture: severity, freeform notes, and a clean running history.</p>
+            <p class="muted">Best for nausea, reflux, constipation, fatigue, appetite swings, or mixed symptom weeks.</p>
+          </section>
+          <section class="routeCard">
+            <h3><a href="/mounjaro-missed-dose-tracker.html">Mounjaro missed dose tracker</a></h3>
+            <p>Use this when the timeline got messy because the shot was late, skipped, or moved.</p>
+            <p class="muted">Best for schedule drift, travel weeks, and “was this a side effect week or a late-dose week?” questions.</p>
+          </section>
+          <section class="routeCard">
+            <h3><a href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a></h3>
+            <p>Use this when you need the cleanest anchor for dose date, site rotation, and weekly cadence.</p>
+            <p class="muted">Best as the base layer for every other Mounjaro logging workflow.</p>
+          </section>
+          <section class="routeCard">
+            <h3><a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress, anxiety, and HRV guide</a></h3>
+            <p>Use this if the week feels more like recovery stress, shakier workouts, poor sleep, anxiety, or HRV drift than a GI-only pattern.</p>
+            <p class="muted">That keeps this page narrow while still routing stress-pattern weeks into the stronger existing path.</p>
+          </section>
+          <section class="routeCard">
+            <h3><a href="/mounjaro-dose-timing-morning-vs-night.html">Mounjaro dose timing: morning vs night</a></h3>
+            <p>Use this when the side-effect pattern seems tied to dose timing or a changed routine rather than the dose day alone.</p>
+            <p class="muted">Best for experiments in consistency, not for medical recommendations.</p>
+          </section>
+        </div>
 
-        <h2>Useful next pages</h2>
+        <h2 id="routine">How to log routine drift without guessing</h2>
+        <p>Many rough Mounjaro weeks are not clean medication weeks. They are mixed weeks: a delayed shot, poor sleep, a long drive, a larger meal than usual, a stressful work block, or inconsistent eating because appetite was low. The fix is not more speculation. The fix is better tagging.</p>
+        <div class="jumpGrid">
+          <section class="jumpCard">
+            <h3>Stable week</h3>
+            <p>Normal dose day, usual time, normal routine.</p>
+            <p class="muted">Use these as your comparison baseline.</p>
+          </section>
+          <section class="jumpCard">
+            <h3>Dose-change week</h3>
+            <p>New dose, stronger appetite suppression, or sharper GI symptoms.</p>
+            <p class="muted">Do not compare these directly with steady-state weeks.</p>
+          </section>
+          <section class="jumpCard">
+            <h3>Routine-drift week</h3>
+            <p>Travel, low sleep, illness, alcohol, hard training, or a changed meal pattern.</p>
+            <p class="muted">Tag the disruption so you can review it honestly later.</p>
+          </section>
+          <section class="jumpCard">
+            <h3>Protocol-type week</h3>
+            <p>Anything that no longer looks like your normal weekly cadence.</p>
+            <p class="muted">Route it into your injection, missed-dose, or timing page instead of flattening it into a generic symptom log.</p>
+          </section>
+        </div>
+
+        <h2>When Mounjaro side effects overlap with stress or recovery signals</h2>
+        <p>If the pattern is less about nausea and more about feeling wired, sleeping worse, seeing shakier recovery, or noticing HRV drift, this page should hand you off instead of trying to cover everything. Start with the <a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress and anxiety HRV guide</a>. That gives you a better path for logging recovery-style changes without turning this page into a generic stress hub.</p>
+
+        <div class="ctaPanel">
+          <h2>Keep the whole week in one log</h2>
+          <p>Jabbit is built for the pattern-recognition version of this problem: dose reminders, injection history, symptom notes, missed-dose context, and timeline review in one private iPhone workflow.</p>
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="mounjaro_side_effect_timeline_bottom" target="_blank" rel="noopener noreferrer">Get Jabbit on the App Store</a>
+        </div>
+
+        <h2>Next pages for Mounjaro-specific tracking</h2>
         <ul>
-          <li><a href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a></li>
-          <li><a href="/mounjaro-missed-dose-tracker.html">Mounjaro missed dose tracker</a></li>
-          <li><a href="/mounjaro-side-effect-log.html">Mounjaro side effect log</a></li>
-          <li><a href="/tirzepatide-side-effect-timeline.html">Tirzepatide side effect timeline</a></li>
+          <li><a href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a> for dose timestamps, reminders, and site rotation.</li>
+          <li><a href="/mounjaro-side-effect-log.html">Mounjaro side effect log</a> for the simpler symptom-first workflow.</li>
+          <li><a href="/mounjaro-missed-dose-tracker.html">Mounjaro missed dose tracker</a> for schedule drift and disrupted weeks.</li>
+          <li><a href="/mounjaro-dose-timing-morning-vs-night.html">Mounjaro dose timing morning vs night</a> for routine consistency questions.</li>
+          <li><a href="/tirzepatide-side-effect-timeline.html">Tirzepatide side effect timeline</a> if you want the broader drug-name variant.</li>
         </ul>
       </article>
 
       <aside class="card">
-        <h2>Fast tracking checklist</h2>
-        <ul>
-          <li>Log the exact shot time on Day 0.</li>
-          <li>Use one symptom label per note instead of vague summaries.</li>
-          <li>Tag any schedule drift immediately.</li>
-          <li>Keep stable weeks separate from dose-change weeks.</li>
+        <h2>Quick checklist</h2>
+        <ul class="asideList">
+          <li><strong>1.</strong> Log the exact injection time on dose day.</li>
+          <li><strong>2.</strong> Write symptom onset separately from symptom peak.</li>
+          <li><strong>3.</strong> Mark late-dose weeks before you forget.</li>
+          <li><strong>4.</strong> Keep stable weeks separate from dose-change weeks.</li>
+          <li><strong>5.</strong> Route HRV, anxiety, or recovery changes to the stress path instead of forcing them into a GI-only note.</li>
         </ul>
 
-        <h3>Want the quicker version?</h3>
-        <p class="muted">Use Jabbit on iPhone to keep reminders, dose dates, symptom notes, and timeline history in one place.</p>
-        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="mounjaro_side_effect_timeline_side" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
+        <h3 style="margin-top:20px;">Best companion pages</h3>
+        <p class="muted"><a href="/mounjaro-injection-tracker.html">Injection tracker</a> for cadence, <a href="/mounjaro-side-effect-log.html">side effect log</a> for symptoms, and <a href="/mounjaro-missed-dose-tracker.html">missed dose tracker</a> for schedule drift.</p>
 
-        <h3>Best companion pages</h3>
-        <p class="muted"><a href="/mounjaro-injection-tracker.html">Injection tracker</a> for dose dates, <a href="/mounjaro-side-effect-log.html">side effect log</a> for symptom notes, and <a href="/mounjaro-missed-dose-tracker.html">missed dose tracker</a> for schedule drift.</p>
+        <h3>Need the fastest route?</h3>
+        <p class="muted">Open Jabbit if you want reminders, dose history, and symptom notes in one place instead of rebuilding the week from memory later.</p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="mounjaro_side_effect_timeline_aside" target="_blank" rel="noopener noreferrer">Open App Store</a></p>
 
-        <h3>Not medical advice</h3>
-        <p class="muted">This page is educational and does not replace care from a licensed clinician.</p>
+        <h3>Scope guardrail</h3>
+        <p class="muted">This page is educational only. It does not tell you how to dose, when to restart, or what a specific symptom means medically.</p>
 
         <p class="muted"><a href="/">← Back to Jabbit</a></p>
       </aside>
     </section>
 
     <footer>
-      <p><strong>Sources:</strong></p>
-      <ul>
-        <li><a href="https://pi.lilly.com/us/mounjaro-uspi.pdf?s=pi" target="_blank" rel="noopener noreferrer">Eli Lilly: Mounjaro U.S. Prescribing Information (PDF)</a></li>
-      </ul>
-      <p class="small">This page is for education and tracking workflow only. No dosing instructions are provided.</p>
+      <p><strong>Source:</strong> <a href="https://pi.lilly.com/us/mounjaro-uspi.pdf?s=pi" target="_blank" rel="noopener noreferrer">Eli Lilly: Mounjaro U.S. Prescribing Information (PDF)</a></p>
+      <p class="small">This page is for education and tracking workflow only. No dosing instructions are provided here.</p>
     </footer>
   </main>
   <section id="related-links">
