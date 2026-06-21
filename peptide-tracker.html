@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peptide Tracker: Log Protocols, Doses, Side Effects, and Missed Doses | Jabbit</title>
+  <meta name="description" content="A practical peptide tracker page for logging protocols, dose history, side effects, missed doses, routine drift, and drug-specific notes in one private workflow." />
+  <meta name="keywords" content="peptide tracker, peptide tracking app, peptide protocol tracker, peptide dose log, peptide side effect tracker, peptide missed dose tracker, retatrutide tracker, peptide logging" />
+  <link rel="canonical" href="https://jabbitapp.com/peptide-tracker.html" />
+  <style>
+    :root{
+      --bg:#f4f8f7;
+      --card:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#d7e2e0;
+      --brand:#0f766e;
+      --brand-dark:#115e59;
+      --brand-soft:#e8f7f4;
+      --hero-a:#0f172a;
+      --hero-b:#134e4a;
+      --hero-c:#0f766e;
+      --warn:#f97316;
+      --warn-bg:#fff7ed;
+      --shadow:0 12px 34px rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(20,184,166,.11), transparent 24%),
+        linear-gradient(180deg,#edf8f6 0%,var(--bg) 240px);
+      color:var(--ink);
+      line-height:1.65;
+    }
+    a{color:var(--brand-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 58%,var(--hero-c) 100%);
+      color:#fff;
+      border-radius:28px;
+      padding:34px;
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-70px;
+      bottom:-100px;
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 70%);
+    }
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:6px 11px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.08);
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:.8rem;
+      font-weight:700;
+    }
+    h1{margin:0 0 12px;font-size:clamp(2.15rem,4vw,3.3rem);line-height:1.06}
+    h2{margin:0 0 12px;font-size:1.42rem;line-height:1.2}
+    h3{margin:0 0 8px;font-size:1.05rem;line-height:1.25}
+    p{margin:0 0 14px}
+    .heroIntro{max-width:760px;color:rgba(255,255,255,.92);font-size:1.05rem}
+    .heroStats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:12px;
+      margin-top:18px;
+    }
+    .heroStats div{
+      padding:13px 14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .heroStats strong,.heroStats span{display:block}
+    .heroStats span{font-size:.93rem;color:rgba(255,255,255,.84)}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:800;
+      border:1px solid transparent;
+    }
+    .btnPrimary{background:#fff;color:#0f172a}
+    .btnPrimary:hover{text-decoration:none;filter:brightness(.98)}
+    .btnGhost{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.25)}
+    .btnGhost:hover{background:rgba(255,255,255,.12);text-decoration:none}
+    .small{font-size:.93rem}
+    .muted{color:var(--muted)}
+    .grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.8fr) minmax(300px,.9fr);
+      gap:22px;
+      margin-top:24px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .note,.warning,.ctaPanel{
+      margin:16px 0;
+      padding:15px 16px;
+      border-radius:16px;
+    }
+    .note{background:var(--brand-soft);border-left:4px solid var(--brand)}
+    .warning{background:var(--warn-bg);border-left:4px solid var(--warn)}
+    .ctaPanel{
+      background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
+      color:#fff;
+    }
+    .ctaPanel p{color:rgba(255,255,255,.9)}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .intentCard{
+      display:block;
+      min-height:100%;
+      padding:16px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#ffffff 0%,#f8fbfb 100%);
+      color:inherit;
+    }
+    .intentCard:hover{text-decoration:none;border-color:#bdd0cc;box-shadow:0 10px 24px rgba(2,6,23,.06)}
+    ul{margin:0 0 14px;padding-left:20px}
+    li{margin:7px 0}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:12px 0 18px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      overflow:hidden;
+      background:#fff;
+      font-size:.97rem;
+    }
+    th,td{
+      padding:11px 12px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{background:#eff5f4}
+    tr:last-child td{border-bottom:none}
+    .checklist a{
+      display:block;
+      margin-bottom:10px;
+      padding:12px 13px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:#fff;
+      color:inherit;
+    }
+    .checklist a:hover{text-decoration:none;border-color:#bdd0cc}
+    footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+    #related-links{
+      max-width:1120px;
+      margin:0 auto;
+      padding:0 24px 42px;
+    }
+    #related-links ul{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:20px 20px 20px 38px;
+    }
+    @media (max-width: 920px){ .grid{grid-template-columns:1fr} }
+    @media (max-width: 560px){
+      .wrap{padding:16px}
+      .hero,.card{padding:20px}
+      .btn{width:100%}
+      table{font-size:.92rem}
+      th,td{padding:9px}
+      #related-links{padding:0 16px 34px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Peptide Tracker: Log Protocols, Doses, Side Effects, and Missed Doses | Jabbit",
+    "url":"https://www.jabbitapp.com/peptide-tracker.html",
+    "description":"A practical peptide tracker page for logging protocols, dose history, side effects, missed doses, routine drift, and drug-specific notes in one private workflow.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
+    "publisher":{"@type":"Organization","name":"Bridger Apps"}
+  }
+  </script>
+  <script type="application/ld+json" id="faq-jsonld">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What should a peptide tracker include?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"A useful peptide tracker usually includes exact dose timestamps, the compound or medication name, protocol or stack notes, missed-dose weeks, side effects with timing, and context such as sleep, travel, food timing, or other routine changes."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How is a peptide tracker different from a reminder app?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"A reminder app helps with the next scheduled dose. A peptide tracker also preserves history so you can review what changed, when it changed, and which symptoms or outcomes followed."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does this page give peptide dosing advice?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. This page is educational and tracking-focused only. It does not provide dosing instructions, protocol recommendations, or medical advice."
+        }
+      }
+    ]
+  }
+  </script>
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Peptide tracking hub</span>
+      <h1>Peptide tracker for protocols, dose logs, side effects, and missed-dose history</h1>
+      <p class="heroIntro">The useful question is rarely just “did I take it?” It is “what changed, when did it change, and what happened after that?” This page routes broad peptide-tracker intent into the exact logging workflow that fits: protocol, dose history, side effects, missed-dose weeks, or drug-specific timelines.</p>
+      <div class="heroStats">
+        <div>
+          <strong>Anchor the timeline</strong>
+          <span>Keep exact timestamps instead of rebuilding the week from memory.</span>
+        </div>
+        <div>
+          <strong>Log the full context</strong>
+          <span>Track routine drift, travel, sleep, symptoms, and other confounders.</span>
+        </div>
+        <div>
+          <strong>Route into the right tracker</strong>
+          <span>Separate protocol, dose, side-effect, and missed-dose intent cleanly.</span>
+        </div>
+      </div>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="peptide_tracker_hero_app_store" target="_blank" rel="noopener noreferrer">Track peptides in Jabbit on the App Store</a>
+        <a class="btn btnGhost" href="/peptide-protocol-tracker.html">Open peptide protocol tracker</a>
+      </div>
+      <p class="small" style="margin-top:16px;color:rgba(255,255,255,.86);">Educational and harm-reduction only. This page is about logging behavior, not dosing advice or compound recommendations.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What broad peptide tracker searches usually mean</h2>
+        <p class="muted">Most people are not looking for a generic note page. They are trying to keep one timeline that holds dose history, protocol changes, side effects, missed-dose weeks, and enough context to explain a rough or unusually good week later.</p>
+
+        <div class="note">
+          <strong>Why Jabbit fits this lane:</strong> it maps better to mixed peptide and obesity-medication workflows than reminder-only apps. If you need more than “next dose due,” route into the <a href="/peptide-protocol-tracker.html">protocol tracker</a>, <a href="/peptide-dose-log.html">dose log</a>, or <a href="/peptide-side-effect-log.html">side-effect log</a> instead of forcing everything into one note.
+        </div>
+
+        <h2>Choose the tracker that matches the real job</h2>
+        <div class="cards">
+          <a class="intentCard" href="/peptide-protocol-tracker.html">
+            <strong>Peptide protocol tracker</strong>
+            <span>Best when you need one place for stack changes, schedule anchors, routine drift, and notes across weeks.</span>
+          </a>
+          <a class="intentCard" href="/peptide-dose-log.html">
+            <strong>Peptide dose log</strong>
+            <span>Best when the core job is dose-by-dose history: timestamps, compound, amount, route, site, and notes.</span>
+          </a>
+          <a class="intentCard" href="/peptide-side-effect-log.html">
+            <strong>Peptide side-effect log</strong>
+            <span>Best when the week is about symptom timing, severity, and what changed around that window.</span>
+          </a>
+          <a class="intentCard" href="/peptide-missed-dose-tracker.html">
+            <strong>Peptide missed-dose tracker</strong>
+            <span>Best when the signal got messy because the schedule slipped, a dose was late, or a week was skipped.</span>
+          </a>
+        </div>
+
+        <h2>What to log in any peptide tracker</h2>
+        <table aria-label="Peptide tracker fields">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Why it matters</th>
+              <th>Best next page</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Exact timestamp</strong></td>
+              <td>Turns a vague week into something you can compare later.</td>
+              <td><a href="/peptide-dose-log.html">Peptide dose log</a></td>
+            </tr>
+            <tr>
+              <td><strong>Protocol or stack change</strong></td>
+              <td>Explains why one week should not be compared to a stable baseline week.</td>
+              <td><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></td>
+            </tr>
+            <tr>
+              <td><strong>Symptoms with timing</strong></td>
+              <td>Helps separate dose-related patterns from sleep, food, travel, or illness.</td>
+              <td><a href="/peptide-side-effect-log.html">Peptide side-effect log</a></td>
+            </tr>
+            <tr>
+              <td><strong>Late or missed dose history</strong></td>
+              <td>Prevents confusing a disrupted week with a normal week.</td>
+              <td><a href="/peptide-missed-dose-tracker.html">Peptide missed-dose tracker</a></td>
+            </tr>
+            <tr>
+              <td><strong>Batch, lot, and vendor notes</strong></td>
+              <td>Useful for recall checks, consistency, and practical troubleshooting.</td>
+              <td><a href="/peptide-batch-lot-vendor-notes-log.html">Batch, lot, and vendor notes log</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>When a generic peptide tracker is enough, and when it is not</h2>
+        <p class="muted">A generic tracker is enough when you are mostly preserving history. It stops being enough when the timeline needs a drug-specific branch or a more focused symptom workflow.</p>
+        <div class="cards">
+          <a class="intentCard" href="/retatrutide-tracker.html">
+            <strong>Retatrutide tracker</strong>
+            <span>Use this when the week is specifically about retatrutide timing, symptoms, or investigational workflow questions.</span>
+          </a>
+          <a class="intentCard" href="/cagrilintide-tracker.html">
+            <strong>Cagrilintide tracker</strong>
+            <span>Use this when you want the same tracking logic but need cagrilintide-specific routing.</span>
+          </a>
+          <a class="intentCard" href="/glp1-injection-tracker.html">
+            <strong>GLP-1 injection tracker</strong>
+            <span>Use this when the main job is weekly obesity-medication logging with reminders and symptom notes.</span>
+          </a>
+          <a class="intentCard" href="/injection-protocol-tracker.html">
+            <strong>Injection protocol tracker</strong>
+            <span>Use this when your logging spans both GLP-1 medications and broader peptide workflows.</span>
+          </a>
+        </div>
+
+        <div class="warning">
+          <strong>Keep it educational:</strong> this cluster is about organized self-observation, not telling people what dose to take, how to source compounds, or how to run a protocol.
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Minimum viable peptide log</h2>
+        <ul>
+          <li><strong>One exact dose timestamp</strong> for every entry</li>
+          <li><strong>One short outcome note</strong> about symptoms, appetite, energy, or sleep</li>
+          <li><strong>One context tag</strong> like travel, illness, stress, or late dose</li>
+        </ul>
+
+        <div class="ctaPanel">
+          <h3>App Store CTA</h3>
+          <p>Need reminders plus a private timeline that stays readable week to week?</p>
+          <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="peptide_tracker_sidebar_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit</a></p>
+        </div>
+
+        <h2>Closest related pages</h2>
+        <div class="checklist">
+          <a href="/peptide-space-hub.html"><strong>Peptide tracking hub</strong><br><span class="muted">Older hub-style page covering the same cluster more loosely.</span></a>
+          <a href="/peptide-protocol-tracker.html"><strong>Peptide protocol tracker</strong><br><span class="muted">Best adjacent page for stack, cycle, and schedule intent.</span></a>
+          <a href="/peptide-dose-log.html"><strong>Peptide dose log</strong><br><span class="muted">Best adjacent page for exact timestamp and amount history.</span></a>
+          <a href="/peptide-side-effect-log.html"><strong>Peptide side-effect log</strong><br><span class="muted">Best adjacent page for symptom-timeline intent.</span></a>
+        </div>
+
+        <h2>Query-fit note</h2>
+        <p class="muted">This page is designed to capture broad peptide-tracker intent while sending narrower searchers into the exact page that matches their job instead of letting a loose hub absorb every query badly.</p>
+      </aside>
+    </section>
+
+    <footer>
+      <p><strong>Bottom line:</strong> a peptide tracker becomes useful when it preserves what changed, when it changed, and what followed. Keep the log narrow enough that future-you can actually read it.</p>
+    </footer>
+  </main>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+      <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></li>
+      <li><a href="/peptide-dose-log.html">Peptide dose log</a></li>
+      <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a></li>
+    </ul>
+  </section>
+</body>
+</html>
