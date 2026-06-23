@@ -1,274 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GLP-1 Injection Log: What to Track (Dose, Timing, Side Effects) | Jabbit</title>
-  <meta name="description" content="A practical GLP-1 injection log checklist: what to record each week (dose, timing, site, symptoms, side effects) plus a simple template and an iPhone tracker app.">
-  <link rel="canonical" href="https://jabbitapp.com/glp-1-injection-tracking-guide.html">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#f0fdfa',
-              100: '#ccfbf1',
-              200: '#99f6e4',
-              300: '#5eead4',
-              400: '#2dd4bf',
-              500: '#14b8a6',
-              600: '#0d9488',
-              700: '#0f766e',
-              800: '#115e59',
-              900: '#134e4a',
-            }
-          }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLP-1 Injection Tracking Guide: Log Timing, Symptoms, Missed Doses, and Protocol Drift | Jabbit</title>
+  <meta name="description" content="A practical GLP-1 injection tracking guide for logging dose timing, symptoms, missed doses, routine drift, and protocol notes in one timeline. Educational only with clean routing into tracker pages." />
+  <meta name="keywords" content="GLP-1 injection tracking guide, GLP-1 injection log, GLP-1 protocol log, GLP-1 missed dose tracker, GLP-1 side effect tracker, semaglutide tracker, tirzepatide tracker" />
+  <link rel="canonical" href="https://www.jabbitapp.com/glp-1-injection-tracking-guide.html" />
+  <style>
+    :root{
+      --bg:#eef6f5;
+      --card:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#d9e5e2;
+      --brand:#0f766e;
+      --brand-dark:#115e59;
+      --brand-soft:#e4f7f3;
+      --hero-a:#0f172a;
+      --hero-b:#134e4a;
+      --hero-c:#0f766e;
+      --warn:#f97316;
+      --warn-bg:#fff7ed;
+      --info:#eff6ff;
+      --info-line:#2563eb;
+      --shadow:0 14px 36px rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(20,184,166,.12), transparent 24%),
+        linear-gradient(180deg,#ebf7f5 0%,var(--bg) 240px);
+      color:var(--ink);
+      line-height:1.65;
+    }
+    a{color:var(--brand-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 58%,var(--hero-c) 100%);
+      color:#fff;
+      border-radius:28px;
+      padding:34px;
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-80px;
+      bottom:-110px;
+      width:280px;
+      height:280px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 72%);
+    }
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:6px 11px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.08);
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:.8rem;
+      font-weight:800;
+    }
+    h1{margin:0 0 12px;font-size:clamp(2.2rem,4.2vw,3.35rem);line-height:1.05}
+    h2{margin:0 0 12px;font-size:1.42rem;line-height:1.2}
+    h3{margin:0 0 8px;font-size:1.06rem;line-height:1.25}
+    p{margin:0 0 14px}
+    .heroIntro{max-width:790px;color:rgba(255,255,255,.93);font-size:1.06rem}
+    .heroGrid,.routeGrid,.cardGrid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:18px;
+    }
+    .heroGrid div,.routeCard,.miniCard{
+      border-radius:18px;
+      padding:16px;
+    }
+    .heroGrid div{
+      background:rgba(255,255,255,.09);
+      border:1px solid rgba(255,255,255,.15);
+    }
+    .heroGrid strong,.heroGrid span{display:block}
+    .heroGrid span{font-size:.93rem;color:rgba(255,255,255,.85)}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:800;
+      border:1px solid transparent;
+    }
+    .btnPrimary{background:#fff;color:#0f172a}
+    .btnPrimary:hover{text-decoration:none;filter:brightness(.98)}
+    .btnGhost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.28)}
+    .btnGhost:hover{background:rgba(255,255,255,.14);text-decoration:none}
+    .small{font-size:.93rem}
+    .muted{color:var(--muted)}
+    .layout{
+      display:grid;
+      grid-template-columns:minmax(0,1.8fr) minmax(300px,.9fr);
+      gap:22px;
+      margin-top:24px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .note,.warning,.info,.ctaPanel{
+      margin:16px 0;
+      padding:15px 16px;
+      border-radius:16px;
+    }
+    .note{background:var(--brand-soft);border-left:4px solid var(--brand)}
+    .warning{background:var(--warn-bg);border-left:4px solid var(--warn)}
+    .info{background:var(--info);border-left:4px solid var(--info-line)}
+    .ctaPanel{
+      background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
+      color:#fff;
+    }
+    .ctaPanel p{color:rgba(255,255,255,.92)}
+    ul{margin:0 0 14px;padding-left:20px}
+    li{margin:7px 0}
+    .routeCard,.miniCard{
+      display:block;
+      color:inherit;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#fff 0%,#f8fbfb 100%);
+    }
+    .routeCard:hover,.miniCard:hover{text-decoration:none;border-color:#bdd0cc;box-shadow:0 10px 24px rgba(2,6,23,.06)}
+    .routeCard strong,.routeCard span,.miniCard strong,.miniCard span{display:block}
+    .routeCard span,.miniCard span{margin-top:4px;color:var(--muted);font-size:.95rem}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:12px 0 18px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      overflow:hidden;
+      background:#fff;
+    }
+    th,td{
+      padding:11px 12px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{background:#eff5f4}
+    tr:last-child td{border-bottom:none}
+    .toc{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#f8fcfb;
+      padding:18px;
+      margin-bottom:18px;
+    }
+    .toc ul{margin-bottom:0}
+    footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+    #related-links{
+      max-width:1120px;
+      margin:0 auto;
+      padding:0 24px 42px;
+    }
+    #related-links ul{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:20px 20px 20px 38px;
+    }
+    @media (max-width: 920px){ .layout{grid-template-columns:1fr} }
+    @media (max-width: 560px){
+      .wrap{padding:16px}
+      .hero,.card{padding:20px}
+      .btn{width:100%}
+      th,td{padding:9px}
+      #related-links{padding:0 16px 34px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"GLP-1 Injection Tracking Guide: Log Timing, Symptoms, Missed Doses, and Protocol Drift | Jabbit",
+    "url":"https://www.jabbitapp.com/glp-1-injection-tracking-guide.html",
+    "description":"A practical GLP-1 injection tracking guide for logging dose timing, symptoms, missed doses, routine drift, and protocol notes in one timeline. Educational only with clean routing into tracker pages.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
+    "publisher":{"@type":"Organization","name":"Bridger Apps"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What should a GLP-1 injection tracker include?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"The useful minimum is injection date and time, medication, dose as prescribed, site, symptoms, missed-dose or schedule notes, and a short context note for sleep, meals, stress, travel, or illness."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"When is a protocol tracker better than a simple injection log?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"A protocol tracker is better when the main question is not just whether you took the shot, but how timing, side effects, missed doses, and routine changes interact across weeks."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does this page tell me how to dose or change medications?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. This page is educational only and is for organizing observations. It does not give dosing, switching, or treatment instructions."
         }
       }
-    }
+    ]
+  }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/site.css" />
   <script defer src="/assets/site.js"></script>
 </head>
-<body class="bg-white text-gray-900">
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-6 py-4">
-      <div class="flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3">
-          <div class="w-9 h-9 bg-brand-500 rounded-xl flex items-center justify-center shadow-sm" aria-hidden="true">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Protocol and tracker intent</span>
+      <h1>GLP-1 injection tracking guide</h1>
+      <p class="heroIntro">The real job of a GLP-1 injection tracker is not just remembering shot day. It is keeping dose timing, side effects, missed doses, and routine drift in one reviewable timeline so a weird week does not turn into guesswork later.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_injection_tracking_guide_top" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
+        <a class="btn btnGhost" href="/glp1-injection-tracker.html">Open GLP-1 injection tracker</a>
+      </div>
+      <div class="heroGrid">
+        <div>
+          <strong>Timing anchor</strong>
+          <span>Start with the exact injection time, medication, dose, and site so the week has a real reference point.</span>
+        </div>
+        <div>
+          <strong>Pattern review</strong>
+          <span>Attach symptoms, appetite, sleep, and stress to the same week instead of scattering them across notes.</span>
+        </div>
+        <div>
+          <strong>Route to the right page</strong>
+          <span>Use missed-dose, protocol, peptide, or side-effect pages when a generic injection log stops being enough.</span>
+        </div>
+      </div>
+      <p class="small" style="margin-top:16px;color:rgba(255,255,255,.88);">Educational tracking only. This page is not medical advice, dosing guidance, or treatment advice.</p>
+    </section>
+
+    <section class="layout">
+      <article class="card">
+        <div class="toc">
+          <h2>On this page</h2>
+          <ul>
+            <li><a href="#why">Why a tracker beats a simple reminder</a></li>
+            <li><a href="#minimum">Minimum fields to log</a></li>
+            <li><a href="#template">Simple week template</a></li>
+            <li><a href="#route">Which tracker page to use next</a></li>
+          </ul>
+        </div>
+
+        <h2 id="why">Why a tracker beats a simple reminder</h2>
+        <p>Most people do not search for an injection tracking guide because they forgot the concept of a reminder. They search because the week got messy: a symptom showed up at the wrong time, appetite changed, sleep got rough, a dose moved, or a stable routine stopped feeling stable.</p>
+        <p class="muted">That is why a useful tracking page has to do more than list fields. It has to route you into the right workflow for timing, symptoms, missed doses, and protocol notes.</p>
+
+        <div class="note">
+          <strong>Best starting point:</strong> keep your core log in the <a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a>, then branch into narrower pages when the week becomes a missed-dose, side-effect, stress-pattern, or protocol problem.
+        </div>
+
+        <h2 id="minimum">Minimum fields to log every week</h2>
+        <ul>
+          <li><strong>Injection timestamp:</strong> exact date and time, not just "Sunday night."</li>
+          <li><strong>Medication and dose:</strong> whatever your prescription or plan already uses.</li>
+          <li><strong>Injection site:</strong> useful for reconstructing a real week later.</li>
+          <li><strong>Timing note:</strong> on schedule, late, early, skipped, restart week, or dose-change week.</li>
+          <li><strong>Symptom notes:</strong> nausea, reflux, constipation, fatigue, appetite shifts, sleep disruption, or anything else that mattered.</li>
+          <li><strong>Confounders:</strong> poor sleep, illness, alcohol, large meals, travel, stress, or unusual activity.</li>
+        </ul>
+
+        <div class="info">
+          <strong>Useful rule:</strong> if the same note would help explain a symptom later, it belongs in the tracker now. Short factual notes are better than detailed reconstructions from memory.
+        </div>
+
+        <h2>When a basic injection log stops being enough</h2>
+        <div class="cardGrid">
+          <div class="miniCard">
+            <strong>Missed or late dose</strong>
+            <span>The schedule moved, so the whole week needs to be interpreted differently.</span>
           </div>
-          <span class="text-xl font-bold tracking-tight">Jabbit</span>
-        </a>
-
-        <div class="hidden md:flex items-center space-x-8">
-          <a href="/" class="text-gray-600 hover:text-gray-900 transition">Home</a>
-          <a href="/guides/" class="text-gray-600 hover:text-gray-900 transition">Guides</a>
-          <a href="/privacy/" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
-          <a href="/terms/" class="text-gray-600 hover:text-gray-900 transition">Terms</a>
-          <a href="https://apps.apple.com/app/id6756848719" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600 transition">App Store</a>
+          <div class="miniCard">
+            <strong>Side-effect timing</strong>
+            <span>You need onset, peak, and duration rather than one vague symptom note.</span>
+          </div>
+          <div class="miniCard">
+            <strong>Protocol drift</strong>
+            <span>Sleep, travel, meals, stress, or schedule chaos started muddying the pattern.</span>
+          </div>
+          <div class="miniCard">
+            <strong>Peptide overlap</strong>
+            <span>The workflow is broader than one GLP-1 and needs a protocol-level view.</span>
+          </div>
         </div>
 
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-gray-900 transition" aria-label="Toggle menu" aria-expanded="false">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
+        <h2 id="template">Simple GLP-1 week template</h2>
+        <p class="muted">This is enough structure for review later without turning the log into homework.</p>
+        <table aria-label="GLP-1 injection tracking template">
+          <thead>
+            <tr>
+              <th style="width:18%;">Field</th>
+              <th style="width:34%;">What to record</th>
+              <th>Why it matters later</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Injection</td>
+              <td>Date, time, medication, dose, site</td>
+              <td>Gives the week a real anchor instead of a fuzzy memory.</td>
+            </tr>
+            <tr>
+              <td>Timing note</td>
+              <td>On-time, late, early, skipped, restart, or schedule-change week</td>
+              <td>Keeps comparison honest when the week was not normal.</td>
+            </tr>
+            <tr>
+              <td>Symptoms</td>
+              <td>What started, when, how strong, and how long it lasted</td>
+              <td>Separates onset from peak instead of collapsing the whole week into one label.</td>
+            </tr>
+            <tr>
+              <td>Context</td>
+              <td>Sleep, meals, stress, alcohol, illness, travel, hydration</td>
+              <td>Helps rule out routine noise and spot repeatable patterns.</td>
+            </tr>
+            <tr>
+              <td>Next step</td>
+              <td>Missed-dose page, side-effect timeline, protocol tracker, or peptide tracker</td>
+              <td>Moves the week into the right workflow instead of overloading one note.</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2">
-        <div class="flex flex-col space-y-4">
-          <a href="/" class="text-gray-600 hover:text-gray-900 transition">Home</a>
-          <a href="/guides/" class="text-gray-600 hover:text-gray-900 transition">Guides</a>
-          <a href="/privacy/" class="text-gray-600 hover:text-gray-900 transition">Privacy</a>
-          <a href="/terms/" class="text-gray-600 hover:text-gray-900 transition">Terms</a>
-          <a href="https://apps.apple.com/app/id6756848719" class="text-brand-700 font-semibold hover:text-brand-800 transition">App Store</a>
+        <h2>Good tracking note vs weak tracking note</h2>
+        <ul>
+          <li><strong>Good:</strong> "Tuesday 8:30 PM injection. Thursday morning nausea 4/10, poor sleep Wednesday, travel day, appetite lower through Friday."</li>
+          <li><strong>Weak:</strong> "Felt off this week."</li>
+        </ul>
+
+        <div class="warning">
+          <strong>Harm-reduction note:</strong> a tracker helps you organize what happened. It does not tell you what to do with medications, missed doses, or severe symptoms. Get real medical care for urgent or unsafe symptoms.
         </div>
-      </div>
-    </div>
-  </nav>
 
-<!-- Hero Section -->
-  <section class="relative pt-32 pb-16 overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/glp1-injection-tracking.jpg');"></div>
-    <div class="absolute inset-0 bg-gradient-to-br opacity-80 from-brand-600 via-brand-700 to-brand-900"></div>
-    <div class="absolute inset-0 opacity-10">
-      <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <pattern id="grid1" width="10" height="10" patternUnits="userSpaceOnUse">
-          <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
-        </pattern>
-        <rect width="100" height="100" fill="url(#grid1)"/>
-      </svg>
-    </div>
-    <div class="relative max-w-4xl mx-auto px-6 text-center">
-      <div class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-white/90 text-sm font-medium mb-6">
-        <span class="w-2 h-2 rounded-full bg-brand-300 mr-2"></span>
-        12 min read
-      </div>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-        The Data-Driven Approach to Tracking GLP-1 Injections
-      </h1>
-      <p class="text-xl text-brand-100 max-w-2xl mx-auto mb-8">
-        A practical injection log checklist: dose, timing, site, symptoms, and side effects — plus a simple template.
-      </p>
-      <div class="flex items-center justify-center space-x-4 text-white/80">
-        <span class="font-medium">Jabbit Team</span>
-        <span>·</span>
-        <span>February 2026</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Article Content -->
-  <article class="max-w-3xl mx-auto px-6 py-12">
-    <p class="text-sm text-gray-600 italic mb-8">This article is for informational purposes only and is not medical advice. Consult a licensed healthcare professional for personal guidance on prescription medications, dosing, and side effects.</p>
-
-	    <div class="callout callout--brand mb-10">
-	      <div class="callout__title">Make injection tracking effortless (and private)</div>
-	      <div class="callout__text">Jabbit is a privacy‑first injection tracker for iPhone: log dose timing, reminders, injection sites, and notes — synced via <strong>your</strong> iCloud (no server storing your personal logs).</div>
-	      <div class="mt-4 flex flex-col sm:flex-row gap-3">
-	        <a href="https://apps.apple.com/app/id6756848719" data-track="guide_injection_tracking_top" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition">Open Jabbit in the App Store</a>
-	        <a href="/ozempic-injection-tracker.html" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 font-semibold hover:border-gray-300 transition">Ozempic tracker</a>
-	        <a href="/wegovy-injection-tracker.html" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 font-semibold hover:border-gray-300 transition">Wegovy tracker</a>
-	      </div>
-	      <ul class="mt-4 grid gap-2 text-sm text-gray-700 sm:grid-cols-2">
-	        <li><strong>Broader tracking:</strong> log any injection protocol (not just one med).</li>
-	        <li><strong>Protocol flexibility:</strong> custom schedules, sites, and notes.</li>
-	        <li><strong>Privacy-first:</strong> your iCloud sync (no account required).</li>
-	        <li><strong>If you tried Shotsy:</strong> broader protocol support + lower price.</li>
-	      </ul>
-	      <div class="mt-3 text-xs text-gray-500">Educational only — not medical advice.</div>
-	    </div>
-
-    <!-- Table of Contents -->
-    <div class="bg-brand-50 rounded-2xl p-6 mb-12 border border-brand-100">
-      <h3 class="font-semibold text-gray-900 mb-4">In this guide:</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#why-log" class="toc-link text-gray-600 hover:text-brand-600 transition">Why an injection log helps</a></li>
-        <li><a href="#checklist" class="toc-link text-gray-600 hover:text-brand-600 transition">The GLP‑1 injection log checklist</a></li>
-        <li><a href="#template" class="toc-link text-gray-600 hover:text-brand-600 transition">A simple tracker template</a></li>
-        <li><a href="#missed-dose" class="toc-link text-gray-600 hover:text-brand-600 transition">Missed dose? What to note</a></li>
-        <li><a href="#side-effects" class="toc-link text-gray-600 hover:text-brand-600 transition">Side‑effect & symptom logging</a></li>
-        <li><a href="#app" class="toc-link text-gray-600 hover:text-brand-600 transition">Using an app (private by default)</a></li>
-      </ul>
-    </div>
-
-    <div class="prose max-w-none">
-      <p class="text-lg leading-relaxed text-gray-700">
-        If you’re on a GLP‑1 medication, an injection log can be the difference between “I think I’m doing things consistently” and actually knowing what happened. This page is a practical checklist for what to record each week so you can notice patterns, reduce memory drift, and bring clearer notes to your next appointment — without turning your life into a spreadsheet.
-      </p>
-
-      <h2 id="why-log">Why an injection log helps</h2>
-      <ul>
-        <li><strong>Consistency gets easier.</strong> It’s harder to accidentally drift a day or two when you can see your last injection timestamp.</li>
-        <li><strong>Symptoms stop feeling random.</strong> A simple log can reveal “day 1–2 vs day 5–7” patterns over time.</li>
-        <li><strong>Changes become explainable.</strong> If appetite, sleep, or GI symptoms shift, you can check what else changed that week (dose, timing, travel, stress).</li>
-      </ul>
-
-      <h2 id="checklist">The GLP‑1 injection log checklist</h2>
-      <p>
-        Start with these fields — they match what most people end up trying to remember later:
-      </p>
-      <ul>
-        <li><strong>Date + time.</strong> Record the exact timestamp (not just “Sunday”).</li>
-        <li><strong>Medication name.</strong> Useful if you ever switch, pause, or restart.</li>
-        <li><strong>Dose.</strong> Whatever unit your prescription uses.</li>
-        <li><strong>Injection site (and side).</strong> Example: “left thigh” or “right abdomen”.</li>
-        <li><strong>Timing note.</strong> “As scheduled”, “late”, “early”, “travel day”.</li>
-        <li><strong>Quick symptom check‑in.</strong> 10‑second ratings work well: nausea (0–10), constipation (0–10), fatigue (0–10), reflux (0–10).</li>
-        <li><strong>One free‑text note.</strong> Keep it short: “dose change”, “poor sleep”, “high stress”, “heavy meal”.</li>
-      </ul>
-
-      <h2 id="template">A simple tracker template</h2>
-      <p>
-        Copy/paste this into Notes, a spreadsheet, or a journaling app:
-      </p>
-      <pre><code>Date/time:
-Medication:
-Dose:
-Site:
-Timing note (late/early?):
-Symptoms (0–10): nausea __ / constipation __ / fatigue __ / reflux __
-Note:
-      </code></pre>
-
-      <h2 id="missed-dose">Missed dose? What to note</h2>
-      <p>
-        This is educational only — follow your prescriber’s instructions. For tracking purposes, log what happened (instead of guessing what “should” have happened):
-      </p>
-      <ul>
-        <li><strong>Planned date/time</strong> vs <strong>actual date/time</strong> (or “skipped”).</li>
-        <li><strong>Reason</strong> (travel, pharmacy delay, forgot, side effects, etc.).</li>
-        <li><strong>Any symptoms</strong> you noticed during the gap.</li>
-      </ul>
-      <p>
-        For a dedicated missed‑dose template, see <a href="/glp1-missed-dose-tracker.html">Missed a GLP‑1 dose? What to log</a>.
-      </p>
-
-      <h2 id="side-effects">Side‑effect & symptom logging (without overthinking it)</h2>
-      <p>
-        The goal isn’t to diagnose yourself — it’s to notice patterns and reduce “memory drift.” Two easy approaches:
-      </p>
-      <ul>
-        <li><strong>Daily 10‑second ratings:</strong> pick 3–5 symptoms and rate 0–10.</li>
-        <li><strong>Event notes:</strong> only log when something happens (“nausea after dinner”, “constipation day 3”, “reflux at night”).</li>
-      </ul>
-      <p>
-        For a deeper educational overview (and what’s often worth logging), see <a href="/glp-1-side-effects-guide.html">GLP‑1 side effects guide</a>.
-      </p>
-
-      <h2 id="app">Using an app (private by default)</h2>
-      <p>
-        If you’d rather not manage a spreadsheet, Jabbit is built for this workflow: track injections, reminders, sites, and notes in one place — with logs synced via your iCloud.
-      </p>
-      <p>
-        See the <a href="/glp1-injection-tracker.html">GLP‑1 injection tracker</a> page (features + screenshots), or download directly from the <a href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">App Store</a>.
-      </p>
-    </div>
-
-    <!-- CTA Section -->
-    <div class="mt-16 bg-gradient-to-br from-brand-600 to-brand-800 rounded-3xl p-8 md:p-12 text-center text-white">
-      <h3 class="text-2xl md:text-3xl font-bold mb-4">Turn “I think I tracked it” into a real log</h3>
-      <p class="text-brand-100 text-lg mb-8 max-w-xl mx-auto">
-        Log injections, reminders, sites, and notes in one place — private by default, synced via your iCloud.
-      </p>
-      <a href="/#download" class="inline-flex items-center px-8 py-4 bg-white text-brand-700 font-semibold rounded-xl hover:bg-brand-50 transition shadow-lg">
-        Get Jabbit for iOS
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-        </svg>
-      </a>
-    </div>
-  </article>
-
-  <!-- Footer -->
-  <footer class="py-12 px-6 bg-gray-900 text-white mt-16">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-4 gap-8 mb-8">
-        <div class="md:col-span-2">
-          <a href="/" class="flex items-center space-x-3">
-            <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </div>
-            <span class="text-xl font-bold">Jabbit</span>
+        <h2 id="route">Route the week into the right tracker</h2>
+        <p class="muted">This page should work like a router. Use the branch that matches the real problem.</p>
+        <div class="routeGrid">
+          <a class="routeCard" href="/glp1-injection-tracker.html" data-track-internal="glp1_injection_tracking_route_core">
+            <strong>GLP-1 injection tracker</strong>
+            <span>Best when the main need is one clean dose timeline with reminders and notes.</span>
           </a>
-          <p class="text-gray-400 mt-4 max-w-md">
-            The complete peptide tracking toolkit for iOS. Private, powerful, and beautifully designed.
-          </p>
+          <a class="routeCard" href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_injection_tracking_route_missed">
+            <strong>GLP-1 missed-dose tracker</strong>
+            <span>Use this when a late or skipped dose changed the week.</span>
+          </a>
+          <a class="routeCard" href="/glp-1-side-effect-log.html" data-track-internal="glp1_injection_tracking_route_side_effects">
+            <strong>GLP-1 side-effect log</strong>
+            <span>Best when the core problem is symptom timing and repeatability.</span>
+          </a>
+          <a class="routeCard" href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_injection_tracking_route_stress_hrv">
+            <strong>Stress, anxiety, and HRV guide</strong>
+            <span>Use this when the rough week looked more like a wearable, stress, or nervous-system pattern.</span>
+          </a>
+          <a class="routeCard" href="/injection-protocol-tracker.html" data-track-internal="glp1_injection_tracking_route_protocol">
+            <strong>Injection protocol tracker</strong>
+            <span>Best when you need broader schedule, reminder, and routine context across weeks.</span>
+          </a>
+          <a class="routeCard" href="/peptide-protocol-tracker.html" data-track-internal="glp1_injection_tracking_route_peptide_protocol">
+            <strong>Peptide protocol tracker</strong>
+            <span>Use this when the workflow extends beyond a single GLP-1 page into broader peptide logging.</span>
+          </a>
         </div>
-        <div>
-          <h4 class="font-semibold mb-4">Product</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="/#features" class="hover:text-white transition">Features</a></li>
-            <li><a href="/#pricing" class="hover:text-white transition">Pricing</a></li>
-            <li><a href="/#download" class="hover:text-white transition">Download</a></li>
-            <li><a href="/blog/" class="hover:text-white transition">Blog</a></li>
-          </ul>
+
+        <div class="ctaPanel">
+          <h2>Use one private timeline instead of scattered notes</h2>
+          <p>Jabbit is built for reminders, dose history, side-effect notes, missed-dose context, and protocol logging in one iPhone workflow. That is the practical difference between a reminder-only app and a tracker you can actually review later.</p>
+          <div class="ctaRow">
+            <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_injection_tracking_guide_bottom" target="_blank" rel="noopener noreferrer">Get Jabbit</a>
+            <a class="btn btnGhost" href="/glp1-injection-tracker.html">See tracker page</a>
+          </div>
         </div>
-        <div>
-          <h4 class="font-semibold mb-4">Legal</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="/privacy/" class="hover:text-white transition">Privacy Policy</a></li>
-            <li><a href="/terms/" class="hover:text-white transition">Terms of Service</a></li>
-            <li><a href="mailto:hello@jabbitapp.com" class="hover:text-white transition">Contact</a></li>
-          </ul>
+      </article>
+
+      <aside class="card">
+        <h2>Fast tracker stack</h2>
+        <p class="muted">If the goal is fewer scattered notes and clearer pattern review, these are the best adjacent pages.</p>
+        <ul>
+          <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a></li>
+          <li><a href="/glp1-missed-dose-tracker.html">GLP-1 missed-dose tracker</a></li>
+          <li><a href="/glp-1-side-effect-log.html">GLP-1 side-effect log</a></li>
+          <li><a href="/injection-protocol-tracker.html">Injection protocol tracker</a></li>
+          <li><a href="/peptide-side-effect-timeline.html">Peptide side-effect timeline</a></li>
+        </ul>
+
+        <h3 style="margin-top:16px;">Why this rewrite fits the current thesis</h3>
+        <p class="muted">The live winners are side-effect and stress-pattern pages, but generic tracker pages still need stronger routing. This guide now acts as a qualified router into the proven tracker cluster instead of staying a broad checklist page.</p>
+
+        <h3 style="margin-top:16px;">If your search is drug-specific</h3>
+        <ul>
+          <li><a href="/ozempic-injection-tracker.html">Ozempic injection tracker</a></li>
+          <li><a href="/wegovy-injection-tracker.html">Wegovy injection tracker</a></li>
+          <li><a href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a></li>
+          <li><a href="/zepbound-injection-tracker.html">Zepbound injection tracker</a></li>
+          <li><a href="/tirzepatide-injection-tracker.html">Tirzepatide injection tracker</a></li>
+        </ul>
+
+        <div class="ctaRow" style="margin-top:16px;">
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_injection_tracking_guide_sidebar" target="_blank" rel="noopener noreferrer">Download Jabbit</a>
+          <a class="btn" style="border:1px solid var(--line);background:#fff;color:var(--brand);" href="/peptide-protocol-tracker.html">Peptide protocol tracker</a>
         </div>
-      </div>
-      <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-        <p>&copy; 2025 Jabbit. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+
+        <footer>
+          <p><strong>Reminder:</strong> the best tracker is the one that keeps timing, symptoms, and context together. Short, consistent notes beat perfect notes.</p>
+        </footer>
+      </aside>
+    </section>
+
+    <footer>
+      <p><strong>Disclaimer:</strong> Educational only. This page does not give dosing, schedule-change, or treatment instructions.</p>
+      <p><a href="/">Jabbit</a> helps people keep private GLP-1, peptide, and injection logs on iPhone with reminders, notes, and timeline history.</p>
+    </footer>
+  </main>
   <section id="related-links">
     <h2>Related</h2>
     <ul>
@@ -279,3 +456,4 @@ Note:
   </section>
 </body>
 </html>
+
