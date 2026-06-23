@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GLP-1 Injection Tracking Guide: Log Timing, Symptoms, Missed Doses, and Protocol Drift | Jabbit</title>
-  <meta name="description" content="A practical GLP-1 injection tracking guide for logging dose timing, symptoms, missed doses, routine drift, and protocol notes in one timeline. Educational only with clean routing into tracker pages." />
-  <meta name="keywords" content="GLP-1 injection tracking guide, GLP-1 injection log, GLP-1 protocol log, GLP-1 missed dose tracker, GLP-1 side effect tracker, semaglutide tracker, tirzepatide tracker" />
+  <title>GLP-1 Protocol Tracker Guide: Log Dose Timing, Symptoms, HRV, Missed Doses, and Peptide Overlap | Jabbit</title>
+  <meta name="description" content="A practical GLP-1 protocol tracker guide for logging dose timing, symptoms, stress or HRV shifts, missed doses, routine drift, and peptide overlap in one private timeline." />
+  <meta name="keywords" content="GLP-1 protocol tracker, GLP-1 injection tracking guide, GLP-1 dose log, GLP-1 symptom tracker, GLP-1 HRV tracker, GLP-1 missed dose tracker, peptide protocol tracker" />
   <link rel="canonical" href="https://www.jabbitapp.com/glp-1-injection-tracking-guide.html" />
   <style>
     :root{
@@ -197,9 +197,9 @@
   {
     "@context":"https://schema.org",
     "@type":"WebPage",
-    "name":"GLP-1 Injection Tracking Guide: Log Timing, Symptoms, Missed Doses, and Protocol Drift | Jabbit",
+    "name":"GLP-1 Protocol Tracker Guide: Log Dose Timing, Symptoms, HRV, Missed Doses, and Peptide Overlap | Jabbit",
     "url":"https://www.jabbitapp.com/glp-1-injection-tracking-guide.html",
-    "description":"A practical GLP-1 injection tracking guide for logging dose timing, symptoms, missed doses, routine drift, and protocol notes in one timeline. Educational only with clean routing into tracker pages.",
+    "description":"A practical GLP-1 protocol tracker guide for logging dose timing, symptoms, stress or HRV shifts, missed doses, routine drift, and peptide overlap in one private timeline.",
     "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
     "publisher":{"@type":"Organization","name":"Bridger Apps"}
   }
@@ -242,8 +242,8 @@
   <main class="wrap">
     <section class="hero">
       <span class="eyebrow">Protocol and tracker intent</span>
-      <h1>GLP-1 injection tracking guide</h1>
-      <p class="heroIntro">The real job of a GLP-1 injection tracker is not just remembering shot day. It is keeping dose timing, side effects, missed doses, and routine drift in one reviewable timeline so a weird week does not turn into guesswork later.</p>
+      <h1>GLP-1 protocol tracker guide</h1>
+      <p class="heroIntro">The useful version of a GLP-1 tracker is not just a shot reminder. It is a protocol log that keeps dose timing, symptom timing, stress or HRV shifts, missed doses, and peptide overlap in one reviewable timeline so the rough week is easier to interpret later.</p>
       <div class="ctaRow">
         <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_injection_tracking_guide_top" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
         <a class="btn btnGhost" href="/glp1-injection-tracker.html">Open GLP-1 injection tracker</a>
@@ -255,11 +255,11 @@
         </div>
         <div>
           <strong>Pattern review</strong>
-          <span>Attach symptoms, appetite, sleep, and stress to the same week instead of scattering them across notes.</span>
+          <span>Attach symptoms, appetite, sleep, stress, and HRV context to the same week instead of scattering them across notes.</span>
         </div>
         <div>
           <strong>Route to the right page</strong>
-          <span>Use missed-dose, protocol, peptide, or side-effect pages when a generic injection log stops being enough.</span>
+          <span>Use missed-dose, protocol, peptide, or stress-pattern pages when a generic injection log stops being enough.</span>
         </div>
       </div>
       <p class="small" style="margin-top:16px;color:rgba(255,255,255,.88);">Educational tracking only. This page is not medical advice, dosing guidance, or treatment advice.</p>
@@ -270,19 +270,20 @@
         <div class="toc">
           <h2>On this page</h2>
           <ul>
-            <li><a href="#why">Why a tracker beats a simple reminder</a></li>
+            <li><a href="#why">Why a protocol tracker beats a simple reminder</a></li>
             <li><a href="#minimum">Minimum fields to log</a></li>
             <li><a href="#template">Simple week template</a></li>
+            <li><a href="#stress">When stress and HRV need their own branch</a></li>
             <li><a href="#route">Which tracker page to use next</a></li>
           </ul>
         </div>
 
-        <h2 id="why">Why a tracker beats a simple reminder</h2>
-        <p>Most people do not search for an injection tracking guide because they forgot the concept of a reminder. They search because the week got messy: a symptom showed up at the wrong time, appetite changed, sleep got rough, a dose moved, or a stable routine stopped feeling stable.</p>
-        <p class="muted">That is why a useful tracking page has to do more than list fields. It has to route you into the right workflow for timing, symptoms, missed doses, and protocol notes.</p>
+        <h2 id="why">Why a protocol tracker beats a simple reminder</h2>
+        <p>Most people do not search for an injection tracking guide because they forgot the concept of a reminder. They search because the week got messy: a symptom showed up at the wrong time, appetite changed, sleep got rough, HRV looked worse, a dose moved, or a stable routine stopped feeling stable.</p>
+        <p class="muted">That is why a useful tracking page has to do more than list fields. It has to route you into the right workflow for timing, symptoms, missed doses, stress-pattern review, and protocol notes that survive a multi-week review.</p>
 
         <div class="note">
-          <strong>Best starting point:</strong> keep your core log in the <a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a>, then branch into narrower pages when the week becomes a missed-dose, side-effect, stress-pattern, or protocol problem.
+          <strong>Best starting point:</strong> keep your core log in the <a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a>, then branch into narrower pages when the week becomes a missed-dose, side-effect, stress-pattern, peptide-overlap, or protocol problem.
         </div>
 
         <h2 id="minimum">Minimum fields to log every week</h2>
@@ -291,7 +292,8 @@
           <li><strong>Medication and dose:</strong> whatever your prescription or plan already uses.</li>
           <li><strong>Injection site:</strong> useful for reconstructing a real week later.</li>
           <li><strong>Timing note:</strong> on schedule, late, early, skipped, restart week, or dose-change week.</li>
-          <li><strong>Symptom notes:</strong> nausea, reflux, constipation, fatigue, appetite shifts, sleep disruption, or anything else that mattered.</li>
+          <li><strong>Symptom notes:</strong> nausea, reflux, constipation, fatigue, appetite shifts, sleep disruption, anxiety, or anything else that mattered.</li>
+          <li><strong>Stress and wearable context:</strong> HRV, resting heart rate, shakiness, wired feeling, or recovery changes if those are part of the pattern.</li>
           <li><strong>Confounders:</strong> poor sleep, illness, alcohol, large meals, travel, stress, or unusual activity.</li>
         </ul>
 
@@ -351,6 +353,11 @@
               <td>Helps rule out routine noise and spot repeatable patterns.</td>
             </tr>
             <tr>
+              <td>Stress / HRV</td>
+              <td>HRV, resting heart rate, shakiness, anxiety, or "wired" notes when relevant</td>
+              <td>Helps separate GI weeks from autonomic-feeling weeks that may need a different review path.</td>
+            </tr>
+            <tr>
               <td>Next step</td>
               <td>Missed-dose page, side-effect timeline, protocol tracker, or peptide tracker</td>
               <td>Moves the week into the right workflow instead of overloading one note.</td>
@@ -360,9 +367,13 @@
 
         <h2>Good tracking note vs weak tracking note</h2>
         <ul>
-          <li><strong>Good:</strong> "Tuesday 8:30 PM injection. Thursday morning nausea 4/10, poor sleep Wednesday, travel day, appetite lower through Friday."</li>
+          <li><strong>Good:</strong> "Tuesday 8:30 PM injection. Thursday morning nausea 4/10, HRV lower Thursday-Friday, poor sleep Wednesday, travel day, appetite lower through Friday."</li>
           <li><strong>Weak:</strong> "Felt off this week."</li>
         </ul>
+
+        <h2 id="stress">When stress and HRV need their own branch</h2>
+        <p>Live site analytics already show that stress, anxiety, and HRV pages are the strongest non-home winners in this cluster. That means a generic tracker page should not pretend every rough week is just "side effects." Some weeks are better understood as stress-pattern or recovery-pattern weeks.</p>
+        <p class="muted">If the story of the week is shakiness, poor recovery, low HRV, racing heart, anxious energy, or a mismatch between GI symptoms and wearable data, move into the <a href="/glp1-stress-anxiety-hrv-guide.html">GLP-1 stress, anxiety, and HRV guide</a> or a drug-specific anxiety / HRV page instead of stuffing everything into one generic note.</p>
 
         <div class="warning">
           <strong>Harm-reduction note:</strong> a tracker helps you organize what happened. It does not tell you what to do with medications, missed doses, or severe symptoms. Get real medical care for urgent or unsafe symptoms.
@@ -415,11 +426,12 @@
           <li><a href="/glp1-missed-dose-tracker.html">GLP-1 missed-dose tracker</a></li>
           <li><a href="/glp-1-side-effect-log.html">GLP-1 side-effect log</a></li>
           <li><a href="/injection-protocol-tracker.html">Injection protocol tracker</a></li>
+          <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></li>
           <li><a href="/peptide-side-effect-timeline.html">Peptide side-effect timeline</a></li>
         </ul>
 
         <h3 style="margin-top:16px;">Why this rewrite fits the current thesis</h3>
-        <p class="muted">The live winners are side-effect and stress-pattern pages, but generic tracker pages still need stronger routing. This guide now acts as a qualified router into the proven tracker cluster instead of staying a broad checklist page.</p>
+        <p class="muted">The live winners are side-effect and stress-pattern pages, but generic tracker pages still need stronger routing. This guide now acts as a qualified router into the proven stress-anxiety-HRV and protocol-tracker cluster instead of staying a broad checklist page.</p>
 
         <h3 style="margin-top:16px;">If your search is drug-specific</h3>
         <ul>
@@ -456,4 +468,3 @@
   </section>
 </body>
 </html>
-
