@@ -2000,6 +2000,23 @@
       ]
     },
     {
+      "file": "tirzepatide-protocol-tracker.html",
+      "links": [
+        {
+          "href": "/tirzepatide-injection-tracker.html",
+          "text": "Tirzepatide injection tracker"
+        },
+        {
+          "href": "/tirzepatide-dose-log.html",
+          "text": "Tirzepatide dose log"
+        },
+        {
+          "href": "/peptide-protocol-tracker.html",
+          "text": "Peptide protocol tracker"
+        }
+      ]
+    },
+    {
       "file": "tirzepatide-side-effect-log.html",
       "links": [
         {
