@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tirzepatide Protocol Tracker: Weekly Schedule, Notes, and Symptom Timeline | Jabbit</title>
+  <meta name="description" content="Use this tirzepatide protocol tracker to log weekly schedule changes, dose timing, missed-dose weeks, side effects, appetite shifts, wearable notes, and routine drift in one place." />
+  <meta name="keywords" content="tirzepatide protocol tracker, tirzepatide schedule tracker, tirzepatide weekly log, tirzepatide routine tracker, tirzepatide missed dose tracker, tirzepatide side effect timeline, tirzepatide tracker app" />
+  <link rel="canonical" href="https://jabbitapp.com/tirzepatide-protocol-tracker.html" />
+  <style>
+    :root{
+      --bg:#f4f8f7;
+      --card:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#d7e2e0;
+      --brand:#0f766e;
+      --brand-dark:#115e59;
+      --brand-soft:#e8f7f4;
+      --hero-a:#0f172a;
+      --hero-b:#134e4a;
+      --hero-c:#0f766e;
+      --warn:#f97316;
+      --warn-bg:#fff7ed;
+      --shadow:0 12px 34px rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(20,184,166,.11), transparent 24%),
+        linear-gradient(180deg,#edf8f6 0%,var(--bg) 240px);
+      color:var(--ink);
+      line-height:1.65;
+    }
+    a{color:var(--brand-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 58%,var(--hero-c) 100%);
+      color:#fff;
+      border-radius:28px;
+      padding:34px;
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-70px;
+      bottom:-100px;
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 70%);
+    }
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:6px 11px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.08);
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:.8rem;
+      font-weight:700;
+    }
+    h1{margin:0 0 12px;font-size:clamp(2.15rem,4vw,3.25rem);line-height:1.06}
+    h2{margin:0 0 12px;font-size:1.42rem;line-height:1.2}
+    h3{margin:0 0 8px;font-size:1.05rem;line-height:1.25}
+    p{margin:0 0 14px}
+    .heroIntro{max-width:760px;color:rgba(255,255,255,.92);font-size:1.05rem}
+    .heroStats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:12px;
+      margin-top:18px;
+    }
+    .heroStats div{
+      padding:13px 14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .heroStats strong,.heroStats span{display:block}
+    .heroStats span{font-size:.93rem;color:rgba(255,255,255,.84)}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:800;
+      border:1px solid transparent;
+    }
+    .btnPrimary{background:#fff;color:#0f172a}
+    .btnPrimary:hover{text-decoration:none;filter:brightness(.98)}
+    .btnGhost{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.25)}
+    .btnGhost:hover{background:rgba(255,255,255,.12);text-decoration:none}
+    .small{font-size:.93rem}
+    .muted{color:var(--muted)}
+    .grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.8fr) minmax(300px,.9fr);
+      gap:22px;
+      margin-top:24px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .note,.warning,.ctaPanel{
+      margin:16px 0;
+      padding:15px 16px;
+      border-radius:16px;
+    }
+    .note{background:var(--brand-soft);border-left:4px solid var(--brand)}
+    .warning{background:var(--warn-bg);border-left:4px solid var(--warn)}
+    .ctaPanel{
+      background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
+      color:#fff;
+    }
+    .ctaPanel p{color:rgba(255,255,255,.9)}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .intentCard{
+      display:block;
+      min-height:100%;
+      padding:16px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#ffffff 0%,#f8fbfb 100%);
+      color:inherit;
+    }
+    .intentCard:hover{text-decoration:none;border-color:#bdd0cc;box-shadow:0 10px 24px rgba(2,6,23,.06)}
+    ul{margin:0 0 14px;padding-left:20px}
+    li{margin:7px 0}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:12px 0 18px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      overflow:hidden;
+      background:#fff;
+      font-size:.97rem;
+    }
+    th,td{
+      padding:11px 12px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{background:#eff5f4}
+    tr:last-child td{border-bottom:none}
+    .checklist a{
+      display:block;
+      margin-bottom:10px;
+      padding:12px 13px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:#fff;
+      color:inherit;
+    }
+    .checklist a:hover{text-decoration:none;border-color:#bdd0cc}
+    footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+    #related-links{
+      max-width:1120px;
+      margin:0 auto;
+      padding:0 24px 42px;
+    }
+    #related-links ul{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:20px 20px 20px 38px;
+    }
+    @media (max-width: 920px){ .grid{grid-template-columns:1fr} }
+    @media (max-width: 560px){
+      .wrap{padding:16px}
+      .hero,.card{padding:20px}
+      .btn{width:100%}
+      table{font-size:.92rem}
+      th,td{padding:9px}
+      #related-links{padding:0 16px 34px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Tirzepatide Protocol Tracker: Weekly Schedule, Notes, and Symptom Timeline | Jabbit",
+    "url":"https://www.jabbitapp.com/tirzepatide-protocol-tracker.html",
+    "description":"Use this tirzepatide protocol tracker to log weekly schedule changes, dose timing, missed-dose weeks, side effects, appetite shifts, wearable notes, and routine drift in one place.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
+    "publisher":{"@type":"Organization","name":"Bridger Apps"}
+  }
+  </script>
+  <script type="application/ld+json" id="faq-jsonld">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What should a tirzepatide protocol tracker include?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Educationally, a useful tirzepatide protocol tracker includes the planned injection day, the actual injection timestamp, the dose exactly as prescribed, any schedule drift, missed-dose notes, symptom timing, and relevant context such as stress, sleep, travel, hydration, or appetite changes."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How is a protocol tracker different from a dose log?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"A dose log records what was taken and when. A protocol tracker goes wider: it helps capture routine changes, missed-dose history, symptom timing, wearable observations, and short notes that make the whole week easier to review."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does this page give tirzepatide dosing advice?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. This page is for educational tracking and organization only. It does not provide dosing instructions or medical advice."
+        }
+      }
+    ]
+  }
+  </script>
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Tirzepatide protocol logging</span>
+      <h1>Tirzepatide protocol tracker for weekly schedule, symptom timelines, and routine drift</h1>
+      <p class="heroIntro">Protocol intent is broader than a shot reminder or a simple dose log. If you are trying to understand how a tirzepatide week actually played out, track the plan, the actual timing, the symptoms that followed, missed-dose context, and the real-life details that may have changed the pattern.</p>
+      <div class="heroStats">
+        <div>
+          <strong>Anchor the week</strong>
+          <span>Planned day, actual timestamp, and whether the routine stayed stable</span>
+        </div>
+        <div>
+          <strong>Track the response</strong>
+          <span>GI symptoms, appetite, energy, HRV, and resting-heart-rate notes over time</span>
+        </div>
+        <div>
+          <strong>Keep context visible</strong>
+          <span>Sleep, travel, hydration, caffeine, stress, and schedule drift in the same timeline</span>
+        </div>
+      </div>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="tirzepatide_protocol_tracker_hero_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
+        <a class="btn btnGhost" href="/tirzepatide-injection-tracker.html" data-track-internal="tirzepatide_protocol_tracker_hero_tracker">Open tirzepatide injection tracker</a>
+        <a class="btn btnGhost" href="/peptide-protocol-tracker.html" data-track-internal="tirzepatide_protocol_tracker_hero_peptide_protocol">Peptide protocol tracker</a>
+      </div>
+      <p class="small" style="margin-top:14px;color:rgba(255,255,255,.88)">Educational only. This page is about logging and pattern review, not telling you what dose to take or when to change a plan.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Why protocol tracking matters for tirzepatide</h2>
+        <p class="muted">People searching for a tirzepatide protocol tracker are usually trying to solve a pattern problem, not just a reminder problem. They want one place to compare injection timing, missed-dose drift, symptoms, appetite, sleep, and whether the rough week lined up with the medication week or something else.</p>
+
+        <div class="note">
+          <strong>Best fit:</strong> use this page when a plain reminder is too narrow because you also need history. If the main question is "what changed this week and what happened after that?", a protocol log is the cleaner tool.
+        </div>
+
+        <h2>What to log in a tirzepatide protocol tracker</h2>
+        <table aria-label="Tirzepatide protocol tracker fields">
+          <thead>
+            <tr>
+              <th style="width:26%">Field</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Planned injection day</td>
+              <td>Gives the week a real anchor instead of relying on memory later.</td>
+            </tr>
+            <tr>
+              <td>Actual injection timestamp</td>
+              <td>Helps you compare symptom timing, appetite shifts, and wearable changes to the real dose time.</td>
+            </tr>
+            <tr>
+              <td>Dose as prescribed</td>
+              <td>Keeps escalation, restart, or maintenance weeks clearly separated in your notes.</td>
+            </tr>
+            <tr>
+              <td>Missed-dose or late-dose context</td>
+              <td>Schedule drift can distort the week, so it deserves its own field.</td>
+            </tr>
+            <tr>
+              <td>Symptoms with timing</td>
+              <td>Nausea, constipation, reflux, fatigue, anxiety, lower HRV, or higher resting heart rate are more useful when tied to time.</td>
+            </tr>
+            <tr>
+              <td>Context tags</td>
+              <td>Sleep debt, low intake, dehydration, caffeine, alcohol, illness, travel, and stress can all change the pattern.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="warning">
+          <strong>Important framing:</strong> a tracker helps you keep a cleaner record. It does not prove cause, replace clinical advice, or tell you how to dose tirzepatide.
+        </div>
+
+        <h2>Simple weekly template</h2>
+        <table aria-label="Tirzepatide weekly protocol template">
+          <thead>
+            <tr>
+              <th style="width:16%">Window</th>
+              <th style="width:18%">What to log</th>
+              <th>Useful notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Before dose</td>
+              <td>Planned day, time, baseline symptoms</td>
+              <td>Sleep, hydration, appetite, stress, caffeine, travel</td>
+            </tr>
+            <tr>
+              <td>Day 0-1</td>
+              <td>Actual injection time and early changes</td>
+              <td>GI symptoms, appetite drop, fatigue, anxiety, wearable shifts</td>
+            </tr>
+            <tr>
+              <td>Day 2-4</td>
+              <td>How the week settled</td>
+              <td>Whether symptoms fade, persist, or map to work stress or low intake instead</td>
+            </tr>
+            <tr>
+              <td>Day 5-7</td>
+              <td>Late-week pattern</td>
+              <td>Appetite rebound, recovery, missed-dose risk, next-week prep</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>When a protocol tracker is better than other pages</h2>
+        <div class="cards">
+          <a class="intentCard" href="/tirzepatide-injection-tracker.html" data-track-internal="tirzepatide_protocol_tracker_route_injection">
+            <strong>Tirzepatide injection tracker</strong>
+            <span>Best if you mainly want a clean injection history with notes.</span>
+          </a>
+          <a class="intentCard" href="/tirzepatide-missed-dose-tracker.html" data-track-internal="tirzepatide_protocol_tracker_route_missed_dose">
+            <strong>Tirzepatide missed-dose tracker</strong>
+            <span>Best if the main question is how to log a late, skipped, or shifted week.</span>
+          </a>
+          <a class="intentCard" href="/tirzepatide-side-effect-timeline.html" data-track-internal="tirzepatide_protocol_tracker_route_timeline">
+            <strong>Tirzepatide side-effect timeline</strong>
+            <span>Best if symptoms are the main focus and timing is the key pattern to compare.</span>
+          </a>
+          <a class="intentCard" href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="tirzepatide_protocol_tracker_route_hrv">
+            <strong>GLP-1 stress, anxiety, and HRV guide</strong>
+            <span>Best if the pattern question is really about wearable and nervous-system signals.</span>
+          </a>
+        </div>
+
+        <h2>Pattern questions this page helps answer</h2>
+        <ul>
+          <li><strong>Did symptoms line up with dose day?</strong> Keeping the actual timestamp visible makes that easier to review.</li>
+          <li><strong>Was this a missed-dose week?</strong> A late or skipped week often needs different context than a stable routine week.</li>
+          <li><strong>Were appetite or wearable changes part of the same pattern?</strong> It is easier to compare when symptoms and context are in one timeline.</li>
+          <li><strong>Was the week noisy for another reason?</strong> Travel, illness, poor sleep, low intake, and stress often explain more than one variable at a time.</li>
+        </ul>
+
+        <div class="ctaPanel">
+          <h2>Use one timeline instead of scattered notes</h2>
+          <p>Jabbit works best when dose timing, symptoms, reminders, and freeform notes stay together. That makes later review simpler whether the question is GI symptoms, missed doses, or stress and HRV changes.</p>
+          <div class="ctaRow">
+            <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="tirzepatide_protocol_tracker_body_app_store" target="_blank" rel="noopener noreferrer">Get Jabbit on the App Store</a>
+            <a class="btn btnGhost" href="/glp1-injection-reminder-app.html" data-track-internal="tirzepatide_protocol_tracker_body_reminder">See the GLP-1 injection reminder app</a>
+          </div>
+        </div>
+
+        <h2>Nearest pages in this cluster</h2>
+        <ul>
+          <li><a href="/tirzepatide-dose-log.html" data-track-internal="tirzepatide_protocol_tracker_related_dose_log">Tirzepatide dose log</a> for narrower dose-history intent</li>
+          <li><a href="/tirzepatide-dose-timing-morning-vs-night.html" data-track-internal="tirzepatide_protocol_tracker_related_timing">Tirzepatide dose timing morning vs night</a> for schedule-window intent</li>
+          <li><a href="/tirzepatide-resting-heart-rate-timeline.html" data-track-internal="tirzepatide_protocol_tracker_related_rhr">Tirzepatide resting heart rate timeline</a> for wearable-focused timing patterns</li>
+          <li><a href="/peptide-protocol-tracker.html" data-track-internal="tirzepatide_protocol_tracker_related_peptide_protocol">Peptide protocol tracker</a> for broader stack and routine tracking beyond one medication</li>
+        </ul>
+      </article>
+
+      <aside class="card">
+        <h2>Quick-start checklist</h2>
+        <div class="checklist">
+          <a href="/tirzepatide-injection-tracker.html" data-track-internal="tirzepatide_protocol_tracker_sidebar_tracker">
+            <strong>Start with the injection tracker</strong><br />
+            <span class="muted">Log the exact date, time, and basic note first.</span>
+          </a>
+          <a href="/tirzepatide-missed-dose-tracker.html" data-track-internal="tirzepatide_protocol_tracker_sidebar_missed">
+            <strong>Keep missed-dose context separate</strong><br />
+            <span class="muted">That makes shifted weeks easier to review later.</span>
+          </a>
+          <a href="/tirzepatide-side-effect-timeline.html" data-track-internal="tirzepatide_protocol_tracker_sidebar_timeline">
+            <strong>Route symptom-heavy weeks to the timeline page</strong><br />
+            <span class="muted">Use that when the pattern is mainly side effects by day.</span>
+          </a>
+          <a href="/peptide-protocol-tracker.html" data-track-internal="tirzepatide_protocol_tracker_sidebar_peptide">
+            <strong>Use the peptide protocol page for broader routines</strong><br />
+            <span class="muted">Helpful if you track more than one compound or routine variable.</span>
+          </a>
+        </div>
+
+        <h2>Good protocol notes are boring</h2>
+        <p class="muted">The goal is not dramatic journaling. The goal is a clean, factual timeline you can scan later without guessing what happened.</p>
+
+        <div class="note">
+          <strong>Useful fields:</strong> planned day, actual time, dose, symptoms, appetite, sleep, stress, hydration, travel, exercise, and any late-dose note.
+        </div>
+
+        <h2>Related routing</h2>
+        <ul>
+          <li><a href="/glp1-injection-tracker.html" data-track-internal="tirzepatide_protocol_tracker_sidebar_glp1_hub">GLP-1 injection tracker</a></li>
+          <li><a href="/glp1-missed-dose-tracker.html" data-track-internal="tirzepatide_protocol_tracker_sidebar_glp1_missed">GLP-1 missed-dose tracker</a></li>
+          <li><a href="/glp-1-side-effect-log.html" data-track-internal="tirzepatide_protocol_tracker_sidebar_glp1_log">GLP-1 side-effect log</a></li>
+          <li><a href="/mounjaro-injection-tracker.html" data-track-internal="tirzepatide_protocol_tracker_sidebar_mounjaro">Mounjaro injection tracker</a></li>
+        </ul>
+
+        <p><a class="btn btnPrimary" style="width:100%" href="https://apps.apple.com/app/id6756848719" data-track="tirzepatide_protocol_tracker_sidebar_app_store" target="_blank" rel="noopener noreferrer">Track tirzepatide weeks in Jabbit</a></p>
+      </aside>
+    </section>
+
+    <footer>
+      <p>Educational content only. Jabbit does not provide medical advice, diagnosis, or treatment.</p>
+    </footer>
+  </main>
+</body>
+</html>
