@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mounjaro Protocol Tracker: Weekly Schedule, Symptom Timeline, and Routine Drift Log | Jabbit</title>
+  <meta name="description" content="Use this Mounjaro protocol tracker to log weekly schedule changes, missed-dose timing, side-effect timelines, appetite or energy notes, and real-world routine drift in one private timeline." />
+  <meta name="keywords" content="Mounjaro protocol tracker, Mounjaro weekly log, Mounjaro schedule tracker, Mounjaro missed dose tracker, Mounjaro symptom timeline, tirzepatide protocol tracker, Mounjaro tracker app" />
+  <link rel="canonical" href="https://jabbitapp.com/mounjaro-protocol-tracker.html" />
+  <meta property="og:title" content="Mounjaro Protocol Tracker: Weekly Schedule, Symptom Timeline, and Routine Drift Log | Jabbit" />
+  <meta property="og:description" content="A practical Mounjaro protocol tracker for keeping dose timing, schedule drift, side effects, and week-to-week notes together." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jabbitapp.com/mounjaro-protocol-tracker.html" />
+  <style>
+    :root{
+      --bg:#f4f8f7;
+      --card:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#d7e2e0;
+      --brand:#0f766e;
+      --brand-dark:#115e59;
+      --brand-soft:#e8f7f4;
+      --hero-a:#0f172a;
+      --hero-b:#134e4a;
+      --hero-c:#0f766e;
+      --warn:#f97316;
+      --warn-bg:#fff7ed;
+      --shadow:0 12px 34px rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(20,184,166,.11), transparent 24%),
+        linear-gradient(180deg,#edf8f6 0%,var(--bg) 240px);
+      color:var(--ink);
+      line-height:1.65;
+    }
+    a{color:var(--brand-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 58%,var(--hero-c) 100%);
+      color:#fff;
+      border-radius:28px;
+      padding:34px;
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-70px;
+      bottom:-100px;
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 70%);
+    }
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:6px 11px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.08);
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:.8rem;
+      font-weight:700;
+    }
+    h1{margin:0 0 12px;font-size:clamp(2.15rem,4vw,3.25rem);line-height:1.06}
+    h2{margin:0 0 12px;font-size:1.42rem;line-height:1.2}
+    h3{margin:0 0 8px;font-size:1.05rem;line-height:1.25}
+    p{margin:0 0 14px}
+    .heroIntro{max-width:760px;color:rgba(255,255,255,.92);font-size:1.05rem}
+    .heroStats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:12px;
+      margin-top:18px;
+    }
+    .heroStats div{
+      padding:13px 14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .heroStats strong,.heroStats span{display:block}
+    .heroStats span{font-size:.93rem;color:rgba(255,255,255,.84)}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:800;
+      border:1px solid transparent;
+    }
+    .btnPrimary{background:#fff;color:#0f172a}
+    .btnPrimary:hover{text-decoration:none;filter:brightness(.98)}
+    .btnGhost{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.25)}
+    .btnGhost:hover{background:rgba(255,255,255,.12);text-decoration:none}
+    .small{font-size:.93rem}
+    .muted{color:var(--muted)}
+    .grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.8fr) minmax(300px,.9fr);
+      gap:22px;
+      margin-top:24px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .note,.warning,.ctaPanel{
+      margin:16px 0;
+      padding:15px 16px;
+      border-radius:16px;
+    }
+    .note{background:var(--brand-soft);border-left:4px solid var(--brand)}
+    .warning{background:var(--warn-bg);border-left:4px solid var(--warn)}
+    .ctaPanel{
+      background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
+      color:#fff;
+    }
+    .ctaPanel p{color:rgba(255,255,255,.9)}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .intentCard{
+      display:block;
+      min-height:100%;
+      padding:16px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#ffffff 0%,#f8fbfb 100%);
+      color:inherit;
+    }
+    .intentCard:hover{text-decoration:none;border-color:#bdd0cc;box-shadow:0 10px 24px rgba(2,6,23,.06)}
+    ul{margin:0 0 14px;padding-left:20px}
+    li{margin:7px 0}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:12px 0 18px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      overflow:hidden;
+      background:#fff;
+      font-size:.97rem;
+    }
+    th,td{
+      padding:11px 12px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{background:#eff5f4}
+    tr:last-child td{border-bottom:none}
+    .checklist a{
+      display:block;
+      margin-bottom:10px;
+      padding:12px 13px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:#fff;
+      color:inherit;
+    }
+    .checklist a:hover{text-decoration:none;border-color:#bdd0cc}
+    footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+    #related-links{
+      max-width:1120px;
+      margin:0 auto;
+      padding:0 24px 42px;
+    }
+    #related-links ul{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:20px 20px 20px 38px;
+    }
+    @media (max-width: 920px){ .grid{grid-template-columns:1fr} }
+    @media (max-width: 560px){
+      .wrap{padding:16px}
+      .hero,.card{padding:20px}
+      .btn{width:100%}
+      table{font-size:.92rem}
+      th,td{padding:9px}
+      #related-links{padding:0 16px 34px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Mounjaro Protocol Tracker: Weekly Schedule, Symptom Timeline, and Routine Drift Log | Jabbit",
+    "url":"https://www.jabbitapp.com/mounjaro-protocol-tracker.html",
+    "description":"Use this Mounjaro protocol tracker to log weekly schedule changes, missed-dose timing, side-effect timelines, appetite or energy notes, and real-world routine drift in one private timeline.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
+    "publisher":{"@type":"Organization","name":"Bridger Apps"}
+  }
+  </script>
+  <script type="application/ld+json" id="faq-jsonld">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What should a Mounjaro protocol tracker include?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"A useful Mounjaro protocol tracker includes the planned shot day, the actual injection timestamp, the dose exactly as prescribed, missed-dose or schedule-drift notes, side effects with timing, appetite or energy observations, and relevant context like travel, illness, stress, sleep, or alcohol."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How is a protocol tracker different from a Mounjaro injection tracker?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"An injection tracker is narrower. It focuses on the shot itself. A protocol tracker goes wider so you can review schedule changes, side-effect timing, missed-dose weeks, and the surrounding context that may explain why one week felt different from another."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does this page tell me how to take Mounjaro?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. This page is educational and tracking-focused only. It does not provide dosing instructions, medical advice, or treatment recommendations."
+        }
+      }
+    ]
+  }
+  </script>
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Protocol tracker • Mounjaro workflow</span>
+      <h1>Mounjaro protocol tracker for weekly schedule, side-effect timing, and routine drift</h1>
+      <p class="heroIntro">Protocol intent is wider than a simple shot log. If your Mounjaro routine is getting shaped by late doses, appetite swings, side effects, travel, or stress, this page is for keeping the whole week reviewable instead of scattering notes across apps.</p>
+      <div class="heroStats">
+        <div>
+          <strong>Weekly anchor</strong>
+          <span>Keep the planned shot day and the actual timestamp in the same timeline.</span>
+        </div>
+        <div>
+          <strong>Symptom context</strong>
+          <span>Tag side effects, appetite, sleep, stress, and wearable changes around the shot.</span>
+        </div>
+        <div>
+          <strong>Routine drift</strong>
+          <span>Late doses, travel weeks, and messy schedules are where protocol tracking matters most.</span>
+        </div>
+      </div>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="mounjaro_protocol_top" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
+        <a class="btn btnGhost" href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a>
+        <a class="btn btnGhost" href="/tirzepatide-protocol-tracker.html">Tirzepatide protocol tracker</a>
+      </div>
+      <p class="small" style="margin-top:14px;color:rgba(255,255,255,.84);">Educational tracking only. This page does not tell you when to inject, how to adjust dose, or how to treat symptoms.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Why protocol intent matters for Mounjaro</h2>
+        <p class="muted">People searching for a Mounjaro protocol tracker are usually not looking for a generic reminder app. They are trying to keep a weekly routine understandable when the real week included a late shot, side-effect timing, appetite changes, travel, stress, or a schedule that no longer fits the original plan.</p>
+
+        <div class="note">
+          <strong>Best use case:</strong> use a protocol tracker when the week needs more than “shot taken.” The extra context is what makes later pattern review useful.
+        </div>
+
+        <h2>What to track in a Mounjaro protocol</h2>
+        <ul>
+          <li><strong>Planned shot day:</strong> your intended weekly anchor.</li>
+          <li><strong>Actual injection timestamp:</strong> the real day and time the shot happened.</li>
+          <li><strong>Dose as prescribed:</strong> log it exactly as instructed rather than paraphrasing it later.</li>
+          <li><strong>Symptom timing:</strong> onset, peak window, duration, and whether the same pattern repeats week to week.</li>
+          <li><strong>Appetite and energy notes:</strong> low intake, rebound hunger, fatigue, or unusually wired days.</li>
+          <li><strong>Confounders:</strong> poor sleep, illness, dehydration, alcohol, travel, schedule disruptions, or unusual stress.</li>
+          <li><strong>Routine drift:</strong> late doses, changed injection day, skipped weeks, or messy handoffs between normal and disrupted weeks.</li>
+        </ul>
+
+        <h2>Printable Mounjaro protocol tracker template</h2>
+        <table aria-label="Mounjaro protocol tracker template">
+          <thead>
+            <tr>
+              <th>Week marker</th>
+              <th>Planned day</th>
+              <th>Actual timestamp</th>
+              <th>Symptoms / timing</th>
+              <th>Routine change</th>
+              <th>Context notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Baseline week</td><td>____________</td><td>____________</td><td>____________</td><td>normal week</td><td>____________</td></tr>
+            <tr><td>+ 24h / + 48h</td><td>____________</td><td>____________</td><td>____________</td><td>same day / late dose</td><td>____________</td></tr>
+            <tr><td>Day 3 to Day 5</td><td>____________</td><td>____________</td><td>____________</td><td>stable / drift</td><td>____________</td></tr>
+            <tr><td>Late week review</td><td>____________</td><td>____________</td><td>____________</td><td>missed dose / travel</td><td>____________</td></tr>
+          </tbody>
+        </table>
+
+        <h2>How to keep the week honest</h2>
+        <p class="muted">The page gets better when you separate medication timing from life timing instead of turning every rough week into a medication story.</p>
+        <div class="cards">
+          <div class="intentCard">
+            <h3>Stable-dose week</h3>
+            <p class="muted">Best baseline for comparing appetite, GI symptoms, energy, stress, and sleep without extra noise.</p>
+          </div>
+          <div class="intentCard">
+            <h3>Dose-change week</h3>
+            <p class="muted">Tag it clearly so adaptation weeks do not get blended into normal weeks.</p>
+          </div>
+          <div class="intentCard">
+            <h3>Late-dose week</h3>
+            <p class="muted">Keep the planned day and the actual timestamp together so the shift size stays visible later.</p>
+          </div>
+          <div class="intentCard">
+            <h3>Travel or stress week</h3>
+            <p class="muted">If sleep, meals, hydration, or routine changed too, keep that in the same note instead of guessing later.</p>
+          </div>
+        </div>
+
+        <h2>When to branch into a narrower tracker</h2>
+        <p class="muted">A protocol page should route into the right sub-problem instead of pretending every week is the same query.</p>
+        <div class="cards">
+          <a class="intentCard" href="/mounjaro-missed-dose-tracker.html" data-track-internal="mounjaro_protocol_route_missed">
+            <h3>Mounjaro missed-dose tracker</h3>
+            <p class="muted">Best fit when the main issue was a skipped or delayed shot and the schedule needs a cleaner recovery log.</p>
+          </a>
+          <a class="intentCard" href="/mounjaro-side-effect-timeline.html" data-track-internal="mounjaro_protocol_route_timeline">
+            <h3>Mounjaro side-effect timeline</h3>
+            <p class="muted">Use this when the key question is what happened on Day 0 through Day 7 after the shot.</p>
+          </a>
+          <a class="intentCard" href="/mounjaro-anxiety-hrv-tracker.html" data-track-internal="mounjaro_protocol_route_hrv">
+            <h3>Mounjaro anxiety + HRV tracker</h3>
+            <p class="muted">Best when the week felt more like stress, poor recovery, lower HRV, or a higher resting heart rate pattern.</p>
+          </a>
+          <a class="intentCard" href="/peptide-protocol-tracker.html" data-track-internal="mounjaro_protocol_route_peptide">
+            <h3>Peptide protocol tracker</h3>
+            <p class="muted">Use this broader page if your notes span more than one compound or a wider peptide workflow.</p>
+          </a>
+        </div>
+
+        <div class="ctaPanel">
+          <h2>Use Jabbit if your Mounjaro routine no longer fits in a notes app</h2>
+          <p>Jabbit works best when you want one private place for dose timing, missed-dose notes, side-effect timing, appetite or energy observations, and context tags like travel, stress, or poor sleep.</p>
+          <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="mounjaro_protocol_mid" target="_blank" rel="noopener noreferrer">Get Jabbit on the App Store</a></p>
+        </div>
+
+        <h2>Quick protocol review questions</h2>
+        <ul>
+          <li>Was the shot on the planned day or did the week drift?</li>
+          <li>Did the same symptom show up in the same window after the shot?</li>
+          <li>Was this a stable week, a dose-change week, or a disrupted week?</li>
+          <li>What else changed enough to explain the pattern if it was not just the shot?</li>
+        </ul>
+
+        <h2>FAQ</h2>
+        <h3>What is the difference between a Mounjaro tracker and a protocol tracker?</h3>
+        <p class="muted">A tracker page can be narrow, like injections or side effects only. A protocol tracker is the wider layer that connects schedule, timing drift, symptoms, and context into one reviewable weekly story.</p>
+
+        <h3>Can I use this page for a missed-dose week?</h3>
+        <p class="muted">Yes, but if the missed or delayed shot is the main issue, the <a href="/mounjaro-missed-dose-tracker.html">Mounjaro missed-dose tracker</a> is the cleaner branch.</p>
+
+        <h3>Does this page tell me how to take Mounjaro?</h3>
+        <p class="muted">No. This page stays on the educational tracking side only. It is for logging what happened, not for giving medical or dosing instructions.</p>
+      </article>
+
+      <aside class="card">
+        <h2>Fast tracker stack</h2>
+        <div class="checklist">
+          <a href="/mounjaro-injection-tracker.html"><strong>Mounjaro injection tracker</strong><br /><span class="muted">Log exact timestamps, reminders, and note basics.</span></a>
+          <a href="/mounjaro-side-effect-log.html"><strong>Mounjaro side-effect log</strong><br /><span class="muted">Keep a simpler symptom-only layer when the week was otherwise normal.</span></a>
+          <a href="/mounjaro-side-effect-timeline.html"><strong>Mounjaro side-effect timeline</strong><br /><span class="muted">Review symptoms across the week after each shot.</span></a>
+          <a href="/mounjaro-missed-dose-tracker.html"><strong>Mounjaro missed-dose tracker</strong><br /><span class="muted">Separate late and skipped weeks from stable weeks.</span></a>
+          <a href="/mounjaro-dose-timing-morning-vs-night.html"><strong>Mounjaro dose timing: morning vs night</strong><br /><span class="muted">Use when time-of-day comparisons are the real question.</span></a>
+        </div>
+
+        <div class="warning">
+          <strong>Educational only:</strong> this page is for tracking and pattern review. It does not tell you to catch up, double up, stop, restart, or change medication plans.
+        </div>
+
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="mounjaro_protocol_sidebar" target="_blank" rel="noopener noreferrer">Download Jabbit</a></p>
+      </aside>
+    </section>
+
+    <footer>
+      <p><strong>Source framing:</strong> educational Mounjaro and obesity-medication tracking only. No dosing instructions are provided here.</p>
+    </footer>
+  </main>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+      <li><a href="/mounjaro-injection-tracker.html">Mounjaro injection tracker</a></li>
+      <li><a href="/mounjaro-side-effect-timeline.html">Mounjaro side-effect timeline</a></li>
+      <li><a href="/mounjaro-missed-dose-tracker.html">Mounjaro missed-dose tracker</a></li>
+      <li><a href="/tirzepatide-protocol-tracker.html">Tirzepatide protocol tracker</a></li>
+      <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></li>
+    </ul>
+  </section>
+</body>
+</html>
