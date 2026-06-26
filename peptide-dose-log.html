@@ -150,6 +150,59 @@
           <li>Review the week as a timeline, not isolated entries.</li>
         </ol>
 
+        <h2>When the peptide dose log should turn into a protocol tracker</h2>
+        <p class="muted">A dose log is enough when the only question is "did I log the event?" It stops being enough when the real question is about a pattern across weeks.</p>
+        <table aria-label="Dose log versus protocol tracker">
+          <thead>
+            <tr>
+              <th>Question you are trying to answer</th>
+              <th>Better page</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I need a clean record of date, time, amount, and one short note.</td>
+              <td><a href="/peptide-dose-log.html">Peptide dose log</a></td>
+              <td>Best when the log itself is the job.</td>
+            </tr>
+            <tr>
+              <td>I am comparing stack changes, missed doses, routine drift, and symptoms across a longer run.</td>
+              <td><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></td>
+              <td>Better for schedule anchors, cycle notes, and weekly review.</td>
+            </tr>
+            <tr>
+              <td>The actual problem is a symptom pattern after dose day.</td>
+              <td><a href="/peptide-side-effect-timeline.html">Peptide side-effect timeline</a></td>
+              <td>Better when timing after the dose matters more than the dose entry itself.</td>
+            </tr>
+            <tr>
+              <td>I need one private app timeline instead of scattered notes.</td>
+              <td><a href="/peptide-tracker.html">Peptide tracker app page</a></td>
+              <td>Better for routing into Jabbit's broader logging workflow.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          <strong>Routing rule:</strong> keep the dose log as the anchor, then branch into the <a href="/peptide-protocol-tracker.html">protocol tracker</a>, <a href="/peptide-side-effect-timeline.html">side-effect timeline</a>, or <a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a> only when the question gets broader than one entry.
+        </div>
+
+        <h2>High-signal fields for missed doses, routine drift, and batch changes</h2>
+        <p class="muted">Most peptide logs get weak when timing changes. The useful move is not adding more opinion. It is capturing the parts that make the week reconstructable later.</p>
+        <ul>
+          <li><strong>Planned time vs actual time</strong> so late or early entries are obvious on review.</li>
+          <li><strong>Schedule status</strong> with plain labels like on time, late, moved, or missed.</li>
+          <li><strong>Reason for drift</strong> such as travel, sleep disruption, supply issue, or intentional routine change.</li>
+          <li><strong>Batch or vial context</strong> when you switched stock, reconstituted a new vial, or changed handling conditions.</li>
+          <li><strong>Next-step note</strong> so the following entry makes sense without guessing what happened in between.</li>
+        </ul>
+
+        <div class="ctaRow" style="margin-top:18px;">
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="peptide_dose_log_mid_app_store" target="_blank" rel="noopener noreferrer">Track peptide dose timing in Jabbit</a>
+          <a class="btn" style="background:#ecfeff;color:#0f172a;border-color:var(--border);" href="/peptide-tracker.html">Open peptide tracker page</a>
+        </div>
+
         <h2>How Jabbit helps (without turning your data into someone else’s dataset)</h2>
         <ul>
           <li><strong>Fast logging</strong> for protocols: dose, timing, side-effect notes, and outcomes.</li>
@@ -176,6 +229,7 @@
           <li><a href="/peptide-side-effect-log.html">Peptide side-effect log</a> for symptom-by-symptom notes.</li>
           <li><a href="/peptide-batch-lot-vendor-notes-log.html">Batch, lot, and vendor notes log</a> if consistency or recall tracking matters.</li>
           <li><a href="/peptide-morning-vs-night-injection-log.html">Morning vs night injection log</a> if the real question is timing friction.</li>
+          <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a> if you need cycle, stack, or routine-drift context.</li>
         </ul>
 
         <h3>Start now</h3>
@@ -186,6 +240,7 @@
         <ul>
           <li><a href="/peptide-tracker.html">Peptide tracker</a> for a broader app-style logging page</li>
           <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a> for schedule, reminders, and routine notes</li>
+          <li><a href="/peptide-side-effect-timeline.html">Peptide side-effect timeline</a> for dose-day to symptom-day review</li>
           <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a> if your logging overlaps with obesity-medication tracking</li>
         </ul>
 
