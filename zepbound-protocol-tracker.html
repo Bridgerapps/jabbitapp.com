@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zepbound Protocol Tracker: Weekly Schedule, Symptom Timeline, and Routine Drift Log | Jabbit</title>
+  <meta name="description" content="Use this Zepbound protocol tracker to log weekly schedule changes, missed-dose timing, side-effect timelines, appetite or energy notes, and real-world routine drift in one private timeline." />
+  <meta name="keywords" content="Zepbound protocol tracker, Zepbound weekly log, Zepbound schedule tracker, Zepbound missed dose tracker, Zepbound symptom timeline, tirzepatide protocol tracker, Zepbound tracker app" />
+  <link rel="canonical" href="https://jabbitapp.com/zepbound-protocol-tracker.html" />
+  <meta property="og:title" content="Zepbound Protocol Tracker: Weekly Schedule, Symptom Timeline, and Routine Drift Log | Jabbit" />
+  <meta property="og:description" content="A practical Zepbound protocol tracker for keeping dose timing, schedule drift, side effects, and week-to-week notes together." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jabbitapp.com/zepbound-protocol-tracker.html" />
+  <style>
+    :root{
+      --bg:#f4f8f7;
+      --card:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#d7e2e0;
+      --brand:#0f766e;
+      --brand-dark:#115e59;
+      --brand-soft:#e8f7f4;
+      --hero-a:#0f172a;
+      --hero-b:#134e4a;
+      --hero-c:#0f766e;
+      --warn:#f97316;
+      --warn-bg:#fff7ed;
+      --shadow:0 12px 34px rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(20,184,166,.11), transparent 24%),
+        linear-gradient(180deg,#edf8f6 0%,var(--bg) 240px);
+      color:var(--ink);
+      line-height:1.65;
+    }
+    a{color:var(--brand-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 58%,var(--hero-c) 100%);
+      color:#fff;
+      border-radius:28px;
+      padding:34px;
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-70px;
+      bottom:-100px;
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 70%);
+    }
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:6px 11px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.08);
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:.8rem;
+      font-weight:700;
+    }
+    h1{margin:0 0 12px;font-size:clamp(2.15rem,4vw,3.25rem);line-height:1.06}
+    h2{margin:0 0 12px;font-size:1.42rem;line-height:1.2}
+    h3{margin:0 0 8px;font-size:1.05rem;line-height:1.25}
+    p{margin:0 0 14px}
+    .heroIntro{max-width:760px;color:rgba(255,255,255,.92);font-size:1.05rem}
+    .heroStats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:12px;
+      margin-top:18px;
+    }
+    .heroStats div{
+      padding:13px 14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .heroStats strong,.heroStats span{display:block}
+    .heroStats span{font-size:.93rem;color:rgba(255,255,255,.84)}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:800;
+      border:1px solid transparent;
+    }
+    .btnPrimary{background:#fff;color:#0f172a}
+    .btnPrimary:hover{text-decoration:none;filter:brightness(.98)}
+    .btnGhost{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.25)}
+    .btnGhost:hover{background:rgba(255,255,255,.12);text-decoration:none}
+    .small{font-size:.93rem}
+    .muted{color:var(--muted)}
+    .grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.8fr) minmax(300px,.9fr);
+      gap:22px;
+      margin-top:24px;
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .note,.warning,.ctaPanel{
+      margin:16px 0;
+      padding:15px 16px;
+      border-radius:16px;
+    }
+    .note{background:var(--brand-soft);border-left:4px solid var(--brand)}
+    .warning{background:var(--warn-bg);border-left:4px solid var(--warn)}
+    .ctaPanel{
+      background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
+      color:#fff;
+    }
+    .ctaPanel p{color:rgba(255,255,255,.9)}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .intentCard{
+      display:block;
+      min-height:100%;
+      padding:16px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#ffffff 0%,#f8fbfb 100%);
+      color:inherit;
+    }
+    .intentCard:hover{text-decoration:none;border-color:#bdd0cc;box-shadow:0 10px 24px rgba(2,6,23,.06)}
+    ul{margin:0 0 14px;padding-left:20px}
+    li{margin:7px 0}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:12px 0 18px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      overflow:hidden;
+      background:#fff;
+      font-size:.97rem;
+    }
+    th,td{
+      padding:11px 12px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{background:#eff5f4}
+    tr:last-child td{border-bottom:none}
+    .checklist a{
+      display:block;
+      margin-bottom:10px;
+      padding:12px 13px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:#fff;
+      color:inherit;
+    }
+    .checklist a:hover{text-decoration:none;border-color:#bdd0cc}
+    footer{margin-top:24px;color:var(--muted);font-size:.95rem}
+    #related-links{
+      max-width:1120px;
+      margin:0 auto;
+      padding:0 24px 42px;
+    }
+    #related-links ul{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:20px 20px 20px 38px;
+    }
+    @media (max-width: 920px){ .grid{grid-template-columns:1fr} }
+    @media (max-width: 560px){
+      .wrap{padding:16px}
+      .hero,.card{padding:20px}
+      .btn{width:100%}
+      table{font-size:.92rem}
+      th,td{padding:9px}
+      #related-links{padding:0 16px 34px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Zepbound Protocol Tracker: Weekly Schedule, Symptom Timeline, and Routine Drift Log | Jabbit",
+    "url":"https://www.jabbitapp.com/zepbound-protocol-tracker.html",
+    "description":"Use this Zepbound protocol tracker to log weekly schedule changes, missed-dose timing, side-effect timelines, appetite or energy notes, and real-world routine drift in one private timeline.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
+    "publisher":{"@type":"Organization","name":"Bridger Apps"}
+  }
+  </script>
+  <script type="application/ld+json" id="faq-jsonld">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What should a Zepbound protocol tracker include?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"A useful Zepbound protocol tracker includes the planned shot day, the actual injection timestamp, the dose exactly as prescribed, missed-dose or schedule-drift notes, side effects with timing, appetite or energy observations, and relevant context like travel, illness, stress, sleep, or alcohol."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How is a protocol tracker different from a Zepbound injection tracker?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"An injection tracker is narrower. It focuses on the shot itself. A protocol tracker goes wider so you can review schedule changes, side-effect timing, missed-dose weeks, and the surrounding context that may explain why one week felt different from another."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does this page tell me how to take Zepbound?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. This page is educational and tracking-focused only. It does not provide dosing instructions, treatment advice, or medical advice."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Why use Jabbit instead of a reminder-only app for this query?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Reminder-only apps are useful when the job is simply remembering the next shot. A protocol tracker is broader: it keeps schedule history, freeform notes, side-effect timing, and missed-dose context in one private timeline."
+        }
+      }
+    ]
+  }
+  </script>
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Zepbound protocol logging</span>
+      <h1>Zepbound protocol tracker for weekly schedule, symptom timelines, and routine drift</h1>
+      <p class="heroIntro">Protocol intent is broader than a shot log. If you are trying to understand how a Zepbound routine is playing out over time, track the plan, the actual timing, the symptoms that followed, any missed-dose or timing changes, and the week-level context that may have changed the pattern.</p>
+      <div class="heroStats">
+        <div><strong>Schedule anchor</strong><span>Planned shot day, actual injection time, and whether the week stayed on plan.</span></div>
+        <div><strong>Symptom timing</strong><span>Nausea, reflux, appetite, fatigue, stress, or sleep changes tied to the same timeline.</span></div>
+        <div><strong>Routine drift</strong><span>Travel, alcohol, illness, poor sleep, or a late week recorded before memory gets fuzzy.</span></div>
+      </div>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="zepbound_protocol_tracker_hero_app_store" target="_blank" rel="noopener noreferrer">Track Zepbound in Jabbit</a>
+        <a class="btn btnGhost" href="/zepbound-injection-tracker.html" data-track-internal="zepbound_protocol_tracker_hero_injection">Zepbound injection tracker</a>
+        <a class="btn btnGhost" href="/glp1-injection-tracker.html" data-track-internal="zepbound_protocol_tracker_hero_glp1_hub">GLP-1 tracker hub</a>
+      </div>
+      <p class="small" style="margin-top:14px;color:rgba(255,255,255,.84);">Educational only. Jabbit does not provide medical advice, dosing advice, or treatment recommendations.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Why this query needs a protocol tracker</h2>
+        <p class="muted">People searching for a Zepbound protocol tracker usually are not asking for theory. They are trying to keep a week readable: what was the plan, what actually happened, when did symptoms show up, and was the rough week about the medication, the timing change, or ordinary life noise.</p>
+
+        <div class="note">
+          <strong>High-signal rule:</strong> keep the entry small enough that you will actually fill it out. Planned day, actual timestamp, dose as prescribed, one or two symptoms, and one short context note is usually enough to reconstruct the week later.
+        </div>
+
+        <div class="cards">
+          <a class="intentCard" href="/zepbound-injection-tracker.html" data-track-internal="zepbound_protocol_tracker_router_injection_top"><strong>Zepbound injection tracker</strong><br /><span class="muted">Best when the core job is logging the shot and site rotation cleanly.</span></a>
+          <a class="intentCard" href="/zepbound-missed-dose-tracker.html" data-track-internal="zepbound_protocol_tracker_router_missed_dose_top"><strong>Zepbound missed-dose tracker</strong><br /><span class="muted">Best when timing slipped and you need the delay documented clearly.</span></a>
+          <a class="intentCard" href="/zepbound-side-effect-timeline.html" data-track-internal="zepbound_protocol_tracker_router_side_effect_timeline_top"><strong>Zepbound side-effect timeline</strong><br /><span class="muted">Best when the real question is what happened 24 to 72 hours after dose day.</span></a>
+          <a class="intentCard" href="/tirzepatide-protocol-tracker.html" data-track-internal="zepbound_protocol_tracker_router_tirzepatide_protocol_top"><strong>Tirzepatide protocol tracker</strong><br /><span class="muted">Use when you want the broader molecule-level page instead of brand-only language.</span></a>
+        </div>
+
+        <h2>Zepbound protocol template</h2>
+        <table aria-label="Zepbound protocol tracker template">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>What to log</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Planned shot day</td>
+              <td>Usual weekly anchor and target time</td>
+              <td>Makes schedule drift obvious instead of invisible.</td>
+            </tr>
+            <tr>
+              <td>Actual injection time</td>
+              <td>The real timestamp you administered</td>
+              <td>Keeps the symptom timeline anchored to reality.</td>
+            </tr>
+            <tr>
+              <td>Dose as prescribed</td>
+              <td>Exactly what was taken</td>
+              <td>Prevents fuzzy recall later.</td>
+            </tr>
+            <tr>
+              <td>Symptoms</td>
+              <td>Nausea, reflux, appetite, fatigue, constipation, stress, sleep changes</td>
+              <td>Helps separate side-effect timing from background noise.</td>
+            </tr>
+            <tr>
+              <td>Week context</td>
+              <td>Travel, alcohol, illness, unusual meals, short sleep, hard training</td>
+              <td>Captures the confounders people forget first.</td>
+            </tr>
+            <tr>
+              <td>Next-step note</td>
+              <td>Question for your clinician or what to watch next week</td>
+              <td>Keeps the log useful without turning it into advice.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Best route by problem</h2>
+        <table aria-label="Zepbound protocol tracker routes">
+          <thead>
+            <tr>
+              <th>If the problem is...</th>
+              <th>Best page</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Keeping the weekly shot record clean</td>
+              <td><a href="/zepbound-injection-tracker.html">Zepbound injection tracker</a></td>
+              <td>Better when the main job is dose timing, reminders, and shot history.</td>
+            </tr>
+            <tr>
+              <td>Understanding what changed after a late week</td>
+              <td><a href="/zepbound-missed-dose-tracker.html">Zepbound missed-dose tracker</a></td>
+              <td>Better when the schedule slipped and you need a clear before-and-after record.</td>
+            </tr>
+            <tr>
+              <td>Comparing symptom timing after dose day</td>
+              <td><a href="/zepbound-side-effect-timeline.html">Zepbound side-effect timeline</a></td>
+              <td>Better when the question is timing rather than adherence.</td>
+            </tr>
+            <tr>
+              <td>Looking at anxiety, stress, HRV, or resting-heart-rate shifts</td>
+              <td><a href="/zepbound-anxiety-hrv-tracker.html">Zepbound anxiety + HRV tracker</a></td>
+              <td>Better when the pattern is more nervous-system or wearable focused.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>What to review at the end of each week</h2>
+        <ul>
+          <li><strong>Did the week stay on schedule?</strong> If not, mark exactly when it drifted.</li>
+          <li><strong>Did symptoms cluster after dose day?</strong> Use timestamps, not impressions.</li>
+          <li><strong>What else changed?</strong> Sleep, stress, travel, meals, alcohol, illness, or training load often explain noisy weeks.</li>
+          <li><strong>What needs a follow-up page?</strong> Route into the missed-dose, side-effect timeline, or injection-tracker page instead of forcing everything into one note.</li>
+        </ul>
+
+        <div class="ctaPanel">
+          <h2>Prefer one private app timeline instead of scattered notes?</h2>
+          <p>Jabbit is a better fit than a reminder-only workflow when the real job is keeping schedule history, notes, symptoms, and routine drift in one place you can actually review.</p>
+          <div class="ctaRow">
+            <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="zepbound_protocol_tracker_mid_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
+            <a class="btn btnGhost" href="/peptide-protocol-tracker.html" data-track-internal="zepbound_protocol_tracker_mid_peptide_protocol">Peptide protocol tracker</a>
+          </div>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Useful adjacent pages</h2>
+        <div class="checklist">
+          <a href="/zepbound-injection-tracker.html"><strong>Zepbound injection tracker</strong><br /><span class="muted">Shot log, reminders, and weekly dose anchors.</span></a>
+          <a href="/zepbound-missed-dose-tracker.html"><strong>Zepbound missed-dose tracker</strong><br /><span class="muted">Keep late-week or skipped-week history readable.</span></a>
+          <a href="/zepbound-side-effect-timeline.html"><strong>Zepbound side-effect timeline</strong><br /><span class="muted">Track symptoms by time since dose.</span></a>
+          <a href="/zepbound-dose-timing-morning-vs-night.html"><strong>Zepbound dose timing: morning vs night</strong><br /><span class="muted">Compare routine choices without guessing.</span></a>
+          <a href="/zepbound-anxiety-hrv-tracker.html"><strong>Zepbound anxiety + HRV tracker</strong><br /><span class="muted">For stress, HRV, and resting-heart-rate patterns.</span></a>
+        </div>
+
+        <div class="warning">
+          <strong>Educational only:</strong> this page is about logging and organization. It does not tell you when to inject, how to titrate, or how to treat side effects.
+        </div>
+
+        <h2>Why this fits Jabbit</h2>
+        <p class="muted">A pure reminder app can help with the next shot. A protocol tracker is broader: it captures the week around the shot, the drift away from the plan, and the symptom story that matters later.</p>
+        <p class="muted">If you want the cross-brand version, start with the <a href="/glp1-injection-tracker.html">GLP-1 tracker hub</a>. If you want the broader molecule page, use the <a href="/tirzepatide-protocol-tracker.html">tirzepatide protocol tracker</a>.</p>
+
+        <p style="margin-top:18px;"><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="zepbound_protocol_tracker_sidebar_app_store" target="_blank" rel="noopener noreferrer">Get Jabbit</a></p>
+      </aside>
+    </section>
+
+    <footer>
+      <p>Educational only. Jabbit does not provide medical advice, diagnosis, or treatment. Use the page to keep a cleaner record and follow licensed clinical guidance for actual care decisions.</p>
+    </footer>
+  </main>
+
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+      <li><a href="/zepbound-injection-tracker.html">Zepbound injection tracker</a></li>
+      <li><a href="/zepbound-missed-dose-tracker.html">Zepbound missed-dose tracker</a></li>
+      <li><a href="/zepbound-side-effect-timeline.html">Zepbound side-effect timeline</a></li>
+      <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker hub</a></li>
+      <li><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></li>
+    </ul>
+  </section>
+</body>
+</html>
