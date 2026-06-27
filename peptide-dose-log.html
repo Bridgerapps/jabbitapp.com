@@ -35,6 +35,11 @@
     ul{ margin:8px 0 0 18px; }
     .muted{ color:var(--muted); }
     .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px 12px; border-radius:10px; }
+    .pathGrid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin:14px 0 18px; }
+    .pathCard{ display:block; border:1px solid var(--border); border-radius:14px; padding:14px; background:#fff; color:var(--ink); }
+    .pathCard:hover{ text-decoration:none; border-color:#cbd5e1; box-shadow:0 8px 20px rgba(2,6,23,.06); }
+    .pathCard strong,.pathCard span{ display:block; }
+    .pathCard span{ color:var(--muted); font-size:.94rem; margin-top:4px; }
 
     table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
     th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
@@ -186,6 +191,58 @@
 
         <div class="note">
           <strong>Routing rule:</strong> keep the dose log as the anchor, then branch into the <a href="/peptide-protocol-tracker.html">protocol tracker</a>, <a href="/peptide-side-effect-timeline.html">side-effect timeline</a>, or <a href="/glp1-injection-tracker.html">GLP-1 injection tracker</a> only when the question gets broader than one entry.
+        </div>
+
+        <h2>Weekly review workflow for peptide logging</h2>
+        <p class="muted">The dose log gets more useful when each entry routes into the right review lane. That keeps the page tied to practical tracker intent instead of becoming a generic peptide note template.</p>
+        <div class="pathGrid" aria-label="Peptide dose log routing paths">
+          <a class="pathCard" href="/peptide-protocol-tracker.html">
+            <strong>Protocol changed</strong>
+            <span>Use the protocol tracker for stack, cycle, schedule, or routine-drift notes.</span>
+          </a>
+          <a class="pathCard" href="/peptide-missed-dose-tracker.html">
+            <strong>Timing slipped</strong>
+            <span>Use the missed-dose tracker when a blank entry needs context instead of guessing.</span>
+          </a>
+          <a class="pathCard" href="/peptide-appetite-energy-log.html">
+            <strong>Appetite or energy shifted</strong>
+            <span>Track appetite, energy, sleep, and training context next to the dose anchor.</span>
+          </a>
+          <a class="pathCard" href="/retatrutide-dose-log.html">
+            <strong>Retatrutide-specific week</strong>
+            <span>Use the retatrutide dose log when the query is molecule-specific.</span>
+          </a>
+        </div>
+
+        <table aria-label="Weekly peptide logging review workflow">
+          <thead>
+            <tr>
+              <th>Review moment</th>
+              <th>Question to answer</th>
+              <th>Best Jabbit path</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Right after the dose</td>
+              <td>What happened, when, and was it on schedule?</td>
+              <td><a href="/peptide-dose-log.html">Peptide dose log</a></td>
+            </tr>
+            <tr>
+              <td>24-72 hours later</td>
+              <td>Did nausea, appetite, sleep, energy, or mood change after the dose?</td>
+              <td><a href="/peptide-side-effect-timeline.html">Peptide side-effect timeline</a></td>
+            </tr>
+            <tr>
+              <td>End of week</td>
+              <td>Was this a normal week, a late week, a missed-dose week, or a routine-drift week?</td>
+              <td><a href="/peptide-protocol-tracker.html">Peptide protocol tracker</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          <strong>App workflow:</strong> Jabbit is the cleaner version of this template when you want dose timing, reminders, symptom notes, and protocol context in one private iPhone timeline. <a href="https://apps.apple.com/app/id6756848719" data-track="peptide_dose_log_review_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>.
         </div>
 
         <h2>High-signal fields for missed doses, routine drift, and batch changes</h2>
