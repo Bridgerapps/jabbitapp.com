@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Peptide Protocol Tracker: Log Stack, Cycle, Schedule, and Missed Doses | Jabbit</title>
-  <meta name="description" content="A practical peptide protocol tracker for logging stack changes, cycle notes, schedule anchors, side effects, routine drift, and missed doses. Includes templates plus an iPhone tracker app." />
-  <meta name="keywords" content="peptide protocol tracker, peptide stack tracker, peptide cycle tracker, peptide schedule tracker, peptide protocol log, peptide side effect tracker, peptide missed dose log, peptide tracker app" />
+  <meta name="description" content="A practical peptide protocol tracker for logging stack changes, cycle notes, protocol history, schedule anchors, side effects, routine drift, and missed doses. Includes peptide logging templates plus an iPhone tracker app." />
+  <meta name="keywords" content="peptide protocol tracker, peptide stack tracker, peptide cycle tracker, peptide schedule tracker, peptide protocol log, peptide logging app, peptide stack log, peptide cycle log, peptide side effect tracker, peptide missed dose log, peptide tracker app" />
   <link rel="canonical" href="https://jabbitapp.com/peptide-protocol-tracker.html" />
   <style>
     :root{
@@ -205,7 +205,7 @@
     "@type":"WebPage",
     "name":"Peptide Protocol Tracker: Log Stack, Cycle, Schedule, and Missed Doses | Jabbit",
     "url":"https://www.jabbitapp.com/peptide-protocol-tracker.html",
-    "description":"A practical peptide protocol tracker for logging stack changes, cycle notes, schedule anchors, side effects, routine drift, and missed doses. Includes templates plus an iPhone tracker app.",
+    "description":"A practical peptide protocol tracker for logging stack changes, cycle notes, protocol history, schedule anchors, side effects, routine drift, and missed doses. Includes peptide logging templates plus an iPhone tracker app.",
     "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
     "publisher":{"@type":"Organization","name":"Bridger Apps"}
   }
@@ -296,6 +296,28 @@
           <a class="intentCard" href="/retatrutide-protocol-tracker.html" data-track-internal="peptide_protocol_tracker_router_retatrutide_protocol_top"><strong>Retatrutide protocol tracker</strong><br /><span class="muted">A closer fit for drug-specific protocol and symptom logging.</span></a>
         </div>
 
+        <h2>Peptide protocol tracker vs stack tracker vs cycle tracker</h2>
+        <p class="muted">These searches overlap, but they are not identical. A peptide stack tracker focuses on what was combined together. A peptide cycle tracker focuses on the phase of the run: start, pause, restart, or transition week. A peptide protocol tracker holds both, plus side-effect timing, missed-dose notes, and routine context so the timeline still makes sense later.</p>
+        <p class="muted">If your search was really for a peptide logging app, the key test is whether the app can preserve protocol history instead of only sending reminders. That is where Jabbit fits this query better than a narrower reminder workflow like Shotsy.</p>
+
+        <h2>High-intent peptide logging fields</h2>
+        <p class="muted">Exact-match searches around peptide protocol log, peptide stack log, and peptide cycle log usually come from people trying to answer one practical question later: what changed right before the week changed?</p>
+        <table aria-label="Peptide protocol logging fields">
+          <thead>
+            <tr>
+              <th style="width:22%">Search intent</th>
+              <th style="width:38%">What to log</th>
+              <th>Best next page if that is the real job</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Peptide protocol log</strong></td><td>Schedule anchor, protocol version, stack changes, missed-dose notes, and symptom timing in one thread.</td><td><a href="/injection-protocol-tracker.html" data-track-internal="peptide_protocol_tracker_fields_protocol_router">Injection protocol tracker</a></td></tr>
+            <tr><td><strong>Peptide stack log</strong></td><td>Which compounds were combined, when the combination changed, and what symptoms shifted after the change.</td><td><a href="/peptide-dose-log.html" data-track-internal="peptide_protocol_tracker_fields_stack_router">Peptide dose log</a></td></tr>
+            <tr><td><strong>Peptide cycle log</strong></td><td>Start week, restart week, pause week, schedule drift, and confounders that make one phase non-comparable to another.</td><td><a href="/peptide-routine-drift-log.html" data-track-internal="peptide_protocol_tracker_fields_cycle_router">Peptide routine drift log</a></td></tr>
+            <tr><td><strong>Peptide symptom timeline</strong></td><td>Onset, peak, fade, and whether the pattern repeated at the same time after each dose.</td><td><a href="/peptide-side-effect-timeline.html" data-track-internal="peptide_protocol_tracker_fields_timeline_router">Peptide side-effect timeline</a></td></tr>
+          </tbody>
+        </table>
+
         <h2>What to log every time</h2>
         <ul>
           <li><strong>Exact timestamp:</strong> date and time, not just the day.</li>
@@ -350,6 +372,14 @@
           </tbody>
         </table>
 
+        <h2>When peptide protocol intent becomes obesity-medication tracker intent</h2>
+        <p class="muted">A lot of peptide logging searches are really obesity-medication tracking searches in disguise. The user may start with protocol, stack, or cycle wording, but the underlying job is still weekly injection history, side-effect timing, missed-dose cleanup, or molecule-specific review.</p>
+        <div class="cards">
+          <a class="intentCard" href="/glp1-injection-tracker.html" data-track-internal="peptide_protocol_tracker_router_glp1_injection_mid"><strong>GLP-1 injection tracker</strong><br /><span class="muted">Best when the core need is weekly dose history plus reminders.</span></a>
+          <a class="intentCard" href="/peptide-missed-dose-tracker.html" data-track-internal="peptide_protocol_tracker_router_missed_mid"><strong>Peptide missed-dose tracker</strong><br /><span class="muted">Use when the protocol question started because timing broke.</span></a>
+          <a class="intentCard" href="/retatrutide-protocol-tracker.html" data-track-internal="peptide_protocol_tracker_router_retatrutide_mid"><strong>Retatrutide protocol tracker</strong><br /><span class="muted">A closer route for retatrutide-specific logging, symptoms, and schedule changes.</span></a>
+        </div>
+
         <h2>Side-effect timeline template</h2>
         <p class="muted">The high-signal move is linking symptoms to time since dose, not writing a vague summary three days later.</p>
         <table aria-label="Peptide side effect timeline template">
@@ -396,11 +426,20 @@
         </div>
 
         <h2>Jabbit vs Shotsy on this query</h2>
-        <p class="muted">Shotsy is strong if all you want is a narrower GLP-1 reminder workflow. This query is broader. People searching for a peptide protocol tracker usually need stack notes, missed-dose context, freeform logging, and cross-protocol history. That is where Jabbit has the cleaner fit.</p>
+        <p class="muted">Shotsy is strong if all you want is a narrower GLP-1 reminder workflow. This query is broader. People searching for a peptide protocol tracker, peptide stack tracker, or peptide cycle log usually need stack notes, missed-dose context, freeform logging, and cross-protocol history. That is where Jabbit has the cleaner fit.</p>
+
+        <h2>Common peptide protocol searches this page should answer</h2>
+        <ul>
+          <li><strong>Peptide protocol tracker:</strong> one place for schedule, stack, cycle, symptoms, and notes.</li>
+          <li><strong>Peptide stack tracker:</strong> log which compounds were combined and what changed after the combination changed.</li>
+          <li><strong>Peptide cycle tracker:</strong> separate stable weeks from pause, restart, or transition weeks.</li>
+          <li><strong>Peptide logging app:</strong> keep reminders, freeform notes, and timeline review together instead of splitting them across apps.</li>
+        </ul>
 
         <h2>Nearest related pages</h2>
         <ul>
           <li><a href="/injection-protocol-tracker.html">Injection protocol tracker</a> for a more general injection workflow.</li>
+          <li><a href="/peptide-dose-log.html">Peptide dose log</a> for exact timestamp and protocol-history capture.</li>
           <li><a href="/peptide-side-effect-log.html">Peptide side-effect log</a> for quick symptom capture.</li>
           <li><a href="/peptide-routine-drift-log.html">Peptide routine drift log</a> for schedule-change weeks.</li>
           <li><a href="/peptide-batch-lot-vendor-notes-log.html">Peptide batch, lot, and vendor notes log</a> for handling and source notes.</li>
