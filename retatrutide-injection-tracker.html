@@ -35,6 +35,9 @@
     ul{ margin:8px 0 0 18px; }
     .muted{ color:var(--muted); }
     .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px 12px; border-radius:10px; }
+    .routeGrid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; margin:14px 0; }
+    .routeCard{ border:1px solid var(--border); border-radius:14px; padding:14px; background:#f8fffe; }
+    .routeCard h3{ margin-top:0; }
 
     table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
     th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
@@ -99,7 +102,7 @@
       <h1>Retatrutide injection tracker (dose log + reminders)</h1>
       <p>Keep a clean history of what you took (as prescribed), when you took it, and what changed that week — without turning your life into a spreadsheet.</p>
       <div class="ctaRow">
-        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_injection_tracker_top" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
         <a class="btn btnGhost" href="/injection-protocol-tracker.html">Track protocols in the app</a>
       </div>
       <p class="small" style="margin-top:12px; opacity:.9;">Educational only. Not medical advice. Retatrutide is investigational; follow your clinician’s plan.</p>
@@ -148,6 +151,44 @@
           <li>If you’re tracking symptoms too, link your injection timestamp to a simple daily rating.</li>
         </ul>
 
+        <h2>Build a week-by-week retatrutide timeline</h2>
+        <p class="muted">A single injection entry answers “when?” A weekly timeline helps answer “what changed after it?” Use the injection timestamp as the anchor, then add only the observations that matter to you.</p>
+        <table aria-label="Week-by-week retatrutide tracking workflow">
+          <thead>
+            <tr><th>Checkpoint</th><th>Useful fields</th><th>Why it helps</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Dose day</td><td>Timestamp, prescribed dose, site, routine context</td><td>Creates a reliable anchor for every later note.</td></tr>
+            <tr><td>Next 24–72 hours</td><td>Symptom onset, appetite, sleep, stress, wearable notes</td><td>Preserves timing without assuming the injection caused a change.</td></tr>
+            <tr><td>Before the next planned dose</td><td>Symptoms resolved or ongoing, routine drift, questions</td><td>Makes one week comparable with the next.</td></tr>
+          </tbody>
+        </table>
+        <p class="muted">For a dedicated symptom workflow, use the <a href="/retatrutide-side-effect-timeline.html">retatrutide side-effect timeline</a>. For heart-rate or nervous-system observations, branch into the <a href="/retatrutide-anxiety-hrv-tracker.html">retatrutide anxiety and HRV tracker</a> or <a href="/retatrutide-resting-heart-rate-timeline.html">resting-heart-rate timeline</a>.</p>
+
+        <h2>Choose the retatrutide log that matches your question</h2>
+        <div class="routeGrid">
+          <div class="routeCard">
+            <h3>Protocol + routine</h3>
+            <p class="muted">Keep injections, reminders, site rotation, and repeatable steps together.</p>
+            <a href="/retatrutide-protocol-tracker.html">Open the retatrutide protocol tracker</a>
+          </div>
+          <div class="routeCard">
+            <h3>Symptoms after dose day</h3>
+            <p class="muted">Log onset, peak, and resolution against the injection timestamp.</p>
+            <a href="/retatrutide-side-effect-log.html">Open the retatrutide side-effect log</a>
+          </div>
+          <div class="routeCard">
+            <h3>Missed or shifted timing</h3>
+            <p class="muted">Record planned versus actual timing and what changed around the week.</p>
+            <a href="/retatrutide-missed-dose-tracker.html">Open the retatrutide missed-dose tracker</a>
+          </div>
+          <div class="routeCard">
+            <h3>General peptide workflow</h3>
+            <p class="muted">Use one broader log when you need shared protocol and note fields.</p>
+            <a href="/peptide-tracker.html">Open the peptide tracker app page</a>
+          </div>
+        </div>
+
         <h2>Missed or late dose notes (what to log)</h2>
         <p class="muted">If your timing changes, you don’t need perfect detail — just enough to explain “what happened” later.</p>
         <ul>
@@ -160,7 +201,7 @@
         <h2>Prefer a private app instead of a spreadsheet?</h2>
         <p>Jabbit is built for dose history + reminders + notes in one timeline, synced via your iCloud (no account required).</p>
         <div class="ctaRow" style="margin-top:12px;">
-          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Get Jabbit on the App Store</a>
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="retatrutide_injection_tracker_mid" target="_blank" rel="noopener noreferrer">Get Jabbit on the App Store</a>
           <a class="btn" style="border:1px solid var(--border); background:#fff; color:var(--brand);" href="/retatrutide-side-effect-log.html">Add a symptom timeline</a>
         </div>
       </article>
@@ -177,6 +218,9 @@
         <h2 style="margin-top:16px;">Related pages</h2>
         <ul>
           <li><a href="/retatrutide-side-effect-log.html">Retatrutide side effect log</a></li>
+          <li><a href="/retatrutide-protocol-tracker.html">Retatrutide protocol tracker</a></li>
+          <li><a href="/retatrutide-anxiety-hrv-tracker.html">Retatrutide anxiety + HRV tracker</a></li>
+          <li><a href="/retatrutide-resting-heart-rate-timeline.html">Retatrutide resting heart rate timeline</a></li>
           <li><a href="/glp1-injection-tracker.html">GLP‑1 injection tracker</a></li>
           <li><a href="/injection-protocol-tracker.html">Injection protocol tracker</a></li>
           <li><a href="/retatrutide-timeline.html">Retatrutide timeline (trial updates)</a></li>
