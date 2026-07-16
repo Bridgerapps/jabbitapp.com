@@ -35,6 +35,11 @@
     ul{ margin:8px 0 0 18px; }
     .muted{ color:var(--muted); }
     .note{ background:#ecfeff; border-left:4px solid var(--brand); padding:12px 12px; border-radius:10px; }
+    .routeGrid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; margin:14px 0 18px; }
+    .routeCard{ display:block; padding:14px; border:1px solid var(--border); border-radius:14px; background:linear-gradient(180deg,#fff 0%,#f8fafc 100%); color:inherit; }
+    .routeCard:hover{ text-decoration:none; border-color:#bcd0da; box-shadow:0 8px 20px rgba(2,6,23,.06); }
+    .routeCard strong,.routeCard span{ display:block; }
+    .routeCard span{ margin-top:4px; color:var(--muted); font-size:.95rem; }
 
     table{ width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px; }
     th,td{ border:1px solid var(--border); padding:10px; text-align:left; vertical-align:top; background:#fff; }
@@ -58,8 +63,8 @@
       <h1>Ozempic side effect log (simple, consistent, useful)</h1>
       <p>Keep a lightweight symptom timeline you can share with your clinician: what happened, when, and what else changed that week.</p>
       <div class="ctaRow">
-        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
-        <a class="btn btnGhost" href="/ozempic-injection-tracker.html">Log injections + notes</a>
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="ozempic_side_effect_log_hero_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit (App Store)</a>
+        <a class="btn btnGhost" href="/ozempic-injection-tracker.html" data-track-internal="ozempic_side_effect_log_hero_tracker">Log injections + notes</a>
       </div>
       <p class="small" style="margin-top:12px; opacity:.9;">Educational only. Not medical advice. If you feel unsafe or severely unwell, treat it as urgent.</p>
     </section>
@@ -123,6 +128,27 @@
           </tbody>
         </table>
 
+        <h2>Side effect log vs timeline: use the right view</h2>
+        <p class="muted">A side effect log captures each symptom event. A timeline compares where those events fall across the injection week. Start here when you need a simple daily record, then move into the narrower page that matches the pattern you are seeing.</p>
+        <div class="routeGrid">
+          <a class="routeCard" href="/ozempic-side-effect-timeline.html" data-track-internal="ozempic_side_effect_log_route_timeline">
+            <strong>Ozempic side effect timeline</strong>
+            <span>Compare Day 0 through Day 7 and separate stable weeks from dose-change weeks.</span>
+          </a>
+          <a class="routeCard" href="/ozempic-injection-tracker.html" data-track-internal="ozempic_side_effect_log_route_injection">
+            <strong>Ozempic injection tracker</strong>
+            <span>Keep the shot timestamp, injection day, reminders, and notes together.</span>
+          </a>
+          <a class="routeCard" href="/ozempic-anxiety-hrv-tracker.html" data-track-internal="ozempic_side_effect_log_route_anxiety_hrv">
+            <strong>Ozempic anxiety + HRV tracker</strong>
+            <span>Use when the standout pattern is stress, sleep disruption, anxiety, or wearable recovery changes.</span>
+          </a>
+          <a class="routeCard" href="/ozempic-missed-dose-tracker.html" data-track-internal="ozempic_side_effect_log_route_missed_dose">
+            <strong>Ozempic missed-dose tracker</strong>
+            <span>Keep late-dose or shifted-week context from distorting the symptom record.</span>
+          </a>
+        </div>
+
         <h2>How to spot “timeline” patterns (without overfitting)</h2>
         <p class="muted">Many once-weekly meds have a weekly rhythm. Logging helps you answer questions like:</p>
         <ul>
@@ -132,11 +158,25 @@
           <li>Do they line up with <strong>travel</strong>, <strong>stress</strong>, or <strong>sleep disruption</strong>?</li>
         </ul>
 
+        <h2>A weekly review that takes two minutes</h2>
+        <p class="muted">At the end of the injection week, reduce the daily entries to a short factual summary. This makes the log easier to compare later and more useful if you choose to share it with a clinician.</p>
+        <ul>
+          <li><strong>Most noticeable symptom:</strong> name one, plus its peak severity.</li>
+          <li><strong>Timing:</strong> note the day it started, peaked, and eased.</li>
+          <li><strong>Week type:</strong> label it stable dose, dose change, late dose, travel, illness, or disrupted routine.</li>
+          <li><strong>Context:</strong> record only meaningful changes in sleep, meals, hydration, alcohol, stress, or other medications.</li>
+          <li><strong>Next comparison:</strong> identify the one pattern you want to watch next week without drawing a conclusion from a single entry.</li>
+        </ul>
+
+        <div class="note">
+          <strong>Stress or wearable pattern?</strong> If the main change is anxiety, lower HRV, disrupted sleep, or a higher morning pulse, use the <a href="/ozempic-anxiety-hrv-tracker.html" data-track-internal="ozempic_side_effect_log_note_anxiety_hrv">Ozempic anxiety + HRV tracker</a> or <a href="/ozempic-resting-heart-rate-timeline.html" data-track-internal="ozempic_side_effect_log_note_rhr">Ozempic resting-heart-rate timeline</a> instead of burying that pattern in a general symptom note.
+        </div>
+
         <h2>Use Jabbit as the log (one place, low friction)</h2>
         <p class="muted">If your notes live in texts, a notebook, and your calendar, it’s hard to see patterns. Jabbit keeps injection timestamps + symptom notes together in a private log.</p>
-        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Open Jabbit in the App Store</a></p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="ozempic_side_effect_log_mid_app_store" target="_blank" rel="noopener noreferrer">Open Jabbit in the App Store</a></p>
 
-        <p class="muted">Related pages: <a href="/ozempic-injection-tracker.html">Ozempic injection tracker</a>, <a href="/ozempic-missed-dose-tracker.html">Ozempic missed dose tracker</a>, and <a href="/glp-1-side-effects-guide.html">GLP‑1 side effects guide</a>.</p>
+        <p class="muted">Related pages: <a href="/ozempic-side-effect-timeline.html">Ozempic side effect timeline</a>, <a href="/ozempic-injection-tracker.html">Ozempic injection tracker</a>, <a href="/ozempic-missed-dose-tracker.html">Ozempic missed dose tracker</a>, and <a href="/glp-1-side-effects-guide.html">GLP‑1 side effects guide</a>.</p>
       </article>
 
       <aside class="card">
@@ -153,7 +193,7 @@
 
         <h3>Want a no-excuses log?</h3>
         <p class="muted">One tap after the injection, one tap when symptoms show up.</p>
-        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer">Download Jabbit</a></p>
+        <p><a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="ozempic_side_effect_log_aside_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit</a></p>
 
         <p class="muted"><a href="/">← Back to Jabbit</a></p>
       </aside>
