@@ -1,0 +1,1726 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/aldeyra-eye-disorder-drug-fda-declines-2026-03.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/aldeyra-eye-disorder-drug-fda-declines-2026-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/aligned-medical-angio-pack-rotating-adapter-recall-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/aligned-medical-angio-pack-rotating-adapter-recall-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/amazon-connect-health-ai-agents.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/amazon-connect-health-ai-agents",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/amazon-one-medical-glp1-management-program-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/amazon-one-medical-glp1-management-program-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/appetite-coming-back-after-glp1.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/appetite-coming-back-after-glp1",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/avlayah-denali-hunter-syndrome-fda-accelerated-approval-2026-03.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/avlayah-denali-hunter-syndrome-fda-accelerated-approval-2026-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/awiqli-once-weekly-basal-insulin-fda-approval-2026-03.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/awiqli-once-weekly-basal-insulin-fda-approval-2026-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/biological-age-test-tracker.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/biological-age-test-tracker",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-dosing-schedule.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-dosing-schedule",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-missed-dose-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-missed-dose-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-protocol-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-protocol-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-side-effect-timeline.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-side-effect-timeline",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/cagrilintide-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/carbidopa-levodopa-vitamin-b6-deficiency-seizure-warning-2026.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/carbidopa-levodopa-vitamin-b6-deficiency-seizure-warning-2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/childrens-ibuprofen-recall-contamination-complaints-2026-03.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/childrens-ibuprofen-recall-contamination-complaints-2026-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/cms-fda-rapid-coverage-pathway-breakthrough-devices-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/cms-fda-rapid-coverage-pathway-breakthrough-devices-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-biosimilar-guidance-2026-03.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-biosimilar-guidance-2026-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-clinical-trial-results-disclosure-2200-sponsors-reminder-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-clinical-trial-results-disclosure-2200-sponsors-reminder-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-compounded-glp1-restrictions-misleading-ads.html",
+      "destination": "/fda-compounded-glp1-enforcement-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/fda-compounded-glp1-restrictions-misleading-ads",
+      "destination": "/fda-compounded-glp1-enforcement-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/fda-in-home-opioid-disposal-rfi-2026.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-in-home-opioid-disposal-rfi-2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-national-priority-voucher-tec-dara-approval.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-national-priority-voucher-tec-dara-approval",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-recall-hub-botulism-undeclared-drugs-contamination-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-recall-hub-botulism-undeclared-drugs-contamination-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-recall-primal-herbs-undeclared-sildenafil.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-recall-primal-herbs-undeclared-sildenafil",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-recalls-undeclared-tadalafil-sildenafil-rhino-boner-bears.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-recalls-undeclared-tadalafil-sildenafil-rhino-boner-bears",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-recalls-undeclared-tadalafil-sildenafil-supplements",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-testosterone-therapy-low-libido-idiopathic-hypogonadism-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fda-testosterone-therapy-low-libido-idiopathic-hypogonadism-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/filspari-sparsentan-fsgs-fda-expanded-approval-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/filspari-sparsentan-fsgs-fda-expanded-approval-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/foundayo-fda-postmarketing-studies-liver-injury-data-request-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/foundayo-fda-postmarketing-studies-liver-injury-data-request-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/french-broad-chocolate-bettes-bake-sale-bonbons-undeclared-walnuts-recall-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/french-broad-chocolate-bettes-bake-sale-bonbons-undeclared-walnuts-recall-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/gambling-urge-tracker-glp1.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/gambling-urge-tracker-glp1",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp-1-compounded-telehealth-fda-warning-letters.html",
+      "destination": "/fda-warning-letters-telehealth-compounded-glp1-marketing-2026-04.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp-1-compounded-telehealth-fda-warning-letters",
+      "destination": "/fda-warning-letters-telehealth-compounded-glp1-marketing-2026-04.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp-1-side-effect-log.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp-1-side-effect-log",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-alcohol-craving-tracker.html",
+      "destination": "/glp1-alcohol-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-alcohol-craving-tracker",
+      "destination": "/glp1-alcohol-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-anhedonia-tracker.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-anhedonia-tracker",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-craving-timeline.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-craving-timeline",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-dose-timing-morning-vs-night.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-dose-timing-morning-vs-night",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-dosing-schedule.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-dosing-schedule",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-food-enjoyment-anhedonia.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-food-enjoyment-anhedonia",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-injection-reminder-app.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-injection-reminder-app",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-injection-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-injection-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-longevity-labs-tracker.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-longevity-labs-tracker",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-low-hrv-after-injection.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-low-hrv-after-injection",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-low-libido-tracker.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-low-libido-tracker",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-missed-dose-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-missed-dose-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-mood-impulse-tracker.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-mood-impulse-tracker",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-nausea-tracker.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-nausea-tracker",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-resting-heart-rate-timeline.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-resting-heart-rate-timeline",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/hospitals-patient-chatbots-patientgpt-epic-emmie-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/hospitals-patient-chatbots-patientgpt-epic-emmie-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/idvynso-doravirine-islatravir-fda-approval-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/idvynso-doravirine-islatravir-fda-approval-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/immunitybio-anktiva-fda-warning-letter-misleading-claims-2026-03.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/immunitybio-anktiva-fda-warning-letter-misleading-claims-2026-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/injection-protocol-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/injection-protocol-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/insulin-pricing-35-cap-ftc-settlement-policy-roundup-2026-03.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/insulin-pricing-35-cap-ftc-settlement-policy-roundup-2026-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/kresladi-rocket-pharma-lad-i-gene-therapy-fda-approval-2026-03.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/kresladi-rocket-pharma-lad-i-gene-therapy-fda-approval-2026-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/leucovorin-wellcovorin-fda-approval-cerebral-folate-deficiency.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/leucovorin-wellcovorin-fda-approval-cerebral-folate-deficiency",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/life-extension-protocol-tracker.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/life-extension-protocol-tracker",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/lilly-retatrutide-late-stage-diabetes-trial-results-2026-03.html",
+      "destination": "/retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/lilly-retatrutide-late-stage-diabetes-trial-results-2026-03",
+      "destination": "/retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/longevity-biomarker-tracker.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/longevity-biomarker-tracker",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/massachusetts-state-workers-glp1-coverage-ended-2026.html",
+      "destination": "/glp1-cost-without-insurance.html",
+      "permanent": true
+    },
+    {
+      "source": "/massachusetts-state-workers-glp1-coverage-ended-2026",
+      "destination": "/glp1-cost-without-insurance.html",
+      "permanent": true
+    },
+    {
+      "source": "/mifepristone-online-sales-senate-probe-fda-pressure-2026-03.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/mifepristone-online-sales-senate-probe-fda-pressure-2026-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-anxiety-after-injection.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-anxiety-after-injection",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-changing-injection-day.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-changing-injection-day",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-dose-timing-morning-vs-night.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-dose-timing-morning-vs-night",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-injection-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-injection-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-missed-dose-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-missed-dose-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-protocol-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-protocol-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-resting-heart-rate-timeline.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-resting-heart-rate-timeline",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-side-effect-log.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-side-effect-log",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-side-effect-timeline.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/mounjaro-side-effect-timeline",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/omnipod-5-pod-correction-march-2026.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/omnipod-5-pod-correction-march-2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/omnipod-5-pod-recall-correction-under-delivery-insulet-2026.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/omnipod-5-pod-recall-correction-under-delivery-insulet-2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/omnipod-5-pods-medical-device-correction-internal-tubing-tear.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/omnipod-5-pods-medical-device-correction-internal-tubing-tear",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-anxiety-hrv-tracker.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-anxiety-hrv-tracker",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-changing-injection-day.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-changing-injection-day",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-dose-log.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-dose-log",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-injection-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-injection-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-late-dose-routine-change.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-late-dose-routine-change",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-low-hrv-after-injection.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-low-hrv-after-injection",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-missed-dose-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-missed-dose-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-side-effect-log.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-side-effect-log",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-side-effect-timeline.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/ozempic-side-effect-timeline",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-appetite-energy-log.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-appetite-energy-log",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-batch-lot-vendor-notes-log.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-batch-lot-vendor-notes-log",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-dose-log.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-dose-log",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-injection-schedule-tracker.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-injection-schedule-tracker",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-missed-dose-tracker.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-missed-dose-tracker",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-morning-vs-night-injection-log.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-morning-vs-night-injection-log",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-protocol-tracker.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-protocol-tracker",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-recovery-sleep-log.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-recovery-sleep-log",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-side-effect-log.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-side-effect-log",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-side-effect-timeline.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-side-effect-timeline",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-storage-stability-guide.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-storage-stability-guide",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-tracker.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-tracker",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-what-to-track.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-what-to-track",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-anxiety-after-injection.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-anxiety-after-injection",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-anxiety-hrv-tracker.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-anxiety-hrv-tracker",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-changing-injection-day.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-changing-injection-day",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-constipation-tracker.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-constipation-tracker",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-dose-log.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-dose-log",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-dose-timing-morning-vs-night.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-dose-timing-morning-vs-night",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-dosing-schedule.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-dosing-schedule",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-injection-reminder-app.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-injection-reminder-app",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-injection-reminder.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-injection-reminder",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-injection-site-rotation-tracker.html",
+      "destination": "/injection-site-rotation-science.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-injection-site-rotation-tracker",
+      "destination": "/injection-site-rotation-science.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-injection-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-injection-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-late-dose-routine-change.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-late-dose-routine-change",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-low-hrv-after-injection.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-low-hrv-after-injection",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-missed-dose-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-missed-dose-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-nausea-tracker.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-nausea-tracker",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-protocol-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-protocol-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-resting-heart-rate-timeline.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-resting-heart-rate-timeline",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-side-effect-log.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-side-effect-log",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-side-effect-timeline.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-side-effect-timeline",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-side-effects-timeline.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-side-effects-timeline",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-storage-stability-guide.html",
+      "destination": "/peptide-reconstitution-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-storage-stability-guide",
+      "destination": "/peptide-reconstitution-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-what-to-track.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/retatrutide-what-to-track",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-alcohol-cravings.html",
+      "destination": "/glp1-alcohol-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-alcohol-cravings",
+      "destination": "/glp1-alcohol-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-anxiety-hrv-tracker.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-anxiety-hrv-tracker",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-changing-injection-day.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-changing-injection-day",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-drinking-less-alcohol.html",
+      "destination": "/glp1-alcohol-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-drinking-less-alcohol",
+      "destination": "/glp1-alcohol-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-half-life.html",
+      "destination": "/glp1-serum-levels-explained.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-half-life",
+      "destination": "/glp1-serum-levels-explained.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-injection-reminder.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-injection-reminder",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-injection-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-injection-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-late-dose-routine-change.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-late-dose-routine-change",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-missed-dose-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-missed-dose-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-patent-expiry-india-generics-2026.html",
+      "destination": "/india-semaglutide-generics-ozempic-wegovy-launches-2026-03.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-patent-expiry-india-generics-2026",
+      "destination": "/india-semaglutide-generics-ozempic-wegovy-launches-2026-03.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-resting-heart-rate-timeline.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-resting-heart-rate-timeline",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-sexual-side-effects.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-sexual-side-effects",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-shortage-resolved-what-it-means.html",
+      "destination": "/fda-semaglutide-shortage-ended-compounding-legal-update-2026-04.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-shortage-resolved-what-it-means",
+      "destination": "/fda-semaglutide-shortage-ended-compounding-legal-update-2026-04.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-side-effect-timeline.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-side-effect-timeline",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/stopping-zepbound-mounjaro-maintenance.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/stopping-zepbound-mounjaro-maintenance",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/switching-semaglutide-to-tirzepatide-tracker.html",
+      "destination": "/semaglutide-vs-tirzepatide.html",
+      "permanent": true
+    },
+    {
+      "source": "/switching-semaglutide-to-tirzepatide-tracker",
+      "destination": "/semaglutide-vs-tirzepatide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tandem-mobi-insulin-pump-correction-fda-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tandem-mobi-insulin-pump-correction-fda-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tandem-mobi-insulin-pump-correction-malfunction-12-software-update-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tandem-mobi-insulin-pump-correction-malfunction-12-software-update-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tapering-off-glp1-evidence.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tapering-off-glp1-evidence",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-anxiety-after-injection.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-anxiety-after-injection",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-anxiety-hrv-tracker.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-anxiety-hrv-tracker",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-dose-log.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-dose-log",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-dose-timing-morning-vs-night.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-dose-timing-morning-vs-night",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-half-life.html",
+      "destination": "/glp1-serum-levels-explained.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-half-life",
+      "destination": "/glp1-serum-levels-explained.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-injection-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-injection-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-missed-dose-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-missed-dose-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-protocol-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-protocol-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-resting-heart-rate-timeline.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-resting-heart-rate-timeline",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-side-effect-log.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-side-effect-log",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-side-effect-timeline.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/tirzepatide-side-effect-timeline",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/transition-off-glp1-tracker.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/transition-off-glp1-tracker",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/unitedhealth-subsidiary-disclosure-cut-2026.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/unitedhealth-subsidiary-disclosure-cut-2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/vital-nutrients-aller-c-recall-undeclared-allergens-2026-04.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/vital-nutrients-aller-c-recall-undeclared-allergens-2026-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-7-2mg-fda-approval-priority-voucher-april-2026.html",
+      "destination": "/wegovy-hd-7-2mg-fda-approval-national-priority-voucher-2026-03.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-7-2mg-fda-approval-priority-voucher-april-2026",
+      "destination": "/wegovy-hd-7-2mg-fda-approval-national-priority-voucher-2026-03.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-anxiety-after-injection.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-anxiety-after-injection",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-anxiety-hrv-tracker.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-anxiety-hrv-tracker",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-changing-injection-day.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-changing-injection-day",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-injection-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-injection-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-late-dose-routine-change.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-late-dose-routine-change",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-missed-dose-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-missed-dose-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-side-effect-log.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-side-effect-log",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-side-effect-timeline.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/wegovy-side-effect-timeline",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/weight-maintenance-after-stopping-glp1.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/weight-maintenance-after-stopping-glp1",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-happens-when-you-stop-wegovy.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-happens-when-you-stop-wegovy",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-anxiety-after-injection.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-anxiety-after-injection",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-anxiety-hrv-tracker.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-anxiety-hrv-tracker",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-changing-injection-day.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-changing-injection-day",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-dose-log.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-dose-log",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-dose-timing-morning-vs-night.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-dose-timing-morning-vs-night",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-injection-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-injection-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-low-hrv-after-injection.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-low-hrv-after-injection",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-missed-dose-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-missed-dose-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-protocol-tracker.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-protocol-tracker",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-side-effect-log.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-side-effect-log",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-side-effect-timeline.html",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/zepbound-side-effect-timeline",
+      "destination": "/glp-1-side-effects-guide.html",
+      "permanent": true
+    }
+  ]
+}
