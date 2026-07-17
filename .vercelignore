@@ -1,0 +1,37 @@
+# Files excluded from the Vercel deployment.
+# The public site is the HTML pages + /assets, /api, /guides, /peptides,
+# /news, /privacy, /terms and the root SEO files. Everything below is
+# internal tooling, local state, or generator scaffolding and must not
+# be served publicly.
+
+# Dependencies & caches
+node_modules/
+__pycache__/
+
+# Secrets & local runtime state
+.late-api-key
+.openclaw/
+data/
+output/
+scripts/
+
+# Internal operations docs (assistant runtime, not site content)
+AGENTS.md
+BOOTSTRAP.md
+HEARTBEAT.md
+IDENTITY.md
+MEMORY.md
+REGRESSIONS.md
+SOUL.md
+TOOLS.md
+USER.md
+WORKFLOW_AUTO.md
+WORKLOG.md
+WORK_SUMMARY_2026-02-27.md
+readme.md
+
+# Internal reports & build scaffolding
+docs/
+_includes/
+generate_images.sh
+tmp_heygen_openapi.yaml

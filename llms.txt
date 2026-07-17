@@ -8,7 +8,7 @@
 - Flexible dosing schedules (daily, EOD, 2x/week, 5-on-2-off, custom)
 - Titration and cycle planning
 - Progress tracking with Apple Health sync
-- Encyclopedia of 65+ peptides with half-life data
+- In-app encyclopedia of peptides with half-life data
 - Privacy-first: iCloud sync only, no server storage
 
 ## Pricing
@@ -18,19 +18,39 @@
 ## Links
 - App Store: https://apps.apple.com/app/id6756848719
 - Website: https://jabbitapp.com
-- Blog: https://jabbitapp.com/blog/
+- Peptide reference hub: https://jabbitapp.com/peptides/
+- Research & guides: https://jabbitapp.com/guides/
+- News: https://jabbitapp.com/news/
 - Privacy Policy: https://jabbitapp.com/privacy/
 
-## Blog Articles
-- GLP-1 Injection Tracking Guide: https://jabbitapp.com/blog/glp-1-injection-tracking-guide.html
-- Semaglutide vs Tirzepatide Comparison: https://jabbitapp.com/blog/semaglutide-vs-tirzepatide.html
-- BPC-157 Research Guide: https://jabbitapp.com/blog/bpc-157-complete-guide.html
-- TB-500 Research Guide: https://jabbitapp.com/blog/tb-500-thymosin-beta-guide.html
-- Injection Site Rotation Science: https://jabbitapp.com/blog/injection-site-rotation-science.html
-- GLP-1 Serum Levels Explained: https://jabbitapp.com/blog/glp1-serum-levels-explained.html
-- Peptide Storage Guide: https://jabbitapp.com/blog/peptide-storage-stability-guide.html
-- Compounded Tirzepatide Guide: https://jabbitapp.com/blog/compounded-tirzepatide-guide.html
-- GLP-1 Side Effects Guide: https://jabbitapp.com/blog/glp-1-side-effects-guide.html
-- Semaglutide Half-Life: https://jabbitapp.com/blog/semaglutide-half-life.html
-- Peptide Site Rotation: https://jabbitapp.com/blog/peptide-site-rotation-guide.html
-- Peptide Reconstitution: https://jabbitapp.com/blog/peptide-reconstitution-guide.html
+## Peptide Reference Pages
+Evidence-first overviews of individual peptides on the website: what each one is, what the evidence actually supports, and honest FDA/regulatory status. Distinct from the deeper in-app encyclopedia.
+- Semaglutide: https://jabbitapp.com/peptides/semaglutide.html
+- Tirzepatide: https://jabbitapp.com/peptides/tirzepatide.html
+- Retatrutide: https://jabbitapp.com/peptides/retatrutide.html
+- Tesamorelin: https://jabbitapp.com/peptides/tesamorelin.html
+- BPC-157: https://jabbitapp.com/peptides/bpc-157.html
+- TB-500: https://jabbitapp.com/peptides/tb-500.html
+- Ipamorelin: https://jabbitapp.com/peptides/ipamorelin.html
+- CJC-1295: https://jabbitapp.com/peptides/cjc-1295.html
+- Semax: https://jabbitapp.com/peptides/semax.html
+- Selank: https://jabbitapp.com/peptides/selank.html
+- Epitalon: https://jabbitapp.com/peptides/epitalon.html
+- GHK-Cu: https://jabbitapp.com/peptides/ghk-cu.html
+
+## Guides
+Practical, non-promotional guides for people tracking peptide and GLP-1 injections.
+- GLP-1 Injection Tracking Guide: https://jabbitapp.com/glp-1-injection-tracking-guide.html
+- GLP-1 Side Effects Guide: https://jabbitapp.com/glp-1-side-effects-guide.html
+- Semaglutide vs Tirzepatide: https://jabbitapp.com/semaglutide-vs-tirzepatide.html
+- BPC-157 Complete Guide: https://jabbitapp.com/bpc-157-complete-guide.html
+- TB-500 (Thymosin Beta-4) Guide: https://jabbitapp.com/tb-500-thymosin-beta-guide.html
+- Injection Site Rotation Science: https://jabbitapp.com/injection-site-rotation-science.html
+- GLP-1 Serum Levels Explained: https://jabbitapp.com/glp1-serum-levels-explained.html
+- Peptide Reconstitution Guide: https://jabbitapp.com/peptide-reconstitution-guide.html
+- Peptide Site Rotation Guide: https://jabbitapp.com/peptide-site-rotation-guide.html
+- Compounded Tirzepatide Guide: https://jabbitapp.com/compounded-tirzepatide-guide.html
+
+## News
+Plain-English coverage of GLP-1 and peptide regulatory actions, clinical-trial readouts, and access changes — with what each update does and doesn't mean.
+- News hub: https://jabbitapp.com/news/

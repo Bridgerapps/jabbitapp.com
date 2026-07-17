@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GLP-1 Side Effects by Week: Obesity-Medication Timeline Hub for Tracker, Missed Dose, HRV, and Peptide Logging | Jabbit</title>
-  <meta name="description" content="A routing hub for GLP-1 and obesity-medication side-effect timeline searches. Branch into the right Jabbit page for week-by-week symptom logs, anxiety and HRV changes, missed-dose weeks, peptide protocol tracking, and drug-specific timelines." />
-  <meta name="keywords" content="glp-1 side effects by week, obesity medication side effects timeline, semaglutide side effects timeline, tirzepatide side effects timeline, retatrutide side effects timeline, glp-1 missed dose side effects, glp-1 anxiety hrv, peptide protocol tracker" />
-  <link rel="canonical" href="https://jabbitapp.com/glp-1-side-effects-guide.html" />
+  <title>GLP-1 Side Effects: What to Expect, the Typical Timeline, and Red Flags | Jabbit</title>
+  <meta name="description" content="An evidence-first, non-medical guide to GLP-1 side effects: why they happen, the typical week-by-week timeline, which symptoms are red flags that need a clinician, and what commonly helps. Educational only." />
+  <meta name="keywords" content="glp-1 side effects, semaglutide side effects, tirzepatide side effects, glp-1 nausea, glp-1 side effects timeline, when do glp-1 side effects go away, glp-1 red flags" />
+  <link rel="canonical" href="https://www.jabbitapp.com/glp-1-side-effects-guide.html" />
   <style>
     :root{
       --bg:#eff6f7;
@@ -120,11 +120,12 @@
       padding:24px;
       box-shadow:var(--shadow);
     }
-    .warning,.info,.ctaPanel{
+    .note,.warning,.info,.ctaPanel{
       border-radius:16px;
       padding:16px;
       margin:16px 0;
     }
+    .note{background:var(--brand-soft);border-left:4px solid var(--brand)}
     .warning{background:var(--warn);border-left:4px solid var(--warn-line)}
     .info{background:var(--info);border-left:4px solid var(--info-line)}
     .ctaPanel{
@@ -134,28 +135,14 @@
     .ctaPanel p{color:rgba(255,255,255,.92)}
     ul{padding-left:20px;margin:0 0 14px}
     li{margin:7px 0}
-    .jumpGrid,.routeGrid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:14px;
-      margin:14px 0 18px;
-    }
-    .routeCard{
-      display:block;
-      padding:16px;
+    .toc{
       border:1px solid var(--line);
       border-radius:18px;
-      background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);
-      color:inherit;
-      min-height:100%;
+      background:#f8fcfb;
+      padding:18px;
+      margin-bottom:18px;
     }
-    .routeCard:hover{
-      text-decoration:none;
-      border-color:#b5c8d5;
-      box-shadow:0 10px 22px rgba(15,23,42,.08);
-    }
-    .routeCard strong{display:block;margin-bottom:5px}
-    .routeCard span{display:block;color:var(--muted);font-size:.95rem}
+    .toc ul{margin-bottom:0}
     table{
       width:100%;
       border-collapse:collapse;
@@ -198,300 +185,252 @@
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"GLP-1 Side Effects by Week: Obesity-Medication Timeline Hub for Tracker, Missed Dose, HRV, and Peptide Logging | Jabbit",
-    "url":"https://jabbitapp.com/glp-1-side-effects-guide.html",
-    "description":"A routing hub for GLP-1 and obesity-medication side-effect timeline searches. Branch into the right Jabbit page for week-by-week symptom logs, anxiety and HRV changes, missed-dose weeks, peptide protocol tracking, and drug-specific timelines.",
-    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://jabbitapp.com/"}
+    "@type":"MedicalWebPage",
+    "name":"GLP-1 Side Effects: What to Expect, the Typical Timeline, and Red Flags",
+    "url":"https://www.jabbitapp.com/glp-1-side-effects-guide.html",
+    "description":"An evidence-first, non-medical guide to GLP-1 side effects: why they happen, the typical week-by-week timeline, which symptoms are red flags that need a clinician, and what commonly helps.",
+    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
+    "publisher":{"@type":"Organization","name":"Bridger Apps"}
   }
   </script>
-  <script type="application/ld+json" id="faq-jsonld">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why not keep everything on this page?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Because the strongest intent here is routing. Users searching by timeline, HRV, missed dose, or retatrutide usually need a more specific page than one broad side-effect explainer."
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Do GLP-1 side effects go away?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"For most people the gastrointestinal side effects are strongest when starting the medication and after each dose increase, then ease over days to weeks as the body adapts. Slow, stepwise dose escalation set by your prescriber is the standard way to limit them."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Are GLP-1 side effects worse after a dose increase?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Often, yes. Nausea and other gastrointestinal effects tend to cluster around initiation and each titration step, because those effects are dose-dependent. They usually settle again once the body adjusts to the new dose."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"When should I contact a clinician instead of waiting it out?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Seek medical care for severe or persistent abdominal pain (especially pain that radiates to the back), relentless vomiting or diarrhea with signs of dehydration, severe constipation with bloating and no gas, signs of an allergic reaction, or any symptom that feels severe or fast-moving. This page is educational only and does not replace a clinician."
+        }
       }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I am not sure whether the symptom was caused by the medication?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Keep the log descriptive rather than interpretive. Capture the timing and context first, then review the pattern later or bring it to a clinician."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I use the peptide protocol page even for GLP-1s?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, if the real issue is a broader routine or stack question rather than one isolated side effect."
-      }
-    }
-  ]
-}
-</script>
+    ]
+  }
+  </script>
 <script defer src="/assets/site.js"></script>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
-      <span class="eyebrow">Timeline intent hub</span>
-      <h1>GLP-1 side effects by week: route the timeline into the right tracker</h1>
-      <p class="heroIntro">Most searches for "GLP-1 side effects by week" are really timeline questions hiding inside semaglutide, tirzepatide, Zepbound, Wegovy, Ozempic, retatrutide, or broader peptide-tracking workflows. This page routes those searches into the stronger Jabbit pages for symptom logs, missed-dose weeks, HRV changes, protocol drift, and drug-specific timeline tracking.</p>
+      <span class="eyebrow">GLP-1 education</span>
+      <h1>GLP-1 side effects: what to expect, week by week</h1>
+      <p class="heroIntro">Most GLP-1 side effects are gastrointestinal, they cluster around starting the medication and each dose increase, and they usually ease as the body adapts. This guide explains why they happen, the typical timeline, the red flags that mean call your clinician, and how tracking the pattern makes it readable later.</p>
       <div class="ctaRow">
-        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_hero_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
-        <a class="btn btnGhost" href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_hub_hero_tracker">Open the GLP-1 injection tracker</a>
+        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_guide_cta_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
+        <a class="btn btnGhost" href="/peptides/">Explore the peptide hub</a>
       </div>
       <div class="heroGrid">
-        <div><strong>Timeline first</strong><span>Anchor symptoms to dose day, not vague memories.</span></div>
-        <div><strong>Route by pattern</strong><span>Use the page that fits HRV, missed-dose, protocol, or drug-specific intent.</span></div>
-        <div><strong>Keep weeks comparable</strong><span>Track schedule drift, stress, sleep, and symptoms in one view.</span></div>
+        <div><strong>Mostly gastrointestinal</strong><span>Nausea, appetite change, constipation, and reflux are the common ones.</span></div>
+        <div><strong>Worst at the start</strong><span>Effects peak on initiation and after each dose increase.</span></div>
+        <div><strong>Usually eases with time</strong><span>Symptoms tend to settle over days to weeks as the body adapts.</span></div>
       </div>
-      <p class="small" style="margin-top:14px;color:rgba(255,255,255,.88)">Educational only. This page helps organize patterns. It does not diagnose symptoms or recommend dose changes.</p>
+      <p class="small" style="margin-top:14px;color:rgba(255,255,255,.88)">Educational only. This page explains general patterns. It does not diagnose symptoms, recommend dose changes, or replace advice from your prescriber.</p>
     </section>
 
     <section class="layout">
       <article class="card">
-        <h2>The real job of this page</h2>
-        <p>Generic side-effect explainers usually flatten everything into one list. That is not useful when the search is really "why did this happen on day two after my shot?" or "was this the missed-dose week?" A better move is to route into the page that matches the tracking problem.</p>
+        <nav class="toc" aria-label="Table of contents">
+          <strong>On this page</strong>
+          <ul>
+            <li><a href="#why">Why GLP-1 medications cause side effects</a></li>
+            <li><a href="#common">The common side effects</a></li>
+            <li><a href="#timeline">The typical timeline</a></li>
+            <li><a href="#redflags">Red flags: when to seek care</a></li>
+            <li><a href="#helps">What commonly helps</a></li>
+            <li><a href="#bydrug">Side effects vary by medication</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
 
-        <div class="warning">
-          <strong>Harm-reduction framing:</strong> if symptoms feel severe, fast-moving, or hard to interpret, use a dated log and contact a licensed clinician. This page is for observation and organization only.
-        </div>
-
-        <h2>Start with the pattern, not the symptom label</h2>
-        <div class="jumpGrid">
-          <a class="routeCard" href="/glp-1-side-effect-log.html" data-track-internal="glp1_side_effects_hub_route_side_effect_log">
-            <strong>General side-effect timeline</strong>
-            <span>Best if you need one clean weekly log for nausea, fatigue, appetite changes, constipation, or mixed symptoms.</span>
-          </a>
-          <a class="routeCard" href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_hub_route_anxiety_hrv">
-            <strong>Anxiety, stress, HRV, or higher resting HR</strong>
-            <span>Use this if the real question is mood, recovery, wearable changes, or a racing-system feeling after dose day.</span>
-          </a>
-          <a class="routeCard" href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_hub_route_missed_dose">
-            <strong>Missed or late dose week</strong>
-            <span>Go here when the timeline got messy because the injection was delayed, skipped, or restarted.</span>
-          </a>
-          <a class="routeCard" href="/peptide-protocol-tracker.html" data-track-internal="glp1_side_effects_hub_route_protocol">
-            <strong>Peptide protocol or stack context</strong>
-            <span>Use this when one symptom log is too shallow because you are comparing compounds, timing, routine drift, or other protocol notes.</span>
-          </a>
-          <a class="routeCard" href="/retatrutide-tracker.html" data-track-internal="glp1_side_effects_hub_route_retatrutide">
-            <strong>Retatrutide-specific tracking</strong>
-            <span>Best for retatrutide intent where you need the molecule-specific tracker hub instead of a generic GLP-1 page.</span>
-          </a>
-          <a class="routeCard" href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_hub_route_injection_tracker">
-            <strong>Just log dose day cleanly</strong>
-            <span>Start here if you do not have a dependable injection timestamp yet. Everything else gets easier once the schedule is consistent.</span>
-          </a>
-        </div>
-
-        <h2>How to decide which page fits the week</h2>
-        <table aria-label="GLP-1 side effect routing table">
-          <thead>
-            <tr>
-              <th>What changed?</th>
-              <th>Best next page</th>
-              <th>Why that route is stronger</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Symptoms showed up after dose day and you want a simple weekly record</td>
-              <td><a href="/glp-1-side-effect-log.html" data-track-internal="glp1_side_effects_hub_table_side_effect_log">GLP-1 side-effect log</a></td>
-              <td>It keeps the question narrow: dose timestamp, symptom onset, severity, and notes.</td>
-            </tr>
-            <tr>
-              <td>The week also had low HRV, sleep disruption, anxiety, or higher resting heart rate</td>
-              <td><a href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_hub_table_anxiety_hrv">GLP-1 stress, anxiety, and HRV guide</a></td>
-              <td>Those patterns usually need wearable context, not just a symptom label.</td>
-            </tr>
-            <tr>
-              <td>The schedule drifted because the dose was late, missed, or moved</td>
-              <td><a href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_hub_table_missed_dose">GLP-1 missed-dose tracker</a></td>
-              <td>It preserves the timing story so you do not misread a disrupted week as a normal week.</td>
-            </tr>
-            <tr>
-              <td>You are logging multiple peptides, routines, or protocol changes</td>
-              <td><a href="/peptide-protocol-tracker.html" data-track-internal="glp1_side_effects_hub_table_protocol">Peptide protocol tracker</a></td>
-              <td>Protocol-level notes matter when the timeline is not just one medication and one symptom.</td>
-            </tr>
-            <tr>
-              <td>The search is really retatrutide-specific</td>
-              <td><a href="/retatrutide-side-effects-timeline.html" data-track-internal="glp1_side_effects_hub_table_retatrutide_timeline">Retatrutide side effects timeline</a></td>
-              <td>That keeps retatrutide intent inside the stronger retatrutide cluster instead of diluting it here.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>Week-by-week routing map</h2>
-        <table aria-label="Week by week symptom routing map">
-          <thead>
-            <tr>
-              <th>Timeline moment</th>
-              <th>What people usually need to log</th>
-              <th>Best next page</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>First 24 to 72 hours after dose day</td>
-              <td>Nausea, appetite drop, stress, sleep changes, recovery metrics, and injection notes.</td>
-              <td><a href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_hub_weekmap_hrv">Stress, anxiety, and HRV guide</a></td>
-            </tr>
-            <tr>
-              <td>Middle of the week</td>
-              <td>Whether the symptom pattern faded, stabilized, or changed after the first few days.</td>
-              <td><a href="/glp-1-side-effect-log.html" data-track-internal="glp1_side_effects_hub_weekmap_log">GLP-1 side-effect log</a></td>
-            </tr>
-            <tr>
-              <td>Late week or rebound week</td>
-              <td>Appetite return, fatigue shifts, stress buildup, or "was this because the schedule drifted?" notes.</td>
-              <td><a href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_hub_weekmap_missed_dose">Missed-dose tracker</a></td>
-            </tr>
-            <tr>
-              <td>Week changed because the protocol changed</td>
-              <td>Compound swaps, timing experiments, travel, stack context, and broader routine drift.</td>
-              <td><a href="/peptide-protocol-tracker.html" data-track-internal="glp1_side_effects_hub_weekmap_protocol">Peptide protocol tracker</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <h2 id="why">Why GLP-1 medications cause side effects</h2>
+        <p>GLP-1 receptor agonists (and the dual GIP/GLP-1 and triple agonists in the same family) work in two main ways that also explain most of their side effects: they slow how quickly the stomach empties, and they act on appetite and nausea centers in the brain. The reduced appetite and earlier fullness that make these medications effective are the same mechanism that, dialed up, produces nausea, reflux, and constipation.</p>
+        <p>Because these effects are <strong>dose-dependent</strong>, they are usually strongest when you first start and each time the dose is increased, and they tend to fade as your body adapts. That is why prescribers escalate the dose slowly and stepwise rather than starting high.</p>
 
         <div class="info">
-          <strong>High-signal minimum:</strong> log the last injection time, when the symptom started, a simple 0 to 10 severity note, and obvious confounders like poor sleep, travel, dehydration, stress, or routine changes.
+          <strong>The one idea that explains the rest:</strong> most GLP-1 side effects are the digestive system reacting to slower gastric emptying. Knowing that makes both the timeline and the self-care steps make sense.
         </div>
 
-        <h2>Route into the winning adjacent pages</h2>
-        <div class="routeGrid">
-          <a class="routeCard" href="/glp1-low-hrv-after-injection.html" data-track-internal="glp1_side_effects_hub_adjacent_low_hrv">
-            <strong>Low HRV after injection</strong>
-            <span>Better than a generic side-effect page if the main signal is a recovery drop after shot day.</span>
-          </a>
-          <a class="routeCard" href="/glp1-resting-heart-rate-timeline.html" data-track-internal="glp1_side_effects_hub_adjacent_hr_timeline">
-            <strong>Resting heart rate timeline</strong>
-            <span>Use this when the side-effect question is really a heart-rate timing question.</span>
-          </a>
-          <a class="routeCard" href="/semaglutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_adjacent_semaglutide_timeline">
-            <strong>Semaglutide timeline</strong>
-            <span>Go narrower if semaglutide is the actual molecule intent behind the search.</span>
-          </a>
-          <a class="routeCard" href="/tirzepatide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_adjacent_tirzepatide_timeline">
-            <strong>Tirzepatide timeline</strong>
-            <span>Use this when the search should live in the tirzepatide branch, not a broad GLP-1 page.</span>
-          </a>
-          <a class="routeCard" href="/peptide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_adjacent_peptide_timeline">
-            <strong>Peptide side-effect timeline</strong>
-            <span>Best when the language is broader than GLP-1 and the tracking problem spans peptide use more generally.</span>
-          </a>
-          <a class="routeCard" href="/retatrutide-tracker.html" data-track-internal="glp1_side_effects_hub_adjacent_retatrutide_hub">
-            <strong>Retatrutide tracker hub</strong>
-            <span>Keep retatrutide searches inside the dedicated tracker cluster for timeline, missed-dose, and symptom pages.</span>
-          </a>
+        <h2 id="common">The common side effects</h2>
+        <p class="muted">These are the effects most people encounter. Individual experience varies widely, and many people have only mild symptoms or none at all.</p>
+        <table aria-label="Common GLP-1 side effects">
+          <thead>
+            <tr>
+              <th>Effect</th>
+              <th>Why it happens</th>
+              <th>Usual pattern</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nausea</td>
+              <td>Slowed gastric emptying plus central appetite and nausea signaling.</td>
+              <td>The most common effect; strongest early and after dose increases, often easing within days to a couple of weeks.</td>
+            </tr>
+            <tr>
+              <td>Vomiting</td>
+              <td>Same mechanism as nausea, at a higher intensity.</td>
+              <td>Less common than nausea; more likely when a dose is increased quickly or meals are large or high-fat.</td>
+            </tr>
+            <tr>
+              <td>Diarrhea</td>
+              <td>Altered gut motility and secretion.</td>
+              <td>Comes and goes; often tied to specific meals or the days right after a dose.</td>
+            </tr>
+            <tr>
+              <td>Constipation</td>
+              <td>Slower motility and, often, eating and drinking less.</td>
+              <td>Can build over weeks; usually responds to fluids, fiber, and movement.</td>
+            </tr>
+            <tr>
+              <td>Reflux / indigestion</td>
+              <td>Food sitting longer in a slower-emptying stomach.</td>
+              <td>Worse after large or late meals; often improves with smaller portions.</td>
+            </tr>
+            <tr>
+              <td>Decreased appetite</td>
+              <td>The intended effect of the medication.</td>
+              <td>Expected; worth tracking so you still meet protein and fluid needs.</td>
+            </tr>
+            <tr>
+              <td>Fatigue or headache</td>
+              <td>Often secondary to eating and drinking less, especially early on.</td>
+              <td>Usually early and mild; watch hydration and nutrition.</td>
+            </tr>
+            <tr>
+              <td>Injection-site reaction</td>
+              <td>Local response to the injection.</td>
+              <td>Usually mild redness or itching; rotating sites helps.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="timeline">The typical timeline</h2>
+        <p>There is no single universal schedule, and the exact cadence depends on which medication you take and the titration plan your prescriber sets. But the shape is consistent:</p>
+        <ul>
+          <li><strong>Starting out:</strong> the first days on a new medication are when nausea and appetite change are most noticeable. Meals feel smaller and you fill up faster.</li>
+          <li><strong>Each dose increase:</strong> expect a similar, usually smaller, echo of the initiation symptoms for a few days after each step up, then a settling period.</li>
+          <li><strong>Steady state:</strong> once you have been on the same dose for a while, most people find the gastrointestinal effects are much milder or gone, while the appetite effect continues.</li>
+        </ul>
+        <div class="note">
+          <strong>Why the timeline matters for tracking:</strong> the same symptom means different things depending on where you are in the cycle. Nausea two days after a dose increase reads very differently from new, severe pain in a steady-state week. Anchoring symptoms to your dose day and titration step is what makes that distinction visible.
         </div>
 
-        <h2>Drug-specific side-effect timelines</h2>
-        <div class="routeGrid">
-          <a class="routeCard" href="/semaglutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_drug_semaglutide">
-            <strong>Semaglutide side-effect timeline</strong>
-            <span>For semaglutide-specific week-by-week symptom questions.</span>
-          </a>
-          <a class="routeCard" href="/wegovy-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_drug_wegovy">
-            <strong>Wegovy side-effect timeline</strong>
-            <span>Use this when the search is clearly Wegovy-branded rather than generic GLP-1.</span>
-          </a>
-          <a class="routeCard" href="/ozempic-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_drug_ozempic">
-            <strong>Ozempic side-effect timeline</strong>
-            <span>Better when the user wants Ozempic timing and symptom context specifically.</span>
-          </a>
-          <a class="routeCard" href="/tirzepatide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_drug_tirzepatide">
-            <strong>Tirzepatide side-effect timeline</strong>
-            <span>Go here for tirzepatide week-by-week symptom tracking.</span>
-          </a>
-          <a class="routeCard" href="/zepbound-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_drug_zepbound">
-            <strong>Zepbound side-effect timeline</strong>
-            <span>Use the branded branch when the search is really Zepbound-specific.</span>
-          </a>
-          <a class="routeCard" href="/mounjaro-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_drug_mounjaro">
-            <strong>Mounjaro side-effect timeline</strong>
-            <span>Better routing for Mounjaro searches than a generic timeline page.</span>
-          </a>
-          <a class="routeCard" href="/retatrutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_drug_retatrutide">
-            <strong>Retatrutide side-effect timeline</strong>
-            <span>Keep retatrutide symptom intent in the dedicated retatrutide tracking cluster.</span>
-          </a>
-          <a class="routeCard" href="/peptide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_drug_peptide">
-            <strong>Peptide side-effect timeline</strong>
-            <span>Use this when the real search intent is broader peptide logging, not one obesity medication.</span>
-          </a>
+        <h2 id="redflags">Red flags: when to seek medical care</h2>
+        <div class="warning">
+          <strong>These are not "track and wait" symptoms.</strong> If you have any of the following, contact a clinician or seek urgent care. This list is not exhaustive, and anything that feels severe or fast-moving deserves medical attention.
         </div>
+        <ul>
+          <li><strong>Severe or persistent abdominal pain,</strong> especially pain that radiates to the back or comes with vomiting, which can be a sign of pancreatitis.</li>
+          <li><strong>Pain in the upper-right abdomen, fever, or yellowing of the skin or eyes,</strong> which can point to gallbladder problems.</li>
+          <li><strong>Relentless vomiting or diarrhea</strong> with signs of dehydration such as dizziness, very dark urine, or inability to keep fluids down.</li>
+          <li><strong>Severe constipation with bloating and no passage of gas or stool,</strong> which can signal a bowel obstruction.</li>
+          <li><strong>Signs of an allergic reaction</strong> such as rash, swelling of the face or throat, or trouble breathing.</li>
+          <li><strong>Symptoms of low blood sugar</strong> (shakiness, sweating, confusion) if you also take insulin or a sulfonylurea, since the combination raises that risk.</li>
+          <li><strong>A new lump in the neck, hoarseness, or trouble swallowing.</strong> These medications carry a labeled warning about thyroid C-cell tumors and are not for people with a personal or family history of medullary thyroid carcinoma or MEN 2.</li>
+          <li><strong>An upcoming surgery or procedure with anesthesia:</strong> because these drugs slow stomach emptying, tell your care team you take one, as they may advise holding it beforehand.</li>
+        </ul>
+
+        <h2 id="helps">What commonly helps</h2>
+        <p class="muted">These are general, non-prescriptive steps commonly discussed with clinicians. They are not medical advice, and your prescriber sets your actual plan.</p>
+        <ul>
+          <li><strong>Smaller, more frequent meals,</strong> eaten slowly, stopping at the first sign of fullness.</li>
+          <li><strong>Going easy on very fatty, greasy, fried, or very sweet foods,</strong> which tend to sit heaviest in a slow-emptying stomach.</li>
+          <li><strong>Staying hydrated,</strong> which also helps with constipation, fatigue, and headache.</li>
+          <li><strong>Fiber and movement</strong> for constipation, within what is comfortable for you.</li>
+          <li><strong>Following the titration schedule</strong> your prescriber set rather than rushing to a higher dose.</li>
+        </ul>
+        <p>If symptoms are limiting your ability to eat, drink, or function, that is a conversation to have with your prescriber, who may adjust the pace of titration or suggest other measures.</p>
 
         <div class="ctaPanel">
-          <h2 style="color:#fff">Use Jabbit when the week is getting hard to reconstruct</h2>
-          <p>Jabbit keeps dose timestamps, side-effect notes, reminders, and adjacent tracker pages in one private workflow on iPhone. If your main problem is remembering what happened on which day, the app is the shortest path to a usable timeline.</p>
+          <h2 style="color:#fff">Track the pattern so a hard week is readable later</h2>
+          <p>Jabbit keeps your dose timestamps, injection sites, and side-effect notes in one private timeline on iPhone, so you can see whether a symptom lines up with a dose increase or something new, and bring a real record to your clinician.</p>
           <div class="ctaRow" style="margin-top:14px">
-            <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_body_app_store" target="_blank" rel="noopener noreferrer">Open Jabbit in the App Store</a>
-            <a class="btn btnGhost" href="/glp1-injection-reminder-app.html" data-track-internal="glp1_side_effects_hub_body_reminder_app">See the injection reminder app page</a>
+            <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_guide_body_app_store" target="_blank" rel="noopener noreferrer">Get Jabbit on the App Store</a>
+            <a class="btn btnGhost" href="/glp1-serum-levels-explained.html">How GLP-1 levels build over time</a>
           </div>
         </div>
 
-        <h2>FAQ</h2>
+        <h2 id="bydrug">Side effects vary by medication</h2>
+        <p>The family shares a side-effect profile, but the specifics, potency, and dosing schedules differ. For medication-specific detail, start with the pillar page for your compound:</p>
+        <ul>
+          <li><a href="/peptides/semaglutide.html">Semaglutide</a> &mdash; the GLP-1 agonist behind Ozempic and Wegovy.</li>
+          <li><a href="/peptides/tirzepatide.html">Tirzepatide</a> &mdash; the dual GIP/GLP-1 agonist behind Mounjaro and Zepbound.</li>
+          <li><a href="/peptides/retatrutide.html">Retatrutide</a> &mdash; an investigational triple agonist still in clinical trials.</li>
+          <li><a href="/semaglutide-vs-tirzepatide.html">Semaglutide vs tirzepatide</a> &mdash; how the two most common options compare.</li>
+        </ul>
+
+        <h2 id="faq">FAQ</h2>
         <dl class="faq">
-          <dt>Why not keep everything on this page?</dt>
-          <dd>Because the strongest intent here is routing. Users searching by timeline, HRV, missed dose, or retatrutide usually need a more specific page than one broad side-effect explainer.</dd>
+          <dt>Do GLP-1 side effects go away?</dt>
+          <dd>For most people the gastrointestinal effects are strongest at the start and after each dose increase, then ease over days to weeks as the body adapts. The appetite effect is meant to continue.</dd>
 
-          <dt>What if I am not sure whether the symptom was caused by the medication?</dt>
-          <dd>Keep the log descriptive rather than interpretive. Capture the timing and context first, then review the pattern later or bring it to a clinician.</dd>
+          <dt>Are side effects worse after a dose increase?</dt>
+          <dd>Often, yes, because the effects are dose-dependent. Symptoms tend to return briefly after each titration step, then settle as your body adjusts to the new dose.</dd>
 
-          <dt>Should I use the peptide protocol page even for GLP-1s?</dt>
-          <dd>Yes, if the real issue is a broader routine or stack question rather than one isolated side effect.</dd>
+          <dt>Does this page tell me what dose to take?</dt>
+          <dd>No. This page is educational and focused on understanding and tracking side effects. Dosing, titration, and switching decisions belong with your prescriber.</dd>
+
+          <dt>Is it normal to feel this on the same day every week?</dt>
+          <dd>Many people notice a rhythm tied to their injection day. Logging the dose time and when symptoms appear is the easiest way to confirm a pattern rather than guessing.</dd>
         </dl>
 
         <footer>
-          <p>Educational and harm-reduction only. Jabbit does not provide medical advice, diagnosis, or treatment recommendations.</p>
+          <p>Educational and harm-reduction only. Jabbit does not provide medical advice, diagnosis, or treatment recommendations. Always follow your prescriber and the medication label.</p>
         </footer>
       </article>
 
       <aside class="card">
-        <h2>Fast routes</h2>
+        <h2>When to seek care</h2>
+        <p class="muted">Contact a clinician for any of these rather than waiting:</p>
         <ul>
-          <li><a href="/glp-1-side-effect-log.html" data-track-internal="glp1_side_effects_hub_sidebar_side_effect_log">GLP-1 side-effect log</a></li>
-          <li><a href="/glp1-stress-anxiety-hrv-guide.html" data-track-internal="glp1_side_effects_hub_sidebar_anxiety_hrv">Anxiety, stress, and HRV guide</a></li>
-          <li><a href="/glp1-missed-dose-tracker.html" data-track-internal="glp1_side_effects_hub_sidebar_missed_dose">Missed-dose tracker</a></li>
-          <li><a href="/peptide-protocol-tracker.html" data-track-internal="glp1_side_effects_hub_sidebar_protocol">Peptide protocol tracker</a></li>
-          <li><a href="/retatrutide-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_sidebar_retatrutide_timeline">Retatrutide side-effect timeline</a></li>
-          <li><a href="/mounjaro-side-effect-timeline.html" data-track-internal="glp1_side_effects_hub_sidebar_mounjaro_timeline">Mounjaro side-effect timeline</a></li>
+          <li>Severe or persistent abdominal pain, especially radiating to the back</li>
+          <li>Relentless vomiting or diarrhea with dehydration</li>
+          <li>Severe constipation with bloating and no gas</li>
+          <li>Signs of an allergic reaction</li>
+          <li>Anything that feels severe or fast-moving</li>
         </ul>
 
-        <h2 style="margin-top:18px">Minimum useful timeline</h2>
+        <h2 style="margin-top:18px">Minimum useful log</h2>
         <ul>
-          <li><strong>1 dose timestamp</strong> for the week</li>
-          <li><strong>1 symptom start time</strong> relative to that dose</li>
-          <li><strong>1 short severity score</strong></li>
-          <li><strong>1 confounder note</strong> if sleep, stress, travel, or timing changed</li>
+          <li><strong>Dose timestamp</strong> and current dose step</li>
+          <li><strong>Symptom onset</strong> relative to that dose</li>
+          <li><strong>A 0&ndash;10 severity note</strong></li>
+          <li><strong>Confounders</strong> like poor sleep, travel, or a large meal</li>
         </ul>
 
-        <h2 style="margin-top:18px">App Store</h2>
-        <p class="muted">Want one private place for dose timing, symptoms, and reminders?</p>
-        <p><a class="btn btnPrimary" style="width:100%" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_hub_sidebar_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit</a></p>
-
-        <p class="muted" style="margin-top:18px"><a href="/glp1-injection-tracker.html" data-track-internal="glp1_side_effects_hub_sidebar_injection_tracker">Start with the GLP-1 injection tracker</a></p>
+        <div class="ctaPanel">
+          <h3 style="margin-bottom:10px;color:#fff">One private timeline</h3>
+          <p>Dose timing, sites, and side-effect notes in one place, not scattered across notes apps.</p>
+          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_side_effects_guide_aside_app_store" target="_blank" rel="noopener noreferrer" style="margin-top:10px;width:100%">Download Jabbit</a>
+        </div>
       </aside>
     </section>
   </main>
   <section id="related-links">
     <h2>Related</h2>
     <ul>
-    <li><a href="/glp1-injection-tracker.html">GLP-1 injection tracker (link symptoms to weeks/dose)</a></li>
-    <li><a href="/glp1-dosing-schedule.html">GLP-1 dosing schedules (reference for what to log)</a></li>
-    <li><a href="/glp1-constipation-guide.html">GLP-1 constipation guide (practical relief + red flags)</a></li>
+    <li><a href="/peptides/semaglutide.html">Semaglutide guide (mechanism, dosing basics, side effects)</a></li>
+    <li><a href="/peptides/tirzepatide.html">Tirzepatide guide (dual agonist overview)</a></li>
+    <li><a href="/glp1-serum-levels-explained.html">GLP-1 serum levels explained (why timing matters)</a></li>
+    <li><a href="/peptides/">Peptide hub (all classes, evidence-first)</a></li>
     </ul>
   </section>
 </body>
