@@ -3,7 +3,12 @@
 # Checks: site, github sync, reddit data, disk, memory, recent commits, seo pages
 # Outputs status and saves to log
 
-WORKSPACE="/home/jabbit/.openclaw/workspace"
+WORKSPACE="${WORKSPACE:-/home/jabbit/.openclaw/workspace}"
+# The deployable website is a standalone git repository nested inside the
+# OpenClaw workspace.  Keep operational state in WORKSPACE, but audit git and
+# site content from this repository (the workspace root still contains legacy
+# site copies and is not a truthful deployment source).
+SITE_REPO="${SITE_REPO:-$WORKSPACE/jabbitapp.com}"
 LOG_FILE="$WORKSPACE/logs/health-$(date +%Y-%m-%d).log"
 STATUS_FILE="$WORKSPACE/data/status/health.json"
 
@@ -56,7 +61,11 @@ FAQ_JSONLD_ERROR_COUNT="null"
 # 1. Site health
 SITE_URL="https://jabbitapp.com/"
 # Follow redirects and evaluate the final status code (avoid false positives on 301/302/307).
-SITE_CODE=$(curl -sS -L --connect-timeout 5 --max-time 10 -o /dev/null -w "%{http_code}" "$SITE_URL" 2>/dev/null || echo "000")
+SITE_CODE="$(curl -sS -L --connect-timeout 5 --max-time 10 -o /dev/null -w '%{http_code}' "$SITE_URL" 2>/dev/null || true)"
+case "$SITE_CODE" in
+    [0-9][0-9][0-9]) ;;
+    *) SITE_CODE="000" ;;
+esac
 if [ "$SITE_CODE" -ge 200 ] 2>/dev/null && [ "$SITE_CODE" -lt 400 ] 2>/dev/null; then
     echo "✅ Site: HTTP $SITE_CODE ($SITE_URL)" >> "$LOG_FILE"
 else
@@ -76,12 +85,12 @@ GIT_UPSTREAM_DATE=""
 GIT_SYNC_OK=false
 GIT_PUSHED_TODAY=false
 
-if git -C "$WORKSPACE" rev-parse --git-dir >/dev/null 2>&1; then
-    GIT_UPSTREAM="$(git -C "$WORKSPACE" rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null || true)"
+if git -C "$SITE_REPO" rev-parse --git-dir >/dev/null 2>&1; then
+    GIT_UPSTREAM="$(git -C "$SITE_REPO" rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null || true)"
 
     if [ -n "$GIT_UPSTREAM" ]; then
-        read -r GIT_BEHIND GIT_AHEAD < <(git -C "$WORKSPACE" rev-list --left-right --count "${GIT_UPSTREAM}...HEAD" 2>/dev/null || echo "0 0")
-        GIT_UPSTREAM_DATE="$(git -C "$WORKSPACE" log -1 --date=format:%Y-%m-%d --format=%cd "$GIT_UPSTREAM" 2>/dev/null | head -1 || true)"
+        read -r GIT_BEHIND GIT_AHEAD < <(git -C "$SITE_REPO" rev-list --left-right --count "${GIT_UPSTREAM}...HEAD" 2>/dev/null || echo "0 0")
+        GIT_UPSTREAM_DATE="$(git -C "$SITE_REPO" log -1 --date=format:%Y-%m-%d --format=%cd "$GIT_UPSTREAM" 2>/dev/null | head -1 || true)"
 
         if [ "${GIT_AHEAD:-0}" -eq 0 ] 2>/dev/null && [ "${GIT_BEHIND:-0}" -eq 0 ] 2>/dev/null; then
             GIT_SYNC_OK=true
@@ -116,16 +125,16 @@ if git -C "$WORKSPACE" rev-parse --git-dir >/dev/null 2>&1; then
     fi
 
     # Dirty working tree
-    if ! git -C "$WORKSPACE" diff --quiet 2>/dev/null; then GIT_DIRTY=true; fi
-    if ! git -C "$WORKSPACE" diff --cached --quiet 2>/dev/null; then GIT_DIRTY=true; fi
-    if [ -n "$(git -C "$WORKSPACE" ls-files --others --exclude-standard 2>/dev/null | head -1 || true)" ]; then GIT_DIRTY=true; fi
+    if ! git -C "$SITE_REPO" diff --quiet 2>/dev/null; then GIT_DIRTY=true; fi
+    if ! git -C "$SITE_REPO" diff --cached --quiet 2>/dev/null; then GIT_DIRTY=true; fi
+    if [ -n "$(git -C "$SITE_REPO" ls-files --others --exclude-standard 2>/dev/null | head -1 || true)" ]; then GIT_DIRTY=true; fi
 
     if [ "$GIT_DIRTY" = true ]; then
         # Provide a small, actionable summary for dashboards/logs.
         # Keep it bounded so status JSON stays small.
-        GIT_DIRTY_COUNT=$(git -C "$WORKSPACE" status --porcelain 2>/dev/null | wc -l | tr -d ' ' || echo 0)
+        GIT_DIRTY_COUNT=$(git -C "$SITE_REPO" status --porcelain 2>/dev/null | wc -l | tr -d ' ' || echo 0)
         GIT_DIRTY_FILES_JSON=$(
-          git -C "$WORKSPACE" status --porcelain 2>/dev/null \
+          git -C "$SITE_REPO" status --porcelain 2>/dev/null \
             | sed -E 's/^.. //' \
             | head -n 25 \
             | jq -R . \
@@ -137,7 +146,7 @@ if git -C "$WORKSPACE" rev-parse --git-dir >/dev/null 2>&1; then
     fi
 else
     echo "⚠️ Git: Not a git repo" >> "$LOG_FILE"
-    ISSUES+=("Git repo missing")
+    ISSUES+=("Site git repo missing: $SITE_REPO")
 fi
 
 # 3. Reddit data
@@ -166,12 +175,12 @@ else
 fi
 
 # 6. SEO pages (single source of truth)
-SEO_COUNT=$(bash "$WORKSPACE/scripts/seo-count.sh" 2>/dev/null | tr -d ' ' || echo 0)
-SEO_META=$(bash "$WORKSPACE/scripts/seo-count.sh" --json 2>/dev/null || echo '{}')
+SEO_COUNT=$(SITE_DIR="$SITE_REPO" bash "$WORKSPACE/scripts/seo-count.sh" 2>/dev/null | tr -d ' ' || echo 0)
+SEO_META=$(SITE_DIR="$SITE_REPO" bash "$WORKSPACE/scripts/seo-count.sh" --json 2>/dev/null || echo '{}')
 echo "📊 SEO: $SEO_COUNT pages (method=$(echo "$SEO_META" | jq -r '.method // "unknown"'))" >> "$LOG_FILE"
 
 # 6b. HTML SEO basics audit (title/description/canonical/h1)
-HTML_AUDIT_JSON=$(bash "$WORKSPACE/scripts/html-seo-audit.sh" --json 2>/dev/null || true)
+HTML_AUDIT_JSON=$(SITE_DIR="$SITE_REPO" bash "$WORKSPACE/scripts/html-seo-audit.sh" --json 2>/dev/null || true)
 if [ -z "$HTML_AUDIT_JSON" ]; then
     HTML_AUDIT_JSON='{}'
 fi
@@ -194,8 +203,8 @@ else
     HTML_SEO_ISSUE_COUNT="null"
 fi
 
-# 6c. Sitemap audit (sitemap.xml vs local html)
-SITEMAP_AUDIT_JSON=$(bash "$WORKSPACE/scripts/sitemap-audit.sh" --json 2>/dev/null || true)
+# 6c. Sitemap audit (every published URL resolves locally; robots points to it)
+SITEMAP_AUDIT_JSON=$(SITE_DIR="$SITE_REPO" bash "$WORKSPACE/scripts/sitemap-audit.sh" --json 2>/dev/null || true)
 if [ -z "$SITEMAP_AUDIT_JSON" ]; then
     SITEMAP_AUDIT_JSON='{}'
 fi
@@ -229,7 +238,7 @@ else
 fi
 
 # 6d. Internal link audit (ensure no broken internal .html hrefs)
-LINK_AUDIT_JSON=$(python3 "$WORKSPACE/scripts/internal-link-audit.py" --json 2>/dev/null || true)
+LINK_AUDIT_JSON=$(SITE_DIR="$SITE_REPO" python3 "$WORKSPACE/scripts/internal-link-audit.py" --json 2>/dev/null || true)
 if [ -z "$LINK_AUDIT_JSON" ]; then
     LINK_AUDIT_JSON='{}'
 fi
@@ -252,7 +261,7 @@ else
 fi
 
 # 6e. Related-links coverage (ensure every content page has a rule; index.html exempt)
-RL_COVERAGE_JSON=$(python3 "$WORKSPACE/scripts/related-links-suggest.py" --json 2>/dev/null || true)
+RL_COVERAGE_JSON=$(SITE_DIR="$SITE_REPO" python3 "$WORKSPACE/scripts/related-links-suggest.py" --json 2>/dev/null || true)
 if [ -z "$RL_COVERAGE_JSON" ]; then
     RL_COVERAGE_JSON='{}'
 fi
@@ -278,7 +287,7 @@ else
 fi
 
 # 6f. FAQ JSON-LD audit (ensure FAQPage structured data stays synced)
-FAQ_AUDIT_JSON=$(python3 "$WORKSPACE/scripts/faq-jsonld-sync.py" --check --json 2>/dev/null || true)
+FAQ_AUDIT_JSON=$(python3 "$WORKSPACE/scripts/faq-jsonld-sync.py" --root "$SITE_REPO" --check --json 2>/dev/null || true)
 if [ -z "$FAQ_AUDIT_JSON" ]; then
     FAQ_AUDIT_JSON='{}'
 fi
@@ -308,7 +317,7 @@ else
 fi
 
 # 7. Recent commits
-COMMITS_24H=$(git -C "$WORKSPACE" log --since="24 hours ago" --oneline 2>/dev/null | wc -l)
+COMMITS_24H=$(git -C "$SITE_REPO" log --since="24 hours ago" --oneline 2>/dev/null | wc -l)
 echo "📊 Commits (24h): $COMMITS_24H" >> "$LOG_FILE"
 
 # 8. Pipeline blockers detection (SMARTER REDDIT CHECK)
@@ -373,6 +382,7 @@ echo "=== End Health Check ===" >> "$LOG_FILE"
 cat > "$STATUS_FILE" << EOF
 {
   "last_check": "$(date -Iseconds)",
+  "site_repo_path": "$SITE_REPO",
   "site_status": $SITE_CODE,
   "git_today": $(if [ "${GIT_PUSHED_TODAY:-false}" = "true" ] || [ "${GIT_PUSHED_TODAY:-false}" = true ]; then echo true; else echo false; fi),
   "git_sync_ok": $(if [ "${GIT_SYNC_OK:-false}" = "true" ] || [ "${GIT_SYNC_OK:-false}" = true ]; then echo true; else echo false; fi),
@@ -415,124 +425,62 @@ EOF
 SYSTEMS_FILE="$WORKSPACE/data/status/systems.json"
 mkdir -p "$(dirname "$SYSTEMS_FILE")"
 
-# Preserve existing keys; update the ones this check owns.
-if [ -f "$SYSTEMS_FILE" ]; then
-  jq \
-    --arg last_check "$(date -Iseconds)" \
-    --arg reddit "$(echo "$REDDIT_STATUS" | tr '[:upper:]' '[:lower:]')" \
-    --argjson reddit_fresh "$REDDIT_FRESH" \
-    --argjson reddit_age_seconds "$REDDIT_AGE" \
-    --argjson seo_pages "$SEO_COUNT" \
-    --argjson html_seo_audit_ok "$HTML_SEO_AUDIT_OK" \
-    --argjson html_seo_issue_count "$HTML_SEO_ISSUE_COUNT" \
-    --argjson sitemap_audit_ok "$SITEMAP_AUDIT_OK" \
-    --argjson sitemap_missing_count "$SITEMAP_MISSING_COUNT" \
-    --argjson sitemap_extra_count "$SITEMAP_EXTRA_COUNT" \
-    --argjson robots_sitemap_ok "$ROBOTS_SITEMAP_OK" \
-    --argjson internal_link_audit_ok "$INTERNAL_LINK_AUDIT_OK" \
-    --argjson internal_link_broken_count "$INTERNAL_LINK_BROKEN_COUNT" \
-    --argjson related_links_coverage_ok "$RELATED_LINKS_COVERAGE_OK" \
-    --argjson related_links_missing_count "$RELATED_LINKS_MISSING_COUNT" \
-    --argjson related_links_suggested_count "$RELATED_LINKS_SUGGESTED_COUNT" \
-    --argjson faq_jsonld_audit_ok "$FAQ_JSONLD_AUDIT_OK" \
-    --argjson faq_jsonld_changed_count "$FAQ_JSONLD_CHANGED_COUNT" \
-    --argjson faq_jsonld_error_count "$FAQ_JSONLD_ERROR_COUNT" \
-    --argjson karma_total "$KARMA_TOTAL" \
-    --argjson karma_stale "$KARMA_STALE" \
-    '.last_check=$last_check
-     | .reddit=$reddit
-     | .reddit_fresh=$reddit_fresh
-     | .reddit_age_seconds=$reddit_age_seconds
-     | .seo_pages=$seo_pages
-     | .html_seo_audit_ok=$html_seo_audit_ok
-     | .html_seo_issue_count=$html_seo_issue_count
-     | .sitemap_audit_ok=$sitemap_audit_ok
-     | .sitemap_missing_count=$sitemap_missing_count
-     | .sitemap_extra_count=$sitemap_extra_count
-     | .robots_sitemap_ok=$robots_sitemap_ok
-     | .internal_link_audit_ok=$internal_link_audit_ok
-     | .internal_link_broken_count=$internal_link_broken_count
-     | .related_links_coverage_ok=$related_links_coverage_ok
-     | .related_links_missing_count=$related_links_missing_count
-     | .related_links_suggested_count=$related_links_suggested_count
-     | .faq_jsonld_audit_ok=$faq_jsonld_audit_ok
-     | .faq_jsonld_changed_count=$faq_jsonld_changed_count
-     | .faq_jsonld_error_count=$faq_jsonld_error_count
-     | .karma_total=$karma_total
-     | .karma_stale=$karma_stale' \
-    "$SYSTEMS_FILE" > "$SYSTEMS_FILE.tmp" && mv "$SYSTEMS_FILE.tmp" "$SYSTEMS_FILE"
-else
-  jq -n \
-    --arg last_check "$(date -Iseconds)" \
-    --arg reddit "$(echo "$REDDIT_STATUS" | tr '[:upper:]' '[:lower:]')" \
-    --argjson reddit_fresh "$REDDIT_FRESH" \
-    --argjson reddit_age_seconds "$REDDIT_AGE" \
-    --argjson seo_pages "$SEO_COUNT" \
-    --argjson html_seo_audit_ok "$HTML_SEO_AUDIT_OK" \
-    --argjson html_seo_issue_count "$HTML_SEO_ISSUE_COUNT" \
-    --argjson sitemap_audit_ok "$SITEMAP_AUDIT_OK" \
-    --argjson sitemap_missing_count "$SITEMAP_MISSING_COUNT" \
-    --argjson sitemap_extra_count "$SITEMAP_EXTRA_COUNT" \
-    --argjson robots_sitemap_ok "$ROBOTS_SITEMAP_OK" \
-    --argjson internal_link_audit_ok "$INTERNAL_LINK_AUDIT_OK" \
-    --argjson internal_link_broken_count "$INTERNAL_LINK_BROKEN_COUNT" \
-    --argjson related_links_coverage_ok "$RELATED_LINKS_COVERAGE_OK" \
-    --argjson related_links_missing_count "$RELATED_LINKS_MISSING_COUNT" \
-    --argjson related_links_suggested_count "$RELATED_LINKS_SUGGESTED_COUNT" \
-    --argjson faq_jsonld_audit_ok "$FAQ_JSONLD_AUDIT_OK" \
-    --argjson faq_jsonld_changed_count "$FAQ_JSONLD_CHANGED_COUNT" \
-    --argjson faq_jsonld_error_count "$FAQ_JSONLD_ERROR_COUNT" \
-    --argjson karma_total "$KARMA_TOTAL" \
-    --argjson karma_stale "$KARMA_STALE" \
-    '{last_check:$last_check,
-      reddit:$reddit,
-      reddit_fresh:$reddit_fresh,
-      reddit_age_seconds:$reddit_age_seconds,
-      seo_pages:$seo_pages,
-      html_seo_audit_ok:$html_seo_audit_ok,
-      html_seo_issue_count:$html_seo_issue_count,
-      sitemap_audit_ok:$sitemap_audit_ok,
-      sitemap_missing_count:$sitemap_missing_count,
-      sitemap_extra_count:$sitemap_extra_count,
-      robots_sitemap_ok:$robots_sitemap_ok,
-      internal_link_audit_ok:$internal_link_audit_ok,
-      internal_link_broken_count:$internal_link_broken_count,
-      related_links_coverage_ok:$related_links_coverage_ok,
-      related_links_missing_count:$related_links_missing_count,
-      related_links_suggested_count:$related_links_suggested_count,
-      faq_jsonld_audit_ok:$faq_jsonld_audit_ok,
-      faq_jsonld_changed_count:$faq_jsonld_changed_count,
-      faq_jsonld_error_count:$faq_jsonld_error_count,
-      karma_total:$karma_total,
-      karma_stale:$karma_stale}' \
-    > "$SYSTEMS_FILE"
-fi
-
-# Refresh repo-state fields that older status files may already contain.
-# These used to be preserved without being updated, which left stale
-# site_repo_detached/site_repo_dirty values after repo cleanup.
-if git -C "$WORKSPACE" rev-parse --git-dir >/dev/null 2>&1; then
-  SITE_REPO_BRANCH="$(git -C "$WORKSPACE" rev-parse --abbrev-ref HEAD 2>/dev/null || echo UNKNOWN)"
+# Refresh repo-state fields from the deployable repository, not the workspace
+# wrapper repository.
+SITE_REPO_BRANCH="UNKNOWN"
+SITE_REPO_DETACHED=false
+if git -C "$SITE_REPO" rev-parse --git-dir >/dev/null 2>&1; then
+  SITE_REPO_BRANCH="$(git -C "$SITE_REPO" rev-parse --abbrev-ref HEAD 2>/dev/null || echo UNKNOWN)"
   if [ "$SITE_REPO_BRANCH" = "HEAD" ]; then
     SITE_REPO_DETACHED=true
     SITE_REPO_BRANCH="DETACHED"
-  else
-    SITE_REPO_DETACHED=false
   fi
-  SITE_REPO_DIRTY=false
-  if ! git -C "$WORKSPACE" diff --quiet 2>/dev/null; then SITE_REPO_DIRTY=true; fi
-  if ! git -C "$WORKSPACE" diff --cached --quiet 2>/dev/null; then SITE_REPO_DIRTY=true; fi
-  if [ -n "$(git -C "$WORKSPACE" ls-files --others --exclude-standard 2>/dev/null | head -1 || true)" ]; then SITE_REPO_DIRTY=true; fi
-
-  jq \
-    --arg site_repo_branch "$SITE_REPO_BRANCH" \
-    --argjson site_repo_detached "$SITE_REPO_DETACHED" \
-    --argjson site_repo_dirty "$SITE_REPO_DIRTY" \
-    '.site_repo_branch=$site_repo_branch
-     | .site_repo_detached=$site_repo_detached
-     | .site_repo_dirty=$site_repo_dirty' \
-    "$SYSTEMS_FILE" > "$SYSTEMS_FILE.tmp" && mv "$SYSTEMS_FILE.tmp" "$SYSTEMS_FILE"
 fi
+
+# Preserve keys owned by other jobs while replacing every health-owned value
+# from the just-written status document in one atomic update.
+if [ ! -f "$SYSTEMS_FILE" ]; then echo '{}' > "$SYSTEMS_FILE"; fi
+jq \
+  --slurpfile health "$STATUS_FILE" \
+  --arg site_repo_path "$SITE_REPO" \
+  --arg site_repo_branch "$SITE_REPO_BRANCH" \
+  --argjson site_repo_detached "$SITE_REPO_DETACHED" \
+  --argjson site_repo_dirty "$GIT_DIRTY" \
+  '. as $existing | $health[0] as $h
+   | .last_check=$h.last_check
+   | .site_status=$h.site_status
+   | .reddit=($h.reddit_status | ascii_downcase)
+   | .reddit_fresh=$h.reddit_fresh
+   | .reddit_age_seconds=$h.reddit_age_seconds
+   | .karma_total=$h.karma_total
+   | .karma_stale=$h.karma_stale
+   | .seo_pages=$h.seo_pages
+   | .html_seo_audit_ok=$h.html_seo_audit_ok
+   | .html_seo_issue_count=$h.html_seo_issue_count
+   | .sitemap_audit_ok=$h.sitemap_audit_ok
+   | .sitemap_missing_count=$h.sitemap_missing_count
+   | .sitemap_extra_count=$h.sitemap_extra_count
+   | .robots_sitemap_ok=$h.robots_sitemap_ok
+   | .internal_link_audit_ok=$h.internal_link_audit_ok
+   | .internal_link_broken_count=$h.internal_link_broken_count
+   | .related_links_coverage_ok=$h.related_links_coverage_ok
+   | .related_links_missing_count=$h.related_links_missing_count
+   | .related_links_suggested_count=$h.related_links_suggested_count
+   | .faq_jsonld_audit_ok=$h.faq_jsonld_audit_ok
+   | .faq_jsonld_changed_count=$h.faq_jsonld_changed_count
+   | .faq_jsonld_error_count=$h.faq_jsonld_error_count
+   | .site_repo_path=$site_repo_path
+   | .site_repo_branch=$site_repo_branch
+   | .site_repo_detached=$site_repo_detached
+   | .site_repo_dirty=$site_repo_dirty
+   | .site_repo_upstream=$h.git_upstream
+   | .site_repo_upstream_date=$h.git_upstream_date
+   | .site_repo_ahead=$h.git_ahead
+   | .site_repo_behind=$h.git_behind
+   | .site_repo_sync_ok=$h.git_sync_ok
+   | .issues=$h.issues
+   | .blockers=$h.blockers' \
+  "$SYSTEMS_FILE" > "$SYSTEMS_FILE.tmp" && mv "$SYSTEMS_FILE.tmp" "$SYSTEMS_FILE"
 
 # Alert if issues found
 if [ ${#ISSUES[@]} -gt 0 ]; then
