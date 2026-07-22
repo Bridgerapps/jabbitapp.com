@@ -712,29 +712,12 @@
       "file": "glp1-stress-anxiety-hrv-guide.html",
       "links": [
         {
-          "href": "/glp1-injection-tracker.html",
+          "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracker (log doses + reminders)"
         },
         {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        }
-      ]
-    },
-    {
-      "file": "glp1-stress-hrv-guide.html",
-      "links": [
-        {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
-        },
-        {
-          "href": "/glp1-dosing-schedule.html",
-          "text": "GLP-1 dosing schedules (reference for what to log)"
-        },
-        {
-          "href": "/glp1-stress-anxiety-hrv-guide.html",
-          "text": "Stress/HRV on GLP-1 (what to track + patterns)"
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side-effects guide (what to document)"
         }
       ]
     },
@@ -2232,7 +2215,7 @@
           "text": "Peptide dose log (track what changed and when)"
         },
         {
-          "href": "/glp1-stress-hrv-guide.html",
+          "href": "/glp1-stress-anxiety-hrv-guide.html",
           "text": "GLP-1 stress and HRV guide (recovery signals to log)"
         }
       ]
@@ -2641,7 +2624,7 @@
           "text": "Life extension protocol tracker"
         },
         {
-          "href": "/glp1-stress-hrv-guide.html",
+          "href": "/glp1-stress-anxiety-hrv-guide.html",
           "text": "GLP-1 stress and HRV guide"
         }
       ]

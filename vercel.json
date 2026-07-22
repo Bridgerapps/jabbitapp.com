@@ -63,6 +63,16 @@
       "permanent": true
     },
     {
+      "source": "/glp1-stress-hrv-guide.html",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/glp1-stress-hrv-guide",
+      "destination": "/glp1-stress-anxiety-hrv-guide.html",
+      "permanent": true
+    },
+    {
       "source": "/avlayah-denali-hunter-syndrome-fda-accelerated-approval-2026-03.html",
       "destination": "/",
       "permanent": true

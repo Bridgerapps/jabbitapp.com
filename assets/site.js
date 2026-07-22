@@ -33,6 +33,7 @@
   // Analytics
   // ---------
   const APP_STORE_RE = /apps\.apple\.com\/.*\/id6756848719/i;
+  const suppressGlobalCta = document.body && document.body.getAttribute('data-suppress-global-cta') === 'true';
   const recentTrackKeys = new Map();
 
   // ----------------------
@@ -216,7 +217,7 @@
     const weekMs = 7 * 24 * 60 * 60 * 1000;
     const isDismissed = dismissedAt && (Date.now() - dismissedAt) < weekMs;
 
-    if (!isHome && !isLegal && !isDismissed && document && document.body) {
+    if (!suppressGlobalCta && !isHome && !isLegal && !isDismissed && document && document.body) {
       const wrap = document.createElement('div');
       wrap.setAttribute('role', 'region');
       wrap.setAttribute('aria-label', 'Download Jabbit');
@@ -350,7 +351,7 @@
     const weekMs = 7 * 24 * 60 * 60 * 1000;
     const isDismissed = dismissedAt && (Date.now() - dismissedAt) < weekMs;
 
-    const shouldEnable = !isLegal && isSmallScreen && !isDismissed;
+    const shouldEnable = !suppressGlobalCta && !isLegal && isSmallScreen && !isDismissed;
 
     // On content pages: show immediately.
     // On home: wait until the user scrolls a bit so we don't compete with the hero CTA.
