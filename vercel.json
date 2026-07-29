@@ -903,6 +903,16 @@
       "permanent": true
     },
     {
+      "source": "/peptide-routine-drift-log.html",
+      "destination": "/multi-compound-peptide-protocol-tracking.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-routine-drift-log",
+      "destination": "/multi-compound-peptide-protocol-tracking.html",
+      "permanent": true
+    },
+    {
       "source": "/peptide-side-effect-log.html",
       "destination": "/peptides/",
       "permanent": true

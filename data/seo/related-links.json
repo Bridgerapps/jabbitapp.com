@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-06-05T20:58:03Z",
+  "updated": "2026-07-29T00:00:00Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -1748,19 +1748,19 @@
       ]
     },
     {
-      "file": "peptide-routine-drift-log.html",
+      "file": "multi-compound-peptide-protocol-tracking.html",
       "links": [
         {
-          "href": "/glp1-injection-tracker.html",
-          "text": "GLP-1 injection tracker (log doses + reminders)"
+          "href": "/peptide-protocol-history-prescriber.html",
+          "text": "Build a medication and peptide protocol history for your prescriber"
         },
         {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
+          "href": "/glp1-bloodwork-monitoring-guide.html",
+          "text": "GLP-1 bloodwork monitoring guide"
         },
         {
-          "href": "/peptide-storage-stability-guide.html",
-          "text": "Peptide storage & stability guide (what matters)"
+          "href": "/peptides/",
+          "text": "Explore peptide tracking"
         }
       ]
     },
