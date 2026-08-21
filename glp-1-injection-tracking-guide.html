@@ -1,409 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How to Track Your GLP-1 Injections: What to Log, a Simple Template, and Site Rotation | Jabbit</title>
-  <meta name="description" content="A practical, non-medical guide to tracking GLP-1 injections: what to log every week, a simple timeline template, injection-site rotation, and how to keep a disrupted week readable. Educational only." />
-  <meta name="keywords" content="GLP-1 injection tracking, GLP-1 injection log, how to track semaglutide, tirzepatide injection log, GLP-1 injection template, injection site rotation" />
-  <link rel="canonical" href="https://www.jabbitapp.com/glp-1-injection-tracking-guide.html" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Keep an Accurate GLP-1 Injection Record | Jabbit</title>
+  <meta name="description" content="Build a GLP-1 injection record that stays accurate through normal and disrupted weeks and is useful at a prescriber visit.">
+  <link rel="canonical" href="https://jabbitapp.com/glp-1-injection-tracking-guide.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Keep an Accurate GLP-1 Injection Record">
+  <meta property="og:description" content="A source-checked, copy-ready system for a current medication snapshot, dated injection timeline, and prescriber question queue.">
+  <meta property="og:url" content="https://jabbitapp.com/glp-1-injection-tracking-guide.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="/assets/site.js"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: {
+      50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4',
+      400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e',
+      800: '#115e59', 900: '#134e4a'
+    }}}}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#edf7f5;
-      --card:#ffffff;
-      --ink:#0f172a;
-      --muted:#475569;
-      --line:#d6e4e0;
-      --brand:#0f766e;
-      --brand-dark:#115e59;
-      --brand-soft:#e4f7f3;
-      --hero-a:#0f172a;
-      --hero-b:#134e4a;
-      --hero-c:#0f766e;
-      --accent:#f59e0b;
-      --accent-bg:#fff7ed;
-      --info:#eff6ff;
-      --info-line:#2563eb;
-      --shadow:0 16px 38px rgba(2,6,23,.08);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
-      color:var(--ink);
-      line-height:1.65;
-      background:
-        radial-gradient(circle at top right, rgba(20,184,166,.12), transparent 26%),
-        linear-gradient(180deg,#eaf7f5 0%,var(--bg) 260px);
-    }
-    a{color:var(--brand-dark);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1120px;margin:0 auto;padding:24px}
-    .hero{
-      position:relative;
-      overflow:hidden;
-      border-radius:30px;
-      padding:36px;
-      color:#fff;
-      background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 58%,var(--hero-c) 100%);
-      box-shadow:var(--shadow);
-    }
-    .hero::after{
-      content:"";
-      position:absolute;
-      right:-90px;
-      bottom:-120px;
-      width:320px;
-      height:320px;
-      border-radius:50%;
-      background:radial-gradient(circle, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 72%);
-    }
-    .eyebrow{
-      display:inline-block;
-      margin-bottom:12px;
-      padding:6px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.22);
-      background:rgba(255,255,255,.08);
-      text-transform:uppercase;
-      letter-spacing:.06em;
-      font-size:.78rem;
-      font-weight:800;
-    }
-    h1{margin:0 0 12px;font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.03}
-    h2{margin:0 0 12px;font-size:1.42rem;line-height:1.2}
-    h3{margin:0 0 8px;font-size:1.05rem;line-height:1.24}
-    p{margin:0 0 14px}
-    .heroIntro{max-width:780px;color:rgba(255,255,255,.92);font-size:1.06rem}
-    .ctaRow{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-height:46px;
-      padding:12px 16px;
-      border-radius:14px;
-      font-weight:800;
-      border:1px solid transparent;
-    }
-    .btnPrimary{background:#fff;color:#0f172a}
-    .btnPrimary:hover{text-decoration:none;filter:brightness(.98)}
-    .btnGhost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.26)}
-    .btnGhost:hover{background:rgba(255,255,255,.14);text-decoration:none}
-    .heroGrid,.routeGrid,.miniGrid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:14px;
-      margin-top:20px;
-    }
-    .heroGrid div,.routeCard,.miniCard{
-      border-radius:18px;
-      padding:16px;
-    }
-    .heroGrid div{
-      background:rgba(255,255,255,.09);
-      border:1px solid rgba(255,255,255,.15);
-    }
-    .heroGrid strong,.heroGrid span,.routeCard strong,.routeCard span,.miniCard strong,.miniCard span{
-      display:block;
-    }
-    .heroGrid span{font-size:.93rem;color:rgba(255,255,255,.84)}
-    .layout{
-      display:grid;
-      grid-template-columns:minmax(0,1.8fr) minmax(300px,.92fr);
-      gap:22px;
-      align-items:start;
-      margin-top:24px;
-    }
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:24px;
-      padding:24px;
-      box-shadow:var(--shadow);
-    }
-    .note,.warning,.info,.ctaPanel{
-      margin:16px 0;
-      padding:16px;
-      border-radius:16px;
-    }
-    .note{background:var(--brand-soft);border-left:4px solid var(--brand)}
-    .warning{background:var(--accent-bg);border-left:4px solid var(--accent)}
-    .info{background:var(--info);border-left:4px solid var(--info-line)}
-    .ctaPanel{
-      background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
-      color:#fff;
-    }
-    .ctaPanel p{color:rgba(255,255,255,.92)}
-    ul{margin:0 0 14px;padding-left:20px}
-    li{margin:7px 0}
-    .routeCard,.miniCard{
-      display:block;
-      color:inherit;
-      border:1px solid var(--line);
-      background:linear-gradient(180deg,#fff 0%,#f8fbfb 100%);
-    }
-    .routeCard:hover,.miniCard:hover{
-      text-decoration:none;
-      border-color:#bfd1cd;
-      box-shadow:0 10px 24px rgba(2,6,23,.06);
-    }
-    .routeCard span,.miniCard span{margin-top:4px;color:var(--muted);font-size:.95rem}
-    table{
-      width:100%;
-      border-collapse:collapse;
-      margin:12px 0 18px;
-      border:1px solid var(--line);
-      border-radius:14px;
-      overflow:hidden;
-      background:#fff;
-    }
-    th,td{
-      padding:11px 12px;
-      border-bottom:1px solid var(--line);
-      text-align:left;
-      vertical-align:top;
-    }
-    th{background:#eef5f4}
-    tr:last-child td{border-bottom:none}
-    .toc{
-      border:1px solid var(--line);
-      border-radius:18px;
-      background:#f8fcfb;
-      padding:18px;
-      margin-bottom:18px;
-    }
-    .toc ul{margin-bottom:0}
-    .small{font-size:.93rem}
-    .muted{color:var(--muted)}
-    footer{margin-top:24px;color:var(--muted);font-size:.95rem}
-    #related-links{
-      max-width:1120px;
-      margin:0 auto;
-      padding:0 24px 42px;
-    }
-    #related-links ul{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:18px;
-      box-shadow:var(--shadow);
-      padding:20px 20px 20px 38px;
-    }
-    @media (max-width:920px){.layout{grid-template-columns:1fr}}
-    @media (max-width:560px){
-      .wrap{padding:16px}
-      .hero,.card{padding:20px}
-      .btn{width:100%}
-      th,td{padding:9px}
-      #related-links{padding:0 16px 34px}
-    }
+    body { font-family: 'Inter', sans-serif; }
+    .source-link { color: #0f766e; font-weight: 700; text-decoration: none; }
+    .source-link:hover { text-decoration: underline; }
   </style>
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"How to Track Your GLP-1 Injections: What to Log, a Simple Template, and Site Rotation | Jabbit",
-    "url":"https://www.jabbitapp.com/glp-1-injection-tracking-guide.html",
-    "description":"A practical, non-medical guide to tracking GLP-1 injections: what to log every week, a simple timeline template, injection-site rotation, and how to keep a disrupted week readable.",
-    "isPartOf":{"@type":"WebSite","name":"Jabbit","url":"https://www.jabbitapp.com/"},
-    "publisher":{"@type":"Organization","name":"Bridger Apps"}
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "How to Keep an Accurate GLP-1 Injection Record",
+    "description": "A source-checked guide to organizing a current medication snapshot, dated injection timeline, and prescriber question queue through normal and disrupted weeks.",
+    "url": "https://jabbitapp.com/glp-1-injection-tracking-guide.html",
+    "isPartOf": { "@type": "WebSite", "name": "Jabbit", "url": "https://jabbitapp.com" },
+    "publisher": { "@type": "Organization", "name": "Jabbit" },
+    "dateModified": "2026-08-21"
   }
   </script>
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        "@type":"Question",
-        "name":"What should a GLP-1 injection log include?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"The useful minimum is the injection date and time, medication, dose as prescribed, site, symptoms with their timing, and a short context note for sleep, meals, stress, travel, illness, or routine changes."
-        }
+        "@type": "Question",
+        "name": "What should a GLP-1 injection record include?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Use two layers: a current medication snapshot and a dated event timeline. The snapshot identifies the exact product, strength, clinician-directed instructions, reason for use, status, and other medicines or supplements. The timeline records the scheduled date, actual date and time, exact product, dose copied as written, injection site, completion status, factual note, and prescriber questions." }
       },
       {
-        "@type":"Question",
-        "name":"Do I need to track every symptom?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"No. Log the symptoms and context that help you interpret timing later. A shorter, consistent log you actually keep is more useful than an exhaustive one you abandon."
-        }
+        "@type": "Question",
+        "name": "What should I write after a delayed or missed injection?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Record what happened without deciding the next step: keep the scheduled date, add the actual date and time if an injection occurred, select delayed, missed, or uncertain, and add a factual note. Use the current label for the exact product and the prescriber for decisions about what should happen next." }
       },
       {
-        "@type":"Question",
-        "name":"Does this page give dosing advice?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"No. This page is educational and focused on tracking. It does not provide dosing instructions, titration schedules, or treatment recommendations, which belong with your prescriber and the medication label."
-        }
+        "@type": "Question",
+        "name": "Why should the record name the exact GLP-1 product?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Wegovy and Zepbound have product-specific missed-dose sections in their current labels. A generic GLP-1 entry does not identify which label applies, so preserve the exact product name without using the record itself to make a dosing decision." }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I am not sure whether an injection happened?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Do not backfill a guess as fact. Mark the entry uncertain, note the available evidence source such as a box or pen label, pharmacy record, or after-visit summary, and keep the discrepancy visible for prescriber or pharmacist reconciliation." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can an injection log prove that a medicine caused a symptom or lab result?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. A timestamped record preserves sequence and context, but it does not prove causation or interpret symptoms or laboratory results." }
       }
     ]
   }
   </script>
-  <script defer src="/assets/site.js"></script>
 </head>
-<body>
-  <main class="wrap">
-    <section class="hero">
-      <span class="eyebrow">GLP-1 tracking guide</span>
-      <h1>How to track your GLP-1 injections</h1>
-      <p class="heroIntro">A good GLP-1 log is more than a shot-day reminder. It is a clean timeline of dose timing, injection site, symptoms, and the context that makes a rough week readable later. Here is what to track, a simple template, and how the app does it for you.</p>
-      <div class="ctaRow">
-        <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_tracking_guide_cta_app_store" target="_blank" rel="noopener noreferrer">Download Jabbit on the App Store</a>
-        <a class="btn btnGhost" href="/peptides/">Explore the peptide hub</a>
+<body class="bg-white text-slate-900 antialiased">
+  <nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md" aria-label="Main navigation">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+      <a href="/" class="flex items-center gap-3" aria-label="Jabbit home">
+        <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-500 shadow-sm" aria-hidden="true"><svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+        <span class="text-xl font-extrabold tracking-tight">Jabbit</span>
+      </a>
+      <a href="/guides/" class="text-sm font-semibold text-slate-600 transition hover:text-brand-700">Guides</a>
+    </div>
+  </nav>
+
+  <header class="overflow-hidden border-b border-brand-100 bg-gradient-to-br from-brand-50 via-white to-slate-50">
+    <div class="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-24">
+      <div class="max-w-4xl">
+        <p class="mb-5 inline-flex rounded-full border border-brand-200 bg-white px-3 py-1 text-sm font-semibold text-brand-800">Source checked August 21, 2026</p>
+        <h1 class="text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">Keep a GLP-1 injection record that survives real life</h1>
+        <p class="mt-7 text-xl leading-8 text-slate-700"><strong class="text-slate-950">Use two connected layers:</strong> a current medication snapshot for what the plan says now, plus a dated event timeline for what actually happened. Add unresolved questions instead of silently repairing gaps. The result stays readable through normal and disrupted weeks and is easier to hand to a prescriber.</p>
+        <p class="mt-5 max-w-3xl text-sm leading-6 text-slate-500">This two-layer format is an organizational template, not a clinical standard. It records facts; it does not choose doses, timing, sites, or next steps.</p>
       </div>
-      <div class="heroGrid">
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-5xl px-5 py-12 sm:px-8 sm:py-16">
+    <article>
+      <nav class="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-5" aria-label="On this page">
+        <p class="font-bold text-slate-950">On this page</p>
+        <div class="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-brand-700">
+          <a href="#two-layers" class="hover:underline">The two layers</a>
+          <a href="#template" class="hover:underline">Copy-ready template</a>
+          <a href="#disrupted" class="hover:underline">Normal vs disrupted week</a>
+          <a href="#handoff" class="hover:underline">Prescriber handoff</a>
+          <a href="#faq" class="hover:underline">FAQ</a>
+        </div>
+      </nav>
+
+      <section aria-labelledby="two-layers">
+        <h2 id="two-layers" class="text-3xl font-bold tracking-tight">The two-layer record</h2>
+        <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-700">A snapshot answers “what is current?” A timeline answers “what happened when?” Keeping those questions separate prevents an old event row from masquerading as the current plan and prevents a changed snapshot from erasing history.</p>
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <section class="rounded-3xl border border-brand-200 bg-brand-50 p-7 sm:p-8" aria-labelledby="snapshot-heading">
+            <p class="text-sm font-bold uppercase tracking-widest text-brand-800">Layer A · current state</p>
+            <h3 id="snapshot-heading" class="mt-3 text-2xl font-bold">Current medication snapshot</h3>
+            <p class="mt-4 leading-7 text-slate-700">FDA guidance supports keeping a medication list, updating it when a prescription, dose, or status changes, and using either an app or a physical copy. It says the list should cover prescriptions, over-the-counter medicines, vitamins, and supplements and include the medicine name, strength, reason, and when, how, and how much instructions. <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[1]</a></p>
+            <ul class="mt-5 space-y-3 leading-7 text-slate-800">
+              <li>Exact product or medicine name</li>
+              <li>Strength copied exactly</li>
+              <li>Clinician-directed instructions copied exactly</li>
+              <li>Why it is used</li>
+              <li>Current, paused, or stopped status, with the date</li>
+              <li>Other prescription, OTC, vitamin, and supplement items</li>
+            </ul>
+            <p class="mt-6 rounded-xl bg-white p-4 font-semibold text-brand-950">Update the snapshot when a verified prescription, dose, or status change occurs; preserve the older state in the dated timeline. <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[1]</a></p>
+          </section>
+
+          <section class="rounded-3xl border border-slate-200 p-7 sm:p-8" aria-labelledby="timeline-heading">
+            <p class="text-sm font-bold uppercase tracking-widest text-slate-500">Layer B · event history</p>
+            <h3 id="timeline-heading" class="mt-3 text-2xl font-bold">Dated injection timeline</h3>
+            <p class="mt-4 leading-7 text-slate-700">Use one row for each scheduled event. This is a practical recordkeeping suggestion, not a required medical practice.</p>
+            <ul class="mt-5 space-y-3 leading-7 text-slate-800">
+              <li>Scheduled date</li>
+              <li>Actual date and time</li>
+              <li>Exact product</li>
+              <li>Clinician-directed dose copied as written</li>
+              <li>Injection site</li>
+              <li>Status: completed, delayed, missed, or uncertain</li>
+              <li>Factual note</li>
+              <li>Questions for the prescriber</li>
+            </ul>
+            <p class="mt-6 rounded-xl bg-slate-50 p-4 font-semibold text-slate-800">The timeline records what happened. It does not decide what should happen next.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="mt-14" aria-labelledby="template">
+        <h2 id="template" class="text-3xl font-bold tracking-tight">Copy-ready injection record</h2>
+        <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-700">Copy these two tables into a document, spreadsheet, or notes app. Use the exact wording from the available label or record. A blank, uncertain, or unresolved field is more honest than a reconstructed fact.</p>
+
+        <div class="mt-8 overflow-x-auto rounded-2xl border border-brand-200">
+          <table class="w-full min-w-[52rem] text-left">
+            <caption class="bg-brand-50 px-5 py-4 text-left text-xl font-bold text-brand-950">A. Current snapshot</caption>
+            <thead class="bg-brand-900 text-white"><tr><th scope="col" class="px-4 py-3">Exact product</th><th scope="col" class="px-4 py-3">Strength</th><th scope="col" class="px-4 py-3">Instructions as written</th><th scope="col" class="px-4 py-3">Why used</th><th scope="col" class="px-4 py-3">Status + date</th><th scope="col" class="px-4 py-3">Source checked</th></tr></thead>
+            <tbody><tr class="text-sm text-slate-500"><td class="h-24 border-r border-slate-200 px-4 py-4 align-top">[Product name]</td><td class="border-r border-slate-200 px-4 py-4 align-top">[Copy exactly]</td><td class="border-r border-slate-200 px-4 py-4 align-top">[Copy exactly]</td><td class="border-r border-slate-200 px-4 py-4 align-top">[Reason]</td><td class="border-r border-slate-200 px-4 py-4 align-top">[Current / paused / stopped] · [date]</td><td class="px-4 py-4 align-top">[Label or record] · [date checked]</td></tr></tbody>
+          </table>
+        </div>
+        <p class="mt-3 text-sm leading-6 text-slate-600">Add separate snapshot rows for every other prescription, OTC medicine, vitamin, and supplement. <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[1]</a></p>
+
+        <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200">
+          <table class="w-full min-w-[72rem] text-left">
+            <caption class="bg-slate-100 px-5 py-4 text-left text-xl font-bold text-slate-950">B. Dated event row</caption>
+            <thead class="bg-slate-900 text-white"><tr><th scope="col" class="px-3 py-3">Scheduled date</th><th scope="col" class="px-3 py-3">Actual date + time</th><th scope="col" class="px-3 py-3">Exact product</th><th scope="col" class="px-3 py-3">Dose as written</th><th scope="col" class="px-3 py-3">Site</th><th scope="col" class="px-3 py-3">Status</th><th scope="col" class="px-3 py-3">Factual note</th><th scope="col" class="px-3 py-3">Prescriber question</th></tr></thead>
+            <tbody><tr class="text-sm text-slate-500"><td class="h-24 border-r border-slate-200 px-3 py-4 align-top">[Date]</td><td class="border-r border-slate-200 px-3 py-4 align-top">[Date + time / blank]</td><td class="border-r border-slate-200 px-3 py-4 align-top">[Product name]</td><td class="border-r border-slate-200 px-3 py-4 align-top">[Copy exactly]</td><td class="border-r border-slate-200 px-3 py-4 align-top">[Recorded site / blank]</td><td class="border-r border-slate-200 px-3 py-4 align-top">[Completed / delayed / missed / uncertain]</td><td class="border-r border-slate-200 px-3 py-4 align-top">[What happened; evidence source if uncertain]</td><td class="px-3 py-4 align-top">[Unresolved question]</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mt-14" aria-labelledby="identity">
+        <h2 id="identity" class="text-3xl font-bold tracking-tight">Exact product identity is part of the safety boundary</h2>
+        <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-700">The current Wegovy and Zepbound labels each contain product-specific missed-dose instructions. A record that only says “GLP-1” is therefore not enough to identify which label applies. <a class="source-link" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[2]</a> <a class="source-link" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[3]</a></p>
+        <div class="mt-7 rounded-2xl border border-amber-200 bg-amber-50 p-6 text-amber-950">
+          <p class="font-bold">The record stops at identification.</p>
+          <p class="mt-2 leading-7">After a delayed or missed dose, use the current label for the exact product and the prescriber for decisions about what should happen next. This guide does not reproduce, summarize, or calculate missed-dose instructions.</p>
+        </div>
+      </section>
+
+      <section class="mt-14 grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem]" aria-labelledby="rotation">
         <div>
-          <strong>Dose-day anchor</strong>
-          <span>Start with the exact time, medication, site, and dose as prescribed so the rest of the week has a real reference point.</span>
+          <h2 id="rotation" class="text-3xl font-bold tracking-tight">Preserve injection-site history</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-700">Both the current Wegovy and Zepbound labels say to rotate injection sites with each dose. <a class="source-link" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[2]</a> <a class="source-link" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[3]</a> Recording the site preserves the history so it can be reviewed later.</p>
+          <p class="mt-4 leading-7 text-slate-700">A site record does not select a site, judge whether a site was appropriate, or replace the product and device instructions.</p>
         </div>
-        <div>
-          <strong>Pattern review</strong>
-          <span>Attach symptoms, appetite, sleep, and stress to the same week instead of scattering them across notes.</span>
-        </div>
-        <div>
-          <strong>Context that explains</strong>
-          <span>Travel, illness, and routine drift often explain a hard week better than the injection itself.</span>
-        </div>
-      </div>
-      <p class="small" style="margin-top:14px;color:rgba(255,255,255,.84);">Educational only. This page is for logging and self-observation, not dosing or treatment decisions.</p>
-    </section>
+        <aside class="rounded-2xl border border-brand-200 bg-brand-50 p-6 lg:self-start">
+          <p class="text-sm font-bold uppercase tracking-widest text-brand-800">Record, don’t infer</p>
+          <p class="mt-3 font-semibold leading-7 text-brand-950">Write the site that was actually used. If it was not recorded, leave it blank or mark it uncertain rather than filling it from habit.</p>
+        </aside>
+      </section>
 
-    <section class="layout">
-      <article class="card">
-        <nav class="toc" aria-label="Table of contents">
-          <strong>On this page</strong>
-          <ul>
-            <li><a href="#what-to-track">What to log every injection</a></li>
-            <li><a href="#template">A simple GLP-1 log template</a></li>
-            <li><a href="#rotation">Injection-site rotation</a></li>
-            <li><a href="#timing">Timing, missed, and late doses</a></li>
-            <li><a href="#app">Why the app beats a notes file</a></li>
-          </ul>
-        </nav>
-
-        <h2 id="what-to-track">What to log every injection</h2>
-        <p class="muted">Most people do not want a journal. They want a repeatable way to answer four questions: what did I take, when did I take it, what changed after, and was this a normal week or a disrupted one.</p>
-
-        <div class="info">
-          <strong>High-signal rule:</strong> the best log is usually shorter than people think. Timestamp, medication, site, dose as prescribed, and one factual note often beats a long diary you will never reread.
-        </div>
-
-        <ul>
-          <li><strong>Injection anchor:</strong> date, time, medication, and site.</li>
-          <li><strong>Dose as prescribed:</strong> record the dose your prescriber set, so the entry is identifiable later without turning the log into dosing advice.</li>
-          <li><strong>Symptom timing:</strong> nausea, constipation, fatigue, appetite change, sleep change, or any effect you want to compare against the clock.</li>
-          <li><strong>Routine context:</strong> travel, unusual meals, poor sleep, illness, training, alcohol, or major schedule drift.</li>
-          <li><strong>Missed-dose context:</strong> whether the week was late, skipped, restarted, or otherwise off the normal routine.</li>
-        </ul>
-
-        <div class="warning">
-          <strong>Boundary:</strong> this is tracking guidance only. It does not tell you what dose to take, when to increase, or how to switch medications. Those decisions belong with your prescriber.
-        </div>
-
-        <h2 id="template">A simple GLP-1 log template</h2>
-        <p class="muted">You do not need a perfect journal. You need a log you can actually keep for more than one week.</p>
-
-        <table aria-label="GLP-1 injection tracking template">
-          <thead>
-            <tr>
-              <th>Field</th>
-              <th>Why it matters</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Injection date and time</td>
-              <td>Gives the week a clean anchor so symptoms can be compared against a real timestamp.</td>
-            </tr>
-            <tr>
-              <td>Medication and dose as prescribed</td>
-              <td>Keeps the entry identifiable later without turning the log into dosing advice.</td>
-            </tr>
-            <tr>
-              <td>Site</td>
-              <td>Useful for rotation history and for explaining local irritation or consistency changes.</td>
-            </tr>
-            <tr>
-              <td>Symptoms with timing</td>
-              <td>Helps you compare what appeared first, what lasted, and whether the same pattern repeated.</td>
-            </tr>
-            <tr>
-              <td>Missed-dose or schedule note</td>
-              <td>Separates a normal week from a disrupted week so later review is less confusing.</td>
-            </tr>
-            <tr>
-              <td>Context note</td>
-              <td>Sleep, meals, illness, stress, and travel often explain more than people expect.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2 id="rotation">Injection-site rotation</h2>
-        <p>Rotating where you inject is one of the few tracking details with a direct physical payoff: logging the site alongside the dose helps you avoid repeatedly using the same spot. Two companion guides go deeper on the why and the how:</p>
-        <div class="routeGrid">
-          <a class="routeCard" href="/injection-site-rotation-science.html">
-            <strong>Injection site rotation science</strong>
-            <span>What the evidence says about rotating sites and why it matters.</span>
-          </a>
-          <a class="routeCard" href="/peptide-site-rotation-guide.html">
-            <strong>Site rotation, step by step</strong>
-            <span>A practical rotation pattern you can keep in your log.</span>
-          </a>
-        </div>
-
-        <h2 id="timing">Timing, missed, and late doses</h2>
-        <p>Most GLP-1 medications in this family are taken on a fixed weekly cadence, though the specifics depend on your medication and prescriber. The job of a log is not to decide what to do about a missed or late dose &mdash; that is what the medication label and your prescriber are for &mdash; but to capture <em>what actually happened</em> so a disrupted week is not misread as a normal one later.</p>
-        <div class="note">
-          <strong>Practical filter:</strong> if you find yourself writing the same context note every week, that is a signal worth showing your prescriber. Consistent patterns are exactly what a good log is meant to surface.
-        </div>
-
-        <h2 id="app">Why the app beats a notes file</h2>
-        <p>A notes file drifts: it loses timestamps, mixes weeks, and never reminds you. Jabbit is built for the tracking job a plain reminder app cannot do &mdash; reminders plus history, sites, side-effect notes, and context in one private timeline.</p>
-
-        <div class="ctaPanel">
-          <h2 style="margin-bottom:10px;">The app version of this checklist</h2>
-          <p>Jabbit is an iPhone tracker for private timelines: injection history, reminders, side-effect notes, missed-dose context, and site rotation in one place.</p>
-          <div class="ctaRow" style="margin-top:14px;">
-            <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_tracking_guide_body_app_store" target="_blank" rel="noopener noreferrer">Get Jabbit on the App Store</a>
-            <a class="btn btnGhost" href="/glp-1-side-effects-guide.html">Read the side-effects guide</a>
+      <section class="mt-14" aria-labelledby="disrupted">
+        <h2 id="disrupted" class="text-3xl font-bold tracking-tight">Normal week vs disrupted week</h2>
+        <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-700">The same row structure works in both cases. The difference is that a disrupted week preserves the gap and the question instead of rewriting the schedule after the fact.</p>
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <div class="rounded-2xl border border-brand-200 p-6">
+            <p class="text-sm font-bold uppercase tracking-widest text-brand-800">Normal week · example</p>
+            <dl class="mt-5 grid grid-cols-[9rem_1fr] gap-x-4 gap-y-3 text-sm leading-6">
+              <dt class="font-bold">Scheduled</dt><dd>[Scheduled date]</dd>
+              <dt class="font-bold">Actual</dt><dd>[Same date] · [time]</dd>
+              <dt class="font-bold">Product</dt><dd>[Exact product]</dd>
+              <dt class="font-bold">Dose</dt><dd>[Clinician-directed dose copied as written]</dd>
+              <dt class="font-bold">Site</dt><dd>[Recorded site]</dd>
+              <dt class="font-bold">Status</dt><dd>Completed</dd>
+              <dt class="font-bold">Note</dt><dd>[Brief factual note]</dd>
+              <dt class="font-bold">Question</dt><dd>[None / question]</dd>
+            </dl>
+          </div>
+          <div class="rounded-2xl border border-amber-200 bg-amber-50 p-6">
+            <p class="text-sm font-bold uppercase tracking-widest text-amber-800">Disrupted week · example</p>
+            <dl class="mt-5 grid grid-cols-[9rem_1fr] gap-x-4 gap-y-3 text-sm leading-6 text-amber-950">
+              <dt class="font-bold">Scheduled</dt><dd>[Scheduled date remains unchanged]</dd>
+              <dt class="font-bold">Actual</dt><dd>[Actual date + time / blank]</dd>
+              <dt class="font-bold">Product</dt><dd>[Exact product]</dd>
+              <dt class="font-bold">Dose</dt><dd>[Clinician-directed dose copied as written]</dd>
+              <dt class="font-bold">Site</dt><dd>[Recorded site / blank]</dd>
+              <dt class="font-bold">Status</dt><dd>[Delayed / missed / uncertain]</dd>
+              <dt class="font-bold">Note</dt><dd>[What happened; evidence source if uncertain]</dd>
+              <dt class="font-bold">Question</dt><dd>[What needs prescriber or pharmacist reconciliation?]</dd>
+            </dl>
           </div>
         </div>
+        <p class="mt-5 rounded-xl bg-slate-100 p-5 font-semibold leading-7 text-slate-800">Do not backfill memory as fact. If the event is unclear, mark it uncertain and note which evidence is available—for example, the box or pen label, pharmacy record, or after-visit summary—so the prescriber or pharmacist can reconcile it. This is organizational advice, not a clinical determination.</p>
+      </section>
 
-        <h2>FAQ</h2>
-        <p><strong>Do I need to log every symptom?</strong><br />No. Log the symptoms and context that help you interpret timing later. A shorter, consistent log is usually more useful than an exhaustive one you abandon.</p>
-        <p><strong>What if I track non-GLP-1 peptides too?</strong><br />The same timestamp-and-context logic works across compounds. The <a href="/peptides/">peptide hub</a> covers the other classes if your routine is broader than one medication.</p>
-        <p><strong>Does this page give dosing advice?</strong><br />No. It is educational and focused on tracking. Dosing, titration, and switching decisions belong with your prescriber and the medication label.</p>
-      </article>
-
-      <aside class="card">
-        <h2>Quick logging rule</h2>
-        <p class="muted">Anchor every entry to the injection timestamp first. Everything else &mdash; symptoms, sites, context &mdash; hangs off that one reliable reference point.</p>
-
-        <h2>App fit</h2>
-        <p class="muted">Jabbit fits the tracking jobs where a simple reminder is not enough: reminders plus history, notes, side effects, and site rotation in one private timeline.</p>
-
-        <div class="ctaPanel">
-          <h3 style="margin-bottom:10px;">Use the app</h3>
-          <p>Track injections, reminders, notes, and side-effect timing without turning your phone into five separate logs.</p>
-          <a class="btn btnPrimary" href="https://apps.apple.com/app/id6756848719" data-track="glp1_tracking_guide_aside_app_store" target="_blank" rel="noopener noreferrer" style="margin-top:10px;width:100%">Download on the App Store</a>
+      <section id="handoff" class="mt-14 rounded-3xl border border-slate-200 bg-slate-50 p-7 sm:p-9" aria-labelledby="handoff-heading">
+        <h2 id="handoff-heading" class="text-3xl font-bold tracking-tight">Turn the record into a prescriber handoff</h2>
+        <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-700">Bring one current snapshot, the dated timeline, and a short queue of unresolved questions. The snapshot shows the present state; the timeline preserves normal and disrupted weeks; the queue keeps uncertainty visible.</p>
+        <div class="mt-7 grid gap-4 sm:grid-cols-3">
+          <div class="rounded-xl bg-white p-5"><p class="font-bold text-brand-800">Current snapshot</p><p class="mt-2 text-sm leading-6 text-slate-600">Exact names, strengths, copied instructions, reasons, statuses, and the rest of the medication list.</p></div>
+          <div class="rounded-xl bg-white p-5"><p class="font-bold text-brand-800">Dated timeline</p><p class="mt-2 text-sm leading-6 text-slate-600">Scheduled and actual events, recorded sites, factual notes, and explicit uncertainty.</p></div>
+          <div class="rounded-xl bg-white p-5"><p class="font-bold text-brand-800">Question queue</p><p class="mt-2 text-sm leading-6 text-slate-600">Conflicts, gaps, and next-step questions left unresolved for the visit.</p></div>
         </div>
-      </aside>
-    </section>
+        <p class="mt-6 text-sm leading-6 text-slate-600">For a broader handoff that includes other medicines and protocol changes, use the <a class="source-link" href="/peptide-protocol-history-prescriber.html">medication and protocol history guide</a>.</p>
+      </section>
 
-    <footer>
-      <p>This guide is informational only and focuses on logging, routines, reminders, and pattern review. It does not provide medical advice, diagnosis, or treatment guidance.</p>
-    </footer>
+      <section class="mt-14 rounded-2xl border border-rose-200 bg-rose-50 p-7" aria-labelledby="boundary">
+        <h2 id="boundary" class="text-3xl font-bold tracking-tight text-rose-950">What tracking cannot establish</h2>
+        <p class="mt-5 max-w-4xl text-lg leading-8 text-rose-950">A timestamped record can preserve sequence, but it cannot prove that a medicine caused a symptom or laboratory result. It also cannot interpret symptoms, measurements, or labs. Keep observations factual and take interpretation questions to the prescriber.</p>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold">
+          <a href="/glp1-bloodwork-monitoring-guide.html" class="rounded-xl bg-white px-4 py-3 text-rose-950 transition hover:ring-2 hover:ring-rose-200">Organizing GLP-1 bloodwork</a>
+          <a href="/glp1-stress-anxiety-hrv-guide.html" class="rounded-xl bg-white px-4 py-3 text-rose-950 transition hover:ring-2 hover:ring-rose-200">Tracking stress, anxiety, and HRV</a>
+        </div>
+      </section>
+
+      <section class="mt-14 rounded-3xl bg-slate-950 p-7 text-white sm:p-9" aria-labelledby="jabbit-heading">
+        <p class="text-sm font-bold uppercase tracking-widest text-brand-300">Keep the record together</p>
+        <h2 id="jabbit-heading" class="mt-3 text-3xl font-bold tracking-tight">A single place for the plan and history</h2>
+        <p class="mt-4 max-w-3xl text-lg leading-8 text-slate-300">Jabbit can keep injection scheduling and reminders, 14-zone site rotation, and protocol history together. It does not choose doses, interpret symptoms, or replace prescriber advice.</p>
+        <a href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer" data-track="glp1_injection_guide_app_store" class="mt-7 inline-flex items-center rounded-xl bg-brand-400 px-6 py-3 font-bold text-slate-950 transition hover:bg-brand-300">Track your clinician-directed plan in Jabbit.</a>
+      </section>
+
+      <section class="mt-14" aria-labelledby="faq">
+        <h2 id="faq" class="text-3xl font-bold tracking-tight">Frequently asked questions</h2>
+        <div class="mt-6 divide-y divide-slate-200 rounded-2xl border border-slate-200">
+          <details class="p-6" open><summary class="cursor-pointer list-none font-bold">What should a GLP-1 injection record include?</summary><p class="mt-3 leading-7 text-slate-700">Use two layers: a current medication snapshot and a dated event timeline. The snapshot identifies the exact product, strength, clinician-directed instructions, reason for use, status, and other medicines or supplements. The timeline records the scheduled date, actual date and time, exact product, dose copied as written, injection site, completion status, factual note, and prescriber questions.</p></details>
+          <details class="p-6"><summary class="cursor-pointer list-none font-bold">What should I write after a delayed or missed injection?</summary><p class="mt-3 leading-7 text-slate-700">Record what happened without deciding the next step: keep the scheduled date, add the actual date and time if an injection occurred, select delayed, missed, or uncertain, and add a factual note. Use the current label for the exact product and the prescriber for decisions about what should happen next.</p></details>
+          <details class="p-6"><summary class="cursor-pointer list-none font-bold">Why should the record name the exact GLP-1 product?</summary><p class="mt-3 leading-7 text-slate-700">Wegovy and Zepbound have product-specific missed-dose sections in their current labels. A generic GLP-1 entry does not identify which label applies, so preserve the exact product name without using the record itself to make a dosing decision.</p></details>
+          <details class="p-6"><summary class="cursor-pointer list-none font-bold">What if I am not sure whether an injection happened?</summary><p class="mt-3 leading-7 text-slate-700">Do not backfill a guess as fact. Mark the entry uncertain, note the available evidence source such as a box or pen label, pharmacy record, or after-visit summary, and keep the discrepancy visible for prescriber or pharmacist reconciliation.</p></details>
+          <details class="p-6"><summary class="cursor-pointer list-none font-bold">Can an injection log prove that a medicine caused a symptom or lab result?</summary><p class="mt-3 leading-7 text-slate-700">No. A timestamped record preserves sequence and context, but it does not prove causation or interpret symptoms or laboratory results.</p></details>
+        </div>
+      </section>
+
+      <section class="mt-14" aria-labelledby="sources">
+        <h2 id="sources" class="text-3xl font-bold tracking-tight">Sources opened and checked</h2>
+        <ol class="mt-6 space-y-4 text-sm leading-7 text-slate-700">
+          <li><span class="mr-2 font-bold text-brand-700">[1]</span><a class="break-words font-semibold text-brand-700 hover:underline" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">FDA: Create and Keep a Medication List for Your Health</a>.</li>
+          <li><span class="mr-2 font-bold text-brand-700">[2]</span><a class="break-words font-semibold text-brand-700 hover:underline" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">Current Wegovy labeling, DailyMed</a>.</li>
+          <li><span class="mr-2 font-bold text-brand-700">[3]</span><a class="break-words font-semibold text-brand-700 hover:underline" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">Current Zepbound labeling, DailyMed</a>.</li>
+        </ol>
+        <p class="mt-5 text-sm text-slate-500">These sources were opened and checked on August 21, 2026.</p>
+      </section>
+    </article>
   </main>
-  <section id="related-links">
-    <h2>Related</h2>
-    <ul>
-    <li><a href="/injection-site-rotation-science.html">Injection site rotation science (what matters and why)</a></li>
-    <li><a href="/glp-1-side-effects-guide.html">GLP-1 side effects (timeline and red flags)</a></li>
-    <li><a href="/peptides/semaglutide.html">Semaglutide guide (mechanism and basics)</a></li>
-    <li><a href="/peptides/">Peptide hub (all classes, evidence-first)</a></li>
-    </ul>
-  </section>
+
+  <footer class="border-t border-slate-200 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-5 py-10 sm:px-8"><p class="font-bold">Jabbit</p><p class="mt-3 max-w-3xl text-sm leading-6 text-slate-500">Educational, harm-reduction information only—not medical advice. This record supports a conversation with a prescriber; it does not choose a treatment, dose, schedule, site, or interpretation.</p><p class="mt-5 text-xs text-slate-400">© 2026 Jabbit. All rights reserved.</p></div>
+  </footer>
 </body>
 </html>
