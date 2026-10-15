@@ -1741,6 +1741,11 @@
       "source": "/zepbound-side-effect-timeline",
       "destination": "/glp-1-side-effects-guide.html",
       "permanent": true
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/:slug.html",
+      "permanent": true
     }
   ]
 }
