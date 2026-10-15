@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-29T00:00:00Z",
+  "updated": "2026-10-15T19:03:18Z",
   "rules": [
     {
       "file": "adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
@@ -2720,6 +2720,27 @@
         {
           "href": "/what-happens-when-you-stop-wegovy.html",
           "text": "What happens when you stop Wegovy?"
+        }
+      ]
+    },
+    {
+      "file": "glp1-bloodwork-monitoring-guide.html",
+      "links": [
+        {
+          "href": "/glp1-kidney-health-guide.html",
+          "text": "GLP-1 kidney health"
+        },
+        {
+          "href": "/glp1-thyroid-monitoring-guide.html",
+          "text": "GLP-1 thyroid monitoring"
+        },
+        {
+          "href": "/glp1-amylase-lipase-pancreatitis-guide.html",
+          "text": "Amylase, lipase, and pancreatitis"
+        },
+        {
+          "href": "/glp1-gallbladder-risk-guide.html",
+          "text": "GLP-1 gallbladder risk"
         }
       ]
     }
