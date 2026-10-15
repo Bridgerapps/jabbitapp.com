@@ -63,3 +63,16 @@ docs/send-now-mailto-links-*.md
 docs/send-now-mailto-links-latest.md
 docs/distribution/stale-ready-escalation-*.md
 docs/distribution/stale-ready-escalation-latest.md
+
+# --- OpenClaw agent workspace files (private; never publish) ---
+AGENTS.md
+BOOTSTRAP.md
+HEARTBEAT.md
+IDENTITY.md
+MEMORY.md
+SOUL.md
+TOOLS.md
+USER.md
+DREAMS.md
+.openclaw/
+skills/
