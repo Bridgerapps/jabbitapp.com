@@ -217,7 +217,8 @@
     const weekMs = 7 * 24 * 60 * 60 * 1000;
     const isDismissed = dismissedAt && (Date.now() - dismissedAt) < weekMs;
 
-    if (!suppressGlobalCta && !isHome && !isLegal && !isDismissed && document && document.body) {
+    // Disabled: site is informational; no injected download banners.
+    if (false && !suppressGlobalCta && !isHome && !isLegal && !isDismissed && document && document.body) {
       const wrap = document.createElement('div');
       wrap.setAttribute('role', 'region');
       wrap.setAttribute('aria-label', 'Download Jabbit');
@@ -351,7 +352,8 @@
     const weekMs = 7 * 24 * 60 * 60 * 1000;
     const isDismissed = dismissedAt && (Date.now() - dismissedAt) < weekMs;
 
-    const shouldEnable = !suppressGlobalCta && !isLegal && isSmallScreen && !isDismissed;
+    // Disabled: no sticky download bar anywhere.
+    const shouldEnable = false && !suppressGlobalCta && !isLegal && isSmallScreen && !isDismissed;
 
     // On content pages: show immediately.
     // On home: wait until the user scrolls a bit so we don't compete with the hero CTA.
