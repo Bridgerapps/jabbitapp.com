@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Build a Medication &amp; Peptide Protocol History for Your Prescriber | Jabbit</title>
-    <meta name="description" content="Build a prescriber handoff with a current medication snapshot, dated change log, and unresolved discrepancy list—without choosing doses or interpreting results.">
-    <link rel="canonical" href="https://jabbitapp.com/peptide-protocol-history-prescriber.html">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="How to Build a Medication &amp; Peptide Protocol History for Your Prescriber">
-    <meta property="og:description" content="A source-checked, three-layer handoff for reconciling medicines, injectable products, supplements, protocol changes, and unresolved discrepancies.">
-    <meta property="og:url" content="https://jabbitapp.com/peptide-protocol-history-prescriber.html">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="/assets/site.js"></script>
-    <script>
-        tailwind.config = { theme: { extend: { colors: { brand: {
-            50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4',
-            400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e',
-            800: '#115e59', 900: '#134e4a'
-        }}}}}
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .source-link { color: #0f766e; font-weight: 700; text-decoration: none; }
-        .source-link:hover { text-decoration: underline; }
-    </style>
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>How to Build a Medication &amp; Peptide Protocol History for Your Prescriber | Jabbit</title>
+<meta content="Build a prescriber handoff with a current medication snapshot, dated change log, and unresolved discrepancy list—without choosing doses or interpreting results." name="description"/>
+<link href="https://jabbitapp.com/peptide-protocol-history-prescriber.html" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="How to Build a Medication &amp; Peptide Protocol History for Your Prescriber" property="og:title"/>
+<meta content="A source-checked, three-layer handoff for reconciling medicines, injectable products, supplements, protocol changes, and unresolved discrepancies." property="og:description"/>
+<meta content="https://jabbitapp.com/peptide-protocol-history-prescriber.html" property="og:url"/>
+<script defer="" src="/assets/site.js"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
@@ -38,7 +25,7 @@
       "dateModified": "2026-08-14"
     }
     </script>
-    <script type="application/ld+json">
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -50,253 +37,207 @@
       ]
     }
     </script>
-<style id="related-links-style">
-#related-links{max-width:72rem;margin:2.5rem auto;padding:0}
-#related-links.rl-standalone{padding:0 1.5rem}
-#related-links h2{font-size:1.5rem;line-height:1.25;font-weight:700;letter-spacing:-0.01em;margin:0 0 .75rem;color:inherit}
-#related-links ul{list-style:disc;margin:0;padding-left:1.25rem}
-#related-links li{margin:.4rem 0;line-height:1.6}
-#related-links a{color:#0f766e;font-weight:600;text-decoration:underline;text-underline-offset:3px}
-#related-links a:hover{color:#115e59}
-@media (max-width:640px){body{padding-bottom:88px}}
-</style>
-</head>
-<body class="bg-white text-slate-900 antialiased">
-    <nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md" aria-label="Main navigation">
-        <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-            <a href="/" class="flex items-center gap-3" aria-label="Jabbit home">
-                <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-500 shadow-sm" aria-hidden="true"><svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
-                <span class="text-xl font-extrabold tracking-tight">Jabbit</span>
-            </a>
-            <a href="/guides/" class="text-sm font-semibold text-slate-600 transition hover:text-brand-700">Guides</a>
-        </div>
-    </nav>
-
-    <header class="overflow-hidden border-b border-brand-100 bg-gradient-to-br from-brand-50 via-white to-slate-50">
-        <div class="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-24">
-            <div class="max-w-4xl">
-                <p class="mb-5 inline-flex rounded-full border border-brand-200 bg-white px-3 py-1 text-sm font-semibold text-brand-800">Source checked August 14, 2026</p>
-                <h1 class="text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">How to build a medication &amp; peptide protocol history for your prescriber</h1>
-                <p class="mt-7 text-xl leading-8 text-slate-700"><strong class="text-slate-950">Bring three things:</strong> one current medication and product snapshot, one dated change and event log, and one list of unresolved discrepancies and questions. Together they create a legible handoff for medication reconciliation. They do not choose combinations, doses, timing, or tests—and they do not interpret symptoms or labs.</p>
-            </div>
-        </div>
-    </header>
-
-    <main class="mx-auto max-w-5xl px-5 py-12 sm:px-8 sm:py-16">
-        <article>
-            <nav class="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-5" aria-label="On this page">
-                <p class="font-bold text-slate-950">On this page</p>
-                <div class="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-brand-700">
-                    <a href="#three-layers" class="hover:underline">Three-layer handoff</a>
-                    <a href="#worksheet" class="hover:underline">Copy-ready worksheet</a>
-                    <a href="#reconcile" class="hover:underline">Five-minute reconciliation</a>
-                    <a href="#name-products" class="hover:underline">Label examples</a>
-                    <a href="#faq" class="hover:underline">FAQ</a>
-                </div>
-            </nav>
-            <section aria-labelledby="why-complete">
-                <h2 id="why-complete" class="text-3xl font-bold tracking-tight">Why a complete list matters</h2>
-                <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-700">Medication reconciliation aims to create the most complete and accurate list of current medicines and compare that list with the record or current orders. <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a> The process is intended to identify and prevent omissions, duplications, dose or timing errors, and interactions. <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a></p>
-                <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-700">A comprehensive history includes prescription medicines, over-the-counter products, herbals, vitamins, and supplements—not just the products that feel most important. <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a> Name, dose, route, and frequency are among the core medication-history details. <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a> FDA consumer guidance says to update a medication list after a new prescription, a dosage change, or stopping a medicine, and to keep and share a copy. <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[2]</a></p>
-            </section>
-
-            <section class="mt-14 grid gap-8 lg:grid-cols-2" aria-labelledby="three-layers">
-                <h2 id="three-layers" class="sr-only">The three-layer handoff</h2>
-                <div class="rounded-3xl border border-brand-200 bg-brand-50 p-7 sm:p-8">
-                    <p class="text-sm font-bold uppercase tracking-widest text-brand-800">Layer 1 · what is current</p>
-                    <h3 class="mt-3 text-2xl font-bold">One-page snapshot</h3>
-                    <p class="mt-4 leading-7 text-slate-700">Make this the fast, current view. For each item, copy what the label and record say: <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a> <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[2]</a> <a class="source-link" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" target="_blank" rel="noopener noreferrer">[3]</a></p>
-                    <ul class="mt-5 space-y-3 leading-7 text-slate-800">
-                        <li>Exact label or product name; active ingredient if shown</li>
-                        <li>Why it was prescribed or used</li>
-                        <li>Prescriber, pharmacy, or source</li>
-                        <li>Current clinician-directed instructions as written</li>
-                        <li>Route and frequency</li>
-                        <li>Current, stopped, or paused status</li>
-                        <li>Start and stop dates, if known</li>
-                        <li>Lot or expiration, when available</li>
-                        <li>All prescriptions, OTC products, vitamins, herbals, and supplements <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a></li>
-                        <li>Allergies exactly as documented</li>
-                    </ul>
-                    <p class="mt-6 rounded-xl bg-white p-4 font-bold text-brand-900">Copy, don’t calculate. Name, dose, route, and frequency are established medication-history fields. <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a></p>
-                </div>
-
-                <div class="rounded-3xl border border-slate-200 p-7 sm:p-8">
-                    <p class="text-sm font-bold uppercase tracking-widest text-slate-500">Layer 2 · what happened when</p>
-                    <h3 class="mt-3 text-2xl font-bold">Dated change and event log</h3>
-                    <p class="mt-4 leading-7 text-slate-700">Keep each event neutral and time-stamped. Record context without assigning cause: <a class="source-link" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" target="_blank" rel="noopener noreferrer">[3]</a></p>
-                    <ul class="mt-5 space-y-3 leading-7 text-slate-800">
-                        <li>Date and time</li>
-                        <li>What actually happened</li>
-                        <li>The prescribed plan at that time</li>
-                        <li>What changed and who directed the change</li>
-                        <li>Symptom onset or offset in plain, neutral language</li>
-                        <li>Relevant measurement or lab copied with its date, units, and source</li>
-                        <li>Other products used at the same time</li>
-                    </ul>
-                    <p class="mt-6 rounded-xl bg-slate-50 p-4 font-semibold text-slate-800">Write “headache began 6:30 p.m.” rather than deciding what caused it. The log preserves sequence; it does not establish causality. FDA Form 3500 instructions provide a useful field-design reference for dated products, events, tests, and concurrent products; this worksheet does not imply that everyone should file that form. <a class="source-link" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" target="_blank" rel="noopener noreferrer">[3]</a></p>
-                </div>
-
-                <div class="rounded-3xl border border-amber-200 bg-amber-50 p-7 sm:p-8 lg:col-span-2">
-                    <p class="text-sm font-bold uppercase tracking-widest text-amber-800">Layer 3 · what remains unresolved</p>
-                    <h3 class="mt-3 text-2xl font-bold text-amber-950">Discrepancies and questions</h3>
-                    <p class="mt-4 max-w-4xl leading-7 text-amber-950">Keep a separate queue for details that conflict across the product label, personal list or app, pharmacy or clinical record, and after-visit summary. Preserve both versions, name each source, and mark the item unresolved for prescriber or pharmacist review. This is an organizational framework—not a clinical conclusion about which version is correct.</p>
-                </div>
-            </section>
-
-            <section class="mt-14" aria-labelledby="worksheet">
-                <div class="max-w-4xl">
-                    <h2 id="worksheet" class="text-3xl font-bold tracking-tight">A copy-ready prescriber handoff worksheet</h2>
-                    <p class="mt-5 text-lg leading-8 text-slate-700">Copy these headings into a document or print the tables. Enter only what the label, record, or other named source says. Blank and unresolved are valid states; this worksheet organizes evidence for a conversation and does not reconcile it clinically.</p>
-                </div>
-
-                <div class="mt-8 overflow-x-auto rounded-2xl border border-brand-200">
-                    <table class="w-full min-w-[64rem] text-left">
-                        <caption class="bg-brand-50 px-5 py-4 text-left text-xl font-bold text-brand-950">1. Current snapshot</caption>
-                        <thead class="bg-brand-900 text-white"><tr><th scope="col" class="px-4 py-3">Field</th><th scope="col" class="px-4 py-3">Copy from the source</th><th scope="col" class="px-4 py-3">Source / evidence</th></tr></thead>
-                        <tbody class="divide-y divide-slate-200 text-sm leading-6 text-slate-700">
-                            <tr><th scope="row" class="px-4 py-4 font-bold text-slate-950">Product identity</th><td class="px-4 py-4">Exact product/name; strength or concentration as labeled; purpose</td><td class="px-4 py-4">Label, medication list, pharmacy, or record <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a> <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[2]</a></td></tr>
-                            <tr class="bg-slate-50"><th scope="row" class="px-4 py-4 font-bold text-slate-950">Clinician-directed plan</th><td class="px-4 py-4">Instructions copied as written; route; frequency</td><td class="px-4 py-4">Label or current clinical record <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a> <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[2]</a></td></tr>
-                            <tr><th scope="row" class="px-4 py-4 font-bold text-slate-950">Source and status</th><td class="px-4 py-4">Prescriber, pharmacy, or other source; current status; start and stop dates if known</td><td class="px-4 py-4">Named source and date checked <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[2]</a> <a class="source-link" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" target="_blank" rel="noopener noreferrer">[3]</a></td></tr>
-                            <tr class="bg-slate-50"><th scope="row" class="px-4 py-4 font-bold text-slate-950">Traceable details</th><td class="px-4 py-4">Manufacturer or compounder; NDC or unique ID; lot; expiration, when available</td><td class="px-4 py-4">Packaging or dispensing record <a class="source-link" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" target="_blank" rel="noopener noreferrer">[3]</a></td></tr>
-                            <tr><th scope="row" class="px-4 py-4 font-bold text-slate-950">Complete list</th><td class="px-4 py-4">Prescriptions, OTC products, vitamins, herbals, and supplements</td><td class="px-4 py-4">All current sources <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a> <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[2]</a></td></tr>
-                            <tr class="bg-slate-50"><th scope="row" class="px-4 py-4 font-bold text-slate-950">Allergies</th><td class="px-4 py-4">Copy exactly as documented</td><td class="px-4 py-4">Medication list or clinical record <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[2]</a></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200">
-                    <table class="w-full min-w-[72rem] text-left">
-                        <caption class="bg-slate-100 px-5 py-4 text-left text-xl font-bold text-slate-950">2. Dated change / event row</caption>
-                        <thead class="bg-slate-900 text-white"><tr><th class="px-3 py-3" scope="col">Timestamp</th><th class="px-3 py-3" scope="col">Product</th><th class="px-3 py-3" scope="col">Actual event</th><th class="px-3 py-3" scope="col">Documented plan</th><th class="px-3 py-3" scope="col">Directed change + who directed it</th><th class="px-3 py-3" scope="col">Neutral symptom / event wording</th><th class="px-3 py-3" scope="col">Measurement / lab</th><th class="px-3 py-3" scope="col">Other products at the time</th></tr></thead>
-                        <tbody><tr class="text-sm text-slate-500"><td class="h-24 border-r border-slate-200 px-3 py-4 align-top">Date + time</td><td class="border-r border-slate-200 px-3 py-4 align-top">Exact name</td><td class="border-r border-slate-200 px-3 py-4 align-top">What occurred</td><td class="border-r border-slate-200 px-3 py-4 align-top">Copy as written</td><td class="border-r border-slate-200 px-3 py-4 align-top">Change + named source</td><td class="border-r border-slate-200 px-3 py-4 align-top">Observed sequence, no cause assigned</td><td class="border-r border-slate-200 px-3 py-4 align-top">Value + date + unit + source</td><td class="px-3 py-4 align-top">Names used concurrently</td></tr></tbody>
-                    </table>
-                </div>
-                <p class="mt-3 text-sm leading-6 text-slate-600">These product, treatment-date, event, test, and concurrent-product fields are adapted from FDA Form 3500 instructions as a field-design reference; using this worksheet does not mean a Form 3500 report is required. <a class="source-link" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" target="_blank" rel="noopener noreferrer">[3]</a></p>
-
-                <div class="mt-8 overflow-x-auto rounded-2xl border border-amber-200">
-                    <table class="w-full min-w-[60rem] text-left">
-                        <caption class="bg-amber-50 px-5 py-4 text-left text-xl font-bold text-amber-950">3. Discrepancy / question queue</caption>
-                        <thead class="bg-amber-900 text-white"><tr><th scope="col" class="px-4 py-3">Field in conflict</th><th scope="col" class="px-4 py-3">Version A + source</th><th scope="col" class="px-4 py-3">Version B + source</th><th scope="col" class="px-4 py-3">Status / question</th></tr></thead>
-                        <tbody><tr class="text-sm text-amber-950"><td class="h-24 border-r border-amber-200 px-4 py-4 align-top">Name, strength, instructions, status, or date</td><td class="border-r border-amber-200 px-4 py-4 align-top">Label, app/list, pharmacy/record, or after-visit summary</td><td class="border-r border-amber-200 px-4 py-4 align-top">Preserve the conflicting version and its source</td><td class="px-4 py-4 align-top">Unresolved — for prescriber or pharmacist review</td></tr></tbody>
-                    </table>
-                </div>
-                <p class="mt-3 text-sm leading-6 text-slate-600">Preserving both versions and marking the conflict unresolved is this worksheet’s organizational framework. It does not decide which record is clinically correct.</p>
-            </section>
-
-            <section class="mt-14" aria-labelledby="name-products">
-                <h2 id="name-products" class="text-3xl font-bold tracking-tight">Why name every product</h2>
-                <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-700">Current product labels show why exact names and the full medication list matter. These are examples, not an interaction screen, and they do not determine what is safe for an individual. The applicable label and prescriber own those decisions.</p>
-                <div class="mt-7 overflow-x-auto rounded-2xl border border-slate-200">
-                    <table class="w-full min-w-[48rem] text-left">
-                        <thead class="bg-slate-950 text-white"><tr><th scope="col" class="px-5 py-4 font-bold">Label example</th><th scope="col" class="px-5 py-4 font-bold">What it says</th><th scope="col" class="px-5 py-4 font-bold">Why it belongs in the handoff</th></tr></thead>
-                        <tbody class="divide-y divide-slate-200 text-sm leading-6 text-slate-700">
-                            <tr><th scope="row" class="px-5 py-5 align-top font-bold text-slate-950">Wegovy and overlapping products</th><td class="px-5 py-5 align-top">Concomitant use with other semaglutide-containing products or another GLP-1 receptor agonist is not recommended. <a class="source-link" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[4]</a></td><td class="px-5 py-5 align-top">This is why exact product and active-ingredient names belong in the handoff.</td></tr>
-                            <tr class="bg-slate-50"><th scope="row" class="px-5 py-5 align-top font-bold text-slate-950">Wegovy or Zepbound and oral medicines</th><td class="px-5 py-5 align-top">Both labels say the product delays gastric emptying and may affect absorption of concomitant oral medicines. <a class="source-link" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[4]</a> <a class="source-link" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[5]</a></td><td class="px-5 py-5 align-top">This is why oral medicines belong in the same handoff.</td></tr>
-                            <tr><th scope="row" class="px-5 py-5 align-top font-bold text-slate-950">Wegovy or Zepbound with insulin or an insulin secretagogue</th><td class="px-5 py-5 align-top">Both labels describe increased hypoglycemia risk with insulin or an insulin secretagogue. <a class="source-link" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[4]</a> <a class="source-link" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[5]</a></td><td class="px-5 py-5 align-top">This is why concurrent medicines should be named for prescriber review.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <section class="mt-14 grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem]" aria-labelledby="reconcile">
-                <div>
-                    <h2 id="reconcile" class="text-3xl font-bold tracking-tight">Five-minute reconciliation before the visit</h2>
-                    <p class="mt-5 leading-7 text-slate-700">This is a record-preparation workflow: medication reconciliation compares a complete current list with records or orders, while FDA guidance supports keeping the list updated and sharing a copy. <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a> <a class="source-link" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">[2]</a></p>
-                    <ol class="mt-6 space-y-4 leading-8 text-slate-700">
-                        <li><strong class="text-slate-950">1. Compare the sources.</strong> Place the app or personal list beside labels, the pharmacy or clinical record, and the latest after-visit summary.</li>
-                        <li><strong class="text-slate-950">2. Mark exact conflicts.</strong> Copy the competing names, strengths, instructions, statuses, or dates and identify each source.</li>
-                        <li><strong class="text-slate-950">3. Update only verified facts.</strong> Change the current snapshot when the new fact and its source are clear.</li>
-                        <li><strong class="text-slate-950">4. Keep unresolved items visible.</strong> Preserve both versions in the discrepancy queue without deciding which is correct.</li>
-                        <li><strong class="text-slate-950">5. Bring the top questions.</strong> Use the queue to make the unresolved points easy for the prescriber or pharmacist to review.</li>
-                    </ol>
-                    <div class="mt-7 rounded-xl border border-brand-200 bg-brand-50 p-5 text-sm leading-6 text-brand-950"><strong>After the appointment:</strong> the record can be updated with the resolved decision and its source while preserving the prior state and date in the event log. This is recordkeeping, not clinical interpretation.</div>
-                </div>
-                <aside class="rounded-2xl border border-amber-200 bg-amber-50 p-6 lg:self-start" aria-labelledby="handoff">
-                    <h3 id="handoff" class="text-xl font-bold text-amber-950">Prescriber-ready handoff</h3>
-                    <ul class="mt-5 space-y-4 text-sm leading-6 text-amber-950">
-                        <li class="flex gap-3"><span aria-hidden="true">□</span><span>Current one-page snapshot</span></li>
-                        <li class="flex gap-3"><span aria-hidden="true">□</span><span>Dated change and event log</span></li>
-                        <li class="flex gap-3"><span aria-hidden="true">□</span><span>Exact labels or photos, if helpful</span></li>
-                        <li class="flex gap-3"><span aria-hidden="true">□</span><span>Lab reports copied exactly, including dates, units, and source</span></li>
-                        <li class="flex gap-3"><span aria-hidden="true">□</span><span>Unresolved discrepancy and question queue</span></li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section class="mt-14 rounded-2xl border border-rose-200 bg-rose-50 p-7" aria-labelledby="limits">
-                <h2 id="limits" class="text-3xl font-bold tracking-tight text-rose-950">What this record cannot tell you</h2>
-                <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    <p class="rounded-xl bg-white p-4 font-semibold text-rose-950">It cannot establish what caused a symptom or result.</p>
-                    <p class="rounded-xl bg-white p-4 font-semibold text-rose-950">It cannot clear a combination for interactions.</p>
-                    <p class="rounded-xl bg-white p-4 font-semibold text-rose-950">It cannot select a dose, timing, or schedule.</p>
-                    <p class="rounded-xl bg-white p-4 font-semibold text-rose-950">It cannot interpret a lab value or trend.</p>
-                    <p class="rounded-xl bg-white p-4 font-semibold text-rose-950 sm:col-span-2">It cannot prove a product’s identity or purity.</p>
-                </div>
-            </section>
-
-            <section class="mt-14" aria-labelledby="questions">
-                <h2 id="questions" class="text-3xl font-bold tracking-tight">Questions for the prescriber</h2>
-                <ul class="mt-6 grid gap-4 sm:grid-cols-2">
-                    <li class="rounded-xl border border-slate-200 p-5 font-semibold">Which item on this list needs special monitoring?</li>
-                    <li class="rounded-xl border border-slate-200 p-5 font-semibold">Are any names on this list duplicates or overlaps?</li>
-                    <li class="rounded-xl border border-slate-200 p-5 font-semibold">Which change in the dated log matters most?</li>
-                    <li class="rounded-xl border border-slate-200 p-5 font-semibold">What should count as a reason to contact the office?</li>
-                    <li class="rounded-xl border border-slate-200 p-5 font-semibold sm:col-span-2">What should this record show before the next follow-up?</li>
-                </ul>
-            </section>
-
-            <section class="mt-14 rounded-3xl bg-slate-950 p-7 text-white sm:p-9" aria-labelledby="track-section">
-                <p class="text-sm font-bold uppercase tracking-widest text-brand-300">Keep the three layers together</p>
-                <h2 id="track-section" class="mt-3 text-3xl font-bold tracking-tight">Build a legible protocol history</h2>
-                <p class="mt-4 max-w-3xl text-lg leading-8 text-slate-300">Jabbit can organize a clinician-directed schedule with smart scheduling, vial tracking, injection and site history, reminders, and progress tracking. <span class="font-bold text-brand-300">[6]</span> Jabbit is a personal tracking tool, not a medical device, and does not provide medical advice, diagnosis, or treatment.</p>
-                <a href="https://apps.apple.com/app/id6756848719" target="_blank" rel="noopener noreferrer" data-track="protocol_history_app_store" class="mt-7 inline-flex items-center rounded-xl bg-brand-400 px-6 py-3 font-bold text-slate-950 transition hover:bg-brand-300">Track your clinician-directed plan in Jabbit</a>
-            </section>
-
-            <section class="mt-14" aria-labelledby="faq">
-                <h2 id="faq" class="text-3xl font-bold tracking-tight">Frequently asked questions</h2>
-                <div class="mt-6 divide-y divide-slate-200 rounded-2xl border border-slate-200">
-                    <details class="p-6" open><summary class="cursor-pointer list-none font-bold">What should be in a prescriber handoff?</summary><p class="mt-3 leading-7 text-slate-700">Use three layers: a current snapshot with exact product details, a dated log of what happened and changed, and an unresolved discrepancy and question list. Include prescriptions, over-the-counter products, vitamins, herbals, and supplements. <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a></p></details>
-                    <details class="p-6"><summary class="cursor-pointer list-none font-bold">Should supplements and over-the-counter products be included?</summary><p class="mt-3 leading-7 text-slate-700">Yes. A comprehensive medication history includes over-the-counter products, herbals, vitamins, and supplements along with prescription medicines. <a class="source-link" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">[1]</a></p></details>
-                    <details class="p-6"><summary class="cursor-pointer list-none font-bold">Does this handoff check interactions?</summary><p class="mt-3 leading-7 text-slate-700">No. This handoff organizes names, schedules, history, and symptom timing; it does not screen interactions or determine whether a combination is safe. Those decisions belong to the prescriber using the applicable labels and individual clinical context.</p></details>
-                    <details class="p-6"><summary class="cursor-pointer list-none font-bold">How should conflicting records be handled in the handoff?</summary><p class="mt-3 leading-7 text-slate-700">Preserve both versions, identify their sources, and mark the conflict unresolved for prescriber or pharmacist review. The discrepancy list organizes the question; it is not a clinical conclusion.</p></details>
-                </div>
-            </section>
-
-  <section id="related-links">
-    <h2>Related</h2>
-    <ul>
-    <li><a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking guide</a></li>
-    <li><a href="/multi-compound-peptide-protocol-tracking.html">Multi-compound protocol tracking (organization)</a></li>
-    <li><a href="/guides/">Guides hub</a></li>
-    </ul>
-  </section>
-            <section class="mt-14" aria-labelledby="sources">
-                <h2 id="sources" class="text-3xl font-bold tracking-tight">Sources opened and checked</h2>
-                <ol class="mt-6 space-y-4 text-sm leading-7 text-slate-700">
-                    <li><span class="mr-2 font-bold text-brand-700">[1]</span><a class="break-words font-semibold text-brand-700 hover:underline" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" target="_blank" rel="noopener noreferrer">AHRQ Patient Safety and Quality: Medication Reconciliation</a>.</li>
-                    <li><span class="mr-2 font-bold text-brand-700">[2]</span><a class="break-words font-semibold text-brand-700 hover:underline" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" target="_blank" rel="noopener noreferrer">FDA: Create and Keep a Medication List for Your Health</a>.</li>
-                    <li><span class="mr-2 font-bold text-brand-700">[3]</span><a class="break-words font-semibold text-brand-700 hover:underline" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" target="_blank" rel="noopener noreferrer">FDA: Instructions for Completing Form FDA 3500</a>.</li>
-                    <li><span class="mr-2 font-bold text-brand-700">[4]</span><a class="break-words font-semibold text-brand-700 hover:underline" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">Current Wegovy labeling, DailyMed</a>.</li>
-                    <li><span class="mr-2 font-bold text-brand-700">[5]</span><a class="break-words font-semibold text-brand-700 hover:underline" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">Current Zepbound labeling, DailyMed</a>.</li>
-                    <li><span class="mr-2 font-bold text-brand-700">[6]</span><span class="font-semibold text-brand-700">Jabbit on the Apple App Store</span> — <span class="break-words">apps.apple.com/app/id6756848719</span>.</li>
-                </ol>
-                <p class="mt-5 text-sm text-slate-500">All six sources were opened and checked on August 14, 2026.</p>
-            </section>
-
-            <section class="mt-14" aria-labelledby="related">
-                <h2 id="related" class="text-3xl font-bold tracking-tight">Related guides</h2>
-                <div class="mt-6 grid gap-4 sm:grid-cols-3">
-                    <a href="/glp1-bloodwork-monitoring-guide.html" class="rounded-2xl border border-slate-200 p-5 font-bold transition hover:border-brand-300">GLP-1 bloodwork monitoring</a>
-                    <a href="/glp-1-injection-tracking-guide.html" class="rounded-2xl border border-slate-200 p-5 font-bold transition hover:border-brand-300">GLP-1 injection tracking</a>
-                    <a href="/multi-compound-peptide-protocol-tracking.html" class="rounded-2xl border border-slate-200 p-5 font-bold transition hover:border-brand-300">Multi-compound protocol tracking</a>
-                </div>
-            </section>
-        </article>
-    </main>
-
-    <footer class="border-t border-slate-200 bg-slate-50">
-        <div class="mx-auto max-w-5xl px-5 py-10 sm:px-8"><p class="font-bold">Jabbit</p><p class="mt-3 max-w-3xl text-sm leading-6 text-slate-500">Educational, harm-reduction information only—not medical advice. This record supports a conversation with a prescriber; it does not choose a treatment, dose, schedule, test, or interpretation.</p><p class="mt-5 text-xs text-slate-400">© 2026 Jabbit. All rights reserved.</p></div>
-    </footer>
+<link href="/assets/article.css" rel="stylesheet"/></head>
+<body><header class="site-header"><div class="inner">
+<a aria-label="Jabbit home" class="brand" href="/"><span aria-hidden="true" class="brand-mark"><svg fill="none" height="17" stroke="#fff" viewbox="0 0 24 24" width="17"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg></span>Jabbit</a>
+<nav aria-label="Main navigation" class="site-nav"><a href="/guides/">Guides</a><a href="/news/">News</a><a href="/peptides/">Peptides</a><a class="opt" href="/tools/">Tools</a></nav>
+</div></header>
+<main class="article">
+<header>
+<div>
+<div>
+<p>Source checked August 14, 2026</p>
+<h1>How to build a medication &amp; peptide protocol history for your prescriber</h1>
+<p><strong>Bring three things:</strong> one current medication and product snapshot, one dated change and event log, and one list of unresolved discrepancies and questions. Together they create a legible handoff for medication reconciliation. They do not choose combinations, doses, timing, or tests—and they do not interpret symptoms or labs.</p>
+</div>
+</div>
+</header>
+<main>
+<article>
+<section aria-labelledby="why-complete">
+<h2 id="why-complete">Why a complete list matters</h2>
+<p>Medication reconciliation aims to create the most complete and accurate list of current medicines and compare that list with the record or current orders. <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a> The process is intended to identify and prevent omissions, duplications, dose or timing errors, and interactions. <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a></p>
+<p>A comprehensive history includes prescription medicines, over-the-counter products, herbals, vitamins, and supplements—not just the products that feel most important. <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a> Name, dose, route, and frequency are among the core medication-history details. <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a> FDA consumer guidance says to update a medication list after a new prescription, a dosage change, or stopping a medicine, and to keep and share a copy. <a class="cite" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" rel="noopener noreferrer" target="_blank">[2]</a></p>
+</section>
+<section aria-labelledby="three-layers">
+<h2 id="three-layers">The three-layer handoff</h2>
+<div>
+<p>Layer 1 · what is current</p>
+<h3>One-page snapshot</h3>
+<p>Make this the fast, current view. For each item, copy what the label and record say: <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" rel="noopener noreferrer" target="_blank">[2]</a> <a class="cite" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" rel="noopener noreferrer" target="_blank">[3]</a></p>
+<ul>
+<li>Exact label or product name; active ingredient if shown</li>
+<li>Why it was prescribed or used</li>
+<li>Prescriber, pharmacy, or source</li>
+<li>Current clinician-directed instructions as written</li>
+<li>Route and frequency</li>
+<li>Current, stopped, or paused status</li>
+<li>Start and stop dates, if known</li>
+<li>Lot or expiration, when available</li>
+<li>All prescriptions, OTC products, vitamins, herbals, and supplements <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a></li>
+<li>Allergies exactly as documented</li>
+</ul>
+<p>Copy, don’t calculate. Name, dose, route, and frequency are established medication-history fields. <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a></p>
+</div>
+<div>
+<p>Layer 2 · what happened when</p>
+<h3>Dated change and event log</h3>
+<p>Keep each event neutral and time-stamped. Record context without assigning cause: <a class="cite" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" rel="noopener noreferrer" target="_blank">[3]</a></p>
+<ul>
+<li>Date and time</li>
+<li>What actually happened</li>
+<li>The prescribed plan at that time</li>
+<li>What changed and who directed the change</li>
+<li>Symptom onset or offset in plain, neutral language</li>
+<li>Relevant measurement or lab copied with its date, units, and source</li>
+<li>Other products used at the same time</li>
+</ul>
+<p>Write “headache began 6:30 p.m.” rather than deciding what caused it. The log preserves sequence; it does not establish causality. FDA Form 3500 instructions provide a useful field-design reference for dated products, events, tests, and concurrent products; this worksheet does not imply that everyone should file that form. <a class="cite" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" rel="noopener noreferrer" target="_blank">[3]</a></p>
+</div>
+<div>
+<p>Layer 3 · what remains unresolved</p>
+<h3>Discrepancies and questions</h3>
+<p>Keep a separate queue for details that conflict across the product label, personal list or app, pharmacy or clinical record, and after-visit summary. Preserve both versions, name each source, and mark the item unresolved for prescriber or pharmacist review. This is an organizational framework—not a clinical conclusion about which version is correct.</p>
+</div>
+</section>
+<section aria-labelledby="worksheet">
+<div>
+<h2 id="worksheet">A copy-ready prescriber handoff worksheet</h2>
+<p>Copy these headings into a document or print the tables. Enter only what the label, record, or other named source says. Blank and unresolved are valid states; this worksheet organizes evidence for a conversation and does not reconcile it clinically.</p>
+</div>
+<div>
+<div class="table-wrap"><table>
+<caption>1. Current snapshot</caption>
+<thead><tr><th scope="col">Field</th><th scope="col">Copy from the source</th><th scope="col">Source / evidence</th></tr></thead>
+<tbody>
+<tr><th scope="row">Product identity</th><td>Exact product/name; strength or concentration as labeled; purpose</td><td>Label, medication list, pharmacy, or record <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" rel="noopener noreferrer" target="_blank">[2]</a></td></tr>
+<tr><th scope="row">Clinician-directed plan</th><td>Instructions copied as written; route; frequency</td><td>Label or current clinical record <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" rel="noopener noreferrer" target="_blank">[2]</a></td></tr>
+<tr><th scope="row">Source and status</th><td>Prescriber, pharmacy, or other source; current status; start and stop dates if known</td><td>Named source and date checked <a class="cite" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" rel="noopener noreferrer" target="_blank">[2]</a> <a class="cite" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" rel="noopener noreferrer" target="_blank">[3]</a></td></tr>
+<tr><th scope="row">Traceable details</th><td>Manufacturer or compounder; NDC or unique ID; lot; expiration, when available</td><td>Packaging or dispensing record <a class="cite" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" rel="noopener noreferrer" target="_blank">[3]</a></td></tr>
+<tr><th scope="row">Complete list</th><td>Prescriptions, OTC products, vitamins, herbals, and supplements</td><td>All current sources <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" rel="noopener noreferrer" target="_blank">[2]</a></td></tr>
+<tr><th scope="row">Allergies</th><td>Copy exactly as documented</td><td>Medication list or clinical record <a class="cite" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" rel="noopener noreferrer" target="_blank">[2]</a></td></tr>
+</tbody>
+</table></div>
+</div>
+<div>
+<div class="table-wrap"><table>
+<caption>2. Dated change / event row</caption>
+<thead><tr><th scope="col">Timestamp</th><th scope="col">Product</th><th scope="col">Actual event</th><th scope="col">Documented plan</th><th scope="col">Directed change + who directed it</th><th scope="col">Neutral symptom / event wording</th><th scope="col">Measurement / lab</th><th scope="col">Other products at the time</th></tr></thead>
+<tbody><tr><td>Date + time</td><td>Exact name</td><td>What occurred</td><td>Copy as written</td><td>Change + named source</td><td>Observed sequence, no cause assigned</td><td>Value + date + unit + source</td><td>Names used concurrently</td></tr></tbody>
+</table></div>
+</div>
+<p>These product, treatment-date, event, test, and concurrent-product fields are adapted from FDA Form 3500 instructions as a field-design reference; using this worksheet does not mean a Form 3500 report is required. <a class="cite" href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" rel="noopener noreferrer" target="_blank">[3]</a></p>
+<div>
+<div class="table-wrap"><table>
+<caption>3. Discrepancy / question queue</caption>
+<thead><tr><th scope="col">Field in conflict</th><th scope="col">Version A + source</th><th scope="col">Version B + source</th><th scope="col">Status / question</th></tr></thead>
+<tbody><tr><td>Name, strength, instructions, status, or date</td><td>Label, app/list, pharmacy/record, or after-visit summary</td><td>Preserve the conflicting version and its source</td><td>Unresolved — for prescriber or pharmacist review</td></tr></tbody>
+</table></div>
+</div>
+<p>Preserving both versions and marking the conflict unresolved is this worksheet’s organizational framework. It does not decide which record is clinically correct.</p>
+</section>
+<section aria-labelledby="name-products">
+<h2 id="name-products">Why name every product</h2>
+<p>Current product labels show why exact names and the full medication list matter. These are examples, not an interaction screen, and they do not determine what is safe for an individual. The applicable label and prescriber own those decisions.</p>
+<div>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Label example</th><th scope="col">What it says</th><th scope="col">Why it belongs in the handoff</th></tr></thead>
+<tbody>
+<tr><th scope="row">Wegovy and overlapping products</th><td>Concomitant use with other semaglutide-containing products or another GLP-1 receptor agonist is not recommended. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[4]</a></td><td>This is why exact product and active-ingredient names belong in the handoff.</td></tr>
+<tr><th scope="row">Wegovy or Zepbound and oral medicines</th><td>Both labels say the product delays gastric emptying and may affect absorption of concomitant oral medicines. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[4]</a> <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[5]</a></td><td>This is why oral medicines belong in the same handoff.</td></tr>
+<tr><th scope="row">Wegovy or Zepbound with insulin or an insulin secretagogue</th><td>Both labels describe increased hypoglycemia risk with insulin or an insulin secretagogue. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[4]</a> <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[5]</a></td><td>This is why concurrent medicines should be named for prescriber review.</td></tr>
+</tbody>
+</table></div>
+</div>
+</section>
+<section aria-labelledby="reconcile">
+<div>
+<h2 id="reconcile">Five-minute reconciliation before the visit</h2>
+<p>This is a record-preparation workflow: medication reconciliation compares a complete current list with records or orders, while FDA guidance supports keeping the list updated and sharing a copy. <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" rel="noopener noreferrer" target="_blank">[2]</a></p>
+<ol>
+<li><strong>1. Compare the sources.</strong> Place the app or personal list beside labels, the pharmacy or clinical record, and the latest after-visit summary.</li>
+<li><strong>2. Mark exact conflicts.</strong> Copy the competing names, strengths, instructions, statuses, or dates and identify each source.</li>
+<li><strong>3. Update only verified facts.</strong> Change the current snapshot when the new fact and its source are clear.</li>
+<li><strong>4. Keep unresolved items visible.</strong> Preserve both versions in the discrepancy queue without deciding which is correct.</li>
+<li><strong>5. Bring the top questions.</strong> Use the queue to make the unresolved points easy for the prescriber or pharmacist to review.</li>
+</ol>
+<div><strong>After the appointment:</strong> the record can be updated with the resolved decision and its source while preserving the prior state and date in the event log. This is recordkeeping, not clinical interpretation.</div>
+</div>
+<aside aria-labelledby="handoff">
+<h3 id="handoff">Prescriber-ready handoff</h3>
+<ul>
+<li>□Current one-page snapshot</li>
+<li>□Dated change and event log</li>
+<li>□Exact labels or photos, if helpful</li>
+<li>□Lab reports copied exactly, including dates, units, and source</li>
+<li>□Unresolved discrepancy and question queue</li>
+</ul>
+</aside>
+</section>
+<section aria-labelledby="limits">
+<h2 id="limits">What this record cannot tell you</h2>
+<div>
+<p>It cannot establish what caused a symptom or result.</p>
+<p>It cannot clear a combination for interactions.</p>
+<p>It cannot select a dose, timing, or schedule.</p>
+<p>It cannot interpret a lab value or trend.</p>
+<p>It cannot prove a product’s identity or purity.</p>
+</div>
+</section>
+<section aria-labelledby="questions">
+<h2 id="questions">Questions for the prescriber</h2>
+<ul>
+<li>Which item on this list needs special monitoring?</li>
+<li>Are any names on this list duplicates or overlaps?</li>
+<li>Which change in the dated log matters most?</li>
+<li>What should count as a reason to contact the office?</li>
+<li>What should this record show before the next follow-up?</li>
+</ul>
+</section>
+<section aria-labelledby="faq">
+<h2 id="faq">Frequently asked questions</h2>
+<div>
+<details open=""><summary>What should be in a prescriber handoff?</summary><p>Use three layers: a current snapshot with exact product details, a dated log of what happened and changed, and an unresolved discrepancy and question list. Include prescriptions, over-the-counter products, vitamins, herbals, and supplements. <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a></p></details>
+<details><summary>Should supplements and over-the-counter products be included?</summary><p>Yes. A comprehensive medication history includes over-the-counter products, herbals, vitamins, and supplements along with prescription medicines. <a class="cite" href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">[1]</a></p></details>
+<details><summary>Does this handoff check interactions?</summary><p>No. This handoff organizes names, schedules, history, and symptom timing; it does not screen interactions or determine whether a combination is safe. Those decisions belong to the prescriber using the applicable labels and individual clinical context.</p></details>
+<details><summary>How should conflicting records be handled in the handoff?</summary><p>Preserve both versions, identify their sources, and mark the conflict unresolved for prescriber or pharmacist review. The discrepancy list organizes the question; it is not a clinical conclusion.</p></details>
+</div>
+</section>
+<section id="related-links">
+<h2>Related</h2>
+<ul>
+<li><a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking guide</a></li>
+<li><a href="/multi-compound-peptide-protocol-tracking.html">Multi-compound protocol tracking (organization)</a></li>
+<li><a href="/guides/">Guides hub</a></li>
+</ul>
+</section>
+<section aria-labelledby="sources">
+<h2 id="sources">Sources opened and checked</h2>
+<ol>
+<li>[1]<a href="https://www.ncbi.nlm.nih.gov/books/NBK2648/" rel="noopener noreferrer" target="_blank">AHRQ Patient Safety and Quality: Medication Reconciliation</a>.</li>
+<li>[2]<a href="https://www.fda.gov/consumers/consumer-updates/create-and-keep-medication-list-your-health" rel="noopener noreferrer" target="_blank">FDA: Create and Keep a Medication List for Your Health</a>.</li>
+<li>[3]<a href="https://www.fda.gov/safety/medwatch-forms-fda-safety-reporting/instructions-completing-form-fda-3500" rel="noopener noreferrer" target="_blank">FDA: Instructions for Completing Form FDA 3500</a>.</li>
+<li>[4]<a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">Current Wegovy labeling, DailyMed</a>.</li>
+<li>[5]<a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">Current Zepbound labeling, DailyMed</a>.</li>
+<li>[6]Jabbit on the Apple App Store — apps.apple.com/app/id6756848719.</li>
+</ol>
+<p>All six sources were opened and checked on August 14, 2026.</p>
+</section>
+<section aria-labelledby="related">
+<h2 id="related">Related guides</h2>
+<div>
+<a href="/glp1-bloodwork-monitoring-guide.html">GLP-1 bloodwork monitoring</a>
+<a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking</a>
+<a href="/multi-compound-peptide-protocol-tracking.html">Multi-compound protocol tracking</a>
+</div>
+</section>
+</article>
+</main>
+<p class="disclaimer">Educational, harm-reduction information only—not medical advice. This record supports a conversation with a prescriber; it does not choose a treatment, dose, schedule, test, or interpretation.</p>
+</main>
+<footer class="site-footer"><div class="inner">
+<p>Educational information only, not medical advice. Medication, dose, and schedule decisions belong with your prescriber and the current product label.</p>
+<p>Published by <a data-track="footer_app_store" href="https://apps.apple.com/app/id6756848719?ct=web_peptide_protocol_history_prescriber&amp;mt=8" rel="noopener noreferrer" target="_blank">Jabbit</a>, a private iPhone injection log. · <a href="/guides/">Guides</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+</div></footer>
 </body>
 </html>

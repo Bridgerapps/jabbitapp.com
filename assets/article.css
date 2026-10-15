@@ -1,0 +1,56 @@
+/* Shared article template for Jabbit content pages */
+:root{--ink:#0f172a;--body:#334155;--muted:#64748b;--line:#e2e8f0;--soft:#f8fafc;--link:#0f766e;--link-hover:#115e59;--brand:#14b8a6}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--body);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-underline-offset:3px}
+a:hover{color:var(--link-hover)}
+.site-header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.95);position:sticky;top:0;z-index:20;backdrop-filter:blur(8px)}
+.site-header .inner{max-width:72rem;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:700;font-size:19px;text-decoration:none;letter-spacing:-.01em}
+.brand-mark{width:30px;height:30px;border-radius:9px;background:var(--brand);display:inline-flex;align-items:center;justify-content:center}
+.site-nav{display:flex;gap:22px;font-size:15px}
+.site-nav a{color:var(--muted);text-decoration:none}
+.site-nav a:hover{color:var(--ink)}
+.article{max-width:72ch;margin:0 auto;padding:40px 20px 56px}
+.article h1{color:var(--ink);font-size:clamp(2rem,4.5vw,2.75rem);line-height:1.15;letter-spacing:-.025em;margin:.2em 0 .5em;font-weight:800}
+.article h2{color:var(--ink);font-size:1.6rem;line-height:1.25;letter-spacing:-.015em;margin:2.4em 0 .6em;font-weight:750}
+.article h3{color:var(--ink);font-size:1.2rem;line-height:1.35;margin:1.8em 0 .4em;font-weight:700}
+.article h4{color:var(--ink);font-size:1.05rem;margin:1.5em 0 .3em}
+.article p,.article ul,.article ol,.article dl,.article blockquote,.article table,.article details,.article figure{margin:0 0 1.1em}
+.article ul,.article ol{padding-left:1.4em}
+.article li{margin:.35em 0}
+.article strong{color:var(--ink)}
+.article img{max-width:100%;height:auto;border-radius:12px}
+.article hr{border:0;border-top:1px solid var(--line);margin:2.5em 0}
+.article blockquote{border-left:3px solid var(--brand);padding:.2em 0 .2em 1em;color:var(--body)}
+.article code{background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:.05em .35em;font-size:.9em}
+.article .table-wrap{overflow-x:auto;margin:0 0 1.4em;border:1px solid var(--line);border-radius:12px}
+.article table{border-collapse:collapse;width:100%;font-size:.93rem;margin:0}
+.article th,.article td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+.article th{background:var(--soft);color:var(--ink);font-weight:650}
+.article tr:last-child td{border-bottom:0}
+.article details{border:1px solid var(--line);border-radius:12px;padding:14px 18px;background:#fff}
+.article details+details{margin-top:-.4em}
+.article summary{cursor:pointer;font-weight:650;color:var(--ink)}
+.article details[open] summary{margin-bottom:.5em}
+.article dt{font-weight:700;color:var(--ink);margin-top:1.2em}
+.article dd{margin:.3em 0 0}
+.article a.cite{font-size:.78em;vertical-align:super;line-height:0;text-decoration:none;font-weight:600;margin-left:1px}
+.article a.card{display:block;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 12px;text-decoration:none;color:var(--body)}
+.article a.card:hover{border-color:#99f6e4;background:#f0fdfa}
+.article a.card h2,.article a.card h3,.article a.card h4{margin:0 0 .25em;font-size:1.08rem;color:var(--ink)}
+.article a.card p{margin:0;font-size:.95rem}
+.article .lede{font-size:1.15rem;color:var(--body)}
+.article #related-links{margin:2.5em 0;padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:var(--soft)}
+.article #related-links h2{font-size:1.15rem;margin:0 0 .5em}
+.article #related-links ul{margin:0}
+.article #sources,.article .references{font-size:.93rem}
+.site-footer{border-top:1px solid var(--line);background:var(--soft);color:var(--muted);font-size:14px;line-height:1.6}
+.site-footer .inner{max-width:72ch;margin:0 auto;padding:28px 20px 36px}
+.site-footer p{margin:0 0 .6em}
+.site-footer a{color:var(--muted)}
+.site-footer a:hover{color:var(--ink)}
+@media (max-width:640px){body{font-size:16.5px}.article{padding:28px 18px 44px}.article h2{font-size:1.4rem}.site-nav{gap:14px;font-size:14px}.site-nav .opt{display:none}}
+.article .disclaimer{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1em;margin-top:2.5em}
+.article .disclaimer+.disclaimer{border-top:0;padding-top:0;margin-top:0}

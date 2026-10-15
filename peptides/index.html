@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peptide Hub: Evidence-First Guides by Class | Jabbit</title>
-    <meta name="description" content="An evidence-first peptide directory organized by class — metabolic/GLP-1, healing, growth-hormone, cognitive, and longevity — with FDA-approval status shown on every compound and honest limits on the research.">
-    <link rel="canonical" href="https://jabbitapp.com/peptides">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4',
-                            300: '#5eead4', 400: '#2dd4bf', 500: '#14b8a6',
-                            600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style> body { font-family: 'Inter', sans-serif; } </style>
-    <link rel="stylesheet" href="/assets/site.css" />
-    <script defer src="/assets/site.js"></script>
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Peptide Hub: Evidence-First Guides by Class | Jabbit</title>
+<meta content="An evidence-first peptide directory organized by class — metabolic/GLP-1, healing, growth-hormone, cognitive, and longevity — with FDA-approval status shown on every compound and honest limits on the research." name="description"/>
+<link href="https://jabbitapp.com/peptides" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script defer="" src="/assets/site.js"></script>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
@@ -37,297 +19,241 @@
       "isPartOf": { "@type": "WebSite", "name": "Jabbit", "url": "https://jabbitapp.com/" }
     }
     </script>
-</head>
-<body class="bg-white text-gray-900">
-    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <a href="/" class="flex items-center space-x-3">
-                    <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <span class="text-xl font-bold text-gray-900">Jabbit</span>
-                </a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="/guides/" class="text-gray-600 hover:text-gray-900">Research</a>
-                    <a href="/peptides/" class="text-brand-600 font-medium">Peptides</a>
-                    <a href="/news/" class="text-gray-600 hover:text-gray-900">News</a>
-                    <a href="https://apps.apple.com/app/id6756848719" data-track="peptides_nav_app_store" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-brand-500 text-white font-medium rounded-lg hover:bg-brand-600">Get the app</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="pt-24 pb-12 bg-gradient-to-b from-brand-50 to-white">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">The Peptide Hub</h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Evidence-first guides to the peptides people actually search for — organized by what they are used for, with FDA-approval status shown on every single one.</p>
-
-            <div class="mt-8 flex flex-wrap gap-2 justify-center text-sm">
-                <a href="#metabolic" class="px-4 py-2 rounded-full bg-white border border-gray-200 font-medium hover:border-brand-300 hover:text-brand-700 transition">Metabolic &amp; GLP-1</a>
-                <a href="#healing" class="px-4 py-2 rounded-full bg-white border border-gray-200 font-medium hover:border-brand-300 hover:text-brand-700 transition">Healing &amp; recovery</a>
-                <a href="#growth" class="px-4 py-2 rounded-full bg-white border border-gray-200 font-medium hover:border-brand-300 hover:text-brand-700 transition">Growth hormone</a>
-                <a href="#cognitive" class="px-4 py-2 rounded-full bg-white border border-gray-200 font-medium hover:border-brand-300 hover:text-brand-700 transition">Cognitive &amp; mood</a>
-                <a href="#longevity" class="px-4 py-2 rounded-full bg-white border border-gray-200 font-medium hover:border-brand-300 hover:text-brand-700 transition">Longevity &amp; skin</a>
-            </div>
-            <p class="mt-4 text-xs text-gray-500">Educational only, not medical advice.</p>
-        </div>
-    </div>
-
-    <div class="max-w-6xl mx-auto px-6 py-12">
-        <!-- Evidence legend + honesty framing -->
-        <section class="grid lg:grid-cols-3 gap-6 mb-16">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                <p class="text-sm text-gray-500 mb-3">How to read the badges</p>
-                <div class="space-y-2 text-sm">
-                    <p><span class="inline-block px-2 py-0.5 bg-green-100 text-green-700 rounded font-medium">FDA approved</span> <span class="text-gray-600">labeled drug, real trial program</span></p>
-                    <p><span class="inline-block px-2 py-0.5 bg-amber-100 text-amber-700 rounded font-medium">Investigational</span> <span class="text-gray-600">in human trials, not yet approved</span></p>
-                    <p><span class="inline-block px-2 py-0.5 bg-red-100 text-red-700 rounded font-medium">Research only</span> <span class="text-gray-600">little or no human efficacy data</span></p>
-                </div>
-            </div>
-            <div class="lg:col-span-2 bg-amber-50 border border-amber-200 rounded-2xl p-6">
-                <p class="text-amber-900 font-semibold mb-1">We don&rsquo;t treat &ldquo;peptide&rdquo; as one credibility bucket</p>
-                <p class="text-amber-800 text-sm">Some peptides are FDA-approved medicines with large trial programs. Others are compounds with almost no human data that happen to be popular online. Those are completely different evidence situations, so every card below carries its own status. Browsing by class helps you find a compound; the badge tells you how much to trust what you read next.</p>
-            </div>
-        </section>
-
-        <!-- 1. METABOLIC / GLP-1 -->
-        <section id="metabolic" class="mb-16">
-            <div class="flex items-end justify-between gap-4 mb-6 flex-wrap">
-                <div>
-                    <h2 class="text-2xl font-bold">Metabolic &amp; GLP-1</h2>
-                    <p class="text-gray-600 mt-2 max-w-2xl">Weight, glucose, and appetite. The most clinically validated corner of the peptide world, and the reason most people find Jabbit.</p>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium">Strongest evidence base</span>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="/peptides/semaglutide.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">Semaglutide</span>
-                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded whitespace-nowrap">FDA approved</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">Ozempic, Wegovy, Rybelsus</p>
-                    <p class="text-gray-600 text-sm">GLP-1 receptor agonist with a large trial program and cardiovascular outcomes data.</p>
-                </a>
-                <a href="/peptides/tirzepatide.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">Tirzepatide</span>
-                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded whitespace-nowrap">FDA approved</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">Mounjaro, Zepbound</p>
-                    <p class="text-gray-600 text-sm">Dual GLP-1/GIP agonist approved for type 2 diabetes and chronic weight management.</p>
-                </a>
-                <a href="/peptides/retatrutide.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">Retatrutide</span>
-                        <span class="px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded whitespace-nowrap">Investigational</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">&ldquo;Triple G&rdquo; agonist</p>
-                    <p class="text-gray-600 text-sm">GLP-1/GIP/glucagon agonist in Phase 3 trials — promising, but not yet approved.</p>
-                </a>
-                <a href="/peptides/tesamorelin.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">Tesamorelin</span>
-                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded whitespace-nowrap">FDA approved</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">EGRIFTA &middot; narrow indication</p>
-                    <p class="text-gray-600 text-sm">GHRH analog approved specifically for HIV-associated lipodystrophy, not general fat loss.</p>
-                </a>
-            </div>
-            <div class="mt-4 text-sm text-gray-500">
-                Deeper reading: <a href="/semaglutide-vs-tirzepatide.html" class="text-brand-700 underline underline-offset-2 hover:text-brand-800">Semaglutide vs. tirzepatide</a> &middot; <a href="/glp-1-injection-tracking-guide.html" class="text-brand-700 underline underline-offset-2 hover:text-brand-800">GLP-1 injection tracking</a> &middot; <a href="/glp-1-side-effects-guide.html" class="text-brand-700 underline underline-offset-2 hover:text-brand-800">Side-effect guide</a>
-            </div>
-        </section>
-
-        <!-- 2. HEALING / RECOVERY -->
-        <section id="healing" class="mb-16">
-            <div class="flex items-end justify-between gap-4 mb-6 flex-wrap">
-                <div>
-                    <h2 class="text-2xl font-bold">Healing &amp; recovery</h2>
-                    <p class="text-gray-600 mt-2 max-w-2xl">Tissue, tendon, and gut repair. Heavily discussed in sport and recovery circles, but the human evidence is thin.</p>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-red-100 text-red-700 text-sm font-medium">Mostly preclinical</span>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="/peptides/bpc-157.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">BPC-157</span>
-                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded whitespace-nowrap">Research only</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">Body Protection Compound</p>
-                    <p class="text-gray-600 text-sm">Striking animal data on tendon and gut healing, with almost no controlled human trials.</p>
-                </a>
-                <a href="/peptides/tb-500.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">TB-500</span>
-                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded whitespace-nowrap">Research only</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">Thymosin &beta;-4 fragment</p>
-                    <p class="text-gray-600 text-sm">A synthetic fragment linked to a real protein, but sold far ahead of its human evidence.</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- 3. GROWTH HORMONE SECRETAGOGUES -->
-        <section id="growth" class="mb-16">
-            <div class="flex items-end justify-between gap-4 mb-6 flex-wrap">
-                <div>
-                    <h2 class="text-2xl font-bold">Growth hormone secretagogues</h2>
-                    <p class="text-gray-600 mt-2 max-w-2xl">Compounds that nudge the body&rsquo;s own growth-hormone axis. Real pharmacology, but abandoned or never completed as approved drugs.</p>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-red-100 text-red-700 text-sm font-medium">Not approved</span>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="/peptides/ipamorelin.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">Ipamorelin</span>
-                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded whitespace-nowrap">Research only</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">Selective ghrelin-receptor agonist</p>
-                    <p class="text-gray-600 text-sm">A clean GH-releasing peptide whose pharma development was discontinued.</p>
-                </a>
-                <a href="/peptides/cjc-1295.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">CJC-1295</span>
-                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded whitespace-nowrap">Research only</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">Long-acting GHRH analog</p>
-                    <p class="text-gray-600 text-sm">Extends growth-hormone-releasing hormone&rsquo;s half-life; early trials only, no approval.</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- 4. COGNITIVE / MOOD -->
-        <section id="cognitive" class="mb-16">
-            <div class="flex items-end justify-between gap-4 mb-6 flex-wrap">
-                <div>
-                    <h2 class="text-2xl font-bold">Cognitive &amp; mood</h2>
-                    <p class="text-gray-600 mt-2 max-w-2xl">Nootropic and anxiolytic peptides developed and used in Russia, but never reviewed by the FDA or EMA.</p>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-sm font-medium">Approved abroad, not FDA</span>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="/peptides/semax.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">Semax</span>
-                        <span class="px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded whitespace-nowrap">Not FDA-reviewed</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">ACTH(4&ndash;10) analog</p>
-                    <p class="text-gray-600 text-sm">Used in Russia for stroke and cognition; Western evidence is minimal.</p>
-                </a>
-                <a href="/peptides/selank.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">Selank</span>
-                        <span class="px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded whitespace-nowrap">Not FDA-reviewed</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">Tuftsin analog</p>
-                    <p class="text-gray-600 text-sm">An anxiolytic peptide used in Russia; little independent clinical replication.</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- 5. LONGEVITY / SKIN -->
-        <section id="longevity" class="mb-16">
-            <div class="flex items-end justify-between gap-4 mb-6 flex-wrap">
-                <div>
-                    <h2 class="text-2xl font-bold">Longevity &amp; skin</h2>
-                    <p class="text-gray-600 mt-2 max-w-2xl">Anti-aging and cosmetic peptides. Interesting biology and big claims — the claims usually run well ahead of the human data.</p>
-                </div>
-                <span class="px-3 py-1 rounded-full bg-red-100 text-red-700 text-sm font-medium">Claims &gt; evidence</span>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="/peptides/epitalon.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">Epitalon</span>
-                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded whitespace-nowrap">Research only</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">Pineal tetrapeptide</p>
-                    <p class="text-gray-600 text-sm">Telomerase and lifespan claims rest largely on one research group&rsquo;s work.</p>
-                </a>
-                <a href="/peptides/ghk-cu.html" class="card-hover block bg-white rounded-2xl p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-2 gap-3">
-                        <span class="text-xl font-bold">GHK-Cu</span>
-                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded whitespace-nowrap">Research only</span>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-3">Copper tripeptide</p>
-                    <p class="text-gray-600 text-sm">Genuine cosmetic and wound-healing research topically; injectable use is unproven.</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- What we know / don't -->
-        <section class="grid lg:grid-cols-2 gap-6 mb-16">
-            <div class="bg-blue-50 rounded-2xl p-8 border border-blue-100">
-                <h2 class="text-xl font-bold mb-4">What the evidence supports</h2>
-                <ul class="space-y-3 text-gray-700 text-sm">
-                    <li>GLP-1 medicines (semaglutide, tirzepatide) have large randomized trials and labeled indications.</li>
-                    <li>Some secretagogues have real, published pharmacology even without an approved product.</li>
-                    <li>Approval status and evidence quality are not the same thing — we show both.</li>
-                    <li>Compounding or easy online availability does not equal FDA approval.</li>
-                </ul>
-            </div>
-            <div class="bg-red-50 rounded-2xl p-8 border border-red-100">
-                <h2 class="text-xl font-bold mb-4">What we won&rsquo;t fake certainty about</h2>
-                <ul class="space-y-3 text-gray-700 text-sm">
-                    <li>Whether animal-only signals (BPC-157, TB-500) will hold up in humans.</li>
-                    <li>Whether single-group longevity claims (epitalon) replicate independently.</li>
-                    <li>Whether peptides approved abroad (semax, selank) meet FDA-grade evidence.</li>
-                    <li>Long-term safety of research compounds used off-label without monitoring.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Primary source orientation -->
-        <section class="bg-gray-50 rounded-2xl p-8 mb-16 border border-gray-100">
-            <h2 class="text-xl font-bold mb-4">How to check any claim yourself</h2>
-            <div class="grid md:grid-cols-3 gap-6 text-sm text-gray-700">
-                <div>
-                    <p class="font-semibold text-gray-900 mb-2">For approved drugs</p>
-                    <p>Start with the FDA label, pivotal trial publications, and official safety communications.</p>
-                </div>
-                <div>
-                    <p class="font-semibold text-gray-900 mb-2">For research compounds</p>
-                    <p>Ask whether the literature is animal-only, uncontrolled, early-stage, or absent in humans.</p>
-                </div>
-                <div>
-                    <p class="font-semibold text-gray-900 mb-2">For regulatory context</p>
-                    <p>Use enforcement letters, shortage notices, and formal policy updates instead of vendor claims.</p>
-                </div>
-            </div>
-            <div class="mt-6 flex flex-col sm:flex-row gap-3">
-                <a href="/peptides-compounding-list-update.html" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-gray-200 text-gray-800 font-semibold hover:bg-white transition">Compounding policy watch</a>
-                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-gray-200 text-gray-800 font-semibold hover:bg-white transition">Search PubMed</a>
-            </div>
-        </section>
-
-        <!-- Jabbit CTA -->
-        <section class="bg-gray-100 rounded-2xl p-8">
-            <h2 class="text-xl font-bold mb-4">Where Jabbit fits in</h2>
-            <p class="text-gray-600 mb-6 max-w-3xl">Jabbit is a private tracker for injections and protocols — it logs what you take, when, and how you respond, whether that&rsquo;s a prescribed GLP-1 or something you&rsquo;re researching. The editorial standard here matches the app: help people understand labels, evidence, and uncertainty without turning the category into marketing theater.</p>
-            <div class="flex flex-col sm:flex-row gap-3">
-                <a href="https://apps.apple.com/app/id6756848719" data-track="peptides_bottom_app_store" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition">Download Jabbit</a>
-                <a href="/peptide-reconstitution-calculator" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 font-semibold hover:border-gray-300 transition">Open the reconstitution calculator</a>
-            </div>
-        </section>
-    </div>
-
-    <footer class="bg-gray-50 py-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center justify-between mb-6">
-                <a href="/" class="flex items-center space-x-3 mb-4 md:mb-0">
-                    <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <span class="text-xl font-bold">Jabbit</span>
-                </a>
-                <p class="text-gray-500 text-sm">© 2026 Jabbit. All rights reserved.</p>
-            </div>
-            <p class="site-disclaimer max-w-3xl">Educational content only. Nothing on this page is medical advice, and peptides described as &ldquo;research only&rdquo; are not approved by the FDA for human use. Talk to a qualified clinician before starting or changing any treatment.</p>
-        </div>
-    </footer>
+<link href="/assets/article.css" rel="stylesheet"/></head>
+<body><header class="site-header"><div class="inner">
+<a aria-label="Jabbit home" class="brand" href="/"><span aria-hidden="true" class="brand-mark"><svg fill="none" height="17" stroke="#fff" viewbox="0 0 24 24" width="17"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg></span>Jabbit</a>
+<nav aria-label="Main navigation" class="site-nav"><a href="/guides/">Guides</a><a href="/news/">News</a><a href="/peptides/">Peptides</a><a class="opt" href="/tools/">Tools</a></nav>
+</div></header>
+<main class="article">
+<div>
+<div>
+<h1>The Peptide Hub</h1>
+<p>Evidence-first guides to the peptides people actually search for — organized by what they are used for, with FDA-approval status shown on every single one.</p>
+<div>
+<a href="#metabolic">Metabolic &amp; GLP-1</a>
+<a href="#healing">Healing &amp; recovery</a>
+<a href="#growth">Growth hormone</a>
+<a href="#cognitive">Cognitive &amp; mood</a>
+<a href="#longevity">Longevity &amp; skin</a>
+</div>
+<p>Educational only, not medical advice.</p>
+</div>
+</div>
+<div>
+<section>
+<div>
+<p>How to read the badges</p>
+<div>
+<p>FDA approved labeled drug, real trial program</p>
+<p>Investigational in human trials, not yet approved</p>
+<p>Research only little or no human efficacy data</p>
+</div>
+</div>
+<div>
+<p>We don’t treat “peptide” as one credibility bucket</p>
+<p>Some peptides are FDA-approved medicines with large trial programs. Others are compounds with almost no human data that happen to be popular online. Those are completely different evidence situations, so every card below carries its own status. Browsing by class helps you find a compound; the badge tells you how much to trust what you read next.</p>
+</div>
+</section>
+<section id="metabolic">
+<div>
+<div>
+<h2>Metabolic &amp; GLP-1</h2>
+</div>
+Strongest evidence base
+</div>
+<div>
+<a href="/peptides/semaglutide.html">
+<div>
+Semaglutide
+FDA approved
+</div>
+<p>Ozempic, Wegovy, Rybelsus</p>
+<p>GLP-1 receptor agonist with a large trial program and cardiovascular outcomes data.</p>
+</a>
+<a href="/peptides/tirzepatide.html">
+<div>
+Tirzepatide
+FDA approved
+</div>
+<p>Mounjaro, Zepbound</p>
+<p>Dual GLP-1/GIP agonist approved for type 2 diabetes and chronic weight management.</p>
+</a>
+<a href="/peptides/retatrutide.html">
+<div>
+Retatrutide
+Investigational
+</div>
+<p>“Triple G” agonist</p>
+<p>GLP-1/GIP/glucagon agonist in Phase 3 trials — promising, but not yet approved.</p>
+</a>
+<a href="/peptides/tesamorelin.html">
+<div>
+Tesamorelin
+FDA approved
+</div>
+<p>EGRIFTA · narrow indication</p>
+<p>GHRH analog approved specifically for HIV-associated lipodystrophy, not general fat loss.</p>
+</a>
+</div>
+<div>
+                Deeper reading: <a href="/semaglutide-vs-tirzepatide.html">Semaglutide vs. tirzepatide</a> · <a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking</a> · <a href="/glp-1-side-effects-guide.html">Side-effect guide</a>
+</div>
+</section>
+<section id="healing">
+<div>
+<div>
+<h2>Healing &amp; recovery</h2>
+<p>Tissue, tendon, and gut repair. Heavily discussed in sport and recovery circles, but the human evidence is thin.</p>
+</div>
+Mostly preclinical
+</div>
+<div>
+<a href="/peptides/bpc-157.html">
+<div>
+BPC-157
+Research only
+</div>
+<p>Body Protection Compound</p>
+<p>Striking animal data on tendon and gut healing, with almost no controlled human trials.</p>
+</a>
+<a href="/peptides/tb-500.html">
+<div>
+TB-500
+Research only
+</div>
+<p>Thymosin β-4 fragment</p>
+<p>A synthetic fragment linked to a real protein, but sold far ahead of its human evidence.</p>
+</a>
+</div>
+</section>
+<section id="growth">
+<div>
+<div>
+<h2>Growth hormone secretagogues</h2>
+<p>Compounds that nudge the body’s own growth-hormone axis. Real pharmacology, but abandoned or never completed as approved drugs.</p>
+</div>
+Not approved
+</div>
+<div>
+<a href="/peptides/ipamorelin.html">
+<div>
+Ipamorelin
+Research only
+</div>
+<p>Selective ghrelin-receptor agonist</p>
+<p>A clean GH-releasing peptide whose pharma development was discontinued.</p>
+</a>
+<a href="/peptides/cjc-1295.html">
+<div>
+CJC-1295
+Research only
+</div>
+<p>Long-acting GHRH analog</p>
+<p>Extends growth-hormone-releasing hormone’s half-life; early trials only, no approval.</p>
+</a>
+</div>
+</section>
+<section id="cognitive">
+<div>
+<div>
+<h2>Cognitive &amp; mood</h2>
+<p>Nootropic and anxiolytic peptides developed and used in Russia, but never reviewed by the FDA or EMA.</p>
+</div>
+Approved abroad, not FDA
+</div>
+<div>
+<a href="/peptides/semax.html">
+<div>
+Semax
+Not FDA-reviewed
+</div>
+<p>ACTH(4–10) analog</p>
+<p>Used in Russia for stroke and cognition; Western evidence is minimal.</p>
+</a>
+<a href="/peptides/selank.html">
+<div>
+Selank
+Not FDA-reviewed
+</div>
+<p>Tuftsin analog</p>
+<p>An anxiolytic peptide used in Russia; little independent clinical replication.</p>
+</a>
+</div>
+</section>
+<section id="longevity">
+<div>
+<div>
+<h2>Longevity &amp; skin</h2>
+<p>Anti-aging and cosmetic peptides. Interesting biology and big claims — the claims usually run well ahead of the human data.</p>
+</div>
+Claims &gt; evidence
+</div>
+<div>
+<a href="/peptides/epitalon.html">
+<div>
+Epitalon
+Research only
+</div>
+<p>Pineal tetrapeptide</p>
+<p>Telomerase and lifespan claims rest largely on one research group’s work.</p>
+</a>
+<a href="/peptides/ghk-cu.html">
+<div>
+GHK-Cu
+Research only
+</div>
+<p>Copper tripeptide</p>
+<p>Genuine cosmetic and wound-healing research topically; injectable use is unproven.</p>
+</a>
+</div>
+</section>
+<section>
+<div>
+<h2>What the evidence supports</h2>
+<ul>
+<li>GLP-1 medicines (semaglutide, tirzepatide) have large randomized trials and labeled indications.</li>
+<li>Some secretagogues have real, published pharmacology even without an approved product.</li>
+<li>Approval status and evidence quality are not the same thing — we show both.</li>
+<li>Compounding or easy online availability does not equal FDA approval.</li>
+</ul>
+</div>
+<div>
+<h2>What we won’t fake certainty about</h2>
+<ul>
+<li>Whether animal-only signals (BPC-157, TB-500) will hold up in humans.</li>
+<li>Whether single-group longevity claims (epitalon) replicate independently.</li>
+<li>Whether peptides approved abroad (semax, selank) meet FDA-grade evidence.</li>
+<li>Long-term safety of research compounds used off-label without monitoring.</li>
+</ul>
+</div>
+</section>
+<section>
+<h2>How to check any claim yourself</h2>
+<div>
+<div>
+<p>For approved drugs</p>
+<p>Start with the FDA label, pivotal trial publications, and official safety communications.</p>
+</div>
+<div>
+<p>For research compounds</p>
+<p>Ask whether the literature is animal-only, uncontrolled, early-stage, or absent in humans.</p>
+</div>
+<div>
+<p>For regulatory context</p>
+<p>Use enforcement letters, shortage notices, and formal policy updates instead of vendor claims.</p>
+</div>
+</div>
+<div>
+<a href="/peptides-compounding-list-update.html">Compounding policy watch</a>
+<a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener noreferrer" target="_blank">Search PubMed</a>
+</div>
+</section>
+</div>
+<p class="disclaimer">Educational content only. Nothing on this page is medical advice, and peptides described as “research only” are not approved by the FDA for human use. Talk to a qualified clinician before starting or changing any treatment.</p>
+</main>
+<footer class="site-footer"><div class="inner">
+<p>Educational information only, not medical advice. Medication, dose, and schedule decisions belong with your prescriber and the current product label.</p>
+<p>Published by <a data-track="footer_app_store" href="https://apps.apple.com/app/id6756848719?ct=web_peptides&amp;mt=8" rel="noopener noreferrer" target="_blank">Jabbit</a>, a private iPhone injection log. · <a href="/guides/">Guides</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+</div></footer>
 </body>
 </html>

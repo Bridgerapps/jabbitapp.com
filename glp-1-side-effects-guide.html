@@ -1,190 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GLP-1 Side Effects Timeline: Common Symptoms &amp; Label Red Flags | Jabbit</title>
-  <meta name="description" content="Source-checked overview of common GLP-1 side effects, when they often appear, label-listed warning signs, and what to bring to your prescriber — not medical advice." />
-  <meta property="og:description" content="Common symptoms, timing context, and label warning signs — educational only.">
-  <meta property="og:title" content="GLP-1 Side Effects Timeline: Common Symptoms &amp; Label Red Flags">
-  <meta name="keywords" content="glp-1 side effects, semaglutide side effects, tirzepatide side effects, glp-1 nausea, glp-1 side effects timeline, when do glp-1 side effects go away, glp-1 red flags" />
-  <link rel="canonical" href="https://jabbitapp.com/glp-1-side-effects-guide.html" />
-  <style>
-    :root{
-      --bg:#eff6f7;
-      --card:#ffffff;
-      --ink:#102032;
-      --muted:#52606d;
-      --line:#d6e2e8;
-      --brand:#0f766e;
-      --brand-dark:#115e59;
-      --brand-soft:#e8f6f4;
-      --hero-a:#0f172a;
-      --hero-b:#134e4a;
-      --hero-c:#0f766e;
-      --warn:#fff7ed;
-      --warn-line:#ea580c;
-      --info:#eff6ff;
-      --info-line:#2563eb;
-      --shadow:0 18px 44px rgba(15,23,42,.08);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
-      color:var(--ink);
-      background:
-        radial-gradient(circle at top right, rgba(45,212,191,.12), transparent 26%),
-        linear-gradient(180deg,#eaf5f5 0%,var(--bg) 260px);
-      line-height:1.65;
-    }
-    a{color:var(--brand-dark);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1120px;margin:0 auto;padding:24px}
-    .hero{
-      position:relative;
-      overflow:hidden;
-      padding:38px;
-      border-radius:28px;
-      color:#fff;
-      background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 58%,var(--hero-c) 100%);
-      box-shadow:var(--shadow);
-    }
-    .hero::after{
-      content:"";
-      position:absolute;
-      right:-100px;
-      bottom:-120px;
-      width:300px;
-      height:300px;
-      border-radius:50%;
-      background:radial-gradient(circle, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 70%);
-    }
-    .eyebrow{
-      display:inline-block;
-      margin-bottom:12px;
-      padding:6px 11px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.22);
-      background:rgba(255,255,255,.08);
-      text-transform:uppercase;
-      letter-spacing:.06em;
-      font-size:.78rem;
-      font-weight:800;
-    }
-    h1{margin:0 0 12px;font-size:clamp(2.1rem,4.4vw,3.35rem);line-height:1.02}
-    h2{margin:0 0 12px;font-size:1.42rem;line-height:1.18}
-    h3{margin:0 0 8px;font-size:1.08rem;line-height:1.24}
-    p{margin:0 0 14px}
-    .heroIntro{max-width:820px;font-size:1.06rem;color:rgba(255,255,255,.92)}
-    .ctaRow{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-height:46px;
-      padding:12px 16px;
-      border-radius:14px;
-      font-weight:800;
-      border:1px solid transparent;
-    }
-    .btnPrimary{background:#fff;color:#0f172a}
-    .btnPrimary:hover{text-decoration:none;filter:brightness(.98)}
-    .btnGhost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.28)}
-    .btnGhost:hover{background:rgba(255,255,255,.14);text-decoration:none}
-    .heroGrid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-      gap:12px;
-      margin-top:20px;
-    }
-    .heroGrid div{
-      padding:14px;
-      border-radius:16px;
-      background:rgba(255,255,255,.09);
-      border:1px solid rgba(255,255,255,.14);
-    }
-    .heroGrid strong,.heroGrid span{display:block}
-    .heroGrid span{font-size:.93rem;color:rgba(255,255,255,.84)}
-    .small{font-size:.93rem}
-    .muted{color:var(--muted)}
-    .layout{
-      display:grid;
-      grid-template-columns:minmax(0,1.8fr) minmax(290px,.95fr);
-      gap:22px;
-      align-items:start;
-      margin-top:24px;
-    }
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:24px;
-      padding:24px;
-      box-shadow:var(--shadow);
-    }
-    .note,.warning,.info,.ctaPanel{
-      border-radius:16px;
-      padding:16px;
-      margin:16px 0;
-    }
-    .note{background:var(--brand-soft);border-left:4px solid var(--brand)}
-    .warning{background:var(--warn);border-left:4px solid var(--warn-line)}
-    .info{background:var(--info);border-left:4px solid var(--info-line)}
-    .ctaPanel{
-      background:linear-gradient(135deg,#0f766e 0%,#115e59 100%);
-      color:#fff;
-    }
-    .ctaPanel p{color:rgba(255,255,255,.92)}
-    ul{padding-left:20px;margin:0 0 14px}
-    li{margin:7px 0}
-    .toc{
-      border:1px solid var(--line);
-      border-radius:18px;
-      background:#f8fcfb;
-      padding:18px;
-      margin-bottom:18px;
-    }
-    .toc ul{margin-bottom:0}
-    table{
-      width:100%;
-      border-collapse:collapse;
-      margin:12px 0 18px;
-      border:1px solid var(--line);
-      border-radius:14px;
-      overflow:hidden;
-      background:#fff;
-      font-size:.97rem;
-    }
-    th,td{
-      padding:11px 12px;
-      border-bottom:1px solid var(--line);
-      text-align:left;
-      vertical-align:top;
-    }
-    th{background:#f1f5f9}
-    tr:last-child td{border-bottom:none}
-    .faq dt{font-weight:800;margin-top:14px}
-    .faq dd{margin:6px 0 0;color:var(--muted)}
-    footer{margin-top:22px;color:var(--muted);font-size:.95rem}
-    #related-links{max-width:1120px;margin:0 auto;padding:0 24px 40px}
-    #related-links ul{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:18px;
-      box-shadow:var(--shadow);
-      padding:20px 20px 20px 38px;
-    }
-    @media (max-width:920px){.layout{grid-template-columns:1fr}}
-    @media (max-width:560px){
-      .wrap{padding:16px}
-      .hero,.card{padding:20px}
-      .btn{width:100%}
-      table{font-size:.92rem}
-      th,td{padding:9px}
-      #related-links{padding:0 16px 34px}
-    }
-  </style>
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>GLP-1 Side Effects Timeline: Common Symptoms &amp; Label Red Flags | Jabbit</title>
+<meta content="Source-checked overview of common GLP-1 side effects, when they often appear, label-listed warning signs, and what to bring to your prescriber — not medical advice." name="description"/>
+<meta content="Common symptoms, timing context, and label warning signs — educational only." property="og:description"/>
+<meta content="GLP-1 Side Effects Timeline: Common Symptoms &amp; Label Red Flags" property="og:title"/>
+<meta content="glp-1 side effects, semaglutide side effects, tirzepatide side effects, glp-1 nausea, glp-1 side effects timeline, when do glp-1 side effects go away, glp-1 red flags" name="keywords"/>
+<link href="https://jabbitapp.com/glp-1-side-effects-guide.html" rel="canonical"/>
+<script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"MedicalWebPage",
@@ -195,7 +20,7 @@
     "publisher":{"@type":"Organization","name":"Jabbit","url":"https://jabbitapp.com/"}
   }
   </script>
-  <script type="application/ld+json" id="faq-jsonld">
+<script id="faq-jsonld" type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -235,196 +60,162 @@
   ]
 }
 </script>
-<script defer src="/assets/site.js"></script>
-<style id="related-links-style">
-#related-links{max-width:72rem;margin:2.5rem auto;padding:0}
-#related-links.rl-standalone{padding:0 1.5rem}
-#related-links h2{font-size:1.5rem;line-height:1.25;font-weight:700;letter-spacing:-0.01em;margin:0 0 .75rem;color:inherit}
-#related-links ul{list-style:disc;margin:0;padding-left:1.25rem}
-#related-links li{margin:.4rem 0;line-height:1.6}
-#related-links a{color:#0f766e;font-weight:600;text-decoration:underline;text-underline-offset:3px}
-#related-links a:hover{color:#115e59}
-#related-links ul{list-style:none;padding:16px 18px}
-@media (max-width:640px){body{padding-bottom:88px}}
-</style>
-</head>
-<body data-suppress-global-cta="true">
-  <main class="wrap">
-    <section class="hero">
-      <span class="eyebrow">GLP-1 education</span>
-      <h1>GLP-1 side effects: timing, common symptoms, and red flags</h1>
-      <p class="heroIntro">Current Wegovy and Zepbound labels list gastrointestinal reactions among their most common adverse effects. Wegovy reports that these reactions were most frequent during dosage escalation; Zepbound reports that most nausea, vomiting, and diarrhea events occurred during escalation and decreased over time. This guide separates those label-supported patterns from warning signs that need medical attention. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[1]</a> <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[2]</a></p>
-      <div class="ctaRow">
-        <a class="btn btnGhost" href="/peptides">Explore the peptide hub</a>
-      </div>
-      <div class="heroGrid">
-        <div><strong>Mostly gastrointestinal</strong><span>Nausea, diarrhea, vomiting, constipation, and abdominal symptoms appear in both labels.</span></div>
-        <div><strong>Escalation matters</strong><span>Both labels connect dosage escalation with gastrointestinal tolerability.</span></div>
-        <div><strong>Patterns are not promises</strong><span>A trend in trials cannot predict what one person will experience.</span></div>
-      </div>
-      <p class="small" style="margin-top:14px;color:rgba(255,255,255,.88)">Educational only. This page explains general patterns. It does not diagnose symptoms, recommend dose changes, or replace advice from your prescriber.</p>
-    </section>
-
-    <section class="layout">
-      <article class="card">
-        <nav class="toc" aria-label="Table of contents">
-          <strong>On this page</strong>
-          <ul>
-            <li><a href="#why">Why GLP-1 medications cause side effects</a></li>
-            <li><a href="#common">The common side effects</a></li>
-            <li><a href="#timeline">What the labels say about timing</a></li>
-            <li><a href="#redflags">Red flags: when to seek care</a></li>
-            <li><a href="#helps">What to discuss with your prescriber</a></li>
-            <li><a href="#bydrug">Side effects vary by medication</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </nav>
-
-        <h2 id="why">Why GLP-1 medications cause side effects</h2>
-        <p>Wegovy and Zepbound both delay gastric emptying. Their labels also describe effects on appetite or calorie intake, and both list gastrointestinal adverse reactions prominently. Those facts support a broad mechanism-level connection, but they do not explain every symptom for every person. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[1]</a> <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[2]</a></p>
-        <p>Both products use stepwise escalation schedules intended to reduce gastrointestinal adverse reactions. The schedule and any dose change remain medication-specific decisions for the prescriber and current label. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[1]</a> <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[2]</a></p>
-
-        <div class="info">
-          <strong>The evidence boundary:</strong> delayed gastric emptying and appetite effects are label-supported mechanisms, but a symptom log cannot diagnose why a symptom occurred.
+<script defer="" src="/assets/site.js"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="/assets/article.css" rel="stylesheet"/></head>
+<body><header class="site-header"><div class="inner">
+<a aria-label="Jabbit home" class="brand" href="/"><span aria-hidden="true" class="brand-mark"><svg fill="none" height="17" stroke="#fff" viewbox="0 0 24 24" width="17"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg></span>Jabbit</a>
+<nav aria-label="Main navigation" class="site-nav"><a href="/guides/">Guides</a><a href="/news/">News</a><a href="/peptides/">Peptides</a><a class="opt" href="/tools/">Tools</a></nav>
+</div></header>
+<main class="article">
+<main>
+<section>
+GLP-1 education
+<h1>GLP-1 side effects: timing, common symptoms, and red flags</h1>
+<p>Current Wegovy and Zepbound labels list gastrointestinal reactions among their most common adverse effects. Wegovy reports that these reactions were most frequent during dosage escalation; Zepbound reports that most nausea, vomiting, and diarrhea events occurred during escalation and decreased over time. This guide separates those label-supported patterns from warning signs that need medical attention. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[2]</a></p>
+<div>
+<div><strong>Mostly gastrointestinal</strong>Nausea, diarrhea, vomiting, constipation, and abdominal symptoms appear in both labels.</div>
+<div><strong>Escalation matters</strong>Both labels connect dosage escalation with gastrointestinal tolerability.</div>
+<div><strong>Patterns are not promises</strong>A trend in trials cannot predict what one person will experience.</div>
+</div>
+<p>Educational only. This page explains general patterns. It does not diagnose symptoms, recommend dose changes, or replace advice from your prescriber.</p>
+</section>
+<section>
+<article>
+<h2 id="why">Why GLP-1 medications cause side effects</h2>
+<p>Wegovy and Zepbound both delay gastric emptying. Their labels also describe effects on appetite or calorie intake, and both list gastrointestinal adverse reactions prominently. Those facts support a broad mechanism-level connection, but they do not explain every symptom for every person. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[2]</a></p>
+<p>Both products use stepwise escalation schedules intended to reduce gastrointestinal adverse reactions. The schedule and any dose change remain medication-specific decisions for the prescriber and current label. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[2]</a></p>
+<div>
+<strong>The evidence boundary:</strong> delayed gastric emptying and appetite effects are label-supported mechanisms, but a symptom log cannot diagnose why a symptom occurred.
         </div>
-
-        <h2 id="common">The common side effects</h2>
-        <p class="muted">The current Wegovy and Zepbound labels list the effects below among adverse reactions observed in their trials. Rates differ by product, dose, trial, and population, so this is not a personal risk estimate or a head-to-head comparison. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[1]</a> <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[2]</a></p>
-        <table aria-label="Common GLP-1 side effects">
-          <thead>
-            <tr>
-              <th>Label-listed effect</th>
-              <th>Source context</th>
-              <th>Useful context to record</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Nausea, vomiting, or diarrhea</td>
-              <td>Common gastrointestinal reactions in both labels.</td>
-              <td>Onset relative to the injection, duration, and whether fluids stay down.</td>
-            </tr>
-            <tr>
-              <td>Constipation</td>
-              <td>Listed in both products' adverse-reaction tables.</td>
-              <td>Start date, severity, and any change from the usual pattern.</td>
-            </tr>
-            <tr>
-              <td>Abdominal pain, dyspepsia, or reflux</td>
-              <td>Listed gastrointestinal reactions; severe or persistent pain is a different safety question.</td>
-              <td>Location, severity, duration, and associated vomiting or other symptoms.</td>
-            </tr>
-            <tr>
-              <td>Fatigue or headache</td>
-              <td>Reported in Wegovy trials; fatigue is also listed for Zepbound.</td>
-              <td>Timing, hydration, food intake, sleep, and other possible confounders.</td>
-            </tr>
-            <tr>
-              <td>Injection-site reaction</td>
-              <td>Listed for Zepbound; both labels instruct rotating injection sites.</td>
-              <td>Site, appearance, duration, and whether the reaction is spreading or severe.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2 id="timeline">What the labels say about timing</h2>
-        <p>There is no universal week-by-week side-effect timeline. The strongest source-supported pattern is tied to escalation, and the two labels describe it differently:</p>
-        <ul>
-          <li><strong>Wegovy:</strong> its label says gastrointestinal reactions were most frequently reported during dosage escalation. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[1]</a></li>
-          <li><strong>Zepbound:</strong> its label says most nausea, vomiting, and diarrhea events occurred during dosage escalation and decreased over time. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[2]</a></li>
-          <li><strong>For an individual:</strong> neither statement guarantees when a symptom will start, how long it will last, or whether it is caused by the medicine.</li>
-        </ul>
-        <div class="note">
-          <strong>Why timing is worth recording:</strong> a dated log can show whether a symptom began before or after an injection or escalation. It gives a prescriber chronology; it does not establish causation.
+<h2 id="common">The common side effects</h2>
+<p>The current Wegovy and Zepbound labels list the effects below among adverse reactions observed in their trials. Rates differ by product, dose, trial, and population, so this is not a personal risk estimate or a head-to-head comparison. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[2]</a></p>
+<div class="table-wrap"><table aria-label="Common GLP-1 side effects">
+<thead>
+<tr>
+<th>Label-listed effect</th>
+<th>Source context</th>
+<th>Useful context to record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nausea, vomiting, or diarrhea</td>
+<td>Common gastrointestinal reactions in both labels.</td>
+<td>Onset relative to the injection, duration, and whether fluids stay down.</td>
+</tr>
+<tr>
+<td>Constipation</td>
+<td>Listed in both products' adverse-reaction tables.</td>
+<td>Start date, severity, and any change from the usual pattern.</td>
+</tr>
+<tr>
+<td>Abdominal pain, dyspepsia, or reflux</td>
+<td>Listed gastrointestinal reactions; severe or persistent pain is a different safety question.</td>
+<td>Location, severity, duration, and associated vomiting or other symptoms.</td>
+</tr>
+<tr>
+<td>Fatigue or headache</td>
+<td>Reported in Wegovy trials; fatigue is also listed for Zepbound.</td>
+<td>Timing, hydration, food intake, sleep, and other possible confounders.</td>
+</tr>
+<tr>
+<td>Injection-site reaction</td>
+<td>Listed for Zepbound; both labels instruct rotating injection sites.</td>
+<td>Site, appearance, duration, and whether the reaction is spreading or severe.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="timeline">What the labels say about timing</h2>
+<p>There is no universal week-by-week side-effect timeline. The strongest source-supported pattern is tied to escalation, and the two labels describe it differently:</p>
+<ul>
+<li><strong>Wegovy:</strong> its label says gastrointestinal reactions were most frequently reported during dosage escalation. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[1]</a></li>
+<li><strong>Zepbound:</strong> its label says most nausea, vomiting, and diarrhea events occurred during dosage escalation and decreased over time. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[2]</a></li>
+<li><strong>For an individual:</strong> neither statement guarantees when a symptom will start, how long it will last, or whether it is caused by the medicine.</li>
+</ul>
+<div>
+<strong>Why timing is worth recording:</strong> a dated log can show whether a symptom began before or after an injection or escalation. It gives a prescriber chronology; it does not establish causation.
         </div>
-
-        <h2 id="redflags">Red flags: when to seek medical care</h2>
-        <div class="warning">
-          <strong>These are not "track and wait" symptoms.</strong> The current labels tell patients to contact a healthcare professional promptly for specific serious reactions. Emergency symptoms still require emergency care. This list summarizes label language and is not exhaustive. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[1]</a> <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[2]</a>
-        </div>
-        <ul>
-          <li><strong>Severe or persistent abdominal pain,</strong> sometimes radiating to the back and with or without nausea or vomiting, is listed as a possible sign of pancreatitis.</li>
-          <li><strong>Nausea, vomiting, or diarrhea that does not go away</strong> can lead to dehydration and kidney injury; the medication guides tell patients to contact their healthcare provider.</li>
-          <li><strong>Severe stomach problems</strong> warrant prompt contact. Both labels also report postmarketing ileus, intestinal obstruction, and severe constipation including fecal impaction.</li>
-          <li><strong>Signs of a serious allergic reaction,</strong> including swelling of the face, lips, tongue, or throat or trouble breathing or swallowing, require urgent care.</li>
-          <li><strong>Symptoms of low blood sugar</strong> matter especially when these medicines are used with insulin or an insulin secretagogue such as a sulfonylurea, because the labels describe increased risk with those combinations.</li>
-          <li><strong>A neck lump, persistent hoarseness, trouble swallowing, or shortness of breath</strong> appears in the labels' counseling language about thyroid tumors. Both products are contraindicated with a personal or family history of medullary thyroid carcinoma or MEN 2.</li>
-          <li><strong>Before surgery or a procedure using anesthesia or deep sedation,</strong> tell the care team you take the medicine. Both labels describe rare postmarketing pulmonary aspiration reports and say evidence is insufficient to define a universal mitigation plan.</li>
-        </ul>
-
-        <h2 id="helps">What to discuss with your prescriber</h2>
-        <p class="muted">The labels support a short, non-prescriptive checklist. Your prescriber and the current product label determine medication-specific decisions.</p>
-        <ul>
-          <li><strong>Persistent gastrointestinal symptoms:</strong> both medication guides tell patients to report symptoms that do not go away.</li>
-          <li><strong>Fluid loss:</strong> both guides advise drinking fluids to reduce dehydration risk from nausea, vomiting, or diarrhea.</li>
-          <li><strong>The prescribed escalation plan:</strong> follow the medication-specific label and prescriber; do not change the dose or timing from this page.</li>
-          <li><strong>Planned anesthesia or deep sedation:</strong> make sure the procedural team knows which medicine you use.</li>
-        </ul>
-        <p>The source for each point is the current Wegovy or Zepbound prescribing information and medication guide. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[1]</a> <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[2]</a></p>
-
-        <h2 id="bydrug">Side effects vary by medication</h2>
-        <p>Wegovy and Zepbound have overlapping but not identical adverse-reaction tables, warnings, and schedules. For medication-specific context, use the current label and start with the relevant pillar page: <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">[1]</a> <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">[2]</a></p>
-        <ul>
-          <li><a href="/peptides/semaglutide.html">Semaglutide</a> &mdash; the GLP-1 agonist behind Ozempic and Wegovy.</li>
-          <li><a href="/peptides/tirzepatide.html">Tirzepatide</a> &mdash; the dual GIP/GLP-1 agonist behind Mounjaro and Zepbound.</li>
-        </ul>
-
-        <h2 id="faq">FAQ</h2>
-        <dl class="faq">
-          <dt>Do GLP-1 side effects go away?</dt>
-          <dd>The labels do not promise one timeline. Wegovy says gastrointestinal reactions were most frequent during dosage escalation. Zepbound says most nausea, vomiting, and diarrhea events occurred during escalation and decreased over time. Persistent or severe symptoms belong with a healthcare professional, not a generic timeline.</dd>
-
-          <dt>Are side effects worse after a dose increase?</dt>
-          <dd>Both labels connect escalation with gastrointestinal tolerability. Wegovy reports gastrointestinal reactions most frequently during escalation; Zepbound reports that most nausea, vomiting, and diarrhea events occurred during escalation. That trial pattern cannot predict one person's response.</dd>
-
-          <dt>Does this page tell me what dose to take?</dt>
-          <dd>No. This page is educational and focused on understanding and tracking side effects. Dosing, titration, and switching decisions belong with your prescriber.</dd>
-
-          <dt>When should I contact a healthcare professional?</dt>
-          <dd>Promptly report severe or persistent abdominal pain, gastrointestinal symptoms that do not go away, or symptoms of a serious allergic reaction. The current label for the medicine is the source of truth for its warning signs.</dd>
-        </dl>
-
-  <p class="jabbit-note" style="max-width:72rem;margin:2rem auto 0;font-size:.9rem;line-height:1.6;color:#64748b">If you keep a symptom and dose log, <a href="https://apps.apple.com/app/id6756848719?ct=web_side_effects&mt=8" data-track="glp1_side_effects_guide_body_app_store" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Jabbit</a> is a private iPhone tracker.</p>
-  <section id="related-links">
-    <h2>Related</h2>
-    <ul>
-    <li><a href="/glp1-constipation-guide.html">GLP-1 constipation guide</a></li>
-    <li><a href="/glp1-serum-levels-explained.html">GLP-1 serum levels explained</a></li>
-    <li><a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking guide</a></li>
-    </ul>
-  </section>
-        <h2 id="sources">Sources opened and checked</h2>
-        <ol>
-          <li><a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" target="_blank" rel="noopener noreferrer">Current Wegovy prescribing information and medication guide, DailyMed</a>.</li>
-          <li><a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" target="_blank" rel="noopener noreferrer">Current Zepbound prescribing information and medication guide, DailyMed</a>.</li>
-        </ol>
-        <p class="small">Both sources were opened and checked against the claims on this page on October 15, 2026.</p>
-
-        <footer>
-          <p>Educational and harm-reduction only. Jabbit does not provide medical advice, diagnosis, or treatment recommendations. Always follow your prescriber and the medication label.</p>
-        </footer>
-      </article>
-
-      <aside class="card">
-        <h2>When to seek care</h2>
-        <p class="muted">The labels identify these as reasons for prompt medical attention:</p>
-        <ul>
-          <li>Severe or persistent abdominal pain, especially radiating to the back</li>
-          <li>Nausea, vomiting, or diarrhea that does not go away</li>
-          <li>Severe stomach problems or severe constipation</li>
-          <li>Signs of a serious allergic reaction</li>
-        </ul>
-        <p class="small">See sources <a href="#sources">[1] and [2]</a>.</p>
-
-        <h2 style="margin-top:18px">Minimum useful log</h2>
-        <ul>
-          <li><strong>Dose timestamp</strong> and current dose step</li>
-          <li><strong>Symptom onset</strong> relative to that dose</li>
-          <li><strong>A 0&ndash;10 severity note</strong></li>
-          <li><strong>Confounders</strong> like poor sleep, travel, or a large meal</li>
-        </ul>
-      </aside>
-    </section>
-  </main>
+<h2 id="redflags">Red flags: when to seek medical care</h2>
+<div>
+<strong>These are not "track and wait" symptoms.</strong> The current labels tell patients to contact a healthcare professional promptly for specific serious reactions. Emergency symptoms still require emergency care. This list summarizes label language and is not exhaustive. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[2]</a>
+</div>
+<ul>
+<li><strong>Severe or persistent abdominal pain,</strong> sometimes radiating to the back and with or without nausea or vomiting, is listed as a possible sign of pancreatitis.</li>
+<li><strong>Nausea, vomiting, or diarrhea that does not go away</strong> can lead to dehydration and kidney injury; the medication guides tell patients to contact their healthcare provider.</li>
+<li><strong>Severe stomach problems</strong> warrant prompt contact. Both labels also report postmarketing ileus, intestinal obstruction, and severe constipation including fecal impaction.</li>
+<li><strong>Signs of a serious allergic reaction,</strong> including swelling of the face, lips, tongue, or throat or trouble breathing or swallowing, require urgent care.</li>
+<li><strong>Symptoms of low blood sugar</strong> matter especially when these medicines are used with insulin or an insulin secretagogue such as a sulfonylurea, because the labels describe increased risk with those combinations.</li>
+<li><strong>A neck lump, persistent hoarseness, trouble swallowing, or shortness of breath</strong> appears in the labels' counseling language about thyroid tumors. Both products are contraindicated with a personal or family history of medullary thyroid carcinoma or MEN 2.</li>
+<li><strong>Before surgery or a procedure using anesthesia or deep sedation,</strong> tell the care team you take the medicine. Both labels describe rare postmarketing pulmonary aspiration reports and say evidence is insufficient to define a universal mitigation plan.</li>
+</ul>
+<h2 id="helps">What to discuss with your prescriber</h2>
+<p>The labels support a short, non-prescriptive checklist. Your prescriber and the current product label determine medication-specific decisions.</p>
+<ul>
+<li><strong>Persistent gastrointestinal symptoms:</strong> both medication guides tell patients to report symptoms that do not go away.</li>
+<li><strong>Fluid loss:</strong> both guides advise drinking fluids to reduce dehydration risk from nausea, vomiting, or diarrhea.</li>
+<li><strong>The prescribed escalation plan:</strong> follow the medication-specific label and prescriber; do not change the dose or timing from this page.</li>
+<li><strong>Planned anesthesia or deep sedation:</strong> make sure the procedural team knows which medicine you use.</li>
+</ul>
+<p>The source for each point is the current Wegovy or Zepbound prescribing information and medication guide. <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[2]</a></p>
+<h2 id="bydrug">Side effects vary by medication</h2>
+<p>Wegovy and Zepbound have overlapping but not identical adverse-reaction tables, warnings, and schedules. For medication-specific context, use the current label and start with the relevant pillar page: <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">[1]</a> <a class="cite" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">[2]</a></p>
+<ul>
+<li><a href="/peptides/semaglutide.html">Semaglutide</a> — the GLP-1 agonist behind Ozempic and Wegovy.</li>
+<li><a href="/peptides/tirzepatide.html">Tirzepatide</a> — the dual GIP/GLP-1 agonist behind Mounjaro and Zepbound.</li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<dl class="faq">
+<dt>Do GLP-1 side effects go away?</dt>
+<dd>The labels do not promise one timeline. Wegovy says gastrointestinal reactions were most frequent during dosage escalation. Zepbound says most nausea, vomiting, and diarrhea events occurred during escalation and decreased over time. Persistent or severe symptoms belong with a healthcare professional, not a generic timeline.</dd>
+<dt>Are side effects worse after a dose increase?</dt>
+<dd>Both labels connect escalation with gastrointestinal tolerability. Wegovy reports gastrointestinal reactions most frequently during escalation; Zepbound reports that most nausea, vomiting, and diarrhea events occurred during escalation. That trial pattern cannot predict one person's response.</dd>
+<dt>Does this page tell me what dose to take?</dt>
+<dd>No. This page is educational and focused on understanding and tracking side effects. Dosing, titration, and switching decisions belong with your prescriber.</dd>
+<dt>When should I contact a healthcare professional?</dt>
+<dd>Promptly report severe or persistent abdominal pain, gastrointestinal symptoms that do not go away, or symptoms of a serious allergic reaction. The current label for the medicine is the source of truth for its warning signs.</dd>
+</dl>
+<section id="related-links">
+<h2>Related</h2>
+<ul>
+<li><a href="/glp1-constipation-guide.html">GLP-1 constipation guide</a></li>
+<li><a href="/glp1-serum-levels-explained.html">GLP-1 serum levels explained</a></li>
+<li><a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking guide</a></li>
+</ul>
+</section>
+<h2 id="sources">Sources opened and checked</h2>
+<ol>
+<li><a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b" rel="noopener noreferrer" target="_blank">Current Wegovy prescribing information and medication guide, DailyMed</a>.</li>
+<li><a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b" rel="noopener noreferrer" target="_blank">Current Zepbound prescribing information and medication guide, DailyMed</a>.</li>
+</ol>
+<p>Both sources were opened and checked against the claims on this page on October 15, 2026.</p>
+<div>
+<p>Educational and harm-reduction only. Jabbit does not provide medical advice, diagnosis, or treatment recommendations. Always follow your prescriber and the medication label.</p>
+</div>
+</article>
+<aside>
+<h2>When to seek care</h2>
+<p>The labels identify these as reasons for prompt medical attention:</p>
+<ul>
+<li>Severe or persistent abdominal pain, especially radiating to the back</li>
+<li>Nausea, vomiting, or diarrhea that does not go away</li>
+<li>Severe stomach problems or severe constipation</li>
+<li>Signs of a serious allergic reaction</li>
+</ul>
+<p>See sources <a href="#sources">[1] and [2]</a>.</p>
+<h2>Minimum useful log</h2>
+<ul>
+<li><strong>Dose timestamp</strong> and current dose step</li>
+<li><strong>Symptom onset</strong> relative to that dose</li>
+<li><strong>A 0–10 severity note</strong></li>
+<li><strong>Confounders</strong> like poor sleep, travel, or a large meal</li>
+</ul>
+</aside>
+</section>
+</main>
+</main>
+<footer class="site-footer"><div class="inner">
+<p>Educational information only, not medical advice. Medication, dose, and schedule decisions belong with your prescriber and the current product label.</p>
+<p>Published by <a data-track="footer_app_store" href="https://apps.apple.com/app/id6756848719?ct=web_side_effects&amp;mt=8" rel="noopener noreferrer" target="_blank">Jabbit</a>, a private iPhone injection log. · <a href="/guides/">Guides</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+</div></footer>
 </body>
 </html>
