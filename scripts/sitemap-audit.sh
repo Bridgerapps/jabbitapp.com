@@ -26,9 +26,8 @@ if [ ! -f "$SITEMAP" ]; then
   exit 2
 fi
 
-# Extract sitemap URLs exactly as published. Directory URLs map to their local
-# index.html files; this is required for the current /guides/, /news/, and
-# /peptides/ hubs and for nested peptide pages.
+# Extract sitemap URLs exactly as published. Directory URLs, including
+# extensionless URLs under trailingSlash:false, map to local index.html files.
 mapfile -t LOC_URLS < <(grep -oE '<loc>[^<]+' "$SITEMAP" | sed 's#<loc>##')
 mapfile -t HTML_FILES < <(
   find "$SITE_DIR" -type f -name '*.html' \
@@ -53,6 +52,8 @@ for url in "${LOC_URLS[@]}"; do
   rel="${rel%%\?*}"
   if [ -z "$rel" ] || [[ "$rel" == */ ]]; then
     rel="${rel}index.html"
+  elif [ -d "$SITE_DIR/$rel" ]; then
+    rel="${rel}/index.html"
   fi
 
   if [[ "$rel" == /* ]] || [[ "$rel" == *'..'* ]]; then

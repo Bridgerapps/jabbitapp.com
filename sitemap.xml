@@ -127,13 +127,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jabbitapp.com/guides/</loc>
+    <loc>https://jabbitapp.com/guides</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jabbitapp.com/index.html</loc>
+    <loc>https://jabbitapp.com/</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -151,13 +151,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jabbitapp.com/news/</loc>
+    <loc>https://jabbitapp.com/news</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://jabbitapp.com/peptide-reconstitution-calculator.html</loc>
+    <loc>https://jabbitapp.com/peptide-reconstitution-calculator</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -199,7 +199,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jabbitapp.com/peptides/</loc>
+    <loc>https://jabbitapp.com/peptides</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
