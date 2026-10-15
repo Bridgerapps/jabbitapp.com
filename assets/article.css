@@ -58,3 +58,4 @@ a:hover{color:var(--link-hover)}
 .article th,.article td{min-width:8.5rem}
 .article th:first-child,.article td:first-child{min-width:7rem}
 .article caption{caption-side:top;text-align:left;font-size:.85rem;color:var(--muted);padding:10px 12px}
+.article pre{max-width:100%;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem;background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:12px}

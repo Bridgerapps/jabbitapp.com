@@ -1,30 +1,21 @@
 {
   "version": 1,
-  "updated": "2026-10-15T23:16:25Z",
+  "updated": "2026-10-15T23:36:15Z",
   "rules": [
-    {
-      "file": "compounded-tirzepatide-impurities-quality-questions.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        }
-      ]
-    },
     {
       "file": "fda-compounded-glp1-enforcement-2026.html",
       "links": [
         {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
+          "href": "/fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
+          "text": "Hims &amp; Hers and the compounded \u201cWegovy pill\u201d"
         },
         {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
+          "href": "/peptides/semaglutide.html",
+          "text": "Semaglutide: approvals and trials"
+        },
+        {
+          "href": "/news/",
+          "text": "News"
         }
       ]
     },
@@ -32,12 +23,12 @@
       "file": "fda-glp1-compounding-crackdown-hims-wegovy-pill.html",
       "links": [
         {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (reminders + logging)"
+          "href": "/fda-compounded-glp1-enforcement-2026.html",
+          "text": "FDA enforcement on compounded GLP-1s"
         },
         {
-          "href": "/fda-compounded-glp1-enforcement-2026.html",
-          "text": "FDA enforcement on non-approved compounded GLP-1s (2026)"
+          "href": "/news/",
+          "text": "News"
         }
       ]
     },
@@ -62,12 +53,12 @@
       "file": "fda-warning-letters-telehealth-compounded-glp1-marketing-2026-04.html",
       "links": [
         {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
+          "href": "/fda-compounded-glp1-enforcement-2026.html",
+          "text": "FDA enforcement on compounded GLP-1s"
         },
         {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
+          "href": "/news/",
+          "text": "News"
         }
       ]
     },
@@ -105,12 +96,16 @@
       "file": "glp1-alcohol-guide.html",
       "links": [
         {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (nausea, GI, fatigue, etc.)"
+          "href": "/glp1-fatigue-guide.html",
+          "text": "Fatigue on GLP-1 medicines"
         },
         {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
+          "href": "/glp-1-side-effects-guide.html",
+          "text": "GLP-1 side effects guide"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides"
         }
       ]
     },
@@ -216,12 +211,16 @@
       "file": "glp1-fatigue-guide.html",
       "links": [
         {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
+          "href": "/glp1-stress-anxiety-hrv-guide.html",
+          "text": "Stress, HRV and GLP-1 medicines"
         },
         {
-          "href": "/glp1-stress-anxiety-hrv-guide.html",
-          "text": "Stress/HRV on GLP-1 (what to track + patterns)"
+          "href": "/glp-1-injection-tracking-guide.html",
+          "text": "GLP-1 injection tracking guide"
+        },
+        {
+          "href": "/guides/",
+          "text": "Guides"
         }
       ]
     },
@@ -307,19 +306,6 @@
       ]
     },
     {
-      "file": "india-semaglutide-generics-ozempic-wegovy-launches-2026-03.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        }
-      ]
-    },
-    {
       "file": "multi-compound-peptide-protocol-tracking.html",
       "links": [
         {
@@ -384,12 +370,16 @@
       "file": "retatrutide-timeline.html",
       "links": [
         {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side-effects guide (what to document)"
+          "href": "/retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html",
+          "text": "TRANSCEND-T2D-1 explainer"
         },
         {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (logging tips)"
+          "href": "/peptides/retatrutide.html",
+          "text": "Retatrutide: trial evidence"
+        },
+        {
+          "href": "/news/",
+          "text": "News"
         }
       ]
     },
@@ -397,12 +387,16 @@
       "file": "retatrutide-transcend-t2d-1-phase-3-topline-results-2026.html",
       "links": [
         {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
+          "href": "/peptides/retatrutide.html",
+          "text": "Retatrutide: trial evidence"
         },
         {
-          "href": "/guides/",
-          "text": "Guides hub (side effects, tracking, and adherence)"
+          "href": "/retatrutide-timeline.html",
+          "text": "Retatrutide timeline"
+        },
+        {
+          "href": "/news/",
+          "text": "News"
         }
       ]
     },
@@ -427,25 +421,12 @@
       "file": "wegovy-hd-7-2mg-fda-approval-national-priority-voucher-2026-03.html",
       "links": [
         {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
+          "href": "/peptides/semaglutide.html",
+          "text": "Semaglutide: approvals and trials"
         },
         {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        }
-      ]
-    },
-    {
-      "file": "zealand-roche-amylin-obesity-phase2-data-market-reaction.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/guides/",
-          "text": "GLP-1 guides hub (side effects, dosing, and adherence)"
+          "href": "/news/",
+          "text": "News"
         }
       ]
     }

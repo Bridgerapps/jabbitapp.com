@@ -141,6 +141,7 @@
       ]
     }
   </script>
+<style id="related-links-style">#related-links{max-width:72rem;margin:3.5rem auto 0;padding:0 1.5rem}#related-links h2{font-size:1.25rem;font-weight:700;margin:0 0 .75rem;color:#0f172a}#related-links ul{list-style:disc;padding-left:1.25rem}#related-links li{margin:.4rem 0}#related-links a{color:#0f766e;font-weight:600;text-decoration:underline;text-underline-offset:3px}</style>
 </head>
 <body class="text-slate-900 antialiased">
   <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/60 bg-white/75 backdrop-blur-xl">
@@ -183,7 +184,7 @@
       <div class="grid gap-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(360px,420px)] lg:gap-8">
         <div class="space-y-6">
           <div class="glass-panel inline-flex items-center gap-2 rounded-full border border-brand-100 px-3 py-1.5 text-sm font-semibold text-brand-800 shadow-sm">
-            Educational tool, science-first by design
+            Educational math tool
           </div>
 
           <div class="max-w-3xl">
@@ -205,7 +206,7 @@
             <div class="metric-card rounded-3xl p-4">
               <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Step 2</p>
               <p class="mt-2 text-sm font-semibold text-slate-900">Choose the target dose</p>
-              <p class="mt-1 text-sm leading-6 text-slate-600">Dose is entered in mcg, which is how many protocols are written.</p>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Enter the amount in mcg; it is converted to mg for the formula.</p>
             </div>
             <div class="metric-card rounded-3xl p-4">
               <p class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">Step 3</p>
@@ -274,7 +275,7 @@
                       </div>
                     </label>
                     <div class="min-w-[200px]">
-                      <p class="text-sm font-semibold text-slate-900">Quick doses</p>
+                      <p class="text-sm font-semibold text-slate-900">Example amounts</p>
                       <div class="mt-2 flex flex-wrap gap-2">
                         <button type="button" class="segmented-btn rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700" data-dose="100">100 mcg</button>
                         <button type="button" class="segmented-btn rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700" data-dose="250">250 mcg</button>
@@ -404,15 +405,15 @@
                 <div class="mt-4 space-y-3">
                   <button type="button" class="example-card w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left transition hover:border-brand-200 hover:shadow-md" data-vial="5" data-diluent="2" data-dose="250">
                     <p class="text-sm font-semibold text-slate-900">5 mg vial, 2 mL diluent, 250 mcg dose</p>
-                    <p class="mt-1 text-sm text-slate-600">A common starter example with an easy 10-unit draw.</p>
+                    <p class="mt-1 text-sm text-slate-600">Works out to a 10-unit (0.10 mL) draw.</p>
                   </button>
                   <button type="button" class="example-card w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left transition hover:border-brand-200 hover:shadow-md" data-vial="10" data-diluent="2" data-dose="500">
                     <p class="text-sm font-semibold text-slate-900">10 mg vial, 2 mL diluent, 500 mcg dose</p>
-                    <p class="mt-1 text-sm text-slate-600">Higher concentration, still lands on a tidy 10-unit draw.</p>
+                    <p class="mt-1 text-sm text-slate-600">Higher concentration; also a 10-unit draw.</p>
                   </button>
                   <button type="button" class="example-card w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-left transition hover:border-brand-200 hover:shadow-md" data-vial="10" data-diluent="4" data-dose="250">
                     <p class="text-sm font-semibold text-slate-900">10 mg vial, 4 mL diluent, 250 mcg dose</p>
-                    <p class="mt-1 text-sm text-slate-600">More diluted, easier for small dose adjustments.</p>
+                    <p class="mt-1 text-sm text-slate-600">More dilute; a 20-unit (0.20 mL) draw.</p>
                   </button>
                 </div>
               </div>
@@ -459,20 +460,11 @@
         </div>
 
         <aside class="glass-panel rounded-[2rem] border border-white/80 p-6 shadow-soft sm:p-8">
-          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Why people like this layout</p>
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Context and limits</p>
           <div class="mt-5 space-y-4 text-sm leading-7 text-slate-600">
-            <div class="rounded-2xl border border-slate-200 bg-white p-4">
-              <p class="font-semibold text-slate-900">Presets reduce setup friction</p>
-              <p class="mt-1">Start from common vial and diluent combinations, then adjust only what is different.</p>
-            </div>
-            <div class="rounded-2xl border border-slate-200 bg-white p-4">
-              <p class="font-semibold text-slate-900">Interpretation beats raw numbers</p>
-              <p class="mt-1">Seeing mcg per unit and the nearest whole-unit mark makes the output more usable in the real world.</p>
-            </div>
-            <div class="rounded-2xl border border-slate-200 bg-white p-4">
-              <p class="font-semibold text-slate-900">Trust cues are built in</p>
-              <p class="mt-1">The page warns when a dose exceeds the vial contents or when the draw volume looks awkwardly tiny or unusually large.</p>
-            </div>
+            <p><strong class="text-slate-900">Units are a volume scale.</strong> FDA’s syringe guidance describes standard insulin syringe sizes of 1.0 mL (100 units) and 0.5 mL (50 units), marked “For use with U100 insulin only.”<a class="text-brand-700 font-semibold" href="#calc-ref-1">[1]</a> That is why 1 unit = 0.01 mL here.</p>
+            <p><strong class="text-slate-900">The math does not validate a dose.</strong> Many peptides people reconstitute, including BPC-157, TB-500, CJC-1295, and ipamorelin, are not FDA-approved drugs. FDA’s compounding safety-risk page describes possible immunogenicity and peptide-related impurities for each; ipamorelin acetate is currently in category 2, and the others appear in its list of nominations that were withdrawn.<a class="text-brand-700 font-semibold" href="#calc-ref-2">[2]</a></p>
+            <p><strong class="text-slate-900">Use the label.</strong> For a prescribed product, the prescribing information and your pharmacist are the source of truth for concentration and volume.</p>
           </div>
         </aside>
       </div>
