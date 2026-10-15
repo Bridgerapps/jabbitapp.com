@@ -3,16 +3,6 @@
   "total_pages": 165,
   "topics": [
     {
-      "topic": "bpc-157",
-      "filename": "bpc-157-complete-guide.html",
-      "created": "2026-02-24"
-    },
-    {
-      "topic": "compounded-tirzepatide",
-      "filename": "compounded-tirzepatide-guide.html",
-      "created": "2026-02-24"
-    },
-    {
       "topic": "glp-1-injection-tracking",
       "filename": "glp-1-injection-tracking-guide.html",
       "created": "2026-02-24"
@@ -33,21 +23,6 @@
       "created": "2026-02-27"
     },
     {
-      "topic": "injection-site-rotation",
-      "filename": "injection-site-rotation-science.html",
-      "created": "2026-02-24"
-    },
-    {
-      "topic": "peptide-reconstitution",
-      "filename": "peptide-reconstitution-guide.html",
-      "created": "2026-02-24"
-    },
-    {
-      "topic": "peptide-site-rotation",
-      "filename": "peptide-site-rotation-guide.html",
-      "created": "2026-02-24"
-    },
-    {
       "topic": "peptide-storage-stability",
       "filename": "peptide-storage-stability-guide.html",
       "created": "2026-02-24"
@@ -55,16 +30,6 @@
     {
       "topic": "semaglutide-half-life",
       "filename": "semaglutide-half-life.html",
-      "created": "2026-02-24"
-    },
-    {
-      "topic": "semaglutide-vs-tirzepatide",
-      "filename": "semaglutide-vs-tirzepatide.html",
-      "created": "2026-02-24"
-    },
-    {
-      "topic": "tb-500-thymosin",
-      "filename": "tb-500-thymosin-beta-guide.html",
       "created": "2026-02-24"
     },
     {

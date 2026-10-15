@@ -3,6 +3,76 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/bpc-157-complete-guide.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/bpc-157-complete-guide",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/tb-500-thymosin-beta-guide.html",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/tb-500-thymosin-beta-guide",
+      "destination": "/peptides/",
+      "permanent": true
+    },
+    {
+      "source": "/compounded-tirzepatide-guide.html",
+      "destination": "/fda-compounded-glp1-enforcement-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/compounded-tirzepatide-guide",
+      "destination": "/fda-compounded-glp1-enforcement-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-vs-tirzepatide.html",
+      "destination": "/glp1-serum-levels-explained.html",
+      "permanent": true
+    },
+    {
+      "source": "/semaglutide-vs-tirzepatide",
+      "destination": "/glp1-serum-levels-explained.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-site-rotation-guide.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-site-rotation-guide",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/injection-site-rotation-science.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/injection-site-rotation-science",
+      "destination": "/glp-1-injection-tracking-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-reconstitution-guide.html",
+      "destination": "/peptide-reconstitution-calculator.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-reconstitution-guide",
+      "destination": "/peptide-reconstitution-calculator.html",
+      "permanent": true
+    },
+    {
       "source": "/adhd-stimulant-shortage-2026-pharmacy-filling-issues.html",
       "destination": "/",
       "permanent": true
@@ -1054,12 +1124,12 @@
     },
     {
       "source": "/retatrutide-injection-site-rotation-tracker.html",
-      "destination": "/injection-site-rotation-science.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
       "permanent": true
     },
     {
       "source": "/retatrutide-injection-site-rotation-tracker",
-      "destination": "/injection-site-rotation-science.html",
+      "destination": "/glp-1-injection-tracking-guide.html",
       "permanent": true
     },
     {
@@ -1164,12 +1234,12 @@
     },
     {
       "source": "/retatrutide-storage-stability-guide.html",
-      "destination": "/peptide-reconstitution-guide.html",
+      "destination": "/peptide-reconstitution-calculator.html",
       "permanent": true
     },
     {
       "source": "/retatrutide-storage-stability-guide",
-      "destination": "/peptide-reconstitution-guide.html",
+      "destination": "/peptide-reconstitution-calculator.html",
       "permanent": true
     },
     {
@@ -1344,12 +1414,12 @@
     },
     {
       "source": "/switching-semaglutide-to-tirzepatide-tracker.html",
-      "destination": "/semaglutide-vs-tirzepatide.html",
+      "destination": "/glp1-serum-levels-explained.html",
       "permanent": true
     },
     {
       "source": "/switching-semaglutide-to-tirzepatide-tracker",
-      "destination": "/semaglutide-vs-tirzepatide.html",
+      "destination": "/glp1-serum-levels-explained.html",
       "permanent": true
     },
     {

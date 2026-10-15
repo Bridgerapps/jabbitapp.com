@@ -1,33 +1,7 @@
 {
   "version": 1,
-  "updated": "2026-10-15T22:45:10Z",
+  "updated": "2026-10-15T23:16:25Z",
   "rules": [
-    {
-      "file": "bpc-157-complete-guide.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
-        }
-      ]
-    },
-    {
-      "file": "compounded-tirzepatide-guide.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side effects guide (what to expect + when to call)"
-        }
-      ]
-    },
     {
       "file": "compounded-tirzepatide-impurities-quality-questions.html",
       "links": [
@@ -100,10 +74,6 @@
     {
       "file": "glp-1-injection-tracking-guide.html",
       "links": [
-        {
-          "href": "/injection-site-rotation-science.html",
-          "text": "Injection site rotation science"
-        },
         {
           "href": "/glp1-serum-levels-explained.html",
           "text": "GLP-1 serum levels explained"
@@ -299,10 +269,6 @@
         {
           "href": "/glp-1-side-effects-guide.html",
           "text": "GLP-1 side-effects guide (what to document)"
-        },
-        {
-          "href": "/semaglutide-vs-tirzepatide.html",
-          "text": "Semaglutide vs tirzepatide (label-checked comparison)"
         }
       ]
     },
@@ -354,19 +320,6 @@
       ]
     },
     {
-      "file": "injection-site-rotation-science.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (rotation + logging)"
-        },
-        {
-          "href": "/peptide-site-rotation-guide.html",
-          "text": "Peptide site rotation guide (practical rotation patterns)"
-        }
-      ]
-    },
-    {
       "file": "multi-compound-peptide-protocol-tracking.html",
       "links": [
         {
@@ -406,36 +359,6 @@
         {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
-        }
-      ]
-    },
-    {
-      "file": "peptide-reconstitution-guide.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/peptide-site-rotation-guide.html",
-          "text": "Peptide site rotation guide (practical rotation patterns)"
-        }
-      ]
-    },
-    {
-      "file": "peptide-site-rotation-guide.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
         }
       ]
     },
@@ -445,10 +368,6 @@
         {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
         }
       ]
     },
@@ -458,10 +377,6 @@
         {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
         }
       ]
     },
@@ -486,29 +401,8 @@
           "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
         },
         {
-          "href": "/semaglutide-vs-tirzepatide.html",
-          "text": "Semaglutide vs tirzepatide (a practical comparison)"
-        },
-        {
           "href": "/guides/",
           "text": "Guides hub (side effects, tracking, and adherence)"
-        }
-      ]
-    },
-    {
-      "file": "semaglutide-vs-tirzepatide.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "How to keep an accurate GLP-1 injection record"
-        },
-        {
-          "href": "/glp-1-side-effects-guide.html",
-          "text": "GLP-1 side-effects guide (what to document)"
-        },
-        {
-          "href": "/guides/",
-          "text": "Guides hub (practical GLP-1 and peptide help)"
         }
       ]
     },
@@ -526,19 +420,6 @@
         {
           "href": "/guides/",
           "text": "Guides hub (practical GLP-1 and peptide help)"
-        }
-      ]
-    },
-    {
-      "file": "tb-500-thymosin-beta-guide.html",
-      "links": [
-        {
-          "href": "/glp-1-injection-tracking-guide.html",
-          "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (step-by-step)"
         }
       ]
     },
@@ -561,10 +442,6 @@
         {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
-        },
-        {
-          "href": "/semaglutide-vs-tirzepatide.html",
-          "text": "Semaglutide vs tirzepatide (differences that matter)"
         },
         {
           "href": "/guides/",

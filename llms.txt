@@ -42,14 +42,7 @@ Evidence-first overviews of individual peptides on the website: what each one is
 Practical, non-promotional guides for people tracking peptide and GLP-1 injections.
 - GLP-1 Injection Tracking Guide: https://jabbitapp.com/glp-1-injection-tracking-guide.html
 - GLP-1 Side Effects Guide: https://jabbitapp.com/glp-1-side-effects-guide.html
-- Semaglutide vs Tirzepatide: https://jabbitapp.com/semaglutide-vs-tirzepatide.html
-- BPC-157 Complete Guide: https://jabbitapp.com/bpc-157-complete-guide.html
-- TB-500 (Thymosin Beta-4) Guide: https://jabbitapp.com/tb-500-thymosin-beta-guide.html
-- Injection Site Rotation Science: https://jabbitapp.com/injection-site-rotation-science.html
 - GLP-1 Serum Levels Explained: https://jabbitapp.com/glp1-serum-levels-explained.html
-- Peptide Reconstitution Guide: https://jabbitapp.com/peptide-reconstitution-guide.html
-- Peptide Site Rotation Guide: https://jabbitapp.com/peptide-site-rotation-guide.html
-- Compounded Tirzepatide Guide: https://jabbitapp.com/compounded-tirzepatide-guide.html
 
 ## News
 Plain-English coverage of GLP-1 and peptide regulatory actions, clinical-trial readouts, and access changes — with what each update does and doesn't mean.
