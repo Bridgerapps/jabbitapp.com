@@ -54,3 +54,7 @@ a:hover{color:var(--link-hover)}
 @media (max-width:640px){body{font-size:16.5px}.article{padding:28px 18px 44px}.article h2{font-size:1.4rem}.site-nav{gap:14px;font-size:14px}.site-nav .opt{display:none}}
 .article .disclaimer{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1em;margin-top:2.5em}
 .article .disclaimer+.disclaimer{border-top:0;padding-top:0;margin-top:0}
+.article a{overflow-wrap:anywhere}
+.article th,.article td{min-width:8.5rem}
+.article th:first-child,.article td:first-child{min-width:7rem}
+.article caption{caption-side:top;text-align:left;font-size:.85rem;color:var(--muted);padding:10px 12px}
