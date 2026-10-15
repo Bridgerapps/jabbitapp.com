@@ -34,6 +34,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css" />
   <script defer src="/assets/site.js"></script>
+<style id="related-links-style">
+#related-links{max-width:72rem;margin:2.5rem auto;padding:0}
+#related-links.rl-standalone{padding:0 1.5rem}
+#related-links h2{font-size:1.5rem;line-height:1.25;font-weight:700;letter-spacing:-0.01em;margin:0 0 .75rem;color:inherit}
+#related-links ul{list-style:disc;margin:0;padding-left:1.25rem}
+#related-links li{margin:.4rem 0;line-height:1.6}
+#related-links a{color:#0f766e;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+#related-links a:hover{color:#115e59}
+@media (max-width:640px){body{padding-bottom:88px}}
+</style>
 </head>
 <body class="bg-white text-gray-900">
   <!-- Navigation -->
@@ -351,6 +361,13 @@
   </article>
 
   <!-- Footer -->
+  <section id="related-links" class="rl-standalone">
+    <h2>Related</h2>
+    <ul>
+    <li><a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking guide (log shots, sites, notes)</a></li>
+    <li><a href="/peptide-reconstitution-guide.html">Peptide reconstitution guide (step-by-step)</a></li>
+    </ul>
+  </section>
   <footer class="py-12 px-6 bg-gray-900 text-white mt-16">
     <div class="max-w-6xl mx-auto">
       <div class="grid md:grid-cols-4 gap-8 mb-8">
@@ -390,12 +407,5 @@
       </div>
     </div>
   </footer>
-  <section id="related-links">
-    <h2>Related</h2>
-    <ul>
-    <li><a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking guide (log shots, sites, notes)</a></li>
-    <li><a href="/peptide-reconstitution-guide.html">Peptide reconstitution guide (step-by-step)</a></li>
-    </ul>
-  </section>
 </body>
 </html>
