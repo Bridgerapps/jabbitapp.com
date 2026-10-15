@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-15T22:19:13Z",
+  "updated": "2026-10-15T22:45:10Z",
   "rules": [
     {
       "file": "bpc-157-complete-guide.html",
@@ -421,10 +421,6 @@
           "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
         },
         {
-          "href": "/peptide-reconstitution-guide.html",
-          "text": "Peptide reconstitution guide (units, dilution, logs)"
-        },
-        {
           "href": "/peptide-site-rotation-guide.html",
           "text": "Peptide site rotation guide (practical rotation patterns)"
         }
@@ -479,10 +475,6 @@
         {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide (logging tips)"
-        },
-        {
-          "href": "/retatrutide-timeline.html",
-          "text": "Retatrutide timeline (what is publicly known)"
         }
       ]
     },
