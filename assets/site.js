@@ -59,12 +59,30 @@
     }
   } catch (_) {}
 
+  // Campaign attribution: keep only utm_source/medium/campaign (sanitized); never other query params.
+  const utm = (() => {
+    const o = {};
+    try {
+      const sp = new URLSearchParams(location.search || '');
+      for (const k of ['utm_source', 'utm_medium', 'utm_campaign']) {
+        const v = (sp.get(k) || '').replace(/[^A-Za-z0-9._-]/g, '').slice(0, 60);
+        if (v) o[k] = v;
+      }
+    } catch (_) {}
+    return o;
+  })();
+  // Referrer: origin + path only (drop query/hash, which can carry personal data).
+  const cleanRef = (r) => {
+    try { if (!r) return ''; const u = new URL(r); return (u.origin + u.pathname).slice(0, 240); } catch (_) { return ''; }
+  };
+
   const sendTrack = (event, target = '') => {
     const payload = {
       event,
       page: location.pathname || '/',
       target,
-      ref: document.referrer || '',
+      ref: cleanRef(document.referrer || ''),
+      ...utm,
       ts: Date.now(),
     };
 
@@ -101,6 +119,7 @@
         page: payload.page,
         target: target || '',
         ref: payload.ref || '',
+        ...utm,
       });
       const img = new Image();
       img.src = `/api/track?${q.toString()}`;

@@ -48,8 +48,12 @@ module.exports = async (req, res) => {
       event: String(body.event || 'pageview'),
       page: String(body.page || '/'),
       target: String(body.target || ''),
-      ref: String(body.ref || req.headers.referer || ''),
+      ref: String(body.ref || ''),
     };
+    for (const k of ['utm_source', 'utm_medium', 'utm_campaign']) {
+      const v = String(body[k] || '').replace(/[^A-Za-z0-9._-]/g, '').slice(0, 60);
+      if (v) payload[k] = v;
+    }
 
     const headers = {
       'content-type': 'application/json',
