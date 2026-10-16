@@ -47,6 +47,7 @@ Practical, non-promotional guides for people tracking peptide and GLP-1 injectio
 ## Study Teardowns
 Critical single-study reads: design, comparator, funding, dropout, effect size, enrollment, and durability, with charts rebuilt from published numbers.
 - Study teardowns hub: https://jabbitapp.com/research/
+- TB-500 vs thymosin beta-4 (FDA review, full-protein trials, racing-lab chemistry, registry check): https://jabbitapp.com/research/tb-500-thymosin-beta-4-teardown.html
 - BPC-157 origins (1989 patent, PubMed authorship count, human proteome scan): https://jabbitapp.com/research/bpc-157-origins-teardown.html
 - Epitalon/Thymalin longevity (Khavinson studies, translated): https://jabbitapp.com/research/epitalon-thymalin-khavinson-teardown.html
 - Selank anxiety (Russian studies, translated): https://jabbitapp.com/research/selank-anxiety-teardown.html

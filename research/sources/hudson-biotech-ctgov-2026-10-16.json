@@ -1,0 +1,158 @@
+{
+ "retrieved": "2026-10-16 ET via https://clinicaltrials.gov/api/v2/studies/{nct}",
+ "query": "https://clinicaltrials.gov/api/v2/studies?query.spons=Hudson%20Biotech",
+ "records": [
+  {
+   "nct": "NCT07437547",
+   "brief_title": "BPC 157 for Acute Hamstring Muscle Strain Repair",
+   "official_title": "A Randomized, Double-Blind, Placebo-Controlled Phase 2 Trial of Pentadecapeptide BPC 157 for Accelerated Repair of Acute Grade II Hamstring Strain Confirmed by MRI",
+   "sponsor": "Hudson Biotech",
+   "status": "RECRUITING",
+   "first_posted": "2026-02-27",
+   "enrollment": {
+    "count": 120,
+    "type": "ESTIMATED"
+   },
+   "locations": [
+    "Peking University Shenzhen Hospital"
+   ],
+   "central_contact_email_domain": [
+    "beijing-biotech.com"
+   ],
+   "brief_summary_first_200": "This randomized, double-blind, placebo-controlled Phase 2 study evaluates whether pentadecapeptide BPC 157 (BPC-157), an investigational peptide, can speed structural healing and functional recovery a"
+  },
+  {
+   "nct": "NCT07437560",
+   "brief_title": "Melanotan II (MT-II) as an Adjunct to NB-UVB Phototherapy for Repigmentation in Stable Nonsegmental Vitiligo",
+   "official_title": "A Randomized, Double-Blind, Placebo-Controlled Phase 2 Study of Melanotan II (Synthetic Cyclic Melanocortin Receptor Agonist) as an Adjunct to Narrowband UV-B Phototherapy in Adults With Stable Nonsegmental Vitiligo",
+   "sponsor": "Hudson Biotech",
+   "status": "RECRUITING",
+   "first_posted": "2026-02-27",
+   "enrollment": {
+    "count": 60,
+    "type": "ESTIMATED"
+   },
+   "locations": [
+    "Peking University Shenzhen Hospital"
+   ],
+   "central_contact_email_domain": [
+    "beijing-biotech.com"
+   ],
+   "brief_summary_first_200": "This example interventional study record describes a randomized Phase 2 clinical trial evaluating investigational Melanotan II (MT-II) as an adjunct to standard NB-UVB phototherapy for repigmentation "
+  },
+  {
+   "nct": "NCT07437586",
+   "brief_title": "Topical GHK-Cu Gel for Acute Skin Wound Healing",
+   "official_title": "A Phase 2, Randomized, Double-Blind, Vehicle-Controlled, Split-Wound Study of Topical GHK-Cu (Copper(II)-Peptide Complex) Gel to Accelerate Re-Epithelialization of Standardized Acute Skin Wounds in Healthy Adults",
+   "sponsor": "Hudson Biotech",
+   "status": "RECRUITING",
+   "first_posted": "2026-02-27",
+   "enrollment": {
+    "count": 60,
+    "type": "ESTIMATED"
+   },
+   "locations": [
+    "Peking University Shenzhen Hospital"
+   ],
+   "central_contact_email_domain": [
+    "beijing-biotech.com"
+   ],
+   "brief_summary_first_200": "This study will evaluate whether a topical gel containing GHK-Cu (a copper(II)-peptide complex) can safely speed up healing of small, standardized skin wounds in healthy adults compared with a matchin"
+  },
+  {
+   "nct": "NCT07467447",
+   "brief_title": "Effect of LY3437943 Versus Placebo in Participants Who Have Obesity or Are Overweight",
+   "official_title": "A Phase 2 Study of Once-Weekly LY3437943 Compared With Placebo in Participants Who Have Obesity or Are Overweight With Weight-Related Comorbidities",
+   "sponsor": "Hudson Biotech",
+   "status": "RECRUITING",
+   "first_posted": "2026-03-12",
+   "enrollment": {
+    "count": 300,
+    "type": "ESTIMATED"
+   },
+   "locations": [
+    "Peking University Shenzhen Hospital"
+   ],
+   "central_contact_email_domain": [
+    "beijing-biotech.com"
+   ],
+   "brief_summary_first_200": "Phase 2, multicenter, randomized, double-blind, placebo-controlled study evaluating once-weekly subcutaneous retatrutide (LY3437943) at multiple maintenance dose levels versus placebo in adults with o"
+  },
+  {
+   "nct": "NCT07481734",
+   "brief_title": "Tesamorelin for Reduction of Liver Fat in Adults With Fatty Liver Disease (Mock Study)",
+   "official_title": "A Randomized, Double-Blind, Placebo-Controlled Phase II Study of Tesamorelin (GHRH Analog) for Reducing Hepatic Steatosis in Adults With Metabolic Associated Steatotic Liver Disease (MASLD)",
+   "sponsor": "Hudson Biotech",
+   "status": "RECRUITING",
+   "first_posted": "2026-03-19",
+   "enrollment": {
+    "count": 120,
+    "type": "ESTIMATED"
+   },
+   "locations": [
+    "Peking University Shenzhen Hospital"
+   ],
+   "central_contact_email_domain": [
+    "beijing-biotech.com"
+   ],
+   "brief_summary_first_200": "This randomized, double-blind, placebo-controlled Phase II study evaluates whether daily subcutaneous tesamorelin (a growth hormone-releasing hormone analog) reduces liver fat in adults with fatty liv"
+  },
+  {
+   "nct": "NCT07481747",
+   "brief_title": "Efficacy and Safety of Tirzepatide Once Weekly Versus Placebo in Participants Who Are Either Obese or Overweight With Weight-Related Comorbidities (SURMOUNT-1)",
+   "official_title": "Efficacy and Safety of Tirzepatide Once Weekly in Participants Without Type 2 Diabetes Who Have Obesity or Are Overweight With Weight-Related Comorbidities: A Randomized, Double-Blind, Placebo-Controlled Trial (SURMOUNT-1)",
+   "sponsor": "Hudson Biotech",
+   "status": "RECRUITING",
+   "first_posted": "2026-03-19",
+   "enrollment": {
+    "count": 2539,
+    "type": "ESTIMATED"
+   },
+   "locations": [
+    "Peking University Shenzhen Hospital"
+   ],
+   "central_contact_email_domain": [
+    "beijing-biotech.com"
+   ],
+   "brief_summary_first_200": "This Phase 3 study evaluates the efficacy and safety of once-weekly subcutaneous tirzepatide (a dual GIP and GLP-1 receptor agonist) at 5 mg, 10 mg, or 15 mg versus placebo, each used with a reduced-c"
+  },
+  {
+   "nct": "NCT07487363",
+   "brief_title": "TB-500 (Thymosin Beta 4 17-23 Fragment) for Cardiovascular Biomarkers in Stable ASCVD",
+   "official_title": "A Phase 1/2, Randomized, Double-Blind, Placebo-Controlled, Sequential Dose-Escalation Study of TB-500 (Thymosin Beta 4 17-23 Fragment) in Adults With Stable Atherosclerotic Cardiovascular Disease to Evaluate Safety, Tolerability, Pharmacokinetics, and Exploratory Cardiovascular Biomarkers",
+   "sponsor": "Hudson Biotech",
+   "status": "RECRUITING",
+   "first_posted": "2026-03-23",
+   "enrollment": {
+    "count": 80,
+    "type": "ESTIMATED"
+   },
+   "locations": [
+    "Peking University Shenzhen Hospital"
+   ],
+   "central_contact_email_domain": [
+    "beijing-biotech.com"
+   ],
+   "brief_summary_first_200": "This fictional study is an example of a ClinicalTrials.gov-style record. It describes a Phase 1/2 trial evaluating the safety and tolerability of TB-500 (a 17-23 fragment of thymosin beta 4) versus pl"
+  },
+  {
+   "nct": "NCT07505745",
+   "brief_title": "MOTS-c for Improving Insulin Sensitivity in Adults With Prediabetes and Overweight/Obesity",
+   "official_title": "A Phase 2a, Randomized, Double-blind, Placebo-controlled Study to Evaluate the Efficacy, Safety, and Pharmacodynamics of MOTS-c (a Mitochondrial-Derived Peptide) in Adults With Prediabetes and Overweight/Obesity",
+   "sponsor": "Hudson Biotech",
+   "status": "RECRUITING",
+   "first_posted": "2026-04-01",
+   "enrollment": {
+    "count": 120,
+    "type": "ESTIMATED"
+   },
+   "locations": [
+    "Peking University Shenzhen Hospital"
+   ],
+   "central_contact_email_domain": [
+    "beijing-biotech.com"
+   ],
+   "brief_summary_first_200": "This Phase 2a study evaluates whether 12 weeks of treatment with investigational MOTS-c improves insulin sensitivity compared with placebo in adults with prediabetes and overweight/obesity.\n\nParticipa"
+  }
+ ]
+}
