@@ -47,6 +47,7 @@ Practical, non-promotional guides for people tracking peptide and GLP-1 injectio
 ## Study Teardowns
 Critical single-study reads: design, comparator, funding, dropout, effect size, enrollment, and durability, with charts rebuilt from published numbers.
 - Study teardowns hub: https://jabbitapp.com/research/
+- Selank anxiety (Russian studies, translated): https://jabbitapp.com/research/selank-anxiety-teardown.html
 - Semax ischemic stroke (Russian studies, translated): https://jabbitapp.com/research/semax-ischemic-stroke-teardown.html
 - SURMOUNT-1 (tirzepatide 5/10/15 mg, NEJM 2022): https://jabbitapp.com/research/surmount-1-tirzepatide-teardown.html
 - STEP 1 (semaglutide 2.4 mg, NEJM 2021): https://jabbitapp.com/research/step-1-semaglutide-teardown.html
