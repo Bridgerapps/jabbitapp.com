@@ -8,30 +8,7 @@
   <meta name="description" content="A simple, printable injection log template for GLP‑1 tracking (date/time, medication, dose, site, notes). Educational only — not medical advice." />
   <link rel="canonical" href="https://jabbitapp.com/tools/glp1-injection-log.html" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#f0fdfa',
-              100: '#ccfbf1',
-              200: '#99f6e4',
-              300: '#5eead4',
-              400: '#2dd4bf',
-              500: '#14b8a6',
-              600: '#0d9488',
-              700: '#0f766e',
-              800: '#115e59',
-              900: '#134e4a',
-            },
-          },
-        },
-      },
-    };
-  </script>
-
+  <link rel="stylesheet" href="/assets/tw-site.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -45,12 +22,29 @@
       .print-page { box-shadow: none !important; border: none !important; }
     }
   </style>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Jabbit">
+<meta property="og:title" content="Printable GLP‑1 Injection Log Template">
+<meta property="og:description" content="A simple, printable injection log template for GLP‑1 tracking (date/time, medication, dose, site, notes). Educational only — not medical advice.">
+<meta property="og:url" content="https://jabbitapp.com/tools/glp1-injection-log.html">
+<meta property="og:image" content="https://jabbitapp.com/images/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jabbit: private GLP-1 and peptide log, with sourced research teardowns">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@JabbitApp">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script defer src="/assets/site.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Printable GLP‑1 Injection Log Template", "description": "A simple, printable injection log template for GLP‑1 tracking (date/time, medication, dose, site, notes). Educational only — not medical advice.", "url": "https://jabbitapp.com/tools/glp1-injection-log.html", "inLanguage": "en", "isPartOf": {"@type": "WebSite", "name": "Jabbit", "url": "https://jabbitapp.com/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://jabbitapp.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://jabbitapp.com/tools"}, {"@type": "ListItem", "position": 3, "name": "Printable GLP‑1 Injection Log Template", "item": "https://jabbitapp.com/tools/glp1-injection-log.html"}]}</script>
 </head>
 
 <body class="bg-gray-50 text-gray-900">
   <div class="no-print border-b border-gray-200 bg-white">
     <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="/tools/" class="text-brand-700 font-semibold hover:text-brand-800 transition">← Back to tools</a>
+      <a href="/tools" class="text-brand-700 font-semibold hover:text-brand-800 transition">← Back to tools</a>
       <div class="flex items-center gap-3">
         <button onclick="window.print()" class="px-4 py-2 bg-brand-500 text-white font-semibold rounded-lg hover:bg-brand-600 transition">Print / Save as PDF</button>
       </div>

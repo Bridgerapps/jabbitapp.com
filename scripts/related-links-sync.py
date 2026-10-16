@@ -29,8 +29,10 @@ import pathlib
 import re
 from datetime import datetime, timezone
 
-WS = pathlib.Path("/home/jabbit/.openclaw/workspace")
-SITE_DIR = WS / "jabbitapp.com"
+import os
+# Repo root by default (works in any clone); override with JABBIT_WS / JABBIT_SITE_DIR.
+WS = pathlib.Path(os.environ.get("JABBIT_WS", pathlib.Path(__file__).resolve().parent.parent))
+SITE_DIR = pathlib.Path(os.environ.get("JABBIT_SITE_DIR", WS))
 RULES_FILE = WS / "data" / "seo" / "related-links.json"
 
 SECTION_RE = re.compile(

@@ -4,22 +4,22 @@
   "redirects": [
     {
       "source": "/bpc-157-complete-guide.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/bpc-157-complete-guide",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/tb-500-thymosin-beta-guide.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/tb-500-thymosin-beta-guide",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
@@ -164,12 +164,12 @@
     },
     {
       "source": "/biological-age-test-tracker.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/biological-age-test-tracker",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
@@ -494,12 +494,12 @@
     },
     {
       "source": "/glp1-longevity-labs-tracker.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/glp1-longevity-labs-tracker",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
@@ -634,12 +634,12 @@
     },
     {
       "source": "/life-extension-protocol-tracker.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/life-extension-protocol-tracker",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
@@ -654,12 +654,12 @@
     },
     {
       "source": "/longevity-biomarker-tracker.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/longevity-biomarker-tracker",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
@@ -894,52 +894,52 @@
     },
     {
       "source": "/peptide-appetite-energy-log.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-appetite-energy-log",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-batch-lot-vendor-notes-log.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-batch-lot-vendor-notes-log",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-dose-log.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-dose-log",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-injection-schedule-tracker.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-injection-schedule-tracker",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-missed-dose-tracker.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-missed-dose-tracker",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
@@ -954,22 +954,22 @@
     },
     {
       "source": "/peptide-protocol-tracker.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-protocol-tracker",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-recovery-sleep-log.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-recovery-sleep-log",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
@@ -984,52 +984,52 @@
     },
     {
       "source": "/peptide-side-effect-log.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-side-effect-log",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-side-effect-timeline.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-side-effect-timeline",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-storage-stability-guide.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-storage-stability-guide",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-tracker.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-tracker",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-what-to-track.html",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-what-to-track",
-      "destination": "/peptides/",
+      "destination": "/peptides",
       "permanent": true
     },
     {
@@ -1839,13 +1839,63 @@
     },
     {
       "source": "/zealand-roche-amylin-obesity-phase2-data-market-reaction.html",
-      "destination": "/news/",
+      "destination": "/news",
       "permanent": true
     },
     {
       "source": "/zealand-roche-amylin-obesity-phase2-data-market-reaction",
-      "destination": "/news/",
+      "destination": "/news",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(favicon.ico|favicon-32x32.png|apple-touch-icon.png|icon-192.png|icon-512.png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
     }
   ]
 }
