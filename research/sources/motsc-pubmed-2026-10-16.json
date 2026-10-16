@@ -1,0 +1,1608 @@
+{
+ "query": "MOTS-c[tiab] OR \"MOTS c\"[tiab] OR MOTSc[tiab] OR \"mitochondrial open reading frame of the 12S rRNA\"[tiab]",
+ "database": "PubMed via NCBI E-utilities",
+ "retrieved": "2026-10-16",
+ "total_records": 264,
+ "method": "Jabbit classified each record from its title, abstract and publication type, then hand-checked every record tagged as human or clinical trial. 'human_measured' = measured natural MOTS-c levels, tissue expression or the m.1382A>C variant in people (some also include animal or cell experiments). 'animal_or_cell' = MOTS-c given to animals or cells, with no human samples reported in the abstract. No record reported giving MOTS-c to a person.",
+ "counts": {
+  "review_or_commentary": 78,
+  "animal_or_cell": 100,
+  "human_measured": 84,
+  "off_topic": 2
+ },
+ "records_reporting_MOTS-c_given_to_humans": 0,
+ "trial_tagged_records_checked": {
+  "40674654": "heat stress; measured natural MOTS-c",
+  "36490309": "metformin in breast cancer; measured natural MOTS-c",
+  "34413391": "exercise in breast cancer survivors; measured natural MOTS-c",
+  "34351816": "acute exercise; measured natural MOTS-c",
+  "32052315": "platelet reactivity; measured natural MOTS-c",
+  "40035775": "107 cardiopulmonary bypass patients; measured natural MOTS-c, peptide given only to animals/cells"
+ },
+ "records": [
+  {
+   "pmid": "24463180",
+   "year": "2014",
+   "title": "Combinatorial therapy discovery using mixed integer linear programming.",
+   "category": "off_topic"
+  },
+  {
+   "pmid": "25738453",
+   "year": "2015",
+   "title": "A mitochondrially encoded hormone ameliorates obesity and insulin resistance.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "25738459",
+   "year": "2015",
+   "title": "The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "26289118",
+   "year": "2015",
+   "title": "The mitochondrial-derived peptide MOTS-c: a player in exceptional longevity?",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "26662983",
+   "year": "2015",
+   "title": "A Fleeting Glimpse Inside microRNA, Epigenetics, and Micropeptidomics.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "26842585",
+   "year": "2016",
+   "title": "Emerging drugs affecting skeletal muscle function and mitochondrial biogenesis - Potential implications for sports drug testing programs.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "27216708",
+   "year": "2016",
+   "title": "MOTS-c: A novel mitochondrial-derived peptide regulating muscle and fat metabolism.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "27237975",
+   "year": "2016",
+   "title": "Mitochondria related peptide MOTS-c suppresses ovariectomy-induced bone loss via AMPK activation.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "28574175",
+   "year": "2017",
+   "title": "Mitochondrially derived peptides as novel regulators of metabolism.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "28994791",
+   "year": "2017",
+   "title": "Subcellular Fractionation for ERK Activation Upon Mitochondrial-derived Peptide Treatment.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "29096170",
+   "year": "2017",
+   "title": "MOTS-c peptide increases survival and decreases bacterial load in mice infected with MRSA.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "29242099",
+   "year": "2018",
+   "title": "Downregulation of circulating MOTS-c levels in patients with coronary endothelial dysfunction.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "29593067",
+   "year": "2018",
+   "title": "Plasma MOTS-c levels are associated with insulin sensitivity in lean but not in obese individuals.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "29691953",
+   "year": "2018",
+   "title": "Circulating MOTS-c levels are decreased in obese male children and adolescents and associated with insulin resistance.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "29886458",
+   "year": "2018",
+   "title": "Mitochondrial peptides modulate mitochondrial function during cellular senescence.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "29983246",
+   "year": "2018",
+   "title": "The Mitochondrial-Encoded Peptide MOTS-c Translocates to the Nucleus to Regulate Nuclear Gene Expression in Response to Metabolic Stress.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "30041797",
+   "year": "2018",
+   "title": "MOTS-c attenuates endothelial dysfunction via suppressing the MAPK/NF-κB pathway.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "30058454",
+   "year": "2018",
+   "title": "Mitochondrial-Derived Peptides Exacerbate Senescence.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "30104535",
+   "year": "2018",
+   "title": "A Mitochondrial Encoded Messenger at the Nucleus.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "30184481",
+   "year": "2018",
+   "title": "A Mitochondrial-Derived Peptide Exercises the Nuclear Option.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "30468456",
+   "year": "2018",
+   "title": "MOTS-c improves osteoporosis by promoting osteogenic differentiation of bone marrow mesenchymal stem cells via TGF-β/Smad pathway.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "30394592",
+   "year": "2019",
+   "title": "Development of a mass spectrometry based detection method for the mitochondrion-derived peptide MOTS-c in plasma samples for doping control purposes.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "30672456",
+   "year": "2019",
+   "title": "[The underestimated coding potential of mitochondrial DNA].",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "30725119",
+   "year": "2019",
+   "title": "MOTS-c peptide regulates adipose homeostasis to prevent ovariectomy-induced metabolic dysfunction.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "30788534",
+   "year": "2019",
+   "title": "MOTS-c: an equal opportunity insulin sensitizer.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "30967270",
+   "year": "2019",
+   "title": "Earlier changes in mice after D-galactose treatment were improved by mitochondria derived small peptide MOTS-c.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "31066084",
+   "year": "2019",
+   "title": "Lipids and insulin regulate mitochondrial-derived peptide (MOTS-c) in PCOS and healthy subjects.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "31081069",
+   "year": "2019",
+   "title": "MOTS-c improves osteoporosis by promoting the synthesis of type I collagen in osteoblasts via TGF-β/SMAD signaling pathway.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "31088495",
+   "year": "2019",
+   "title": "A possible role for mitochondrial-derived peptides humanin and MOTS-c in patients with Q fever fatigue syndrome and chronic fatigue syndrome.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "31109005",
+   "year": "2019",
+   "title": "Mitochondrial-Derived Peptide MOTS-c Increases Adipose Thermogenic Activation to Promote Cold Adaptation.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "31131297",
+   "year": "2019",
+   "title": "Nuclear transcriptional regulation by mitochondrial-encoded MOTS-c.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "31131430",
+   "year": "2019",
+   "title": "Mitochondrial peptides-appropriate options for therapeutic exploitation.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "31185388",
+   "year": "2019",
+   "title": "The role of mitochondria-derived peptides in cardiovascular disease: Recent updates.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "31214116",
+   "year": "2019",
+   "title": "Mitochondrial-Derived Peptides Are Down Regulated in Diabetes Subjects.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "31293078",
+   "year": "2019",
+   "title": "The mitochondrial-derived peptide MOTS-c is a regulator of plasma metabolites and enhances insulin sensitivity.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "31369811",
+   "year": "2019",
+   "title": "MOTS-c inhibits Osteolysis in the Mouse Calvaria by affecting osteocyte-osteoclast crosstalk and inhibiting inflammation.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "31378979",
+   "year": "2019",
+   "title": "MOTS-c: A Mitochondrial-Encoded Regulator of the Nucleus.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "31432706",
+   "year": "2019",
+   "title": "Reduced skeletal muscle expression of mitochondrial-derived peptides humanin and MOTS-C and Nrf2 in chronic kidney disease.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "31858528",
+   "year": "2019",
+   "title": "MOTS-c accelerates bone fracture healing by stimulating osteogenesis of bone marrow mesenchymal stem cells via positively regulating FOXF1 to activate the TGF-β pathway.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "31694019",
+   "year": "2020",
+   "title": "Mitochondrial-Derived Peptide MOTS-c Attenuates Vascular Calcification and Secondary Myocardial Remodeling via Adenosine Monophosphate-Activated Protein Kinase Signaling Pathway.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "31926126",
+   "year": "2020",
+   "title": "The intraperitoneal administration of MOTS-c produces antinociceptive and anti-inflammatory effects through the activation of AMPK pathway in the mouse formalin test.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "31931370",
+   "year": "2020",
+   "title": "Protective effect of MOTS-c on acute lung injury induced by lipopolysaccharide in mice.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "32052315",
+   "year": "2020",
+   "title": "β-Amyloid and mitochondrial-derived peptide-c are additive predictors of adverse outcome to high-on-treatment platelet reactivity in type 2 diabetics with revascularized coronary artery disease.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "32182209",
+   "year": "2020",
+   "title": "Increased expression of the mitochondrial derived peptide, MOTS-c, in skeletal muscle of healthy aging men is associated with myofiber composition.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "32279209",
+   "year": "2020",
+   "title": "Effects of MOTS-c on the mitochondrial function of cells harboring 3243 A to G mutant mitochondrial DNA.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "32326760",
+   "year": "2020",
+   "title": "Role of the mitochondrial stress response in human cancer progression.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "32365540",
+   "year": "2020",
+   "title": "Effects of Mitochondrial-Derived Peptides (MDPs) on Mitochondrial and Cellular Health in AMD.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "32387288",
+   "year": "2020",
+   "title": "Peptides derived from small mitochondrial open reading frames: Genomic, biological, and therapeutic implications.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "32680738",
+   "year": "2020",
+   "title": "Role of humanin, a mitochondrial-derived peptide, in cardiovascular disorders.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "32768357",
+   "year": "2020",
+   "title": "Mechanisms of protection of retinal pigment epithelial cells from oxidant injury by humanin and other mitochondrial-derived peptides: Implications for age-related macular degeneration.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "32776825",
+   "year": "2020",
+   "title": "Mitochondrial-derived peptides in energy metabolism.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "32880686",
+   "year": "2020",
+   "title": "Adiponectin treatment improves insulin resistance in mice by regulating the expression of the mitochondrial-derived peptide MOTS-c and its response to exercise via APPL1-SIRT1-PGC-1α.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "32904391",
+   "year": "2020",
+   "title": "Mitochondrial destiny in type 2 diabetes: the effects of oxidative stress on the dynamics and biogenesis of mitochondria.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "32910336",
+   "year": "2021",
+   "title": "Mitochondrial-derived peptides in aging and age-related diseases.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "33337582",
+   "year": "2021",
+   "title": "MOTS-c promotes phosphorodiamidate morpholino oligomer uptake and efficacy in dystrophic mice.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "33394327",
+   "year": "2021",
+   "title": "Relationship between the mitochondria-derived peptide MOTS-c and insulin resistance in obstructive sleep apnea.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "33454965",
+   "year": "2021",
+   "title": "Neural cell-derived plasma exosome protein abnormalities implicate mitochondrial impairment in first episodes of psychosis.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "33468709",
+   "year": "2021",
+   "title": "A pro-diabetogenic mtDNA polymorphism in the mitochondrial-derived peptide, MOTS-c.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "33473109",
+   "year": "2021",
+   "title": "MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "33535098",
+   "year": "2021",
+   "title": "Mitohormesis in Hypothalamic POMC Neurons Mediates Regular Exercise-Induced High-Turnover Metabolism.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "33554779",
+   "year": "2021",
+   "title": "MOTS-c reduces myostatin and muscle atrophy signaling.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "33639272",
+   "year": "2021",
+   "title": "The mitochondrial-derived peptide MOTS-c promotes homeostasis in aged human placenta-derived mesenchymal stem cells in vitro.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "33722744",
+   "year": "2021",
+   "title": "MOTS-c interacts synergistically with exercise intervention to regulate PGC-1α expression, attenuate insulin resistance and enhance glucose metabolism in mice via AMPK signaling pathway.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "33763338",
+   "year": "2021",
+   "title": "Expression Profile of Mouse Gm20594, Nuclear-Encoded Humanin-Like Gene.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "33829422",
+   "year": "2021",
+   "title": "MOTS-c accelerates bone fracture healing by stimulating osteogenesis of bone marrow mesenchymal stem cells via positively regulating FOXF1 to activate the TGF-β pathway.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "33861582",
+   "year": "2021",
+   "title": "Peripheral Administration of a Cell-Penetrating MOTS-c Analogue Enhances Memory and Attenuates Aβ1-42- or LPS-Induced Memory Impairment through Inhibiting Neuroinflammation.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "34067710",
+   "year": "2021",
+   "title": "The Role of Peptide Hormones Discovered in the 21st Century in the Regulation of Adipose Tissue Functions.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "34253808",
+   "year": "2021",
+   "title": "Mitofusion is required for MOTS-c induced GLUT4 translocation.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "34320351",
+   "year": "2021",
+   "title": "Mitochondrial-encoded MOTS-c prevents pancreatic islet destruction in autoimmune diabetes.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "34351816",
+   "year": "2021",
+   "title": "Acute endurance exercise stimulates circulating levels of mitochondrial-derived peptides in humans.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "34413391",
+   "year": "2021",
+   "title": "Effect of aerobic and resistance exercise on the mitochondrial peptide MOTS-c in Hispanic and Non-Hispanic White breast cancer survivors.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "34419510",
+   "year": "2021",
+   "title": "Plasma mitochondrial derived peptides MOTS-c and SHLP2 positively associate with android and liver fat in people without diabetes.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "34445477",
+   "year": "2021",
+   "title": "The Role of Mitochondria-Derived Peptides in Cardiovascular Diseases and Their Potential as Therapeutic Targets.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "34471251",
+   "year": "2021",
+   "title": "Abnormal levels of mitochondrial proteins in plasma neuronal extracellular vesicles in major depressive disorder.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "34520826",
+   "year": "2021",
+   "title": "Mitochondrial-derived peptides and exercise.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "34525370",
+   "year": "2021",
+   "title": "Mitochondrial-encoded MOTS-c prevents pancreatic islet destruction in autoimmune diabetes.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "34534645",
+   "year": "2021",
+   "title": "The emerging role of mitochondrial derived peptide humanin in the testis.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "34635713",
+   "year": "2021",
+   "title": "The mitochondrial signaling peptide MOTS-c improves myocardial performance during exercise training in rats.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "34681131",
+   "year": "2021",
+   "title": "Changes in MOTS-c Level in the Blood of Pregnant Women with Metabolic Disorders.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "34914298",
+   "year": "2021",
+   "title": "[Effects of exercise intervention on mitochondrial-derived peptide MOTS-c in the germ cells of obese men].",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "35027919",
+   "year": "2021",
+   "title": "Extension of Mitogenome Enrichment Based on Single Long-Range PCR: mtDNAs and Putative Mitochondrial-Derived Peptides of Five Rodent Hibernators.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "35046903",
+   "year": "2021",
+   "title": "Analysis by Metabolomics and Transcriptomics for the Energy Metabolism Disorder and the Aryl Hydrocarbon Receptor Activation in Male Reproduction of Mice and GC-2spd Cells Exposed to PM2.5.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "35185787",
+   "year": "2021",
+   "title": "Mitochondrial-Derived Peptides in Diabetes and Its Complications.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "34728329",
+   "year": "2022",
+   "title": "The MOTS-c K14Q polymorphism in the mtDNA is associated with muscle fiber composition and muscular performance.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "34798268",
+   "year": "2022",
+   "title": "The mitochondrial-derived peptide MOTS-c relieves hyperglycemia and insulin resistance in gestational diabetes mellitus.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "34859377",
+   "year": "2022",
+   "title": "The Mitochondrial-Derived Peptide MOTS-c Attenuates Oxidative Stress Injury and the Inflammatory Response of H9c2 Cells Through the Nrf2/ARE and NF-κB Pathways.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "34896254",
+   "year": "2022",
+   "title": "Cardio-protective role of Humanin in myocardial ischemia-reperfusion.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "34972639",
+   "year": "2022",
+   "title": "Mitochondrial-derived peptides: New markers for cardiometabolic dysfunction.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "35285072",
+   "year": "2022",
+   "title": "SARS-CoV-2 and Mitochondrial Proteins in Neural-Derived Exosomes of COVID-19.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "35370955",
+   "year": "2022",
+   "title": "MOTS-c and Exercise Restore Cardiac Function by Activating of NRG1-ErbB Signaling in Diabetic Rats.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "35499074",
+   "year": "2022",
+   "title": "Mitochondria-derived peptides in aging and healthspan.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "35656563",
+   "year": "2022",
+   "title": "Exercise, Mitohormesis, and Mitochondrial ORF of the 12S rRNA Type-C (MOTS-c).",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "35683389",
+   "year": "2022",
+   "title": "Evolution of Mitochondrially Derived Peptides Humanin and MOTSc, and Changes in Insulin Sensitivity during Early Gestation in Women with and without Gestational Diabetes.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "35770405",
+   "year": "2022",
+   "title": "Exercise and Metabolic Health: The Emerging Roles of Novel Exerkines.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "35789022",
+   "year": "2022",
+   "title": "Racial differences in circulating mitochondria-derived peptides may contribute to prostate cancer health disparities.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "35808870",
+   "year": "2022",
+   "title": "MOTS-c increases in skeletal muscle following long-term physical activity and improves acute exercise performance after a single dose.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "35834544",
+   "year": "2022",
+   "title": "Processing incomplete questionnaire data into continuous digital biomarkers for addiction monitoring.",
+   "category": "off_topic"
+  },
+  {
+   "pmid": "35842023",
+   "year": "2022",
+   "title": "MOTS-c promotes muscle differentiation in vitro.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "35989823",
+   "year": "2022",
+   "title": "Comparison of Serum Mitochondrial Open Reading Frame of the 12S rRNA-c (MOTS-c) Levels in Patients With Multiple Sclerosis and Healthy Controls.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "36066139",
+   "year": "2022",
+   "title": "MOTS-c as a predictor of coronary lesions and complexity in patients with stable coronary artery disease.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "36156853",
+   "year": "2022",
+   "title": "Mitochondrial derived peptide MOTS-c prevents the development of heart failure under pressure overload conditions in mice.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "36233287",
+   "year": "2022",
+   "title": "MOTS-c, the Most Recent Mitochondrial Derived Peptide in Human Aging and Age-Related Diseases.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "36490309",
+   "year": "2022",
+   "title": "Circulating levels of MOTS-c in patients with breast cancer treated with metformin.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "36687680",
+   "year": "2022",
+   "title": "MOTS-c repairs myocardial damage by inhibiting the CCN1/ERK1/2/EGR1 pathway in diabetic rats.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39077591",
+   "year": "2022",
+   "title": "The Effect of Chronic Endurance Exercise on Serum Levels of MOTS-c and Humanin in Professional Athletes.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "36303331",
+   "year": "2023",
+   "title": "Adropin and MOTS-c as new peptides: Do levels change in neurodegenerative diseases and ischemic stroke?",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "36528071",
+   "year": "2023",
+   "title": "Orally administered MOTS-c analogue ameliorates dextran sulfate sodium-induced colitis by inhibiting inflammation and apoptosis.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "36584915",
+   "year": "2023",
+   "title": "MOTS-c and aerobic exercise induce cardiac physiological adaptation via NRG1/ErbB4/CEBPβ modification in rats.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "36629605",
+   "year": "2023",
+   "title": "Evaluation of Coronary Flow Level with Mots-C in Patients with STEMI Undergoing Primary PCI.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "36670507",
+   "year": "2023",
+   "title": "Mitochondria-derived peptide MOTS-c: effects and mechanisms related to stress, metabolism and aging.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "36677050",
+   "year": "2023",
+   "title": "MOTS-c Functionally Prevents Metabolic Disorders.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "36761202",
+   "year": "2023",
+   "title": "MOTS-c: A promising mitochondrial-derived peptide for therapeutic exploitation.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "36786072",
+   "year": "2023",
+   "title": "The protective effect of the mitochondrial-derived peptide MOTS-c on LPS-induced septic cardiomyopathy.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "36799414",
+   "year": "2023",
+   "title": "Evaluation of Serum Humanin and MOTS-c Peptide Levels in Patients with COVID-19 and Healthy Subjects.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "36824008",
+   "year": "2023",
+   "title": "Mitochondrial-Encoded Peptide MOTS-c, Diabetes, and Aging-Related Diseases.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "36830076",
+   "year": "2023",
+   "title": "Mitochondrial Open Reading Frame of the 12S rRNA Type-c: Potential Therapeutic Candidate in Retinal Diseases.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "36833212",
+   "year": "2023",
+   "title": "Novel Insights into Mitochondrial DNA: Mitochondrial Microproteins and mtDNA Variants Modulate Athletic Performance and Age-Related Diseases.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "36844198",
+   "year": "2023",
+   "title": "Circulating levels of mitochondrial oxidative stress-related peptides MOTS-c and Romo1 in stable COPD: A cross-sectional study.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "37008907",
+   "year": "2023",
+   "title": "The specific mitochondrial unfolded protein response in fast- and slow-twitch muscles of high-fat diet-induced insulin-resistant rats.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "37067760",
+   "year": "2023",
+   "title": "Effects of intracerebroventricular MOTS-c infusion on thyroid hormones and uncoupling proteins.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "37072092",
+   "year": "2023",
+   "title": "Prediction of Post-Acute-Sequelae of COVID-19 by Cargo Protein Biomarkers of Blood Total Extracellular Vesicles in Acute COVID-19.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "37077579",
+   "year": "2023",
+   "title": "Serum MOTS-C Levels are Decreased in Obese Children and Associated with Vascular Endothelial Function.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "37200834",
+   "year": "2023",
+   "title": "Role of MOTS-c in the regulation of bone metabolism.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "37230367",
+   "year": "2023",
+   "title": "Β-GPA administration activates slow oxidative muscle signaling pathways and protects soleus muscle against the increased fatigue under 7-days of rat hindlimb suspension.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "37272982",
+   "year": "2023",
+   "title": "Exercise and vascular function in sedentary lifestyles in humans.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "37285113",
+   "year": "2023",
+   "title": "Mitochondrial-Derived Peptide MOTS-c Ameliorates Spared Nerve Injury-Induced Neuropathic Pain in Mice by Inhibiting Microglia Activation and Neuronal Oxidative Damage in the Spinal Cord via the AMPK Pathway.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "37290680",
+   "year": "2023",
+   "title": "The mitochondrial-derived peptide MOTS-c suppresses ferroptosis and alleviates acute lung injury induced by myocardial ischemia reperfusion via PPARγ signaling pathway.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "37307934",
+   "year": "2023",
+   "title": "MOTS-c: A potential anti-pulmonary fibrosis factor derived by mitochondria.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "37380822",
+   "year": "2023",
+   "title": "The Mitochondrial-Derived Peptide (MOTS-c) Interacted with Nrf2 to Defend the Antioxidant System to Protect Dopaminergic Neurons Against Rotenone Exposure.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "37437978",
+   "year": "2023",
+   "title": "Mitochondria-derived peptides in healthy ageing and therapy of age-related diseases.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "37633181",
+   "year": "2023",
+   "title": "Exogenous humanin and MOTS-c function as protective agents against gentamicin-induced hair cell damage.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "37644144",
+   "year": "2023",
+   "title": "Evidence of natural selection in the mitochondrial-derived peptides humanin and SHLP6.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "37750635",
+   "year": "2023",
+   "title": "The relationship of circulating MOTS-c level with liver fibrosis and metabolic components in patients with metabolic dysfunction-associated fatty liver disease.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "37834399",
+   "year": "2023",
+   "title": "MOTS-c Serum Concentration Positively Correlates with Lower-Body Muscle Strength and Is Not Related to Maximal Oxygen Uptake-A Preliminary Study.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "37957221",
+   "year": "2023",
+   "title": "The role of MOTS-c-mediated antioxidant defense in aerobic exercise alleviating diabetic myocardial injury.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38112134",
+   "year": "2023",
+   "title": "Alterations in circulating mitochondrial signals at hospital admission for COPD exacerbation.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39469962",
+   "year": "2023",
+   "title": "Serum MOTS-c levels remain unchanged in patients with preeclampsia.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "37788894",
+   "year": "2024",
+   "title": "Novel function of MOTS-c in mitochondrial remodelling contributes to its antiviral role during HBV infection.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "37899006",
+   "year": "2024",
+   "title": "Central and peripheral mechanism of MOTS-c attenuates pain hypersensitivity in a mice model of inflammatory pain.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38008175",
+   "year": "2024",
+   "title": "Mitochondrial-derived peptides in cardiovascular disease: Novel insights and therapeutic opportunities.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "38160808",
+   "year": "2024",
+   "title": "Mitochondrial-derived peptides: Antidiabetic functions and evolutionary perspectives.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "38170165",
+   "year": "2024",
+   "title": "Mitochondrial-derived microprotein MOTS-c attenuates immobilization-induced skeletal muscle atrophy by suppressing lipid infiltration.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38206815",
+   "year": "2024",
+   "title": "The mitochondrial genome-encoded peptide MOTS-c interacts with Bcl-2 to alleviate nonalcoholic steatohepatitis progression.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38314601",
+   "year": "2024",
+   "title": "Impact of Radiation Therapy on Serum Humanin and MOTS-c Levels in Patients with Lung or Breast Cancer.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "38389837",
+   "year": "2024",
+   "title": "The DNA-dependent protein kinase catalytic subunit exacerbates endotoxemia-induced myocardial microvascular injury by disrupting the MOTS-c/JNK pathway and inducing profilin-mediated lamellipodia degradation.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38430258",
+   "year": "2024",
+   "title": "MOTS-c regulates pancreatic alpha and beta cell functions in vitro.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38462167",
+   "year": "2024",
+   "title": "Central MOTS-c infusion affects reproductive hormones in obese and non-obese rats.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38527401",
+   "year": "2024",
+   "title": "The role of FPR2-mediated ferroptosis in formyl peptide-induced acute lung injury against endothelial barrier damage and protective effect of the mitochondria-derived peptide MOTS-c.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38636847",
+   "year": "2024",
+   "title": "An 8-Week study on the effects of high and Moderate-Intensity interval exercises on mitochondrial MOTS-C changes and their relation to metabolic markers in male diabetic sand rats.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38658141",
+   "year": "2024",
+   "title": "Mitochondria-derived peptide is an effective target for treating streptozotocin induced painful diabetic neuropathy through induction of activated protein kinase/peroxisome proliferator-activated receptor gamma coactivator 1alpha -mediated mitochondrial biogenesis.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38704871",
+   "year": "2024",
+   "title": "Mitochondrial dysfunction is associated with cognitive impairment in adults with OSA without dementia.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "38707193",
+   "year": "2024",
+   "title": "Comparative Analysis of Biomarkers in Type 2 Diabetes Patients With and Without Comorbidities: Insights Into the Role of Hypertension and Cardiovascular Disease.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "38716540",
+   "year": "2024",
+   "title": "MOTS-c is an effective target for treating cancer-induced bone pain through the induction of AMPK-mediated mitochondrial biogenesis.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "38790718",
+   "year": "2024",
+   "title": "The Mitochondrial-Derived Peptide MOTS-c Alleviates Radiation Pneumonitis via an Nrf2-Dependent Mechanism.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39050800",
+   "year": "2024",
+   "title": "Neuroprotective Mechanism of MOTS-c in TBI Mice: Insights from Integrated Transcriptomic and Metabolomic Analyses.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39079574",
+   "year": "2024",
+   "title": "Effect of Humanin and MOTS-c on ameliorating reproductive damage induced by prepubertal cyclophosphamide chemotherapy in male mice.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39111290",
+   "year": "2024",
+   "title": "The Mitochondrial-Derived Peptide MOTS-c May Refine Mortality and Cardiovascular Risk Prediction in Chronic Hemodialysis Patients: A Multicenter Cohort Study.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39160573",
+   "year": "2024",
+   "title": "The correlation between mitochondrial derived peptide (MDP) and metabolic states: a systematic review and meta-analysis.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "39182552",
+   "year": "2024",
+   "title": "Effects of empagliflozin and dapagliflozin on serum humanin, MOTS-c levels, nitrosative stress, and ferroptosis parameters in diabetic patients with heart failure.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39201408",
+   "year": "2024",
+   "title": "Expression Patterns of MOTS-c in Adrenal Tumors: Results from a Preliminary Study.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39259217",
+   "year": "2024",
+   "title": "Pyrroloquinoline Quinone Alleviates Mitochondria Damage in Radiation-Induced Lung Injury in a MOTS-c-Dependent Manner.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39267782",
+   "year": "2024",
+   "title": "Mitochondria-encoded peptide MOTS-c participates in plasma membrane repair by facilitating the translocation of TRIM72 to membrane.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39282091",
+   "year": "2024",
+   "title": "Temporal expression of mitochondrial life cycle markers during acute and chronic overload of rat plantaris muscles.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39321430",
+   "year": "2024",
+   "title": "Mitochondrial-Derived Peptide MOTS-c Suppresses Ovarian Cancer Progression by Attenuating USP7-Mediated LARS1 Deubiquitination.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39457696",
+   "year": "2024",
+   "title": "The Relationship Between MOTS-c K14Q Polymorphism and Sarcopenia, Blood Lipids, and Mental Health in Older Korean Adults.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39483983",
+   "year": "2024",
+   "title": "Editorial: Role of mitochondrial stress response in metabolic health.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "39553971",
+   "year": "2024",
+   "title": "The Human Mitochondrial Genome Encodes for an Interferon-Responsive Host Defense Peptide.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39559755",
+   "year": "2024",
+   "title": "MOTS-c modulates skeletal muscle function by directly binding and activating CK2.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39616938",
+   "year": "2024",
+   "title": "MOTS-c regulates the ROS/TXNIP/NLRP3 pathway to alleviate diabetic cardiomyopathy.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39704971",
+   "year": "2024",
+   "title": "Evaluation of vascular peroxidase 1, humanin, MOTS-c and miR-200c expression levels in untreated preeclampsia patients.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "37921178",
+   "year": "2025",
+   "title": "The Role of Mitokines in Diabetic Nephropathy.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "38141139",
+   "year": "2025",
+   "title": "MOTS-c Peptide Attenuated Diabetic Cardiomyopathy in STZ-Induced Type 1 Diabetic Mouse Model.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39581216",
+   "year": "2025",
+   "title": "MOTS-c relieves hepatocellular carcinoma resistance to TRAIL-induced apoptosis under hypoxic conditions by activating MEF2A.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39706498",
+   "year": "2025",
+   "title": "Endurance training enhances skeletal muscle mitochondrial respiration by promoting MOTS-c secretion.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39710567",
+   "year": "2025",
+   "title": "Corrigendum to \"MOTS-c relieves hepatocellular carcinoma resistance to TRAIL-induced apoptosis under hypoxic conditions by activating MEF2A\" [Exp. Cell Res., Volume 444, Issue 1, 1 January 2025, 114354].",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "39711006",
+   "year": "2025",
+   "title": "Could MOTS-c Levels in Children with Type 1 Diabetes Mellitus Be an Indicator for Early Diabetic Kidney Disease?",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39827923",
+   "year": "2025",
+   "title": "MOTS-c mimics remote ischemic preconditioning in protecting against lung ischemia-reperfusion injury by alleviating endothelial barrier dysfunction.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "39876762",
+   "year": "2025",
+   "title": "MOTS-c Impact on Muscle Cell Differentiation and Metabolism Across Fiber Types.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "39961901",
+   "year": "2025",
+   "title": "Exploring the therapeutic potential of MOTS-c in age-related macular degeneration: from cellular responses to patient-derived cybrids.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40005438",
+   "year": "2025",
+   "title": "MOTS-c Levels and Sarcopenia Risk in Chronic Peritoneal Dialysis Patients: A Pilot Study.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40008510",
+   "year": "2025",
+   "title": "Effects of Glucagon-Like Peptide-1 Receptor Agonists, Sodium-Glucose Cotransporter-2 Inhibitors, and Their Combination on Neurohumoral and Mitochondrial Activation in Patients With Diabetes.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40035775",
+   "year": "2025",
+   "title": "MOTS-c Promotes Glycolysis via AMPK-HIF-1α-PFKFB3 Pathway to Ameliorate Cardiopulmonary Bypass-induced Lung Injury.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40072017",
+   "year": "2025",
+   "title": "A Mighty Mitochondrial Microprotein: The Protective Role of MOTS-c in Acute Lung Injury.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "40084698",
+   "year": "2025",
+   "title": "Mitochondria‑derived peptides: Promising microproteins in cardiovascular diseases (Review).",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "40104672",
+   "year": "2025",
+   "title": "Circulating PGC-1α and MOTS-c Peptide as Potential Mitochondrial Biomarkers in Patients Undergoing Aortic Valve Replacement.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40172798",
+   "year": "2025",
+   "title": "MOTS-c: Magical Molecule for Diabetic Cardiomyopathy?",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "40246631",
+   "year": "2025",
+   "title": "Corrigendum to \"MOTS-c mimics remote ischemic preconditioning in protecting against lung ischemia-reperfusion injury by alleviating endothelial barrier dysfunction\" [Free Radic Biol Med. 229 (2025) 127-138].",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "40353474",
+   "year": "2025",
+   "title": "MOTS-c as a Potential Diagnostic-prognostic Biomarker for Myocardial Infarction.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40403491",
+   "year": "2025",
+   "title": "MOTS-c attenuates lung ischemia-reperfusion injury via MYH9-Dependent nuclear translocation and transcriptional activation of antioxidant genes.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40425777",
+   "year": "2025",
+   "title": "MOTS-c mimics exercise to combat diabetic liver fibrosis by targeting Keap1-Nrf2-Smad2/3.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40443515",
+   "year": "2025",
+   "title": "Circulating mitochondrial biomarkers in acute coronary syndrome.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40472776",
+   "year": "2025",
+   "title": "MOTS-c attenuates airway barrier dysfunction in allergic asthma by inhibiting epithelial apoptosis via Nrf2 pathway.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40478460",
+   "year": "2025",
+   "title": "MOTS-c modulates pancreatic islet function in rats and pigs in vitro.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40496439",
+   "year": "2025",
+   "title": "Mitochondrial dysfunction characterises the multigenerational effects of maternal obesity on MASLD.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40510834",
+   "year": "2025",
+   "title": "MOTS-c-modified functional self-assembly peptide hydrogels enhance the activity of nucleus pulposus-derived mesenchymal stem cells of intervertebral disc degeneration.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40538382",
+   "year": "2025",
+   "title": "Mitochondria-derived peptide MOTS-c and its role in OSA pathogenesis: a potential therapeutic target?",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "40538389",
+   "year": "2025",
+   "title": "Reduced serum levels of mitochondria-derived peptide MOTS-c in patients with obstructive sleep apnea.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40608240",
+   "year": "2025",
+   "title": "The impact of mitokine MOTS-c administration on the soleus muscle of rats subjected to a 7-day hindlimb suspension.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40661667",
+   "year": "2025",
+   "title": "Mitochondria-derived peptide MOTS-c restores mitochondrial respiration in type 2 diabetic heart.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40674654",
+   "year": "2025",
+   "title": "Repeated Heat Stress Modulates the Levels of the Mitokines MOTS-C and FGF21 in Active Men during Calf Muscle Immobilization.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40694987",
+   "year": "2025",
+   "title": "The unexplored Nexus: Mitochondria derived microproteins and Parkinson's disease.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "40715951",
+   "year": "2025",
+   "title": "Mitochondrial-Derived Peptides: Implication in the Therapy of Neurodegenerative Diseases.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "40768089",
+   "year": "2025",
+   "title": "Diagnostic relevance of Humanin, GAS5 and miR-21/miR-103 in prostate disease risk stratification.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40805020",
+   "year": "2025",
+   "title": "Characterization of the Avian Mitochondrial-Derived Peptide MOTS-c and Its Potential Role as a Metabolic Regulator.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40855115",
+   "year": "2025",
+   "title": "Mitochondrial-encoded peptide MOTS-c prevents pancreatic islet cell senescence to delay diabetes.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "40872612",
+   "year": "2025",
+   "title": "Exercise-Induced Muscle-Fat Crosstalk: Molecular Mediators and Their Pharmacological Modulation for the Maintenance of Metabolic Flexibility in Aging.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "41004666",
+   "year": "2025",
+   "title": "MOTS-C levels ın ındividuals with and without obesity and ıts association with ınflammation, insulin resistance and endothelial dysfunction.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41043625",
+   "year": "2025",
+   "title": "MOTS-c attenuates mitochondrial dysfunction induces pyroptosis and cartilage degradation in osteoarthritis via an Nrf2-Dependent Mechanism.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41068236",
+   "year": "2025",
+   "title": "Hierarchical random forest model, inflammation and oxidative stress as predictors of the atherogenic index of plasma and diabetes progression.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41083123",
+   "year": "2025",
+   "title": "MOTS-c in type 2 diabetes mellitus: From risk factors to cardiac complications and potential treatment.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "41303353",
+   "year": "2025",
+   "title": "Insights into the Biomarker Potential of Humanin and Mots-c Expression and Telomere Length in Alzheimer's Disease.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41368821",
+   "year": "2025",
+   "title": "Circulating Mitochondrial Open Reading Frame of the 12S Ribosomal RNA Type-c Is Higher in Acute Coronary Syndrome and Is a Prognostic Biomarker for Major Cardiac Events in Patients With Acute Myocardial Infarction: A Case-Control Study.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41479490",
+   "year": "2025",
+   "title": "Serum Mitochondrial Open Reading Frame of the 12S rRNA-c (MOTS-c) Dynamics as a Complementary Marker of Treatment Response in Newly Diagnosed Multiple Myeloma: A Prospective Analysis.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "40574402",
+   "year": "2026",
+   "title": "Mitochondrial-Derived Peptides as Therapeutics and Biomarkers for Combating Vascular Aging and Associated Cardiovascular Diseases.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "40753494",
+   "year": "2026",
+   "title": "A mitochondrial-derived peptide MOTS-c contributes to the protective effect against brain injury associated with LPS-induced sepsis by strengthening the blood-brain barrier's ultrastructure.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41268602",
+   "year": "2026",
+   "title": "MOTS‑c protects against placental injury via Nrf2 activation in hypoxia‑induced intrauterine growth restriction mice.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41468174",
+   "year": "2026",
+   "title": "Muscle-Targeted Nanocomposite Therapy Alleviates Age-Related Sarcopenia via Antioxidant and Metabolic Reprogramming.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41468641",
+   "year": "2026",
+   "title": "Mitochondrial-derived microproteins in cancer and neurodegeneration: A new era of cross-disease mechanistic insights.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "41520850",
+   "year": "2026",
+   "title": "MOTS-c improves intrinsic muscle mitochondrial bioenergetic health and efficiency in a PGC-1α/AMPK-dependent manner.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41543486",
+   "year": "2026",
+   "title": "Mitochondria-derived peptides in liver disease: Emerging regulators of hepatic metabolism and therapeutic targets.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "41551324",
+   "year": "2026",
+   "title": "Systemic MOTS-c levels are increased in adults with obesity in association with metabolic dysregulation and remain unchanged after weight loss.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41569667",
+   "year": "2026",
+   "title": "Mitochondrial-derived microproteins in lung disease: insights and implications.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "41587709",
+   "year": "2026",
+   "title": "Next-generation therapies for hepatocellular carcinoma: CAR-T cell and anticancer peptide synergy.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "41593376",
+   "year": "2026",
+   "title": "Exogenous MOTS-c mitigates myocardial ischemia-reperfusion injury: experimental and in silico evidence from rat heart models.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41654147",
+   "year": "2026",
+   "title": "MOTS-c attenuates cardiac dysfunction following high altitude exposure by promoting mitophagy.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41680431",
+   "year": "2026",
+   "title": "Reduced serum and skeletal muscle MOTS c levels in women with polycystic ovary syndrome are associated with mitochondrial dysfunction.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41706383",
+   "year": "2026",
+   "title": "Therapeutic Effects of MOTS-c in the Valproic Acid-Induced Autism Model in Rats: Role of Tetrahydrobiopterin and Brain-Derived Neurotrophic Factor.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41710402",
+   "year": "2026",
+   "title": "Aerobic exercise and MOTS-c attenuate diabetic myocardial fibrosis via inhibition of the THBS1/TGF-β signaling pathway.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41732124",
+   "year": "2026",
+   "title": "Mitochondrial-derived peptides MOTS-c and humanin attenuate dexamethasone-induced atrophy in human skeletal muscle cells.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41764620",
+   "year": "2026",
+   "title": "MOTS-c Protects Against Acetaminophen-induced Liver Injury through the MAPK Signaling Pathway.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41802484",
+   "year": "2026",
+   "title": "Mitochondria-derived peptide MOTS-c alleviates hyperoxia-induced bronchopulmonary dysplasia in neonatal mice by activating Nrf2 pathway.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41803858",
+   "year": "2026",
+   "title": "Effects of graviola oil extract on fattening performance and circadian rhythms of adipokine, cardiac and mitochondrial function markers in lambs.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41811086",
+   "year": "2026",
+   "title": "MOTS-c primes adrenal cortex metabolism without directly driving steroidogenesis.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "41933740",
+   "year": "2026",
+   "title": "Mitochondrial-derived peptide MOTS-c targets SLC7A11 to preserve spermatogenesis by suppressing ferroptosis.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41937181",
+   "year": "2026",
+   "title": "Small but mighty: mitochondrial DNA at the centre of retrograde signalling.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "41945630",
+   "year": "2026",
+   "title": "Are serum MOTS-c levels and MOTS-c m.1382A>C polymorphism related to polycystic ovary syndrome?",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "41966639",
+   "year": "2026",
+   "title": "Safety and Efficacy of Approved and Unapproved Peptide Therapies for Musculoskeletal Injuries and Athletic Performance.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42072458",
+   "year": "2026",
+   "title": "The Association Between Serum MOTS-c Levels and Myocardial Ischemia-Reperfusion Injury in Patients with Acute Myocardial Infarction: A Cross-Sectional Study.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "42126770",
+   "year": "2026",
+   "title": "MOTS-c is associated with oxidative stress and arterial stiffness in peritoneal dialysis patients: a pilot study.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "42128272",
+   "year": "2026",
+   "title": "MOTS-c attenuates hyperoxia-induced neonatal cardiac injury by inhibiting oxeiptosis via maintaining the KEAP1-PGAM5 interaction.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "42142418",
+   "year": "2026",
+   "title": "LAT1-mediated delivery of engineered R13A-MOTS-c attenuates radiation-induced lung injury via Nrf2 activation and mitochondrial protection.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "42153537",
+   "year": "2026",
+   "title": "MOTS-c, a mitochondrial-derived peptide, ameliorates lysosomal membrane permeability and improves survival of soft tissue transplantation.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "42166398",
+   "year": "2026",
+   "title": "Elevated Serum Nardilysin Is Inversely Associated with Cardiovascular Disease in Kidney Transplant Recipients.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "42193373",
+   "year": "2026",
+   "title": "Humanin and MOTS-c Attenuate Atrial Fibrillation by Suppressing Fibrosis and Mitochondrial Dysfunction.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "42228044",
+   "year": "2026",
+   "title": "MOTS-c preserves mitochondrial subpopulation bioenergetics and genome integrity to attenuate cardiac ischemia reperfusion injury.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "42243958",
+   "year": "2026",
+   "title": "MOTS-c: How a secreted mitochondrial microprotein may become a potential treatment for inflammatory lung diseases.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42266945",
+   "year": "2026",
+   "title": "MOTS-c partially protects against skeletal muscle deterioration in C26 cachexia.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "42278864",
+   "year": "2026",
+   "title": "Reduced Circulating MOTS-c Levels in Hashimoto's Thyroiditis Reflect Integrated Autoimmune and Metabolic Dysregulation: A Cross-Sectional Study.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "42321010",
+   "year": "2026",
+   "title": "Mitochondrial peptide MOTS-c suppresses systemic and cardiac inflammasome activation in a diabetic rat model.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "42324588",
+   "year": "2026",
+   "title": "Mitochondrial-derived peptide MOTS-c activates metabolic signaling but blunts reparative function in human mesenchymal stromal cells.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "42349896",
+   "year": "2026",
+   "title": "Circulating mitochondrial-derived microproteins at rest and in response to an acute bout of endurance exercise in individuals with cerebral palsy.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "42576277",
+   "year": "2026",
+   "title": "Emerging regulators of human physiology and disease; sORF-encoded microproteins.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42592019",
+   "year": "2026",
+   "title": "Mitochondrial dysfunction in ARDS: unraveling the regulatory networks and therapeutic opportunities.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42611943",
+   "year": "2026",
+   "title": "MOTS-c is a mitochondrial-encoded interferon-linked host defense peptide.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "42633878",
+   "year": "2026",
+   "title": "MOTS-c in sepsis-induced cardiomyopathy: Mechanisms and translational potential.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42640735",
+   "year": "2026",
+   "title": "Mitochondrial-derived peptides (MDPs) activated by physical exercise as therapeutic targets for metabolic disorders: A systematic review.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42650220",
+   "year": "2026",
+   "title": "AGEs-RAGE Axis and Mitochondrial-Derived Peptides in Advanced Chronic Kidney Disease: Interconnected Pathways Beyond Inflammation and Nutrition.",
+   "category": "human_measured"
+  },
+  {
+   "pmid": "42716952",
+   "year": "2026",
+   "title": "Correction: Reduced serum and skeletal muscle MOTS c levels in women with polycystic ovary syndrome are associated with mitochondrial dysfunction.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42734848",
+   "year": "2026",
+   "title": "Mitokines as bioenergetic stress signals in cardiovascular disease: mitochondrial communication, endocrine adaptation, and translational implications.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42752426",
+   "year": "2026",
+   "title": "Synthetic Peptides in Pharmacy Compounding: Analysis of PCAC Recommendations and Industry Safety Standards.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42767971",
+   "year": "2026",
+   "title": "MOTS-c mediates remote ischemic preconditioning-induced protection against lung ischemia-reperfusion injury via NRF2-dependent mitochondrial biogenesis.",
+   "category": "animal_or_cell"
+  },
+  {
+   "pmid": "42880137",
+   "year": "2026",
+   "title": "Mitochondrial-derived peptides in female reproduction: Emerging regulators of oocyte competence and novel therapeutic opportunities for infertility.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42882431",
+   "year": "2026",
+   "title": "Mitochondria-Endoplasmic Reticulum Crosstalk in Pancreatic β-Cell Stress: A Driver of Diabetes.",
+   "category": "review_or_commentary"
+  },
+  {
+   "pmid": "42633281",
+   "year": "2027",
+   "title": "Mitochondria-derived peptide hydrogel augments mitochondrial transplantation for promoting cardiac repair via macrophage metabolic reprogramming.",
+   "category": "animal_or_cell"
+  }
+ ]
+}

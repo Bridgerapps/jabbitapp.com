@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="t1 d1">
+<title id="t1">264 MOTS-c papers on PubMed. None gave it to a person.</title>
+<desc id="d1">Jabbit classification of 264 PubMed records for MOTS-c, retrieved October 16, 2026: 100 gave MOTS-c to animals or cells, 84 measured natural MOTS-c or its gene variant in people, 78 reviews and commentary, 2 off-topic, and 0 gave MOTS-c to a person.</desc>
+<rect width="720" height="420" fill="#fff"/>
+<text x="24" y="34" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">264 MOTS-c papers on PubMed. None gave it to a person.</text>
+<text x="24" y="58" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Our classification of every record, October 16, 2026 (2 off-topic hits not shown).</text>
+<text x="24" y="76" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">“Measured” = levels, tissue or the gene variant. Some also ran animal tests.</text>
+<text x="276" y="119" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Gave MOTS-c to animals or cells</text>
+<rect x="290" y="100" width="336.4" height="28" rx="3" fill="#94a3b8"/>
+<text x="634.4" y="120" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">100</text>
+<text x="276" y="181" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Measured natural MOTS-c in people</text>
+<rect x="290" y="162" width="282.5" height="28" rx="3" fill="#0f766e"/>
+<text x="580.5" y="182" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">84</text>
+<text x="276" y="243" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Reviews and commentary</text>
+<rect x="290" y="224" width="262.4" height="28" rx="3" fill="#cbd5e1"/>
+<text x="560.4" y="244" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">78</text>
+<text x="276" y="305" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Gave MOTS-c to a person</text>
+<line x1="290" y1="286" x2="290" y2="314" stroke="#b91c1c" stroke-width="3"/>
+<text x="298.0" y="306" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#b91c1c">0</text>
+<text x="24" y="398" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Source: PubMed via NCBI E-utilities; list at jabbitapp.com/research/sources</text>
+<text x="696" y="398" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">jabbitapp.com/research</text>
+</svg>

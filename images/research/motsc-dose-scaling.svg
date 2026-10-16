@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" role="img" aria-labelledby="t2 d2">
+<title id="t2">What the mouse doses scale to in a 70 kg adult</title>
+<desc id="d2">Jabbit arithmetic using FDA body-surface-area scaling (mouse mg/kg divided by 12.3, times 70 kg). Doses posted on X in October 2026: 0.5 to 2 mg. Mouse high-fat-diet dose 0.5 mg/kg/day scales to about 2.8 mg; 5 mg/kg to about 28 mg; 15 mg/kg, the dose that improved running in old mice, to about 85 mg. CohBar gave its modified analog CB4211 at 25 mg a day. Mice were injected into the abdomen; people inject under the skin.</desc>
+<rect width="720" height="440" fill="#fff"/>
+<text x="24" y="34" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">What the mouse doses scale to in a 70 kg adult</text>
+<text x="24" y="58" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Our arithmetic: FDA body-surface scaling (mouse mg/kg ÷ 12.3 × 70 kg). Log scale, mg.</text>
+<text x="24" y="76" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">A starting-dose convention, not proof any dose works in people.</text>
+<line x1="220.0" y1="92" x2="220.0" y2="366" stroke="#e2e8f0" stroke-width="1"/>
+<text x="220.0" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">0.1 mg</text>
+<line x1="359.4" y1="92" x2="359.4" y2="366" stroke="#e2e8f0" stroke-width="1"/>
+<text x="359.4" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">1 mg</text>
+<line x1="498.7" y1="92" x2="498.7" y2="366" stroke="#e2e8f0" stroke-width="1"/>
+<text x="498.7" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">10 mg</text>
+<line x1="638.1" y1="92" x2="638.1" y2="366" stroke="#e2e8f0" stroke-width="1"/>
+<text x="638.1" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">100 mg</text>
+<text x="206" y="110" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Doses posted on X</text>
+<text x="206" y="127" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Oct 2026 posts: 0.5 to 2 mg</text>
+<rect x="317.4" y="98" width="83.9" height="20" rx="4" fill="#f59e0b"/>
+<text x="206" y="166" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Mouse fat-diet dose</text>
+<text x="206" y="183" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0.5 mg/kg/day → ≈2.8 mg</text>
+<circle cx="421.7" cy="164" r="9" fill="#0f766e"/>
+<text x="206" y="222" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Mouse insulin-test dose</text>
+<text x="206" y="239" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">5 mg/kg → ≈28 mg</text>
+<circle cx="562.1" cy="220" r="9" fill="#0f766e"/>
+<text x="206" y="278" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Mouse running dose</text>
+<text x="206" y="295" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">15 mg/kg → ≈85 mg</text>
+<circle cx="628.5" cy="276" r="9" fill="#0f766e"/>
+<text x="206" y="334" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">CB4211 trial dose</text>
+<text x="206" y="351" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">25 mg/day, a modified molecule</text>
+<circle cx="554.2" cy="332" r="9" fill="#1d4ed8"/>
+<text x="24" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Sources: Lee 2015; Reynolds 2021; CohBar 2021; FDA 2005 guidance</text>
+<text x="696" y="418" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">jabbitapp.com/research</text>
+</svg>
