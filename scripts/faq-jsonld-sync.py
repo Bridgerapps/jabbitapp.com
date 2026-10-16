@@ -12,6 +12,12 @@ Behavior:
   <script type="application/ld+json" id="faq-jsonld">…</script> block exists and
   matches the extracted FAQ content.
 
+URL policy (trailingSlash:false):
+- This script must NEVER invent, rewrite, or inject page/canonical/folder URLs.
+- FAQ JSON-LD is Q&A text only (no @id/url fields). Do not add trailing-slash
+  folder URLs like https://jabbitapp.com/research/ — the site uses slash-free
+  folder paths (https://jabbitapp.com/research).
+
 Exit codes:
 - 0: ok
 - 1: changes needed (only in --check mode)
@@ -56,6 +62,19 @@ def _iter_html_files(root: Path):
         yield p
 
 
+def _assert_no_trailing_slash_urls(data: object) -> None:
+    """Refuse FAQ JSON-LD that invents slash-terminated folder URLs."""
+    if isinstance(data, dict):
+        for k, v in data.items():
+            if k in ("url", "@id", "mainEntityOfPage", "item") and isinstance(v, str):
+                if v.startswith("https://jabbitapp.com/") and v.endswith("/") and v != "https://jabbitapp.com/":
+                    raise ValueError(f"trailing-slash folder URL not allowed in FAQ JSON-LD: {v}")
+            _assert_no_trailing_slash_urls(v)
+    elif isinstance(data, list):
+        for item in data:
+            _assert_no_trailing_slash_urls(item)
+
+
 def sync_one(path: Path, *, script_id: str, indent: int) -> tuple[str | None, FileResult]:
     try:
         html = path.read_text(encoding="utf-8")
@@ -73,6 +92,7 @@ def sync_one(path: Path, *, script_id: str, indent: int) -> tuple[str | None, Fi
 
     try:
         data = faq.build_faqpage_jsonld(pairs)
+        _assert_no_trailing_slash_urls(data)
         script_block = faq.render_jsonld_script(data, indent=indent, script_id=script_id)
         new_html, _ = faq._replace_or_insert_script(html, script_id=script_id, script_block=script_block)
     except Exception as e:

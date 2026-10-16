@@ -11,7 +11,15 @@ from __future__ import annotations
 import os, pathlib, re, subprocess
 from datetime import datetime, timezone
 
-SITE_DIR = pathlib.Path(os.environ.get("JABBIT_SITE_DIR", pathlib.Path(__file__).resolve().parent.parent))
+def _default_site_dir() -> pathlib.Path:
+    parent = pathlib.Path(__file__).resolve().parent.parent
+    # OpenClaw workspace layout: scripts/ lives next to jabbitapp.com/
+    candidate = parent / "jabbitapp.com"
+    if candidate.is_dir() and (candidate / "robots.txt").is_file():
+        return candidate
+    return parent  # checked out as the site repo itself
+
+SITE_DIR = pathlib.Path(os.environ.get("JABBIT_SITE_DIR", _default_site_dir()))
 OUT = SITE_DIR / "sitemap.xml"
 SKIP = re.compile(r"^(node_modules|output|jabbit|jabbitapp\.com|docs|_includes|api|data|scripts|tools/asr)(/|$)")
 
