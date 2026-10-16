@@ -116,7 +116,7 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/guides/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -242,7 +242,7 @@
   </url>
 <url>
     <loc>https://jabbitapp.com/peptides/tirzepatide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -272,13 +272,19 @@
   </url>
   <url>
     <loc>https://jabbitapp.com/research/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jabbitapp.com/research/step-1-semaglutide-teardown.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jabbitapp.com/research/surmount-1-tirzepatide-teardown.html</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
