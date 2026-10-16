@@ -17,11 +17,12 @@ WS="/home/jabbit/.openclaw/workspace"
 cmd="${1:-all}"
 
 run_sync() {
+  SITE="${SITE_REPO:-$WS/jabbitapp.com}"
   python3 "$WS/scripts/seo-sync-tracker.py" >/dev/null
   python3 "$WS/scripts/related-links-sync.py" >/dev/null
-  # Keep FAQPage structured data in sync for any pages that include <dl class="faq">.
-  python3 "$WS/scripts/faq-jsonld-sync.py" >/dev/null
-  python3 "$WS/scripts/generate-sitemap.py" >/dev/null
+  # Prefer site-repo script copies (slash-safe recursive sitemap + FAQ sync).
+  python3 "${SITE}/scripts/faq-jsonld-sync.py" >/dev/null
+  JABBIT_SITE_DIR="$SITE" python3 "${SITE}/scripts/generate-sitemap.py" >/dev/null
 }
 
 run_audit() {

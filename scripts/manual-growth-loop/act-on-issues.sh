@@ -52,7 +52,7 @@ fi
 if [ -f "$HEALTH" ]; then
   sitemap_missing=$(jq -r '.sitemap_missing_count // 0' "$HEALTH" 2>/dev/null || echo 0)
   if [ "$sitemap_missing" != "0" ]; then
-    python3 "$ROOT/scripts/generate-sitemap.py" >/dev/null 2>&1 || true
+    JABBIT_SITE_DIR="$ROOT/jabbitapp.com" python3 "$ROOT/jabbitapp.com/scripts/generate-sitemap.py" >/dev/null 2>&1 || true
   fi
 
   rl_missing=$(jq -r '.related_links_missing_count // 0' "$HEALTH" 2>/dev/null || echo 0)
