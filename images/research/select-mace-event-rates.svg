@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="t d">
 <title id="t">SELECT: share of participants with each cardiovascular event</title>
-<desc id="d">In-trial cumulative incidence. Primary MACE (CV death, nonfatal MI, or nonfatal stroke): 6.5% on semaglutide 2.4 mg vs 8.0% on placebo. Nonfatal MI 2.7% vs 3.7%. Nonfatal stroke 1.7% vs 1.9%. CV death 2.5% vs 3.0%. All-cause death 4.3% vs 5.2%. Source: Lincoff et al., NEJM 2023, Table 2.</desc>
+<desc id="d">Share of participants with each event during the in-trial period (Table 2 percentages, not a cumulative-incidence curve). Primary MACE (CV death, nonfatal MI, or nonfatal stroke): 6.5% on semaglutide 2.4 mg vs 8.0% on placebo. Nonfatal MI 2.7% vs 3.7%. Nonfatal stroke 1.7% vs 1.9%. CV death 2.5% vs 3.0%. All-cause death 4.3% vs 5.2%. Source: Lincoff et al., NEJM 2023, Table 2.</desc>
 <rect width="720" height="420" fill="#fff"/>
 <text x="64" y="30" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Share with each cardiovascular event (in-trial)</text>
 <text x="64" y="52" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">SELECT · mean follow-up 39.8 months · n=17,604</text>
