@@ -46,12 +46,15 @@ Practical, non-promotional guides for people tracking peptide and GLP-1 injectio
 
 ## Study Teardowns
 Critical single-study reads: design, comparator, funding, dropout, effect size, enrollment, and durability, with charts rebuilt from published numbers.
-- Study teardowns hub: https://jabbitapp.com/research/
+- Study teardowns hub: https://jabbitapp.com/research
+- Foundayo (orforglipron) GLP-1 pill vs Wegovy and Zepbound (EU CHMP opinion Oct 2026, US labels, estimands, type 2 diabetes, safety, CYP3A4 interactions): https://jabbitapp.com/research/foundayo-orforglipron-pill-teardown.html
 - TB-500 vs thymosin beta-4 (FDA review, full-protein trials, racing-lab chemistry, registry check): https://jabbitapp.com/research/tb-500-thymosin-beta-4-teardown.html
+- FDA peptide compounding policy 2026 (BPC-157, semax, epitalon; advisory votes and FDA staff reviews): https://jabbitapp.com/research/fda-peptide-compounding-policy-2026.html
 - BPC-157 origins (1989 patent, PubMed authorship count, human proteome scan): https://jabbitapp.com/research/bpc-157-origins-teardown.html
 - Epitalon/Thymalin longevity (Khavinson studies, translated): https://jabbitapp.com/research/epitalon-thymalin-khavinson-teardown.html
 - Selank anxiety (Russian studies, translated): https://jabbitapp.com/research/selank-anxiety-teardown.html
 - Semax ischemic stroke (Russian studies, translated): https://jabbitapp.com/research/semax-ischemic-stroke-teardown.html
+- Retatrutide in type 2 diabetes (TRIUMPH-2, The Lancet 2026): https://jabbitapp.com/research/retatrutide-type-2-diabetes-triumph-2-teardown.html
 - SELECT (semaglutide 2.4 mg CV outcomes, NEJM 2023): https://jabbitapp.com/research/select-semaglutide-cv-teardown.html
 - SURMOUNT-1 (tirzepatide 5/10/15 mg, NEJM 2022): https://jabbitapp.com/research/surmount-1-tirzepatide-teardown.html
 - STEP 1 (semaglutide 2.4 mg, NEJM 2021): https://jabbitapp.com/research/step-1-semaglutide-teardown.html
