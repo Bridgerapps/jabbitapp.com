@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" role="img" aria-labelledby="t d">
+<title id="t">Barthel index by subgroup (0–100)</title><desc id="d">Mean Barthel index, start / 1 month / 5 months. 1a: 58.2, 80.4, 85.8. 1b: 58.8, 70.2, 84.1. 2a: 60.5, 75.5, 84.3. 2b: 58.9, 62.7, 79.5.</desc>
+<rect width="720" height="440" fill="#fff"/>
+<text x="64" y="30" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Barthel index by subgroup (0–100)</text>
+<text x="64" y="52" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Gusev et al. 2018, Table 5 · higher = more independent in daily activities</text>
+<line x1="64" y1="360.0" x2="570" y2="360.0" stroke="#e2e8f0"/>
+<text x="54" y="364.0" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">50</text>
+<line x1="64" y1="287.5" x2="570" y2="287.5" stroke="#e2e8f0"/>
+<text x="54" y="291.5" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">60</text>
+<line x1="64" y1="215.0" x2="570" y2="215.0" stroke="#e2e8f0"/>
+<text x="54" y="219.0" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">70</text>
+<line x1="64" y1="142.5" x2="570" y2="142.5" stroke="#e2e8f0"/>
+<text x="54" y="146.5" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">80</text>
+<line x1="64" y1="70.0" x2="570" y2="70.0" stroke="#e2e8f0"/>
+<text x="54" y="74.0" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">90</text>
+<text x="64.0" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#0f172a">Start</text>
+<text x="165.2" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#0f172a">1 month</text>
+<text x="570.0" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#0f172a">5 months</text>
+<polyline points="64.0,300.5 165.2,139.6 570.0,100.5" fill="none" stroke="#0f766e" stroke-width="3"/>
+<circle cx="64.0" cy="300.5" r="4" fill="#0f766e"/>
+<circle cx="165.2" cy="139.6" r="4" fill="#0f766e"/>
+<circle cx="570.0" cy="100.5" r="4" fill="#0f766e"/>
+<polyline points="64.0,296.2 165.2,213.5 570.0,112.8" fill="none" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="64.0" cy="296.2" r="4" fill="#94a3b8"/>
+<circle cx="165.2" cy="213.5" r="4" fill="#94a3b8"/>
+<circle cx="570.0" cy="112.8" r="4" fill="#94a3b8"/>
+<polyline points="64.0,283.9 165.2,175.1 570.0,111.3" fill="none" stroke="#14b8a6" stroke-width="3" stroke-dasharray="6 4"/>
+<circle cx="64.0" cy="283.9" r="4" fill="#14b8a6"/>
+<circle cx="165.2" cy="175.1" r="4" fill="#14b8a6"/>
+<circle cx="570.0" cy="111.3" r="4" fill="#14b8a6"/>
+<polyline points="64.0,295.5 165.2,267.9 570.0,146.1" fill="none" stroke="#b0bccb" stroke-width="3" stroke-dasharray="6 4"/>
+<circle cx="64.0" cy="295.5" r="4" fill="#b0bccb"/>
+<circle cx="165.2" cy="267.9" r="4" fill="#b0bccb"/>
+<circle cx="570.0" cy="146.1" r="4" fill="#b0bccb"/>
+<text x="580.0" y="104.5" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a">1a: 85.8</text>
+<text x="580.0" y="120.5" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a">2a: 84.3</text>
+<text x="580.0" y="136.5" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a">1b: 84.1</text>
+<text x="580.0" y="152.5" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a">2b: 79.5</text>
+<line x1="64" y1="402" x2="86" y2="402" stroke="#0f766e" stroke-width="3"/><text x="92" y="406" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">1a · Early rehab + semax (n=30)</text>
+<line x1="364" y1="402" x2="386" y2="402" stroke="#94a3b8" stroke-width="3"/><text x="392" y="406" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">1b · Early rehab, no semax (n=30)</text>
+<line x1="64" y1="422" x2="86" y2="422" stroke="#14b8a6" stroke-width="3" stroke-dasharray="6 4"/><text x="92" y="426" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">2a · Late rehab + semax (n=30)</text>
+<line x1="364" y1="422" x2="386" y2="422" stroke="#b0bccb" stroke-width="3" stroke-dasharray="6 4"/><text x="392" y="426" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">2b · Late rehab, no semax (n=20)</text>
+</svg>

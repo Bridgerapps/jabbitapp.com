@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" role="img" aria-labelledby="t d">
+<title id="t">Plasma BDNF by subgroup (pg/mL)</title><desc id="d">Mean plasma BDNF, start / 1 month / 5 months. 1a semax early: 7.8, 22.6, 19.4. 1b no semax early: 8.6, 17.9, 12.2. 2a semax late: 8.1, 23.6, 20.8. 2b no semax late: 7.9, 12.3, 10.7.</desc>
+<rect width="720" height="440" fill="#fff"/>
+<text x="64" y="30" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Plasma BDNF by subgroup (pg/mL)</text>
+<text x="64" y="52" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Gusev et al. 2018, Table 3 · group means, not blinded, no placebo</text>
+<line x1="64" y1="360.0" x2="570" y2="360.0" stroke="#e2e8f0"/>
+<text x="54" y="364.0" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">0</text>
+<line x1="64" y1="302.0" x2="570" y2="302.0" stroke="#e2e8f0"/>
+<text x="54" y="306.0" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">5</text>
+<line x1="64" y1="244.0" x2="570" y2="244.0" stroke="#e2e8f0"/>
+<text x="54" y="248.0" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">10</text>
+<line x1="64" y1="186.0" x2="570" y2="186.0" stroke="#e2e8f0"/>
+<text x="54" y="190.0" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">15</text>
+<line x1="64" y1="128.0" x2="570" y2="128.0" stroke="#e2e8f0"/>
+<text x="54" y="132.0" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">20</text>
+<line x1="64" y1="70.0" x2="570" y2="70.0" stroke="#e2e8f0"/>
+<text x="54" y="74.0" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">25</text>
+<text x="64.0" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#0f172a">Start</text>
+<text x="165.2" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#0f172a">1 month</text>
+<text x="570.0" y="382" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#0f172a">5 months</text>
+<polyline points="64.0,269.5 165.2,97.8 570.0,135.0" fill="none" stroke="#0f766e" stroke-width="3"/>
+<circle cx="64.0" cy="269.5" r="4" fill="#0f766e"/>
+<circle cx="165.2" cy="97.8" r="4" fill="#0f766e"/>
+<circle cx="570.0" cy="135.0" r="4" fill="#0f766e"/>
+<polyline points="64.0,260.2 165.2,152.4 570.0,218.5" fill="none" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="64.0" cy="260.2" r="4" fill="#94a3b8"/>
+<circle cx="165.2" cy="152.4" r="4" fill="#94a3b8"/>
+<circle cx="570.0" cy="218.5" r="4" fill="#94a3b8"/>
+<polyline points="64.0,266.0 165.2,86.2 570.0,118.7" fill="none" stroke="#14b8a6" stroke-width="3" stroke-dasharray="6 4"/>
+<circle cx="64.0" cy="266.0" r="4" fill="#14b8a6"/>
+<circle cx="165.2" cy="86.2" r="4" fill="#14b8a6"/>
+<circle cx="570.0" cy="118.7" r="4" fill="#14b8a6"/>
+<polyline points="64.0,268.4 165.2,217.3 570.0,235.9" fill="none" stroke="#b0bccb" stroke-width="3" stroke-dasharray="6 4"/>
+<circle cx="64.0" cy="268.4" r="4" fill="#b0bccb"/>
+<circle cx="165.2" cy="217.3" r="4" fill="#b0bccb"/>
+<circle cx="570.0" cy="235.9" r="4" fill="#b0bccb"/>
+<text x="580.0" y="122.7" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a">2a: 20.8</text>
+<text x="580.0" y="139.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a">1a: 19.4</text>
+<text x="580.0" y="222.5" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a">1b: 12.2</text>
+<text x="580.0" y="239.9" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a">2b: 10.7</text>
+<line x1="64" y1="402" x2="86" y2="402" stroke="#0f766e" stroke-width="3"/><text x="92" y="406" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">1a · Early rehab + semax (n=30)</text>
+<line x1="364" y1="402" x2="386" y2="402" stroke="#94a3b8" stroke-width="3"/><text x="392" y="406" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">1b · Early rehab, no semax (n=30)</text>
+<line x1="64" y1="422" x2="86" y2="422" stroke="#14b8a6" stroke-width="3" stroke-dasharray="6 4"/><text x="92" y="426" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">2a · Late rehab + semax (n=30)</text>
+<line x1="364" y1="422" x2="386" y2="422" stroke="#b0bccb" stroke-width="3" stroke-dasharray="6 4"/><text x="392" y="426" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">2b · Late rehab, no semax (n=20)</text>
+</svg>
