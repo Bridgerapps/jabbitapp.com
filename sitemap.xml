@@ -234,7 +234,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+    <url>
+    <loc>https://jabbitapp.com/peptides/thymalin.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://jabbitapp.com/peptides/tirzepatide.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
