@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 674" width="720" height="674" role="img" aria-labelledby="t1 d1">
+<title id="t1">NAD+ by vein: what is sold vs. what has been tested against placebo</title>
+<desc id="d1">Log-scale chart of NAD+ doses in milligrams a day. Sold: an addiction detox protocol of 500 to 1,500 mg a day for about 10 days; a 750 mg six-hour drip described as a common clinic regimen; a 500 mg a day four-day loading dose; at-home shots starting at 50 to 100 mg. Tested against placebo: a single 500 mg drip in healthy adults in 2024 measuring tolerability and blood levels; 100 mg a day for 3 days in a 2026 safety test with 5 people per drip arm; 10 mg a day for 7 days in 180 heart patients in China; NADH 25 mg a day for 4 days in 9 Parkinson’s patients in 1994, with no difference from placebo. None of the placebo-controlled tests measured aging.</desc>
+<rect width="720" height="674" fill="#fff"/>
+<text x="24" y="34" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">NAD+ by vein: what’s sold vs. what’s been tested</text>
+<text x="24" y="58" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">mg of NAD+ per day, log scale. “Tested” = randomized against a placebo, in a paper or preprint.</text>
+<text x="24" y="76" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">None of the placebo-controlled tests measured aging, energy or lifespan.</text>
+<line x1="355.4" y1="108" x2="355.4" y2="572" stroke="#e2e8f0" stroke-width="1"/>
+<text x="355.4" y="588" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">10 mg</text>
+<line x1="486.5" y1="108" x2="486.5" y2="572" stroke="#e2e8f0" stroke-width="1"/>
+<text x="486.5" y="588" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">100 mg</text>
+<line x1="617.5" y1="108" x2="617.5" y2="572" stroke="#e2e8f0" stroke-width="1"/>
+<text x="617.5" y="588" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">1,000 mg</text>
+<text x="24" y="122" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="1" fill="#f59e0b">SOLD</text>
+<text x="302" y="158" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Addiction “detox” protocol</text>
+<text x="302" y="175" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">500–1,500 mg a day for about 10 days</text>
+<rect x="578.0" y="146" width="62.5" height="20" rx="4" fill="#f59e0b"/>
+<text x="302" y="208" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Clinic drip, 6 hours</text>
+<text x="302" y="225" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">750 mg, “a common dosing regimen in clinics”*</text>
+<circle cx="601.1" cy="206" r="9" fill="#f59e0b"/>
+<text x="302" y="258" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Clinic “loading dose”</text>
+<text x="302" y="275" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">500 mg a day, 4 days in a row</text>
+<circle cx="578.0" cy="256" r="9" fill="#f59e0b"/>
+<text x="302" y="308" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">At-home shots (X posts)</text>
+<text x="302" y="325" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">“Starting doses” 50–100 mg</text>
+<rect x="447.0" y="296" width="39.4" height="20" rx="4" fill="#f59e0b"/>
+<text x="24" y="356" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="1" fill="#0f766e">TESTED AGAINST PLACEBO</text>
+<text x="302" y="392" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">One drip, healthy adults (2024)</text>
+<text x="302" y="409" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">500 mg once; tolerability and blood levels</text>
+<circle cx="578.0" cy="390" r="9" fill="#0f766e"/>
+<text x="302" y="442" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Shot/drip safety test (2026)</text>
+<text x="302" y="459" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">100 mg a day × 3 days; 5 people per drip arm</text>
+<circle cx="486.5" cy="440" r="9" fill="#0f766e"/>
+<text x="302" y="492" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Heart failure, China (2026)</text>
+<text x="302" y="509" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">10 mg a day × 7 days; 180 patients</text>
+<circle cx="355.4" cy="490" r="9" fill="#0f766e"/>
+<text x="302" y="542" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Parkinson’s, NADH (1994)</text>
+<text x="302" y="559" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">25 mg a day × 4 days; 9 patients; no difference</text>
+<circle cx="407.6" cy="540" r="9" fill="#0f766e"/>
+<text x="24" y="616" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">*Given to 8 men vs 3 on saline in 2019; blood levels only.</text>
+<text x="24" y="636" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Sources: Reyna 2026; Grant 2019; NAD Research Inc.; X posts; Hawkins 2024;</text>
+<text x="24" y="654" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Niagen 2026 safety preprint; Yu 2026; Dizdar 1994</text>
+<text x="696" y="654" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">jabbitapp.com/research</text>
+</svg>

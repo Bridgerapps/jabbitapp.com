@@ -1,0 +1,6625 @@
+{
+ "generated": "2026-10-17",
+ "summary": {
+  "ctgov_query_intr": "\"nicotinamide adenine dinucleotide\" OR \"NAD+\" OR NADH OR NAD OR \"nicotinamide riboside\" OR Niagen OR \"nicotinamide mononucleotide\" OR NMN OR \"beta-NMN\"",
+  "ctgov_records_returned": 364,
+  "studies_with_NAD_NR_NMN_intervention": 163,
+  "interventional": 162,
+  "by_agent": {
+   "NAD+": 22,
+   "NR": 113,
+   "NMN": 36
+  },
+  "parenteral_regex_hits": [
+   "NCT06590844",
+   "NCT07251608",
+   "NCT06036355",
+   "NCT06776510",
+   "NCT07328100",
+   "NCT06558253",
+   "NCT06382688",
+   "NCT07839130",
+   "NCT06919328",
+   "NCT05849519"
+  ],
+  "excluded_after_review": {
+   "NCT02010151": "'NAD' is a defibrillation acronym, not nicotinamide adenine dinucleotide"
+  },
+  "not_parenteral_after_review": {
+   "NCT06036355": "NMN is taken by mouth; the injection is a dendritic-cell vaccine"
+  },
+  "parenteral_reviewed": {
+   "NCT06382688": {
+    "agent": "NR or NAD+ IV (single 500 mg)",
+    "population": "healthy adults",
+    "placebo": true,
+    "funder": "ChromaDex (sponsor of record: Nutraceuticals Research Institute)",
+    "aging_outcome": false,
+    "note": "primary outcomes: blood pressure, heart rate, NAD+ level"
+   },
+   "NCT06919328": {
+    "agent": "NR or NAD+ IV/IM/SC (100 mg x3 days)",
+    "population": "healthy adults",
+    "placebo": true,
+    "funder": "ChromaDex (sponsor of record: Nutraceuticals Research Institute)",
+    "aging_outcome": false,
+    "note": "primary outcomes: injection pain and discomfort"
+   },
+   "NCT07251608": {
+    "agent": "NR IM/SC (50 or 100 mg x3 days)",
+    "population": "adults with fatigue",
+    "placebo": false,
+    "funder": "ChromaDex",
+    "aging_outcome": false,
+    "note": "open-label safety study"
+   },
+   "NCT07328100": {
+    "agent": "Coenzyme I (NAD+) for injection",
+    "population": "vascular aging",
+    "placebo": true,
+    "funder": "Shanghai Tenth People's Hospital",
+    "aging_outcome": true,
+    "note": "not yet recruiting; flow-mediated dilation endpoint"
+   },
+   "NCT06590844": {
+    "agent": "Coenzyme I (NAD+) for injection",
+    "population": "liver cancer",
+    "placebo": false,
+    "funder": "hospital (China)",
+    "aging_outcome": false,
+    "note": "disease trial"
+   },
+   "NCT06776510": {
+    "agent": "Coenzyme I (NAD+) for injection",
+    "population": "immune thrombocytopenia",
+    "placebo": false,
+    "funder": "hospital (China)",
+    "aging_outcome": false,
+    "note": "single-arm disease trial"
+   },
+   "NCT06558253": {
+    "agent": "Coenzyme I (NAD+) for injection",
+    "population": "cord blood transplant",
+    "placebo": false,
+    "funder": "hospital (China)",
+    "aging_outcome": false,
+    "note": "disease trial"
+   },
+   "NCT07839130": {
+    "agent": "Coenzyme I (NAD+) for injection, 2-4 mg/kg",
+    "population": "children with heart dysfunction",
+    "placebo": true,
+    "funder": "hospital (China)",
+    "aging_outcome": false,
+    "note": "not yet recruiting"
+   },
+   "NCT05849519": {
+    "agent": "Coenzyme I (NAD+) for injection",
+    "population": "sudden hearing loss",
+    "placebo": false,
+    "funder": "hospital (China)",
+    "aging_outcome": false,
+    "note": "disease trial"
+   }
+  },
+  "parenteral_reviewed_count": 9,
+  "parenteral_with_posted_results": [],
+  "parenteral_placebo_controlled": [
+   "NCT06382688",
+   "NCT06919328",
+   "NCT07328100",
+   "NCT07839130"
+  ],
+  "parenteral_placebo_aging_outcome": [
+   "NCT07328100"
+  ],
+  "oral_interventional": 115,
+  "oral_with_posted_results": 12,
+  "with_placebo_arm": 112
+ },
+ "pubmed": {
+  "nad_iv_or_injection_humans": {
+   "term": "(\"NAD+\"[tiab] OR \"NAD\"[tiab] OR \"nicotinamide adenine dinucleotide\"[tiab] OR \"NADH\"[tiab]) AND (intravenous*[tiab] OR infusion*[tiab] OR injection*[tiab] OR subcutaneous*[tiab] OR intramuscular*[tiab]) AND humans[mh]",
+   "count": 490,
+   "pmids": [
+    "42568438",
+    "42544484",
+    "42509783",
+    "42489969",
+    "42409470",
+    "42390160",
+    "42366180",
+    "42243084",
+    "42206947",
+    "42190515",
+    "42108395",
+    "42102890",
+    "41991647",
+    "41915584",
+    "41834980",
+    "41814705",
+    "41787695",
+    "41781454",
+    "41758055",
+    "41672305",
+    "41655607",
+    "41554289",
+    "41512967",
+    "41508273",
+    "41491271",
+    "41349909",
+    "41240060",
+    "41239833",
+    "41186085",
+    "41185750",
+    "41183189",
+    "41159029",
+    "40954388",
+    "40902521",
+    "40819275",
+    "40775534",
+    "40725868",
+    "40676868",
+    "40628981",
+    "40613285",
+    "40582228",
+    "40566708",
+    "40408806",
+    "40387282",
+    "40317586",
+    "40315404",
+    "40258810",
+    "40254925",
+    "40158853",
+    "40007539",
+    "39960941",
+    "39899132",
+    "39707499",
+    "39661730",
+    "39465976",
+    "39461367",
+    "39426231",
+    "39387327",
+    "39394920",
+    "39317106",
+    "39287863",
+    "39146878",
+    "39143213",
+    "39032284",
+    "38897213",
+    "38691846",
+    "38594244",
+    "38525658",
+    "38193205",
+    "38112979",
+    "37950707",
+    "37926183",
+    "37847152",
+    "37842294",
+    "37824136",
+    "37759524",
+    "37722377",
+    "37446292",
+    "37301480",
+    "37294576",
+    "37272092",
+    "37026522",
+    "36986177",
+    "36875143",
+    "36856954",
+    "36731209",
+    "36609953",
+    "36527643",
+    "36350566",
+    "36286592",
+    "36232686",
+    "36231003",
+    "36181911",
+    "36142129",
+    "36044570",
+    "36016499",
+    "35907592",
+    "35856346",
+    "35820466",
+    "35657458",
+    "35616084",
+    "35501309",
+    "35413388",
+    "35383288",
+    "35230136",
+    "35211862",
+    "35091012",
+    "34991663",
+    "34948019",
+    "34880125",
+    "34743684",
+    "34678889",
+    "34533039",
+    "34477214",
+    "34468187",
+    "34434488",
+    "34398890",
+    "34291369",
+    "34281797",
+    "34174704",
+    "34125994",
+    "34107166",
+    "34029951",
+    "33845721",
+    "33683583",
+    "33547792",
+    "33507942",
+    "33475980",
+    "33284949",
+    "33259975",
+    "33101779",
+    "33099633",
+    "33028392",
+    "32965071",
+    "32960493",
+    "32938758",
+    "32924342",
+    "32815446",
+    "32808657",
+    "32741322",
+    "32740958",
+    "32711549",
+    "32640079",
+    "32626935",
+    "32384080",
+    "32383803",
+    "32335094",
+    "32291269",
+    "32267550",
+    "32236974",
+    "32075942",
+    "32070922",
+    "32063036",
+    "32049549",
+    "32020639",
+    "31992084",
+    "31952989",
+    "31944172",
+    "31926478",
+    "31748630",
+    "31504721",
+    "31439521",
+    "31337671",
+    "31280254",
+    "31226281",
+    "31218680",
+    "31207144",
+    "31149051",
+    "31092012",
+    "31056334",
+    "31055583",
+    "30948509",
+    "30924710",
+    "30689637",
+    "30617135",
+    "30455381",
+    "30445007",
+    "30388276",
+    "30354211",
+    "30318513",
+    "30300909",
+    "30059901",
+    "29905928",
+    "29739458",
+    "29710661",
+    "29685734",
+    "29679549",
+    "29618597",
+    "29577757",
+    "29288336",
+    "29215048",
+    "29207011",
+    "29190547",
+    "29154687",
+    "29025729",
+    "29020797",
+    "28954528",
+    "28867181",
+    "28866184",
+    "28819322",
+    "28816586",
+    "28753212",
+    "28712214",
+    "28705804",
+    "28637373",
+    "28595079",
+    "28538406",
+    "28508835",
+    "28433055",
+    "28356339",
+    "28342583",
+    "28220827",
+    "28025122",
+    "28003588",
+    "27975234",
+    "27912196",
+    "27844208",
+    "27617996",
+    "27500459",
+    "27456061",
+    "27398442",
+    "27339462",
+    "27323442",
+    "27298826",
+    "26984876",
+    "26924156",
+    "26892229",
+    "26865172",
+    "26639398",
+    "26612783",
+    "26584048",
+    "26574954",
+    "26438859",
+    "26434764",
+    "26351264",
+    "26350063",
+    "26334345",
+    "26237511",
+    "26224075",
+    "26209623",
+    "25904764",
+    "25860861",
+    "25849131",
+    "25827308",
+    "25710879",
+    "25616891",
+    "25598081",
+    "25185110",
+    "25111006",
+    "24937102",
+    "24880074",
+    "24761000",
+    "24747074",
+    "24681145",
+    "24457989",
+    "24355776",
+    "24291725",
+    "24281189",
+    "24141423",
+    "24095877",
+    "24008160",
+    "24001835",
+    "23881028",
+    "23869167",
+    "23757179",
+    "23734008",
+    "23703665",
+    "23553536",
+    "23525756",
+    "23512484",
+    "23409163",
+    "23333901",
+    "23328641",
+    "23284689",
+    "23152669",
+    "23123323",
+    "23056490",
+    "22972366",
+    "22963274",
+    "22801295",
+    "22773905",
+    "22669418",
+    "22581453",
+    "22554832",
+    "22523243",
+    "22483312",
+    "22324553",
+    "22311271",
+    "22095741",
+    "22017230",
+    "22007912",
+    "21747283",
+    "21701268",
+    "21615974",
+    "21420942",
+    "21189404",
+    "21074959",
+    "20924379",
+    "20658209",
+    "20583212",
+    "20460521",
+    "20403401",
+    "20363416",
+    "20346883",
+    "20339385",
+    "20190030",
+    "20150548",
+    "20089675",
+    "20089078",
+    "20033348",
+    "20032539",
+    "19943129",
+    "19781192",
+    "19705624",
+    "19619590",
+    "19597039",
+    "19569735",
+    "19461540",
+    "19450615",
+    "19426698",
+    "19369827",
+    "19273745",
+    "19208652",
+    "19199921",
+    "19037106",
+    "18845661",
+    "18835235",
+    "18771055",
+    "18602997",
+    "18388900",
+    "18385079",
+    "18283592",
+    "19445810",
+    "17924057",
+    "17672072",
+    "17325512",
+    "17293058",
+    "17165523",
+    "17089016",
+    "17035047",
+    "16954164",
+    "16952628",
+    "16855188",
+    "16769910",
+    "16585403",
+    "16546681",
+    "16454654",
+    "16361576",
+    "16230485",
+    "16129553",
+    "16087660",
+    "16026047",
+    "16009720",
+    "15902905",
+    "15761462",
+    "15653716",
+    "15544923",
+    "15540952",
+    "15377872",
+    "15373958",
+    "15277018",
+    "15240547",
+    "15206315",
+    "15183760",
+    "15183509",
+    "14704276",
+    "14630374",
+    "14579544",
+    "14556893",
+    "12975482",
+    "12831624",
+    "12829623",
+    "12718913",
+    "12642358",
+    "12639216",
+    "12419330",
+    "12381684",
+    "12168349",
+    "12022952",
+    "11994530",
+    "11815313",
+    "11815312",
+    "11710826",
+    "11708664",
+    "11601455",
+    "11568073",
+    "11532901",
+    "11443198",
+    "11422400",
+    "11319715",
+    "11200811",
+    "11163247",
+    "11025456",
+    "10662717",
+    "10658346",
+    "10628600",
+    "10561372",
+    "10523394",
+    "10516124",
+    "10426366",
+    "10400907",
+    "10090823",
+    "10075811",
+    "9805207",
+    "9740440",
+    "9697136",
+    "9437658",
+    "9409189",
+    "9350370",
+    "9192388",
+    "9135568",
+    "9080327",
+    "9042306",
+    "8931639",
+    "8885129",
+    "8811878",
+    "10968201",
+    "8828017",
+    "8565799",
+    "9013405",
+    "16296241",
+    "8567314",
+    "8533882",
+    "7582389",
+    "7720252",
+    "7554271",
+    "7887134",
+    "8001528",
+    "8330402",
+    "8446254",
+    "8101414",
+    "7805576",
+    "1753716",
+    "1659248",
+    "1677569",
+    "1993333",
+    "1854373",
+    "1764253",
+    "2253348",
+    "1700795",
+    "2383694",
+    "2363516",
+    "2132546",
+    "1366446",
+    "2106164",
+    "2347042",
+    "2153151",
+    "1980034",
+    "2586015",
+    "2620450",
+    "2607666",
+    "2801237",
+    "2757696",
+    "2597315",
+    "2575348",
+    "2505463",
+    "2502049",
+    "3196723",
+    "3145725",
+    "3067616",
+    "3122683",
+    "3493113",
+    "3736414",
+    "2994068",
+    "3002043",
+    "6438601",
+    "6516871",
+    "6698683",
+    "6825310",
+    "6957695",
+    "6751605",
+    "6953289",
+    "7068298",
+    "7018678",
+    "6167651",
+    "230751",
+    "115004",
+    "439778",
+    "232411",
+    "281682",
+    "31016",
+    "206127",
+    "619832",
+    "415870",
+    "1071603",
+    "178143",
+    "1244812",
+    "169115",
+    "14163769",
+    "13928482"
+   ]
+  },
+  "nad_iv_or_injection_humans_rct": {
+   "term": "(\"NAD+\"[tiab] OR \"NAD\"[tiab] OR \"nicotinamide adenine dinucleotide\"[tiab] OR \"NADH\"[tiab]) AND (intravenous*[tiab] OR infusion*[tiab] OR injection*[tiab] OR subcutaneous*[tiab] OR intramuscular*[tiab]) AND humans[mh] AND randomized controlled trial[pt]",
+   "count": 13,
+   "pmids": [
+    "40954388",
+    "39387327",
+    "36350566",
+    "34533039",
+    "31504721",
+    "23284689",
+    "21701268",
+    "20032539",
+    "16954164",
+    "16087660",
+    "12831624",
+    "7887134",
+    "1244812"
+   ]
+  },
+  "nr_or_nmn_rct": {
+   "term": "(\"nicotinamide riboside\"[tiab] OR \"nicotinamide mononucleotide\"[tiab]) AND randomized controlled trial[pt]",
+   "count": 45,
+   "pmids": [
+    "42478598",
+    "42304075",
+    "42082179",
+    "42048163",
+    "42009009",
+    "41705654",
+    "41651893",
+    "41540253",
+    "41502156",
+    "41162813",
+    "40770531",
+    "40459998",
+    "39548320",
+    "39387327",
+    "38871717",
+    "38789831",
+    "38016950",
+    "37994989",
+    "37159264",
+    "36797393",
+    "36740954",
+    "36703196",
+    "36515353",
+    "36482258",
+    "36443648",
+    "36082508",
+    "36002548",
+    "35998039",
+    "35854224",
+    "35235774",
+    "35215405",
+    "35182418",
+    "34238308",
+    "34180141",
+    "33888596",
+    "33524145",
+    "32791973",
+    "32758058",
+    "32320006",
+    "31710095",
+    "31412242",
+    "31390002",
+    "31278280",
+    "29992272",
+    "29599478"
+   ]
+  },
+  "nad_all_records": {
+   "term": "\"NAD+\"[tiab] OR \"nicotinamide adenine dinucleotide\"[tiab]",
+   "count": 58438,
+   "pmids": [
+    "42887740",
+    "42887605",
+    "42886557",
+    "42886405",
+    "42885023",
+    "42883363",
+    "42883292",
+    "42883135",
+    "42882460",
+    "42880547",
+    "42880261",
+    "42880252",
+    "42879932",
+    "42878140",
+    "42877680",
+    "42877309",
+    "42876239",
+    "42875857",
+    "42875735",
+    "42875582",
+    "42874888",
+    "42874828",
+    "42874807",
+    "42874585",
+    "42874181",
+    "42873891",
+    "42873648",
+    "42872912",
+    "42871607",
+    "42871601",
+    "42871180",
+    "42870364",
+    "42870203",
+    "42870047",
+    "42869905",
+    "42868708",
+    "42867128",
+    "42866454",
+    "42866010",
+    "42865078",
+    "42863793",
+    "42863735",
+    "42863647",
+    "42862786",
+    "42861367",
+    "42860742",
+    "42859914",
+    "42859438",
+    "42858859",
+    "42858770",
+    "42858750",
+    "42858331",
+    "42856848",
+    "42855000",
+    "42854910",
+    "42854646",
+    "42852773",
+    "42852762",
+    "42852662",
+    "42850726",
+    "42850576",
+    "42849766",
+    "42849729",
+    "42849556",
+    "42849371",
+    "42848371",
+    "42848089",
+    "42847943",
+    "42847323",
+    "42847091",
+    "42846758",
+    "42846585",
+    "42845537",
+    "42845519",
+    "42845497",
+    "42845436",
+    "42845396",
+    "42843881",
+    "42843585",
+    "42843311",
+    "42842654",
+    "42842535",
+    "42842149",
+    "42842032",
+    "42838049",
+    "42836703",
+    "42835664",
+    "42835520",
+    "42835017",
+    "42834212",
+    "42834185",
+    "42833610",
+    "42833606",
+    "42833560",
+    "42833456",
+    "42831550",
+    "42830098",
+    "42829919",
+    "42829912",
+    "42829144",
+    "42829114",
+    "42828176",
+    "42827376",
+    "42826758",
+    "42826581",
+    "42825473",
+    "42825090",
+    "42824438",
+    "42822957",
+    "42822740",
+    "42822230",
+    "42821192",
+    "42819301",
+    "42817954",
+    "42817225",
+    "42816909",
+    "42816876",
+    "42816631",
+    "42814831",
+    "42814626",
+    "42814413",
+    "42814283",
+    "42813448",
+    "42812867",
+    "42811994",
+    "42811977",
+    "42811973",
+    "42811963",
+    "42811412",
+    "42811292",
+    "42811274",
+    "42810240",
+    "42809901",
+    "42809065",
+    "42807121",
+    "42806865",
+    "42806003",
+    "42805699",
+    "42805585",
+    "42805426",
+    "42805362",
+    "42804747",
+    "42803826",
+    "42803188",
+    "42802902",
+    "42801704",
+    "42801364",
+    "42798317",
+    "42798303",
+    "42797591",
+    "42797459",
+    "42795459",
+    "42794667",
+    "42794590",
+    "42794557",
+    "42794535",
+    "42793315",
+    "42793087",
+    "42793029",
+    "42793024",
+    "42792518",
+    "42792118",
+    "42790433",
+    "42790117",
+    "42789491",
+    "42789010",
+    "42788794",
+    "42788471",
+    "42787831",
+    "42787547",
+    "42787519",
+    "42785591",
+    "42785485",
+    "42784515",
+    "42784003",
+    "42783548",
+    "42782782",
+    "42781918",
+    "42781074",
+    "42780709",
+    "42780559",
+    "42780447",
+    "42778275",
+    "42778089",
+    "42777712",
+    "42777471",
+    "42777113",
+    "42776723",
+    "42776599",
+    "42775876",
+    "42775788",
+    "42774067",
+    "42773285",
+    "42773035",
+    "42772041",
+    "42771521",
+    "42770892",
+    "42770008",
+    "42769337",
+    "42767717",
+    "42767378",
+    "42766809",
+    "42766034",
+    "42765029",
+    "42764862",
+    "42764762",
+    "42764223",
+    "42764115",
+    "42764081",
+    "42763645",
+    "42763438",
+    "42763059",
+    "42761160",
+    "42759777",
+    "42759761",
+    "42759390",
+    "42759323",
+    "42759178",
+    "42758439",
+    "42758124",
+    "42755837",
+    "42755367",
+    "42754605",
+    "42754604",
+    "42754265",
+    "42754180",
+    "42754107",
+    "42754103",
+    "42753446",
+    "42753315",
+    "42753204",
+    "42752582",
+    "42752230",
+    "42752092",
+    "42751848",
+    "42751826",
+    "42751513",
+    "42749843",
+    "42749362",
+    "42749356",
+    "42749280",
+    "42749227",
+    "42749212",
+    "42749142",
+    "42749043",
+    "42749029",
+    "42748828",
+    "42748783",
+    "42748238",
+    "42747743",
+    "42747679",
+    "42747196",
+    "42747012",
+    "42746962",
+    "42746911",
+    "42746219",
+    "42746158",
+    "42744962",
+    "42743287",
+    "42743216",
+    "42742267",
+    "42741661",
+    "42739504",
+    "42739057",
+    "42738658",
+    "42737984",
+    "42737704",
+    "42737424",
+    "42736471",
+    "42736382",
+    "42735786",
+    "42735610",
+    "42734723",
+    "42734216",
+    "42732543",
+    "42732488",
+    "42731681",
+    "42730797",
+    "42730714",
+    "42730320",
+    "42730105",
+    "42730046",
+    "42729830",
+    "42729307",
+    "42728926",
+    "42728793",
+    "42727834",
+    "42727452",
+    "42727368",
+    "42727170",
+    "42726653",
+    "42726455",
+    "42725796",
+    "42723391",
+    "42723167",
+    "42723065",
+    "42722377",
+    "42722128",
+    "42721527",
+    "42720714",
+    "42719550",
+    "42719456",
+    "42719345",
+    "42719331",
+    "42718654",
+    "42717829",
+    "42717261",
+    "42717076",
+    "42717052",
+    "42716511",
+    "42716394",
+    "42716212",
+    "42716130",
+    "42715838",
+    "42714849",
+    "42713819",
+    "42713014",
+    "42712634",
+    "42712136",
+    "42711794",
+    "42711443",
+    "42710679",
+    "42710596",
+    "42710182",
+    "42710102",
+    "42709651",
+    "42709561",
+    "42709393",
+    "42708583",
+    "42708391",
+    "42708112",
+    "42708068",
+    "42707998",
+    "42707544",
+    "42706765",
+    "42706321",
+    "42705403",
+    "42704341",
+    "42702113",
+    "42701765",
+    "42700874",
+    "42700796",
+    "42700728",
+    "42698684",
+    "42698301",
+    "42698143",
+    "42696891",
+    "42696582",
+    "42696581",
+    "42695417",
+    "42694220",
+    "42692819",
+    "42692759",
+    "42692756",
+    "42692752",
+    "42692095",
+    "42691711",
+    "42690966",
+    "42689685",
+    "42689586",
+    "42689531",
+    "42689528",
+    "42689125",
+    "42688282",
+    "42688198",
+    "42688195",
+    "42686643",
+    "42685933",
+    "42685120",
+    "42685115",
+    "42684362",
+    "42683670",
+    "42683514",
+    "42683026",
+    "42682926",
+    "42680959",
+    "42680426",
+    "42678495",
+    "42677613",
+    "42677414",
+    "42676526",
+    "42675787",
+    "42675502",
+    "42675070",
+    "42674192",
+    "42674030",
+    "42673740",
+    "42671637",
+    "42671354",
+    "42671224",
+    "42670645",
+    "42670437",
+    "42670252",
+    "42669985",
+    "42669348",
+    "42669151",
+    "42669087",
+    "42668003",
+    "42666336",
+    "42666178",
+    "42665947",
+    "42665779",
+    "42665372",
+    "42665198",
+    "42665103",
+    "42665100",
+    "42665069",
+    "42664385",
+    "42663794",
+    "42663472",
+    "42663289",
+    "42662784",
+    "42662706",
+    "42662208",
+    "42660058",
+    "42658243",
+    "42654282",
+    "42654036",
+    "42653764",
+    "42653306",
+    "42651790",
+    "42651746",
+    "42650878",
+    "42650830",
+    "42650814",
+    "42650749",
+    "42650289",
+    "42650259",
+    "42650224",
+    "42650183",
+    "42648907",
+    "42648590",
+    "42648559",
+    "42648265",
+    "42647426",
+    "42646333",
+    "42646271",
+    "42645728",
+    "42645669",
+    "42645164",
+    "42644598",
+    "42644018",
+    "42643841",
+    "42642942",
+    "42642311",
+    "42641908",
+    "42641700",
+    "42641678",
+    "42640355",
+    "42639950",
+    "42639858",
+    "42639772",
+    "42638607",
+    "42638272",
+    "42637061",
+    "42636905",
+    "42635829",
+    "42635491",
+    "42634749",
+    "42633724",
+    "42633620",
+    "42632530",
+    "42632136",
+    "42631024",
+    "42630932",
+    "42630571",
+    "42629996",
+    "42629593",
+    "42628752",
+    "42628532",
+    "42628273",
+    "42628241",
+    "42627540",
+    "42627430",
+    "42627264",
+    "42626968",
+    "42626711",
+    "42625826",
+    "42625583",
+    "42624965",
+    "42624559",
+    "42624555",
+    "42624379",
+    "42624356",
+    "42624061",
+    "42623864",
+    "42623784",
+    "42621457",
+    "42621056",
+    "42620342",
+    "42619755",
+    "42619672",
+    "42619089",
+    "42618148",
+    "42617980",
+    "42617777",
+    "42617334",
+    "42616451",
+    "42615999",
+    "42614481"
+   ]
+  }
+ },
+ "studies": [
+  {
+   "nct": "NCT02689882",
+   "title": "\"Pharmacokinetic Study of Nicotinamide Riboside\"",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 8,
+   "status": "COMPLETED",
+   "start": "2015-11",
+   "has_results": false,
+   "conditions": [
+    "Metabolic Disturbance"
+   ],
+   "sponsor": "University of Washington",
+   "primary_outcomes": [
+    "Percent change in the average steady state concentration (Css) of nicotinamide riboside (NR) on day 9 (following up titration of nicotinamide riboside to 1000 mg by mouth twice daily) compared to pre-dose baseline.",
+    "Percent change in the average steady state concentration (Css) of nicotinamide adenine dinucleotide (NAD) on day 9 (following up titration of nicotinamide riboside to 1000 mg by mouth twice daily) compared to pre-dose baseline."
+   ],
+   "intervention_text": [
+    "nicotinamide riboside Niagen Nicotinamide riboside dose up-titration: Days 1 and 2: 250 mg by mouth daily; Days 3 and 4: 250 mg by mouth twice daily; Days 5 and 6: 500 mg by mouth twice daily; Days 7 and 8: 1000mg by mouth twice daily; Day 9: single dose of 1000mg by mouth followed by 24 hour pharma"
+   ]
+  },
+  {
+   "nct": "NCT06971224",
+   "title": "NADream: Effects of Nicotinamide Adenine Dinucleotide Supplementation on Sleep Quality in Healthy Individuals",
+   "agents": [
+    "NAD+",
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 16,
+   "status": "RECRUITING",
+   "start": "2025-10-13",
+   "has_results": false,
+   "conditions": [
+    "Sleep"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "The primary objective is to evaluate the effect of NAD supplementation on objective sleep parameters via polysomnography (PSG)."
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR) Nicotinamide adenine dinucleotide (NAD) 2000 mg NR daily."
+   ]
+  },
+  {
+   "nct": "NCT07563322",
+   "title": "Mechanistic Study of Nicotinamide Riboside on NAD+ Biology in Individuals With Combined Pulmonary Hypertension",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 10,
+   "status": "RECRUITING",
+   "start": "2026-04-09",
+   "has_results": false,
+   "conditions": [
+    "Pulmonary Hypertension"
+   ],
+   "sponsor": "Vanderbilt University Medical Center",
+   "primary_outcomes": [
+    "Biochemical: Change in NADH:Ubiquinone Oxidoreductase Subunit B7",
+    "Exploratory physiological measure: Change in 6-minute walk distance"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  Participants will be randomized to receive either 1000mg NR Daily or a placebo for 6 weeks, followed by a 3-week washout period. After this, they will receive the alternate treatment for an additional 6 weeks."
+   ]
+  },
+  {
+   "nct": "NCT04913805",
+   "title": "Matching Perfusion and Metabolic Activity in HFpEF",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 53,
+   "status": "RECRUITING",
+   "start": "2021-10-11",
+   "has_results": false,
+   "conditions": [
+    "Heart Failure With Preserved Ejection Fraction"
+   ],
+   "sponsor": "University of Pennsylvania",
+   "primary_outcomes": [
+    "Submaximal Exercise Endurance"
+   ],
+   "intervention_text": [
+    "Potassium Nitrate + Propionyl-L-Carnitine + Nicotinamide Riboside KNO3 + PLC + NR Potassium Nitrate + Propionyl-L-Carnitine + Nicotinamide Riboside will be used as a combination intervention to both increase blood flow (KNO3) and mitochondrial function (PLC + NR)"
+   ]
+  },
+  {
+   "nct": "NCT05882214",
+   "title": "Metabolic Changes Induced by NMN in Healthy Subjects With Acute Binge Drink",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 22,
+   "status": "COMPLETED",
+   "start": "2024-05-01",
+   "has_results": false,
+   "conditions": [
+    "Binge Drinking",
+    "Liver Injury",
+    "Nutritional Supplementation",
+    "Hepatic Steatosis"
+   ],
+   "sponsor": "Zhejiang Chinese Medical University",
+   "primary_outcomes": [
+    "Ethanol concentration",
+    "Acetaldehyde concentration",
+    "Hepatic fibrosis change",
+    "hepatic function change",
+    "hepatic injury change",
+    "Lipid metabolism change",
+    "hangover cognition assessment tools after drinking"
+   ],
+   "intervention_text": [
+    "β-nicotinamide Mononucleotide NMN After an 8-hour overnight fast, the participants ingested β-nicotinamide Mononucleotide capsules with a single morning dose of 1000mg. The purity of β-nicotinamide Mononucleotide capsules was no less than 97% according to high-performance liquid chromatography analy"
+   ]
+  },
+  {
+   "nct": "NCT05483465",
+   "title": "The Effect of NAD Supplementation on Brain Vascular Health in Aging",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 214,
+   "status": "RECRUITING",
+   "start": "2023-05-03",
+   "has_results": false,
+   "conditions": [
+    "Aging"
+   ],
+   "sponsor": "University of Oklahoma",
+   "primary_outcomes": [
+    "Change in neurovascular coupling using functional near infrared spectroscopy (fNIRS)",
+    "Change in neurovascular coupling using transcranial Doppler",
+    "Change in neurovascular coupling using the dynamic retinal vessel analysis",
+    "Change in neuronal activity"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside NR Oral NR, 1g/day per os for 8 weeks"
+   ]
+  },
+  {
+   "nct": "NCT06521307",
+   "title": "Impact of Nicotinamide Riboside (NR) on Kidney Function in Patients Undergoing Cardiac Surgery",
+   "agents": [
+    "NAD+",
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 100,
+   "status": "UNKNOWN",
+   "start": "2024-07-24",
+   "has_results": false,
+   "conditions": [
+    "Acute Kidney Injury",
+    "Cardiac Valve Disease"
+   ],
+   "sponsor": "Instituto Nacional de Cardiologia Ignacio Chavez",
+   "primary_outcomes": [
+    "Impact of nicotinamide riboside (NR) on kidney function in patients undergoing cardiac surgery."
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside NADH Riboside We will recruit the participant 24 hrs prior intervention, once the participant decides to enroll, we will administer by oral intake the supplement or placebo due to the result at randomizer.org.\n\nThe first NAD Riboside arm will be administered by oral intake with"
+   ]
+  },
+  {
+   "nct": "NCT06590844",
+   "title": "\"cindilizumab + Bevacizumab + Coenzyme I for Injection\" in Unresectable Hepatocellular Carcinoma",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "IV",
+    "injection"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 37,
+   "status": "UNKNOWN",
+   "start": "2023-12-19",
+   "has_results": false,
+   "conditions": [
+    "Unresectable Hepatocellular Carcinoma"
+   ],
+   "sponsor": "Anhui Provincial Hospital",
+   "primary_outcomes": [
+    "ORR"
+   ],
+   "intervention_text": [
+    "Injectable coenzyme I  On the first day, we will treat patients with Tybo Sulsintilimab ® 200mg IV and Dalutin ® Bevacizumab 15mg/kg IV every 21 days. The first to third days were treated with injectable coenzyme I, 100mg/day IV, every 21 days as a cycle."
+   ]
+  },
+  {
+   "nct": "NCT04841499",
+   "title": "Effects of a Seven-day BASIS™ Supplementation on Menopausal Syndromes and Measurements of the Urinary Vitamin B3 and Estradiol Levels in Pre-, Peri- and Post-menopause",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 40,
+   "status": "COMPLETED",
+   "start": "2021-04-05",
+   "has_results": false,
+   "conditions": [
+    "Menopause"
+   ],
+   "sponsor": "University of South Alabama",
+   "primary_outcomes": [
+    "Production of Estradiol",
+    "Change undesirable effects of menopause"
+   ],
+   "intervention_text": [
+    "BASIS™ (Crystalline Nicotinamide Riboside 250mg and Pterostilbene 50mg)  take 2 capsules orally each day for 7 days"
+   ]
+  },
+  {
+   "nct": "NCT05546567",
+   "title": "NOPARK Open Label Extension Study",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 400,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2022-09-28",
+   "has_results": false,
+   "conditions": [
+    "Safety Issues"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "Safety: measurement of Adverse Events"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  1200mg x1 Nicotinamide Riboside"
+   ]
+  },
+  {
+   "nct": "NCT05740722",
+   "title": "Nicotinamide Riboside Supplementation In Progressive Multiple Sclerosis",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 300,
+   "status": "RECRUITING",
+   "start": "2023-05-03",
+   "has_results": false,
+   "conditions": [
+    "Multiple Sclerosis",
+    "Progressive Multiple Sclerosis"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "Proportion of patients with sustained disability progression over the treatment period"
+   ],
+   "intervention_text": [
+    "Nicotinamid riboside  500 mg x 2 po"
+   ]
+  },
+  {
+   "nct": "NCT06426355",
+   "title": "The Effeciency of NMN in Improving IVF/ICSI-ET Pregnancy Outcomes in Patients With DOR",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 200,
+   "status": "RECRUITING",
+   "start": "2023-10-01",
+   "has_results": false,
+   "conditions": [
+    "Diminished Ovarian Reserve"
+   ],
+   "sponsor": "Peking University Third Hospital",
+   "primary_outcomes": [
+    "The clinical pregnancy rate"
+   ],
+   "intervention_text": [
+    "NMN  NMN capsules (total of 600mg/day) for 2-5 months"
+   ]
+  },
+  {
+   "nct": "NCT04228640",
+   "title": "Evaluate the Efficacy and Safety of Uthever NMN(Nicotinamide Mononucleotide, a Form of Vitamin B3)",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 66,
+   "status": "COMPLETED",
+   "start": "2020-12-15",
+   "has_results": false,
+   "conditions": [
+    "Aging"
+   ],
+   "sponsor": "EffePharm LTD",
+   "primary_outcomes": [
+    "Blood cellular NAD+ concentration in serum",
+    "Blood cellular NAD+ concentration in serum",
+    "Blood cellular NAD+ concentration in serum",
+    "Blood cellular NADH concentration in serum",
+    "Blood cellular NADH concentration in serum",
+    "Blood cellular NADH concentration in serum",
+    "Six minutes walking endurance test",
+    "Six minutes walking endurance test",
+    "Six minutes walking endurance test",
+    "Systolic",
+    "Systolic",
+    "Systolic",
+    "Diastolic blood pressure",
+    "Diastolic blood pressure",
+    "Diastolic blood pressure",
+    "Pulse pressure",
+    "Pulse pressure",
+    "Pulse pressure",
+    "SF-36 questionnaire",
+    "SF-36 questionnaire",
+    "SF-36 questionnaire"
+   ],
+   "intervention_text": [
+    "NMN  Investigational Product"
+   ]
+  },
+  {
+   "nct": "NCT05517122",
+   "title": "Effect of Oral NAD+ Precursors Administration on Blood NAD+ Concentration in Healthy Adults",
+   "agents": [
+    "NMN",
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": true,
+   "enrollment": 68,
+   "status": "COMPLETED",
+   "start": "2022-07-12",
+   "has_results": false,
+   "conditions": [
+    "Healthy"
+   ],
+   "sponsor": "Société des Produits Nestlé (SPN)",
+   "primary_outcomes": [
+    "Determine the extent of increase in NAD+ level in whole blood, for each NAD+ precursor (NAM, NR and NMN) compared to placebo",
+    "Compare the extent of increase in NAD+ level in whole blood across the 3 NAD+ precursors (NAM, NR and NMN)"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  1000 mg a day",
+    "Nicotinamide Mono Nucleotide (NMN)  1000 mg a day"
+   ]
+  },
+  {
+   "nct": "NCT07344636",
+   "title": "Effects of NR Supplementation on Metabolic Flexibility in Zone 2 Training",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": false,
+   "enrollment": 16,
+   "status": "RECRUITING",
+   "start": "2026-01-06",
+   "has_results": false,
+   "conditions": [
+    "Health Adult Subjects"
+   ],
+   "sponsor": "ZHANG Jiaqi",
+   "primary_outcomes": [
+    "Substrate utilization (CHO and fat oxidation rate)"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  600 mg NR",
+    "Nicotinamide Riboside (NR)  300 mg NR"
+   ]
+  },
+  {
+   "nct": "NCT04817111",
+   "title": "NAD+ Precursor Supplementation in Friedreich's Ataxia",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 7,
+   "status": "COMPLETED",
+   "start": "2021-05-17",
+   "has_results": true,
+   "conditions": [
+    "Friedreich Ataxia"
+   ],
+   "sponsor": "Metro International Biotech, LLC",
+   "primary_outcomes": [
+    "Percentage of Individuals With Treatment-emergent Adverse Events as Assessed by Common Terminology Criteria for Adverse Events Version 5.0."
+   ],
+   "intervention_text": [
+    "MIB-626  Two (2) 500 mg Tablets, By Mouth, Daily"
+   ]
+  },
+  {
+   "nct": "NCT04271735",
+   "title": "Pilot Study to Evaluate the Effect of Nicotinamide Riboside on Immune Activation in Psoriasis",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 29,
+   "status": "COMPLETED",
+   "start": "2020-08-26",
+   "has_results": true,
+   "conditions": [
+    "Psoriasis",
+    "Atherosclerotic Cardiovascular Disease",
+    "Obesity",
+    "Dyslipidemia",
+    "Cardiometabolic Diseases"
+   ],
+   "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
+   "primary_outcomes": [
+    "Mean Change in the TH17 Cell Cytokine IL-17 Secretion in Response to T-cell Differentiation"
+   ],
+   "intervention_text": [
+    "Niagen Nicotinamide Riboside Chloride Nicotinamide Riboside Participants will take two capsules of nicotinamide riboside (NR) by mouth (250mg NR or placebo) twice daily for a total of 4 weeks."
+   ]
+  },
+  {
+   "nct": "NCT07251608",
+   "title": "Randomized, Open-label, Safety Study of Subcutaneous and Intramuscular Injections of Niagen® Plus",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "injection"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 40,
+   "status": "RECRUITING",
+   "start": "2025-10-01",
+   "has_results": false,
+   "conditions": [
+    "Healthy Volunteer",
+    "Fatigue"
+   ],
+   "sponsor": "ChromaDex, Inc.",
+   "primary_outcomes": [
+    "Incidence and severity of adverse events",
+    "Blood Pressure",
+    "Heart Rate",
+    "Pulse Rate",
+    "Respiratory Rate",
+    "Blood Oxygen",
+    "Complete Blood Count",
+    "Comprehensive Metabolic Panel",
+    "Homocysteine",
+    "High-Sensitivity C-Reactive Protein (hs-CRP)"
+   ],
+   "intervention_text": [
+    "Niagen®Plus  Pharmaceutical-grade nicotinamide riboside chloride (NRCl), compounded for sterility and reconstituted in bacteriostatic water for injection. Administered by subcutaneous or intramuscular injection at 50 mg or 100 mg per dose. Participants receive three clinician-administered injections"
+   ]
+  },
+  {
+   "nct": "NCT05485610",
+   "title": "Effect of NMN (Nicotinamide Mononucleotide) on Diminished Ovarian Reserve (Including Premature Ovarian Insufficiency)",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 200,
+   "status": "UNKNOWN",
+   "start": "2022-07-01",
+   "has_results": false,
+   "conditions": [
+    "Diminished Ovarian Reserve",
+    "Premature Ovarian Insufficiency"
+   ],
+   "sponsor": "Peking University Third Hospital",
+   "primary_outcomes": [
+    "The comparison of the gut microbiota composition",
+    "The alterations of gut metabolites",
+    "Blood sugar level",
+    "Fasting insulin",
+    "Endocrine hormones including AMH",
+    "Ovarian volume",
+    "Follicle number",
+    "Blood NAD+ level",
+    "Changes in NAD-related metabolites in urine"
+   ],
+   "intervention_text": [
+    "NMN intervention  NMN capsules (total of 600mg/day) for 3 months"
+   ]
+  },
+  {
+   "nct": "NCT02063126",
+   "title": "Clinical Trial to Measure the Maximun HR After ReConnect ® Supplementation vs. Placebo in CFS.",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2",
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 80,
+   "status": "COMPLETED",
+   "start": "2013-01",
+   "has_results": false,
+   "conditions": [
+    "Chronic Fatigue Syndrome"
+   ],
+   "sponsor": "Hospital Universitari Vall d'Hebron Research Institute",
+   "primary_outcomes": [
+    "Maximum HR changes after ReConnect supplementation during an incremental exercise test in CFS patients"
+   ],
+   "intervention_text": [
+    "ReConnect (NADH plus CoQ10) Placebo ReConnect supplementation (NADH: 20 mg/day plus CoQ10: 200mg/day) divided into two daily dose ( 2 tablets/ before breakfast and 2 tablets/ before lunch)\n\nPlacebo supplementation divided into two daily dose ( 2 tablets/ before breakfast and 2 tablets/ before lunch)"
+   ]
+  },
+  {
+   "nct": "NCT07073352",
+   "title": "ACEs, SIRT1, and Premature Vascular Aging in Humans",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 30,
+   "status": "RECRUITING",
+   "start": "2025-03-27",
+   "has_results": false,
+   "conditions": [
+    "Adverse Childhood Experiences",
+    "Endothelial Dysfunction"
+   ],
+   "sponsor": "University of Wisconsin, Madison",
+   "primary_outcomes": [
+    "Vascular endothelial function"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  Participants will consume 1,000 mg of nicotinamide riboside (NR) upon waking and with an evening meal, and complete a daily supplementation log to assist with compliance monitoring. NR is a naturally occurring vitamin B3 derivative readily taken up by cells as a direct NAD+ pr"
+   ]
+  },
+  {
+   "nct": "NCT05040321",
+   "title": "Sirtuin-NAD Activator in Alzheimer's Disease",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 22,
+   "status": "COMPLETED",
+   "start": "2021-12-01",
+   "has_results": false,
+   "conditions": [
+    "Alzheimer's Disease (Incl Subtypes)",
+    "Dementia"
+   ],
+   "sponsor": "Brigham and Women's Hospital",
+   "primary_outcomes": [
+    "change in CSF concentrations of MIB-626"
+   ],
+   "intervention_text": [
+    "MIB-626  Participants will be randomized to either receive MIB-626 or matching placebo. The proposed intervention - targets multiple contributors to the pathology of AD; MIB-626 improves mitochondrial function, bioenergetics, and insulin sensitivity, inhibits A beta accumulation by reducing its synt"
+   ]
+  },
+  {
+   "nct": "NCT06032923",
+   "title": "Double-blind Placebo Controlled Study to Evaluate the Effect of NAD+ Boosting With Nicotinamide Riboside on Immunometabolism and Immunity in Systemic Lupus Erythematosus",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 78,
+   "status": "RECRUITING",
+   "start": "2024-03-13",
+   "has_results": false,
+   "conditions": [
+    "Systemic Lupus Erythematosus (Sle)"
+   ],
+   "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
+   "primary_outcomes": [
+    "The primary end point will be to assess the effect of NR on blunting type I IFN signaling and cytokine secretion from placebo vs. NR supplemented subjects in monocytes comparing baseline (visit 1 to visit 3)."
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  The dietary supplement Nicotinamide Riboside or a placebo capsule in subjects with SLE. Niagen(R) is a commercially available form of nicotinamide riboside (NR)"
+   ]
+  },
+  {
+   "nct": "NCT07284225",
+   "title": "Effects of Single-Dose Nicotinamide Riboside (NR) on Sleep",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 28,
+   "status": "COMPLETED",
+   "start": "2025-12-17",
+   "has_results": false,
+   "conditions": [
+    "Healthy Volunteers"
+   ],
+   "sponsor": "Eye & ENT Hospital of Fudan University",
+   "primary_outcomes": [
+    "Change in N3 Sleep Duration"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  A single oral dose of 600 mg NR, an NAD+ precursor compound, provided in capsule form. The dose and timing are standardized for all participants."
+   ]
+  },
+  {
+   "nct": "NCT05759468",
+   "title": "NAD Augmentation in Diabetes Kidney Disease",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 156,
+   "status": "RECRUITING",
+   "start": "2023-04-13",
+   "has_results": false,
+   "conditions": [
+    "Type2diabetes",
+    "Diabetic Kidney Disease"
+   ],
+   "sponsor": "Brigham and Women's Hospital",
+   "primary_outcomes": [
+    "The primary endpoint is the change from baseline in UACR over the 6-month intervention period."
+   ],
+   "intervention_text": [
+    "Investigational Product - MIB 626 NMN The eligible participants will be assigned to receive either NMN or placebo using concealed block randomization in a 1:1 ratio, stratified by sex (male, female), age (60 to 75, \\>75 years) and trial site. The randomization list will be generated by the unblinded",
+    "Placebo Placebo for NMN Placebo - Participants randomized to placebo will receive Matching placebo tablets will be provided by Metro International Biotech, LLC."
+   ]
+  },
+  {
+   "nct": "NCT05500170",
+   "title": "Benefits of Nicotinamide Riboside Upon Cognition and Sleep",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "SINGLE",
+   "placebo_arm": true,
+   "enrollment": 50,
+   "status": "RECRUITING",
+   "start": "2023-04-04",
+   "has_results": false,
+   "conditions": [
+    "Cognitive Impairment",
+    "Sleep Quality"
+   ],
+   "sponsor": "State University of New York at Buffalo",
+   "primary_outcomes": [
+    "Sleep Quality Assessment"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside NR, vitamin B3 Nicotinamide riboside (NR) is a form of vitamin B3, which is found in fruits, vegetables, meat, and milk. NR is converted into nicotinamide adenosine dinucleotide NAD+. Low NAD+ levels have been linked to Alzheimer's disease and sleep disturbances."
+   ]
+  },
+  {
+   "nct": "NCT03151239",
+   "title": "Effect of \"Nicotinamide Mononucleotide\" (NMN) on Cardiometabolic Function",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 25,
+   "status": "COMPLETED",
+   "start": "2017-07-01",
+   "has_results": false,
+   "conditions": [
+    "Glucose Metabolism Disorders"
+   ],
+   "sponsor": "Washington University School of Medicine",
+   "primary_outcomes": [
+    "Change in muscle insulin sensitivity"
+   ],
+   "intervention_text": [
+    "NMN supplement nicotinamide mononucleotide Intervention will last at least 8 weeks in the form of two capsules (250 mg total)."
+   ]
+  },
+  {
+   "nct": "NCT07692633",
+   "title": "A Clinical Trial to Assess the Absorption, Safety, and Efficacy of an Oral Nicotinamide Adenine Dinucleotide (NAD+) Supplement in Healthy Adults",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 80,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-08",
+   "has_results": false,
+   "conditions": [
+    "NAD+ Bioavailability",
+    "NAD+ Safety",
+    "NAD+ Efficacy"
+   ],
+   "sponsor": "Reus Research",
+   "primary_outcomes": [
+    "Change in NAD+ levels in whole blood from baseline to day 56 between the NAD+ supplement and placebo."
+   ],
+   "intervention_text": [
+    "NAD+  Participants will be instructed to take two capsules daily after breakfast starting on Day 1 (day following baseline visit) until the day prior to their end of study visit."
+   ]
+  },
+  {
+   "nct": "NCT02303483",
+   "title": "The Effect of Vitamin B3 on Substrate Metabolism, Insulin Sensitivity, and Body Composition in Obese Men",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 40,
+   "status": "COMPLETED",
+   "start": "2016-01-04",
+   "has_results": false,
+   "conditions": [
+    "Obese"
+   ],
+   "sponsor": "Aarhus University Hospital",
+   "primary_outcomes": [
+    "Insulin sensitivity"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside (NIAGEN TM, ChromaDex, CA, USA )  "
+   ]
+  },
+  {
+   "nct": "NCT04342975",
+   "title": "Protection From Acute Kidney Injury (AKI) With Basis™ Treatment",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 54,
+   "status": "COMPLETED",
+   "start": "2020-12-01",
+   "has_results": false,
+   "conditions": [
+    "AKI"
+   ],
+   "sponsor": "Mayo Clinic",
+   "primary_outcomes": [
+    "AKI"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside + Pterostilbene Basis It will be administered a total of 1000 mg/day of NR and 200 mg/day of Ptero in a regimen of 2 capsules of Basis™ (each capsule 250 mg of NR and 50 mg of Ptero) 2 times a day by mouth for 2 weeks before surgery and 6 weeks after surgery. Each intake has to"
+   ]
+  },
+  {
+   "nct": "NCT04614714",
+   "title": "Milk Volume Outcomes Following Oral Nicotinamide Riboside Supplementation in Mothers of Extremely Preterm Infants",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2",
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 40,
+   "status": "RECRUITING",
+   "start": "2026-08-19",
+   "has_results": false,
+   "conditions": [
+    "Preterm Birth",
+    "Inadequate Milk Production"
+   ],
+   "sponsor": "University of California, Davis",
+   "primary_outcomes": [
+    "Feasibility of enrollment in a double-blind placebo-controlled supplementation trial in mothers of infants who are hospitalized."
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  Mothers receive daily oral nicotinamide riboside chloride 250 mg supplementation per day for 14 days (+ 2 days extra capsule for loss or extending sample collection), from study Day 4 + 1 day \\[D4-5\\] to study Day 17 + 2 days \\[D17-19\\]."
+   ]
+  },
+  {
+   "nct": "NCT03501433",
+   "title": "Effects of Nicotinamide Riboside on Metabolism and Vascular Function",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 16,
+   "status": "COMPLETED",
+   "start": "2018-02-01",
+   "has_results": false,
+   "conditions": [
+    "Aging",
+    "Lipemia"
+   ],
+   "sponsor": "Iowa State University",
+   "primary_outcomes": [
+    "NAD+"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside chloride (Niagen) Nicotinamide Riboside, Niagen 250 mg capsules 2x/day for 7 days"
+   ]
+  },
+  {
+   "nct": "NCT06853743",
+   "title": "The NAD-HD Study: A Study to Investigate Efficacy and Safety of Nicotinamide Riboside Compared With Placebo in Huntington's Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 120,
+   "status": "RECRUITING",
+   "start": "2025-03-18",
+   "has_results": false,
+   "conditions": [
+    "Huntington Disease"
+   ],
+   "sponsor": "Oslo University Hospital",
+   "primary_outcomes": [
+    "Change from Baseline in the composite Unified Huntington's Disease Rating Scale at 730 days"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  Nicotinamide riboside, 2 capsules of 500mg taken twice daily for 2 years"
+   ]
+  },
+  {
+   "nct": "NCT06425042",
+   "title": "Nicotinamide Riboside Supplementation and Exercise Training to Promote Healthy Longevity",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 28,
+   "status": "RECRUITING",
+   "start": "2024-03-01",
+   "has_results": false,
+   "conditions": [
+    "Healthy Aging",
+    "Lifestyle-related Condition",
+    "Metabolic Diseases"
+   ],
+   "sponsor": "Finis Terrae University",
+   "primary_outcomes": [
+    "Skeletal muscle mitochondrial respiratory capacity"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  Participants will ingest 1g/d of NR orally during 12 weeks in parallel to a exercise training program"
+   ]
+  },
+  {
+   "nct": "NCT04112641",
+   "title": "NIAGEN and Persistent Chemotherapy-Induced Peripheral Neuropathy",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 48,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2020-02-19",
+   "has_results": false,
+   "conditions": [
+    "Chemotherapy-induced Peripheral Neuropathy"
+   ],
+   "sponsor": "Donna Hammond, PhD",
+   "primary_outcomes": [
+    "Score on Sensory Subscale of Quality of Life Questionnaire Chemotherapy-induced Peripheral Neuropathy (QLQ-CIPN20)",
+    "Score on Motor Subscale of Quality of Life Questionnaire Chemotherapy-induced Peripheral Neuropathy (QLQ-CIPN20)"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside NIAGEN Daily oral ingestion of 1 g/day NIAGEN in capsule form for 84 days; two capsules in the a.m. and two capsules in the p.m."
+   ]
+  },
+  {
+   "nct": "NCT07703137",
+   "title": "NAD Supplementation in Parkinson's Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 40,
+   "status": "ENROLLING_BY_INVITATION",
+   "start": "2026-08-10",
+   "has_results": false,
+   "conditions": [
+    "Parkinson's Disease"
+   ],
+   "sponsor": "University of Oklahoma",
+   "primary_outcomes": [
+    "Change in task-evoked neurovascular coupling response measured by functional near-infrared spectroscopy"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  Participants will be randomized to receive either oral nicotinamide riboside at a total daily dose of 1 g or an identically appearing placebo for 12 weeks."
+   ]
+  },
+  {
+   "nct": "NCT05175768",
+   "title": "Study to Evaluate the Effect of Nicotinamide Mononucleotide (NMN) As an Adjuvant to Standard of Care (SOC) On Fatigue Associated With COVID-19 Infection",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 69,
+   "status": "TERMINATED",
+   "start": "2021-12-27",
+   "has_results": false,
+   "conditions": [
+    "COVID-19 Infection"
+   ],
+   "sponsor": "Vedic Lifesciences Pvt. Ltd.",
+   "primary_outcomes": [
+    "Multidimensional fatigue Inventory-20"
+   ],
+   "intervention_text": [
+    "Nicotinamide Mononucleotide  Two sachets to be taken orally after breakfast and Two sachets after lunch with water.",
+    "Nicotinamide Mononucleotide with L-Leucine  Two sachets to be taken orally after breakfast and Two sachets after lunch with water."
+   ]
+  },
+  {
+   "nct": "NCT02191462",
+   "title": "A Study of the Pharmacokinetics of Three Dosages of Niagen in Healthy Subjects",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": false,
+   "enrollment": 12,
+   "status": "COMPLETED",
+   "start": "2014-07",
+   "has_results": false,
+   "conditions": [
+    "Pharmacokinetics"
+   ],
+   "sponsor": "KGK Science Inc.",
+   "primary_outcomes": [
+    "t1/2 (terminal half-life)"
+   ],
+   "intervention_text": [
+    "Niagen 100mg  ",
+    "Niagen 300mg  ",
+    "Niagen 1000mg  "
+   ]
+  },
+  {
+   "nct": "NCT03789175",
+   "title": "Nicotinamide Riboside on Mitochondrial Function in Li-Fraumeni Syndrome",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 1,
+   "status": "COMPLETED",
+   "start": "2019-03-25",
+   "has_results": true,
+   "conditions": [
+    "Cancer",
+    "Skin Fibroblasts",
+    "Muscle Weakness"
+   ],
+   "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
+   "primary_outcomes": [
+    "Change in PCr Recovery Tc Measurement From Baseline to 12 Week NR Supplementation Using the 31P-MRS Skeletal Muscle Submaximal Exercise."
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR) Niagen; Nicotinamide Riboside (NR) Niacin is a form of vitamin B3 and has been used to treat hypercholesterolemia for many years. There is growing evidence that nicotinamide adenine dinucleotide (NAD+ can maintain mitochondria through various mechanisms and that it is poss"
+   ]
+  },
+  {
+   "nct": "NCT05023993",
+   "title": "The Effect of Exercise and Nicotinamide Riboside Muscle Health and Insulin Resistance in Survivors of Childhood Cancer",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 20,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2022-06-23",
+   "has_results": false,
+   "conditions": [
+    "Hematopoietic and Lymphoid Cell Neoplasm",
+    "Malignant Solid Neoplasm",
+    "Prediabetes"
+   ],
+   "sponsor": "City of Hope Medical Center",
+   "primary_outcomes": [
+    "Feasibility of a nutrition and exercise program in childhood cancer survivors (CCS)"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside Niagen NR Given PO"
+   ]
+  },
+  {
+   "nct": "NCT07336836",
+   "title": "Renewal-NAD+: A Study of Oral NAD+ and Its Multi-omic Impact in a Healthy Cohort",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 60,
+   "status": "COMPLETED",
+   "start": "2022-02-23",
+   "has_results": false,
+   "conditions": [
+    "Health Adult Subjects",
+    "Healthy Participants"
+   ],
+   "sponsor": "BioNADrx Holdings, Inc. Bryleos",
+   "primary_outcomes": [
+    "Pharmacokinetics-NAD+ concentrations"
+   ],
+   "intervention_text": [
+    "LathMized TM NAD+ (LNAD+)  NAD+ 500 mg"
+   ]
+  },
+  {
+   "nct": "NCT04990869",
+   "title": "Inflammation in COPD and the Effect of Nicotinamide Riboside",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 60,
+   "status": "COMPLETED",
+   "start": "2021-08-05",
+   "has_results": false,
+   "conditions": [
+    "COPD"
+   ],
+   "sponsor": "University of Copenhagen",
+   "primary_outcomes": [
+    "Interleukin-8"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  The patients will receive 1 g of Nicotinamide Riboside or placebo orally every morning and evening for 6 weeks."
+   ]
+  },
+  {
+   "nct": "NCT02300740",
+   "title": "Pharmacokinetic Analysis of Nicotinamide Riboside",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 12,
+   "status": "COMPLETED",
+   "start": "2014-12",
+   "has_results": false,
+   "conditions": [
+    "Healthy Participants"
+   ],
+   "sponsor": "Aarhus University Hospital",
+   "primary_outcomes": [
+    "Serum nicotinamide riboside"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  NIAGEN, ChromaDex"
+   ]
+  },
+  {
+   "nct": "NCT04818216",
+   "title": "Nicotinamide Riboside in SARS-CoV-2 (COVID-19) Patients for Renal Protection",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 28,
+   "status": "COMPLETED",
+   "start": "2021-06-11",
+   "has_results": true,
+   "conditions": [
+    "SARS-CoV-2 Infection",
+    "Acute Kidney Injury"
+   ],
+   "sponsor": "The University of Texas Health Science Center at San Antonio",
+   "primary_outcomes": [
+    "Change in Whole Blood NAD+ Level",
+    "Number of Participants With Adverse Events of Grade 3 or Higher",
+    "Occurrence of Thrombocytopenia"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside Niagen 250 mg Nicotinamide riboside capsules"
+   ]
+  },
+  {
+   "nct": "NCT06036355",
+   "title": "The Exploratory Study on the Biological Function of Dendritic Cells In Vivo Supported by Nicotinamide Mononucleotide (Vital NAD)",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "injection",
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 20,
+   "status": "UNKNOWN",
+   "start": "2023-09-30",
+   "has_results": false,
+   "conditions": [
+    "Postoperative Prevention of Tumor"
+   ],
+   "sponsor": "Shanghai Cell Therapy Group Co.,Ltd",
+   "primary_outcomes": [
+    "Concentration of double antibodies in peripheral blood",
+    "Concentration of NMN (nicotinamide mononucleotide) in peripheral blood",
+    "Peripheral blood NAD+",
+    "Cytokines (IL6, TNF- goat, INF- γ, IL-4, IL-10)",
+    "T cell depletion index (PD1/Tim-3/lag3)",
+    "T cell activation index CD107",
+    "T cell and NK cell function index (INF- γ) and granzyme",
+    "High quality Survival benefit Endpoint (DFS)",
+    "Survival benefit (OS)",
+    "Distant Metastasis-Free Survival (DMFS)"
+   ],
+   "intervention_text": [
+    "Oral NMN combined with DC cell vaccine  The whole intervention cycle was treated with NMN (Vital NAD) 600mg/day for at least 50 days. During this period, the first DC cell injection was given on the 10th day, and then another DC cell injection was given at 2 weeks, 4 weeks and 6 weeks after the firs"
+   ]
+  },
+  {
+   "nct": "NCT03635411",
+   "title": "Basis: Evaluating Sirtuin Supplements To Benefit Elderly Trauma Patients (BES2T BET)",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 48,
+   "status": "UNKNOWN",
+   "start": "2018-12-06",
+   "has_results": false,
+   "conditions": [
+    "Recovery of Function"
+   ],
+   "sponsor": "Elysium Health",
+   "primary_outcomes": [
+    "Complications"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside and Pterostilbene Basis NRPT Nicotinamide riboside and pterostilbene manufactured by Basis"
+   ]
+  },
+  {
+   "nct": "NCT04110028",
+   "title": "Nicotinamide Riboside in Hospitalized Patients",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 57,
+   "status": "COMPLETED",
+   "start": "2019-10-01",
+   "has_results": false,
+   "conditions": [
+    "Inflammation",
+    "Acute Illness"
+   ],
+   "sponsor": "Oslo University Hospital",
+   "primary_outcomes": [
+    "Length of stay from randomization to discharge from hospital to home or to an institution with a lower care level than a hospital for instance a long term care facility."
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  Nicotinamide riboside in different doses"
+   ]
+  },
+  {
+   "nct": "NCT06776510",
+   "title": "A Clinical Study of NAD in the Treatment of Immune Thrombocytopenia",
+   "agents": [
+    "NAD+",
+    "NMN"
+   ],
+   "routes": [
+    "IV",
+    "injection",
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 20,
+   "status": "RECRUITING",
+   "start": "2025-01-15",
+   "has_results": false,
+   "conditions": [
+    "Immune Thrombocytopenia",
+    "Treatment"
+   ],
+   "sponsor": "Institute of Hematology & Blood Diseases Hospital, China",
+   "primary_outcomes": [
+    "Evaluation of overall efficacy response after nicotinamide adenine dinucleotide/NMN treatment within 2 weeks",
+    "incidence of treatment-emergent Adverse Events and TRAE"
+   ],
+   "intervention_text": [
+    "nicotinamide adenine dinucleotid/nicotinamide mononucleotide Coenzyme I for Injection（NAD+）/NMN Drug: intravenous nicotinamide adenine dinucleotide (Coenzyme I for Injection) administration This study adopts a prospective, single arm, open design method. Twenty subjects were enrolled in the study an"
+   ]
+  },
+  {
+   "nct": "NCT05194397",
+   "title": "Exercise Training and NR Supplementation Trial to Improve Fitness in AYA HCT Survivors",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 80,
+   "status": "RECRUITING",
+   "start": "2023-02-23",
+   "has_results": false,
+   "conditions": [
+    "Lymphoblastic Leukemia",
+    "Cancer Survivors",
+    "Aplastic Anemia",
+    "Myelodysplastic Syndromes",
+    "Myeloid Leukemia"
+   ],
+   "sponsor": "Children's Hospital of Philadelphia",
+   "primary_outcomes": [
+    "Within participant changes in muscle strength (Isometric knee extension, Z-score)"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  Investigators will use (Good Manufacturing Process) GMP-grade 300 mg capsules of the dietary supplement nicotinamide riboside (ChromaDex, Irvine CA).\n\nNR is distributed by ChromaDex, Inc., Irvine, CA. NR is available as 300 mg capsules.\n\nThe dietary supplement will be re-label"
+   ]
+  },
+  {
+   "nct": "NCT07328100",
+   "title": "Efficacy and Safety of Coenzyme I for Injection on Vascular Aging.",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "IV",
+    "injection"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 60,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-01-16",
+   "has_results": false,
+   "conditions": [
+    "Vascular Aging",
+    "NAD"
+   ],
+   "sponsor": "Shanghai 10th People's Hospital",
+   "primary_outcomes": [
+    "The change in flow-mediated vasodilation(FMD)"
+   ],
+   "intervention_text": [
+    "Coenzyme I for Injection  Subjects receive 7 consecutive days of intravenous infusion of Coenzyme I for injection."
+   ]
+  },
+  {
+   "nct": "NCT03642990",
+   "title": "NR in Chemo-induced Peripheral Neuropathy",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 5,
+   "status": "TERMINATED",
+   "start": "2019-11-08",
+   "has_results": true,
+   "conditions": [
+    "Chemotherapy-induced Peripheral Neuropathy",
+    "Breast Cancer Metastatic",
+    "Platinum-resistant Recurrent Ovarian Cancer",
+    "Head and Neck Cancer Stage IV",
+    "Endometrial Cancer Stage IV"
+   ],
+   "sponsor": "Donna Hammond, PhD",
+   "primary_outcomes": [
+    "Number of Participants With No Worsening in the Grade of Peripheral Sensory Neuropathy as Scored by CTCAE"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside NIAGEN®) Capsule"
+   ]
+  },
+  {
+   "nct": "NCT06567717",
+   "title": "Zinc and Nicotinamide Riboside for Idiopathic Pulmonary Fibrosis",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 60,
+   "status": "RECRUITING",
+   "start": "2025-11-03",
+   "has_results": false,
+   "conditions": [
+    "Idiopathic Pulmonary Fibrosis"
+   ],
+   "sponsor": "Cedars-Sinai Medical Center",
+   "primary_outcomes": [
+    "Feasibility of Retention"
+   ],
+   "intervention_text": [
+    "Placebos for zinc and nicotinamide riboside  These will be identical in appearance to the active substances",
+    "Nicotinamide riboside  Nicotinamide riboside has not previously been investigated in the treatment of IPF."
+   ]
+  },
+  {
+   "nct": "NCT03816020",
+   "title": "NAD-supplementation in Drug naïve Parkinson's Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 30,
+   "status": "COMPLETED",
+   "start": "2019-03-09",
+   "has_results": false,
+   "conditions": [
+    "Parkinson Disease",
+    "Neurodegenerative Diseases"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "PDRP changes from NR use"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  Nicotinamide Riboside capsules 250mg x 2 BID"
+   ]
+  },
+  {
+   "nct": "NCT03176628",
+   "title": "Pharmacokinetics, Pharmacodynamics and Safety of Basis in Acute Kidney Injury Study",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 24,
+   "status": "COMPLETED",
+   "start": "2017-11-01",
+   "has_results": false,
+   "conditions": [
+    "Acute Kidney Injury"
+   ],
+   "sponsor": "Massachusetts General Hospital",
+   "primary_outcomes": [
+    "Maximum plasma concentration [Cmax] of NR",
+    "Maximum plasma concentration [Cmax] of pterostilbene",
+    "Area Under the Curve [AUC] of NR",
+    "Area Under the Curve [AUC] of pterostilbene",
+    "Incidence of Treatment-Emergent Adverse Events (Safety)",
+    "Incidence of Treatment-Emergent Laboratory Abnormalities (Safety)"
+   ],
+   "intervention_text": [
+    "Basis nicotinamide riboside (NR) and pterostilbene NR is a form of vitamin B3; Pterostilbene is a natural dietary compound and the primary antioxidant component of blueberries"
+   ]
+  },
+  {
+   "nct": "NCT03482167",
+   "title": "NAD Therapy for Improving Memory and Brain Blood Flow in Older Adults With Mild Cognitive Impairment",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 64,
+   "status": "COMPLETED",
+   "start": "2019-03-20",
+   "has_results": true,
+   "conditions": [
+    "Mild Cognitive Impairment"
+   ],
+   "sponsor": "University of Delaware",
+   "primary_outcomes": [
+    "Cognitive Scores at Baseline and Week 12"
+   ],
+   "intervention_text": [
+    "Niagen® nicotinamide riboside chloride 250 mg capsules (4 capsules daily)"
+   ]
+  },
+  {
+   "nct": "NCT06950736",
+   "title": "NR vs. Vitamin E in Enhancing Fertility",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": false,
+   "enrollment": 60,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2025-05-05",
+   "has_results": false,
+   "conditions": [
+    "Infertility Female"
+   ],
+   "sponsor": "The First Affiliated Hospital of Zhengzhou University",
+   "primary_outcomes": [
+    "Follicle Counting",
+    "Serum AMH Levels",
+    "Serum FSH Levels",
+    "ART outcomes assessed by the number of clinically viable embryos and clinical pregnancy rates",
+    "Serum LH Levels",
+    "Serum P Levels",
+    "Serum E2 Levels",
+    "Serum Testosterone levels",
+    "Antral Follicle Count Retrived",
+    "Oocytes Retrived",
+    "NAD+ Levels in PBMCs",
+    "NAD+ Levels in GCs",
+    "Number of Day 3 embryos",
+    "Number of Day 3 top-quality embryos",
+    "Number of transferable embryos",
+    "Blastocyst Formation Rate"
+   ],
+   "intervention_text": [
+    "NR  600 mg/d of oral NR for two months"
+   ]
+  },
+  {
+   "nct": "NCT06534944",
+   "title": "NAD Supplementation and Vascular Health in PAD",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 8,
+   "status": "COMPLETED",
+   "start": "2023-02-27",
+   "has_results": false,
+   "conditions": [
+    "Peripheral Artery Disease"
+   ],
+   "sponsor": "University of Oklahoma",
+   "primary_outcomes": [
+    "Change in neurovascular coupling using functional near infrared spectroscopy (fNIRS)",
+    "Change in macrovascular endothelial function",
+    "Change in Attention",
+    "Change in Episodic Memory",
+    "Change in Working Memory",
+    "Change in Language",
+    "Change in Executive Function",
+    "Change in Processing Speed",
+    "Blood collection",
+    "Change in microvascular endothelial function"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside NR NR 1g daily for 4 weeks"
+   ]
+  },
+  {
+   "nct": "NCT03565328",
+   "title": "The Effect of Nicotinamide Riboside on Skeletal Muscle Function in Heart Failure Subjects",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 2,
+   "status": "TERMINATED",
+   "start": "2018-09-27",
+   "has_results": true,
+   "conditions": [
+    "Heart Failure"
+   ],
+   "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
+   "primary_outcomes": [
+    "Number of Participants Who Had Enhancement of Mitochondrial Function in Skeletal Muscle"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside Niagen; Nicotinamide Riboside (NR) Nicotinamide Riboside (NR) will be started at 500 mg daily (250 mg BID) be increased at two weekly intervals by 250 mg/dose (BID) (500 mg/day) to a final dose of 1000mg PO BID (2000 mg/day)."
+   ]
+  },
+  {
+   "nct": "NCT06889142",
+   "title": "Impact of NMN Supplementation on CD4+ T Cell Recovery in HIV Patients With Immunological Failure",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 7,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2025-04",
+   "has_results": false,
+   "conditions": [
+    "Human Immunodeficiency Virus"
+   ],
+   "sponsor": "TriHealth Inc.",
+   "primary_outcomes": [
+    "Primary Outcome"
+   ],
+   "intervention_text": [
+    "Nicotinamide Mononucleotide NMN The dietary supplement NMN \\[1,000mg\\] will be taken orally by participants daily for a total of 12 weeks"
+   ]
+  },
+  {
+   "nct": "NCT07451496",
+   "title": "PRecision gerOMedicinE: Tailored Healthy agEing With Lifestyle, sUpplements and drugS (PROMETHEUS)",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NON_RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 20,
+   "status": "RECRUITING",
+   "start": "2025-09-29",
+   "has_results": false,
+   "conditions": [
+    "Ageing"
+   ],
+   "sponsor": "National University of Singapore",
+   "primary_outcomes": [
+    "Change from baseline in cardiorespiratory fitness (VO₂peak)",
+    "Change from baseline in muscle strength (one-repetition maximum (1RM))",
+    "Change from baseline in muscle mass (Ultrasound imaging)",
+    "Change from baseline in cognitive performance (NIH Toolbox Fluid Cognition Composite)",
+    "Change from baseline in immune function (CD4+: CD8+ ratio)"
+   ],
+   "intervention_text": [
+    "Nicotinamide Mononucleotide (NMN)  Participants below the 50th percentile for normative VO₂peak receive NMN (AbinoNutra® NMN, Abinopharm, Inc.) at 300 mg/day."
+   ]
+  },
+  {
+   "nct": "NCT05732051",
+   "title": "Nicotinamide Riboside and Prevention of Cancer Therapy Related Cardiac Dysfunction in Breast Cancer Patients",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 60,
+   "status": "RECRUITING",
+   "start": "2023-03-16",
+   "has_results": false,
+   "conditions": [
+    "Breast Cancer",
+    "Metastatic Breast Cancer",
+    "Cancer Therapy-Related Cardiac Dysfunction",
+    "Cardiotoxicity",
+    "Heart Failure"
+   ],
+   "sponsor": "University Hospital, Akershus",
+   "primary_outcomes": [
+    "Whether the administration of nicotinamide riboside can prevent the reduction in left ventricular systolic function measured by cardiovascular magnetic resonance (CMR), compared to placebo."
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside Niagen (serial number 85932490, registration number 4606519) Nicotinamide Riboside 500mg b.i.d as long as the patient is receiving anthracycline therapy"
+   ]
+  },
+  {
+   "nct": "NCT06324877",
+   "title": "Ataxia-telangiectasia: Treating Mitochondrial Dysfunction With Nicotinamide Riboside",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 10,
+   "status": "UNKNOWN",
+   "start": "2024-05-01",
+   "has_results": false,
+   "conditions": [
+    "Ataxia Telangiectasia"
+   ],
+   "sponsor": "The University of Queensland",
+   "primary_outcomes": [
+    "Scales for assessment and rating of ataxia",
+    "International Cooperative Ataxia Rating Scale"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  Oral capsule Nicotinamide Riboside 25mg/kg/day divided into 3 equal doses"
+   ]
+  },
+  {
+   "nct": "NCT06991712",
+   "title": "Comparisons of NAD Precursors for Neuroenhancement in Glaucoma Patients",
+   "agents": [
+    "NMN",
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 138,
+   "status": "RECRUITING",
+   "start": "2025-05-19",
+   "has_results": false,
+   "conditions": [
+    "Glaucoma"
+   ],
+   "sponsor": "Christopher Kai Shun Leung",
+   "primary_outcomes": [
+    "Change in visual field sensitivity"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside NR Oral supplementation of 300mg Nicotinamide Riboside (NR) daily for 2 weeks",
+    "Nicotinamide Mononucleotide NMN Oral supplementation of 350mg Nicotinamide Mononucleotide (NMN) daily for 2 weeks"
+   ]
+  },
+  {
+   "nct": "NCT06812416",
+   "title": "Effectiveness of Qualia NAD+ Supplementation on NAD Levels",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NON_RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 92,
+   "status": "COMPLETED",
+   "start": "2023-10-24",
+   "has_results": false,
+   "conditions": [
+    "Intracellular NAD+ Levels"
+   ],
+   "sponsor": "Qualia Life Sciences",
+   "primary_outcomes": [
+    "Intracellular NAD+ Levels"
+   ],
+   "intervention_text": [
+    "Qualia NAD+  Qualia NAD+"
+   ]
+  },
+  {
+   "nct": "NCT07693543",
+   "title": "Nicotinamide Riboside Supplementation in Chronic Kidney Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 30,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-10-01",
+   "has_results": false,
+   "conditions": [
+    "Chronic Kidney Disease"
+   ],
+   "sponsor": "University of California, San Diego",
+   "primary_outcomes": [
+    "Change in plasma cell-free mitochondrial DNA",
+    "Change in urine cell-free mitochondrial DNA"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  Nicotinamide riboside will be administered orally at a target dose of 1000 mg/day for 12 weeks during the active treatment period."
+   ]
+  },
+  {
+   "nct": "NCT05038488",
+   "title": "Phase 2a MIB-626 vs. Placebo COVID-19",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 42,
+   "status": "COMPLETED",
+   "start": "2021-10-26",
+   "has_results": false,
+   "conditions": [
+    "Covid19",
+    "Stage 1 Acute Kidney Injury"
+   ],
+   "sponsor": "Metro International Biotech, LLC",
+   "primary_outcomes": [
+    "Change from baseline in serum cystatin C levels"
+   ],
+   "intervention_text": [
+    "MIB-626 NAD-boosting drug Fifty participants will be randomized, stratified by sex, remdesivir use, and trial site, in a 3:2 ratio to receive either MIB-626 1.0 g orally or matching placebo twice daily for 14 days."
+   ]
+  },
+  {
+   "nct": "NCT07572825",
+   "title": "Assessing the Safety and Tolerability of NMN in DHDDS-CDG",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 8,
+   "status": "RECRUITING",
+   "start": "2026-05-08",
+   "has_results": false,
+   "conditions": [
+    "DHDDS-Congenital Disorder of Glycosylation",
+    "DHDDS-CDG",
+    "Congenital Disorder of Glycosylation"
+   ],
+   "sponsor": "Eva Morava-Kozicz",
+   "primary_outcomes": [
+    "Incidence of adverse events (AEs)"
+   ],
+   "intervention_text": [
+    "Nicotinamide Mononucleotide (NMN) Nucleosidase  Name: nicotinamide mononucleotide (NMN)\n\nForm: measured powder\n\nDose: 250 mg/day\n\nFrequency: Daily\n\nRoute of administration: Oral"
+   ]
+  },
+  {
+   "nct": "NCT02942888",
+   "title": "The Effects of Nicotinamide Adenine Dinucleotide (NAD) on Brain Function and Cognition",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": false,
+   "enrollment": 46,
+   "status": "COMPLETED",
+   "start": "2017-11-30",
+   "has_results": false,
+   "conditions": [
+    "Mild Cognitive Impairment",
+    "NAD"
+   ],
+   "sponsor": "The University of Texas Health Science Center at San Antonio",
+   "primary_outcomes": [
+    "Change in Cognitive Assessment - Montreal Cognitive Assessment (MoCA) - from baseline at 10 weeks"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside Niagen; ChromaDex, Inc. Oral administration of Niagen ramp up 250mg to 1g/day as tolerated"
+   ]
+  },
+  {
+   "nct": "NCT07416786",
+   "title": "Validation of NAD+ Measurements for Human Clinical Studies",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 48,
+   "status": "RECRUITING",
+   "start": "2026-09-01",
+   "has_results": false,
+   "conditions": [
+    "Healthy Adults"
+   ],
+   "sponsor": "University of Pennsylvania",
+   "primary_outcomes": [
+    "Nicotinamide adenine dinucleotide (NAD) measurement in brain MRI",
+    "NAD measurement of calf MRI"
+   ],
+   "intervention_text": [
+    "Oral NR Supplementation  Oral Nicotinamide Riboside (NR)"
+   ]
+  },
+  {
+   "nct": "NCT03821623",
+   "title": "Nicotinamide Riboside for Treating Elevated Systolic Blood Pressure and Arterial Stiffness in Middle-aged and Older Adults",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 118,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2019-05-10",
+   "has_results": false,
+   "conditions": [
+    "Hypertension",
+    "Aging"
+   ],
+   "sponsor": "Douglas Seals",
+   "primary_outcomes": [
+    "Systolic blood pressure"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  Nicotinamide riboside, a dietary supplement available over the counter under the name NIAGEN®, (ChromaDex Inc) is an exogenous NAD+ precursor that reverses age-related arterial dysfunction in aged mice, suggesting that declining NAD+ may play a key role in cardiovascular aging"
+   ]
+  },
+  {
+   "nct": "NCT04166396",
+   "title": "Non-pulmonary Contributors of Exercise Intolerance in Patients With Cystic Fibrosis",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 8,
+   "status": "COMPLETED",
+   "start": "2020-02-17",
+   "has_results": false,
+   "conditions": [
+    "Cystic Fibrosis"
+   ],
+   "sponsor": "Virginia Commonwealth University",
+   "primary_outcomes": [
+    "Change in Sirtuin1 (Sirt1)"
+   ],
+   "intervention_text": [
+    "NR  500 mg NR BID"
+   ]
+  },
+  {
+   "nct": "NCT07475208",
+   "title": "NR and Exercise for Blood Pressure",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 112,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-04",
+   "has_results": false,
+   "conditions": [
+    "Hypertension (HTN)"
+   ],
+   "sponsor": "ZHANG Jiaqi",
+   "primary_outcomes": [
+    "Blood pressure"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside 1000 mg  Nicotinamide Riboside supplementation 1000 mg per day"
+   ]
+  },
+  {
+   "nct": "NCT06558253",
+   "title": "The Safety and Efficacy of Coenzyme I for Injection in Promoting Hematopoietic Recovery of Patients After sUCBT",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "IV",
+    "injection"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 12,
+   "status": "RECRUITING",
+   "start": "2024-11-29",
+   "has_results": false,
+   "conditions": [
+    "Hematopoietic Recovery"
+   ],
+   "sponsor": "Anhui Provincial Hospital",
+   "primary_outcomes": [
+    "Adverse Event(AE)"
+   ],
+   "intervention_text": [
+    "Coenzyme I for Injection  Subjects received 21 consecutive days of intravenous infusion of Coenzyme I for injection, starting from the day of transplantation , and then continuously applied intravenously until 20 days post transplantation, with three dose groups: subjects #1-3 received one intraveno"
+   ]
+  },
+  {
+   "nct": "NCT07579429",
+   "title": "Research On Nicotinamide Riboside Supplement Support in MDS (ROSS Trial)",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "NON_RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 10,
+   "status": "RECRUITING",
+   "start": "2026-05-20",
+   "has_results": false,
+   "conditions": [
+    "Clonal Cytopenia of Undetermined Significance",
+    "Myelodysplastic Syndrome"
+   ],
+   "sponsor": "University of Colorado, Denver",
+   "primary_outcomes": [
+    "Preliminary Efficacy: Cytopenia Improvement"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  Nicotinamide riboside is an orally administered dietary supplement and a vitamin B3 derivative that serves as a precursor to nicotinamide adenine dinucleotide (NAD+)."
+   ]
+  },
+  {
+   "nct": "NCT02921659",
+   "title": "Safety & Efficacy of Nicotinamide Riboside Supplementation for Improving Physiological Function in Middle-Aged and Older Adults",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 30,
+   "status": "COMPLETED",
+   "start": "2015-04",
+   "has_results": false,
+   "conditions": [
+    "Aging"
+   ],
+   "sponsor": "University of Colorado, Boulder",
+   "primary_outcomes": [
+    "Incidence of treatment emergent adverse events"
+   ],
+   "intervention_text": [
+    "Niagen™ Nicotinamide Riboside nicotinamide riboside chloride, 250mg capsules"
+   ]
+  },
+  {
+   "nct": "NCT05589766",
+   "title": "N-DOSE: A Dose Optimization Trial of Nicotinamide Riboside in Parkinson's Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 81,
+   "status": "COMPLETED",
+   "start": "2023-01-23",
+   "has_results": false,
+   "conditions": [
+    "Parkinson Disease"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "Cerebral NAD levels measured by 31P-MRS"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside Niagen NR Nicotinamide Riboside supplementation up to 3000mg daily in total."
+   ]
+  },
+  {
+   "nct": "NCT05617508",
+   "title": "N-DOSE AD: A Dose Optimization Trial of Nicotinamide Riboside in Alzheimer's Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 80,
+   "status": "COMPLETED",
+   "start": "2022-11-22",
+   "has_results": false,
+   "conditions": [
+    "Alzheimer Disease",
+    "Dementia"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "Cerebral NAD levels measured by 31P-MRS"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside supplementation 1000mg daily in total Niagen NR Nicotinamide Riboside supplementation 1000mg daily in total",
+    "Nicotinamide Riboside dose escalation (up to 3000 mg daily in total) Niagen NR Nicotinamide Riboside supplementation up to 3000mg daily in total"
+   ]
+  },
+  {
+   "nct": "NCT04332341",
+   "title": "Study of Nicotinamide Riboside Supplementation in Allogeneic Hematopoietic Cell Transplantation",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 20,
+   "status": "RECRUITING",
+   "start": "2020-05-19",
+   "has_results": false,
+   "conditions": [
+    "Allogeneic Hematopoietic Cell Transplantation"
+   ],
+   "sponsor": "Case Comprehensive Cancer Center",
+   "primary_outcomes": [
+    "Percent of participants who receive >75% of scheduled doses.",
+    "Percent of participants who receive >75% of scheduled doses.",
+    "Percent of participants who receive >75% of scheduled doses.",
+    "Percent of participants experiencing a CTCAE 5.0 grade 3 or higher related to the study drug",
+    "Percent of participants experiencing a CTCAE 5.0 grade 3 or higher related to the study drug",
+    "Percent of participants experiencing a CTCAE 5.0 grade 3 or higher related to the study drug"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside (NR)  Nicotinamide riboside, PO, 500mgtwice daily for 21, 28, and 35 days"
+   ]
+  },
+  {
+   "nct": "NCT04078178",
+   "title": "Crossover Trial for Nicotinamide Riboside in Subjective Cognitive Decline and Mild Cognitive Impairment",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 61,
+   "status": "COMPLETED",
+   "start": "2020-10-30",
+   "has_results": true,
+   "conditions": [
+    "Cognition Disorders in Old Age",
+    "Mild Cognitive Impairment",
+    "Cognitive Decline"
+   ],
+   "sponsor": "Steven E Arnold, MD",
+   "primary_outcomes": [
+    "The Effect of Niagen vs PBO on Cognition as Measured by the Repeatable Battery for the Assessment of Neuropsychological Status (RBANS)."
+   ],
+   "intervention_text": [
+    "Niagen  Nicotinamide Riboside"
+   ]
+  },
+  {
+   "nct": "NCT02712593",
+   "title": "A Study Investigating the Effects of Niagen™ in Healthy Adults.",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 140,
+   "status": "COMPLETED",
+   "start": "2016-03-21",
+   "has_results": false,
+   "conditions": [
+    "Bioavailability"
+   ],
+   "sponsor": "KGK Science Inc.",
+   "primary_outcomes": [
+    "Urinary Methylnicotinamide"
+   ],
+   "intervention_text": [
+    "Niagen™ 100  ",
+    "Niagen™ 300  ",
+    "Niagen™ 1000  "
+   ]
+  },
+  {
+   "nct": "NCT06280482",
+   "title": "Nicotinamide Riboside (NR) to Treat Moyamoya-like Cerebrovascular Disease in Smooth Muscle Dysfunction Syndrome (SMDS)",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 15,
+   "status": "RECRUITING",
+   "start": "2024-03-06",
+   "has_results": false,
+   "conditions": [
+    "Smooth Muscle Dysfunction Syndrome (SMDS)"
+   ],
+   "sponsor": "The University of Texas Health Science Center, Houston",
+   "primary_outcomes": [
+    "Change in systolic blood",
+    "Change in cerebral oxygenation and perfusion as assessed by the Head-up tilt table testing (HUTT) with near-infrared spectroscopy (NIRS) monitoring.",
+    "Change in cognitive function as assessed by the NIH Toolbox assessment",
+    "Change in autonomic symptoms as assessed by the Composite Autonomic Symptom Score 31 (COMPASS-31) survey",
+    "Change in Impact of headaches as assessed by the Headache Impact Test (HIT-6) questionnaire",
+    "Pulmonary function tests (PFTs), including spirometry and lung volume measurements",
+    "Change in Aortic diameter as assessed by the echocardiography"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside (NR)  Participants will take their weight-based dose of NR once daily by mouth with food for 60 days."
+   ]
+  },
+  {
+   "nct": "NCT07569627",
+   "title": "Effects of BFR-training on Stem Cells and Immune Cells in Human Skeletal Muscle",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 60,
+   "status": "COMPLETED",
+   "start": "2022-08-01",
+   "has_results": false,
+   "conditions": [
+    "Exercise",
+    "Blood Flow Restriction (BFR) Training Effects",
+    "Supplement"
+   ],
+   "sponsor": "University of Taipei",
+   "primary_outcomes": [
+    "Stem cells in muscle"
+   ],
+   "intervention_text": [
+    "NMN-BFR exercise Placebo-BFR exercise NMN ingested before and after BFR exercise"
+   ]
+  },
+  {
+   "nct": "NCT03568968",
+   "title": "A Randomized Controlled Trial of Nicotinamide Riboside Supplementation in Early Parkinson's Disease",
+   "agents": [
+    "NAD+",
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 410,
+   "status": "COMPLETED",
+   "start": "2020-05-06",
+   "has_results": false,
+   "conditions": [
+    "Parkinson Disease"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "Disease severity assessed by the total MDS-UPDRS (Movement Disorder Society Unified Parkinson's Disease rating Scale): sum of subsections I, II, and III"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside NR, NAD, TruNiagen Nicotinamide Riboside 500mg administered two times a day. Given as capsules. Duration of the trial; 52 weeks."
+   ]
+  },
+  {
+   "nct": "NCT06579209",
+   "title": "NAD+ Oral Supplement Pilot Intervention in Adult Females",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 53,
+   "status": "COMPLETED",
+   "start": "2024-12-01",
+   "has_results": false,
+   "conditions": [
+    "Cognitive Change",
+    "Inflammation",
+    "Neurodegenerative Diseases"
+   ],
+   "sponsor": "University of Rhode Island",
+   "primary_outcomes": [
+    "Neurocognition",
+    "Neurodegenerative disease panel",
+    "Markers of systemic inflammation"
+   ],
+   "intervention_text": [
+    "Treatment Nicotinamide adenine dinucleotide Participants will take a supplement for four weeks. The supplement will either be Nicotinamide adenine dinucleotide or a placebo."
+   ]
+  },
+  {
+   "nct": "NCT06018467",
+   "title": "Senolytics to Improve Osteoporosis Therapy",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "SINGLE",
+   "placebo_arm": false,
+   "enrollment": 120,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2023-09-06",
+   "has_results": false,
+   "conditions": [
+    "Osteopenia, Osteoporosis",
+    "Age-related Bone Loss"
+   ],
+   "sponsor": "Odense University Hospital",
+   "primary_outcomes": [
+    "Bone resorption marker CTX"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside 1g (oral) NR four 250mg Nicotinamide Riboside Capsules, from Elysium Health"
+   ]
+  },
+  {
+   "nct": "NCT02721537",
+   "title": "Use of 31P MRS to Assess Brain NAD+ in Healthy Current and Former Collegiate Athletes",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 30,
+   "status": "COMPLETED",
+   "start": "2016-09",
+   "has_results": false,
+   "conditions": [
+    "Concussion, Mild"
+   ],
+   "sponsor": "Mayo Clinic",
+   "primary_outcomes": [
+    "Change in brain NAD+ levels"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside Niagen Three capsules, twice per day for 84 days"
+   ]
+  },
+  {
+   "nct": "NCT05997628",
+   "title": "The Exploratory Study on the Baseline Level of NAD+/NADH in Peripheral Blood Samples of Different Gender and Age Groups of Healthy Adults.",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "OBSERVATIONAL",
+   "phases": null,
+   "allocation": null,
+   "masking": null,
+   "placebo_arm": false,
+   "enrollment": 60,
+   "status": "UNKNOWN",
+   "start": "2023-08",
+   "has_results": false,
+   "conditions": [
+    "NAD+/NADH in Peripheral Blood Monitoring"
+   ],
+   "sponsor": "Shanghai Cell Therapy Group Co.,Ltd",
+   "primary_outcomes": [
+    "The baseline in NAD+ and NADH concentrations in whole blood of healthy adults.",
+    "Counting of blood cell indicators such as red blood cells, white blood cells, and platelets in healthy adults",
+    "Blood biochemical indicators of the healthy adults monitoring including liver function; lood lipids; blood sugar; renal function; uric acid; lactate dehydrogenase; creatine kinase, etc",
+    "Peripheral blood immune cell phenotype of the healthy adults monitoring including NK cells, B lymphocytes, eosinophils, T lymphocytes, platelet neutrophils, basophils, and monocytes, etc"
+   ],
+   "intervention_text": [
+    "Detection of NAD+/NADH concentration of Peripheral Blood Samples  Peripheral blood samples are taken before breakfast and before lunch to detect NAD+/NADH levels, hematology, blood biochemical indicators, immune cells and SIRT1 level in peripheral blood in different age groups. This experiment monit"
+   ]
+  },
+  {
+   "nct": "NCT04907110",
+   "title": "NR Supplementation and Exercise",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 30,
+   "status": "COMPLETED",
+   "start": "2021-08-10",
+   "has_results": false,
+   "conditions": [
+    "Overweight and Obesity",
+    "Aging",
+    "Type 2 Diabetes"
+   ],
+   "sponsor": "Maastricht University Medical Center",
+   "primary_outcomes": [
+    "Ex vivo muscle mitochondrial function"
+   ],
+   "intervention_text": [
+    "Niagen Nicotinamide Riboside (NR) Participants in the NR supplementation + exercise group will undergo oral NR supplementation for 40 days. NiagenTM is the name for the dietary supplement containing NR (ChromaDex, Inc. Irvine, USA). The total dosage of NR per day will be 1000mg. This supplementation"
+   ]
+  },
+  {
+   "nct": "NCT05590468",
+   "title": "A Study to Evaluate Vitamin B3 Derivative to Treat Mitochondrial Myopathy",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 34,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2023-05-26",
+   "has_results": false,
+   "conditions": [
+    "Mitochondrial Myopathy"
+   ],
+   "sponsor": "Ralitza Gavrilova",
+   "primary_outcomes": [
+    "Changes in 6-Minute Walk Test Performance"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  Vitamin B3 derivative; a total of 1000 mg/day in a regimen of 500mg every 12 hours by mouth (either fasting or fed)"
+   ]
+  },
+  {
+   "nct": "NCT06345443",
+   "title": "NRM on Vascular Perfusion in Healthy Adults",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 200,
+   "status": "ENROLLING_BY_INVITATION",
+   "start": "2024-11-25",
+   "has_results": false,
+   "conditions": [
+    "Vascular Stiffness"
+   ],
+   "sponsor": "Mayo Clinic",
+   "primary_outcomes": [
+    "Number of Participants with Reduced Endothelial Stiffness"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside Malate NRM Active supplement."
+   ]
+  },
+  {
+   "nct": "NCT03962114",
+   "title": "Effects of Vitamin B3 in Patients With Ataxia Telangiectasia",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 24,
+   "status": "COMPLETED",
+   "start": "2019-03-18",
+   "has_results": false,
+   "conditions": [
+    "Ataxia Telangiectasia",
+    "ATM Gene Mutation"
+   ],
+   "sponsor": "Radboud University Medical Center",
+   "primary_outcomes": [
+    "Ataxia, SARA (Scale of the assesment and rating of ataxia)",
+    "Ataxia, ICARS (International Cooperative Ataxia Rating Scale)",
+    "Ataxia, 9-hole pegboard test.",
+    "Dysarthria, Radboud dysarthria assesment (RDA)"
+   ],
+   "intervention_text": [
+    "Vitamin B3 Nicotinamide riboside capsules with niagen"
+   ]
+  },
+  {
+   "nct": "NCT06889740",
+   "title": "Evaluate the Safety, Tolerability, and Efficacy of UthPeak NMNH (Reduced Nicotinamide Mononucleotide) in Healthy Adult Participants",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 80,
+   "status": "COMPLETED",
+   "start": "2024-07-08",
+   "has_results": false,
+   "conditions": [
+    "Healthy Aging"
+   ],
+   "sponsor": "EffePharm LTD",
+   "primary_outcomes": [
+    "To assess NAD+ Values in blood",
+    "Assessment of Biological Age",
+    "Physical Performance walking test",
+    "Change in BMI",
+    "Quality (QoL) Questionnaire"
+   ],
+   "intervention_text": [
+    "NMNH  Reduced Nicotinamide Mononucleotide"
+   ]
+  },
+  {
+   "nct": "NCT03562468",
+   "title": "A Study by ChromaDex to Assess the Effects of TRU NIAGEN on Cognitive Function, Mood and Sleep in Older Adults",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 40,
+   "status": "COMPLETED",
+   "start": "2018-06-13",
+   "has_results": false,
+   "conditions": [
+    "Cognitive Function",
+    "Mood",
+    "Sleep"
+   ],
+   "sponsor": "ChromaDex, Inc.",
+   "primary_outcomes": [
+    "The primary comparison will be the low dose (300 mg/d nicotinamide riboside) condition to the placebo condition for the change from baseline to the end of each relevant treatment period."
+   ],
+   "intervention_text": [
+    "300 mg/day of TRU NIAGEN (nicotinamide riboside) Niagen, the active ingredient in TRU NIAGEN Treatment with 300 mg/day of TRU NIAGEN (nicotinamide riboside) will be administered daily as 4 capsules in a double-blind, randomized, crossover manner for three 8-week treatment periods. Each subject will ",
+    "1000 mg/day of TRU NIAGEN (nicotinamide riboside) Niagen, the active ingredient in TRU NIAGEN Treatment 1000 mg/day of TRU NIAGEN (nicotinamide riboside) will be administered daily as 4 capsules in a double-blind, randomized, crossover manner for three 8-week treatment periods. Each subject will rec"
+   ]
+  },
+  {
+   "nct": "NCT02950441",
+   "title": "Nicotinamide Adenine Dinucleotide and Skeletal Muscle Metabolic Phenotype",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 12,
+   "status": "UNKNOWN",
+   "start": "2016-06",
+   "has_results": false,
+   "conditions": [
+    "Aging"
+   ],
+   "sponsor": "University of Birmingham",
+   "primary_outcomes": [
+    "Mitochondrial function assessment in skeletal muscle using high resolution respirometry",
+    "Skeletal muscle NAD+ levels in vastus lateralis biopsy using targeted metabolomics"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  "
+   ]
+  },
+  {
+   "nct": "NCT04910061",
+   "title": "Safety and Pharmacokinetics of Nicotinamide Mononucleotide (NMN) in Healthy Adults.",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 24,
+   "status": "COMPLETED",
+   "start": "2021-08-05",
+   "has_results": false,
+   "conditions": [
+    "Healthy Volunteers"
+   ],
+   "sponsor": "Seneque SA",
+   "primary_outcomes": [
+    "Safety as measured by subject incident of treatment-emergent adverse events",
+    "Safety as measured by subject incident of treatment-emergent clinically significant changes in vital signs",
+    "Safety as measured by subject incident of treatment-emergent clinically significant changes in clinical laboratory safety tests."
+   ],
+   "intervention_text": [
+    "Nicotinamide mononucleotide (NMN-C)  Daily supplementation with NMN-C at 400 mg for 29 days in total"
+   ]
+  },
+  {
+   "nct": "NCT07475546",
+   "title": "Combination Gerotherapeutic Interventions for Healthspan Improvement",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "nasal"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": true,
+   "enrollment": 30,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2025-07-23",
+   "has_results": false,
+   "conditions": [
+    "Healthspan Improvement",
+    "Aging",
+    "Longevity"
+   ],
+   "sponsor": "AgelessRx",
+   "primary_outcomes": [
+    "Change in cardiorespiratory fitness measured by maximal oxygen uptake (VO₂ max)",
+    "Change in cognitive performance measured by Creyos Cognitive Test composite score",
+    "Change in systemic chronic inflammation measured by iAge index score",
+    "Change in lean body mass measured by dual-energy X-ray absorptiometry (DEXA)"
+   ],
+   "intervention_text": [
+    "NAD+ nicotinamide adenine dinucleotide (NAD+) In both intervention groups, NAD+ will be taken as a nasal spray of 30mg/day."
+   ]
+  },
+  {
+   "nct": "NCT06882096",
+   "title": "Tracing the Metabolic Flux of Orally Administered NAD+ Precursors",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 32,
+   "status": "RECRUITING",
+   "start": "2025-04-28",
+   "has_results": false,
+   "conditions": [
+    "Healthy Adults"
+   ],
+   "sponsor": "Metro International Biotech, LLC",
+   "primary_outcomes": [
+    "Labelled NAD+ in Peripheral Blood"
+   ],
+   "intervention_text": [
+    "Nicotinamide Mononucleotide (NMN)  Nicotinamide Mononucleotide (NMN)"
+   ]
+  },
+  {
+   "nct": "NCT04994561",
+   "title": "VIAging Deceleration Trial Using Metformin, Dasatinib, Rapamycin and Nutritional Supplements",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 0,
+   "status": "WITHDRAWN",
+   "start": "2022-06",
+   "has_results": false,
+   "conditions": [
+    "Aging"
+   ],
+   "sponsor": "Vitality in Aging Research Group, Inc.",
+   "primary_outcomes": [
+    "Incidence of treatment-emergent adverse events as assessed by CTCAE v5.0",
+    "Visceral adipose tissue fat tissue (volume (in^3)) physiological parameter value measured by DEXA scan",
+    "Systolic blood pressure physiological parameter value measured with a blood pressure cuff",
+    "Senescent cell-cycle arrest physiological parameter value measured by MMP-9 laboratory test",
+    "Glucose control (insulin resistance) physiological parameter as measured by HOMA-IR (mg/dL) calculation value",
+    "DNA Methylation physiological parameter as measured by 2019 GrimAge Clock laboratory test"
+   ],
+   "intervention_text": [
+    "Study Drugs and Nutritional Supplements metformin, dasatinib, rapamycin and nutritional supplements (bio-quercetin; bio-fisetin; glucosamine; nicotinamide riboside; trans-resveratrol) Step 1: 500 mg of metformin and increase their dose 500 mg every 2 weeks up to 2000 mg or until tolerable.\n\nStep 2: "
+   ]
+  },
+  {
+   "nct": "NCT06629636",
+   "title": "Investigate the Efficacy of Using NMN to Improve Embryo Development Capacity.",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 60,
+   "status": "RECRUITING",
+   "start": "2024-08-20",
+   "has_results": false,
+   "conditions": [
+    "Repeated IVF Failure",
+    "Female Infertility"
+   ],
+   "sponsor": "Sunkaky Medical Cooperation",
+   "primary_outcomes": [
+    "Embryo development rate",
+    "Changes in metabolic status",
+    "Clinical pregnancy rate",
+    "Embryo development rate",
+    "Embryo development rate"
+   ],
+   "intervention_text": [
+    "NMN capsule  Total of 900mg/day for 8 weeks"
+   ]
+  },
+  {
+   "nct": "NCT06505967",
+   "title": "Effectiveness of Qualia NAD+ Supplementation on Intracellular NAD Levels",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NON_RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 170,
+   "status": "COMPLETED",
+   "start": "2024-07-01",
+   "has_results": false,
+   "conditions": [
+    "NAD+ Levels in the Blood"
+   ],
+   "sponsor": "Qualia Life Sciences",
+   "primary_outcomes": [
+    "NAD+ Levels in the Blood"
+   ],
+   "intervention_text": [
+    "Qualia NAD+  Qualia NAD+ is a novel dietary supplement, formulated to support the maintenance and enhancement of intracellular NAD levels."
+   ]
+  },
+  {
+   "nct": "NCT03685253",
+   "title": "Nicotinamide Riboside for Diabetic Neuropathy",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 10,
+   "status": "TERMINATED",
+   "start": "2019-01-24",
+   "has_results": false,
+   "conditions": [
+    "Diabetic Neuropathy Peripheral"
+   ],
+   "sponsor": "University of Maryland, Baltimore",
+   "primary_outcomes": [
+    "Thigh Intraepidermal Nerve Fiber Density"
+   ],
+   "intervention_text": [
+    "Niagen Nicotinamide Riboside 3-(Aminocarbonyl)-1-β-D-ribofuranosyl-pyridinium chloride Niagen® (3-(Aminocarbonyl)-1-β-D-ribofuranosyl-pyridinium chloride - NR) will be the experimental treatment, at a dose of 1000 mg/day taken as two 250 mg capsules twice daily for 6 months."
+   ]
+  },
+  {
+   "nct": "NCT04562831",
+   "title": "The NO-ALS Study: A Trial of Nicotinamide/Pterostilbene Supplement in ALS.",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": false,
+   "enrollment": 380,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2020-10-07",
+   "has_results": false,
+   "conditions": [
+    "Amyotrophic Lateral Sclerosis"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "Disease progression as assessed by Amyotrophic Lateral Sclerosis Functional Rating Scale Revised (ALSFRS-R)"
+   ],
+   "intervention_text": [
+    "EH301 (Nicotinamide Riboside/Pterostilbene)  Comparison of 2 different dosages with placebo in newly diagnosed ALS patients and comparison of high dose with placebo in earlier ALS patients."
+   ]
+  },
+  {
+   "nct": "NCT07013591",
+   "title": "Nicotinamide Mononucleotide in Patients Undergoing Cardiac Surgery",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 90,
+   "status": "RECRUITING",
+   "start": "2026-06-10",
+   "has_results": false,
+   "conditions": [
+    "Cardiac Surgery"
+   ],
+   "sponsor": "Brigham and Women's Hospital",
+   "primary_outcomes": [
+    "NAD+ concentration in the myocardial tissue"
+   ],
+   "intervention_text": [
+    "MIB-626  An orally-administered stable crystalline tablet formulation of NMN"
+   ]
+  },
+  {
+   "nct": "NCT03912220",
+   "title": "Evaluation of Nicotinamide Riboside in Prevention of Small Fiber Axon Degeneration and Promotion of Nerve Regeneration",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 45,
+   "status": "COMPLETED",
+   "start": "2020-09-01",
+   "has_results": true,
+   "conditions": [
+    "Small Fiber Neuropathy"
+   ],
+   "sponsor": "Johns Hopkins University",
+   "primary_outcomes": [
+    "Denervation of Skin",
+    "Reinnervation of Skin"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  The experimental arm will investigate the effects of nicotinamide riboside on nerve degeneration and regeneration."
+   ]
+  },
+  {
+   "nct": "NCT03186027",
+   "title": "Coenzyme Q10 Plus NADH Supplementation in Chronic Fatigue Syndrome/Myalgic Encephalomyelitis",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 282,
+   "status": "COMPLETED",
+   "start": "2017-06-28",
+   "has_results": false,
+   "conditions": [
+    "Chronic Fatigue Syndrome"
+   ],
+   "sponsor": "Hospital Universitari Vall d'Hebron Research Institute",
+   "primary_outcomes": [
+    "Effect of oral Reconnect ® (CoQ10 plus NADH) supplementation on the changes in core symptoms during 8-weeks in CFS/ME subjects."
+   ],
+   "intervention_text": [
+    "Coenzyme Q10 plus NADH  Active arm: Coenzyme Q10 plus NADH CFS/ME patients who will be randomized to measure the effect of oral ReConnect supplementation (CoQ10: 200 mg/day plus NADH 20 mg/day; 4 tablets/day) on changes in the fatigue, sleep problems, autonomic function and HRQoL during 8-weeks in t"
+   ]
+  },
+  {
+   "nct": "NCT03727646",
+   "title": "Nicotinamide Riboside in LVAD Recipients",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "NON_RANDOMIZED",
+   "masking": "SINGLE",
+   "placebo_arm": false,
+   "enrollment": 5,
+   "status": "COMPLETED",
+   "start": "2018-09-26",
+   "has_results": true,
+   "conditions": [
+    "Heart Failure，Congestive",
+    "Heart Failure New York Heart Association Class IV",
+    "Mitochondrial Alteration"
+   ],
+   "sponsor": "University of Washington",
+   "primary_outcomes": [
+    "Number of Participates Experiencing Treatment-Emergent Adverse Events (Safety and Tolerability)",
+    "Pre/Post NR Comparison of Maximal Mitochondrial Respiration in PBMCs"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  nicotinamide riboside supplied as 250mg capsules"
+   ]
+  },
+  {
+   "nct": "NCT07278492",
+   "title": "NAD Augmentation to Prevent or Reverse Alzheimer's Disease in People With Down Syndrome",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 24,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-08-31",
+   "has_results": false,
+   "conditions": [
+    "Down Syndrome (DS)"
+   ],
+   "sponsor": "Brigham and Women's Hospital",
+   "primary_outcomes": [
+    "Treatment emergent adverse events",
+    "Treatment emergent serious adverse events"
+   ],
+   "intervention_text": [
+    "MIB-626  MIB-626 tablets will be provided at dose strength of 500mg. Three doses will be studied in ascending order: 500 mg (one tablet) once daily; 1000 mg (two 500 mg tablets once daily) or 1000 mg (two 500 mg tablets) twice daily."
+   ]
+  },
+  {
+   "nct": "NCT04528004",
+   "title": "Mechanistic Studies of Nicotinamide Riboside in Human Heart Failure",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 32,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2020-09-26",
+   "has_results": false,
+   "conditions": [
+    "Heart Failure, Systolic",
+    "Heart Failure NYHA Class IV",
+    "Metabolic Disturbance"
+   ],
+   "sponsor": "University of Washington",
+   "primary_outcomes": [
+    "Between-group comparisons of whole blood NAD+ levels"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  Nicotinamide riboside 250mg capsules"
+   ]
+  },
+  {
+   "nct": "NCT06907329",
+   "title": "The Impact of Nicotinamide Mononucleotide Sustained-release Tablets on Immunosenescence and Metablism in Middle-aged and Elderly Individuals With Metabolic Disorders.",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 126,
+   "status": "RECRUITING",
+   "start": "2025-06-05",
+   "has_results": false,
+   "conditions": [
+    "Immunosenescence",
+    "Metabolism"
+   ],
+   "sponsor": "Qing Su",
+   "primary_outcomes": [
+    "CD3+CD8+CD27-CD28- T cells as a percentage of CD3+CD8+ T cells, expressed in %, evaluated by flow cytometry"
+   ],
+   "intervention_text": [
+    "NMN  NMN SR tablets(1000mg/tablets) , 1 tablet daily before breakfast"
+   ]
+  },
+  {
+   "nct": "NCT04112043",
+   "title": "Nicotinamide Riboside as an Enhancer of Exercise Therapy in Hypertensive Older Adults (The NEET Trial)",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": false,
+   "enrollment": 147,
+   "status": "COMPLETED",
+   "start": "2020-07-28",
+   "has_results": true,
+   "conditions": [
+    "Hypertension"
+   ],
+   "sponsor": "University of Florida",
+   "primary_outcomes": [
+    "Change in Daytime Systolic Blood Pressure"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  Participants randomized to this intervention will receive 1,000 mg/day of NR."
+   ]
+  },
+  {
+   "nct": "NCT06587945",
+   "title": "Nicotinamide Riboside Oral Supplementation in Macula Off Retinal Detachment",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 144,
+   "status": "RECRUITING",
+   "start": "2025-09-19",
+   "has_results": false,
+   "conditions": [
+    "Retinal Detachment"
+   ],
+   "sponsor": "Center for Eye Research Australia",
+   "primary_outcomes": [
+    "Best-corrected Visual Acuity",
+    "Microperimetry",
+    "Contrast sensitivity"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  Oral Nicotinamide Riboside, 2g daily for 4 weeks followed by 1g daily for 16 weeks"
+   ]
+  },
+  {
+   "nct": "NCT04604704",
+   "title": "Pilot Study Into LDN and NAD+ for Treatment of Patients With Post-COVID-19 Syndrome",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "topical"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 36,
+   "status": "COMPLETED",
+   "start": "2021-01-28",
+   "has_results": false,
+   "conditions": [
+    "Covid19",
+    "Long COVID-19",
+    "Post-COVID-19 Syndrome"
+   ],
+   "sponsor": "AgelessRx",
+   "primary_outcomes": [
+    "Reduction of fatigue in post-COVID-19 syndrome by treatment with LDN and NAD+"
+   ],
+   "intervention_text": [
+    "NAD+ Nicotinamide adenine dinucleotide NAD+ will be applied using iontophoresis patches. The patches will be provided by ready-made NAD+ solutions (400 mg) to be applied to the positive electrode of the patch and saline to the negative electrode. The patch is powered by a self-contained battery, pro"
+   ]
+  },
+  {
+   "nct": "NCT05561738",
+   "title": "Nicotinamide Riboside in Ulcerative Colitis",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 19,
+   "status": "TERMINATED",
+   "start": "2024-02-28",
+   "has_results": false,
+   "conditions": [
+    "Ulcerative Colitis"
+   ],
+   "sponsor": "University of Pittsburgh",
+   "primary_outcomes": [
+    "Number of patients screened",
+    "Proportion of patients screened who meet inclusion/exclusion criteria",
+    "Enrollment percentage",
+    "Completion percentage",
+    "Reasons for exclusion",
+    "Dropout rate",
+    "Reasons for dropout"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside Chloride  The intervention consists of 6 months to 1 year of daily oral therapy with Nicotinamide Riboside Chloride (Niagen) in addition to standard therapy."
+   ]
+  },
+  {
+   "nct": "NCT04040959",
+   "title": "Nicotinamide Riboside Supplementation for Treating Arterial Stiffness and Elevated Systolic Blood Pressure in Patients With Moderate to Severe CKD",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 118,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2019-11-19",
+   "has_results": false,
+   "conditions": [
+    "Vascular Diseases",
+    "Kidney Disease",
+    "Blood Pressure",
+    "Oxidative Stress"
+   ],
+   "sponsor": "University of Colorado, Denver",
+   "primary_outcomes": [
+    "carotid-femoral pulse wave velocity"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  Nicotinamide riboside is a naturally occurring vitamin B3 derivative found in yeast, bacteria, and mammalian tissues, and also has been detected in cows' milk."
+   ]
+  },
+  {
+   "nct": "NCT04691986",
+   "title": "Impacts of Nicotinamide Riboside on Functional Capacity and Muscle Physiology in Older Veterans",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 74,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2023-09-01",
+   "has_results": false,
+   "conditions": [
+    "Sarcopenia",
+    "Nicotinamide Adenine Dinucleotide Concentration",
+    "Muscle Quality and NAD+ Content"
+   ],
+   "sponsor": "VA Office of Research and Development",
+   "primary_outcomes": [
+    "Sub-maximal oxygen uptake test (VO2max)",
+    "Muscle strength",
+    "Gait speed"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside NR Nicotinamide Riboside is a form of vitamin B3 and is naturally occurring in humans."
+   ]
+  },
+  {
+   "nct": "NCT06382688",
+   "title": "IV Administration of ChromaDex's Niagen® as Compared to NAD+",
+   "agents": [
+    "NAD+",
+    "NR"
+   ],
+   "routes": [
+    "IV",
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 53,
+   "status": "UNKNOWN",
+   "start": "2023-11-13",
+   "has_results": false,
+   "conditions": [
+    "Healthy Aging"
+   ],
+   "sponsor": "Nutraceuticals Research Institute",
+   "primary_outcomes": [
+    "Blood Pressure",
+    "Heart rate",
+    "Total NAD measured through dried blood spot testing",
+    "Glucose",
+    "Insulin Levels",
+    "total NAD measured through blood and plasma",
+    "Tolerable Infusion Rate"
+   ],
+   "intervention_text": [
+    "NAD+ (nicotinamide adenine dinucleotide) IV NAD+ NAD+ enables cells to generate cellular energy from the food that one eats",
+    "Niagen® (nicotinamide riboside) IV  NR is a unique member of the vitamin B3 family. Cells can use NR to create nicotinamide adenine dinucleotide (NAD+), which is an essential molecule found in every living cell. Patients in this arm received an IV administration.",
+    "Niagen® (nicotinamide riboside) oral Niagen® (oral) NR is a unique member of the vitamin B3 family. Cells can use NR to create nicotinamide adenine dinucleotide (NAD+), which is an essential molecule found in every living cell. Patients in this arm received an oral administration."
+   ]
+  },
+  {
+   "nct": "NCT06208527",
+   "title": "The NADage Study: Nicotinamide Riboside Replenishment Therapy Against Functional Decline in Aging",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 100,
+   "status": "RECRUITING",
+   "start": "2025-01",
+   "has_results": false,
+   "conditions": [
+    "Frailty",
+    "Frail Elderly Syndrome",
+    "Frailty Syndrome",
+    "Aging"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "The between-group (NR vs. Placebo) difference in the change in gait speed."
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  A total of 2000 mg NR is administered daily for 1 year."
+   ]
+  },
+  {
+   "nct": "NCT07782671",
+   "title": "The NICE-PAD II Trial",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 250,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-12",
+   "has_results": false,
+   "conditions": [
+    "Peripheral Artery Disease (PAD)"
+   ],
+   "sponsor": "Northwestern University",
+   "primary_outcomes": [
+    "Six-minute walk distance"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  The nicotinamide riboside intervention is manufactured by ChromaDex. Participants randomized to nicotinamide riboside will take two capsules twice daily. Each capsule contains 250 mg of nicotinamide riboside, for a total of 1000 mg of nicotinamide riboside per day."
+   ]
+  },
+  {
+   "nct": "NCT04823260",
+   "title": "To Evaluate the Efficacy and Safety of NMN as an Anti-ageing Supplement in Middle Aged and Older (40-65 Years) Adults",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 90,
+   "status": "COMPLETED",
+   "start": "2021-05-25",
+   "has_results": false,
+   "conditions": [
+    "Aging"
+   ],
+   "sponsor": "Abinopharm, Inc",
+   "primary_outcomes": [
+    "Blood cellular NAD+/ NADH",
+    "Blood cellular NAD+/ NADH",
+    "Blood cellular NAD+/ NADH",
+    "Six walking endurance test",
+    "Six walking endurance test",
+    "Six walking endurance test",
+    "SF-36 questionnaire",
+    "SF-36 questionnaire",
+    "SF-36 questionnaire",
+    "PART II : Telomerase test results",
+    "PART II : Telomerase test results",
+    "PART II : SF-36 questionnaire",
+    "PART II : SF-36 questionnaire"
+   ],
+   "intervention_text": [
+    "Nicotinamide Mononucleotide  Nicotinamide adenine dinucleotide (NAD+) is an essential cofactor in all living cells involved in fundamental biological processes. Depletion in the levels of NAD+ is associated with traits of aging, many age-related diseases like cancer, metabolic disorders and neurolog"
+   ]
+  },
+  {
+   "nct": "NCT06162013",
+   "title": "The NADAPT Study: a Randomized Double-blind Trial of NAD Replenishment Therapy for Atypical Parkinsonism",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 330,
+   "status": "RECRUITING",
+   "start": "2024-03-05",
+   "has_results": false,
+   "conditions": [
+    "Progressive Supranuclear Palsy",
+    "Multiple System Atrophy",
+    "Corticobasal Syndrome"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "PSP Cohort: Between group difference in PSP Rating Scale (PSPRS) total score from baseline to week 78",
+    "MSA Cohort: Between group difference in Unified MSA Rating Scale (UMSARS) total score from baseline to week 78",
+    "CBS Cohort: Between group difference in PSP Rating Scale (PSPRS) total score from baseline to week 78"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside NR Nicotinamide Riboside 3000mg/day"
+   ]
+  },
+  {
+   "nct": "NCT07774000",
+   "title": "Efficacy of Topical Niacinamide Riboside on the Signs of Facial Skin Aging",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "topical"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 140,
+   "status": "RECRUITING",
+   "start": "2026-08-17",
+   "has_results": false,
+   "conditions": [
+    "Skin Aging on Face",
+    "Skin Care Dermocosmetics",
+    "Skin Care",
+    "Fine Lines and Wrinkles"
+   ],
+   "sponsor": "ChromaDex, Inc.",
+   "primary_outcomes": [
+    "Change in skin's biological age",
+    "Quantitative change in fine lines and wrinkles",
+    "Quantitative changes in skin firmness and tightness"
+   ],
+   "intervention_text": [
+    "Topical niacinamide riboside Niagen NanoCloud Nicotinamide riboside Niacinamide chloride (NR) prepared in a dry nanofiber pillow will be applied to the skin using a standardized gel serum twice daily, for 12 weeks. NR is a precursor to the essential cellular co-enzyme, NAD+, which has been directly "
+   ]
+  },
+  {
+   "nct": "NCT03432871",
+   "title": "Nicotinamide Riboside and Mitochondrial Biogenesis",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 13,
+   "status": "COMPLETED",
+   "start": "2017-12-08",
+   "has_results": false,
+   "conditions": [
+    "Mitochondrial Diseases",
+    "Mitochondrial Myopathies",
+    "Progressive External Ophthalmoplegia",
+    "Progressive Ophthalmoplegia",
+    "Progressive; Ophthalmoplegia, External",
+    "Mitochondria DNA Deletion",
+    "MELAS"
+   ],
+   "sponsor": "Cambridge University Hospitals NHS Foundation Trust",
+   "primary_outcomes": [
+    "Bioavailability",
+    "Safety - Incidence of treatment related adverse events",
+    "Safety - change in blood analytes",
+    "Safety - temperature",
+    "Safety - blood pressure",
+    "Safety - pulse",
+    "Mitochondrial biogenesis - Magnetic Resonance Imaging",
+    "Mitochondrial biogenesis - Respiratory Chain Enzyme Analysis",
+    "Mitochondrial biogenesis - mitochondrial DNA quantification"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside Niagen Nicotinamide Riboside Chloride Nicotinamide Riboside is a member of the Vitamin B family which acts as a precursor to NAD+, an enzyme involved in energy production."
+   ]
+  },
+  {
+   "nct": "NCT03743636",
+   "title": "Nicotinamide Riboside With and Without Resveratrol to Improve Functioning in Peripheral Artery Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 90,
+   "status": "COMPLETED",
+   "start": "2018-10-01",
+   "has_results": true,
+   "conditions": [
+    "Peripheral Artery Disease"
+   ],
+   "sponsor": "Northwestern University",
+   "primary_outcomes": [
+    "Six-minute Walk Distance (NR Alone vs. Placebo)",
+    "Six-minute Walk Distance (NR/Resveratrol vs. Placebo)"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside NR Niagen Participants randomized to the NR + resveratrol arm or the NR + placebo arm of the study will receive 1,000 mg of NR daily for six months."
+   ]
+  },
+  {
+   "nct": "NCT07649161",
+   "title": "Nicotinamide Riboside, Vit B3 Analogue, and Brain Energy Metabolism",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 50,
+   "status": "RECRUITING",
+   "start": "2026-06",
+   "has_results": false,
+   "conditions": [
+    "Healthy Adult"
+   ],
+   "sponsor": "Massachusetts General Hospital",
+   "primary_outcomes": [
+    "Brain NAD+/NADH Ratio"
+   ],
+   "intervention_text": [
+    "Niagen®  Participants will take 3000 mg of nicotinamide riboside (i.e., Niagen) daily for 2 weeks. This will be in the form of six 250 mg capsules in the morning and six 250 mg capsules at night for a total of 12 capsules daily."
+   ]
+  },
+  {
+   "nct": "NCT06592859",
+   "title": "Intervention of Nicotinamide Mononucleotide in Middle-aged and Elderly People",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 240,
+   "status": "RECRUITING",
+   "start": "2023-08-23",
+   "has_results": false,
+   "conditions": [
+    "Aging",
+    "NMN"
+   ],
+   "sponsor": "People's Hospital of Quzhou",
+   "primary_outcomes": [
+    "Comprehensive evaluation of NMN in reducing biological age"
+   ],
+   "intervention_text": [
+    "NMN  NMN Arm participants took one capsule (containing 350mg NMN or placebo) with breakfast daily for one year."
+   ]
+  },
+  {
+   "nct": "NCT05703074",
+   "title": "Mental Intervention and Nicotinamide Riboside Supplementation in Long Covid",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 310,
+   "status": "COMPLETED",
+   "start": "2023-01-30",
+   "has_results": false,
+   "conditions": [
+    "Long COVID"
+   ],
+   "sponsor": "University Hospital, Akershus",
+   "primary_outcomes": [
+    "Health-related quality of life"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR)  4 capsules (a total of 1000 mg) 2 times daily for 84 days"
+   ]
+  },
+  {
+   "nct": "NCT06214468",
+   "title": "Protective Effect of Nicotinamide Riboside Against Acetaminophen Toxicity",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "NON_RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": false,
+   "enrollment": 26,
+   "status": "COMPLETED",
+   "start": "2024-01-15",
+   "has_results": false,
+   "conditions": [
+    "Drug Toxicity"
+   ],
+   "sponsor": "University of South Alabama",
+   "primary_outcomes": [
+    "Count the quantity of NAD(P)(H) present with exposure to acetaminophen, with and without NR",
+    "Count the DNA damage occurring upon space-like stressors following exposure to acetaminophen, with and without NR",
+    "Count the quantity of ox-NAD(P) present with exposure to acetaminophen, with and without NR",
+    "Count the quantity of PYR-ribosides present with exposure to acetaminophen, with and without NR",
+    "Count the quantity of PYR-nucleotides present with exposure to acetaminophen, with and without NR"
+   ],
+   "intervention_text": [
+    "Acetaminophen and Nicotinamide Riboside Tylenol and Vitamin B3 Collection of urine at different time intervals following ingestion of Tylenol plus Nicotinamide Riboside"
+   ]
+  },
+  {
+   "nct": "NCT02812238",
+   "title": "Study to Evaluate the Effect of Nicotinamide Riboside on Immunity",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 38,
+   "status": "COMPLETED",
+   "start": "2016-06-23",
+   "has_results": true,
+   "conditions": [
+    "Atherosclerosis",
+    "Diabetes",
+    "Coronary Artery Disease"
+   ],
+   "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
+   "primary_outcomes": [
+    "Mean IL-1 Beta Release From Peripheral Blood Mononuclear Cells During Refeeding After 24 Hour Fast"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside (NR)  NR at dose of 1000mg/day will be given for a period of 7 days in a double blinded fashion either from the start of tx or after 1 week of placebo pills."
+   ]
+  },
+  {
+   "nct": "NCT06044935",
+   "title": "Effect of Nicotinamide Riboside on Ketosis, Fat Oxidation & Metabolic Rate",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 100,
+   "status": "RECRUITING",
+   "start": "2024-01-08",
+   "has_results": false,
+   "conditions": [
+    "Overweight",
+    "Obesity"
+   ],
+   "sponsor": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+   "primary_outcomes": [
+    "Mean change in sleeping energy expenditure between the ketogenic diet and the baseline run-in diet",
+    "Mean difference in sleeping energy expenditure between NR and placebo during the ketogenic diet"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  Subjects without MODY2 will take either placebo or NR (1 g BID, 2 g per day total) supplements for 7 days during this Run-in phase"
+   ]
+  },
+  {
+   "nct": "NCT05593939",
+   "title": "Slow Age: Interventions to Slow Aging in Humans",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 80,
+   "status": "COMPLETED",
+   "start": "2022-05-01",
+   "has_results": false,
+   "conditions": [
+    "Aging"
+   ],
+   "sponsor": "University of Copenhagen",
+   "primary_outcomes": [
+    "Interleukin-6 levels in plasma"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  Participants randomized to the NR group will be instructed to take the administered tablets once in the morning (1 g) and once in the evening (1 g), in both cases with a meal."
+   ]
+  },
+  {
+   "nct": "NCT05095571",
+   "title": "A Trial of Nicotinamide/Pterostilbene Supplement in ALS: The NO-ALS Extension Study",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 300,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2021-10-07",
+   "has_results": false,
+   "conditions": [
+    "Amyotrophic Lateral Sclerosis"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "Incidence of adverse events"
+   ],
+   "intervention_text": [
+    "EH301 (Nicotinamide Riboside/Pterostilbene)  For this study EH301 is defined as Investigational Product(s) (IP). The ALS extension study is an open label study with active treatment of all patients thet have passed through the NO-ALS trial."
+   ]
+  },
+  {
+   "nct": "NCT07839130",
+   "title": "PEDIatric Cardiac Dysfunction Treated With Injectable Nicotinamide Adenine Dinucleotide",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "IV",
+    "injection",
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 180,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-10-01",
+   "has_results": false,
+   "conditions": [
+    "Cardiac Dysfunction"
+   ],
+   "sponsor": "Beijing Children's Hospital",
+   "primary_outcomes": [
+    "Change in Left Ventricular Ejection Fraction (LVEF) from Baseline to 4 Weeks"
+   ],
+   "intervention_text": [
+    "Nicotinamide Adenine Dinucleotide Coenzyme I NAD⁺ Powder for injection, supplied as 5 mg/vial. Administered intravenously once daily for 7 consecutive days at a dose of either 2 mg/kg/day (maximum 100 mg) or 4 mg/kg/day (maximum 200 mg), diluted with normal saline to a concentration of 1.6 mg/mL. Ea"
+   ]
+  },
+  {
+   "nct": "NCT05344404",
+   "title": "NR-SAFE: Safety of High-dose Nicotinamide Riboside (NR) in Parkinson's Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 20,
+   "status": "COMPLETED",
+   "start": "2022-04-29",
+   "has_results": false,
+   "conditions": [
+    "Parkinson Disease"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "Incidence of treatment-associated moderate and severe adverse events (AEs)."
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside Niagen NR 3000mg total daily. Administered in capsule form in doses of 1500mg twice daily for the duration of the trial (4 weeks)."
+   ]
+  },
+  {
+   "nct": "NCT04809974",
+   "title": "Clinical Trial of Niagen to Examine Recovery in People With Persistent Cognitive and Physical Symptoms After COVID-19",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 72,
+   "status": "COMPLETED",
+   "start": "2021-08-28",
+   "has_results": true,
+   "conditions": [
+    "Covid19",
+    "Sequelae of; Infection",
+    "Cognitive Symptom"
+   ],
+   "sponsor": "Massachusetts General Hospital",
+   "primary_outcomes": [
+    "Effect of Niagen on NAD+ and Cognitive Functioning"
+   ],
+   "intervention_text": [
+    "Niagen Nicotinamide Riboside TruNiagen Vitamin B3 The intervention consists of taking Niagen and completing all tasks divided into 6 visits."
+   ]
+  },
+  {
+   "nct": "NCT07741071",
+   "title": "N-AD: Orally Administered Nicotinamide Riboside Over Two Years as a Potential Disease Modifying Treatment for Alzheimer's Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 270,
+   "status": "RECRUITING",
+   "start": "2026-08-26",
+   "has_results": false,
+   "conditions": [
+    "Alzheimer Disease (AD)"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "Disease severity assessed by the Clinical Dementia Rating scale (CDR) sum of boxes."
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR) NR TruNiagen Nicotinamide Riboside 1000mg administered two times a day. Given as capsules. Duration of the trial; 104 weeks."
+   ]
+  },
+  {
+   "nct": "NCT03423342",
+   "title": "Nicotinamide Riboside in Systolic Heart Failure",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 30,
+   "status": "COMPLETED",
+   "start": "2016-05-19",
+   "has_results": true,
+   "conditions": [
+    "Heart Failure, Systolic"
+   ],
+   "sponsor": "University of Washington",
+   "primary_outcomes": [
+    "Incidence of Treatment-Emergent Adverse Events (Safety and Tolerability)"
+   ],
+   "intervention_text": [
+    "nicotinamide riboside Niagen nicotinamide riboside capsule"
+   ]
+  },
+  {
+   "nct": "NCT03754842",
+   "title": "Effect of Nicotinamide Riboside and Pterostilbene Supplementation on Muscle Regeneration in Elderly Humans",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 32,
+   "status": "COMPLETED",
+   "start": "2019-02-12",
+   "has_results": false,
+   "conditions": [
+    "Muscle Injury"
+   ],
+   "sponsor": "University of Aarhus",
+   "primary_outcomes": [
+    "Presence of Satellite Cells"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside/Pterostilbene (500 mg/100 mg twice daily)  Elysium Basis TM, Elysium Health, Inc., NY, USA"
+   ]
+  },
+  {
+   "nct": "NCT07414212",
+   "title": "Evaluation of the Combined Therapy of EH-301 and N-acetylcysteine Together With Riluzole in Amyotrophic Lateral Sclerosis (ALS)",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 90,
+   "status": "RECRUITING",
+   "start": "2025-11-25",
+   "has_results": false,
+   "conditions": [
+    "Amyotrophic Lateral Sclerosis"
+   ],
+   "sponsor": "Biogipuzkoa Health Research Institute",
+   "primary_outcomes": [
+    "ALSFRS-R scale"
+   ],
+   "intervention_text": [
+    "EH301 Nicotinamide riboside and pterostilbene Daily dose of 1800mg of capsules"
+   ]
+  },
+  {
+   "nct": "NCT06919328",
+   "title": "Absorption and Tolerability of Injectable Administration of Niagen®+, as Compared to NAD+",
+   "agents": [
+    "NAD+",
+    "NR"
+   ],
+   "routes": [
+    "IV",
+    "injection"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 70,
+   "status": "RECRUITING",
+   "start": "2024-10-31",
+   "has_results": false,
+   "conditions": [
+    "Healthy Aging"
+   ],
+   "sponsor": "Nutraceuticals Research Institute",
+   "primary_outcomes": [
+    "McGill Pain Questionnaire",
+    "Subjective Discomfort"
+   ],
+   "intervention_text": [
+    "Niagen®  nicotinamide riboside",
+    "NAD+  Nicotinamide adenine dinucleotide"
+   ]
+  },
+  {
+   "nct": "NCT05305677",
+   "title": "Effect of NMN (Nicotinamide Mononucleotide) on Polycystic Ovary Syndrome",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 88,
+   "status": "COMPLETED",
+   "start": "2022-06-01",
+   "has_results": false,
+   "conditions": [
+    "Polycystic Ovary Syndrome"
+   ],
+   "sponsor": "Peking University Third Hospital",
+   "primary_outcomes": [
+    "Testosterone level",
+    "Antral follicle counts",
+    "Menstrual cycle"
+   ],
+   "intervention_text": [
+    "NMN intervention  NMN capsules (total of 600mg/day) for 8 weeks"
+   ]
+  },
+  {
+   "nct": "NCT03951285",
+   "title": "Nicotinamide Riboside and Mitochondrial Metabolism",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NON_RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": true,
+   "enrollment": 56,
+   "status": "COMPLETED",
+   "start": "2016-05-25",
+   "has_results": false,
+   "conditions": [
+    "Obesity"
+   ],
+   "sponsor": "Helsinki University Central Hospital",
+   "primary_outcomes": [
+    "Mitochondrial biogenesis - mitochondrial DNA quantification",
+    "Mitochondrial biogenesis - mitochondria-related mRNA expression",
+    "Mitochondrial biogenesis - electron microscopy"
+   ],
+   "intervention_text": [
+    "NR in BMI-discordant twins Niagen Nicotinamide riboside Water-soluble form of vitamin B3, nicotinamide riboside (NR) is used in this study. The NR product name is Niagen, produced by ChromaDex. NR does not cause the known side effects (vasodilation and flushing) of another vitamin B3, niacin.",
+    "NR in BMI-concordant twins Niagen Water-soluble form of vitamin B3, nicotinamide riboside (NR) is used in this study. The NR product name is Niagen, produced by ChromaDex. NR does not cause the known side effects (vasodilation and flushing) of another vitamin B3, niacin."
+   ]
+  },
+  {
+   "nct": "NCT04903210",
+   "title": "Nicotinamide Mononucleotide in Hypertensive Patients",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "SINGLE",
+   "placebo_arm": false,
+   "enrollment": 20,
+   "status": "UNKNOWN",
+   "start": "2021-06-01",
+   "has_results": false,
+   "conditions": [
+    "Hypertension"
+   ],
+   "sponsor": "First Affiliated Hospital, Sun Yat-Sen University",
+   "primary_outcomes": [
+    "Effect of NMN on flow mediated dilation (FMD)",
+    "Effect of NMN on brachial-ankle pulse wave velocity (baPWV)"
+   ],
+   "intervention_text": [
+    "Nicotinamide mononucleotide supplied as 400mg capsule  NMN10000 WRIGHT LIFE® + lifestyle modification NMN10000 WRIGHT LIFE®: 800mg, qd, for two months. Lifestyle modification: intake 1400-1600 kcal/day: 54% carbohydrates, 24% proteins, 22% lipids, 108 mg cholesterol, 35 g fiber; avoid smoking and al"
+   ]
+  },
+  {
+   "nct": "NCT06214078",
+   "title": "Preliminary Clinical Study of NMN Intervention in Mild Ulcerative Colitis",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 48,
+   "status": "UNKNOWN",
+   "start": "2024-02-01",
+   "has_results": false,
+   "conditions": [
+    "Ulcerative Colitis Chronic Mild"
+   ],
+   "sponsor": "The Third Xiangya Hospital of Central South University",
+   "primary_outcomes": [
+    "Clinical response rate"
+   ],
+   "intervention_text": [
+    "nicotinamide mononucleotide  Nicotinamide mononucleotide (NMN), a bioactive substance found in a variety of foods, is a precursor for the synthesis of nicotinamide adenine dinucleotide (NAD+). NAD+ plays a crucial role in a variety of biological processes including cell death, senescence, gene expre"
+   ]
+  },
+  {
+   "nct": "NCT03151707",
+   "title": "The Effects of Nicotinamide Riboside Supplementation on Brain NAD+/NADH Ratio and Bioenergetics",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 11,
+   "status": "TERMINATED",
+   "start": "2017-10-01",
+   "has_results": true,
+   "conditions": [
+    "Healthy"
+   ],
+   "sponsor": "Mclean Hospital",
+   "primary_outcomes": [
+    "Change From Baseline to the End of Treatment in Brain NAD+/NADH Ratio"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  Nicotinamide riboside 2g/day for a 2 week duration"
+   ]
+  },
+  {
+   "nct": "NCT04192136",
+   "title": "NAD+ and Exercise in FA",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 75,
+   "status": "COMPLETED",
+   "start": "2020-09-03",
+   "has_results": true,
+   "conditions": [
+    "Friedreich Ataxia 1"
+   ],
+   "sponsor": "Children's Hospital of Philadelphia",
+   "primary_outcomes": [
+    "Within-Participant Change in Peak V02 (Maximal Oxygen Uptake on Cardiopulmonary Exercise Testing)"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  Investigators will use (Good Manufacturing Process) GMP-grade 300 mg capsules of the dietary supplement nicotinamide riboside (ChromaDex, Irvine CA).\n\nNR is distributed by ChromaDex, Inc., Irvine, CA. NR is available as 300 mg capsules.\n\nThe dietary supplement will be re-label"
+   ]
+  },
+  {
+   "nct": "NCT05698771",
+   "title": "NAD-brain: a Pharmacokinetic Study of NAD Replenishment Therapy",
+   "agents": [
+    "NMN",
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "NON_RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 12,
+   "status": "COMPLETED",
+   "start": "2022-09-17",
+   "has_results": false,
+   "conditions": [
+    "Healthy"
+   ],
+   "sponsor": "Haukeland University Hospital",
+   "primary_outcomes": [
+    "NAD metabolism"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (NR) NR Stage-1 Healthy The NAD-brain study will perform a parallel assessment of NAD replenishment therapy (NRT) pharmacokinetics in the blood and brain of healthy human subjects . A total of 6 healthy individuals (3 men and 3 women) will undergo repeated blood sampling and 31",
+    "nicotinamide mononucleotide NMN Stage-1 Healthy The NAD-brain study will perform a parallel assessment of NAD replenishment therapy (NRT) pharmacokinetics in the blood and brain of healthy human subjects. A total of 6 healthy individuals (3 men and 3 women) will undergo repeated blood sampling and 3",
+    "Nicotinamide Riboside (NR) NR Stage-2 Healthy A total of n=6 healthy individuals (3 men and 3 women) will receive NR 1200 mg per day for 4 weeks, followed by 3 weeks of washout. The individuals will undergo repeated blood sampling and 31P-MRS brain scans once per week during the 7 weeks period, Bloo",
+    "Nicotinamide Riboside (NR) NR Stage-2, Parkinson's disease A total of n=6 individuals with Parkinson's disease (3 men and 3 women) will receive NR 1200 mg per day for 4 weeks, followed by 3 weeks of washout. The individuals will undergo repeated blood sampling and 31P-MRS brain scans once per week d"
+   ]
+  },
+  {
+   "nct": "NCT02835664",
+   "title": "Nicotinamide Riboside and Metabolic Health",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 15,
+   "status": "COMPLETED",
+   "start": "2016-12",
+   "has_results": false,
+   "conditions": [
+    "Obesity",
+    "Insulin Resistance"
+   ],
+   "sponsor": "Maastricht University Medical Center",
+   "primary_outcomes": [
+    "Insulin sensitivity: muscle- and liver specific"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside (Niagen)  "
+   ]
+  },
+  {
+   "nct": "NCT05849519",
+   "title": "Small Sample，Unicentric，Randomized, Controlled Clinical Study of Coenzyme I for Injection in the Treatment of Sudden Sensorineural Hearing Loss",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "injection"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "SINGLE",
+   "placebo_arm": false,
+   "enrollment": 36,
+   "status": "UNKNOWN",
+   "start": "2022-02-16",
+   "has_results": false,
+   "conditions": [
+    "Sudden Sensorineural Hearing Loss"
+   ],
+   "sponsor": "Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University",
+   "primary_outcomes": [
+    "Pure Tone Average(PTA)",
+    "Pure Tone Average(PTA)",
+    "Pure Tone Average(PTA)",
+    "Pure Tone Average(PTA)",
+    "Pure Tone Average(PTA)",
+    "Pure Tone Average(PTA)"
+   ],
+   "intervention_text": [
+    "Coenzyme I for Injection + conventional treatment  The intervention group used Coenzyme I for injection and conventional treatment for 7 consecutive days"
+   ]
+  },
+  {
+   "nct": "NCT04407390",
+   "title": "Effects of Nicotinamide Riboside on the Clinical Outcome of Covid-19 in the Elderly",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 0,
+   "status": "WITHDRAWN",
+   "start": "2020-06-01",
+   "has_results": false,
+   "conditions": [
+    "COVID"
+   ],
+   "sponsor": "University of Copenhagen",
+   "primary_outcomes": [
+    "Hypoxic respiratory failure",
+    "Hypoxic respiratory failure",
+    "Hypoxic respiratory failure",
+    "Hypoxic respiratory failure"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside  The patients will receive 1 g of nicotinamide riboside or placebo orally every morning for 14 days."
+   ]
+  },
+  {
+   "nct": "NCT04664361",
+   "title": "Effect of NMN on Muscle Recovery and Physical Capacity in Healthy Volunteers With Moderate Physical Activity",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 131,
+   "status": "COMPLETED",
+   "start": "2021-03-09",
+   "has_results": false,
+   "conditions": [
+    "Physical Activity",
+    "Muscle Recovery"
+   ],
+   "sponsor": "Seneque SA",
+   "primary_outcomes": [
+    "Evolution of muscle recovery"
+   ],
+   "intervention_text": [
+    "Nicotinamide mononucleotide  Daily supplementation with NMN at 250 and 500 mg for 38 days in total"
+   ]
+  },
+  {
+   "nct": "NCT06005350",
+   "title": "Nicotinamide Riboside Impact on Extracellular Nicotinamide Adenine Dinucleotide (NAD+)",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 54,
+   "status": "UNKNOWN",
+   "start": "2023-11-01",
+   "has_results": false,
+   "conditions": [
+    "NAD"
+   ],
+   "sponsor": "Charite University, Berlin, Germany",
+   "primary_outcomes": [
+    "NR increases plasma concentrations of eNAD+"
+   ],
+   "intervention_text": [
+    "Niagen  Nicotinamide-Riboside-Chloride Preparation 1000mg/day"
+   ]
+  },
+  {
+   "nct": "NCT06966583",
+   "title": "NAD+ Supplement（NMN）With Radioimmunotherapy in Advanced NSCLC",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 20,
+   "status": "NOT_YET_RECRUITING",
+   "start": "2025-05-01",
+   "has_results": false,
+   "conditions": [
+    "Solid Tumor",
+    "Non Small Cell Lung Cancer"
+   ],
+   "sponsor": "Sichuan University",
+   "primary_outcomes": [
+    "Number of Participants With Adverse Events and/or Dose Limiting Toxicities of NMN supplements in RT+ICI treatment"
+   ],
+   "intervention_text": [
+    "NAD supplement NMN NAD supplement NMN：NMN12000 GeneHarbor"
+   ]
+  },
+  {
+   "nct": "NCT05243290",
+   "title": "Nicotinamide Riboside Clinical Trial for GWI",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 52,
+   "status": "RECRUITING",
+   "start": "2022-04-13",
+   "has_results": false,
+   "conditions": [
+    "Gulf War Illness"
+   ],
+   "sponsor": "Roskamp Institute Inc.",
+   "primary_outcomes": [
+    "Changes in plasma NAD+ levels"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  The product under investigation, Nicotinamide riboside (NR), is a naturally occurring NAD+ precursor and a member of the vitamin B3 family."
+   ]
+  },
+  {
+   "nct": "NCT07024966",
+   "title": "Effect of the Combination of Pterostilbene Cocrystal With Silybin and Nicotinamide Riboside on Exercise-Induced Oxidative Stress",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 14,
+   "status": "RECRUITING",
+   "start": "2025-08-01",
+   "has_results": false,
+   "conditions": [
+    "Oxidative Stress",
+    "Physical Activity",
+    "Antioxidant Effect"
+   ],
+   "sponsor": "Fundació Eurecat",
+   "primary_outcomes": [
+    "Malondialdehyde (MDA) plasma levels"
+   ],
+   "intervention_text": [
+    "Pterostilbene-silybin-nicotinamide riboside  Participants will take 2 sachets, each containing 340 mg of ccPT, silybin and nicotinamide riboside, and 1.91 g of excipients."
+   ]
+  },
+  {
+   "nct": "NCT07144527",
+   "title": "Nicotinamide Mononucleotide Supplementation for Exercise Tolerance Improvement in Healthy Older Adults",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "placebo_arm": true,
+   "enrollment": 40,
+   "status": "RECRUITING",
+   "start": "2026-02-21",
+   "has_results": false,
+   "conditions": [
+    "Aging",
+    "Frailty",
+    "Exercise Tolerance",
+    "Healthy Male and Female Subjects"
+   ],
+   "sponsor": "Scott Silveira",
+   "primary_outcomes": [
+    "Time to Fatigue During Constant Work Rate Cycle Ergometry (tLIM)."
+   ],
+   "intervention_text": [
+    "NMN and TMG (Euexia)  Formulation containing NMN and TMG.",
+    "Nicotinamide Mononucleotide (NMN)  Conventional NMN supplement."
+   ]
+  },
+  {
+   "nct": "NCT04430517",
+   "title": "Effects of Nicotinamide Riboside on Bioenergetics and Oxidative Stress in Mild Cognitive Impairment/Alzheimer's Dementia",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 21,
+   "status": "COMPLETED",
+   "start": "2022-03-02",
+   "has_results": false,
+   "conditions": [
+    "Mild Cognitive Impairment",
+    "Mild Alzheimer Disease"
+   ],
+   "sponsor": "Mclean Hospital",
+   "primary_outcomes": [
+    "Changes in brain NAD+",
+    "Changes in brain redox state"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside Chromadex NIAGEN Participants will take 4 pills every day, each containing 250 mg NR (NIAGEN® by Chromadex; www.chromadex.com), via the oral route, for 12 weeks."
+   ]
+  },
+  {
+   "nct": "NCT03579693",
+   "title": "Trial of Nicotinamide Riboside and Co-enzyme Q10 in Chronic Kidney Disease",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 26,
+   "status": "COMPLETED",
+   "start": "2018-11-14",
+   "has_results": true,
+   "conditions": [
+    "Chronic Kidney Disease",
+    "Sarcopenia",
+    "Frailty"
+   ],
+   "sponsor": "University of Washington",
+   "primary_outcomes": [
+    "Maximal Aerobic Capacity- CoQ10",
+    "Work Efficiency"
+   ],
+   "intervention_text": [
+    "Nicotinamide riboside NR NR tablet"
+   ]
+  },
+  {
+   "nct": "NCT03818802",
+   "title": "Effects of Vitamin B3 Derivative Nicotinamide Riboside (NR) in Bone, Skeletal Muscle and Metabolic Functions in Aging",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "placebo_arm": true,
+   "enrollment": 53,
+   "status": "COMPLETED",
+   "start": "2019-09-16",
+   "has_results": false,
+   "conditions": [
+    "Healthy Elderly Volunteers"
+   ],
+   "sponsor": "Mayo Clinic",
+   "primary_outcomes": [
+    "Maximal oxygen uptake (VO2 max) test",
+    "Skeletal muscle function",
+    "Short Physical Performance Battery (SPPB)",
+    "Respiration rate on muscle biopsy samples",
+    "PCR on muscle biopsy samples",
+    "Immunoblot on muscle biopsy samples",
+    "Bone metabolism"
+   ],
+   "intervention_text": [
+    "Nicotinamide Riboside  It will be administered a total of 1000 mg/day of NR in a regimen of 500mg every 12 hours by mouth for 4.5 months. After 4.5 months, an advanced individual training (AIT) will be implemented in addition to administration of 1000mg/day (500mg every 12 hours) for 6 weeks more, c"
+   ]
+  },
+  {
+   "nct": "NCT04870866",
+   "title": "NAD Supplementation to Prevent Progressive Neurological Disease in Ataxia Telangiectasia",
+   "agents": [
+    "NR"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 13,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2019-06-05",
+   "has_results": false,
+   "conditions": [
+    "Ataxia Telangiectasia"
+   ],
+   "sponsor": "University Hospital, Akershus",
+   "primary_outcomes": [
+    "NAD metabolome"
+   ],
+   "intervention_text": [
+    "Nicotinamide ribonucleoside Niagen Two year intervention"
+   ]
+  },
+  {
+   "nct": "NCT07132801",
+   "title": "Comparison of Three Qualia NAD⁺ Formulations on Intracellular NAD⁺ Levels",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NON_RANDOMIZED",
+   "masking": "TRIPLE",
+   "placebo_arm": true,
+   "enrollment": 76,
+   "status": "COMPLETED",
+   "start": "2026-04-22",
+   "has_results": false,
+   "conditions": [
+    "NAD",
+    "NAD+ Levels in the Blood"
+   ],
+   "sponsor": "Qualia Life Sciences",
+   "primary_outcomes": [
+    "Between-group change in intracellular NAD⁺ levels"
+   ],
+   "intervention_text": [
+    "Qualia NAD⁺ version 1  Qualia NAD+ version 1 manufactured by Qualia Life Sciences",
+    "Qualia NAD⁺ version 2  Qualia NAD+ version 2 manufactured by Qualia Life Sciences",
+    "Qualia NAD⁺ version 3  Qualia NAD+ version 3 manufactured by Qualia Life Sciences"
+   ]
+  },
+  {
+   "nct": "NCT05984550",
+   "title": "The Exploratory Study on the Nicotinamide Mononucleotide (Vital NAD ) to Promote the Rejuvenation of the Peripheral Blood Immune Cells of Adults.",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 10,
+   "status": "UNKNOWN",
+   "start": "2023-08",
+   "has_results": false,
+   "conditions": [
+    "Enhance Immune Function"
+   ],
+   "sponsor": "Shanghai Cell Therapy Group Co.,Ltd",
+   "primary_outcomes": [
+    "Changes in Nicotinamide mononucleotide (Vital NAD) in whole blood.",
+    "Changes in NAD+ and NADH concentrations in whole blood.",
+    "The change of Blood cell indicators TBNK cells of the healthy adults at the points before and after intervention.",
+    "The change of Blood biochemical indicators of the healthy adults at the points before and after intervention.",
+    "The change of Peripheral blood immune T cells phenotype of the healthy adults at baseline.",
+    "The change of Tnaïve, Tscm, Tcm and Tem in peripheral blood of the healthy adults at the points before and after intervention.",
+    "The change of SITR1 expression in immune cells of peripheral blood at the points before and after intervention."
+   ],
+   "intervention_text": [
+    "NMN Nicotinamide mononucleotide NMN (Nicotinamide Mononucleotide) is a naturally occurring bioactive nucleotide with the full name of Nicotinamide mononucleotide. Its structure can be divided into α and β Two isomers, of which only β- NMN is a naturally occurring form with biological activity.\n\nIn h"
+   ]
+  },
+  {
+   "nct": "NCT06627868",
+   "title": "Nicotinamide Adenine Dinucleotide (NAD+) Metabolism in Human Brown Adipose Tissue",
+   "agents": [
+    "NAD+"
+   ],
+   "routes": [
+    "oral"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "placebo_arm": true,
+   "enrollment": 68,
+   "status": "RECRUITING",
+   "start": "2024-11-20",
+   "has_results": false,
+   "conditions": [
+    "Obesity, Abdominal"
+   ],
+   "sponsor": "University of Turku",
+   "primary_outcomes": [
+    "Whole-body Insulin Sensitivity"
+   ],
+   "intervention_text": [
+    "NAD+ precursor  NAD+ precursor supplementation (Nicotinamide, Nicotinamide Riboside, or Nicotinamide Mononucleotide)"
+   ]
+  },
+  {
+   "nct": "NCT04862338",
+   "title": "Pharmacodynamics and Tolerance of Nicotinamide Mononucleotide (NMN, 400mg/Day) in Healthy Adults",
+   "agents": [
+    "NMN"
+   ],
+   "routes": [
+    "unclear"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "NA",
+   "masking": "NONE",
+   "placebo_arm": false,
+   "enrollment": 17,
+   "status": "COMPLETED",
+   "start": "2021-04-26",
+   "has_results": false,
+   "conditions": [
+    "Healthy Volunteers"
+   ],
+   "sponsor": "Seneque SA",
+   "primary_outcomes": [
+    "Change from baseline in NAD+ concentrations in whole blood"
+   ],
+   "intervention_text": [
+    "Nicotinamide mononucleotide (NMN-C)  Nicotinamide mononucleotide (NMN-C) at 400 mg/day for 28 days in total"
+   ]
+  }
+ ]
+}
