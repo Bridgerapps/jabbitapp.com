@@ -1,0 +1,1416 @@
+{
+ "query": "(\"KPV\"[tiab] AND (peptide[tiab] OR tripeptide[tiab] OR melanocortin*[tiab] OR \"alpha-MSH\"[tiab] OR \"α-MSH\"[tiab] OR MSH[tiab] OR inflammat*[tiab] OR colitis[tiab])) OR \"Lys-Pro-Val\"[tiab] OR \"lysine-proline-valine\"[tiab] OR \"MSH(11-13)\"[tiab] OR \"MSH 11-13\"[tiab] OR \"CKPV\"[tiab]",
+ "database": "PubMed (NCBI E-utilities esearch/esummary)",
+ "retrieved": "2026-10-17 (ET)",
+ "count": 140,
+ "note": "Jabbit check: no record carries a Clinical Trial publication type, and none we found reports giving KPV (Lys-Pro-Val) to a person. Several hits are off-topic abbreviation matches.",
+ "records": [
+  {
+   "pmid": "192338",
+   "year": "1976",
+   "title": "[Potentiation of in vitro lipolytic effect of ACTH by its fragment].",
+   "journal": "Biokhimiia",
+   "publication_types": [
+    "English Abstract",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "212233",
+   "year": "1976",
+   "title": "Hormone-receptor interactions. The message sequence of alpha-melanotropin: demonstration of two active sites.",
+   "journal": "Clin Endocrinol (Oxf)",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "208701",
+   "year": "1978",
+   "title": "Mechanism of alpha-melanotropin action.",
+   "journal": "Bull Schweiz Akad Med Wiss",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "229237",
+   "year": "1979",
+   "title": "Melanotropic peptides: presence in brain of normal and hypophysectomized rats, and subcellularly localized in synaptosomes.",
+   "journal": "J Neurosci Res",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "6281785",
+   "year": "1982",
+   "title": "[half-Cys4,half-Cys10]-alpha-Melanocyte-stimulating hormone: a cyclic alpha-melanotropin exhibiting superagonist biological activity.",
+   "journal": "Proc Natl Acad Sci U S A",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ]
+  },
+  {
+   "pmid": "7138848",
+   "year": "1982",
+   "title": "Largomycin: preparation, properties, and structure.",
+   "journal": "Biochemistry",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "6628384",
+   "year": "1983",
+   "title": "A comparison of the structure and activity of cat and trout muscle pyruvate kinases.",
+   "journal": "Eur J Biochem",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "6332195",
+   "year": "1984",
+   "title": "Cyclic melanotropins. 5. Importance of the C-terminal tripeptide (Lys-Pro-Val).",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "6333677",
+   "year": "1984",
+   "title": "Effect of alpha-MSH 11-13 (lysine-proline-valine) on fever in the rabbit.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "6465311",
+   "year": "1984",
+   "title": "Effects of catecholamines and ammonia on plasma and brain amino acids in dogs.",
+   "journal": "Am J Physiol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "6526885",
+   "year": "1984",
+   "title": "Reversed-phase high-performance liquid chromatography studies of alpha-MSH fragments.",
+   "journal": "J Chromatogr",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "3926756",
+   "year": "1985",
+   "title": "Amino acid sequence of a ferredoxin from thermoacidophilic archaebacterium, Sulfolobus acidocaldarius. Presence of an N6-monomethyllysine and phyletic consideration of archaebacteria.",
+   "journal": "J Biochem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "3566964",
+   "year": "1986",
+   "title": "Synthetic peptides as substrates for processing enzymes in the bovine pituitary.",
+   "journal": "Biochem Cell Biol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "3948298",
+   "year": "1986",
+   "title": "Antitumor action of N-(2-chloroethyl)-N-nitrosocarbamoyl derivatives of biologically active polypeptide hormone fragments.",
+   "journal": "Cancer Chemother Pharmacol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "2822931",
+   "year": "1987",
+   "title": "alpha-Melanotropin: the minimal active sequence in the frog skin bioassay.",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "2854626",
+   "year": "1988",
+   "title": "Antipyretic properties of centrally administered alpha-MSH fragments in the rabbit.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "2535874",
+   "year": "1989",
+   "title": "Design of potent linear alpha-melanotropin 4-10 analogues modified in positions 5 and 10.",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "2537778",
+   "year": "1989",
+   "title": "Alpha-melanotropin: the minimal active sequence in the lizard skin bioassay.",
+   "journal": "Gen Comp Endocrinol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "2550304",
+   "year": "1989",
+   "title": "Antiinflammatory activity of a COOH-terminal fragment of the neuropeptide alpha-MSH.",
+   "journal": "FASEB J",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "2552247",
+   "year": "1989",
+   "title": "Melanin concentrating hormone. V. Isolation and characterization of alpha-melanocyte-stimulating hormone from frog pituitary glands.",
+   "journal": "Life Sci",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "2555512",
+   "year": "1989",
+   "title": "Potent and prolonged acting cyclic lactam analogues of alpha-melanotropin: design based on molecular dynamics.",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "2557603",
+   "year": "1989",
+   "title": "Linear and cyclic alpha-melanotropin [4-10]-fragment analogues that exhibit superpotency and residual activity.",
+   "journal": "Pigment Cell Res",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "2562482",
+   "year": "1989",
+   "title": "Discovery and structure-activity relationships of novel alpha-melanocyte-stimulating hormone inhibitors.",
+   "journal": "Pept Res",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "2284205",
+   "year": "1990",
+   "title": "Alpha-MSH peptides inhibit acute inflammation and contact sensitivity.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "2296031",
+   "year": "1990",
+   "title": "Synthesis of peptidyl fluoromethyl ketones and peptidyl alpha-keto esters as inhibitors of porcine pancreatic elastase, human neutrophil elastase, and rat and human neutrophil cathepsin G.",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "1652532",
+   "year": "1991",
+   "title": "Characterization of chicken ACTH and alpha-MSH: the primary sequence of chicken ACTH is more similar to Xenopus ACTH than to other avian ACTH.",
+   "journal": "Gen Comp Endocrinol",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "1667689",
+   "year": "1991",
+   "title": "Detection of a novel sequence change in the major form of alpha-MSH isolated from the intermediate pituitary of the reptile, Anolis carolinensis.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "1788140",
+   "year": "1991",
+   "title": "Anti-inflammatory activity of alpha-MSH(11-13) analogs: influences of alteration in stereochemistry.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "1846217",
+   "year": "1991",
+   "title": "Purification and N-terminal amino acid sequence of the Ah receptor from the C57BL/6J mouse.",
+   "journal": "Mol Pharmacol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "1325196",
+   "year": "1992",
+   "title": "Alpha-MSH peptides inhibit acute inflammation induced in mice by rIL-1 beta, rIL-6, rTNF-alpha and endogenous pyrogen but not that caused by LTB4, PAF and rIL-8.",
+   "journal": "Cytokine",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "1327383",
+   "year": "1992",
+   "title": "Peripheral analgesic activities of peptides related to alpha-melanocyte stimulating hormone and interleukin-1 beta 193-195.",
+   "journal": "Br J Pharmacol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "1330615",
+   "year": "1992",
+   "title": "Carboxyl-terminal tripeptide of alpha-melanocyte-stimulating hormone antagonizes interleukin-1-induced anorexia.",
+   "journal": "Eur J Pharmacol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "1331655",
+   "year": "1992",
+   "title": "Isolation and structural characterization of peptides related to alpha- and gamma-melanocyte-stimulating hormone (MSH) from the frog brain.",
+   "journal": "Brain Res Mol Brain Res",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "8387184",
+   "year": "1993",
+   "title": "The dipeptide Lys-Pro attenuates interleukin-1 beta-induced anorexia.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "8397057",
+   "year": "1993",
+   "title": "Inhibition of IL-1 beta-induced peripheral inflammation by peripheral and central administration of analogs of the neuropeptide alpha-MSH.",
+   "journal": "Brain Res Bull",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "7489322",
+   "year": "1994",
+   "title": "Binding of anti-inflammatory alpha-melanocyte-stimulating-hormone peptides and proinflammatory cytokines to receptors on melanoma cells.",
+   "journal": "Neuroimmunomodulation",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "7961978",
+   "year": "1994",
+   "title": "Discovery and structure-function analysis of alpha-melanocyte-stimulating hormone antagonists.",
+   "journal": "J Biol Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "8063713",
+   "year": "1994",
+   "title": "Design and characterization of a fluorogenic substrate selectively hydrolyzed by stromelysin 1 (matrix metalloproteinase-3).",
+   "journal": "J Biol Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "8127402",
+   "year": "1994",
+   "title": "Central neurogenic antiinflammatory action of alpha-MSH: modulation of peripheral inflammation induced by cytokines and other mediators of inflammation.",
+   "journal": "Neuroendocrinology",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "8158274",
+   "year": "1994",
+   "title": "Antiinflammatory influences of alpha-MSH molecules: central neurogenic and peripheral actions.",
+   "journal": "J Neurosci",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "7479291",
+   "year": "1995",
+   "title": "Alpha-melanocyte-stimulating hormone (MSH) inhibits insulin secretion in HIT-T 15 cells.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "7646430",
+   "year": "1995",
+   "title": "The role of cysteine in the alteration of bovine liver dihydrodiol dehydrogenase 3 activity.",
+   "journal": "Biochem J",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "8744698",
+   "year": "1995",
+   "title": "Influence of Lys-residue deletion on the immunomodulatory activity of peptides related to immunosuppressive region of lactoferrin.",
+   "journal": "Arch Immunol Ther Exp (Warsz)",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "8868139",
+   "year": "1995",
+   "title": "Immunomodulatory activity of disulphide bridged peptides related to lactoferrin immunosuppressive mini-domain.",
+   "journal": "Pol J Pharmacol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "9223008",
+   "year": "1995",
+   "title": "The immunosuppressive mini-domain of human lactoferrin.",
+   "journal": "J Pept Sci",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "8558511",
+   "year": "1996",
+   "title": "Characterizations of the unusual dissociation properties of melanotropin peptides from the melanocortin receptor, hMC1R.",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "8899819",
+   "year": "1996",
+   "title": "Truncation studies of alpha-melanotropin peptides identify tripeptide analogues exhibiting prolonged agonist bioactivity.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "9017363",
+   "year": "1996",
+   "title": "Three-dimensional molecular models of the hMC1R melanocortin receptor: complexes with melanotropin peptide agonists.",
+   "journal": "Drug Des Discov",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "9171884",
+   "year": "1997",
+   "title": "Biological and conformational examination of stereochemical modifications using the template melanotropin peptide, Ac-Nle-c[Asp-His-Phe-Arg-Trp-Ala-Lys]-NH2, on human melanocortin receptors.",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "9177840",
+   "year": "1997",
+   "title": "Synthesis and characterization of rhenium-complexed alpha-melanotropin analogs.",
+   "journal": "Bioconjug Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ]
+  },
+  {
+   "pmid": "9276019",
+   "year": "1997",
+   "title": "beta-Methylation of the Phe7 and Trp9 melanotropin side chain pharmacophores affects ligand-receptor interactions and prolonged biological activity.",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "9357059",
+   "year": "1997",
+   "title": "Selectivity of cyclic [D-Nal7] and [D-Phe7] substituted MSH analogues for the melanocortin receptor subtypes.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "9428733",
+   "year": "1997",
+   "title": "Highly increased levels of active stromelysin in rheumatoid synovial fluid determined by a selective fluorogenic assay.",
+   "journal": "FEBS Lett",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "12769869",
+   "year": "1998",
+   "title": "Parasitic castration of Pseudaletia separata by Cotesia kariyai and its association with polydnavirus gene expression.",
+   "journal": "J Insect Physiol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "9620667",
+   "year": "1998",
+   "title": "Melanocortin peptides inhibit production of proinflammatory cytokines and nitric oxide by activated microglia.",
+   "journal": "J Leukoc Biol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "9629264",
+   "year": "1998",
+   "title": "Mechanisms of antiinflammatory action of the neuroimmunomodulatory peptide alpha-MSH.",
+   "journal": "Ann N Y Acad Sci",
+   "publication_types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "9700761",
+   "year": "1998",
+   "title": "Melanocortin peptides inhibit production of proinflammatory cytokines in blood of HIV-infected patients.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "9730684",
+   "year": "1998",
+   "title": "Peptide modulation of inflammatory processes within the brain.",
+   "journal": "Neuroimmunomodulation",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S.",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "9799099",
+   "year": "1998",
+   "title": "Solution structures of the melanocyte-stimulating hormones by two-dimensional NMR spectroscopy and dynamical simulated-annealing calculations.",
+   "journal": "Eur J Biochem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "10486285",
+   "year": "1999",
+   "title": "Alpha-MSH peptides inhibit production of nitric oxide and tumor necrosis factor-alpha by microglial cells activated with beta-amyloid and interferon gamma.",
+   "journal": "Biochem Biophys Res Commun",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "10670585",
+   "year": "2000",
+   "title": "Antimicrobial effects of alpha-MSH peptides.",
+   "journal": "J Leukoc Biol",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "10821844",
+   "year": "2000",
+   "title": "Alpha-melanocyte-stimulating hormone reduces impact of proinflammatory cytokine and peroxide-generated oxidative stress on keratinocyte and melanoma cell lines.",
+   "journal": "J Biol Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "11073109",
+   "year": "2000",
+   "title": "Alpha-melanocyte-stimulating hormone peptides inhibit HIV-1 expression in chronically infected promonocytic U1 cells and in acutely infected monocytes.",
+   "journal": "J Leukoc Biol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "11268347",
+   "year": "2000",
+   "title": "The neuroimmunomodulatory peptide alpha-MSH.",
+   "journal": "Ann N Y Acad Sci",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S.",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "11268348",
+   "year": "2000",
+   "title": "The neuropeptide alpha-MSH in host defense.",
+   "journal": "Ann N Y Acad Sci",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S.",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "11239505",
+   "year": "2001",
+   "title": "Effects of melanocortin peptides on lipopolysaccharide/interferon-gamma-induced NF-kappaB DNA binding and nitric oxide production in macrophage-like RAW 264.7 cells: evidence for dual mechanisms of action.",
+   "journal": "Biochem Pharmacol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "11405661",
+   "year": "2001",
+   "title": "Characterization of melanocortin NDP-MSH agonist peptide fragments at the mouse central and peripheral melanocortin receptors.",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "11480545",
+   "year": "2001",
+   "title": "Conformational analysis of tripeptide Ac-Lys-Pro-Val-NH2, COOH-terminal sequence of alpha-MSH.",
+   "journal": "J Pharm Pharmacol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "11833422",
+   "year": "2001",
+   "title": "[Changes in aldosterone binding activity of kidney cytosol after stress in rats and the regulation].",
+   "journal": "Sheng Li Xue Bao",
+   "publication_types": [
+    "English Abstract",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "11990926",
+   "year": "2002",
+   "title": "Changes in glucocorticoid and mineralocorticoid receptors of liver and kidney cytosols after pathologic stress and its regulation in rats.",
+   "journal": "Crit Care Med",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "12052369",
+   "year": "2002",
+   "title": "Downregulation of glucocorticoid receptors of liver cytosols and the role of the inflammatory cytokines in pathological stress in scalded rats.",
+   "journal": "Burns",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "12063121",
+   "year": "2002",
+   "title": "Activity and conformation of a cyclic heptapeptide possessing the message sequence His-Phe-Arg-Trp of alpha-melanotropin.",
+   "journal": "Int J Biol Macromol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "12593664",
+   "year": "2003",
+   "title": "Novel alpha-melanocyte stimulating hormone peptide analogues with high candidacidal activity.",
+   "journal": "J Med Chem",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "12750433",
+   "year": "2003",
+   "title": "Dissection of the anti-inflammatory effect of the core and C-terminal (KPV) alpha-melanocyte-stimulating hormone peptides.",
+   "journal": "J Pharmacol Exp Ther",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "12851308",
+   "year": "2003",
+   "title": "New insights into the functions of alpha-MSH and related peptides in the immune system.",
+   "journal": "Ann N Y Acad Sci",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "12855000",
+   "year": "2003",
+   "title": "Evaluation of an imaging platform during the development of a FRET protease assay.",
+   "journal": "J Biomol Screen",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "12895656",
+   "year": "2003",
+   "title": "Effects of alpha-melanotropin C-terminal tripeptide analogues on macrophage NO production.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "14531843",
+   "year": "2003",
+   "title": "Extensive structure-activity studies of lactam derivatives of MT-II and SHU-9119: their activity and selectivity at human melanocortin receptors 3, 4, and 5.",
+   "journal": "J Pept Res",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "15127941",
+   "year": "2003",
+   "title": "Chimeric NDP-MSH and MTII melanocortin peptides with agouti-related protein (AGRP) Arg-Phe-Phe amino acids possess agonist melanocortin receptor activity.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ]
+  },
+  {
+   "pmid": "15102092",
+   "year": "2004",
+   "title": "alpha-Melanocyte-stimulating hormone, MSH 11-13 KPV and adrenocorticotropic hormone signalling in human keratinocyte cells.",
+   "journal": "J Invest Dermatol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "15946192",
+   "year": "2005",
+   "title": "Three-dimensional structure of the alpha-MSH-derived candidacidal peptide [Ac-CKPV]2.",
+   "journal": "J Pept Res",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "16274845",
+   "year": "2006",
+   "title": "Immobilized alpha-melanocyte stimulating hormone 10-13 (GKPV) inhibits tumor necrosis factor-alpha stimulated NF-kappaB activity.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "16413580",
+   "year": "2006",
+   "title": "Inhibitory effects of the peptide (CKPV)2 on endotoxin-induced host reactions.",
+   "journal": "J Surg Res",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "16965771",
+   "year": "2006",
+   "title": "Effects of the COOH-terminal tripeptide alpha-MSH(11-13) on corneal epithelial wound healing: role of nitric oxide.",
+   "journal": "Exp Eye Res",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "17040213",
+   "year": "2006",
+   "title": "New melanocortin 1 receptor binding motif based on the C-terminal sequence of alpha-melanocyte-stimulating hormone.",
+   "journal": "Basic Clin Pharmacol Toxicol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "17313459",
+   "year": "2007",
+   "title": "Structure-function relationships and conformational properties of alpha-MSH(6-13) analogues with candidacidal activity.",
+   "journal": "Chem Biol Drug Des",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "17376561",
+   "year": "2007",
+   "title": "Potent and selective agonists of alpha-melanotropin (alphaMSH) action at human melanocortin receptor 5; linear analogs of alpha-melanotropin.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "17850921",
+   "year": "2007",
+   "title": "The synthetic melanocortin (CKPV)2 exerts broad anti-inflammatory effects in human neutrophils.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "17934097",
+   "year": "2007",
+   "title": "alpha-MSH related peptides: a new class of anti-inflammatory and immunomodulating drugs.",
+   "journal": "Ann Rheum Dis",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "18061177",
+   "year": "2008",
+   "title": "PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation.",
+   "journal": "Gastroenterology",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural"
+   ]
+  },
+  {
+   "pmid": "18092346",
+   "year": "2008",
+   "title": "Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease.",
+   "journal": "Inflamm Bowel Dis",
+   "publication_types": [
+    "Comparative Study",
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "18346897",
+   "year": "2008",
+   "title": "Structure-antifungal activity relationship of His-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH2 and analogues.",
+   "journal": "Bioorg Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "18355945",
+   "year": "2008",
+   "title": "Anti-microbial action of melanocortin peptides and identification of a novel X-Pro-D/L-Val sequence in Gram-positive and Gram-negative bacteria.",
+   "journal": "Peptides",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "18612139",
+   "year": "2008",
+   "title": "Alpha-melanocyte-stimulating hormone and related tripeptides: biochemistry, antiinflammatory and protective effects in vitro and in vivo, and future perspectives for the treatment of immune-mediated inflammatory diseases.",
+   "journal": "Endocr Rev",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "19814819",
+   "year": "2009",
+   "title": "Melanocortin peptides inhibit urate crystal-induced activation of phagocytic cells.",
+   "journal": "Arthritis Res Ther",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "19909746",
+   "year": "2010",
+   "title": "Drug-loaded nanoparticles targeted to the colon with polysaccharide hydrogel reduce colitis in a mouse model.",
+   "journal": "Gastroenterology",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "21222263",
+   "year": "2010",
+   "title": "Terminal signal: anti-inflammatory effects of α-melanocyte-stimulating hormone related peptides beyond the pharmacophore.",
+   "journal": "Adv Exp Med Biol",
+   "publication_types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "21282427",
+   "year": "2011",
+   "title": "C-terminal amino acids of alpha-melanocyte-stimulating hormone are requisite for its antibacterial activity against Staphylococcus aureus.",
+   "journal": "Antimicrob Agents Chemother",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "21940174",
+   "year": "2011",
+   "title": "A sucrose-derived scaffold for multimerization of bioactive peptides.",
+   "journal": "Bioorg Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural"
+   ]
+  },
+  {
+   "pmid": "22178636",
+   "year": "2012",
+   "title": "Modulation of basophil activity: a novel function of the neuropeptide α-melanocyte-stimulating hormone.",
+   "journal": "J Allergy Clin Immunol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "22837805",
+   "year": "2012",
+   "title": "Inhibition of cellular and systemic inflammation cues in human bronchial epithelial cells by melanocortin-related peptides: mechanism of KPV action and a role for MC3R agonists.",
+   "journal": "Int J Physiol Pathophysiol Pharmacol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "23457491",
+   "year": "2013",
+   "title": "The synthetic melanocortin (CKPV)2 exerts anti-fungal and anti-inflammatory effects against Candida albicans vaginitis via inducing macrophage M2 polarization.",
+   "journal": "PLoS One",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "23890524",
+   "year": "2013",
+   "title": "Synthesis and characterization of time-resolved fluorescence probes for evaluation of competitive binding to melanocortin receptors.",
+   "journal": "Bioorg Med Chem",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural"
+   ]
+  },
+  {
+   "pmid": "23940690",
+   "year": "2013",
+   "title": "Single administration of tripeptide α-MSH(11-13) attenuates brain damage by reduced inflammation and apoptosis after experimental traumatic brain injury in mice.",
+   "journal": "PLoS One",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "25298219",
+   "year": "2015",
+   "title": "Stability-indicating HPLC assay for lysine-proline-valine (KPV) in aqueous solutions and skin homogenates.",
+   "journal": "Biomed Chromatogr",
+   "publication_types": [
+    "Evaluation Study",
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ]
+  },
+  {
+   "pmid": "27458604",
+   "year": "2016",
+   "title": "Critical role of PepT1 in promoting colitis-associated cancer and therapeutic benefits of the anti-inflammatory PepT1-mediated tripeptide KPV in a murine model.",
+   "journal": "Cell Mol Gastroenterol Hepatol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "28143741",
+   "year": "2017",
+   "title": "Orally Targeted Delivery of Tripeptide KPV via Hyaluronic Acid-Functionalized Nanoparticles Efficiently Alleviates Ulcerative Colitis.",
+   "journal": "Mol Ther",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "28343991",
+   "year": "2017",
+   "title": "Transdermal Iontophoretic Delivery of Lysine-Proline-Valine (KPV) Peptide Across Microporated Human Skin.",
+   "journal": "J Pharm Sci",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ]
+  },
+  {
+   "pmid": "28349696",
+   "year": "2017",
+   "title": "Peptide Receptor-Targeted Fluorescent Probe: Visualization and Discrimination between Chronic and Acute Ulcerative Colitis.",
+   "journal": "ACS Appl Mater Interfaces",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "29953505",
+   "year": "2018",
+   "title": "Structural modification of the tripeptide KPV by reductive \"glycoalkylation\" of the lysine residue.",
+   "journal": "PLoS One",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "30661264",
+   "year": "2019",
+   "title": "Are melanocortin peptides future therapeutics for cutaneous wound healing?",
+   "journal": "Exp Dermatol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "31408067",
+   "year": "2019",
+   "title": "A PepT1 mediated medicinal nano-system for targeted delivery of cyclosporine A to alleviate acute severe ulcerative colitis.",
+   "journal": "Biomater Sci",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "31971979",
+   "year": "2020",
+   "title": "Murine and related chapparvoviruses are nephro-tropic and produce novel accessory proteins in infected kidneys.",
+   "journal": "PLoS Pathog",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "32004526",
+   "year": "2020",
+   "title": "Novel anti-inflammatory and chondroprotective effects of the human melanocortin MC1 receptor agonist BMS-470539 dihydrochloride and human melanocortin MC3 receptor agonist PG-990 on lipopolysaccharide activated chondrocytes.",
+   "journal": "Eur J Pharmacol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "33195893",
+   "year": "2020",
+   "title": "Lipidated Short Analogue of α-Melanocyte Stimulating Hormone Exerts Bactericidal Activity against the Stationary Phase of Methicillin-Resistant Staphylococcus aureus and Inhibits Biofilm Formation.",
+   "journal": "ACS Omega",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "34547895",
+   "year": "2021",
+   "title": "Self-Cross-Linked Hydrogel of Cysteamine-Grafted γ-Polyglutamic Acid Stabilized Tripeptide KPV for Alleviating TNBS-Induced Ulcerative Colitis in Rats.",
+   "journal": "ACS Biomater Sci Eng",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "34662120",
+   "year": "2021",
+   "title": "Biomimetic Melanosomes Promote Orientation-Selective Delivery and Melanocyte Pigmentation in the H(2)O(2)-Induced Vitiligo Mouse Model.",
+   "journal": "ACS Nano",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "34846053",
+   "year": "2021",
+   "title": "In situ mucoadhesive hydrogel capturing tripeptide KPV: the anti-inflammatory, antibacterial and repairing effect on chemotherapy-induced oral mucositis.",
+   "journal": "Biomater Sci",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "35176225",
+   "year": "2022",
+   "title": "Molecular and neuronal mechanisms for amino acid taste perception in the Drosophila labellum.",
+   "journal": "Curr Biol",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "35245681",
+   "year": "2022",
+   "title": "A KPV-binding double-network hydrogel restores gut mucosal barrier in an inflamed colon.",
+   "journal": "Acta Biomater",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "35972627",
+   "year": "2022",
+   "title": "Mitigating the toxicity of palmitoylated analogue of α-melanocyte stimulating hormone(11-13) by conjugation with gold nanoparticle: characterisation and antibacterial efficacy against methicillin sensitive and resistant Staphylococccus aureus.",
+   "journal": "World J Microbiol Biotechnol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "36240893",
+   "year": "2022",
+   "title": "Skin-adaptive film dressing with smart-release of growth factors accelerated diabetic wound healing.",
+   "journal": "Int J Biol Macromol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "37508552",
+   "year": "2023",
+   "title": "The Melanocortin System in Inflammatory Bowel Diseases: Insights into Its Mechanisms and Therapeutic Potentials.",
+   "journal": "Cells",
+   "publication_types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "37860176",
+   "year": "2023",
+   "title": "Isolation, virtual screening, action mechanisms, chelation with zinc ions, and stability of ACE-inhibitory peptides from ginkgo seed globulin.",
+   "journal": "RSC Adv",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "37859689",
+   "year": "2024",
+   "title": "A nanoparticle platform for combined mucosal healing and immunomodulation in inflammatory bowel disease treatment.",
+   "journal": "Bioact Mater",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "38289234",
+   "year": "2024",
+   "title": "Growth Factors-Loaded Temperature-Sensitive Hydrogel as Biomimetic Mucus Attenuated Murine Ulcerative Colitis via Repairing the Mucosal Barriers.",
+   "journal": "ACS Appl Mater Interfaces",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "39211778",
+   "year": "2024",
+   "title": "PepT1-targeted nanodrug based on co-assembly of anti-inflammatory peptide and immunosuppressant for combined treatment of acute and chronic DSS-induced ColitiS.",
+   "journal": "Front Pharmacol",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "39252648",
+   "year": "2024",
+   "title": "KPV and RAPA Self-Assembled into Carrier-Free Nanodrugs for Vascular Calcification Therapy.",
+   "journal": "Adv Healthc Mater",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "40030207",
+   "year": "2025",
+   "title": "Multicompartmental Hydrogel Microspheres with a Concentric Thin Oil Layer: Protecting and Targeting Therapeutic Agents for Inflammatory Bowel Disease.",
+   "journal": "ACS Appl Bio Mater",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "40073467",
+   "year": "2025",
+   "title": "Lysine-Proline-Valine peptide mitigates fine dust-induced keratinocyte apoptosis and inflammation by regulating oxidative stress and modulating the MAPK/NF-κB pathway.",
+   "journal": "Tissue Cell",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "41209547",
+   "year": "2025",
+   "title": "Exploring the Role of Tripeptides in Wound Healing and Skin Regeneration: A Comprehensive Review.",
+   "journal": "Int J Med Sci",
+   "publication_types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "41241376",
+   "year": "2025",
+   "title": "Host defense peptides as a new drug lead to a strategy for inflammatory bowel disease.",
+   "journal": "Drug Discov Today",
+   "publication_types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "40935835",
+   "year": "2026",
+   "title": "NLRP3 autophagic degradation disruption in melanocytes contributes to vitiligo development.",
+   "journal": "Cell Death Differ",
+   "publication_types": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ]
+  },
+  {
+   "pmid": "41260085",
+   "year": "2026",
+   "title": "Novel genotyping and genetic heterogeneity of chicken parvovirus in central and Eastern China.",
+   "journal": "Poult Sci",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "41533788",
+   "year": "2026",
+   "title": "Inflammation-triggered self-immolative conjugates enable oral peptide delivery by overcoming gastrointestinal barriers.",
+   "journal": "Sci Adv",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "41880199",
+   "year": "2026",
+   "title": "A new era of doping? Use of peptide and peptide-analog drugs in recreational and professional sport and bodybuilding: a critical review.",
+   "journal": "J Sports Med Phys Fitness",
+   "publication_types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "42064835",
+   "year": "2026",
+   "title": "Lysine-proline-valine peptide attenuates hepatic lipid accumulation through ROS-dependent regulation of the PPARγ pathway in HepG2 cells.",
+   "journal": "Cytotechnology",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42585803",
+   "year": "2026",
+   "title": "KPV attenuates adipogenesis and lipid metabolism through modulation of ROS-mediated AKT/mTORC1/PPARγ signaling.",
+   "journal": "Tissue Cell",
+   "publication_types": [
+    "Journal Article"
+   ]
+  },
+  {
+   "pmid": "42752426",
+   "year": "2026",
+   "title": "Synthetic Peptides in Pharmacy Compounding: Analysis of PCAC Recommendations and Industry Safety Standards.",
+   "journal": "Int J Pharm Compd",
+   "publication_types": [
+    "Journal Article",
+    "Review"
+   ]
+  },
+  {
+   "pmid": "42854645",
+   "year": "2026",
+   "title": "Lysine-Proline-Valine attenuates oxidized low-density lipoprotein-induced foam cell formation and inflammatory responses in RAW264.7 macrophages.",
+   "journal": "Tissue Cell",
+   "publication_types": [
+    "Journal Article"
+   ]
+  }
+ ]
+}

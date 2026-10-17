@@ -39,6 +39,7 @@ Evidence-first overviews of individual peptides on the website: what each one is
 - GHK-Cu: https://jabbitapp.com/peptides/ghk-cu.html
 - Thymalin: https://jabbitapp.com/peptides/thymalin.html
 - MOTS-c: https://jabbitapp.com/peptides/mots-c.html
+- KPV (Lys-Pro-Val): https://jabbitapp.com/peptides/kpv.html
 
 ## Guides
 Practical, non-promotional guides for people tracking peptide and GLP-1 injections.
@@ -49,6 +50,7 @@ Practical, non-promotional guides for people tracking peptide and GLP-1 injectio
 ## Study Teardowns
 Critical single-study reads: design, comparator, funding, dropout, effect size, enrollment, and durability, with charts rebuilt from published numbers.
 - Study teardowns hub: https://jabbitapp.com/research
+- KPV gut-inflammation paper trail (1984 rabbit fever origin, 1991 UT patent with hydrocortisone-derived human dose, Zengen CZEN-002 dimer gel study, lapsed skin patent, mouse colitis and PepT1 studies, FDA review of a 0.1% cream, PubMed count of 140 records with 0 trials, mouse-to-human dose scaling, X claims checked): https://jabbitapp.com/research/kpv-peptide-gut-inflammation-teardown.html
 - CagriSema (cagrilintide + semaglutide) vs Wegovy, Wegovy HD and Zepbound (REDEFINE 1 four-arm results, REDEFINE 4 head-to-head loss to tirzepatide, REIMAGINE 4, dose adherence, safety, FDA decision expected Q4 2026, untested gray-market cagrilintide stacks): https://jabbitapp.com/research/cagrisema-vs-wegovy-zepbound-teardown.html
 - GHK-Cu copper peptide paper trail (1973 discovery, ProCyte Iamin trials incl. failed 511-patient Phase III, 510(k) wound-dressing clearance, SEC filings, uncited age-decline claim, Connectivity Map gene claim, PubMed count, FDA injectable concerns): https://jabbitapp.com/research/ghk-cu-copper-peptide-teardown.html
 - MOTS-c "exercise in a shot" (FDA review, patents, CohBar CB4211 trial and SEC filings, K14Q variant, PubMed count of 264 records with 0 human dosing studies, mouse-to-human dose scaling): https://jabbitapp.com/research/mots-c-exercise-in-a-shot-teardown.html

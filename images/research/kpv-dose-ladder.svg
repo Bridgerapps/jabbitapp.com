@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" width="720" height="470" role="img" aria-labelledby="t1 d1">
+<title id="t1">KPV doses people post vs. the doses behind the research</title>
+<desc id="d1">Log-scale chart of daily KPV amounts for a 70 kg adult. Doses posted on X in September and October 2026: 0.2 to 0.5 mg, some users 1 to 2 mg. The mouse colitis dose, 100 micromolar in drinking water, scales by FDA body-surface conversion to about 50 mg a day (range 37 to 74). The 1991 patent proposed 0.2 to 3.5 mg per kg per day, 14 to 245 mg. The patent rat paw test used 100 mg per kg of a modified form, about 1,129 mg human-equivalent.</desc>
+<rect width="720" height="470" fill="#fff"/>
+<text x="24" y="34" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">KPV doses people post vs. the doses behind the research</text>
+<text x="24" y="58" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">mg per day for a 70 kg adult, log scale. Animal doses converted with FDA body-surface</text>
+<text x="24" y="76" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">scaling (mouse ÷12.3, rat ÷6.2). A rough convention, not a tested human dose.</text>
+<line x1="300.0" y1="98" x2="300.0" y2="382" stroke="#e2e8f0" stroke-width="1"/>
+<text x="300.0" y="398" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">0.1 mg</text>
+<line x1="385.8" y1="98" x2="385.8" y2="382" stroke="#e2e8f0" stroke-width="1"/>
+<text x="385.8" y="398" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">1 mg</text>
+<line x1="471.5" y1="98" x2="471.5" y2="382" stroke="#e2e8f0" stroke-width="1"/>
+<text x="471.5" y="398" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">10 mg</text>
+<line x1="557.3" y1="98" x2="557.3" y2="382" stroke="#e2e8f0" stroke-width="1"/>
+<text x="557.3" y="398" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">100 mg</text>
+<line x1="643.1" y1="98" x2="643.1" y2="382" stroke="#e2e8f0" stroke-width="1"/>
+<text x="643.1" y="398" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">1000 mg</text>
+<text x="286" y="118" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Daily doses posted on X</text>
+<text x="286" y="135" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Oral, Sep–Oct 2026: 0.2–0.5 mg</text>
+<rect x="325.8" y="106" width="34.1" height="20" rx="4" fill="#f59e0b"/>
+<text x="286" y="176" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Higher doses posted on X</text>
+<text x="286" y="193" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Some users: 1 to 2 mg</text>
+<rect x="385.8" y="164" width="25.8" height="20" rx="4" fill="#fbbf24"/>
+<text x="286" y="234" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Mouse colitis dose</text>
+<text x="286" y="251" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">100 µM in water → ≈50 mg (37–74)</text>
+<rect x="520.3" y="222" width="25.8" height="20" rx="4" fill="#0f766e"/>
+<text x="286" y="292" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">1991 patent’s human dose</text>
+<text x="286" y="309" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0.2–3.5 mg/kg/day → 14–245 mg</text>
+<rect x="484.1" y="280" width="106.6" height="20" rx="4" fill="#1d4ed8"/>
+<text x="286" y="350" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Patent’s rat paw test</text>
+<text x="286" y="367" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">100 mg/kg, modified form → ≈1,129 mg</text>
+<circle cx="647.6" cy="348" r="9" fill="#1d4ed8"/>
+<text x="24" y="448" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Sources: X posts; Viennois 2016; Bachmanov 2002; US 5,028,592; FDA 2005 guidance</text>
+<text x="696" y="448" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">jabbitapp.com/research</text>
+</svg>
