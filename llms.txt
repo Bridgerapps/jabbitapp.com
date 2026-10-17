@@ -49,6 +49,7 @@ Practical, non-promotional guides for people tracking peptide and GLP-1 injectio
 ## Study Teardowns
 Critical single-study reads: design, comparator, funding, dropout, effect size, enrollment, and durability, with charts rebuilt from published numbers.
 - Study teardowns hub: https://jabbitapp.com/research
+- CagriSema (cagrilintide + semaglutide) vs Wegovy, Wegovy HD and Zepbound (REDEFINE 1 four-arm results, REDEFINE 4 head-to-head loss to tirzepatide, REIMAGINE 4, dose adherence, safety, FDA decision expected Q4 2026, untested gray-market cagrilintide stacks): https://jabbitapp.com/research/cagrisema-vs-wegovy-zepbound-teardown.html
 - GHK-Cu copper peptide paper trail (1973 discovery, ProCyte Iamin trials incl. failed 511-patient Phase III, 510(k) wound-dressing clearance, SEC filings, uncited age-decline claim, Connectivity Map gene claim, PubMed count, FDA injectable concerns): https://jabbitapp.com/research/ghk-cu-copper-peptide-teardown.html
 - MOTS-c "exercise in a shot" (FDA review, patents, CohBar CB4211 trial and SEC filings, K14Q variant, PubMed count of 264 records with 0 human dosing studies, mouse-to-human dose scaling): https://jabbitapp.com/research/mots-c-exercise-in-a-shot-teardown.html
 - Foundayo (orforglipron) GLP-1 pill vs Wegovy and Zepbound (EU CHMP opinion Oct 2026, US labels, estimands, type 2 diabetes, safety, CYP3A4 interactions): https://jabbitapp.com/research/foundayo-orforglipron-pill-teardown.html
