@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="t1 d1">
+<title id="t1">How many people have been given each drug in a study</title>
+<desc id="d1">Bar chart of people given the active drug in studies. Tesamorelin, FDA-approved in 2010 for HIV belly fat: 740 patients in its approval trials. Ipamorelin by vein: 86 in published studies, 30 healthy men in 1999 and 56 surgery patients in 2014, plus a 320-patient trial that finished in 2014 and was never reported. Ipamorelin under the skin, the way it is sold: 0 published. CJC-1295 with DAC: 63 healthy adults, mostly one shot, plus a 192-patient trial stopped in 2006 after a death. CJC-1295 without DAC, the version in most X stacks: 0. CJC-1295 and ipamorelin together: 0.</desc>
+<rect width="720" height="520" fill="#fff"/>
+<text x="24" y="34" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">How many people have been given each drug in a study?</text>
+<text x="24" y="58" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">People who got the active drug. Solid: published results. Outline: people enrolled</text>
+<text x="24" y="76" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">in trials whose results were never published.</text>
+<line x1="270.0" y1="106" x2="270.0" y2="458" stroke="#e2e8f0" stroke-width="1"/>
+<text x="270.0" y="474" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">0</text>
+<line x1="375.0" y1="106" x2="375.0" y2="458" stroke="#e2e8f0" stroke-width="1"/>
+<text x="375.0" y="474" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">200</text>
+<line x1="480.0" y1="106" x2="480.0" y2="458" stroke="#e2e8f0" stroke-width="1"/>
+<text x="480.0" y="474" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">400</text>
+<line x1="585.0" y1="106" x2="585.0" y2="458" stroke="#e2e8f0" stroke-width="1"/>
+<text x="585.0" y="474" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">600</text>
+<line x1="690.0" y1="106" x2="690.0" y2="458" stroke="#e2e8f0" stroke-width="1"/>
+<text x="690.0" y="474" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">800</text>
+<text x="256" y="130" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Tesamorelin (Egrifta)</text>
+<text x="256" y="147" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">FDA-approved 2010 · HIV belly fat</text>
+<rect x="270" y="116" width="388.5" height="22" rx="3" fill="#0f766e"/>
+<text x="648.5" y="132" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#fff">740 patients in approval trials</text>
+<text x="256" y="188" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Ipamorelin, by vein</text>
+<text x="256" y="205" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Healthy men 1999 + surgery trial 2014</text>
+<rect x="270" y="174" width="45.1" height="22" rx="3" fill="#1d4ed8"/>
+<rect x="315.1" y="174" width="168.0" height="22" rx="3" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="493.1" y="190" text-anchor="start" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">86 published · 320 unreported</text>
+<text x="256" y="246" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Ipamorelin, under the skin</text>
+<text x="256" y="263" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">The way it is sold</text>
+<line x1="270" y1="232" x2="270" y2="254" stroke="#1d4ed8" stroke-width="4"/>
+<text x="280.0" y="248" text-anchor="start" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">0 published</text>
+<text x="256" y="304" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">CJC-1295 with DAC</text>
+<text x="256" y="321" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Healthy adults, mostly one shot</text>
+<rect x="270" y="290" width="33.1" height="22" rx="3" fill="#b45309"/>
+<rect x="303.1" y="290" width="100.8" height="22" rx="3" fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="413.9" y="306" text-anchor="start" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">63 published · 192 unreported</text>
+<text x="256" y="362" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">CJC-1295 no DAC (Mod GRF 1-29)</text>
+<text x="256" y="379" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">The version in most X stacks</text>
+<line x1="270" y1="348" x2="270" y2="370" stroke="#b45309" stroke-width="4"/>
+<text x="280.0" y="364" text-anchor="start" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">0 ever</text>
+<text x="256" y="420" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">CJC-1295 + ipamorelin together</text>
+<text x="256" y="437" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">The stack itself</text>
+<line x1="270" y1="406" x2="270" y2="428" stroke="#b91c1c" stroke-width="4"/>
+<text x="280.0" y="422" text-anchor="start" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">0 ever</text>
+<text x="24" y="498" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Sources: Egrifta WR label; FDA briefings Oct and Dec 2024; ClinicalTrials.gov; PubMed</text>
+<text x="696" y="498" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">jabbitapp.com/research</text>
+</svg>
