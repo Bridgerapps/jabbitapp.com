@@ -1,0 +1,2032 @@
+{
+ "generated": "2026-10-17",
+ "fda_files_dated": "2026-10-16",
+ "substances": {
+  "semaglutide": {
+   "products": 80,
+   "labelers": 47,
+   "labelers_by_country": {
+    "CHN": 23,
+    "IND": 8,
+    "USA": 5,
+    "not matched": 5,
+    "DNK": 1,
+    "BEL/ITA": 1,
+    "TWN": 1,
+    "CHE": 1,
+    "AUS/AUT/CAN/FRA/GBR/IRL/ITA/NLD/USA": 1,
+    "BEL": 1
+   },
+   "products_by_category": {
+    "BULK INGREDIENT": 41,
+    "DRUG FOR FURTHER PROCESSING": 27,
+    "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING": 12
+   },
+   "products_by_start_year": {
+    "2017": 4,
+    "2019": 3,
+    "2020": 1,
+    "2021": 14,
+    "2022": 3,
+    "2023": 6,
+    "2024": 15,
+    "2025": 17,
+    "2026": 17
+   },
+   "labelers_on_ia_66_40": [
+    "Chengdu Brilliant Biopharmaceutical Co., Ltd.",
+    "Chengdu Shengnuo Biopharm Co. Ltd."
+   ],
+   "listings": [
+    {
+     "product_ndc": "0420-9008",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20171206",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9237",
+     "name": "semaglutide",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20171206",
+     "listing_certified_through": "20261231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9300",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20170602",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9301",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20260507",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9302",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20260428",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9317",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20260428",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9324",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20260428",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9511",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20211110",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9520",
+     "name": "Semaglutide SNAC",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20190920",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9530",
+     "name": "Semaglutide SNAC",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20190920",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9540",
+     "name": "Semaglutide SNAC",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20190920",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "0420-9600",
+     "name": "semaglutide",
+     "labeler": "Novo Nordisk A/S",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20260429",
+     "listing_certified_through": "20271231",
+     "registration_country": "DNK",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "14335-790",
+     "name": "Semaglutide",
+     "labeler": "Hainan Poly Pharm. Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20250228",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "14403-0018",
+     "name": "Semaglutide",
+     "labeler": "Hybio Pharmaceutical Co. Ltd",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240406",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "14403-0024",
+     "name": "Semaglutide",
+     "labeler": "Hybio Pharmaceutical Co. Ltd",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250904",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "14403-0030",
+     "name": "Semaglutide",
+     "labeler": "Hybio Pharmaceutical Co., Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260922",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "16812-103",
+     "name": "Semaglutide",
+     "labeler": "Aurisco Pharmaceutical Co.,Ltd",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20230630",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "29930-009",
+     "name": "semaglutide",
+     "labeler": "Suzhou Lixin Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20241120",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "32861-0011",
+     "name": "Semaglutide",
+     "labeler": "Chengdu Shengnuo Biopharm Co. Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20240425",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": true
+    },
+    {
+     "product_ndc": "32861-0014",
+     "name": "Semaglutide",
+     "labeler": "Chengdu Shengnuo Biopharm Co. Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260201",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": true
+    },
+    {
+     "product_ndc": "38779-3373",
+     "name": "Semaglutide",
+     "labeler": "Medisca Inc.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260410",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "41524-0012",
+     "name": "Semaglutide",
+     "labeler": "Shanghai Ambiopharm, Inc",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20211211",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "42973-397",
+     "name": "Semaglutide",
+     "labeler": "Apicore Pharmaceuticals private Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240611",
+     "listing_certified_through": "20271231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0028",
+     "name": "semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20210605",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0029",
+     "name": "semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20210605",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0030",
+     "name": "semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20210605",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0031",
+     "name": "semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20210605",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0032",
+     "name": "semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20220414",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0055",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250101",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0056",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250101",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0057",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250101",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0058",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250101",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43835-0059",
+     "name": "Semaglutide",
+     "labeler": "Novo Nordisk Production Belgium SA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250101",
+     "listing_certified_through": "20271231",
+     "registration_country": "BEL/ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43963-002",
+     "name": "Semaglutide",
+     "labeler": "Chinese Peptide Company",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20230718",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "52076-6282",
+     "name": "Semaglutide",
+     "labeler": "Chunghwa Chemical Synthesis & Biotech Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240819",
+     "listing_certified_through": "20261231",
+     "registration_country": "TWN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "55463-0040",
+     "name": "Semaglutide",
+     "labeler": "Bachem AG",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240430",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHE",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "61281-8700",
+     "name": "SEMAGLUTIDE",
+     "labeler": "Supriya Lifescience Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240925",
+     "listing_certified_through": "20261231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "61434-067",
+     "name": "semaglutide",
+     "labeler": "Catalent Indiana, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240722",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "61434-068",
+     "name": "semaglutide",
+     "labeler": "Catalent Indiana, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240722",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "63552-200",
+     "name": "semaglutide",
+     "labeler": "Patheon Manufacturing Services LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20210605",
+     "listing_certified_through": "20261231",
+     "registration_country": "AUS/AUT/CAN/FRA/GBR/IRL/ITA/NLD/USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "63552-201",
+     "name": "semaglutide",
+     "labeler": "Patheon Manufacturing Services LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20210605",
+     "listing_certified_through": "20261231",
+     "registration_country": "AUS/AUT/CAN/FRA/GBR/IRL/ITA/NLD/USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "63552-203",
+     "name": "semaglutide",
+     "labeler": "Patheon Manufacturing Services LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20210605",
+     "listing_certified_through": "20261231",
+     "registration_country": "AUS/AUT/CAN/FRA/GBR/IRL/ITA/NLD/USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "63552-205",
+     "name": "semaglutide",
+     "labeler": "Patheon Manufacturing Services LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20210605",
+     "listing_certified_through": "20261231",
+     "registration_country": "AUS/AUT/CAN/FRA/GBR/IRL/ITA/NLD/USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "63552-206",
+     "name": "semaglutide",
+     "labeler": "Patheon Manufacturing Services LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20210605",
+     "listing_certified_through": "20261231",
+     "registration_country": "AUS/AUT/CAN/FRA/GBR/IRL/ITA/NLD/USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "65344-0041",
+     "name": "Semaglutide",
+     "labeler": "Zhejiang Jiuzhou Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260213",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "65727-094",
+     "name": "Semaglutide",
+     "labeler": "Biocon Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240917",
+     "listing_certified_through": "20261231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "65977-0165",
+     "name": "Semaglutide",
+     "labeler": "HETERO DRUGS LIMITED",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20171205",
+     "listing_certified_through": "20271231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "68067-2602",
+     "name": "SEMAGLUTIDE",
+     "labeler": "PolyPeptide SA",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20200601",
+     "listing_certified_through": "20261231",
+     "registration_country": "BEL",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "69766-108",
+     "name": "Semaglutide",
+     "labeler": "MSN Life Sciences Private Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20230923",
+     "listing_certified_through": "20261231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "71052-695",
+     "name": "Semaglutide",
+     "labeler": "DARMERICA, LLC",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20230425",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "71796-039",
+     "name": "Semaglutide",
+     "labeler": "Dr. Reddys Laboratories Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20211213",
+     "listing_certified_through": "20261231",
+     "registration_country": "not matched",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "71859-010",
+     "name": "semaglutide",
+     "labeler": "Arene Life Sciences Private Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260923",
+     "listing_certified_through": "20271231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "73212-070",
+     "name": "Semaglutide",
+     "labeler": "Qingdao Biopeptek Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20230403",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "73569-035",
+     "name": "Semaglutide",
+     "labeler": "Zhejiang Peptites Biotech Co., Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20221026",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "76177-022",
+     "name": "Semaglutide",
+     "labeler": "Sinopep-Allsino Biopharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20231101",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "76177-054",
+     "name": "Semaglutide",
+     "labeler": "Sinopep-Allsino Biopharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20210301",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "76177-521",
+     "name": "Semaglutide",
+     "labeler": "Sinopep-Allsino Biopharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20210301",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "76617-001",
+     "name": "semaglutide",
+     "labeler": "Hubei JXBio Pharmaceutical Co.,Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20221117",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "76617-003",
+     "name": "Semaglutide",
+     "labeler": "Hubei JXBio Pharmaceutical Co.,Ltd",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250109",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "82393-406",
+     "name": "Semaglutide",
+     "labeler": "Pharma Source Direct, Inc.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240701",
+     "listing_certified_through": "20261231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "82920-505",
+     "name": "Semaglutide",
+     "labeler": "SHILPA PHARMA LIFESCIENCES LIMITED",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260430",
+     "listing_certified_through": "20271231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84172-121",
+     "name": "Semaglutide",
+     "labeler": "Chongqing Sintaho Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250715",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84223-001",
+     "name": "Semaglutide",
+     "labeler": "NOMIDA LLC",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240415",
+     "listing_certified_through": "",
+     "registration_country": "not matched",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84347-001",
+     "name": "Semaglutide",
+     "labeler": "Shenzhen Alvantis Pharma Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20240523",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84502-101",
+     "name": "semaglutide",
+     "labeler": "Fujian Genohope Biotech Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240702",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84502-109",
+     "name": "Semaglutide",
+     "labeler": "Fujian Genohope Biotech Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20251017",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84502-113",
+     "name": "Semaglutide",
+     "labeler": "Fujian Genohope Biotech Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260519",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84524-451",
+     "name": "Semaglutide",
+     "labeler": "Chengdu Brilliant Biopharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240823",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": true
+    },
+    {
+     "product_ndc": "84643-101",
+     "name": "Semaglutide",
+     "labeler": "Zhejiang Tasln Biopharma Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20251105",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84824-005",
+     "name": "semaglutide",
+     "labeler": "Zhejiang Kingland Pharmaceutical Company Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250120",
+     "listing_certified_through": "20261231",
+     "registration_country": "not matched",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85165-010",
+     "name": "Semaglutide",
+     "labeler": "Sichuan Jisheng Biopharmaceutical Co Ltd",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250121",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85207-019",
+     "name": "Semaglutide",
+     "labeler": "SCH Global Services Private Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250801",
+     "listing_certified_through": "20261231",
+     "registration_country": "not matched",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85717-003",
+     "name": "Semaglutide",
+     "labeler": "Jilin Qijian Bio-Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260914",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85827-301",
+     "name": "semaglutide",
+     "labeler": "Virtu Pharmako (Zhejiang) Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260101",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85827-302",
+     "name": "semaglutide",
+     "labeler": "Virtu Pharmako (Zhejiang) Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260101",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85941-001",
+     "name": "Semaglutide IH",
+     "labeler": "Bills Biotech Pvt. Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250721",
+     "listing_certified_through": "20271231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87155-106",
+     "name": "Semaglutide",
+     "labeler": "Thaeta Scientific LLC",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20251015",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87181-002",
+     "name": "Semaglutide",
+     "labeler": "Chatnaa Life Sciences LLC",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20251210",
+     "listing_certified_through": "20261231",
+     "registration_country": "not matched",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87370-005",
+     "name": "SEMAGLUTIDE",
+     "labeler": "El-Peptido (Shanghai) Biopharmaceutical Co., Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260112",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87730-004",
+     "name": "Semaglutide",
+     "labeler": "Zhuhai Readline Biotech Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260527",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    }
+   ]
+  },
+  "tirzepatide": {
+   "products": 79,
+   "labelers": 37,
+   "labelers_by_country": {
+    "CHN": 20,
+    "USA": 6,
+    "IND": 3,
+    "not matched": 3,
+    "ITA": 2,
+    "ESP/FRA/IRL/ITA/USA": 1,
+    "ISR": 1,
+    "CAN": 1
+   },
+   "products_by_category": {
+    "BULK INGREDIENT": 27,
+    "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING": 10,
+    "DRUG FOR FURTHER PROCESSING": 42
+   },
+   "products_by_start_year": {
+    "2022": 6,
+    "2023": 14,
+    "2024": 27,
+    "2025": 24,
+    "2026": 8
+   },
+   "labelers_on_ia_66_40": [
+    "Chengdu Shengnuo Biopharm Co., Ltd.",
+    "Harbin Jixianglong Biotech Co., Ltd."
+   ],
+   "listings": [
+    {
+     "product_ndc": "0002-0770",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly and Company",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20230620",
+     "listing_certified_through": "20261231",
+     "registration_country": "ESP/FRA/IRL/ITA/USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "12869-210",
+     "name": "Tirzepatide",
+     "labeler": "Corden Pharma Colorado, Inc.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20220516",
+     "listing_certified_through": "20261231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "14403-0017",
+     "name": "Tirzepatide",
+     "labeler": "Hybio Pharmaceutical Co. Ltd",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240328",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "14403-0020",
+     "name": "Tirzepatide",
+     "labeler": "Hybio Pharmaceutical Co., Ltd. (Pingshan Factory)",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240626",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "14403-0027",
+     "name": "Tirzepatide",
+     "labeler": "Hybio Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20261013",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "14403-0028",
+     "name": "Tirzepatide",
+     "labeler": "Hybio Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260123",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "14403-0029",
+     "name": "Tirzepatide",
+     "labeler": "Hybio Pharmaceutical Co. Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260916",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "16812-104",
+     "name": "Tirzepatide",
+     "labeler": "Aurisco Pharmaceutical Co.,Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20241016",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "24538-599",
+     "name": "Tirzepatide",
+     "labeler": "Shanghai SynTheAll Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20250401",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "29930-010",
+     "name": "tirzepatide",
+     "labeler": "Suzhou Lixin Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20241120",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "32861-0013",
+     "name": "Tirzepatide",
+     "labeler": "Chengdu Shengnuo Biopharm Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20251110",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": true
+    },
+    {
+     "product_ndc": "38779-3372",
+     "name": "Tirzepatide",
+     "labeler": "Medisca Inc.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260410",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "42973-383",
+     "name": "Tirzepatide",
+     "labeler": "Apicore Pharmaceuticals Private Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240611",
+     "listing_certified_through": "20261231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-015",
+     "name": "tirzepatide",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20230801",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-016",
+     "name": "tirzepatide",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20230801",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-017",
+     "name": "tirzepatide",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20230801",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-018",
+     "name": "tirzepatide",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20230801",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-019",
+     "name": "tirzepatide",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20230801",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-020",
+     "name": "tirzepatide",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20230801",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-033",
+     "name": "Multiple-Dose Tirzepatide Injection",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20251130",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-034",
+     "name": "Multiple-Dose Tirzepatide Injection",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20251130",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-035",
+     "name": "Multiple-Dose Tirzepatide Injection",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20251130",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-036",
+     "name": "Multiple-Dose Tirzepatide Injection",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20251130",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-037",
+     "name": "Multiple-Dose Tirzepatide Injection",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20251130",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "43624-038",
+     "name": "Multiple-Dose Tirzepatide Injection",
+     "labeler": "BSP Pharmaceuticals SpA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20251130",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-043",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20220812",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-170",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20220812",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-325",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20230713",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-341",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240206",
+     "listing_certified_through": "20271231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-342",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240206",
+     "listing_certified_through": "20271231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-343",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240206",
+     "listing_certified_through": "20271231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-344",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240206",
+     "listing_certified_through": "20271231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-345",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240206",
+     "listing_certified_through": "20271231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-346",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240206",
+     "listing_certified_through": "20271231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-460",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20220812",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-471",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20220812",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "54568-837",
+     "name": "tirzepatide",
+     "labeler": "Eli Lilly Italia SPA",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20230713",
+     "listing_certified_through": "20261231",
+     "registration_country": "ITA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "63415-0533",
+     "name": "Tirzepatide",
+     "labeler": "Assia Chemical Industries Ltd. - Teva Tech Site",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250520",
+     "listing_certified_through": "20261231",
+     "registration_country": "ISR",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "63474-700",
+     "name": "Tirzepatide",
+     "labeler": "BioVectra Inc.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250127",
+     "listing_certified_through": "20261231",
+     "registration_country": "CAN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "65727-109",
+     "name": "TIRZEPATIDE",
+     "labeler": "BIOCON LIMITED",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20251022",
+     "listing_certified_through": "20261231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "69766-122",
+     "name": "Tirzepatide",
+     "labeler": "MSN Life Sciences Private Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260207",
+     "listing_certified_through": "20271231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "71052-167",
+     "name": "Tirzepatide",
+     "labeler": "DARMERICA, LLC",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20230502",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "73212-072",
+     "name": "Tirzepatide",
+     "labeler": "Qingdao Biopeptek Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20230410",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "73569-050",
+     "name": "Tirzepatide",
+     "labeler": "Zhejiang Peptites Biotech Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20231229",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "76177-192",
+     "name": "Tirzepatide",
+     "labeler": "Sinopep-Allsino Biopharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20230110",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "76177-501",
+     "name": "Tirzepatide",
+     "labeler": "Sinopep-Allsino Biopharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20231101",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "76617-020",
+     "name": "Tirzepatide",
+     "labeler": "Hubei JXBio Pharmaceutical Co.,Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20221205",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "82393-407",
+     "name": "Tirzepatide",
+     "labeler": "Pharma Source Direct, Inc.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240701",
+     "listing_certified_through": "20261231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0241",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20241227",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0242",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20241227",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0243",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20241227",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0244",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20241227",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0245",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20241227",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0246",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20241227",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0247",
+     "name": "tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240515",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0248",
+     "name": "tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240515",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0249",
+     "name": "tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240515",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0250",
+     "name": "tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240515",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0251",
+     "name": "tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240515",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0252",
+     "name": "tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20240515",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0257",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250506",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0258",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250506",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0259",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250506",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0260",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250506",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0261",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250815",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83516-0262",
+     "name": "Tirzepatide",
+     "labeler": "Resilience US, LLC",
+     "marketing_category": "DRUG FOR FURTHER PROCESSING",
+     "start_marketing_date": "20250815",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83783-001",
+     "name": "Tirzepatide",
+     "labeler": "Hangzhou Hotide Biotech Co.,Ltd",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250101",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84172-201",
+     "name": "Tirzepatide",
+     "labeler": "Chongqing Sintaho Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260901",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84223-002",
+     "name": "Tirzepatide",
+     "labeler": "Nomida LLC",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240415",
+     "listing_certified_through": "",
+     "registration_country": "not matched",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84347-002",
+     "name": "Tirzepatide",
+     "labeler": "Shenzhen Alvantis Pharma Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20240523",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84385-104",
+     "name": "Tirzepatide",
+     "labeler": "Harbin Jixianglong Biotech Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250509",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": true
+    },
+    {
+     "product_ndc": "84502-103",
+     "name": "Tirzepatide",
+     "labeler": "Fujian Genohope Biotech Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240731",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84643-102",
+     "name": "Tirzepatide",
+     "labeler": "Zhejiang Tasln Biopharma Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260205",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84824-006",
+     "name": "tirzepatide",
+     "labeler": "Zhejiang Kingland Pharmaceutical Company Limited",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250121",
+     "listing_certified_through": "20261231",
+     "registration_country": "not matched",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85165-012",
+     "name": "Tirzepatide",
+     "labeler": "Sichuan Jisheng Biopharmaceutical Co Ltd",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250121",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85781-001",
+     "name": "TIRZEPATIDE",
+     "labeler": "Guangdong Longfu Medicine Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250609",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87155-105",
+     "name": "Tirzepatide",
+     "labeler": "Thaeta Scientific LLC",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20251015",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87181-003",
+     "name": "Tirzepatide",
+     "labeler": "Chatnaa Life Sciences LLC",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20251230",
+     "listing_certified_through": "20261231",
+     "registration_country": "not matched",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87370-008",
+     "name": "TIRZEPATIDE",
+     "labeler": "El-Peptido (Shanghai) Biopharmaceutical Co., Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260112",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    }
+   ]
+  },
+  "retatrutide": {
+   "products": 7,
+   "labelers": 7,
+   "labelers_by_country": {
+    "CHN": 6,
+    "HKG": 1
+   },
+   "products_by_category": {
+    "BULK INGREDIENT": 6,
+    "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING": 1
+   },
+   "products_by_start_year": {
+    "2024": 1,
+    "2025": 4,
+    "2026": 2
+   },
+   "labelers_on_ia_66_40": [
+    "Harbin Jixianglong Biotech Co., Ltd."
+   ],
+   "listings": [
+    {
+     "product_ndc": "14403-0022",
+     "name": "Retatrutide",
+     "labeler": "Hybio Pharmaceutical Co., Ltd. (Pingshan Factory)",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250226",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "24538-803",
+     "name": "Retatrutide",
+     "labeler": "Shanghai SynTheAll Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260416",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "73212-089",
+     "name": "Retatrutide",
+     "labeler": "Qingdao Biopeptek Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240201",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "76177-055",
+     "name": "Retatrutide",
+     "labeler": "Sinopep-Allsino Biopharmaceutical Co.,Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260901",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84347-003",
+     "name": "RETATRUTIDE",
+     "labeler": "Shenzhen Alvantis Pharma Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250217",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84385-103",
+     "name": "Retatrutide",
+     "labeler": "Harbin Jixianglong Biotech Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250109",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": true
+    },
+    {
+     "product_ndc": "85793-001",
+     "name": "Retatrutide",
+     "labeler": "ETERNAL WEALTH(CHINA)LIMITED",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250611",
+     "listing_certified_through": "20261231",
+     "registration_country": "HKG",
+     "on_import_alert_66_40": false
+    }
+   ]
+  },
+  "cagrilintide": {
+   "products": 2,
+   "labelers": 2,
+   "labelers_by_country": {
+    "CHN": 2
+   },
+   "products_by_category": {
+    "BULK INGREDIENT": 2
+   },
+   "products_by_start_year": {
+    "2024": 1,
+    "2025": 1
+   },
+   "labelers_on_ia_66_40": [],
+   "listings": [
+    {
+     "product_ndc": "73212-088",
+     "name": "Cagrilintide",
+     "labeler": "Qingdao Biopeptek Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20240201",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84347-007",
+     "name": "Cagrilintide",
+     "labeler": "Shenzhen Alvantis Pharma Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250217",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    }
+   ]
+  },
+  "BPC-157": {
+   "products": 20,
+   "labelers": 16,
+   "labelers_by_country": {
+    "CHN": 12,
+    "USA": 2,
+    "not matched": 1,
+    "IND": 1
+   },
+   "products_by_category": {
+    "BULK INGREDIENT": 12,
+    "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING": 8
+   },
+   "products_by_start_year": {
+    "2019": 1,
+    "2020": 1,
+    "2023": 1,
+    "2025": 2,
+    "2026": 15
+   },
+   "labelers_on_ia_66_40": [],
+   "listings": [
+    {
+     "product_ndc": "71052-003",
+     "name": "Pentadecapeptide Arginate",
+     "labeler": "DARMERICA, LLC",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20231129",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "71052-637",
+     "name": "BPC-157 Acetate",
+     "labeler": "DARMERICA, LLC",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20190708",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "73212-002",
+     "name": "BPC-157 Acetate",
+     "labeler": "Qingdao Biopeptek Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20200801",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "83783-002",
+     "name": "BPC-157 acetate",
+     "labeler": "Hangzhou Hotide Biotech Co., Ltd",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260501",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84347-102",
+     "name": "BPC-157",
+     "labeler": "Shenzhen Alvantis Pharma Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20250217",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84347-111",
+     "name": "BPC-157 Acetate",
+     "labeler": "Shenzhen Alvantis Pharma Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260511",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84347-112",
+     "name": "BPC-157 Arginate",
+     "labeler": "Shenzhen Alvantis Pharma Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260511",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84517-099",
+     "name": "BPC-157",
+     "labeler": "Zhejiang Wild Wind Pharmaceutical Co.,Ltd.",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260708",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "84795-006",
+     "name": "BPC-157",
+     "labeler": "Guangdong ZetaPharmax Co., Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260811",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85134-006",
+     "name": "BPC-157 ACETATE",
+     "labeler": "Guizhou Utide Biotechnology Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260728",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85134-009",
+     "name": "Pentadecapeptide Arginate",
+     "labeler": "Guizhou Utide Biotechnology Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260729",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85165-253",
+     "name": "Pentadecapeptide",
+     "labeler": "SICHUAN JISHENG BIOPHARMACEUTICAL CO.,LTD",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20251015",
+     "listing_certified_through": "20261231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "85207-068",
+     "name": "BPC 157 Acetate",
+     "labeler": "SCH Global Services Private Limited",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260724",
+     "listing_certified_through": "20271231",
+     "registration_country": "not matched",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87370-002",
+     "name": "BPC-157 Acetate",
+     "labeler": "El-Peptido (Shanghai) Biopharmaceutical Co., Ltd",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260112",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87551-030",
+     "name": "BPC-157 Acetate",
+     "labeler": "Pure Peptide Pharmaceuticals Inc.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260501",
+     "listing_certified_through": "20271231",
+     "registration_country": "USA",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87621-008",
+     "name": "BPC-157 Acetate",
+     "labeler": "APISTER LIFESCIENCES PRIVATE LIMITED",
+     "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+     "start_marketing_date": "20260804",
+     "listing_certified_through": "20271231",
+     "registration_country": "IND",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87778-003",
+     "name": "BPC-157",
+     "labeler": "Huzhou Huida New Material Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260625",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87803-003",
+     "name": "BPC-157",
+     "labeler": "Qingyuan Chuangtai Biotech Co., LTD",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260722",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87831-001",
+     "name": "BPC-157 Acetate",
+     "labeler": "Hangzhou Pepsource Biomedical Co., LTD",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260701",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    },
+    {
+     "product_ndc": "87938-001",
+     "name": "BPC-157 Acetate",
+     "labeler": "Ningxia Revoning Pharmaceutical Co., Ltd.",
+     "marketing_category": "BULK INGREDIENT",
+     "start_marketing_date": "20260101",
+     "listing_certified_through": "20271231",
+     "registration_country": "CHN",
+     "on_import_alert_66_40": false
+    }
+   ]
+  }
+ },
+ "green_list": {
+  "entries": 21,
+  "by_country": {
+   "CHINA": 12,
+   "INDIA": 3,
+   "BELGIUM": 1,
+   "CANADA": 1,
+   "DENMARK": 1,
+   "IRELAND": 1,
+   "PORTUGAL": 1,
+   "ITALY": 1
+  }
+ }
+}
