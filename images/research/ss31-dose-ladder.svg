@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 690" width="720" height="690" role="img" aria-labelledby="t2 d2">
+<title id="t2">SS-31 doses posted on X vs. doses tested in people and mice</title>
+<desc id="d2">Log-scale chart in milligrams. Posted on X: a microdose plan of 2 to 3 mg a day and a 10 mg focus dose. Tested in people: about 3.5 mg by vein once in a heart attack trial that missed; 4 mg or 40 mg a day in a heart failure trial where both missed; about 35 mg by vein once in older adults, borderline; the Forzinity label dose of 40 mg a day for Barth syndrome; 60 mg a day for 48 weeks in the NuPower trial, which missed. Mice: 3 mg per kg once in old mice, about 17 mg human-equivalent.</desc>
+<rect width="720" height="690" fill="#fff"/>
+<text x="24" y="34" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">SS-31 doses on X vs. the doses actually tested</text>
+<text x="24" y="58" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">mg, log scale. Trial doses by vein converted at 70 kg. No trial has tested 2–3 mg</text>
+<text x="24" y="76" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">under the skin, and no trial has tested any dose for aging outcomes.</text>
+<line x1="316.0" y1="108" x2="316.0" y2="606" stroke="#e2e8f0" stroke-width="1"/>
+<text x="316.0" y="622" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">1 mg</text>
+<line x1="402.8" y1="108" x2="402.8" y2="606" stroke="#e2e8f0" stroke-width="1"/>
+<text x="402.8" y="622" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">3 mg</text>
+<line x1="498.0" y1="108" x2="498.0" y2="606" stroke="#e2e8f0" stroke-width="1"/>
+<text x="498.0" y="622" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">10 mg</text>
+<line x1="584.8" y1="108" x2="584.8" y2="606" stroke="#e2e8f0" stroke-width="1"/>
+<text x="584.8" y="622" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">30 mg</text>
+<line x1="680.0" y1="108" x2="680.0" y2="606" stroke="#e2e8f0" stroke-width="1"/>
+<text x="680.0" y="622" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">100 mg</text>
+<text x="24" y="122" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="1" fill="#f59e0b">POSTED ON X</text>
+<text x="302" y="158" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">“Microdose” plan</text>
+<text x="302" y="175" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">“titrate down to 2–3mg daily”</text>
+<rect x="370.8" y="146" width="32.0" height="20" rx="4" fill="#f59e0b"/>
+<text x="302" y="208" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Focus dose</text>
+<text x="302" y="225" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">“10mg” (Oct 11 post)</text>
+<circle cx="498.0" cy="206" r="9" fill="#f59e0b"/>
+<text x="24" y="256" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="1" fill="#0f766e">TESTED IN PEOPLE</text>
+<text x="302" y="292" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Heart attack trial (2016)</text>
+<text x="302" y="309" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">~3.5 mg by vein, once; missed</text>
+<circle cx="415.0" cy="290" r="9" fill="#0f766e"/>
+<text x="302" y="342" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Heart failure trial (2020)</text>
+<text x="302" y="359" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">4 mg or 40 mg a day; both missed</text>
+<circle cx="425.6" cy="340" r="9" fill="#0f766e"/>
+<circle cx="607.6" cy="340" r="9" fill="#0f766e"/>
+<text x="302" y="392" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Older adults (2021)</text>
+<text x="302" y="409" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">~35 mg by vein, once; borderline</text>
+<circle cx="597.0" cy="390" r="9" fill="#0f766e"/>
+<text x="302" y="442" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Forzinity label (Barth)</text>
+<text x="302" y="459" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">40 mg a day under the skin</text>
+<circle cx="607.6" cy="440" r="9" fill="#0f766e"/>
+<text x="302" y="492" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">NuPower trial (2026)</text>
+<text x="302" y="509" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">60 mg a day for 48 weeks; missed</text>
+<circle cx="639.6" cy="490" r="9" fill="#0f766e"/>
+<text x="24" y="540" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="1" fill="#7c3aed">MICE</text>
+<text x="302" y="576" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Old-mouse muscle study (2013)</text>
+<text x="302" y="593" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">3 mg/kg once ≈ 17 mg human-equivalent</text>
+<circle cx="539.9" cy="574" r="9" fill="#7c3aed"/>
+<text x="24" y="652" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Sources: X posts Oct 11, 2026; Gibson 2016; Butler 2020; Roshanravan 2021; FDA label 2025;</text>
+<text x="24" y="670" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">NuPower results 2026; Siegel 2013 (FDA body-surface scaling)</text>
+<text x="696" y="670" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">jabbitapp.com/research</text>
+</svg>

@@ -1,0 +1,953 @@
+{
+ "generated": "2026-10-17",
+ "method": "Jabbit analysis for /research/ss-31-elamipretide-mitochondria-aging-teardown.html (run 2026-10-17 ~10:15 AM ET).\nInputs:\n  - ClinicalTrials.gov API v2: query.intr and query.term for elamipretide / SS-31 / MTP-131 / Bendavia (merged by NCT ID),\n    each record's primary outcome and posted results read; hand-review layer HAND below (primary result per placebo-controlled\n    efficacy trial, from the publication, CT.gov results or a trial registry; sources named per row).\n  - FDA NDC unfinished-products file + establishment registration file dated Oct 16, 2026 (ops/data/ndc/), substance ELAMIPRETIDE.\n  - PubMed E-utilities counts.\nOutput: site/research/sources/ss31-elamipretide-trials-listings-2026-10-17.json\n",
+ "ctgov": {
+  "records_giving_drug": 30,
+  "by_status": {
+   "COMPLETED": 22,
+   "TERMINATED": 3,
+   "ACTIVE_NOT_RECRUITING": 1,
+   "AVAILABLE": 1,
+   "RECRUITING": 2,
+   "WITHDRAWN": 1
+  },
+  "with_posted_results": [
+   "NCT01572909",
+   "NCT01755858",
+   "NCT02245620",
+   "NCT02367014",
+   "NCT02653391",
+   "NCT02693119",
+   "NCT02788747",
+   "NCT02805790",
+   "NCT02848313",
+   "NCT02976038",
+   "NCT03098797",
+   "NCT03323749",
+   "NCT03891875",
+   "NCT05168774"
+  ],
+  "sponsors": {
+   "Stealth BioTherapeutics Inc.": 28,
+   "Children's Hospital of Philadelphia": 1,
+   "David Marcinek": 1
+  },
+  "records": [
+   {
+    "nct": "NCT01115920",
+    "title": "Study to Evaluate Safety, Tolerability, and Pharmacokinetics (PK) of Intravenous (IV) Infusion of MTP-131 (Bendavia™) in Healthy Adults",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1"
+    ],
+    "enrollment": 40,
+    "start": "2010-05",
+    "completion": "2010-09",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Healthy"
+    ],
+    "primary_outcomes": [
+     "Treatment emergent adverse events in treatment group versus placebo group"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT01513200",
+    "title": "Study to Assess the Pharmacodynamic Effects of Unfractionated Heparin (UFH) in Healthy Volunteers With and Without Bendavia",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1"
+    ],
+    "enrollment": 12,
+    "start": "2012-01",
+    "completion": "2012-02",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Healthy Volunteers"
+    ],
+    "primary_outcomes": [
+     "Mean difference over 24 hours in aPTT (activated partial prothrombin time) in seconds when UFH is administered with and without Bendavia"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT01518985",
+    "title": "The Impact of Intravenous Bendavia™ on Endothelial Reactivity Dysfunction in Cigarette Smoking",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1"
+    ],
+    "enrollment": 6,
+    "start": "2012-01",
+    "completion": "2012-03",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Healthy Volunteers"
+    ],
+    "primary_outcomes": [
+     "Analysis of variance (ANOVA) between group mean endothelial function (EndoPAT Index) following smoking a single cigarette with and without Bendavia"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT01572909",
+    "title": "Evaluation of Myocardial Effects of MTP-131 for Reducing Reperfusion Injury in Patients With Acute Coronary Events",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 300,
+    "start": "2012-04",
+    "completion": "2015-02",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Reperfusion Injury",
+     "STEMI"
+    ],
+    "primary_outcomes": [
+     "Area Under the Curve (AUC) of Serum Creatine Kinase Isoenzyme Type Muscle-brain (CK-MB)"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "TRIPLE"
+   },
+   {
+    "nct": "NCT01754818",
+    "title": "A Phase 1 Study Examining the Pharmacokinetics and Tolerability of a Single Oral Dose of Bendavia (MTP-131)",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1"
+    ],
+    "enrollment": 30,
+    "start": "2012-11",
+    "completion": "2013-02",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Healthy"
+    ],
+    "primary_outcomes": [
+     "Mean peak plasma concentration (Cmax) of Bendavia (ng/ml) in each cohort.",
+     "Mean Area Under the Curve (AUC) for Bendavia (hr.ng/ml) in the time from dosing to final plasma sample in each cohort.",
+     "Mean Time post-dose of the peak plasma concentration (Tmax) of Bendavia (hours) in each cohort.",
+     "Mean apparent clearance (CL/F) of Bendavia (ml/hr/kg) in each cohort.",
+     "Mean Volume of Distribution (Vd/F) of Bendavia (ml/kg) in each cohort.",
+     "Mean Half Life(t1/2) of Bendavia (hours) in each cohort."
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "TRIPLE"
+   },
+   {
+    "nct": "NCT01755858",
+    "title": "Effects of Intravenous Bendavia™ on Reperfusion Injury in Patients Undergoing Angioplasty of the Renal Artery",
+    "status": "TERMINATED",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "enrollment": 16,
+    "start": "2012-12",
+    "completion": "2016-05",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Renal Artery Obstruction",
+     "Hypertension, Renovascular",
+     "Ischemia Reperfusion Injury"
+    ],
+    "primary_outcomes": [
+     "Change in Mean Glomerular Filtration Rate (GFR), as Measured by Iothalamate Clearance, at Baseline (Pre-percutaneous Renal Artery Angioplasty and 8 Weeks Post-PTRA."
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "TRIPLE"
+   },
+   {
+    "nct": "NCT01786915",
+    "title": "Safety and Pharmacokinetic (PK) Study of Oral Bendavia Administered for 7 Days",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1"
+    ],
+    "enrollment": 30,
+    "start": "2013-02",
+    "completion": "2013-03",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Healthy Volunteers"
+    ],
+    "primary_outcomes": [
+     "Mean peak plasma concentration (Cmax) of Bendavia (ng/ml) on Day 1 in each cohort.",
+     "Mean peak plasma concentration (Cmax) of Bendavia (ng/ml) on Day 7 in each cohort.",
+     "Mean time to peak plasma concentration (Tmax) of Bendavia (hr) on Day 1 in each cohort.",
+     "Mean time to peak plasma concentration (Tmax) of Bendavia (hr) on Day 7 in each cohort.",
+     "Mean Area Under the Curve (AUC) from 0-24 hours on Day 1 for Bendavia (hr.ng/ml) in the time from dosing to 24 hours post-dose in each cohort.",
+     "Mean Area Under the Curve (AUC) from 0-24 hours on Day 7 for Bendavia (hr.ng/ml) in the time from dosing to 24 hours post-dose in each cohort.",
+     "Ratio of AUC0-24h calculated on Day 7 to AUC0-24h calculated on Day 1 [AUC0-24h (d7)/AUC0-24h (d1)].",
+     "Number of adverse events observed with and without Bendavia"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "TRIPLE"
+   },
+   {
+    "nct": "NCT02245620",
+    "title": "A Phase 2 Study to Evaluate the Impact of MTP-131 (Bendavia™) on Skeletal Muscle Function in Elderly",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 41,
+    "start": "2015-01-15",
+    "completion": "2016-07-06",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Skeletal Muscle Mitochondrial Dysfunction in the Elderly"
+    ],
+    "primary_outcomes": [
+     "Change From Baseline in ATPmax (Maximal ATP Synthetic Rate)"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT02314299",
+    "title": "A Study of MTP-131 Topical Ophthalmic Solution in Subjects With Diabetic Macular Edema and Non-Exudative Intermediate Age-related Macular Degeneration",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "enrollment": 20,
+    "start": "2014-11",
+    "completion": "2015-06",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Diabetic Macular Edema",
+     "Age-related Macular Degeneration"
+    ],
+    "primary_outcomes": [
+     "Incidence and severity of systemic and ocular adverse events",
+     "Change from Baseline in vital sign measurements",
+     "Change from Baseline in best corrected visual acuity (BCVA) as measured with the early treatment diabetic retinopathy study (ETDRS) scale",
+     "Change from Baseline in slit lamp examinations",
+     "Change from Baseline in intraocular pressure",
+     "Change from Baseline in dilated fundoscopic examinations",
+     "Change from Baseline in central subfield thickness"
+    ],
+    "allocation": "NON_RANDOMIZED",
+    "masking": "NONE"
+   },
+   {
+    "nct": "NCT02367014",
+    "title": "Safety, Tolerability, and Efficacy of MTP-131 for the Treatment of Mitochondrial Myopathy",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "enrollment": 36,
+    "start": "2015-02",
+    "completion": "2016-04",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Mitochondrial Myopathy"
+    ],
+    "primary_outcomes": [
+     "Change in Distance Walked (Meters) on the 6-minute Walk Test (6MWT)"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT02388464",
+    "title": "A Study Investigating the Safety, Tolerability, and Pharmacokinetics of MTP-131 in Subjects With Congestive Heart Failure",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1"
+    ],
+    "enrollment": 36,
+    "start": "2014-07",
+    "completion": "2015-06",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Congestive Heart Failure"
+    ],
+    "primary_outcomes": [
+     "Incidence of Adverse Events"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "TRIPLE"
+   },
+   {
+    "nct": "NCT02388529",
+    "title": "A Multiple Ascending Dose Study to Evaluate the Safety, Tolerability, Pharmacokinetics and Efficacy of Bendavia™ (MTP-131) in Patients With Heart Failure",
+    "status": "WITHDRAWN",
+    "phases": [
+     "PHASE1"
+    ],
+    "enrollment": 0,
+    "start": "2015-05",
+    "completion": "2015-10",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Heart Failure"
+    ],
+    "primary_outcomes": [
+     "Incidence of Adverse Events",
+     "Mean peak plasma concentration (Cmax) of MTP-131 (ng/ml) in each cohort"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "TRIPLE"
+   },
+   {
+    "nct": "NCT02436447",
+    "title": "A Phase 1 Study Investigating the Safety and Pharmacokinetics of Repeat-dose Intravenous Infusion of MTP-131 in Subjects With Impaired Renal Function",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1"
+    ],
+    "enrollment": 23,
+    "start": "2015-05",
+    "completion": "2015-10",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Normal and Impaired Renal Function"
+    ],
+    "primary_outcomes": [
+     "Mean peak plasma concentration (Cmax) of MTP-131 (ng/ml) in each cohort"
+    ],
+    "allocation": "NON_RANDOMIZED",
+    "masking": "NONE"
+   },
+   {
+    "nct": "NCT02653391",
+    "title": "A Study Investigating the Safety, Tolerability, and Efficacy of Elamipretide Topical Ophthalmic Solution for the Treatment of Fuchs' Corneal Endothelial Dystrophy (FCED)",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "enrollment": 22,
+    "start": "2016-02",
+    "completion": "2018-12",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Fuchs' Corneal Endothelial Dystrophy (FCED)"
+    ],
+    "primary_outcomes": [
+     "Incidence and Severity of Ocular TEAEs.",
+     "The Incidence and Severity of Systemic Adverse Events",
+     "Change From Baseline in Findings From Slit Lamp Examinations (SLE) Part A",
+     "Change From Baseline in Findings From Slit Lamp Examinations (SLE) Part B",
+     "Change From Baseline in Intraocular Pressure (IOP) for Part A",
+     "Change From Baseline in Intraocular Pressure (IOP) for Part B"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT02693119",
+    "title": "A Study Investigating the Safety, Tolerability, and Efficacy of Elamipretide Topical Ophthalmic Solution for Treatment of Leber's Hereditary Optic Neuropathy",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 12,
+    "start": "2016-03",
+    "completion": "2019-12",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Leber's Hereditary Optic Neuropathy"
+    ],
+    "primary_outcomes": [
+     "Double Masked Period: Incidence of Ocular TEAEs",
+     "Open Label Extension: Incidence of Ocular TEAEs",
+     "Double Masked Period: Severity of Ocular TEAEs",
+     "OLE: Severity of Ocular TEAEs",
+     "Double Masked Period: Best Corrected Visual Acuity (BCVA)",
+     "Open Label Extension Period: Best Corrected Visual Acuity (BCVA) Using the Using the Early Treatment Diabetic Retinopathy Study (ETDRS) Scale"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT02788747",
+    "title": "Effect of Elamipretide on Left Ventricular Function in Subjects With Stable Heart Failure With Reduced Ejection Fraction",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 71,
+    "start": "2016-06",
+    "completion": "2017-10",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Heart Failure"
+    ],
+    "primary_outcomes": [
+     "Change in Left Ventricular End Systolic Volume (ml)"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "TRIPLE"
+   },
+   {
+    "nct": "NCT02805790",
+    "title": "Safety, Tolerability, Efficacy of MTP-131 for Treatment of Mitochondrial Disease in Subjects From the MMPOWER Study",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 30,
+    "start": "2016-08-22",
+    "completion": "2017-03-23",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Primary Mitochondrial Disease"
+    ],
+    "primary_outcomes": [
+     "Distance Walked on the 6-minute Walk Test (6MWT) by Visit"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT02814097",
+    "title": "A Study to Evaluate the Effects of 4 Weeks Treatment With Subcutaneous Elamipretide on Left Ventricular Function in Subjects With Stable Heart Failure With Preserved Ejection Fraction",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 46,
+    "start": "2016-09-02",
+    "completion": "2017-06-02",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Chronic Heart Failure"
+    ],
+    "primary_outcomes": [
+     "Compare the delta in E/e' at rest exercise measured with echocardiography between the elamipretide and placebo groups"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT02848313",
+    "title": "An Open-Label, Phase 1 Clinical Study to Evaluate the Safety and Tolerability of Subcutaneous Elamipretide in Subjects With Intermediate Age-Related Macular Degeneration",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1"
+    ],
+    "enrollment": 40,
+    "start": "2016-10-28",
+    "completion": "2018-04-10",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Age-Related Macular Degeneration"
+    ],
+    "primary_outcomes": [
+     "Change From Baseline in Mean Standard Luminance Best-corrected Visual Acuity (BCVA)"
+    ],
+    "allocation": "NON_RANDOMIZED",
+    "masking": "NONE"
+   },
+   {
+    "nct": "NCT02914665",
+    "title": "A Phase 2 Study to Evaluate the Cardiac and Renal Effects of Short Term Treatment With Elamipretide in Patients Hospitalized With Congestion Due to Heart Failure",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 308,
+    "start": "2016-10-20",
+    "completion": "2017-11-27",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Heart Failure"
+    ],
+    "primary_outcomes": [
+     "Change in NT-proBNP between Baseline and Day 8/Early Discharge"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT02976038",
+    "title": "Open-Label Extension Trial to Characterize the Long-term Safety and Tolerability of Elamipretide in Subjects With Genetically Confirmed Primary Mitochondrial Myopathy (PMM)",
+    "status": "TERMINATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 28,
+    "start": "2016-12",
+    "completion": "2020-04-09",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Primary Mitochondrial Disease"
+    ],
+    "primary_outcomes": [
+     "Distance Walked on Six Minute Walk Test"
+    ],
+    "allocation": "NA",
+    "masking": "NONE"
+   },
+   {
+    "nct": "NCT03098797",
+    "title": "A Trial to Evaluate Safety, Tolerability and Efficacy of Elamipretide in Subjects With Barth Syndrome",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ],
+    "enrollment": 12,
+    "start": "2017-07-05",
+    "completion": "2021-10-11",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Barth Syndrome"
+    ],
+    "primary_outcomes": [
+     "Part 1: Distance Walked During the 6-Minute Walk Test (6MWT) by Visit",
+     "Part 1: Total Fatigue Score Based on the BTHS-SA by Visit."
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT03323749",
+    "title": "A Trial to Evaluate Safety and Efficacy of Elamipretide Primary Mitochondrial Myopathy Followed by Open-Label Extension",
+    "status": "TERMINATED",
+    "phases": [
+     "PHASE3"
+    ],
+    "enrollment": 218,
+    "start": "2017-10-09",
+    "completion": "2020-02-10",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Primary Mitochondrial Myopathy"
+    ],
+    "primary_outcomes": [
+     "Six-minute Walk Test (6MWT)",
+     "Total Fatigue Score on the on the Primary Mitochondrial Myopathy Symptom Assessment (PMMSA)"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT03891875",
+    "title": "ReCLAIM-2 Study to Evaluate Safety,Efficacy & Pharmacokinetics of Elamipretide in Subjects With AMD With Non-central GA",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 176,
+    "start": "2019-03-27",
+    "completion": "2022-04-14",
+    "has_results": true,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Age-related Macular Degeneration"
+    ],
+    "primary_outcomes": [
+     "LL BCVA Score Change From Baseline",
+     "GA Area Change From Baseline by OCT"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT04689360",
+    "title": "An Intermediate Size Expanded Access Protocol of Elamipretide",
+    "status": "AVAILABLE",
+    "phases": null,
+    "enrollment": null,
+    "start": null,
+    "completion": null,
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Mitochondrial Diseases",
+     "Barth Syndrome"
+    ],
+    "primary_outcomes": [],
+    "allocation": null,
+    "masking": null
+   },
+   {
+    "nct": "NCT05162768",
+    "title": "Study to Evaluate Efficacy and Safety of Elamipretide in Subjects With Primary Mitochondrial Disease From Nuclear DNA Mutations (nPMD)",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE3"
+    ],
+    "enrollment": 102,
+    "start": "2022-04-29",
+    "completion": "2024-12-04",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Mitochondrial Myopathies",
+     "Mitochondrial Pathology",
+     "Mitochondrial DNA Mutation",
+     "Mitochondrial Diseases",
+     "Mitochondrial DNA Deletion",
+     "Mitochondrial DNA Depletion",
+     "Mitochondrial Metabolism Defect",
+     "Mitochondrial Complex I Deficiency"
+    ],
+    "primary_outcomes": [
+     "Six-minute walk test (6MWT)"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT05168774",
+    "title": "FRDA Investigator Initiated Study (IIS) With Elamipretide",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "enrollment": 20,
+    "start": "2022-03-03",
+    "completion": "2024-07-25",
+    "has_results": true,
+    "sponsor": "Children's Hospital of Philadelphia",
+    "conditions": [
+     "Friedreich Ataxia"
+    ],
+    "primary_outcomes": [
+     "Change in High Contrast Visual Acuity"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "NONE"
+   },
+   {
+    "nct": "NCT06373731",
+    "title": "ReNEW:Phase 3 Study of Efficacy, Safety & Pharmacokinetics of Subcutaneous Injections of Elamipretide in Subjects With Dry Age-Related Macular Degeneration (Dry AMD)",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phases": [
+     "PHASE3"
+    ],
+    "enrollment": 313,
+    "start": "2024-05-30",
+    "completion": "2027-09",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Age Related Macular Degeneration (ARMD)"
+    ],
+    "primary_outcomes": [
+     "Week 48 Rate of change in the macular area of photoreceptor loss"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   },
+   {
+    "nct": "NCT07275424",
+    "title": "Study of Healthy Aging and Physical Function With Elamipretide",
+    "status": "RECRUITING",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 30,
+    "start": "2025-11-26",
+    "completion": "2026-04-15",
+    "has_results": false,
+    "sponsor": "David Marcinek",
+    "conditions": [
+     "Aging, Healthy"
+    ],
+    "primary_outcomes": [
+     "To evaluate the safety and tolerability of daily subcutaneous injections of elamipetide: Number of participants with treatment-related adverse events and Number of participants completed 4 weeks of injection"
+    ],
+    "allocation": "NA",
+    "masking": "NONE"
+   },
+   {
+    "nct": "NCT07531251",
+    "title": "Clinical Trial in Patients With Barth Syndrome- 4TAZPower",
+    "status": "RECRUITING",
+    "phases": [
+     "PHASE4"
+    ],
+    "enrollment": 48,
+    "start": "2026-07-02",
+    "completion": "2029-11-30",
+    "has_results": false,
+    "sponsor": "Stealth BioTherapeutics Inc.",
+    "conditions": [
+     "Barth Syndrome"
+    ],
+    "primary_outcomes": [
+     "Primary Efficacy End Point"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE"
+   }
+  ]
+ },
+ "placebo_controlled_efficacy_trials": {
+  "count": 13,
+  "by_result": {
+   "missed": 9,
+   "no results": 2,
+   "borderline": 2
+  },
+  "trials": [
+   {
+    "nct": "NCT01572909",
+    "year_result_public_or_completed": 2016,
+    "condition": "Heart attack (STEMI) during stenting",
+    "n": 297,
+    "dose": "IV 0.05 mg/kg/h for 1 h",
+    "primary_endpoint": "Infarct size (CK-MB AUC 0-72 h)",
+    "result": "missed",
+    "source": "Gibson 2016 Eur Heart J, PMID 26586786: not associated with a significant reduction; CT.gov results"
+   },
+   {
+    "nct": "NCT01755858",
+    "year_result_public_or_completed": 2017,
+    "condition": "Kidney artery narrowing (stenting)",
+    "n": 14,
+    "dose": "IV 0.05 mg/kg/h during the procedure",
+    "primary_endpoint": "Measured GFR change at 8 weeks (registered)",
+    "result": "missed",
+    "source": "CT.gov posted results: +6.3 vs +12.0 mL/min (placebo higher); Saad 2017 Circ Cardiovasc Interv, PMID 28916603, reports renal blood flow and eGFR gains instead (pilot, 6 vs 8)"
+   },
+   {
+    "nct": "NCT02914665",
+    "year_result_public_or_completed": 2017,
+    "condition": "Hospitalized heart failure",
+    "n": 308,
+    "dose": "IV 20 mg daily, 7 days",
+    "primary_endpoint": "NT-proBNP change",
+    "result": "no results",
+    "source": "Completed Nov 27, 2017; no results posted on CT.gov; no PubMed record found for the NCT number"
+   },
+   {
+    "nct": "NCT02814097",
+    "year_result_public_or_completed": 2017,
+    "condition": "Heart failure, preserved EF",
+    "n": 46,
+    "dose": "SC 40 mg daily, 4 weeks",
+    "primary_endpoint": "E/e' (heart filling)",
+    "result": "no results",
+    "source": "Completed Jun 2, 2017; no results posted; no PubMed record found for the NCT number"
+   },
+   {
+    "nct": "NCT02367014",
+    "year_result_public_or_completed": 2018,
+    "condition": "Mitochondrial myopathy (MMPOWER-1)",
+    "n": 36,
+    "dose": "IV, 5 days, 3 doses",
+    "primary_endpoint": "6-minute walk at day 5",
+    "result": "borderline",
+    "source": "Karaa 2018 Neurology, PMID 29500292: high dose +64.5 vs +20.4 m, P = 0.053; dose trend P = 0.014"
+   },
+   {
+    "nct": "NCT02788747",
+    "year_result_public_or_completed": 2020,
+    "condition": "Heart failure, reduced EF (PROGRESS-HF)",
+    "n": 71,
+    "dose": "SC 4 or 40 mg daily, 4 weeks",
+    "primary_endpoint": "LV end-systolic volume",
+    "result": "missed",
+    "source": "Butler 2020 J Card Fail, PMID 32068002: P = 0.90 and 0.28"
+   },
+   {
+    "nct": "NCT02805790",
+    "year_result_public_or_completed": 2020,
+    "condition": "Mitochondrial myopathy (MMPOWER-2)",
+    "n": 30,
+    "dose": "SC 40 mg daily, 4-week crossover",
+    "primary_endpoint": "6-minute walk",
+    "result": "missed",
+    "source": "Karaa 2020 J Cachexia Sarcopenia Muscle, PMID 32096613: +19.8 m, P = 0.0833"
+   },
+   {
+    "nct": "NCT02245620",
+    "year_result_public_or_completed": 2021,
+    "condition": "Healthy older adults with low muscle ATP",
+    "n": 39,
+    "dose": "One 2-h IV infusion, 0.25 mg/kg/h",
+    "primary_endpoint": "Hand-muscle ATPmax right after infusion",
+    "result": "borderline",
+    "source": "Roshanravan 2021 PLoS One, PMID 34264994: delta P = 0.055, percent change P = 0.045; gone by day 7; no effect on fatigue resistance"
+   },
+   {
+    "nct": "NCT03098797",
+    "year_result_public_or_completed": 2021,
+    "condition": "Barth syndrome (TAZPOWER, part 1)",
+    "n": 12,
+    "dose": "SC 40 mg daily, 12-week crossover",
+    "primary_endpoint": "6-minute walk and fatigue score",
+    "result": "missed",
+    "source": "FDA complete response letter May 15, 2025: P = 0.97 and P = 0.89; label section 14"
+   },
+   {
+    "nct": "NCT03323749",
+    "year_result_public_or_completed": 2023,
+    "condition": "Mitochondrial myopathy (MMPOWER-3)",
+    "n": 218,
+    "dose": "SC 40 mg daily, 24 weeks",
+    "primary_endpoint": "6-minute walk and fatigue score",
+    "result": "missed",
+    "source": "Karaa 2023 Neurology, PMID 37268435: -3.2 m, P = 0.69; P = 0.37"
+   },
+   {
+    "nct": "NCT03891875",
+    "year_result_public_or_completed": 2024,
+    "condition": "Dry AMD with geographic atrophy (ReCLAIM-2)",
+    "n": 176,
+    "dose": "SC 40 mg daily, 48 weeks",
+    "primary_endpoint": "Low-light vision and atrophy growth",
+    "result": "missed",
+    "source": "Ehlers 2024 Ophthalmol Sci, PMID 39605874: did not meet statistical significance on either"
+   },
+   {
+    "nct": "NCT02693119",
+    "year_result_public_or_completed": 2024,
+    "condition": "Leber optic neuropathy (eye drops)",
+    "n": 12,
+    "dose": "1% eye drops, 52 weeks",
+    "primary_endpoint": "Visual acuity",
+    "result": "missed",
+    "source": "Karanjia 2024 Ophthalmology, PMID 37923251: not significantly different at any time point"
+   },
+   {
+    "nct": "NCT05162768",
+    "year_result_public_or_completed": 2026,
+    "condition": "Nuclear-DNA mitochondrial disease (NuPower)",
+    "n": 102,
+    "dose": "SC 60 mg daily, 48 weeks",
+    "primary_endpoint": "6-minute walk",
+    "result": "missed",
+    "source": "Dutch trial register results (NL-004124), posted Apr 15, 2026: no more improvement than placebo at week 48"
+   }
+  ]
+ },
+ "fda_bulk_listings": {
+  "files_dated": "2026-10-16",
+  "count": 6,
+  "started_after_forzinity_approval_2025_09_19": 5,
+  "labeled_for_human_prescription_compounding": 3,
+  "listings": [
+   {
+    "product_ndc": "73212-013",
+    "name": "SS-31 Acetate",
+    "labeler": "Qingdao Biopeptek Co., Ltd.",
+    "marketing_category": "BULK INGREDIENT",
+    "start_marketing_date": "20200801",
+    "listing_certified_through": "20271231",
+    "registration": [
+     "CHN (API MANUFACTURE)"
+    ]
+   },
+   {
+    "product_ndc": "71052-095",
+    "name": "Elamipretide (SS-31) Acetate",
+    "labeler": "DARMERICA, LLC",
+    "marketing_category": "BULK INGREDIENT",
+    "start_marketing_date": "20260113",
+    "listing_certified_through": "20271231",
+    "registration": [
+     "USA (RELABEL; REPACK)"
+    ]
+   },
+   {
+    "product_ndc": "84347-008",
+    "name": "Elamipretide",
+    "labeler": "Shenzhen Alvantis Pharma Co., Ltd.",
+    "marketing_category": "BULK INGREDIENT",
+    "start_marketing_date": "20260127",
+    "listing_certified_through": "20271231",
+    "registration": [
+     "CHN (API MANUFACTURE)"
+    ]
+   },
+   {
+    "product_ndc": "85207-057",
+    "name": "Elamipretide (SS-31) Acetate",
+    "labeler": "SCH Global Services Private Limited",
+    "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+    "start_marketing_date": "20260318",
+    "listing_certified_through": "20271231",
+    "registration": "no current registration matched by name"
+   },
+   {
+    "product_ndc": "87370-135",
+    "name": "ELAMIPRETIDE ACETATE",
+    "labeler": "El-Peptido (Shanghai) Biopharmaceutical Co., Ltd",
+    "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+    "start_marketing_date": "20260708",
+    "listing_certified_through": "20271231",
+    "registration": [
+     "CHN (ANALYSIS; API MANUFACTURE)"
+    ]
+   },
+   {
+    "product_ndc": "87621-030",
+    "name": "Elamipretide (SS-31) Acetate",
+    "labeler": "APISTER LIFESCIENCES PRIVATE LIMITED",
+    "marketing_category": "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING",
+    "start_marketing_date": "20260818",
+    "listing_certified_through": "20271231",
+    "registration": [
+     "IND (API MANUFACTURE)"
+    ]
+   }
+  ]
+ },
+ "pubmed": {
+  "query": "(elamipretide OR \"SS-31\"[tiab] OR SS31[tiab] OR MTP-131 OR bendavia OR \"Szeto-Schiller\")",
+  "all": 642,
+  "humans_mesh": 276,
+  "clinical_trial_pubtype": 22,
+  "aging_terms": 109
+ },
+ "x_counts": {
+  "query": "(\"SS-31\" OR SS31 OR elamipretide OR Forzinity) -is:retweet",
+  "utc_days_oct_11_16_all_languages": [
+   25,
+   35,
+   46,
+   53,
+   43,
+   32
+  ],
+  "utc_days_oct_11_16_lang_en": [
+   24,
+   24,
+   43,
+   31,
+   36,
+   35
+  ],
+  "pulled": "2026-10-17 ~10:05 AM ET"
+ }
+}
