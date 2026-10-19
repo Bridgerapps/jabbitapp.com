@@ -1,0 +1,273 @@
+{
+ "title": "Alpha-amino-acid count vs U.S. regulatory status: popular metabolic and peptide drugs",
+ "built": "2026-10-19",
+ "method": "Each count is the number of residues in the FDA GSRS protein subunit sequence(s), summed across chains for two-chain insulins. Backbone residues that are chemically modified (Aib, alpha-methyl-leucine, acylated lysine, amidated C-terminus) count once; side chains attached to a lysine (fatty diacids, gamma-glutamate, ADO/AEEA linkers) are not counted, matching FDA's October 2, 2026 retatrutide decision. 21 CFR 600.3(h)(6): a protein is an alpha amino acid polymer with a specific, defined sequence greater than 40 amino acids.",
+ "rule": "21 CFR 600.3(h)(6); FDA letter to Lilly, Oct 2, 2026 (7th Cir. No. 26-1301, Dkt. 46-2)",
+ "sources": {
+  "gsrs": "https://gsrs.ncats.nih.gov/ (FDA Global Substance Registration System; substance records by UNII)",
+  "drugsfda": "https://api.fda.gov/drug/drugsfda.json (openFDA Drugs@FDA)",
+  "deemed_bla_list": "https://www.fda.gov/media/119229/download (List of Approved NDAs for Biological Products That Were Deemed to be BLAs on March 23, 2020)",
+  "cagrisema_nda": "https://www.novonordisk-us.com/media/press-releases/novo-nordisk-cagrisema-fda-nda-submission.html",
+  "fda_retatrutide_letter": "https://storage.courtlistener.com/recap/gov.uscourts.ca7.55916/gov.uscourts.ca7.55916.46.2.pdf",
+  "lilly_10q_q2_2026": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+ },
+ "summary": {
+  "rows": 14,
+  "at_or_below_40": [
+   "tb500",
+   "bpc157",
+   "liraglutide",
+   "semaglutide",
+   "teriparatide",
+   "cagrilintide",
+   "pramlintide",
+   "exenatide",
+   "retatrutide",
+   "tirzepatide"
+  ],
+  "above_40": [
+   "lixisenatide",
+   "tesamorelin",
+   "degludec",
+   "insulin"
+  ],
+  "approved_drugs_at_or_below_40_all_ndas": true,
+  "approved_above_40_all_blas": true,
+  "note_somapacitan": "Sogroya (somapacitan, BLA), cited by Lilly in its appeal, has a 191-residue chain (GSRS 8FOJ430U94); not charted."
+ },
+ "rows": [
+  {
+   "key": "tb500",
+   "name": "TB-500 (Ac-LKKTETQ fragment)",
+   "gsrs_unii": "QHK6Z47GTG",
+   "chains": [
+    7
+   ],
+   "alpha_amino_acids": 7,
+   "sequence_one_letter_gsrs": [
+    "LKKTETQ"
+   ],
+   "status_class": "unapproved",
+   "status": "Not FDA-approved; one of the peptides in FDA's pending compounding review",
+   "above_40": false
+  },
+  {
+   "key": "bpc157",
+   "name": "BPC-157",
+   "gsrs_unii": "8ED8NXK95P",
+   "chains": [
+    15
+   ],
+   "alpha_amino_acids": 15,
+   "sequence_one_letter_gsrs": [
+    "GEPPPGKPADDAGLV"
+   ],
+   "status_class": "unapproved",
+   "status": "Not FDA-approved; one of the peptides in FDA's pending compounding review",
+   "above_40": false
+  },
+  {
+   "key": "liraglutide",
+   "name": "Liraglutide (Victoza, Saxenda)",
+   "gsrs_unii": "839I73S42A",
+   "chains": [
+    31
+   ],
+   "alpha_amino_acids": 31,
+   "sequence_one_letter_gsrs": [
+    "HAEGTFTSDVSSYLEGQAAKEFIAWLVRGRG"
+   ],
+   "status_class": "drug",
+   "status": "Drug: NDA 022341; 8 generic ANDAs approved Dec 23, 2024 to Mar 11, 2026",
+   "above_40": false
+  },
+  {
+   "key": "semaglutide",
+   "name": "Semaglutide (Ozempic, Wegovy)",
+   "gsrs_unii": "53AXN4NNHX",
+   "chains": [
+    31
+   ],
+   "alpha_amino_acids": 31,
+   "sequence_one_letter_gsrs": [
+    "HAEGTFTSDVSSYLEGQAAKEFIAWLVRGRG"
+   ],
+   "status_class": "drug",
+   "status": "Drug: NDA 209637 (Ozempic, approved Dec 5, 2017), NDA 215256 (Wegovy)",
+   "above_40": false
+  },
+  {
+   "key": "teriparatide",
+   "name": "Teriparatide (Forteo)",
+   "gsrs_unii": "10T9CSU89I",
+   "chains": [
+    34
+   ],
+   "alpha_amino_acids": 34,
+   "sequence_one_letter_gsrs": [
+    "SVSEIQLMHNLGKHLNSMERVEWLRKKLQDVHNF"
+   ],
+   "status_class": "drug",
+   "status": "Drug: NDA 021318; generic ANDA 213641 (Amphastar, Dec 12, 2025)",
+   "above_40": false
+  },
+  {
+   "key": "cagrilintide",
+   "name": "Cagrilintide (in CagriSema)",
+   "gsrs_unii": "AO43BIF1U8",
+   "chains": [
+    37
+   ],
+   "alpha_amino_acids": 37,
+   "sequence_one_letter_gsrs": [
+    "KCNTATCATQRLAEFLRHSSNNFGPILPPTNVGSNTP"
+   ],
+   "status_class": "unapproved",
+   "status": "Not approved; Novo filed CagriSema as an NDA (drug) on Dec 18, 2025",
+   "above_40": false
+  },
+  {
+   "key": "pramlintide",
+   "name": "Pramlintide (Symlin)",
+   "gsrs_unii": "D3FM8FA78T",
+   "chains": [
+    37
+   ],
+   "alpha_amino_acids": 37,
+   "sequence_one_letter_gsrs": [
+    "KCNTATCATQRLANFLVHSSNNFGPILPPTNVGSNTY"
+   ],
+   "status_class": "drug",
+   "status": "Drug: NDA 021332",
+   "above_40": false
+  },
+  {
+   "key": "exenatide",
+   "name": "Exenatide (Byetta)",
+   "gsrs_unii": "9P1872D4OL",
+   "chains": [
+    39
+   ],
+   "alpha_amino_acids": 39,
+   "sequence_one_letter_gsrs": [
+    "HGEGTFTSDLSKQMEEEAVRLFIEWLKNGGPSSGAPPPS"
+   ],
+   "status_class": "drug",
+   "status": "Drug: NDA 021773; generic ANDA 206697 (Amneal, Nov 19, 2024)",
+   "above_40": false
+  },
+  {
+   "key": "retatrutide",
+   "name": "Retatrutide",
+   "gsrs_unii": "NOP2Y096GV",
+   "chains": [
+    39
+   ],
+   "alpha_amino_acids": 39,
+   "sequence_one_letter_gsrs": [
+    "YAQGTFTSDYSILLDKKAQAAFIEYLLEGGPSSGAPPPS"
+   ],
+   "status_class": "disputed",
+   "status": "Not approved; FDA says drug (Oct 2, 2026), Lilly says biologic",
+   "above_40": false
+  },
+  {
+   "key": "tirzepatide",
+   "name": "Tirzepatide (Mounjaro, Zepbound)",
+   "gsrs_unii": "OYN3CCI6QE",
+   "chains": [
+    39
+   ],
+   "alpha_amino_acids": 39,
+   "sequence_one_letter_gsrs": [
+    "YAEGTFTSDYSIGLDKIAQKAFVQWLIAGGPSSGAPPPS"
+   ],
+   "status_class": "drug",
+   "status": "Drug: NDA 215866 (May 13, 2022), NDA 217806; generic ANDAs filed by July 2026",
+   "above_40": false
+  },
+  {
+   "key": "lixisenatide",
+   "name": "Lixisenatide (Adlyxin, Soliqua)",
+   "gsrs_unii": "74O62BB01U",
+   "chains": [
+    44
+   ],
+   "alpha_amino_acids": 44,
+   "sequence_one_letter_gsrs": [
+    "HGEGTFTSDLSKQMEEEAVRLFIEWLKNGGPSSGAPPSKKKKKK"
+   ],
+   "status_class": "biologic",
+   "status": "Biologic: NDA 208471 deemed a BLA on Mar 23, 2020",
+   "above_40": true
+  },
+  {
+   "key": "tesamorelin",
+   "name": "Tesamorelin (Egrifta)",
+   "gsrs_unii": "MQG94M5EEO",
+   "chains": [
+    44
+   ],
+   "alpha_amino_acids": 44,
+   "sequence_one_letter_gsrs": [
+    "YADAIFTNSYRKVLGQLSARKLLQDIMSRQQGESNQERGARARL"
+   ],
+   "status_class": "biologic",
+   "status": "Biologic: NDA 022505 deemed a BLA on Mar 23, 2020",
+   "above_40": true
+  },
+  {
+   "key": "degludec",
+   "name": "Insulin degludec (Tresiba)",
+   "gsrs_unii": "54Q18076QB",
+   "chains": [
+    29,
+    21
+   ],
+   "alpha_amino_acids": 50,
+   "sequence_one_letter_gsrs": [
+    "FVNQHLCGSHLVEALYLVCGERGFFYTPK",
+    "GIVEQCCTSICSLYQLENYCN"
+   ],
+   "status_class": "biologic",
+   "status": "Biologic: NDA 203314 deemed a BLA on Mar 23, 2020",
+   "above_40": true
+  },
+  {
+   "key": "insulin",
+   "name": "Insulin human (Humulin R)",
+   "gsrs_unii": "1Y17CTI5SR",
+   "chains": [
+    30,
+    21
+   ],
+   "alpha_amino_acids": 51,
+   "sequence_one_letter_gsrs": [
+    "FVNQHLCGSHLVEALYLVCGERGFFYTPKT",
+    "GIVEQCCTSICSLYQLENYCN"
+   ],
+   "status_class": "biologic",
+   "status": "Biologic: NDA 018780 deemed a BLA on Mar 23, 2020",
+   "above_40": true
+  }
+ ],
+ "patent": {
+  "number": "US 11,542,313 B2",
+  "title": "Incretin analogs and uses thereof",
+  "assignee": "Eli Lilly and Company",
+  "pct_filed": "2018-12-14",
+  "priority": "2017-12-21 (US provisional 62/608,613)",
+  "granted": "2023-01-03",
+  "term_adjustment_days": 37,
+  "expected_expiry_before_any_extension": "2039-01-20 (Google Patents 'adjusted expiration'; 20 years from Dec 14, 2018 PCT filing plus 37 days, subject to any disclaimer)",
+  "claim_covering_retatrutide": "Claim 18 (with claims 1 and 8): Y-Aib-QGTFTSDYSI-aMeL-LDK-K[(AEEA)-(gGlu)-CO-(CH2)18-CO2H]-AQ-Aib-AFIEYLLEGGPSSGAPPPS, C-terminal amide optional",
+  "source": "https://patents.google.com/patent/US11542313B2/en (front page PDF: https://patentimages.storage.googleapis.com/2a/25/e2/69d892a3ec7295/US11542313.pdf)"
+ },
+ "lobbying_scan": {
+  "source": "U.S. Senate LDA API, client_name 'Eli Lilly', filing years 2024-2026, pulled 2026-10-19",
+  "filings": 173,
+  "in_house_reports": 18,
+  "mention_retatrutide_protein_or_biologic_definition": 0,
+  "note": "Lilly's in-house reports list broad topics ('FDA policy issues', 'Pharmaceutical intellectual property issues', IRA implementation); outside firms list compounding bills (e.g., H.R. 5316). Generic descriptions mean a zero count does not show the topic was never raised."
+ }
+}
