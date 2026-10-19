@@ -1,0 +1,602 @@
+{
+ "method": "Hand review of ClinicalTrials.gov studies on stopping or stepping down semaglutide/tirzepatide.\nInput: ops/data/glp1-stopping/ctgov-raw.json (from ops/scripts/glp1_stopping_ctgov.py; 1,006 studies, keyword hits).\nEach keyword hit was read by hand (title, summary, arms, outcomes); the kept list and categories are below.\nSTEP 1 (NCT03548935, off-treatment extension) and STEP 4 (NCT03548987) were added by hand: their registry text\ndoes not use stopping/withdrawal words, so the keyword pass missed them.\nRe-fetches each kept record for live status/results, extracts posted results for NCT05548647 (Study 2) and NCT06640972,\nand writes site/research/sources/glp1-stopping-ctgov-2026-10-19.json. Jabbit analysis, 2026-10-19 (ET).",
+ "summary": {
+  "pulled_et": "2026-10-19 06:05 EDT",
+  "ctgov_unique_semaglutide_or_tirzepatide_studies": 1006,
+  "keyword_hits_read_by_hand": 119,
+  "strategy_trials": 18,
+  "strategy_by_category": {
+   "step_down": 7,
+   "switch": 3,
+   "add_on": 8
+  },
+  "strategy_with_posted_results": [
+   "NCT06640972"
+  ],
+  "strategy_completed": [
+   "NCT06047548",
+   "NCT06584916",
+   "NCT06605703",
+   "NCT06221696",
+   "NCT06640972"
+  ],
+  "taper_to_zero_vs_abrupt_stop": [
+   "NCT07294950",
+   "NCT07859176"
+  ],
+  "taper_to_zero_vs_abrupt_stop_status": {
+   "NCT07294950": "RECRUITING",
+   "NCT07859176": "NOT_YET_RECRUITING"
+  },
+  "all_reviewed_measuring_appetite_or_food_thoughts_after_stopping": [
+   "NCT07859176",
+   "NCT06605703",
+   "NCT06221696",
+   "NCT06734312",
+   "NCT07101939",
+   "NCT05548647",
+   "NCT07387796",
+   "NCT06856928"
+  ],
+  "appetite_after_stopping_with_posted_results": [
+   "NCT05548647"
+  ]
+ },
+ "studies": [
+  {
+   "nct": "NCT06047548",
+   "category": "step_down",
+   "what": "SURMOUNT-MAINTAIN: tirzepatide MTD vs reduce to 5 mg vs placebo for 52 weeks after 60 weeks on MTD",
+   "title": "A Study of LY3298176 (Tirzepatide) For the Maintenance of Body Weight Reduction in Participants Who Have Obesity or Overweight With Weight-Related Comorbidities",
+   "sponsor": "Eli Lilly and Company",
+   "status": "COMPLETED",
+   "start": "2023-09-20",
+   "enrollment": 441,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07294950",
+   "category": "step_down",
+   "what": "REST: semaglutide cut 25% every 4 weeks to zero over 16 weeks vs stopping at once",
+   "title": "Impact of Semaglutide Withdrawal on Cardiometabolic Profile and Physiology of Energy Balance: Recovery Effects After Semaglutide Termination",
+   "sponsor": "Mount Sinai Hospital, Canada",
+   "status": "RECRUITING",
+   "start": "2026-02-01",
+   "enrollment": 98,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07859176",
+   "category": "step_down",
+   "what": "Semaglutide taper (1.7, 1.0, 0.5, 0.25 mg, 4 weeks each) vs abrupt stop with matched placebo pens, after bariatric surgery",
+   "title": "Tapered Versus Abrupt Discontinuation of Semaglutide After Treatment of Recurrent Weight Gain or Suboptimal Response Following Metabolic and Bariatric Surgery",
+   "sponsor": "General Committee of Teaching Hospitals and Institutes, Egypt",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-10",
+   "enrollment": 100,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": true,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07783854",
+   "category": "step_down",
+   "what": "Semaglutide 1.7 mg cut 25% every 8 weeks vs staying on 1.7 mg, 24 weeks",
+   "title": "A Randomized Controlled Study of Dose-tapering Regimen of Semaglutide for Weight-Loss Maintenance in Adults With Overweight or Obesity",
+   "sponsor": "Union Hospital, Tongji Medical College, Huazhong University of Science and Technology",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-09-01",
+   "enrollment": 72,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07832084",
+   "category": "step_down",
+   "what": "Full-dose GLP-1 vs lower dose every other week vs switch to phentermine/topiramate",
+   "title": "Comparing Different Medication Regimens to Maintaining Weight Loss Among Adults With Obesity Using GLP-1s",
+   "sponsor": "Jing Luo",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-11-01",
+   "enrollment": 60,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07325500",
+   "category": "step_down",
+   "what": "Semaglutide 0.5 mg weekly 'microdose' vs no drug after 12-week induction, adults with HIV",
+   "title": "Incretin Microdosing for Cardiometabolic Health in People With HIV",
+   "sponsor": "The University of Texas Health Science Center, Houston",
+   "status": "RECRUITING",
+   "start": "2026-02-12",
+   "enrollment": 30,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07555730",
+   "category": "step_down",
+   "what": "Tirzepatide 5 mg vs AI-assisted lifestyle program after 20 weeks on MTD, type 2 diabetes",
+   "title": "AI-assisted Multi-domain Lifestyle Versus Tirzepatide for Weight Loss Maintenance in Adults With Type 2 Diabetes (AIM-MAINTAIN)",
+   "sponsor": "Huazhong University of Science and Technology",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-04-30",
+   "enrollment": 400,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT06584916",
+   "category": "switch",
+   "what": "ATTAIN-MAINTAIN: switch from Wegovy or Zepbound to orforglipron (Foundayo) pill vs placebo",
+   "title": "A Study of Orforglipron for the Maintenance of Body Weight Reduction in Participants Who Have Obesity or Overweight With Weight-Related Comorbidities (ATTAIN-MAINTAIN)",
+   "sponsor": "Eli Lilly and Company",
+   "status": "COMPLETED",
+   "start": "2024-09-13",
+   "enrollment": 376,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07845500",
+   "category": "switch",
+   "what": "Switch from semaglutide or tirzepatide to monthly berobenatide (Pfizer) vs staying on",
+   "title": "A Study to Learn About Switching to a Monthly Study Medicine Called Berobenatide (PF-08653944) to Help Keep Weight Off in People With Overweight or Obesity",
+   "sponsor": "Pfizer",
+   "status": "RECRUITING",
+   "start": "2026-09-30",
+   "enrollment": 660,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT06605703",
+   "category": "switch",
+   "what": "WW Clinic after stopping semaglutide/tirzepatide: behavioral support with vs without other medicines",
+   "title": "A Randomized Controlled Trial Comparing the Effectiveness of Different Treatment Options for Weight Management After Discontinuation of Semaglutide and Tirzepatide (GLP1 Transition Trial)",
+   "sponsor": "WW International Inc",
+   "status": "COMPLETED",
+   "start": "2024-09-18",
+   "enrollment": 226,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": true,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07092618",
+   "category": "add_on",
+   "what": "Gradual taper in all arms plus metformin, metformin+rapamycin or metformin+low-dose naltrexone vs vitamin C",
+   "title": "Effectiveness of Alternative Therapies in Maintaining Weight Loss Achieved by GLP-1 Medications Post-Cessation",
+   "sponsor": "AgelessRx",
+   "status": "RECRUITING",
+   "start": "2024-12-17",
+   "enrollment": 150,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT06221696",
+   "category": "add_on",
+   "what": "Fiber supplement (glucomannan, inulin, psyllium) vs placebo after a semaglutide course",
+   "title": "Preventing Weight Regain Post-Semaglutide Treatment With Active Fiber Supplement (Soloways)",
+   "sponsor": "S.LAB (SOLOWAYS)",
+   "status": "COMPLETED",
+   "start": "2023-06-12",
+   "enrollment": 160,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": true,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07711548",
+   "category": "add_on",
+   "what": "Two diet programs for 12 months after semaglutide",
+   "title": "Can Two Dietary Interventions Maintain Weight Loss for 12 Months After GLP-1 Therapy in Adults With Overweight/Obesity?",
+   "sponsor": "Knut Mai",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2027-03",
+   "enrollment": 292,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07091500",
+   "category": "add_on",
+   "what": "Semaglutide with vs without exercise training, with a 52-week follow-up after the drug",
+   "title": "Glucagon-like Peptide 1 (GLP-1) Receptor Agonist Therapy and Exercise Training in People With Obesity",
+   "sponsor": "Washington University School of Medicine",
+   "status": "RECRUITING",
+   "start": "2025-08-11",
+   "enrollment": 40,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT06484114",
+   "category": "add_on",
+   "what": "REMAIN-1: duodenal mucosal resurfacing (Revita) vs sham after >=15% loss on tirzepatide",
+   "title": "Evaluation of the Safety and Efficacy of Revita® DMR on Body Weight Maintenance in Subjects With Obesity Who Have Achieved at Least 15% Weight Loss on Tirzepatide",
+   "sponsor": "Fractyl Health Inc.",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2024-09-01",
+   "enrollment": 315,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT06734312",
+   "category": "add_on",
+   "what": "Gastric fundal mucosal ablation after stopping semaglutide or tirzepatide (single arm)",
+   "title": "MAINTAIN (Mucosal AblatIoN Therapy After INcretins)",
+   "sponsor": "Dr. Christopher McGowan",
+   "status": "RECRUITING",
+   "start": "2025-01-01",
+   "enrollment": 20,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": true,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT06640972",
+   "category": "add_on",
+   "what": "RDX-002 vs placebo for 12 weeks in people who just stopped semaglutide or tirzepatide",
+   "title": "Effects of RDX-002 on Postprandial Triglycerides in Patients Discontinuing GLP-1 Agonists",
+   "sponsor": "Response Pharmaceuticals",
+   "status": "COMPLETED",
+   "start": "2024-09-27",
+   "enrollment": 68,
+   "has_results": true,
+   "results_first_posted": "2026-07-02",
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07101939",
+   "category": "add_on",
+   "what": "PROACT 2: (S)-pindolol vs placebo for lean mass after semaglutide stops",
+   "title": "A Study of the Effect of (S)-Pindolol Benzoate (ACM-001.1) on Lean Body Mass (LBM) in Obese Patents During (PROACT 1), and Post-semaglutide Therapy (PROACT 2)",
+   "sponsor": "Actimed Therapeutics Ltd",
+   "status": "RECRUITING",
+   "start": "2025-06-23",
+   "enrollment": 120,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": true,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT03548935",
+   "category": "withdrawal",
+   "what": "STEP 1 with 1-year off-treatment extension (added by hand)",
+   "title": "STEP 1: Research Study Investigating How Well Semaglutide Works in People Suffering From Overweight or Obesity",
+   "sponsor": "Novo Nordisk A/S",
+   "status": "COMPLETED",
+   "start": "2018-06-04",
+   "enrollment": 1961,
+   "has_results": true,
+   "results_first_posted": "2021-08-11",
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": false
+  },
+  {
+   "nct": "NCT03548987",
+   "category": "withdrawal",
+   "what": "STEP 4: semaglutide continued vs switched to placebo after 20 weeks (added by hand)",
+   "title": "Research Study Investigating How Well Semaglutide Works in People Suffering From Overweight or Obesity",
+   "sponsor": "Novo Nordisk A/S",
+   "status": "COMPLETED",
+   "start": "2018-06-04",
+   "enrollment": 902,
+   "has_results": true,
+   "results_first_posted": "2021-03-15",
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": false
+  },
+  {
+   "nct": "NCT04660643",
+   "category": "withdrawal",
+   "what": "SURMOUNT-4: tirzepatide continued vs switched to placebo after 36 weeks",
+   "title": "A Study of Tirzepatide (LY3298176) in Participants With Obesity or Overweight for the Maintenance of Weight Loss",
+   "sponsor": "Eli Lilly and Company",
+   "status": "COMPLETED",
+   "start": "2021-03-29",
+   "enrollment": 783,
+   "has_results": true,
+   "results_first_posted": "2024-05-22",
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT05548647",
+   "category": "withdrawal",
+   "what": "Penn appetite trial: semaglutide 60 weeks, then 12-week switch to placebo (Study 2)",
+   "title": "Semaglutide Treatment, Appetite, and Eating Behavior: Long-term Effects",
+   "sponsor": "University of Pennsylvania",
+   "status": "COMPLETED",
+   "start": "2022-07-26",
+   "enrollment": 120,
+   "has_results": true,
+   "results_first_posted": "2026-08-03",
+   "measures_appetite_or_food_thoughts": true,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT07387796",
+   "category": "physiology",
+   "what": "3-4 week tirzepatide pause and restart: food-cue brain response, cravings, intrusive food thoughts",
+   "title": "Clinical and Neurobehavioral Changes With Weight Loss Drug Discontinuation and Reinitiation",
+   "sponsor": "The University of Texas at Dallas",
+   "status": "RECRUITING",
+   "start": "2026-10",
+   "enrollment": 40,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": true,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT06856928",
+   "category": "physiology",
+   "what": "Meal-challenge appetite and hormones before and after stopping semaglutide or tirzepatide",
+   "title": "Impact of Antiobesity Medications on Appetite and Appetite-related Hormones and Metabolites.",
+   "sponsor": "University of Colorado, Denver",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2025-03",
+   "enrollment": 16,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": true,
+   "in_keyword_pass": true
+  },
+  {
+   "nct": "NCT06801015",
+   "category": "physiology",
+   "what": "Gastric emptying on semaglutide or tirzepatide and 4 weeks after stopping",
+   "title": "Effects of Long-Acting GLP-1 (Glucagon-like Peptide-1) or Dual Incretin (GLP-1 and GIP [Glucose-dependent Insulinotropic Peptide]) Modulation on Gastric Motor Functions",
+   "sponsor": "Mayo Clinic",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "start": "2025-10-01",
+   "enrollment": 30,
+   "has_results": false,
+   "results_first_posted": null,
+   "measures_appetite_or_food_thoughts": false,
+   "in_keyword_pass": true
+  }
+ ],
+ "posted_results": {
+  "NCT05548647_study2_week72": {
+   "Study 2 Ad Libitum Energy Intake (kcal) During a Buffet Lunch Meal (4 Hrs After Standardized Breakfast)": {
+    "unit": "kcal",
+    "time_frame": "S2: Endpoint comparison at week 72",
+    "param": "MEAN",
+    "values": {
+     "Continuous Placebo (Weeks 60-72)": "1073.0",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "951.8",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "657.7"
+    },
+    "description": "Primary outcome (Study 2)",
+    "n": {
+     "Continuous Placebo (Weeks 60-72)": "20",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "43",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "10"
+    },
+    "p": [
+     "0.1513"
+    ]
+   },
+   "Study 2 Past-week Hunger as Measured Using the Control of Eating Questionnaire (COEQ)": {
+    "unit": "mm",
+    "time_frame": "S2: Week 72 endpoint controlling for S1 baseline",
+    "param": "MEAN",
+    "values": {
+     "Continuous Placebo (Weeks 60-72)": "48.5",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "63.6",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "38.5"
+    },
+    "description": "Secondary confirmatory outcome (Study 2): Visual analogue scale rating of hunger during the past week (Control of Eating Questionnaire; COEQ). Score range 0-100 mm. Higher scores indicate greater hunger.",
+    "n": {
+     "Continuous Placebo (Weeks 60-72)": "20",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "43",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "10"
+    },
+    "p": [
+     "0.0196"
+    ]
+   },
+   "Study 2 Past-week Fullness After Meals as Measured Using the Control of Eating Questionnaire (COEQ)": {
+    "unit": "mm",
+    "time_frame": "S2: Week 72 endpoint controlling for S1 baseline",
+    "param": "MEAN",
+    "values": {
+     "Continuous Placebo (Weeks 60-72)": "57.4",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "59.4",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "76.7"
+    },
+    "description": "Secondary confirmatory outcome (Study 2): Visual analogue scale rating of fullness after meals during the past week (Control of Eating Questionnaire; COEQ). Score range 0-100 mm. Higher scores indicate greater fullness after meals.",
+    "n": {
+     "Continuous Placebo (Weeks 60-72)": "20",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "43",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "10"
+    },
+    "p": [
+     "0.7407"
+    ]
+   },
+   "Study 2 Past-week Food Preoccupation as Measured Using the Control of Eating Questionnaire (COEQ)": {
+    "unit": "mm",
+    "time_frame": "S2: Week 72 endpoint controlling for S1 baseline",
+    "param": "MEAN",
+    "values": {
+     "Continuous Placebo (Weeks 60-72)": "42.7",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "62.9",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "26.4"
+    },
+    "description": "Secondary confirmatory outcome (Study 2): Visual analogue scale rating of food preoccupation during the past week (Control of Eating Questionnaire; COEQ). Score range 0-100 mm. Higher scores indicate greater food preoccupation.",
+    "n": {
+     "Continuous Placebo (Weeks 60-72)": "20",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "43",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "10"
+    },
+    "p": [
+     "0.0017"
+    ]
+   },
+   "Study 2 Explicit Responsiveness to the Food Environment (Power of Food Scale 15-item Version)": {
+    "unit": "Units on a scale",
+    "time_frame": "S2: Week 72 endpoint controlling for S1 baseline",
+    "param": "MEAN",
+    "values": {
+     "Continuous Placebo (Weeks 60-72)": "2.1",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "2.5",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "1.7"
+    },
+    "description": "Secondary confirmatory outcome (Study 2): Explicit responsiveness to the food environment measured by the summary score of the Power of Food Scale (15-item version). Score range 1-5. Higher scores indicate greater responsiveness to the food environment.",
+    "n": {
+     "Continuous Placebo (Weeks 60-72)": "20",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "43",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "10"
+    },
+    "p": [
+     "0.1237"
+    ]
+   },
+   "Study 2 Implicit Food Wanting of High-fat, Savory Foods Measured Using the Leeds Food Preference Task": {
+    "unit": "Units on a scale",
+    "time_frame": "S2: Week 72 endpoint controlling for S1 baseline",
+    "param": "MEAN",
+    "values": {
+     "Continuous Placebo (Weeks 60-72)": "4.6",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "-7.2",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "-2.9"
+    },
+    "description": "Secondary confirmatory outcome (Study 2): Implicit food wanting of high-fat, savory foods measured using the Leeds Food Preference Task. Scores range from -100 to +100 with higher scores indicating a greater implicit wanting of high-fat savory foods.",
+    "n": {
+     "Continuous Placebo (Weeks 60-72)": "20",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "43",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "10"
+    },
+    "p": [
+     "0.044"
+    ]
+   },
+   "Study 2 Body Weight (kg)": {
+    "unit": "kg",
+    "time_frame": "S2: Week 72 endpoint controlling for S1 baseline",
+    "param": "MEAN",
+    "values": {
+     "Continuous Placebo (Weeks 60-72)": "98.3",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "88.9",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "85.3"
+    },
+    "description": "Supportive secondary outcome (Study 2): Body weight (kg) at week 72",
+    "n": {
+     "Continuous Placebo (Weeks 60-72)": "20",
+     "Medication (Semaglutide) Switched to Placebo (Weeks 60-72)": "43",
+     "Continued Medication (Semaglutide) (Weeks 60-72)": "10"
+    },
+    "p": [
+     "<0.001"
+    ]
+   }
+  },
+  "NCT06640972_week12": {
+   "Incremental Postprandial Triglycerides (TG)": {
+    "unit": "percent change",
+    "time_frame": "12 weeks",
+    "param": "MEAN",
+    "values": {
+     "Investigational Drug": "-51.91",
+     "Placebo": "43.81"
+    },
+    "description": "Mean percent change in incremental TG area under the curve (AUC) from baseline to week 12. Samples were collected at 0, 1, 2, 3, 4, 6, and 8-hours hours post dose.",
+    "n": {
+     "Investigational Drug": "34",
+     "Placebo": "34"
+    },
+    "p": []
+   },
+   "Body Weight": {
+    "unit": "Percent change",
+    "time_frame": "12 weeks",
+    "param": "MEAN",
+    "values": {
+     "Investigational Drug": "5.710",
+     "Placebo": "8.364"
+    },
+    "description": "Mean percent change in body weight from baseline to week 12. Samples were collected at 0, 1, 2, 3, 4, 6, and 8-hours hours post dose.",
+    "n": {
+     "Investigational Drug": "34",
+     "Placebo": "34"
+    },
+    "p": []
+   },
+   "5% Increase in Body Weight": {
+    "unit": "Participants",
+    "time_frame": "12 weeks",
+    "param": "COUNT_OF_PARTICIPANTS",
+    "values": {
+     "At least a 5% change: Investigational Drug": "19",
+     "At least a 5% change: Placebo": "24",
+     "No 5% change: Investigational Drug": "15",
+     "No 5% change: Placebo": "10"
+    },
+    "description": "Percentage of patients exhibiting at least a 5% increase from baseline to Week 12.",
+    "n": {
+     "Investigational Drug": "34",
+     "Placebo": "34"
+    },
+    "p": []
+   },
+   "LDL-C": {
+    "unit": "Percent change",
+    "time_frame": "12 weeks",
+    "param": "MEAN",
+    "values": {
+     "Investigational Drug": "3.13",
+     "Placebo": "6.50"
+    },
+    "description": "Mean percent change from baseline to week 12. Samples were collected at 0, 1, 2, 3, 4, 6, and 8-hours hours post dose.",
+    "n": {
+     "Investigational Drug": "34",
+     "Placebo": "34"
+    },
+    "p": []
+   }
+  }
+ },
+ "notes": [
+  "Keyword searches can miss studies whose registry text never says stop, withdraw, taper or maintain (STEP 1 and STEP 4 were added by hand for that reason).",
+  "Excluded keyword hits: stopping smoking or alcohol, pausing the drug before surgery or endoscopy, bariatric-surgery regain treated with a GLP-1, other drugs' maintenance trials, and studies where 'maintenance' meant the maintenance dose."
+ ]
+}

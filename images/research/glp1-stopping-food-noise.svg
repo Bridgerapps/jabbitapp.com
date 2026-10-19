@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" width="720" height="500" role="img" aria-labelledby="t2 d2">
+<title id="t2">Food preoccupation and hunger 12 weeks after stopping semaglutide</title>
+<desc id="d2">University of Pennsylvania trial NCT05548647, results posted on ClinicalTrials.gov. Past-week food preoccupation on a 0 to 100 scale: 63.1 for everyone before the trial; at week 72, 26.4 in people still on semaglutide, 42.7 in people who had placebo with lifestyle counseling throughout, and 62.9 in people switched from semaglutide to placebo 12 weeks earlier. Past-week hunger: 63.8 before; 38.5, 48.5 and 63.6.</desc>
+<rect width="720" height="500" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Thoughts about food came back within 12 weeks of stopping</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">Penn trial: 60 weeks of Wegovy-dose semaglutide or placebo, then some switched to placebo for 12 weeks</text>
+<text x="24" y="96" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Thinking about food (“food preoccupation”)</text>
+<text x="24" y="114" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">0-100 scale, higher = more, week 72</text>
+<text x="288" y="144" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="end">Everyone, before the trial</text>
+<rect x="300" y="128" width="189.3" height="22" rx="4" fill="#94a3b8"/>
+<text x="497.3" y="144" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#94a3b8" text-anchor="start">63.1</text>
+<text x="288" y="176" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="end">Still on semaglutide (10 people)</text>
+<rect x="300" y="160" width="79.2" height="22" rx="4" fill="#0f766e"/>
+<text x="387.2" y="176" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e" text-anchor="start">26.4</text>
+<text x="288" y="208" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="end">Never on the drug, lifestyle only (20)</text>
+<rect x="300" y="192" width="128.1" height="22" rx="4" fill="#2563eb"/>
+<text x="436.1" y="208" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#2563eb" text-anchor="start">42.7</text>
+<text x="288" y="240" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="end">Stopped 12 weeks earlier (43)</text>
+<rect x="300" y="224" width="188.7" height="22" rx="4" fill="#f59e0b"/>
+<text x="496.7" y="240" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f59e0b" text-anchor="start">62.9</text>
+<text x="24" y="272" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Hunger</text>
+<text x="24" y="290" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">0-100 scale, higher = more, week 72</text>
+<text x="288" y="320" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="end">Everyone, before the trial</text>
+<rect x="300" y="304" width="191.4" height="22" rx="4" fill="#94a3b8"/>
+<text x="499.4" y="320" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#94a3b8" text-anchor="start">63.8</text>
+<text x="288" y="352" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="end">Still on semaglutide (10 people)</text>
+<rect x="300" y="336" width="115.5" height="22" rx="4" fill="#0f766e"/>
+<text x="423.5" y="352" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e" text-anchor="start">38.5</text>
+<text x="288" y="384" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="end">Never on the drug, lifestyle only (20)</text>
+<rect x="300" y="368" width="145.5" height="22" rx="4" fill="#2563eb"/>
+<text x="453.5" y="384" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#2563eb" text-anchor="start">48.5</text>
+<text x="288" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="end">Stopped 12 weeks earlier (43)</text>
+<rect x="300" y="400" width="190.8" height="22" rx="4" fill="#f59e0b"/>
+<text x="498.8" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f59e0b" text-anchor="start">63.6</text>
+<text x="24" y="462" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Stopped vs never on drug: p=0.0017 (preoccupation), p=0.0196 (hunger). Lunch intake did not differ significantly.</text>
+<text x="24" y="484" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Source: NCT05548647 results, ClinicalTrials.gov (secondary outcomes, adjusted means); baseline: Tronieri 2026, AJCN.</text>
+</svg>

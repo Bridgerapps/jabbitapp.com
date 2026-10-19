@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-19T04:15:00Z",
+  "updated": "2026-10-19T10:15:00Z",
   "rules": [
     {
       "file": "fda-compounded-glp1-enforcement-2026.html",
@@ -181,12 +181,20 @@
       "file": "glp1-cost-without-insurance.html",
       "links": [
         {
+          "href": "/research/foundayo-orforglipron-pill-teardown.html",
+          "text": "Foundayo teardown: how the pill compares with Wegovy and Zepbound"
+        },
+        {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
         },
         {
           "href": "/glp-1-side-effects-guide.html",
           "text": "GLP-1 side-effects guide (what to document)"
+        },
+        {
+          "href": "/research/stopping-ozempic-zepbound-weight-regain.html",
+          "text": "What happens when you stop Ozempic, Wegovy or Zepbound?"
         },
         {
           "href": "/guides",
