@@ -42,14 +42,14 @@
 </head>
 
 <body class="bg-gray-50 text-gray-900">
-  <div class="no-print border-b border-gray-200 bg-white">
-    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+  <header class="no-print border-b border-gray-200 bg-white">
+    <nav class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between" aria-label="Page">
       <a href="/tools" class="text-brand-700 font-semibold hover:text-brand-800 transition">← Back to tools</a>
       <div class="flex items-center gap-3">
-        <button onclick="window.print()" class="px-4 py-2 bg-brand-500 text-white font-semibold rounded-lg hover:bg-brand-600 transition">Print / Save as PDF</button>
+        <button type="button" onclick="window.print()" class="px-4 py-2 bg-brand-500 text-white font-semibold rounded-lg hover:bg-brand-600 transition">Print / Save as PDF</button>
       </div>
-    </div>
-  </div>
+    </nav>
+  </header>
 
   <main class="max-w-4xl mx-auto px-6 py-10">
     <section class="print-page bg-white border border-gray-200 rounded-2xl p-8">
@@ -112,5 +112,8 @@
       </p>
     </section>
   </main>
+  <footer class="no-print max-w-4xl mx-auto px-6 pb-14 text-sm text-gray-500">
+    <p>Published by <a href="/" class="text-brand-700 hover:text-brand-800">Jabbit</a>, a private iPhone injection log · <a href="/tools" class="text-brand-700 hover:text-brand-800">Tools</a> · <a href="/privacy" class="text-brand-700 hover:text-brand-800">Privacy</a></p>
+  </footer>
 </body>
 </html>

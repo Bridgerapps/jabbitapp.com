@@ -1,5 +1,5 @@
 # Jabbit - Peptide Tracking App
-> Jabbit is a privacy-first iOS app for tracking peptide injections, managing vials, calculating reconstitution, and visualizing serum levels.
+> Jabbit is an iPhone app for people who take GLP-1 medications or other injectable peptides. It logs doses and injection sites, tracks vials and reconstitution, estimates medication levels, and records progress. No account; data syncs through the user's own iCloud. Made by Bridger Apps, LLC.
 
 ## Key Features
 - Smart injection tracking with 14-zone site rotation
@@ -11,9 +11,10 @@
 - In-app encyclopedia of peptides with half-life data
 - Privacy-first: iCloud sync only, no server storage
 
-## Pricing
-- 14-day free trial
-- $9.99/year (founding member pricing, normally $19.99/year)
+## Pricing (US App Store, as of October 2026)
+- Free download with a 14-day free trial
+- Then $9.99/year (the App Store lists one in-app purchase, "Jabbit Pro", at $9.99)
+- iPhone app (iOS 17 or later; the listing says it also runs on iPad); no Android app
 
 ## Links
 - App Store: https://apps.apple.com/app/id6756848719
@@ -22,6 +23,7 @@
 - Peptide reconstitution calculator (mcg to mL to U-100 syringe units, with tables for common vials): https://jabbitapp.com/peptide-reconstitution-calculator
 - Research & guides: https://jabbitapp.com/guides/
 - News: https://jabbitapp.com/news/
+- Jabbit vs Shotsy (platforms, vials, privacy, price and ratings from each App Store listing and privacy policy, checked October 19, 2026): https://jabbitapp.com/shotsy-alternative.html
 - Privacy Policy: https://jabbitapp.com/privacy/
 
 ## Peptide Reference Pages

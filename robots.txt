@@ -1,23 +1,63 @@
 User-agent: *
 Allow: /
 
-# AI Crawlers - Explicitly Allowed
+# AI search, assistant and training crawlers - explicitly allowed.
+# The wildcard group above already allows them; these named groups make it unambiguous.
+
+# OpenAI
 User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+# Google (Gemini / AI Overviews use Googlebot plus this token)
 User-agent: Google-Extended
 Allow: /
 
+# Anthropic
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
+# Perplexity
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Meta (Meta AI search/citations, training, user-requested fetches)
+User-agent: meta-webindexer
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: meta-externalfetcher
+Allow: /
+
+# Apple (Apple Intelligence)
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Copilot uses Bingbot; DuckDuckGo
+User-agent: DuckAssistBot
+Allow: /
+
+# Common Crawl (used by many AI models)
+User-agent: CCBot
 Allow: /
 
 User-agent: Omgili
