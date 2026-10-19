@@ -19,6 +19,7 @@
 - App Store: https://apps.apple.com/app/id6756848719
 - Website: https://jabbitapp.com
 - Peptide reference hub: https://jabbitapp.com/peptides/
+- Peptide reconstitution calculator (mcg to mL to U-100 syringe units, with tables for common vials): https://jabbitapp.com/peptide-reconstitution-calculator
 - Research & guides: https://jabbitapp.com/guides/
 - News: https://jabbitapp.com/news/
 - Privacy Policy: https://jabbitapp.com/privacy/

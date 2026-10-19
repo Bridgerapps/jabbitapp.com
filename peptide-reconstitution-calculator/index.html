@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peptide Reconstitution Calculator (mg → mL → Syringe Units) | Jabbit</title>
-  <meta name="description" content="Peptide reconstitution calculator: concentration, injection volume and U-100 syringe units, with clear presets and educational safety checks." />
+  <title>Peptide Calculator: mcg to Units on a U-100 Syringe | Jabbit</title>
+  <meta name="description" content="How many units is 250 mcg? Enter vial mg and water mL to convert any mcg dose to mL and U-100 syringe units, with quick tables for common vials." />
   <link rel="canonical" href="https://jabbitapp.com/peptide-reconstitution-calculator" />
   
 
-  <meta property="og:title" content="Peptide Reconstitution Calculator | Jabbit" />
-  <meta property="og:description" content="Peptide reconstitution calculator: concentration, injection volume and U-100 syringe units, with clear presets and educational safety checks." />
+  <meta property="og:title" content="Peptide Calculator: mcg to Units on a U-100 Syringe | Jabbit" />
+  <meta property="og:description" content="How many units is 250 mcg? Enter vial mg and water mL to convert any mcg dose to mL and U-100 syringe units, with quick tables for common vials." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jabbitapp.com/peptide-reconstitution-calculator" />
   <meta name="twitter:card" content="summary" />
@@ -106,7 +106,11 @@
             "@type": "Answer",
             "text": "No. It is educational only and cannot verify your vial labeling, prescription, or syringe type. If your label or instructions differ, stop and confirm before drawing anything."
           }
-        }
+        },
+        {"@type": "Question", "name": "How many units is 250 mcg?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on how much water is in the vial. Units on a U-100 insulin syringe measure volume (1 unit = 0.01 mL), so units = dose in mcg × water in mL ÷ (vial mg × 10). A 5 mg vial mixed with 2 mL (2.5 mg/mL) puts 250 mcg at 10 units. The same 250 mcg is 5 units with 1 mL of water, 15 units with 3 mL, and 2.5 units in a 10 mg vial with 1 mL."}},
+        {"@type": "Question", "name": "What is 250 mcg on a 1 mL syringe?", "acceptedAnswer": {"@type": "Answer", "text": "A 1 mL U-100 syringe is marked 0 to 100 units. 250 mcg has no fixed mark: divide 0.25 mg by your concentration in mg per mL to get mL, then multiply by 100 for units. At 2.5 mg/mL that is 0.10 mL, the 10-unit line; at 1 mg/mL it is 0.25 mL, the 25-unit line."}},
+        {"@type": "Question", "name": "Is 250 mg the same as 250 mcg?", "acceptedAnswer": {"@type": "Answer", "text": "No. 250 mg is 250,000 mcg, a thousand times more. Peptide doses posted online are usually in mcg, while vials are labeled in mg. If you are converting \"250 mg to units\", check the label first: mixing up mg and mcg is a thousandfold error."}},
+        {"@type": "Question", "name": "Are syringe units the same as IU?", "acceptedAnswer": {"@type": "Answer", "text": "No. Insulin-syringe units here are just volume marks: on a U-100 syringe, 100 units = 1 mL. IU (international units) measure a drug's activity and differ by drug, so you can't convert mcg to IU with this calculator."}}
       ]
     }
   </script>
@@ -120,7 +124,7 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Peptide Reconstitution Calculator (mg → mL → Syringe Units)", "description": "Peptide reconstitution calculator: concentration, injection volume and U-100 syringe units, with clear presets and educational safety checks.", "url": "https://jabbitapp.com/peptide-reconstitution-calculator", "inLanguage": "en", "isPartOf": {"@type": "WebSite", "name": "Jabbit", "url": "https://jabbitapp.com/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Peptide Reconstitution Calculator: mcg to mL to U-100 Syringe Units", "description": "How many units is 250 mcg? Enter vial mg and water mL to convert any mcg dose to mL and U-100 syringe units, with quick tables for common vials.", "dateModified": "2026-10-19", "url": "https://jabbitapp.com/peptide-reconstitution-calculator", "inLanguage": "en", "isPartOf": {"@type": "WebSite", "name": "Jabbit", "url": "https://jabbitapp.com/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://jabbitapp.com/"}, {"@type": "ListItem", "position": 2, "name": "Peptide Reconstitution Calculator (mg → mL → Syringe Units)", "item": "https://jabbitapp.com/peptide-reconstitution-calculator"}]}</script>
 </head>
 <body class="text-slate-900 antialiased">
@@ -161,7 +165,7 @@
 
   <main class="pb-20 pt-24 sm:pt-28">
     <section class="mx-auto max-w-6xl px-4 sm:px-6">
-      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(360px,420px)] lg:gap-8">
+      <div class="grid gap-6 lg:gap-8">
         <div class="space-y-6">
           <div class="glass-panel inline-flex items-center gap-2 rounded-full border border-brand-100 px-3 py-1.5 text-sm font-semibold text-brand-800 shadow-sm">
             Educational math tool
@@ -412,6 +416,43 @@
       </div>
     </section>
 
+<style id="mcg-units-style">.mcg-table{width:100%;border-collapse:collapse;font-size:.875rem;line-height:1.5rem;margin-top:1rem}.mcg-table th,.mcg-table td{border-bottom:1px solid #e2e8f0;padding:.5rem .6rem;text-align:left;font-variant-numeric:tabular-nums}.mcg-table th{color:#475569;font-weight:600;background:#f8fafc}.mcg-table td strong{color:#0f172a}.mcg-scroll{overflow-x:auto}@media (min-width:1024px){#mcg-to-units .lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}</style>
+    <section id="mcg-to-units" class="mx-auto mt-14 max-w-6xl px-4 sm:px-6">
+      <div class="glass-panel rounded-[2rem] border border-white/80 p-6 shadow-soft sm:p-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Quick answer</p>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">How many units is 250 mcg?</h2>
+        <p class="mt-4 text-base leading-7 text-slate-600">There is no single answer, because syringe units measure volume, not drug. On a U-100 insulin syringe, 100 units = 1 mL, so 1 unit = 0.01 mL.<a class="text-brand-700 font-semibold" href="#calc-ref-1">[1]</a> How many units hold 250 mcg depends on how much water went into the vial. The shortcut:</p>
+        <p class="formula-badge mt-4 rounded-2xl bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900">units = dose (mcg) × water (mL) ÷ (vial (mg) × 10)</p>
+        <p class="mt-4 text-base leading-7 text-slate-600">Example: a 5 mg vial mixed with 2 mL of water is 2.5 mg/mL, so 250 mcg is 250 × 2 ÷ 50 = <strong class="text-slate-900">10 units (0.10 mL)</strong>. Add more water and the same dose takes more units; use a bigger vial with the same water and it takes fewer.</p>
+        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+          <div class="rounded-3xl border border-slate-200 bg-white p-5">
+            <h3 class="font-semibold text-slate-900">250 mcg in units, by vial setup</h3>
+            <div class="mcg-scroll"><table class="mcg-table"><thead><tr><th>Vial and water</th><th>Strength</th><th>250 mcg is</th><th>U-100 units</th></tr></thead><tbody><tr><td>2 mg vial + 1 mL water</td><td>2 mg/mL</td><td>0.125 mL</td><td><strong>12.5 units</strong></td></tr><tr><td>2 mg vial + 2 mL water</td><td>1 mg/mL</td><td>0.25 mL</td><td><strong>25 units</strong></td></tr><tr><td>5 mg vial + 1 mL water</td><td>5 mg/mL</td><td>0.05 mL</td><td><strong>5 units</strong></td></tr><tr><td>5 mg vial + 2 mL water</td><td>2.5 mg/mL</td><td>0.10 mL</td><td><strong>10 units</strong></td></tr><tr><td>5 mg vial + 2.5 mL water</td><td>2 mg/mL</td><td>0.125 mL</td><td><strong>12.5 units</strong></td></tr><tr><td>5 mg vial + 3 mL water</td><td>1.67 mg/mL</td><td>0.15 mL</td><td><strong>15 units</strong></td></tr><tr><td>10 mg vial + 1 mL water</td><td>10 mg/mL</td><td>0.025 mL</td><td><strong>2.5 units</strong></td></tr><tr><td>10 mg vial + 2 mL water</td><td>5 mg/mL</td><td>0.05 mL</td><td><strong>5 units</strong></td></tr><tr><td>10 mg vial + 3 mL water</td><td>3.33 mg/mL</td><td>0.075 mL</td><td><strong>7.5 units</strong></td></tr><tr><td>10 mg vial + 4 mL water</td><td>2.5 mg/mL</td><td>0.10 mL</td><td><strong>10 units</strong></td></tr></tbody></table></div>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-5">
+            <h3 class="font-semibold text-slate-900">Common doses in U-100 units, by strength</h3>
+            <div class="mcg-scroll"><table class="mcg-table"><thead><tr><th>Dose</th><th>1 mg/mL</th><th>2 mg/mL</th><th>2.5 mg/mL</th><th>5 mg/mL</th></tr></thead><tbody><tr><td>100 mcg (0.1 mg)</td><td>10</td><td>5</td><td>4</td><td>2</td></tr><tr><td>200 mcg (0.2 mg)</td><td>20</td><td>10</td><td>8</td><td>4</td></tr><tr><td>250 mcg (0.25 mg)</td><td>25</td><td>12.5</td><td>10</td><td>5</td></tr><tr><td>300 mcg (0.3 mg)</td><td>30</td><td>15</td><td>12</td><td>6</td></tr><tr><td>500 mcg (0.5 mg)</td><td>50</td><td>25</td><td>20</td><td>10</td></tr><tr><td>1,000 mcg (1 mg)</td><td>100</td><td>50</td><td>40</td><td>20</td></tr></tbody></table></div>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Strength = vial mg ÷ water mL. 1,000 mcg = 1 mg.</p>
+          </div>
+        </div>
+        <div class="mt-6 grid gap-4 md:grid-cols-3">
+          <div class="rounded-3xl border border-slate-200 bg-white p-5">
+            <h3 class="font-semibold text-slate-900">250 mcg on a 1 mL syringe</h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">A 1 mL U-100 syringe runs 0 to 100 units. At 2.5 mg/mL, 250 mcg is the 10-unit line; at 1 mg/mL it's the 25-unit line. A 0.5 mL syringe has the same unit marks, just only up to 50.<a class="text-brand-700 font-semibold" href="#calc-ref-1">[1]</a></p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-5">
+            <h3 class="font-semibold text-slate-900">mg vs mcg</h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">250 mg is 250,000 mcg, a thousand times 250 mcg. Vials are labeled in mg and doses online are usually in mcg, so a search for "250 mg to units" is almost always a mix-up worth double-checking against the label.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-5">
+            <h3 class="font-semibold text-slate-900">Units are not IU</h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">Syringe units are volume marks. IU (international units) measure a drug's activity and differ drug by drug, so mcg can't be turned into IU with this math. Use the calculator above for your exact numbers.</p>
+          </div>
+        </div>
+        <p class="mt-5 text-sm leading-7 text-slate-600">This is arithmetic, not a dose recommendation. Many peptides people mix at home are not FDA-approved drugs.<a class="text-brand-700 font-semibold" href="#calc-ref-2">[2]</a> If a result lands between the marks on your syringe, ask a pharmacist about a different dilution rather than guessing.</p>
+      </div>
+    </section>
+
     <section class="mx-auto mt-14 max-w-6xl px-4 sm:px-6">
       <div class="grid gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(300px,0.95fr)]">
         <div class="glass-panel rounded-[2rem] border border-white/80 p-6 shadow-soft sm:p-8">
@@ -457,6 +498,38 @@
           <div class="mt-6 space-y-4">
             <details class="group rounded-3xl border border-slate-200 bg-white p-5">
               <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
+                How many units is 250 mcg?
+                <span class="text-slate-400 transition group-open:rotate-180">▾</span>
+              </summary>
+              <p class="mt-3 text-sm leading-7 text-slate-600">It depends on how much water is in the vial. Units on a U-100 insulin syringe measure volume (1 unit = 0.01 mL), so units = dose in mcg × water in mL ÷ (vial mg × 10). A 5 mg vial mixed with 2 mL (2.5 mg/mL) puts 250 mcg at 10 units. The same 250 mcg is 5 units with 1 mL of water, 15 units with 3 mL, and 2.5 units in a 10 mg vial with 1 mL.</p>
+            </details>
+
+            <details class="group rounded-3xl border border-slate-200 bg-white p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
+                What is 250 mcg on a 1 mL syringe?
+                <span class="text-slate-400 transition group-open:rotate-180">▾</span>
+              </summary>
+              <p class="mt-3 text-sm leading-7 text-slate-600">A 1 mL U-100 syringe is marked 0 to 100 units. 250 mcg has no fixed mark: divide 0.25 mg by your concentration in mg per mL to get mL, then multiply by 100 for units. At 2.5 mg/mL that is 0.10 mL, the 10-unit line; at 1 mg/mL it is 0.25 mL, the 25-unit line.</p>
+            </details>
+
+            <details class="group rounded-3xl border border-slate-200 bg-white p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
+                Is 250 mg the same as 250 mcg?
+                <span class="text-slate-400 transition group-open:rotate-180">▾</span>
+              </summary>
+              <p class="mt-3 text-sm leading-7 text-slate-600">No. 250 mg is 250,000 mcg, a thousand times more. Peptide doses posted online are usually in mcg, while vials are labeled in mg. If you are converting "250 mg to units", check the label first: mixing up mg and mcg is a thousandfold error.</p>
+            </details>
+
+            <details class="group rounded-3xl border border-slate-200 bg-white p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
+                Are syringe units the same as IU?
+                <span class="text-slate-400 transition group-open:rotate-180">▾</span>
+              </summary>
+              <p class="mt-3 text-sm leading-7 text-slate-600">No. Insulin-syringe units here are just volume marks: on a U-100 syringe, 100 units = 1 mL. IU (international units) measure a drug's activity and differ by drug, so you can't convert mcg to IU with this calculator.</p>
+            </details>
+
+            <details class="group rounded-3xl border border-slate-200 bg-white p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
                 What syringe does this assume?
                 <span class="text-slate-400 transition group-open:rotate-180">▾</span>
               </summary>
@@ -490,6 +563,19 @@
         </aside>
       </div>
     </section>
+  <section id="related-links">
+    <h2>Related</h2>
+    <ul>
+    <li><a href="/glp-1-injection-tracking-guide.html">GLP-1 injection tracking guide (log shots, sites, notes)</a></li>
+    </ul>
+  </section>
+<section id="sources" class="mx-auto mt-10 max-w-6xl px-4 sm:px-6 text-sm leading-7 text-slate-600">
+    <h2 class="text-xl font-bold text-slate-900">References</h2>
+    <ol class="mt-3 list-decimal pl-6 space-y-2">
+      <li id="calc-ref-1">U.S. Food and Drug Administration. Guidance on the Content of Premarket Notification [510(k)] Submissions for Piston Syringes. <a class="text-brand-700 underline" href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-content-premarket-notification-510k-submissions-piston-syringes" target="_blank" rel="noopener noreferrer">https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-content-premarket-notification-510k-submissions-piston-syringes</a>. Checked October 15, 2026.</li>
+      <li id="calc-ref-2">U.S. Food and Drug Administration. Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks. Content current as of April 22, 2026. <a class="text-brand-700 underline" href="https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks" target="_blank" rel="noopener noreferrer">https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks</a>. Checked October 15, 2026.</li>
+    </ol>
+  </section>
   </main>
 
   <footer class="border-t border-slate-200/80 bg-white/80 backdrop-blur-sm">
