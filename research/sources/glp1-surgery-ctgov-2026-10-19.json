@@ -1,0 +1,781 @@
+{
+ "what": "Jabbit hand review of ClinicalTrials.gov records on managing GLP-1 drugs around surgery, sedation and endoscopy",
+ "method": "ClinicalTrials.gov API v2 pulled 2026-10-19 12:20 EDT: every study listing semaglutide, tirzepatide, liraglutide, dulaglutide, exenatide or retatrutide as an intervention, plus free-text searches for GLP-1 with anesthesia/sedation/endoscopy/perioperative/aspiration/residual-gastric terms and GLP-1 drugs with postoperative/infection/myocardial-injury/delirium terms; keyword-flagged records were read by hand and sorted. Counts are a lower bound: a study that names none of these words in its title, summary, arms or outcomes would be missed. Bariatric-surgery studies were not counted.",
+ "summary": {
+  "unique_studies_pulled": 2174,
+  "keyword_hits_read": 239,
+  "query_counts": {
+   "intr:semaglutide": 788,
+   "intr:tirzepatide": 303,
+   "intr:liraglutide": 515,
+   "intr:dulaglutide": 143,
+   "intr:exenatide": 379,
+   "intr:retatrutide": 33,
+   "term:\"GLP-1\" AND (anesthesia OR anaesthesia O": 202,
+   "term:(semaglutide OR tirzepatide OR liragluti": 190,
+   "term:\"glucagon-like peptide\" AND (anesthesia ": 48
+  },
+  "kept_total": 40,
+  "strategy_rcts": 7,
+  "strategy_rcts_with_results": [
+   "NCT06533527"
+  ],
+  "hold_vs_continue_rcts": [
+   "NCT06533527",
+   "NCT07127354",
+   "NCT07736911"
+  ],
+  "hold_vs_continue_rcts_before_general_anesthesia_surgery": [],
+  "diet_rcts": [
+   "NCT06654219",
+   "NCT06839248"
+  ],
+  "prokinetic_rcts": [
+   "NCT07100691",
+   "NCT07254715"
+  ],
+  "strategy_planned_enrollment": 702,
+  "drugmaker_studies": 3,
+  "drugmaker_with_results": [],
+  "prevent_complication_rcts": 3,
+  "prevent_with_results": [],
+  "observational_stomach_content_studies": 27,
+  "observational_with_results": [],
+  "kept_with_results": [
+   "NCT06533527"
+  ],
+  "retatrutide_records_among_keyword_hits": []
+ },
+ "strategy_rcts": [
+  {
+   "nct": "NCT06533527",
+   "title": "Holding vs. Continuing Incretin-based Therapies Before Upper Endoscopy",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 69,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": true,
+   "start": "2024-07-31",
+   "primary_completion": "2025-05-20",
+   "sponsor": "The Cleveland Clinic",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Presence of RGV (Residual Gastric Volume) in Stomach",
+    "Tracking the Use of Intubation Due to RGV",
+    "Aspiration Events Due to RGV (Residual Gastric Volume)"
+   ],
+   "comparison": "hold vs continue",
+   "setting": "Upper endoscopy under sedation (OCULUS, Cleveland Clinic)",
+   "primary_outcome_plain": "Residual stomach contents that stop or change the procedure"
+  },
+  {
+   "nct": "NCT07127354",
+   "title": "The Impact of GLP Medication on Colonoscopy Bowel Preparation Quality",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 132,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-08-01",
+   "primary_completion": "2026-08",
+   "sponsor": "The Cleveland Clinic",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Rate of inadequate bowel preparation"
+   ],
+   "comparison": "hold vs continue",
+   "setting": "Colonoscopy (OCULUS 2, Cleveland Clinic)",
+   "primary_outcome_plain": "Inadequate bowel prep"
+  },
+  {
+   "nct": "NCT07736911",
+   "title": "Discontinuation One Week Recommendations for GLP-1 Receptor Agonists Prior to Esophagogastroduodenoscopy.",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 140,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-06-01",
+   "primary_completion": "2029-06-01",
+   "sponsor": "Fu Jen Catholic University Hospital",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "This scoring system is referred to as PEACE (Polprep: Effective Assessment of Cleanliness in Esophagogastroduodenoscopy)"
+   ],
+   "comparison": "hold vs continue",
+   "setting": "Upper endoscopy (Fu Jen Catholic University Hospital, Taiwan): stop 1 week vs keep taking",
+   "primary_outcome_plain": "Stomach cleanliness score"
+  },
+  {
+   "nct": "NCT06654219",
+   "title": "Protective Benefits of a Clear Liquid Diet on Residual Gastric Content in Patients Taking Glucagon Like Peptide-1 Receptor (GLP-1 RA) Agonist Prior to Anesthesia",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 136,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-10-30",
+   "primary_completion": "2026-12-31",
+   "sponsor": "The University of Texas Health Science Center, Houston",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Number of participants that show prevalence of increased RGC determined using preoperative GUS"
+   ],
+   "comparison": "diet / fasting",
+   "setting": "Surgery under anesthesia (UTHealth Houston): longer fasting vs standard fasting",
+   "primary_outcome_plain": "Stomach contents on ultrasound"
+  },
+  {
+   "nct": "NCT06839248",
+   "title": "Effect of Fasting Recommendations Among Patients Using GLP-1 Receptor Agonists",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 154,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-06-20",
+   "primary_completion": "2027-02-01",
+   "sponsor": "St Vincent's Hospital Melbourne",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Residual gastric contents"
+   ],
+   "comparison": "diet / fasting",
+   "setting": "Procedures (St Vincent's Hospital Melbourne): 24-hour clear liquids vs standard fasting",
+   "primary_outcome_plain": "Stomach contents"
+  },
+  {
+   "nct": "NCT07100691",
+   "title": "Gastric Emptying With Metoclopramide in GLP-1 Agonist Patients Undergoing Elective Surgery",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 80,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2025-08",
+   "primary_completion": "2026-05",
+   "sponsor": "Mater Misericordiae University Hospital",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Presence of residual gastric content on preoperative gastric ultrasound"
+   ],
+   "comparison": "stomach-emptying drug",
+   "setting": "Elective surgery (Mater Misericordiae, Dublin): metoclopramide vs usual care, GLP-1 continued",
+   "primary_outcome_plain": "Stomach contents on ultrasound"
+  },
+  {
+   "nct": "NCT07254715",
+   "title": "Effect of Itopride on Semaglutide Gastroparesis",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 60,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2026-01-01",
+   "primary_completion": "2026-07-30",
+   "sponsor": "Ain Shams University",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Residual gastric contents"
+   ],
+   "comparison": "stomach-emptying drug",
+   "setting": "Before anesthesia (Ain Shams University, Egypt): itopride vs placebo in semaglutide users",
+   "primary_outcome_plain": "Stomach contents on ultrasound"
+  }
+ ],
+ "drugmaker_studies": [
+  {
+   "nct": "NCT07225816",
+   "title": "Examination of How the Duration of Fasting and Temporary Stopping of GLP-1 Medications Affect the Amount of Food Left in the Stomach in People Using Liraglutide (Injected), Semaglutide (Taken by Mouth) or Semaglutide (Injected)",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "enrollment": 71,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-11-07",
+   "primary_completion": "2026-12-13",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "primary_outcomes": [
+    "Occurrence of empty stomach (antrum grade 0 or 1) after fasting following a solid, high-fat meal after dosing of subcutaneous (s.c.) liraglutide once daily (Yes/No)",
+    "Occurrence of empty stomach (antrum grade 0 or 1) after fasting following a solid, high-fat meal after dosing of oral semaglutide once daily (Yes/No)",
+    "Occurrence of empty stomach (antrum grade 0 or 1) after fasting following a solid, high-fat meal after dosing of s.c. semaglutide once weekly (Yes/No)"
+   ],
+   "what": "Novo Nordisk: liraglutide, oral semaglutide, injected semaglutide; fasting length and temporary stopping"
+  },
+  {
+   "nct": "NCT07299084",
+   "title": "A Study to Evaluate the Effect of Fasting Duration and Tirzepatide Withholding on the Amount of Food and Fluid in the Stomach in Participants With Type 2 Diabetes Mellitus and Participants With Overweight or Obesity Without Type 2 Diabetes Mellitus",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2026-01-14",
+   "primary_completion": "2026-11",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "primary_outcomes": [
+    "Percentage of Participants with Lack of Gastric Content Retention Post-Solid Test Meal"
+   ],
+   "what": "Eli Lilly: tirzepatide; fasting length and withholding"
+  },
+  {
+   "nct": "NCT07313813",
+   "title": "A Study to Evaluate the Effect of Fasting Duration and Dulaglutide (LY2189265) Withholding on Gastric Retention in Participants With Type 2 Diabetes Mellitus",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 20,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2025-12-29",
+   "primary_completion": "2026-08-13",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "primary_outcomes": [
+    "Percentage of Fasting Participants with Lack of Gastric Content Retention Post-Solid Test Meal"
+   ],
+   "what": "Eli Lilly: dulaglutide (Trulicity); fasting length and withholding"
+  }
+ ],
+ "prevent_complication_rcts": [
+  {
+   "nct": "NCT06324461",
+   "title": "GLP-1 Receptor Agonist for Reduction of Myocardial Injury After Non-cardiac Surgery",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 372,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2024-03-20",
+   "primary_completion": "2028-12-31",
+   "sponsor": "The University of Hong Kong",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Proportion of patients with MINS"
+   ],
+   "what": "Dulaglutide 0.75 mg once before noncardiac surgery vs usual care (University of Hong Kong); heart-muscle injury after surgery"
+  },
+  {
+   "nct": "NCT06361238",
+   "title": "Liraglutide in Preventing Delirium in Diabetic Elderly After Cardiac Surgery",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 260,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2024-11-19",
+   "primary_completion": "2027-03-31",
+   "sponsor": "The Affiliated Nanjing Drum Tower Hospital of Nanjing University Medical School",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "The incidence of delirium"
+   ],
+   "what": "Liraglutide vs placebo in older adults with diabetes having heart surgery (Nanjing); delirium"
+  },
+  {
+   "nct": "NCT07755085",
+   "title": "GLP-1s in Hip and Knee Arthroplasty",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 100,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-10-01",
+   "primary_completion": "2028-06-01",
+   "sponsor": "Nova Scotia Health Authority",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Incidence of Wound Complication after Joint Arthroplasty"
+   ],
+   "what": "GLP-1 drug vs placebo for at least 6 months before hip or knee replacement (Nova Scotia); wound complications"
+  }
+ ],
+ "observational_stomach_content_studies": [
+  {
+   "nct": "NCT05854979",
+   "title": "Effects of GLP-1 Agonists on Gastric Volume",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 210,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2023-08-09",
+   "primary_completion": "2024-04-15",
+   "sponsor": "Medical University of South Carolina",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Gastric Volume in RLD Position"
+   ]
+  },
+  {
+   "nct": "NCT05875636",
+   "title": "GLP-1 Receptor Agonist Use and Incidence of Retained Gastric Food on Endoscopy",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 260,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2023-08-21",
+   "primary_completion": "2024-08-23",
+   "sponsor": "Medical University of South Carolina",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Retained gastric food"
+   ]
+  },
+  {
+   "nct": "NCT05889637",
+   "title": "Gastric Ultrasound Assessment for Preoperative Prandial State of Patients Taking Glucagon-Like Peptide-1 Receptor Agonists",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 132,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2023-06-06",
+   "primary_completion": "2023-07-12",
+   "sponsor": "The University of Texas Health Science Center, Houston",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Number of subjects that are at risk for aspiration",
+    "Number of subjects that are at low risk for aspiration"
+   ]
+  },
+  {
+   "nct": "NCT05903482",
+   "title": "Gastric Volume in Patients on GLP-1 Medications",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 70,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2023-06-06",
+   "primary_completion": "2024-12-31",
+   "sponsor": "Children's Hospital of Philadelphia",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Gastric volume in pediatric patients on GLP-1 RA"
+   ]
+  },
+  {
+   "nct": "NCT06003985",
+   "title": "Gastric Ultrasound Assessment for Patients Taking GLP1 Agonists",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 354,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2023-08-29",
+   "primary_completion": "2025-01-31",
+   "sponsor": "Hospital for Special Surgery, New York",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "incidence of delayed gastric emptying"
+   ]
+  },
+  {
+   "nct": "NCT06038734",
+   "title": "Using Point-of-Care-Ultrasound (POCUS) to Assess Gastric Contents Among Fasting Pre-operative Patients Taking GLP-1 Agonists.",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 108,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2023-11-10",
+   "primary_completion": "2024-04-17",
+   "sponsor": "University of North Carolina, Chapel Hill",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Retained gastric contents"
+   ]
+  },
+  {
+   "nct": "NCT06154486",
+   "title": "Evaluation of Gastric Content of Volunteers Fasting and Using Semaglutide: an Observational and Cross-sectional Study",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 30,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2023-06-19",
+   "primary_completion": "2023-06-19",
+   "sponsor": "Hospital Israelita Albert Einstein",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "prevalence of full stomach after fasting for at least 8 hours"
+   ]
+  },
+  {
+   "nct": "NCT06263595",
+   "title": "Semaglutide and Preoperative Residual Gastric Volumes",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 94,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2024-05-31",
+   "primary_completion": "2025-05-16",
+   "sponsor": "University of Calgary",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Number of participants presenting with a full stomach"
+   ]
+  },
+  {
+   "nct": "NCT06292065",
+   "title": "Gastric Ultrasound To Assess Gastric Contents In Patients On Semaglutide Therapy",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "enrollment": 88,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2024-04-16",
+   "primary_completion": "2025-05-31",
+   "sponsor": "Nils Vlaeminck",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Prevalence of full stomach"
+   ]
+  },
+  {
+   "nct": "NCT06388213",
+   "title": "Investigation of the Evolution of Gastric Emptying by Gastric Ultra Sonography in Patients Treated With GLP-1 Receptor Agonists on a 7 Days Pausing Period.",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "status": "UNKNOWN",
+   "has_results": false,
+   "start": "2024-06",
+   "primary_completion": "2025-06",
+   "sponsor": "University Hospital, Geneva",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Change of antral cross sectional area in patients pausing 7 days GLP-1 RA treatment."
+   ]
+  },
+  {
+   "nct": "NCT06420739",
+   "title": "The Semaglutide Study",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 100,
+   "enrollment_type": "ACTUAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2024-03-25",
+   "primary_completion": "2025-11-30",
+   "sponsor": "University Health Network, Toronto",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Incidence of full stomach."
+   ]
+  },
+  {
+   "nct": "NCT06500143",
+   "title": "Residual Gastric Content After Holding of Glucagon-like Peptide-1 Receptor Agonists Before Elective Surgery",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 94,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2024-10-09",
+   "primary_completion": "2025-02-28",
+   "sponsor": "Ciusss de L'Est de l'Île de Montréal",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Increased residual gastric content"
+   ]
+  },
+  {
+   "nct": "NCT06581120",
+   "title": "GLP_1 RA Ultrasound Study",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 100,
+   "enrollment_type": "ESTIMATED",
+   "status": "ENROLLING_BY_INVITATION",
+   "has_results": false,
+   "start": "2024-07-08",
+   "primary_completion": "2026-07",
+   "sponsor": "Children's Hospital Medical Center, Cincinnati",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Aspiration Risk determined by POGUS"
+   ]
+  },
+  {
+   "nct": "NCT06659159",
+   "title": "Effects of Beginning a GLP1-Agonist Therapy on Residual Gastric Content and Gastric Emptying",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2024-11-01",
+   "primary_completion": "2026-10-31",
+   "sponsor": "Sascha Battig",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Gastric content"
+   ]
+  },
+  {
+   "nct": "NCT06666049",
+   "title": "Gastric POCUS for Airway Management in Patients Using Glucagon-like Peptide-1 Receptor Agonist (Multicentric)",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 39,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2024-10-21",
+   "primary_completion": "2026-11-01",
+   "sponsor": "Clinica Universidad de Navarra, Universidad de Navarra",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Gastric Ultrasound"
+   ]
+  },
+  {
+   "nct": "NCT06814080",
+   "title": "Residual Gastric Content and GLP-1",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 45,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-05-22",
+   "primary_completion": "2026-08",
+   "sponsor": "University of Arkansas",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Prevalence of full stomach or residual gastric content in the 3 groups",
+    "Prevalence of full stomach or residual gastric content in the 3 groups",
+    "Prevalence of full stomach or residual gastric content in the 3 groups"
+   ]
+  },
+  {
+   "nct": "NCT06987669",
+   "title": "Gastric Emptying in Healthy Volunteers and GLP-1 Agonist Users",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 155,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2025-05-17",
+   "primary_completion": "2026-12-31",
+   "sponsor": "Clinica Alemana de Santiago",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Number of patients with each Grade ( stomach content characteristics) according Perlas et al"
+   ]
+  },
+  {
+   "nct": "NCT07006142",
+   "title": "Effect of Prolonged Fasting Time on Gastric Residual Volume in Patients Taking GLP1 Receptor Agonists",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "enrollment": 150,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-08-01",
+   "primary_completion": "2026-12-31",
+   "sponsor": "Mayo Clinic",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Gastric contents"
+   ]
+  },
+  {
+   "nct": "NCT07140289",
+   "title": "Effect of Glucagon-like Peptide-1 Receptor Agonists (GLP-1 RA) on Gastric Emptying",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 100,
+   "enrollment_type": "ESTIMATED",
+   "status": "ENROLLING_BY_INVITATION",
+   "has_results": false,
+   "start": "2025-09-01",
+   "primary_completion": "2027-06-01",
+   "sponsor": "Wael Saasouh, MD",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Gastric cross-sectional area"
+   ]
+  },
+  {
+   "nct": "NCT07152756",
+   "title": "Impact of a One-Week Discontinuation of Semaglutide on Gastric Retention and Endoscopic Mucosal Visibility Scores",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 418,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2025-09-15",
+   "primary_completion": "2028-09-15",
+   "sponsor": "Fudan University",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Rate of gastric retention"
+   ]
+  },
+  {
+   "nct": "NCT07156591",
+   "title": "Impact of Neuropathy on the Risk of Semaglutide-Induced Gastric Retention",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 460,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2025-09-15",
+   "primary_completion": "2028-09-15",
+   "sponsor": "Fudan University",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Rate of gastric retention"
+   ]
+  },
+  {
+   "nct": "NCT07251803",
+   "title": "GLP1 Fasting Status and Gastric Retention Using Gastric Ultrasound",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 150,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-02-03",
+   "primary_completion": "2026-12-31",
+   "sponsor": "Medical University of South Carolina",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Pre-operative gastric volume per unit of weight (ml/kg) as assessed by gastric ultrasound."
+   ]
+  },
+  {
+   "nct": "NCT07276763",
+   "title": "Impact of Discontinuing GLP-1 Receptor Agonists for Two Weeks Prior to Upper Endoscopy on the Risk of Gastric Retention",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 16509,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2025-12-10",
+   "primary_completion": "2025-12-15",
+   "sponsor": "Fudan University",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Proportion of gastric retention"
+   ]
+  },
+  {
+   "nct": "NCT07360262",
+   "title": "Gastric Emptying Recovery After GLP-1 RA Cessation",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 186,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2025-11-20",
+   "primary_completion": "2025-12-10",
+   "sponsor": "Wonkwang University Hospital",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Ultrasound-estimated gastric volume (mL/kg)"
+   ]
+  },
+  {
+   "nct": "NCT07398222",
+   "title": "Gastric Content in Fasting Volunteers and in Tirzepatide Users: an Observational and Cross-sectional Study",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-01-26",
+   "primary_completion": "2026-03-20",
+   "sponsor": "Hospital Israelita Albert Einstein",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Comparison of the prevalence of a full stomach after fasting using gastric ultrasonography in volunteers using tirzepatide versus those not using the medication."
+   ]
+  },
+  {
+   "nct": "NCT07506356",
+   "title": "Investigation of Gastric Emptying by Gastric Ultrasonography in Diabetic Patients Treated With GLP-1 Receptors",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-04-01",
+   "primary_completion": "2026-12-31",
+   "sponsor": "University Hospital, Geneva",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "A safe gastric volume for anesthesia in diabetic patients treated with GLP-1 analog after a 6 hours fasting period 7 day after the last injection."
+   ]
+  },
+  {
+   "nct": "NCT07623148",
+   "title": "GLP-1 RA Cessation and Gastric Ultrasound Findings",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 186,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2026-07-01",
+   "primary_completion": "2026-07-20",
+   "sponsor": "Wonkwang University Hospital",
+   "sponsor_class": "OTHER",
+   "primary_outcomes": [
+    "Estimated Gastric Volume Normalized to Body Weight"
+   ]
+  }
+ ],
+ "excluded_after_reading": {
+  "NCT07104214": "gastric-retention prediction model for all sedated gastroscopy patients, not specific to GLP-1 users",
+  "NCT07842757": "stomach ultrasound in people with type 2 diabetes generally, not specific to GLP-1 users",
+  "NCT06927401": "tests a capsule device for detecting stomach contents, not a way to manage the drug",
+  "NCT06988397": "meal type and activity in healthy volunteers, no GLP-1 users",
+  "NCT06801015": "mechanism trial of stomach emptying on semaglutide/tirzepatide vs placebo, not about procedures",
+  "NCT07676331": "breast-cancer trial; tirzepatide given before surgery to study tumor markers",
+  "NCT05830994": "G-POEM procedure for gastroparesis",
+  "NCT07190794": "weight outcomes after stopping GLP-1s (device sponsor), not about procedures"
+ }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="t2 d2">
+<title id="t2">New 2-million-patient study, per 1,000 elective surgeries</title>
+<desc id="d2">Per 1,000 elective inpatient surgeries: major cardiovascular events 10 among GLP-1 users vs 11 among matched nonusers; infections 49 vs 53. Observational records study presented at ANESTHESIOLOGY 2026.</desc>
+<rect width="720" height="420" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">“11% lower odds” is about 1 fewer heart event per 1,000 surgeries</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">Complications per 1,000 elective inpatient surgeries, GLP-1 users vs matched nonusers (records study)</text>
+<text x="24" y="100" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Heart attack, heart injury, stroke or death</text>
+<rect x="24" y="114" width="86.7" height="26" rx="4" fill="#0f766e"/>
+<text x="118.66666666666666" y="132" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e" text-anchor="start">10 on a GLP-1</text>
+<rect x="24" y="150" width="95.3" height="26" rx="4" fill="#94a3b8"/>
+<text x="127.33333333333333" y="168" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">11 not on one</text>
+<text x="24" y="220" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Infection (wound, urinary, pneumonia, sepsis)</text>
+<rect x="24" y="234" width="424.7" height="26" rx="4" fill="#0f766e"/>
+<text x="456.6666666666667" y="252" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e" text-anchor="start">49 on a GLP-1</text>
+<rect x="24" y="270" width="459.3" height="26" rx="4" fill="#94a3b8"/>
+<text x="491.3333333333333" y="288" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">53 not on one</text>
+<text x="24" y="358" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Observational: it can’t show the drug caused the gap. It didn’t establish whether or when doses were held,</text>
+<text x="24" y="378" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">and didn’t report aspiration. Presented at a meeting; no peer-reviewed paper yet.</text>
+<text x="24" y="402" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Source: Tolan et al., ANESTHESIOLOGY 2026 (ASA release; Newsweek, Oct 18, 2026). Per-1,000 math (from rounded %) by Jabbit.</text>
+</svg>
