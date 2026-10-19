@@ -1,0 +1,2804 @@
+{
+ "what": "Jabbit hand review of ClinicalTrials.gov records on muscle during GLP-1 drug treatment",
+ "method": "ClinicalTrials.gov API v2 pulled 2026-10-19 16:07 EDT: every study listing semaglutide, tirzepatide, retatrutide, orforglipron or liraglutide as an intervention, plus free-text searches pairing GLP-1 drug names with sarcopenia/lean/muscle terms, with resistance training/creatine/protein/whey/leucine/HMB, with myostatin/activin and named muscle drugs, and with grip/physical function/gait/SPPB/frailty terms. Keyword-flagged records were read by hand. Kept: the study gives one of those drugs (or GLP-1 drugs as a class) and either names muscle, lean mass, strength or physical function as an aim or primary outcome, or adds a muscle drug, exercise, protein/nutrition or creatine and registers a muscle, lean-mass, strength or function outcome. Strength/function = a registered outcome naming grip, strength, chair stands, SPPB, gait or walk tests, stair climb, timed up-and-go, 1RM/leg press, balance or physical function/performance (questionnaires such as SF-36 not counted). Counts are a lower bound: a study that uses none of these words in its title, summary, arms or outcomes would be missed, and records that mention muscle only in secondary outcomes without a muscle aim were not counted.",
+ "category_labels": {
+  "drug": "Muscle-drug add-on",
+  "exercise": "Resistance or structured exercise",
+  "protein": "Protein or nutrition product",
+  "creatine": "Creatine",
+  "other": "Other add-on (lifestyle program, device, other supplement)",
+  "none": "No add-on: measures what the GLP-1 drug itself does to muscle"
+ },
+ "summary": {
+  "unique_studies_pulled": 2751,
+  "keyword_hits_read": 605,
+  "query_counts": {
+   "intr:semaglutide": 788,
+   "intr:tirzepatide": 303,
+   "intr:retatrutide": 33,
+   "intr:orforglipron": 53,
+   "intr:liraglutide": 515,
+   "term1": 393,
+   "term2": 204,
+   "term3": 19,
+   "term4": 1500
+  },
+  "kept_total": 70,
+  "all_kept": {
+   "n": 70,
+   "with_posted_results": [
+    "NCT05616013",
+    "NCT05302596",
+    "NCT05786521"
+   ],
+   "strength_or_function_primary": [
+    "NCT07411378",
+    "NCT07754045",
+    "NCT07091500",
+    "NCT07104539",
+    "NCT07700030",
+    "NCT07625202",
+    "NCT07409831",
+    "NCT06811324",
+    "NCT06861439",
+    "NCT07057310",
+    "NCT07373834",
+    "NCT07428746",
+    "NCT06790160",
+    "NCT07156331",
+    "NCT07695454",
+    "NCT07422987"
+   ],
+   "strength_or_function_any": [
+    "NCT07101939",
+    "NCT07411378",
+    "NCT07754045",
+    "NCT06885736",
+    "NCT07091500",
+    "NCT07104539",
+    "NCT07319975",
+    "NCT07457437",
+    "NCT07485062",
+    "NCT07609160",
+    "NCT07652333",
+    "NCT07700030",
+    "NCT07761923",
+    "NCT07777575",
+    "NCT06950684",
+    "NCT07393360",
+    "NCT07760948",
+    "NCT07806838",
+    "NCT07625202",
+    "NCT06497595",
+    "NCT07226947",
+    "NCT07409831",
+    "NCT07789106",
+    "NCT05606471",
+    "NCT06811324",
+    "NCT06861439",
+    "NCT07057310",
+    "NCT07373834",
+    "NCT07428746",
+    "NCT07747805",
+    "NCT07874932",
+    "NCT07874971",
+    "NCT06790160",
+    "NCT07115069",
+    "NCT07156331",
+    "NCT07695454",
+    "NCT07422987",
+    "NCT07835360"
+   ],
+   "older_adults_only_min_age_60": [
+    "NCT06282458",
+    "NCT07446998",
+    "NCT07754045",
+    "NCT07485062",
+    "NCT07760948",
+    "NCT06497595",
+    "NCT05302596",
+    "NCT05786521",
+    "NCT06861439",
+    "NCT07428746"
+   ],
+   "completed": [
+    "NCT05616013",
+    "NCT06445075",
+    "NCT06282458",
+    "NCT05302596",
+    "NCT05786521"
+   ],
+   "industry_sponsor": [
+    "NCT05616013",
+    "NCT06643728",
+    "NCT06965413",
+    "NCT06299098",
+    "NCT06445075",
+    "NCT06282458",
+    "NCT07446998",
+    "NCT07101939",
+    "NCT07411378",
+    "NCT07754045",
+    "NCT07393360",
+    "NCT07595575",
+    "NCT07527195"
+   ]
+  },
+  "add_on_studies": {
+   "n": 45,
+   "with_posted_results": [
+    "NCT05616013"
+   ],
+   "strength_or_function_primary": [
+    "NCT07411378",
+    "NCT07754045",
+    "NCT07091500",
+    "NCT07104539",
+    "NCT07700030",
+    "NCT07625202",
+    "NCT07409831"
+   ],
+   "strength_or_function_any": [
+    "NCT07101939",
+    "NCT07411378",
+    "NCT07754045",
+    "NCT06885736",
+    "NCT07091500",
+    "NCT07104539",
+    "NCT07319975",
+    "NCT07457437",
+    "NCT07485062",
+    "NCT07609160",
+    "NCT07652333",
+    "NCT07700030",
+    "NCT07761923",
+    "NCT07777575",
+    "NCT06950684",
+    "NCT07393360",
+    "NCT07760948",
+    "NCT07806838",
+    "NCT07625202",
+    "NCT06497595",
+    "NCT07226947",
+    "NCT07409831",
+    "NCT07789106"
+   ],
+   "older_adults_only_min_age_60": [
+    "NCT06282458",
+    "NCT07446998",
+    "NCT07754045",
+    "NCT07485062",
+    "NCT07760948",
+    "NCT06497595"
+   ],
+   "completed": [
+    "NCT05616013",
+    "NCT06445075",
+    "NCT06282458"
+   ],
+   "industry_sponsor": [
+    "NCT05616013",
+    "NCT06643728",
+    "NCT06965413",
+    "NCT06299098",
+    "NCT06445075",
+    "NCT06282458",
+    "NCT07446998",
+    "NCT07101939",
+    "NCT07411378",
+    "NCT07754045",
+    "NCT07393360",
+    "NCT07595575"
+   ]
+  },
+  "by_category": {
+   "drug": {
+    "n": 13,
+    "with_posted_results": [
+     "NCT05616013"
+    ],
+    "strength_or_function_primary": [
+     "NCT07411378",
+     "NCT07754045"
+    ],
+    "strength_or_function_any": [
+     "NCT07101939",
+     "NCT07411378",
+     "NCT07754045"
+    ],
+    "older_adults_only_min_age_60": [
+     "NCT06282458",
+     "NCT07446998",
+     "NCT07754045"
+    ],
+    "completed": [
+     "NCT05616013",
+     "NCT06445075",
+     "NCT06282458"
+    ],
+    "industry_sponsor": [
+     "NCT05616013",
+     "NCT06643728",
+     "NCT06965413",
+     "NCT06299098",
+     "NCT06445075",
+     "NCT06282458",
+     "NCT07446998",
+     "NCT07101939",
+     "NCT07411378",
+     "NCT07754045"
+    ]
+   },
+   "exercise": {
+    "n": 15,
+    "with_posted_results": [],
+    "strength_or_function_primary": [
+     "NCT07091500",
+     "NCT07104539",
+     "NCT07700030"
+    ],
+    "strength_or_function_any": [
+     "NCT06885736",
+     "NCT07091500",
+     "NCT07104539",
+     "NCT07319975",
+     "NCT07457437",
+     "NCT07485062",
+     "NCT07609160",
+     "NCT07652333",
+     "NCT07700030",
+     "NCT07761923",
+     "NCT07777575"
+    ],
+    "older_adults_only_min_age_60": [
+     "NCT07485062"
+    ],
+    "completed": [],
+    "industry_sponsor": []
+   },
+   "protein": {
+    "n": 10,
+    "with_posted_results": [],
+    "strength_or_function_primary": [],
+    "strength_or_function_any": [
+     "NCT06950684",
+     "NCT07393360",
+     "NCT07760948",
+     "NCT07806838"
+    ],
+    "older_adults_only_min_age_60": [
+     "NCT07760948"
+    ],
+    "completed": [],
+    "industry_sponsor": [
+     "NCT07393360",
+     "NCT07595575"
+    ]
+   },
+   "creatine": {
+    "n": 1,
+    "with_posted_results": [],
+    "strength_or_function_primary": [
+     "NCT07625202"
+    ],
+    "strength_or_function_any": [
+     "NCT07625202"
+    ],
+    "older_adults_only_min_age_60": [],
+    "completed": [],
+    "industry_sponsor": []
+   },
+   "other": {
+    "n": 6,
+    "with_posted_results": [],
+    "strength_or_function_primary": [
+     "NCT07409831"
+    ],
+    "strength_or_function_any": [
+     "NCT06497595",
+     "NCT07226947",
+     "NCT07409831",
+     "NCT07789106"
+    ],
+    "older_adults_only_min_age_60": [
+     "NCT06497595"
+    ],
+    "completed": [],
+    "industry_sponsor": []
+   },
+   "none": {
+    "n": 25,
+    "with_posted_results": [
+     "NCT05302596",
+     "NCT05786521"
+    ],
+    "strength_or_function_primary": [
+     "NCT06811324",
+     "NCT06861439",
+     "NCT07057310",
+     "NCT07373834",
+     "NCT07428746",
+     "NCT06790160",
+     "NCT07156331",
+     "NCT07695454",
+     "NCT07422987"
+    ],
+    "strength_or_function_any": [
+     "NCT05606471",
+     "NCT06811324",
+     "NCT06861439",
+     "NCT07057310",
+     "NCT07373834",
+     "NCT07428746",
+     "NCT07747805",
+     "NCT07874932",
+     "NCT07874971",
+     "NCT06790160",
+     "NCT07115069",
+     "NCT07156331",
+     "NCT07695454",
+     "NCT07422987",
+     "NCT07835360"
+    ],
+    "older_adults_only_min_age_60": [
+     "NCT05302596",
+     "NCT05786521",
+     "NCT06861439",
+     "NCT07428746"
+    ],
+    "completed": [
+     "NCT05302596",
+     "NCT05786521"
+    ],
+    "industry_sponsor": [
+     "NCT07527195"
+    ]
+   }
+  },
+  "creatine_with_glp1": [
+   "NCT07625202"
+  ],
+  "retatrutide_or_orforglipron_named_in_kept": [
+   "NCT07226947"
+  ],
+  "older_adult_definition": "registry minimum age 60 or older"
+ },
+ "studies": [
+  {
+   "nct": "NCT05616013",
+   "category": "drug",
+   "also": [],
+   "what": "Bimagrumab + semaglutide vs semaglutide (BELIEVE, Versanis/Eli Lilly)",
+   "title": "Safety and Efficacy of Bimagrumab and Semaglutide in Adults Who Are Overweight or Obese",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 507,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": true,
+   "start": "2022-11-16",
+   "primary_completion": "2024-05-16",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "18 Years",
+   "max_age": "80 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Change From Baseline in Body Weight at Week 48"
+   ]
+  },
+  {
+   "nct": "NCT05933499",
+   "category": "drug",
+   "also": [],
+   "what": "Bimagrumab + tirzepatide (academic, Massachusetts General Hospital)",
+   "title": "Effect of Tirzepatide and Bimagrumab on Body Composition, Insulin Sensitivity, and Bone in Adults With Obesity",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 63,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-11-05",
+   "primary_completion": "2028-12-31",
+   "sponsor": "Massachusetts General Hospital",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in number of kilograms of lean mass by dual-energy x-ray absorptiometry"
+   ]
+  },
+  {
+   "nct": "NCT06282458",
+   "category": "drug",
+   "also": [],
+   "what": "Enobosarm + semaglutide, age 60+ (QUALITY, Veru)",
+   "title": "Dose-Finding Study Evaluating Effect on Body Composition of Enobosarm in Patients Taking a GLP-1 for Chronic Weight Mgmt",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 168,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2024-04-29",
+   "primary_completion": "2025-04-11",
+   "sponsor": "Veru Inc.",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "60 Years",
+   "max_age": "100 Years",
+   "older_adults_only": true,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "The primary endpoint for the study is the percentage change from baseline in total lean body mass at 112 days."
+   ]
+  },
+  {
+   "nct": "NCT06299098",
+   "category": "drug",
+   "also": [],
+   "what": "Trevogrumab, or trevogrumab + garetosmab, with semaglutide (COURAGE, Regeneron)",
+   "title": "A Study to Test if Trevogrumab or Trevogrumab With Garetosmab When Taken With Semaglutide is Safe and How Well They Work in Adult Patients With Obesity for Weight Loss, Fat Loss, and Lean Mass Preservation",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 1005,
+   "enrollment_type": "ACTUAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2024-03-13",
+   "primary_completion": "2026-06-16",
+   "sponsor": "Regeneron Pharmaceuticals",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "18 Years",
+   "max_age": "80 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Incidence of treatment-emergent adverse events (TEAEs)",
+    "Severity of TEAEs",
+    "Percent change in total fat mass",
+    "Percent change in total lean mass",
+    "Percent change in body weight",
+    "Percent change in total fat mass",
+    "Percent change in total lean mass",
+    "Percent change in body weight"
+   ]
+  },
+  {
+   "nct": "NCT06445075",
+   "category": "drug",
+   "also": [],
+   "what": "Apitegromab + tirzepatide (EMBRAZE, Scholar Rock)",
+   "title": "Efficacy and Safety of Apitegromab for the Treatment of Adults Who Are Overweight or Obese",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 102,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": false,
+   "start": "2024-05-21",
+   "primary_completion": "2025-03-04",
+   "sponsor": "Scholar Rock, Inc.",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "18 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change from Baseline in total Lean Body Mass (kg) at 24 weeks"
+   ]
+  },
+  {
+   "nct": "NCT06643728",
+   "category": "drug",
+   "also": [],
+   "what": "Bimagrumab + tirzepatide phase 2 (Eli Lilly)",
+   "title": "A Study to Investigate Weight Management With Bimagrumab (LY3985863) and Tirzepatide (LY3298176), Alone or in Combination, in Adults With Obesity or Overweight",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 252,
+   "enrollment_type": "ACTUAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2024-10-21",
+   "primary_completion": "2026-01-16",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "18 Years",
+   "max_age": "75 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Percent Change from Baseline in Body Weight"
+   ]
+  },
+  {
+   "nct": "NCT06863363",
+   "category": "drug",
+   "also": [],
+   "what": "PEG-rhGH (long-acting growth hormone) + semaglutide, lean body mass primary",
+   "title": "PEG-rhGH and Semaglutide Combination Therapy in Non-Diabetic Obese Adults",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 212,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": null,
+   "primary_completion": null,
+   "sponsor": "Shanghai Zhongshan Hospital",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "50 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "The change in lean body weight (kg) from baseline"
+   ]
+  },
+  {
+   "nct": "NCT06965413",
+   "category": "drug",
+   "also": [],
+   "what": "RO7204239 + tirzepatide vs placebo + tirzepatide, 48 weeks (Roche); DXA lean and MRI muscle volume are secondary outcomes",
+   "title": "A Study to Assess Efficacy, Safety, Tolerability, Pharmacokinetics (PK) and Pharmacodynamics (PD) of RO7204239 in Combination With Tirzepatide in Participants With Obesity or Overweight With At Least One Weight-related Comorbidity",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 285,
+   "enrollment_type": "ACTUAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2025-05-05",
+   "primary_completion": "2026-09-03",
+   "sponsor": "Hoffmann-La Roche",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Percent Change From Baseline in Body Weight"
+   ]
+  },
+  {
+   "nct": "NCT07101939",
+   "category": "drug",
+   "also": [],
+   "what": "(S)-pindolol benzoate with a GLP-1 drug, lean body mass",
+   "title": "A Study of the Effect of (S)-Pindolol Benzoate (ACM-001.1) on Lean Body Mass (LBM) in Obese Patents During (PROACT 1), and Post-semaglutide Therapy (PROACT 2)",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 120,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-06-23",
+   "primary_completion": "2027-03",
+   "sponsor": "Actimed Therapeutics Ltd",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "18 Years",
+   "max_age": "75 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Muscle Strength (Handgrip strength) during and following semaglutide treatment"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "The change in lean body mass (LBM) in patients receiving one of two doses of ACM-001.1 whilst also receiving semaglutide.",
+    "The change in lean body mass (LBM) grams/4 weeks over 20 weeks following semaglutide treatment."
+   ]
+  },
+  {
+   "nct": "NCT07411378",
+   "category": "drug",
+   "also": [],
+   "what": "BIO101 (20-hydroxyecdysone) with a GLP-1 drug (Biophytis)",
+   "title": "Testing the Efficacy, Safety, and PK of 20E in Patients With Obesity Who Are Starting Treatment With the GLP-1 Agonist Semaglutide for Weight Loss.",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 164,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-07",
+   "primary_completion": "2027-06",
+   "sponsor": "Biophytis",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "18 Years",
+   "max_age": "84 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Change from baseline in the knee extension strength at 21 weeks"
+   ],
+   "strength_or_function_secondary": [
+    "Change from baseline in the knee flexion strength at 21 weeks",
+    "Change from baseline in handgrip strength at 21 weeks",
+    "Change from baseline in the 6-minute walking distance test (6MWD) at 21 weeks",
+    "Change from baseline in Stair Climb Power Test (SCPT) at 21 weeks",
+    "Change from baseline of five times Sit to Stand Test (5xSST) at 21 weeks",
+    "Change from Baseline in WQOL-Lite-CT physical function score"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Change from baseline in the knee extension strength at 21 weeks"
+   ]
+  },
+  {
+   "nct": "NCT07446998",
+   "category": "drug",
+   "also": [],
+   "what": "Enobosarm with a GLP-1 drug, age 65+, physical function (PLATEAU, Veru)",
+   "title": "Proof-of-Concept Study Evaluating Total Body Weight, Physical Function & Safety of Enobosarm in Patients Treated With GLP-1 Receptor Agonist, for Weight Loss",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 239,
+   "enrollment_type": "ACTUAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2026-03-26",
+   "primary_completion": "2027-10",
+   "sponsor": "Veru Inc.",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "65 Years",
+   "max_age": "100 Years",
+   "older_adults_only": true,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "To determine the effect of enobosarm in combination with semaglutide on total body weight compared to semaglutide alone."
+   ]
+  },
+  {
+   "nct": "NCT07671391",
+   "category": "drug",
+   "also": [],
+   "what": "LAE102 (activin receptor antibody) with semaglutide",
+   "title": "A Randomized, Double-blind, Placebo-controlled Study Evaluating the Effect of LAE102 Injection in Combination With Tirzepatide on Body in Obese Participants",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-08",
+   "primary_completion": "2027-07",
+   "sponsor": "Shanghai Zhongshan Hospital",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "75 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "The percentage change in lean body mass"
+   ]
+  },
+  {
+   "nct": "NCT07754045",
+   "category": "drug",
+   "also": [],
+   "what": "LUM-201 (oral growth-hormone secretagogue) + semaglutide, older adults",
+   "title": "Evaluating the Efficacy and Safety of LUM-201 Plus Semaglutide Versus Semaglutide Plus Placebo in Older Obese Adults",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 202,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2027-02-15",
+   "primary_completion": "2028-02-15",
+   "sponsor": "Lumos Pharma",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "60 Years",
+   "max_age": "84 Years",
+   "older_adults_only": true,
+   "strength_or_function_primary": [
+    "Proportion of participants with Short Physical Performance Battery (SPPB) score ≤ 7 at Week 26."
+   ],
+   "strength_or_function_secondary": [
+    "Change from Baseline to Week 26 in Individual Short Physical Performance Battery (SPPB) Test.",
+    "Difference in proportions of participants achieving a clinically meaningful positive Short Physical Performance Battery (SPPB) change (1-point).",
+    "Change from Baseline to Week 26 in mean Short Physical Performance Battery (SPPB).",
+    "Change from Baseline to Week 26 in Stair Climb (Power/Time).",
+    "Change from Baseline to Week 26 in 6 Minute Walk Test (6MWT).",
+    "Change from Baseline to Week 26 in Grip Strength in kg using a hand dynamometer.",
+    "Change from Baseline to Week 26 in Knee extension."
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Proportion of participants with Short Physical Performance Battery (SPPB) score ≤ 7 at Week 26."
+   ]
+  },
+  {
+   "nct": "NCT06885736",
+   "category": "exercise",
+   "also": [
+    "protein"
+   ],
+   "what": "Resistance training and/or protein on top of a GLP-1 drug (Dasman Diabetes Institute)",
+   "title": "LEAN Mass Preservation With Resistance Exercise and Protein During Semaglutide/Tirzepatide Therapy",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 232,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-08-07",
+   "primary_completion": "2029-08-30",
+   "sponsor": "Dasman Diabetes Institute",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Muscle strength",
+    "Chair rise performance",
+    "Gait Speed"
+   ],
+   "named_drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "MRI measured quadriceps cross sectional area (CSA)"
+   ]
+  },
+  {
+   "nct": "NCT07065383",
+   "category": "exercise",
+   "also": [],
+   "what": "Semaglutide + supervised resistance and endurance training vs semaglutide + advice; muscle and heart fat (Aberdeen)",
+   "title": "Rebalancing the Fat Content of the Heart and Muscles",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-08-01",
+   "primary_completion": "2028-07-31",
+   "sponsor": "University of Aberdeen",
+   "sponsor_class": "OTHER",
+   "min_age": "20 Years",
+   "max_age": "75 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "1H-magnetic resonance spectroscopy"
+   ]
+  },
+  {
+   "nct": "NCT07091500",
+   "category": "exercise",
+   "also": [],
+   "what": "Semaglutide with vs without exercise training for 52 weeks; physical function primary (exercise type not stated in arm text)",
+   "title": "Glucagon-like Peptide 1 (GLP-1) Receptor Agonist Therapy and Exercise Training in People With Obesity",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-08-11",
+   "primary_completion": "2028-08-01",
+   "sponsor": "Washington University School of Medicine",
+   "sponsor_class": "OTHER",
+   "min_age": "50 Years",
+   "max_age": "75 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Physical function"
+   ],
+   "strength_or_function_secondary": [
+    "Muscular Strength for the Chest Press exercise",
+    "Muscular Strength for the Seated Row exercise",
+    "Muscular Strength for the Leg Press exercise",
+    "Muscular Strength for the Leg Flexion exercise"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Physical function",
+    "Body composition"
+   ]
+  },
+  {
+   "nct": "NCT07104539",
+   "category": "exercise",
+   "also": [],
+   "what": "Strength training vs waitlist in GLP-1 users age 50+; D3-creatine muscle mass and balance (Virginia Tech)",
+   "title": "Strength Training Response of Muscle in GLP-1 Users",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-10-08",
+   "primary_completion": "2026-12",
+   "sponsor": "Virginia Polytechnic Institute and State University",
+   "sponsor_class": "OTHER",
+   "min_age": "50 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Balance testing - Percentage of failed recoveries"
+   ],
+   "strength_or_function_secondary": [
+    "Muscle function"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Muscle mass by d3-creatine dilution",
+    "Balance testing - Percentage of failed recoveries"
+   ]
+  },
+  {
+   "nct": "NCT07298915",
+   "category": "exercise",
+   "also": [],
+   "what": "Aerobic + resistance exercise with tirzepatide; lean mass secondary (University of Virginia)",
+   "title": "The Effect of Exercise and Tirzepatide on Weight and Health Outcomes (EXER-MED)",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 24,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-08",
+   "primary_completion": "2026-12",
+   "sponsor": "University of Virginia",
+   "sponsor_class": "OTHER",
+   "min_age": "30 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Weight"
+   ]
+  },
+  {
+   "nct": "NCT07319975",
+   "category": "exercise",
+   "also": [],
+   "what": "Semaglutide or tirzepatide with vs without exercise; body fat-muscle ratio primary (Istanbul)",
+   "title": "Effect of Semaglutide and Tirzepatide Combined With Exercise in Obesity",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 48,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2025-12-29",
+   "primary_completion": "2026-10",
+   "sponsor": "Istanbul Galata University",
+   "sponsor_class": "OTHER",
+   "min_age": "25 Years",
+   "max_age": "60 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Peripheral muscle strength",
+    "Functional capacity",
+    "Respiratory muscle strength"
+   ],
+   "named_drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Body fat-muscle ratios (Body composition)"
+   ]
+  },
+  {
+   "nct": "NCT07457437",
+   "category": "exercise",
+   "also": [],
+   "what": "Resistance training on a GLP-1 drug (Exeter)",
+   "title": "Function and Lean Mass Preservation With Resistance Exercise During a GLP-1RA Treatment",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-04-01",
+   "primary_completion": "2027-12-01",
+   "sponsor": "University of Exeter",
+   "sponsor_class": "OTHER",
+   "min_age": "25 Years",
+   "max_age": "50 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Isokinetic dynamometry (Bicep and Quadriceps) Peak Torque (Nm/kg)",
+    "Physical Function 60 second sit-to-stand test",
+    "Dynamic Balance, Y-balance Test",
+    "Handgrip dynamometry"
+   ],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Skeletal Muscle Mass",
+    "Muscle Thickness (Ultrasound)"
+   ]
+  },
+  {
+   "nct": "NCT07485062",
+   "category": "exercise",
+   "also": [],
+   "what": "Semaglutide x resistance vs balance-and-tone exercise in older adults with diabetes; cognition primary, strength secondary",
+   "title": "Exercise and Diabetes Interventions to Improve Brain Health in Older Adults With Type 2 Diabetes",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 164,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-09-01",
+   "primary_completion": "2029-05-01",
+   "sponsor": "Western University, Canada",
+   "sponsor_class": "OTHER",
+   "min_age": "65 Years",
+   "max_age": null,
+   "older_adults_only": true,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Timed Up and Go (TUG) Test",
+    "Short Physical Performance Battery (SPPB)",
+    "Six-Minute Walk Test",
+    "Grip Strength Dynamometry",
+    "One-repetition maximum (1RM) strength testing"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Trail Making Test (TMT) Part A and B"
+   ]
+  },
+  {
+   "nct": "NCT07554417",
+   "category": "exercise",
+   "also": [
+    "protein"
+   ],
+   "what": "Exercise + dietary counseling on semaglutide; skeletal muscle mass primary (Rice University)",
+   "title": "Combatting Muscle Loss in Obese Adult Patients on GLP-1 Medications Through Dietary Counseling and Exercise During Treatment Evaluates Whether a 12-week Exercise and Individualized Nutrition Program Can Reduce Muscle and Bone Loss and Improve Strength, Fitness, and Function in Obese Adults on GLP-1",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 20,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-04-06",
+   "primary_completion": "2026-06-29",
+   "sponsor": "William Marsh Rice University",
+   "sponsor_class": "OTHER",
+   "min_age": "40 Years",
+   "max_age": "55 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Change in Skeletal Muscle Mass"
+   ]
+  },
+  {
+   "nct": "NCT07609160",
+   "category": "exercise",
+   "also": [],
+   "what": "Resistance training on a GLP-1 drug (Acibadem)",
+   "title": "Effectiveness of Combined GLP-1/GIP Dual Agonist Therapy and Structured Exercise on Skeletal Muscle Morphology, Quality, and Physical Function in Overweight and Obese Individuals",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 108,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-11-01",
+   "primary_completion": "2027-11-30",
+   "sponsor": "Acibadem University",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Muscle strength (handheld dynamometer)",
+    "Six-minute walk test",
+    "Chair stand test",
+    "Grip strength"
+   ],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in muscle thickness",
+    "Muscle echo intensity"
+   ]
+  },
+  {
+   "nct": "NCT07652333",
+   "category": "exercise",
+   "also": [],
+   "what": "Resistance exercise 2x/week for 12 weeks on a GLP-1 drug (University of Pittsburgh)",
+   "title": "The Effects of Strength Training on Muscle Mass and Mental Health in Adults Taking Obesity Medication",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-05-25",
+   "primary_completion": "2027-04-30",
+   "sponsor": "University of Pittsburgh",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Muscle Strength"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change in Body Composition",
+    "Change in Quality of Life"
+   ]
+  },
+  {
+   "nct": "NCT07700030",
+   "category": "exercise",
+   "also": [
+    "protein"
+   ],
+   "what": "Resistance training on a high-protein diet during GLP-1 treatment (HUSTLE)",
+   "title": "High-protein plUs reSistance Training in gLucagon-like pEptide 1 Receptor Agonist Users (HUSTLE)",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 32,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-07",
+   "primary_completion": "2027-11",
+   "sponsor": "NYU Langone Health",
+   "sponsor_class": "OTHER",
+   "min_age": "30 Years",
+   "max_age": "60 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Changes in 3-Repetition Maximum (3RM) Bench Press",
+    "Changes in 3-Repetition Maximum (3RM) Leg Press"
+   ],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Changes in lean Skeletal Muscle Mass (SMM) quadriceps",
+    "Changes in lean Skeletal Muscle Mass (SMM) rhomboids",
+    "Changes in 3-Repetition Maximum (3RM) Bench Press",
+    "Changes in 3-Repetition Maximum (3RM) Leg Press"
+   ]
+  },
+  {
+   "nct": "NCT07761923",
+   "category": "exercise",
+   "also": [],
+   "what": "One-leg resistance training (other leg as control) on an incretin drug; MRI thigh muscle (Karolinska)",
+   "title": "Preserving Muscle Mass During Incretin-Induced Weight Loss",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 20,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-10-21",
+   "primary_completion": "2028-12-01",
+   "sponsor": "Karolinska Institutet",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "64 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Change in isometric knee extension strength",
+    "Change in isokinetic knee extension strength",
+    "Change in muscle fatigue tolerance"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change in Anterior Thigh Skeletal Muscle Volume"
+   ]
+  },
+  {
+   "nct": "NCT07777575",
+   "category": "exercise",
+   "also": [],
+   "what": "Resistance training on a GLP-1 drug (Technical University of Munich)",
+   "title": "Resistance Training to Prevent Muscle Loss During Treatment With Tirzepatide",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 150,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-09-07",
+   "primary_completion": "2027-05-31",
+   "sponsor": "Technical University of Munich",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "60 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Change in peak isometric knee extension torque (Nm), as assessed using an isokinetic dynamometer",
+    "Change in maximum handgrip strength (kg), as assessed by a hand dynamometer",
+    "Change in the number of chair stands, as assessed by the 30-second chair stand test",
+    "Change in usual gait speed (m/s), as assessed by the time required to walk 10 meters"
+   ],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in contractile thigh muscle volume (mL), as assessed by magnetic resonance imaging (MRI)"
+   ]
+  },
+  {
+   "nct": "NCT07787533",
+   "category": "exercise",
+   "also": [],
+   "what": "App-based resistance training for women 40-59 on a GLP-1 drug; feasibility pilot (LSU)",
+   "title": "Digital Resistance Training for Midlife Women Using GLP-1",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 15,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-11-01",
+   "primary_completion": "2027-06-30",
+   "sponsor": "Louisiana State University and A&M College",
+   "sponsor_class": "OTHER",
+   "min_age": "40 Years",
+   "max_age": "59 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Number of adults screened (Participants)",
+    "Intervention Acceptability (CSQ-8)",
+    "Number of Adults Enrolled (Participants)",
+    "Retention Rate (Percentage of enrolled participants)"
+   ]
+  },
+  {
+   "nct": "NCT06950684",
+   "category": "protein",
+   "also": [
+    "exercise"
+   ],
+   "what": "Whey 25 g/day + resistance training vs advice, age 45+ on incretin drugs (Assuta)",
+   "title": "Impact of Protein Supplementation and Resistance Training on Body Composition, Functional Parameters, Metabolic Adaptation, and Nitrogen Balance in Adults Aged 45 Years and Older With Overweight or Obesity Receiving Incretin-based Medications",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 180,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2025-07-01",
+   "primary_completion": "2028-07-01",
+   "sponsor": "Assuta Medical Center",
+   "sponsor_class": "OTHER",
+   "min_age": "45 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Change in Nitrogen Balance",
+    "Change in Short Physical Performance Battery (SPPB) score",
+    "Change in Sit-to-Stand Test Performance",
+    "Change in Handgrip Strength"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change in Fat Mass (kg)",
+    "Change in Fat Mass Percentage (%)",
+    "Change in Lean Body Mass (kg)",
+    "Change in Skeletal Muscle Mass (kg)",
+    "Change in Body Mass Index (BMI)"
+   ]
+  },
+  {
+   "nct": "NCT06989203",
+   "category": "protein",
+   "also": [],
+   "what": "Semaglutide + 30 g/day protein supplement vs semaglutide; fat-free mass secondary (Chinese Academy of Sciences)",
+   "title": "Protein Supplementation Intervention on Body Weight",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 140,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-06-10",
+   "primary_completion": "2026-12-31",
+   "sponsor": "Chinese Academy of Sciences",
+   "sponsor_class": "OTHER_GOV",
+   "min_age": "20 Years",
+   "max_age": "50 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Change in Body Weight (kg) from Baseline to Week 12"
+   ]
+  },
+  {
+   "nct": "NCT07271043",
+   "category": "protein",
+   "also": [],
+   "what": "High-protein diabetes formula on incretin drugs; lean muscle mass primary (Joslin)",
+   "title": "Nutrition+: Effect of a High-Protein Diabetes Formula on Body Composition in Type 2 Diabetes Patients Treated With Incretin Mimetics",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-01-01",
+   "primary_completion": "2026-11-01",
+   "sponsor": "Joslin Diabetes Center",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "75 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change in lean muscle mass from baseline"
+   ]
+  },
+  {
+   "nct": "NCT07393360",
+   "category": "protein",
+   "also": [],
+   "what": "Myosave food for special medical purposes vs placebo, 24 weeks; appendicular muscle mass primary (Pharmanutra, maker)",
+   "title": "Effect of a Food for Special Medical Purposes on Muscle Mass Preservation During GLP-1 RAs Weight Loss Treatment",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 144,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-12-11",
+   "primary_completion": "2026-12",
+   "sponsor": "Pharmanutra S.p.a.",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "18 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Handgrip Strength"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change in Appendicular Skeletal Muscle Mass (ASMM)"
+   ]
+  },
+  {
+   "nct": "NCT07480109",
+   "category": "protein",
+   "also": [],
+   "what": "Protein-rich foods in midlife women on GLP-1 drugs (University of Texas at Austin)",
+   "title": "Increased Dietary Protein Intake During GLP-1 Medication Use (in Middle-aged Women With Overweight/Obesity)",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 75,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-06-01",
+   "primary_completion": "2027-06-01",
+   "sponsor": "University of Texas at Austin",
+   "sponsor_class": "OTHER",
+   "min_age": "30 Years",
+   "max_age": "60 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Body Composition",
+    "Muscle Mass",
+    "3-day Average Daily Intake"
+   ]
+  },
+  {
+   "nct": "NCT07495904",
+   "category": "protein",
+   "also": [],
+   "what": "High-protein diet vs Mediterranean advice on GLP-1 drugs; muscle mass primary (Hellenic Mediterranean University)",
+   "title": "Effect of GLP-1 Receptor Agonists on Body Composition in Obesity: The Role of Dietary Protein Consumption in Muscle Mass Maintenance",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 130,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-03-30",
+   "primary_completion": "2028-03-30",
+   "sponsor": "Hellenic Mediterranean University",
+   "sponsor_class": "OTHER",
+   "min_age": "30 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change from Baseline in Muscle Mass"
+   ]
+  },
+  {
+   "nct": "NCT07595575",
+   "category": "protein",
+   "also": [],
+   "what": "LEUVATE leucine/amino-acid product vs whole protein; whole-body protein synthesis (maker-sponsored)",
+   "title": "The Effects of LEUVATE on Glycemia, Insulinemia, Aminoacidemia, and Protein Synthesis in GLP-1 RA-treated Adults",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 8,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-06-01",
+   "primary_completion": "2026-08-01",
+   "sponsor": "Nutraceutical Innovations LLC",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "30 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Whole-body protein synthesis"
+   ]
+  },
+  {
+   "nct": "NCT07760948",
+   "category": "protein",
+   "also": [],
+   "what": "HMB + vitamin D on a GLP-1 drug, age 65+",
+   "title": "HMB Plus Vitamin D to Preserve Muscle in Older Adults Starting Semaglutide",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 90,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-12-01",
+   "primary_completion": "2029-11-30",
+   "sponsor": "Vanderbilt University Medical Center",
+   "sponsor_class": "OTHER",
+   "min_age": "65 Years",
+   "max_age": "85 Years",
+   "older_adults_only": true,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Change in Handgrip Strength",
+    "Title Change in Lower-Extremity Strength or Torque",
+    "Title Change in Short Physical Performance Battery Score",
+    "Change in Six-Minute Walk Distance",
+    "Change in Gait Measures",
+    "Change in Net Muscle Protein Balance"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Change in Appendicular Lean Mass"
+   ]
+  },
+  {
+   "nct": "NCT07806838",
+   "category": "protein",
+   "also": [],
+   "what": "Whey protein with or without culinary spices vs usual care; DXA and D3-creatine muscle mass (UCLA)",
+   "title": "Effects of Dietary Supplements on Muscle Mass and Function While Using GLP-1 Medication",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 75,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-09-10",
+   "primary_completion": "2028-09-01",
+   "sponsor": "University of California, Los Angeles",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Change in 400-Meter Walk Test Performance",
+    "Change in Stair Climbing Test Performance",
+    "Change in Grip Strength"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change in Muscle Mass Measured by DEXA",
+    "Change in Muscle Mass Measured by D3-Creatine Enrichment"
+   ]
+  },
+  {
+   "nct": "NCT07817823",
+   "category": "protein",
+   "also": [],
+   "what": "Yeast vs whey vs blended protein vs nothing on GLP-1 drugs; lean mass primary (Huazhong)",
+   "title": "Yeast Protein Supplementation and Muscle Preservation During GLP-1RA-Induced Weight Loss",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 200,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-09-20",
+   "primary_completion": "2027-03-30",
+   "sponsor": "Huazhong University of Science and Technology",
+   "sponsor_class": "OTHER",
+   "min_age": "25 Years",
+   "max_age": "50 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change in Lean Body Mass From Baseline to Week 12"
+   ]
+  },
+  {
+   "nct": "NCT07625202",
+   "category": "creatine",
+   "also": [
+    "exercise"
+   ],
+   "what": "Creatine 10 g/day vs placebo during 12 weeks of resistance training in people starting a GLP-1 drug; sit-to-stand primary (University of Saskatchewan, PI Philip Chilibeck)",
+   "title": "Creatine Supplementation During GLP-1a Therapy",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-05-25",
+   "primary_completion": "2027-05-30",
+   "sponsor": "University of Saskatchewan",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Change in sit to stand performance (number of times)"
+   ],
+   "strength_or_function_secondary": [
+    "Change in 10 meter gait speed (m/s)",
+    "Change in timed up and go (m/s)",
+    "Change in bench press strength (kg)",
+    "Change in leg extension strength (kg)"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change in sit to stand performance (number of times)"
+   ]
+  },
+  {
+   "nct": "NCT06497595",
+   "category": "other",
+   "also": [
+    "exercise",
+    "protein"
+   ],
+   "what": "Home exercise + nutrition program vs advice on semaglutide 2.4 mg, age 65+; thigh muscle volume primary (Sheba)",
+   "title": "Lifestyle Intervention to Reduce the Risk of Sarcopenia in Adults With Diabetes & Obesity Treated With Semaglutide",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-05-11",
+   "primary_completion": "2027-09-30",
+   "sponsor": "Sheba Medical Center",
+   "sponsor_class": "OTHER_GOV",
+   "min_age": "65 Years",
+   "max_age": null,
+   "older_adults_only": true,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Sit to stand test (STS) score",
+    "Hand grip strength test score",
+    "Timed up and go (TUG) test score",
+    "6-minute walk test (6MWT) score",
+    "10-meter walk test (10MWT) score",
+    "Short physical performance battery (SPPB) test score"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Thigh muscle volume (TMV)"
+   ]
+  },
+  {
+   "nct": "NCT06854614",
+   "category": "other",
+   "also": [],
+   "what": "Enhanced lifestyle program with sequential vs continued obesity drugs; 'muscle preservation' in title (Cleveland Clinic)",
+   "title": "Sequential Therapy Anti-obesitY Medication With Muscle Preservation for Weight Loss and MaintEnance: A PragmAtic Randomized CoNtrolled Trial (STAY-LEAN Trial)",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 150,
+   "enrollment_type": "ACTUAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2025-03-01",
+   "primary_completion": "2027-04-28",
+   "sponsor": "The Cleveland Clinic",
+   "sponsor_class": "OTHER",
+   "min_age": "25 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Weight change"
+   ]
+  },
+  {
+   "nct": "NCT07154719",
+   "category": "other",
+   "also": [],
+   "what": "Lifestyle toolkit on tirzepatide; DXA fat-free mass primary (Pennington)",
+   "title": "GLP-1R Actions on Muscle and the Skeleton",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-10-09",
+   "primary_completion": "2027-02-01",
+   "sponsor": "Pennington Biomedical Research Center",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "50 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Changes in fat free mass (FFM) using DXA imaging. FFM equals all body composition that is not fat mass. This includes bone, skeletal muscle, organs, water and all connective tissues. The unit of measurement is in kilograms (kg) at baseline, 3 and 6 mo."
+   ]
+  },
+  {
+   "nct": "NCT07226947",
+   "category": "other",
+   "also": [],
+   "what": "Smartwatch-guided exercise on a GLP-1 drug; lean mass primary (Massachusetts General Hospital)",
+   "title": "Body Composition and Exercise to Prevent Muscle Loss With GLP1 Agonist Treatment",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 100,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-11-24",
+   "primary_completion": "2027-06",
+   "sponsor": "Massachusetts General Hospital",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "99 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Hand grip strength (kg)",
+    "1-minute sit-to-stand",
+    "6-minute walk test",
+    "Short Physical Performance Battery frailty score (total points)"
+   ],
+   "named_drugs": [
+    "liraglutide",
+    "retatrutide",
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Lean mass (kg)"
+   ]
+  },
+  {
+   "nct": "NCT07409831",
+   "category": "other",
+   "also": [
+    "exercise",
+    "protein"
+   ],
+   "what": "6-month physical-activity + nutrition program vs drug alone; muscle mass, grip and SPPB primary (Laval)",
+   "title": "Incretin-based Therapies, Nutrition, and Physical Activity",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 120,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-07-06",
+   "primary_completion": "2028-03",
+   "sponsor": "Laval University",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "70 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Changes in muscular function (handgrip strength)",
+    "Changes in muscular function (short physical performance battery)"
+   ],
+   "strength_or_function_secondary": [
+    "Changes in muscular function (handgrip strength)",
+    "Changes in muscular function (short physical performance battery)"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Changes in muscle mass (bioimpedance scale)",
+    "Changes in muscular function (handgrip strength)",
+    "Changes in muscular function (short physical performance battery)"
+   ]
+  },
+  {
+   "nct": "NCT07789106",
+   "category": "other",
+   "also": [],
+   "what": "Ubiquinol supplement on a GLP-1 drug; fatigue primary, strength among aims",
+   "title": "A Study on Ubiquinol on Fatigue and Muscle Strength in Healthy Adults Taking GLP-1 Agonists",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 90,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-09-01",
+   "primary_completion": "2027-12-01",
+   "sponsor": "StudySetGo",
+   "sponsor_class": "NETWORK",
+   "min_age": "30 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Skeletal muscle function"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Self-reported fatigue"
+   ]
+  },
+  {
+   "nct": "NCT05302596",
+   "category": "none",
+   "also": [],
+   "what": "Semaglutide Use in Elderly Obese Patients",
+   "title": "Semaglutide Use in Elderly Obese Patients",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 16,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": true,
+   "start": "2022-09-01",
+   "primary_completion": "2023-10-23",
+   "sponsor": "State University of New York at Buffalo",
+   "sponsor_class": "OTHER",
+   "min_age": "65 Years",
+   "max_age": null,
+   "older_adults_only": true,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Body Composition as Total Fat Mass/ Total Fat-free Mass Ratio",
+    "Body Weight"
+   ]
+  },
+  {
+   "nct": "NCT05606471",
+   "category": "none",
+   "also": [],
+   "what": "Glucagon-like Peptide-1 Agonism With Very Low Calorie Diets",
+   "title": "Glucagon-like Peptide-1 Agonism With Very Low Calorie Diets",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 45,
+   "enrollment_type": "ESTIMATED",
+   "status": "UNKNOWN",
+   "has_results": false,
+   "start": "2021-09-15",
+   "primary_completion": "2023-07-28",
+   "sponsor": "University of Nottingham",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "75 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Skeletal muscle strength",
+    "Skeletal neuromuscular function",
+    "Gross skeletal muscle function"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Muscle protein synthesis rate",
+    "Muscle protein breakdown rate"
+   ]
+  },
+  {
+   "nct": "NCT05786521",
+   "category": "none",
+   "also": [],
+   "what": "Effect of GLP1 Receptor Agonists on Physical Function, Body Composition, and Markers of Aging in Older Adults",
+   "title": "Effect of GLP1 Receptor Agonists on Physical Function, Body Composition, and Markers of Aging in Older Adults",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 20,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "has_results": true,
+   "start": "2023-04-01",
+   "primary_completion": "2024-05-20",
+   "sponsor": "The University of Texas Health Science Center at San Antonio",
+   "sponsor_class": "OTHER",
+   "min_age": "65 Years",
+   "max_age": "90 Years",
+   "older_adults_only": true,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Lean Body Mass Change"
+   ]
+  },
+  {
+   "nct": "NCT06410352",
+   "category": "none",
+   "also": [],
+   "what": "Effectiveness of Weight Loss Methods on Lifespan for Metabolic Syndrome",
+   "title": "Effectiveness of Weight Loss Methods on Lifespan for Metabolic Syndrome",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 220,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2024-03-01",
+   "primary_completion": "2025-09-30",
+   "sponsor": "University Medical Center, Kazakhstan",
+   "sponsor_class": "OTHER",
+   "min_age": "35 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Weight",
+    "Body mass index",
+    "Fat mass",
+    "Fat free mass",
+    "blood insulin level",
+    "systolic/diastolic Blood presure",
+    "Fasting blood glucose"
+   ]
+  },
+  {
+   "nct": "NCT06790160",
+   "category": "none",
+   "also": [],
+   "what": "Study of Patients Being Treated With Anti-obesity Medication",
+   "title": "Study of Patients Being Treated With Anti-obesity Medication",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 100,
+   "enrollment_type": "ACTUAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2025-01-31",
+   "primary_completion": "2028-03",
+   "sponsor": "Texas Tech University",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Change in Handgrip Strength"
+   ],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in Total Lean Soft Tissue",
+    "Change in Appendicular Lean Soft Tissue",
+    "Change in Total Fat Mass",
+    "Change in Handgrip Strength"
+   ]
+  },
+  {
+   "nct": "NCT06811324",
+   "category": "none",
+   "also": [],
+   "what": "Effects of Tirzepatide on Muscle and Vascular Health in Obese Older Adults",
+   "title": "Effects of Tirzepatide on Muscle and Vascular Health in Obese Older Adults",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 20,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-04-01",
+   "primary_completion": "2027-04-01",
+   "sponsor": "The University of Texas Health Science Center at San Antonio",
+   "sponsor_class": "OTHER",
+   "min_age": "50 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Muscle Strength",
+    "Lower Extremity Functional Capacity"
+   ],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Appendicular lean muscle mass",
+    "Muscle Strength",
+    "Lower Extremity Functional Capacity"
+   ]
+  },
+  {
+   "nct": "NCT06861439",
+   "category": "none",
+   "also": [],
+   "what": "GLP-1s to Enhance Lasting Optimal Weight",
+   "title": "GLP-1s to Enhance Lasting Optimal Weight",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 40,
+   "enrollment_type": "ACTUAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2025-07-07",
+   "primary_completion": "2027-10-30",
+   "sponsor": "Wake Forest University Health Sciences",
+   "sponsor_class": "OTHER",
+   "min_age": "65 Years",
+   "max_age": null,
+   "older_adults_only": true,
+   "strength_or_function_primary": [
+    "Change in 400 meter walk time",
+    "Change in 400 meter walk time",
+    "Change in lower extremity physical performance score",
+    "Change in lower extremity physical performance score",
+    "Change in leg strength",
+    "Change in grip strength",
+    "Change in grip strength",
+    "Change in leg strength"
+   ],
+   "strength_or_function_secondary": [
+    "Change in hip bone strength"
+   ],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in total body lean mass",
+    "Change in total body lean mass",
+    "Change in appendicular lean mass",
+    "Change in appendicular lean mass",
+    "Change in total body fat mass",
+    "Change in total body fat mass",
+    "Change in total hip bone mineral density",
+    "Change in total hip bone mineral density",
+    "Change in lumbar spine bone mineral density",
+    "Change in lumbar spine bone mineral density",
+    "Change in 400 meter walk time",
+    "Change in 400 meter walk time",
+    "Change in lower extremity physical performance score",
+    "Change in lower extremity physical performance score",
+    "Change in leg strength",
+    "Change in grip strength",
+    "Change in grip strength",
+    "Change in leg strength"
+   ]
+  },
+  {
+   "nct": "NCT07057310",
+   "category": "none",
+   "also": [],
+   "what": "Aging Well: Targeting Obesity With GLP-1 Agonists to Enhance Physical and Vascular Health in Postmenopausal Women",
+   "title": "Aging Well: Targeting Obesity With GLP-1 Agonists to Enhance Physical and Vascular Health in Postmenopausal Women",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "status": "ENROLLING_BY_INVITATION",
+   "has_results": false,
+   "start": "2025-05-01",
+   "primary_completion": "2026-12-31",
+   "sponsor": "Mayo Clinic",
+   "sponsor_class": "OTHER",
+   "min_age": "46 Years",
+   "max_age": "60 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Physical Function Measure: Short Physical Performance Battery (SPPB) score.",
+    "Physical Function Measure: Modified Clinical Test of Sensory Interaction in Balance (mCTSIB) performed on the Rehabilitation Artificial Physical Intelligence Database (RAPID) foot pressure mat",
+    "Physical Function Measure: Standing Chest Throw Test with a 2-kg Weighted Ball using Motion Sensor Technology (MST)",
+    "Physical Function Measure: Chair-to-Stand Tests using Motion Sensor Technology (MST)",
+    "Physical Function Measure: Six-Minute Walk Test (6MWT)",
+    "Physical Function Measure: Hand Grip Strength using a Hydraulic Hand Dynamometer"
+   ],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Physical Function Measure: Short Physical Performance Battery (SPPB) score.",
+    "Physical Function Measure: Modified Clinical Test of Sensory Interaction in Balance (mCTSIB) performed on the Rehabilitation Artificial Physical Intelligence Database (RAPID) foot pressure mat",
+    "Physical Function Measure: Standing Chest Throw Test with a 2-kg Weighted Ball using Motion Sensor Technology (MST)",
+    "Physical Function Measure: Chair-to-Stand Tests using Motion Sensor Technology (MST)",
+    "Physical Function Measure: Six-Minute Walk Test (6MWT)",
+    "Physical Function Measure: Hand Grip Strength using a Hydraulic Hand Dynamometer",
+    "Physical Function Measure: Short Form-12 (SF-12) Health Survey",
+    "Physical Function Measure: Patient-Reported Outcomes Measurement Information System (PROMIS) - Fatigue and Physical Function Domains",
+    "Aging Biomarkers: Cellular Senescence Markers in Plasma",
+    "Difference between biological and chronological age",
+    "Vascular Function Assessment: Reactive Hyperemia Index (RHI) using EndoPAT"
+   ]
+  },
+  {
+   "nct": "NCT07115069",
+   "category": "none",
+   "also": [],
+   "what": "Comparison of Body Composition Changes With Weight Loss Interventions",
+   "title": "Comparison of Body Composition Changes With Weight Loss Interventions",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2025-08-09",
+   "primary_completion": "2027-06",
+   "sponsor": "Vanderbilt University Medical Center",
+   "sponsor_class": "OTHER",
+   "min_age": "21 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Grip Strength"
+   ],
+   "named_drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Skeletal Muscle Loss",
+    "Skeletal Muscle Loss",
+    "Patient Assessment of Upper Gastrointestinal Disorders Symptoms Questionnaire",
+    "Patient Assessment of Upper Gastrointestinal Disorders Symptoms Questionnaire"
+   ]
+  },
+  {
+   "nct": "NCT07156331",
+   "category": "none",
+   "also": [],
+   "what": "Research on Effects of Drugs on Body Composition and Function With Imaging in Diabetes",
+   "title": "Research on Effects of Drugs on Body Composition and Function With Imaging in Diabetes",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 20,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2025-10-01",
+   "primary_completion": "2027-10-01",
+   "sponsor": "Kristin Clemens",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Change in Timed Up-and-Go (TUG) at 1-year",
+    "Change in Gait Speed at 1-year",
+    "Change in Handgrip Strength at 1-year"
+   ],
+   "strength_or_function_secondary": [
+    "Change in Timed Up-and-Go (TUG) at 3 and 6 months",
+    "Change in Gait Speed at 3 and 6 months",
+    "Change in Handgrip Strength at 3 and 6 months"
+   ],
+   "named_drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in skeletal muscle mass at 1-year",
+    "Change in Timed Up-and-Go (TUG) at 1-year",
+    "Change in Gait Speed at 1-year",
+    "Change in Handgrip Strength at 1-year"
+   ]
+  },
+  {
+   "nct": "NCT07272837",
+   "category": "none",
+   "also": [],
+   "what": "Impact of Semaglutide (Ozempic/Wegovy®) on Heart and Muscle Mass",
+   "title": "Impact of Semaglutide (Ozempic/Wegovy®) on Heart and Muscle Mass",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-05-15",
+   "primary_completion": "2027-12-31",
+   "sponsor": "University of Alberta",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "80 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Changes in skeletal and cardiac muscle mass"
+   ]
+  },
+  {
+   "nct": "NCT07373834",
+   "category": "none",
+   "also": [],
+   "what": "Tirzepatide and Muscle Outcomes in Obesity",
+   "title": "Tirzepatide and Muscle Outcomes in Obesity",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-01",
+   "primary_completion": "2026-12",
+   "sponsor": "University Medical Centre Ljubljana",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "50 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Change in Quadriceps Muscle Strength"
+   ],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in Body Mass and Composition",
+    "Change in Quadriceps Muscle Strength"
+   ]
+  },
+  {
+   "nct": "NCT07422987",
+   "category": "none",
+   "also": [],
+   "what": "GLP-1RA Effects on Lean Mass and Bone Health in Midlife Women",
+   "title": "GLP-1RA Effects on Lean Mass and Bone Health in Midlife Women",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "start": "2026-02-12",
+   "primary_completion": "2027-06-30",
+   "sponsor": "University of Kansas Medical Center",
+   "sponsor_class": "OTHER",
+   "min_age": "35 Years",
+   "max_age": "60 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Muscle function",
+    "Muscle function"
+   ],
+   "strength_or_function_secondary": [
+    "Estrogen level role in muscle function changes during GLP-1RA therapy"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Body weight",
+    "Body composition",
+    "Bone mineral density (BMD)",
+    "Muscle function",
+    "Muscle function"
+   ]
+  },
+  {
+   "nct": "NCT07428746",
+   "category": "none",
+   "also": [],
+   "what": "Investigating the Impact of GLP-1 RA Therapy on Osteosarcopenia in Older Female Adults With Diabetes",
+   "title": "Investigating the Impact of GLP-1 RA Therapy on Osteosarcopenia in Older Female Adults With Diabetes",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 20,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-05-07",
+   "primary_completion": "2028-11",
+   "sponsor": "Emory University",
+   "sponsor_class": "OTHER",
+   "min_age": "65 Years",
+   "max_age": null,
+   "older_adults_only": true,
+   "strength_or_function_primary": [
+    "Change in handgrip strength"
+   ],
+   "strength_or_function_secondary": [
+    "Change in timed up-and-go (TUG)"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Change in handgrip strength"
+   ]
+  },
+  {
+   "nct": "NCT07527195",
+   "category": "none",
+   "also": [],
+   "what": "Understanding the Effect of CagriSema, Cagrilintide, and Semaglutide on Muscle Health (Role of Amylin Signature in Muscle Health)",
+   "title": "Understanding the Effect of CagriSema, Cagrilintide, and Semaglutide on Muscle Health (Role of Amylin Signature in Muscle Health)",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE1"
+   ],
+   "enrollment": 100,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-04-10",
+   "primary_completion": "2028-04-28",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "min_age": "50 Years",
+   "max_age": "70 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Change in insulin-stimulated fluorodeoxyglucose (FDG) uptake in skeletal muscle"
+   ]
+  },
+  {
+   "nct": "NCT07589322",
+   "category": "none",
+   "also": [],
+   "what": "Comparative Observation of Metabolic and Pharmacologic Adipose Remodeling With Enhanced Incretin AgonisTs",
+   "title": "Comparative Observation of Metabolic and Pharmacologic Adipose Remodeling With Enhanced Incretin AgonisTs",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 120,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-03-31",
+   "primary_completion": "2028-09-30",
+   "sponsor": "Tri-Service General Hospital (TSGH)",
+   "sponsor_class": "OTHER",
+   "min_age": "20 Years",
+   "max_age": "65 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Percent change in total body weight from baseline to 6 months.",
+    "Total fat to lean mass loss ratio (DXA derived) from baseline to 6 months.",
+    "Change in metabolic syndrome severity Z score from baseline to 6 months."
+   ]
+  },
+  {
+   "nct": "NCT07642635",
+   "category": "none",
+   "also": [],
+   "what": "Glucagon-Like Peptide-1 Receptor Agonists to Attenuate Metabolic Risk in Individuals With Duchenne Muscular Dystrophy",
+   "title": "Glucagon-Like Peptide-1 Receptor Agonists to Attenuate Metabolic Risk in Individuals With Duchenne Muscular Dystrophy",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE1",
+    "PHASE2"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-09-01",
+   "primary_completion": "2030-09",
+   "sponsor": "Vanderbilt University Medical Center",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Muscle Volume Index (MVI)"
+   ]
+  },
+  {
+   "nct": "NCT07695454",
+   "category": "none",
+   "also": [],
+   "what": "Imaging in Semaglutide Study",
+   "title": "Imaging in Semaglutide Study",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 10,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-07-30",
+   "primary_completion": "2026-12-30",
+   "sponsor": "The Cleveland Clinic",
+   "sponsor_class": "OTHER",
+   "min_age": "45 Years",
+   "max_age": "75 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [
+    "Effects of semaglutide therapy on patients measured by hand grip."
+   ],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Effects of semaglutide therapy on patients muscle mitochondrial function as quantified using phosphorous MR spectroscopy.",
+    "Effects of semaglutide therapy on patients muscle fatty infiltration measured by MR relaxation time (T1, T2 and T1rho) mapping.",
+    "Effects of semaglutide therapy on patients measured by hand grip.",
+    "Effects of semaglutide therapy on patients measured by MRI.",
+    "Effects of semaglutide therapy on patients muscle composition measured by MR relaxation time (T1, T2 and T1rho) mapping.",
+    "Effects of semaglutide therapy on patients muscle composition measured by MR water-fat imaging.",
+    "Effects of semaglutide therapy on patients muscle fatty infiltration measured by MR water-fat imaging.",
+    "Effects of semaglutide therapy on patients muscle fatty infiltration measured by MR relaxation time (T1, T2 and T1rho) mapping"
+   ]
+  },
+  {
+   "nct": "NCT07702461",
+   "category": "none",
+   "also": [],
+   "what": "Determination of Resistance Training Status for Patients on Glucagon-Like Peptide-1 Receptor Agonists",
+   "title": "Determination of Resistance Training Status for Patients on Glucagon-Like Peptide-1 Receptor Agonists",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 300,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-06-12",
+   "primary_completion": "2026-10",
+   "sponsor": "Ohio State University",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "liraglutide",
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in Resistance Training Status Before Versus Since GLP-1 Receptor Agonist Initiation"
+   ]
+  },
+  {
+   "nct": "NCT07747805",
+   "category": "none",
+   "also": [],
+   "what": "GLP-1 Agonists for Lung Function Improvement and Muscle Restoration in COPD",
+   "title": "GLP-1 Agonists for Lung Function Improvement and Muscle Restoration in COPD",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-08-28",
+   "primary_completion": "2028-08-15",
+   "sponsor": "The Cleveland Clinic",
+   "sponsor_class": "OTHER",
+   "min_age": "40 Years",
+   "max_age": "80 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Change in Hand Grip Strength",
+    "Change in Six-Minute Walk Distance (6MWD)",
+    "Change in Five Sit-to-Stand Performance"
+   ],
+   "named_drugs": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in FEV1"
+   ]
+  },
+  {
+   "nct": "NCT07770152",
+   "category": "none",
+   "also": [],
+   "what": "Semaglutide in Youth With Autism Spectrum Disorder",
+   "title": "Semaglutide in Youth With Autism Spectrum Disorder",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 42,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-09-01",
+   "primary_completion": "2028-09-01",
+   "sponsor": "Children's Hospital Medical Center, Cincinnati",
+   "sponsor_class": "OTHER",
+   "min_age": "12 Years",
+   "max_age": "18 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Number of Participants With Percent Change in BMI (kg/m2)",
+    "Number of Participants With Change in Skeletal Muscle Mass (SMM)"
+   ]
+  },
+  {
+   "nct": "NCT07835360",
+   "category": "none",
+   "also": [],
+   "what": "Body Composition Changes After Initiation of GLP-1 Receptor Agonists in Adults With Obesity or Type 2 Diabetes",
+   "title": "Body Composition Changes After Initiation of GLP-1 Receptor Agonists in Adults With Obesity or Type 2 Diabetes",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 200,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-07-10",
+   "primary_completion": "2029-07",
+   "sponsor": "Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Change in Muscle Strength",
+    "Change in Physical Performance and Functional Mobility"
+   ],
+   "named_drugs": [],
+   "primary_outcomes": [
+    "Change in Appendicular Lean Mass",
+    "Change in Appendicular Skeletal Muscle Index (ASMI)"
+   ]
+  },
+  {
+   "nct": "NCT07858864",
+   "category": "none",
+   "also": [],
+   "what": "GLP-1 Receptor Agonist Use and Sarcopenia in Obese Individuals Without Diabetes",
+   "title": "GLP-1 Receptor Agonist Use and Sarcopenia in Obese Individuals Without Diabetes",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 42,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-05-30",
+   "primary_completion": "2026-11-30",
+   "sponsor": "Istanbul Saglik Bilimleri University",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": null,
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [],
+   "named_drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Change in SARC-F (Strength, Assistance in walking, Rise from a chair, Climb stairs, and Falls) total score"
+   ]
+  },
+  {
+   "nct": "NCT07874932",
+   "category": "none",
+   "also": [],
+   "what": "Long-Term Effects of Semaglutide on Body Composition and Performance in Running",
+   "title": "Long-Term Effects of Semaglutide on Body Composition and Performance in Running",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 41,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-10-14",
+   "primary_completion": "2027-12-30",
+   "sponsor": "Morten Hostrup, PhD",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "45 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Change in maximal voluntary isometric quadriceps contraction torque",
+    "Change in one-repetition maximum (1RM) leg press strength"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Change in total lean mass measured by dual-energy X-ray absorptiometry (DXA)"
+   ]
+  },
+  {
+   "nct": "NCT07874971",
+   "category": "none",
+   "also": [],
+   "what": "Short Term Effects of Semaglutide on Body Composition and Performance",
+   "title": "Short Term Effects of Semaglutide on Body Composition and Performance",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 41,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-10-14",
+   "primary_completion": "2027-12-31",
+   "sponsor": "Morten Hostrup, PhD",
+   "sponsor_class": "OTHER",
+   "min_age": "18 Years",
+   "max_age": "45 Years",
+   "older_adults_only": false,
+   "strength_or_function_primary": [],
+   "strength_or_function_secondary": [
+    "Change in maximal voluntary isometric quadriceps contraction torque",
+    "Change in one-repetition maximum (1RM) leg press strength"
+   ],
+   "named_drugs": [
+    "semaglutide"
+   ],
+   "primary_outcomes": [
+    "Change in total lean mass measured by dual-energy X-ray absorptiometry (DXA)"
+   ]
+  }
+ ],
+ "excluded_after_reading": {
+  "NCT06515418": "azelaprag + tirzepatide (BioAge, terminated); registry lists only weight and safety outcomes, no muscle outcome",
+  "NCT06890611": "bimagrumab + tirzepatide pharmacokinetics in healthy volunteers",
+  "NCT06901349": "bimagrumab + tirzepatide, withdrawn before enrolling",
+  "NCT06468748": "withdrawn before enrolling",
+  "NCT05173714": "resistance training given in all arms of a sitting-time trial; semaglutide vs placebo tested on top, no muscle aim",
+  "NCT07228741": "tirzepatide + resistance exercise in leukemia survivors, but only weight and adherence outcomes registered",
+  "NCT07832084": "GLP-1 tapering trial; resistance exercise in arms but only feasibility outcomes",
+  "NCT07096739": "one-week stomach-tolerance test of a protein shake",
+  "NCT04990024": "high-protein low-carb diet trial for arterial stiffness",
+  "NCT07270497": "diet-change cohort; lean mass only a secondary outcome",
+  "NCT07663591": "breathing-muscle and lung-function study",
+  "NCT07703683": "sarcopenia prevalence in metabolic disease generally, not a GLP-1 study",
+  "NCT02616003": "muscle measured only as insulin-sensitivity tissue",
+  "NCT03534310": "muscle measured only as insulin-sensitivity / blood-flow tissue",
+  "NCT04575844": "muscle measured only as metabolic tissue",
+  "NCT06575738": "muscle words incidental; not a muscle study",
+  "NCT07179120": "muscle words incidental; not a muscle study"
+ }
+}

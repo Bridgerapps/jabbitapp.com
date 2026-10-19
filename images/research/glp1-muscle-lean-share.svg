@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" width="720" height="620" role="img" aria-labelledby="t1 d1">
+<title id="t1">How much of the weight lost was lean mass, GLP-1 drug alone vs with an experimental muscle drug</title>
+<desc id="d1">Share of weight lost that was DXA lean mass. QUALITY: 31.9% on semaglutide with placebo vs 9.4% with enobosarm. EMBRAZE: 30.2% on tirzepatide with placebo vs 14.6% with apitegromab. COURAGE: 34% on semaglutide alone vs 8 to 18% with trevogrumab. BELIEVE: 28.9% on semaglutide 2.4 mg vs 7.7% with bimagrumab. Different trials, durations and people; all company-funded; DXA lean mass is not the same as muscle.</desc>
+<rect width="720" height="620" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">On a GLP-1 alone, about 3 in 10 pounds lost were lean mass</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">Share of weight lost that was DXA lean mass: GLP-1 drug + placebo vs + an experimental muscle drug</text>
+<text x="24" y="104" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">QUALITY</text>
+<text x="116" y="104" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">enobosarm + semaglutide · age 60+ · 16 weeks · medians</text>
+<rect x="24" y="116" width="374.8" height="26" rx="4" fill="#f59e0b"/>
+<text x="406.825" y="134" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">31.9% GLP-1 drug alone</text>
+<rect x="24" y="152" width="110.5" height="26" rx="4" fill="#0f766e"/>
+<text x="142.45" y="170" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e" text-anchor="start">9.4% + enobosarm, all doses</text>
+<text x="24" y="216" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">EMBRAZE</text>
+<text x="116" y="216" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">apitegromab + tirzepatide · 24 weeks</text>
+<rect x="24" y="228" width="354.9" height="26" rx="4" fill="#f59e0b"/>
+<text x="386.85" y="246" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">30.2% GLP-1 drug alone</text>
+<rect x="24" y="264" width="171.5" height="26" rx="4" fill="#0f766e"/>
+<text x="203.54999999999998" y="282" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e" text-anchor="start">14.6% + apitegromab</text>
+<text x="24" y="328" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">COURAGE</text>
+<text x="116" y="328" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">trevogrumab ± garetosmab + semaglutide · 26 weeks</text>
+<rect x="24" y="340" width="399.5" height="26" rx="4" fill="#f59e0b"/>
+<text x="431.5" y="358" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">34% GLP-1 drug alone</text>
+<rect x="24" y="376" width="94.0" height="26" rx="4" fill="#0f766e"/>
+<rect x="118.0" y="376" width="117.5" height="26" rx="0" fill="#0f766e" fill-opacity="0.35"/>
+<text x="243.5" y="394" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e" text-anchor="start">8–18% + trevogrumab arms (3)</text>
+<text x="24" y="440" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">BELIEVE</text>
+<text x="116" y="440" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">bimagrumab + semaglutide 2.4 mg · 48 weeks</text>
+<rect x="24" y="452" width="339.6" height="26" rx="4" fill="#f59e0b"/>
+<text x="371.575" y="470" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">28.9% GLP-1 drug alone</text>
+<rect x="24" y="488" width="90.5" height="26" rx="4" fill="#0f766e"/>
+<text x="122.47500000000001" y="506" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e" text-anchor="start">7.7% + bimagrumab 30 mg/kg</text>
+<text x="24" y="538" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Not head-to-head: different trials, drugs, doses, lengths and people. All four were funded by the company</text>
+<text x="24" y="557" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">making the muscle drug, and none of these drugs is approved. DXA “lean” includes water and organs, not just muscle.</text>
+<text x="24" y="576" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">QUALITY figures are from a company press release, not a paper. BELIEVE lean share = 100 − fat loss index (Jabbit math).</text>
+<text x="24" y="602" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Sources: Veru (Jan 27, 2025); Pratley, Nat Med 2026; Regeneron EASD 2026 abstract; Heymsfield, Nat Med 2026. Chart by Jabbit.</text>
+</svg>
