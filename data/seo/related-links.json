@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-15T23:36:15Z",
+  "updated": "2026-10-19T04:15:00Z",
   "rules": [
     {
       "file": "fda-compounded-glp1-enforcement-2026.html",
@@ -225,6 +225,10 @@
         {
           "href": "/research/ozempic-zepbound-joy-anhedonia-teardown.html",
           "text": "Do Ozempic and Zepbound dull your joy? What trials show"
+        },
+        {
+          "href": "/research/cardio-on-ozempic-zepbound-exercise-teardown.html",
+          "text": "Is cardio pointless unless you\u2019re on Zepbound? What trials show"
         },
         {
           "href": "/guides",

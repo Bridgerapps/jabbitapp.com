@@ -1,0 +1,152 @@
+{
+ "pulled_et": "2026-10-18 23:56 EDT",
+ "method": "Hand review of ops/data/glp1-cardio/ctgov-exercise.json (from glp1_exercise_ctgov.py), 2026-10-19 ET.\nKept: randomized studies where people on semaglutide or tirzepatide get a structured exercise program in one arm\nand the same drug without that program in another. Excluded: drug vs placebo on top of exercise (e.g. SLIMM 2),\nexercise in every arm (HFpEF NCT07223242, NCT07485062 resistance vs balance-and-tone), lifestyle-coaching-only\nprograms, single-arm and observational studies.",
+ "ctgov_unique_semaglutide_or_tirzepatide_studies": 1006,
+ "keyword_matches_for_exercise_interventions": 56,
+ "kept_drug_with_vs_without_exercise": 11,
+ "kept_with_results": 0,
+ "kept_resistance_only": 5,
+ "kept_with_aerobic_component": 4,
+ "kept_type_not_stated": 2,
+ "kept_tirzepatide_with_aerobic_component": [
+  "NCT07298915"
+ ],
+ "kept_primary_outcome_weight_or_fat": [
+  "NCT07319975",
+  "NCT07298915"
+ ],
+ "studies": [
+  {
+   "nct": "NCT04383197",
+   "title": "Exercise and GLP-1 RA on Insulin Secretion",
+   "drug": "semaglutide",
+   "exercise": "aerobic (ergometer cycling, 45 min at 70% VO2max, 3x/week)",
+   "primary": "insulin secretion",
+   "status": "UNKNOWN",
+   "enrollment": 30,
+   "start": "2019-12-10",
+   "sponsor": "University of Copenhagen",
+   "has_results": false
+  },
+  {
+   "nct": "NCT06497595",
+   "title": "Lifestyle Intervention to Reduce the Risk of Sarcopenia in Adults With Diabetes & Obesity Treated With Semaglutide",
+   "drug": "semaglutide 2.4 mg",
+   "exercise": "mixed (resistance + aerobic + balance, 3x/week) with nutrition",
+   "primary": "thigh muscle volume",
+   "status": "RECRUITING",
+   "enrollment": 60,
+   "start": "2025-05-11",
+   "sponsor": "Sheba Medical Center",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07091500",
+   "title": "Glucagon-like Peptide 1 (GLP-1) Receptor Agonist Therapy and Exercise Training in People With Obesity",
+   "drug": "semaglutide 2.4 mg",
+   "exercise": "exercise training, type not stated (3 supervised + 2-3 home sessions/week)",
+   "primary": "physical function; body composition",
+   "status": "RECRUITING",
+   "enrollment": 40,
+   "start": "2025-08-11",
+   "sponsor": "Washington University School of Medicine",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07319975",
+   "title": "Effect of Semaglutide and Tirzepatide Combined With Exercise in Obesity",
+   "drug": "semaglutide; tirzepatide",
+   "exercise": "exercise, type not stated",
+   "primary": "body fat-muscle ratio at 3 months",
+   "status": "NOT_YET_RECRUITING",
+   "enrollment": 48,
+   "start": "2025-12-29",
+   "sponsor": "Istanbul Galata University",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07554417",
+   "title": "Combatting Muscle Loss in Obese Adult Patients on GLP-1 Medications Through Dietary Counseling and Exercise During Treatment Evaluates Whether a 12-week Exercise and Individualized Nutrition Program Can Reduce Muscle and Bone Loss and Improve Strength, Fitness, and Function in Obese Adults on GLP-1",
+   "drug": "semaglutide",
+   "exercise": "mixed (resistance + aerobic, 3x/week) with diet counseling",
+   "primary": "skeletal muscle mass",
+   "status": "NOT_YET_RECRUITING",
+   "enrollment": 20,
+   "start": "2026-04-06",
+   "sponsor": "William Marsh Rice University",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07298915",
+   "title": "The Effect of Exercise and Tirzepatide on Weight and Health Outcomes (EXER-MED)",
+   "drug": "tirzepatide",
+   "exercise": "mixed (aerobic + resistance), 16 weeks",
+   "primary": "body weight",
+   "status": "NOT_YET_RECRUITING",
+   "enrollment": 24,
+   "start": "2026-08",
+   "sponsor": "University of Virginia",
+   "has_results": false
+  },
+  {
+   "nct": "NCT06885736",
+   "title": "LEAN Mass Preservation With Resistance Exercise and Protein During Semaglutide/Tirzepatide Therapy",
+   "drug": "semaglutide or tirzepatide",
+   "exercise": "resistance",
+   "primary": "quadriceps cross-sectional area (MRI)",
+   "status": "RECRUITING",
+   "enrollment": 232,
+   "start": "2025-08-07",
+   "sponsor": "Dasman Diabetes Institute",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07457437",
+   "title": "Function and Lean Mass Preservation With Resistance Exercise During a GLP-1RA Treatment",
+   "drug": "GLP-1 RA (tirzepatide listed)",
+   "exercise": "resistance",
+   "primary": "skeletal muscle mass; muscle thickness",
+   "status": "RECRUITING",
+   "enrollment": 60,
+   "start": "2026-04-01",
+   "sponsor": "University of Exeter",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07609160",
+   "title": "Effectiveness of Combined GLP-1/GIP Dual Agonist Therapy and Structured Exercise on Skeletal Muscle Morphology, Quality, and Physical Function in Overweight and Obese Individuals",
+   "drug": "tirzepatide",
+   "exercise": "resistance (home, bands/bodyweight)",
+   "primary": "muscle thickness; echo intensity",
+   "status": "NOT_YET_RECRUITING",
+   "enrollment": 108,
+   "start": "2026-11-01",
+   "sponsor": "Acibadem University",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07777575",
+   "title": "Resistance Training to Prevent Muscle Loss During Treatment With Tirzepatide",
+   "drug": "tirzepatide",
+   "exercise": "resistance",
+   "primary": "thigh muscle volume (MRI)",
+   "status": "RECRUITING",
+   "enrollment": 150,
+   "start": "2026-09-07",
+   "sponsor": "Technical University of Munich",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07700030",
+   "title": "High-protein plUs reSistance Training in gLucagon-like pEptide 1 Receptor Agonist Users (HUSTLE)",
+   "drug": "GLP-1 RA users (semaglutide or tirzepatide)",
+   "exercise": "resistance (both arms high protein)",
+   "primary": "muscle mass; strength",
+   "status": "NOT_YET_RECRUITING",
+   "enrollment": 32,
+   "start": "2026-07",
+   "sponsor": "NYU Langone Health",
+   "has_results": false
+  }
+ ]
+}
