@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -93,6 +94,19 @@ def sync_one(path: Path, *, script_id: str, indent: int) -> tuple[str | None, Fi
     try:
         data = faq.build_faqpage_jsonld(pairs)
         _assert_no_trailing_slash_urls(data)
+        # Formatting-only differences (indent, attribute order, newlines) are not a
+        # change: generators may write the same FAQ JSON-LD with different spacing.
+        existing = re.search(
+            r'<script\b(?=[^>]*\bid=["\']' + re.escape(script_id) + r'["\'])[^>]*>(.*?)</script>',
+            html,
+            re.S | re.I,
+        )
+        if existing:
+            try:
+                if json.loads(existing.group(1)) == data:
+                    return html, FileResult(path=str(path), pairs=len(pairs), changed=False, error=None)
+            except ValueError:
+                pass
         script_block = faq.render_jsonld_script(data, indent=indent, script_id=script_id)
         new_html, _ = faq._replace_or_insert_script(html, script_id=script_id, script_block=script_block)
     except Exception as e:
