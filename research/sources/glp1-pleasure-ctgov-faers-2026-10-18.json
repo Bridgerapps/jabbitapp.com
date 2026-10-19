@@ -1,0 +1,156 @@
+{
+ "checked": "2026-10-18",
+ "generated_utc": "2026-10-19T02:02:18.515104Z",
+ "ctgov": {
+  "query": "query.intr=semaglutide plus query.intr=tirzepatide, deduplicated",
+  "unique_studies": 1006,
+  "with_depression_outcome": 63,
+  "pleasure_scale_hits": {
+   "NCT06639464": {
+    "title": "Semaglutide for Helping Opioid Recovery",
+    "status": "RECRUITING",
+    "has_results": false,
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 46,
+    "conditions": [
+     "Opioid Use Disorder"
+    ],
+    "interventions": [
+     "Semaglutide",
+     "Placebo"
+    ],
+    "masking": "QUADRUPLE",
+    "outcome_hits": [
+     "Temporal Experience of Pleasure Scale (TEPS) | A tool to assess both anticipatory and consummatory reward. 18-item tool where each item is ranked from 1 ('very false for me') to 6 ('very true for me'). Items are averaged, with higher score indicate a stronger tendency to anticipate or experience ple"
+    ]
+   },
+   "NCT06691243": {
+    "title": "Evaluation Of Semaglutide in Adults With Cocaine Use Disorder With and Without HIV",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 40,
+    "conditions": [
+     "Cocaine Use Disorder",
+     "HIV"
+    ],
+    "interventions": [
+     "Semaglutide",
+     "Placebo"
+    ],
+    "masking": "QUADRUPLE",
+    "outcome_hits": [
+     "Determine if semaglutide impacts anhedonia in people with cocaine use disorder, with and without HIV | Change from baseline to highest tolerated semaglutide or placebo dose in score on Snaith-Hamilton Pleasure Scale (SHAPS). Minimum score=0 (no anhedonia). Maximum score=14 (severe anhedonia). The hi"
+    ]
+   },
+   "NCT07292519": {
+    "title": "Tirzepatide Combined With Cognitive-Behavioural Therapy (CBT) for Adults With Alcohol Use Disorder (AUD) and Overweight/Obesity (OOB)",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 46,
+    "conditions": [
+     "Alcohol Use Disorder (AUD)",
+     "Overweight or Obese",
+     "Comorbidities and Coexisting Conditions"
+    ],
+    "interventions": [
+     "Tirzepatide",
+     "Take Control CBT Module",
+     "Placebo"
+    ],
+    "masking": "DOUBLE",
+    "outcome_hits": [
+     "Anhedonia (ability to experience pleasure in last few days) | As measured by the Snaith-Hamilton Pleasure Scale (SHPS). A self-report questionnaire which assesses anhedonia across domains such as social interactions, food and drink, sensory experiences, and hobbies. Items are rated on a Likert scale"
+    ]
+   },
+   "NCT06745128": {
+    "title": "Tirzepatide for Obesity and Meth Use Disorder",
+    "status": "COMPLETED",
+    "has_results": false,
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 35,
+    "conditions": [
+     "Obesity",
+     "Methamphetamine Use Disorder"
+    ],
+    "interventions": [
+     "Tirzepatide"
+    ],
+    "masking": "NONE",
+    "outcome_hits": [
+     "Changes in self-reported symptoms of anhedonia from baseline to the end of the 32-week treatment phase | Anhedonia, the inability to experience pleasure, will be assessed by the Snaith-Hamilton Pleasure Scale (SHAPS). The SHAPS questionnaire contains 14 items related to experiencing pleasure over th"
+    ]
+   }
+  },
+  "kept_after_review": [
+   "NCT06639464",
+   "NCT06691243",
+   "NCT06745128",
+   "NCT07292519"
+  ],
+  "review_notes": {
+   "NCT06639464": "kept: TEPS (pleasure scale) on semaglutide vs placebo, opioid use disorder",
+   "NCT06691243": "kept: SHAPS on semaglutide vs placebo, cocaine use disorder with/without HIV",
+   "NCT07292519": "kept: SHAPS on tirzepatide vs placebo with CBT, alcohol use disorder + overweight/obesity",
+   "NCT06745128": "kept: SHAPS on tirzepatide (single arm listed), obesity + methamphetamine use disorder"
+  },
+  "unreviewed_hits": [],
+  "kept_with_results": []
+ },
+ "faers_openfda": {
+  "note": "Counts of reports listing the drug (any role) via patient.drug.openfda.generic_name and an exact MedDRA preferred term; spontaneous reports, not incidence, no causation.",
+  "drugs": {
+   "semaglutide": {
+    "total_reports": 73001,
+    "last_updated": "2026-07-30",
+    "terms": {
+     "Anhedonia": 42,
+     "Apathy": 57,
+     "Emotional poverty": 2,
+     "Flat affect": 5,
+     "Libido decreased": 25,
+     "Depression": 1122,
+     "Suicidal ideation": 508,
+     "Nausea": 10674
+    }
+   },
+   "tirzepatide": {
+    "total_reports": 160663,
+    "last_updated": "2026-07-30",
+    "terms": {
+     "Anhedonia": 34,
+     "Apathy": 61,
+     "Emotional poverty": 10,
+     "Flat affect": 4,
+     "Libido decreased": 53,
+     "Depression": 999,
+     "Suicidal ideation": 462,
+     "Nausea": 17092
+    }
+   },
+   "liraglutide": {
+    "total_reports": 50704,
+    "last_updated": "2026-07-30",
+    "terms": {
+     "Anhedonia": 31,
+     "Apathy": 18,
+     "Emotional poverty": 3,
+     "Flat affect": 4,
+     "Libido decreased": 18,
+     "Depression": 558,
+     "Suicidal ideation": 165,
+     "Nausea": 7293
+    }
+   }
+  }
+ }
+}
