@@ -1,0 +1,401 @@
+{
+ "title": "GLP-1 trials on ClinicalTrials.gov that register a biological-age or aging-clock outcome",
+ "method": "Pulled every study listing semaglutide, tirzepatide or retatrutide as an intervention. Flagged any whose title, summary or registered outcomes mention biological age, aging clocks, epigenetic or methylation age, named clocks (GrimAge, PhenoAge, DunedinPACE, Horvath, Hannum), proteomic or organ age, age acceleration, healthspan, longevity, geroscience, senescence or telomeres. Read each hit by hand; kept studies whose registered outcomes include a biological-age clock. A second, looser pass (any outcome mentioning aging, methylation, clock, frailty, telomere, senescence, klotho or epigenetics) found no additional clock outcomes. Registry text only: post hoc analyses (such as Novo's and Lilly's) do not appear unless registered.",
+ "summary": {
+  "pulled": "2026-10-19 09:59 EDT",
+  "query": "ClinicalTrials.gov API v2, query.intr = semaglutide, tirzepatide, retatrutide (all statuses)",
+  "per_drug_query_counts": {
+   "semaglutide": 788,
+   "tirzepatide": 303,
+   "retatrutide": 33
+  },
+  "unique_studies": 1040,
+  "keyword_hits": 14,
+  "with_aging_clock_outcome": 8,
+  "with_posted_results": [],
+  "randomized": [
+   "NCT05356104",
+   "NCT07057310",
+   "NCT07218445",
+   "NCT07220473",
+   "NCT07293325"
+  ],
+  "placebo_or_no_drug_control": [
+   "NCT07218445",
+   "NCT07220473"
+  ],
+  "drugs": {
+   "semaglutide": [
+    "NCT05356104",
+    "NCT06975111",
+    "NCT07057310",
+    "NCT07293325",
+    "NCT07444073"
+   ],
+   "tirzepatide": [
+    "NCT07057310",
+    "NCT07218445",
+    "NCT07220473",
+    "NCT07293325",
+    "NCT07444073",
+    "NCT07707778"
+   ],
+   "retatrutide": []
+  },
+  "industry_sponsored_by_novo_or_lilly": [],
+  "total_planned_enrollment": 1036,
+  "largest_randomized_enrollment": 110,
+  "earliest_primary_completion": "2026-12-31",
+  "parent_trials_checked": {
+   "NCT03574597": {
+    "trial": "SELECT",
+    "registered_outcomes": 29,
+    "aging_like_outcomes": []
+   },
+   "NCT04788511": {
+    "trial": "STEP-HFpEF",
+    "registered_outcomes": 15,
+    "aging_like_outcomes": []
+   },
+   "NCT04916470": {
+    "trial": "STEP-HFpEF DM",
+    "registered_outcomes": 23,
+    "aging_like_outcomes": []
+   },
+   "NCT03819153": {
+    "trial": "FLOW",
+    "registered_outcomes": 22,
+    "aging_like_outcomes": []
+   },
+   "NCT03914326": {
+    "trial": "SOUL",
+    "registered_outcomes": 25,
+    "aging_like_outcomes": []
+   },
+   "NCT03548935": {
+    "trial": "STEP 1",
+    "registered_outcomes": 42,
+    "aging_like_outcomes": []
+   },
+   "NCT03552757": {
+    "trial": "STEP 2",
+    "registered_outcomes": 41,
+    "aging_like_outcomes": []
+   },
+   "NCT05822830": {
+    "trial": "SURMOUNT-5",
+    "registered_outcomes": 9,
+    "aging_like_outcomes": []
+   }
+  },
+  "parent_trials_with_aging_outcome": []
+ },
+ "kept": [
+  {
+   "nct": "NCT05356104",
+   "title": "GLP-1 Analogue in Preventing Progression of Small Vessel Disease (GAPP-SVD)",
+   "drugs": [
+    "semaglutide"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "masking": "SINGLE",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 110,
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2022-05-25",
+   "primary_completion": "2027-05",
+   "first_posted": "2022-05-02",
+   "sponsor": "Chinese University of Hong Kong",
+   "sponsor_class": "OTHER",
+   "aging_measure": "DNA-methylation epigenetic age clock (secondary outcome)",
+   "design": "randomized vs standard care, single-blind; small vessel disease",
+   "registered_aging_outcomes": [
+    {
+     "type": "secondaryOutcomes",
+     "measure": "Change of DNA methylation",
+     "description": "blood biomarker. DNA methylation-derived epigenetic age clock is an indicator of biological aging.",
+     "time_frame": "Baseline, week 12, week 26, week 52 and week 78"
+    }
+   ]
+  },
+  {
+   "nct": "NCT06975111",
+   "title": "Focusing on the Menopausal Transition to Improve Mid-Life Women's Health",
+   "drugs": [
+    "semaglutide"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "masking": "NONE",
+   "phases": [
+    "PHASE2",
+    "PHASE3"
+   ],
+   "enrollment": 200,
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-03-01",
+   "primary_completion": "2029-10-31",
+   "first_posted": "2025-05-16",
+   "sponsor": "University of Colorado, Denver",
+   "sponsor_class": "OTHER",
+   "aging_measure": "PhenoAge and GrimAge (primary outcomes)",
+   "design": "non-randomized, five arms; semaglutide is offered only in the obesity arm",
+   "registered_aging_outcomes": [
+    {
+     "type": "primaryOutcomes",
+     "measure": "Epigenetic aging measurements of \"PhenoAge\"",
+     "description": "Change in epigenetic aging, as assessed by PhenoAge. PhenoAge calculates a biological age score based on key biomarkers circulating in the bloodstream. A lower PhenoAge score suggests slower biological aging, while a higher score indicates accelerated aging.",
+     "time_frame": "Up to 2 years"
+    },
+    {
+     "type": "primaryOutcomes",
+     "measure": "Epigenetic aging measurements of \"GrimAge\"",
+     "description": "Epigenetic aging, as assessed by GrimAge. GrimAge assesses lifespan from examining DNA Methylation.",
+     "time_frame": "Up to 2 years"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07057310",
+   "title": "Aging Well: Targeting Obesity With GLP-1 Agonists to Enhance Physical and Vascular Health in Postmenopausal Women",
+   "drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "masking": "SINGLE",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 30,
+   "status": "ENROLLING_BY_INVITATION",
+   "has_results": false,
+   "start": "2025-05-01",
+   "primary_completion": "2026-12-31",
+   "first_posted": "2025-07-09",
+   "sponsor": "Mayo Clinic",
+   "sponsor_class": "OTHER",
+   "aging_measure": "epigenetic-clock biological minus chronological age; senescence markers (primary)",
+   "design": "randomized vs lifestyle only; semaglutide or tirzepatide",
+   "registered_aging_outcomes": [
+    {
+     "type": "primaryOutcomes",
+     "measure": "Aging Biomarkers: Cellular Senescence Markers in Plasma",
+     "description": "Cellular senescence markers are measured in plasma samples to assess biological aging and cellular stress. These markers may include proteins associated with the senescence-associated secretory phenotype (SASP). Quantification is performed using immunoassays. Higher levels of senescence markers indi",
+     "time_frame": "24 weeks"
+    },
+    {
+     "type": "primaryOutcomes",
+     "measure": "Difference between biological and chronological age",
+     "description": "Epigenetic clocks estimate biological age by analyzing DNA methylation patterns at specific CpG sites across the genome. Biological age estimates are compared to chronological age to assess aging acceleration or deceleration. Biological age greater than chronological age indicates accelerated biolog",
+     "time_frame": "24 weeks"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07218445",
+   "title": "The Effect of Tirzepatide on Menopausal Vasomotor Symptoms and Biological Aging in Post-menopausal Women With Obesity",
+   "drugs": [
+    "tirzepatide"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "masking": "QUADRUPLE",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 40,
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-04-08",
+   "primary_completion": "2027-09-18",
+   "first_posted": "2025-10-20",
+   "sponsor": "Mayo Clinic",
+   "sponsor_class": "OTHER",
+   "aging_measure": "epigenetic-clock biological minus chronological age; senescence markers (primary)",
+   "design": "randomized, placebo-controlled, quadruple-blind",
+   "registered_aging_outcomes": [
+    {
+     "type": "primaryOutcomes",
+     "measure": "Aging Biomarkers: Cellular Senescence Markers in Plasma",
+     "description": "Cellular senescence markers are measured in plasma samples to assess biological aging and cellular stress. These markers may include proteins associated with the senescence-associated secretory phenotype (SASP). Quantification is performed using immunoassays. Higher levels of senescence markers indi",
+     "time_frame": "24 weeks"
+    },
+    {
+     "type": "primaryOutcomes",
+     "measure": "Difference between biological and chronological age",
+     "description": "Epigenetic clocks estimate biological age by analyzing DNA methylation patterns at specific CpG sites across the genome. Biological age estimates are compared to chronological age to assess aging acceleration or deceleration. Biological age greater than chronological age indicates accelerated biolog",
+     "time_frame": "24 weeks"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07220473",
+   "title": "Tirzepatide to Slow Biological Aging",
+   "drugs": [
+    "tirzepatide"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "masking": "DOUBLE",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 90,
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2026-02-27",
+   "primary_completion": "2027-11",
+   "first_posted": "2025-10-24",
+   "sponsor": "The University of Texas Medical Branch, Galveston",
+   "sponsor_class": "OTHER",
+   "aging_measure": "DNAmAge, PhenoAge, GrimAge, DunedinPACE (primary)",
+   "design": "randomized: tirzepatide 2.5 mg vs no drug for 24 weeks, then 12 weeks off",
+   "registered_aging_outcomes": [
+    {
+     "type": "primaryOutcomes",
+     "measure": "Change in DNA Methylation-Based Biological Age",
+     "description": "Change in biological age as measured by DNA methylation-based aging clocks (DNAmAge, DNAm PhenoAge, DNAm GrimAge, and DunedinPACE) following tirzepatide treatment.",
+     "time_frame": "Immediately before and after the study visit at Weeks 4, 12, and 24"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07293325",
+   "title": "Semaglutide and Tirzepatide for Genetic Aging Delay in Adults With Obesity",
+   "drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 66,
+   "status": "RECRUITING",
+   "has_results": false,
+   "start": "2025-06-02",
+   "primary_completion": "2027-04-02",
+   "first_posted": "2025-12-19",
+   "sponsor": "Second Affiliated Hospital, Zhejiang University, School of Medicine",
+   "sponsor_class": "OTHER",
+   "aging_measure": "iWatchAge DNA-methylation age (primary)",
+   "design": "randomized, open-label: semaglutide vs tirzepatide vs metformin; no placebo",
+   "registered_aging_outcomes": [
+    {
+     "type": "primaryOutcomes",
+     "measure": "Change in DNA methylation-based biological age measured by iWatchAge",
+     "description": "Change in epigenetic biological age from baseline to Week 24, measured using the iWatchAge DNA methylation assay. This outcome reflects whether semaglutide, tirzepatide, or metformin can delay or reverse obesity-associated accelerated epigenetic aging.",
+     "time_frame": "Baseline and Week 24"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07444073",
+   "title": "Assessing Biological Aging in a Real-World Medical Weight Loss Program Using the LinAge2 Clinical Clock",
+   "drugs": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "masking": null,
+   "phases": null,
+   "enrollment": 440,
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "start": "2026-06-01",
+   "primary_completion": "2026-12-31",
+   "first_posted": "2026-03-02",
+   "sponsor": "National University of Singapore",
+   "sponsor_class": "OTHER",
+   "aging_measure": "LinAge2 clinical-lab clock (primary)",
+   "design": "observational cohort in a commercial weight-loss program",
+   "registered_aging_outcomes": [
+    {
+     "type": "primaryOutcomes",
+     "measure": "LinAge2 Biological Age",
+     "description": "The primary outcome of this study is to determine the change in LinAge2 biological age estimates in response to the NOVI Health weight management program, which comprises GLP-1 RA therapy alongside personalized diet and physical activity interventions.",
+     "time_frame": "Baseline and 6 months"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07707778",
+   "title": "Tirzepatide's Effects on Epigenetic Aging and Metabolic Restoration in Virally Suppressed People With HIV",
+   "drugs": [
+    "tirzepatide"
+   ],
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "masking": "NONE",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 60,
+   "status": "ENROLLING_BY_INVITATION",
+   "has_results": false,
+   "start": "2026-06-25",
+   "primary_completion": "2027-12",
+   "first_posted": "2026-07-16",
+   "sponsor": "National Taiwan University Clinical Trial Center",
+   "sponsor_class": "OTHER",
+   "aging_measure": "PCGrimAge and DunedinPACE (primary)",
+   "design": "non-randomized vs standard care; people with HIV",
+   "registered_aging_outcomes": [
+    {
+     "type": "primaryOutcomes",
+     "measure": "Second generation epigenetic aging clock",
+     "description": "PCGrimAge will be used to study the measured epigetic age and differences with chronological age in years.",
+     "time_frame": "Baseline, week 33, week 57"
+    },
+    {
+     "type": "primaryOutcomes",
+     "measure": "Third generation epigenetic aging clock",
+     "description": "DunedinPACE will be used to assess the pace of aging, quantifying years of physiological decline per chronological year.",
+     "time_frame": "Baseline, week 33, week 57"
+    }
+   ]
+  }
+ ],
+ "dropped": [
+  {
+   "nct": "NCT05700877",
+   "title": "Screening and Intervention for Subclinical Coronary Artery Disease in Patients With Type 2 Diabetes",
+   "reason": "keyword only in summary ('aging biomarker'); no aging outcome registered"
+  },
+  {
+   "nct": "NCT05786521",
+   "title": "Effect of GLP1 Receptor Agonists on Physical Function, Body Composition, and Markers of Aging in Older Adults",
+   "reason": "title says 'markers of aging' but the only registered outcome is lean body mass (results posted for lean mass only)"
+  },
+  {
+   "nct": "NCT07092605",
+   "title": "Effectiveness of Microdosed GLP-1 in Improving Health, Quality of Life, and Longevity Measures",
+   "reason": "'longevity' in title; outcomes are pain, blood counts, mood, HRV, sleep, activity; no aging clock"
+  },
+  {
+   "nct": "NCT07092618",
+   "title": "Effectiveness of Alternative Therapies in Maintaining Weight Loss Achieved by GLP-1 Medications Post-Cessation",
+   "reason": "'healthspan' in text; tests drugs after stopping GLP-1s; no aging clock"
+  },
+  {
+   "nct": "NCT07567378",
+   "title": "CARTIZ Registry: Cartilage, Arthropathy and Imaging Under Tirzepatide in Zone-stratified Cohorts - A Four-Institute Mexican Observational Registry",
+   "reason": "bioimpedance phase angle called an 'aging biomarker'; not a biological-age clock"
+  },
+  {
+   "nct": "NCT07871799",
+   "title": "ELITE: Deep Profiling and Algorithmic Polytherapy to Map Individual Response in Healthy Aging",
+   "reason": "'longevity' in text; outcome is a muscle/immune/cognitive composite; no aging clock"
+  }
+ ]
+}

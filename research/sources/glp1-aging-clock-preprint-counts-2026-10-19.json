@@ -1,0 +1,135 @@
+{
+ "title": "Novo Nordisk semaglutide proteomic aging-clock preprint: who was measured, and how many of 21 clocks moved",
+ "source": "Dermit M, et al. Semaglutide reduces proteomic organ-specific biological age across randomized clinical trials. Research Square preprint, posted September 22, 2026. doi:10.21203/rs.3.rs-11082091/v1 (main text Table 1, Fig. 2b, Supplementary Fig. 2b; online methods).",
+ "transcribed_by": "Jabbit, October 19, 2026 (~10 AM ET). Counts are the numbers printed on the bars of Fig. 2b and Supplementary Fig. 2b (Holm-Bonferroni correction); not re-derived.",
+ "clocks_per_trial_timepoint": 21,
+ "clocks": "18 organ clocks (adipose, adrenal, artery, brain, esophagus, heart, immune, intestine, kidney, liver, lung, muscle, pancreas, pituitary, salivary, skin, stomach, thyroid) + 3 composites (multiorgan, conventional, organismal), from Goeminne et al. 2025, Cell Metab (UK Biobank, mortality-trained)",
+ "participants_with_proteomics": {
+  "SELECT": {
+   "n": 1641,
+   "drug": "semaglutide 2.4 mg weekly injection (Wegovy dose)",
+   "type2_diabetes": false,
+   "post_baseline_timepoints_weeks": [
+    20
+   ],
+   "note": "nested case-control subset: 781 of 1,641 had a MACE event vs 1,270 of 17,604 in the full trial"
+  },
+  "STEP-HFpEF": {
+   "n": 416,
+   "drug": "semaglutide 2.4 mg weekly injection",
+   "type2_diabetes": false,
+   "post_baseline_timepoints_weeks": [
+    20,
+    52
+   ]
+  },
+  "STEP-HFpEF DM": {
+   "n": 469,
+   "drug": "semaglutide 2.4 mg weekly injection",
+   "type2_diabetes": true,
+   "post_baseline_timepoints_weeks": [
+    20,
+    52
+   ]
+  },
+  "FLOW": {
+   "n": 2271,
+   "drug": "semaglutide 1.0 mg weekly injection (Ozempic dose)",
+   "type2_diabetes": true,
+   "post_baseline_timepoints_weeks": [
+    12,
+    52,
+    156
+   ]
+  },
+  "SOUL": {
+   "n": 5255,
+   "drug": "oral semaglutide 14 mg daily (Rybelsus)",
+   "type2_diabetes": true,
+   "post_baseline_timepoints_weeks": [
+    13,
+    104
+   ]
+  }
+ },
+ "significant_clock_counts_holm": [
+  {
+   "trial": "SELECT",
+   "week": 20,
+   "younger": 3,
+   "older": 1
+  },
+  {
+   "trial": "SELECT (survey-weighted to the full trial)",
+   "week": 20,
+   "younger": 1,
+   "older": 1
+  },
+  {
+   "trial": "STEP-HFpEF",
+   "week": 20,
+   "younger": 1,
+   "older": 2
+  },
+  {
+   "trial": "STEP-HFpEF",
+   "week": 52,
+   "younger": 0,
+   "older": 0
+  },
+  {
+   "trial": "STEP-HFpEF DM",
+   "week": 20,
+   "younger": 4,
+   "older": 0
+  },
+  {
+   "trial": "STEP-HFpEF DM",
+   "week": 52,
+   "younger": 13,
+   "older": 0
+  },
+  {
+   "trial": "FLOW",
+   "week": 12,
+   "younger": 4,
+   "older": 1
+  },
+  {
+   "trial": "FLOW",
+   "week": 52,
+   "younger": 14,
+   "older": 0
+  },
+  {
+   "trial": "FLOW",
+   "week": 156,
+   "younger": 17,
+   "older": 0
+  },
+  {
+   "trial": "SOUL",
+   "week": 13,
+   "younger": 3,
+   "older": 3
+  },
+  {
+   "trial": "SOUL",
+   "week": 104,
+   "younger": 9,
+   "older": 0
+  }
+ ],
+ "jabbit_arithmetic": {
+  "total": 10052,
+  "with_type2_diabetes": 7995,
+  "pct_with_type2_diabetes": 79.5,
+  "on_2.4mg_injection": 2526,
+  "pct_on_2.4mg_injection": 25.1,
+  "on_oral_semaglutide": 5255,
+  "pct_on_oral_semaglutide": 52.3,
+  "without_diabetes": 2057,
+  "select_subset_mace_pct": 47.6,
+  "select_full_trial_mace_pct": 7.2
+ }
+}
