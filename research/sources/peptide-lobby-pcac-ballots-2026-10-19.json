@@ -1,0 +1,293 @@
+{
+ "source": "https://peptidebase.io/fda-vote-tracker (transcribed; Day 2 provisional), checked 2026-10-19",
+ "ballots": [
+  "BPC-157",
+  "BPC-157 acetate",
+  "KPV",
+  "TB-500",
+  "MOTS-c",
+  "DSIP",
+  "Epitalon",
+  "Semax"
+ ],
+ "members": [
+  {
+   "name": "Gabriel Alizaidy, MD",
+   "group": "new",
+   "votes": {
+    "BPC-157": "Y",
+    "BPC-157 acetate": "Y",
+    "KPV": "Y",
+    "TB-500": "Y",
+    "MOTS-c": "Y",
+    "DSIP": "Y",
+    "Epitalon": "Y",
+    "Semax": "Y"
+   }
+  },
+  {
+   "name": "Joshua Starbuck, MD",
+   "group": "new",
+   "votes": {
+    "BPC-157": "Y",
+    "BPC-157 acetate": "Y",
+    "KPV": "Y",
+    "TB-500": "Y",
+    "MOTS-c": "Y",
+    "DSIP": "Y",
+    "Epitalon": "Y",
+    "Semax": "Y"
+   }
+  },
+  {
+   "name": "Kris Wusterhausen, DO",
+   "group": "new",
+   "votes": {
+    "BPC-157": "Y",
+    "BPC-157 acetate": "Y",
+    "KPV": "Y",
+    "TB-500": "Y",
+    "MOTS-c": "Y",
+    "DSIP": "Y",
+    "Epitalon": "Y",
+    "Semax": "Y"
+   }
+  },
+  {
+   "name": "Melissa Loseke, DO",
+   "group": "new",
+   "votes": {
+    "BPC-157": "Y",
+    "BPC-157 acetate": "Y",
+    "KPV": "Y",
+    "TB-500": "Y",
+    "MOTS-c": "Y",
+    "DSIP": "Y",
+    "Epitalon": "Y",
+    "Semax": "Y"
+   }
+  },
+  {
+   "name": "Sen. Bobby Harshbarger, PharmD",
+   "group": "new",
+   "votes": {
+    "BPC-157": "Y",
+    "BPC-157 acetate": "Y",
+    "KPV": "Y",
+    "TB-500": "Y",
+    "MOTS-c": "Y",
+    "DSIP": "Y",
+    "Epitalon": "Y",
+    "Semax": "Y"
+   }
+  },
+  {
+   "name": "Asare Christian, MD",
+   "group": "new",
+   "votes": {
+    "BPC-157": "Y",
+    "BPC-157 acetate": "Y",
+    "KPV": "Y",
+    "TB-500": "Y",
+    "MOTS-c": "A",
+    "DSIP": "Y",
+    "Epitalon": "Y",
+    "Semax": "Y"
+   }
+  },
+  {
+   "name": "Haleem Mohammed, MD",
+   "group": "new",
+   "votes": {
+    "BPC-157": "Y",
+    "BPC-157 acetate": "Y",
+    "KPV": "Y",
+    "TB-500": "Y",
+    "MOTS-c": "Y",
+    "DSIP": "-",
+    "Epitalon": "-",
+    "Semax": "Y"
+   }
+  },
+  {
+   "name": "David Pope, PharmD",
+   "group": "new",
+   "votes": {
+    "BPC-157": "Y",
+    "BPC-157 acetate": "Y",
+    "KPV": "Y",
+    "TB-500": "Y",
+    "MOTS-c": "Y",
+    "DSIP": "N",
+    "Epitalon": "Y",
+    "Semax": "Y"
+   }
+  },
+  {
+   "name": "Timothy Fensky, RPh (NABP rep.)",
+   "group": "other",
+   "votes": {
+    "BPC-157": "A",
+    "BPC-157 acetate": "A",
+    "KPV": "A",
+    "TB-500": "A",
+    "MOTS-c": "A",
+    "DSIP": "A",
+    "Epitalon": "A",
+    "Semax": "A"
+   }
+  },
+  {
+   "name": "Brian Serumaga, PhD (USP rep., chair)",
+   "group": "other",
+   "votes": {
+    "BPC-157": "N",
+    "BPC-157 acetate": "N",
+    "KPV": "N",
+    "TB-500": "N",
+    "MOTS-c": "N",
+    "DSIP": "N",
+    "Epitalon": "N",
+    "Semax": "N"
+   }
+  },
+  {
+   "name": "Josh Mailman, MBA (patient rep.)",
+   "group": "other",
+   "votes": {
+    "BPC-157": "N",
+    "BPC-157 acetate": "N",
+    "KPV": "N",
+    "TB-500": "N",
+    "MOTS-c": "N",
+    "DSIP": "N",
+    "Epitalon": "N",
+    "Semax": "N"
+   }
+  },
+  {
+   "name": "Todd Durham, PhD (consumer rep.)",
+   "group": "other",
+   "votes": {
+    "BPC-157": "N",
+    "BPC-157 acetate": "N",
+    "KPV": "N",
+    "TB-500": "N",
+    "MOTS-c": "N",
+    "DSIP": "N",
+    "Epitalon": "N",
+    "Semax": "N"
+   }
+  },
+  {
+   "name": "William Zamboni, PharmD",
+   "group": "other",
+   "votes": {
+    "BPC-157": "N",
+    "BPC-157 acetate": "N",
+    "KPV": "N",
+    "TB-500": "N",
+    "MOTS-c": "N",
+    "DSIP": "N",
+    "Epitalon": "N",
+    "Semax": "-"
+   }
+  },
+  {
+   "name": "Elizabeth Rebello, MD",
+   "group": "other",
+   "votes": {
+    "BPC-157": "N",
+    "BPC-157 acetate": "N",
+    "KPV": "N",
+    "TB-500": "N",
+    "MOTS-c": "N",
+    "DSIP": "N",
+    "Epitalon": "-",
+    "Semax": "-"
+   }
+  },
+  {
+   "name": "Brian Lee, MD",
+   "group": "other",
+   "votes": {
+    "BPC-157": "N",
+    "BPC-157 acetate": "N",
+    "KPV": "-",
+    "TB-500": "-",
+    "MOTS-c": "-",
+    "DSIP": "-",
+    "Epitalon": "-",
+    "Semax": "-"
+   }
+  },
+  {
+   "name": "Maral Kibarian Skelsey, MD",
+   "group": "other",
+   "votes": {
+    "BPC-157": "-",
+    "BPC-157 acetate": "-",
+    "KPV": "N",
+    "TB-500": "N",
+    "MOTS-c": "-",
+    "DSIP": "-",
+    "Epitalon": "-",
+    "Semax": "-"
+   }
+  },
+  {
+   "name": "Kevin Zacharoff, MD",
+   "group": "other",
+   "votes": {
+    "BPC-157": "-",
+    "BPC-157 acetate": "-",
+    "KPV": "-",
+    "TB-500": "-",
+    "MOTS-c": "-",
+    "DSIP": "N",
+    "Epitalon": "-",
+    "Semax": "-"
+   }
+  },
+  {
+   "name": "Costantino Iadecola, MD",
+   "group": "other",
+   "votes": {
+    "BPC-157": "-",
+    "BPC-157 acetate": "-",
+    "KPV": "-",
+    "TB-500": "-",
+    "MOTS-c": "-",
+    "DSIP": "-",
+    "Epitalon": "-",
+    "Semax": "N"
+   }
+  },
+  {
+   "name": "Friedhelm Sandbrink, MD",
+   "group": "other",
+   "votes": {
+    "BPC-157": "-",
+    "BPC-157 acetate": "-",
+    "KPV": "-",
+    "TB-500": "-",
+    "MOTS-c": "-",
+    "DSIP": "-",
+    "Epitalon": "-",
+    "Semax": "N"
+   }
+  }
+ ],
+ "totals": {
+  "new": {
+   "Y": 60,
+   "N": 1,
+   "A": 1
+  },
+  "other": {
+   "Y": 0,
+   "N": 44,
+   "A": 8
+  }
+ }
+}
