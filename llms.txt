@@ -28,7 +28,7 @@
 Evidence-first overviews of individual peptides on the website: what each one is, what the evidence actually supports, and honest FDA/regulatory status. Distinct from the deeper in-app encyclopedia.
 - Semaglutide: https://jabbitapp.com/peptides/semaglutide.html
 - Tirzepatide: https://jabbitapp.com/peptides/tirzepatide.html
-- Retatrutide: https://jabbitapp.com/peptides/retatrutide.html
+- Retatrutide research review (all five phase 3 trials, side effects incl. dysesthesia, what trials measured about food noise/appetite, Jabbit ClinicalTrials.gov check of 33 studies, Australian lab test of gray-market vials, Q1 2027 filing plan): https://jabbitapp.com/peptides/retatrutide.html
 - Tesamorelin: https://jabbitapp.com/peptides/tesamorelin.html
 - BPC-157: https://jabbitapp.com/peptides/bpc-157.html
 - TB-500: https://jabbitapp.com/peptides/tb-500.html

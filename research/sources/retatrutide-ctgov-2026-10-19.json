@@ -1,0 +1,494 @@
+{
+ "query": "https://clinicaltrials.gov/api/v2/studies?query.intr=retatrutide&pageSize=200&fields=NCTId,BriefTitle,OverallStatus,Phase,EnrollmentInfo,PrimaryOutcome,SecondaryOutcome,OtherOutcome,HasResults,StartDate,StudyFirstPostDate",
+ "retrieved": "2026-10-19",
+ "n_studies": 33,
+ "n_with_posted_results": 2,
+ "studies_by_category": {
+  "appetite_or_eating": [
+   "NCT06313528"
+  ],
+  "cognition_focus_or_mood": [],
+  "quality_of_life": [
+   "NCT07035093",
+   "NCT06662383",
+   "NCT07357415",
+   "NCT06859268",
+   "NCT05882045",
+   "NCT05929066",
+   "NCT05931367",
+   "NCT05929079"
+  ],
+  "sleep": [
+   "NCT06313528",
+   "NCT07035093",
+   "NCT05929066",
+   "NCT05929079"
+  ]
+ },
+ "studies": [
+  {
+   "nct": "NCT05936151",
+   "title": "A Study of Retatrutide (LY3437943) on Renal Function in Participants With Overweight or Obesity and Chronic Kidney Disease With or Without Type 2 Diabetes",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE2"
+   ],
+   "enrollment": 146,
+   "has_results": false,
+   "n_outcomes": 18,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT07165028",
+   "title": "A Master Protocol of Multiple Agents in Adults With Metabolic Dysfunction-Associated Steatotic Liver Disease (SYNERGY-Outcomes)",
+   "status": "RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 4500,
+   "has_results": false,
+   "n_outcomes": 10,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06808802",
+   "title": "To Investigate the Effect of Retatrutide (LY3437943) on Metoprolol Pharmacokinetics in Healthy Participants",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 30,
+   "has_results": false,
+   "n_outcomes": 5,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT05445232",
+   "title": "A Drug-Drug Interaction (DDI) Study of LY3437943 in Obese Participants",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 32,
+   "has_results": false,
+   "n_outcomes": 6,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06313528",
+   "title": "A Study to Measure Calorie Consumption and Usage in Participants With Obesity Using LY3437943",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 85,
+   "has_results": false,
+   "n_outcomes": 8,
+   "flagged_outcomes": {
+    "appetite_or_eating": [
+     "Change from Baseline in Total Calorie Intake at Lunch and Dinner (Combined)",
+     "Change from Baseline in Total Calorie Intake at Lunch",
+     "Change from Baseline in Total Calorie Intake at Dinner",
+     "Change from Baseline in Fasting Appetite Visual Analog Score (VAS)"
+    ],
+    "sleep": [
+     "Change from Baseline in Sleep Metabolic Rate (SMR)"
+    ]
+   }
+  },
+  {
+   "nct": "NCT04867785",
+   "title": "A Study of LY3437943 in Participants With Type 2 Diabetes",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE2"
+   ],
+   "enrollment": 281,
+   "has_results": true,
+   "n_outcomes": 10,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT07035093",
+   "title": "A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight and Chronic Low Back Pain",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 586,
+   "has_results": false,
+   "n_outcomes": 14,
+   "flagged_outcomes": {
+    "quality_of_life": [
+     "Change in Patient Reported Health Outcomes as Measured by Medical Outcomes Study 36-item Short Form Health Survey version 2 (SF-36v2)"
+    ],
+    "sleep": [
+     "Change in Physical Function as Measured by Patient-Reported Outcomes Measurement Information Systems (PROMIS)",
+     "Change in Pain Interference as Measured by PROMIS",
+     "Change in Sleep as Measured by PROMIS"
+    ]
+   }
+  },
+  {
+   "nct": "NCT06383390",
+   "title": "The Effect of Retatrutide Once Weekly on Cardiovascular Outcomes and Kidney Outcomes in Adults Living With Obesity (TRIUMPH-Outcomes)",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 10000,
+   "has_results": false,
+   "n_outcomes": 7,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT05611957",
+   "title": "A Study of LY3437943 in Healthy Participants and Participants With Impaired Renal Function",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 29,
+   "has_results": false,
+   "n_outcomes": 2,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06662383",
+   "title": "A Study of Retatrutide (LY3437943) Compared to Tirzepatide (LY3298176) in Adults Who Have Obesity",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 800,
+   "has_results": false,
+   "n_outcomes": 10,
+   "flagged_outcomes": {
+    "quality_of_life": [
+     "Change from Baseline in Impact of Weight on Quality of Life-Lite Clinical Trials Version (IWQOL-Lite-CT)"
+    ]
+   }
+  },
+  {
+   "nct": "NCT03841630",
+   "title": "A Safety Study of LY3437943 Given as a Single Injection in Healthy Participants",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 45,
+   "has_results": false,
+   "n_outcomes": 4,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT05916560",
+   "title": "A Study of LY3437943 in Participants With Impaired and Normal Liver Function",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 43,
+   "has_results": false,
+   "n_outcomes": 2,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT07357415",
+   "title": "A Study of Retatrutide (LY3437943) in Participants Without Type 2 Diabetes Who Have Obesity or Overweight",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 600,
+   "has_results": false,
+   "n_outcomes": 8,
+   "flagged_outcomes": {
+    "quality_of_life": [
+     "Change from Baseline in Impact of Weight on Quality of Life-Lite-Clinical Trials (IWQOL-Lite-CT) Total Score"
+    ]
+   }
+  },
+  {
+   "nct": "NCT04823208",
+   "title": "A Study of LY3437943 in Japanese Participants With Type 2 Diabetes Mellitus (T2DM)",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 64,
+   "has_results": false,
+   "n_outcomes": 7,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06297603",
+   "title": "Effect of Retatrutide Compared With Placebo in Participants With Type 2 Diabetes and Moderate or Severe Renal Impairment, With Inadequate Glycemic Control on Basal Insulin, With or Without Metformin and/or SGLT2 Inhibitor (TRANSCEND-T2D-3)",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 320,
+   "has_results": false,
+   "n_outcomes": 14,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT07232719",
+   "title": "A Study of Retatrutide (LY3437943) in Participants With Obesity or Overweight",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 250,
+   "has_results": false,
+   "n_outcomes": 5,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT04143802",
+   "title": "A Study of LY3437943 in Participants With Type 2 Diabetes Mellitus (T2DM)",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 72,
+   "has_results": false,
+   "n_outcomes": 4,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06859268",
+   "title": "A Study of Retatrutide (LY3437943) in the Maintenance of Weight Reduction in Individuals With Obesity",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 643,
+   "has_results": false,
+   "n_outcomes": 4,
+   "flagged_outcomes": {
+    "quality_of_life": [
+     "Change from Baseline in Impact of Weight on Quality of Life-Lite Clinical Trials Version (IWQOL-Lite-CT)"
+    ]
+   }
+  },
+  {
+   "nct": "NCT05882045",
+   "title": "A Study of Retatrutide (LY3437943) in Participants With Obesity and Cardiovascular Disease",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 1946,
+   "has_results": false,
+   "n_outcomes": 11,
+   "flagged_outcomes": {
+    "quality_of_life": [
+     "Change from Baseline in Short Form version 2 (SF-36v2) Acute Form Physical Function Domain Score"
+    ]
+   }
+  },
+  {
+   "nct": "NCT06003465",
+   "title": "A Research Study Looking at Similarity Between LY3437943 Versions for Different Injection Devices",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 57,
+   "has_results": false,
+   "n_outcomes": 3,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06982859",
+   "title": "A Study to Evaluate the Effect of Retatrutide on Insulin Secretion and Insulin Sensitivity in Adult Participants With Type 2 Diabetes Mellitus",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 95,
+   "has_results": false,
+   "n_outcomes": 13,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT05959096",
+   "title": "A Study of LY3437943 in Healthy Participants With a High Body Mass Index",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 85,
+   "has_results": false,
+   "n_outcomes": 4,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06039826",
+   "title": "A Study of LY3437943 in Postmenopausal Female Participants Who Are Overweight or Obese",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 46,
+   "has_results": false,
+   "n_outcomes": 6,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06982846",
+   "title": "A Study to Investigate the Response of Participants With Type 2 Diabetes Mellitus on Once-Weekly Retatrutide to Hypoglycemia",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 80,
+   "has_results": false,
+   "n_outcomes": 5,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06354660",
+   "title": "Effect of Retatrutide Compared With Placebo in Adult Participants With Type 2 Diabetes and Inadequate Glycemic Control With Diet and Exercise Alone (TRANSCEND-T2D-1)",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 537,
+   "has_results": false,
+   "n_outcomes": 14,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT04881760",
+   "title": "A Study of LY3437943 in Participants Who Have Obesity or Are Overweight",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE2"
+   ],
+   "enrollment": 338,
+   "has_results": true,
+   "n_outcomes": 14,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT06260722",
+   "title": "Effect of Retatrutide Compared With Semaglutide in Adult Participants With Type 2 Diabetes and Inadequate Glycemic Control With Metformin With or Without SGLT2 Inhibitor (TRANSCEND-T2D-2)",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 1250,
+   "has_results": false,
+   "n_outcomes": 13,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT05929066",
+   "title": "A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 2335,
+   "has_results": false,
+   "n_outcomes": 53,
+   "flagged_outcomes": {
+    "quality_of_life": [
+     "Change from Baseline in Short Form 36 Version 2 (SF-36v2) Acute Form Physical Functioning Domain Score",
+     "Change from Baseline in Impact of Weight on Quality of Life-Lite Clinical Trial (IWQOL-Lite-CT) Physical Function Composite Score",
+     "Change from Baseline in IWQOL-Lite-CT Psychosocial Composite Score",
+     "Change from Baseline in EQ-5D-5L for GOA1 Subset"
+    ],
+    "sleep": [
+     "Change from Baseline in Apnea-Hypopnea Index (AHI) Events Per Hour for GSA1 Subset",
+     "Percent Change from Baseline in AHI for GSA1 Subset",
+     "Percentage of Participants with ≥50% AHI Reduction from Baseline for GSA1 Subset",
+     "Percentage of Participants with AHI <5 or with AHI 5-14 with Epworth Sleepiness Scale (ESS) ≤10 for GSA1 Subset",
+     "Percent Change from Baseline in Sleep Apnea-Specific Hypoxic Burden for GSA1 Subset",
+     "Change from Baseline in Patient-Reported Outcomes Measurement Information System (PROMIS) Short Form Sleep-related Impairment 8a T-score for GSA1 Subset",
+     "Change from Baseline in AHI Events Per Hour for GSA1 Subset in Participants with Baseline Body Mass Index (BMI) ≥ 35 kg/m2",
+     "Percentage of Participants who Achieve AHI < 5 for GSA1 Subset",
+     "Change from Baseline in Functional Outcomes of Sleep Questionnaire (FOSQ) Total Score",
+     "Change from Baseline in PROMIS Sleep Disturbance Short Form 8b T-Score for GSA1 Subset"
+    ]
+   }
+  },
+  {
+   "nct": "NCT05931367",
+   "title": "A Study of Retatrutide (LY3437943) Once Weekly in Participants Who Have Obesity or Overweight and Osteoarthritis of the Knee",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 445,
+   "has_results": false,
+   "n_outcomes": 13,
+   "flagged_outcomes": {
+    "quality_of_life": [
+     "Change from Baseline in Short Form 36-Version 2 (SF-36v2) Acute Form Physical Functioning Domain Score"
+    ]
+   }
+  },
+  {
+   "nct": "NCT05548231",
+   "title": "A Study of LY3437943 in Chinese Participants With Obesity Or Overweight",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 32,
+   "has_results": false,
+   "n_outcomes": 3,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT07629401",
+   "title": "Pre-approval Expanded Access of Retatrutide (LY3437943)",
+   "status": "AVAILABLE",
+   "phase": null,
+   "enrollment": null,
+   "has_results": false,
+   "n_outcomes": 0,
+   "flagged_outcomes": {}
+  },
+  {
+   "nct": "NCT05929079",
+   "title": "A Study of Retatrutide (LY3437943) in Participants With Type 2 Diabetes Mellitus Who Have Obesity or Overweight",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 1152,
+   "has_results": false,
+   "n_outcomes": 16,
+   "flagged_outcomes": {
+    "quality_of_life": [
+     "Change from Baseline in Short Form 36 Version 2 (SF-36v2) Acute Form Physical Functioning Domain Score"
+    ],
+    "sleep": [
+     "Change from Baseline in Apnea-Hypopnea Index (AHI) for GSA2 Subset",
+     "Percent Change from Baseline in Apnea-Hypopnea Index (AHI) for GSA2 Subset",
+     "A Hierarchical Combination of Functional Outcomes of Sleep Questionnaire (FOSQ) 10 score, FOSQ Vigilance Domain Score, and FOSQ Activity Level Domain Score for GSA2 Subset",
+     "Percentage of Participants with ≥50% AHI Reduction from Baseline for GSA2 Subset",
+     "Percentage of Participants with AHI <5 or with AHI 5-14 with Epworth Sleepiness Scale (ESS) ≤10 for GSA2 Subset"
+    ]
+   }
+  },
+  {
+   "nct": "NCT07467447",
+   "title": "Effect of LY3437943 Versus Placebo in Participants Who Have Obesity or Are Overweight",
+   "status": "RECRUITING",
+   "phase": [
+    "PHASE2"
+   ],
+   "enrollment": 300,
+   "has_results": false,
+   "n_outcomes": 7,
+   "flagged_outcomes": {}
+  }
+ ],
+ "note": "Keyword flags on listed outcome-measure titles only; reviewed by hand. Safety questionnaires not listed as outcomes would not appear."
+}
