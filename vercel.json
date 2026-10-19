@@ -9,22 +9,22 @@
     },
     {
       "source": "/bpc-157-complete-guide.html",
-      "destination": "/peptides",
+      "destination": "/peptides/bpc-157.html",
       "permanent": true
     },
     {
       "source": "/bpc-157-complete-guide",
-      "destination": "/peptides",
+      "destination": "/peptides/bpc-157.html",
       "permanent": true
     },
     {
       "source": "/tb-500-thymosin-beta-guide.html",
-      "destination": "/peptides",
+      "destination": "/peptides/tb-500.html",
       "permanent": true
     },
     {
       "source": "/tb-500-thymosin-beta-guide",
-      "destination": "/peptides",
+      "destination": "/peptides/tb-500.html",
       "permanent": true
     },
     {
