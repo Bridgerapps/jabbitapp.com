@@ -1,0 +1,1115 @@
+{
+ "summary": {
+  "pulled": "2026-10-19T14:05-04:00",
+  "spls_listed": 160,
+  "rx_labels_kept": 108,
+  "with_age_related_limitation": 93,
+  "with_known_or_suspected_prostate_contraindication": 107,
+  "with_metastatic_only_contraindication": 0,
+  "mention_TRAVERSE": 21,
+  "updated_since_2026_06_18": 15,
+  "updated_since_with_limitation": 14,
+  "updated_since_with_known_or_suspected_contraindication": 15,
+  "updated_since_with_metastatic_only": 0,
+  "updated_since_titles": [
+   "2026-10-15 JATENZO (TESTOSTERONE UNDECANOATE) CAPSULE, LIQUID FILLED [TOLMAR INC.]",
+   "2026-10-12 TESTOSTERONE CYPIONATE INJECTION, SOLUTION [A-S MEDICATION SOLUTIONS]",
+   "2026-10-08 KYZATREX (TESTOSTERONE UNDECANOATE) CAPSULE, LIQUID FILLED [MARIUS PHARMACEUTICALS]",
+   "2026-09-18 TESTOSTERONE CYPIONATE INJECTION [REMEDYREPACK INC.]",
+   "2026-09-15 TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BPI LABS LLC]",
+   "2026-09-15 TESTOSTERONE CYPIONATE INJECTION, SOLUTION [AJENAT PHARMACEUTICALS LLC]",
+   "2026-08-20 DEPO-TESTOSTERONE (TESTOSTERONE CYPIONATE) INJECTION, SOLUTION [PHARMACIA & UPJOHN COMPANY LLC]",
+   "2026-08-20 TESTOSTERONE CYPIONATE INJECTION, SOLUTION [ALVOGEN INC.]",
+   "2026-07-29 NATESTO NASAL GEL (TESTOSTERONE) GEL, METERED [ACERUS PHARMACEUTICALS CORPORATION]",
+   "2026-07-22 TESTOSTERONE GEL [NORTHSTAR RX LLC]",
+   "2026-07-20 TESTOSTERONE CYPIONATE INJECTION, SOLUTION [ASCLEMED USA INC.]",
+   "2026-07-15 TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BRYANT RANCH PREPACK]",
+   "2026-07-15 TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BRYANT RANCH PREPACK]",
+   "2026-07-08 TESTOSTERONE SOLUTION [ENCUBE ETHICALS, INC.]",
+   "2026-06-18 TESTOSTERONE ENANTHATE INJECTION, SOLUTION [EUGIA US LLC]"
+  ],
+  "note": "DailyMed lists repackager copies separately, so counts are label versions, not distinct products. The one post-June-18 label without the limitation (RemedyRepack testosterone cypionate, Sept 18, 2026) uses the older injectable label format that never carried it."
+ },
+ "labels": [
+  {
+   "setid": "ed7b5d41-7475-4c10-99b9-b62b3434ae60",
+   "title": "JATENZO (TESTOSTERONE UNDECANOATE) CAPSULE, LIQUID FILLED [TOLMAR INC.]",
+   "dailymed_published": "2026-10-15",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ed7b5d41-7475-4c10-99b9-b62b3434ae60"
+  },
+  {
+   "setid": "a2c73a06-1200-4322-9011-caea5f16db6c",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [A-S MEDICATION SOLUTIONS]",
+   "dailymed_published": "2026-10-12",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a2c73a06-1200-4322-9011-caea5f16db6c"
+  },
+  {
+   "setid": "7f7167a7-2a25-47e2-acf5-33f499fce971",
+   "title": "KYZATREX (TESTOSTERONE UNDECANOATE) CAPSULE, LIQUID FILLED [MARIUS PHARMACEUTICALS]",
+   "dailymed_published": "2026-10-08",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f7167a7-2a25-47e2-acf5-33f499fce971"
+  },
+  {
+   "setid": "40a332e3-9c64-4595-91c3-dfef24f3d3bb",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [REMEDYREPACK INC.]",
+   "dailymed_published": "2026-09-18",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=40a332e3-9c64-4595-91c3-dfef24f3d3bb"
+  },
+  {
+   "setid": "375dd035-b792-4cb7-9fe6-bb367b87bdba",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BPI LABS LLC]",
+   "dailymed_published": "2026-09-15",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=375dd035-b792-4cb7-9fe6-bb367b87bdba"
+  },
+  {
+   "setid": "cd57648c-ce53-459a-9f14-3984fc464428",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [AJENAT PHARMACEUTICALS LLC]",
+   "dailymed_published": "2026-09-15",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd57648c-ce53-459a-9f14-3984fc464428"
+  },
+  {
+   "setid": "cfbb53d4-b868-4a28-8436-f9112eb01c39",
+   "title": "DEPO-TESTOSTERONE (TESTOSTERONE CYPIONATE) INJECTION, SOLUTION [PHARMACIA & UPJOHN COMPANY LLC]",
+   "dailymed_published": "2026-08-20",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cfbb53d4-b868-4a28-8436-f9112eb01c39"
+  },
+  {
+   "setid": "ed65346b-31bc-f872-516d-78d5ab70229e",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [ALVOGEN INC.]",
+   "dailymed_published": "2026-08-20",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ed65346b-31bc-f872-516d-78d5ab70229e"
+  },
+  {
+   "setid": "dea6bed1-eaca-11e3-ac10-0800200c9a66",
+   "title": "NATESTO NASAL GEL (TESTOSTERONE) GEL, METERED [ACERUS PHARMACEUTICALS CORPORATION]",
+   "dailymed_published": "2026-07-29",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dea6bed1-eaca-11e3-ac10-0800200c9a66"
+  },
+  {
+   "setid": "2d55b825-8eab-4091-bdf2-9c52d111b8eb",
+   "title": "TESTOSTERONE GEL [NORTHSTAR RX LLC]",
+   "dailymed_published": "2026-07-22",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d55b825-8eab-4091-bdf2-9c52d111b8eb"
+  },
+  {
+   "setid": "4efcb0be-a19b-4c6b-8a42-cd52a40d095b",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [ASCLEMED USA INC.]",
+   "dailymed_published": "2026-07-20",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4efcb0be-a19b-4c6b-8a42-cd52a40d095b"
+  },
+  {
+   "setid": "327b4357-6948-4cd6-ad6c-e463ab8600ad",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2026-07-15",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=327b4357-6948-4cd6-ad6c-e463ab8600ad"
+  },
+  {
+   "setid": "ad65b1ec-433e-4524-924e-ebad09762126",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2026-07-15",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad65b1ec-433e-4524-924e-ebad09762126"
+  },
+  {
+   "setid": "ca5d4865-356b-45e7-b603-fe299e450abc",
+   "title": "TESTOSTERONE SOLUTION [ENCUBE ETHICALS, INC.]",
+   "dailymed_published": "2026-07-08",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ca5d4865-356b-45e7-b603-fe299e450abc"
+  },
+  {
+   "setid": "82a98132-9d5f-40a5-8c4f-f52f2a5de60e",
+   "title": "TESTOSTERONE ENANTHATE INJECTION, SOLUTION [EUGIA US LLC]",
+   "dailymed_published": "2026-06-18",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82a98132-9d5f-40a5-8c4f-f52f2a5de60e"
+  },
+  {
+   "setid": "2321a581-2e33-4233-a1d4-0711b90e3c57",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [A-S MEDICATION SOLUTIONS]",
+   "dailymed_published": "2026-06-11",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2321a581-2e33-4233-a1d4-0711b90e3c57"
+  },
+  {
+   "setid": "44a04f66-fd2a-45c7-934e-8f14c023ce14",
+   "title": "TESTOSTERONE GEL [ENCUBE ETHICALS, INC.]",
+   "dailymed_published": "2026-06-08",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44a04f66-fd2a-45c7-934e-8f14c023ce14"
+  },
+  {
+   "setid": "65981b8a-d5cc-1964-7eac-a07f032c2571",
+   "title": "TESTOSTERONE GEL, METERED [NORTHSTAR RX LLC]",
+   "dailymed_published": "2026-06-03",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65981b8a-d5cc-1964-7eac-a07f032c2571"
+  },
+  {
+   "setid": "28e8d504-5073-1d78-f351-bcb7c5188ee6",
+   "title": "TESTOSTERONE GEL, METERED [XIROMED, LLC]",
+   "dailymed_published": "2026-06-01",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28e8d504-5073-1d78-f351-bcb7c5188ee6"
+  },
+  {
+   "setid": "5ca67491-4b30-4a47-af0a-be250215d1f0",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [HIKMA PHARMACEUTICALS USA INC.]",
+   "dailymed_published": "2026-05-11",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ca67491-4b30-4a47-af0a-be250215d1f0"
+  },
+  {
+   "setid": "e89d6458-428c-4256-97a3-f1fa851293c1",
+   "title": "TESTOSTERONE ENANTHATE INJECTION, SOLUTION [HIKMA PHARMACEUTICALS USA INC.]",
+   "dailymed_published": "2026-05-11",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e89d6458-428c-4256-97a3-f1fa851293c1"
+  },
+  {
+   "setid": "f60c5520-b336-44a2-95d5-f274939fa595",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [HIKMA PHARMACEUTICALS USA INC.]",
+   "dailymed_published": "2026-05-11",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f60c5520-b336-44a2-95d5-f274939fa595"
+  },
+  {
+   "setid": "8a3d204c-be26-49e0-8599-0ac12a272e81",
+   "title": "XYOSTED (TESTOSTERONE ENANTHATE) INJECTION [ANTARES PHARMA, INC.]",
+   "dailymed_published": "2026-04-27",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a3d204c-be26-49e0-8599-0ac12a272e81"
+  },
+  {
+   "setid": "10dab294-6a43-4bb3-9d91-2d200c624ffb",
+   "title": "TESTOSTERONE GEL [UPSHER-SMITH LABORATORIES, LLC]",
+   "dailymed_published": "2026-04-15",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10dab294-6a43-4bb3-9d91-2d200c624ffb"
+  },
+  {
+   "setid": "353de205-d642-4f26-875b-b9ea4707a755",
+   "title": "TESTOSTERONE GEL, 1% GEL [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2026-04-09",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=353de205-d642-4f26-875b-b9ea4707a755"
+  },
+  {
+   "setid": "f80f025b-17d8-40af-8739-20ce07902045",
+   "title": "AVEED (TESTOSTERONE UNDECANOATE) INJECTION [ENDO USA, INC.]",
+   "dailymed_published": "2026-03-18",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f80f025b-17d8-40af-8739-20ce07902045"
+  },
+  {
+   "setid": "4b0b92e9-6d3c-a0e5-e1c7-342999f72580",
+   "title": "TLANDO (TESTOSTERONE UNDECANOATE) CAPSULE, LIQUID FILLED [VERITY PHARMACEUTICALS INC.]",
+   "dailymed_published": "2026-03-12",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b0b92e9-6d3c-a0e5-e1c7-342999f72580"
+  },
+  {
+   "setid": "9f2aae1f-898d-4955-be31-678e0cf85395",
+   "title": "TESTIM (TESTOSTERONE) GEL [ENDO USA, INC.]",
+   "dailymed_published": "2026-03-05",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f2aae1f-898d-4955-be31-678e0cf85395"
+  },
+  {
+   "setid": "e18b4495-c5a3-4a7f-9636-179320784381",
+   "title": "TESTOSTERONE GEL [ACTAVIS PHARMA, INC.]",
+   "dailymed_published": "2026-02-11",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e18b4495-c5a3-4a7f-9636-179320784381"
+  },
+  {
+   "setid": "5834d34f-839d-412c-b74c-da1dad2cfa88",
+   "title": "TESTOSTERONE GEL [ACTAVIS PHARMA, INC.]",
+   "dailymed_published": "2026-02-10",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5834d34f-839d-412c-b74c-da1dad2cfa88"
+  },
+  {
+   "setid": "5fb0c403-3065-498e-b910-c5988269301a",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [A-S MEDICATION SOLUTIONS]",
+   "dailymed_published": "2026-01-26",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fb0c403-3065-498e-b910-c5988269301a"
+  },
+  {
+   "setid": "7df45a8d-7d6b-4776-85e3-529527574a4f",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [A-S MEDICATION SOLUTIONS]",
+   "dailymed_published": "2026-01-26",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7df45a8d-7d6b-4776-85e3-529527574a4f"
+  },
+  {
+   "setid": "61387416-510d-40c5-9e2d-24bfb7f56d08",
+   "title": "TESTOSTERONE GEL [LUPIN PHARMACEUTICALS, INC.]",
+   "dailymed_published": "2026-01-16",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=61387416-510d-40c5-9e2d-24bfb7f56d08"
+  },
+  {
+   "setid": "29c8846f-121c-4958-9e03-3bd271c21558",
+   "title": "TESTOSTERONE SOLUTION [LUPIN PHARMACEUTICALS, INC.]",
+   "dailymed_published": "2026-01-15",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=29c8846f-121c-4958-9e03-3bd271c21558"
+  },
+  {
+   "setid": "edcd5209-70db-4727-991e-3fdd185d9211",
+   "title": "TESTONE CIK (TESTOSTERONE CYPIONATE, ALCOHOL) KIT [ASCLEMED USA, INC.]",
+   "dailymed_published": "2026-01-12",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=edcd5209-70db-4727-991e-3fdd185d9211"
+  },
+  {
+   "setid": "4f3c2c0a-7dab-4b50-9cae-869c3c2a8498",
+   "title": "TESTOSTERONE GEL [ACTAVIS PHARMA, INC.]",
+   "dailymed_published": "2025-12-17",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f3c2c0a-7dab-4b50-9cae-869c3c2a8498"
+  },
+  {
+   "setid": "7227ab2f-c8ef-4bab-92ab-3092182abcc9",
+   "title": "TESTOSTERONE SOLUTION [ACTAVIS PHARMA, INC.]",
+   "dailymed_published": "2025-12-17",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7227ab2f-c8ef-4bab-92ab-3092182abcc9"
+  },
+  {
+   "setid": "0d84e5a6-11e9-4940-8991-21c611c4c32f",
+   "title": "TESTOSTERONE GEL [PRASCO LABORATORIES]",
+   "dailymed_published": "2025-11-17",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d84e5a6-11e9-4940-8991-21c611c4c32f"
+  },
+  {
+   "setid": "1e2f2ed8-7a1c-4d89-aa00-d8a422c8e70b",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2025-11-17",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e2f2ed8-7a1c-4d89-aa00-d8a422c8e70b"
+  },
+  {
+   "setid": "7d655d6d-01da-488c-bd4e-c7fbe0ace38c",
+   "title": "TESTOSTERONE GEL, 1% GEL [ENCUBE ETHICALS, INC.]",
+   "dailymed_published": "2025-11-17",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7d655d6d-01da-488c-bd4e-c7fbe0ace38c"
+  },
+  {
+   "setid": "c6c0a39e-0e75-4356-a052-c26c30c76b26",
+   "title": "TESTOSTERONE GEL, METERED [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2025-11-17",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c6c0a39e-0e75-4356-a052-c26c30c76b26"
+  },
+  {
+   "setid": "f4e8d29b-8707-4d47-e053-2a95a90aecee",
+   "title": "ANDROGEL (TESTOSTERONE) GEL [ASCEND THERAPEUTICS U.S., LLC]",
+   "dailymed_published": "2025-11-17",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4e8d29b-8707-4d47-e053-2a95a90aecee"
+  },
+  {
+   "setid": "f4e8fc4e-d6ba-2783-e053-2a95a90a7ae7",
+   "title": "ANDROGEL (TESTOSTERONE) GEL [ASCEND THERAPEUTICS U.S., LLC]",
+   "dailymed_published": "2025-11-17",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4e8fc4e-d6ba-2783-e053-2a95a90a7ae7"
+  },
+  {
+   "setid": "54fcdcb9-fb0e-4164-9e51-f2a5feae3217",
+   "title": "TESTOSTERONE GEL [PADAGIS ISRAEL PHARMACEUTICALS LTD]",
+   "dailymed_published": "2025-10-01",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54fcdcb9-fb0e-4164-9e51-f2a5feae3217"
+  },
+  {
+   "setid": "ee54c393-bcfe-4a52-b7b3-1da8750f35d9",
+   "title": "TESTOSTERONE GEL [STRIDES PHARMA SCIENCE LIMITED]",
+   "dailymed_published": "2025-09-25",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee54c393-bcfe-4a52-b7b3-1da8750f35d9"
+  },
+  {
+   "setid": "6c7d2dec-6492-4d53-b110-61ffeae9ee61",
+   "title": "TESTOSTERONE GEL, METERED [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2025-09-08",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c7d2dec-6492-4d53-b110-61ffeae9ee61"
+  },
+  {
+   "setid": "2f72be32-ede6-44d9-88a0-0653b53a3e47",
+   "title": "DEPO-TESTOSTERONE (TESTOSTERONE CYPIONATE) INJECTION, SOLUTION [ASCLEMED USA, INC.]",
+   "dailymed_published": "2025-08-28",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f72be32-ede6-44d9-88a0-0653b53a3e47"
+  },
+  {
+   "setid": "6909596e-4bf7-4e11-8029-b89740a30aec",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [HOSPIRA, INC.]",
+   "dailymed_published": "2025-08-25",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6909596e-4bf7-4e11-8029-b89740a30aec"
+  },
+  {
+   "setid": "f9888b14-67f4-4c87-8f7b-d51baef9891b",
+   "title": "TESTOSTERONE GEL, METERED [AMNEAL PHARMACEUTICALS NY LLC]",
+   "dailymed_published": "2025-08-14",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9888b14-67f4-4c87-8f7b-d51baef9891b"
+  },
+  {
+   "setid": "6a46b5de-5d95-4570-91a6-3e4278028c59",
+   "title": "TESTOSTERONE SOLUTION [CIPLA USA INC.]",
+   "dailymed_published": "2025-08-07",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a46b5de-5d95-4570-91a6-3e4278028c59"
+  },
+  {
+   "setid": "9ced69c7-cd37-efb6-1bf9-e21c01e56f5b",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [NORTHSTAR RX LLC]",
+   "dailymed_published": "2025-08-07",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9ced69c7-cd37-efb6-1bf9-e21c01e56f5b"
+  },
+  {
+   "setid": "cab949ca-fde9-c5a9-5561-21e98d86d078",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [XIROMED LLC]",
+   "dailymed_published": "2025-08-07",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cab949ca-fde9-c5a9-5561-21e98d86d078"
+  },
+  {
+   "setid": "9e10a37a-9c40-456b-a362-2fa8eae31e84",
+   "title": "TESTOSTERONE GEL [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2025-08-01",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e10a37a-9c40-456b-a362-2fa8eae31e84"
+  },
+  {
+   "setid": "235b5625-570d-3fba-e063-6394a90aa2d1",
+   "title": "AZMIRO (TESTOSTERONE CYPIONATE) INJECTION, SOLUTION [AZURITY PHARMACEUTICALS, INC.]",
+   "dailymed_published": "2025-07-28",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": true,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=235b5625-570d-3fba-e063-6394a90aa2d1"
+  },
+  {
+   "setid": "58ff6e0d-cc0a-4455-8254-d883d26a3b6d",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [WILSHIRE PHARMACEUTICALS]",
+   "dailymed_published": "2025-07-28",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58ff6e0d-cc0a-4455-8254-d883d26a3b6d"
+  },
+  {
+   "setid": "03b9c0b1-5884-11e4-8ed6-0800200c9a66",
+   "title": "TESTOPEL (TESTOSTERONE) PELLET [ENDO USA, INC.]",
+   "dailymed_published": "2025-07-24",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03b9c0b1-5884-11e4-8ed6-0800200c9a66"
+  },
+  {
+   "setid": "c0c56607-e995-4bed-9c62-e33a722b38b5",
+   "title": "TESTOSTERONE SOLUTION [PADAGIS ISRAEL PHARMACEUTICALS LTD]",
+   "dailymed_published": "2025-07-24",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0c56607-e995-4bed-9c62-e33a722b38b5"
+  },
+  {
+   "setid": "735b5bf3-4464-412c-a072-1bd02f2e5380",
+   "title": "DEPO-TESTOSTERONE (TESTOSTERONE CYPIONATE) INJECTION, SOLUTION [PHARMACIA & UPJOHN COMPANY LLC]",
+   "dailymed_published": "2025-07-17",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=735b5bf3-4464-412c-a072-1bd02f2e5380"
+  },
+  {
+   "setid": "2dd150f6-cdfd-4d51-8888-12b288f26262",
+   "title": "VOGELXO (TESTOSTERONE) GEL VOGELXO (TESTOSTERONE) GEL, METERED [UPSHER-SMITH LABORATORIES, LLC]",
+   "dailymed_published": "2025-07-16",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2dd150f6-cdfd-4d51-8888-12b288f26262"
+  },
+  {
+   "setid": "e39289aa-681c-47ec-9461-52e7f17e5d71",
+   "title": "TESTOSTERONE SOLUTION [ALEMBIC PHARMACEUTICALS INC.]",
+   "dailymed_published": "2025-07-16",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e39289aa-681c-47ec-9461-52e7f17e5d71"
+  },
+  {
+   "setid": "a887020f-b41f-49fe-8379-f01147b2a796",
+   "title": "TESTOSTERONE GEL TESTOSTERONE GEL, METERED [UPSHER-SMITH LABORATORIES, LLC]",
+   "dailymed_published": "2025-07-14",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a887020f-b41f-49fe-8379-f01147b2a796"
+  },
+  {
+   "setid": "e9d48af3-9514-4dc5-972c-0c1f2547e5c6",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [A-S MEDICATION SOLUTIONS]",
+   "dailymed_published": "2025-07-10",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9d48af3-9514-4dc5-972c-0c1f2547e5c6"
+  },
+  {
+   "setid": "b8ac5e07-b7e3-4a60-b0d1-8b1f3ad0c478",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [CIPLA USA INC.]",
+   "dailymed_published": "2025-07-03",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b8ac5e07-b7e3-4a60-b0d1-8b1f3ad0c478"
+  },
+  {
+   "setid": "78384754-5883-46b1-84e7-c063b4b4be82",
+   "title": "TESTOSTERONE GEL [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2025-06-30",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=78384754-5883-46b1-84e7-c063b4b4be82"
+  },
+  {
+   "setid": "86254445-efd1-46d9-8236-3a0d98316f28",
+   "title": "TESTOSTERONE GEL [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2025-06-18",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86254445-efd1-46d9-8236-3a0d98316f28"
+  },
+  {
+   "setid": "4195516a-c8e6-457c-b805-43c9a3ca8b77",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [PADAGIS US LLC]",
+   "dailymed_published": "2025-06-09",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4195516a-c8e6-457c-b805-43c9a3ca8b77"
+  },
+  {
+   "setid": "f901e2b2-f143-4237-8e95-0d134585490b",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [EUGIA US LLC]",
+   "dailymed_published": "2025-06-09",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f901e2b2-f143-4237-8e95-0d134585490b"
+  },
+  {
+   "setid": "68b2375d-0365-4797-bc3d-63531c9f42fd",
+   "title": "TESTOSTERONE GEL [PRASCO LABORATORIES]",
+   "dailymed_published": "2025-06-05",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=68b2375d-0365-4797-bc3d-63531c9f42fd"
+  },
+  {
+   "setid": "3653a602-4551-4e6c-84a7-31861f5dc482",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [SUN PHARMACEUTICAL INDUSTRIES, INC.]",
+   "dailymed_published": "2025-06-03",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3653a602-4551-4e6c-84a7-31861f5dc482"
+  },
+  {
+   "setid": "78d55bad-4a5b-4e21-aeb8-a4c6346208be",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [CIPLA USA INC.]",
+   "dailymed_published": "2025-05-12",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=78d55bad-4a5b-4e21-aeb8-a4c6346208be"
+  },
+  {
+   "setid": "346604c7-22d0-60c5-e063-6394a90abf0b",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [NUCARE PHARMACEUTICALS, INC.]",
+   "dailymed_published": "2025-05-07",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=346604c7-22d0-60c5-e063-6394a90abf0b"
+  },
+  {
+   "setid": "335ff614-15ec-0792-e063-6294a90a2f08",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [NUCARE PHARMACEUTICALS,INC.]",
+   "dailymed_published": "2025-04-24",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=335ff614-15ec-0792-e063-6294a90a2f08"
+  },
+  {
+   "setid": "30b453b9-25ef-8262-e063-6394a90a24c2",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [NUCARE PGARMACEUTICALS,INC.]",
+   "dailymed_published": "2025-03-24",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30b453b9-25ef-8262-e063-6394a90a24c2"
+  },
+  {
+   "setid": "5a0bba6a-e8da-4b12-af63-eb27b1cca9e6",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2025-03-10",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a0bba6a-e8da-4b12-af63-eb27b1cca9e6"
+  },
+  {
+   "setid": "e3e2da65-4b2a-4210-a6ff-cc08c8567381",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [PADAGIS US LLC]",
+   "dailymed_published": "2024-12-09",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e3e2da65-4b2a-4210-a6ff-cc08c8567381"
+  },
+  {
+   "setid": "5be74193-de73-436d-a9a1-35a857bc8e0c",
+   "title": "TESTOSTERONE SOLUTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2024-10-24",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5be74193-de73-436d-a9a1-35a857bc8e0c"
+  },
+  {
+   "setid": "593ebdf5-54c6-7fae-e053-2991aa0a8e4a",
+   "title": "TESTO-100 (TESTOSTERONE,USP) PELLET, IMPLANTABLE [ADVANCED PHARMACEUTICAL TECHNOLOGY, INC.]",
+   "dailymed_published": "2024-09-25",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": false,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=593ebdf5-54c6-7fae-e053-2991aa0a8e4a"
+  },
+  {
+   "setid": "2eb9e2a9-75ec-4a5d-8131-0076c50708bb",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2024-09-06",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2eb9e2a9-75ec-4a5d-8131-0076c50708bb"
+  },
+  {
+   "setid": "72cc2d2d-7807-46a6-a0ac-790a1f8dcaac",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2024-08-29",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72cc2d2d-7807-46a6-a0ac-790a1f8dcaac"
+  },
+  {
+   "setid": "d22a072f-529b-4878-90fc-4365d9dc67e6",
+   "title": "TESTOSTERONE SOLUTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2024-08-22",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d22a072f-529b-4878-90fc-4365d9dc67e6"
+  },
+  {
+   "setid": "47df0787-af81-43ca-bd67-1b5d127ff3c3",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [A-S MEDICATION SOLUTIONS]",
+   "dailymed_published": "2024-07-31",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=47df0787-af81-43ca-bd67-1b5d127ff3c3"
+  },
+  {
+   "setid": "b116d834-51f1-4b92-8e1e-a51dbd883c1f",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2024-07-31",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b116d834-51f1-4b92-8e1e-a51dbd883c1f"
+  },
+  {
+   "setid": "9d0a1923-be39-41d9-8183-706b227f615c",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [ASCLEMED USA, INC.]",
+   "dailymed_published": "2024-06-13",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9d0a1923-be39-41d9-8183-706b227f615c"
+  },
+  {
+   "setid": "ffb1ae64-9026-44c9-83a0-32058957ecc9",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [ASCLEMED USA, INC.]",
+   "dailymed_published": "2024-06-13",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ffb1ae64-9026-44c9-83a0-32058957ecc9"
+  },
+  {
+   "setid": "8699c6cb-fede-43ea-ad5e-817700fa7a82",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [ASCLEMED USA, INC.]",
+   "dailymed_published": "2024-05-27",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8699c6cb-fede-43ea-ad5e-817700fa7a82"
+  },
+  {
+   "setid": "21705fce-bc6c-41f6-aa92-fa6fc1c22fb6",
+   "title": "TESTOSTERONE GEL [ALEMBIC PHARMACEUTICALS INC.]",
+   "dailymed_published": "2023-12-11",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=21705fce-bc6c-41f6-aa92-fa6fc1c22fb6"
+  },
+  {
+   "setid": "54aee197-7c9c-479f-8a4d-a8d4d31f40c1",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [ASCLEMED USA, INC.]",
+   "dailymed_published": "2023-11-23",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54aee197-7c9c-479f-8a4d-a8d4d31f40c1"
+  },
+  {
+   "setid": "3b0c61de-8cfa-4f76-b07c-0d3b7704b642",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [BRYANT RANCH PREPACK]",
+   "dailymed_published": "2023-07-18",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b0c61de-8cfa-4f76-b07c-0d3b7704b642"
+  },
+  {
+   "setid": "66d4ae28-97c2-42cc-ab5a-a765a623c944",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [ASCLEMED USA, INC.]",
+   "dailymed_published": "2022-10-13",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=66d4ae28-97c2-42cc-ab5a-a765a623c944"
+  },
+  {
+   "setid": "3602f307-19c3-4f09-a3e3-98c10a19ec28",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [A-S MEDICATION SOLUTIONS]",
+   "dailymed_published": "2021-04-19",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3602f307-19c3-4f09-a3e3-98c10a19ec28"
+  },
+  {
+   "setid": "874dec5e-8910-3b3f-e053-2a95a90a8334",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [ASP CARES]",
+   "dailymed_published": "2021-01-12",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=874dec5e-8910-3b3f-e053-2a95a90a8334"
+  },
+  {
+   "setid": "4bc98c02-6f63-440e-b3ce-89682ade81f6",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [A-S MEDICATION SOLUTIONS]",
+   "dailymed_published": "2020-02-25",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4bc98c02-6f63-440e-b3ce-89682ade81f6"
+  },
+  {
+   "setid": "68d0447b-f75a-4fb2-96ba-de822b74aebb",
+   "title": "NATESTO (TESTOSTERONE) GEL [AYTU BIOSCIENCE, INC.]",
+   "dailymed_published": "2019-12-20",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=68d0447b-f75a-4fb2-96ba-de822b74aebb"
+  },
+  {
+   "setid": "6bb7d3cc-2b5a-4a48-858e-5421c68b6989",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [PROFICIENT RX LP]",
+   "dailymed_published": "2019-11-21",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6bb7d3cc-2b5a-4a48-858e-5421c68b6989"
+  },
+  {
+   "setid": "2db0a398-5512-431c-a952-b0290d4fe2d9",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [PROFICIENT RX LP]",
+   "dailymed_published": "2019-10-08",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2db0a398-5512-431c-a952-b0290d4fe2d9"
+  },
+  {
+   "setid": "ccadef00-3d5f-f926-e0fb-8dabe859f271",
+   "title": "TESTOSTERONE GEL, METERED [DR. REDDY'S LABORATORIES, INC.]",
+   "dailymed_published": "2019-06-18",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ccadef00-3d5f-f926-e0fb-8dabe859f271"
+  },
+  {
+   "setid": "736dbdfd-c90f-3a9b-e053-2a91aa0aea81",
+   "title": "TESTOSTERONE CYPIONATE INJECTION [H.J. HARKINS COMPANY, INC.]",
+   "dailymed_published": "2018-08-16",
+   "age_related_limitation_present": true,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=736dbdfd-c90f-3a9b-e053-2a91aa0aea81"
+  },
+  {
+   "setid": "3b40e56a-51bb-4357-8861-325bb1195049",
+   "title": "AXIRON (TESTOSTERONE) SOLUTION [PHYSICIANS TOTAL CARE, INC.]",
+   "dailymed_published": "2013-11-12",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3b40e56a-51bb-4357-8861-325bb1195049"
+  },
+  {
+   "setid": "a1741a0b-3d4c-42dc-880d-a06e96cce9ef",
+   "title": "TESTOPEL (TESTOSTERONE) PELLET [SLATE PHARMA]",
+   "dailymed_published": "2013-07-05",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a1741a0b-3d4c-42dc-880d-a06e96cce9ef"
+  },
+  {
+   "setid": "ad391b4b-232e-48cf-a226-d8fd750a7c36",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [DISPENSING SOLUTIONS, INC.]",
+   "dailymed_published": "2012-10-03",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad391b4b-232e-48cf-a226-d8fd750a7c36"
+  },
+  {
+   "setid": "48f8aa83-e043-41b8-9a20-dbb098045895",
+   "title": "TESTIM (TESTOSTERONE) GEL [PHYSICIANS TOTAL CARE, INC.]",
+   "dailymed_published": "2012-04-20",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48f8aa83-e043-41b8-9a20-dbb098045895"
+  },
+  {
+   "setid": "a34023dc-fc54-4f66-bab0-9596502c23a3",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [PHYSICIANS TOTAL CARE, INC.]",
+   "dailymed_published": "2012-02-21",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a34023dc-fc54-4f66-bab0-9596502c23a3"
+  },
+  {
+   "setid": "108facca-c6d2-48fa-ba48-667c9498c61b",
+   "title": "TESTOSTERONE CYPIONATE INJECTION, SOLUTION [PHYSICIANS TOTAL CARE, INC.]",
+   "dailymed_published": "2012-01-04",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=108facca-c6d2-48fa-ba48-667c9498c61b"
+  },
+  {
+   "setid": "d466910c-9a76-44e8-8759-4717ec2c591f",
+   "title": "ANDROGEL (TESTOSTERONE) GEL [PHYSICIANS TOTAL CARE, INC.]",
+   "dailymed_published": "2011-12-16",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d466910c-9a76-44e8-8759-4717ec2c591f"
+  },
+  {
+   "setid": "77215d87-ad22-4169-bd5f-a453f10b21ef",
+   "title": "ANDROGEL (TESTOSTERONE) GEL [REBEL DISTRIBUTORS CORP.]",
+   "dailymed_published": "2011-03-14",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77215d87-ad22-4169-bd5f-a453f10b21ef"
+  },
+  {
+   "setid": "837570cb-8a33-4129-ad41-bead378d9987",
+   "title": "DEPO-TESTOSTERONE (TESTOSTERONE CYPIONATE) INJECTION, SOLUTION [PHYSICIANS TOTAL CARE, INC.]",
+   "dailymed_published": "2011-01-21",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=837570cb-8a33-4129-ad41-bead378d9987"
+  },
+  {
+   "setid": "0d90cadf-d579-47bf-b655-7e9d3bd1cabe",
+   "title": "TESTIM (TESTOSTERONE) GEL [STAT RX USA]",
+   "dailymed_published": "2010-03-16",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d90cadf-d579-47bf-b655-7e9d3bd1cabe"
+  },
+  {
+   "setid": "ac47efbe-025b-4688-bcd3-a10a0b012b34",
+   "title": "STRIANT (TESTOSTERONE) TABLET [COLUMBIA LABORATORIES, INC.]",
+   "dailymed_published": "2009-12-14",
+   "age_related_limitation_present": false,
+   "known_or_suspected_prostate_cancer_contraindication": true,
+   "metastatic_only_prostate_contraindication": false,
+   "mentions_TRAVERSE": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ac47efbe-025b-4688-bcd3-a10a0b012b34"
+  }
+ ]
+}
