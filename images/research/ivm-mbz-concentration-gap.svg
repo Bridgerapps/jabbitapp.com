@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" role="img" aria-labelledby="t2 d2">
+<title id="t2">The concentration gap: ivermectin far, mebendazole closer</title>
+<desc id="d2">Log-scale comparison of drug concentrations. Ivermectin: the 28-cell-line lab study used 5 micromolar; the Stromectol label’s mean peak blood level after a 12 mg dose is 46.6 ng/mL, about 0.053 micromolar, 94 times lower. If levels rise in proportion to dose, as the label says, a 25 mg capsule would reach about 0.11 micromolar (45 times lower) and 120 mg about 0.53 micromolar (9 times lower). Mebendazole: lab IC50s in a glioma cell panel were 0.11 to 0.31 micromolar; the Emverm label says blood levels stay at or below 0.03 mcg/mL (0.10 micromolar) at 100 mg twice daily; a trial dosing up to 4 g a day targeted 300 ng/mL (1.0 micromolar) and 5 of 11 patients reached it.</desc>
+<rect width="720" height="560" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="start">Ivermectin’s lab doses are far above human blood levels</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">Micromolar (µM), log scale. Mebendazole’s gap is much smaller, but levels vary a lot from person to person</text>
+<line x1="300.0" y1="84" x2="300.0" y2="450" stroke="#e2e8f0"/>
+<text x="300.0" y="468" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="middle">0.01 µM</text>
+<line x1="430.0" y1="84" x2="430.0" y2="450" stroke="#e2e8f0"/>
+<text x="430.0" y="468" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="middle">0.1 µM</text>
+<line x1="560.0" y1="84" x2="560.0" y2="450" stroke="#e2e8f0"/>
+<text x="560.0" y="468" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="middle">1 µM</text>
+<line x1="690.0" y1="84" x2="690.0" y2="450" stroke="#e2e8f0"/>
+<text x="690.0" y="468" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#64748b" text-anchor="middle">10 µM</text>
+<text x="24" y="112" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7c3aed" text-anchor="start">IVERMECTIN</text>
+<text x="24" y="150" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Lab dose in 28-cell-line study</text>
+<rect x="300" y="136" width="350.9" height="20" rx="4" fill="#f59e0b"/>
+<text x="642.8661005636825" y="151" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="end">5 µM</text>
+<text x="24" y="190" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Peak blood level, 12 mg label dose</text>
+<rect x="300" y="176" width="94.2" height="20" rx="4" fill="#0f766e"/>
+<text x="402.15586304810256" y="191" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">0.053 µM (94x lower)</text>
+<text x="24" y="230" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">If it scales: 25 mg capsule</text>
+<rect x="300" y="216" width="135.9" height="20" rx="4" fill="#94a3b8"/>
+<text x="443.8919872422655" y="231" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">~0.111 µM (45x lower)</text>
+<text x="24" y="270" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">If it scales: 120 mg, 10x the dose</text>
+<rect x="300" y="256" width="224.2" height="20" rx="4" fill="#94a3b8"/>
+<text x="532.1558630481026" y="271" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">~0.53 µM (9x lower)</text>
+<text x="24" y="312" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#7c3aed" text-anchor="start">MEBENDAZOLE</text>
+<text x="24" y="350" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Lab IC50, glioma cell panel</text>
+<rect x="300" y="336" width="193.9" height="20" rx="4" fill="#f59e0b"/>
+<text x="501.87702019845545" y="351" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">0.11-0.31 µM</text>
+<text x="24" y="390" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Label: 100 mg twice daily, max</text>
+<rect x="300" y="376" width="130.0" height="20" rx="4" fill="#0f766e"/>
+<text x="438.0" y="391" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">≤0.10 µM</text>
+<text x="24" y="430" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Trial target, up to 4 g/day</text>
+<rect x="300" y="416" width="261.1" height="20" rx="4" fill="#94a3b8"/>
+<text x="569.1180223290493" y="431" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start">1.0 µM; 5 of 11 got there</text>
+<text x="24" y="484" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#0f172a" text-anchor="start">“If it scales” rows assume blood levels rise in step with dose, which the Stromectol label and a 30-120 mg dosing</text>
+<text x="24" y="501" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#0f172a" text-anchor="start">study report. A high-fat meal raised ivermectin exposure about 2.5-fold. Mebendazole is 90-95% protein-bound.</text>
+<text x="24" y="522" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Sources: Stromectol and Emverm FDA labels (DailyMed); Juarez 2020 (PMID 32474842); Guzzo 2002 (PMID 12362927);</text>
+<text x="24" y="540" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Mansoori 2021 (PMID 33903692); glioma IC50s as cited by the review. Molecular weights 875.10 and 295.29. Chart by Jabbit.</text>
+</svg>

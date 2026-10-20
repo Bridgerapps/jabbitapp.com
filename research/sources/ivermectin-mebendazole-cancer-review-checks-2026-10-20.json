@@ -1,0 +1,378 @@
+{
+ "built_et": "2026-10-20 ~4:10 PM ET",
+ "subject": "Hulscher N, Thorp JA, Victory K, Gillooly P, McCullough PA, Risch H. Combination ivermectin and mebendazole: a comprehensive review ... Zenodo preprint, Oct 19, 2026. doi:10.5281/zenodo.23475387",
+ "review_admissions": {
+  "narrative_review_no_prisma": true,
+  "combination_preclinical_studies": 0,
+  "coi": "all authors affiliated with and/or salaried by The Wellness Company",
+  "review_mentions_twc_sells_product": false
+ },
+ "crossref_scan": {
+  "references": 151,
+  "with_doi": 138,
+  "resolved": 137,
+  "unresolved": [
+   "10.22038/apjmt.2026.89341.1521 (ref 18)"
+  ],
+  "retracted_cited_works": {
+   "36": {
+    "doi": "10.1002/prp2.954",
+    "title": "RETRACTED: Ivermectin synergizes sorafenib in hepatocellular carcinoma via targeting multiple oncogenic pathways",
+    "retraction_disclosed_in_review": true
+   },
+   "72": {
+    "doi": "10.1042/BSR20192489",
+    "title": "Ivermectin induces autophagy-mediated cell death through the AKT/mTOR signaling pathway in glioma cells",
+    "retraction_disclosed_in_review": false
+   },
+   "127": {
+    "doi": "10.3389/fphar.2019.00681",
+    "title": "A New Method for Ethical and Efficient Evidence Generation for Off-Label Medication Use in Oncology (A Case Study in Glioblastoma)",
+    "retraction_disclosed_in_review": false
+   },
+   "133": {
+    "doi": "10.21873/anticanres.18194",
+    "title": "RETRACTED: Real-world Clinical Outcomes of Ivermectin and Mebendazole in Cancer Patients: Results from a Prospective Observational Cohort",
+    "retraction_disclosed_in_review": true
+   }
+  },
+  "expression_of_concern_cited_works": {
+   "50": {
+    "doi": "10.1038/s41523-021-00229-5",
+    "notice": "10.1038/s41523-026-00988-z (June 5, 2026); correction 10.1038/s41523-026-00908-1 (Feb 27, 2026)",
+    "disclosed_in_review": false
+   }
+  },
+  "method": "Crossref REST API works/{doi} and works?filter=updates:{doi}, Oct 20, 2026"
+ },
+ "clinical_efficacy_studies": [
+  {
+   "study": "Hegazy 2022, Tanta University, Egypt",
+   "drug": "mebendazole",
+   "design": "randomized, 40 people (paper: double-blind placebo)",
+   "review_class": "positive",
+   "status_oct20": "no notice; registry lists no masking, active comparator, 6-month response outcome, still recruiting, completion Dec 2028",
+   "doi": "10.1016/j.lfs.2022.120536"
+  },
+  {
+   "study": "METRICS (Agrawal 2019)",
+   "drug": "mebendazole + metformin, atorvastatin, doxycycline",
+   "design": "single-arm, 95 people vs historical comparators",
+   "review_class": "positive",
+   "status_oct20": "RETRACTED Oct 13, 2026 (MHRA: trial without appropriate ethics approval or informed consent; data inaccuracies). Review calls it an unresolved 2023 expression of concern. Registry NCT02201381: withdrawn, 0 enrolled",
+   "doi": "10.3389/fphar.2019.00681"
+  },
+  {
+   "study": "Hulscher 2026 (TWC customers)",
+   "drug": "ivermectin 25 mg + mebendazole 250 mg capsules",
+   "design": "survey cohort, 197 people, 122 followed, self-reported, no control",
+   "review_class": "positive",
+   "status_oct20": "RETRACTED Oct 1, 2026 (methods could not support the 84.4% benefit claim; no misconduct alleged). Review discloses it and disputes it",
+   "doi": "10.21873/anticanres.18194"
+  },
+  {
+   "study": "Patil 2022, Tata Memorial, India",
+   "drug": "mebendazole + lomustine or temozolomide",
+   "design": "randomized open-label phase 2, 88 people, mebendazole in both arms",
+   "review_class": "neutral",
+   "status_oct20": "missed its 55% 9-month survival bar (36.6% and 45%)",
+   "doi": "10.1016/j.eclinm.2022.101449"
+  },
+  {
+   "study": "Mansoori 2021, Uppsala (Repos Pharma)",
+   "drug": "mebendazole up to 4 g/day",
+   "design": "single-arm phase 2a, 11 people",
+   "review_class": "neutral",
+   "status_oct20": "every treated patient progressed by 8 weeks; 4 met hyperprogression criteria; 5 reached target level",
+   "doi": "10.1038/s41598-021-88433-y"
+  },
+  {
+   "study": "Yuan 2025, Cedars-Sinai (NCT05318469)",
+   "drug": "ivermectin + balstilimab or pembrolizumab",
+   "design": "single-arm phase 1/2, interim",
+   "review_class": "interim",
+   "status_oct20": "interim abstract: median PFS 2.5 months, 4-month clinical benefit 37.5%; still recruiting",
+   "doi": "10.1200/JCO.2025.43.16_suppl.e13146"
+  }
+ ],
+ "hegazy_registry": {
+  "masking": "NONE",
+  "arms": [
+   "ACTIVE_COMPARATOR",
+   "EXPERIMENTAL"
+  ],
+  "primary_outcome": "number of patients with tumour response / 6 months",
+  "status": "RECRUITING",
+  "primary_completion": "2028-12",
+  "enrollment": {
+   "count": 40,
+   "type": "ESTIMATED"
+  },
+  "start": "2019-04-01",
+  "first_submitted": "2019-04-22"
+ },
+ "benchmarks": {
+  "NO16966_first_line_bev_oxaliplatin_PFS_months": 9.4,
+  "E3200_previously_treated_FOLFOX4_bev": {
+   "PFS_months": 7.3,
+   "ORR_pct": 22.7
+  },
+  "E3200_bev_alone": {
+   "PFS_months": 2.7,
+   "ORR_pct": 3.3
+  },
+  "hegazy_control_FOLFOX4_bev_placebo": {
+   "PFS_months": 3.0,
+   "ORR_pct": 10
+  },
+  "hegazy_mebendazole_arm": {
+   "PFS_months": 9.25,
+   "ORR_pct": 65
+  }
+ },
+ "concentrations": {
+  "ivermectin_lab_uM": 5.0,
+  "ivermectin_lab_ng_ml": 4376.0,
+  "ivermectin_12mg_cmax_ng_ml": 46.6,
+  "ivermectin_12mg_cmax_uM": 0.053,
+  "gap_12mg_x": 94,
+  "ivermectin_25mg_est_uM_if_proportional": 0.111,
+  "gap_25mg_x": 45,
+  "ivermectin_120mg_est_uM_if_proportional": 0.53,
+  "gap_120mg_x": 9.4,
+  "ivermectin_120mg_fed_est_uM_label_2_5x_food": 1.33,
+  "gap_120mg_fed_x": 3.8,
+  "mebendazole_label_max_ng_ml": 30,
+  "mebendazole_label_max_uM": 0.1,
+  "mebendazole_lab_ic50_uM_glioma_panel": [
+   0.11,
+   0.31
+  ],
+  "mebendazole_target_300ng_ml_uM": 1.02,
+  "mebendazole_target_reached": "5 of 11 (Mansoori 2021)",
+  "mebendazole_hydatid_10mgkg_range_ng_ml": [
+   17.5,
+   500
+  ]
+ },
+ "ctgov": {
+  "ivermectin_anticancer": [
+   {
+    "nct": "NCT07487805",
+    "title": "Ivermectin Combined With Immune Checkpoint Inhibition in Cancer (ICONIC)",
+    "status": "NOT_YET_RECRUITING",
+    "enroll": 80,
+    "start": "2026-12",
+    "has_results": false,
+    "sponsor": "University of Florida"
+   },
+   {
+    "nct": "NCT05318469",
+    "title": "Ivermectin in Combination With Balstilimab or Pembrolizumab in Patients With Metastatic Triple Negative Breast Cancer",
+    "status": "RECRUITING",
+    "enroll": 34,
+    "start": "2023-10-13",
+    "has_results": false,
+    "sponsor": "Yuan Yuan"
+   }
+  ],
+  "mebendazole_anticancer": [
+   {
+    "nct": "NCT01837862",
+    "title": "A Phase I Study of Mebendazole for the Treatment of Pediatric Gliomas",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "enroll": 10,
+    "start": "2013-10-22",
+    "has_results": false,
+    "sponsor": "Julie Krystal"
+   },
+   {
+    "nct": "NCT02201381",
+    "title": "Study of the Safety, Tolerability and Efficacy of Metabolic Combination Treatments on Cancer",
+    "status": "WITHDRAWN",
+    "enroll": 0,
+    "start": "2022-05-23",
+    "has_results": false,
+    "sponsor": "Health Clinics Limited"
+   },
+   {
+    "nct": "NCT03628079",
+    "title": "A Clinical Safety and Efficacy Study of Mebendazole on GI Cancer or Cancer of Unknown Origin.",
+    "status": "TERMINATED",
+    "enroll": 11,
+    "start": "2018-05-25",
+    "has_results": false,
+    "sponsor": "Repos Pharma"
+   },
+   {
+    "nct": "NCT02644291",
+    "title": "Phase I Study of Mebendazole Therapy for Recurrent/Progressive Pediatric Brain Tumors",
+    "status": "COMPLETED",
+    "enroll": 16,
+    "start": "2016-05",
+    "has_results": false,
+    "sponsor": "Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins"
+   },
+   {
+    "nct": "NCT03925662",
+    "title": "Mebendazole as Adjuvant Treatment for Colon Cancer",
+    "status": "RECRUITING",
+    "enroll": 40,
+    "start": "2019-04-01",
+    "has_results": false,
+    "sponsor": "Sherief Abd-Elsalam"
+   },
+   {
+    "nct": "NCT01729260",
+    "title": "Mebendazole in Newly Diagnosed High-Grade Glioma Patients Receiving Temozolomide",
+    "status": "COMPLETED",
+    "enroll": 24,
+    "start": "2013-04-04",
+    "has_results": false,
+    "sponsor": "Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins"
+   },
+   {
+    "nct": "NCT04443049",
+    "title": "To Study the Effects of Addition of Mebendazole to Lenvatinib in Cirrhotics With Advanced Hepatocellular Carcinoma.",
+    "status": "UNKNOWN",
+    "enroll": 170,
+    "start": "2020-07-10",
+    "has_results": false,
+    "sponsor": "Institute of Liver and Biliary Sciences, India"
+   }
+  ],
+  "excluded": {
+   "NCT04447235": "ivermectin + losartan for COVID-19 in cancer patients (not an anticancer test)",
+   "NCT07396714": "warts",
+   "NCT02366884": "private clinic \"atavistic chemotherapy\" (anti-bacterial, anti-fungal, anti-protozoal classes), status unknown since 2022, no results",
+   "others": "drug not an intervention (supportive, imaging, other agents)"
+  },
+  "both_drugs_together": 0
+ },
+ "twc_product": {
+  "url": "https://www.twc.health/products/ivermectin-mebendazole",
+  "capsule": "25 mg ivermectin + 250 mg mebendazole",
+  "prices_usd": {
+   "90ct": "599.99",
+   "45ct": "349.99"
+  },
+  "store_created_at": "2025-01-31T18:36:26-05:00",
+  "label_schedule": "21 days on, 21 days off, 4 cycles",
+  "cancer_study_page": {
+   "url": "https://www.twc.health/pages/ivermectin-mebendazole-cancer-study",
+   "checked_et": "4:05 PM ET Oct 20, 2026",
+   "quotes": [
+    "Retracted by the journal. Click here to find out why",
+    "Peer reviewed. Published. Then retracted. No errors were found. The data didn't change.",
+    "Order now & talk to a provider",
+    "Ivermectin + Mebendazole An important tool in the battle against cancer."
+   ]
+  },
+  "claims_vs_record": {
+   "twc_page": "Passed a rigorous three-month review.",
+   "journal_dates": "Received April 8, 2026; revision received April 20, 2026; accepted April 24, 2026 (16 days)",
+   "paper_limitations": "Given these threats to validity, therapeutic benefit cannot be inferred.",
+   "twc_page_no_errors": "No errors were found.",
+   "retraction_notice": "methodological and analytical problems undermine the reliability of its central clinical-benefit conclusions"
+  },
+  "product_page_marketed_as": "Parasite Cleanse; \"Doctor's available to consult for off-label use\""
+ },
+ "x": {
+  "checked_et": "2026-10-20 ~3:55-4:05 PM ET (X API recent counts, UTC days)",
+  "ivm_mbz_fbz_cancer_en_noRT": {
+   "query": "(ivermectin OR mebendazole OR fenbendazole) cancer lang:en -is:retweet",
+   "days": {
+    "2026-10-14": 1415,
+    "2026-10-15": 1483,
+    "2026-10-16": 1040,
+    "2026-10-17": 1176,
+    "2026-10-18": 1066,
+    "2026-10-19": 1010,
+    "2026-10-20_to_19:54UTC": 881
+   },
+   "total": 8071
+  },
+  "same_original_posts_excl_cancer_survivor_spam": {
+   "query": "(ivermectin OR mebendazole OR fenbendazole) cancer lang:en -is:retweet -is:reply -\"cancer survivor\"",
+   "days": {
+    "2026-10-14": 222,
+    "2026-10-15": 182,
+    "2026-10-16": 234,
+    "2026-10-17": 211,
+    "2026-10-18": 161,
+    "2026-10-19": 165,
+    "2026-10-20_to_19:54UTC": 148
+   },
+   "total": 1323
+  },
+  "ivermectin_mebendazole_en_noRT": {
+   "query": "ivermectin mebendazole lang:en -is:retweet",
+   "days": {
+    "2026-10-14": 238,
+    "2026-10-15": 587,
+    "2026-10-16": 238,
+    "2026-10-17": 283,
+    "2026-10-18": 135,
+    "2026-10-19": 129,
+    "2026-10-20_to_20:02UTC": 308
+   },
+   "total": 1918
+  },
+  "tiktok_peptide_en_noRT": {
+   "query": "tiktok (peptide OR peptides OR bpc OR retatrutide) lang:en -is:retweet",
+   "days": {
+    "2026-10-14": 6,
+    "2026-10-15": 4,
+    "2026-10-16": 9,
+    "2026-10-17": 7,
+    "2026-10-18": 12,
+    "2026-10-19": 10,
+    "2026-10-20_to_19:54UTC": 54
+   }
+  },
+  "posts": {
+   "hulscher_review_post": {
+    "id": "2112532337451782188",
+    "url": "https://x.com/NicHulscher/status/2112532337451782188",
+    "created_utc": "2026-10-20T13:12:12Z",
+    "created_et": "Oct 20, 9:12 AM ET",
+    "author_followers": 312142,
+    "impressions": 86807,
+    "likes": 6228,
+    "reposts": 2473,
+    "bookmarks": 3841,
+    "replies": 104,
+    "quotes": 85,
+    "checked_et": "Oct 20 ~4:02 PM ET"
+   },
+   "hulscher_teaser_post": {
+    "id": "2112158895317696634",
+    "created_utc": "2026-10-19T12:28:17Z",
+    "created_et": "Oct 19, 8:28 AM ET",
+    "text": "Within 48 hours, the FULL POWER of ivermectin and mebendazole for cancer will be revealed.",
+    "impressions": 398429,
+    "likes": 24727,
+    "reposts": 5225,
+    "bookmarks": 4231
+   },
+   "twc_post": {
+    "id": "2112579889878692260",
+    "url": "https://x.com/twc_health/status/2112579889878692260",
+    "author": "The Wellness Company @twc_health, 70,008 followers",
+    "impressions": 1057
+   },
+   "mercer_counter_article": {
+    "id": "2112607831212052617",
+    "url": "https://x.com/amindlesswasted/status/2112607831212052617",
+    "title": "37 Cancer Mechanisms, Two Retractions, and One Missing Clinical Trial",
+    "impressions": 152
+   }
+  },
+  "trending_story": {
+   "id": "2112552619117891920",
+   "url": "https://x.com/i/trending/2112552619117891920",
+   "name": "Review Highlights Anticancer Potential of Ivermectin and Mebendazole Combo",
+   "updated_utc": "2026-10-20T17:33:30Z"
+  }
+ }
+}
