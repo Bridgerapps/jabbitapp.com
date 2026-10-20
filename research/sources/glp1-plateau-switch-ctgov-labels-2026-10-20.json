@@ -1,0 +1,988 @@
+{
+ "what": "Jabbit review: GLP-1 weight-loss plateaus, stepping up and switching. Trial and abstract numbers, label scan, ClinicalTrials.gov hand review, retatrutide eligibility scan, X and PubMed counts.",
+ "pulled_ctgov": "2026-10-20T14:06-04:00",
+ "ctgov_queries": {
+  "cond": "obesity OR overweight OR \"weight loss\" OR \"weight management\"",
+  "intr": "semaglutide OR tirzepatide OR retatrutide OR liraglutide OR orforglipron OR cagrilintide OR CagriSema OR survodutide OR mazdutide OR Ozempic OR Wegovy OR Zepbound OR Mounjaro OR Saxenda OR \"GLP-1\" OR \"GLP-1 receptor agonist\" OR incretin",
+  "term": "switch OR switching OR switched OR transition OR transitioning OR plateau OR plateaued OR \"weight plateau\" OR \"inadequate response\" OR \"suboptimal response\" OR \"suboptimal weight loss\" OR \"insufficient weight loss\" OR \"non-responder\" OR nonresponder OR \"poor responder\" OR \"previously treated\" OR \"prior treatment\" OR \"higher dose\" OR \"high dose\" OR \"dose escalation\" OR intensification OR \"add-on\" OR \"add on\"",
+  "pullA": 218,
+  "pullB_free_text": 351
+ },
+ "medscape": {
+  "date": "2026-10-20",
+  "author": "Julie Peck",
+  "experts": [
+   "Gevork Tatarian, MD (cosmetic surgeon, Elevé Cosmetic Surgery)",
+   "James Chao, MD (VedaNu Wellness)",
+   "Vishal Dubey, MPharm (Nutricult, supplement company)"
+  ],
+  "headline_figure": "28.3% at 80 weeks (TRIUMPH-1, highest dose)",
+  "new_trial_data": false
+ },
+ "triumph1": {
+  "itt_80wk": {
+   "4mg": -17.6,
+   "9mg": -23.7,
+   "12mg": -25.0,
+   "placebo": -3.9
+  },
+  "efficacy_80wk": {
+   "4mg": -19.0,
+   "9mg": -25.9,
+   "12mg": -28.3,
+   "placebo": -2.2
+  },
+  "extension_104wk_efficacy": {
+   "12mg_to_mtd": -30.3
+  },
+  "extension_104wk_itt": {
+   "12mg_to_mtd": -29.9
+  },
+  "extension_n": 532,
+  "baselines_kg": [
+   112.7,
+   121.7
+  ],
+  "nausea_12mg_vs_pbo": [
+   42.4,
+   14.8
+  ],
+  "vomiting_12mg_vs_pbo": [
+   25.3,
+   4.8
+  ],
+  "dysesthesia_12mg_vs_pbo": [
+   12.5,
+   0.9
+  ],
+  "ae_discontinuation_12mg_vs_pbo": [
+   11.3,
+   4.9
+  ]
+ },
+ "time_to_plateau_surmount1": {
+  "median_weeks_by_bmi": {
+   "overweight": 24.3,
+   "class1": 26.0,
+   "class2": 36.1,
+   "class3": 36.1
+  },
+  "pct_plateaued_wk72": [
+   90.2,
+   88.9,
+   87.6,
+   87.8
+  ],
+  "n": 1438,
+  "definition": "weight change <5% over a 12-week interval and all subsequent 12-week intervals"
+ },
+ "step_up_7_2mg": {
+  "sema_7_2": -18.7,
+  "sema_2_4": -15.6,
+  "placebo": -3.9,
+  "etd": -3.1,
+  "n": 1407,
+  "gi_ae": [
+   70.8,
+   61.2,
+   42.8
+  ],
+  "dysaesthesia": [
+   22.9,
+   6.0,
+   0.5
+  ]
+ },
+ "surmount5": {
+  "tirzepatide": -20.2,
+  "semaglutide": -13.7,
+  "n": 751,
+  "open_label": true
+ },
+ "weill_cornell_switch": {
+  "switch_n": 61,
+  "switch_wl": 5.3,
+  "plateau_n": 28,
+  "plateau_wl": 8.1,
+  "nonresponder_n": 33,
+  "nonresponder_wl": 2.9,
+  "months": 6,
+  "weight_reduced": [
+   133,
+   7.2
+  ],
+  "not_weight_reduced": [
+   160,
+   10.3
+  ]
+ },
+ "attain_maintain": {
+  "tirz_cohort": {
+   "n": 205,
+   "orfo": 74.7,
+   "placebo": 49.2
+  },
+  "sema_cohort": {
+   "n": 171,
+   "orfo": 79.3,
+   "placebo": 37.6
+  }
+ },
+ "labels": {
+  "foundayo": {
+   "version": "10",
+   "mentions_plateau": false,
+   "stop_rule_if_little_loss": false,
+   "step_up_if_more_loss_needed": false,
+   "mentions_switching_to_other_glp1": false
+  },
+  "mounjaro": {
+   "version": "40",
+   "mentions_plateau": false,
+   "stop_rule_if_little_loss": false,
+   "step_up_if_more_loss_needed": false,
+   "mentions_switching_to_other_glp1": false
+  },
+  "ozempic": {
+   "version": "20",
+   "mentions_plateau": false,
+   "stop_rule_if_little_loss": false,
+   "step_up_if_more_loss_needed": false,
+   "mentions_switching_to_other_glp1": false
+  },
+  "rybelsus": {
+   "version": "14",
+   "mentions_plateau": false,
+   "stop_rule_if_little_loss": false,
+   "step_up_if_more_loss_needed": false,
+   "mentions_switching_to_other_glp1": false
+  },
+  "saxenda": {
+   "version": "22",
+   "mentions_plateau": false,
+   "stop_rule_if_little_loss": true,
+   "step_up_if_more_loss_needed": false,
+   "mentions_switching_to_other_glp1": false
+  },
+  "trulicity": {
+   "version": "62",
+   "mentions_plateau": false,
+   "stop_rule_if_little_loss": false,
+   "step_up_if_more_loss_needed": false,
+   "mentions_switching_to_other_glp1": false
+  },
+  "victoza": {
+   "version": "31",
+   "mentions_plateau": false,
+   "stop_rule_if_little_loss": false,
+   "step_up_if_more_loss_needed": false,
+   "mentions_switching_to_other_glp1": false
+  },
+  "wegovy": {
+   "version": "19",
+   "mentions_plateau": false,
+   "stop_rule_if_little_loss": false,
+   "step_up_if_more_loss_needed": true,
+   "mentions_switching_to_other_glp1": false
+  },
+  "zepbound": {
+   "version": "40",
+   "mentions_plateau": false,
+   "stop_rule_if_little_loss": false,
+   "step_up_if_more_loss_needed": false,
+   "mentions_switching_to_other_glp1": false
+  }
+ },
+ "labels_with_stop_rule": [
+  "saxenda"
+ ],
+ "labels_with_step_up_rule": [
+  "wegovy"
+ ],
+ "labels_mentioning_plateau": [],
+ "ctgov_core": [
+  {
+   "nct": "NCT07855900",
+   "category": "switch to a newer drug",
+   "what": "Survodutide: switch cohort from semaglutide or tirzepatide plus a new-start cohort; weight at 52 weeks (Boehringer Ingelheim SYNCHRONIZE-START, not randomized)",
+   "sponsor": "Boehringer Ingelheim",
+   "status": "NOT_YET_RECRUITING",
+   "allocation": "NON_RANDOMIZED",
+   "enrollment": 350,
+   "primary_completion": "2028-06-25",
+   "first_posted": "2026-10-02",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07575399",
+   "category": "switch to a newer drug",
+   "what": "Maridebart cafraglutide (MariTide) in people who lost at least 10% on a weekly GLP-1; weight at 68 weeks (Amgen)",
+   "sponsor": "Amgen",
+   "status": "RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 300,
+   "primary_completion": "2028-01-03",
+   "first_posted": "2026-05-08",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07855133",
+   "category": "switch to a newer drug",
+   "what": "Zenagamtide after stable semaglutide; side effects primary (Novo Nordisk)",
+   "sponsor": "Novo Nordisk A/S",
+   "status": "RECRUITING",
+   "allocation": "NA",
+   "enrollment": 60,
+   "primary_completion": "2028-09-06",
+   "first_posted": "2026-10-02",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07868354",
+   "category": "switch to a newer drug",
+   "what": "Zenagamtide after stable tirzepatide; side effects primary (Novo Nordisk)",
+   "sponsor": "Novo Nordisk A/S",
+   "status": "RECRUITING",
+   "allocation": "NA",
+   "enrollment": 60,
+   "primary_completion": "2028-09-07",
+   "first_posted": "2026-10-09",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07812597",
+   "category": "switch to a newer drug",
+   "what": "Zovaglutide after titration to semaglutide 2.4 mg inside the trial; switch success primary (Beijing QL Biopharmaceutical)",
+   "sponsor": "Beijing QL Biopharmaceutical Co.,Ltd",
+   "status": "NOT_YET_RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 210,
+   "primary_completion": "2028-01-13",
+   "first_posted": "2026-09-10",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07073417",
+   "category": "switch to a newer drug",
+   "what": "XW003 (ecnoglutide) vs semaglutide with a switch phase inside the trial; excludes recent weight-loss drugs (Sciwind)",
+   "sponsor": "Hangzhou Sciwind Biosciences Co., Ltd.",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 163,
+   "primary_completion": "2027-02-27",
+   "first_posted": "2025-07-18",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07713992",
+   "category": "switch to a newer drug",
+   "what": "Mazdutide vs staying on semaglutide 1 mg in type 2 diabetes with fatty liver; liver fat primary (Tianjin)",
+   "sponsor": "Tianjin Medical University",
+   "status": "NOT_YET_RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 72,
+   "primary_completion": "2027-12-31",
+   "first_posted": "2026-07-20",
+   "has_results": false
+  },
+  {
+   "nct": "NCT05564039",
+   "category": "switch to a newer drug",
+   "what": "Tirzepatide vs raising dulaglutide in type 2 diabetes; HbA1c primary (Lilly SURPASS-SWITCH)",
+   "sponsor": "Eli Lilly and Company",
+   "status": "COMPLETED",
+   "allocation": "RANDOMIZED",
+   "enrollment": 282,
+   "primary_completion": "2024-07-15",
+   "first_posted": "2022-10-03",
+   "has_results": true
+  },
+  {
+   "nct": "NCT06584916",
+   "category": "switch or step down to keep weight off",
+   "what": "Orforglipron pill vs placebo after tirzepatide or semaglutide in SURMOUNT-5 (Lilly ATTAIN-MAINTAIN)",
+   "sponsor": "Eli Lilly and Company",
+   "status": "COMPLETED",
+   "allocation": "RANDOMIZED",
+   "enrollment": 376,
+   "primary_completion": "2025-11-21",
+   "first_posted": "2024-09-05",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07845500",
+   "category": "switch or step down to keep weight off",
+   "what": "Monthly berobenatide vs staying on weekly semaglutide or tirzepatide (Pfizer VESPER-SWITCH)",
+   "sponsor": "Pfizer",
+   "status": "RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 660,
+   "primary_completion": "2028-02-16",
+   "first_posted": "2026-09-29",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07729332",
+   "category": "switch or step down to keep weight off",
+   "what": "Orforglipron vs phentermine after injectable GLP-1 drugs (Massachusetts General)",
+   "sponsor": "Massachusetts General Hospital",
+   "status": "NOT_YET_RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 60,
+   "primary_completion": "2031-07-31",
+   "first_posted": "2026-07-27",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07832084",
+   "category": "switch or step down to keep weight off",
+   "what": "Full dose vs every-other-week taper vs phentermine-topiramate (OFF-RAMP pilot)",
+   "sponsor": "Jing Luo",
+   "status": "NOT_YET_RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 60,
+   "primary_completion": "2027-04-30",
+   "first_posted": "2026-09-21",
+   "has_results": false
+  },
+  {
+   "nct": "NCT06605703",
+   "category": "switch or step down to keep weight off",
+   "what": "Step-down options after stopping semaglutide or tirzepatide (WW International)",
+   "sponsor": "WW International Inc",
+   "status": "COMPLETED",
+   "allocation": "RANDOMIZED",
+   "enrollment": 226,
+   "primary_completion": "2026-02-05",
+   "first_posted": "2024-09-20",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07837973",
+   "category": "switch or step down to keep weight off",
+   "what": "ALV-100 vs placebo for maintenance after incretin therapy (Alveus)",
+   "sponsor": "Alveus Therapeutics, Inc.",
+   "status": "RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 220,
+   "primary_completion": "2027-08-24",
+   "first_posted": "2026-09-24",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07619989",
+   "category": "add-on for a poor response",
+   "what": "Ear vagus-nerve stimulation vs sham with tirzepatide 5 mg in people who lost 10% or less after 12+ weeks (Nanjing)",
+   "sponsor": "The Affiliated Nanjing Drum Tower Hospital of Nanjing University Medical School",
+   "status": "RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 24,
+   "primary_completion": "2027-06-01",
+   "first_posted": "2026-06-02",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07446998",
+   "category": "add-on for a poor response",
+   "what": "Enobosarm vs placebo with semaglutide; named PLATEAU, but excludes anyone on a GLP-1 drug in the past 12 months (Veru)",
+   "sponsor": "Veru Inc.",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 239,
+   "primary_completion": "2027-10",
+   "first_posted": "2026-03-03",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07190794",
+   "category": "after quitting for poor response or side effects",
+   "what": "Endoscopic sleeve gastroplasty vs lifestyle after stopping a GLP-1 drug (Boston Scientific, retrospective)",
+   "sponsor": "Boston Scientific Corporation",
+   "status": "TERMINATED",
+   "allocation": null,
+   "enrollment": 18,
+   "primary_completion": "2026-05-26",
+   "first_posted": "2025-09-24",
+   "has_results": false
+  },
+  {
+   "nct": "NCT07607587",
+   "category": "after quitting for poor response or side effects",
+   "what": "Cagrilintide vs placebo in people who quit GLP-1 drugs over stomach side effects (Novo Nordisk)",
+   "sponsor": "Novo Nordisk A/S",
+   "status": "RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 114,
+   "primary_completion": "2027-11-19",
+   "first_posted": "2026-05-26",
+   "has_results": false
+  },
+  {
+   "nct": "NCT05646706",
+   "category": "above the usual top dose",
+   "what": "Semaglutide 7.2 mg vs 2.4 mg vs placebo (Novo Nordisk STEP UP)",
+   "sponsor": "Novo Nordisk A/S",
+   "status": "COMPLETED",
+   "allocation": "RANDOMIZED",
+   "enrollment": 1407,
+   "primary_completion": "2024-10-30",
+   "first_posted": "2022-12-12",
+   "has_results": true
+  },
+  {
+   "nct": "NCT05649137",
+   "category": "above the usual top dose",
+   "what": "Semaglutide 7.2 mg vs 2.4 mg vs placebo in type 2 diabetes (Novo Nordisk STEP UP T2D)",
+   "sponsor": "Novo Nordisk A/S",
+   "status": "COMPLETED",
+   "allocation": "RANDOMIZED",
+   "enrollment": 512,
+   "primary_completion": "2024-10-28",
+   "first_posted": "2022-12-13",
+   "has_results": true
+  },
+  {
+   "nct": "NCT06037252",
+   "category": "above the usual top dose",
+   "what": "Two investigational higher tirzepatide doses vs standard vs placebo in type 2 diabetes and obesity (Lilly)",
+   "sponsor": "Eli Lilly and Company",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 414,
+   "primary_completion": "2026-01-08",
+   "first_posted": "2023-09-14",
+   "has_results": false
+  },
+  {
+   "nct": "NCT06859268",
+   "category": "above the usual top dose",
+   "what": "Retatrutide dose 1 for 80 weeks, then stay, change to dose 2, or placebo (Lilly TRIUMPH-6; doses not named in the record)",
+   "sponsor": "Eli Lilly and Company",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "allocation": "RANDOMIZED",
+   "enrollment": 643,
+   "primary_completion": "2028-04",
+   "first_posted": "2025-03-05",
+   "has_results": false
+  }
+ ],
+ "core_count": 22,
+ "core_by_category": {
+  "switch to a newer drug": [
+   "NCT07855900",
+   "NCT07575399",
+   "NCT07855133",
+   "NCT07868354",
+   "NCT07812597",
+   "NCT07073417",
+   "NCT07713992",
+   "NCT05564039"
+  ],
+  "switch or step down to keep weight off": [
+   "NCT06584916",
+   "NCT07845500",
+   "NCT07729332",
+   "NCT07832084",
+   "NCT06605703",
+   "NCT07837973"
+  ],
+  "add-on for a poor response": [
+   "NCT07619989",
+   "NCT07446998"
+  ],
+  "after quitting for poor response or side effects": [
+   "NCT07190794",
+   "NCT07607587"
+  ],
+  "above the usual top dose": [
+   "NCT05646706",
+   "NCT05649137",
+   "NCT06037252",
+   "NCT06859268"
+  ]
+ },
+ "core_with_results": [
+  "NCT05564039",
+  "NCT05646706",
+  "NCT05649137"
+ ],
+ "core_first_posted_since_2026_09_01": [
+  "NCT07812597",
+  "NCT07832084",
+  "NCT07837973",
+  "NCT07845500",
+  "NCT07855133",
+  "NCT07855900",
+  "NCT07868354"
+ ],
+ "retatrutide_records": [
+  {
+   "nct": "NCT05936151",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 146,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) on Renal Function in Participants With Overweight or Obesity and Chronic Kidney Disease With or Without Type 2 Diabetes"
+  },
+  {
+   "nct": "NCT04881760",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 338,
+   "has_results": true,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of LY3437943 in Participants Who Have Obesity or Are Overweight"
+  },
+  {
+   "nct": "NCT07629401",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "EXPANDED_ACCESS",
+   "status": "AVAILABLE",
+   "enrollment": null,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "Pre-approval Expanded Access of Retatrutide (LY3437943)"
+  },
+  {
+   "nct": "NCT05929079",
+   "acronym": "TRIUMPH-2",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 1152,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) in Participants With Type 2 Diabetes Mellitus Who Have Obesity or Overweight"
+  },
+  {
+   "nct": "NCT07165028",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "RECRUITING",
+   "enrollment": 4500,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Master Protocol of Multiple Agents in Adults With Metabolic Dysfunction-Associated Steatotic Liver Disease (SYNERGY-Outcomes)"
+  },
+  {
+   "nct": "NCT07232719",
+   "acronym": "TRIUMPH-8",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 250,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) in Participants With Obesity or Overweight"
+  },
+  {
+   "nct": "NCT05916560",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 43,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of LY3437943 in Participants With Impaired and Normal Liver Function"
+  },
+  {
+   "nct": "NCT07357415",
+   "acronym": "TRIUMPH-9",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 600,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) in Participants Without Type 2 Diabetes Who Have Obesity or Overweight"
+  },
+  {
+   "nct": "NCT07467447",
+   "acronym": "GZBF",
+   "sponsor": "Hudson Biotech",
+   "type": "INTERVENTIONAL",
+   "status": "RECRUITING",
+   "enrollment": 300,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "Effect of LY3437943 Versus Placebo in Participants Who Have Obesity or Are Overweight"
+  },
+  {
+   "nct": "NCT03841630",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 45,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Safety Study of LY3437943 Given as a Single Injection in Healthy Participants"
+  },
+  {
+   "nct": "NCT04867785",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 281,
+   "has_results": true,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of LY3437943 in Participants With Type 2 Diabetes"
+  },
+  {
+   "nct": "NCT05959096",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 85,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of LY3437943 in Healthy Participants With a High Body Mass Index"
+  },
+  {
+   "nct": "NCT06808802",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 30,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "To Investigate the Effect of Retatrutide (LY3437943) on Metoprolol Pharmacokinetics in Healthy Participants"
+  },
+  {
+   "nct": "NCT05882045",
+   "acronym": "TRIUMPH-3",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 1946,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) in Participants With Obesity and Cardiovascular Disease"
+  },
+  {
+   "nct": "NCT06297603",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 320,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "Effect of Retatrutide Compared With Placebo in Participants With Type 2 Diabetes and Moderate or Severe Renal Impairment, With Inadequate Glycemic Control on Basal Insulin, With or Without Metformin and/or SGLT2 Inhibitor (TRANSCEND-T2D-3)"
+  },
+  {
+   "nct": "NCT05931367",
+   "acronym": "TRIUMPH-4",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 445,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) Once Weekly in Participants Who Have Obesity or Overweight and Osteoarthritis of the Knee"
+  },
+  {
+   "nct": "NCT05548231",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 32,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of LY3437943 in Chinese Participants With Obesity Or Overweight"
+  },
+  {
+   "nct": "NCT06260722",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 1250,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "Effect of Retatrutide Compared With Semaglutide in Adult Participants With Type 2 Diabetes and Inadequate Glycemic Control With Metformin With or Without SGLT2 Inhibitor (TRANSCEND-T2D-2)"
+  },
+  {
+   "nct": "NCT07035093",
+   "acronym": "TRIUMPH-7",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 586,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight and Chronic Low Back Pain"
+  },
+  {
+   "nct": "NCT05929066",
+   "acronym": "TRIUMPH-1",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 2335,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight"
+  },
+  {
+   "nct": "NCT05757531",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 7,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Carbon-14-Labelled [14C] LY3437943 in Healthy Male Participants"
+  },
+  {
+   "nct": "NCT06039826",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 46,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of LY3437943 in Postmenopausal Female Participants Who Are Overweight or Obese"
+  },
+  {
+   "nct": "NCT06982846",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 80,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study to Investigate the Response of Participants With Type 2 Diabetes Mellitus on Once-Weekly Retatrutide to Hypoglycemia"
+  },
+  {
+   "nct": "NCT06662383",
+   "acronym": "TRIUMPH-5",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 800,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) Compared to Tirzepatide (LY3298176) in Adults Who Have Obesity"
+  },
+  {
+   "nct": "NCT06003465",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 57,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Research Study Looking at Similarity Between LY3437943 Versions for Different Injection Devices"
+  },
+  {
+   "nct": "NCT04823208",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 64,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of LY3437943 in Japanese Participants With Type 2 Diabetes Mellitus (T2DM)"
+  },
+  {
+   "nct": "NCT06383390",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 10000,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "The Effect of Retatrutide Once Weekly on Cardiovascular Outcomes and Kidney Outcomes in Adults Living With Obesity (TRIUMPH-Outcomes)"
+  },
+  {
+   "nct": "NCT06313528",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 85,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study to Measure Calorie Consumption and Usage in Participants With Obesity Using LY3437943"
+  },
+  {
+   "nct": "NCT06354660",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 537,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "Effect of Retatrutide Compared With Placebo in Adult Participants With Type 2 Diabetes and Inadequate Glycemic Control With Diet and Exercise Alone (TRANSCEND-T2D-1)"
+  },
+  {
+   "nct": "NCT06982859",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 95,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study to Evaluate the Effect of Retatrutide on Insulin Secretion and Insulin Sensitivity in Adult Participants With Type 2 Diabetes Mellitus"
+  },
+  {
+   "nct": "NCT06859268",
+   "acronym": "TRIUMPH-6",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 643,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": true,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of Retatrutide (LY3437943) in the Maintenance of Weight Reduction in Individuals With Obesity"
+  },
+  {
+   "nct": "NCT05445232",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 32,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Drug-Drug Interaction (DDI) Study of LY3437943 in Obese Participants"
+  },
+  {
+   "nct": "NCT04143802",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 72,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of LY3437943 in Participants With Type 2 Diabetes Mellitus (T2DM)"
+  },
+  {
+   "nct": "NCT05611957",
+   "acronym": "",
+   "sponsor": "Eli Lilly and Company",
+   "type": "INTERVENTIONAL",
+   "status": "COMPLETED",
+   "enrollment": 29,
+   "has_results": false,
+   "excludes_recent_weight_loss_drugs": false,
+   "inclusion_requires_glp1_use": false,
+   "title": "A Study of LY3437943 in Healthy Participants and Participants With Impaired Renal Function"
+  }
+ ],
+ "retatrutide_interventional": 33,
+ "retatrutide_excluding_recent_weight_loss_drugs": [
+  "NCT03841630",
+  "NCT04881760",
+  "NCT05882045",
+  "NCT05929066",
+  "NCT05929079",
+  "NCT05931367",
+  "NCT06260722",
+  "NCT06297603",
+  "NCT06354660",
+  "NCT06662383",
+  "NCT06859268",
+  "NCT06982859",
+  "NCT07035093",
+  "NCT07232719",
+  "NCT07357415",
+  "NCT07467447"
+ ],
+ "retatrutide_phase3_triumph": {
+  "NCT05929066": "TRIUMPH-1",
+  "NCT05929079": "TRIUMPH-2",
+  "NCT05882045": "TRIUMPH-3",
+  "NCT05931367": "TRIUMPH-4",
+  "NCT06662383": "TRIUMPH-5",
+  "NCT06859268": "TRIUMPH-6",
+  "NCT07035093": "TRIUMPH-7",
+  "NCT07232719": "TRIUMPH-8",
+  "NCT07357415": "TRIUMPH-9"
+ },
+ "retatrutide_trials_enrolling_current_glp1_users": [],
+ "retatrutide_energy_study": {
+  "nct": "NCT06313528",
+  "n": 85,
+  "phase": "PHASE1",
+  "primary_completion": "2025-08-26",
+  "has_results": false,
+  "primary_outcome": "Change from Baseline in Total Calorie Intake at Lunch and Dinner (Combined)"
+ },
+ "triumph5_primary_completion": "2026-11",
+ "x_counts": {
+  "plateau_x_glp1_en_utc_2026_10_14_to_19": [
+   4,
+   8,
+   14,
+   9,
+   3,
+   8
+  ],
+  "plateau_x_glp1_en_2026_10_20_to_1801utc": 7,
+  "total": 53,
+  "query": "(plateau OR plateaued OR plateauing OR stall OR stalled OR stalling) (ozempic OR wegovy OR zepbound OR mounjaro OR semaglutide OR tirzepatide OR retatrutide OR reta OR GLP-1 OR glp1) lang:en -is:retweet",
+  "medscape_link_posts_oct19_20": 0
+ },
+ "pubmed": {
+  "retatrutide_switch_query": "\"retatrutide\"[Title/Abstract] AND (\"switch*\"[Title/Abstract] OR \"transition*\"[Title/Abstract] OR \"previously treated\"[Title/Abstract] OR \"plateau*\"[Title/Abstract] OR \"prior GLP-1\"[Title/Abstract])",
+  "count": 3,
+  "all_reviews": true,
+  "checked": "2026-10-20 ~2:15 PM ET"
+ }
+}

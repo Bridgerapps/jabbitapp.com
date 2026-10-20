@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 530" width="720" height="530" role="img" aria-labelledby="t2 d2">
+<title id="t2">The plateau question is mostly unanswered on ClinicalTrials.gov</title>
+<desc id="d2">22 ClinicalTrials.gov studies of what to do when a GLP-1 drug stops working or you want to keep the weight off, by purpose, with vs without posted results: switch to a newer drug 8 (1 with results, in type 2 diabetes); switch or step down to hold weight 6 (0); add something for a poor response 2 (0); after quitting the drug 2 (0); go above the usual top dose 4 (2, both semaglutide 7.2 mg). Seven of the 22 were first posted since September 1, 2026. Of 33 retatrutide intervention studies, none is built for people coming off semaglutide or tirzepatide and 16 exclude recent weight-loss drugs.</desc>
+<rect width="720" height="530" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="start">22 “what next” studies, 3 with results</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">ClinicalTrials.gov studies for people already on (or just off) a GLP-1 drug, or above the usual top dose</text>
+<rect x="24" y="80" width="14" height="14" rx="3" fill="#0f766e"/>
+<text x="44" y="92" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Results posted</text>
+<rect x="174" y="80" width="14" height="14" rx="3" fill="#94a3b8"/>
+<text x="194" y="92" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">No results yet</text>
+<text x="24" y="136" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="start">Switch to a newer drug</text>
+<rect x="294" y="120" width="34" height="24" rx="4" fill="#0f766e"/>
+<rect x="334" y="120" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="374" y="120" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="414" y="120" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="454" y="120" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="494" y="120" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="534" y="120" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="574" y="120" width="34" height="24" rx="4" fill="#94a3b8"/>
+<text x="620" y="137" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">1 of 8</text>
+<text x="24" y="182" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="start">Switch or step down to hold weight</text>
+<rect x="294" y="166" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="334" y="166" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="374" y="166" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="414" y="166" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="454" y="166" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="494" y="166" width="34" height="24" rx="4" fill="#94a3b8"/>
+<text x="540" y="183" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">0 of 6</text>
+<text x="24" y="228" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="start">Add something for a poor response</text>
+<rect x="294" y="212" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="334" y="212" width="34" height="24" rx="4" fill="#94a3b8"/>
+<text x="380" y="229" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">0 of 2</text>
+<text x="24" y="274" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="start">After quitting the drug</text>
+<rect x="294" y="258" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="334" y="258" width="34" height="24" rx="4" fill="#94a3b8"/>
+<text x="380" y="275" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">0 of 2</text>
+<text x="24" y="320" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#0f172a" text-anchor="start">Go above the usual top dose</text>
+<rect x="294" y="304" width="34" height="24" rx="4" fill="#0f766e"/>
+<rect x="334" y="304" width="34" height="24" rx="4" fill="#0f766e"/>
+<rect x="374" y="304" width="34" height="24" rx="4" fill="#94a3b8"/>
+<rect x="414" y="304" width="34" height="24" rx="4" fill="#94a3b8"/>
+<text x="460" y="321" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">2 of 4</text>
+<text x="24" y="352" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">The 3 with results: semaglutide 7.2 mg (two STEP UP trials) and dulaglutide-to-tirzepatide in type 2 diabetes.</text>
+<text x="24" y="372" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">None enrolls people for a plateau and then tests a switch for more weight loss with results posted.</text>
+<text x="24" y="392" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">7 of the 22 were first posted since Sept 1, 2026, from Boehringer, Novo Nordisk, Pfizer and others.</text>
+<text x="24" y="426" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#7c3aed" text-anchor="start">Retatrutide: 33 intervention studies; none is built for people coming off semaglutide or tirzepatide,</text>
+<text x="24" y="446" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#7c3aed" text-anchor="start">and 16 (including all nine TRIUMPH phase 3 trials) exclude recent weight-loss drugs.</text>
+<text x="24" y="492" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Source: ClinicalTrials.gov API v2, pulled Oct 20, 2026; hand-reviewed list in this page’s sources file. One published study</text>
+<text x="24" y="510" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">(ATTAIN-MAINTAIN, Nat Med 2026) has a journal paper but no registry results. Chart by Jabbit.</text>
+</svg>
