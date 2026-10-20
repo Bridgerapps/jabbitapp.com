@@ -1,0 +1,1164 @@
+{
+ "page": "https://jabbitapp.com/research/food-noise-coming-back-ozempic-wegovy-zepbound-retatrutide.html",
+ "generated": "2026-10-20",
+ "method": "ClinicalTrials.gov API v2 query.term searches for \"food noise\" and \"Food Noise Questionnaire\" (27 unique studies), hand-categorized; registry results of NCT05548647 (STABLE Wt Loss); text scan of 9 current DailyMed GLP-1 labels; PubMed \"food noise\"[tiab] search.",
+ "ctgov_pulled": "2026-10-20T05:58-04:00",
+ "ctgov_query_counts": {
+  "\"food noise\"": 27,
+  "\"Food Noise Questionnaire\"": 20,
+  "\"food chatter\"": 0,
+  "\"food preoccupation\" AND (semaglutide OR tirzepatide OR retatrutide OR liraglutide OR GLP-1)": 3
+ },
+ "studies_total": 27,
+ "by_category": {
+  "new obesity drug trial (industry, randomized vs placebo)": 8,
+  "people taking approved GLP-1 drugs (observational, add-on or stop/restart)": 13,
+  "questionnaire or data-method development": 3,
+  "other, no GLP-1 drug": 3
+ },
+ "results_posted": [
+  "NCT06315907"
+ ],
+ "first_posted_earliest": "2024-03-18",
+ "first_posted_in_2026": 17,
+ "lilly_or_novo_randomized_trials_with_food_noise_outcome": [],
+ "studies": [
+  {
+   "nct": "NCT07284875",
+   "category": "new obesity drug trial (industry, randomized vs placebo)",
+   "title": "Efficacy and Safety of Ribupatide in Participants Living With Obesity or Overweight With Weight-Related Comorbidities Who Do Not Have Diabetes",
+   "sponsor": "Kailera",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 2530,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "first_posted": "2025-12-16",
+   "start": "2025-12-18",
+   "primary_completion": "2028-02",
+   "results_posted": false,
+   "drug": "ribupatide (Kailera)",
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Change From Baseline in Food Noise Questionnaire (FNQ) Score",
+     "time_frame": "Baseline, Week 76"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07284901",
+   "category": "new obesity drug trial (industry, randomized vs placebo)",
+   "title": "Efficacy and Safety of Ribupatide Administered Once Weekly in Participants Living With Obesity or Overweight and Diabetes",
+   "sponsor": "Kailera",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 1270,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "first_posted": "2025-12-16",
+   "start": "2026-01-12",
+   "primary_completion": "2028-03-27",
+   "results_posted": false,
+   "drug": "ribupatide (Kailera)",
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Change From Baseline in Food Noise Questionnaire (FNQ) Score",
+     "time_frame": "Baseline, Week 76"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07284979",
+   "category": "new obesity drug trial (industry, randomized vs placebo)",
+   "title": "Efficacy and Safety of Ribupatide Administered Once Weekly Compared With Semaglutide and Placebo in Participants Living With Obesity Who Do Not Have Diabetes",
+   "sponsor": "Kailera",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 1270,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "first_posted": "2025-12-16",
+   "start": "2025-12-30",
+   "primary_completion": "2028-03",
+   "results_posted": false,
+   "drug": "ribupatide vs semaglutide (Kailera)",
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Change From Baseline in Food Noise Questionnaire (FNQ) Score",
+     "time_frame": "Baseline, Week 76"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07311850",
+   "category": "new obesity drug trial (industry, randomized vs placebo)",
+   "title": "Efficacy and Safety of MET097 Once-Weekly in People With Overweight or Obesity",
+   "sponsor": "Pfizer",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 3578,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "first_posted": "2025-12-31",
+   "start": "2025-12-19",
+   "primary_completion": "2027-09-21",
+   "results_posted": false,
+   "drug": "MET097 (Pfizer)",
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Change from baseline in Food Noise Questionnaire (FNQ)",
+     "time_frame": "Baseline (Day 0) to Week 64 and Week 84"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07400653",
+   "category": "new obesity drug trial (industry, randomized vs placebo)",
+   "title": "A Study to Learn About the Study Medicine (PF-08653944) in People With Obesity or Overweight and Type 2 Diabetes (T2D)",
+   "sponsor": "Pfizer",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 1078,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "first_posted": "2026-02-10",
+   "start": "2026-02-24",
+   "primary_completion": "2027-10-12",
+   "results_posted": false,
+   "drug": "PF-08653944 (Pfizer)",
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Change from Baseline in Food Noise Questionnaire (FNQ)",
+     "time_frame": "Baseline, Week 64 and 84"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07595549",
+   "category": "new obesity drug trial (industry, randomized vs placebo)",
+   "title": "A Study to Learn About the Study Medicine Called Berobenatide (PF-08653944) in People With Overweight or Obesity",
+   "sponsor": "Pfizer",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 954,
+   "status": "RECRUITING",
+   "first_posted": "2026-05-19",
+   "start": "2026-06-10",
+   "primary_completion": "2028-05-04",
+   "results_posted": false,
+   "drug": "berobenatide, PF-08653944 (Pfizer)",
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Change from Baseline in Food Noise Questionnaire (FNQ) total score",
+     "time_frame": "Baseline, Week 72"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07310901",
+   "category": "new obesity drug trial (industry, randomized vs placebo)",
+   "title": "A 2-part, Phase 1b Clinical Study Designed to Evaluate the Safety, PK, and Efficacy of CRB-913 in Participants With Obesity",
+   "sponsor": "Corbus Pharmaceuticals Inc.",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE1"
+   ],
+   "enrollment": 254,
+   "status": "COMPLETED",
+   "first_posted": "2025-12-30",
+   "start": "2025-12-04",
+   "primary_completion": "2026-08-03",
+   "results_posted": false,
+   "drug": "CRB-913 (Corbus)",
+   "food_noise_outcomes": [
+    {
+     "type": "other",
+     "measure": "Part 2: To evaluate changes in food noise",
+     "time_frame": "Day 1 to 28 days post final dose"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07837973",
+   "category": "new obesity drug trial (industry, randomized vs placebo)",
+   "title": "Study to Assess the Effect and Safety of ALV-100 on Maintenance of Weight Loss",
+   "sponsor": "Alveus Therapeutics, Inc.",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 220,
+   "status": "RECRUITING",
+   "first_posted": "2026-09-24",
+   "start": "2026-08-10",
+   "primary_completion": "2027-08-24",
+   "results_posted": false,
+   "drug": "ALV-100 (Alveus)",
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Effect of ALV-100 vs. placebo on food noise as assessed by the Food Noise Questionnaire (FNQ)",
+     "time_frame": "24-36 weeks"
+    }
+   ]
+  },
+  {
+   "nct": "NCT06843512",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Identifying Changes in Food Behaviors Associated With Beginning GLP-1 Medication",
+   "sponsor": "Penn State University",
+   "sponsor_class": "OTHER",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 25,
+   "status": "RECRUITING",
+   "first_posted": "2025-02-25",
+   "start": "2025-07-15",
+   "primary_completion": "2026-12",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Change in Baseline Weight Watchers Food Noise Score at 3 Months",
+     "time_frame": "Baseline and 3 months"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07027995",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Food and Fitness With Medicine (FFWM)",
+   "sponsor": "Ohio State University",
+   "sponsor_class": "OTHER",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 200,
+   "status": "RECRUITING",
+   "first_posted": "2025-06-19",
+   "start": "2026-01-14",
+   "primary_completion": "2028-11",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Food Noise",
+     "time_frame": "0, 12, 24 and weeks"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07387796",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Clinical and Neurobehavioral Changes With Weight Loss Drug Discontinuation and Reinitiation",
+   "sponsor": "The University of Texas at Dallas",
+   "sponsor_class": "OTHER",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 40,
+   "status": "RECRUITING",
+   "first_posted": "2026-02-04",
+   "start": "2026-10",
+   "primary_completion": "2028-02",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Change From Baseline in Intrusive Food-Related Thoughts.",
+     "time_frame": "Baseline (on tirzepatide), 3-4 weeks of discontinuation, and 6-8 weeks of re-initiation"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07404150",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Lifestyle Program Focused on Nourishment, Well-Being, and Health Behaviors in Women With Obesity",
+   "sponsor": "Heather Conradson",
+   "sponsor_class": "OTHER",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 60,
+   "status": "ENROLLING_BY_INVITATION",
+   "first_posted": "2026-02-11",
+   "start": "2026-01-12",
+   "primary_completion": "2027-06-15",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "primary",
+     "measure": "Percent weight change and internalized weight bias (WBIS)",
+     "time_frame": "18 months"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07480109",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Increased Dietary Protein Intake During GLP-1 Medication Use (in Middle-aged Women With Overweight/Obesity)",
+   "sponsor": "University of Texas at Austin",
+   "sponsor_class": "OTHER",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 75,
+   "status": "RECRUITING",
+   "first_posted": "2026-03-18",
+   "start": "2026-06-01",
+   "primary_completion": "2027-06-01",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Food Noise",
+     "time_frame": "Baseline, 2 week, 4 week, 6 week, 8 week, 10 week, 12 weeks"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07505134",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Exploring the Influence of Glucagon-like Peptide -1 (GLP-1) Medications on Food Cravings, Food Selection, and Food Intake Following Exposure to Food Advertisements",
+   "sponsor": "Penn State University",
+   "sponsor_class": "OTHER",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 50,
+   "status": "NOT_YET_RECRUITING",
+   "first_posted": "2026-04-01",
+   "start": "2026-09",
+   "primary_completion": "2026-12",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Changes in food noise since being on medication questionnaire",
+     "time_frame": "Baseline"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07588984",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "GLP-1 Medication & Behavioral Health Programs on Weight & Metabolic Outcomes: FLOURISH and THRIVE Prospective Cohort Study",
+   "sponsor": "Noom Inc.",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 2310,
+   "status": "NOT_YET_RECRUITING",
+   "first_posted": "2026-05-15",
+   "start": "2026-04-30",
+   "primary_completion": "2029-05",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "other",
+     "measure": "Change in food noise",
+     "time_frame": "Baseline, months 4, 8, 12 (and 18, 24 for GLP-1 arms)"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07611201",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "The Effects of GLP-1 Receptor Agonists on Chemosensory Function and Ingestive Behavior",
+   "sponsor": "Purdue University",
+   "sponsor_class": "OTHER",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 90,
+   "status": "COMPLETED",
+   "first_posted": "2026-05-28",
+   "start": "2025-02-20",
+   "primary_completion": "2026-05-04",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Questionnaire-Based Measures of Food Cravings, Food Cue Responsivity, Food Noise, and Eating Behavior",
+     "time_frame": "During study participation, up to 2 weeks"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07636395",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Eating Behaviour Before, During, and After Obesity Medication",
+   "sponsor": "University College Dublin",
+   "sponsor_class": "OTHER",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 30,
+   "status": "RECRUITING",
+   "first_posted": "2026-06-09",
+   "start": "2026-05-25",
+   "primary_completion": "2026-08-25",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": []
+  },
+  {
+   "nct": "NCT07701460",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Assessing Follow up Trajectories in Eating, Routines, and Weight After GLP-1",
+   "sponsor": "Tufts University",
+   "sponsor_class": "OTHER",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 200,
+   "status": "NOT_YET_RECRUITING",
+   "first_posted": "2026-07-14",
+   "start": "2026-10-15",
+   "primary_completion": "2028-01-31",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "other",
+     "measure": "Food Noise",
+     "time_frame": "12-months"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07743567",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Gestational Response, Outcomes, and Weight After GLP-1 Use",
+   "sponsor": "University of Kansas Medical Center",
+   "sponsor_class": "OTHER",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 400,
+   "status": "RECRUITING",
+   "first_posted": "2026-08-04",
+   "start": "2026-04-13",
+   "primary_completion": "2028-04",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": []
+  },
+  {
+   "nct": "NCT07829016",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "GLP-1 Impacts on Weight Management",
+   "sponsor": "University of California, San Francisco",
+   "sponsor_class": "OTHER",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 100,
+   "status": "NOT_YET_RECRUITING",
+   "first_posted": "2026-09-18",
+   "start": "2026-10-20",
+   "primary_completion": "2029-09-01",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Change in Food Noise",
+     "time_frame": "Baseline to 4 and 6 months"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07850765",
+   "category": "people taking approved GLP-1 drugs (observational, add-on or stop/restart)",
+   "title": "Real-World Patient and Physician Experience With Semaglutide Across Six Emerging Markets",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 1260,
+   "status": "COMPLETED",
+   "first_posted": "2026-09-30",
+   "start": "2026-08-28",
+   "primary_completion": "2026-08-31",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "primary",
+     "measure": "Change in Food Noise Questionnaire (FNQ) score",
+     "time_frame": "At data capture (Day 1)"
+    }
+   ]
+  },
+  {
+   "nct": "NCT06315907",
+   "category": "questionnaire or data-method development",
+   "title": "Development and Validation of a Brief Food Noise Questionnaire",
+   "sponsor": "Pennington Biomedical Research Center",
+   "sponsor_class": "OTHER",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 400,
+   "status": "COMPLETED",
+   "first_posted": "2024-03-18",
+   "start": "2024-04-25",
+   "primary_completion": "2024-05-10",
+   "results_posted": true,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "primary",
+     "measure": "Scores on the Food Noise Questionnaire",
+     "time_frame": "The Food Noise Questionnaire (FNQ) was completed once as part of a larger online survey. The entire online survey was completed in approximately 30 to 45 minutes, and the FNQ items were completed in approximately 5 to 10 minutes."
+    }
+   ]
+  },
+  {
+   "nct": "NCT07762430",
+   "category": "questionnaire or data-method development",
+   "title": "Food Noise Survey Development and Validation in Hindi and English-Speaking Adults",
+   "sponsor": "Diabetes Foundation, India",
+   "sponsor_class": "OTHER",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 300,
+   "status": "NOT_YET_RECRUITING",
+   "first_posted": "2026-08-13",
+   "start": "2026-09-01",
+   "primary_completion": "2027-09-30",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "primary",
+     "measure": "Ro Allison Indiana Dhurandhar Food Noise Inventory (RAID-FN)",
+     "time_frame": "1 Year"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07759544",
+   "category": "questionnaire or data-method development",
+   "title": "I-OPERA: A European Study Testing a New Way to Do Health Research.",
+   "sponsor": "IQVIA RDS Spain, SL",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 105,
+   "status": "NOT_YET_RECRUITING",
+   "first_posted": "2026-08-12",
+   "start": "2026-11",
+   "primary_completion": "2027-02",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "primary",
+     "measure": "This study will collect a focused set of self-reported descriptive and participant-reported measures relevant to the real-world experience of adults with obesity.",
+     "time_frame": "Retrospective clinical data covering up to approximately five years prior to enrolment."
+    }
+   ]
+  },
+  {
+   "nct": "NCT07018830",
+   "category": "other, no GLP-1 drug",
+   "title": "Multicomponent Program for Addressing Cognition in Rural Communities",
+   "sponsor": "Pennington Biomedical Research Center",
+   "sponsor_class": "OTHER",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 11,
+   "status": "COMPLETED",
+   "first_posted": "2025-06-13",
+   "start": "2025-04-22",
+   "primary_completion": "2025-06-22",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "The Food Noise Questionnaire",
+     "time_frame": "3 months"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07245914",
+   "category": "other, no GLP-1 drug",
+   "title": "A Consumer Health Study Evaluating the Impact of Pivit on Weight Loss and Appetite in Overweight Individuals",
+   "sponsor": "Olfactive Biosolutions, Inc.",
+   "sponsor_class": "INDUSTRY",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phases": null,
+   "enrollment": 125,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "first_posted": "2025-11-24",
+   "start": "2025-07-30",
+   "primary_completion": "2026-01-26",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "secondary",
+     "measure": "Gastrointestinal Symptoms",
+     "time_frame": "12 weeks; 3 months"
+    }
+   ]
+  },
+  {
+   "nct": "NCT07862153",
+   "category": "other, no GLP-1 drug",
+   "title": "Digital Acceptance & Commitment Therapy for Weight Self-stigma",
+   "sponsor": "Utah State University",
+   "sponsor_class": "OTHER",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 100,
+   "status": "NOT_YET_RECRUITING",
+   "first_posted": "2026-10-07",
+   "start": "2026-10-05",
+   "primary_completion": "2027-12-01",
+   "results_posted": false,
+   "drug": null,
+   "food_noise_outcomes": [
+    {
+     "type": "other",
+     "measure": "Food Noise Questionnaire",
+     "time_frame": "Baseline, 2-week, and 4-week follow up"
+    }
+   ]
+  }
+ ],
+ "stable_nct05548647": {
+  "started": {
+   "FG000": 48,
+   "FG001": 72,
+   "FG002": 0,
+   "FG003": 0
+  },
+  "completed_week60": {
+   "FG000": 26,
+   "FG001": 61,
+   "FG002": 0,
+   "FG003": 0
+  },
+  "outcomes": {
+   "lunch_kcal": {
+    "title": "Study 1 Ad Libitum Energy Intake (kcal) During a Buffet Lunch Meal (4 Hrs After Standardized Breakfast)",
+    "unit": "kcal",
+    "values": {
+     "Week 20": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": -75.1,
+      "Behavioral Treatment + Medication (Weeks 0-60": -367.0
+     },
+     "Week 40": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": -76.8,
+      "Behavioral Treatment + Medication (Weeks 0-60": -317.0
+     },
+     "Week 60": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": 69.6,
+      "Behavioral Treatment + Medication (Weeks 0-60": -200.0
+     }
+    },
+    "analyses": [
+     {
+      "p": "<0.0001",
+      "diff": 291.9,
+      "ci": [
+       164.0,
+       419.8
+      ]
+     },
+     {
+      "p": "0.0078",
+      "diff": 240.2,
+      "ci": [
+       65.2,
+       415.3
+      ]
+     },
+     {
+      "p": "0.0019",
+      "diff": 269.5,
+      "ci": [
+       102.8,
+       436.1
+      ]
+     }
+    ]
+   },
+   "fasting_appetite": {
+    "title": "Study 1 Laboratory-based Appetite Measured as a Composite of Visual Analogue Scale Ratings (Hunger, Fullness, Satiety, Prospective Consumption) When Fasting",
+    "unit": "mm",
+    "values": {
+     "Week 20": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": 3.8,
+      "Behavioral Treatment + Medication (Weeks 0-60": 16.0
+     },
+     "Week 40": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": -0.5,
+      "Behavioral Treatment + Medication (Weeks 0-60": 6.9
+     },
+     "Week 60": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": 1.4,
+      "Behavioral Treatment + Medication (Weeks 0-60": 2.3
+     }
+    },
+    "analyses": [
+     {
+      "p": "0.0004",
+      "diff": -12.1,
+      "ci": [
+       -18.6,
+       -5.6
+      ]
+     },
+     {
+      "p": "0.0784",
+      "diff": -7.4,
+      "ci": [
+       -15.6,
+       0.9
+      ]
+     },
+     {
+      "p": null,
+      "diff": -1.0,
+      "ci": [
+       -8.9,
+       7.0
+      ]
+     }
+    ]
+   },
+   "hunger_pastweek": {
+    "title": "Study 1 Past-week Hunger as Measured Using the Control of Eating Questionnaire (COEQ)",
+    "unit": "mm",
+    "values": {
+     "Week 20": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": -14.4,
+      "Behavioral Treatment + Medication (Weeks 0-60": -31.9
+     },
+     "Week 40": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": -14.6,
+      "Behavioral Treatment + Medication (Weeks 0-60": -25.4
+     },
+     "Week 60": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": -10.6,
+      "Behavioral Treatment + Medication (Weeks 0-60": -17.4
+     }
+    },
+    "analyses": [
+     {
+      "p": "0.0004",
+      "diff": 17.5,
+      "ci": [
+       7.9,
+       27.1
+      ]
+     },
+     {
+      "p": "0.061",
+      "diff": 10.8,
+      "ci": [
+       -0.5,
+       22.2
+      ]
+     },
+     {
+      "p": null,
+      "diff": 6.8,
+      "ci": [
+       -3.5,
+       17.2
+      ]
+     }
+    ]
+   },
+   "preoccupation_pastweek": {
+    "title": "Study 1 Past-week Food Preoccupation as Measured Using the Control of Eating Questionnaire (COEQ)",
+    "unit": "mm",
+    "values": {
+     "Week 20": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": -14.7,
+      "Behavioral Treatment + Medication (Weeks 0-60": -29.6
+     },
+     "Week 40": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": -17.0,
+      "Behavioral Treatment + Medication (Weeks 0-60": -24.9
+     },
+     "Week 60": {
+      "Behavioral Treatment + Placebo (Weeks 0-60)": -13.1,
+      "Behavioral Treatment + Medication (Weeks 0-60": -22.4
+     }
+    },
+    "analyses": [
+     {
+      "p": "0.0014",
+      "diff": 14.9,
+      "ci": [
+       6.0,
+       23.9
+      ]
+     },
+     {
+      "p": "0.111",
+      "diff": 7.9,
+      "ci": [
+       -1.8,
+       17.6
+      ]
+     },
+     {
+      "p": null,
+      "diff": 9.3,
+      "ci": [
+       0.9,
+       17.8
+      ]
+     }
+    ]
+   },
+   "s2_lunch": {
+    "title": "Study 2 Ad Libitum Energy Intake (kcal) During a Buffet Lunch Meal (4 Hrs After Standardized Breakfast)",
+    "unit": "kcal",
+    "values": {
+     "endpoint": {
+      "Continuous Placebo (Weeks 60-72)": 1073.0,
+      "Medication (Semaglutide) Switched to Placebo ": 951.8,
+      "Continued Medication (Semaglutide) (Weeks 60-": 657.7
+     }
+    },
+    "analyses": [
+     {
+      "p": "0.1513",
+      "diff": 121.2,
+      "ci": [
+       -46.0,
+       288.4
+      ]
+     }
+    ]
+   },
+   "s2_hunger": {
+    "title": "Study 2 Past-week Hunger as Measured Using the Control of Eating Questionnaire (COEQ)",
+    "unit": "mm",
+    "values": {
+     "endpoint": {
+      "Continuous Placebo (Weeks 60-72)": 48.5,
+      "Medication (Semaglutide) Switched to Placebo ": 63.6,
+      "Continued Medication (Semaglutide) (Weeks 60-": 38.5
+     }
+    },
+    "analyses": [
+     {
+      "p": "0.0196",
+      "diff": -15.1,
+      "ci": [
+       -27.6,
+       -2.5
+      ]
+     }
+    ]
+   },
+   "s2_preoccupation": {
+    "title": "Study 2 Past-week Food Preoccupation as Measured Using the Control of Eating Questionnaire (COEQ)",
+    "unit": "mm",
+    "values": {
+     "endpoint": {
+      "Continuous Placebo (Weeks 60-72)": 42.7,
+      "Medication (Semaglutide) Switched to Placebo ": 62.9,
+      "Continued Medication (Semaglutide) (Weeks 60-": 26.4
+     }
+    },
+    "analyses": [
+     {
+      "p": "0.0017",
+      "diff": -20.3,
+      "ci": [
+       -32.6,
+       -8.0
+      ]
+     }
+    ]
+   },
+   "s2_weight": {
+    "title": "Study 2 Body Weight (kg)",
+    "unit": "kg",
+    "values": {
+     "endpoint": {
+      "Continuous Placebo (Weeks 60-72)": 98.3,
+      "Medication (Semaglutide) Switched to Placebo ": 88.9,
+      "Continued Medication (Semaglutide) (Weeks 60-": 85.3
+     }
+    },
+    "analyses": [
+     {
+      "p": "<0.001",
+      "diff": 9.4,
+      "ci": [
+       4.5,
+       14.3
+      ]
+     }
+    ]
+   }
+  },
+  "note": "Mean differences are semaglutide minus placebo (registry sign conventions vary by measure); missing data imputed jump-to-reference; p-values not reported at week 60 under the hierarchical testing in the registry record."
+ },
+ "labels": {
+  "foundayo": {
+   "version": "10",
+   "effective": "20260729",
+   "gastric_emptying_fades": [
+    "The delay is largest after the first dose and diminishes over time.",
+    "The effect diminished after repeated dosing of FOUNDAYO 17.",
+    "The gastric emptying delay effect of orforglipron on acetaminophen C max was largest after the first dose of FOUNDAYO 0."
+   ],
+   "backup_contraception_after_each_escalation": [
+    "1 ) Females of Reproductive Potential: Advise females using oral contraceptives to switch to a non-oral contraceptive method or add a barrier method of contraception for 30 days after initiation and for 30 days after each dose escalation.",
+    "Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method or add a barrier method of contraception for 30 days after initiation with FOUNDAYO and for 30 days after each dose escalation [see Drug Interactions ( 7.",
+    "Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method or add a barrier method of contraception for 30 days after initiation with FOUNDAYO and for 30 days after each dose escalation.",
+    "Because delayed gastric emptying may affect the absorption of oral medications, advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method, or add a barrier method of contraception for 30 days after initiation with FOUNDAYO and for 30 days after each dose escalation [see Drug Interactions ( 7."
+   ],
+   "appetite_statement": [
+    "This effect is likely mediated by decreased appetite."
+   ],
+   "mentions_food_noise": false,
+   "mentions_craving": false
+  },
+  "mounjaro": {
+   "version": "40",
+   "effective": "20260827",
+   "gastric_emptying_fades": [
+    "The delay is largest after the first dose and this effect diminishes over time.",
+    "The impact of tirzepatide on gastric emptying was greatest after a single dose of 5 mg and diminished after subsequent doses.",
+    "This delay is largest after the first dose and diminishes over time."
+   ],
+   "backup_contraception_after_each_escalation": [
+    "1 ) Females of Reproductive Potential: Advise females using oral contraceptives to switch to a non-oral contraceptive method or add a barrier method of contraception for 4 weeks after initiation and for 4 weeks after each dose escalation.",
+    "Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method or add a barrier method of contraception for 4 weeks after initiation and for 4 weeks after each dose escalation with MOUNJARO [see Drug Interactions ( 7.",
+    "Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method or add a barrier method of contraception for 4 weeks after initiation and for 4 weeks after each dose escalation with MOUNJARO."
+   ],
+   "appetite_statement": [],
+   "mentions_food_noise": false,
+   "mentions_craving": false
+  },
+  "ozempic": {
+   "version": "20",
+   "effective": "20260601",
+   "gastric_emptying_fades": [],
+   "backup_contraception_after_each_escalation": [],
+   "appetite_statement": [],
+   "mentions_food_noise": false,
+   "mentions_craving": false
+  },
+  "rybelsus": {
+   "version": "14",
+   "effective": "20260130",
+   "gastric_emptying_fades": [],
+   "backup_contraception_after_each_escalation": [],
+   "appetite_statement": [],
+   "mentions_food_noise": false,
+   "mentions_craving": false
+  },
+  "saxenda": {
+   "version": "22",
+   "effective": "20260225",
+   "gastric_emptying_fades": [],
+   "backup_contraception_after_each_escalation": [],
+   "appetite_statement": [
+    "2 Pharmacodynamics Liraglutide lowers body weight through decreased calorie intake."
+   ],
+   "mentions_food_noise": false,
+   "mentions_craving": false
+  },
+  "trulicity": {
+   "version": "62",
+   "effective": "20260616",
+   "gastric_emptying_fades": [
+    "The delay is largest after the first dose and diminishes with subsequent doses."
+   ],
+   "backup_contraception_after_each_escalation": [],
+   "appetite_statement": [],
+   "mentions_food_noise": false,
+   "mentions_craving": false
+  },
+  "victoza": {
+   "version": "31",
+   "effective": "20251014",
+   "gastric_emptying_fades": [],
+   "backup_contraception_after_each_escalation": [],
+   "appetite_statement": [],
+   "mentions_food_noise": false,
+   "mentions_craving": false
+  },
+  "wegovy": {
+   "version": "19",
+   "effective": "20260618",
+   "gastric_emptying_fades": [],
+   "backup_contraception_after_each_escalation": [],
+   "appetite_statement": [
+    "The effects are likely mediated by affecting appetite."
+   ],
+   "mentions_food_noise": false,
+   "mentions_craving": false
+  },
+  "zepbound": {
+   "version": "40",
+   "effective": "20260828",
+   "gastric_emptying_fades": [
+    "The delay is largest after the first dose and this effect diminishes over time.",
+    "The impact of tirzepatide on gastric emptying was greatest after a single dose of 5 mg and diminished after subsequent doses.",
+    "This delay is largest after the first dose and diminishes over time."
+   ],
+   "backup_contraception_after_each_escalation": [
+    "1 ) Females of Reproductive Potential: Advise females using oral contraceptives to switch to a non-oral contraceptive method, or add a barrier method of contraception for 4 weeks after initiation and for 4 weeks after each dose escalation.",
+    "Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method, or add a barrier method of contraception for 4 weeks after initiation with ZEPBOUND and for 4 weeks after each dose escalation [see Drug Interactions ( 7.",
+    "Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method, or add a barrier method of contraception for 4 weeks after initiation with ZEPBOUND and for 4 weeks after each dose escalation."
+   ],
+   "appetite_statement": [
+    "The effects are likely mediated by affecting appetite."
+   ],
+   "mentions_food_noise": false,
+   "mentions_craving": false
+  }
+ },
+ "labels_gastric_emptying_fades": [
+  "foundayo",
+  "mounjaro",
+  "trulicity",
+  "zepbound"
+ ],
+ "pubmed_food_noise_tiab": {
+  "count": 40,
+  "pmids": [
+   "42897102",
+   "42801078",
+   "42782188",
+   "42772688",
+   "42738994",
+   "42678482",
+   "42641845",
+   "42587021",
+   "42575863",
+   "42392316",
+   "42320798",
+   "42306816",
+   "42247231",
+   "42233931",
+   "42223191",
+   "42217114",
+   "42125907",
+   "42083883",
+   "42073972",
+   "42049707",
+   "41997909",
+   "41926561",
+   "41676959",
+   "41667418",
+   "41502834",
+   "41470865",
+   "41420306",
+   "41249456",
+   "41237290",
+   "41101555",
+   "40685549",
+   "40628707",
+   "40259493",
+   "39828656",
+   "39819745",
+   "39762910",
+   "39017507",
+   "38928616",
+   "38004203",
+   "3417934"
+  ],
+  "searched": "2026-10-20"
+ },
+ "x_counts": {
+  "query_1": "\"food noise\" lang:en -is:retweet",
+  "utc_days_2026_10_13_to_19": [
+   117,
+   139,
+   97,
+   127,
+   72,
+   68,
+   161
+  ],
+  "note_1": "Oct 13 from 09:52 UTC",
+  "query_2": "\"food noise\" with retatrutide/reta/tirzepatide/zepbound/mounjaro/semaglutide/ozempic/wegovy/glp1/glp-1/glp/tirz/sema/peptide, -is:retweet, any language",
+  "utc_days_2026_10_13_to_19_q2": [
+   20,
+   31,
+   25,
+   36,
+   15,
+   12,
+   41
+  ],
+  "pulled": "2026-10-20 ~5:55 AM ET"
+ }
+}
