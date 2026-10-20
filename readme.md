@@ -23,7 +23,7 @@ Why: prior restrictions were likely caused by aggregate authenticated activity o
 
 - Active runtime Reddit username: `longevitymax`
 - Session cookie path: `/home/jabbit/.openclaw/workspace/.reddit-session`
-- Runtime config: `/home/jabbit/.openclaw/workspace/scripts/reddit.env`
+- Runtime config: `~/.secrets/reddit.env` (outside the repo, mode 600; lane retired 2026-10-15)
 
 Current state: username/cookie mismatch has been fixed.
 

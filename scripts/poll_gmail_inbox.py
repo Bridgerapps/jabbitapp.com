@@ -54,9 +54,9 @@ IMPORTANT_MARKERS = (
     "error",
     "urgent",
 )
+# Addresses to treat as "self" (comma-separated), set outside the repo, e.g. in ~/.secrets.
 SELF_SENDERS = {
-    "jon@bridgerapps.com",
-    "jabbit@bridgerapps.com",
+    s.strip().lower() for s in os.environ.get("JABBIT_SELF_SENDERS", "").split(",") if s.strip()
 }
 
 

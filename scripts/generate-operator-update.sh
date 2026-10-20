@@ -31,7 +31,11 @@ TWITTER_OK=$(echo "$HEALTH_OUT" | grep -q 'Twitter:' && echo "$HEALTH_OUT" | gre
 
 # Needs-from-Jon detection
 # Load App Store env file (cron shells are often minimal and miss exported vars).
-if [ -f "$WS/scripts/appstore.env" ]; then
+# Secrets live outside the repo: ~/.secrets/appstore.env (mode 600); repo path is legacy fallback.
+if [ -f "$HOME/.secrets/appstore.env" ]; then
+  # shellcheck disable=SC1090
+  source "$HOME/.secrets/appstore.env" || true
+elif [ -f "$WS/scripts/appstore.env" ]; then
   # shellcheck disable=SC1090
   source "$WS/scripts/appstore.env" || true
 fi

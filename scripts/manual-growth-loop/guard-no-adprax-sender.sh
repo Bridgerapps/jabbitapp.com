@@ -10,7 +10,7 @@ set -euo pipefail
 #
 # Usage:
 #   bash scripts/manual-growth-loop/guard-no-adprax-sender.sh
-#   bash scripts/manual-growth-loop/guard-no-adprax-sender.sh "Jon <jon@jabbitapp.com>"
+#   bash scripts/manual-growth-loop/guard-no-adprax-sender.sh "Jabbit <name@jabbitapp.com>"
 
 ADPRAX_DOMAIN_REGEX='(^|[^A-Za-z0-9_.-])adprax\.com([^A-Za-z0-9_.-]|$)'
 

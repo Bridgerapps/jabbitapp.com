@@ -30,7 +30,7 @@ Purpose: one small source of truth for what matters, what state it is in, what t
 - **Owner:** Jon + Jabby
 - **State:** hard blocked
 - **What matters:** installs will not move from outbound until the sender identity is real and usable.
-- **Current blocker:** unsolicited outreach is blocked because sender identity is still `jabbit@bridgerapps.com`, not `@jabbitapp.com`. That means we keep talking about distribution without actually being able to execute it safely.
+- **Current blocker:** unsolicited outreach is blocked because sender identity is still a Bridgerapps address, not `@jabbitapp.com`. That means we keep talking about distribution without actually being able to execute it safely.
 - **Next physical action:** finish the `@jabbitapp.com` sender setup (From + Reply-To + domain verification), run one test send to self, then resume manual distribution.
 - **Last touched:** 2026-04-28 15:00 UTC
 - **Success measure:** outbound is unblocked with verified `@jabbitapp.com` identity and one successful canary send; only then do we judge outreach throughput.

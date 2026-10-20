@@ -24,9 +24,12 @@ def _load_env_file_if_needed():
     if all(os.environ.get(k) for k in required):
         return
 
+    # Secrets live outside the repo (mode 600). Repo-local file is a legacy fallback only.
+    _candidates = [os.path.expanduser("~/.secrets/appstore.env"),
+                   os.path.join(os.path.dirname(__file__), "appstore.env")]
     env_path = os.environ.get(
         "APPSTORE_ENV_FILE",
-        os.path.join(os.path.dirname(__file__), "appstore.env"),
+        next((p for p in _candidates if os.path.exists(p)), _candidates[0]),
     )
     if not os.path.exists(env_path):
         return
