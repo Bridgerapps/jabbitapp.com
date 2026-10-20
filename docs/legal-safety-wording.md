@@ -39,9 +39,17 @@ policy page: `/research/editorial-standards.html`.
 - [ ] **X threads:** same rules inside 280 characters. If a hedge or attribution
       doesn't fit, cut the claim rather than the hedge. Re-run the dry run after any
       edit (never `--confirm` without Jon's approval frontmatter).
-- [ ] **Corrections:** errors reported to legal@bridgerapps.com (see the editorial
-      standards page). Fix fast, bump `dateModified`, re-run dateline-sync, and add a
-      dated correction note on the page for anything substantive.
+- [ ] **Corrections:** errors reported by DM to @JabbitApp on X (see the editorial
+      standards page; no working email yet, so never publish an email address,
+      and never publish Jon's personal address). Fix fast, bump `dateModified`,
+      re-run dateline-sync, and add a dated correction note on the page for anything
+      substantive. Wrong X posts: draft a correction reply for Jon; never post it.
+- [ ] **Interest disclosure:** footer says Jabbit sells the app it links to. Keep it.
+- [ ] **Product claims:** describe only app features listed on the current App Store
+      listing (id6756848719). No "never miss a dose", no trial-data features.
+- [ ] **Dated facts:** "only", "first", "no one else" claims about a live record
+      (meeting logs, registries) must carry an "as of" date, and get re-checked
+      before any X post that repeats them.
 - [ ] **Doubt = cut or flag to Jon.** If a sentence about a person or company could
       read as an accusation and you can't attribute it to a document, delete it.
 
