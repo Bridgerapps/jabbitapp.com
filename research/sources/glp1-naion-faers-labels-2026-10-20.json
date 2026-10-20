@@ -1,0 +1,539 @@
+{
+ "page": "https://jabbitapp.com/research/ozempic-wegovy-zepbound-vision-loss-naion-blindness.html",
+ "checked": "2026-10-20",
+ "labels": [
+  {
+   "brand": "foundayo",
+   "setid": "8ac446c5-feba-474f-a103-23facb9b5c62",
+   "version": "10",
+   "effective": "20260729",
+   "naion_or_optic_neuropathy_mentions": [],
+   "changes_in_vision_sentences": [
+    "Diabetic Retinopathy Complications in Patients with Type 2 Diabetes Inform patients with type 2 diabetes to contact their healthcare provider if they experience changes in vision during treatment with FOUNDAYO [see Warnings and Precautions ( 5"
+   ],
+   "changes_in_vision_count": 3
+  },
+  {
+   "brand": "mounjaro",
+   "setid": "d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+   "version": "40",
+   "effective": "20260827",
+   "naion_or_optic_neuropathy_mentions": [],
+   "changes_in_vision_sentences": [
+    "Diabetic Retinopathy Complications in Patients with a History of Diabetic Retinopathy Inform patients to contact their healthcare provider if changes in vision are experienced during treatment with MOUNJARO [see Warnings and Precautions ( 5"
+   ],
+   "changes_in_vision_count": 3
+  },
+  {
+   "brand": "ozempic",
+   "setid": "adec4fd2-6858-4c99-91d4-531f5f2a2d79",
+   "version": "20",
+   "effective": "20260601",
+   "naion_or_optic_neuropathy_mentions": [],
+   "changes_in_vision_sentences": [
+    "Diabetic Retinopathy Complications Inform patients to contact their physician if changes in vision are experienced during treatment with OZEMPIC [see Warnings and Precautions ( 5"
+   ],
+   "changes_in_vision_count": 3
+  },
+  {
+   "brand": "rybelsus",
+   "setid": "27f15fac-7d98-4114-a2ec-92494a91da98",
+   "version": "14",
+   "effective": "20260130",
+   "naion_or_optic_neuropathy_mentions": [],
+   "changes_in_vision_sentences": [
+    "Diabetic Retinopathy Complications Inform patients to contact their physician if changes in vision are experienced during treatment with RYBELSUS or OZEMPIC tablets [see Warnings and Precautions ( 5"
+   ],
+   "changes_in_vision_count": 3
+  },
+  {
+   "brand": "saxenda",
+   "setid": "3946d389-0926-4f77-a708-0acb8153b143",
+   "version": "22",
+   "effective": "20260225",
+   "naion_or_optic_neuropathy_mentions": [],
+   "changes_in_vision_sentences": [],
+   "changes_in_vision_count": 0
+  },
+  {
+   "brand": "trulicity",
+   "setid": "463050bd-2b1c-40f5-b3c3-0a04bb433309",
+   "version": "62",
+   "effective": "20260616",
+   "naion_or_optic_neuropathy_mentions": [],
+   "changes_in_vision_sentences": [
+    "Diabetic Retinopathy Complications in Patients with a History of Diabetic Retinopathy Inform patients to contact their physician if changes in vision are experienced during treatment with TRULICITY [see Warnings and Precautions ( 5"
+   ],
+   "changes_in_vision_count": 3
+  },
+  {
+   "brand": "victoza",
+   "setid": "5a9ef4ea-c76a-4d34-a604-27c5b505f5a4",
+   "version": "31",
+   "effective": "20251014",
+   "naion_or_optic_neuropathy_mentions": [],
+   "changes_in_vision_sentences": [],
+   "changes_in_vision_count": 0
+  },
+  {
+   "brand": "wegovy",
+   "setid": "ee06186f-2aa3-4990-a760-757579d8f77b",
+   "version": "19",
+   "effective": "20260618",
+   "naion_or_optic_neuropathy_mentions": [],
+   "changes_in_vision_sentences": [
+    "Diabetic Retinopathy Complications in Patients with Type 2 Diabetes Inform patients with type 2 diabetes to contact their physician if changes in vision are experienced during treatment with WEGOVY [see Warnings and Precautions ( 5"
+   ],
+   "changes_in_vision_count": 2
+  },
+  {
+   "brand": "zepbound",
+   "setid": "487cd7e7-434c-4925-99fa-aa80b1cc776b",
+   "version": "40",
+   "effective": "20260828",
+   "naion_or_optic_neuropathy_mentions": [],
+   "changes_in_vision_sentences": [
+    "Diabetic Retinopathy Complications in Patients with Type 2 Diabetes Mellitus Inform patients with type 2 diabetes mellitus to contact their healthcare provider if changes in vision are experienced during treatment with ZEPBOUND [see Warnings and Precautions ( 5"
+   ],
+   "changes_in_vision_count": 3
+  }
+ ],
+ "labels_with_naion": [],
+ "labels_with_changes_in_vision_retinopathy_only": [
+  "foundayo",
+  "mounjaro",
+  "ozempic",
+  "rybelsus",
+  "trulicity",
+  "wegovy",
+  "zepbound"
+ ],
+ "viagra_label": {
+  "setid": "d905dc8d-917f-4ea3-a4ee-a1ecf6967d4e",
+  "version": "6",
+  "effective": "20231117",
+  "quote_case_crossover": "An observational case-crossover study evaluated the risk of NAION when PDE5 inhibitor use, as a class, occurred immediately before NAION onset (within 5 half-lives), compared to PDE5 inhibitor use in a prior time period. The results suggest an approximate 2-fold increase in the risk of NAION, with a risk estimate of 2.15 (95% CI 1.06, 4.34). A similar study reported a consistent result, with a risk estimate of 2.27 (95% CI 0.99, 5.20).",
+  "quote_stop": "Patients should stop VIAGRA and seek medical care if a sudden loss of vision occurs in one or both eyes, which could be a sign of non arteritic anterior ischemic optic neuropathy (NAION)."
+ },
+ "faers": {
+  "source": "openFDA drug/event API, MedDRA preferred term OPTIC ISCHAEMIC NEUROPATHY (NAION codes to this term); last_updated 2026-07-30; latest receive date 20260630",
+  "per_drug_any_mention": {
+   "semaglutide": {
+    "all_reports": 80369,
+    "naion_reports": 669,
+    "naion_by_year_received": {
+     "2019": 1,
+     "2020": 1,
+     "2021": 1,
+     "2022": 1,
+     "2023": 1,
+     "2024": 60,
+     "2025": 333,
+     "2026": 271
+    },
+    "naion_per_10000_reports": 83.2
+   },
+   "tirzepatide": {
+    "all_reports": 160793,
+    "naion_reports": 151,
+    "naion_by_year_received": {
+     "2024": 4,
+     "2025": 89,
+     "2026": 58
+    },
+    "naion_per_10000_reports": 9.4
+   },
+   "liraglutide": {
+    "all_reports": 53265,
+    "naion_reports": 26,
+    "naion_by_year_received": {
+     "2012": 1,
+     "2013": 1,
+     "2015": 1,
+     "2016": 1,
+     "2017": 1,
+     "2018": 1,
+     "2020": 2,
+     "2024": 1,
+     "2025": 16,
+     "2026": 1
+    },
+    "naion_per_10000_reports": 4.9
+   },
+   "dulaglutide": {
+    "all_reports": 88299,
+    "naion_reports": 30,
+    "naion_by_year_received": {
+     "2016": 1,
+     "2019": 1,
+     "2024": 1,
+     "2025": 18,
+     "2026": 9
+    },
+    "naion_per_10000_reports": 3.4
+   },
+   "exenatide": {
+    "all_reports": 53191,
+    "naion_reports": 0,
+    "naion_by_year_received": {},
+    "naion_per_10000_reports": 0.0
+   },
+   "empagliflozin": {
+    "all_reports": 73564,
+    "naion_reports": 26,
+    "naion_by_year_received": {
+     "2018": 1,
+     "2020": 2,
+     "2021": 1,
+     "2024": 3,
+     "2025": 13,
+     "2026": 6
+    },
+    "naion_per_10000_reports": 3.5
+   },
+   "dapagliflozin": {
+    "all_reports": 62067,
+    "naion_reports": 21,
+    "naion_by_year_received": {
+     "2021": 1,
+     "2023": 2,
+     "2024": 7,
+     "2025": 6,
+     "2026": 5
+    },
+    "naion_per_10000_reports": 3.4
+   },
+   "canagliflozin": {
+    "all_reports": 31320,
+    "naion_reports": 4,
+    "naion_by_year_received": {
+     "2017": 1,
+     "2025": 1,
+     "2026": 2
+    },
+    "naion_per_10000_reports": 1.3
+   },
+   "sitagliptin": {
+    "all_reports": 98174,
+    "naion_reports": 21,
+    "naion_by_year_received": {
+     "2009": 1,
+     "2010": 1,
+     "2011": 1,
+     "2012": 1,
+     "2014": 2,
+     "2015": 2,
+     "2018": 5,
+     "2019": 2,
+     "2020": 1,
+     "2025": 3,
+     "2026": 2
+    },
+    "naion_per_10000_reports": 2.1
+   },
+   "metformin": {
+    "all_reports": 461399,
+    "naion_reports": 151,
+    "naion_by_year_received": {
+     "2005": 4,
+     "2006": 1,
+     "2007": 1,
+     "2008": 2,
+     "2009": 2,
+     "2010": 2,
+     "2011": 3,
+     "2012": 2,
+     "2014": 4,
+     "2015": 4,
+     "2016": 5,
+     "2017": 4,
+     "2018": 5,
+     "2019": 2,
+     "2020": 2,
+     "2021": 3,
+     "2022": 1,
+     "2023": 13,
+     "2024": 17,
+     "2025": 54,
+     "2026": 20
+    },
+    "naion_per_10000_reports": 3.3
+   },
+   "sildenafil": {
+    "all_reports": 130205,
+    "naion_reports": 555,
+    "naion_by_year_received": {
+     "2004": 4,
+     "2005": 94,
+     "2006": 135,
+     "2007": 115,
+     "2008": 53,
+     "2009": 27,
+     "2010": 10,
+     "2011": 3,
+     "2012": 10,
+     "2013": 5,
+     "2014": 7,
+     "2015": 7,
+     "2016": 15,
+     "2017": 5,
+     "2018": 5,
+     "2019": 10,
+     "2020": 4,
+     "2021": 5,
+     "2022": 6,
+     "2023": 13,
+     "2024": 5,
+     "2025": 16,
+     "2026": 1
+    },
+    "naion_per_10000_reports": 42.6
+   },
+   "tadalafil": {
+    "all_reports": 102524,
+    "naion_reports": 139,
+    "naion_by_year_received": {
+     "2005": 8,
+     "2006": 15,
+     "2007": 10,
+     "2008": 8,
+     "2009": 9,
+     "2010": 12,
+     "2011": 8,
+     "2012": 6,
+     "2013": 3,
+     "2014": 5,
+     "2015": 8,
+     "2016": 7,
+     "2017": 1,
+     "2018": 1,
+     "2019": 5,
+     "2020": 9,
+     "2021": 4,
+     "2022": 2,
+     "2023": 4,
+     "2024": 3,
+     "2025": 8,
+     "2026": 3
+    },
+    "naion_per_10000_reports": 13.6
+   },
+   "amiodarone": {
+    "all_reports": 67284,
+    "naion_reports": 115,
+    "naion_by_year_received": {
+     "2004": 5,
+     "2005": 1,
+     "2006": 4,
+     "2007": 1,
+     "2008": 1,
+     "2010": 1,
+     "2012": 1,
+     "2013": 1,
+     "2014": 1,
+     "2015": 1,
+     "2016": 3,
+     "2017": 8,
+     "2018": 22,
+     "2019": 24,
+     "2020": 8,
+     "2021": 21,
+     "2022": 3,
+     "2024": 3,
+     "2025": 1,
+     "2026": 5
+    },
+    "naion_per_10000_reports": 17.1
+   }
+  },
+  "all_drugs_naion_reports": 3513,
+  "glp1_naion_reports": 835,
+  "glp1_suspect_by_drug": {
+   "liraglutide": 24,
+   "dulaglutide": 28,
+   "semaglutide": 669,
+   "tirzepatide": 149
+  },
+  "suspect_by_drug_by_year": {
+   "liraglutide": {
+    "2012-2023": 6,
+    "2024": 1,
+    "2025": 16,
+    "2026": 1
+   },
+   "dulaglutide": {
+    "2012-2023": 1,
+    "2025": 18,
+    "2026": 9
+   },
+   "semaglutide": {
+    "2012-2023": 4,
+    "2024": 57,
+    "2025": 337,
+    "2026": 271
+   },
+   "tirzepatide": {
+    "2024": 4,
+    "2025": 88,
+    "2026": 57
+   }
+  },
+  "reporter_type": {
+   "physician": 276,
+   "consumer": 422,
+   "other health professional": 69,
+   "pharmacist": 31,
+   "lawyer": 35,
+   "not given": 2
+  },
+  "reporter_type_by_year": {
+   "2012-2023": {
+    "physician": 6,
+    "consumer": 7,
+    "other health professional": 1
+   },
+   "2024": {
+    "physician": 40,
+    "consumer": 17,
+    "other health professional": 5,
+    "pharmacist": 3
+   },
+   "2025": {
+    "physician": 162,
+    "consumer": 197,
+    "pharmacist": 20,
+    "other health professional": 35,
+    "lawyer": 11,
+    "not given": 1
+   },
+   "2026": {
+    "consumer": 201,
+    "other health professional": 28,
+    "lawyer": 24,
+    "physician": 68,
+    "pharmacist": 8,
+    "not given": 1
+   }
+  },
+  "sex": {
+   "female": 308,
+   "male": 425,
+   "not given": 102
+  },
+  "age_reported_n": 528,
+  "median_age": 60.0,
+  "age_50_plus": 455,
+  "disabling": 157,
+  "hospitalized": 86,
+  "country_top": [
+   [
+    "US",
+    433
+   ],
+   [
+    "EU",
+    179
+   ],
+   [
+    "not given",
+    52
+   ],
+   [
+    "GB",
+    31
+   ],
+   [
+    "AU",
+    21
+   ],
+   [
+    "FR",
+    20
+   ]
+  ],
+  "sent_by_manufacturer": {
+   "FDA or other": 64,
+   "Novo Nordisk": 627,
+   "Eli Lilly": 144
+  }
+ },
+ "ctgov": {
+  "pulled": "2026-10-20 ~8:15 AM ET",
+  "queries": [
+   "query.cond=NAION",
+   "query.cond=ischemic optic neuropathy",
+   "query.cond=Optic Neuropathy, Ischemic",
+   "query.term=(NAION OR ischemic/ischaemic optic neuropathy OR optic neuropathy) AND (GLP-1 drug names)"
+  ],
+  "unique_studies": 77,
+  "with_results_all": 12,
+  "mention_glp1": {
+   "NCT01302327": "Wolfram syndrome diabetes trial (optic atrophy is part of the syndrome), withdrawn; not NAION",
+   "NCT02882477": "Wolfram syndrome trial; not NAION",
+   "NCT05659368": "Wolfram syndrome tirzepatide trial; not NAION",
+   "NCT06027567": "semaglutide for idiopathic intracranial hypertension; not NAION",
+   "NCT07392151": "prediabetes trial whose record mentions optic neuropathy only in passing; no NAION outcome",
+   "NCT07846956": "KEPT: retrospective review of NAION in non-diabetic adults with obesity using GLP-1 drugs"
+  },
+  "kept": {
+   "nct": "NCT07846956",
+   "sponsor": "Istanbul Saglik Bilimleri University",
+   "status": "NOT_YET_RECRUITING",
+   "enrollment": 28,
+   "primary_completion": "2026-11-30",
+   "first_posted": "2026-09-29",
+   "title": "Non-Arteritic Anterior Ischemic Optic Neuropathy (NAION) in Non-Diabetic Obese Patients Using Glucagon-Like Peptide-1 Receptor Agonists: A Retrospective Real-World Study"
+  },
+  "focus_trial": {
+   "nct": "NCT03811561",
+   "sponsor": "Novo Nordisk A/S",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 1500,
+   "primary_completion": "2027-11-07",
+   "registers_optic_nerve_outcome": false
+  }
+ },
+ "jpml_mdl3163": [
+  {
+   "report_date": "1/5/2026",
+   "pending": 29
+  },
+  {
+   "report_date": "2/2/2026",
+   "pending": 37
+  },
+  {
+   "report_date": "3/2/2026",
+   "pending": 54
+  },
+  {
+   "report_date": "4/1/2026",
+   "pending": 73
+  },
+  {
+   "report_date": "5/1/2026",
+   "pending": 86
+  },
+  {
+   "report_date": "6/1/2026",
+   "pending": 110
+  },
+  {
+   "report_date": "7/1/2026",
+   "pending": 146
+  },
+  {
+   "report_date": "8/3/2026",
+   "pending": 200
+  },
+  {
+   "report_date": "9/1/2026",
+   "pending": 216
+  },
+  {
+   "report_date": "10/1/2026",
+   "pending": 247
+  }
+ ],
+ "jpml_mdl3094_oct1": 4025
+}

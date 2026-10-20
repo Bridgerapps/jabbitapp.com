@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 580" width="720" height="580" role="img" aria-labelledby="t2 d2">
+<title id="t2">GLP-1 NAION reports to the FDA jumped after the first study, and more now come from consumers and lawyers</title>
+<desc id="d2">FDA adverse event reports coding optic ischemic neuropathy that name a GLP-1 drug, by year received and who reported them. 2012 to 2023: 14 (7 health professionals, 7 consumers). 2024: 65 (48 health professionals, 17 consumers). 2025: 426 (217 health professionals, 197 consumers, 11 lawyers). January to June 2026: 330 (104 health professionals, 201 consumers, 24 lawyers). Physicians filed 62% of 2024 reports and 21% in 2026.</desc>
+<rect width="720" height="580" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="start">Reports surged after the news, and shifted away from doctors</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">FDA adverse event reports of optic-nerve stroke (NAION) naming a GLP-1 drug, by year received</text>
+<rect x="24" y="78" width="14" height="14" rx="3" fill="#0f766e"/>
+<text x="44" y="90" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Doctor, pharmacist or nurse</text>
+<rect x="246" y="78" width="14" height="14" rx="3" fill="#f59e0b"/>
+<text x="266" y="90" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Consumer</text>
+<rect x="352" y="78" width="14" height="14" rx="3" fill="#b91c1c"/>
+<text x="372" y="90" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Lawyer</text>
+<rect x="442" y="78" width="14" height="14" rx="3" fill="#94a3b8"/>
+<text x="462" y="90" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Not given</text>
+<rect x="70" y="415.3" width="120" height="4.7" fill="#0f766e"/>
+<rect x="70" y="410.7" width="120" height="4.7" fill="#f59e0b"/>
+<text x="130.0" y="402.66666666666663" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">14</text>
+<text x="130.0" y="440" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="middle">2012–2023</text>
+<text x="130.0" y="458" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">50% health pros</text>
+<rect x="230" y="388.0" width="120" height="32.0" fill="#0f766e"/>
+<rect x="230" y="376.7" width="120" height="11.3" fill="#f59e0b"/>
+<text x="290.0" y="368.6666666666667" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">65</text>
+<text x="290.0" y="440" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="middle">2024</text>
+<text x="290.0" y="458" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">74% health pros</text>
+<rect x="390" y="275.3" width="120" height="144.7" fill="#0f766e"/>
+<rect x="390" y="144.0" width="120" height="131.3" fill="#f59e0b"/>
+<rect x="390" y="136.7" width="120" height="7.3" fill="#b91c1c"/>
+<rect x="390" y="136.0" width="120" height="1.0" fill="#94a3b8"/>
+<text x="450.0" y="128.00000000000003" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">426</text>
+<text x="450.0" y="440" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="middle">2025</text>
+<text x="450.0" y="458" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">51% health pros</text>
+<rect x="550" y="350.7" width="120" height="69.3" fill="#0f766e"/>
+<rect x="550" y="216.7" width="120" height="134.0" fill="#f59e0b"/>
+<rect x="550" y="200.7" width="120" height="16.0" fill="#b91c1c"/>
+<rect x="550" y="200.0" width="120" height="1.0" fill="#94a3b8"/>
+<text x="610.0" y="192.00000000000003" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">330</text>
+<text x="610.0" y="440" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="middle">2026, Jan–Jun</text>
+<text x="610.0" y="458" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">32% health pros</text>
+<line x1="60" y1="420" x2="696" y2="420" stroke="#cbd5e1"/>
+<text x="24" y="496" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">July 2024: first study links semaglutide to NAION. June 2025: EU safety committee calls it a very rare side effect.</text>
+<text x="24" y="515" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Reports are unverified and can’t show cause or how often NAION happens. The 2026 bar covers six months only.</text>
+<text x="24" y="540" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Source: openFDA FAERS (MedDRA term optic ischaemic neuropathy; data through June 30, 2026), pulled Oct 20, 2026.</text>
+<text x="24" y="558" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Jabbit count of 835 reports naming semaglutide, tirzepatide, liraglutide, dulaglutide or exenatide. Chart by Jabbit.</text>
+</svg>

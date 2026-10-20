@@ -83,6 +83,10 @@
           "text": "Should you stop Ozempic or Zepbound before surgery?"
         },
         {
+          "href": "/research/ozempic-wegovy-zepbound-vision-loss-naion-blindness.html",
+          "text": "Can Ozempic or Zepbound cause sudden vision loss (NAION)?"
+        },
+        {
           "href": "/glp1-constipation-guide.html",
           "text": "GLP-1 constipation guide"
         },
@@ -209,6 +213,10 @@
     {
       "file": "glp1-diabetic-retinopathy-guide.html",
       "links": [
+        {
+          "href": "/research/ozempic-wegovy-zepbound-vision-loss-naion-blindness.html",
+          "text": "Can Ozempic or Zepbound cause sudden vision loss (NAION)?"
+        },
         {
           "href": "/glp-1-side-effects-guide.html",
           "text": "GLP-1 side-effects guide (label warning signs)"
