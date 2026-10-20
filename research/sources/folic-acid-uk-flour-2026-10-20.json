@@ -1,0 +1,275 @@
+{
+ "checked": "2026-10-20",
+ "intake_math": {
+  "method": "NDNS non-wholemeal flour intake (FSS 2017 Table 5) x 2.5 ug/g x (1-0.25 production loss) x (1-0.113 imported)",
+  "factor_ug_per_g_eaten": 1.6631,
+  "groups": {
+   "Everyone (average)": {
+    "flour_g_day": 59,
+    "nominal_ug_day": 147.5,
+    "after_losses_ug_day": 98.1,
+    "pct_of_400ug_supplement": 25,
+    "pct_of_1000ug_upper_level": 10
+   },
+   "Women 19-34": {
+    "flour_g_day": 56,
+    "nominal_ug_day": 140.0,
+    "after_losses_ug_day": 93.1,
+    "pct_of_400ug_supplement": 23,
+    "pct_of_1000ug_upper_level": 9
+   },
+   "Women 35-49": {
+    "flour_g_day": 48,
+    "nominal_ug_day": 120.0,
+    "after_losses_ug_day": 79.8,
+    "pct_of_400ug_supplement": 20,
+    "pct_of_1000ug_upper_level": 8
+   },
+   "Men 19-34": {
+    "flour_g_day": 78,
+    "nominal_ug_day": 195.0,
+    "after_losses_ug_day": 129.7,
+    "pct_of_400ug_supplement": 32,
+    "pct_of_1000ug_upper_level": 13
+   },
+   "Boys 14-18": {
+    "flour_g_day": 82,
+    "nominal_ug_day": 205.0,
+    "after_losses_ug_day": 136.4,
+    "pct_of_400ug_supplement": 34,
+    "pct_of_1000ug_upper_level": 14
+   },
+   "Adults 65+": {
+    "flour_g_day": 53,
+    "nominal_ug_day": 132.5,
+    "after_losses_ug_day": 88.1,
+    "pct_of_400ug_supplement": 22,
+    "pct_of_1000ug_upper_level": 9
+   }
+  },
+  "fss_table8_crosscheck_ug_day": {
+   "Everyone (average)": 97.5,
+   "Women 19-34": 92.5,
+   "Women 35-49": 80.0
+  },
+  "fss_mean_folic_acid_ug_day_before_after": [
+   79,
+   176
+  ],
+  "fss_pct_below_rni_total_folate_before_after": [
+   29.8,
+   7.4
+  ],
+  "flour_g_day_to_reach_1000ug_nominal": 400.0,
+  "flour_g_day_to_reach_1000ug_after_losses": 601
+ },
+ "above_upper_level_pct": {
+  "now": 0.42,
+  "after_250_no_restrictions": 0.635,
+  "after_250_with_restrictions_on_cereals_spreads_supplements": 0.07
+ },
+ "impact_assessment_ntd": {
+  "terminations_prevented_england": 112,
+  "births_with_ntd_prevented": 31,
+  "miscarriages_prevented_england": 6,
+  "terminations_now_england": 591,
+  "live_ntd_births_now_england": 165,
+  "miscarriages_now_england": 33,
+  "risk_reduction_central_pct": 19,
+  "risk_reduction_range_pct": [
+   12,
+   27
+  ],
+  "daly_pct": 15.4,
+  "crider_pct": 22.4
+ },
+ "petition": {
+  "id": 769589,
+  "signatures": 117907,
+  "uk_signatures": 116742,
+  "opened_at": "2026-06-08T14:36:09.331Z",
+  "debate_threshold_reached_at": "2026-10-08T18:12:20.000Z",
+  "government_response_at": "2026-06-29T12:21:00.293Z",
+  "scheduled_debate_date": null,
+  "creator": "Dr Clare Craig",
+  "earlier_petition_751401_signatures": 24140,
+  "checked_et": "10:21 AM ET"
+ },
+ "national_levels": [
+  {
+   "country": "United Kingdom",
+   "ug_per_100g": 250,
+   "flour": "Non-wholemeal common wheat flour",
+   "since": "Dec 13, 2026",
+   "ntd_change": "19% fewer (modelled; range 12-27%)"
+  },
+  {
+   "country": "Chile",
+   "ug_per_100g": 220,
+   "flour": "Wheat flour",
+   "since": "2000",
+   "ntd_change": "not checked"
+  },
+  {
+   "country": "United States",
+   "ug_per_100g": 154,
+   "flour": "Enriched flour (FDA policy: 140 ug/100 g cereal-grain product)",
+   "since": "Jan 1998",
+   "ntd_change": "28% fewer (35% where prenatal diagnoses counted)"
+  },
+  {
+   "country": "Canada",
+   "ug_per_100g": 150,
+   "flour": "White flour",
+   "since": "1998",
+   "ntd_change": "46% fewer"
+  }
+ ],
+ "ctgov": {
+  "umfa_query": "\"unmetabolized folic acid\" OR \"unmetabolised folic acid\" OR UMFA",
+  "umfa_studies": [
+   {
+    "nct": "NCT04011345",
+    "title": "Folic Acid Supplementation in Children With Sickle Cell Disease",
+    "has_results": false,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   },
+   {
+    "nct": "NCT05673070",
+    "title": "Use of Ritual Prenatal Multivitamins for Pregnancy",
+    "has_results": false,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   },
+   {
+    "nct": "NCT06223854",
+    "title": "Acceptability and Nutritional Impact of Double-fortified Salt Containing Iodine and Folic Acid",
+    "has_results": false,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   },
+   {
+    "nct": "NCT07163962",
+    "title": "THE B-BABIES STUDY: An Observational Study of Group B Vitamins in Preterm Infants",
+    "has_results": false,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   },
+   {
+    "nct": "NCT04310059",
+    "title": "Effect of Folic Acid Supplementation in Pregnant Women Having Thalassaemia Trait",
+    "has_results": false,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   },
+   {
+    "nct": "NCT06935630",
+    "title": "Comparison of The Effect of 5-MTHF and Folic Acid Supplementation in Increasing Red Blood Cell Folate in Pregnant Women",
+    "has_results": false,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   },
+   {
+    "nct": "NCT06641245",
+    "title": "PREconception Folic Acid Clinical Efficacy (PREFACE) Trial",
+    "has_results": false,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   },
+   {
+    "nct": "NCT04022135",
+    "title": "Natural Folate vs. Synthetic Folic Acid in Pregnancy",
+    "has_results": false,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   },
+   {
+    "nct": "NCT03981029",
+    "title": "FACT Biomarker Subgroup Analysis",
+    "has_results": true,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   },
+   {
+    "nct": "NCT03472820",
+    "title": "Methylation Diet and Lifestyle Study",
+    "has_results": false,
+    "registers_cancer_outcome": false,
+    "registers_cognitive_outcome": false
+   }
+  ],
+  "fortification_query_total": 88,
+  "fortification_with_results": 4,
+  "folic_acid_flour_or_bread_trials": [
+   {
+    "nct": "NCT06100146",
+    "title": "Effectiveness of Fortification With Folic Acid and Vitamin B12 Among Teenage Girls",
+    "registers_cancer_outcome": false
+   },
+   {
+    "nct": "NCT00353353",
+    "title": "The Bread Trial: Effects of Bread Fortified With Folic Acid and Vitamin B12",
+    "registers_cancer_outcome": false
+   },
+   {
+    "nct": "NCT01570088",
+    "title": "Bioavailability of Folic Acid Fortified Bread",
+    "registers_cancer_outcome": false
+   }
+  ]
+ },
+ "pubmed_counts": {
+  "umfa_all": {
+   "query": "\"unmetabolized folic acid\"[tiab] OR \"unmetabolised folic acid\"[tiab]",
+   "count": 124
+  },
+  "umfa_rct": {
+   "query": "(\"unmetabolized folic acid\"[tiab] OR \"unmetabolised folic acid\"[tiab]) AND randomized controlled trial[pt]",
+   "count": 17
+  },
+  "umfa_rct_outcome_disease": {
+   "query": "(\"unmetabolized folic acid\"[tiab] OR \"unmetabolised folic acid\"[tiab]) AND randomized controlled trial[pt] AND (cancer[tiab] OR cognit*[tiab] OR \"B12\"[tiab] OR \"B-12\"[tiab])",
+   "count": 3
+  },
+  "fortification_ntd": {
+   "query": "\"folic acid\"[tiab] AND fortif*[tiab] AND \"neural tube\"[tiab]",
+   "count": 820
+  },
+  "fortification_cancer": {
+   "query": "\"folic acid\"[tiab] AND fortif*[tiab] AND (cancer[tiab] OR neoplasm*[tiab])",
+   "count": 178
+  }
+ },
+ "x_counts": {
+  "pulled_at": "2026-10-20T13:59Z (9:59 AM ET)",
+  "q_flour": {
+   "query": "(\"folic acid\" OR folate) (flour OR bread OR fortification OR petition) lang:en -is:retweet",
+   "days_utc": {
+    "2026-10-13 (from 14:05)": 154,
+    "2026-10-14": 176,
+    "2026-10-15": 193,
+    "2026-10-16": 175,
+    "2026-10-17": 143,
+    "2026-10-18": 104,
+    "2026-10-19": 173,
+    "2026-10-20 (to 13:59)": 58
+   },
+   "total": 1176
+  },
+  "q_all": {
+   "query": "\"folic acid\" lang:en -is:retweet",
+   "days_utc": {
+    "2026-10-13 (from 14:05)": 424,
+    "2026-10-14": 658,
+    "2026-10-15": 945,
+    "2026-10-16": 721,
+    "2026-10-17": 569,
+    "2026-10-18": 447,
+    "2026-10-19": 623,
+    "2026-10-20 (to 13:59)": 239
+   },
+   "total": 4626
+  }
+ }
+}
