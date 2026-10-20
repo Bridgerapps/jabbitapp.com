@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 760" width="720" height="760" role="img" aria-labelledby="t1 d1">
+<title id="t1">The lowest GLP-1 doses ever tested in randomized trials, and what they did to weight</title>
+<desc id="d1">Semaglutide once-daily phase 2 trial, 957 adults with obesity, weight change at 52 weeks: Placebo -2.3%, 0.05 mg/day -6.0%, 0.1 mg/day -8.6%, 0.2 mg/day -11.6%, 0.3 mg/day -11.2%, 0.4 mg/day -13.8%. Tirzepatide phase 2 trial, 318 adults with type 2 diabetes, weight change at 26 weeks: Placebo -0.4 kg, 1 mg/week -0.9 kg, 5 mg/week -4.8 kg, 10 mg/week -8.7 kg, 15 mg/week -11.3 kg. The lowest semaglutide dose still beat placebo; 1 mg of tirzepatide barely moved weight.</desc>
+<rect width="720" height="760" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="start">Tiny doses have been tested. They did not all work.</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">Weight change in the two randomized trials that gave the lowest doses. Amber = lowest dose tested.</text>
+<text x="24" y="100" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Semaglutide, injected once a day (957 adults with obesity)</text>
+<text x="24" y="118" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">Weight change at 52 weeks · O’Neil et al., Lancet 2018 · 0.05 mg a day is about 0.35 mg a week</text>
+<text x="24" y="151" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">Placebo</text>
+<rect x="136" y="134" width="64.4" height="24" rx="4" fill="#94a3b8"/>
+<text x="208.39999999999998" y="151" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">−2.3%</text>
+<text x="24" y="185" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">0.05 mg/day</text>
+<rect x="136" y="168" width="168.0" height="24" rx="4" fill="#f59e0b"/>
+<text x="312.0" y="185" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">−6.0%</text>
+<text x="24" y="219" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">0.1 mg/day</text>
+<rect x="136" y="202" width="240.8" height="24" rx="4" fill="#0f766e"/>
+<text x="384.8" y="219" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">−8.6%</text>
+<text x="24" y="253" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">0.2 mg/day</text>
+<rect x="136" y="236" width="324.8" height="24" rx="4" fill="#0f766e"/>
+<text x="468.8" y="253" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">−11.6%</text>
+<text x="24" y="287" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">0.3 mg/day</text>
+<rect x="136" y="270" width="313.6" height="24" rx="4" fill="#0f766e"/>
+<text x="457.59999999999997" y="287" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">−11.2%</text>
+<text x="24" y="321" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">0.4 mg/day</text>
+<rect x="136" y="304" width="386.4" height="24" rx="4" fill="#0f766e"/>
+<text x="530.4000000000001" y="321" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">−13.8%</text>
+<text x="24" y="390" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Tirzepatide, once a week (318 adults with type 2 diabetes)</text>
+<text x="24" y="408" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">Weight change at 26 weeks · Frias et al., Lancet 2018 · results posted on NCT03131687</text>
+<text x="24" y="441" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">Placebo</text>
+<rect x="136" y="424" width="11.2" height="24" rx="4" fill="#94a3b8"/>
+<text x="155.2" y="441" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">−0.4 kg</text>
+<text x="24" y="475" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">1 mg/week</text>
+<rect x="136" y="458" width="25.2" height="24" rx="4" fill="#f59e0b"/>
+<text x="169.2" y="475" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">−0.9 kg</text>
+<text x="24" y="509" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">5 mg/week</text>
+<rect x="136" y="492" width="134.4" height="24" rx="4" fill="#0f766e"/>
+<text x="278.4" y="509" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">−4.8 kg</text>
+<text x="24" y="543" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">10 mg/week</text>
+<rect x="136" y="526" width="243.6" height="24" rx="4" fill="#0f766e"/>
+<text x="387.6" y="543" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">−8.7 kg</text>
+<text x="24" y="577" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">15 mg/week</text>
+<rect x="136" y="560" width="316.4" height="24" rx="4" fill="#0f766e"/>
+<text x="460.40000000000003" y="577" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">−11.3 kg</text>
+<text x="24" y="656" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Read across with care: different drugs, people, units and trial lengths; daily semaglutide was never marketed.</text>
+<text x="24" y="675" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Tirzepatide 1 mg sits inside the usual “microdose” range (25–50% of the 2.5 mg starter dose). It cut HbA1c by 1.06</text>
+<text x="24" y="694" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">points (placebo 0.06) and caused stomach side effects in 23.1% (placebo 9.8%). Semaglutide “microdoses” (25–50%</text>
+<text x="24" y="713" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">of 0.25 mg, about 0.06–0.13 mg a week) are below any dose tested for weight in a randomized trial.</text>
+<text x="24" y="742" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Sources: Lancet 2018;392:637-649 and 2180-2193; ClinicalTrials.gov NCT02453711, NCT03131687. Chart by Jabbit.</text>
+</svg>

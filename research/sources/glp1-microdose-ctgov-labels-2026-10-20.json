@@ -1,0 +1,531 @@
+{
+ "title": "GLP-1 'microdosing': ClinicalTrials.gov hand review, label dosing scan and PubMed count",
+ "built": "2026-10-20",
+ "publisher": "Jabbit (jabbitapp.com)",
+ "method": "ClinicalTrials.gov API v2 pulled 2026-10-20 04:09 ET: every study listing semaglutide, tirzepatide or liraglutide as an intervention plus free-text pulls pairing GLP-1 names with microdose, low-dose, taper, interval and maintenance-dose words (1708 unique records). 240 records used dose-lowering language in title, summary, arms or interventions; each was read by hand. Kept: studies that deliberately give a GLP-1 drug below its usual dose or schedule (named microdosing, longer intervals, click dosing, step-down or taper, or a fixed 'low dose'). Dropped: normal escalation schedules, permission to lower a dose for side effects, and low doses of other drugs. SURMOUNT-MAINTAIN was added by hand because its registry text does not use dose-lowering words.",
+ "query_counts": {
+  "intr:semaglutide": 788,
+  "intr:tirzepatide": 303,
+  "intr:liraglutide": 515,
+  "term1": 5,
+  "term2": 154,
+  "term3": 21,
+  "term4": 116,
+  "term5": 157
+ },
+ "kept": 15,
+ "kept_results_posted": 0,
+ "by_category": {
+  "named microdosing": 3,
+  "extended interval": 1,
+  "click-based titration": 1,
+  "step-down maintenance": 1,
+  "taper to stop": 3,
+  "taper": 1,
+  "fixed low dose": 5
+ },
+ "trials": [
+  {
+   "nct": "NCT07092605",
+   "title": "Effectiveness of Microdosed GLP-1 in Improving Health, Quality of Life, and Longevity Measures",
+   "sponsor": "AgelessRx",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 150,
+   "enrollment_type": "ESTIMATED",
+   "status": "ENROLLING_BY_INVITATION",
+   "start": "2024-11-01",
+   "primary_completion": "2025-11-01",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2025-07-30",
+   "last_update": "2025-07-30",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Change in self-reported pain levels in participants microdosing GLP1s",
+    "Concentration of complete blood cells, as a measure of immunological health, in participants microdosing GLP1s",
+    "Concentration of basic metabolites (cholesterol, glucose, creatinine, sodium, potassium), as a measure of immunological health, in participants microdosing GLP1s",
+    "Change in mood in participants microdosing GLP1s",
+    "Change in heart rate variability in participants microdosing GLP1s",
+    "Changes in sleep patterns in participants microdosing GLP1s",
+    "Change in frequency of physical activity in participants microdosing GLP1s",
+    "Change in frequency of physical activity in participants microdosing GLP1s"
+   ],
+   "in_automated_pull": true,
+   "category": "named microdosing",
+   "dose_tested": "compounded semaglutide 1 mg/mL, sublingual or injected; no dose stated",
+   "note": "AgelessRx; randomized vs sublingual placebo; outcomes are pain, blood counts, metabolites, mood, HRV, sleep, activity"
+  },
+  {
+   "nct": "NCT07325500",
+   "title": "Incretin Microdosing for Cardiometabolic Health in People With HIV",
+   "sponsor": "The University of Texas Health Science Center, Houston",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "start": "2026-02-12",
+   "primary_completion": "2028-05-31",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2026-01-08",
+   "last_update": "2026-02-18",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Percent weight regain from weeks 12-60 (microdosing period)"
+   ],
+   "in_automated_pull": true,
+   "category": "named microdosing",
+   "dose_tested": "semaglutide 0.5 mg weekly after reaching 2 mg (Ozempic's lowest labeled maintenance dose)",
+   "note": "UTHealth Houston; people with HIV; vs stopping; primary outcome weight regain weeks 12-60"
+  },
+  {
+   "nct": "NCT07588984",
+   "title": "GLP-1 Medication & Behavioral Health Programs on Weight & Metabolic Outcomes: FLOURISH and THRIVE Prospective Cohort Study",
+   "sponsor": "Noom Inc.",
+   "study_type": "OBSERVATIONAL",
+   "phases": null,
+   "allocation": null,
+   "enrollment": 2310,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-04-30",
+   "primary_completion": "2029-05",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2026-05-15",
+   "last_update": "2026-05-15",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Change in Body Weight",
+    "Change in fasting glucose",
+    "Change in HbA1c",
+    "Change in LDL cholesterol",
+    "Change in HDL cholesterol",
+    "Change in total cholesterol",
+    "Change in triglycerides",
+    "Change in Body Composition",
+    "GLP-1 Side Effect Profile"
+   ],
+   "in_automated_pull": true,
+   "category": "named microdosing",
+   "dose_tested": "compounded semaglutide or tirzepatide 'microdose' arms; no dose stated",
+   "note": "Noom; observational cohort, not randomized"
+  },
+  {
+   "nct": "NCT07832084",
+   "title": "Comparing Different Medication Regimens to Maintaining Weight Loss Among Adults With Obesity Using GLP-1s",
+   "sponsor": "Jing Luo",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-11-01",
+   "primary_completion": "2027-04-30",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2026-09-21",
+   "last_update": "2026-10-05",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Feasibility of recruitment and retention"
+   ],
+   "in_automated_pull": true,
+   "category": "extended interval",
+   "dose_tested": "taper to semaglutide 0.5 mg or tirzepatide 5 mg every other week",
+   "note": "vs staying on full dose vs switching to phentermine-topiramate; primary outcome is feasibility"
+  },
+  {
+   "nct": "NCT07574723",
+   "title": "Tirzepatide Titration to Reduce Side Effects in Individuals With Obesity",
+   "sponsor": "Dasman Diabetes Institute",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "NA"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 68,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "start": "2026-05-15",
+   "primary_completion": "2029-05-15",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2026-05-08",
+   "last_update": "2026-07-08",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Vomiting episodes per patient assessed using the Modified Index of Nausea, Vomiting, and Retching (M-INVR)"
+   ],
+   "in_automated_pull": true,
+   "category": "click-based titration",
+   "dose_tested": "tirzepatide, symptom-guided 'click-based' dose increases vs per-label escalation",
+   "note": "Dasman Diabetes Institute, Kuwait; primary outcome vomiting episodes"
+  },
+  {
+   "nct": "NCT06047548",
+   "title": "A Study of LY3298176 (Tirzepatide) For the Maintenance of Body Weight Reduction in Participants Who Have Obesity or Overweight With Weight-Related Comorbidities",
+   "sponsor": "Eli Lilly and Company",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 441,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "start": "2023-09-20",
+   "primary_completion": "2026-01-20",
+   "primary_completion_type": "ACTUAL",
+   "first_posted": "2023-09-21",
+   "last_update": "2026-03-25",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Percent Maintenance of Body Weight (BW) Reduction Achieved during the 60-Week Weight Loss Period"
+   ],
+   "in_automated_pull": false,
+   "category": "step-down maintenance",
+   "dose_tested": "tirzepatide 5 mg vs maximum tolerated dose vs placebo after 60 weeks",
+   "note": "SURMOUNT-MAINTAIN (Lilly); registry text does not use dose-lowering words, added by hand; results published in The Lancet, none posted on the registry"
+  },
+  {
+   "nct": "NCT07294950",
+   "title": "Impact of Semaglutide Withdrawal on Cardiometabolic Profile and Physiology of Energy Balance: Recovery Effects After Semaglutide Termination",
+   "sponsor": "Mount Sinai Hospital, Canada",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 98,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "start": "2026-02-01",
+   "primary_completion": "2028-09",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2025-12-19",
+   "last_update": "2026-02-11",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Differences in changes in body weight between each study group"
+   ],
+   "in_automated_pull": true,
+   "category": "taper to stop",
+   "dose_tested": "semaglutide cut 25% every 4 weeks to zero vs abrupt stop",
+   "note": "Mount Sinai Hospital, Canada"
+  },
+  {
+   "nct": "NCT07783854",
+   "title": "A Randomized Controlled Study of Dose-tapering Regimen of Semaglutide for Weight-Loss Maintenance in Adults With Overweight or Obesity",
+   "sponsor": "Union Hospital, Tongji Medical College, Huazhong University of Science and Technology",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 72,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-09-01",
+   "primary_completion": "2027-12-30",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2026-08-25",
+   "last_update": "2026-08-25",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Percentage change in body weight from baseline to week 24"
+   ],
+   "in_automated_pull": true,
+   "category": "taper",
+   "dose_tested": "semaglutide 1.7 mg cut 25% every 8 weeks vs staying on 1.7 mg",
+   "note": "Union Hospital, Wuhan"
+  },
+  {
+   "nct": "NCT07859176",
+   "title": "Tapered Versus Abrupt Discontinuation of Semaglutide After Treatment of Recurrent Weight Gain or Suboptimal Response Following Metabolic and Bariatric Surgery",
+   "sponsor": "General Committee of Teaching Hospitals and Institutes, Egypt",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 100,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-10",
+   "primary_completion": "2028-04",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2026-10-05",
+   "last_update": "2026-10-05",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Percentage change in body weight"
+   ],
+   "in_automated_pull": true,
+   "category": "taper to stop",
+   "dose_tested": "semaglutide 1.7, 1.0, 0.5, 0.25 mg for 4 weeks each vs placebo pens",
+   "note": "after bariatric surgery, Egypt"
+  },
+  {
+   "nct": "NCT07092618",
+   "title": "Effectiveness of Alternative Therapies in Maintaining Weight Loss Achieved by GLP-1 Medications Post-Cessation",
+   "sponsor": "AgelessRx",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2",
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 150,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "start": "2024-12-17",
+   "primary_completion": "2025-08",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2025-07-30",
+   "last_update": "2025-07-30",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Evaluate the effectiveness of metformin in maintaining GLP1-induced weight loss in participants weaning off of Ozempic or Wegovy (or compounded semaglutide equivalent)",
+    "Evaluate the effectiveness of metformin + rapamycin in maintaining GLP1-induced weight loss in participants weaning off of Ozempic (or equivalent) or Wegovy (or equivalent)",
+    "Evaluate the effectiveness of metformin + LDN in maintaining GLP1-induced weight loss in participants weaning off of Ozempic (or equivalent) or Wegovy (or equivalent)"
+   ],
+   "in_automated_pull": true,
+   "category": "taper to stop",
+   "dose_tested": "Wegovy down to 0.5 mg or Ozempic down to 0.25 mg over 3 months, then stop; plus metformin, rapamycin or low-dose naltrexone",
+   "note": "AgelessRx; primary outcome weight 6 months after stopping"
+  },
+  {
+   "nct": "NCT06449625",
+   "title": "Semaglutide in Auto-HSCT",
+   "sponsor": "Klaus Gottlob Müller",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2024-08-12",
+   "primary_completion": "2026-12-31",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2024-06-10",
+   "last_update": "2024-06-10",
+   "results_posted": false,
+   "primary_outcomes": [
+    "gastrointestinal mucositis severity"
+   ],
+   "in_automated_pull": true,
+   "category": "fixed low dose",
+   "dose_tested": "semaglutide 0.25-0.5 mg weekly vs placebo",
+   "note": "mouth sores during stem-cell transplant, Germany"
+  },
+  {
+   "nct": "NCT07772960",
+   "title": "Semaglutide Dose Effects on Metabolic and Stress Hormone, Craving and Alcohol Use Outcomes",
+   "sponsor": "Yale University",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE1"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 90,
+   "enrollment_type": "ESTIMATED",
+   "status": "NOT_YET_RECRUITING",
+   "start": "2026-10-01",
+   "primary_completion": "2031-10-31",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2026-08-19",
+   "last_update": "2026-08-19",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Alcohol use days"
+   ],
+   "in_automated_pull": true,
+   "category": "fixed low dose",
+   "dose_tested": "semaglutide 1.0 mg ('low dose') vs 2.0 mg vs placebo",
+   "note": "Yale; alcohol use"
+  },
+  {
+   "nct": "NCT06896981",
+   "title": "Semaglutide in Women With Polycystic Ovary Syndrome and Obesity",
+   "sponsor": "Bangabandhu Sheikh Mujib Medical University, Dhaka, Bangladesh",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE2",
+    "PHASE3"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 31,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "start": "2025-01-01",
+   "primary_completion": "2025-10-31",
+   "primary_completion_type": "ACTUAL",
+   "first_posted": "2025-03-26",
+   "last_update": "2026-10-07",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Weight",
+    "Body mass index",
+    "Waist circumference",
+    "Hip circumference",
+    "Blood pressure",
+    "Acanthosis nigricans",
+    "Fasting plasma glucose",
+    "Fasting insulin",
+    "Homeostasis model assessment of insulin resistance",
+    "Total cholesterol",
+    "HDL-cholesterol",
+    "LDL-cholesterol",
+    "Triglyceride"
+   ],
+   "in_automated_pull": true,
+   "category": "fixed low dose",
+   "dose_tested": "semaglutide 0.5 mg ('low-dose') plus metformin vs metformin",
+   "note": "PCOS, Bangladesh; local non-originator semaglutide"
+  },
+  {
+   "nct": "NCT02909933",
+   "title": "Low Dose Liraglutide and Metformin vs. High Dose Liraglutide Alone in Treatment of Obesity",
+   "sponsor": "University Medical Centre Ljubljana",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "RANDOMIZED",
+   "enrollment": 30,
+   "enrollment_type": "ACTUAL",
+   "status": "COMPLETED",
+   "start": "2015-07",
+   "primary_completion": "2015-10",
+   "primary_completion_type": "ACTUAL",
+   "first_posted": "2016-09-21",
+   "last_update": "2016-09-21",
+   "results_posted": false,
+   "primary_outcomes": [
+    "The main outcome was change in body weight."
+   ],
+   "in_automated_pull": true,
+   "category": "fixed low dose",
+   "dose_tested": "liraglutide 1.2 mg plus metformin vs liraglutide 3 mg",
+   "note": "PCOS, Ljubljana; completed 2015"
+  },
+  {
+   "nct": "NCT07513168",
+   "title": "Low-Dose Semaglutide for Weight Loss in Obese Non-Diabetic Pakistani Adults",
+   "sponsor": "Asian Institute Of Medical Sciences",
+   "study_type": "INTERVENTIONAL",
+   "phases": [
+    "PHASE4"
+   ],
+   "allocation": "NA",
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "status": "RECRUITING",
+   "start": "2025-08-01",
+   "primary_completion": "2026-08-30",
+   "primary_completion_type": "ESTIMATED",
+   "first_posted": "2026-04-06",
+   "last_update": "2026-04-06",
+   "results_posted": false,
+   "primary_outcomes": [
+    "Percentage Change in Body Weight"
+   ],
+   "in_automated_pull": true,
+   "category": "fixed low dose",
+   "dose_tested": "'low-dose' locally available semaglutide; dose not stated",
+   "note": "single arm, Pakistan"
+  }
+ ],
+ "labels": [
+  {
+   "drug": "Ozempic (semaglutide injection)",
+   "spl_version": 20,
+   "start": "0.25 mg weekly for 4 weeks",
+   "lowest_maintenance": "0.5 mg weekly",
+   "starter_dose_language": "start dose is to reduce GI risk; maintenance 0.5, 1 or 2 mg"
+  },
+  {
+   "drug": "Wegovy (semaglutide injection)",
+   "spl_version": 19,
+   "start": "0.25 mg weekly",
+   "lowest_maintenance": "1.7 mg weekly",
+   "starter_dose_language": "maintenance 1.7 or 2.4 mg; 2 or more missed doses means restarting escalation"
+  },
+  {
+   "drug": "Rybelsus (oral semaglutide)",
+   "spl_version": 14,
+   "start": "3 mg daily",
+   "lowest_maintenance": "7 mg daily",
+   "starter_dose_language": "starting dose 'is not effective for glycemic control'"
+  },
+  {
+   "drug": "Zepbound (tirzepatide)",
+   "spl_version": 40,
+   "start": "2.5 mg weekly",
+   "lowest_maintenance": "5 mg weekly",
+   "starter_dose_language": "'The 2.5 mg dosage is for treatment initiation and is not approved as a maintenance dosage'; 'consider a lower maintenance dosage' if not tolerated"
+  },
+  {
+   "drug": "Mounjaro (tirzepatide)",
+   "spl_version": 40,
+   "start": "2.5 mg weekly",
+   "lowest_maintenance": "label raises in 2.5 mg steps 'if additional glycemic control is needed'",
+   "starter_dose_language": "no starter-only statement"
+  },
+  {
+   "drug": "Saxenda (liraglutide)",
+   "spl_version": 22,
+   "start": "0.6 mg daily",
+   "lowest_maintenance": "3 mg daily",
+   "starter_dose_language": "'lower dosages are for titration only'; stop if 3 mg not tolerated"
+  },
+  {
+   "drug": "Victoza (liraglutide)",
+   "spl_version": 31,
+   "start": "0.6 mg daily",
+   "lowest_maintenance": "1.2 mg daily",
+   "starter_dose_language": "0.6 mg 'is not effective for glycemic control in adults'"
+  },
+  {
+   "drug": "Trulicity (dulaglutide)",
+   "spl_version": 62,
+   "start": "0.75 mg weekly",
+   "lowest_maintenance": "0.75 mg weekly",
+   "starter_dose_language": "starting dose can be kept"
+  },
+  {
+   "drug": "Foundayo (orforglipron)",
+   "spl_version": 10,
+   "start": "0.8 mg daily",
+   "lowest_maintenance": "per label escalation",
+   "starter_dose_language": "starting dose is part of escalation"
+  }
+ ],
+ "pubmed": {
+  "query": "microdos*[tiab] AND (semaglutide[tiab] OR tirzepatide[tiab] OR GLP-1[tiab] OR GLP-1RA[tiab] OR incretin[tiab] OR liraglutide[tiab])",
+  "searched": "2026-10-20",
+  "records": 13,
+  "about_glp1_microdosing_practice": 9,
+  "randomized_trials": 0,
+  "pmids_on_topic": [
+   "42892786",
+   "42571951",
+   "42244165",
+   "40540673",
+   "39808463",
+   "42788826",
+   "42668762",
+   "42201545",
+   "42857675"
+  ]
+ }
+}
