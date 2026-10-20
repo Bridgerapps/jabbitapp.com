@@ -1,0 +1,2083 @@
+{
+ "built": "2026-10-19 (ET)",
+ "page": "https://jabbitapp.com/research/dmso-dimethyl-sulfoxide-als-pain-cancer-teardown.html",
+ "clinicaltrials_gov": {
+  "source": "ClinicalTrials.gov API v2, query.term = DMSO | dimethyl sulfoxide | dimethylsulfoxide | RIMSO-50 | dimexide (deduplicated by NCT)",
+  "method": "Every study read by hand (title, arms, interventions, descriptions) and classified by the role DMSO plays. Lower bound: registries outside CT.gov not searched.",
+  "summary": {
+   "total_unique_studies": 183,
+   "by_role": {
+    "vehicle_or_penetration_enhancer_or_vehicle_arm": 20,
+    "cryoprotectant_for_cells_or_tissue": 58,
+    "drug_solvate_or_solvent": 43,
+    "lab_or_background_mention_only": 42,
+    "dmso_itself_is_the_treatment": 8,
+    "dental_material": 7,
+    "dmso_based_combination": 5
+   },
+   "dmso_as_treatment_or_dmso_based_combo": 13,
+   "of_which_with_posted_results": 2,
+   "of_which_interstitial_cystitis": 6,
+   "studies_mentioning_als_anywhere": [
+    "NCT06281847"
+   ],
+   "dmso_treatment_studies_for_als": 0,
+   "dmso_treatment_studies_for_pain_or_arthritis_alone": 0,
+   "dmso_treatment_studies_for_cancer": [
+    "NCT04279535",
+    "NCT05932511"
+   ]
+  },
+  "treatment_rows": [
+   {
+    "nct": "NCT03103594",
+    "title": "Comparison of the Treatment of Refractory Bladder Pain Syndrome With DMSO and DMSO With Botulinum Toxin A",
+    "role": "dmso_itself_is_the_treatment",
+    "dmso_use": "interstitial cystitis",
+    "conditions": [
+     "Bladder Pain Syndrome"
+    ],
+    "status": "COMPLETED",
+    "has_results": false,
+    "phase": [
+     "EARLY_PHASE1"
+    ],
+    "enrollment": 2,
+    "allocation": "RANDOMIZED",
+    "sponsor": "University of Pennsylvania",
+    "start": "2015-08",
+    "first_submitted": "2017-03-31",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT05560919",
+    "title": "Acceleration of Orthodontic Tooth Movement",
+    "role": "dmso_itself_is_the_treatment",
+    "dmso_use": "orthodontic tooth movement",
+    "conditions": [
+     "Mild to Moderate Anterior Mandibular Segment Crowdind"
+    ],
+    "status": "COMPLETED",
+    "has_results": false,
+    "phase": [
+     "PHASE2",
+     "PHASE3"
+    ],
+    "enrollment": 18,
+    "allocation": "RANDOMIZED",
+    "sponsor": "Latakia University",
+    "start": "2021-09-20",
+    "first_submitted": "2022-09-26",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT01074567",
+    "title": "DMSO Efficacy in IC/PBS Patients During and After Treatment",
+    "role": "dmso_itself_is_the_treatment",
+    "dmso_use": "interstitial cystitis",
+    "conditions": [
+     "Cystitis, Interstitial"
+    ],
+    "status": "UNKNOWN",
+    "has_results": false,
+    "phase": [
+     "NA"
+    ],
+    "enrollment": 50,
+    "allocation": "NA",
+    "sponsor": "Assaf-Harofeh Medical Center",
+    "start": "2009-12",
+    "first_submitted": "2010-02-23",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT07567274",
+    "title": "DMSO Dual-Route Therapy for Refractory Tinnitus in Long-COVID and Post-COVID-19 Vaccine Injury",
+    "role": "dmso_based_combination",
+    "dmso_use": "tinnitus after COVID / COVID vaccine (compounded DMSO otic + cream with betahistine, dexamethasone, lidocaine)",
+    "conditions": [
+     "Tinnitus"
+    ],
+    "status": "ENROLLING_BY_INVITATION",
+    "has_results": false,
+    "phase": [
+     "PHASE2"
+    ],
+    "enrollment": 20,
+    "allocation": "NA",
+    "sponsor": "Leading Edge Clinic",
+    "start": "2026-05-15",
+    "first_submitted": "2026-05-01",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT05223244",
+    "title": "Bladder Capacity as Objective Measure of Intravesical Treatment of Newly Diagnosed IC",
+    "role": "dmso_itself_is_the_treatment",
+    "dmso_use": "interstitial cystitis",
+    "conditions": [
+     "Interstitial Cystitis",
+     "Painful Bladder Syndrome"
+    ],
+    "status": "COMPLETED",
+    "has_results": false,
+    "phase": [
+     "PHASE4"
+    ],
+    "enrollment": 83,
+    "allocation": "RANDOMIZED",
+    "sponsor": "Endeavor Health",
+    "start": "2011-10-01",
+    "first_submitted": "2022-01-24",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT04268810",
+    "title": "Prospective Trial Comparing Intravesical Chondroitin Sulphate 2% and DMSO in the Treatment of PBS/Interstitial Cystitis",
+    "role": "dmso_itself_is_the_treatment",
+    "dmso_use": "interstitial cystitis",
+    "conditions": [
+     "Painful Bladder Syndrome",
+     "Interstitial Cystitis"
+    ],
+    "status": "TERMINATED",
+    "has_results": false,
+    "phase": [
+     "PHASE4"
+    ],
+    "enrollment": 36,
+    "allocation": "RANDOMIZED",
+    "sponsor": "National Multiple Sclerosis Center",
+    "start": "2010-03",
+    "first_submitted": "2013-03-31",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT01069263",
+    "title": "Comparative Study Between Hyperbaric Therapy and Intravesical Dimethyl Sulfoxide Instillation for Interstitial Cystitis",
+    "role": "dmso_itself_is_the_treatment",
+    "dmso_use": "interstitial cystitis",
+    "conditions": [
+     "Interstitial Cystitis"
+    ],
+    "status": "UNKNOWN",
+    "has_results": false,
+    "phase": [
+     "NA"
+    ],
+    "enrollment": 60,
+    "allocation": "RANDOMIZED",
+    "sponsor": "Assaf-Harofeh Medical Center",
+    "start": "2010-02",
+    "first_submitted": "2010-01-10",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT00583219",
+    "title": "Botulin-A Toxin Instillations and Overactive Bladder",
+    "role": "dmso_based_combination",
+    "dmso_use": "overactive bladder (botulinum toxin carried in DMSO)",
+    "conditions": [
+     "Overactive Bladder",
+     "Detrusor Instability",
+     "Detrusor Hyperreflexia"
+    ],
+    "status": "COMPLETED",
+    "has_results": true,
+    "phase": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "enrollment": 25,
+    "allocation": "NA",
+    "sponsor": "Mayo Clinic",
+    "start": "2006-03",
+    "first_submitted": "2007-12-20",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT04279535",
+    "title": "Topical Vitamin C for Treatment of Basal Cell Cancer",
+    "role": "dmso_based_combination",
+    "dmso_use": "basal cell carcinoma (30% ascorbic acid in DMSO)",
+    "conditions": [
+     "Basal Cell Carcinoma"
+    ],
+    "status": "COMPLETED",
+    "has_results": false,
+    "phase": [
+     "EARLY_PHASE1"
+    ],
+    "enrollment": 25,
+    "allocation": "RANDOMIZED",
+    "sponsor": "Center for Biomedical Research, Inc.",
+    "start": "2018-03-01",
+    "first_submitted": "2020-02-19",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT00667095",
+    "title": "Over Active Bladder Instillation Study - Botox",
+    "role": "dmso_based_combination",
+    "dmso_use": "overactive bladder (botulinum toxin carried in DMSO)",
+    "conditions": [
+     "Overactive Bladder",
+     "Urinary Urge Incontinence",
+     "Urinary Incontinence",
+     "Detrusor Hyperreflexia",
+     "Urge Incontinence"
+    ],
+    "status": "TERMINATED",
+    "has_results": true,
+    "phase": [
+     "PHASE3"
+    ],
+    "enrollment": 25,
+    "allocation": "RANDOMIZED",
+    "sponsor": "Mayo Clinic",
+    "start": "2008-04",
+    "first_submitted": "2008-04-23",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT02206477",
+    "title": "DMSO for Prevention of Capsular Contraction in Alloplastic Breast Reconstruction",
+    "role": "dmso_itself_is_the_treatment",
+    "dmso_use": "breast implant capsular contracture",
+    "conditions": [
+     "Breast Capsular Contracture",
+     "Dimethyl Sulfoxide"
+    ],
+    "status": "UNKNOWN",
+    "has_results": false,
+    "phase": [
+     "PHASE2",
+     "PHASE3"
+    ],
+    "enrollment": 110,
+    "allocation": "RANDOMIZED",
+    "sponsor": "Rabin Medical Center",
+    "start": "2014-08",
+    "first_submitted": "2014-07-31",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT05932511",
+    "title": "Topical Ascorbic Acid for Treatment of Squamous Cell Skin Cancer",
+    "role": "dmso_based_combination",
+    "dmso_use": "squamous cell carcinoma (30% ascorbic acid in DMSO)",
+    "conditions": [
+     "Squamous Cell Cancer",
+     "Squamous Cell Carcinoma",
+     "Skin Cancer",
+     "Non-melanoma Skin Cancer"
+    ],
+    "status": "UNKNOWN",
+    "has_results": false,
+    "phase": [
+     "EARLY_PHASE1"
+    ],
+    "enrollment": 15,
+    "allocation": "NA",
+    "sponsor": "Center for Biomedical Research, Inc.",
+    "start": "2023-06-12",
+    "first_submitted": "2023-06-21",
+    "mentions_als": false
+   },
+   {
+    "nct": "NCT00317070",
+    "title": "Trial Comparing Intravesical Cocktail With Intravesical Dimethyl Sulfoxide (DMSO) in Painful Bladder Syndrome/Interstitial Cystitis (PBS/IC)",
+    "role": "dmso_itself_is_the_treatment",
+    "dmso_use": "interstitial cystitis",
+    "conditions": [
+     "Interstitial Cystitis",
+     "Bladder Diseases"
+    ],
+    "status": "TERMINATED",
+    "has_results": false,
+    "phase": [
+     "PHASE2"
+    ],
+    "enrollment": 10,
+    "allocation": "RANDOMIZED",
+    "sponsor": "Nova Scotia Health Authority",
+    "start": "2006-04",
+    "first_submitted": "2006-04-20",
+    "mentions_als": false
+   }
+  ],
+  "all_rows": [
+   {
+    "nct": "NCT00005617",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": null
+   },
+   {
+    "nct": "NCT00038012",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 33
+   },
+   {
+    "nct": "NCT00066729",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 9
+   },
+   {
+    "nct": "NCT00118313",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": null
+   },
+   {
+    "nct": "NCT00218829",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 44
+   },
+   {
+    "nct": "NCT00253435",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 50
+   },
+   {
+    "nct": "NCT00289341",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 24
+   },
+   {
+    "nct": "NCT00294112",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 10
+   },
+   {
+    "nct": "NCT00317070",
+    "role": "dmso_itself_is_the_treatment",
+    "status": "TERMINATED",
+    "has_results": false,
+    "enrollment": 10
+   },
+   {
+    "nct": "NCT00450463",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 64
+   },
+   {
+    "nct": "NCT00471393",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 28
+   },
+   {
+    "nct": "NCT00583219",
+    "role": "dmso_based_combination",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 25
+   },
+   {
+    "nct": "NCT00631787",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 61
+   },
+   {
+    "nct": "NCT00667095",
+    "role": "dmso_based_combination",
+    "status": "TERMINATED",
+    "has_results": true,
+    "enrollment": 25
+   },
+   {
+    "nct": "NCT00676507",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 532
+   },
+   {
+    "nct": "NCT00795769",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 49
+   },
+   {
+    "nct": "NCT00910390",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 584
+   },
+   {
+    "nct": "NCT01069263",
+    "role": "dmso_itself_is_the_treatment",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 60
+   },
+   {
+    "nct": "NCT01074567",
+    "role": "dmso_itself_is_the_treatment",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 50
+   },
+   {
+    "nct": "NCT01106417",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 12
+   },
+   {
+    "nct": "NCT01123915",
+    "role": "drug_solvate_or_solvent",
+    "status": "TERMINATED",
+    "has_results": false,
+    "enrollment": 22
+   },
+   {
+    "nct": "NCT01198366",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 487
+   },
+   {
+    "nct": "NCT01218620",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 17
+   },
+   {
+    "nct": "NCT01336634",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 177
+   },
+   {
+    "nct": "NCT01350622",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "WITHDRAWN",
+    "has_results": false,
+    "enrollment": 0
+   },
+   {
+    "nct": "NCT01436357",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 548
+   },
+   {
+    "nct": "NCT01442129",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT01456065",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 15
+   },
+   {
+    "nct": "NCT01459393",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 137
+   },
+   {
+    "nct": "NCT01505569",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 44
+   },
+   {
+    "nct": "NCT01508676",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 35
+   },
+   {
+    "nct": "NCT01521143",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "TERMINATED",
+    "has_results": true,
+    "enrollment": 91
+   },
+   {
+    "nct": "NCT01525017",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 12
+   },
+   {
+    "nct": "NCT01639885",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 15
+   },
+   {
+    "nct": "NCT01682083",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 870
+   },
+   {
+    "nct": "NCT01725100",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 80
+   },
+   {
+    "nct": "NCT01865487",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 98
+   },
+   {
+    "nct": "NCT01886625",
+    "role": "lab_or_background_mention_only",
+    "status": "WITHDRAWN",
+    "has_results": false,
+    "enrollment": 0
+   },
+   {
+    "nct": "NCT01902173",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 27
+   },
+   {
+    "nct": "NCT01971385",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 54
+   },
+   {
+    "nct": "NCT01980940",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 70
+   },
+   {
+    "nct": "NCT02032134",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "TERMINATED",
+    "has_results": false,
+    "enrollment": 5
+   },
+   {
+    "nct": "NCT02060396",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 24
+   },
+   {
+    "nct": "NCT02078284",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 28
+   },
+   {
+    "nct": "NCT02083354",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 77
+   },
+   {
+    "nct": "NCT02101788",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 260
+   },
+   {
+    "nct": "NCT02118753",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 24
+   },
+   {
+    "nct": "NCT02137421",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 20
+   },
+   {
+    "nct": "NCT02148393",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 212
+   },
+   {
+    "nct": "NCT02181478",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 6
+   },
+   {
+    "nct": "NCT02196181",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 280
+   },
+   {
+    "nct": "NCT02206477",
+    "role": "dmso_itself_is_the_treatment",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 110
+   },
+   {
+    "nct": "NCT02224781",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": true,
+    "enrollment": 267
+   },
+   {
+    "nct": "NCT02239393",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 31
+   },
+   {
+    "nct": "NCT02268305",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 100
+   },
+   {
+    "nct": "NCT02281760",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 9
+   },
+   {
+    "nct": "NCT02283736",
+    "role": "lab_or_background_mention_only",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 36
+   },
+   {
+    "nct": "NCT02337192",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 24
+   },
+   {
+    "nct": "NCT02346747",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 92
+   },
+   {
+    "nct": "NCT02362646",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 159
+   },
+   {
+    "nct": "NCT02375698",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 22
+   },
+   {
+    "nct": "NCT02416232",
+    "role": "drug_solvate_or_solvent",
+    "status": "NO_LONGER_AVAILABLE",
+    "has_results": false,
+    "enrollment": null
+   },
+   {
+    "nct": "NCT02447939",
+    "role": "drug_solvate_or_solvent",
+    "status": "WITHDRAWN",
+    "has_results": false,
+    "enrollment": 0
+   },
+   {
+    "nct": "NCT02452099",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 150
+   },
+   {
+    "nct": "NCT02460484",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "WITHDRAWN",
+    "has_results": false,
+    "enrollment": 0
+   },
+   {
+    "nct": "NCT02519816",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 17
+   },
+   {
+    "nct": "NCT02529592",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 22
+   },
+   {
+    "nct": "NCT02701257",
+    "role": "drug_solvate_or_solvent",
+    "status": "TERMINATED",
+    "has_results": true,
+    "enrollment": 20
+   },
+   {
+    "nct": "NCT02790658",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 15
+   },
+   {
+    "nct": "NCT02839408",
+    "role": "lab_or_background_mention_only",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 54
+   },
+   {
+    "nct": "NCT02939846",
+    "role": "drug_solvate_or_solvent",
+    "status": "WITHDRAWN",
+    "has_results": false,
+    "enrollment": 0
+   },
+   {
+    "nct": "NCT02960711",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 1600
+   },
+   {
+    "nct": "NCT02965781",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 139
+   },
+   {
+    "nct": "NCT02985450",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 82
+   },
+   {
+    "nct": "NCT03004976",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 79
+   },
+   {
+    "nct": "NCT03103594",
+    "role": "dmso_itself_is_the_treatment",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 2
+   },
+   {
+    "nct": "NCT03196609",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 69
+   },
+   {
+    "nct": "NCT03287427",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 27
+   },
+   {
+    "nct": "NCT03302481",
+    "role": "lab_or_background_mention_only",
+    "status": "WITHDRAWN",
+    "has_results": false,
+    "enrollment": 0
+   },
+   {
+    "nct": "NCT03319472",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 439
+   },
+   {
+    "nct": "NCT03381768",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 8
+   },
+   {
+    "nct": "NCT03406585",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 24
+   },
+   {
+    "nct": "NCT03422120",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 69
+   },
+   {
+    "nct": "NCT03451916",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 240
+   },
+   {
+    "nct": "NCT03477149",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 50
+   },
+   {
+    "nct": "NCT03524976",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 50
+   },
+   {
+    "nct": "NCT03541460",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 124
+   },
+   {
+    "nct": "NCT03661541",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 36
+   },
+   {
+    "nct": "NCT03664128",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 157
+   },
+   {
+    "nct": "NCT03714529",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 10
+   },
+   {
+    "nct": "NCT03715985",
+    "role": "drug_solvate_or_solvent",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 12
+   },
+   {
+    "nct": "NCT03716583",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 48
+   },
+   {
+    "nct": "NCT03794297",
+    "role": "drug_solvate_or_solvent",
+    "status": "WITHDRAWN",
+    "has_results": false,
+    "enrollment": 0
+   },
+   {
+    "nct": "NCT03814343",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 19
+   },
+   {
+    "nct": "NCT03818061",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 33
+   },
+   {
+    "nct": "NCT03822182",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 78
+   },
+   {
+    "nct": "NCT03848676",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 40
+   },
+   {
+    "nct": "NCT03880474",
+    "role": "lab_or_background_mention_only",
+    "status": "TERMINATED",
+    "has_results": true,
+    "enrollment": 2364
+   },
+   {
+    "nct": "NCT03883113",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 145
+   },
+   {
+    "nct": "NCT03886506",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "NO_LONGER_AVAILABLE",
+    "has_results": false,
+    "enrollment": null
+   },
+   {
+    "nct": "NCT03893903",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 69
+   },
+   {
+    "nct": "NCT03919071",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 58
+   },
+   {
+    "nct": "NCT03939234",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 19
+   },
+   {
+    "nct": "NCT03955211",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 25
+   },
+   {
+    "nct": "NCT03991481",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 388
+   },
+   {
+    "nct": "NCT04051307",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 9
+   },
+   {
+    "nct": "NCT04118556",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "TERMINATED",
+    "has_results": false,
+    "enrollment": 12
+   },
+   {
+    "nct": "NCT04183595",
+    "role": "drug_solvate_or_solvent",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 116
+   },
+   {
+    "nct": "NCT04201457",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 57
+   },
+   {
+    "nct": "NCT04266730",
+    "role": "drug_solvate_or_solvent",
+    "status": "SUSPENDED",
+    "has_results": false,
+    "enrollment": 6
+   },
+   {
+    "nct": "NCT04268810",
+    "role": "dmso_itself_is_the_treatment",
+    "status": "TERMINATED",
+    "has_results": false,
+    "enrollment": 36
+   },
+   {
+    "nct": "NCT04279535",
+    "role": "dmso_based_combination",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 25
+   },
+   {
+    "nct": "NCT04297917",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 47
+   },
+   {
+    "nct": "NCT04423471",
+    "role": "lab_or_background_mention_only",
+    "status": "WITHDRAWN",
+    "has_results": false,
+    "enrollment": 0
+   },
+   {
+    "nct": "NCT04439279",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": true,
+    "enrollment": 35
+   },
+   {
+    "nct": "NCT04439292",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": true,
+    "enrollment": 44
+   },
+   {
+    "nct": "NCT04439318",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": true,
+    "enrollment": 50
+   },
+   {
+    "nct": "NCT04439357",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": true,
+    "enrollment": 4
+   },
+   {
+    "nct": "NCT04466098",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 8
+   },
+   {
+    "nct": "NCT04484077",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 8
+   },
+   {
+    "nct": "NCT04492306",
+    "role": "dental_material",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 24
+   },
+   {
+    "nct": "NCT04527549",
+    "role": "drug_solvate_or_solvent",
+    "status": "TERMINATED",
+    "has_results": true,
+    "enrollment": 5
+   },
+   {
+    "nct": "NCT04557956",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": true,
+    "enrollment": 16
+   },
+   {
+    "nct": "NCT04612413",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 148
+   },
+   {
+    "nct": "NCT04709705",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 161
+   },
+   {
+    "nct": "NCT04710810",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT04754841",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 281
+   },
+   {
+    "nct": "NCT04776538",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 120
+   },
+   {
+    "nct": "NCT04869397",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "TERMINATED",
+    "has_results": false,
+    "enrollment": 19
+   },
+   {
+    "nct": "NCT04871360",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 42
+   },
+   {
+    "nct": "NCT04918706",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT04924712",
+    "role": "lab_or_background_mention_only",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT05067608",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 17
+   },
+   {
+    "nct": "NCT05090085",
+    "role": "dental_material",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 74
+   },
+   {
+    "nct": "NCT05187494",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 75
+   },
+   {
+    "nct": "NCT05220826",
+    "role": "drug_solvate_or_solvent",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 280
+   },
+   {
+    "nct": "NCT05223244",
+    "role": "dmso_itself_is_the_treatment",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 83
+   },
+   {
+    "nct": "NCT05456022",
+    "role": "lab_or_background_mention_only",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 1000000
+   },
+   {
+    "nct": "NCT05456893",
+    "role": "lab_or_background_mention_only",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 95
+   },
+   {
+    "nct": "NCT05458622",
+    "role": "lab_or_background_mention_only",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 25
+   },
+   {
+    "nct": "NCT05545202",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 150
+   },
+   {
+    "nct": "NCT05560919",
+    "role": "dmso_itself_is_the_treatment",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 18
+   },
+   {
+    "nct": "NCT05595681",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "TERMINATED",
+    "has_results": false,
+    "enrollment": 21
+   },
+   {
+    "nct": "NCT05602116",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 10
+   },
+   {
+    "nct": "NCT05621850",
+    "role": "drug_solvate_or_solvent",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 78
+   },
+   {
+    "nct": "NCT05747651",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 6
+   },
+   {
+    "nct": "NCT05770895",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 83
+   },
+   {
+    "nct": "NCT05854615",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 3
+   },
+   {
+    "nct": "NCT05854641",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 10
+   },
+   {
+    "nct": "NCT05894512",
+    "role": "lab_or_background_mention_only",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 44
+   },
+   {
+    "nct": "NCT05913102",
+    "role": "drug_solvate_or_solvent",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 40
+   },
+   {
+    "nct": "NCT05932511",
+    "role": "dmso_based_combination",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 15
+   },
+   {
+    "nct": "NCT05954286",
+    "role": "drug_solvate_or_solvent",
+    "status": "COMPLETED",
+    "has_results": true,
+    "enrollment": 92
+   },
+   {
+    "nct": "NCT05983302",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 40
+   },
+   {
+    "nct": "NCT06001853",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 40
+   },
+   {
+    "nct": "NCT06003530",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 21
+   },
+   {
+    "nct": "NCT06157619",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 20
+   },
+   {
+    "nct": "NCT06208241",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 18
+   },
+   {
+    "nct": "NCT06240416",
+    "role": "lab_or_background_mention_only",
+    "status": "UNKNOWN",
+    "has_results": false,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT06248697",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 16
+   },
+   {
+    "nct": "NCT06252337",
+    "role": "dental_material",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 80
+   },
+   {
+    "nct": "NCT06281847",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "enrollment": 143
+   },
+   {
+    "nct": "NCT06635382",
+    "role": "dental_material",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "enrollment": 68
+   },
+   {
+    "nct": "NCT06724471",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "has_results": false,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT06778434",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 48
+   },
+   {
+    "nct": "NCT06805448",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 40
+   },
+   {
+    "nct": "NCT06805890",
+    "role": "lab_or_background_mention_only",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 60
+   },
+   {
+    "nct": "NCT06810258",
+    "role": "lab_or_background_mention_only",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 1000
+   },
+   {
+    "nct": "NCT06883188",
+    "role": "lab_or_background_mention_only",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT06938334",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "enrollment": 15
+   },
+   {
+    "nct": "NCT07020715",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "enrollment": 14
+   },
+   {
+    "nct": "NCT07110246",
+    "role": "drug_solvate_or_solvent",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 96
+   },
+   {
+    "nct": "NCT07196618",
+    "role": "dental_material",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT07255508",
+    "role": "drug_solvate_or_solvent",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "enrollment": 100
+   },
+   {
+    "nct": "NCT07290946",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "enrollment": 100
+   },
+   {
+    "nct": "NCT07321028",
+    "role": "lab_or_background_mention_only",
+    "status": "ENROLLING_BY_INVITATION",
+    "has_results": false,
+    "enrollment": 50
+   },
+   {
+    "nct": "NCT07479290",
+    "role": "vehicle_or_penetration_enhancer_or_vehicle_arm",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT07567274",
+    "role": "dmso_based_combination",
+    "status": "ENROLLING_BY_INVITATION",
+    "has_results": false,
+    "enrollment": 20
+   },
+   {
+    "nct": "NCT07672483",
+    "role": "cryoprotectant_for_cells_or_tissue",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 95
+   },
+   {
+    "nct": "NCT07796854",
+    "role": "lab_or_background_mention_only",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "enrollment": 100
+   },
+   {
+    "nct": "NCT07802600",
+    "role": "lab_or_background_mention_only",
+    "status": "NOT_YET_RECRUITING",
+    "has_results": false,
+    "enrollment": 100
+   },
+   {
+    "nct": "NCT07830641",
+    "role": "dental_material",
+    "status": "COMPLETED",
+    "has_results": false,
+    "enrollment": 30
+   },
+   {
+    "nct": "NCT07842120",
+    "role": "dental_material",
+    "status": "RECRUITING",
+    "has_results": false,
+    "enrollment": 60
+   }
+  ]
+ },
+ "pubmed": {
+  "query": "(\"Dimethyl Sulfoxide\"[MeSH] OR DMSO[tiab] OR \"dimethyl sulfoxide\"[tiab] OR dimethylsulfoxide[tiab] OR \"dimethyl sulphoxide\"[tiab]) AND (Randomized Controlled Trial[pt])",
+  "pulled": "2026-10-19 20:59 CDT",
+  "records_tagged_rct": 169,
+  "human_rcts_testing_dmso_itself": 35,
+  "by_area": {
+   "bladder": 7,
+   "musculoskeletal pain": 9,
+   "skin and wounds": 5,
+   "gut disease and cancer survival (one author)": 14
+  },
+  "single_author_salim_series": 14,
+  "cancer_survival_trials": [
+   "8493453",
+   "1591948",
+   "1591947"
+  ],
+  "als_trials": 0,
+  "dmso_based_combinations": {
+   "35217280": "30% ascorbic acid in 95% DMSO vs imiquimod, basal cell carcinoma (25 people, 29 lesions)",
+   "1055560": "DMSO-containing anti-inflammatory spray, infant bronchiolitis",
+   "39085322": "phytoterpenes in DMSO vs placebo, plantar fasciitis"
+  },
+  "other_records_note": "The rest use DMSO as a cryoprotectant, solvent, vehicle or dental primer; test MSM (methylsulfonylmethane, a different compound); are animal or lab studies; or are secondary/duplicate reports (e.g. PMID 12515575 cost analysis, 16013288 duplicate of 17553503, 23485788 HBO after DMSO).",
+  "classified": [
+   {
+    "pmid": "3288775",
+    "area": "bladder",
+    "finding": "DMSO vs saline, crossover, 33 people: 53% vs 18% markedly improved (subjective)",
+    "title": "A controlled study of dimethyl sulfoxide in interstitial cystitis."
+   },
+   {
+    "pmid": "11061879",
+    "area": "bladder",
+    "finding": "DMSO vs BCG, crossover, 21 people: pain fell on DMSO; BCG no benefit",
+    "title": "Intravesical bacillus Calmette-Guerin and dimethyl sulfoxide for treatment of classic and nonulcer interstitial cystitis: a prospective, randomized double-blind study."
+   },
+   {
+    "pmid": "19137459",
+    "area": "bladder",
+    "finding": "four treatments; more responded to DMSO than BCG on global response",
+    "title": "Evaluation of health-related quality of life in patients with painful bladder syndrome/interstitial cystitis and the impact of four treatments on it."
+   },
+   {
+    "pmid": "27654012",
+    "area": "bladder",
+    "finding": "HA/CS vs DMSO, open label, 110 women, IBSA-sponsored: HA/CS better on pain at 6 months",
+    "title": "A randomized, open-label, multicenter study of the efficacy and safety of intravesical hyaluronic acid and chondroitin sulfate versus dimethyl sulfoxide in women with bladder pain syndrome/interstitial cystitis."
+   },
+   {
+    "pmid": "28124536",
+    "area": "bladder",
+    "finding": "CS vs DMSO, 36 people: 57% of DMSO arm withdrew (pain, garlic odor, no effect); stopped early",
+    "title": "A prospective randomized controlled multicentre trial comparing intravesical DMSO and chondroïtin sulphate 2% for painful bladder syndrome/interstitial cystitis."
+   },
+   {
+    "pmid": "33580603",
+    "area": "bladder",
+    "finding": "KRP-116D 50% DMSO vs placebo, Japan, 96 people: ICSI -5.2 vs -3.4",
+    "title": "Efficacy and safety of intravesical instillation of KRP-116D (50% dimethyl sulfoxide solution) for interstitial cystitis/bladder pain syndrome in Japanese patients: A multicenter, randomized, double-blind, placebo-controlled, clinical study."
+   },
+   {
+    "pmid": "36747494",
+    "area": "bladder",
+    "finding": "DMSO + triamcinolone vs BTH, 83 randomized: 63% vs 43% responders, p=0.15",
+    "title": "A prospective, randomized trial comparing intravesical dimethyl sulfoxide (DMSO) to bupivacaine, triamcinolone, and heparin (BTH), for newly diagnosed interstitial cystitis/painful bladder syndrome (IC/PBS)."
+   },
+   {
+    "pmid": "8529985",
+    "area": "musculoskeletal pain",
+    "finding": "25% DMSO gel vs gel base, knee osteoarthritis, 112 people, 3 weeks: less pain on loading",
+    "title": "[DMSO in patients with active gonarthrosis. A double-blind placebo controlled phase III study]."
+   },
+   {
+    "pmid": "8194818",
+    "area": "musculoskeletal pain",
+    "finding": "10% DMSO gel (Rheumabene) vs gel base, acute tendon pain, 157 people: 44% vs 9% pain-free at 14 days",
+    "title": "[Dimethylsulfoxide (DMSO) gel in treatment of acute tendopathies. A multicenter, placebo-controlled, randomized study]."
+   },
+   {
+    "pmid": "8721469",
+    "area": "musculoskeletal pain",
+    "finding": "50% DMSO cream vs placebo, acute reflex sympathetic dystrophy, 32 people: DMSO better",
+    "title": "Treatment of acute reflex sympathetic dystrophy with DMSO 50% in a fatty cream."
+   },
+   {
+    "pmid": "12670672",
+    "area": "musculoskeletal pain",
+    "finding": "50% DMSO vs N-acetylcysteine, CRPS I, 146 people: no overall difference",
+    "title": "The treatment of complex regional pain syndrome type I with free radical scavengers: a randomized controlled study."
+   },
+   {
+    "pmid": "8172505",
+    "area": "musculoskeletal pain",
+    "finding": "DMSO vs guanethidine blocks, RSD, 26 people: DMSO better at 9 weeks",
+    "title": "Reflex sympathetic dystrophy: early treatment and psychological aspects."
+   },
+   {
+    "pmid": "2700237",
+    "area": "musculoskeletal pain",
+    "finding": "Dimexide 50% applications vs physiotherapy, rheumatoid arthritis (USSR, 1989)",
+    "title": "[An evaluation of the efficacy of treating rheumatoid arthritis with preparations for local use]."
+   },
+   {
+    "pmid": "2697951",
+    "area": "musculoskeletal pain",
+    "finding": "DMSO in 42 people with rheumatic diseases; fibrin and microcirculation measures",
+    "title": "[The effect of dimethyl sulfoxide on the thromboelastographic indices and the microcirculation in patients with rheumatic diseases]."
+   },
+   {
+    "pmid": "19380203",
+    "area": "musculoskeletal pain",
+    "finding": "Simon 2009: 45.5% DMSO vehicle vs 2.3% DMSO placebo, knee OA, 775 people in 5 arms: vehicle no better than placebo",
+    "title": "Efficacy and safety of topical diclofenac containing dimethyl sulfoxide (DMSO) compared with those of topical placebo, DMSO vehicle and oral diclofenac for knee osteoarthritis."
+   },
+   {
+    "pmid": "15313991",
+    "area": "musculoskeletal pain",
+    "finding": "Bookman 2004: 45.5% DMSO vehicle vs placebo, knee OA, 248 people: pain change -2.5 vs -2.5",
+    "title": "Effect of a topical diclofenac solution for relieving symptoms of primary osteoarthritis of the knee: a randomized controlled trial."
+   },
+   {
+    "pmid": "3884019",
+    "area": "skin and wounds",
+    "finding": "2% and 70% DMSO vs saline, scleroderma finger ulcers, 84 people: no difference; >1/4 on 70% withdrawn for skin toxicity",
+    "title": "Double-blind, multicenter controlled trial comparing topical dimethyl sulfoxide and normal saline for treatment of hand ulcers in patients with systemic sclerosis."
+   },
+   {
+    "pmid": "17553503",
+    "area": "skin and wounds",
+    "finding": "massage with DMSO cream vs plain cream vs repositioning, pressure ulcers: no difference",
+    "title": "The effectiveness of massage with and without dimethyl sulfoxide in preventing pressure ulcers: a randomized, double-blind cross-over trial in patients prone to pressure ulcers."
+   },
+   {
+    "pmid": "16018522",
+    "area": "skin and wounds",
+    "finding": "topical DMSO vs none, mastectomy flap edge necrosis: less necrosis",
+    "title": "Prevention of wound edge necrosis by local application of dimethylsulfoxide."
+   },
+   {
+    "pmid": "8857862",
+    "area": "skin and wounds",
+    "finding": "topical DMSO vs none, surgical skin flaps: less ischemia",
+    "title": "Improved outcome of surgical flaps treated with topical dimethylsulfoxide."
+   },
+   {
+    "pmid": "32160368",
+    "area": "skin and wounds",
+    "finding": "50% DMSO vs tretinoin, macular amyloidosis, 18 people, split-body",
+    "title": "Efficacy of topical dimethyl sulfoxide (DMSO) 50% solution vs tretinoin 0.5% cream in treatment of patients with primary macular amyloidosis: A split-side single-blinded randomized clinical trial."
+   },
+   {
+    "pmid": "8493453",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "oral DMSO or allopurinol vs control after palliative surgery for Dukes D colon cancer: 306 randomized, 193 evaluable; survival advantage",
+    "title": "Scavengers of oxygen-derived free radicals prolong survival in advanced colonic cancer. A new approach."
+   },
+   {
+    "pmid": "1591948",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "oral DMSO or allopurinol vs control after gastrectomy for gastric cancer: 228 randomized, 160 evaluable; survival advantage",
+    "title": "Oxygen-derived free-radical scavengers prolong survival in gastric cancer."
+   },
+   {
+    "pmid": "1591947",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "oral DMSO or allopurinol vs control after surgery for Dukes C colon cancer: 198 randomized, 144 evaluable; survival advantage",
+    "title": "Oxygen-derived free-radical scavengers prolong survival in colonic cancer."
+   },
+   {
+    "pmid": "8277768",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "refractory duodenal ulcer",
+    "title": "Role of free radical scavengers in the management of refractory duodenal ulceration. A new approach."
+   },
+   {
+    "pmid": "8480273",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "NSAID gastric bleeding",
+    "title": "A new approach to the treatment of nonsteroidal anti-inflammatory drugs induced gastric bleeding by free radical scavengers."
+   },
+   {
+    "pmid": "8400493",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "H. pylori duodenal ulcer",
+    "title": "The relationship between Helicobacter pylori and oxygen-derived free radicals in the mechanism of duodenal ulceration."
+   },
+   {
+    "pmid": "1593216",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "peptic ulcer in smokers",
+    "title": "Allopurinol and dimethyl sulfoxide improve treatment outcomes in smokers with peptic ulcer disease."
+   },
+   {
+    "pmid": "1350610",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "ulcerative colitis",
+    "title": "Role of oxygen-derived free radical scavengers in the management of recurrent attacks of ulcerative colitis: a new approach."
+   },
+   {
+    "pmid": "1578058",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "erosive gastritis",
+    "title": "Oxygen-derived free radical scavengers protect patients against the complications of erosive gastritis."
+   },
+   {
+    "pmid": "1929842",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "chronic pancreatitis pain",
+    "title": "Role of oxygen-derived free radical scavengers in the treatment of recurrent pain produced by chronic pancreatitis. A new approach."
+   },
+   {
+    "pmid": "2031364",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "venous ulcers",
+    "title": "The role of oxygen-derived free radicals in the management of venous (varicose) ulceration: a new approach."
+   },
+   {
+    "pmid": "1797888",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "stress gastric injury",
+    "title": "Protection against stress-induced acute gastric mucosal injury by free radical scavengers."
+   },
+   {
+    "pmid": "2164771",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "duodenal ulcer relapse",
+    "title": "Oxygen-derived free radicals and the prevention of duodenal ulcer relapse: a new approach."
+   },
+   {
+    "pmid": "2574322",
+    "area": "gut disease and cancer survival (one author)",
+    "finding": "stress gastric injury (Lancet)",
+    "title": "Scavenging free radicals to prevent stress-induced gastric mucosal injury."
+   }
+  ],
+  "context_counts": {
+   "pubmed_mesh_dmso_and_humans": 5740,
+   "pubmed_all_records_mentioning_dmso_mesh_or_tiab": 43674,
+   "pubmed_mesh_dmso_and_mesh_als": 0
+  },
+  "note": "Lower bound: older non-English trials may not carry the RCT publication type."
+ },
+ "dailymed": {
+  "otc_dmso_named_products": 9,
+  "otc_dmso_active": 0,
+  "otc_dmso_listed_inactive": 8,
+  "otc_no_dmso_listed": 1,
+  "otc_effective_2026": 7,
+  "otc_unapproved_homeopathic": 1,
+  "rx_dmso_labels": [
+   {
+    "setid": "58b25d79-78f2-4953-b0c6-61658dc4ef0d",
+    "name": null,
+    "effective": "20210317",
+    "actives": [
+     "Dimethyl Sulfoxide"
+    ],
+    "dmso_active": true,
+    "dmso_inactive": false,
+    "application": "NDA017788",
+    "boxed_warning": false
+   },
+   {
+    "setid": "8f699de6-9d09-48da-9d95-4001d7008587",
+    "name": null,
+    "effective": "20260720",
+    "actives": [
+     "Dimethyl Sulfoxide"
+    ],
+    "dmso_active": true,
+    "dmso_inactive": false,
+    "application": "ANDA220173",
+    "boxed_warning": false
+   }
+  ],
+  "vet": [
+   {
+    "setid": "4ae0564a-6c03-4848-88d0-621943d94ea1",
+    "name": null,
+    "effective": "20250523",
+    "actives": [
+     "DIMETHYL SULFOXIDE",
+     "FLUOCINOLONE ACETONIDE"
+    ],
+    "dmso_active": true,
+    "dmso_inactive": false,
+    "application": "NADA045512",
+    "boxed_warning": false
+   }
+  ],
+  "other": [
+   {
+    "setid": "49d5f5ef-0d09-4045-9cae-a791d4fe0bce",
+    "name": null,
+    "effective": "20211022",
+    "actives": [
+     "TRAMETINIB DIMETHYL SULFOXIDE"
+    ],
+    "dmso_active": true,
+    "dmso_inactive": false,
+    "application": null,
+    "boxed_warning": false
+   },
+   {
+    "setid": "4732a181-9fe0-49b4-b486-e2da9ad66e31",
+    "name": null,
+    "effective": "20101001",
+    "actives": [
+     "DICLOFENAC SODIUM"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": true,
+    "application": "NDA020947",
+    "boxed_warning": true
+   }
+  ],
+  "otc": [
+   {
+    "setid": "43f84d44-18eb-7f88-e063-6394a90ab3d5",
+    "name": "Dr. Luke DMSO (arnica)",
+    "effective": "20251119",
+    "actives": [
+     "ARNICA MONTANA"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": true,
+    "application": "M017",
+    "boxed_warning": false
+   },
+   {
+    "setid": "48f5544e-1cfd-864a-e063-6394a90a71f1",
+    "name": "Easment DMSO Cream",
+    "effective": "20260122",
+    "actives": [
+     "MENTHOL"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": false,
+    "application": "M017",
+    "boxed_warning": false
+   },
+   {
+    "setid": "59a43e2c-d258-34b5-e063-6394a90a09bf",
+    "name": "Jelvoxa DMSO Cream (87721)",
+    "effective": "20260822",
+    "actives": [
+     "CAMPHOR, (-)-",
+     "CAPSAICIN",
+     "MENTHOL"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": true,
+    "application": "M017",
+    "boxed_warning": false
+   },
+   {
+    "setid": "5ca9fed3-9dc3-9dc2-e063-6294a90a1077",
+    "name": "Nivexis DMSO cream (83091)",
+    "effective": "20260929",
+    "actives": [
+     "MENTHOL"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": true,
+    "application": "M017",
+    "boxed_warning": false
+   },
+   {
+    "setid": "5d43aff1-a87b-43a3-e063-6294a90af642",
+    "name": "Jelvoxa DMSO Cream (88041)",
+    "effective": "20261007",
+    "actives": [
+     "CAMPHOR (SYNTHETIC)",
+     "CAPSAICIN",
+     "MENTHOL"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": true,
+    "application": "M017",
+    "boxed_warning": false
+   },
+   {
+    "setid": "62b55114-47f4-473a-8406-78238c3c1fa2",
+    "name": "5Kind DMSO Pain Relieving Cream",
+    "effective": "20260504",
+    "actives": [
+     "CAMPHOR (SYNTHETIC)"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": true,
+    "application": "M017",
+    "boxed_warning": false
+   },
+   {
+    "setid": "67d8d045-7fa0-46c2-8072-645d8823903b",
+    "name": "5Kind DMSO 4% Lidocaine Cream",
+    "effective": "20260311",
+    "actives": [
+     "LIDOCAINE HYDROCHLORIDE",
+     "MENTHOL"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": true,
+    "application": "M017",
+    "boxed_warning": false
+   },
+   {
+    "setid": "6a6c7241-f544-4784-9581-f5b172fdbec7",
+    "name": "5Kind DMSO Cream",
+    "effective": "20251202",
+    "actives": [
+     "MENTHOL",
+     "METHYL SALICYLATE"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": true,
+    "application": "M017",
+    "boxed_warning": false
+   },
+   {
+    "setid": "f64837b8-2a19-441e-821a-7fe588f282a5",
+    "name": "Tagrid DMSO arnica (homeopathic)",
+    "effective": "20260215",
+    "actives": [
+     "Arnica Montana"
+    ],
+    "dmso_active": false,
+    "dmso_inactive": true,
+    "application": null,
+    "boxed_warning": false
+   }
+  ],
+  "rimso50": {
+   "application": "NDA017788",
+   "original_approval": "1978-04-04 (openFDA drugsfda)",
+   "boxed_warning": false,
+   "indication": "symptomatic relief of interstitial cystitis only"
+  },
+  "generic": {
+   "application": "ANDA220173",
+   "approved": "2026-07-07 (openFDA drugsfda)"
+  }
+ },
+ "x_counts": {
+  "pulled": "2026-10-19 ~10:10 PM ET",
+  "query": "(DMSO OR \"dimethyl sulfoxide\") lang:en -is:retweet",
+  "daily": {
+   "2026-10-13 (from 03:00 UTC)": 698,
+   "2026-10-14": 764,
+   "2026-10-15": 529,
+   "2026-10-16": 592,
+   "2026-10-17": 745,
+   "2026-10-18": 848,
+   "2026-10-19": 601
+  },
+  "total": 4777,
+  "template_query": "same + (\"cancer survivor\" OR Drejenna): the copy-paste reply \"My mother is a cancer survivor ...\" pointing to an account selling a DMSO/ivermectin/fenbendazole \"protocol\"",
+  "template_daily": {
+   "2026-10-13 (from 03:00 UTC)": 527,
+   "2026-10-14": 587,
+   "2026-10-15": 366,
+   "2026-10-16": 348,
+   "2026-10-17": 432,
+   "2026-10-18": 391,
+   "2026-10-19": 228
+  },
+  "template_total": 2879,
+  "excluding_template_daily": {
+   "2026-10-13 (from 03:00 UTC)": 171,
+   "2026-10-14": 177,
+   "2026-10-15": 163,
+   "2026-10-16": 244,
+   "2026-10-17": 313,
+   "2026-10-18": 457,
+   "2026-10-19": 373
+  },
+  "excluding_template_total": 1898,
+  "original_posts_query": "same + -is:reply",
+  "original_daily": {
+   "2026-10-13 (from 03:00 UTC)": 54,
+   "2026-10-14": 60,
+   "2026-10-15": 32,
+   "2026-10-16": 53,
+   "2026-10-17": 58,
+   "2026-10-18": 86,
+   "2026-10-19": 67
+  },
+  "original_total": 410
+ }
+}
