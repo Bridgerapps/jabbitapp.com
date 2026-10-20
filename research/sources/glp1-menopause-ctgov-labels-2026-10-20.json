@@ -1,0 +1,696 @@
+{
+ "what": "Jabbit review: GLP-1 drugs, CagriSema and menopause / hormone therapy. Abstract and press-release numbers, label scan, ClinicalTrials.gov hand review, X and PubMed counts.",
+ "pulled_ctgov": "2026-10-20T12:06-04:00",
+ "ctgov_queries": {
+  "term": "menopause OR menopausal OR postmenopausal OR postmenopause OR perimenopause OR perimenopausal OR \"midlife women\" OR \"mid-life women\" OR \"hormone therapy\" OR \"hormone replacement\" OR estradiol",
+  "intr": "semaglutide OR tirzepatide OR liraglutide OR dulaglutide OR exenatide OR retatrutide OR orforglipron OR cagrilintide OR CagriSema OR survodutide OR mazdutide OR Ozempic OR Wegovy OR Zepbound OR Mounjaro OR Saxenda OR \"GLP-1\" OR GLP-1RA OR GLP1 OR \"GLP-1 receptor agonist\" OR incretin",
+  "pullA": 84,
+  "pullB_free_text": 139,
+  "union": 139
+ },
+ "mayo_nference_2026_abstract": {
+  "sema": {
+   "n_ht": 793,
+   "n_noht": 1586,
+   "m9": [
+    -9.8,
+    -8.2
+   ],
+   "m12": [
+    -11.0,
+    -9.5
+   ],
+   "m15": [
+    -11.6,
+    -9.7
+   ],
+   "last": [
+    -11.9,
+    -10.9
+   ],
+   "p_last": "0.020",
+   "ge10": [
+    55,
+    51
+   ],
+   "ge20": [
+    22,
+    18
+   ],
+   "median_followup_months": 26
+  },
+  "tirz": {
+   "n_ht": 492,
+   "n_noht": 984,
+   "m3": [
+    -6.6,
+    -5.9
+   ],
+   "ge5_last": [
+    88,
+    84
+   ],
+   "later": "no significant differences",
+   "median_followup_months": [
+    17,
+    16
+   ]
+  }
+ },
+ "mayo_2024": {
+  "n_ht": 16,
+  "n_noht": 90,
+  "m12": [
+   -16,
+   -12
+  ],
+  "m6": [
+   -13,
+   -9
+  ],
+  "pmid": 38446869
+ },
+ "mayo_tirzepatide_lancet_ogwh_2026": {
+  "n_ht": 40,
+  "n_noht": 80,
+  "last": [
+   -19.2,
+   -14.0
+  ],
+  "diff": -5.2,
+  "doi": "10.1016/S3050-5038(25)00145-1"
+ },
+ "cagrisema_redefine1_women": {
+  "women_all_arms_n": 2309,
+  "women_cagri_placebo_n": 1902,
+  "all_women": {
+   "cagrisema": -25.0,
+   "semaglutide": -19.0,
+   "cagrilintide": -13.4,
+   "placebo": -3.0
+  },
+  "by_stage": {
+   "pre": {
+    "n": [
+     408,
+     122
+    ],
+    "wl": [
+     -26.7,
+     -2.1
+    ],
+    "ge20": [
+     78.3,
+     3.0
+    ],
+    "waist": [
+     -21.7,
+     -5.0
+    ]
+   },
+   "peri": {
+    "n": [
+     256,
+     81
+    ],
+    "wl": [
+     -24.8,
+     -1.7
+    ],
+    "ge20": [
+     70.4,
+     1.2
+    ],
+    "waist": [
+     -20.1,
+     -3.1
+    ]
+   },
+   "post": {
+    "n": [
+     530,
+     168
+    ],
+    "wl": [
+     -23.1,
+     -2.6
+    ],
+    "ge20": [
+     63.2,
+     2.2
+    ],
+    "waist": [
+     -19.2,
+     -4.1
+    ]
+   },
+   "ht": {
+    "n": [
+     247,
+     90
+    ],
+    "wl": [
+     -25.6,
+     -2.3
+    ],
+    "ge20": [
+     69.4,
+     1.8
+    ],
+    "waist": [
+     -21.4,
+     -4.8
+    ]
+   }
+  },
+  "estimand": "trial product (efficacy): as if everyone stayed on treatment",
+  "press_release_reports_ht_group_result": false,
+  "press_release_says_ht_group_evaluated_separately": true
+ },
+ "tirzepatide_surmount1_by_stage": {
+  "pre": [
+   -26,
+   -2
+  ],
+  "peri": [
+   -23,
+   -3
+  ],
+  "post": [
+   -23,
+   -3
+  ],
+  "pmid": 40074721
+ },
+ "labels": {
+  "foundayo": {
+   "version": "10",
+   "mentions_menopause": false,
+   "mentions_hormone_therapy": false,
+   "ethinyl_estradiol_pk": false,
+   "mentions_oral_contraceptives": true,
+   "mentions_progesterone_or_estradiol_mht": false
+  },
+  "mounjaro": {
+   "version": "40",
+   "mentions_menopause": false,
+   "mentions_hormone_therapy": false,
+   "ethinyl_estradiol_pk": true,
+   "mentions_oral_contraceptives": true,
+   "mentions_progesterone_or_estradiol_mht": false
+  },
+  "ozempic": {
+   "version": "20",
+   "mentions_menopause": false,
+   "mentions_hormone_therapy": false,
+   "ethinyl_estradiol_pk": true,
+   "mentions_oral_contraceptives": true,
+   "mentions_progesterone_or_estradiol_mht": false
+  },
+  "rybelsus": {
+   "version": "14",
+   "mentions_menopause": false,
+   "mentions_hormone_therapy": false,
+   "ethinyl_estradiol_pk": true,
+   "mentions_oral_contraceptives": false,
+   "mentions_progesterone_or_estradiol_mht": false
+  },
+  "saxenda": {
+   "version": "22",
+   "mentions_menopause": false,
+   "mentions_hormone_therapy": false,
+   "ethinyl_estradiol_pk": true,
+   "mentions_oral_contraceptives": true,
+   "mentions_progesterone_or_estradiol_mht": false
+  },
+  "trulicity": {
+   "version": "62",
+   "mentions_menopause": false,
+   "mentions_hormone_therapy": false,
+   "ethinyl_estradiol_pk": false,
+   "mentions_oral_contraceptives": false,
+   "mentions_progesterone_or_estradiol_mht": false
+  },
+  "victoza": {
+   "version": "31",
+   "mentions_menopause": false,
+   "mentions_hormone_therapy": false,
+   "ethinyl_estradiol_pk": true,
+   "mentions_oral_contraceptives": true,
+   "mentions_progesterone_or_estradiol_mht": false
+  },
+  "wegovy": {
+   "version": "19",
+   "mentions_menopause": false,
+   "mentions_hormone_therapy": false,
+   "ethinyl_estradiol_pk": true,
+   "mentions_oral_contraceptives": false,
+   "mentions_progesterone_or_estradiol_mht": false
+  },
+  "zepbound": {
+   "version": "40",
+   "mentions_menopause": false,
+   "mentions_hormone_therapy": false,
+   "ethinyl_estradiol_pk": true,
+   "mentions_oral_contraceptives": true,
+   "mentions_progesterone_or_estradiol_mht": false
+  }
+ },
+ "labels_with_ethinyl_estradiol_pk": [
+  "mounjaro",
+  "ozempic",
+  "rybelsus",
+  "saxenda",
+  "victoza",
+  "wegovy",
+  "zepbound"
+ ],
+ "labels_mentioning_menopause_or_mht": [],
+ "ctgov_core_studies": [
+  {
+   "nct": "NCT07850050",
+   "title": "SYNCHRONIZE®-HERA: A Study to Test Whether Survodutide Helps Women Who Are Living With Overweight or Obesity and Are Going Through or Have Finished Menopause, to Lose Weight",
+   "sponsor": "Boehringer Ingelheim",
+   "sponsor_class": "INDUSTRY",
+   "status": "NOT_YET_RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": 600,
+   "start": "2026-10-31",
+   "primary_completion": "2028-07-26",
+   "first_posted": "2026-09-30",
+   "has_results": false,
+   "category": "phase 3 weight-loss trial",
+   "what": "Survodutide vs placebo, 52 weeks, peri- and postmenopausal women 45-65 (Boehringer Ingelheim SYNCHRONIZE-HERA)",
+   "hormone_therapy": "not stated in public criteria"
+  },
+  {
+   "nct": "NCT06715514",
+   "title": "Menopausal Hormone Therapy, GLP-1 Agonists, and Glucose and Energy Homeostasis in Postmenopausal Women With Overweight/Obesity and Impaired Glucose Homeostasis",
+   "sponsor": "Lia Bally",
+   "sponsor_class": "OTHER",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phase": [
+    "NA"
+   ],
+   "enrollment": 96,
+   "start": "2025-02-18",
+   "primary_completion": "2026-12-17",
+   "first_posted": "2024-12-04",
+   "has_results": false,
+   "category": "randomizes hormone therapy",
+   "what": "Transdermal estradiol (+ micronized progesterone) vs semaglutide up to 1 mg vs both, early postmenopausal women with or at risk of diabetes; HbA1c at 12 weeks primary (Bern)",
+   "hormone_therapy": "randomized (no prior MHT allowed)"
+  },
+  {
+   "nct": "NCT07057310",
+   "title": "Aging Well: Targeting Obesity With GLP-1 Agonists to Enhance Physical and Vascular Health in Postmenopausal Women",
+   "sponsor": "Mayo Clinic",
+   "sponsor_class": "OTHER",
+   "status": "ENROLLING_BY_INVITATION",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phase": [
+    "PHASE4"
+   ],
+   "enrollment": 30,
+   "start": "2025-05-01",
+   "primary_completion": "2026-12-31",
+   "first_posted": "2025-07-09",
+   "has_results": false,
+   "category": "biological age / function",
+   "what": "Semaglutide or tirzepatide + lifestyle vs lifestyle, postmenopausal women 46-60; physical function, senescence markers, biological age (Mayo Clinic)",
+   "hormone_therapy": "excluded (past or current)"
+  },
+  {
+   "nct": "NCT07218445",
+   "title": "The Effect of Tirzepatide on Menopausal Vasomotor Symptoms and Biological Aging in Post-menopausal Women With Obesity",
+   "sponsor": "Mayo Clinic",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phase": [
+    "PHASE4"
+   ],
+   "enrollment": 40,
+   "start": "2026-04-08",
+   "primary_completion": "2027-09-18",
+   "first_posted": "2025-10-20",
+   "has_results": false,
+   "category": "biological age / function",
+   "what": "Tirzepatide vs placebo 24 weeks, postmenopausal women 46-60; hot-flash frequency/severity, senescence markers, biological age (Mayo Clinic)",
+   "hormone_therapy": "excluded (current or past 4 weeks)"
+  },
+  {
+   "nct": "NCT06975111",
+   "title": "Focusing on the Menopausal Transition to Improve Mid-Life Women's Health",
+   "sponsor": "University of Colorado, Denver",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "phase": [
+    "PHASE2",
+    "PHASE3"
+   ],
+   "enrollment": 200,
+   "start": "2026-03-01",
+   "primary_completion": "2029-10-31",
+   "first_posted": "2025-05-16",
+   "has_results": false,
+   "category": "biological age / function",
+   "what": "Late menopausal transition, ages 45-55; women with obesity offered a GLP-1 drug, others metformin, BP/lipid drugs or hot-flash treatment; PhenoAge and GrimAge primary (University of Colorado; not randomized)",
+   "hormone_therapy": "excluded (current)"
+  },
+  {
+   "nct": "NCT07010432",
+   "title": "The Role of the Amylin Analogue Cagrilintide in Bone Metabolism",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "status": "RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phase": [
+    "PHASE1"
+   ],
+   "enrollment": 144,
+   "start": "2025-06-12",
+   "primary_completion": "2028-05-03",
+   "first_posted": "2025-06-08",
+   "has_results": false,
+   "category": "bone",
+   "what": "Cagrilintide vs semaglutide vs CagriSema vs placebo, postmenopausal women 50-70; total hip vBMD by QCT (Novo Nordisk)",
+   "hormone_therapy": "excluded (systemic HRT within 6 months)"
+  },
+  {
+   "nct": "NCT07422987",
+   "title": "GLP-1RA Effects on Lean Mass and Bone Health in Midlife Women",
+   "sponsor": "University of Kansas Medical Center",
+   "sponsor_class": "OTHER",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "phase": null,
+   "enrollment": 50,
+   "start": "2026-02-12",
+   "primary_completion": "2027-06-30",
+   "first_posted": "2026-02-20",
+   "has_results": false,
+   "category": "bone",
+   "what": "GLP-1 drugs in midlife women 35-60; bone density, lean mass; estrogen level as a secondary (University of Kansas, observational)",
+   "hormone_therapy": "not stated"
+  },
+  {
+   "nct": "NCT04964388",
+   "title": "Effect of GLP-1 Receptor Agonists on Trabecular Bone Score",
+   "sponsor": "University of Mississippi Medical Center",
+   "sponsor_class": "OTHER",
+   "status": "TERMINATED",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "phase": [
+    "PHASE2"
+   ],
+   "enrollment": 5,
+   "start": "2021-11-09",
+   "primary_completion": "2023-05-01",
+   "first_posted": "2021-07-16",
+   "has_results": true,
+   "category": "bone",
+   "what": "GLP-1 drug vs none, postmenopausal women with type 2 diabetes; trabecular bone score (Mississippi; terminated at 5 people)",
+   "hormone_therapy": "not stated"
+  },
+  {
+   "nct": "NCT01381926",
+   "title": "Changes in Bone Turnover With Exposure to a GLP-1 Receptor Agonist",
+   "sponsor": "University of Alabama at Birmingham",
+   "sponsor_class": "OTHER",
+   "status": "TERMINATED",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "phase": [
+    "PHASE4"
+   ],
+   "enrollment": 14,
+   "start": "2011-02",
+   "primary_completion": "2015-08",
+   "first_posted": "2011-06-27",
+   "has_results": true,
+   "category": "bone",
+   "what": "Exenatide vs placebo crossover, postmenopausal women with type 2 diabetes; bone turnover markers (UAB; terminated at 14)",
+   "hormone_therapy": "excluded (estrogen or SERM)"
+  },
+  {
+   "nct": "NCT07787533",
+   "title": "Digital Resistance Training for Midlife Women Using GLP-1",
+   "sponsor": "Louisiana State University and A&M College",
+   "sponsor_class": "OTHER",
+   "status": "NOT_YET_RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "phase": [
+    "NA"
+   ],
+   "enrollment": 15,
+   "start": "2026-11-01",
+   "primary_completion": "2027-06-30",
+   "first_posted": "2026-08-26",
+   "has_results": false,
+   "category": "muscle / exercise",
+   "what": "App-based strength training for women 40-54 who recently started a GLP-1 drug; feasibility (LSU; single arm, 15)",
+   "hormone_therapy": "not excluded"
+  }
+ ],
+ "ctgov_other": {
+  "breast cancer after menopause": [
+   {
+    "nct": "NCT07676331",
+    "title": "Clinical Study of Local and Systemic Biological Impact of GLP1/GIP-Receptor Agonists in Patients With Breast Cancer: The CLARA Trial",
+    "sponsor": "Universitaire Ziekenhuizen KU Leuven",
+    "sponsor_class": "OTHER",
+    "status": "NOT_YET_RECRUITING",
+    "study_type": "INTERVENTIONAL",
+    "allocation": "RANDOMIZED",
+    "phase": [
+     "PHASE2"
+    ],
+    "enrollment": 168,
+    "start": "2026-08-01",
+    "primary_completion": "2028-03-01",
+    "first_posted": "2026-06-30",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07257484",
+    "title": "Tirzepatide's Role in Postmenopausal HR+ Breast Cancer Survivors",
+    "sponsor": "Weill Medical College of Cornell University",
+    "sponsor_class": "OTHER",
+    "status": "RECRUITING",
+    "study_type": "INTERVENTIONAL",
+    "allocation": "NA",
+    "phase": [
+     "PHASE4"
+    ],
+    "enrollment": 30,
+    "start": "2026-06-08",
+    "primary_completion": "2027-12-03",
+    "first_posted": "2025-12-02",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07769047",
+    "title": "Semaglutide and Structured Lifestyle Support to Improve Heart and Blood Vessel Health in Postmenopausal Obese Breast Cancer Survivors Taking Aromatase Inhibitors",
+    "sponsor": "Mayo Clinic",
+    "sponsor_class": "OTHER",
+    "status": "NOT_YET_RECRUITING",
+    "study_type": "INTERVENTIONAL",
+    "allocation": "RANDOMIZED",
+    "phase": [
+     "PHASE4"
+    ],
+    "enrollment": 50,
+    "start": "2026-09-01",
+    "primary_completion": "2031-07-30",
+    "first_posted": "2026-08-17",
+    "has_results": false
+   }
+  ],
+  "birth-control-pill interaction studies run in postmenopausal volunteers": [
+   {
+    "nct": "NCT02845219",
+    "title": "A Trial Investigating the Influence of Oral Semaglutide on Pharmacokinetics of Ethinylestradiol and Levonorgestrel in an Oral Contraceptive Combination Drug in Healthy Postmenopausal Females",
+    "sponsor": "Novo Nordisk A/S",
+    "sponsor_class": "INDUSTRY",
+    "status": "COMPLETED",
+    "study_type": "INTERVENTIONAL",
+    "allocation": "NA",
+    "phase": [
+     "PHASE1"
+    ],
+    "enrollment": 25,
+    "start": "2016-07",
+    "primary_completion": "2016-12",
+    "first_posted": "2016-07-27",
+    "has_results": false
+   },
+   {
+    "nct": "NCT05153564",
+    "title": "A Research Study Looking Into the Effect of Semaglutide and NNC0480 0389 on Blood Levels of a Birth Control Pill in Woman After Menopause",
+    "sponsor": "Novo Nordisk A/S",
+    "sponsor_class": "INDUSTRY",
+    "status": "COMPLETED",
+    "study_type": "INTERVENTIONAL",
+    "allocation": "NA",
+    "phase": [
+     "PHASE1"
+    ],
+    "enrollment": 27,
+    "start": "2021-12-13",
+    "primary_completion": "2022-08-13",
+    "first_posted": "2021-12-10",
+    "has_results": false
+   },
+   {
+    "nct": "NCT01508858",
+    "title": "Influence on the Effect of an Oral Contraceptive Drug After Administration of Liraglutide in Postmenopausal Women",
+    "sponsor": "Novo Nordisk A/S",
+    "sponsor_class": "INDUSTRY",
+    "status": "COMPLETED",
+    "study_type": "INTERVENTIONAL",
+    "allocation": "RANDOMIZED",
+    "phase": [
+     "PHASE1"
+    ],
+    "enrollment": 21,
+    "start": "2006-11",
+    "primary_completion": "2007-04",
+    "first_posted": "2012-01-12",
+    "has_results": false
+   },
+   {
+    "nct": "NCT05896384",
+    "title": "A Study in Women With Overweight or Obesity to Test Whether Different Doses of BI 456906 Influence the Amount of a Contraceptive in the Blood",
+    "sponsor": "Boehringer Ingelheim",
+    "sponsor_class": "INDUSTRY",
+    "status": "COMPLETED",
+    "study_type": "INTERVENTIONAL",
+    "allocation": "NA",
+    "phase": [
+     "PHASE1"
+    ],
+    "enrollment": 32,
+    "start": "2023-12-21",
+    "primary_completion": "2025-02-14",
+    "first_posted": "2023-06-09",
+    "has_results": false
+   },
+   {
+    "nct": "NCT06039826",
+    "title": "A Study of LY3437943 in Postmenopausal Female Participants Who Are Overweight or Obese",
+    "sponsor": "Eli Lilly and Company",
+    "sponsor_class": "INDUSTRY",
+    "status": "COMPLETED",
+    "study_type": "INTERVENTIONAL",
+    "allocation": "NON_RANDOMIZED",
+    "phase": [
+     "PHASE1"
+    ],
+    "enrollment": 46,
+    "start": "2023-09-12",
+    "primary_completion": "2024-07-11",
+    "first_posted": "2023-09-15",
+    "has_results": false
+   }
+  ],
+  "cosmetic (skin serum in women already on a GLP-1, with or without HRT)": [
+   {
+    "nct": "NCT07558603",
+    "title": "Evaluate the Safety and Efficacy of AGE Serum in Post-menopausal Patients on Hormone Replacement Therapy Taking Glucagon-like Peptide-1 Agonist",
+    "sponsor": "Goldman, Butterwick, Fitzpatrick and Groff",
+    "sponsor_class": "OTHER",
+    "status": "NOT_YET_RECRUITING",
+    "study_type": "INTERVENTIONAL",
+    "allocation": "NON_RANDOMIZED",
+    "phase": [
+     "NA"
+    ],
+    "enrollment": 50,
+    "start": "2026-04-20",
+    "primary_completion": "2026-08-30",
+    "first_posted": "2026-04-30",
+    "has_results": false
+   }
+  ]
+ },
+ "core_count": 10,
+ "core_with_results": [
+  "NCT01381926",
+  "NCT04964388"
+ ],
+ "core_excluding_ht": [
+  "NCT01381926",
+  "NCT06975111",
+  "NCT07010432",
+  "NCT07057310",
+  "NCT07218445"
+ ],
+ "core_randomizing_ht": [
+  "NCT06715514"
+ ],
+ "core_biological_age": [
+  "NCT06975111",
+  "NCT07057310",
+  "NCT07218445"
+ ],
+ "core_lilly_sponsored": [],
+ "studies_testing_glp1_effect_on_mht_absorption": [],
+ "x_counts": {
+  "menopause_en_utc_2026_10_14_to_19": [
+   1301,
+   1480,
+   1410,
+   1123,
+   1543,
+   1439
+  ],
+  "menopause_en_2026_10_20_to_1606utc": 862,
+  "menopause_x_glp1_en_utc_2026_10_14_to_19": [
+   3,
+   3,
+   5,
+   0,
+   2,
+   3
+  ],
+  "menopause_x_glp1_en_2026_10_20_to_1601utc": 18,
+  "cagrisema_any_lang_utc_2026_10_14_to_19": [
+   7,
+   9,
+   14,
+   21,
+   6,
+   15
+  ],
+  "cagrisema_any_lang_2026_10_20_to_1606utc": 60,
+  "queries": {
+   "menopause": "(menopause OR perimenopause OR menopausal) lang:en -is:retweet",
+   "menopause_x_glp1": "(menopause OR perimenopause OR postmenopausal OR menopausal) (GLP-1 OR GLP1 OR Ozempic OR Wegovy OR Zepbound OR Mounjaro OR semaglutide OR tirzepatide OR CagriSema OR retatrutide) lang:en -is:retweet",
+   "cagrisema": "CagriSema -is:retweet"
+  }
+ },
+ "pubmed": {
+  "menopause_x_glp1_tiab": 90,
+  "menopause_x_ht_x_sema_or_tirz_tiab": 12,
+  "checked": "2026-10-20 ~12:03 PM ET",
+  "queries": [
+   "menopaus*[tiab] AND (semaglutide[tiab] OR tirzepatide[tiab] OR liraglutide[tiab] OR \"GLP-1\"[tiab] OR \"glucagon-like peptide-1\"[tiab] OR cagrilintide[tiab])",
+   "(menopaus*[tiab] OR postmenopausal[tiab]) AND (\"hormone therapy\"[tiab] OR estrogen[tiab] OR \"hormone replacement\"[tiab]) AND (semaglutide[tiab] OR tirzepatide[tiab])"
+  ]
+ }
+}

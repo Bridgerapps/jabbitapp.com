@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 610" width="720" height="610" role="img" aria-labelledby="t1 d1">
+<title id="t1">Weight loss by menopause stage on tirzepatide and CagriSema</title>
+<desc id="d1">Average weight loss by menopause stage in two big trials, women only, assigned to a stage after the fact mostly by age. Tirzepatide (Zepbound) in SURMOUNT-1: 26%, 23% and 23% before, during and after menopause, vs 2-3% on placebo. CagriSema in REDEFINE 1: 26.7%, 24.8% and 23.1%, vs 1.7-2.6% on placebo; women on hormone therapy (any age): 25.6% vs 2.3%. The two trials are separate and should not be compared head to head.</desc>
+<rect width="720" height="610" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="start">After menopause: 3 to 4 points less, still over 20%</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">Average weight loss in women, by menopause stage assigned after each trial ended (mostly by age)</text>
+<rect x="24" y="80" width="14" height="14" rx="3" fill="#0f766e"/>
+<text x="44" y="92" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Tirzepatide 15 mg (Zepbound), SURMOUNT-1</text>
+<rect x="354" y="80" width="14" height="14" rx="3" fill="#f59e0b"/>
+<text x="374" y="92" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">CagriSema 2.4/2.4 mg, REDEFINE 1</text>
+<text x="24" y="154" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">Before menopause</text>
+<rect x="194" y="124" width="346.7" height="22" rx="4" fill="#0f766e"/>
+<text x="548.6666666666667" y="140" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">26%</text>
+<text x="602.6666666666667" y="140" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">placebo 2%</text>
+<rect x="194" y="152" width="356.0" height="22" rx="4" fill="#f59e0b"/>
+<text x="558.0" y="168" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">26.7%</text>
+<text x="612.0" y="168" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">placebo 2.1%</text>
+<text x="24" y="240" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">Perimenopause</text>
+<rect x="194" y="210" width="306.7" height="22" rx="4" fill="#0f766e"/>
+<text x="508.6666666666667" y="226" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">23%</text>
+<text x="562.6666666666667" y="226" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">placebo 3%</text>
+<rect x="194" y="238" width="330.7" height="22" rx="4" fill="#f59e0b"/>
+<text x="532.6666666666667" y="254" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">24.8%</text>
+<text x="586.6666666666667" y="254" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">placebo 1.7%</text>
+<text x="24" y="326" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">After menopause</text>
+<rect x="194" y="296" width="306.7" height="22" rx="4" fill="#0f766e"/>
+<text x="508.6666666666667" y="312" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">23%</text>
+<text x="562.6666666666667" y="312" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">placebo 3%</text>
+<rect x="194" y="324" width="308.0" height="22" rx="4" fill="#f59e0b"/>
+<text x="510.0" y="340" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">23.1%</text>
+<text x="564.0" y="340" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">placebo 2.6%</text>
+<text x="24" y="404" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">On hormone therapy</text>
+<text x="24" y="422" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="start">(any age, CagriSema only)</text>
+<rect x="194" y="388" width="341.3" height="22" rx="4" fill="#f59e0b" fill-opacity="0.55"/>
+<text x="543.3333333333334" y="404" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">25.6%</text>
+<text x="597.3333333333334" y="404" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">placebo 2.3%</text>
+<text x="24" y="462" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">The hormone-therapy group wasn’t matched to non-users, so it can’t show that hormones added anything.</text>
+<text x="24" y="506" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Two separate trials; don’t compare the colors head to head. “Before menopause” in REDEFINE 1 meant under 45, so</text>
+<text x="24" y="525" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">stage and age are tangled. CagriSema numbers assume everyone stayed on the drug (trial product estimand);</text>
+<text x="24" y="544" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">tirzepatide numbers are at end of treatment. Novo says it did not formally test whether the gaps are real.</text>
+<text x="24" y="572" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Sources: Tchang et al., Obesity 2025 (PMID 40074721, Lilly); Hurtado Andrade et al., Menopause Society 2026 poster P-50 and</text>
+<text x="24" y="590" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Novo Nordisk press release, Oct 20, 2026. Chart by Jabbit.</text>
+</svg>
