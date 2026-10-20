@@ -1,0 +1,850 @@
+{
+ "title": "Oral minoxidil for hair loss: ClinicalTrials.gov review and DailyMed tablet-label scan",
+ "built": "2026-10-19 (ET)",
+ "method": "ClinicalTrials.gov API v2: query.term=minoxidil (all records) plus keyword pulls for 'oral minoxidil', 'low dose minoxidil', 'sublingual minoxidil', 'minoxidil tablet', 'minoxidil capsule', 'LDOM' and 'VDPHL01'; hand-reviewed to studies giving minoxidil by mouth or under the tongue for hair loss. Lower bound: trials registered elsewhere (e.g., Brazil's ReBEC, where the 2024 JAMA Dermatology trial is registered) are not included. DailyMed v2 SPL search drug_name=minoxidil, titles containing TABLET; strengths from structured product data; boxed warning = LOINC 34066-1 section.",
+ "summary": {
+  "studies_kept": 16,
+  "with_posted_results": 0,
+  "by_group": {
+   "Veradermics VDPHL01": 4,
+   "Other company": 6,
+   "Academic": 6
+  },
+  "vdphl01_registrations": 4,
+  "vdphl01_registrations_mentioning_minoxidil": 0,
+  "vdphl01_secondary_outcomes_registered": 0,
+  "phase3_non_veradermics": [
+   "NCT06924632",
+   "NCT05888922",
+   "NCT07529977",
+   "NCT07273799"
+  ],
+  "general_query_minoxidil_total": 130,
+  "tablet_labels": 32,
+  "tablet_labels_boxed_warning": 32,
+  "tablet_labels_hair_growth_not_approved": 32,
+  "tablet_label_strengths": [
+   "2.5",
+   "10"
+  ],
+  "tablet_labels_published_2026": 17,
+  "tablet_label_generic_applications": [
+   "ANDA071344",
+   "ANDA071345",
+   "ANDA071826",
+   "ANDA071839",
+   "ANDA072708",
+   "ANDA072709"
+  ]
+ },
+ "studies": [
+  {
+   "nct": "NCT06527365",
+   "group": "Veradermics VDPHL01",
+   "product": "extended-release tablet, open-label phase 2 ('207')",
+   "title": "Safety and Efficacy of VDPHL01 in Males and Females With AGA",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 70,
+   "enrollment_type": "ESTIMATED",
+   "allocation": "NA",
+   "sponsor": "Veradermics, Inc.",
+   "primary_completion": "2026-08",
+   "last_update": "2025-11-06",
+   "registry_text_mentions_minoxidil": false,
+   "secondary_outcomes_registered": 0
+  },
+  {
+   "nct": "NCT06724614",
+   "group": "Veradermics VDPHL01",
+   "product": "extended-release tablet, men ('302')",
+   "title": "Efficacy and Safety of VDPHL01 in Males With AGA",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "PHASE2",
+    "PHASE3"
+   ],
+   "enrollment": 480,
+   "enrollment_type": "ESTIMATED",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Veradermics, Inc.",
+   "primary_completion": "2026-02",
+   "last_update": "2025-11-06",
+   "registry_text_mentions_minoxidil": false,
+   "secondary_outcomes_registered": 0
+  },
+  {
+   "nct": "NCT06972264",
+   "group": "Veradermics VDPHL01",
+   "product": "extended-release tablet, men ('304')",
+   "title": "Safety and Efficacy of VDPHL01 in Males With AGA",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 480,
+   "enrollment_type": "ESTIMATED",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Veradermics, Inc.",
+   "primary_completion": "2026-12",
+   "last_update": "2026-02-12",
+   "registry_text_mentions_minoxidil": false,
+   "secondary_outcomes_registered": 0
+  },
+  {
+   "nct": "NCT07146022",
+   "group": "Veradermics VDPHL01",
+   "product": "extended-release tablet, women ('306')",
+   "title": "Safety and Efficacy of VDPHL01 in Females With Androgenetic Alopecia (AGA)",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 552,
+   "enrollment_type": "ESTIMATED",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Veradermics, Inc.",
+   "primary_completion": "2027-06",
+   "last_update": "2026-08-17",
+   "registry_text_mentions_minoxidil": false,
+   "secondary_outcomes_registered": 0
+  },
+  {
+   "nct": "NCT06924632",
+   "group": "Other company",
+   "product": "sublingual tablet 2.5 mg twice daily, men (Samson, Australia)",
+   "title": "Efficacy & Safety of Minoxidil SL Tablets in Men With AGA",
+   "status": "COMPLETED",
+   "has_results": false,
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 142,
+   "enrollment_type": "ACTUAL",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Samson Clinical Operations Pty Ltd",
+   "primary_completion": "2026-05-15",
+   "last_update": "2026-05-18",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 0
+  },
+  {
+   "nct": "NCT06679556",
+   "group": "Other company",
+   "product": "sublingual tablet pharmacokinetics (Samson)",
+   "title": "Phase 1 Pharmacokinetic Study of Minoxidil SL Tablets",
+   "status": "COMPLETED",
+   "has_results": false,
+   "phases": [
+    "PHASE1"
+   ],
+   "enrollment": 12,
+   "enrollment_type": "ACTUAL",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Samson Clinical Operations Pty Ltd",
+   "primary_completion": "2024-12-23",
+   "last_update": "2025-02-17",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 5
+  },
+  {
+   "nct": "NCT05888922",
+   "group": "Other company",
+   "product": "oral tablet 1 mg vs topical vs placebo, women (Cantabria, Europe)",
+   "title": "Evaluation of Efficacy and Safety of Oral Minoxidil 1 mg in Female Androgenetic Alopecia",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 520,
+   "enrollment_type": "ESTIMATED",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Industrial Farmacéutica Cantabria, S.A.",
+   "primary_completion": "2026-10",
+   "last_update": "2026-09-16",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 0
+  },
+  {
+   "nct": "NCT06015516",
+   "group": "Other company",
+   "product": "oral 1 mg tablet bioavailability, healthy volunteers (Cantabria)",
+   "title": "Bioavailability Clinical Trial of Oral Minoxidil 1 mg",
+   "status": "COMPLETED",
+   "has_results": false,
+   "phases": [
+    "PHASE1"
+   ],
+   "enrollment": 14,
+   "enrollment_type": "ACTUAL",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Industrial Farmacéutica Cantabria, S.A.",
+   "primary_completion": "2024-03-08",
+   "last_update": "2024-08-21",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 3
+  },
+  {
+   "nct": "NCT07529977",
+   "group": "Other company",
+   "product": "oral solution, titrated, men (Eurofarma N1087)",
+   "title": "Phase 3 Study to Evaluate the Efficacy and Safety of Oral Minoxidil (N1087) in Men With Androgenetic Alopecia.",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 372,
+   "enrollment_type": "ESTIMATED",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Eurofarma Laboratorios S.A.",
+   "primary_completion": "2028-10-30",
+   "last_update": "2026-04-14",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 0
+  },
+  {
+   "nct": "NCT07862374",
+   "group": "Other company",
+   "product": "low-dose oral, women, retrospective observational (Olistic Research Labs)",
+   "title": "Oral Minoxidil With or Without a Multifactorial Drinkable Nutraceutical in Female Pattern Hair Loss: a Retrospective Study",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "phases": null,
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "allocation": null,
+   "sponsor": "Olistic Research Labs S.L.",
+   "primary_completion": "2026-12",
+   "last_update": "2026-10-07",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 3
+  },
+  {
+   "nct": "NCT03831334",
+   "group": "Academic",
+   "product": "oral, chemotherapy-induced hair loss (Northwestern)",
+   "title": "Effect of Low-Dose Oral Minoxidil as Treatment of Permanent Chemotherapy-Induced Alopecia",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "enrollment": 14,
+   "enrollment_type": "ACTUAL",
+   "allocation": "NA",
+   "sponsor": "Northwestern University",
+   "primary_completion": "2024-01-24",
+   "last_update": "2026-04-30",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 1
+  },
+  {
+   "nct": "NCT05417308",
+   "group": "Academic",
+   "product": "oral vs topical, endocrine-therapy hair loss (Ohio State)",
+   "title": "Topical or Oral Minoxidil for the Treatment of Endocrine Therapy-Induced Alopecia in Patients With Stage I-IV Breast Cancer",
+   "status": "RECRUITING",
+   "has_results": false,
+   "phases": [
+    "EARLY_PHASE1"
+   ],
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Ohio State University Comprehensive Cancer Center",
+   "primary_completion": "2027-12-01",
+   "last_update": "2026-03-10",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 11
+  },
+  {
+   "nct": "NCT05778825",
+   "group": "Academic",
+   "product": "oral vs placebo, childhood cancer survivors (MSK)",
+   "title": "A Study of Oral Minoxidil to Treat Hair Loss in Children, Teens, and Young Adults Who Are Cancer Survivors",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ACTUAL",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Memorial Sloan Kettering Cancer Center",
+   "primary_completion": "2027-03",
+   "last_update": "2026-02-20",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 0
+  },
+  {
+   "nct": "NCT07018349",
+   "group": "Academic",
+   "product": "oral 2.5 vs 1 mg, androgenetic alopecia (Pakistan)",
+   "title": "Low Dose Oral Minoxdil in Androgenic Alopecia",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "NA"
+   ],
+   "enrollment": 76,
+   "enrollment_type": "ESTIMATED",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Jinnah Postgraduate Medical Centre",
+   "primary_completion": "2025-09-30",
+   "last_update": "2025-06-12",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 1
+  },
+  {
+   "nct": "NCT07273799",
+   "group": "Academic",
+   "product": "oral 2.5 mg vs topical 5%, androgenetic alopecia (Pakistan)",
+   "title": "Comparison of Outcomes Between Topical Minoxidil Versus Oral Minoxidil for the Treatment of Androgenetic Alopecia",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "phases": [
+    "PHASE3"
+   ],
+   "enrollment": 200,
+   "enrollment_type": "ESTIMATED",
+   "allocation": "RANDOMIZED",
+   "sponsor": "Sheikh Zayed Federal Postgraduate Medical Institute",
+   "primary_completion": "2026-05-01",
+   "last_update": "2025-12-10",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 2
+  },
+  {
+   "nct": "NCT07716748",
+   "group": "Academic",
+   "product": "observational microbiome study before/after oral minoxidil (Singapore National Skin Centre)",
+   "title": "For an Investigator-led Hair Study Comparing Between Healthy and Hair Loss Volunteers",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "phases": null,
+   "enrollment": 66,
+   "enrollment_type": "ESTIMATED",
+   "allocation": null,
+   "sponsor": "National Skin Centre",
+   "primary_completion": "2028-01",
+   "last_update": "2026-07-21",
+   "registry_text_mentions_minoxidil": true,
+   "secondary_outcomes_registered": 6
+  }
+ ],
+ "excluded": {
+  "NCT04209803": "oral is N-acetylcysteine; minoxidil is topical",
+  "NCT07012486": "oral is dihydroartemisinin; minoxidil topical",
+  "NCT04594018": "minoxidil is a hair lotion (finasteride oral)",
+  "NCT06501924": "oral is a botanical supplement; minoxidil topical",
+  "NCT07076706": "topical foam",
+  "NCT04207931": "topical minoxidil",
+  "NCT05272462": "ovarian cancer, not hair",
+  "NCT04467931": "unrelated (ACE inhibitors and COVID-19)"
+ },
+ "tablet_labels": [
+  {
+   "setid": "5bc9f21d-c959-89ee-e063-6294a90a0a62",
+   "title": "MINOXIDIL TABLET [NUCARE PHARMACEUTICALS, INC.]",
+   "labeler": "NUCARE PHARMACEUTICALS, INC.",
+   "published": "Sep 21, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071344"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "0b4fc036-9497-442b-b629-c4b386932789",
+   "title": "MINOXIDIL TABLET [AMERICAN HEALTH PACKAGING]",
+   "labeler": "AMERICAN HEALTH PACKAGING",
+   "published": "Aug 31, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5",
+    "10"
+   ],
+   "applications": [
+    "ANDA071826",
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "75b2832c-0a6c-4125-9514-19a6d8dbf6cf",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Aug 21, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071826"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "8ccd07ab-07ed-4b42-b182-3d22b98abca7",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Aug 21, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071344"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "1d134237-3e94-258e-e063-6294a90af556",
+   "title": "MINOXIDIL TABLET [GOLDEN STATE MEDICAL SUPPLY, INC.]",
+   "labeler": "GOLDEN STATE MEDICAL SUPPLY, INC.",
+   "published": "Jul 24, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5",
+    "10"
+   ],
+   "applications": [
+    "ANDA071826",
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "5fea137a-bc88-4b24-85db-538c90ad1870",
+   "title": "MINOXIDIL TABLET [PD-RX PHARMACEUTICALS, INC.]",
+   "labeler": "PD-RX PHARMACEUTICALS, INC.",
+   "published": "Jul 20, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA072709"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "665cba3d-5f26-468a-a047-188a413fbede",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Jul 20, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "f0dae476-8d0b-4d0c-a505-ad51bf27a1c8",
+   "title": "MINOXIDIL TABLET [PD-RX PHARMACEUTICALS, INC.]",
+   "labeler": "PD-RX PHARMACEUTICALS, INC.",
+   "published": "Jul 20, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA072709"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "934508f8-9252-4d48-ae91-0ce96454dc7b",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Jul 15, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "b138c404-028c-4a73-a127-c96f2072e1f8",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Jul 15, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "cdfd3330-4836-4655-80a2-441380529a67",
+   "title": "MINOXIDIL TABLET [PREFERRED PHARMACEUTICALS INC.]",
+   "labeler": "PREFERRED PHARMACEUTICALS INC.",
+   "published": "Jul 15, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071826"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "e39469e6-d4f6-450f-872c-6f538e67c71a",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Jul 15, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "8f3800f0-b6da-4dfe-8c32-39bb5eb0262a",
+   "title": "MINOXIDIL TABLET [PAR HEALTH USA, LLC]",
+   "labeler": "PAR HEALTH USA, LLC",
+   "published": "Jun 15, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5",
+    "10"
+   ],
+   "applications": [
+    "ANDA071826",
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "f76f6a05-11f8-48a6-98a3-b1407c228089",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Apr 14, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA071345"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "0354a7f5-5917-44dc-9963-411104008cb5",
+   "title": "MINOXIDIL TABLET [SUN PHARMACEUTICAL INDUSTRIES, INC.]",
+   "labeler": "SUN PHARMACEUTICAL INDUSTRIES, INC.",
+   "published": "Feb 10, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5",
+    "10"
+   ],
+   "applications": [
+    "ANDA072709"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "02d7399f-94cc-f718-f214-587301edd138",
+   "title": "MINOXIDIL TABLET [AVKARE]",
+   "labeler": "AVKARE",
+   "published": "Jan 26, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5",
+    "10"
+   ],
+   "applications": [
+    "ANDA072708",
+    "ANDA072709"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "2e5a2976-06fb-43f9-e063-6294a90a3bf5",
+   "title": "MINOXIDIL TABLET [NUCARE PHARMACEUTICALS, INC.]",
+   "labeler": "NUCARE PHARMACEUTICALS, INC.",
+   "published": "Jan 19, 2026",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071826"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "6c85c69e-b5af-4e98-aacf-f65ad15d00d7",
+   "title": "MINOXIDIL TABLET [A-S MEDICATION SOLUTIONS]",
+   "labeler": "A-S MEDICATION SOLUTIONS",
+   "published": "Nov 17, 2025",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071826"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "f00f3370-0313-4ce0-be7d-80db4477d9ae",
+   "title": "MINOXIDIL TABLET [A-S MEDICATION SOLUTIONS]",
+   "labeler": "A-S MEDICATION SOLUTIONS",
+   "published": "Nov 17, 2025",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "a0066eac-cb58-49ef-a480-105cb1043c2b",
+   "title": "MINOXIDIL TABLET [PROFICIENT RX LP]",
+   "labeler": "PROFICIENT RX LP",
+   "published": "Sep 22, 2025",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071826"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "ab30461c-f8c8-409d-9e24-d58ed8a34873",
+   "title": "MINOXIDIL TABLET [ACTAVIS PHARMA, INC.]",
+   "labeler": "ACTAVIS PHARMA, INC.",
+   "published": "Jun 06, 2025",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5",
+    "10"
+   ],
+   "applications": [
+    "ANDA071344",
+    "ANDA071345"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "b18e42ee-e5fa-441f-a6b6-1eb17836d668",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Oct 31, 2024",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071826"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "7aa8d272-0e44-43df-9263-9d84b2aa8946",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Aug 23, 2024",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071826"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "6277d0dc-ac63-4393-a8ef-5350d9808876",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Aug 20, 2024",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "40da3ec5-39db-42f1-b0d6-39d852130307",
+   "title": "MINOXIDIL TABLET [BRYANT RANCH PREPACK]",
+   "labeler": "BRYANT RANCH PREPACK",
+   "published": "Jan 10, 2024",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA072709"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "637718aa-a453-4acd-a992-590d637b63a3",
+   "title": "MINOXIDIL TABLET [PROFICIENT RX LP]",
+   "labeler": "PROFICIENT RX LP",
+   "published": "Feb 13, 2023",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA071344"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "0dada91c-fa1c-4da4-ac0d-e68b017c8604",
+   "title": "MINOXIDIL (MINOXIDIL) TABLET [APHENA PHARMA SOLUTIONS - TENNESSEE, LLC]",
+   "labeler": "APHENA PHARMA SOLUTIONS - TENNESSEE, LLC",
+   "published": "Oct 03, 2017",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA072708"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "abeeb857-8303-487a-83fc-de7396c6ea8b",
+   "title": "MINOXIDIL TABLET [DOH CENTRAL PHARMACY]",
+   "labeler": "DOH CENTRAL PHARMACY",
+   "published": "May 01, 2017",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5",
+    "10"
+   ],
+   "applications": [
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "9a290e8e-730a-4160-a367-c003bc04a2aa",
+   "title": "MINOXIDIL TABLET [CARILION MATERIALS MANAGEMENT]",
+   "labeler": "CARILION MATERIALS MANAGEMENT",
+   "published": "Mar 11, 2016",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA071345"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "032835ab-1c8b-418a-9009-b6ebe58676dc",
+   "title": "MINOXIDIL TABLET [CARILION MATERIALS MANAGEMENT]",
+   "labeler": "CARILION MATERIALS MANAGEMENT",
+   "published": "Mar 04, 2016",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5"
+   ],
+   "applications": [
+    "ANDA072709"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "a167ba5d-b01a-4142-910f-f3314159e852",
+   "title": "MINOXIDIL TABLET [STATE OF FLORIDA DOH CENTRAL PHARMACY]",
+   "labeler": "STATE OF FLORIDA DOH CENTRAL PHARMACY",
+   "published": "Jan 13, 2015",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "10"
+   ],
+   "applications": [
+    "ANDA071839"
+   ],
+   "hair_growth_unapproved_statement": true
+  },
+  {
+   "setid": "56274d6f-8439-4ab7-9bb8-a3fc10a26463",
+   "title": "MINOXIDIL TABLET MINOXIDIL TABLET [PHYSICIANS TOTAL CARE, INC.]",
+   "labeler": "PHYSICIANS TOTAL CARE, INC.",
+   "published": "Mar 06, 2012",
+   "boxed_warning": true,
+   "tamponade": true,
+   "strengths_mg": [
+    "2.5",
+    "10"
+   ],
+   "applications": [
+    "ANDA071344",
+    "ANDA071345"
+   ],
+   "hair_growth_unapproved_statement": true
+  }
+ ],
+ "label_scan_pulled": "2026-10-19 20:03 EDT"
+}
