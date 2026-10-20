@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" role="img" aria-labelledby="t2 d2">
+<title id="t2">30 registered studies measure bone on GLP-1 drugs; 2 have posted results</title>
+<desc id="d2">Randomized: drug vs placebo or no drug: 12 studies, 0 on tirzepatide, 1 with posted results; Randomized: other comparison (every arm on a GLP-1, etc.): 6 studies, 3 on tirzepatide, 0 with posted results; Single-arm: everyone on the drug: 5 studies, 1 on tirzepatide, 1 with posted results; Observational: records or cohorts: 7 studies, 1 on tirzepatide, 0 with posted results. Jabbit hand review of ClinicalTrials.gov, October 20, 2026. Lower bound.</desc>
+<rect width="720" height="560" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">30 registered studies measure bone on GLP-1 drugs. 2 have results.</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">ClinicalTrials.gov studies with a bone outcome, by design. Dark part = tirzepatide (Zepbound, Mounjaro)</text>
+<text x="24" y="100" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Randomized: drug vs placebo or no drug</text>
+<rect x="24" y="110" width="325.7" height="24" rx="4" fill="#94a3b8" fill-opacity="0.45"/>
+<text x="357.7142857142857" y="127" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">12 · 0 tirzepatide · 1 with results</text>
+<text x="24" y="170" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Randomized: other comparison (every arm on a GLP-1, etc.)</text>
+<rect x="24" y="180" width="162.9" height="24" rx="4" fill="#94a3b8" fill-opacity="0.45"/>
+<rect x="24" y="180" width="81.4" height="24" rx="4" fill="#0f766e"/>
+<text x="194.85714285714286" y="197" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">6 · 3 tirzepatide · none with results</text>
+<text x="24" y="240" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Single-arm: everyone on the drug</text>
+<rect x="24" y="250" width="135.7" height="24" rx="4" fill="#94a3b8" fill-opacity="0.45"/>
+<rect x="24" y="250" width="27.1" height="24" rx="4" fill="#0f766e"/>
+<text x="167.71428571428572" y="267" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">5 · 1 tirzepatide · 1 with results</text>
+<text x="24" y="310" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Observational: records or cohorts</text>
+<rect x="24" y="320" width="190.0" height="24" rx="4" fill="#94a3b8" fill-opacity="0.45"/>
+<rect x="24" y="320" width="27.1" height="24" rx="4" fill="#0f766e"/>
+<text x="222.0" y="337" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">7 · 1 tirzepatide · none with results</text>
+<text x="24" y="400" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">Both studies with posted results stopped early, with 14 and 5 people.</text>
+<text x="24" y="424" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">Fracture as a registered outcome: 1 (a claims study where GLP-1 users are the comparison group).</text>
+<text x="24" y="446" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">Retatrutide or orforglipron studies with any bone outcome: 0 of 86.</text>
+<text x="24" y="468" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">Novo Nordisk or Eli Lilly studies with a bone outcome: 1 (Novo’s cagrilintide bone trial, due 2028).</text>
+<text x="24" y="518" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Counts are a lower bound: studies that don’t use these words in their record are missed.</text>
+<text x="24" y="542" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Source: Jabbit hand review of ClinicalTrials.gov (API v2), pulled October 20, 2026. Chart by Jabbit.</text>
+</svg>

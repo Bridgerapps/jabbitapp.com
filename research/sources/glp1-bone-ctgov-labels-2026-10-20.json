@@ -1,0 +1,1020 @@
+{
+ "what": "Jabbit review: registered studies that measure bone on GLP-1 drugs or cagrilintide (ClinicalTrials.gov API v2) and a DailyMed scan of 9 US GLP-1 brand labels for fracture or bone-density text",
+ "pulled": "2026-10-20 00:56 CDT (box clock; = 01:56 ET, October 20, 2026)",
+ "query_counts": {
+  "intr:semaglutide": 788,
+  "intr:tirzepatide": 303,
+  "intr:retatrutide": 33,
+  "intr:orforglipron": 53,
+  "intr:liraglutide": 515,
+  "intr:cagrilintide": 44,
+  "term1": 141,
+  "term2": 109,
+  "term3": 1
+ },
+ "unique_studies_pulled": 1712,
+ "keyword_hits": 189,
+ "method": "Hand-review layer over ops/data/glp1-bone/ctgov-raw.json (from glp1_bone_ctgov.py) plus a DailyMed label scan\n(ops/data/glp1-bone/spl/*.xml). Every bone-flagged registry record was read by hand on 2026-10-20 (ET).\nKept = the study gives a GLP-1 drug (semaglutide, tirzepatide, liraglutide, exenatide, supaglutide, \"GLP-1 RA\" as a class)\nor cagrilintide, AND registers a bone outcome (BMD, bone mineral content, bone turnover markers, trabecular bone score,\nHR-pQCT/QCT, fracture) or names bone in its title. Writes site/research/sources/glp1-bone-ctgov-labels-2026-10-20.json. Jabbit analysis.",
+ "summary": {
+  "kept_total": 30,
+  "by_design": {
+   "rct_vs_control": [
+    "NCT01381926",
+    "NCT02473809",
+    "NCT03341429",
+    "NCT04174755",
+    "NCT04383197",
+    "NCT04702516",
+    "NCT04892199",
+    "NCT06050577",
+    "NCT06390501",
+    "NCT06909006",
+    "NCT07010432",
+    "NCT07165158"
+   ],
+   "rct_other": [
+    "NCT05933499",
+    "NCT07154719",
+    "NCT07361874",
+    "NCT07589322",
+    "NCT07625202",
+    "NCT07760948"
+   ],
+   "single_arm": [
+    "NCT04964388",
+    "NCT06060392",
+    "NCT06861439",
+    "NCT06903923",
+    "NCT07428746"
+   ],
+   "obs": [
+    "NCT03363464",
+    "NCT06182852",
+    "NCT06605287",
+    "NCT06790160",
+    "NCT07094568",
+    "NCT07422987",
+    "NCT07835360"
+   ]
+  },
+  "by_drug": {
+   "semaglutide": [
+    "NCT04174755",
+    "NCT04383197",
+    "NCT04702516",
+    "NCT04892199",
+    "NCT06050577",
+    "NCT06060392",
+    "NCT06390501",
+    "NCT06909006",
+    "NCT07165158",
+    "NCT07361874",
+    "NCT07428746",
+    "NCT07760948"
+   ],
+   "tirzepatide": [
+    "NCT05933499",
+    "NCT06861439",
+    "NCT07094568",
+    "NCT07154719",
+    "NCT07589322"
+   ],
+   "liraglutide": [
+    "NCT02473809",
+    "NCT03341429"
+   ],
+   "exenatide": [
+    "NCT01381926"
+   ],
+   "cagrilintide": [
+    "NCT07010432"
+   ],
+   "class": [
+    "NCT03363464",
+    "NCT04964388",
+    "NCT06182852",
+    "NCT06605287",
+    "NCT06790160",
+    "NCT06903923",
+    "NCT07422987",
+    "NCT07625202",
+    "NCT07835360"
+   ]
+  },
+  "with_posted_results": [
+   "NCT01381926",
+   "NCT04964388"
+  ],
+  "bone_primary_outcome": [
+   "NCT01381926",
+   "NCT02473809",
+   "NCT04702516",
+   "NCT04964388",
+   "NCT06050577",
+   "NCT06182852",
+   "NCT06861439",
+   "NCT07010432",
+   "NCT07094568",
+   "NCT07165158",
+   "NCT07422987"
+  ],
+  "fracture_outcome_kept": [
+   "NCT03363464"
+  ],
+  "fracture_outcome_any_study_in_pull": [
+   "NCT00879970",
+   "NCT03363464",
+   "NCT06745544"
+  ],
+  "novo_or_lilly_with_bone_outcome": {
+   "NCT07010432": "Novo Nordisk A/S"
+  },
+  "industry_sponsor": [
+   "NCT03363464",
+   "NCT07010432"
+  ],
+  "recruiting_or_not_started": [
+   "NCT04174755",
+   "NCT05933499",
+   "NCT06060392",
+   "NCT06903923",
+   "NCT06909006",
+   "NCT07010432",
+   "NCT07094568",
+   "NCT07154719",
+   "NCT07165158",
+   "NCT07361874",
+   "NCT07428746",
+   "NCT07589322",
+   "NCT07625202",
+   "NCT07760948",
+   "NCT07835360"
+  ],
+  "tirzepatide_vs_placebo_randomized": [],
+  "retatrutide_or_orforglipron": [],
+  "retatrutide_or_orforglipron_studies_in_pull": 86,
+  "labels_with_fracture_text": [
+   "wegovy"
+  ],
+  "labels_scanned": [
+   "foundayo",
+   "mounjaro",
+   "ozempic",
+   "rybelsus",
+   "saxenda",
+   "trulicity",
+   "victoza",
+   "wegovy",
+   "zepbound"
+  ]
+ },
+ "studies": [
+  {
+   "nct": "NCT01381926",
+   "drug": "exenatide",
+   "design": "rct_vs_control",
+   "what": "Exenatide vs placebo, postmenopausal women with type 2 diabetes; bone turnover markers primary (UAB)",
+   "title": "Changes in Bone Turnover With Exposure to a GLP-1 Receptor Agonist",
+   "sponsor": "University of Alabama at Birmingham",
+   "sponsor_class": "OTHER",
+   "status": "TERMINATED",
+   "has_results": true,
+   "enrollment": 14,
+   "enrollment_type": "ACTUAL",
+   "start": "2011-02",
+   "primary_completion": "2015-08",
+   "min_age": "45 Years",
+   "max_age": null,
+   "bone_primary": [
+    "Determine Changes in Bone Resorption Markers During the Treatment With a GLP-1 Receptor Agonist (Exenatide) Compared to Placebo in Patients With T2DM.",
+    "Determine Changes in Bone Turnover Markers by Serum N-Telo Peptide During the Treatment With a GLP-1 Receptor Agonist (Exenatide) Compared to Placebo in Patients With T2DM.",
+    "Determine Changes in Bone Turnover Markers by Tartrate-Resistant Acid Phosphatase 5b (TRACP5b) During the Treatment With a GLP-1 Receptor Agonist (Exenatide) Compared to Placebo in Patients With T2DM."
+   ],
+   "bone_secondary": [],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT02473809",
+   "drug": "liraglutide",
+   "design": "rct_vs_control",
+   "what": "Liraglutide vs placebo; CTX primary, DXA BMD, QCT/HR-pQCT (Aarhus)",
+   "title": "The Effect of Liraglutide on Bone Turnover, Bone Mass and Bone Cell Function",
+   "sponsor": "University of Aarhus",
+   "sponsor_class": "OTHER",
+   "status": "COMPLETED",
+   "has_results": false,
+   "enrollment": 60,
+   "enrollment_type": "ACTUAL",
+   "start": "2015-08",
+   "primary_completion": "2017-10",
+   "min_age": "30 Years",
+   "max_age": "90 Years",
+   "bone_primary": [
+    "Change in collagen I cross-linked C-terminal telopeptide measured in serum"
+   ],
+   "bone_secondary": [
+    "Change in BMD evaluated by DXA",
+    "Change in bone alkaline phosphatase measured in serum",
+    "Change in bone structure evaluated by QCT and HRpQCT",
+    "Change in osteocalcin measured in serum",
+    "Change in procollagen type I N-terminal propeptide measured in serum"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT03341429",
+   "drug": "liraglutide",
+   "design": "rct_vs_control",
+   "what": "Liraglutide 3.0 mg vs placebo after poor weight loss; BMD secondary (UCL)",
+   "title": "Evaluation of Liraglutide 3.0mg in Patients With Poor Weight-loss and a Suboptimal Glucagon-like Peptide-1 Response",
+   "sponsor": "University College, London",
+   "sponsor_class": "OTHER",
+   "status": "COMPLETED",
+   "has_results": false,
+   "enrollment": 70,
+   "enrollment_type": "ACTUAL",
+   "start": "2018-08-22",
+   "primary_completion": "2019-11-28",
+   "min_age": "18 Years",
+   "max_age": "64 Years",
+   "bone_primary": [],
+   "bone_secondary": [
+    "Bone mineral density"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT03363464",
+   "drug": "class",
+   "design": "obs",
+   "what": "Empagliflozin vs DPP-4 inhibitors or GLP-1 drugs in claims data; bone fracture secondary (Boehringer Ingelheim; GLP-1 drugs are a comparison group)",
+   "title": "Comparative Effectiveness of Empagliflozin in the US",
+   "sponsor": "Boehringer Ingelheim",
+   "sponsor_class": "INDUSTRY",
+   "status": "COMPLETED",
+   "has_results": false,
+   "enrollment": 230000,
+   "enrollment_type": "ACTUAL",
+   "start": "2017-10-16",
+   "primary_completion": "2026-07-09",
+   "min_age": "18 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [
+    "Bone fracture"
+   ],
+   "fracture_outcome": true
+  },
+  {
+   "nct": "NCT04174755",
+   "drug": "semaglutide",
+   "design": "rct_vs_control",
+   "what": "Semaglutide vs standard care in people with HIV; BMD secondary (UCD)",
+   "title": "Semaglutide's Efficacy in Achieving Weight Loss for Those With HIV",
+   "sponsor": "University College Dublin",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 80,
+   "enrollment_type": "ESTIMATED",
+   "start": "2022-06-22",
+   "primary_completion": "2027-01",
+   "min_age": "18 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [
+    "Changes in bone mineral density (BMD) and total body composition"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT04383197",
+   "drug": "semaglutide",
+   "design": "rct_vs_control",
+   "what": "Semaglutide, endurance exercise, or both; plasma bone markers secondary (Copenhagen)",
+   "title": "Exercise and GLP-1 RA on Insulin Secretion",
+   "sponsor": "University of Copenhagen",
+   "sponsor_class": "OTHER",
+   "status": "UNKNOWN",
+   "has_results": false,
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "start": "2019-12-10",
+   "primary_completion": "2021-08",
+   "min_age": "40 Years",
+   "max_age": "70 Years",
+   "bone_primary": [],
+   "bone_secondary": [
+    "Changes in plasma bone markers"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT04702516",
+   "drug": "semaglutide",
+   "design": "rct_vs_control",
+   "what": "Semaglutide 1.0 mg vs placebo in adults at increased fracture risk; P1NP primary (Odense; published 2024 in eClinicalMedicine, PMID 38737002)",
+   "title": "The Effect of Semaglutide on Bone Turnover in Patients With Increased Risk of Bone Fracture",
+   "sponsor": "Morten Frost",
+   "sponsor_class": "OTHER",
+   "status": "UNKNOWN",
+   "has_results": false,
+   "enrollment": 64,
+   "enrollment_type": "ESTIMATED",
+   "start": "2021-03-24",
+   "primary_completion": "2022-08-31",
+   "min_age": "40 Years",
+   "max_age": "85 Years",
+   "bone_primary": [
+    "Procollagen type 1 N-terminal propeptide (P1NP)"
+   ],
+   "bone_secondary": [
+    "Bone formation rate",
+    "Bone mineral density (BMD)",
+    "Bone specific alkaline phosphatase (BALP)",
+    "Bone volume",
+    "Collagen 1 cross link C-terminal telopeptide (CTX)",
+    "Cortical volumetric BMD",
+    "Estimated bone strength",
+    "Osteocalcin",
+    "Total volumetric BMD",
+    "Trabecular thickness",
+    "Trabecular volumetric BMD"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT04892199",
+   "drug": "semaglutide",
+   "design": "rct_vs_control",
+   "what": "Semaglutide vs placebo in people on antipsychotics; bone markers and bone density secondary",
+   "title": "Does GLP-1RA Prevent Deterioration of Metabolic State in Prediabetic and Diabetic Patients Treated With Antipsychotic Medication?",
+   "sponsor": "Anders Fink-Jensen, MD, DMSci",
+   "sponsor_class": "OTHER",
+   "status": "UNKNOWN",
+   "has_results": false,
+   "enrollment": 104,
+   "enrollment_type": "ESTIMATED",
+   "start": "2021-09-01",
+   "primary_completion": "2026-03-01",
+   "min_age": "18 Years",
+   "max_age": "65 Years",
+   "bone_primary": [],
+   "bone_secondary": [
+    "Bone Markers (Blood sampling)",
+    "Bone density"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT04964388",
+   "drug": "class",
+   "design": "single_arm",
+   "what": "GLP-1 drug in postmenopausal women with type 2 diabetes; trabecular bone score primary (Mississippi; terminated at 5 people)",
+   "title": "Effect of GLP-1 Receptor Agonists on Trabecular Bone Score",
+   "sponsor": "University of Mississippi Medical Center",
+   "sponsor_class": "OTHER",
+   "status": "TERMINATED",
+   "has_results": true,
+   "enrollment": 5,
+   "enrollment_type": "ACTUAL",
+   "start": "2021-11-09",
+   "primary_completion": "2023-05-01",
+   "min_age": "55 Years",
+   "max_age": null,
+   "bone_primary": [
+    "Trabecular Bone Score"
+   ],
+   "bone_secondary": [
+    "Inflammatory Markers and Bone Resorption Markers",
+    "Sclerostin and Bone Formation Markers"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT05933499",
+   "drug": "tirzepatide",
+   "design": "rct_other",
+   "what": "Tirzepatide + bimagrumab vs tirzepatide + placebo vs bimagrumab + placebo; 'bone' in title, lean mass primary (Massachusetts General Hospital)",
+   "title": "Effect of Tirzepatide and Bimagrumab on Body Composition, Insulin Sensitivity, and Bone in Adults With Obesity",
+   "sponsor": "Massachusetts General Hospital",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 63,
+   "enrollment_type": "ESTIMATED",
+   "start": "2025-11-05",
+   "primary_completion": "2028-12-31",
+   "min_age": "18 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT06050577",
+   "drug": "semaglutide",
+   "design": "rct_vs_control",
+   "what": "Oral semaglutide (Rybelsus) vs placebo in type 2 diabetes; P1NP primary (Odense)",
+   "title": "The Effect of Oral Semaglutide on Bone Turnover in Patients With T2D: a Randomized Placebo-controlled Clinical Trial",
+   "sponsor": "Odense University Hospital",
+   "sponsor_class": "OTHER",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "enrollment": 64,
+   "enrollment_type": "ESTIMATED",
+   "start": "2024-06-07",
+   "primary_completion": "2027-01-15",
+   "min_age": "50 Years",
+   "max_age": "85 Years",
+   "bone_primary": [
+    "Procollagen type 1 N-terminal propeptide (P1NP)"
+   ],
+   "bone_secondary": [
+    "Bone formation rate",
+    "Bone mineral density (BMD)",
+    "Bone specific alkaline phosphatase (BALP)",
+    "Bone volume",
+    "Collagen 1 cross link C-terminal telopeptide (CTX)",
+    "Cortical volumetric BMD",
+    "Estimated bone strength",
+    "Osteocalcin",
+    "Total volumetric BMD",
+    "Trabecular thickness",
+    "Trabecular volumetric BMD"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT06060392",
+   "drug": "semaglutide",
+   "design": "single_arm",
+   "what": "Oral semaglutide after liver transplant; bone mineral content secondary (Medanta)",
+   "title": "Effect of Oral Semaglutide on Liver Fat and Body Composition in Liver Transplant Recipients With Diabetes Mellitus",
+   "sponsor": "Medanta, The Medicity, India",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "start": "2023-10-30",
+   "primary_completion": "2025-09-02",
+   "min_age": "30 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [
+    "Change in bone mineral content"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT06182852",
+   "drug": "class",
+   "design": "obs",
+   "what": "GLP-1 drugs and bone metabolism in diabetes; BMD primary (Nanjing)",
+   "title": "The Effect of GLP-1 Receptor Agonist on Bone Metabolism in Patients With Diabetes Mellitus",
+   "sponsor": "Nanjing First Hospital, Nanjing Medical University",
+   "sponsor_class": "OTHER",
+   "status": "UNKNOWN",
+   "has_results": false,
+   "enrollment": 330,
+   "enrollment_type": "ESTIMATED",
+   "start": "2024-01-01",
+   "primary_completion": "2024-12-31",
+   "min_age": "18 Years",
+   "max_age": null,
+   "bone_primary": [
+    "Bone metabolism",
+    "Bone mineral density"
+   ],
+   "bone_secondary": [],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT06390501",
+   "drug": "semaglutide",
+   "design": "rct_vs_control",
+   "what": "Semaglutide vs placebo on energy expenditure; bone mass secondary (Shenzhen)",
+   "title": "The Effect of Weekly Semaglutide Treatment on Energy Expenditure",
+   "sponsor": "Shenzhen Institutes of Advanced Technology ,Chinese Academy of Sciences",
+   "sponsor_class": "OTHER",
+   "status": "COMPLETED",
+   "has_results": false,
+   "enrollment": 60,
+   "enrollment_type": "ACTUAL",
+   "start": "2024-04-01",
+   "primary_completion": "2025-08-15",
+   "min_age": "18 Years",
+   "max_age": "60 Years",
+   "bone_primary": [],
+   "bone_secondary": [
+    "Bone mass"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT06605287",
+   "drug": "class",
+   "design": "obs",
+   "what": "Supaglutide in type 2 diabetes; DXA T-score (Nanjing)",
+   "title": "The Progress of Diabetes After Supaglutide Treatment in Type 2 Diabetes Patients",
+   "sponsor": "Nanjing First Hospital, Nanjing Medical University",
+   "sponsor_class": "OTHER",
+   "status": "UNKNOWN",
+   "has_results": false,
+   "enrollment": 100,
+   "enrollment_type": "ESTIMATED",
+   "start": "2023-03-13",
+   "primary_completion": "2024-12-31",
+   "min_age": "18 Years",
+   "max_age": "75 Years",
+   "bone_primary": [],
+   "bone_secondary": [
+    "Change in Dex bone density (T value)"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT06790160",
+   "drug": "class",
+   "design": "obs",
+   "what": "Anti-obesity medication users; total bone mineral content (Texas Tech)",
+   "title": "Study of Patients Being Treated With Anti-obesity Medication",
+   "sponsor": "Texas Tech University",
+   "sponsor_class": "OTHER",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "enrollment": 100,
+   "enrollment_type": "ACTUAL",
+   "start": "2025-01-31",
+   "primary_completion": "2028-03",
+   "min_age": "18 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [
+    "Change in Total Bone Mineral Content"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT06861439",
+   "drug": "tirzepatide",
+   "design": "single_arm",
+   "what": "Tirzepatide for 9 months, age 65+; total hip and lumbar spine BMD among primary outcomes (Wake Forest)",
+   "title": "GLP-1s to Enhance Lasting Optimal Weight",
+   "sponsor": "Wake Forest University Health Sciences",
+   "sponsor_class": "OTHER",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "enrollment": 40,
+   "enrollment_type": "ACTUAL",
+   "start": "2025-07-07",
+   "primary_completion": "2027-10-30",
+   "min_age": "65 Years",
+   "max_age": null,
+   "bone_primary": [
+    "Change in lumbar spine bone mineral density",
+    "Change in total hip bone mineral density"
+   ],
+   "bone_secondary": [
+    "Change in bone-specific alkaline phosphatase (BALP)",
+    "Change in c-telopeptide of type 1 collagen (CTX)",
+    "Change in hip bone strength",
+    "Change in osteocalcin",
+    "Change in procollagen type 1 n-terminal propeptide (P1NP)",
+    "Change in total volumetric bone mineral density of the hip",
+    "Change in total volumetric bone mineral density of the radius",
+    "Change in total volumetric bone mineral density of the tibia"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT06903923",
+   "drug": "class",
+   "design": "single_arm",
+   "what": "GLP-1 drugs in 12-21 year olds; hip/spine BMD, HR-pQCT and bone markers (University of Virginia)",
+   "title": "Bone Metabolism in 12-21 Year Olds Undergoing Glucagon Like Peptide (GLP)-1 Receptor Agonist Therapy",
+   "sponsor": "University of Virginia",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 120,
+   "enrollment_type": "ESTIMATED",
+   "start": "2025-07-31",
+   "primary_completion": "2030-02-28",
+   "min_age": "12 Years",
+   "max_age": "21 Years",
+   "bone_primary": [],
+   "bone_secondary": [
+    "24-month change in P1NP and CTX",
+    "24-month change in hormones known to impact bone (insulin, ghrelin, PYY, oxytocin, estrogens and sclerostin)",
+    "24-month change in radial and tibial trabecular vBMD",
+    "24-month change in total hip and spine areal BMD"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT06909006",
+   "drug": "semaglutide",
+   "design": "rct_vs_control",
+   "what": "Semaglutide 2.4 mg vs placebo in type 1 diabetes; bone density secondary",
+   "title": "Semaglutide Treatment in Type 1 Diabetes",
+   "sponsor": "Nordsjaellands Hospital",
+   "sponsor_class": "OTHER",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "enrollment": 122,
+   "enrollment_type": "ESTIMATED",
+   "start": "2025-10",
+   "primary_completion": "2028-06",
+   "min_age": "18 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [
+    "Bone density (through bone mineral content)"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07010432",
+   "drug": "cagrilintide",
+   "design": "rct_vs_control",
+   "what": "Cagrilintide vs semaglutide vs CagriSema vs placebo, postmenopausal women 50-70; total hip volumetric BMD by QCT primary (Novo Nordisk)",
+   "title": "The Role of the Amylin Analogue Cagrilintide in Bone Metabolism",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 144,
+   "enrollment_type": "ESTIMATED",
+   "start": "2025-06-12",
+   "primary_completion": "2028-05-03",
+   "min_age": "50 Years",
+   "max_age": "70 Years",
+   "bone_primary": [
+    "Relative change in volumetric bone mineral density (vBMD) of the total hip assessed by quantitative computed tomography (QCT)"
+   ],
+   "bone_secondary": [
+    "Relative change in the Ki (bone turnover) of the femoral neck assessed by fluoride - PET",
+    "Relative change in the Ki (bone turnover) of the femoral neck assessed by fluoride - positron emission tomography (PET)",
+    "Relative changes in C-terminal telopeptide of type I collagen (CTX-1) and procollagen type 1 N-terminal propeptide (P1NP)",
+    "Relative changes in CTX-1 and P1NP",
+    "Relative changes in trabecular thickness assessed by PCCT",
+    "Relative changes in vBMD of the L1 - L4 vertebrae assessed by QCT",
+    "Relative changes in vBMD of the lumbar 1 (L1) - L4 vertebrae assessed by QCT",
+    "Relative changes in vBMD of the radius assessed by QCT"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07094568",
+   "drug": "tirzepatide",
+   "design": "obs",
+   "what": "Tirzepatide vs liraglutide; CTX primary, BMD (Athens)",
+   "title": "Tirzepatide vs Liraglutide in Bone",
+   "sponsor": "National and Kapodistrian University of Athens",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 72,
+   "enrollment_type": "ESTIMATED",
+   "start": "2025-05-23",
+   "primary_completion": "2026-12-30",
+   "min_age": "30 Years",
+   "max_age": "65 Years",
+   "bone_primary": [
+    "Change in serum CTX concentration"
+   ],
+   "bone_secondary": [
+    "Change in Bone Mineral Density (BMD)"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07154719",
+   "drug": "tirzepatide",
+   "design": "rct_other",
+   "what": "Tirzepatide + lifestyle toolkit vs tirzepatide alone; bone turnover markers secondary (Pennington)",
+   "title": "GLP-1R Actions on Muscle and the Skeleton",
+   "sponsor": "Pennington Biomedical Research Center",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "start": "2025-10-09",
+   "primary_completion": "2027-02-01",
+   "min_age": "18 Years",
+   "max_age": "50 Years",
+   "bone_primary": [],
+   "bone_secondary": [
+    "C-Terminal Telopeptide of type I collagen (CTX-1)",
+    "Osteocalcin",
+    "Procollagen 1 N-terminal peptide (P1NP)"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07165158",
+   "drug": "semaglutide",
+   "design": "rct_vs_control",
+   "what": "Semaglutide + metformin vs metformin, age 50-75; lumbar BMD primary (Xiamen)",
+   "title": "The Effect of Semaglutide on Bone Health",
+   "sponsor": "The First Affiliated Hospital of Xiamen University",
+   "sponsor_class": "OTHER",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "enrollment": 150,
+   "enrollment_type": "ESTIMATED",
+   "start": "2025-09-15",
+   "primary_completion": "2026-12-31",
+   "min_age": "50 Years",
+   "max_age": "75 Years",
+   "bone_primary": [
+    "lumbar bone mineral density"
+   ],
+   "bone_secondary": [],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07361874",
+   "drug": "semaglutide",
+   "design": "rct_other",
+   "what": "Adrenalectomy vs semaglutide for mild autonomous cortisol secretion; BMD secondary (UT Southwestern)",
+   "title": "IMPACT-MACS: Adrenalectomy vs Semaglutide for Metabolic Outcomes in Mild Autonomous Cortisol Secretion",
+   "sponsor": "University of Texas Southwestern Medical Center",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 75,
+   "enrollment_type": "ESTIMATED",
+   "start": "2026-03-05",
+   "primary_completion": "2030-05-31",
+   "min_age": "18 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [
+    "Change in bone mineral density, mg/cm³"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07422987",
+   "drug": "class",
+   "design": "obs",
+   "what": "GLP-1 drugs in midlife women; BMD primary (University of Kansas)",
+   "title": "GLP-1RA Effects on Lean Mass and Bone Health in Midlife Women",
+   "sponsor": "University of Kansas Medical Center",
+   "sponsor_class": "OTHER",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "has_results": false,
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "start": "2026-02-12",
+   "primary_completion": "2027-06-30",
+   "min_age": "35 Years",
+   "max_age": "60 Years",
+   "bone_primary": [
+    "Bone mineral density (BMD)"
+   ],
+   "bone_secondary": [
+    "Estrogen level role in BMD changes during GLP-1RA therapy"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07428746",
+   "drug": "semaglutide",
+   "design": "single_arm",
+   "what": "Semaglutide in older women with diabetes and osteosarcopenia; bone turnover markers (Emory)",
+   "title": "Investigating the Impact of GLP-1 RA Therapy on Osteosarcopenia in Older Female Adults With Diabetes",
+   "sponsor": "Emory University",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 20,
+   "enrollment_type": "ESTIMATED",
+   "start": "2026-05-07",
+   "primary_completion": "2028-11",
+   "min_age": "65 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [
+    "Change in bone turnover markers"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07589322",
+   "drug": "tirzepatide",
+   "design": "rct_other",
+   "what": "Tirzepatide vs semaglutide; BMD, P1NP, CTX secondary (Tri-Service General Hospital, Taiwan)",
+   "title": "Comparative Observation of Metabolic and Pharmacologic Adipose Remodeling With Enhanced Incretin AgonisTs",
+   "sponsor": "Tri-Service General Hospital (TSGH)",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 120,
+   "enrollment_type": "ESTIMATED",
+   "start": "2026-03-31",
+   "primary_completion": "2028-09-30",
+   "min_age": "20 Years",
+   "max_age": "65 Years",
+   "bone_primary": [],
+   "bone_secondary": [
+    "Change in bone mineral density (g/cm²)",
+    "Change in serum CTX-1 (ng/mL)",
+    "Change in serum P1NP (ng/mL)"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07625202",
+   "drug": "class",
+   "design": "rct_other",
+   "what": "Creatine vs placebo during resistance training in people starting a GLP-1 drug; BMD secondary (Saskatchewan)",
+   "title": "Creatine Supplementation During GLP-1a Therapy",
+   "sponsor": "University of Saskatchewan",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "start": "2026-05-25",
+   "primary_completion": "2027-05-30",
+   "min_age": "18 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [
+    "Change in femoral neck bone mineral density (g/cm squared)",
+    "Change in lumbar spine bone mineral density (g/cm squared)",
+    "Change in total hip bone mineral density (g/cm squared)",
+    "Change in whole body bone mineral density (g/cm squared)"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07760948",
+   "drug": "semaglutide",
+   "design": "rct_other",
+   "what": "HMB + vitamin D vs placebo in older adults starting semaglutide; BMD and trabecular bone score secondary (Vanderbilt)",
+   "title": "HMB Plus Vitamin D to Preserve Muscle in Older Adults Starting Semaglutide",
+   "sponsor": "Vanderbilt University Medical Center",
+   "sponsor_class": "OTHER",
+   "status": "NOT_YET_RECRUITING",
+   "has_results": false,
+   "enrollment": 90,
+   "enrollment_type": "ESTIMATED",
+   "start": "2026-12-01",
+   "primary_completion": "2029-11-30",
+   "min_age": "65 Years",
+   "max_age": "85 Years",
+   "bone_primary": [],
+   "bone_secondary": [
+    "Change in Bone Mineral Density",
+    "Change in Trabecular Bone Score"
+   ],
+   "fracture_outcome": false
+  },
+  {
+   "nct": "NCT07835360",
+   "drug": "class",
+   "design": "obs",
+   "what": "Body composition after starting GLP-1 drugs; spine and hip BMD (Mexico City)",
+   "title": "Body Composition Changes After Initiation of GLP-1 Receptor Agonists in Adults With Obesity or Type 2 Diabetes",
+   "sponsor": "Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran",
+   "sponsor_class": "OTHER",
+   "status": "RECRUITING",
+   "has_results": false,
+   "enrollment": 200,
+   "enrollment_type": "ESTIMATED",
+   "start": "2026-07-10",
+   "primary_completion": "2029-07",
+   "min_age": "18 Years",
+   "max_age": null,
+   "bone_primary": [],
+   "bone_secondary": [
+    "Change in Hip Bone Mineral Density",
+    "Change in Lumbar Spine Bone Mineral Density"
+   ],
+   "fracture_outcome": false
+  }
+ ],
+ "excluded": {
+  "NCT05597202": "semaglutide; 'bone marrow aspirates' are a blood-stem-cell outcome, not bone",
+  "NCT02928679": "liraglutide in knee osteoarthritis; 'bone marrow lesions' are a joint MRI outcome",
+  "NCT07845994": "semaglutide in children with hypothalamic obesity; 'bone age' is a growth outcome",
+  "NCT06426446": "Wegovy users weighed on a connected bioimpedance scale; scale 'bone mass' is an estimate, not a bone measurement",
+  "NCT06468748": "withdrawn before enrolling",
+  "NCT07156331": "no bone outcome registered (matched on 'skeletal muscle')",
+  "NCT07554417": "no bone outcome registered (matched on 'skeletal muscle')",
+  "NCT07874828": "no bone outcome registered",
+  "NCT04626323": "gastric bypass vs medical therapy; no GLP-1 drug specified",
+  "NCT02598791": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT03526289": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT05177653": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06895408": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06722560": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT03159741": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT03195257": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT03573934": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT03574064": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT03728959": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT03845179": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT03867656": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT03954873": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT04792762": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT05181150": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT05391581": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06137586": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06143267": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06194955": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06186063": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06790225": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT07254988": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT07679516": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06334172": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06881459": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT06419686": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug",
+  "NCT01531907": "infusion physiology study of native gut hormones (GIP, GLP-1, GLP-2, amylin, oxytocin or similar), not a GLP-1 drug"
+ },
+ "labels": [
+  {
+   "brand": "foundayo",
+   "setid": "8ac446c5-feba-474f-a103-23facb9b5c62",
+   "version": "10",
+   "effective": "20260729",
+   "fracture_sentences": [],
+   "mentions_bone_mineral_density": false
+  },
+  {
+   "brand": "mounjaro",
+   "setid": "d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+   "version": "40",
+   "effective": "20260827",
+   "fracture_sentences": [],
+   "mentions_bone_mineral_density": false
+  },
+  {
+   "brand": "ozempic",
+   "setid": "adec4fd2-6858-4c99-91d4-531f5f2a2d79",
+   "version": "20",
+   "effective": "20260601",
+   "fracture_sentences": [],
+   "mentions_bone_mineral_density": false
+  },
+  {
+   "brand": "rybelsus",
+   "setid": "27f15fac-7d98-4114-a2ec-92494a91da98",
+   "version": "14",
+   "effective": "20260130",
+   "fracture_sentences": [],
+   "mentions_bone_mineral_density": false
+  },
+  {
+   "brand": "saxenda",
+   "setid": "3946d389-0926-4f77-a708-0acb8153b143",
+   "version": "22",
+   "effective": "20260225",
+   "fracture_sentences": [],
+   "mentions_bone_mineral_density": false
+  },
+  {
+   "brand": "trulicity",
+   "setid": "463050bd-2b1c-40f5-b3c3-0a04bb433309",
+   "version": "62",
+   "effective": "20260616",
+   "fracture_sentences": [],
+   "mentions_bone_mineral_density": false
+  },
+  {
+   "brand": "victoza",
+   "setid": "5a9ef4ea-c76a-4d34-a604-27c5b505f5a4",
+   "version": "31",
+   "effective": "20251014",
+   "fracture_sentences": [],
+   "mentions_bone_mineral_density": false
+  },
+  {
+   "brand": "wegovy",
+   "setid": "ee06186f-2aa3-4990-a760-757579d8f77b",
+   "version": "19",
+   "effective": "20260618",
+   "fracture_sentences": [
+    " Fractures In the CV outcomes trial in adults, more fractures of the hip and pelvis were reported on WEGOVY than on placebo in female patients: 1% (24/2,448) vs.",
+    " Fractures were reported in both males and females with a median age of 61 years (range, 44 to 75).",
+    " In a clinical trial in adults with MASH, fractures occurred in 4.",
+    " In the CV outcomes trial, patients aged 75 years and older reported more hip and pelvis fractures in the WEGOVY injection-treated patients than placebo-treated patients."
+   ],
+   "mentions_bone_mineral_density": false
+  },
+  {
+   "brand": "zepbound",
+   "setid": "487cd7e7-434c-4925-99fa-aa80b1cc776b",
+   "version": "40",
+   "effective": "20260828",
+   "fracture_sentences": [],
+   "mentions_bone_mineral_density": false
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 676" width="720" height="676" role="img" aria-labelledby="t1 d1">
+<title id="t1">Fractures per 1,000 people in randomized trials, GLP-1 drug vs placebo or control</title>
+<desc id="d1">Wegovy label, heart outcomes trial: hip or pelvis fractures in women 9.8 vs 2.1 per 1,000 (24 of 2,448 vs 5 of 2,424); age 75 and older 24.2 vs 6.0 per 1,000 (17 of 703 vs 4 of 663). Wegovy liver (MASH) trial: any fracture 4.4% vs 3.3%. Tirzepatide, 11 trials pooled in an ADA 2026 abstract, vs placebo or comparator drugs: 5.8 vs 3.3 per 1,000 (37 of 6,357 vs 13 of 3,883). None of these trials was designed to count fractures.</desc>
+<rect width="720" height="676" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="start">More fractures on the drug, in small numbers</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">Fractures per 1,000 people in randomized trials: GLP-1 drug vs placebo or control arm</text>
+<text x="24" y="104" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Wegovy heart trial (SELECT): women</text>
+<text x="24" y="122" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">hip or pelvis fractures · Wegovy label</text>
+<rect x="24" y="132" width="86.3" height="24" rx="4" fill="#f59e0b"/>
+<text x="118.27450980392157" y="149" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">9.8 on the drug (24 of 2,448)</text>
+<rect x="24" y="164" width="18.2" height="24" rx="4" fill="#94a3b8"/>
+<text x="50.151815181518145" y="181" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="start">2.1 on placebo (5 of 2,424)</text>
+<text x="24" y="222" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Wegovy heart trial (SELECT): age 75+</text>
+<text x="24" y="240" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">hip or pelvis fractures · Wegovy label</text>
+<rect x="24" y="250" width="212.8" height="24" rx="4" fill="#f59e0b"/>
+<text x="244.8022759601707" y="267" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">24.2 on the drug (17 of 703)</text>
+<rect x="24" y="282" width="53.1" height="24" rx="4" fill="#94a3b8"/>
+<text x="85.09200603318251" y="299" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="start">6.0 on placebo (4 of 663)</text>
+<text x="24" y="340" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Wegovy liver (MASH) trial</text>
+<text x="24" y="358" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">any fracture · Wegovy label</text>
+<rect x="24" y="368" width="387.2" height="24" rx="4" fill="#f59e0b"/>
+<text x="419.2" y="385" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">44.0 on the drug (4.4%)</text>
+<rect x="24" y="400" width="290.4" height="24" rx="4" fill="#94a3b8"/>
+<text x="322.40000000000003" y="417" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="start">33.0 on placebo (3.3%)</text>
+<text x="24" y="458" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Tirzepatide, 11 trials pooled</text>
+<text x="24" y="476" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">any fracture · control = placebo or other drugs · ADA 2026 abstract</text>
+<rect x="24" y="486" width="51.2" height="24" rx="4" fill="#f59e0b"/>
+<text x="83.21912851974201" y="503" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="start">5.8 on the drug (37 of 6,357)</text>
+<rect x="24" y="518" width="29.5" height="24" rx="4" fill="#94a3b8"/>
+<text x="61.461756373937675" y="535" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="start">3.3 on control (13 of 3,883)</text>
+<text x="24" y="592" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">None of these trials was built to count fractures. The SELECT rows are subgroups the label reports; the label</text>
+<text x="24" y="611" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">gives no p-values or overall fracture rate. The tirzepatide pool (odds ratio 1.84, 95% CI 1.02–3.31) is a</text>
+<text x="24" y="630" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">conference abstract, not a peer-reviewed paper. Zepbound’s and Mounjaro’s labels say nothing about fractures.</text>
+<text x="24" y="658" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Sources: Wegovy prescribing information (DailyMed v19, June 18, 2026); Alahmed et al., ADA 2026, 1683-P. Chart by Jabbit.</text>
+</svg>
