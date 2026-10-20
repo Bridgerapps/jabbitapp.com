@@ -1,0 +1,829 @@
+{
+ "title": "TikTok peptide search block and the evidence behind each peptide name",
+ "checked": "2026-10-20 (ET)",
+ "method": "Drugs@FDA via openFDA (drug/drugsfda, products.active_ingredients.name); ClinicalTrials.gov API v2 interventional studies matching each name and its aliases (query.intr), minus records whose lead sponsor is Hudson Biotech (sibling records describe themselves as fictional, example or mock) and hand-identified off-target matches; PubMed esearch title/abstract counts, all records and randomized-controlled-trial publication type; X API recent counts, English, reposts excluded, Oct 14-19 UTC.",
+ "tiktok": {
+  "abc_statement_date": "31-July-2026",
+  "abc_statement_quotes": [
+   "We do not allow buying, selling, marketing or providing access to regulated, prohibited, or high-risk goods and services such as 'retatrutide'.",
+   "When people search for it, or other related terms or names, they are not shown any videos as they are in breach of our strict Community Guidelines.",
+   "We are expanding our detection and list of search terms daily, as the way people discuss these products rapidly evolves."
+  ],
+  "abc_statement_url": "https://live-production.wcms.abc-cdn.net.au/c4a68c9524317a41391f512a3114b563",
+  "mediawatch": {
+   "url": "https://www.abc.net.au/mediawatch/episodes/peptides/106992010",
+   "aired": "Mon 3 Aug 2026",
+   "quotes": [
+    "peptide-related hashtags, on TikTok alone, have been viewed more than 230 million times",
+    "Policing this is very much whack a mole."
+   ]
+  },
+  "verge": {
+   "url": "https://www.theverge.com/science/1014825/peptide-tiktok-search-ban",
+   "published": "Oct 20, 2026, 8:16 PM UTC (4:16 PM ET)",
+   "quotes": [
+    "no results found” page when searching for terms like semaglutide, BPC-157, retratutide, and others",
+    "searching for “peptides” on TikTok still pulls up plenty of short videos, and there’s no sign that actual videos have been removed",
+    "slight variations of either name still pull up published videos",
+    "TikTok’s US owner didn’t respond immediately when asked for comment by The Verge"
+   ]
+  },
+  "community_guidelines": {
+   "url": "https://www.tiktok.com/community-guidelines/en/regulated-commercial-activities",
+   "released": "Released August 25, 2026",
+   "effective": "Effective September 24, 2026",
+   "quote": "We don’t allow trading, marketing, or providing access to regulated, prohibited, or high-risk goods and services.",
+   "word_peptide_on_page": false
+  }
+ },
+ "nsw_health_report": {
+  "url": "https://www.health.nsw.gov.au/epidemiology/Publications/unapproved-peptide-use.pdf",
+  "quotes": [
+   "from 5 presentations in July 2025 to 217 presentations in September 2026",
+   "There were 1,180 ED presentations among people aged 16 years and over that mentioned unapproved peptide use",
+   "833 (71%) ED presentations mentioned ‘retatrutide’ only",
+   "18% of ED presentations that mentioned unapproved peptide use resulted in a hospital admission",
+   "We cannot conclude that peptide use caused the presentation"
+  ]
+ },
+ "hudson_biotech_record_language": {
+  "NCT07487363": "This fictional study is an example of a ClinicalTrials.gov-style record.",
+  "NCT07437560": "This example interventional study record describes",
+  "NCT07481734": "(Mock Study)"
+ },
+ "off_target_ctgov": {
+  "NCT05932732": "HydraFacial device study; GHK-Cu is one ingredient of a serum",
+  "NCT07706361": "measures blood GHK after a light-therapy patch; no GHK-Cu given",
+  "NCT07678073": "anesthesia study measuring MOTS-c",
+  "NCT03998514": "CB4211, a modified MOTS-c analog, not MOTS-c (no results posted)",
+  "NCT05832060": "brain-stimulation study; matched on an unrelated word",
+  "NCT01747200": "brain-stimulation study; matched on an unrelated word"
+ },
+ "rows": [
+  {
+   "peptide": "Semaglutide",
+   "fda_approved_applications": {
+    "NDA215256": {
+     "sponsor": "NOVO",
+     "brands": [
+      "WEGOVY",
+      "WEGOVY FLEXTOUCH",
+      "WEGOVY HD"
+     ],
+     "approved": "20210604"
+    },
+    "NDA218316": {
+     "sponsor": "NOVO",
+     "brands": [
+      "WEGOVY"
+     ],
+     "approved": "20251222"
+    },
+    "NDA213051": {
+     "sponsor": "NOVO",
+     "brands": [
+      "OZEMPIC",
+      "RYBELSUS"
+     ],
+     "approved": "20190920"
+    },
+    "NDA209637": {
+     "sponsor": "NOVO",
+     "brands": [
+      "OZEMPIC"
+     ],
+     "approved": "20171205"
+    },
+    "NDA213182": {
+     "sponsor": "NOVO NORDISK INC",
+     "brands": [
+      "RYBELSUS"
+     ],
+     "approved": "20200116"
+    }
+   },
+   "first_us_approval": "20171205",
+   "ctgov_interventional_matched": 643,
+   "ctgov_hudson_biotech": [],
+   "ctgov_off_target": [],
+   "ctgov_studies": 643,
+   "ctgov_with_results": 107,
+   "ctgov_small_list": null,
+   "pubmed_records": 5719,
+   "pubmed_rct_tagged": 311,
+   "pubmed_rct_given_to_people_handchecked": null,
+   "handcheck_note": null,
+   "pubmed_queries": {
+    "all": "(semaglutide[tiab])",
+    "rct": "(semaglutide[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 1024,
+   "x_key": "semaglutide"
+  },
+  {
+   "peptide": "Tirzepatide",
+   "fda_approved_applications": {
+    "NDA217806": {
+     "sponsor": "ELI LILLY AND CO",
+     "brands": [
+      "ZEPBOUND",
+      "ZEPBOUND (AUTOINJECTOR)",
+      "ZEPBOUND KWIKPEN"
+     ],
+     "approved": "20231108"
+    },
+    "NDA215866": {
+     "sponsor": "ELI LILLY AND CO",
+     "brands": [
+      "MOUNJARO",
+      "MOUNJARO (AUTOINJECTOR)",
+      "MOUNJARO KWIKPEN"
+     ],
+     "approved": "20220513"
+    }
+   },
+   "first_us_approval": "20220513",
+   "ctgov_interventional_matched": 249,
+   "ctgov_hudson_biotech": [
+    "NCT07481747"
+   ],
+   "ctgov_off_target": [],
+   "ctgov_studies": 248,
+   "ctgov_with_results": 47,
+   "ctgov_small_list": null,
+   "pubmed_records": 2644,
+   "pubmed_rct_tagged": 134,
+   "pubmed_rct_given_to_people_handchecked": null,
+   "handcheck_note": null,
+   "pubmed_queries": {
+    "all": "(tirzepatide[tiab])",
+    "rct": "(tirzepatide[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 898,
+   "x_key": "tirzepatide"
+  },
+  {
+   "peptide": "Retatrutide",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 33,
+   "ctgov_hudson_biotech": [
+    "NCT07467447"
+   ],
+   "ctgov_off_target": [],
+   "ctgov_studies": 32,
+   "ctgov_with_results": 2,
+   "ctgov_small_list": null,
+   "pubmed_records": 207,
+   "pubmed_rct_tagged": 10,
+   "pubmed_rct_given_to_people_handchecked": 10,
+   "handcheck_note": "all 10 come from Lilly-sponsored retatrutide trials (phase 1b-3), including secondary analyses",
+   "pubmed_queries": {
+    "all": "(retatrutide[tiab] OR LY3437943[tiab])",
+    "rct": "(retatrutide[tiab] OR LY3437943[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 1098,
+   "x_key": "retatrutide"
+  },
+  {
+   "peptide": "BPC-157",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 4,
+   "ctgov_hudson_biotech": [
+    "NCT07437547"
+   ],
+   "ctgov_off_target": [],
+   "ctgov_studies": 3,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [
+    {
+     "nct": "NCT07803250",
+     "title": "Impact of BPC-157 on Recovery Following Rotator Cuff Repair Surgery",
+     "sponsor": "University of Arkansas",
+     "status": "NOT_YET_RECRUITING",
+     "results": false
+    },
+    {
+     "nct": "NCT07752381",
+     "title": "A Clinical Trial to Evaluate the Effects of Peptide Gummies on Markers of Inflammation, Physical Performance, and Recovery",
+     "sponsor": "Parlay Wellness",
+     "status": "COMPLETED",
+     "results": false
+    },
+    {
+     "nct": "NCT02637284",
+     "title": "PCO-02 - Safety and Pharmacokinetics Trial",
+     "sponsor": "PharmaCotherapia d.o.o.",
+     "status": "UNKNOWN",
+     "results": false
+    }
+   ],
+   "pubmed_records": 230,
+   "pubmed_rct_tagged": 0,
+   "pubmed_rct_given_to_people_handchecked": 0,
+   "handcheck_note": null,
+   "pubmed_queries": {
+    "all": "(\"BPC 157\"[tiab] OR \"BPC-157\"[tiab] OR BPC157[tiab] OR \"PL 14736\"[tiab] OR \"PL-14736\"[tiab] OR \"pentadecapeptide BPC\"[tiab])",
+    "rct": "(\"BPC 157\"[tiab] OR \"BPC-157\"[tiab] OR BPC157[tiab] OR \"PL 14736\"[tiab] OR \"PL-14736\"[tiab] OR \"pentadecapeptide BPC\"[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 1205,
+   "x_key": "bpc-157"
+  },
+  {
+   "peptide": "TB-500",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 1,
+   "ctgov_hudson_biotech": [
+    "NCT07487363"
+   ],
+   "ctgov_off_target": [],
+   "ctgov_studies": 0,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [],
+   "pubmed_records": 34,
+   "pubmed_rct_tagged": 0,
+   "pubmed_rct_given_to_people_handchecked": 0,
+   "handcheck_note": null,
+   "pubmed_queries": {
+    "all": "(\"TB-500\"[tiab] OR TB500[tiab] OR \"TB 500\"[tiab])",
+    "rct": "(\"TB-500\"[tiab] OR TB500[tiab] OR \"TB 500\"[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 526,
+   "x_key": "tb-500"
+  },
+  {
+   "peptide": "Thymosin beta-4 (full protein, for comparison)",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 19,
+   "ctgov_hudson_biotech": [
+    "NCT07487363"
+   ],
+   "ctgov_off_target": [],
+   "ctgov_studies": 18,
+   "ctgov_with_results": 9,
+   "ctgov_small_list": null,
+   "pubmed_records": 606,
+   "pubmed_rct_tagged": 5,
+   "pubmed_rct_given_to_people_handchecked": 5,
+   "handcheck_note": "eye-drop (RGN-259) and wound trials plus one IV safety study; none is TB-500",
+   "pubmed_queries": {
+    "all": "(\"thymosin beta 4\"[tiab] OR \"thymosin beta-4\"[tiab] OR \"RGN-259\"[tiab] OR \"RGN-352\"[tiab])",
+    "rct": "(\"thymosin beta 4\"[tiab] OR \"thymosin beta-4\"[tiab] OR \"RGN-259\"[tiab] OR \"RGN-352\"[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": null,
+   "x_key": null
+  },
+  {
+   "peptide": "GHK-Cu",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 3,
+   "ctgov_hudson_biotech": [
+    "NCT07437586"
+   ],
+   "ctgov_off_target": [
+    "NCT05932732",
+    "NCT07706361"
+   ],
+   "ctgov_studies": 0,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [],
+   "pubmed_records": 150,
+   "pubmed_rct_tagged": 1,
+   "pubmed_rct_given_to_people_handchecked": 1,
+   "handcheck_note": "1 topical study after CO2 laser resurfacing (2006); none of injections",
+   "pubmed_queries": {
+    "all": "(\"GHK-Cu\"[tiab] OR \"GHK Cu\"[tiab] OR \"copper tripeptide\"[tiab] OR \"copper peptide GHK\"[tiab] OR \"glycyl-L-histidyl-L-lysine\"[tiab] OR prezatide[tiab] OR Iamin[tiab])",
+    "rct": "(\"GHK-Cu\"[tiab] OR \"GHK Cu\"[tiab] OR \"copper tripeptide\"[tiab] OR \"copper peptide GHK\"[tiab] OR \"glycyl-L-histidyl-L-lysine\"[tiab] OR prezatide[tiab] OR Iamin[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 717,
+   "x_key": "ghk-cu"
+  },
+  {
+   "peptide": "CJC-1295",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 1,
+   "ctgov_hudson_biotech": [],
+   "ctgov_off_target": [],
+   "ctgov_studies": 1,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [
+    {
+     "nct": "NCT00267527",
+     "title": "A Study to Evaluate CJC 1295 in HIV Patients With Visceral Obesity",
+     "sponsor": "ConjuChem",
+     "status": "TERMINATED",
+     "results": false
+    }
+   ],
+   "pubmed_records": 35,
+   "pubmed_rct_tagged": 1,
+   "pubmed_rct_given_to_people_handchecked": 1,
+   "handcheck_note": "1 single- and multiple-dose study in healthy adults (2006, the DAC version)",
+   "pubmed_queries": {
+    "all": "(\"CJC-1295\"[tiab] OR \"CJC 1295\"[tiab] OR CJC1295[tiab])",
+    "rct": "(\"CJC-1295\"[tiab] OR \"CJC 1295\"[tiab] OR CJC1295[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 265,
+   "x_key": "cjc-1295 + ipamorelin"
+  },
+  {
+   "peptide": "Ipamorelin",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 2,
+   "ctgov_hudson_biotech": [],
+   "ctgov_off_target": [],
+   "ctgov_studies": 2,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [
+    {
+     "nct": "NCT00672074",
+     "title": "Safety and Efficacy of Ipamorelin for Management of Post-Operative Ileus",
+     "sponsor": "Helsinn Therapeutics (U.S.), Inc",
+     "status": "COMPLETED",
+     "results": false
+    },
+    {
+     "nct": "NCT01280344",
+     "title": "Safety and Efficacy of Ipamorelin Compared to Placebo for the Recovery of Gastrointestinal Function",
+     "sponsor": "Helsinn Therapeutics (U.S.), Inc",
+     "status": "COMPLETED",
+     "results": false
+    }
+   ],
+   "pubmed_records": 51,
+   "pubmed_rct_tagged": 2,
+   "pubmed_rct_given_to_people_handchecked": 2,
+   "handcheck_note": "1 post-surgery bowel-recovery trial (2014) and 1 healthy-volunteer dosing study (1999)",
+   "pubmed_queries": {
+    "all": "(ipamorelin[tiab])",
+    "rct": "(ipamorelin[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 265,
+   "x_key": "cjc-1295 + ipamorelin"
+  },
+  {
+   "peptide": "Tesamorelin",
+   "fda_approved_applications": {
+    "BLA022505": {
+     "sponsor": "THERATECHNOLOGIES",
+     "brands": [
+      "EGRIFTA"
+     ],
+     "approved": "20101110"
+    }
+   },
+   "first_us_approval": "20101110",
+   "ctgov_interventional_matched": 21,
+   "ctgov_hudson_biotech": [
+    "NCT07481734"
+   ],
+   "ctgov_off_target": [],
+   "ctgov_studies": 20,
+   "ctgov_with_results": 10,
+   "ctgov_small_list": null,
+   "pubmed_records": 95,
+   "pubmed_rct_tagged": 21,
+   "pubmed_rct_given_to_people_handchecked": null,
+   "handcheck_note": null,
+   "pubmed_queries": {
+    "all": "(tesamorelin[tiab])",
+    "rct": "(tesamorelin[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 283,
+   "x_key": "tesamorelin"
+  },
+  {
+   "peptide": "MOTS-c",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 3,
+   "ctgov_hudson_biotech": [
+    "NCT07505745"
+   ],
+   "ctgov_off_target": [
+    "NCT07678073",
+    "NCT03998514"
+   ],
+   "ctgov_studies": 0,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [],
+   "pubmed_records": 260,
+   "pubmed_rct_tagged": 4,
+   "pubmed_rct_given_to_people_handchecked": 0,
+   "handcheck_note": "0: all 4 tagged records measured people’s own MOTS-c levels; none gave MOTS-c",
+   "pubmed_queries": {
+    "all": "(\"MOTS-c\"[tiab] OR \"MOTS c\"[tiab] OR CB4211[tiab])",
+    "rct": "(\"MOTS-c\"[tiab] OR \"MOTS c\"[tiab] OR CB4211[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 409,
+   "x_key": "mots-c"
+  },
+  {
+   "peptide": "KPV",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 0,
+   "ctgov_hudson_biotech": [],
+   "ctgov_off_target": [],
+   "ctgov_studies": 0,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [],
+   "pubmed_records": 133,
+   "pubmed_rct_tagged": 0,
+   "pubmed_rct_given_to_people_handchecked": 0,
+   "handcheck_note": null,
+   "pubmed_queries": {
+    "all": "(KPV[tiab] OR \"Lys-Pro-Val\"[tiab] OR \"lysine-proline-valine\"[tiab])",
+    "rct": "(KPV[tiab] OR \"Lys-Pro-Val\"[tiab] OR \"lysine-proline-valine\"[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 212,
+   "x_key": "kpv"
+  },
+  {
+   "peptide": "Melanotan II",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 1,
+   "ctgov_hudson_biotech": [
+    "NCT07437560"
+   ],
+   "ctgov_off_target": [],
+   "ctgov_studies": 0,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [],
+   "pubmed_records": 251,
+   "pubmed_rct_tagged": 4,
+   "pubmed_rct_given_to_people_handchecked": 1,
+   "handcheck_note": "1 (19 men with erectile dysfunction, 2000); the other 3 tagged records tested melanotan-I, a different molecule",
+   "pubmed_queries": {
+    "all": "(\"melanotan II\"[tiab] OR \"melanotan-II\"[tiab] OR \"melanotan 2\"[tiab] OR melanotan[tiab])",
+    "rct": "(\"melanotan II\"[tiab] OR \"melanotan-II\"[tiab] OR \"melanotan 2\"[tiab] OR melanotan[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 99,
+   "x_key": "melanotan"
+  },
+  {
+   "peptide": "Bremelanotide (PT-141)",
+   "fda_approved_applications": {
+    "NDA210557": {
+     "sponsor": "COSETTE",
+     "brands": [
+      "VYLEESI (AUTOINJECTOR)"
+     ],
+     "approved": "20190621"
+    }
+   },
+   "first_us_approval": "20190621",
+   "ctgov_interventional_matched": 10,
+   "ctgov_hudson_biotech": [],
+   "ctgov_off_target": [],
+   "ctgov_studies": 10,
+   "ctgov_with_results": 4,
+   "ctgov_small_list": null,
+   "pubmed_records": 113,
+   "pubmed_rct_tagged": 14,
+   "pubmed_rct_given_to_people_handchecked": null,
+   "handcheck_note": null,
+   "pubmed_queries": {
+    "all": "(bremelanotide[tiab] OR \"PT-141\"[tiab] OR \"PT 141\"[tiab])",
+    "rct": "(bremelanotide[tiab] OR \"PT-141\"[tiab] OR \"PT 141\"[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 119,
+   "x_key": "bremelanotide"
+  },
+  {
+   "peptide": "Epitalon",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 0,
+   "ctgov_hudson_biotech": [],
+   "ctgov_off_target": [],
+   "ctgov_studies": 0,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [],
+   "pubmed_records": 146,
+   "pubmed_rct_tagged": 0,
+   "pubmed_rct_given_to_people_handchecked": 0,
+   "handcheck_note": null,
+   "pubmed_queries": {
+    "all": "(epitalon[tiab] OR epithalon[tiab] OR epithalone[tiab] OR \"AEDG peptide\"[tiab] OR \"Ala-Glu-Asp-Gly\"[tiab])",
+    "rct": "(epitalon[tiab] OR epithalon[tiab] OR epithalone[tiab] OR \"AEDG peptide\"[tiab] OR \"Ala-Glu-Asp-Gly\"[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 258,
+   "x_key": "epitalon"
+  },
+  {
+   "peptide": "Semax",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 0,
+   "ctgov_hudson_biotech": [],
+   "ctgov_off_target": [],
+   "ctgov_studies": 0,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [],
+   "pubmed_records": 209,
+   "pubmed_rct_tagged": 1,
+   "pubmed_rct_given_to_people_handchecked": 1,
+   "handcheck_note": "1 Russian-language study in motor neuron disease (2007)",
+   "pubmed_queries": {
+    "all": "(semax[tiab])",
+    "rct": "(semax[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 297,
+   "x_key": "semax + selank"
+  },
+  {
+   "peptide": "Selank",
+   "fda_approved_applications": {},
+   "first_us_approval": null,
+   "ctgov_interventional_matched": 2,
+   "ctgov_hudson_biotech": [],
+   "ctgov_off_target": [
+    "NCT05832060",
+    "NCT01747200"
+   ],
+   "ctgov_studies": 0,
+   "ctgov_with_results": 0,
+   "ctgov_small_list": [],
+   "pubmed_records": 68,
+   "pubmed_rct_tagged": 2,
+   "pubmed_rct_given_to_people_handchecked": 2,
+   "handcheck_note": "2 Russian-language anxiety studies (2008, 2015)",
+   "pubmed_queries": {
+    "all": "(selank[tiab])",
+    "rct": "(selank[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 297,
+   "x_key": "semax + selank"
+  },
+  {
+   "peptide": "Elamipretide (SS-31)",
+   "fda_approved_applications": {
+    "NDA215244": {
+     "sponsor": "STEALTH BIOTHERAPS",
+     "brands": [
+      "FORZINITY"
+     ],
+     "approved": "20250919"
+    }
+   },
+   "first_us_approval": "20250919",
+   "ctgov_interventional_matched": 29,
+   "ctgov_hudson_biotech": [],
+   "ctgov_off_target": [],
+   "ctgov_studies": 29,
+   "ctgov_with_results": 14,
+   "ctgov_small_list": null,
+   "pubmed_records": 471,
+   "pubmed_rct_tagged": 19,
+   "pubmed_rct_given_to_people_handchecked": null,
+   "handcheck_note": null,
+   "pubmed_queries": {
+    "all": "(elamipretide[tiab] OR \"SS-31\"[tiab] OR \"MTP-131\"[tiab] OR bendavia[tiab])",
+    "rct": "(elamipretide[tiab] OR \"SS-31\"[tiab] OR \"MTP-131\"[tiab] OR bendavia[tiab]) AND randomized controlled trial[pt]"
+   },
+   "x_posts_oct14_19": 68,
+   "x_key": "elamipretide"
+  }
+ ],
+ "x": {
+  "note": "X API recent counts (get_posts_counts_recent), English, reposts excluded, UTC days Oct 14-19, 2026 (6 full days); pulled ~6:05-6:10 PM ET Oct 20, 2026",
+  "window_utc": [
+   "2026-10-14T00:00:00Z",
+   "2026-10-20T00:00:00Z"
+  ],
+  "peptides": {
+   "semaglutide": {
+    "query": "semaglutide lang:en -is:retweet",
+    "days": [
+     120,
+     165,
+     131,
+     161,
+     288,
+     159
+    ],
+    "total": 1024
+   },
+   "tirzepatide": {
+    "query": "tirzepatide lang:en -is:retweet",
+    "days": [
+     152,
+     165,
+     176,
+     144,
+     124,
+     137
+    ],
+    "total": 898
+   },
+   "retatrutide": {
+    "query": "retatrutide lang:en -is:retweet",
+    "days": [
+     241,
+     206,
+     195,
+     171,
+     137,
+     148
+    ],
+    "total": 1098
+   },
+   "bpc-157": {
+    "query": "(\"BPC-157\" OR BPC157 OR \"BPC 157\") lang:en -is:retweet",
+    "days": [
+     235,
+     212,
+     222,
+     144,
+     176,
+     216
+    ],
+    "total": 1205
+   },
+   "tb-500": {
+    "query": "(\"TB-500\" OR TB500 OR \"TB 500\") lang:en -is:retweet",
+    "days": [
+     101,
+     84,
+     89,
+     75,
+     73,
+     104
+    ],
+    "total": 526
+   },
+   "ghk-cu": {
+    "query": "(\"GHK-Cu\" OR GHKCu OR \"GHK Cu\") lang:en -is:retweet",
+    "days": [
+     136,
+     121,
+     121,
+     110,
+     105,
+     124
+    ],
+    "total": 717
+   },
+   "cjc-1295 + ipamorelin": {
+    "query": "(\"CJC-1295\" OR CJC1295 OR \"CJC 1295\" OR ipamorelin) lang:en -is:retweet",
+    "days": [
+     47,
+     46,
+     43,
+     44,
+     36,
+     49
+    ],
+    "total": 265
+   },
+   "melanotan": {
+    "query": "(melanotan OR \"MT-II\" OR \"MT2 tan\") lang:en -is:retweet",
+    "days": [
+     29,
+     16,
+     11,
+     23,
+     8,
+     12
+    ],
+    "total": 99
+   },
+   "mots-c": {
+    "query": "(\"MOTS-c\" OR \"MOTS c\" OR motsc) lang:en -is:retweet",
+    "days": [
+     63,
+     83,
+     95,
+     55,
+     48,
+     65
+    ],
+    "total": 409
+   },
+   "tesamorelin": {
+    "query": "tesamorelin lang:en -is:retweet",
+    "days": [
+     34,
+     67,
+     56,
+     37,
+     38,
+     51
+    ],
+    "total": 283
+   },
+   "semax + selank": {
+    "query": "(semax OR selank) lang:en -is:retweet",
+    "days": [
+     55,
+     38,
+     57,
+     48,
+     37,
+     62
+    ],
+    "total": 297
+   },
+   "epitalon": {
+    "query": "(epitalon OR epithalon) lang:en -is:retweet",
+    "days": [
+     33,
+     52,
+     65,
+     32,
+     26,
+     50
+    ],
+    "total": 258
+   },
+   "kpv": {
+    "query": "(KPV peptide OR \"KPV\" BPC) lang:en -is:retweet",
+    "days": [
+     26,
+     34,
+     37,
+     29,
+     39,
+     47
+    ],
+    "total": 212
+   },
+   "elamipretide": {
+    "query": "(elamipretide OR \"SS-31\") (peptide OR mitochondria OR Forzinity OR elamipretide) lang:en -is:retweet",
+    "days": [
+     11,
+     8,
+     9,
+     13,
+     16,
+     11
+    ],
+    "total": 68
+   },
+   "bremelanotide": {
+    "query": "(bremelanotide OR \"PT-141\" OR PT141) lang:en -is:retweet",
+    "days": [
+     18,
+     22,
+     15,
+     26,
+     17,
+     21
+    ],
+    "total": 119
+   }
+  },
+  "tiktok_peptide": {
+   "query": "tiktok peptide OR tiktok peptides OR tiktok BPC lang:en -is:retweet",
+   "days_utc": {
+    "2026-10-14": 6,
+    "2026-10-15": 6,
+    "2026-10-16": 10,
+    "2026-10-17": 6,
+    "2026-10-18": 11,
+    "2026-10-19": 13,
+    "2026-10-20 (to 22:01 UTC = 6:01 PM ET)": 320
+   }
+  },
+  "posts": {
+   "jefftang_oct19": {
+    "url": "https://x.com/jefftangx/status/2112387052075643279",
+    "created_utc": "2026-10-20T03:34:54Z",
+    "created_et": "Oct 19, 2026, 11:34 PM ET",
+    "text": "TikTok has fully banned all content about peptides\n\nSearching \"bpc-157\" \"melanotan\" shows \"No results found\"\n\nSearching \"reta\" gives you eating disorder resources",
+    "impressions": 60569,
+    "likes": 579,
+    "reposts": 31,
+    "quotes": 26,
+    "replies": 71,
+    "bookmarks": 112,
+    "read_at": "~6:07 PM ET Oct 20"
+   },
+   "himshouse_oct20": {
+    "url": "https://x.com/himshouse/status/2112610228772495406",
+    "created_utc": "2026-10-20T18:21:43Z",
+    "impressions": 11212,
+    "read_at": "~6:07 PM ET Oct 20"
+   }
+  },
+  "trending_story": {
+   "id": "2112623562326442180",
+   "name": "TikTok Bans Peptide-Related Content Amid FDA Scrutiny",
+   "updated_utc": "2026-10-20T19:24:28Z",
+   "url": "https://x.com/i/trending/2112623562326442180"
+  }
+ },
+ "caveats": [
+  "Database counts are not quality scores; PubMed tags can miss older trials indexed under other names (for example GHK-Cu’s 1994 wound trial).",
+  "ClinicalTrials.gov name matching can miss studies that use code names.",
+  "We could not test TikTok search ourselves: logged-out web search shows a log-in wall."
+ ]
+}
