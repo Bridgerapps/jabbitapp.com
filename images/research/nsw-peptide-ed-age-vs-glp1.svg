@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" width="720" height="500" role="img" aria-labelledby="t2 d2">
+<title id="t2">The people in the ER with peptides are far younger than NSW GLP-1 users</title>
+<desc id="d2">Share by age group. ED presentations mentioning unapproved peptides, NSW, July 2025 to September 2026: 16-24 25%, 25-34 32%, 35-44 26%, 45-54 12%, 55+ 4%. Adults reporting current GLP-1 medicine use, NSW Population Health Survey 2025: 16-24 2.3%, 25-34 7.0%, 35-44 14.6%, 45-54 24.8%, 55+ 51.3%. Men: 51% of ED presentations vs 38% of GLP-1 users.</desc>
+<rect width="720" height="500" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="start">Who shows up in the ER is not who takes GLP-1s</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">Age mix, New South Wales. Under 35: 57% of peptide ER visits vs 9% of people on GLP-1 medicines.</text>
+<rect x="24" y="76" width="14" height="14" rx="3" fill="#b91c1c"/>
+<text x="46" y="88" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">ER visits mentioning unapproved peptides (1,180)</text>
+<rect x="380" y="76" width="14" height="14" rx="3" fill="#94a3b8"/>
+<text x="402" y="88" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Adults using GLP-1 medicines (2025 survey)</text>
+<line x1="110.0" y1="108" x2="110.0" y2="400" stroke="#e2e8f0"/>
+<text x="110.0" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">0%</text>
+<line x1="204.5" y1="108" x2="204.5" y2="400" stroke="#e2e8f0"/>
+<text x="204.54545454545456" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">10%</text>
+<line x1="299.1" y1="108" x2="299.1" y2="400" stroke="#e2e8f0"/>
+<text x="299.0909090909091" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">20%</text>
+<line x1="393.6" y1="108" x2="393.6" y2="400" stroke="#e2e8f0"/>
+<text x="393.6363636363636" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">30%</text>
+<line x1="488.2" y1="108" x2="488.2" y2="400" stroke="#e2e8f0"/>
+<text x="488.1818181818182" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">40%</text>
+<line x1="582.7" y1="108" x2="582.7" y2="400" stroke="#e2e8f0"/>
+<text x="582.7272727272727" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">50%</text>
+<text x="24" y="146" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">16-24</text>
+<rect x="110" y="116" width="232.4" height="20" rx="3" fill="#b91c1c"/>
+<text x="348.35747303543917" y="131" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#b91c1c" text-anchor="start">25%</text>
+<rect x="110" y="140" width="21.7" height="20" rx="3" fill="#94a3b8"/>
+<text x="137.74545454545455" y="155" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#64748b" text-anchor="start">2.3%</text>
+<text x="24" y="204" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">25-34</text>
+<rect x="110" y="174" width="306.1" height="20" rx="3" fill="#b91c1c"/>
+<text x="422.07087827426807" y="189" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#b91c1c" text-anchor="start">32%</text>
+<rect x="110" y="198" width="66.2" height="20" rx="3" fill="#94a3b8"/>
+<text x="182.1818181818182" y="213" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#64748b" text-anchor="start">7.0%</text>
+<text x="24" y="262" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">35-44</text>
+<rect x="110" y="232" width="250.0" height="20" rx="3" fill="#b91c1c"/>
+<text x="365.98459167950693" y="247" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#b91c1c" text-anchor="start">26%</text>
+<rect x="110" y="256" width="138.0" height="20" rx="3" fill="#94a3b8"/>
+<text x="254.03636363636363" y="271" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#64748b" text-anchor="start">14.6%</text>
+<text x="24" y="320" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">45-54</text>
+<rect x="110" y="290" width="117.0" height="20" rx="3" fill="#b91c1c"/>
+<text x="232.97996918335903" y="305" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#b91c1c" text-anchor="start">12%</text>
+<rect x="110" y="314" width="234.5" height="20" rx="3" fill="#94a3b8"/>
+<text x="350.4727272727273" y="329" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#64748b" text-anchor="start">24.8%</text>
+<text x="24" y="378" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">55+</text>
+<rect x="110" y="348" width="40.1" height="20" rx="3" fill="#b91c1c"/>
+<text x="156.06163328197226" y="363" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#b91c1c" text-anchor="start">4%</text>
+<rect x="110" y="372" width="485.0" height="20" rx="3" fill="#94a3b8"/>
+<text x="601.0181818181818" y="387" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#64748b" text-anchor="start">51.3%</text>
+<text x="24" y="446" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Men were 51% of the ER visits and 38% of GLP-1 users. The survey asked about GLP-1 medicines in general, so it is a</text>
+<text x="24" y="464" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">rough stand-in for the approved market. ER figures count visits, not people.</text>
+<text x="24" y="488" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#64748b" text-anchor="start">Sources: NSW Health ED peptide report (Oct 2026), Table 1; NSW Population Health Survey 2025, GLP-1 use, Table 2. Chart by Jabbit.</text>
+</svg>

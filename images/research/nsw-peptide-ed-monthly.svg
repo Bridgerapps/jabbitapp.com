@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="t1 d1">
+<title id="t1">NSW emergency visits mentioning unapproved peptides rose from 5 to 217 a month; admissions stayed between 24 and 30 from May</title>
+<desc id="d1">Monthly emergency department presentations in New South Wales, people 16 and over, where unapproved peptide use was mentioned at triage, July 2025 to September 2026: Jul 5, Aug 8, Sep 16, Oct 22, Nov 29, Dec 31, Jan 51, Feb 70, Mar 86, Apr 84, May 125, Jun 124, Jul 147, Aug 165, Sep 217. Admitted from the emergency department: Jul 2, Aug 2, Sep 3, Oct 3, Nov 5, Dec 6, Jan 8, Feb 12, Mar 15, Apr 18, May 30, Jun 24, Jul 28, Aug 25, Sep 30. Total 1,180 presentations, about 18% admitted. 833 mentioned retatrutide.</desc>
+<rect width="720" height="520" fill="#fff"/>
+<text x="24" y="36" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="start">ER visits mentioning peptides: 5 a month to 217</text>
+<text x="24" y="60" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">New South Wales, Australia, people 16+, peptide use mentioned at triage. 833 of 1,180 mentioned retatrutide.</text>
+<rect x="24" y="76" width="14" height="4" fill="#1e3a8a"/>
+<text x="46" y="82" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">ED presentations</text>
+<rect x="190" y="76" width="14" height="4" fill="#f59e0b"/>
+<text x="212" y="82" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">Admitted to hospital from ED</text>
+<line x1="70" y1="400.0" x2="690" y2="400.0" stroke="#e2e8f0"/>
+<text x="62" y="404.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="end">0</text>
+<line x1="70" y1="344.0" x2="690" y2="344.0" stroke="#e2e8f0"/>
+<text x="62" y="348.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="end">50</text>
+<line x1="70" y1="288.0" x2="690" y2="288.0" stroke="#e2e8f0"/>
+<text x="62" y="292.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="end">100</text>
+<line x1="70" y1="232.0" x2="690" y2="232.0" stroke="#e2e8f0"/>
+<text x="62" y="236.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="end">150</text>
+<line x1="70" y1="176.0" x2="690" y2="176.0" stroke="#e2e8f0"/>
+<text x="62" y="180.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="end">200</text>
+<line x1="70" y1="120.0" x2="690" y2="120.0" stroke="#e2e8f0"/>
+<text x="62" y="124.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="end">250</text>
+<text x="70.0" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Jul</text>
+<text x="114.28571428571428" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Aug</text>
+<text x="158.57142857142856" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Sep</text>
+<text x="202.85714285714286" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Oct</text>
+<text x="247.14285714285714" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Nov</text>
+<text x="291.42857142857144" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Dec</text>
+<text x="335.7142857142857" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Jan</text>
+<text x="380.0" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Feb</text>
+<text x="424.2857142857143" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Mar</text>
+<text x="468.57142857142856" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Apr</text>
+<text x="512.8571428571429" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">May</text>
+<text x="557.1428571428571" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Jun</text>
+<text x="601.4285714285714" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Jul</text>
+<text x="645.7142857142857" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Aug</text>
+<text x="690.0" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">Sep</text>
+<text x="180.71428571428572" y="436" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#64748b" text-anchor="middle">2025</text>
+<text x="512.8571428571429" y="436" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#64748b" text-anchor="middle">2026</text>
+<line x1="313.6" y1="406" x2="313.6" y2="440" stroke="#cbd5e1"/>
+<polyline points="70.0,394.4 114.3,391.0 158.6,382.1 202.9,375.4 247.1,367.5 291.4,365.3 335.7,342.9 380.0,321.6 424.3,303.7 468.6,305.9 512.9,260.0 557.1,261.1 601.4,235.4 645.7,215.2 690.0,157.0" fill="none" stroke="#1e3a8a" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="70.0,397.8 114.3,397.8 158.6,396.6 202.9,396.6 247.1,394.4 291.4,393.3 335.7,391.0 380.0,386.6 424.3,383.2 468.6,379.8 512.9,366.4 557.1,373.1 601.4,368.6 645.7,372.0 690.0,366.4" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linejoin="round"/>
+<text x="76.0" y="384.4" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1e3a8a" text-anchor="start">5</text>
+<text x="518.8571428571429" y="250.0" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1e3a8a" text-anchor="start">125</text>
+<text x="684.0" y="146.96" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1e3a8a" text-anchor="end">217</text>
+<text x="512.8571428571429" y="356.4" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="middle">30</text>
+<text x="690.0" y="356.4" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="middle">30</text>
+<text x="24" y="462" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Admitted share: 19% in Jul-Dec 2025, 20% in Jan-Jun 2026, 16% in Jul-Sep 2026. Visits rose about</text>
+<text x="24" y="480" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">three-quarters from May to September while admissions held at 24 to 30 a month. A mention is not proof of cause.</text>
+<text x="24" y="506" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#64748b" text-anchor="start">Source: NSW Health, ED presentations mentioning unapproved peptide use (Oct 2026), Figure 1; values read from the PDF's chart data.</text>
+</svg>

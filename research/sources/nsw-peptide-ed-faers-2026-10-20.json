@@ -1,0 +1,346 @@
+{
+ "built": "2026-10-20",
+ "page": "https://jabbitapp.com/research/retatrutide-peptides-emergency-department-nsw-health.html",
+ "nsw_ed_report": {
+  "source": "https://www.health.nsw.gov.au/epidemiology/Publications/unapproved-peptide-use.pdf",
+  "title": "Emergency department presentations mentioning unapproved peptide use, NSW, July 2025 to September 2026 (SHPN (CEE) 260832, October 2026)",
+  "period": "2025-07-01..2026-09-30",
+  "ages": "16+",
+  "hospitals": 88,
+  "presentations": 1180,
+  "mentions": {
+   "retatrutide_any": 833,
+   "peptide_or_other_names_any": 445,
+   "both": 98,
+   "retatrutide_only_computed": 735,
+   "other_only_computed": 347
+  },
+  "admitted_share_stated": 0.18,
+  "age": {
+   "16-24": 290,
+   "25-34": 382,
+   "35-44": 312,
+   "45-54": 146,
+   "55+": 50
+  },
+  "sex": {
+   "male": 601,
+   "female": 579
+  },
+  "lhd": {
+   "South Western Sydney": 252,
+   "South Eastern Sydney": 173,
+   "Western Sydney": 158,
+   "Illawarra Shoalhaven": 93,
+   "Hunter New England": 86,
+   "Central Coast": 84,
+   "Sydney": 79,
+   "Northern Sydney": 68,
+   "Northern NSW": 57,
+   "Nepean Blue Mountains": 48,
+   "Mid North Coast": 27,
+   "Murrumbidgee": 24,
+   "Southern NSW": 18,
+   "Western NSW": 13,
+   "Far West": 0
+  },
+  "monthly_from_figure1": [
+   {
+    "month": "2025-07",
+    "presentations": 5,
+    "admissions": 2
+   },
+   {
+    "month": "2025-08",
+    "presentations": 8,
+    "admissions": 2
+   },
+   {
+    "month": "2025-09",
+    "presentations": 16,
+    "admissions": 3
+   },
+   {
+    "month": "2025-10",
+    "presentations": 22,
+    "admissions": 3
+   },
+   {
+    "month": "2025-11",
+    "presentations": 29,
+    "admissions": 5
+   },
+   {
+    "month": "2025-12",
+    "presentations": 31,
+    "admissions": 6
+   },
+   {
+    "month": "2026-01",
+    "presentations": 51,
+    "admissions": 8
+   },
+   {
+    "month": "2026-02",
+    "presentations": 70,
+    "admissions": 12
+   },
+   {
+    "month": "2026-03",
+    "presentations": 86,
+    "admissions": 15
+   },
+   {
+    "month": "2026-04",
+    "presentations": 84,
+    "admissions": 18
+   },
+   {
+    "month": "2026-05",
+    "presentations": 125,
+    "admissions": 30
+   },
+   {
+    "month": "2026-06",
+    "presentations": 124,
+    "admissions": 24
+   },
+   {
+    "month": "2026-07",
+    "presentations": 147,
+    "admissions": 28
+   },
+   {
+    "month": "2026-08",
+    "presentations": 165,
+    "admissions": 25
+   },
+   {
+    "month": "2026-09",
+    "presentations": 217,
+    "admissions": 30
+   }
+  ],
+  "monthly_note": "Recover monthly counts from NSW Health 'ED presentations mentioning unapproved peptide use'\n(Oct 2026) Figure 1. The chart is vector; read polyline vertices from page 3 and map them with\nthe gridlines (0 at y=544.63, 250 at y=699.39). Output is approximate (rounded to whole counts)\nand checked against the report's stated totals (1,180; Jul 5; Sep 217; 18% admitted).",
+  "sum_check": {
+   "presentations": 1180,
+   "admissions": 211
+  },
+  "windows": [
+   {
+    "months": "2025-07..2025-12",
+    "presentations": 111,
+    "admissions": 21,
+    "admitted_share": 0.189
+   },
+   {
+    "months": "2026-01..2026-06",
+    "presentations": 540,
+    "admissions": 107,
+    "admitted_share": 0.198
+   },
+   {
+    "months": "2026-07..2026-09",
+    "presentations": 529,
+    "admissions": 83,
+    "admitted_share": 0.157
+   }
+  ]
+ },
+ "nsw_glp1_survey_2025": {
+  "source": "https://www.health.nsw.gov.au/surveys/methods-results/Publications/glp-1-2025.pdf",
+  "adult_prevalence_pct": 8.0,
+  "users_age_pct": {
+   "16-24": 2.3,
+   "25-34": 7.0,
+   "35-44": 14.6,
+   "45-54": 24.8,
+   "55-64": 23.7,
+   "65-74": 19.1,
+   "75+": 8.5
+  },
+  "users_male_pct": 38.2,
+  "users_unweighted_n": 692
+ },
+ "age_comparison": {
+  "ed_under35_pct": 56.9,
+  "glp1_users_under35_pct": 9.3,
+  "ed_16_24_pct": 24.6,
+  "glp1_users_16_24_pct": 2.3,
+  "ed_55plus_pct": 4.2,
+  "glp1_users_55plus_pct": 51.3,
+  "ed_male_pct": 50.9,
+  "glp1_users_male_pct": 38.2
+ },
+ "us_poison_centers_via_cbs": {
+  "source": "https://www.cbsnews.com/news/deaths-reported-fda-bootleg-reta-weight-loss-drug/",
+  "retatrutide_exposures": {
+   "2026Q1": 249,
+   "2026Q2": 460,
+   "2026Q3": 862
+  }
+ },
+ "faers": {
+  "endpoint": "https://api.fda.gov/drug/event.json (search patient.drug.medicinalproduct:\"<term>\")",
+  "openfda_last_updated": "2026-07-30",
+  "latest_receivedate_in_public_data": "2026-06-30",
+  "retatrutide": {
+   "reports": 44,
+   "by_receive_year": {
+    "2019": 1,
+    "2024": 1,
+    "2025": 13,
+    "2026": 29
+   },
+   "received_2025_07_to_2026_06": 39,
+   "reporter_qualification": {
+    "consumer_or_non_health_professional (5)": 26,
+    "physician (1)": 5,
+    "pharmacist (2)": 4,
+    "other_health_professional (3)": 4,
+    "not_stated": 5
+   },
+   "manufacturer_reports": 7,
+   "serious": 33,
+   "hospitalization_flag": 17,
+   "life_threatening_flag": 6,
+   "death_flag": 0,
+   "any_gi_term": 14,
+   "any_product_quality_counterfeit_label_or_advertising_term": 10,
+   "counterfeit_terms": 4,
+   "top_reactions": [
+    [
+     "Vomiting",
+     8
+    ],
+    [
+     "Nausea",
+     7
+    ],
+    [
+     "Heart rate increased",
+     4
+    ],
+    [
+     "Fatigue",
+     4
+    ],
+    [
+     "Product use in unapproved indication",
+     4
+    ],
+    [
+     "Illness",
+     4
+    ],
+    [
+     "Feeling abnormal",
+     3
+    ],
+    [
+     "Abdominal pain",
+     3
+    ],
+    [
+     "Product advertising issue",
+     3
+    ],
+    [
+     "Product use issue",
+     3
+    ],
+    [
+     "Burning sensation",
+     3
+    ],
+    [
+     "Neuropathy peripheral",
+     2
+    ]
+   ],
+   "report_ids": [
+    "16474953",
+    "24618630",
+    "24995230",
+    "25268596",
+    "25417849",
+    "25540088",
+    "25644049",
+    "25699015",
+    "25703986",
+    "25732036",
+    "25767515",
+    "25841529",
+    "26011551",
+    "26011566",
+    "26034567",
+    "26286286",
+    "26304391",
+    "26341061",
+    "26376631",
+    "26404547",
+    "26409299",
+    "26424203",
+    "26428827",
+    "26477773",
+    "26499831",
+    "26528859",
+    "26543954",
+    "26615162",
+    "26615211",
+    "26632151",
+    "26642308",
+    "26655627",
+    "26692882",
+    "26699361",
+    "26699724",
+    "26729940",
+    "26740402",
+    "26744180",
+    "26756358",
+    "26807867",
+    "26808348",
+    "26850500",
+    "26879120",
+    "26937820"
+   ]
+  },
+  "other_terms_total_reports_ever": {
+   "aod 9604": 0,
+   "bpc 157": 18,
+   "cjc-1295": 4,
+   "epitalon": 0,
+   "ghk-cu": 2,
+   "ipamorelin": 11,
+   "kpv": 0,
+   "melanotan": 10,
+   "mots-c": 0,
+   "selank": 0,
+   "semax": 2,
+   "tb-500": 1,
+   "tb 500": 1,
+   "thymosin beta": 3
+  }
+ },
+ "x_counts": {
+  "query_story": "(peptide OR peptides OR retatrutide OR reta) (NSW OR \"New South Wales\" OR \"1,180\" OR 1180 OR \"NSW Health\") -is:retweet",
+  "by_utc_day_story": {
+   "2026-10-14": 0,
+   "2026-10-15": 0,
+   "2026-10-16": 1,
+   "2026-10-17": 0,
+   "2026-10-18": 13,
+   "2026-10-19": 31
+  },
+  "query_retatrutide": "retatrutide -is:retweet lang:en",
+  "by_utc_day_retatrutide": {
+   "2026-10-14": 241,
+   "2026-10-15": 206,
+   "2026-10-16": 195,
+   "2026-10-17": 171,
+   "2026-10-18": 137,
+   "2026-10-19": 148
+  },
+  "checked": "2026-10-20 ~00:05 ET"
+ }
+}
