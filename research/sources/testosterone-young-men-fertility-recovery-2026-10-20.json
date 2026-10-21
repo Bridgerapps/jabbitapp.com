@@ -1,0 +1,285 @@
+{
+ "title": "Testosterone in young men without low T: fertility and recovery evidence",
+ "checked": "2026-10-20 (ET)",
+ "sources": {
+  "bhasin2001": {
+   "pmid": "11701431",
+   "quotes": [
+    "61 eugonadal men, 18-35 yr",
+    "Energy and protein intakes were standardized",
+    "weekly injections of 25, 50, 125, 300, or 600 mg of testosterone enanthate for 20 wk",
+    "mean nadir testosterone concentrations of 253, 306, 542, 1,345, and 2,370 ng/dl",
+    "Fat-free mass increased dose dependently in men receiving 125, 300, or 600 mg of testosterone weekly (change +3.4, 5.2, and 7.9 kg, respectively)",
+    "Sexual function, visual-spatial cognition and mood, and PSA levels did not change significantly at any dose",
+    "whereas changes in fat mass and plasma high-density lipoprotein (HDL) cholesterol were negatively correlated"
+   ],
+   "dose_mg_week": [
+    25,
+    50,
+    125,
+    300,
+    600
+   ],
+   "nadir_ng_dl": [
+    253,
+    306,
+    542,
+    1345,
+    2370
+   ],
+   "ffm_kg": {
+    "125": 3.4,
+    "300": 5.2,
+    "600": 7.9
+   }
+  },
+  "liu2006": {
+   "pmid": "16650651",
+   "quotes": [
+    "data from individual participants in 30 studies published in 1990-2005",
+    "1549 healthy eugonadal men",
+    "aged 18-51 years",
+    "underwent 1283.5 man-years of treatment",
+    "about 90% of all published data from individuals using androgen or androgen-progestagen regimens",
+    "The median times for sperm to recover to thresholds of 20, 10, and 3 million per mL were 3.4 months",
+    "The typical probability of recovery to 20 million per mL was 67% (61-72) within 6 months, 90% (85-93) within 12 months, 96% (92-98) within 16 months, and 100% within 24 months",
+    "higher rates of recovery with older age, Asian origin, shorter treatment duration, shorter-acting testosterone preparations"
+   ],
+   "recovery_curve": {
+    "6": 67,
+    "12": 90,
+    "16": 96,
+    "24": 100
+   },
+   "median_months_20M": 3.4
+  },
+  "who1990": {
+   "pmid": "1977002",
+   "quotes": [
+    "271 healthy fertile men",
+    "ten centres) in seven countries",
+    "200 mg testosterone enanthate weekly",
+    "157 men (cumulative rate at 6 months 65%) became azoospermic",
+    "The mean time to become azoospermic was 120 days",
+    "was 3.7 months (3.6-3.9) and to the subject's mean baseline sperm concentration was 6.7 months"
+   ]
+  },
+  "who1996": {
+   "pmid": "8654646",
+   "quotes": [
+    "Three hundred ninety-nine normal, healthy, fertile men",
+    "15 centers in nine countries",
+    "1.4 (95 percent CI, 0.4 to 3.7) per 100 person-years",
+    "fertility was demonstrated in 33 couples"
+   ]
+  },
+  "wu1996": {
+   "pmid": "8774299",
+   "quotes": [
+    "range 21 to 45 years",
+    "The most common side effects were painful injections, acne, fatigue, and weight gain",
+    "Gynecomastia and prostate problems were detected in 24 and 9 men, respectively",
+    "high-density lipoprotein cholesterol decreased by 14% to 18% in non-Chinese",
+    "decrease in testicular volume (by 26.2% at 360 days)",
+    "increased levels of hemoglobin (by 7.6% at 360 days)",
+    "reversible within 6 months of stopping injections"
+   ]
+  },
+  "bhasin1996": {
+   "pmid": "8637535",
+   "quotes": [
+    "We randomly assigned 43 normal men",
+    "The efficacy of these substances for this purpose is unsubstantiated",
+    "600 mg of testosterone enanthate or placebo weekly for 10 weeks",
+    "greater increases in fat-free mass (6.1 +/- 0.6 kg)",
+    "bench-press (9 +/- 4 vs. -1 +/- 1 kg, P < 0.05)",
+    "Neither mood nor behavior was altered in any group"
+   ]
+  },
+  "yates1999": {
+   "pmid": "10023498",
+   "quotes": [
+    "between the ages of 21 and 40 years",
+    "testosterone cypionate (100 mg, 250 mg, or 500 mg) for the next 14 weeks",
+    "One noncompleter on 500 mg of testosterone developed a brief syndrome with symptoms similar to an agitated and irritable mania",
+    "our study may significantly underestimate the psychological effect of steroid use in the community"
+   ]
+  },
+  "coviello2008": {
+   "pmid": "18160461",
+   "quotes": [
+    "Hemoglobin and hematocrit increased significantly in a linear, dose-dependent fashion in both young and older men",
+    "The increases in hemoglobin and hematocrit were significantly greater in older than young men"
+   ]
+  },
+  "rasmussen2016": {
+   "pmid": "27532478",
+   "quotes": [
+    "37 current AAS abusers, 33 former AAS abusers",
+    "elapsed duration since AAS cessation: 2.5 (1.7; 3.7) years",
+    "14.4 (11.9-17.7) nmol/l vs. 18.8 (16.6-22.0) nmol/l",
+    "27.2% (13.3; 45.5) of former AAS abusers exhibited plasma total testosterone levels below the lower reference limit (12.1 nmol/l) whereas no control participants",
+    "erectile dysfunction ((27.3%)",
+    "decreased libido ((40.1%)",
+    "received unrestricted research grants from ‘AntiDoping Denmark’"
+   ]
+  },
+  "kanayama2015": {
+   "pmid": "25598171",
+   "quotes": [
+    "Twenty-four male former long-term AAS users and 36 non-AAS-using weightlifters",
+    "with five users showing testosterone levels below 200 ng/dl despite abstinence from AAS for 3-26 months",
+    "anabolic-androgenic steroid-withdrawal hypogonadism appears to be common, frequently prolonged and associated with substantial morbidity"
+   ]
+  },
+  "alhashimi2022": {
+   "pmid": "36065528",
+   "quotes": [
+    "We enrolled 520 patients with a confirmed history of AAS intake within 1 year of presentation",
+    "most patients (89%) started treatment, but some (11%) continued observation only",
+    "Among the 94 patients who presented with infertility (18%), 61 had oligospermia and 33 had azoospermia",
+    "only 14 (15%) achieved successful pregnancy at 12 months while all azoospermic's patients continued to have infertility at the end of the follow-up period"
+   ]
+  },
+  "pope2014": {
+   "pmid": "24423981",
+   "quotes": [
+    "the vast majority of PED users are not athletes but rather nonathlete weightlifters",
+    "We also need randomized trials to assess therapeutic interventions for treating the adverse effects of PEDs, such as the anabolic-androgen steroid withdrawal syndrome"
+   ]
+  },
+  "fda2016": {
+   "url": "https://web.archive.org/web/20161027052404/https:/www.fda.gov/Safety/MedWatch/SafetyInformation/SafetyAlertsforHumanMedicalProducts/ucm526151.htm",
+   "quotes": [
+    "Posted 10/25/2016",
+    "usually at doses higher than those typically prescribed and usually in conjunction with other AAS",
+    "heart attack, heart failure, stroke, depression, hostility, aggression, liver toxicity, and male infertility",
+    "depression, fatigue, irritability, loss of appetite, decreased libido, and insomnia",
+    "placed AAS, including testosterone, in Schedule III of the Controlled Substances Act"
+   ]
+  },
+  "nypost": {
+   "url": "https://nypost.com/2026/10/20/health/young-men-are-injecting-testosterone-to-be-more-masculine/",
+   "published": "Oct. 20, 2026, 6:59 a.m. ET",
+   "quotes": [
+    "Young men without diagnosed testosterone deficiencies are increasingly taking testosterone to accelerate their gains, a trend known as “testmaxxing.”",
+    "After three hormone cycles over two years",
+    "admits to not getting “proper blood work” in the past",
+    "Henry met a backdoor supplier",
+    "a fit professional in his 30s",
+    "After turning 30",
+    "a product labeled Pharma Test 250, which lists testosterone enanthate 250 mg/mL as its active ingredient",
+    "I haven’t spoken to a doctor because I didn’t want to be talked out of it",
+    "You also turn off sperm production",
+    "Testosterone and sperm production can take months or even years to return to normal after stopping"
+   ]
+  }
+ },
+ "x": {
+  "checked": "2026-10-20 ~8:05 PM ET (2026-10-21 00:05 UTC)",
+  "nypost_post": {
+   "url": "https://x.com/nypost/status/2112499375071010831",
+   "created_at": "2026-10-20T11:01:14Z",
+   "impressions": 967032,
+   "likes": 998,
+   "replies": 425,
+   "quotes": 239,
+   "reposts": 88,
+   "bookmarks": 595
+  },
+  "trending_story": {
+   "url": "https://x.com/i/trending/2112681488273850697",
+   "name": "Young Men Self-Inject Testosterone for Masculinity and Muscle Gains",
+   "updated_at": "2026-10-20T23:12:31Z"
+  },
+  "counts_utc_days": {
+   "query_narrow": "(testmaxxing OR \"test maxxing\" OR (testosterone (sperm OR fertility OR \"shut down\" OR shutdown OR \"without a prescription\" OR \"no prescription\" OR \"young men\" OR nypost))) lang:en -is:retweet",
+   "narrow": {
+    "2026-10-14 (from 04:00)": 66,
+    "2026-10-15": 74,
+    "2026-10-16": 104,
+    "2026-10-17": 89,
+    "2026-10-18": 55,
+    "2026-10-19": 60,
+    "2026-10-20": 140
+   },
+   "query_broad": "testosterone lang:en -is:retweet",
+   "broad": {
+    "2026-10-14 (from 04:00)": 2349,
+    "2026-10-15": 3042,
+    "2026-10-16": 3190,
+    "2026-10-17": 2718,
+    "2026-10-18": 2696,
+    "2026-10-19": 2661,
+    "2026-10-20": 2905
+   }
+  }
+ },
+ "clinicaltrials_gov": {
+  "query": "(\"anabolic steroid\" OR \"anabolic steroids\" OR \"anabolic-androgenic\" OR \"anabolic androgenic\") AND (withdrawal OR misuse OR abuse OR abusers OR users OR \"induced hypogonadism\" OR dependence)",
+  "pulled": "2026-10-20 ~8:10 PM ET",
+  "records": 24,
+  "categories": {
+   "randomized placebo-controlled drug trial to treat steroid-induced low testosterone (letrozole + hCG)": 1,
+   "randomized behavioral harm-reduction trial for steroid users": 1,
+   "observational study of steroid users": 4,
+   "observational (addiction cohort)": 1,
+   "observational (gym users)": 1,
+   "observational (androgen cohort)": 1,
+   "anti-doping test study": 3,
+   "off-topic (not about people using steroids)": 12
+  },
+  "by_record": {
+   "NCT05205837": "randomized placebo-controlled drug trial to treat steroid-induced low testosterone (letrozole + hCG)",
+   "NCT07039539": "randomized behavioral harm-reduction trial for steroid users",
+   "NCT03862235": "observational study of steroid users",
+   "NCT03450837": "observational study of steroid users",
+   "NCT05599438": "observational study of steroid users",
+   "NCT05178537": "observational study of steroid users",
+   "NCT04908410": "observational (addiction cohort)",
+   "NCT07061509": "observational (gym users)",
+   "NCT00150163": "observational (androgen cohort)",
+   "NCT04757532": "anti-doping test study",
+   "NCT02611154": "anti-doping test study",
+   "NCT04166786": "anti-doping test study",
+   "NCT04028115": "off-topic (not about people using steroids)",
+   "NCT02999802": "off-topic (not about people using steroids)",
+   "NCT07563855": "off-topic (not about people using steroids)",
+   "NCT04067479": "off-topic (not about people using steroids)",
+   "NCT06497426": "off-topic (not about people using steroids)",
+   "NCT07275996": "off-topic (not about people using steroids)",
+   "NCT02491957": "off-topic (not about people using steroids)",
+   "NCT06592144": "off-topic (not about people using steroids)",
+   "NCT00259298": "off-topic (not about people using steroids)",
+   "NCT03038919": "off-topic (not about people using steroids)",
+   "NCT03461614": "off-topic (not about people using steroids)",
+   "NCT02077348": "off-topic (not about people using steroids)"
+  },
+  "treatment_rcts": {
+   "NCT05205837": {
+    "name": "LUCAS (Copenhagen University Hospital, Rigshospitalet)",
+    "planned": 60,
+    "enrolled": 8,
+    "status": "TERMINATED",
+    "why_stopped": "Lack of recruitment",
+    "start": "2021-11-24",
+    "primary_completion": "2023-08-15",
+    "has_results": false
+   }
+  },
+  "separate_search_post_cycle": {
+   "query": "\"post-cycle therapy\" OR \"post cycle therapy\"",
+   "records": 1,
+   "NCT07568574": {
+    "sponsor": "Enhanced Emirates Limited",
+    "allocation": "NON_RANDOMIZED",
+    "planned": 60
+   }
+  },
+  "pubmed_rct_search": {
+   "term": "(anabolic steroid(s)/anabolic-androgenic [tiab]) AND (withdrawal OR \"induced hypogonadism\" OR cessation [tiab]) AND randomized controlled trial[pt]",
+   "count": 8,
+   "note": "hand-read: 1 tests treatment after steroid use (Al Hashimi 2022, single clinic, 89% ended up on treatment); the rest are not treatment trials for coming off steroids"
+  }
+ }
+}
