@@ -45,6 +45,9 @@ class FaqDLParser(HTMLParser):
 
         self._pending_q: str | None = None
         self.pairs: list[tuple[str, str]] = []
+        # Inline citation links (<a class="cite">[n]</a>) are navigation, not answer
+        # text: skip them so visible FAQ cites never leak into the JSON-LD.
+        self._cite_depth = 0
 
     @staticmethod
     def _has_faq_class(attrs: list[tuple[str, str | None]]) -> bool:
@@ -60,6 +63,11 @@ class FaqDLParser(HTMLParser):
 
         if t in ("script", "style"):
             self._in_script_style += 1
+            return
+
+        if t == "a" and (self._cite_depth or any(
+                k.lower() == "class" and v and "cite" in v.split() for k, v in attrs)):
+            self._cite_depth += 1
             return
 
         if t == "dl":
@@ -87,6 +95,10 @@ class FaqDLParser(HTMLParser):
                 self._in_script_style -= 1
             return
 
+        if t == "a" and self._cite_depth:
+            self._cite_depth -= 1
+            return
+
         if t == "dl":
             if self._dl_depth:
                 self._dl_depth -= 1
@@ -110,7 +122,7 @@ class FaqDLParser(HTMLParser):
                 self._pending_q = None
 
     def handle_data(self, data: str):
-        if self._in_script_style:
+        if self._in_script_style or self._cite_depth:
             return
         if self._faq_dl_depth is None:
             return
