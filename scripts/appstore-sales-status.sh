@@ -5,6 +5,14 @@ WS="/home/jabbit/.openclaw/workspace"
 OUT="$WS/data/status/appstore-sales.json"
 mkdir -p "$WS/data/status"
 
+# App Store creds live outside the repo: ~/.secrets/appstore.env (mode 600). No repo-dir fallback.
+if [ -f "$HOME/.secrets/appstore.env" ]; then
+  set -a
+  # shellcheck disable=SC1090
+  . "$HOME/.secrets/appstore.env" || true
+  set +a
+fi
+
 RAW="$(python3 "$WS/scripts/appstore-sales.py" --json 2>/dev/null || true)"
 if ! echo "$RAW" | jq -e . >/dev/null 2>&1; then
   jq -n --arg ts "$(date -Iseconds)" --arg raw "${RAW:0:400}" '{ok:false,last_check:$ts,error:"appstore_sales_unavailable",raw:$raw}' > "$OUT"

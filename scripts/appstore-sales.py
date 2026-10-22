@@ -11,10 +11,11 @@ from zoneinfo import ZoneInfo
 from collections import defaultdict
 
 def _load_env_file_if_needed():
-    """Best-effort loader for scripts/appstore.env.
+    """Best-effort loader for ~/.secrets/appstore.env.
 
     Cron jobs often run with a minimal environment, so we try to source config
-    from a repo-local env file if required variables are missing.
+    from the out-of-repo secrets file if required variables are missing.
+    There is deliberately no repo-local fallback: secrets never live in a repo dir.
 
     Supports lines like:
       export FOO="bar"
@@ -24,12 +25,10 @@ def _load_env_file_if_needed():
     if all(os.environ.get(k) for k in required):
         return
 
-    # Secrets live outside the repo (mode 600). Repo-local file is a legacy fallback only.
-    _candidates = [os.path.expanduser("~/.secrets/appstore.env"),
-                   os.path.join(os.path.dirname(__file__), "appstore.env")]
+    # Secrets live outside the repo (mode 600). No repo-local fallback.
     env_path = os.environ.get(
         "APPSTORE_ENV_FILE",
-        next((p for p in _candidates if os.path.exists(p)), _candidates[0]),
+        os.path.expanduser("~/.secrets/appstore.env"),
     )
     if not os.path.exists(env_path):
         return
