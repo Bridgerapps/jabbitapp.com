@@ -1,0 +1,264 @@
+{
+ "pulled_et": "2026-10-23 ~2:05 AM ET",
+ "method": "Hand review of ops/data/glp1-face/ctgov-raw.json (from glp1_face_ctgov.py), 2026-10-23 ET, plus number checks\nagainst saved source text in ops/data/glp1-face/ (PubMed abstracts, PMC full text, FDA labels).\nKept: studies on ClinicalTrials.gov that enroll people taking a GLP-1 drug and measure the face or skin.\nExcluded: the other records, which matched only on words such as \"filler\" (cod fillet), \"face-to-face\", or facial\nflushing/headache, and are not about appearance.",
+ "ctgov_query": [
+  "(semaglutide OR tirzepatide OR \"GLP-1\" OR GLP1 OR Ozempic OR Wegovy OR Mounjaro OR Zepbound) AND (face OR facial OR cheek OR midface OR \"Ozempic face\" OR filler OR \"skin laxity\" OR \"skin quality\")"
+ ],
+ "ctgov_records_matching": 53,
+ "kept_glp1_face_or_skin": 10,
+ "kept_testing_a_cosmetic_treatment": 9,
+ "kept_fillers_or_biostimulators": 5,
+ "kept_devices": 2,
+ "kept_topicals": 2,
+ "kept_with_posted_results": 0,
+ "kept_randomized": 2,
+ "kept_sponsor_industry_or_private_practice": 9,
+ "kept_comparing_drug_vs_equal_weight_loss_without_drug": 0,
+ "label_terms_searched": [
+  "facial fat",
+  "facial volume",
+  "facial wasting",
+  "lipoatrophy",
+  "facial aging",
+  "gaunt",
+  "ozempic face"
+ ],
+ "label_term_hits_wegovy_zepbound": {
+  "facial fat": [
+   0,
+   0
+  ],
+  "facial volume": [
+   0,
+   0
+  ],
+  "facial wasting": [
+   0,
+   0
+  ],
+  "lipoatrophy": [
+   0,
+   0
+  ],
+  "facial aging": [
+   0,
+   0
+  ],
+  "gaunt": [
+   0,
+   0
+  ],
+  "ozempic face": [
+   0,
+   0
+  ]
+ },
+ "studies": [
+  {
+   "nct": "NCT06351358",
+   "title": "Evaluation of the Effects of a Biostimulator and Dermal Fillers for Cheek Augmentation and Contour Deficiencies",
+   "tests": "Sculptra (PLLA) + Restylane Lyft or Contour (HA filler)",
+   "kind": "filler/biostimulator",
+   "area": "face",
+   "comparison": "none",
+   "status": "COMPLETED",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "enrollment": 41,
+   "primary_completion": "2025-05-31",
+   "sponsor": "Galderma R&D",
+   "sponsor_class": "INDUSTRY",
+   "has_results": false,
+   "primary_outcomes": [
+    "Change in skin hydration from baseline",
+    "Change in skin radiance from baseline",
+    "Change in skin elasticity from baseline",
+    "Change in skin thickness from baseline"
+   ]
+  },
+  {
+   "nct": "NCT07419854",
+   "title": "Restoring Facial Volume After GLP-1 Weight Loss With Radiesse",
+   "tests": "Radiesse (CaHA), hyperdiluted vs standard",
+   "kind": "filler/biostimulator",
+   "area": "face",
+   "comparison": "randomized, untreated until month 6",
+   "status": "RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 48,
+   "primary_completion": "2027-08",
+   "sponsor": "Kalpna Kay Durairaj, MD, FACS",
+   "sponsor_class": "OTHER",
+   "has_results": false,
+   "primary_outcomes": [
+    "Change in Cheek Volume, as quantified by Quantificare's LifeViz Software",
+    "Change in Jowl Volume, as quantified by Quantificare's LifeViz Software",
+    "Change in Nasolabial Fold Depth, as quantified by Quantificare's LifeViz Software",
+    "Change in Marionette Line Depth, as quantified by Quantificare's LifeViz Software",
+    "Body Mass Index (BMI)",
+    "Global Aesthetic Improvement Scale (GAIS) for Global Facial Aesthetic Appearance",
+    "Global Aesthetic Improvement Scale (GAIS) for Skin Quality",
+    "Global Aesthetic Improvement Scale (GAIS) for Skin Radiance"
+   ]
+  },
+  {
+   "nct": "NCT07221461",
+   "title": "Assess Impact of Microdroplet Hyaluronic Acid Filler on Skin Quality in Patients on Glucagon-like Peptide-1 Agonists",
+   "tests": "SKINVIVE (microdroplet HA)",
+   "kind": "filler/biostimulator",
+   "area": "face",
+   "comparison": "non-GLP-1 group",
+   "status": "NOT_YET_RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "enrollment": 24,
+   "primary_completion": "2026-01-30",
+   "sponsor": "Goldman, Butterwick, Fitzpatrick and Groff",
+   "sponsor_class": "OTHER",
+   "has_results": false,
+   "primary_outcomes": [
+    "Global Fine Lines",
+    "Overall Hyperpigmentation",
+    "Skin Tone Evenness",
+    "Skin Firmness",
+    "Skin Radiance/ Brightness",
+    "Skin Texture Smoothness",
+    "Global Wrinkles"
+   ]
+  },
+  {
+   "nct": "NCT07217743",
+   "title": "Assess Impact of Poly-L-lactic Acid on GLP1 Subjects",
+   "tests": "Sculptra (PLLA)",
+   "kind": "filler/biostimulator",
+   "area": "abdomen",
+   "comparison": "none stated",
+   "status": "NOT_YET_RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "enrollment": 20,
+   "primary_completion": "2026-08-30",
+   "sponsor": "Goldman, Butterwick, Fitzpatrick and Groff",
+   "sponsor_class": "OTHER",
+   "has_results": false,
+   "primary_outcomes": [
+    "Physical Global Aesthetic Improvement Scale"
+   ]
+  },
+  {
+   "nct": "NCT07478198",
+   "title": "Study on the Efficacy and Safety of PLLA Injections for Improving Facial Laxity Following GLP-1 Analog Therapy",
+   "tests": "PLLA injections",
+   "kind": "filler/biostimulator",
+   "area": "face",
+   "comparison": "none",
+   "status": "ENROLLING_BY_INVITATION",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "enrollment": 22,
+   "primary_completion": "2026-08-31",
+   "sponsor": "Shanghai Punan Hospital of Pudong New District",
+   "sponsor_class": "OTHER",
+   "has_results": false,
+   "primary_outcomes": [
+    "WSRS (Wrinkle Severity Rating Scale) Assessment"
+   ]
+  },
+  {
+   "nct": "NCT07685834",
+   "title": "Evaluation of Facial and Neck Skin Laxity With SofWave Treatment in Adults Initiating Tirzepatide for Weight Loss",
+   "tests": "Sofwave ultrasound device",
+   "kind": "device",
+   "area": "face and neck",
+   "comparison": "randomized, untreated",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "RANDOMIZED",
+   "enrollment": 30,
+   "primary_completion": "2027-03-01",
+   "sponsor": "Sofwave Medical LTD",
+   "sponsor_class": "INDUSTRY",
+   "has_results": false,
+   "primary_outcomes": [
+    "Improvement in the appearance of lax skin"
+   ]
+  },
+  {
+   "nct": "NCT07224880",
+   "title": "Ellacor\u00ae Micro-Coring Technology\u00ae in Fitzpatrick Skin Types I-VI, Including Patients Receiving Glucagon-Like Peptide-1 Receptor Agonists",
+   "tests": "ellacor micro-coring device",
+   "kind": "device",
+   "area": "face",
+   "comparison": "none (observational)",
+   "status": "COMPLETED",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 9,
+   "primary_completion": "2026-08-21",
+   "sponsor": "Cytrellis Biosystems, Inc.",
+   "sponsor_class": "INDUSTRY",
+   "has_results": false,
+   "primary_outcomes": [
+    "Safety and Outcomes"
+   ]
+  },
+  {
+   "nct": "NCT07216352",
+   "title": "Evaluate the Safety and Efficacy of a Topical Serum (AGE Serum) in Improving Visible Signs of Aging",
+   "tests": "AGE Serum (topical)",
+   "kind": "topical",
+   "area": "face",
+   "comparison": "none",
+   "status": "NOT_YET_RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NA",
+   "enrollment": 25,
+   "primary_completion": "2026-03-30",
+   "sponsor": "Goldman, Butterwick, Fitzpatrick and Groff",
+   "sponsor_class": "OTHER",
+   "has_results": false,
+   "primary_outcomes": [
+    "Modified Griffith Scale"
+   ]
+  },
+  {
+   "nct": "NCT07558603",
+   "title": "Evaluate the Safety and Efficacy of AGE Serum in Post-menopausal Patients on Hormone Replacement Therapy Taking Glucagon-like Peptide-1 Agonist",
+   "tests": "AGE Serum (topical), with vs without HRT",
+   "kind": "topical",
+   "area": "face",
+   "comparison": "HRT vs no HRT",
+   "status": "NOT_YET_RECRUITING",
+   "study_type": "INTERVENTIONAL",
+   "allocation": "NON_RANDOMIZED",
+   "enrollment": 50,
+   "primary_completion": "2026-08-30",
+   "sponsor": "Goldman, Butterwick, Fitzpatrick and Groff",
+   "sponsor_class": "OTHER",
+   "has_results": false,
+   "primary_outcomes": [
+    "Modified Griffith Scale"
+   ]
+  },
+  {
+   "nct": "NCT07760532",
+   "title": "Comparing Facial Aging Between Identical Twins With 3D Imaging",
+   "tests": "none: one-visit 3D facial imaging of identical twins",
+   "kind": "observational",
+   "area": "face",
+   "comparison": "within twin pair",
+   "status": "NOT_YET_RECRUITING",
+   "study_type": "OBSERVATIONAL",
+   "allocation": null,
+   "enrollment": 200,
+   "primary_completion": "2026-09",
+   "sponsor": "Ponsky Facial Aesthetics And Plastic Surgery, Llc",
+   "sponsor_class": "INDUSTRY",
+   "has_results": false,
+   "primary_outcomes": [
+    "Within-pair difference in quantitative three-dimensional facial surface measurements"
+   ]
+  }
+ ]
+}
