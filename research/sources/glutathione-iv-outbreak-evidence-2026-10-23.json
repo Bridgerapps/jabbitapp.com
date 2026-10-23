@@ -1,0 +1,150 @@
+{
+ "checked": "2026-10-23 (America/New_York)",
+ "page": "https://jabbitapp.com/research/glutathione-iv-drip-injection-outbreak-evidence-teardown.html",
+ "outbreak": {
+  "fda_alert_2026_08_27": {
+   "url": "https://www.fda.gov/drugs/human-drug-compounding/fda-reminds-compounders-not-use-dietary-supplement-grade-glutathione-injectables",
+   "patients_with_adverse_events_at_least": 30,
+   "route": "intravenous",
+   "ingredient_lot": "229536",
+   "ingredient_supplier_as_named_by_fda": "Medisca Inc.",
+   "labeled": "dietary supplement grade",
+   "supplier_notice_to_customers_reported_to_fda": "2026-08-20",
+   "page_unchanged_since_last_fetch_on": "2026-10-23"
+  },
+  "cdc_current_situation": {
+   "url": "https://www.cdc.gov/healthcare-associated-infections/current-situation/index.html",
+   "updated": "2026-09-15",
+   "people_sick_more_than": 25,
+   "states_at_least": [
+    "TX",
+    "WA",
+    "FL",
+    "NY"
+   ],
+   "hospitalized_at_least": 3,
+   "hospitalized_route": "all IV",
+   "first_notified": "2026-07 (Texas DSHS)",
+   "fda_approved_glutathione_products_us": 0
+  },
+  "minnesota_mdh_lab_update": {
+   "date": "2026-09-22",
+   "url": "https://www.health.state.mn.us/diseases/idlab/mls/LabAlerts/260922gluta.pdf"
+  },
+  "recalls": [
+   {
+    "pharmacy": "Victory Medical Center Pharmacy",
+    "city": "Austin, TX",
+    "date": "2026-08-05",
+    "lots": 3,
+    "reason": "pharmacy testing identified elevated bacterial endotoxin levels",
+    "distributed": [
+     "TX",
+     "FL",
+     "NY"
+    ]
+   },
+   {
+    "pharmacy": "Optimal Balance Pharmacy",
+    "city": "Houston, TX",
+    "company_date": "2026-08-19",
+    "fda_publish": "2026-08-20",
+    "lots": 1,
+    "states_distributed": 14
+   },
+   {
+    "pharmacy": "Centric Compounding",
+    "city": "Houston, TX",
+    "company_date": "2026-09-09",
+    "fda_publish": "2026-09-13",
+    "lots": 6,
+    "products": [
+     "Glutathione 200 mg/mL",
+     "Myer's Cocktail",
+     "Tri-Immune Boost"
+    ],
+    "reports": 9
+   },
+   {
+    "pharmacy": "Greenwich Rx",
+    "city": "Tomball, TX",
+    "date": "2026-10-01",
+    "lots_fda_page": 10,
+    "lots_ca_board_letter": 12,
+    "intended_route": "subcutaneous",
+    "ed_reports_after_iv_use": 2,
+    "release_endotoxin_tests_met_specs_per_company_letter": true,
+    "ca_board_letter": "https://www.pharmacy.ca.gov/about/recall_alerts/100126_greenwich.pdf"
+   }
+  ],
+  "glutathione_recalls_posted_after_2026_10_01_found": 0,
+  "prior_events": [
+   {
+    "year": 2015,
+    "where": "Sydney, Australia",
+    "cases": 7,
+    "ref": "PMID 29673413"
+   },
+   {
+    "year": 2019,
+    "where": "US (FDA alert; Letco-repackaged ingredient)",
+    "patients": 7,
+    "endotoxin_up_to_x_limit": 5
+   }
+  ]
+ },
+ "x_attention": {
+  "query": "glutathione -is:retweet",
+  "source": "X API v2 recent counts, UTC days",
+  "daily": {
+   "2026-10-17": 86,
+   "2026-10-18": 71,
+   "2026-10-19": 110,
+   "2026-10-20": 120,
+   "2026-10-21": 164,
+   "2026-10-22": 141,
+   "2026-10-23_partial": 94
+  },
+  "viral_post": {
+   "url": "https://x.com/i/status/2112536563280425033",
+   "posted": "2026-10-20 09:29 ET",
+   "impressions": 240782,
+   "impressions_checked": "2026-10-23 ~14:11 ET"
+  }
+ },
+ "pubmed_searches_2026_10_23": {
+  "note": "glutathione + ejaculation frequency / abstinence / masturbation / blood or plasma, humans",
+  "result_counts": [
+   24,
+   8,
+   17
+  ],
+  "human_studies_measuring_blood_or_tissue_gsh_vs_ejaculation_frequency": 0
+ },
+ "seminal_gsh_math_jabbit_analysis": {
+  "assumptions": {
+   "semen_volume_ml": 5.0,
+   "seminal_gsh_ng_per_ml_upper_iqr_controls": 11828,
+   "sperm_count": 500000000.0,
+   "sperm_gsh_nmol_per_1e8": 3.49,
+   "blood_volume_l": 5.0,
+   "whole_blood_gsh_synthesis_umol_per_l_per_day": 747,
+   "whole_blood_gsh_uM": 1142,
+   "gsh_mw_g_per_mol": 307.32,
+   "who_lower_reference_limits": {
+    "semen_volume_ml": 1.5,
+    "total_sperm_millions": 39
+   }
+  },
+  "semen_ug": 59.1,
+  "sperm_ug": 5.4,
+  "total_per_ejaculate_ug": 64.5,
+  "blood_synthesis_g_per_day": 1.15,
+  "blood_pool_g": 1.75,
+  "ejaculate_as_pct_of_daily_blood_synthesis": 0.0056,
+  "daily_synthesis_over_ejaculate": 17795,
+  "capsule_mg": 250,
+  "capsule_over_ejaculate": 3876
+ },
+ "ctgov_note": "ops/scripts/glutathione_ctgov.py: 272 records, 80 with glutathione as an intervention; heuristic too noisy, not used on page."
+}
