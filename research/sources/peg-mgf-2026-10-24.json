@@ -1,0 +1,223 @@
+{
+ "checked": "2026-10-24 (America/New_York)",
+ "page": "https://jabbitapp.com/research/peg-mgf-mechano-growth-factor-peptide-evidence-teardown.html",
+ "fda": {
+  "category2_page": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+  "category2_status": "Mechano growth factor pegylated (PEG-MGF) is listed under 'Bulk drug substances nominated but withdrawn'. Page content current as of 04/22/2026.",
+  "category2_text": "Compounded drugs containing Mechano Growth Factor Pegylated (PEG-MGF) may pose significant risk for immunogenicity for certain routes of administration and may have complexities with regard to peptide-related impurities and API characterization. FDA has not identified any human exposure data on drug products containing PEG-MGF administered via any route of administration. FDA lacks important information regarding any safety issues raised by PEG-MGF, including whether it would cause harm if administered to humans.",
+  "pcac_page": "https://www.fda.gov/advisory-committees/pharmacy-compounding-advisory-committee/meeting-pharmacy-compounding-advisory-committee",
+  "pcac_status": "Agenda: Cathelicidin (LL-37), GHK-Cu, Dihexa acetate, Melanotan II, Mechano Growth Factor, Pegylated (PEG-MGF), 'being considered for inclusion on the 503A bulks list'; meeting 'before the end of February 2027'; no date or materials; content current as of 04/15/2026.",
+  "oira": "RIN 0910-ZD94, Interim Access Policy for Compounding Using Certain Peptides, received 10/14/2026, Pending EO 12866 Regulatory Review; text not public. https://www.reginfo.gov/public/do/eoDetails?rrid=1568964",
+  "faers_counts_by_medicinalproduct": {
+   "PEG-MGF": 0,
+   "PEG_MGF": 0,
+   "MGF": 0,
+   "MECHANO_GROWTH_FACTOR": 0,
+   "PEGYLATED_MECHANO_GROWTH_FACTOR": 0
+  },
+  "drugsfda_matches": {
+   "mechano": 0,
+   "MGF": 0
+  },
+  "enforcement_recalls_product_description": {
+   "MGF": 0,
+   "mechano": 0
+  },
+  "ndc_directory": {
+   "generic_name": "MGF (Mechano Growth Factor) Acetate",
+   "product_type": "BULK INGREDIENT",
+   "marketing_category": "BULK INGREDIENT",
+   "dosage_form": "POWDER",
+   "marketing_start_date": "20210330",
+   "active_ingredient_as_coded": "MECASERMIN",
+   "pegylated_listings": 0,
+   "note": "One bulk-ingredient (API powder) listing named 'MGF (Mechano Growth Factor) Acetate', with its active ingredient coded as mecasermin (the name for full-length recombinant IGF-1). A listing is a registration, not an FDA approval. Labeler not named here."
+  },
+  "note": "Zero adverse event reports is not evidence of safety; unapproved products bought online are rarely reported."
+ },
+ "registry": {
+  "queries": [
+   "\"mechano growth factor\"",
+   "\"mechano-growth factor\"",
+   "PEG-MGF",
+   "\"IGF-1Ec\"",
+   "\"pegylated MGF\""
+  ],
+  "api": "ClinicalTrials.gov API v2, query.term, all pages, 2026-10-24",
+  "unique_studies": 506,
+  "interventional": 414,
+  "studies_giving_mgf_or_peg_mgf": [],
+  "note": "The search engine matches loosely (growth factor, IGF-1, growth hormone studies). No record lists MGF, PEG-MGF, IGF-1Ec or an MGF E-peptide as an intervention."
+ },
+ "wada": {
+  "list": "World Anti-Doping Agency 2026 Prohibited List, S2.3 Growth Factors and Growth Factor Modulators: 'Mechano growth factors (MGFs)'; prohibited at all times; non-Specified.",
+  "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+  "prohibited_since": "2005 (per Thevis et al. 2014)"
+ },
+ "patents": {
+  "WO2006097682A1": {
+   "url": "https://patents.google.com/patent/WO2006097682A1/en",
+   "priority": "2005-03-18",
+   "status_google_patents": "Ceased",
+   "pegylation_described": true
+  },
+  "WO2006097764A1": {
+   "url": "https://patents.google.com/patent/WO2006097764A1/en",
+   "priority": "2005-03-18",
+   "status_google_patents": "Ceased",
+   "pegylation_described": true
+  },
+  "US20060211606A1": {
+   "url": "https://patents.google.com/patent/US20060211606A1/en",
+   "priority": "2005-03-18",
+   "status_google_patents": "Abandoned",
+   "pegylation_described": true
+  }
+ },
+ "patent_note": "UCL Business / University of Illinois family (priority 2005-03-18) describes MGF E-domain peptides modified for stability, including PEGylation. Google Patents lists the WO publications as ceased and the US application as abandoned.",
+ "pubmed": {
+  "counts": {
+   "peg_mgf": {
+    "query": "\"PEG-MGF\"",
+    "count": 1
+   },
+   "pegylated_mgf": {
+    "query": "\"pegylated mechano growth factor\" OR \"PEGylated MGF\" OR \"pegylated MGF\"",
+    "count": 7
+   },
+   "mgf_tiab": {
+    "query": "\"mechano growth factor\"[tiab] OR \"mechano-growth factor\"[tiab]",
+    "count": 194
+   },
+   "mgf_human_rct": {
+    "query": "(\"mechano growth factor\"[tiab] OR \"mechano-growth factor\"[tiab]) AND (randomized controlled trial[pt] OR clinical trial[pt])",
+    "count": 6
+   },
+   "mgf_doping": {
+    "query": "(\"mechano growth factor\"[tiab] OR \"mechano-growth factor\"[tiab]) AND (doping OR \"black market\" OR confiscated)",
+    "count": 10
+   }
+  },
+  "note": "\"PEG-MGF\" returns one record (Front Endocrinol 2026 review). The pegylated-MGF query's other hits concern PEGylated growth hormone or IGF-1, or nanoparticles, not PEG-MGF. The 6 'trial' hits measure MGF mRNA after exercise, ultrasound or electrical stimulation; none gives MGF.",
+  "key_pmids": {
+   "8884603": {
+    "title": "Cloning and characterization of an IGF-1 isoform expressed in skeletal muscle subjected to stretch.",
+    "journal": "J Muscle Res Cell Motil",
+    "year": "1996"
+   },
+   "12095637": {
+    "title": "Different roles of the IGF-I Ec peptide (MGF) and mature IGF-I in myoblast proliferation and differentiation.",
+    "journal": "FEBS Lett",
+    "year": "2002"
+   },
+   "11566187": {
+    "title": "Age-related loss of skeletal muscle function and the inability to express the autocrine form of insulin-like growth factor-1 (MGF) in response to mechanical overload.",
+    "journal": "FEBS Lett",
+    "year": "2001"
+   },
+   "12692175": {
+    "title": "Expression and splicing of the insulin-like growth factor gene in rodent muscle is associated with muscle satellite (stem) cell activation following local tissue damage.",
+    "journal": "J Physiol",
+    "year": "2003"
+   },
+   "12562960": {
+    "title": "Expression of IGF-I splice variants in young and old human skeletal muscle after high resistance exercise.",
+    "journal": "J Physiol",
+    "year": "2003"
+   },
+   "14565994": {
+    "title": "The effect of recombinant human growth hormone and resistance training on IGF-I mRNA expression in the muscles of elderly men.",
+    "journal": "J Physiol",
+    "year": "2004"
+   },
+   "18799338": {
+    "title": "Serum IGF-I levels and IGF-I gene splicing in muscle of healthy young males receiving rhGH.",
+    "journal": "Growth Horm IGF Res",
+    "year": "2009"
+   },
+   "20130113": {
+    "title": "Minireview: Mechano-growth factor: a putative product of IGF-I gene expression involved in tissue repair and regeneration.",
+    "journal": "Endocrinology",
+    "year": "2010"
+   },
+   "24253050": {
+    "title": "Mechano-growth factor peptide, the COOH terminus of unprocessed insulin-like growth factor 1, has no apparent effect on myoblasts or primary muscle stem cells.",
+    "journal": "Am J Physiol Endocrinol Metab",
+    "year": "2014"
+   },
+   "26991004": {
+    "title": "Potency of Full-Length MGF to Induce Maximal Activation of the IGF-I R Is Similar to Recombinant Human IGF-I at High Equimolar Concentrations.",
+    "journal": "PLoS One",
+    "year": "2016"
+   },
+   "16244184": {
+    "title": "Research on mechano growth factor: its potential for optimising physical training as well as misuse in doping.",
+    "journal": "Br J Sports Med",
+    "year": "2005"
+   },
+   "22328223": {
+    "title": "Characterization and identification of a C-terminal amidated mechano growth factor (MGF) analogue in black market products.",
+    "journal": "Rapid Commun Mass Spectrom",
+    "year": "2012"
+   },
+   "25466910": {
+    "title": "Mass spectrometric characterization of a biotechnologically produced full-length mechano growth factor (MGF) relevant for doping controls.",
+    "journal": "Growth Horm IGF Res",
+    "year": "2014"
+   },
+   "28035768": {
+    "title": "Detection and in vitro metabolism of the confiscated peptides BPC 157 and MGF R23H.",
+    "journal": "Drug Test Anal",
+    "year": "2017"
+   },
+   "17581790": {
+    "title": "Mechano-growth factor reduces loss of cardiac function in acute myocardial infarction.",
+    "journal": "Heart Lung Circ",
+    "year": "2008"
+   },
+   "23712705": {
+    "title": "The E-domain region of mechano-growth factor inhibits cellular apoptosis and preserves cardiac function during myocardial infarction.",
+    "journal": "Mol Cell Biochem",
+    "year": "2013"
+   },
+   "25606570": {
+    "title": "Administration of a Synthetic Peptide Derived from the E-domain Region of Mechano-Growth Factor Delays Decompensation Following Myocardial Infarction.",
+    "journal": "Int J Cardiovasc Res",
+    "year": "2014"
+   },
+   "23749893": {
+    "title": "IGF-IEc expression is associated with advanced clinical and pathological stage of prostate cancer.",
+    "journal": "Anticancer Res",
+    "year": "2013"
+   },
+   "32977489": {
+    "title": "Role of Alternatively Spliced Messenger RNA (mRNA) Isoforms of the Insulin-Like Growth Factor 1 (IGF1) in Selected Human Tumors.",
+    "journal": "Int J Mol Sci",
+    "year": "2020"
+   },
+   "42395176": {
+    "title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration.",
+    "journal": "Front Endocrinol (Lausanne)",
+    "year": "2026"
+   }
+  }
+ },
+ "review_2026": {
+  "pmid": "42395176",
+  "pmcid": "PMC13322892",
+  "doi": "10.3389/fendo.2026.1822475",
+  "quotes": [
+   "No peer-reviewed human studies.",
+   "pegylation extends stability, t½ not reported",
+   "biological effects observed with native IGF-1Ec or isolated E-domain peptides cannot be assumed to apply to PEG-conjugated constructs",
+   "claims that PEG-MGF reliably accelerates recovery or improves body composition in humans remain unproven"
+  ],
+  "tier": "D (no peer-reviewed human studies)"
+ },
+ "analysis": {
+  "published_studies_of_peg_mgf_itself": 0,
+  "registered_trials_giving_mgf_or_peg_mgf": 0,
+  "faers_reports": 0,
+  "note": "Jabbit tally. The MGF literature concerns an mRNA splice variant measured in muscle and synthetic E-domain peptides in cells and animals; we found no published study of the pegylated product sold as PEG-MGF."
+ }
+}
