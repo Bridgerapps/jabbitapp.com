@@ -1,0 +1,283 @@
+{
+ "checked": "2026-10-24 (America/New_York)",
+ "page": "https://jabbitapp.com/research/ll-37-cathelicidin-peptide-evidence-teardown.html",
+ "fda": {
+  "category2_page": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+  "category2_status": "Cathelicidin LL-37 is listed under 'Bulk drug substances nominated but withdrawn'. Page content current as of 04/22/2026.",
+  "category2_text": "Compounded drugs containing cathelicidin LL-37 may pose risk for immunogenicity for certain routes of administration and may have complexities with regard to peptide-related impurities and API characterization. FDA lacks sufficient safety-related information regarding cathelicidin LL-37 to know whether the drug would cause harm when administered to humans. Nonclinical research findings suggest detrimental effects on male reproduction and that this drug can be protumorigenic in some tissues.",
+  "pcac_page": "https://www.fda.gov/advisory-committees/pharmacy-compounding-advisory-committee/meeting-pharmacy-compounding-advisory-committee",
+  "pcac_status": "Agenda: Cathelicidin (LL-37), GHK-Cu, Dihexa acetate, Melanotan II, PEG-MGF, 'being considered for inclusion on the 503A bulks list'; meeting 'before the end of February 2027'; content current as of 04/15/2026.",
+  "oira": "RIN 0910-ZD94, Interim Access Policy for Compounding Using Certain Peptides, received 10/14/2026, pending; text not public. https://www.reginfo.gov/public/do/eoDetails?rrid=1568964",
+  "faers_counts_by_medicinalproduct": {
+   "LL-37": 0,
+   "LL37": 0,
+   "CATHELICIDIN": 0,
+   "ROPOCAMPTIDE": 1
+  },
+  "faers_ropocamptide_report": {
+   "receivedate": "20260122",
+   "serious": false,
+   "country": "US",
+   "n_products_listed": 26,
+   "n_distinct_products": 23,
+   "reactions": [
+    "Muscle twitching",
+    "Paraesthesia",
+    "Muscle spasms",
+    "Drug ineffective"
+   ]
+  },
+  "faers_note": "One FAERS report codes ropocamptide; it lists it among many products and cannot show cause. Zero or few reports is not evidence of safety.",
+  "drugsfda": {
+   "LL-37": "No matches found!",
+   "cathelicidin": "No matches found!"
+  }
+ },
+ "registry": {
+  "queries": [
+   "LL-37",
+   "LL37",
+   "cathelicidin",
+   "ropocamptide"
+  ],
+  "api": "ClinicalTrials.gov API v2, query.term, pageSize 100, 2026-10-24",
+  "unique_studies": 98,
+  "studies_giving_ll37": [
+   {
+    "nct": "NCT02225366",
+    "title": "Induction of Antitumor Response in Melanoma Patients Using the Antimicrobial Peptide LL37",
+    "status": "COMPLETED",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "enrollment": 4,
+    "enrollment_type": "ACTUAL",
+    "start": "2015-07-08",
+    "lead_sponsor": "M.D. Anderson Cancer Center",
+    "interventions": "LL37"
+   },
+   {
+    "nct": "NCT04098562",
+    "title": "The Efficacy of LL-37 Cream on Aerobic Bacteria Colonization Pattern, Inflammation Response: Interleukin 1α (IL-1α) and Tumor Necrosis Factor α (TNF-α), and Healing Rate of Diabetic Foot Ulcers",
+    "status": "UNKNOWN",
+    "phases": [
+     "PHASE2"
+    ],
+    "enrollment": 40,
+    "enrollment_type": "ESTIMATED",
+    "start": "2019-10",
+    "lead_sponsor": "Fakultas Kedokteran Universitas Indonesia",
+    "interventions": "LL37"
+   }
+  ],
+  "note": "The other records measure LL-37 levels (often in vitamin D or periodontal studies) rather than giving LL-37. Promore Pharma's venous leg ulcer trials are registered in the EU Clinical Trials Register (HEAL LL-37: EudraCT 2018-000536-10).",
+  "nct02225366_results": {
+   "participants_started": 3,
+   "results_first_posted": "2021-12-09",
+   "other_adverse_events": [
+    {
+     "term": "Squamous Cell Carcinoma",
+     "participants": 1
+    },
+    {
+     "term": "Actinic Keratosis",
+     "participants": 1
+    },
+    {
+     "term": "Anemia",
+     "participants": 2
+    },
+    {
+     "term": "Skin hypopigmentation",
+     "participants": 1
+    },
+    {
+     "term": "Hypothyroidism",
+     "participants": 1
+    },
+    {
+     "term": "Lymphocyte Count Decrease",
+     "participants": 1
+    },
+    {
+     "term": "White blood cell decrease",
+     "participants": 1
+    },
+    {
+     "term": "Blood bilirubin increase",
+     "participants": 1
+    }
+   ],
+   "serious_adverse_events_listed": 0
+  }
+ },
+ "trials": {
+  "gronberg_2014": {
+   "pmid": "25041740",
+   "doi": "10.1111/wrr.12211",
+   "design": "first-in-man randomized double-blind placebo-controlled phase I/II, 3 strengths vs placebo, 4 weeks after a 3-week placebo run-in",
+   "n": 34,
+   "result": "Healing rate constants about 6x (lowest strength, p=0.003) and 3x (middle strength, p=0.088) placebo; mean ulcer area fell 68% and 50%; highest strength no different from placebo; no safety concerns reported."
+  },
+  "heal_ll37_2021": {
+   "pmid": "34687253",
+   "pmcid": "PMC9298190",
+   "doi": "10.1111/wrr.12977",
+   "eudract": "2018-000536-10",
+   "sponsor": "Promore Pharma AB",
+   "n_randomized": 148,
+   "n_fas": 144,
+   "primary_full_population_closure_pct": {
+    "lower_strength": 26.5,
+    "higher_strength": 24.7,
+    "placebo": 25.3,
+    "p_lower_vs_placebo": 0.4453,
+    "p_higher_vs_placebo": 0.5274
+   },
+   "post_hoc_large_wounds_closure_pct": {
+    "lower_strength": 28.1,
+    "higher_strength": 19.6,
+    "placebo": 8.1,
+    "p_lower_vs_placebo": 0.0458,
+    "n": [
+     21,
+     21,
+     24
+    ]
+   },
+   "safety": "122 AEs in 64 patients (43.2%); 12 non-fatal SAEs in 11 patients (7.4%), none assessed as related; no deaths",
+   "coi": "Three authors were Promore Pharma employees at the time; one a minority shareholder. Funded by Promore Pharma.",
+   "company_clarification_2020_11_20": "https://storage.mfn.se/a9041841-95d2-40fa-8919-9cb79e748aef/clarification-of-outcome-in-the-clinical-trial-heal-ll-37.pdf",
+   "company_clarification_quote": "This subgroup analysis regarding efficacy was not part of the original statistical analysis plan"
+  },
+  "miranda_2023": {
+   "pmid": "37480520",
+   "pmcid": "PMC10514151",
+   "doi": "10.1007/s00403-023-02657-8",
+   "registry": "NCT04098562",
+   "n": 25,
+   "condition": "diabetic foot ulcer with mild infection",
+   "result": "Granulation index rose more with LL-37 cream on days 7-28 (p=0.031 to 0.037); no significant effect on IL-1alpha, TNF-alpha or aerobic bacterial counts; no side effect attributed to the cream; one mild irritant contact dermatitis.",
+   "funding": "Universitas Indonesia research grant"
+  },
+  "dolkar_2018": {
+   "pmid": "29665030",
+   "doi": "10.1111/cup.13262",
+   "summary": "Case report from the MD Anderson intratumoral LL-37 melanoma trial: verrucous, keratoacanthoma-like skin lesions with atypia about 45 days after starting injections; resolved within 2 months of stopping."
+  }
+ },
+ "promore": {
+  "name_change": "Promore Pharma AB, under name change to PMD Device Solutions AB (Nasdaq notice, Jan 11, 2024)",
+  "nasdaq_notice": "https://www.nasdaq.com/press-release/the-observation-status-for-promore-pharma-ab-under-name-change-to-pmd-device",
+  "nasdaq_quote": "the Company's board of directors had assessed that the opportunities to raise the capital needed to develop the Company's program for ropocamptide were limited"
+ },
+ "patent": {
+  "number": "US9125875B2",
+  "title": "Use of the cathelicidin LL-37 and derivatives thereof for wound healing",
+  "priority": "2003-01-29",
+  "granted": "2015-09-08",
+  "assignee_original": "Lipopeptide AB",
+  "assignee_current": "Promore Pharma AB",
+  "status": "Expired - Fee Related; anticipated expiration 2024-01-28 (Google Patents)",
+  "url": "https://patents.google.com/patent/US9125875B2/en",
+  "abstract_quote": "The cytotoxic effect of LL-37 may be reduced by including a bilayer-forming polar lipid"
+ },
+ "pubmed": {
+  "query": "\"LL-37\"[tiab] OR \"LL37\"[tiab] OR cathelicidin[tiab]",
+  "count": 4707,
+  "key_pmids": {
+   "7529412": {
+    "first_author": "Agerberth B",
+    "year": "1995",
+    "journal": "Proc Natl Acad Sci U S A",
+    "title": "FALL-39, a putative human peptide antibiotic, is cysteine-free and expressed in bone marrow and testis."
+   },
+   "17873860": {
+    "first_author": "Lande R",
+    "year": "2007",
+    "journal": "Nature",
+    "title": "Plasmacytoid dendritic cells sense self-DNA coupled with antimicrobial peptide."
+   },
+   "17676051": {
+    "first_author": "Yamasaki K",
+    "year": "2007",
+    "journal": "Nat Med",
+    "title": "Increased serine protease activity and cathelicidin promotes skin inflammation in rosacea."
+   },
+   "21389263": {
+    "first_author": "Lande R",
+    "year": "2011",
+    "journal": "Sci Transl Med",
+    "title": "Neutrophils activate plasmacytoid dendritic cells by releasing self-DNA-peptide complexes in systemic lupus erythematosus."
+   },
+   "25470744": {
+    "first_author": "Lande R",
+    "year": "2014",
+    "journal": "Nat Commun",
+    "title": "The antimicrobial peptide LL37 is a T-cell autoantigen in psoriasis."
+   },
+   "16497887": {
+    "first_author": "Liu PT",
+    "year": "2006",
+    "journal": "Science",
+    "title": "Toll-like receptor triggering of a vitamin D-mediated human antimicrobial response."
+   },
+   "15985530": {
+    "first_author": "Gombart AF",
+    "year": "2005",
+    "journal": "FASEB J",
+    "title": "Human cathelicidin antimicrobial peptide (CAMP) gene is a direct target of the vitamin D receptor and is strongly up-regulated in myeloid cells by 1,25-dihydroxyvitamin D3."
+   },
+   "19234121": {
+    "first_author": "Coffelt SB",
+    "year": "2009",
+    "journal": "Proc Natl Acad Sci U S A",
+    "title": "The pro-inflammatory peptide LL-37 promotes ovarian tumor progression through recruitment of multipotent mesenchymal stromal cells."
+   },
+   "15609314": {
+    "first_author": "Heilborn JD",
+    "year": "2005",
+    "journal": "Int J Cancer",
+    "title": "Antimicrobial protein hCAP18/LL-37 is highly expressed in breast cancer and is a putative growth factor for epithelial cells."
+   },
+   "23100468": {
+    "first_author": "Ren SX",
+    "year": "2012",
+    "journal": "Cancer Res",
+    "title": "Host immune defense peptide LL-37 activates caspase-independent apoptosis and suppresses colon cancer."
+   },
+   "20521250": {
+    "first_author": "Wu WK",
+    "year": "2010",
+    "journal": "Int J Cancer",
+    "title": "Emerging roles of the host defense peptide LL-37 in human cancer and its potential therapeutic applications."
+   },
+   "24549217": {
+    "first_author": "Srakaew N",
+    "year": "2014",
+    "journal": "Hum Reprod",
+    "title": "Antimicrobial host defence peptide, LL-37, as a potential vaginal contraceptive."
+   },
+   "29665030": {
+    "first_author": "Dolkar T",
+    "year": "2018",
+    "journal": "J Cutan Pathol",
+    "title": "Dermatologic toxicity from novel therapy using antimicrobial peptide LL-37 in melanoma: A detailed examination of the clinicopathologic features."
+   },
+   "37480520": {
+    "first_author": "Miranda E",
+    "year": "2023",
+    "journal": "Arch Dermatol Res",
+    "title": "Efficacy of LL-37 cream in enhancing healing of diabetic foot ulcer: a randomized double-blind controlled trial."
+   }
+  }
+ },
+ "analysis": {
+  "human_trials_giving_ll37_found": 4,
+  "of_which_placebo_controlled_published": 3,
+  "largest_trial_met_primary_endpoint": false,
+  "injected_or_systemic_controlled_trials": 0,
+  "note": "Jabbit tally: Grönberg 2014, HEAL LL-37 (2021) and Miranda 2023 are topical, placebo-controlled and published; NCT02225366 is an uncontrolled intratumoral trial in melanoma. We found no controlled human trial of injected (subcutaneous) or oral LL-37."
+ }
+}
