@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" role="img" aria-labelledby="t1 d1">
+<title id="t1">Extra weight lost beyond placebo (percentage points)</title>
+<desc id="d1">Percentage points of body weight lost beyond placebo, everyone randomized counted. Without diabetes: survodutide 6.0 mg 7.6 (SYNCHRONIZE-1), Wegovy 12.4 (STEP 1), Zepbound 17.8 (SURMOUNT-1), retatrutide 12 mg 21.0 (TRIUMPH-1). With type 2 diabetes: survodutide 5.9 (SYNCHRONIZE-2), Wegovy 6.2 (STEP 2), Zepbound 11.6 (SURMOUNT-2), retatrutide 13.8 (TRIUMPH-2). Survodutide and retatrutide are investigational.</desc>
+<rect width="720" height="560" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Extra weight lost beyond placebo (percentage points)</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Everyone randomized counted. Separate trials of 68 to 80 weeks, not head-to-head.</text>
+<text x="24" y="92" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Without diabetes</text>
+<text x="24" y="110" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">SYNCHRONIZE-1 · STEP 1 · SURMOUNT-1 · TRIUMPH-1</text>
+<line x1="290.0" y1="120" x2="290.0" y2="260" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="364.0" y1="120" x2="364.0" y2="260" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="438.0" y1="120" x2="438.0" y2="260" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="512.0" y1="120" x2="512.0" y2="260" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="586.0" y1="120" x2="586.0" y2="260" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="660.0" y1="120" x2="660.0" y2="260" stroke="#e2e8f0" stroke-width="1"/>
+<text x="278" y="141" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Survodutide 6.0 mg*</text>
+<rect x="290" y="126" width="112.5" height="22" rx="3" fill="#c2410c"/>
+<text x="408.5" y="142" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">7.6</text>
+<text x="278" y="177" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Wegovy 2.4 mg</text>
+<rect x="290" y="162" width="183.5" height="22" rx="3" fill="#0f766e"/>
+<text x="479.5" y="178" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">12.4</text>
+<text x="278" y="213" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Zepbound 15 mg</text>
+<rect x="290" y="198" width="263.4" height="22" rx="3" fill="#1d4ed8"/>
+<text x="559.4" y="214" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">17.8</text>
+<text x="278" y="249" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Retatrutide 12 mg*</text>
+<rect x="290" y="234" width="310.8" height="22" rx="3" fill="#7c3aed"/>
+<text x="606.8" y="250" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">21.0</text>
+<text x="24" y="298" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">With type 2 diabetes</text>
+<text x="24" y="316" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">SYNCHRONIZE-2 · STEP 2 · SURMOUNT-2 · TRIUMPH-2</text>
+<line x1="290.0" y1="326" x2="290.0" y2="466" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="364.0" y1="326" x2="364.0" y2="466" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="438.0" y1="326" x2="438.0" y2="466" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="512.0" y1="326" x2="512.0" y2="466" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="586.0" y1="326" x2="586.0" y2="466" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="660.0" y1="326" x2="660.0" y2="466" stroke="#e2e8f0" stroke-width="1"/>
+<text x="278" y="347" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Survodutide 6.0 mg*</text>
+<rect x="290" y="332" width="87.3" height="22" rx="3" fill="#c2410c"/>
+<text x="383.3" y="348" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">5.9</text>
+<text x="278" y="383" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Wegovy 2.4 mg</text>
+<rect x="290" y="368" width="91.8" height="22" rx="3" fill="#0f766e"/>
+<text x="387.8" y="384" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">6.2</text>
+<text x="278" y="419" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Zepbound 15 mg</text>
+<rect x="290" y="404" width="171.7" height="22" rx="3" fill="#1d4ed8"/>
+<text x="467.7" y="420" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">11.6</text>
+<text x="278" y="455" text-anchor="end" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Retatrutide 12 mg*</text>
+<rect x="290" y="440" width="204.2" height="22" rx="3" fill="#7c3aed"/>
+<text x="500.2" y="456" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">13.8</text>
+<text x="290.0" y="490" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">0</text>
+<text x="364.0" y="490" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">5</text>
+<text x="438.0" y="490" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">10</text>
+<text x="512.0" y="490" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">15</text>
+<text x="586.0" y="490" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">20</text>
+<text x="660.0" y="490" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">25</text>
+<text x="24" y="530" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">* Investigational, not approved. Survodutide: our subtraction of NEJM 2026 means. Others: US labels (Wegovy, Zepbound),</text>
+<text x="24" y="546" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">TRIUMPH-1 (NEJM 2026) and TRIUMPH-2 (Lancet 2026) abstracts. Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>
