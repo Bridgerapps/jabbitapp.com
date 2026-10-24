@@ -1,0 +1,292 @@
+{
+ "checked": "2026-10-24 (America/New_York)",
+ "page": "https://jabbitapp.com/research/dihexa-nootropic-peptide-evidence-teardown.html",
+ "fda": {
+  "category2_page": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+  "category2_status": "Dihexa acetate is listed under 'Bulk drug substances nominated but withdrawn' (previously in category 2; nomination withdrawn by the nominator). Page content current as of 04/22/2026.",
+  "category2_text": "Dihexa acetate FDA has not identified any human exposure data on drug products containing dihexa acetate administered via any route of administration. FDA lacks important information regarding any safety issues raised by dihexa acetate, including whether it would cause harm if administered to humans.",
+  "pcac_page": "https://www.fda.gov/advisory-committees/pharmacy-compounding-advisory-committee/meeting-pharmacy-compounding-advisory-committee",
+  "pcac_status": "Agenda: Cathelicidin (LL-37), GHK-Cu, Dihexa acetate, Melanotan II, PEG-MGF, 'being considered for inclusion on the 503A bulks list'; time and location 'will be scheduled in the coming months'; content current as of 04/15/2026.",
+  "oira": "RIN 0910-ZD94, Interim Access Policy for Compounding Using Certain Peptides, received 10/14/2026, pending; text not public. https://www.reginfo.gov/public/do/eoDetails?rrid=1568964",
+  "faers_dihexa": "No matches found!",
+  "drugsfda_dihexa": "No matches found!"
+ },
+ "wsu_jpet_papers_2010_2014": {
+  "query": "PubMed: Harding JW[au] AND \"J Pharmacol Exp Ther\"[ta] AND 2008:2026[dp]; status from PubMed CommentsCorrections",
+  "papers": [
+   {
+    "pmid": "20086056",
+    "year": 2010,
+    "title": "The angiotensin IV analog Nle-Tyr-Leu-psi-(CH2-NH2)3-4-His-Pro-Phe (norleual) can act as a hepatocyte growth factor/c-Met inhibitor.",
+    "status": "no notice listed",
+    "notices": []
+   },
+   {
+    "pmid": "21719467",
+    "year": 2011,
+    "title": "Facilitation of hippocampal synaptogenesis and spatial memory by C-terminal truncated Nle1-angiotensin IV analogs.",
+    "status": "no notice listed",
+    "notices": []
+   },
+   {
+    "pmid": "21859930",
+    "year": 2011,
+    "title": "Mimics of the dimerization domain of hepatocyte growth factor exhibit anti-Met and anticancer activity.",
+    "status": "retracted (2025)",
+    "notices": [
+     {
+      "type": "ExpressionOfConcernIn",
+      "pmid": "34551988"
+     },
+     {
+      "type": "RetractionIn",
+      "pmid": "40312094"
+     }
+    ]
+   },
+   {
+    "pmid": "22129598",
+    "year": 2012,
+    "title": "Development of angiotensin IV analogs as hepatocyte growth factor/Met modifiers.",
+    "status": "retracted (2025)",
+    "notices": [
+     {
+      "type": "ExpressionOfConcernIn",
+      "pmid": "34551990"
+     },
+     {
+      "type": "RetractionIn",
+      "pmid": "40312092"
+     }
+    ]
+   },
+   {
+    "pmid": "23055539",
+    "year": 2013,
+    "title": "Evaluation of metabolically stabilized angiotensin IV analogs as procognitive/antidementia agents.",
+    "status": "expression of concern (2021)",
+    "notices": [
+     {
+      "type": "ExpressionOfConcernIn",
+      "pmid": "34551989"
+     }
+    ]
+   },
+   {
+    "pmid": "25187433",
+    "year": 2014,
+    "title": "The procognitive and synaptogenic effects of angiotensin IV-derived peptides are dependent on activation of the hepatocyte growth factor/c-met system.",
+    "status": "retracted (2025)",
+    "notices": [
+     {
+      "type": "ExpressionOfConcernIn",
+      "pmid": "34551987"
+     },
+     {
+      "type": "RetractionIn",
+      "pmid": "40312093"
+     }
+    ]
+   }
+  ],
+  "retraction_notice_2014_paper": {
+   "doi": "10.1016/j.jpet.2025.103567",
+   "url": "https://jpet.aspetjournals.org/article/S0022-3565(25)39780-6/fulltext",
+   "dated": "2025-01-03",
+   "text": "Following an investigation by Washington State University, Figures 1B, 2A/C, and data in the subsequent erratum submission for the article have been found to contain falsified and/or fabricated data and [two authors named in the notice] were found to be solely responsible. The Journal of Pharmacology and Experimental Therapeutics has retracted this article."
+  },
+  "other_retraction_notices_2025_01_03": [
+   {
+    "doi": "10.1016/j.jpet.2025.103566",
+    "paper": "JPET 340 (2012) 539-548",
+    "url": "https://jpet.aspetjournals.org/article/S0022-3565(25)39779-X/fulltext",
+    "text": "Following an investigation by Washington State University, Figures 3A and 4 have been found to contain falsified and/or fabricated data. The Journal of Pharmacology and Experimental Therapeutics has retracted this article."
+   },
+   {
+    "doi": "10.1016/j.jpet.2025.103568",
+    "paper": "JPET 339 (2011) 509-518",
+    "url": "https://jpet.aspetjournals.org/article/S0022-3565(25)39781-8/fulltext",
+    "text": "Following an investigation by Washington State University, Figures 2A and 3A/C have been found to contain falsified and/or fabricated data. The Journal of Pharmacology and Experimental Therapeutics has retracted this article."
+   }
+  ],
+  "concern_notice_2013_paper": {
+   "doi": "10.1124/jpet.112.199497concern",
+   "url": "https://jpet.aspetjournals.org/article/S0022-3565(24)25718-9/fulltext",
+   "year": 2021,
+   "text": "The editors wish to express concern about the article by McCoy et al. of possible image manipulation after reviewing information received from several sources. They have shared these concerns with the corresponding author and their institution, Washington State University, and will await the results of an inquiry to determine appropriate next steps."
+  },
+  "coi_2013_paper": "J.W.W. and J.W.H. are founders and shareholders of M3 Biotechnology, LLC, which is developing pharmaceuticals based on this technology."
+ },
+ "pubmed_dihexa": {
+  "count": 19,
+  "ids": [
+   "42825082",
+   "41490200",
+   "38489193",
+   "35410439",
+   "34827486",
+   "34703584",
+   "29733881",
+   "27532814",
+   "25937370",
+   "25674052",
+   "25649658",
+   "25455861",
+   "25332729",
+   "25187433",
+   "24914896",
+   "23055539",
+   "18097939",
+   "15745423",
+   "1514645"
+  ],
+  "off_topic_chemical_name_matches": [
+   "25332729",
+   "24914896",
+   "18097939",
+   "15745423",
+   "1514645"
+  ],
+  "on_topic": 14,
+  "human_trials_of_dihexa": 0
+ },
+ "registry": {
+  "dihexa": {
+   "query": "ClinicalTrials.gov API v2 query.term=dihexa, 2026-10-24",
+   "total": 0
+  },
+  "fosgonimeton": {
+   "query": "ClinicalTrials.gov API v2 query.term=fosgonimeton, 2026-10-24",
+   "total": 5,
+   "studies": [
+    {
+     "nct": "NCT04488419",
+     "title": "ATH-1017 for Treatment of Mild to Moderate Alzheimer's Disease",
+     "status": "COMPLETED",
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollment": 554,
+     "start": "2020-09-28",
+     "completion": "2024-07-15",
+     "lead_sponsor": "LeonaBio"
+    },
+    {
+     "nct": "NCT04491006",
+     "title": "A Study of ATH-1017 in Mild to Moderate Alzheimer's Disease",
+     "status": "COMPLETED",
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollment": 77,
+     "start": "2020-11-23",
+     "completion": "2022-05-20",
+     "lead_sponsor": "LeonaBio"
+    },
+    {
+     "nct": "NCT04831281",
+     "title": "ATH-1017 Treatment in Subjects With Parkinson's Disease Dementia or Dementia With Lewy Bodies (SHAPE Trial)",
+     "status": "TERMINATED",
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollment": 28,
+     "start": "2022-01-20",
+     "completion": "2023-04-19",
+     "lead_sponsor": "LeonaBio"
+    },
+    {
+     "nct": "NCT04886063",
+     "title": "Open Label Study of ATH-1017 for Treatment of Mild to Moderate Alzheimer's Disease",
+     "status": "TERMINATED",
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollment": 423,
+     "start": "2021-06-30",
+     "completion": "2024-10-23",
+     "lead_sponsor": "LeonaBio"
+    },
+    {
+     "nct": "NCT05511558",
+     "title": "A Study of the Absorption, Metabolism, and Excretion of [14C]-Fosgonimeton (ATH-1017)",
+     "status": "COMPLETED",
+     "phases": [
+      "PHASE1"
+     ],
+     "enrollment": 8,
+     "start": "2022-07-13",
+     "completion": "2022-10-26",
+     "lead_sponsor": "LeonaBio"
+    }
+   ]
+  }
+ },
+ "athira_leonabio_sec": {
+  "cik": "0001620463",
+  "former_names": [
+   "M3 Biotechnology, Inc. (2014-2019)",
+   "Athira Pharma, Inc. (2019-2026)"
+  ],
+  "current_name": "LeonaBio, Inc. (from Jan 2026)",
+  "8k_2021_06_21": "https://www.sec.gov/Archives/edgar/data/1620463/000119312521193538/d140684d8k.htm",
+  "8k_2021_10_21": "https://www.sec.gov/Archives/edgar/data/1620463/000119312521304002/d179221d8k.htm",
+  "8k_2021_10_21_quotes": [
+   "When ATH-1017 is administered, it metabolizes rapidly in plasma into hexanoic-tyrosine-isoleucine-(6)-amino-hexanoic amide, or dihexa.",
+   "From 2011 to 2015, Athira sought to develop dihexa ... they failed to demonstrate that it had the appropriate characteristics needed to be a successful therapeutic product. As a result, development of dihexa was discontinued",
+   "The special committee's primary finding was that [Athira's then-CEO, named in the filing] altered images in her 2011 doctoral dissertation and at least four research papers that she co-authored while a graduate student at WSU, and published from 2011 to 2014.",
+   "WSU's dihexa patent incorporates images from papers co-authored by [the then-CEO], certain of which were altered by [the then-CEO]."
+  ],
+  "actad_pr_2022_06_22": "https://www.sec.gov/Archives/edgar/data/1620463/000095017022011935/atha-ex99_1.htm",
+  "liftad_pr_2024_09_03": "https://www.sec.gov/Archives/edgar/data/1620463/000095017024102788/atha-ex99_1.htm",
+  "liftad_topline": {
+   "n_primary": 312,
+   "gst_diff": -0.08,
+   "gst_p": 0.7,
+   "adascog11_change": {
+    "placebo": -0.39,
+    "fosgonimeton": -1.09,
+    "diff": -0.7,
+    "p": 0.35
+   },
+   "adcsadl23_change": {
+    "placebo": -0.02,
+    "fosgonimeton": 0.65,
+    "p": 0.61
+   },
+   "ptau217_diff_pg_ml": -0.12,
+   "ptau217_p": "<0.01",
+   "early_termination_pct": 22,
+   "deaths": 0,
+   "safety": "higher incidence of TEAEs vs placebo, mainly injection site reactions; SAE incidence similar"
+  },
+  "restructuring_8k_2024_09_17": "https://www.sec.gov/Archives/edgar/data/1620463/000095017024107031/atha-20240915.htm",
+  "rename_pr_2026_01_09": "https://www.sec.gov/Archives/edgar/data/1620463/000119312526008904/atha-ex99_1.htm",
+  "10k_2026_03_31": "https://www.sec.gov/Archives/edgar/data/1620463/000119312526134565/lona-20251231.htm",
+  "10k_quote": "Based on these results, we decided to pause further development of fosgonimeton."
+ },
+ "patent": {
+  "number": "US8598118B2",
+  "title": "Hepatocyte growth factor mimics as therapeutic agents",
+  "filed": "2013-02-15",
+  "granted": "2013-12-03",
+  "assignee": "Washington State University (current and original assignee per Google Patents; exclusively licensed to Athira per its Oct 21, 2021 8-K)",
+  "status": "Active; anticipated expiration 2032-04-02 (Google Patents)",
+  "url": "https://patents.google.com/patent/US8598118B2/en",
+  "abstract_claims": "dementia, neurodegenerative disease, diabetes and metabolic syndrome, cancer, and defective wound healing"
+ },
+ "wsu_news_2012": {
+  "url": "https://archive.news.wsu.edu/news/2012/10/11/prospective-alzheimer%c2%92s-drug-builds-new-brain-cell-connections/",
+  "quote": "In bench assays using living nerve cells to monitor new neuronal connections, [the researchers, named in the release] found Dihexa to be seven orders of magnitude more powerful than BDNF"
+ },
+ "analysis": {
+  "jpet_papers_by_status": {
+   "retracted (2025)": 3,
+   "expression of concern (2021)": 1,
+   "no notice listed": 2
+  },
+  "note": "Jabbit tally from PubMed records. A retraction or expression of concern applies to a paper; it does not by itself show that every result in it, or in related work, is wrong."
+ }
+}
