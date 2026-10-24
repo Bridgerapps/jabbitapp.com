@@ -1,0 +1,522 @@
+{
+ "checked": "2026-10-24 (America/New_York)",
+ "page": "https://jabbitapp.com/research/sermorelin-growth-hormone-peptide-evidence-teardown.html",
+ "drugs_at_fda": {
+  "query": "https://api.fda.gov/drug/drugsfda.json?search=products.active_ingredients.name:%22SERMORELIN%20ACETATE%22",
+  "applications": [
+   {
+    "application": "NDA019863",
+    "brand": "GEREF",
+    "sponsor": "EMD SERONO",
+    "marketing_status": [
+     "Discontinued"
+    ],
+    "original_approval": "19901228",
+    "submissions": [
+     {
+      "type": "ORIG",
+      "number": "1",
+      "status_date": "19901228",
+      "class": "Type 1 - New Molecular Entity"
+     },
+     {
+      "type": "SUPPL",
+      "number": "2",
+      "status_date": "19910528",
+      "class": "Manufacturing (CMC)"
+     },
+     {
+      "type": "SUPPL",
+      "number": "1",
+      "status_date": "19910826",
+      "class": "Manufacturing (CMC)"
+     },
+     {
+      "type": "SUPPL",
+      "number": "5",
+      "status_date": "19980327",
+      "class": "Labeling"
+     },
+     {
+      "type": "SUPPL",
+      "number": "4",
+      "status_date": "19980403",
+      "class": "Manufacturing (CMC)"
+     },
+     {
+      "type": "SUPPL",
+      "number": "6",
+      "status_date": "20011002",
+      "class": "Labeling"
+     }
+    ]
+   },
+   {
+    "application": "NDA020443",
+    "brand": "GEREF",
+    "sponsor": "EMD SERONO INC",
+    "marketing_status": [
+     "Discontinued"
+    ],
+    "original_approval": "19970926",
+    "submissions": [
+     {
+      "type": "ORIG",
+      "number": "1",
+      "status_date": "19970926",
+      "class": "Type 3 - New Dosage Form"
+     }
+    ]
+   }
+  ],
+  "note": "openfda.generic_name is not populated for these discontinued applications, so a generic-name search returns no match."
+ },
+ "federal_register_2013": {
+  "citation": "78 FR 14095-14096 (Mar 4, 2013), Docket FDA-2012-P-1071",
+  "url": "https://www.federalregister.gov/documents/2013/03/04/2013-04827/determination-that-geref-sermorelin-acetate-injection-05-milligrams-basevial-and-10-milligrams",
+  "facts": [
+   "NDA 20-443 (0.5 and 1.0 mg vials) initially approved September 26, 1997, for idiopathic GHD in children with growth failure",
+   "NDA 19-863 (0.05 mg ampule) initially approved December 28, 1990, for evaluating pituitary GH secretion",
+   "EMD Serono discontinuation letters July 11, 2008 and December 2, 2008; withdrawal of both NDAs effective June 18, 2009 (74 FR 23407)",
+   "FDA determined neither product was withdrawn from sale for reasons of safety or effectiveness; ANDAs may be approved if other requirements are met"
+  ]
+ },
+ "emd_serono_2008": {
+  "url": "https://www.biospace.com/emd-serono-inc-to-discontinue-geref-diagnostic",
+  "text": "EMD Serono, Inc. annouces it has made a business decision to discontinue Geref Diagnostic effective October 2008. The drug will be discontinued because the active ingredient used to produce Gerer Diagnostic is no longer being manufactured."
+ },
+ "recalls": {
+  "query": "https://api.fda.gov/drug/enforcement.json?search=product_description:%22sermorelin%22&limit=100",
+  "note": "Each recall event can cover many products from one firm; a sterility-assurance recall usually reflects facility conditions, not a test result on sermorelin. Firms are counted, not named.",
+  "product_entries": 93,
+  "events": 32,
+  "firms": 28,
+  "class_counts": {
+   "Class II": 30,
+   "Class I": 2
+  },
+  "reason_groups": {
+   "sterility or contamination": 27,
+   "firm-wide recall after adverse event reports tied to a different product": 1,
+   "labeling, stability data or manufacturing-control problems": 3,
+   "potency": 1
+  },
+  "events_with_blends": 19,
+  "by_year": {
+   "2012": {
+    "sterility": 1
+   },
+   "2013": {
+    "sterility": 3,
+    "other": 1
+   },
+   "2015": {
+    "sterility": 6
+   },
+   "2016": {
+    "sterility": 4
+   },
+   "2017": {
+    "other": 1
+   },
+   "2018": {
+    "other": 1,
+    "sterility": 2
+   },
+   "2019": {
+    "sterility": 4
+   },
+   "2021": {
+    "sterility": 1
+   },
+   "2022": {
+    "sterility": 4,
+    "other": 2
+   },
+   "2025": {
+    "sterility": 1
+   },
+   "2026": {
+    "sterility": 1
+   }
+  },
+  "latest_event": {
+   "initiated": "20260910",
+   "report_date": "20261014",
+   "classification": "Class II",
+   "reason_text": "Lack of Assurance of Sterility: Related to formulation using bacteriostic water; Related to processing equipment used in compounded product."
+  },
+  "events_detail": [
+   {
+    "initiated": "20120521",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility: Franck's Lab Inc. initiated a recall of all Sterile Human Drugs distributed between 11/21/2011 and 05/21/2012. FDA environmental sampling revealed the presence of microorganisms and fungal growth in the clean room where sterile products were prepared.",
+    "sermorelin_product_entries": 1,
+    "any_blend": true
+   },
+   {
+    "initiated": "20130415",
+    "classification": "Class I",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility: The recall is being initiated due to a lack of sterility assurance and concerns associated with the quality control processes identified during an FDA inspection.",
+    "sermorelin_product_entries": 1,
+    "any_blend": true
+   },
+   {
+    "initiated": "20130528",
+    "classification": "Class II",
+    "reason_group": "firm-wide recall after adverse event reports tied to a different product",
+    "reason_text": "The firm received seven reports of adverse reactions in the form of skin abscesses potentially linked to compounded preservative-free methylprednisolone 80mg/ml 10 ml vials.",
+    "sermorelin_product_entries": 4,
+    "any_blend": true
+   },
+   {
+    "initiated": "20130529",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility: FDA inspection findings resulted in concerns regarding quality control processes",
+    "sermorelin_product_entries": 1,
+    "any_blend": true
+   },
+   {
+    "initiated": "20130726",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility; FDA inspectional findings resulted in concerns associated with quality control procedures that impacted sterility assurance",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   },
+   {
+    "initiated": "20150602",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility; FDA inspection identified GMP violations potentially impacting product quality and sterility",
+    "sermorelin_product_entries": 5,
+    "any_blend": true
+   },
+   {
+    "initiated": "20150724",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility; all sterile human compounded drugs within expiry",
+    "sermorelin_product_entries": 3,
+    "any_blend": true
+   },
+   {
+    "initiated": "20150903",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility:  A recall of all compounded sterile preparations within expiry is being initiated due to observations associated with poor sterile production practices resulting in a lack of sterility assurance for their finished drugs.",
+    "sermorelin_product_entries": 3,
+    "any_blend": false
+   },
+   {
+    "initiated": "20150923",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility: A recent FDA inspection found that this product was not being compounded in an area appropriate for lyophilization which may lead to a lack of sterility assurance.",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   },
+   {
+    "initiated": "20151016",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 1,
+    "any_blend": true
+   },
+   {
+    "initiated": "20151019",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   },
+   {
+    "initiated": "20160719",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 1,
+    "any_blend": true
+   },
+   {
+    "initiated": "20160801",
+    "classification": "Class I",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Non-Sterility; microbial contamination identified as Bacillus circulans",
+    "sermorelin_product_entries": 1,
+    "any_blend": true
+   },
+   {
+    "initiated": "20160921",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 12,
+    "any_blend": true
+   },
+   {
+    "initiated": "20161117",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 8,
+    "any_blend": true
+   },
+   {
+    "initiated": "20171116",
+    "classification": "Class II",
+    "reason_group": "labeling, stability data or manufacturing-control problems",
+    "reason_text": "Labeling: Incorrect or Missing Lot and/or Exp Date: Beyond Use Date (BUD) exceed the BUD/EXP of at least one ingredient used to make final product.",
+    "sermorelin_product_entries": 4,
+    "any_blend": true
+   },
+   {
+    "initiated": "20180307",
+    "classification": "Class II",
+    "reason_group": "labeling, stability data or manufacturing-control problems",
+    "reason_text": "Stability Data Does Not Support Expiry: Stability data from manufacturer does not support expiration dates listed.",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   },
+   {
+    "initiated": "20180910",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 7,
+    "any_blend": true
+   },
+   {
+    "initiated": "20181217",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of sterility assurance.",
+    "sermorelin_product_entries": 6,
+    "any_blend": true
+   },
+   {
+    "initiated": "20190402",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of sterility assurance.",
+    "sermorelin_product_entries": 2,
+    "any_blend": false
+   },
+   {
+    "initiated": "20190523",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Sterility Assurance.",
+    "sermorelin_product_entries": 6,
+    "any_blend": true
+   },
+   {
+    "initiated": "20190912",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 8,
+    "any_blend": true
+   },
+   {
+    "initiated": "20191010",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Sterility Assurance.",
+    "sermorelin_product_entries": 1,
+    "any_blend": true
+   },
+   {
+    "initiated": "20211012",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of assurance of sterility",
+    "sermorelin_product_entries": 3,
+    "any_blend": true
+   },
+   {
+    "initiated": "20220307",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 3,
+    "any_blend": false
+   },
+   {
+    "initiated": "20220308",
+    "classification": "Class II",
+    "reason_group": "potency",
+    "reason_text": "Sub Potent",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   },
+   {
+    "initiated": "20220404",
+    "classification": "Class II",
+    "reason_group": "labeling, stability data or manufacturing-control problems",
+    "reason_text": "CGMP Deviations: prior to October 1, 2021, environmental and personnel monitoring Out of Action Limit (OOAL) excursions were not being properly investigated",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   },
+   {
+    "initiated": "20220405",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility: deviations from Current Good Manufacturing Practices (CGMP) that call into question the sterility of products intended to be sterile.",
+    "sermorelin_product_entries": 2,
+    "any_blend": true
+   },
+   {
+    "initiated": "20220509",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of assurance of sterility.",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   },
+   {
+    "initiated": "20220826",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   },
+   {
+    "initiated": "20250730",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   },
+   {
+    "initiated": "20260910",
+    "classification": "Class II",
+    "reason_group": "sterility or contamination",
+    "reason_text": "Lack of Assurance of Sterility: Related to formulation using bacteriostic water; Related to processing equipment used in compounded product.",
+    "sermorelin_product_entries": 1,
+    "any_blend": false
+   }
+  ]
+ },
+ "faers": {
+  "query": "https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:%22sermorelin%22+patient.drug.medicinalproduct:%22sermorelin%20acetate%22+patient.drug.medicinalproduct:%22geref%22&limit=100",
+  "total_reports_naming_sermorelin": 59,
+  "reports_with_sermorelin_as_suspect": 30,
+  "suspect_serious": 23,
+  "suspect_death_flag": 0,
+  "suspect_by_receive_year": {
+   "2009": 1,
+   "2016": 6,
+   "2017": 1,
+   "2018": 1,
+   "2019": 1,
+   "2020": 1,
+   "2022": 2,
+   "2023": 2,
+   "2024": 1,
+   "2025": 10,
+   "2026": 4
+  },
+  "suspect_top_reactions": [
+   [
+    "Pruritus",
+    7
+   ],
+   [
+    "Nausea",
+    4
+   ],
+   [
+    "Hypersensitivity",
+    4
+   ],
+   [
+    "Injection site urticaria",
+    3
+   ],
+   [
+    "Anaphylactic reaction",
+    3
+   ],
+   [
+    "Injection site pruritus",
+    3
+   ],
+   [
+    "Erythema",
+    3
+   ],
+   [
+    "Wrong product administered",
+    3
+   ],
+   [
+    "Product dispensing error",
+    3
+   ],
+   [
+    "Hypoaesthesia",
+    3
+   ],
+   [
+    "Vomiting",
+    2
+   ],
+   [
+    "Urticaria",
+    2
+   ]
+  ]
+ },
+ "clinicaltrials": {
+  "query": "ClinicalTrials.gov API v2 query.term=sermorelin, 2026-10-24",
+  "returned": 42,
+  "naming_sermorelin_or_geref": [
+   {
+    "nct": "NCT00448747",
+    "title": "Investigation of a New, Oral Growth Hormone Secretagogue, AEZS-130 as a Growth Hormone Stimulation Test.",
+    "status": "COMPLETED",
+    "enrollment": 101
+   },
+   {
+    "nct": "NCT00324064",
+    "title": "Sexually Dimorphic Effects of GHRH in Adult Growth Hormone Testing",
+    "status": "COMPLETED",
+    "enrollment": 90
+   },
+   {
+    "nct": "NCT03018886",
+    "title": "Diagnosing Adult Growth Hormone Deficiency",
+    "status": "COMPLETED",
+    "enrollment": 160
+   }
+  ],
+  "note": "The registry expands the term to GHRH and related drugs; most returned studies use tesamorelin, other analogs or unspecified GHRH. The 3 that name sermorelin or Geref use it in a diagnostic GH stimulation test."
+ },
+ "ndc_bulk_listings": {
+  "file": "FDA NDC unfinished-drug listings, downloaded 2026-10-16 (https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory)",
+  "sermorelin_listings": 17,
+  "distinct_labelers": 16,
+  "by_category": {
+   "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING": 13,
+   "BULK INGREDIENT": 4
+  }
+ },
+ "wada_2026": {
+  "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+  "text": "S2.2.4 Growth hormone releasing factors, including, but not limited to: growth hormone-releasing hormone (GHRH) and its analogues (e.g. CJC-1293, CJC-1295, sermorelin and tesamorelin)"
+ },
+ "pubmed": {
+  "sermorelin_all_fields": 334,
+  "sermorelin_mesh": 316,
+  "sermorelin_tiab_rct_pt": 0,
+  "checked": "2026-10-24"
+ }
+}
