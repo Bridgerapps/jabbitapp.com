@@ -1,0 +1,597 @@
+{
+ "checked": "2026-10-24 (America/New_York)",
+ "page": "https://jabbitapp.com/research/melanotan-ii-mt2-tanning-nasal-spray-evidence-teardown.html",
+ "tga": {
+  "alert_2026_08_17": {
+   "url": "https://web.archive.org/web/20261011164221/https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/melanotan-ii-tanning-peptide-products-found-be-inconsistently-dosed",
+   "bottles_tested": 5,
+   "labelled_mg": 30,
+   "labelled_ml": 20,
+   "estimated_mg_range": [
+    22,
+    54
+   ],
+   "infringement_notices": 27,
+   "total_aud": 101412,
+   "recipient": "an NSW-based individual (not named by TGA)",
+   "paid": "May 2026",
+   "artg_products": 0
+  },
+  "blog_2025_01_24": {
+   "url": "https://web.archive.org/web/20260709125256/https://www.tga.gov.au/news/blog/dont-risk-using-tanning-products-containing-melanotan",
+   "unlawful_ads_removal_requests_2023_24": 4800
+  }
+ },
+ "fda": {
+  "category2_page": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+  "category2_status": "listed under 'Bulk drug substances nominated but withdrawn' (previously in category 2; nomination withdrawn by the nominator); page content current as of 04/22/2026",
+  "pcac_page": "https://www.fda.gov/advisory-committees/pharmacy-compounding-advisory-committee/meeting-pharmacy-compounding-advisory-committee",
+  "pcac_status": "agenda item for a meeting FDA says it will host before the end of February 2027; content current as of 04/15/2026",
+  "news_release_2007_09_05": "https://www.webwire.com/ViewPressRel.asp?aId=46851"
+ },
+ "afamelanotide_scenesse": {
+  "generic": "afamelanotide (melanotan I, [Nle4-D-Phe7]-alpha-MSH)",
+  "nda": "NDA210797",
+  "us_approved": "20191008",
+  "review": "PRIORITY",
+  "orphan": true,
+  "labeler": [
+   "CLINUVEL INC."
+  ],
+  "label_effective": "20260511",
+  "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94f53286-11dd-7fbb-e053-2a95a90a7c48",
+  "indication": "increase pain free light exposure in adult patients with a history of phototoxic reactions from erythropoietic protoporphyria (EPP)",
+  "administration": "implant inserted under the skin by a trained health care professional",
+  "skin_monitoring": "full body skin examination twice yearly; may darken pre-existing nevi and ephelides",
+  "table1_pct_scenesse_vs_vehicle": {
+   "implant site reaction": [
+    21,
+    10
+   ],
+   "nausea": [
+    19,
+    14
+   ],
+   "skin hyperpigmentation": [
+    4,
+    0
+   ],
+   "melanocytic nevus": [
+    4,
+    2
+   ]
+  },
+  "n_safety": [
+   125,
+   119
+  ],
+  "cuv039_median_hours_direct_sun_pain_free_180d": [
+   64.1,
+   40.5
+  ],
+  "cuv029_median_hours_270d": [
+   6.0,
+   0.75
+  ],
+  "eu": {
+   "marketing_authorisation_issued": "2014-12-22",
+   "exceptional_circumstances": true,
+   "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/scenesse"
+  }
+ },
+ "faers": {
+  "query": "openFDA drug/event, patient.drug.medicinalproduct:\"melanotan\" (free-text product name; melanotan has no approved US product)",
+  "endpoint": "https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:%22melanotan%22&limit=100",
+  "openfda_last_updated": "2026-07-30",
+  "total_reports": 10,
+  "serious": 9,
+  "death_flagged": 0,
+  "reaction_terms": {
+   "Renal artery thrombosis": 5,
+   "Renal infarct": 3,
+   "Skin texture abnormal": 1,
+   "Melanocytic naevus": 1,
+   "Product use issue": 1,
+   "Product advertising issue": 1,
+   "Abdominal pain upper": 1,
+   "Biliary colic": 1,
+   "Alanine aminotransferase increased": 1,
+   "Hepatotoxicity": 1,
+   "Blood alkaline phosphatase increased": 1,
+   "Gamma-glutamyltransferase increased": 1,
+   "Aspartate aminotransferase increased": 1
+  },
+  "reports": [
+   {
+    "safetyreportid": "9399172",
+    "received": "20130709",
+    "serious": true,
+    "death_flag": false,
+    "country": null,
+    "drugs": [
+     "CIPROFLOXACIN",
+     "T500 FURY",
+     "MELANOTAN",
+     "ANALGESIC"
+    ],
+    "reactions": [
+     "Abdominal pain upper",
+     "Biliary colic",
+     "Alanine aminotransferase increased",
+     "Hepatotoxicity",
+     "Blood alkaline phosphatase increased",
+     "Gamma-glutamyltransferase increased",
+     "Aspartate aminotransferase increased"
+    ]
+   },
+   {
+    "safetyreportid": "17827603",
+    "received": "20200527",
+    "serious": true,
+    "death_flag": false,
+    "country": "SE",
+    "drugs": [
+     "MELANOTAN II",
+     "ESOMEPRAZOLE.",
+     "DICLOFENAC"
+    ],
+    "reactions": [
+     "Renal infarct"
+    ]
+   },
+   {
+    "safetyreportid": "17855930",
+    "received": "20200603",
+    "serious": true,
+    "death_flag": false,
+    "country": "SE",
+    "drugs": [
+     "MELANOTAN II",
+     "DICLOFENAC",
+     "ESOMEPRAZOLE."
+    ],
+    "reactions": [
+     "Renal infarct"
+    ]
+   },
+   {
+    "safetyreportid": "17874407",
+    "received": "20200609",
+    "serious": true,
+    "death_flag": false,
+    "country": "SE",
+    "drugs": [
+     "MELANOTAN II",
+     "DICLOFENAC"
+    ],
+    "reactions": [
+     "Renal infarct"
+    ]
+   },
+   {
+    "safetyreportid": "25999493",
+    "received": "20251105",
+    "serious": true,
+    "death_flag": false,
+    "country": "AU",
+    "drugs": [
+     "TESTOSTERONE",
+     "MELANOTAN II"
+    ],
+    "reactions": [
+     "Renal artery thrombosis"
+    ]
+   },
+   {
+    "safetyreportid": "26028813",
+    "received": "20251112",
+    "serious": true,
+    "death_flag": false,
+    "country": "AU",
+    "drugs": [
+     "ANDROGEL",
+     "TESTOSTERONE",
+     "MELANOTAN II"
+    ],
+    "reactions": [
+     "Renal artery thrombosis"
+    ]
+   },
+   {
+    "safetyreportid": "26028833",
+    "received": "20251112",
+    "serious": true,
+    "death_flag": false,
+    "country": "AU",
+    "drugs": [
+     "ANDROGEL",
+     "TESTOSTERONE",
+     "MELANOTAN II"
+    ],
+    "reactions": [
+     "Renal artery thrombosis"
+    ]
+   },
+   {
+    "safetyreportid": "26426781",
+    "received": "20260224",
+    "serious": true,
+    "death_flag": false,
+    "country": null,
+    "drugs": [
+     "AVEED",
+     "MELANOTAN II"
+    ],
+    "reactions": [
+     "Renal artery thrombosis"
+    ]
+   },
+   {
+    "safetyreportid": "26558421",
+    "received": "20260331",
+    "serious": true,
+    "death_flag": false,
+    "country": "AU",
+    "drugs": [
+     "TESTOSTERONE",
+     "MELANOTAN II"
+    ],
+    "reactions": [
+     "Renal artery thrombosis"
+    ]
+   },
+   {
+    "safetyreportid": "26571696",
+    "received": "20260401",
+    "serious": false,
+    "death_flag": false,
+    "country": null,
+    "drugs": [
+     "MELANOTAN II"
+    ],
+    "reactions": [
+     "Skin texture abnormal",
+     "Melanocytic naevus",
+     "Product use issue",
+     "Product advertising issue"
+    ]
+   }
+  ],
+  "caveat": "FAERS reports are unverified and often duplicated (several reports here share the same country, drugs and reaction and were received within weeks); they do not show that melanotan caused an event."
+ },
+ "registry": {
+  "melanotan": {
+   "query": "ClinicalTrials.gov API v2, query.intr = melanotan, pulled 2026-10-24",
+   "total": 1,
+   "studies": [
+    {
+     "nct": "NCT07437560",
+     "title": "Melanotan II (MT-II) as an Adjunct to NB-UVB Phototherapy for Repigmentation in Stable Nonsegmental Vitiligo",
+     "status": "RECRUITING",
+     "start": "2026-02-02",
+     "lead_sponsor": "Hudson Biotech",
+     "conditions": [
+      "NonSegmental Vitiligo",
+      "Nonsegmental Vitiligo (Stable)"
+     ],
+     "has_results": false
+    }
+   ],
+   "note": "The only record (NCT07437560, lead sponsor listed as Hudson Biotech) describes itself as an 'example interventional study record'; we set it aside, as on our Oct 20 TikTok page. Older melanotan II studies (1996-2000) predate registration."
+  },
+  "afamelanotide": {
+   "query": "ClinicalTrials.gov API v2, query.intr = afamelanotide, pulled 2026-10-24",
+   "total": 23,
+   "lead_sponsor_clinuvel": 23,
+   "with_posted_results": 12,
+   "by_status": {
+    "COMPLETED": 18,
+    "UNKNOWN": 4,
+    "ACTIVE_NOT_RECRUITING": 1
+   },
+   "studies": [
+    {
+     "nct": "NCT00472901",
+     "title": "Phase III Trial of CUV1647 in Polymorphic Light Eruption (PLE)",
+     "status": "COMPLETED",
+     "start": "2007-05",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Polymorphic Light Eruption (PLE)"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT00829192",
+     "title": "Phase II AK Study in Organ Transplant Patients",
+     "status": "UNKNOWN",
+     "start": "2007-11",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Actinic Keratoses",
+      "Carcinoma, Squamous Cell",
+      "Organ Transplant Recipients"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT00859534",
+     "title": "Phase II Solar Urticaria (SU) Pilot Study",
+     "status": "COMPLETED",
+     "start": "2008-12",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Solar Urticaria"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT00979745",
+     "title": "Phase III Confirmatory Study in Erythropoietic Protoporphyria (EPP)",
+     "status": "COMPLETED",
+     "start": "2009-09",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Erythropoietic Protoporphyria"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT01097044",
+     "title": "Phase II Confirmatory Study in Erythropoietic Protoporphyria (EPP)",
+     "status": "COMPLETED",
+     "start": "2010-04",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Erythropoietic Protoporphyria"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT01382589",
+     "title": "Afamelanotide and Narrow-Band Ultraviolet B (NB-UVB) Light in the Treatment of Nonsegmental Vitiligo",
+     "status": "COMPLETED",
+     "start": "2011-09",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Vitiligo"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT01430195",
+     "title": "Afamelanotide and Narrow-Band Ultraviolet B (NB-UVB) Light in the Treatment of Nonsegmental Vitiligo (NSV)",
+     "status": "COMPLETED",
+     "start": "2011-06",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Vitiligo"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT01605136",
+     "title": "Phase III Confirmatory Study in Erythropoietic Protoporphyria",
+     "status": "COMPLETED",
+     "start": "2012-05",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Erythropoietic Protoporphyria"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT03634137",
+     "title": "Implant Pharmacokinetic and Pharmacodynamic Study",
+     "status": "COMPLETED",
+     "start": "2009-09",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Healthy"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT04053270",
+     "title": "Multicentre Phase III Erythropoietic Protoporphyria Study",
+     "status": "COMPLETED",
+     "start": "2007-05",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Erythropoietic Protoporphyria"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT04425746",
+     "title": "Afamelanotide as Adjunctive Therapy in Patients Undergoing Photodynamic Therapy (PDT) Utilising Porfimer Sodium",
+     "status": "COMPLETED",
+     "start": "2008-08-05",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Patients Undergoing Photodynamic Therapy Using Porfimer Sodium"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT04525157",
+     "title": "Afamelanotide and Narrow-Band Ultraviolet B (NB-UVB) Phototherapy in the Treatment of Nonsegmental Vitiligo (NSV)",
+     "status": "COMPLETED",
+     "start": "2014-06-06",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Vitiligo"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT04578496",
+     "title": "A Safety Extension Study in Patients With Erythropoietic Protoporphyria (EPP)",
+     "status": "COMPLETED",
+     "start": "2011-07-11",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Erythropoietic Protoporphyria"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT04704713",
+     "title": "Afamelanotide in Patients Suffering From Polymorphic Light Eruption (PLE)",
+     "status": "COMPLETED",
+     "start": "2010-05-05",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Polymorphic Light Eruption"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT04943159",
+     "title": "Afamelanotide in Patients Suffering With Acne Vulgaris",
+     "status": "COMPLETED",
+     "start": "2010-08-24",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Acne Vulgaris"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT04962503",
+     "title": "A Proof of Concept Study to Evaluate the Safety of Afamelanotide in Patients With Acute Arterial Ischaemic Stroke (AIS)",
+     "status": "COMPLETED",
+     "start": "2021-06-03",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Arterial Ischemic Stroke"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT05159752",
+     "title": "A Study to Evaluate the Safety and Efficacy of Afamelanotide in Patients With Xeroderma Pigmentosum (XP)",
+     "status": "UNKNOWN",
+     "start": "2021-10-19",
+     "lead_sponsor": "Clinuvel Europe Limited",
+     "conditions": [
+      "Xeroderma Pigmentosum"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT05210582",
+     "title": "A Study to Assess the Changes in Pigmentation and Safety of Afamelanotide in Patients With Vitiligo on the Face",
+     "status": "UNKNOWN",
+     "start": "2022-10-11",
+     "lead_sponsor": "Clinuvel, Inc.",
+     "conditions": [
+      "Vitiligo"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT05368857",
+     "title": "DNA Repair Capacity of Afamelanotide on Ultraviolet Radiation-induced DNA Damage in Healthy Volunteers",
+     "status": "COMPLETED",
+     "start": "2022-01-19",
+     "lead_sponsor": "Clinuvel (UK) Ltd.",
+     "conditions": [
+      "Afamelanotide Evaluated as Skin DNA Repair Therapy in Healthy Volunteers"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT05370235",
+     "title": "A Study to Evaluate the Safety and Efficacy of Afamelanotide in Patients With Xeroderma Pigmentosum C and V",
+     "status": "UNKNOWN",
+     "start": "2022-03-28",
+     "lead_sponsor": "Clinuvel Europe Limited",
+     "conditions": [
+      "Xeroderma Pigmentosum"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT05854784",
+     "title": "Study to Evaluate the Safety and Efficacy of Afamelanotide in Patients With Variegate Porphyria (VP)",
+     "status": "COMPLETED",
+     "start": "2023-03-28",
+     "lead_sponsor": "Clinuvel Pharmaceuticals Limited",
+     "conditions": [
+      "Variegate Porphyria"
+     ],
+     "has_results": true
+    },
+    {
+     "nct": "NCT06109649",
+     "title": "A Study to Compare the Efficacy and Safety of SCENESSE and Narrow-Band Ultraviolet (NB-UVB) Light Versus NB-UVB Light Alone in Patients With Vitiligo",
+     "status": "ACTIVE_NOT_RECRUITING",
+     "start": "2023-10-11",
+     "lead_sponsor": "Clinuvel, Inc.",
+     "conditions": [
+      "Vitiligo"
+     ],
+     "has_results": false
+    },
+    {
+     "nct": "NCT06388642",
+     "title": "Pharmacokinetics of Afamelanotide in Erythropoietic Protoporphyria Patients",
+     "status": "COMPLETED",
+     "start": "2024-03-07",
+     "lead_sponsor": "Clinuvel Europe Limited",
+     "conditions": [
+      "Erythropoietic Protoporphyria"
+     ],
+     "has_results": true
+    }
+   ]
+  }
+ },
+ "analysis": {
+  "tga_low_pct_of_label": 73,
+  "tga_high_pct_of_label": 180,
+  "tga_spread_fold": 2.5,
+  "breindahl_2015_pct_of_label": [
+   43,
+   88
+  ],
+  "breindahl_impurities_pct": [
+   4.1,
+   5.9
+  ],
+  "pubmed_melanotan_records": 280,
+  "case_reports_read_by_harm": {
+   "melanoma or melanoma in situ": [
+    "21564053",
+    "22724573",
+    "24355990",
+    "40210573",
+    "42328529"
+   ],
+   "new or changing moles": [
+    "19174439",
+    "19380666",
+    "19575725",
+    "24334249"
+   ],
+   "priapism": [
+    "23537392",
+    "30796078",
+    "33460908"
+   ],
+   "kidney or muscle injury": [
+    "23121206",
+    "31953620"
+   ],
+   "brain swelling (PRES)": [
+    "23648958"
+   ],
+   "other skin or mouth changes": [
+    "41487785",
+    "41752902"
+   ]
+  },
+  "note": "Our arithmetic and grouping. Case reports show that harms happened to individual users; they cannot show how often harms happen or prove cause."
+ }
+}
