@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 476" width="760" height="476" role="img" aria-labelledby="t1 d1">
+<title id="t1">Vyleesi (PT-141) trials: a small edge, and many quit early</title>
+<desc id="d1">Vyleesi (PT-141) trials: a small edge, and many quit early. Desire score rose 1.2+ points: 25% with bremelanotide (Vyleesi) vs 17% with placebo. Distress score fell 1+ point: 35% with bremelanotide (Vyleesi) vs 31% with placebo. Stopped early: Study 1: 40% with bremelanotide (Vyleesi) vs 13% with placebo. Stopped early: Study 2: 39% with bremelanotide (Vyleesi) vs 25% with placebo. Stopped because of side effects: 18% with bremelanotide (Vyleesi) vs 2% with placebo.</desc>
+<rect width="760" height="476" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Vyleesi (PT-141) trials: a small edge, and many quit early</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Two 24-week placebo-controlled trials in 1,247 premenopausal women with low sexual desire (HSDD).</text>
+<rect x="24" y="68" width="12" height="12" fill="#be185d"/><text x="42" y="79" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Bremelanotide (Vyleesi)</text>
+<rect x="210" y="68" width="12" height="12" fill="#94a3b8"/><text x="228" y="79" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Placebo</text>
+<line x1="290.0" y1="94" x2="290.0" y2="396" stroke="#e2e8f0"/>
+<text x="290.0" y="412" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0%</text>
+<line x1="370.0" y1="94" x2="370.0" y2="396" stroke="#e2e8f0"/>
+<text x="370.0" y="412" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">10%</text>
+<line x1="450.0" y1="94" x2="450.0" y2="396" stroke="#e2e8f0"/>
+<text x="450.0" y="412" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">20%</text>
+<line x1="530.0" y1="94" x2="530.0" y2="396" stroke="#e2e8f0"/>
+<text x="530.0" y="412" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">30%</text>
+<line x1="610.0" y1="94" x2="610.0" y2="396" stroke="#e2e8f0"/>
+<text x="610.0" y="412" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">40%</text>
+<line x1="690.0" y1="94" x2="690.0" y2="396" stroke="#e2e8f0"/>
+<text x="690.0" y="412" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">50%</text>
+<text x="24" y="112" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Desire score rose 1.2+ points</text>
+<text x="24" y="129" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">FSFI desire, scale 1.2 to 6.0</text>
+<rect x="290" y="101" width="200.0" height="14" fill="#be185d"/>
+<text x="496.0" y="112" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">25%</text>
+<rect x="290" y="118" width="136.0" height="14" fill="#94a3b8"/>
+<text x="432.0" y="129" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">17%</text>
+<text x="24" y="174" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Distress score fell 1+ point</text>
+<text x="24" y="191" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">FSDS-DAO item 13, scale 0 to 4</text>
+<rect x="290" y="163" width="280.0" height="14" fill="#be185d"/>
+<text x="576.0" y="174" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">35%</text>
+<rect x="290" y="180" width="248.0" height="14" fill="#94a3b8"/>
+<text x="544.0" y="191" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">31%</text>
+<text x="24" y="236" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Stopped early: Study 1</text>
+<text x="24" y="253" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">left the 24-week blinded period</text>
+<rect x="290" y="225" width="320.0" height="14" fill="#be185d"/>
+<text x="616.0" y="236" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">40%</text>
+<rect x="290" y="242" width="104.0" height="14" fill="#94a3b8"/>
+<text x="400.0" y="253" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">13%</text>
+<text x="24" y="298" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Stopped early: Study 2</text>
+<text x="24" y="315" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">left the 24-week blinded period</text>
+<rect x="290" y="287" width="312.0" height="14" fill="#be185d"/>
+<text x="608.0" y="298" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">39%</text>
+<rect x="290" y="304" width="200.0" height="14" fill="#94a3b8"/>
+<text x="496.0" y="315" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">25%</text>
+<text x="24" y="360" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Stopped because of side effects</text>
+<text x="24" y="377" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">both trials pooled</text>
+<rect x="290" y="349" width="144.0" height="14" fill="#be185d"/>
+<text x="440.0" y="360" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">18%</text>
+<rect x="290" y="366" width="16.0" height="14" fill="#94a3b8"/>
+<text x="312.0" y="377" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">2%</text>
+<text x="24" y="446" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Responder rates are FDA's rounded figures. FDA found no difference in the number of satisfying sexual events.</text>
+<text x="24" y="462" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Sources: FDA announcement, June 21, 2019; Vyleesi label (sections 6.1, 14). Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>

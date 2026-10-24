@@ -1,0 +1,350 @@
+{
+ "checked": "2026-10-24 (America/New_York)",
+ "page": "https://jabbitapp.com/research/pt-141-bremelanotide-vyleesi-evidence-teardown.html",
+ "label": {
+  "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1d0c1b5-2f39-4bad-a6a4-0066e3ad5dcf",
+  "effective_time": "20251113",
+  "labeler": [
+   "Cosette Pharmaceuticals, Inc."
+  ],
+  "nda": [
+   "NDA210557"
+  ],
+  "indication": "premenopausal women with acquired, generalized HSDD; not indicated for postmenopausal women or men; not indicated to enhance sexual performance",
+  "table1_pct_vyleesi_vs_placebo": {
+   "nausea": [
+    40.0,
+    1.3
+   ],
+   "flushing": [
+    20.3,
+    0.3
+   ],
+   "injection site reactions": [
+    13.2,
+    8.4
+   ],
+   "headache": [
+    11.3,
+    1.9
+   ],
+   "vomiting": [
+    4.8,
+    0.2
+   ]
+  },
+  "n_safety": [
+   627,
+   620
+  ],
+  "discontinued_for_adverse_reactions_pct": [
+   18,
+   2
+  ],
+  "nausea_antiemetic_pct": 13,
+  "nausea_discontinued_pct": 8,
+  "hyperpigmentation": {
+   "phase3_pct": 1,
+   "daily_8_days_pct": 38,
+   "additional_after_8_more_days_pct": 14
+  },
+  "bp": {
+   "max_sbp_mmHg": 6,
+   "max_dbp_mmHg": 3,
+   "hr_drop_bpm": 5,
+   "resolves_hours": 12
+  },
+  "fsfi_desire_mean_change": {
+   "study1": [
+    0.5,
+    0.2
+   ],
+   "study2": [
+    0.6,
+    0.2
+   ]
+  },
+  "fsds_q13_mean_change": {
+   "study1": [
+    -0.7,
+    -0.4
+   ],
+   "study2": [
+    -0.7,
+    -0.4
+   ]
+  },
+  "discontinued_double_blind_pct": {
+   "study1": [
+    40,
+    13
+   ],
+   "study2": [
+    39,
+    25
+   ]
+  }
+ },
+ "fda_2019": {
+  "source": "https://web.archive.org/web/20191225234451/https://www.fda.gov/news-events/press-announcements/fda-approves-new-treatment-hypoactive-sexual-desire-disorder-premenopausal-women",
+  "desire_responders_pct": [
+   25,
+   17
+  ],
+  "distress_responders_pct": [
+   35,
+   31
+  ],
+  "satisfying_sexual_events": "no difference",
+  "hyperpigmentation_not_resolved": "about half"
+ },
+ "faers": {
+  "query": "openFDA drug/event, patient.drug.openfda.generic_name:\"bremelanotide\" (reports linked to the approved product's NDC/label harmonization); openFDA last_updated 2026-07-30, reports received through 2026-06-30",
+  "endpoint": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name:%22bremelanotide%22&count=patient.patientsex",
+  "total_reports": 1004,
+  "female": 883,
+  "male": 50,
+  "sex_unknown_or_missing": 71,
+  "by_receipt_year": {
+   "2019": 40,
+   "2020": 50,
+   "2021": 18,
+   "2022": 45,
+   "2023": 150,
+   "2024": 155,
+   "2025": 341,
+   "2026": 205
+  },
+  "male_top_reactions": [
+   [
+    "OFF LABEL USE",
+    37
+   ],
+   [
+    "NAUSEA",
+    20
+   ],
+   [
+    "DRUG INEFFECTIVE",
+    8
+   ],
+   [
+    "PRODUCT USE ISSUE",
+    8
+   ],
+   [
+    "ERECTION INCREASED",
+    6
+   ],
+   [
+    "HEADACHE",
+    6
+   ],
+   [
+    "ABDOMINAL PAIN UPPER",
+    4
+   ],
+   [
+    "DIARRHOEA",
+    3
+   ],
+   [
+    "PAINFUL ERECTION",
+    3
+   ],
+   [
+    "PRODUCT PRESCRIBING ISSUE",
+    3
+   ]
+  ],
+  "caveat": "FAERS reports are unverified, can be duplicated, and do not prove a drug caused an event; counts rise with use and reporting programs."
+ },
+ "registry_census": {
+  "query": "ClinicalTrials.gov API v2, query.intr = bremelanotide OR PT-141, pulled 2026-10-24",
+  "total": 10,
+  "female_only": 8,
+  "open_to_men": [
+   "NCT05709444",
+   "NCT06565611"
+  ],
+  "erectile_dysfunction_records": [],
+  "with_posted_results": 4,
+  "active_or_recruiting": [
+   "NCT06565611"
+  ],
+  "studies": [
+   {
+    "nct": "NCT00425256",
+    "title": "Evaluate the Safety and Efficacy of Bremelanotide in Women With Female Sexual Arousal Disorder (FSAD)",
+    "conditions": [
+     "Sexual Arousal Disorder"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "sex": "FEMALE",
+    "enrollment": null,
+    "start": "2006-02",
+    "lead_sponsor": "Palatin Technologies, Inc",
+    "has_results": false
+   },
+   {
+    "nct": "NCT01382719",
+    "title": "Bremelanotide in Premenopausal Women With Female Sexual Arousal Disorder and/or Hypoactive Sexual Desire Disorder",
+    "conditions": [
+     "Female Sexual Arousal Disorder",
+     "Hypoactive Sexual Desire Disorder"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "sex": "FEMALE",
+    "enrollment": 612,
+    "start": "2011-06",
+    "lead_sponsor": "Palatin Technologies, Inc",
+    "has_results": true
+   },
+   {
+    "nct": "NCT02333071",
+    "title": "1. Study to Evaluate the Efficacy/Safety of Bremelanotide in Premenopausal Women With Hypoactive Sexual Desire Disorder",
+    "conditions": [
+     "Hypoactive Sexual Desire Disorder"
+    ],
+    "phase": "PHASE3",
+    "status": "COMPLETED",
+    "sex": "FEMALE",
+    "enrollment": 723,
+    "start": "2014-12",
+    "lead_sponsor": "Palatin Technologies, Inc",
+    "has_results": true
+   },
+   {
+    "nct": "NCT02338960",
+    "title": "2. Study to Evaluate the Efficacy/Safety of Bremelanotide in Premenopausal Women With Hypoactive Sexual Desire Disorder",
+    "conditions": [
+     "Hypoactive Sexual Desire Disorder"
+    ],
+    "phase": "PHASE3",
+    "status": "COMPLETED",
+    "sex": "FEMALE",
+    "enrollment": 714,
+    "start": "2015-01",
+    "lead_sponsor": "Palatin Technologies, Inc",
+    "has_results": true
+   },
+   {
+    "nct": "NCT03973047",
+    "title": "Study to Evaluate Rate of Nausea in Healthy Premenopausal Female Subjects Treated With Single Dose of Bremelanotide Alone or With Zofran",
+    "conditions": [
+     "Nausea"
+    ],
+    "phase": "PHASE1",
+    "status": "COMPLETED",
+    "sex": "FEMALE",
+    "enrollment": 228,
+    "start": "2019-06-17",
+    "lead_sponsor": "AMAG Pharmaceuticals, Inc.",
+    "has_results": false
+   },
+   {
+    "nct": "NCT04179734",
+    "title": "Role of the Melanocortin-4 Receptor in Hypoactive Sexual Desire Disorder",
+    "conditions": [
+     "Hypoactive Sexual Desire Disorder"
+    ],
+    "phase": "PHASE4",
+    "status": "COMPLETED",
+    "sex": "FEMALE",
+    "enrollment": 40,
+    "start": "2019-10-07",
+    "lead_sponsor": "Imperial College Healthcare NHS Trust",
+    "has_results": true
+   },
+   {
+    "nct": "NCT04943068",
+    "title": "A Phase 3, Bridging, Multicenter, Randomized, Double-blind, Placebo-controlled, Parallel-group Trial to Evaluate the Efficacy and Safety of Subcutaneously Administered Bremelanotide in Premenopausal Women With Hypoactive Sexual Desire Disorder (With or Without Decreased Arousal)",
+    "conditions": [
+     "Hypoactive Sexual Desire Disorder"
+    ],
+    "phase": "PHASE3",
+    "status": "COMPLETED",
+    "sex": "FEMALE",
+    "enrollment": 193,
+    "start": "2021-05-10",
+    "lead_sponsor": "Kwang Dong Pharmaceutical co., ltd.",
+    "has_results": false
+   },
+   {
+    "nct": "NCT05709444",
+    "title": "A Phase IIb, Multicenter, Open-Label, Prospective Study of Bremelanotide in Diabetic Kidney Disease",
+    "conditions": [
+     "Kidney Disease"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "sex": "ALL",
+    "enrollment": 16,
+    "start": "2022-12-26",
+    "lead_sponsor": "Palatin Technologies, Inc",
+    "has_results": false
+   },
+   {
+    "nct": "NCT06565611",
+    "title": "A Phase 2 Study Evaluating the Co-Administration of Bremelanotide With Tirzepatide for the Treatment of Obesity",
+    "conditions": [
+     "Obesity"
+    ],
+    "phase": "PHASE2",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "sex": "ALL",
+    "enrollment": 108,
+    "start": "2024-08-05",
+    "lead_sponsor": "Palatin Technologies, Inc",
+    "has_results": false
+   },
+   {
+    "nct": "NCT06867835",
+    "title": "Single Dose of Vyleesi in Lactating Female Subjects to Measure the Concentration of Bremelanotide in Breast Milk",
+    "conditions": [
+     "Lactating Mother"
+    ],
+    "phase": "PHASE4",
+    "status": "COMPLETED",
+    "sex": "FEMALE",
+    "enrollment": 10,
+    "start": "2025-07-11",
+    "lead_sponsor": "Cosette Pharmaceuticals, Inc.",
+    "has_results": false
+   }
+  ]
+ },
+ "analysis": {
+  "desire_responder_gap_points": 8,
+  "distress_responder_gap_points": 4,
+  "number_needed_to_treat_desire_approx": 12.5,
+  "kingsberg_2019_placebo_adjusted": {
+   "desire": 0.35,
+   "distress": -0.33,
+   "desire_scale": "1.2 to 6.0",
+   "distress_scale": "0 to 4"
+  },
+  "male_share_of_faers_pct": 5.0,
+  "male_reports_coded_off_label": 37,
+  "note": "Our arithmetic from FDA's responder rates and the label. Number needed to treat is a rough illustration from rounded figures."
+ },
+ "warning_letters_2026_08_24_naming_pt141": [
+  "733652",
+  "735063",
+  "734884",
+  "735067",
+  "735127"
+ ],
+ "palatin_sec": {
+  "8k_2025_03_31_ex99_2": "https://www.sec.gov/Archives/edgar/data/911216/000165495425003600/ptn_ex992.htm",
+  "10k_fy2026": "https://www.sec.gov/Archives/edgar/data/911216/000149315226044572/form10-k.htm",
+  "10k_fy2008": "https://www.sec.gov/Archives/edgar/data/911216/000108802008000050/form10k_063008.htm",
+  "8k_2023_12_20_ex99_1": "https://www.sec.gov/Archives/edgar/data/911216/000165495423015795/ptn_ex991.htm"
+ },
+ "publication_notices": {
+  "PMID 18206919 (J Urol 2008, men)": "Expression of concern, J Urol 2023 (PMID 36626345)",
+  "PMID 18179455 (J Sex Med 2008, women)": "Retracted"
+ }
+}
