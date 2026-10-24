@@ -1,0 +1,502 @@
+{
+ "checked": "2026-10-24 (America/New_York)",
+ "page": "https://jabbitapp.com/research/amycretin-zenagamtide-weight-loss-phase-3-teardown.html",
+ "registry_census": {
+  "total": 31,
+  "by_phase": {
+   "PHASE1": 14,
+   "PHASE2": 2,
+   "PHASE3": 15
+  },
+  "all_novo_sponsored": true,
+  "with_posted_results": 0,
+  "phase3_planned_enrollment": 23074,
+  "phase3_earliest_primary_completion": "2028-06-06",
+  "studies": [
+   {
+    "nct": "NCT06049329",
+    "acronym": null,
+    "title": "A Research Study of How a New Medicine Called Amycretin, Given as Tablets, Works in Japanese Men With Obesity",
+    "phase": "PHASE1",
+    "status": "COMPLETED",
+    "enrollment": 36,
+    "start": "2023-09-14",
+    "primary_completion": "2023-12-15",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT05369390",
+    "acronym": null,
+    "title": "A Research Study on How NNC0487-0111 Works in People With Overweight or Obesity",
+    "phase": "PHASE1",
+    "status": "COMPLETED",
+    "enrollment": 144,
+    "start": "2022-05-11",
+    "primary_completion": "2024-01-09",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT06559527",
+    "acronym": null,
+    "title": "A Research Study Looking Into Blood Levels of the Medicine NNC0487-0111 in the Body and How Well it is Tolerated in Participants With Reduced Kidney Function and Normal Kidney Function",
+    "phase": "PHASE1",
+    "status": "COMPLETED",
+    "enrollment": 42,
+    "start": "2024-08-20",
+    "primary_completion": "2025-02-24",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT06461039",
+    "acronym": null,
+    "title": "A Research Study Looking at How the Compound NNC0487-0111 Works With Birth Control Pills and Affects Emptying of the Stomach in Women Not Able to Become Pregnant",
+    "phase": "PHASE1",
+    "status": "COMPLETED",
+    "enrollment": 43,
+    "start": "2024-06-14",
+    "primary_completion": "2025-03-16",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT06820476",
+    "acronym": null,
+    "title": "A Research Study on How NNC0487-0111, a New Medicine, Works in Chinese Participants After 10 Days of Oral Dosing",
+    "phase": "PHASE1",
+    "status": "COMPLETED",
+    "enrollment": 29,
+    "start": "2025-02-09",
+    "primary_completion": "2025-05-14",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT06478563",
+    "acronym": null,
+    "title": "A Research Study Looking at Different Oral Formulations and the Effect of Food Intake on How the Medicine NNC0487-0111 Behaves in the Body of Participants Living With Overweight or Obesity",
+    "phase": "PHASE1",
+    "status": "COMPLETED",
+    "enrollment": 133,
+    "start": "2024-06-27",
+    "primary_completion": "2025-06-05",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07121153",
+    "acronym": null,
+    "title": "A Research Study on How NNC0487-0111, a New Medicine, Works in Chinese Participants When Injected Under the Skin.",
+    "phase": "PHASE1",
+    "status": "COMPLETED",
+    "enrollment": 36,
+    "start": "2025-08-11",
+    "primary_completion": "2025-12-20",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07535307",
+    "acronym": null,
+    "title": "Investigating How NNC0487-0111 Regulates Insulin of Adults With Type 2 Diabetes",
+    "phase": "PHASE1",
+    "status": "RECRUITING",
+    "enrollment": 80,
+    "start": "2026-04-10",
+    "primary_completion": "2027-11-11",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07587710",
+    "acronym": null,
+    "title": "A Research Study Looking Into Blood Levels of the Medicine NNC0487-0111 in the Body and How Well it is Tolerated in People With Reduced Liver Function and Normal Liver Function",
+    "phase": "PHASE1",
+    "status": "NOT_YET_RECRUITING",
+    "enrollment": 35,
+    "start": "2026-05-13",
+    "primary_completion": "2027-12-01",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07508020",
+    "acronym": null,
+    "title": "A Research Study Looking at How NNC0487-0111 Affects Food Intake, Appetite and Metabolism After Meals in People With Obesity",
+    "phase": "PHASE1",
+    "status": "RECRUITING",
+    "enrollment": 120,
+    "start": "2026-03-30",
+    "primary_completion": "2028-01-19",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07815067",
+    "acronym": null,
+    "title": "A Research Study Looking at the Effect of Timing of Meal After Dosing and Water Volume at Dosing on How the Medicine Zenagamtide is Taken up by the Body of Participants With Overweight or Obesity",
+    "phase": "PHASE1",
+    "status": "RECRUITING",
+    "enrollment": 320,
+    "start": "2026-09-07",
+    "primary_completion": "2028-06-12",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07855133",
+    "acronym": null,
+    "title": "A Research Study Investigating How Adults With Overweight or Obesity, With or Without Type 2 Diabetes, Tolerate Switching to a New Treatment (Zenagamtide) From Their Current Semaglutide Medication",
+    "phase": "PHASE1",
+    "status": "RECRUITING",
+    "enrollment": 60,
+    "start": "2026-10-05",
+    "primary_completion": "2028-09-06",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07868354",
+    "acronym": null,
+    "title": "A Research Study Investigating How Adults With Overweight or Obesity, With or Without Type 2 Diabetes, Tolerate Switching to a New Treatment (Zenagamtide) From Their Current Tirzepatide Medication",
+    "phase": "PHASE1",
+    "status": "RECRUITING",
+    "enrollment": 60,
+    "start": "2026-10-08",
+    "primary_completion": "2028-09-07",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07757087",
+    "acronym": null,
+    "title": "A Research Study to See How NNC0487-0111 Affects the Body's Energy Use After a Weight Loss in Adults Living With Overweight or Obesity, Compared to a Low-calorie Diet or Placebo",
+    "phase": "PHASE1",
+    "status": "RECRUITING",
+    "enrollment": 120,
+    "start": "2026-08-03",
+    "primary_completion": "2028-09-18",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT06064006",
+    "acronym": null,
+    "title": "A Research Study to See How a New Medicine (NNC0487-0111) Works in People With Overweight or Obesity When Injected Under the Skin",
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "enrollment": 125,
+    "start": "2023-09-15",
+    "primary_completion": "2024-11-27",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT06542874",
+    "acronym": null,
+    "title": "A Research Study Comparing How Well Different Doses of the Medicine NNC0487-0111 Lower Blood Sugar in People With Type 2 Diabetes",
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "enrollment": 448,
+    "start": "2024-08-07",
+    "primary_completion": "2025-10-01",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07503210",
+    "acronym": "AMAZE 12",
+    "title": "AMAZE 12: A Research Study Investigating How Well the Medicine NNC0487-0111 Helps People With Excess Body Weight Maintain Their Weight Loss",
+    "phase": "PHASE3",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "enrollment": 606,
+    "start": "2026-04-21",
+    "primary_completion": "2028-06-06",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07571109",
+    "acronym": "AMAZE 4",
+    "title": "AMAZE 4: A Research Study Investigating How Well the Medicine NNC0487-0111 Helps People With Excess Body Weight and Obstructive Sleep Apnoea Treated With Positive Airway Pressure Lose Weight and Improve Sleep Apnoea",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 300,
+    "start": "2026-05-05",
+    "primary_completion": "2028-06-26",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07720271",
+    "acronym": "AMAZE 9",
+    "title": "AMAZE 9: A Research Study Investigating How Well Zenagamtide Tablets Help People With Excess Body Weight Lose Weight",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 950,
+    "start": "2026-08-31",
+    "primary_completion": "2028-06-27",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07571005",
+    "acronym": "AMAZE 3",
+    "title": "AMAZE 3: A Research Study Investigating How Well the Medicine NNC0487-0111 Helps People With Excess Body Weight and Obstructive Sleep Apnoea Not Treated With Positive Airway Pressure Lose Weight and Improve Sleep Apnoea",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 300,
+    "start": "2026-05-05",
+    "primary_completion": "2028-07-12",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07797335",
+    "acronym": "AMBITION 7",
+    "title": "AMBITION 7: A Research Study Investigating How Well Zenagamtide Lowers Blood Sugar and Body Weight Compared to Insulin Glargine in People With Type 2 Diabetes and Increased Risk of Diseases That Affect the Heart and Blood Vessels Treated With 1-3 Other Diabetes Medications",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 1778,
+    "start": "2026-08-24",
+    "primary_completion": "2028-07-31",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07533175",
+    "acronym": "AMAZE 2",
+    "title": "AMAZE 2: A Research Study Investigating How Well the Medicine NNC0487-0111 Helps People With Excess Body Weight and Type 2 Diabetes Lose Weight",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 630,
+    "start": "2026-04-13",
+    "primary_completion": "2028-08-07",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07481630",
+    "acronym": "AMAZE 5",
+    "title": "A Research Study Investigating How Well the Medicine NNC0487-0111 Helps People With Excess Body Weight and Knee Osteoarthritis Lose Weight and Reduce Pain",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 400,
+    "start": "2026-04-13",
+    "primary_completion": "2028-08-14",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07509307",
+    "acronym": "AMAZE 6",
+    "title": "AMAZE 6: A Research Study Investigating How Well the Medicine NNC0487-0111 Helps People With Excess Body Weight and Knee Osteoarthritis Lose Weight and Reduce Pain",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 400,
+    "start": "2026-04-20",
+    "primary_completion": "2028-08-14",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07668414",
+    "acronym": "AMAZE 7",
+    "title": "A Research Study Investigating How Well the Medicine Zenagamtide Helps People With Excess Body Weight Lose Weight Compared to Semaglutide",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 650,
+    "start": "2026-09-22",
+    "primary_completion": "2028-10-10",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07400107",
+    "acronym": "AMAZE 8",
+    "title": "AMAZE 8: A Research Study Investigating How Well the Medicine NNC0487-0111 Compared to Semaglutide Helps People With Excess Body Weight and Type 2 Diabetes Lose Weight",
+    "phase": "PHASE3",
+    "status": "NOT_YET_RECRUITING",
+    "enrollment": 1000,
+    "start": "2026-05-20",
+    "primary_completion": "2028-12-12",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07668401",
+    "acronym": "AMAZE 13",
+    "title": "AMAZE 13: A Research Study Investigating How Well the Medicine Zenagamtide Helps People in Asia With Excess Body Weight Lose Weight",
+    "phase": "PHASE3",
+    "status": "NOT_YET_RECRUITING",
+    "enrollment": 400,
+    "start": "2027-01-07",
+    "primary_completion": "2029-01-11",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07822061",
+    "acronym": "AMAZE 10",
+    "title": "AMAZE 10: A Research Study Investigating How Well the Medicine NNC0487-0111 Helps People in Japan With Excess Body Weight Lose Weight",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 400,
+    "start": "2026-09-07",
+    "primary_completion": "2029-02-05",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07339423",
+    "acronym": "AMAZE 1",
+    "title": "AMAZE 1: A Research Study Investigating How Well the Medicine NNC0487-0111 Helps People With Excess Body Weight Lose Weight",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 1150,
+    "start": "2026-02-24",
+    "primary_completion": "2029-06-26",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07567001",
+    "acronym": "HF-POLARIS",
+    "title": "A Research Study to Look at How Well NNC0487-0111 Works Compared to Placebo in People With Heart Failure and Obesity",
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 5610,
+    "start": "2026-05-11",
+    "primary_completion": "2029-07-23",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   },
+   {
+    "nct": "NCT07861100",
+    "acronym": "AMBIENCE",
+    "title": "A Research Study to Look at How Well Zenagamtide Works Compared to Placebo in People With Established Atherosclerotic Cardiovascular Disease and Either Overweight or Obesity",
+    "phase": "PHASE3",
+    "status": "NOT_YET_RECRUITING",
+    "enrollment": 8500,
+    "start": "2026-10-26",
+    "primary_completion": "2030-09-16",
+    "sponsor": "Novo Nordisk A/S",
+    "has_results": false
+   }
+  ]
+ },
+ "phase1b2a_subcutaneous_obesity": {
+  "pmid": 40550231,
+  "nct": "NCT06064006",
+  "randomized": 125,
+  "drug": 101,
+  "placebo_all_parts": 24,
+  "single_site": "San Antonio, TX",
+  "weight_change_pct_drug_vs_placebo": {
+   "part_B_60mg_wk36": [
+    -24.3,
+    -1.1
+   ],
+   "part_C_20mg_wk36": [
+    -22.0,
+    1.9
+   ],
+   "part_D_5mg_wk28": [
+    -16.2,
+    2.3
+   ],
+   "part_E_1.25mg_wk20": [
+    -9.7,
+    2.0
+   ]
+  },
+  "jabbit_placebo_subtracted_points": {
+   "part_B_60mg_wk36": 23.2,
+   "part_C_20mg_wk36": 23.9,
+   "part_D_5mg_wk28": 18.5,
+   "part_E_1.25mg_wk20": 11.7
+  },
+  "note": "Abstract: 'A large number of participants withdrew'; per-part placebo counts not in abstract (24 across five parts, about 5 per part on average, our arithmetic)."
+ },
+ "ann_intern_med_review_amycretin_placebo_subtracted": {
+  "value": -23.9,
+  "ci": [
+   -29.3,
+   -18.5
+  ],
+  "pmid": 42673585,
+  "jabbit_note": "Equals Part C (20 mg, -22.0% vs +1.9%) of the phase 1b/2a trial; the abstract does not say which arm was used."
+ },
+ "phase2_t2d_subcutaneous": {
+  "pmid": 42532080,
+  "n": 262,
+  "weeks": 36,
+  "hba1c_change": {
+   "0.4mg": -0.9,
+   "40mg": -1.7
+  },
+  "etd_40mg": -1.56,
+  "estimand": "efficacy (on-treatment, no rescue medication)",
+  "serious_ae": "21 of 261 (8%)",
+  "weight_change_pct_novo_release": {
+   "0.4mg": -4.35,
+   "1.5mg": -7.62,
+   "5mg": -8.19,
+   "10mg": -12.92,
+   "20mg": -13.13,
+   "40mg": -14.6,
+   "placebo": -2.1
+  },
+  "weeks_at_maintenance_novo_release": {
+   "20mg": 8,
+   "40mg": 4
+  }
+ },
+ "phase2_t2d_oral": {
+  "pmid": 42532079,
+  "n": 186,
+  "hba1c_etd": {
+   "6mg": -0.5,
+   "25mg": -0.99,
+   "50mg": -1.09
+  },
+  "gi_ae_pct": {
+   "6mg": 26,
+   "25mg": 41,
+   "50mg": 47,
+   "placebo": 23
+  },
+  "serious_ae": "7 of 186 on drug, 0 on placebo"
+ },
+ "novo_cmd_2026_09_21": {
+  "launch_target_injectable": 2029,
+  "oral_bla_supported_by_bridging_data": true,
+  "amaze9_oral_doses": "five maintenance doses",
+  "slide_note": "Data shown for weight loss is if all people adhered to treatment, estimated means"
+ },
+ "comparators_label": {
+  "wegovy_step1": [
+   -14.9,
+   -2.4,
+   68
+  ],
+  "wegovy_step2_t2d": [
+   -9.6,
+   -3.4,
+   68
+  ],
+  "zepbound_surmount1_15mg": [
+   -20.9,
+   -3.1,
+   72
+  ],
+  "zepbound_surmount2_15mg_t2d": [
+   -14.7,
+   -3.2,
+   72
+  ]
+ },
+ "caveat": "Cross-trial, not head-to-head; early zenagamtide trials are small, short and use on-treatment or adherence-based estimates."
+}
