@@ -1,0 +1,1260 @@
+{
+ "checked": "2026-10-24 (America/New_York)",
+ "page": "https://jabbitapp.com/research/thymosin-alpha-1-ta1-zadaxin-evidence-teardown.html",
+ "fda_pcac_2024_12_04": {
+  "source": "https://www.fda.gov/media/185642/download",
+  "single_vote_question": [
+   20,
+   1
+  ],
+  "free_base_vote_yes_no_abstain": [
+   4,
+   17,
+   0
+  ],
+  "acetate_vote_yes_no_abstain": [
+   4,
+   17,
+   0
+  ],
+  "uses_evaluated": [
+   "hepatitis B",
+   "hepatitis C",
+   "HIV",
+   "COVID-19",
+   "depressed vaccine response / influenza vaccine adjuvant",
+   "melanoma",
+   "hepatocellular carcinoma",
+   "non-small cell lung cancer",
+   "sepsis",
+   "infections after stem cell transplant",
+   "COPD",
+   "ME/CFS"
+  ]
+ },
+ "fda_category_2_page": {
+  "source": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+  "content_current_as_of": "2026-04-22",
+  "listing": "nominated but withdrawn (previously in category 2)"
+ },
+ "sciclone_sec": {
+  "10k_fy2016": "https://www.sec.gov/Archives/edgar/data/880771/000088077117000035/scln-20161231x10k.htm",
+  "zadaxin_product_sales_musd": {
+   "2014": 126.1,
+   "2015": 146.1,
+   "2016": 150.1
+  },
+  "china_share_of_net_revenue_pct": {
+   "2014": 97,
+   "2015": 96,
+   "2016": 95
+  },
+  "approved_in": "over 30 countries (company statement)",
+  "us_orphan_designations": [
+   "malignant melanoma",
+   "chronic hepatitis B",
+   "hepatocellular carcinoma"
+  ],
+  "8k_2017_10_13": "https://www.sec.gov/Archives/edgar/data/880771/000119312517309994/d462308d8k.htm",
+  "merger_price_per_share_usd": 11.18
+ },
+ "sepsis": {
+  "ETASS": {
+   "ref": "Wu J et al. Crit Care 2013;17:R8, PMID 23327199, NCT00711620",
+   "randomized": 361,
+   "sites": 6,
+   "mortality_28d_ta1": 26.0,
+   "mortality_28d_control": 35.0,
+   "p": 0.062,
+   "log_rank_p": 0.049,
+   "rr": [
+    0.74,
+    0.54,
+    1.02
+   ]
+  },
+  "TESTS": {
+   "ref": "Wu J et al. BMJ 2025;388:e082583, PMID 39814420, NCT02867267",
+   "randomized": 1106,
+   "mitt": 1089,
+   "sites": 22,
+   "deaths_ta1": [
+    127,
+    542
+   ],
+   "deaths_placebo": [
+    132,
+    547
+   ],
+   "mortality_28d_ta1": 23.4,
+   "mortality_28d_placebo": 24.1,
+   "hr": [
+    0.99,
+    0.77,
+    1.27
+   ],
+   "p": 0.93,
+   "subgroup_age_lt60_hr": [
+    1.67,
+    1.04,
+    2.67
+   ],
+   "subgroup_age_ge60_hr": 0.81,
+   "p_interaction_age": 0.01,
+   "funding_note": "SciClone Pharmaceuticals support; several authors report SciClone grants or consultancy (BMJ competing interests)"
+  },
+  "Gu_2025_meta": {
+   "ref": "Gu B et al. Front Cell Infect Microbiol 2025;15:1673959, PMID 40969554",
+   "rcts": 11,
+   "patients": [
+    967,
+    960
+   ],
+   "or_all": [
+    0.73,
+    0.59,
+    0.9
+   ],
+   "or_high_quality": [
+    0.82,
+    0.65,
+    1.03
+   ],
+   "or_multicentre": [
+    0.86,
+    0.68,
+    1.08
+   ]
+  }
+ },
+ "analysis": {
+  "etass_absolute_gap_points": 9.0,
+  "tests_absolute_gap_points": 0.7,
+  "tests_vs_etass_size": 3.1,
+  "note": "Our arithmetic from the published abstracts. TESTS was published January 15, 2025, after FDA's November 2024 briefing and the December 4, 2024 advisory vote."
+ },
+ "registry_census": {
+  "query": "ClinicalTrials.gov API v2, query.intr in {thymalfasin, thymosin alpha 1, thymosin alpha-1, Zadaxin}; kept records whose listed interventions name thymosin alpha 1 / thymalfasin / Zadaxin / Ta1",
+  "total": 60,
+  "with_site_in_china": 37,
+  "with_site_in_us": 7,
+  "with_posted_results": 2,
+  "active_or_planned": 15,
+  "active_or_planned_oncology": 9,
+  "active_or_planned_china": 10,
+  "healthy_volunteer_records": [
+   "NCT04320238",
+   "NCT06821100"
+  ],
+  "studies": [
+   {
+    "nct": "NCT00001036",
+    "title": "The Safety and Effectiveness of a Type of Interleukin-2 Plus Zidovudine Plus Thymosin in HIV-Positive Patients With and Without Symptoms of Infection",
+    "conditions": [
+     "HIV Infections"
+    ],
+    "phase": "PHASE1",
+    "status": "COMPLETED",
+    "enrollment": 12,
+    "start": null,
+    "lead_sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+    "countries": [
+     "United States"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT00039962",
+    "title": "Thymosin Plus PEG-Interferon in Hepatitis C Patients With Cirrhosis Who Did Not Respond to Interferon or Interferon Plus Ribavirin",
+    "conditions": [
+     "Hepatitis C",
+     "Hepatitis C, Chronic"
+    ],
+    "phase": "PHASE3",
+    "status": "COMPLETED",
+    "enrollment": 500,
+    "start": "2002-05",
+    "lead_sponsor": "SciClone Pharmaceuticals",
+    "countries": [
+     "Puerto Rico",
+     "United States"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT00040027",
+    "title": "Thymosin Plus PEG-Interferon in Non-Cirrhotic Hepatitis C Patients Who Did Not Respond to Interferon or Interferon Plus Ribavirin",
+    "conditions": [
+     "Hepatitis C",
+     "Hepatitis C, Chronic"
+    ],
+    "phase": "PHASE3",
+    "status": "COMPLETED",
+    "enrollment": 500,
+    "start": "2002-04",
+    "lead_sponsor": "SciClone Pharmaceuticals",
+    "countries": [
+     "Puerto Rico",
+     "United States"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT00082082",
+    "title": "A Trial of Thymalfasin in Adult Patients With Hepatocellular Carcinoma",
+    "conditions": [
+     "Carcinoma, Hepatocellular"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "enrollment": null,
+    "start": null,
+    "lead_sponsor": "SciClone Pharmaceuticals",
+    "countries": [
+     "United States"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT00291616",
+    "title": "Efficacy Study of Thymosin alpha1 & Pegylated Interferon-alpha2a to Treat Chronic Hepatitis B",
+    "conditions": [
+     "Chronic Hepatitis B"
+    ],
+    "phase": "PHASE4",
+    "status": "COMPLETED",
+    "enrollment": 52,
+    "start": "2005-12",
+    "lead_sponsor": "Seoul National University Hospital",
+    "countries": [
+     "South Korea"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT00580450",
+    "title": "Thymosin Alfa 1 in Recipients of Allogeneic Hematopoietic Transplantation for Hematological Malignancies",
+    "conditions": [
+     "Hematological Malignancies"
+    ],
+    "phase": "PHASE1/PHASE2",
+    "status": "UNKNOWN",
+    "enrollment": 9,
+    "start": "2007-12",
+    "lead_sponsor": "University Of Perugia",
+    "countries": [
+     "Italy"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT00711620",
+    "title": "Efficacy of Thymosin alpha1 for Severe Sepsis",
+    "conditions": [
+     "Severe Sepsis"
+    ],
+    "phase": "NA",
+    "status": "COMPLETED",
+    "enrollment": 366,
+    "start": "2008-05",
+    "lead_sponsor": "Sun Yat-sen University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT00911443",
+    "title": "Thymosin Alpha 1, Interferon Alpha, or Both, in Combination With Dacarbazine in Patients With Malignant Melanoma",
+    "conditions": [
+     "Malignant Melanoma"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "enrollment": 488,
+    "start": "2002-07",
+    "lead_sponsor": "sigma-tau i.f.r. S.p.A.",
+    "countries": [
+     "France",
+     "Germany",
+     "Hungary",
+     "Italy",
+     "Poland",
+     "Portugal",
+     "Spain",
+     "Switzerland"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": true
+   },
+   {
+    "nct": "NCT00935558",
+    "title": "Dendritic Cell Based Therapy for Breast Cancer Patients",
+    "conditions": [
+     "Breast Cancer"
+    ],
+    "phase": "PHASE2",
+    "status": "WITHDRAWN",
+    "enrollment": 0,
+    "start": "2009-07",
+    "lead_sponsor": "Inge Marie Svane",
+    "countries": [
+     "Denmark"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT01031966",
+    "title": "A Pilot Study to Evaluate ZADAXIN's® (Thymalfasin) Ability to Enhance Immune Response to the H1N1sw Influenza Vaccine",
+    "conditions": [
+     "END STAGE RENAL DISEASE"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "enrollment": 120,
+    "start": "2009-11",
+    "lead_sponsor": "sigma-tau i.f.r. S.p.A.",
+    "countries": [
+     "Italy"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT01178996",
+    "title": "Thymosin Alpha-1 in Combination With Peg-Interferon Alfa- 2a and Ribavirin for the Therapy of Chronic Hepatitis C Nonresponsive to the Combination of IFN and Ribavirin.",
+    "conditions": [
+     "Chronic Hepatitis C"
+    ],
+    "phase": "PHASE3",
+    "status": "COMPLETED",
+    "enrollment": 552,
+    "start": "2004-12",
+    "lead_sponsor": "sigma-tau i.f.r. S.p.A.",
+    "countries": [
+     "France",
+     "Germany",
+     "Greece",
+     "Italy",
+     "Spain"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT01938820",
+    "title": "Optimized Treatment and Regression of HBV-induced Early Cirrhosis",
+    "conditions": [
+     "Liver Cirrhosis"
+    ],
+    "phase": "PHASE4",
+    "status": "COMPLETED",
+    "enrollment": 82,
+    "start": "2013-06",
+    "lead_sponsor": "Beijing Friendship Hospital",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT01943617",
+    "title": "Optimized Treatment and Regression of HBV-induced Compensated Liver Cirrhosis",
+    "conditions": [
+     "Liver Cirrhosis"
+    ],
+    "phase": "PHASE4",
+    "status": "COMPLETED",
+    "enrollment": 606,
+    "start": "2013-06",
+    "lead_sponsor": "Beijing Friendship Hospital",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02281266",
+    "title": "Thymalfasin Adjuvant Therapy in Hepatitis B Virus (HBV)-Related Hepatocellular Carcinoma (HCC) After Curative Resection",
+    "conditions": [
+     "Curable Hepatitis B Virus-Related Hepatocellular Carcinoma"
+    ],
+    "phase": "PHASE4",
+    "status": "UNKNOWN",
+    "enrollment": 360,
+    "start": "2015-01",
+    "lead_sponsor": "Jia Fan",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02366208",
+    "title": "Phase II Trial for Combination Treatment of PEG-Tα1 and Adefovir for HBeAg Positive Chronic Hepatitis B",
+    "conditions": [
+     "Hepatitis B, Chronic"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "enrollment": 116,
+    "start": "2011-05",
+    "lead_sponsor": "Jiangsu Hansoh Pharmaceutical Co., Ltd.",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02366247",
+    "title": "Phase Ⅲ Trial for Combination Treatment of PEG-Tα1 and Adefovir for HBeAg-positive Chronic Hepatitis B",
+    "conditions": [
+     "Hepatitis B, Chronic"
+    ],
+    "phase": "PHASE3",
+    "status": "UNKNOWN",
+    "enrollment": 463,
+    "start": "2013-08",
+    "lead_sponsor": "Jiangsu Hansoh Pharmaceutical Co., Ltd.",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02473406",
+    "title": "Thymosin Alpha 1 in the Prevention of Pancreatic Infection Following Acute Necrotizing Pancreatitis",
+    "conditions": [
+     "Pancreatitis, Acute Necrotizing"
+    ],
+    "phase": "PHASE4",
+    "status": "COMPLETED",
+    "enrollment": 508,
+    "start": "2018-03-27",
+    "lead_sponsor": "Weiqin Li",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02535988",
+    "title": "Abscopal Effect for Metastatic Colorectal Cancer",
+    "conditions": [
+     "Colorectal Cancer",
+     "Metastatic Colorectal Cancer",
+     "Thymalfasin"
+    ],
+    "phase": "PHASE2",
+    "status": "WITHDRAWN",
+    "enrollment": 0,
+    "start": "2015-09",
+    "lead_sponsor": "Zhejiang Provincial People's Hospital",
+    "countries": [],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02542137",
+    "title": "Abscopal Effect for Metastatic Small Cell Lung Cancer",
+    "conditions": [
+     "Small Cell Lung Cancer",
+     "Radiotherapy",
+     "Thymalfasin"
+    ],
+    "phase": "PHASE2",
+    "status": "WITHDRAWN",
+    "enrollment": 0,
+    "start": "2015-09",
+    "lead_sponsor": "Zhejiang Provincial People's Hospital",
+    "countries": [],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02542930",
+    "title": "Abscopal Effect for Metastatic Non-small Cell Lung Cancer.",
+    "conditions": [
+     "Non-small Cell Lung Cancer",
+     "Metastatic Non-small Cell Lung Cancer",
+     "Radiotherapy",
+     "Thymalfasin"
+    ],
+    "phase": "PHASE2",
+    "status": "WITHDRAWN",
+    "enrollment": 0,
+    "start": "2016-01",
+    "lead_sponsor": "Zhejiang Provincial People's Hospital",
+    "countries": [],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02545751",
+    "title": "SBRT Combined With Thymalfasin for Metastatic Esophageal Cancer",
+    "conditions": [
+     "Esophageal Cancer",
+     "Metastatic Esophageal Cancer",
+     "Stereotactic Body Radiation Therapy",
+     "Thymalfasin"
+    ],
+    "phase": "PHASE2",
+    "status": "UNKNOWN",
+    "enrollment": 29,
+    "start": "2016-01",
+    "lead_sponsor": "Hangzhou Cancer Hospital",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02646189",
+    "title": "Therapeutic Safety and Efficacy of REP 2139 (REP 9AC') in HBV Infected Patients",
+    "conditions": [
+     "Hepatitis B, Chronic"
+    ],
+    "phase": "PHASE1/PHASE2",
+    "status": "COMPLETED",
+    "enrollment": 12,
+    "start": "2011-08",
+    "lead_sponsor": "Replicor Inc.",
+    "countries": [
+     "Bangladesh"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02787447",
+    "title": "Radiotherapy Combined With Thymosin for Metastatic NSCLC Patients Who Showed Stable Disease After First Line TKI Therapy",
+    "conditions": [
+     "Lung Adenocarcinoma"
+    ],
+    "phase": "PHASE2",
+    "status": "UNKNOWN",
+    "enrollment": 46,
+    "start": "2016-05",
+    "lead_sponsor": "First People's Hospital of Hangzhou",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02867267",
+    "title": "The Efficacy and Safety of Ta1 for Sepsis",
+    "conditions": [
+     "Sepsis"
+    ],
+    "phase": "PHASE3",
+    "status": "COMPLETED",
+    "enrollment": 1106,
+    "start": "2016-09-06",
+    "lead_sponsor": "Sun Yat-sen University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02883595",
+    "title": "Efficacy of Thymosin Alpha 1 on Improving Monocyte Function for Sepsis",
+    "conditions": [
+     "Sepsis"
+    ],
+    "phase": "PHASE4",
+    "status": "COMPLETED",
+    "enrollment": 20,
+    "start": "2016-03-31",
+    "lead_sponsor": "Sun Yat-sen University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02906150",
+    "title": "Thymosin Alpha 1 Plus Maintenance Therapy With the Standard of Care (SoC) in Patients With Metastatic Non-Small Cell Lung Cancer (NSCLC), EGFR Wild Type",
+    "conditions": [
+     "Non-Small Cell Lung Cancer"
+    ],
+    "phase": "PHASE2",
+    "status": "UNKNOWN",
+    "enrollment": 140,
+    "start": "2016-09",
+    "lead_sponsor": "SciClone Pharmaceuticals",
+    "countries": [
+     "Italy"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02906163",
+    "title": "First Line Bio-immunotherapy With Thymosin Alpha 1 in Patients With Sensitizing EGFR Mutation Positive Non Small Cell Lung Cancer Who Are Taking Standard of Care Therapy",
+    "conditions": [
+     "EGFR Mutation Positive Non Small Cell Lung Cancer"
+    ],
+    "phase": "PHASE1/PHASE2",
+    "status": "UNKNOWN",
+    "enrollment": 188,
+    "start": "2016-10",
+    "lead_sponsor": "SciClone Pharmaceuticals",
+    "countries": [
+     "Italy"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT02976740",
+    "title": "SBRT Combination With rhGM-CSF and Tα1 for Stage IV NSCLC Patients Who Failed in Second-line Chemotherapy",
+    "conditions": [
+     "Lung Cancer Metastatic"
+    ],
+    "phase": "PHASE2",
+    "status": "UNKNOWN",
+    "enrollment": 48,
+    "start": "2016-11",
+    "lead_sponsor": "The First Affiliated Hospital of Xiamen University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT03082885",
+    "title": "The Efficacy and Safety of Thymosin-α1 in Patients With HBV-related ACLF",
+    "conditions": [
+     "Liver Failure"
+    ],
+    "phase": "NA",
+    "status": "COMPLETED",
+    "enrollment": 120,
+    "start": "2017-04-10",
+    "lead_sponsor": "Sun Yat-sen University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT03448744",
+    "title": "Efficacy and Safety of Combination Therapy of Thymalfasin and Entecavir in HBeAg-positive ETV-experienced Patients",
+    "conditions": [
+     "Chronic Hepatitis b"
+    ],
+    "phase": "PHASE4",
+    "status": "UNKNOWN",
+    "enrollment": 240,
+    "start": "2017-10-25",
+    "lead_sponsor": "Wen-hong Zhang",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT03659578",
+    "title": "Study of Thymosin α1 to Reduce Acute Pneumonia For Bulky None-small Cell Lung Cancer",
+    "conditions": [
+     "Non-small Cell Lung Cancer"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "enrollment": 69,
+    "start": "2018-08-09",
+    "lead_sponsor": "Sun Yat-sen University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT04320238",
+    "title": "Experimental Trial of rhIFNα Nasal Drops to Prevent 2019-nCOV in Medical Staff",
+    "conditions": [
+     "2019 Novel Coronavirus Infection"
+    ],
+    "phase": "PHASE3",
+    "status": "UNKNOWN",
+    "enrollment": 2944,
+    "start": "2020-01-21",
+    "lead_sponsor": "Shanghai Jiao Tong University School of Medicine",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": true,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT04428008",
+    "title": "Thymosin Alpha 1 to Prevent COVID-19 Infection in Renal Dialysis Patients",
+    "conditions": [
+     "COVID-19"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "enrollment": 189,
+    "start": "2021-01-12",
+    "lead_sponsor": "William B. Ershler, MD",
+    "countries": [
+     "United States"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": true
+   },
+   {
+    "nct": "NCT04487444",
+    "title": "Thymalfasin (Thymosin Alpha 1) to Treat COVID-19 Infection",
+    "conditions": [
+     "Covid19"
+    ],
+    "phase": "PHASE2",
+    "status": "TERMINATED",
+    "enrollment": 56,
+    "start": "2020-09-10",
+    "lead_sponsor": "Rhode Island Hospital",
+    "countries": [
+     "United States"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT04524169",
+    "title": "Immunotherapy for Elderly Patients With Chronic Osteoporotic Pain",
+    "conditions": [
+     "Osteoporotic Pain"
+    ],
+    "phase": "PHASE4",
+    "status": "UNKNOWN",
+    "enrollment": 100,
+    "start": "2020-11-01",
+    "lead_sponsor": "RenJi Hospital",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT04901104",
+    "title": "Long-term Prognosis of Patients With Sepsis After Immunotherapy",
+    "conditions": [
+     "Long-term Effects of Thymosin Alpha 1 Treatment"
+    ],
+    "phase": null,
+    "status": "NOT_YET_RECRUITING",
+    "enrollment": 900,
+    "start": "2021-07-01",
+    "lead_sponsor": "Sun Yat-sen University",
+    "countries": [],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT04963712",
+    "title": "Zadaxin and HIV-positive Patients With Immune Reconstitution Disorder",
+    "conditions": [
+     "HIV-1-infection"
+    ],
+    "phase": "EARLY_PHASE1",
+    "status": "COMPLETED",
+    "enrollment": 20,
+    "start": "2021-09-01",
+    "lead_sponsor": "Shanghai Public Health Clinical Center",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT05086614",
+    "title": "Thymosin-alpha 1 for Adjuvant Treatment After Radical Resection of High-risk Stage II and III Colorectal Cancer",
+    "conditions": [
+     "Stage II Colorectal Cancer",
+     "Stage III Colorectal Cancer"
+    ],
+    "phase": "PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 2500,
+    "start": "2021-04-01",
+    "lead_sponsor": "Fudan University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT05339529",
+    "title": "Protective Effect of Thymosin α1 Against Negative Immune Dysregulation and Organ Dysfunction After Acute Aortic Dissection Surgery (PANDA II)",
+    "conditions": [
+     "Acute Aortic Syndrome",
+     "Aortic Dissection Type A"
+    ],
+    "phase": "NA",
+    "status": "COMPLETED",
+    "enrollment": 600,
+    "start": "2022-07-01",
+    "lead_sponsor": "Nanjing Medical University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT05487469",
+    "title": "Thymosin α1 Use in Rheumatic Heart Disease Patients Undergoing Cardiac Surgery on Cardiopulmonary Bypass",
+    "conditions": [
+     "Rheumatic Heart Disease",
+     "Cardiopulmonary Bypass",
+     "Immunotherapy"
+    ],
+    "phase": "NA",
+    "status": "UNKNOWN",
+    "enrollment": 200,
+    "start": "2022-07-01",
+    "lead_sponsor": "Nanjing Medical University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT05658692",
+    "title": "Platform Adaptive Embedded Trial for Acute Respiratory Distress Syndrome",
+    "conditions": [
+     "Acute Respiratory Distress Syndrome"
+    ],
+    "phase": "PHASE4",
+    "status": "UNKNOWN",
+    "enrollment": 1000,
+    "start": "2022-10-01",
+    "lead_sponsor": "Second Affiliated Hospital, Zhejiang University, School of Medicine",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT05790447",
+    "title": "Thymalfasin-based PRaG Mode for Advanced Refractory Solid Tumors",
+    "conditions": [
+     "Advanced Solid Tumor",
+     "Refractory Tumor"
+    ],
+    "phase": "PHASE2",
+    "status": "UNKNOWN",
+    "enrollment": 60,
+    "start": "2023-04-01",
+    "lead_sponsor": "Second Affiliated Hospital of Soochow University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06024356",
+    "title": "Neoadjuvant Chemoradiotherapy Combined With PD-1 Inhibitor and Thymalfasin for Locally Advanced Mid-low Rectal Cancer",
+    "conditions": [
+     "Colorectal Neoplasms"
+    ],
+    "phase": null,
+    "status": "COMPLETED",
+    "enrollment": 47,
+    "start": "2023-09-20",
+    "lead_sponsor": "Beijing Friendship Hospital",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06056804",
+    "title": "Neoadjuvant Chemoradiotherapy Combined With PD-1 Inhibitor and Thymalfasin for pMMR/MSS Locally Advanced Mid-low Rectal Cancer",
+    "conditions": [
+     "Locally Advanced Rectal Cancer"
+    ],
+    "phase": "PHASE2",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "enrollment": 20,
+    "start": "2024-01-03",
+    "lead_sponsor": "Beijing Friendship Hospital",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06139419",
+    "title": "The Impact of Thymosin α-1 on the Efficacy of Concurrent Chemoradiotherapy Followed by Immunotherpay Consolidation for Locally Advanced NSCLC",
+    "conditions": [
+     "Non-small Cell Lung Cancer"
+    ],
+    "phase": "PHASE2",
+    "status": "COMPLETED",
+    "enrollment": 114,
+    "start": "2023-07-25",
+    "lead_sponsor": "Sun Yat-sen University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06178146",
+    "title": "Thymosin Alpha-1 for irAE Secondary to ICIs",
+    "conditions": [
+     "IrAE"
+    ],
+    "phase": "PHASE4",
+    "status": "UNKNOWN",
+    "enrollment": 40,
+    "start": "2023-09-01",
+    "lead_sponsor": "Jun Wang",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06461910",
+    "title": "Efficacy and Safety of Anti-PD-1, Thymalfasin, and SOX in Neoadjuvant Treatment of cStage III Gastric/Gastroesophageal Junction Adenocarcinoma",
+    "conditions": [
+     "Gastric Cancer",
+     "Esophagogastric Junction Adenocarcinoma"
+    ],
+    "phase": "PHASE2",
+    "status": "RECRUITING",
+    "enrollment": 30,
+    "start": "2024-06-14",
+    "lead_sponsor": "Zekuan Xu",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06573398",
+    "title": "Radiotherapy With Sequential Chemotherapy Combined With PD-1 Inhibitor and Thymalfasin for BRPC",
+    "conditions": [
+     "Carcinoma, Pancreatic Ductal"
+    ],
+    "phase": "PHASE2",
+    "status": "NOT_YET_RECRUITING",
+    "enrollment": 20,
+    "start": "2024-09-01",
+    "lead_sponsor": "Ruijin Hospital",
+    "countries": [],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06584006",
+    "title": "Thymalfasin and Recombinant Human IL-2 Injections in Treating Lymphocytopenia for Patients With Malignant Hematological Tumors",
+    "conditions": [
+     "Hematological Malignancy",
+     "Lymphocytopenia"
+    ],
+    "phase": "PHASE2",
+    "status": "RECRUITING",
+    "enrollment": 50,
+    "start": "2024-09-01",
+    "lead_sponsor": "The First Affiliated Hospital of Xiamen University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06598839",
+    "title": "Immuno-effect of Tα1 for Stage I NSCLC",
+    "conditions": [
+     "Non Small Cell Lung Cancer"
+    ],
+    "phase": "NA",
+    "status": "UNKNOWN",
+    "enrollment": 40,
+    "start": "2024-06-30",
+    "lead_sponsor": "Yousheng Mao",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06607926",
+    "title": "Neoadjuvant With Tα1 Plus Immuno-chemotherapy for Resectable NSCLC",
+    "conditions": [
+     "Resectable Non-Small-Cell Lung Cancer"
+    ],
+    "phase": "NA",
+    "status": "UNKNOWN",
+    "enrollment": 40,
+    "start": "2024-10-15",
+    "lead_sponsor": "Xuanwu Hospital, Beijing",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06821100",
+    "title": "Thymalfasin (Thymosin Alpha 1; Ta1) as an Enhancer of Vaccine Response Among Older Adults Receiving Booster Doses of COVID-19 Vaccine",
+    "conditions": [
+     "Vaccine Response",
+     "COVID-19 Vaccine",
+     "Immune Response to Covid 19 Vaccination"
+    ],
+    "phase": "PHASE1",
+    "status": "RECRUITING",
+    "enrollment": 75,
+    "start": "2024-12-02",
+    "lead_sponsor": "The Methodist Hospital Research Institute",
+    "countries": [
+     "United States"
+    ],
+    "healthy_volunteers": true,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06829355",
+    "title": "\"Thymalfasin Immunotherapy Study with Triple Regimen in Advanced MSS/pMMR Colorectal Cancer\"",
+    "conditions": [
+     "MCRC"
+    ],
+    "phase": "PHASE2",
+    "status": "RECRUITING",
+    "enrollment": 52,
+    "start": "2025-02-11",
+    "lead_sponsor": "Beijing Friendship Hospital",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT06966687",
+    "title": "Protective Effect of Ulinastatin and Thymosin α1 Against Negative Immune Dysregulation and Organ Dysfunction After Acute Aortic Dissection Surgery (PANDA XI)",
+    "conditions": [
+     "Aortic Dissection",
+     "Aortic Dissection Aneurysm"
+    ],
+    "phase": "NA",
+    "status": "ENROLLING_BY_INVITATION",
+    "enrollment": 200,
+    "start": "2025-04-01",
+    "lead_sponsor": "Nanjing Medical University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT07382375",
+    "title": "AI-assisted Subtyping-directed Precision Treatment in Acute Aortic Dissection",
+    "conditions": [
+     "Aortic Aneurysm and Dissection"
+    ],
+    "phase": "NA",
+    "status": "NOT_YET_RECRUITING",
+    "enrollment": 300,
+    "start": "2027-12-31",
+    "lead_sponsor": "Nanjing Medical University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT07644897",
+    "title": "Thymosin Alpha 1 Combined With Anti-PD-1 Monoclonal Antibody in Elderly Patients With Advanced Melanoma",
+    "conditions": [
+     "Melanoma",
+     "Immune-related Adverse Event",
+     "Immune Checkpoint Inhibitor"
+    ],
+    "phase": "PHASE2",
+    "status": "RECRUITING",
+    "enrollment": 55,
+    "start": "2023-05-30",
+    "lead_sponsor": "Sun Yat-sen University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT07675980",
+    "title": "Thymosin-α1 for Recurrent Implantation Failure",
+    "conditions": [
+     "Recurrent Implantation Faliure"
+    ],
+    "phase": "PHASE2/PHASE3",
+    "status": "RECRUITING",
+    "enrollment": 136,
+    "start": "2026-02-11",
+    "lead_sponsor": "Fakih IVF Fertility Center",
+    "countries": [
+     "United Arab Emirates"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT07780721",
+    "title": "Study of Adebrelimab Combined With Thymalfasin and Chemotherapy for Neoadjuvant Treatment of Esophageal Cancer",
+    "conditions": [
+     "Esophageal Cancer"
+    ],
+    "phase": "PHASE2",
+    "status": "NOT_YET_RECRUITING",
+    "enrollment": 31,
+    "start": "2026-08-30",
+    "lead_sponsor": "The Affiliated Hospital of Putian University",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   },
+   {
+    "nct": "NCT07866118",
+    "title": "Thymalfasin for Immune Recovery in Adults With Sepsis",
+    "conditions": [
+     "Sepsis",
+     "Immunosuppression"
+    ],
+    "phase": "NA",
+    "status": "RECRUITING",
+    "enrollment": 60,
+    "start": "2026-10-06",
+    "lead_sponsor": "Shanghai Zhongshan Hospital",
+    "countries": [
+     "China"
+    ],
+    "healthy_volunteers": false,
+    "oncology": false,
+    "has_results": false
+   },
+   {
+    "nct": "NCT07884201",
+    "title": "Thymalfasin Combined With Chemotherapy and Immunotherapy in TNBC Neoadjuvant Treatment",
+    "conditions": [
+     "Breast Cancer",
+     "TNBC - Triple-Negative Breast Cancer",
+     "Immunotherapy"
+    ],
+    "phase": "PHASE2",
+    "status": "NOT_YET_RECRUITING",
+    "enrollment": 572,
+    "start": "2026-11-08",
+    "lead_sponsor": "Fudan University",
+    "countries": [],
+    "healthy_volunteers": false,
+    "oncology": true,
+    "has_results": false
+   }
+  ]
+ }
+}
