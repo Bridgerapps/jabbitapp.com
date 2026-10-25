@@ -1,0 +1,322 @@
+{
+ "checked": "2026-10-25 (America/New_York)",
+ "page": "https://jabbitapp.com/research/kisspeptin-10-testosterone-fertility-libido-evidence-teardown.html",
+ "fda": {
+  "category2_page": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+  "category2_entry": {
+   "substance": "Kisspeptin-10",
+   "list": "503A",
+   "date": "September 29, 2023",
+   "text": "Compounded drugs containing Kisspeptin-10 may pose risk for immunogenicity for certain routes of administration and may have complexities with regard to peptide-related impurities and API characterization. FDA has no, or only limited, safety-related information for the proposed routes of administration. Therefore, the agency lacks sufficient information to know whether the drug would cause harm when administered to humans."
+  },
+  "category2_page_status": "Content current as of 04/22/2026.",
+  "categories_pdf": "https://www.fda.gov/media/94155/download",
+  "categories_pdf_status": "Updated May 14, 2026; Kisspeptin-10 listed in 503A category 2.",
+  "oira": "RIN 0910-ZD94, Interim Access Policy for Compounding Using Certain Peptides, received 10/14/2026, Pending EO 12866 Regulatory Review; text and peptide list not public. https://www.reginfo.gov/public/do/eoDetails?rrid=1568964",
+  "drugsfda": "No match for kisspeptin (openFDA drugsfda, openfda.generic_name:kisspeptin*).",
+  "faers": {
+   "total_reports": 1,
+   "receivedate": "20200407",
+   "serious": "1",
+   "reactions": [
+    "Weight increased",
+    "Oestrone increased"
+   ],
+   "query": "https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct:kisspeptin*"
+  },
+  "ndc": {
+   "listings": 2,
+   "generic_name": "Kisspeptin-10 Acetate",
+   "product_type": "BULK INGREDIENT",
+   "marketing_start_dates": [
+    "20260113",
+    "20260501"
+   ],
+   "note": "Bulk-ingredient (API powder) listings, not approvals. Labelers not named."
+  },
+  "enforcement": "No enforcement report matches product_description:kisspeptin."
+ },
+ "wada": {
+  "list": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+  "entry": "S2.2.1 Testosterone-stimulating peptides in males ... kisspeptin and its agonist analogues (prohibited at all times; non-Specified)",
+  "added": "2024 Prohibited List, per Krombholz et al., Drug Test Anal 2026 (PMID 42057309)"
+ },
+ "registry": {
+  "api": "ClinicalTrials.gov API v2, query.term=kisspeptin, 2026-10-25",
+  "records": 45,
+  "records_giving_kisspeptin_or_analog": 23,
+  "ids": [
+   "NCT00914823",
+   "NCT01132404",
+   "NCT01438034",
+   "NCT01438073",
+   "NCT01667406",
+   "NCT01952782",
+   "NCT02081924",
+   "NCT02369796",
+   "NCT02381288",
+   "NCT02956447",
+   "NCT03286517",
+   "NCT03315325",
+   "NCT03771326",
+   "NCT04532801",
+   "NCT04648969",
+   "NCT04958109",
+   "NCT05456854",
+   "NCT05633966",
+   "NCT05896293",
+   "NCT05901467",
+   "NCT05971849",
+   "NCT07224438",
+   "NCT07224490"
+  ],
+  "note": "Most other records only measure blood kisspeptin. Many UK (Imperial College) kisspeptin studies are registered on ISRCTN instead, so this undercounts.",
+  "takeda_tak448": {
+   "NCT02381288": {
+    "title": "A Randomized, Single-Blind, Placebo-Controlled Phase 2a Study to Evaluate the Stimulatory Effects of TAK-448, a Kisspeptin Analog, Administered Intermittently in Middle-aged and Older Men With Low Testosterone",
+    "status": "TERMINATED",
+    "why_stopped": "Sponsor decision to terminate the study because the study did not meet the primary endpoint.",
+    "start": "2015-09-10",
+    "completion": "2016-04-08",
+    "enrollment": 17
+   },
+   "NCT02369796": {
+    "title": "An Open-Label, Phase 2a Study to Evaluate the Pharmacodynamics of Different Dosing Regimens of TAK-448, a Kisspeptin Agonist, in Male Overweight/Obese Participants With Hypogonadotropic Hypogonadism",
+    "status": "TERMINATED",
+    "why_stopped": "Sponsor decision to terminate the study because the study did not achieve the primary efficacy objective.",
+    "start": "2015-02",
+    "completion": "2015-11",
+    "enrollment": 15
+   },
+   "NCT01132404": {
+    "title": "A Phase 1/2, Open Label Study in Men With Prostate Cancer to Assess the Safety. Pharmacokinetics and Testosterone-Lowering Efficacy of TAK-448, Administered as a 1-Month Depot, Including a Randomized Portion With a Group Administered Leuprorelin",
+    "status": "TERMINATED",
+    "why_stopped": "Developing new formulation of study drug. New study to open next year under a new protocol.",
+    "start": "2010-11",
+    "completion": "2011-12",
+    "enrollment": 9
+   }
+  },
+  "ivf_trial_NCT01667406_enrollment": 175
+ },
+ "pubmed": {
+  "kisspeptin_tiab_total": 3333,
+  "kisspeptin_tiab_trials_pt": 60,
+  "kisspeptin_tiab_2025_2026": 398,
+  "queries": {
+   "total": "kisspeptin[tiab]",
+   "trials": "kisspeptin[tiab] AND (randomized controlled trial[pt] OR clinical trial[pt])",
+   "by_year": "kisspeptin[tiab] AND YYYY[dp]"
+  },
+  "by_year": {
+   "2001": 1,
+   "2002": 0,
+   "2003": 1,
+   "2004": 5,
+   "2005": 18,
+   "2006": 36,
+   "2007": 55,
+   "2008": 88,
+   "2009": 129,
+   "2010": 145,
+   "2011": 122,
+   "2012": 150,
+   "2013": 202,
+   "2014": 188,
+   "2015": 189,
+   "2016": 215,
+   "2017": 221,
+   "2018": 236,
+   "2019": 252,
+   "2020": 241,
+   "2021": 246,
+   "2022": 271,
+   "2023": 184,
+   "2024": 200,
+   "2025": 233
+  },
+  "checked": "2026-10-25"
+ },
+ "pmc_quotes": {
+  "pmc_7619119.xml": [
+   "paid homage to Hershey, Pennsylvania, where the gene was first discovered"
+  ],
+  "pmc_10765167.xml": [
+   "KP-10 has a shorter terminal half-life than KP-54",
+   "MVT-602 (formerly known as TAK-448)",
+   "The KP receptor is vulnerable to tachyphylaxis"
+  ],
+  "pmc_13327143.xml": [
+   "they were thus included in the Prohibited List of the World Anti‐Doping Agency (WADA) in 2024"
+  ]
+ },
+ "key_pmids": {
+  "11385580": {
+   "title": "Metastasis suppressor gene KiSS-1 encodes peptide ligand of a G-protein-coupled receptor.",
+   "journal": "Nature",
+   "year": "2001"
+  },
+  "12944565": {
+   "title": "Hypogonadotropic hypogonadism due to loss of function of the KiSS1-derived peptide receptor GPR54.",
+   "journal": "Proc Natl Acad Sci U S A",
+   "year": "2003"
+  },
+  "14573733": {
+   "title": "The GPR54 gene as a regulator of puberty.",
+   "journal": "N Engl J Med",
+   "year": "2003"
+  },
+  "16174713": {
+   "title": "Kisspeptin-54 stimulates the hypothalamic-pituitary gonadal axis in human males.",
+   "journal": "J Clin Endocrinol Metab",
+   "year": "2005"
+  },
+  "17635940": {
+   "title": "Kisspeptin-54 stimulates gonadotropin release most potently during the preovulatory phase of the menstrual cycle in women.",
+   "journal": "J Clin Endocrinol Metab",
+   "year": "2007"
+  },
+  "19820030": {
+   "title": "Subcutaneous injection of kisspeptin-54 acutely stimulates gonadotropin secretion in women with hypothalamic amenorrhea, but chronic administration causes tachyphylaxis.",
+   "journal": "J Clin Endocrinol Metab",
+   "year": "2009"
+  },
+  "20980998": {
+   "title": "Twice-weekly administration of kisspeptin-54 for 8 weeks stimulates release of reproductive hormones in women with hypothalamic amenorrhea.",
+   "journal": "Clin Pharmacol Ther",
+   "year": "2010"
+  },
+  "21632807": {
+   "title": "Kisspeptin-10 is a potent stimulator of LH and increases pulse frequency in men.",
+   "journal": "J Clin Endocrinol Metab",
+   "year": "2011"
+  },
+  "21976724": {
+   "title": "The effects of kisspeptin-10 on reproductive hormone release show sexual dimorphism in humans.",
+   "journal": "J Clin Endocrinol Metab",
+   "year": "2011"
+  },
+  "22803642": {
+   "title": "Double-blind, randomized, placebo-controlled study of safety, tolerability, pharmacokinetics and pharmacodynamics of TAK-683, an investigational metastin analogue in healthy men.",
+   "journal": "Br J Clin Pharmacol",
+   "year": "2013"
+  },
+  "24762108": {
+   "title": "Sustained exposure to the investigational Kisspeptin analog, TAK-448, down-regulates testosterone into the castration range in healthy males and in patients with prostate cancer: results from two phase 1 studies.",
+   "journal": "J Clin Endocrinol Metab",
+   "year": "2014"
+  },
+  "25036713": {
+   "title": "Kisspeptin-54 triggers egg maturation in women undergoing in vitro fertilization.",
+   "journal": "J Clin Invest",
+   "year": "2014"
+  },
+  "26089302": {
+   "title": "Direct comparison of the effects of intravenous kisspeptin-10, kisspeptin-54 and GnRH on gonadotrophin secretion in healthy men.",
+   "journal": "Hum Reprod",
+   "year": "2015"
+  },
+  "26192876": {
+   "title": "Efficacy of Kisspeptin-54 to Trigger Oocyte Maturation in Women at High Risk of Ovarian Hyperstimulation Syndrome (OHSS) During In Vitro Fertilization (IVF) Therapy.",
+   "journal": "J Clin Endocrinol Metab",
+   "year": "2015"
+  },
+  "28112678": {
+   "title": "Kisspeptin modulates sexual and emotional brain processing in humans.",
+   "journal": "J Clin Invest",
+   "year": "2017"
+  },
+  "28854728": {
+   "title": "A second dose of kisspeptin-54 improves oocyte maturation in women at high risk of ovarian hyperstimulation syndrome: a Phase 2 randomized controlled trial.",
+   "journal": "Hum Reprod",
+   "year": "2017"
+  },
+  "29544222": {
+   "title": "Hypothalamic Response to Kisspeptin-54 and Pituitary Response to Gonadotropin-Releasing Hormone Are Preserved in Healthy Older Men.",
+   "journal": "Neuroendocrinology",
+   "year": "2018"
+  },
+  "30590872": {
+   "title": "Age-dependent changes in the reproductive axis responsiveness to kisspeptin-10 administration in healthy men.",
+   "journal": "Andrologia",
+   "year": "2019"
+  },
+  "33196464": {
+   "title": "Kisspeptin receptor agonist has therapeutic potential for female reproductive disorders.",
+   "journal": "J Clin Invest",
+   "year": "2020"
+  },
+  "33227799": {
+   "title": "Kisspeptin-54 Accurately Identifies Hypothalamic Gonadotropin-Releasing Hormone Neuronal Dysfunction in Men with Congenital Hypogonadotropic Hypogonadism.",
+   "journal": "Neuroendocrinology",
+   "year": "2021"
+  },
+  "36287566": {
+   "title": "Effects of Kisspeptin Administration in Women With Hypoactive Sexual Desire Disorder: A Randomized Clinical Trial.",
+   "journal": "JAMA Netw Open",
+   "year": "2022"
+  },
+  "36735255": {
+   "title": "Effects of Kisspeptin on Sexual Brain Processing and Penile Tumescence in Men With Hypoactive Sexual Desire Disorder: A Randomized Clinical Trial.",
+   "journal": "JAMA Netw Open",
+   "year": "2023"
+  },
+  "42549827": {
+   "title": "Chronic subcutaneous kisspeptin-10 stimulates gonadotropin secretion for 12 days in healthy men.",
+   "journal": "Eur J Endocrinol",
+   "year": "2026"
+  },
+  "42666625": {
+   "title": "Emerging peptide and neuroendocrine strategies for TRT-induced reproductive suppression and functional male hypogonadism: a narrative review.",
+   "journal": "Front Reprod Health",
+   "year": "2026"
+  },
+  "8944003": {
+   "title": "KiSS-1, a novel human malignant melanoma metastasis-suppressor gene.",
+   "journal": "J Natl Cancer Inst",
+   "year": "1996"
+  }
+ },
+ "abstract_quotes": {
+  "8944003": "KiSS-1 mRNA expression occurred only in nonmetastatic melanoma cells",
+  "11385580": "have named 'metastin'",
+  "12944565": "all affected siblings of the family carried a homozygous deletion of 155 nucleotides in the GPR54 gene",
+  "14573733": "a Gpr54-deficient mouse model was created",
+  "16174713": "Kisspeptin-54 infusion significantly increased plasma LH, FSH, and testosterone concentrations compared with saline infusion",
+  "17635940": "The effect of kisspeptin was greatest in the preovulatory phase",
+  "21632807": "elicited a reduced response",
+  "21976724": "no alterations in serum gonadotropins were observed",
+  "26089302": "GnRH was more potent when compared with either kisspeptin isoform",
+  "19820030": "These responses were significantly reduced on the 14th injection day",
+  "20980998": "Twice-weekly KP-54 administration resulted in only partial desensitization",
+  "25036713": "Biochemical and clinical pregnancy rates were 40% (21/53) and 23% (12/53), respectively",
+  "26192876": "No woman developed moderate, severe, or critical OHSS",
+  "28854728": "Further studies are warranted to directly compare kisspeptin-54 to more established triggers of oocyte maturation",
+  "28112678": "29 healthy heterosexual young men",
+  "36287566": "Kisspeptin was well-tolerated with no reported adverse effects",
+  "36735255": "Of the 37 men randomized, 32 completed the trial",
+  "24762108": "reached a subsequently sustained below-castration level by day 8",
+  "22803642": "suppressed testosterone below castration level",
+  "33196464": "peaked later",
+  "30590872": "after kisspeptin-10 injection only in the adult men group",
+  "42549827": "gonadotropin concentrations were similar to vehicle",
+  "29544222": "Gonadotropin response to kisspeptin-54 was at least preserved in older men",
+  "42666625": "direct evidence demonstrating restoration of spermatogenesis or fertility following TRT-induced suppression remains limited",
+  "33227799": "all CHH men had an LH rise <2.0 iU/L following KP54"
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Short exposure to kisspeptin raises LH and testosterone; sustained or frequent exposure blunts the response, and continuous exposure to a potent analog drove testosterone into the castration range. Takeda's two phase 2a trials using an analog to raise testosterone were terminated for missing their primary endpoints. Human studies are small, short and mostly IV or single injections under supervision.",
+  "tachyphylaxis_lh_day1_vs_day14_HA_twice_daily": [
+   24.0,
+   2.5
+  ],
+  "tachyphylaxis_fsh_day1_vs_day14": [
+   9.1,
+   0.5
+  ],
+  "intermittent_12d_lh_increase_day1_vs_day12": [
+   1.68,
+   1.14
+  ]
+ }
+}
