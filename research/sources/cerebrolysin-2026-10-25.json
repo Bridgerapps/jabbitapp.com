@@ -1,0 +1,316 @@
+{
+ "checked": "2026-10-25",
+ "page": "https://jabbitapp.com/research/cerebrolysin-brain-peptide-nootropic-stroke-dementia-evidence-teardown.html",
+ "manufacturer_notice": {
+  "url": "https://www.cerebrolysin.com/cerebrolysin/about-cerebrolysin",
+  "quotes": [
+   "Please be advised that Cerebrolysin is not registered with the U.S. Food and Drug Administration (FDA) and is not approved for sale or distribution in the United States.",
+   "Cerebrolysin is a prescription medication for use under the supervision of an authorized health care professional."
+  ]
+ },
+ "label_at": {
+  "url": "https://www.everpharma.com/aut/wp-content/uploads/sites/5/2023/01/Cere-SPC_v_ev1_AT_5.1_clean-1.pdf",
+  "version": "März 2021",
+  "quotes_de": [
+   "proteolytischen Peptidfraktion aus Schweinehirnprotein",
+   "Status epilepticus.",
+   "Schwere Nierenfunktionsstörungen.",
+   "da hierbei eine Steigerung der Anfallfrequenz auftreten kann",
+   "Einzelne Grand mal Anfälle und ein Fall von Konvulsion",
+   "Eine direkte Messung pharmakokinetischer Parameter kann daher nicht durchgeführt werden.",
+   "EVER Neuro Pharma GmbH, A-4866 Unterach",
+   "Datum der Erteilung der Zulassung: 25.03.1996",
+   "Rp, apothekenpflichtig",
+   "Eine Anwendung bei Kindern und Jugendlichen unter 18 Jahren wird aufgrund unzureichender Datenlage nicht empfohlen",
+   "Zur unterstützenden Behandlung von cerebrovaskulären Störungen",
+   "senile Demenz vom Alzheimertyp und vaskuläre Demenz",
+   "postapoplektische Ausfallserscheinungen",
+   "Schädel-Hirntraumata (Commotio und Contusio)"
+  ]
+ },
+ "fda": {
+  "warning_letter_2020": {
+   "id": "594743",
+   "date": "2020-04-01",
+   "quotes": [
+    "are not the subject of an applicable USP or NF monograph, are not a component of an FDA-approved human drug",
+    "Cerebrolysin, DSIP, Epitalon",
+    "have not been nominated for inclusion on the 503A bulks list"
+   ]
+  },
+  "drugsfda": "no match",
+  "ndc": "no match",
+  "cats503a_2026_05_14": "not listed",
+  "safety_risks_page": "not listed",
+  "faers_reports": 80,
+  "faers_last_updated": "2026-07-30"
+ },
+ "wada_2026": "not named",
+ "registry": {
+  "clinicaltrials_gov_records": 43,
+  "status_counts": {
+   "ENROLLING_BY_INVITATION": 1,
+   "UNKNOWN": 11,
+   "RECRUITING": 4,
+   "COMPLETED": 19,
+   "NOT_YET_RECRUITING": 3,
+   "TERMINATED": 3,
+   "ACTIVE_NOT_RECRUITING": 1,
+   "WITHDRAWN": 1
+  },
+  "lead_sponsor_ever_neuro_pharma": 10,
+  "open_or_planned": 9
+ },
+ "pubmed": {
+  "query": "cerebrolysin",
+  "count": 676
+ },
+ "key_trials": [
+  {
+   "trial": "CASTA 2012, acute stroke",
+   "n": 1070,
+   "result": "Main goal: no difference",
+   "pmid": "22282884"
+  },
+  {
+   "trial": "CEREHETIS 2023, stroke (open-label)",
+   "n": 341,
+   "result": "Fewer bleeds; no 90-day difference",
+   "pmid": "36973684"
+  },
+  {
+   "trial": "CAPTAIN II 2020, brain injury",
+   "n": 142,
+   "result": "Small-to-medium combined benefit",
+   "pmid": "31897941"
+  },
+  {
+   "trial": "ESCAS 2025, post-stroke aphasia",
+   "n": 132,
+   "result": "Better language scores",
+   "pmid": "39957612"
+  },
+  {
+   "trial": "Iran 2017, early stroke recovery",
+   "n": 100,
+   "result": "Better day-30 stroke scores",
+   "pmid": "29075343"
+  },
+  {
+   "trial": "Korea 2000, Alzheimer's disease",
+   "n": 53,
+   "result": "Better at 4 weeks; daily life same",
+   "pmid": "11129744"
+  },
+  {
+   "trial": "Healthy men 1998, EEG study",
+   "n": 48,
+   "result": "EEG changes; memory only a trend",
+   "pmid": "9700674"
+  },
+  {
+   "trial": "CAPTAIN I 2020, brain injury",
+   "n": 46,
+   "result": "Main goal just missed",
+   "pmid": "31494820"
+  }
+ ],
+ "key_trials_total_n": 1932,
+ "abstract_quotes": {
+  "37818733": {
+   "title": "Cerebrolysin for acute ischaemic stroke",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2023",
+   "quotes": [
+    "mixture of low-molecular-weight peptides and amino acids derived from porcine brain",
+    "widely used in the treatment of acute ischaemic stroke in Russia, Eastern Europe, China, and other Asian and post-Soviet countries",
+    "Seven RCTs (1773 participants)",
+    "The manufacturer of Cerebrolysin supported three multicentre studies",
+    "(risk ratio (RR) 0.96, 95% confidence interval (CI) 0.65 to 1.41; 6 trials, 1689 participants; moderate-certainty evidence)",
+    "None of the included studies reported on poor functional outcome",
+    "(RR 2.39, 95% CI 1.10 to 5.23; 3 trials, 1335 participants; moderate-certainty evidence)",
+    "probably have no beneficial effect on preventing all-cause death in acute ischaemic stroke",
+    "Moderate-certainty evidence also indicates a potential increase in non-fatal serious adverse events with Cerebrolysin use."
+   ]
+  },
+  "22282884": {
+   "title": "Cerebrolysin in patients with acute ischemic stroke in Asia: results of a double-blind, placebo-controlled randomized trial",
+   "journal": "Stroke",
+   "year": "2012",
+   "quotes": [
+    "A total of 1070 patients were enrolled",
+    "The confirmatory end point showed no significant difference between the treatment groups.",
+    "This observation should be confirmed by a further clinical trial."
+   ]
+  },
+  "26564102": {
+   "title": "Cerebrolysin and Recovery After Stroke (CARS): A Randomized, Placebo-Controlled, Double-Blind, Multicenter Trial",
+   "journal": "Stroke",
+   "year": "2016",
+   "quotes": [
+    "indicated a large superiority of Cerebrolysin compared with the placebo (Mann-Whitney estimator, 0.71",
+    "Because this study was exploratory and had a relatively small sample size, the results should be confirmed in a large-scale, randomized clinical trial."
+   ]
+  },
+  "29075343": {
+   "title": "Efficacy and safety of Cerebrolysin treatment in early recovery after acute ischemic stroke: a randomized, placebo-controlled, double-blinded, multicenter clinical trial",
+   "journal": "J Med Life",
+   "year": "2017",
+   "quotes": [
+    "enrolled a total of 100 patients",
+    "indicated a medium to large superiority of cerebrolysin compared to placebo"
+   ]
+  },
+  "28458521": {
+   "title": "Cerebrolysin for functional recovery in patients with acute ischemic stroke: a meta-analysis of randomized controlled trials",
+   "journal": "Drug Des Devel Ther",
+   "year": "2017",
+   "quotes": [
+    "A total of 1,649 patients",
+    "Cerebrolysin had no significant effect on functional recovery at Day 90",
+    "routine administration of cerebrolysin to patients with AIS cannot be supported by the available evidence from RCTs."
+   ]
+  },
+  "29248999": {
+   "title": "Safety and efficacy of Cerebrolysin in early post-stroke recovery: a meta-analysis of nine randomized clinical trials",
+   "journal": "Neurol Sci",
+   "year": "2018",
+   "quotes": [
+    "N = 1879",
+    "Safety aspects were comparable to placebo."
+   ]
+  },
+  "34152062": {
+   "title": "European Academy of Neurology and European Federation of Neurorehabilitation Societies guideline on pharmacological support in early motor rehabilitation after acute ischaemic stroke",
+   "journal": "Eur J Neurol",
+   "year": "2021",
+   "quotes": [
+    "are recommended for clinical use for early neurorehabilitation after acute ischaemic stroke"
+   ]
+  },
+  "41018475": {
+   "title": "Safety and Efficacy of Cerebrolysin for Neurorecovery After Acute Ischemic Stroke: A Systematic Review and Meta-Analysis of 14 Randomized Controlled Trials",
+   "journal": "Cureus",
+   "year": "2025",
+   "quotes": [
+    "Fourteen randomized controlled trials (N = 2,884 patients)",
+    "Further high-quality trials are warranted"
+   ]
+  },
+  "39957612": {
+   "title": "Speech Therapy Combined With Cerebrolysin in Enhancing Nonfluent Aphasia Recovery After Acute Ischemic Stroke: ESCAS Randomized Pilot Study",
+   "journal": "Stroke",
+   "year": "2025",
+   "quotes": [
+    "14.805 (95% CI, 9.521-20.089) points (P<0.001)",
+    "Further research with larger cohorts is needed"
+   ]
+  },
+  "36973684": {
+   "title": "Cerebrolysin as an Early Add-on to Reperfusion Therapy: Risk of Hemorrhagic Transformation after Ischemic Stroke (CEREHETIS), a prospective, randomized, multicenter pilot study",
+   "journal": "BMC Neurol",
+   "year": "2023",
+   "quotes": [
+    "no difference in the mRS score was observed on day 90"
+   ]
+  },
+  "31494820": {
+   "title": "Safety and efficacy of Cerebrolysin in acute brain injury and neurorecovery: CAPTAIN I-a randomized, placebo-controlled, double-blind, Asian-Pacific trial",
+   "journal": "Neurol Sci",
+   "year": "2020",
+   "quotes": [
+    "In 46 enrolled TBI patients (Cerebrolysin 22, placebo 24)",
+    "statistical significance was just missed in the intention-to-treat population"
+   ]
+  },
+  "31897941": {
+   "title": "Efficacy and safety of cerebrolysin in neurorecovery after moderate-severe traumatic brain injury: results from the CAPTAIN II trial",
+   "journal": "Neurol Sci",
+   "year": "2020",
+   "quotes": [
+    "The study enrolled 142 patients",
+    "indicated a \"small-to-medium\"-sized effect in favor of Cerebrolysin"
+   ]
+  },
+  "33620612": {
+   "title": "Cerebrolysin after moderate to severe traumatic brain injury: prospective meta-analysis of the CAPTAIN trial series",
+   "journal": "Neurol Sci",
+   "year": "2021",
+   "quotes": [
+    "A total 185 patients"
+   ]
+  },
+  "36979317": {
+   "title": "Cerebrolysin in Patients with TBI: Systematic Review and Meta-Analysis",
+   "journal": "Brain Sci",
+   "year": "2023",
+   "quotes": [
+    "Mortality of any cause and the length of stay was not affected by the treatment."
+   ]
+  },
+  "31710397": {
+   "title": "Cerebrolysin for vascular dementia",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2019",
+   "quotes": [
+    "all studies were supported by the pharmaceutical industry",
+    "very low-quality evidence",
+    "However, these data are not definitive."
+   ]
+  },
+  "23440834": {
+   "title": "Cerebrolysin for vascular dementia",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2013",
+   "quotes": [
+    "there is still insufficient evidence to recommend Cerebrolysin as a routine treatment for vascular dementia"
+   ]
+  },
+  "25832905": {
+   "title": "Cerebrolysin in mild-to-moderate Alzheimer's disease: a meta-analysis of randomized controlled clinical trials",
+   "journal": "Dement Geriatr Cogn Disord",
+   "year": "2015",
+   "quotes": [
+    "There were 6 eligible randomized controlled trials comparing Cerebrolysin with placebo."
+   ]
+  },
+  "11129744": {
+   "title": "A double-blind, placebo-controlled, multicenter study of Cerebrolysin for Alzheimer's disease",
+   "journal": "J Am Geriatr Soc",
+   "year": "2000",
+   "quotes": [
+    "Fifty-three men and women at least 50 years of age",
+    "over 4 weeks in patients with probable Alzheimer's disease (AD)"
+   ]
+  },
+  "9700674": {
+   "title": "Dose-dependent effects of Cerebrolysin on EEG and short-term memory of healthy volunteers during control and hyperventilation induced cerebral ischemia",
+   "journal": "J Neural Transm Suppl",
+   "year": "1998",
+   "quotes": [
+    "Cerebrolysin, a peptidergic nootropic drug",
+    "48 healthy males were enrolled",
+    "there is a trend towards less effective word recall for the baseline situation during the first 4 hours for the placebo"
+   ]
+  },
+  "41880098": {
+   "title": "Efficacy and Safety of Cerebrolysin as an Adjunct to Mechanical Thrombectomy in Acute Ischemic Stroke: A Systematic Review and Meta-Analysis of Observational Studies",
+   "journal": "Brain Behav",
+   "year": "2026",
+   "quotes": [
+    "three observational studies involving a total of 294 patients"
+   ]
+  },
+  "34959697": {
+   "title": "Safety of Cerebrolysin for Neurorecovery after Acute Ischemic Stroke: A Systematic Review and Meta-Analysis of Twelve Randomized-Controlled Trials",
+   "journal": "Pharmaceuticals (Basel)",
+   "year": "2021",
+   "quotes": [
+    "The meta-analysis pooled 2202 patients from twelve randomized clinical trials, registering non-statistically significant (p > 0.05) differences between Cerebrolysin and placebo"
+   ]
+  }
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Cerebrolysin is a licensed injectable pig-brain peptide mixture in parts of Europe and Asia, not approved in the US. The largest stroke trial was neutral, the Cochrane review found no effect on death and a possible rise in non-fatal serious adverse events, and positive results come mostly from smaller, often manufacturer-linked trials. There is no trial of cognitive enhancement in healthy people."
+ }
+}
