@@ -1,0 +1,195 @@
+{
+ "checked": "2026-10-24",
+ "drugsfda_active_ingredient_search": {
+  "endpoint": "https://api.fda.gov/drug/drugsfda.json?search=products.active_ingredients.name:%22NAME%22",
+  "results": {
+   "BPC-157": "none",
+   "BREMELANOTIDE": [
+    "NDA210557 VYLEESI (AUTOINJECTOR) (Prescription)"
+   ],
+   "CATHELICIDIN": "none",
+   "CJC-1295": "none",
+   "DIHEXA": "none",
+   "ELAMIPRETIDE": [
+    "NDA215244 FORZINITY (Prescription)"
+   ],
+   "EMIDELTIDE": "none",
+   "EPITALON": "none",
+   "GHK": "none",
+   "GLUTATHIONE": [
+    "NDA018469 BSS PLUS (Prescription)",
+    "NDA020079 METHOTREXATE SODIUM (Discontinued)"
+   ],
+   "IPAMORELIN": "none",
+   "KPV": "none",
+   "MECHANO GROWTH": "none",
+   "MELANOTAN": "none",
+   "MOTS-C": "none",
+   "NICOTINAMIDE ADENINE DINUCLEOTIDE": "none",
+   "SELANK": "none",
+   "SEMAX": "none",
+   "SERMORELIN": [
+    "NDA019863 GEREF (Discontinued)",
+    "NDA020443 GEREF (Discontinued)"
+   ],
+   "TESAMORELIN": [
+    "BLA022505 EGRIFTA (Prescription)"
+   ],
+   "THYMALFASIN": "none",
+   "THYMOSIN ALPHA": "none",
+   "THYMOSIN BETA": "none"
+  }
+ },
+ "ecfr_216_23_list": [
+  "Brilliant Blue G",
+  "Cantharidin (topical)",
+  "Diphenylcyclopropenone (topical)",
+  "N-acetyl-D-glucosamine (topical)",
+  "Squaric acid dibutyl ester (topical)",
+  "Thymol iodide (topical)"
+ ],
+ "category_1_relevant": [
+  "Glutathione",
+  "Nicotinamide Adenine Dinucleotide (NAD)",
+  "GHK-Cu (except for injectable routes of administration), added back after May 5, 2026 clarification"
+ ],
+ "category_3_relevant": [
+  "Mechano growth factor (MGF)"
+ ],
+ "category_2_active_503A_peptides_not_covered": [
+  "Ibutamoren Mesylate",
+  "Kisspeptin-10"
+ ],
+ "category_2_nominated_but_withdrawn_covered": [
+  "BPC-157",
+  "Cathelicidin LL-37",
+  "CJC-1295",
+  "Dihexa acetate",
+  "Emideltide (DSIP)",
+  "Epitalon",
+  "GHK-Cu (injectable routes)",
+  "Ipamorelin acetate",
+  "KPV",
+  "Melanotan II",
+  "MOTs-C",
+  "PEG-MGF",
+  "Selank acetate",
+  "Semax",
+  "TB-500",
+  "Thymosin-alpha 1"
+ ],
+ "pcac_july_2026": {
+  "fda_staff": "against all seven (briefing conclusions: a balancing of the criteria weighs against inclusion)",
+  "reported_tallies_yes_no_abstain": {
+   "BPC-157": "8-6-1",
+   "KPV": "8-6-1",
+   "TB-500": "8-6-1",
+   "Semax": "8-5-1",
+   "Epitalon": "7-4-1 or 7-5-1",
+   "MOTS-c": "7-5-2",
+   "Emideltide (DSIP)": "6-7-1"
+  },
+  "fda_minutes_posted": false
+ },
+ "pcac_next": {
+  "deadline": "before the end of February 2027",
+  "agenda": [
+   "Cathelicidin (LL-37)",
+   "GHK-Cu",
+   "Dihexa acetate",
+   "Melanotan II",
+   "PEG-MGF"
+  ],
+  "date_set": false
+ },
+ "pcac_2024_minutes": {
+  "Ipamorelin (Oct 29, 2024)": {
+   "free base": "0/12/1",
+   "acetate": "0/12/1"
+  },
+  "CJC-1295 (Dec 4, 2024)": {
+   "free base": "0/13/0",
+   "acetate": "1/12/0",
+   "DAC free base": "0/13/0",
+   "DAC acetate": "0/13/0",
+   "DAC TFA": "0/13/0"
+  },
+  "Thymosin alpha-1 (Dec 4, 2024)": {
+   "free base": "4/17/0",
+   "acetate": "4/17/0"
+  },
+  "AOD-9604 (Dec 4, 2024)": "0/12"
+ },
+ "oira_rin_0910_zd94": {
+  "received": "2026-10-14",
+  "status": "Pending EO 12866 review",
+  "text_public": false
+ },
+ "chart_groups": [
+  {
+   "label": "Committee voted to add in July 2026; FDA staff recommended against (final decision pending)",
+   "color": "amb",
+   "members": [
+    "BPC-157",
+    "KPV",
+    "TB-500",
+    "MOTS-c",
+    "Semax",
+    "Epitalon"
+   ]
+  },
+  {
+   "label": "Committee voted against in July 2026; FDA staff also against",
+   "color": "red",
+   "members": [
+    "DSIP (emideltide)"
+   ]
+  },
+  {
+   "label": "Committee voted against in 2024, as FDA proposed",
+   "color": "red",
+   "members": [
+    "CJC-1295",
+    "Ipamorelin",
+    "Thymosin alpha-1"
+   ]
+  },
+  {
+   "label": "On the next committee agenda, due before the end of February 2027",
+   "color": "amb",
+   "members": [
+    "GHK-Cu",
+    "LL-37",
+    "Dihexa",
+    "Melanotan II",
+    "PEG-MGF"
+   ]
+  },
+  {
+   "label": "Nomination withdrawn, on FDA’s safety-risk page, no meeting announced",
+   "color": "gry",
+   "members": [
+    "Selank"
+   ]
+  },
+  {
+   "label": "FDA category 1, “under evaluation”",
+   "color": "col",
+   "members": [
+    "Glutathione",
+    "NAD+ (not a peptide)",
+    "GHK-Cu, non-injectable only"
+   ]
+  },
+  {
+   "label": "Ingredient of an FDA-approved drug",
+   "color": "grn",
+   "members": [
+    "PT-141 (Vyleesi)",
+    "SS-31 (Forzinity)",
+    "Tesamorelin (Egrifta)",
+    "Sermorelin (Geref, discontinued)"
+   ]
+  }
+ ]
+}
