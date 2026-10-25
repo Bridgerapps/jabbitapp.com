@@ -1,0 +1,193 @@
+{
+ "checked": "2026-10-25 (America/New_York)",
+ "page": "https://jabbitapp.com/research/aod-9604-fat-loss-peptide-evidence-teardown.html",
+ "fda": {
+  "briefing": "https://www.fda.gov/media/183584/download",
+  "briefing_quotes": [
+   "DATE: 11/5/2024",
+   "we believe the evaluation criteria weigh against placing AOD-9604",
+   "Nomination from Wells Pharmacy for AOD-9604 (Document ID: FDA-2015-N-3534-0283)",
+   "first developed and patented by Metabolic Pharmaceuticals in the late 1990s",
+   "between 2017 and 2023, no OFs reported compounding any drug products containing AOD-9604",
+   "FDA identified numerous clinics such as wellness clinics and medical spas that market products containing AOD-9604",
+   "A report released by the Australian Crime Commission listed AOD-9604",
+   "AOD-9604 is on the list of prohibited substances under section S2.2",
+   "adding AOD-9604 to the poisons standards, under performance and image enhancing drugs (PIEDs)",
+   "536 enrolled; 502 randomized",
+   "We note that this study appears to be the same as METAOD006",
+   "did not find a significant difference in weight loss after 12 weeks (the primary endpoint)",
+   "Herd et al. 2005 is an abstract from an annual scientific meeting program",
+   "the clinical studies do not show any statistically significant weight loss when AOD-9604 was administered to patients with obesity compared to placebo",
+   "FDA did not identify clinical studies in humans assessing pharmacokinetics or pharmacodynamics of AOD-9604 via any ROA",
+   "The FAERS search did not retrieve any reports",
+   "the lack of reports for AOD-9604 does not imply that the substance is safe or lacks toxicities",
+   "for the date range of 1/1/04 to 4/3/24 and did not retrieve cases",
+   "the authors are either employees or consultants of Metabolic Pharmaceuticals Pty Ltd (Australia) which funded the six trials",
+   "METAOD001: Dose escalation study in 15 males",
+   "METAOD002: A study in 23 males with obesity",
+   "METAOD0003: A study in 17 males with obesity",
+   "METAOD004: A R, DB, PC study in 36 males with obesity",
+   "METAOD005: A DB, PC study in 300 males and females with obesity",
+   "METAOD006: An R, DB, PC study in 502 males and females with obesity",
+   "basal cell carcinoma, moderate lipoma and squamous cell carcinoma",
+   "considered none of the SAEs reported to be related to study medication",
+   "1 report of “feeling of chest tightness”",
+   "euphoria (AOD- 9604 5, placebo 0)",
+   "insufficient information provided in these reports to assess relatedness",
+   "there is insufficient information to support patient safety for the long-term use",
+   "the half-life (t1/2) of the peptide was found to be very short (~3 min)",
+   "oral bioavailability of 170%, which unrealistically exceeds the theoretical maximal 100%",
+   "Findings from bacterial reverse mutation (AMES) assays are equivocal",
+   "AOD-9604-induced changes in serum osteocalcin levels can be interpreted as a clinically relevant nonclinical safety signal",
+   "being detected in all female monkeys in the high- dose group",
+   "not corrected for multiple comparisons",
+   "the molecular target(s) and the mechanism(s) of action underlying the pharmacological effects of AOD-9604 remain unknown",
+   "These substances are not well characterized from a physical and chemical characterization perspective, and endotoxin testing",
+   "There is no applicable United States Pharmacopeia (USP) or National Formulary (NF) drug substance monograph",
+   "there is a lack of evidence to support the effectiveness of AOD-9604 (free base) and AOD-9604 acetate for the treatment of obesity for any ROA",
+   "The company terminated development of the drug for obesity because of the failure of the study",
+   "We note that this study appears to be the same as METAOD005",
+   "The largest effect occurred in the 1 mg dose and was ‘significant’ for females",
+   "Accordingly, we propose not adding AOD-9604 acetate or AOD-9604 (free base) to the 503A Bulks List"
+  ],
+  "pcac_minutes": "https://www.fda.gov/media/185642/download",
+  "pcac_vote": "December 4, 2024: single vote Yes 12 No 0; should AOD-9604 (free base) and acetate be placed on the 503A Bulks List: Yes 0, No 12, Abstain 0; no committee discussion.",
+  "safety_risks_page": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+  "safety_risks_status": "Content current as of 04/22/2026; AOD-9604 listed under 'Bulk drug substances nominated but withdrawn'.",
+  "safety_risks_text": "Compounded drugs containing AOD-9604 may pose significant risk for immunogenicity for certain routes of administration and may have complexities with regard to peptide-related impurities and API characterization. FDA has identified no, or only limited, safety-related information. Therefore, the agency lacks sufficient information to know whether the drug would cause harm when administered to humans. FDA has also identified serious adverse events that may be associated with AOD-9604, though causality is not clear.",
+  "oira": "RIN 0910-ZD94, received 10/14/2026, Pending EO 12866 Regulatory Review; text not public. https://www.reginfo.gov/public/do/eoDetails?rrid=1568964",
+  "drugsfda": "No match (openFDA drugsfda, products.active_ingredients.name:AOD*).",
+  "ndc": {
+   "listings": 5,
+   "product_type": "BULK INGREDIENT",
+   "marketing_start_dates": [
+    "20190708",
+    "20250217",
+    "20260112",
+    "20260501",
+    "20260716"
+   ],
+   "note": "Bulk-ingredient listings, not approvals. Labelers not named."
+  },
+  "enforcement": {
+   "reports": 2,
+   "classification": "Class II",
+   "reason": "Lack of Assurance of Sterility",
+   "report_dates": [
+    "20201223",
+    "20210728"
+   ],
+   "note": "Firms not named."
+  },
+  "gras_program": "https://www.fda.gov/food/generally-recognized-safe-gras/how-us-fdas-gras-notification-program-works",
+  "gras_notice_inventory": "FDA GRAS Notice inventory (https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?set=GRASNotices) search '9604' and 'AOD9604', Oct 25, 2026: Records Found: 0."
+ },
+ "company": {
+  "asx_2007": "Metabolic Pharmaceuticals, ASX announcement 21 Feb 2007, 'Metabolic's obesity drug - Phase 2B clinical trial results', https://www.sec.gov/Archives/edgar/vprr/0702/07021963.pdf (scanned; read as images)",
+  "asx_2007_quotes": [
+   "Trial results do not support commercial viability of obesity project: programme is terminated",
+   "too low to reach statistical significance",
+   "was less than 1 kg in all dose groups",
+   "There was a subgroup, predetermined in the trial design, which did show weight loss at the levels seen in the previous trial",
+   "The safety and tolerability of AOD9604 was excellent with no evidence of any difference from placebo"
+  ],
+  "asx_2012": "https://announcements.asx.com.au/asxpdf/20120625/pdf/4270mj9x71tv3k.pdf",
+  "asx_2014": "Calzada Ltd, 31 July 2014 (copy via marketindex.com.au)"
+ },
+ "wada": "2026 Prohibited List S2.2.3: 'growth hormone fragments, e.g. AOD-9604 and hGH 176-191'.",
+ "registry": {
+  "api": "ClinicalTrials.gov API v2, query.term=AOD9604 OR AOD-9604 OR \"AOD 9604\", 2026-10-25",
+  "records": 0
+ },
+ "pubmed": {
+  "query": "\"AOD 9604\"[Supplementary Concept] OR \"AOD 9604\"[All Fields] OR \"aod9604\"[All Fields] OR \"AOD 9604\"[Supplementary Concept] OR \"AOD 9604\"[All Fields] OR \"AOD 9604\"[All Fields]",
+  "count": 23,
+  "by_year": {
+   "2000": 1,
+   "2001": 2,
+   "2003": 2,
+   "2004": 1,
+   "2005": 1,
+   "2006": 2,
+   "2007": 1,
+   "2012": 1,
+   "2013": 1,
+   "2014": 3,
+   "2015": 2,
+   "2016": 1,
+   "2017": 1,
+   "2026": 4
+  },
+  "ids": [
+   "42395176",
+   "42328738",
+   "41966639",
+   "41490200",
+   "26578461",
+   "26275694",
+   "26213263",
+   "25382550",
+   "25208511",
+   "24976118",
+   "24906629",
+   "24124033",
+   "22435392",
+   "17971763",
+   "16931496",
+   "16625817",
+   "15834452",
+   "15134286",
+   "14685303",
+   "14571286",
+   "11713213",
+   "11673763",
+   "11146367"
+  ]
+ },
+ "human_trials_stier_2013": [
+  {
+   "study": "METAOD001",
+   "route_duration": "IV, single doses",
+   "n": 15
+  },
+  {
+   "study": "METAOD002",
+   "route_duration": "IV, single doses",
+   "n": 23
+  },
+  {
+   "study": "METAOD003",
+   "route_duration": "Oral, single doses",
+   "n": 17
+  },
+  {
+   "study": "METAOD004",
+   "route_duration": "Oral, 7 days",
+   "n": 36
+  },
+  {
+   "study": "METAOD005",
+   "route_duration": "Oral, 12 weeks",
+   "n": 300
+  },
+  {
+   "study": "METAOD006 (OPTIONS)",
+   "route_duration": "Oral, 24 weeks",
+   "n": 502
+  }
+ ],
+ "human_trials_total_n": 893,
+ "abstract_quotes": {
+  "11146367": "reduced over 50% (15.8 +/- 0.6 vs. 35.6 +/- 0.8 g) body weight gain",
+  "11673763": "AOD9604 does not compete for the hGH receptor and nor does it induce cell proliferation",
+  "11713213": "failed to produce the change in body weight and increase in lipolysis",
+  "15134286": "By February 2002, phase IIa trials were underway",
+  "26275694": "Intra-articular AOD9604 injections using ultrasound guidance enhanced cartilage regeneration",
+  "25208511": "was recently identified in confiscated vials in the USA",
+  "41966639": "rigorous human safety data are scarce, and there is potential for serious harm to patients",
+  "42395176": "stratifying peptides into evidence tiers from regulatory-grade randomized trial data to a complete absence of human studies"
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Six company-funded trials in about 890 people, mostly oral; the two largest did not show meaningful weight loss and the company ended the obesity program in 2007. No human data for the injected form sold today."
+ }
+}
