@@ -1,0 +1,297 @@
+{
+ "checked": "2026-10-25 (America/New_York)",
+ "page": "https://jabbitapp.com/research/mk-677-ibutamoren-growth-hormone-secretagogue-evidence-teardown.html",
+ "fda": {
+  "safety_risks_page": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+  "safety_risks_status": "Content current as of 04/22/2026; ibutamoren mesylate listed as 503A (since September 29, 2023) and 503B (since December 29, 2022).",
+  "safety_risks_text": "Ibutamoren mesylate poses significant safety risks due to the potential for congestive heart failure in certain patients. The agency is aware of a randomized, placebo-controlled trial assessing ibutamoren mesylate for the treatment of patients recovering from hip fracture that “was terminated early due to a potential safety signal of congestive heart failure.”",
+  "categories_503a": "https://www.fda.gov/media/94155/download (updated May 14, 2026): Ibutamoren Mesylate listed under 503A Category 2, Bulk Drug Substances that Raise Significant Safety Risks.",
+  "oira": "RIN 0910-ZD94, received 10/14/2026, Pending EO 12866 Regulatory Review; text not public. https://www.reginfo.gov/public/do/eoDetails?rrid=1568964",
+  "drugsfda": "No match (openFDA drugsfda, openfda.generic_name:IBUTAMOREN*).",
+  "faers": {
+   "reports_naming_ibutamoren_or_mk677": 14,
+   "data_through": "2026-07-30",
+   "note": "Reports do not establish causation; many involve other substances."
+  },
+  "ndc": {
+   "listings": 5,
+   "product_type": "BULK INGREDIENT",
+   "marketing_start_dates": [
+    "20191030",
+    "20260420",
+    "20260709",
+    "20260813",
+    "20260813"
+   ],
+   "note": "Bulk-ingredient listings, not approvals. Labelers not named."
+  }
+ },
+ "wada": "2026 Prohibited List S2.2.4 (growth hormone releasing factors): 'growth hormone secretagogues (GHS) and their mimetics [e.g. anamorelin, capromorelin, ibutamoren (MK-677), ...]'.",
+ "registry": {
+  "api": "ClinicalTrials.gov API v2, query.term=ibutamoren OR MK-677 OR MK-0677 OR LUM-201, 2026-10-25",
+  "records": 14,
+  "studies": [
+   {
+    "nct": "NCT07754045",
+    "title": "Evaluating the Efficacy and Safety of LUM-201 Plus Semaglutide Versus Semaglutide Plus Placebo in Older Obese Adults",
+    "status": "NOT_YET_RECRUITING",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2027-02-15",
+    "sponsor": "Lumos Pharma",
+    "enrollment": 202,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT07129759",
+    "title": "Phase 3 Long Term Safety Extension Study of LUM-201 in Children With Growth Hormone Deficiency",
+    "status": "NOT_YET_RECRUITING",
+    "phase": [
+     "PHASE3"
+    ],
+    "start": "2027-02",
+    "sponsor": "Lumos Pharma",
+    "enrollment": 150,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT06948214",
+    "title": "Phase 3 Study of LUM-201 in Children With Growth Hormone Deficiency",
+    "status": "RECRUITING",
+    "phase": [
+     "PHASE3"
+    ],
+    "start": "2026-05-20",
+    "sponsor": "Lumos Pharma",
+    "enrollment": 150,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT05364684",
+    "title": "The Impact of Ibutamoren on Nonalcoholic Fatty Liver Disease",
+    "status": "COMPLETED",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2022-08-10",
+    "sponsor": "Massachusetts General Hospital",
+    "enrollment": 12,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT00074529",
+    "title": "Study of MK0677 for the Treatment of Alzheimer's Disease (0677-030)(COMPLETED)",
+    "status": "COMPLETED",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2003-10",
+    "sponsor": "Merck Sharp & Dohme LLC",
+    "enrollment": 512,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT04806854",
+    "title": "PK and PD Study of LUM-201 in Children With Idiopathic Growth Hormone Deficiency: (OraGrowtH212)",
+    "status": "ACTIVE_NOT_RECRUITING",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2021-07-14",
+    "sponsor": "Lumos Pharma",
+    "enrollment": 24,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT04614337",
+    "title": "Phase 2 Study of LUM-201 in Children With Growth Hormone Deficiency (OraGrowtH210 Trial)",
+    "status": "COMPLETED",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2020-12-31",
+    "sponsor": "Lumos Pharma",
+    "enrollment": 104,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT00395291",
+    "title": "Growth Hormone Secretagogue MK-0677 Effect on IGF-1 Levels in ESRD Patients",
+    "status": "COMPLETED",
+    "phase": [
+     "NA"
+    ],
+    "start": "2006-08",
+    "sponsor": "University of Virginia",
+    "enrollment": 49,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT05250063",
+    "title": "Phase 2 Study of LUM-201 in Children Who Have Previously Completed the LUM-201-01 Trial (OraGrowtH213)",
+    "status": "COMPLETED",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2022-02-18",
+    "sponsor": "Lumos Pharma",
+    "enrollment": 15,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT01343641",
+    "title": "Growth Hormone Secretagogue MK-0677's Effect on Lean Body Mass in Chronic Kidney Disease Stage 4/5 Subjects",
+    "status": "WITHDRAWN",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2009-03",
+    "sponsor": "University of Virginia",
+    "enrollment": 0,
+    "why_stopped": "Could not obtain drug supply from manufacturer"
+   },
+   {
+    "nct": "NCT05796440",
+    "title": "A Long-Term Safety Trial of LUM-201 in Children With Idiopathic Growth Hormone Deficiency Who Have Previously Completed a LUM-201 Clinical Trial (OraGrowtH211)",
+    "status": "ENROLLING_BY_INVITATION",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2023-08-01",
+    "sponsor": "Lumos Pharma",
+    "enrollment": 60,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT00474279",
+    "title": "Effects of an Oral GH Secretagogue (MK-677) on Body Composition and Functional Ability of Older Adults",
+    "status": "COMPLETED",
+    "phase": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "start": "1998-07",
+    "sponsor": "University of Virginia",
+    "enrollment": 72,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT00116129",
+    "title": "Efficacy and Safety of an Oral Growth Hormone Drug in the Treatment of Fibromyalgia",
+    "status": "COMPLETED",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2005-07",
+    "sponsor": "Bennett, Robert, M.D.",
+    "enrollment": 64,
+    "why_stopped": null
+   },
+   {
+    "nct": "NCT00128115",
+    "title": "Treatment of Sarcopenia in Post-Hip Fracture Patients (0677-032)",
+    "status": "TERMINATED",
+    "phase": [
+     "PHASE2"
+    ],
+    "start": "2005-09",
+    "sponsor": "Merck Sharp & Dohme LLC",
+    "enrollment": 83,
+    "why_stopped": null
+   }
+  ],
+  "oragrowth210_6mo_ahv_cm_per_yr": {
+   "LUM-201 arms (range)": [
+    6.8,
+    8.2
+   ],
+   "rhGH injection arm": 10.6
+  },
+  "nafld_pilot": "NCT05364684, open-label, 12 adults, 6 months: mean change in liver fat +3.9 percentage points (SD 6.7), p=0.4."
+ },
+ "company": {
+  "lumos_trials_page": "https://lumos-pharma.com/clinicaltrials/",
+  "note": "Lumos Pharma develops ibutamoren as LUM-201 for pediatric growth hormone deficiency; phase 3 NCT06948214 recruiting since 2026-05-20."
+ },
+ "pubmed": {
+  "query": "\"ibutamoren\"[All Fields] OR \"ibutamoren mesylate\"[Supplementary Concept] OR \"ibutamoren mesylate\"[All Fields] OR \"mk 677\"[All Fields] OR \"ibutamoren mesylate\"[Supplementary Concept] OR \"ibutamoren mesylate\"[All Fields] OR \"mk 0677\"[All Fields] OR \"MK0677\"[All Fields] OR \"ibutamoren mesylate\"[Supplementary Concept] OR \"ibutamoren mesylate\"[All Fields] OR \"l 163 191\"[All Fields]",
+  "count": 169
+ },
+ "key_trials": [
+  {
+   "trial": "Older adults, 2 years (2008)",
+   "n": 65,
+   "result": "Lean mass up; no strength gain"
+  },
+  {
+   "trial": "Obese men, 8 weeks (1998)",
+   "n": 24,
+   "result": "Lean mass up; fat same; glucose worse"
+  },
+  {
+   "trial": "Hip fracture, 6 months (2004)",
+   "n": 161,
+   "result": "IGF-1 up; no significant functional gain"
+  },
+  {
+   "trial": "Hip fracture, phase 2b (2011)",
+   "n": 123,
+   "result": "Stopped early: heart failure signal"
+  },
+  {
+   "trial": "Osteoporosis, 18 months (2001)",
+   "n": 292,
+   "result": "Bone density gain at one site only"
+  },
+  {
+   "trial": "Alzheimer's disease, 12 months (2008)",
+   "n": 563,
+   "result": "No slowing of decline"
+  }
+ ],
+ "key_trials_total_n": 1228,
+ "abstract_quotes": {
+  "7624358": "Based on these properties, L-163,191 has been selected for clinical studies",
+  "15814848": "ghsr-knockout mice studies confirmed that GHS are ghrelin mimetics",
+  "8954023": "MK-677 produced significant increases in fasting glucose (5.4 +/- 0.3 to 6.8 +/- 0.4 mmol/L at 4 weeks; P < 0.01 vs. baseline)",
+  "8768828": "The amounts of GH secreted were similar in all three conditions, but GH pulse frequency was increased",
+  "9349662": "high-dose MK-677 treatment resulted in an approximately 50% increase in the duration of stage IV and in a more than 20% increase in REM sleep as compared to placebo",
+  "9329386": "we studied nine severely GH-deficient men",
+  "9467534": "MK-677 reverses diet-induced nitrogen wasting",
+  "9467542": "Total and visceral fat were not significantly changed with active therapy",
+  "10404019": "stimulates bone turnover in elderly subjects based on elevations in biochemical markers",
+  "11238495": "is a concern when weighed against the potential side effects of enhanced GH secretion",
+  "11452249": "18 prepubertal children (15 male, 3 female) with idiopathic GH deficiency",
+  "15066065": "There were no significant differences between MK-0677 and placebo in improvement in functional performance measures",
+  "18981485": "Increased fat-free mass did not result in changes in strength or function",
+  "19015485": "was ineffective at slowing the rate of progression of Alzheimer disease",
+  "21067829": "Trial was terminated early due to a safety signal of congestive heart failure in a limited number of patients",
+  "31594237": "significantly increased 5xFAD mouse mortality",
+  "33982679": "PEM-negative status enriches a population for better growth responses to rhGH",
+  "35354138": "LUM-201 (ibutamoren, formerly MK-0677)",
+  "29183075": "including the growth hormone secretagogue ibutamoren",
+  "40551438": "as top 5: ibutamoren, ligandrol, ostarine, cardarine and andarine",
+  "33934684": "MK-677 and YK-11, not disclosed on the label, were detected in some products",
+  "35302297": "is not available therapeutically. Nonetheless, MK-0677 is widely available to purchase online",
+  "40675653": "developed transaminitis after consuming MK-677 for 2 months",
+  "39145153": "found to contain amounts of RAD-140, a selective androgen receptor modulator, MK-677, a GH secretagogue and cardarine",
+  "42064485": "We explore the potential and speculative role of performance-enhancing compounds",
+  "42578445": "Some peptides such as MK-677 were associated with significant risks including congestive heart failure"
+ },
+ "nass_2008_quotes": [
+  "change, -0.5 kg [95% CI, -1.1 to 0.2 kg] vs. 1.1 kg [CI, 0.7 to 1.5 kg]",
+  "No significant differences were observed in abdominal visceral fat or total fat mass",
+  "Body weight increased 0.8 kg (CI, -0.3 to 1.8 kg) in the placebo group and 2.7 kg (CI, 2.0 to 3.5 kg) in the MK-677 group",
+  "Fasting blood glucose level increased an average of 0.3 mmol/L",
+  "insulin sensitivity decreased",
+  "an increase in appetite that subsided in a few months and transient, mild lower-extremity edema and muscle pain",
+  "Cortisol levels increased 47 nmol/L",
+  "65 healthy adults",
+  "60 to 81 years of age",
+  "Study power (duration and participant number) was insufficient to evaluate functional end points"
+ ],
+ "analysis": {
+  "note": "Jabbit analysis. Merck-era trials consistently raised GH and IGF-1 and added lean mass, but did not improve strength, function, Alzheimer's progression or most bone sites; blood sugar rose and a hip-fracture trial stopped early for a heart-failure signal. Not approved anywhere; a phase 3 pediatric program is under way."
+ }
+}
