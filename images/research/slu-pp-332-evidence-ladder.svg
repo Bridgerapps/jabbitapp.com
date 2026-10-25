@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 564" width="760" height="564" role="img" aria-labelledby="t1 d1">
+<title id="t1">SLU-PP-332: what has actually been tested</title>
+<desc id="d1">SLU-PP-332: what has actually been tested. Exercise endurance: Mice ran about 70% longer after a week of injections (6 mice per group). Verdict: Mice only. Weight and fat: Obese mice weighed about 12% less after 28 days; lean mice's weight did not change. Verdict: Mice only. Heart failure, aging kidneys: Benefits in a mouse heart-failure model and in 21-month-old mice. Verdict: Mice only. Human muscle: Muscle cells from 10 inactive women, treated in a dish. Verdict: Cells only. Human trials: None found in ClinicalTrials.gov or PubMed. Verdict: None. Safety in people: Never tested; short mouse studies reported no overt toxicity. Verdict: Unknown. Taken by mouth: Its developers report it lacks oral bioavailability. Verdict: Not shown. Sport: WADA lists it as prohibited at all times from January 1, 2027. Verdict: Banned in 2027.</desc>
+<rect width="760" height="564" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">SLU-PP-332: what has actually been tested</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">A lab compound nicknamed the "exercise pill." Every result so far is from mice or cells. Checked Oct 25, 2026.</text>
+<text x="24" y="86" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#64748b">What was tested</text>
+<text x="550" y="86" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#64748b">Verdict</text>
+<text x="24" y="112" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Exercise endurance</text>
+<text x="24" y="130" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Mice ran about 70% longer after a week of injections (6 mice per group)</text>
+<rect x="550" y="97" width="186" height="22" rx="4" fill="#d97706" fill-opacity="0.92"/>
+<text x="643" y="112" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Mice only</text>
+<line x1="24" y1="140" x2="736" y2="140" stroke="#e2e8f0"/>
+<text x="24" y="162" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Weight and fat</text>
+<text x="24" y="180" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Obese mice weighed about 12% less after 28 days; lean mice's weight did not change</text>
+<rect x="550" y="147" width="186" height="22" rx="4" fill="#d97706" fill-opacity="0.92"/>
+<text x="643" y="162" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Mice only</text>
+<line x1="24" y1="190" x2="736" y2="190" stroke="#e2e8f0"/>
+<text x="24" y="212" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Heart failure, aging kidneys</text>
+<text x="24" y="230" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Benefits in a mouse heart-failure model and in 21-month-old mice</text>
+<rect x="550" y="197" width="186" height="22" rx="4" fill="#d97706" fill-opacity="0.92"/>
+<text x="643" y="212" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Mice only</text>
+<line x1="24" y1="240" x2="736" y2="240" stroke="#e2e8f0"/>
+<text x="24" y="262" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Human muscle</text>
+<text x="24" y="280" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Muscle cells from 10 inactive women, treated in a dish</text>
+<rect x="550" y="247" width="186" height="22" rx="4" fill="#94a3b8" fill-opacity="0.92"/>
+<text x="643" y="262" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Cells only</text>
+<line x1="24" y1="290" x2="736" y2="290" stroke="#e2e8f0"/>
+<text x="24" y="312" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Human trials</text>
+<text x="24" y="330" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">None found in ClinicalTrials.gov or PubMed</text>
+<rect x="550" y="297" width="186" height="22" rx="4" fill="#b91c1c" fill-opacity="0.92"/>
+<text x="643" y="312" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">None</text>
+<line x1="24" y1="340" x2="736" y2="340" stroke="#e2e8f0"/>
+<text x="24" y="362" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Safety in people</text>
+<text x="24" y="380" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Never tested; short mouse studies reported no overt toxicity</text>
+<rect x="550" y="347" width="186" height="22" rx="4" fill="#b91c1c" fill-opacity="0.92"/>
+<text x="643" y="362" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Unknown</text>
+<line x1="24" y1="390" x2="736" y2="390" stroke="#e2e8f0"/>
+<text x="24" y="412" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Taken by mouth</text>
+<text x="24" y="430" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Its developers report it lacks oral bioavailability</text>
+<rect x="550" y="397" width="186" height="22" rx="4" fill="#b91c1c" fill-opacity="0.92"/>
+<text x="643" y="412" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Not shown</text>
+<line x1="24" y1="440" x2="736" y2="440" stroke="#e2e8f0"/>
+<text x="24" y="462" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Sport</text>
+<text x="24" y="480" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">WADA lists it as prohibited at all times from January 1, 2027</text>
+<rect x="550" y="447" width="186" height="22" rx="4" fill="#b91c1c" fill-opacity="0.92"/>
+<text x="643" y="462" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Banned in 2027</text>
+<line x1="24" y1="490" x2="736" y2="490" stroke="#e2e8f0"/>
+<text x="24" y="518" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Sources: ACS Chem Biol 2023; J Pharmacol Exp Ther 2024 and 2026; Circulation 2024; Am J Pathol 2023; Front Physiol 2025;</text>
+<text x="24" y="534" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">ClinicalTrials.gov; PubMed; WADA 2027 Prohibited List. Verdicts are Jabbit's analysis.</text>
+<text x="24" y="550" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>

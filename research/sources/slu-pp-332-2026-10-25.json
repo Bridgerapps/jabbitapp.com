@@ -1,0 +1,232 @@
+{
+ "checked": "2026-10-25",
+ "page": "https://jabbitapp.com/research/slu-pp-332-exercise-pill-err-agonist-evidence-teardown.html",
+ "compound": {
+  "name": "SLU-PP-332",
+  "pubchem_cid": 5338394,
+  "formula": "C18H14N2O2",
+  "mw": "290.3",
+  "iupac": "4-hydroxy-N-[(E)-naphthalen-2-ylmethylideneamino]benzamide",
+  "class": "small molecule (acyl hydrazone), not a peptide"
+ },
+ "pubmed": {
+  "query": "\"slu pp 332\"[All Fields] OR \"slu pp 332\"[All Fields] OR \"SLU-PP-915\"[All Fields]",
+  "count": 12,
+  "human_trials_found": 0
+ },
+ "abstract_quotes": {
+  "36988910": {
+   "title": "Synthetic ERRα/β/γ Agonist Induces an ERRα-Dependent Acute Aerobic Exercise Response and Enhances Exercise Capacity",
+   "journal": "ACS Chem Biol",
+   "year": "2023",
+   "quotes": [
+    "we report the identification of a synthetic ERR pan agonist, SLU-PP-332, that targets all three ERRs but has the highest potency for ERRα.",
+    "When administered to mice, SLU-PP-332 increased the type IIa oxidative skeletal muscle fibers and enhanced exercise endurance."
+   ]
+  },
+  "37739806": {
+   "title": "A Synthetic ERR Agonist Alleviates Metabolic Syndrome",
+   "journal": "J Pharmacol Exp Ther",
+   "year": "2024",
+   "quotes": [
+    "Here we examine the effects of this exercise mimetic in mouse models of obesity and metabolic syndrome.",
+    "These effects were accompanied by decreased fat mass accumulation.",
+    "the ERR agonist effectively reduced obesity and improved insulin sensitivity in models of metabolic syndrome."
+   ]
+  },
+  "37961903": {
+   "title": "Novel Pan-ERR Agonists Ameliorate Heart Failure Through Enhancing Cardiac Fatty Acid Metabolism and Mitochondrial Function",
+   "journal": "Circulation",
+   "year": "2024",
+   "quotes": [
+    "Both SLU-PP-332 and SLU-PP-915 significantly improved ejection fraction, ameliorated fibrosis, and increased survival associated with pressure overload-induced HF without affecting cardiac hypertrophy.",
+    "compounds with pharmacokinetics appropriate for in vivo use have not been available"
+   ]
+  },
+  "37717940": {
+   "title": "Estrogen-Related Receptor Agonism Reverses Mitochondrial Dysfunction and Inflammation in the Aging Kidney",
+   "journal": "Am J Pathol",
+   "year": "2023",
+   "quotes": [
+    "The ERRs were decreased in both aging human and mouse kidneys",
+    "A pan-ERR agonist, SLU-PP-332, was used to treat 21-month-old mice for 8 weeks.",
+    "reversed the age-related increases in albuminuria, podocyte loss, mitochondrial dysfunction, and inflammatory cytokines"
+   ]
+  },
+  "37421886": {
+   "title": "Development and pharmacological evaluation of a new chemical series of potent pan-ERR agonists, identification of SLU-PP-915",
+   "journal": "Eur J Med Chem",
+   "year": "2023",
+   "quotes": [
+    "One potent agonist, SLU-PP-915 (10s)"
+   ]
+  },
+  "40692696": {
+   "title": "Targeting ERRs to counteract age-related muscle atrophy associated with physical inactivity: a pilot study",
+   "journal": "Front Physiol",
+   "year": "2025",
+   "quotes": [
+    "Twenty women undergoing hip arthroplasty for coxarthrosis were enrolled",
+    "Primary cultures of myoblasts were set up from the muscle tissue of inactive women and treated with the ERRs agonist, SLU-PP-332",
+    "Targeting ERRs could represent a promising therapeutic strategy to counteract muscle atrophy in elderly and sedentary subjects."
+   ]
+  },
+  "41421047": {
+   "title": "An orally active estrogen receptor-related receptor agonist, SLU-PP-915, enhances aerobic exercise capacity",
+   "journal": "J Pharmacol Exp Ther",
+   "year": "2026",
+   "quotes": [
+    "We previously developed an ERR pan-agonist, SLU-PP-332 (332), which improves aerobic performance in mice but lacks oral bioavailability.",
+    "a chemically distinct ERR pan-agonist that is orally bioavailable"
+   ]
+  },
+  "41850449": {
+   "title": "Chemical optimization of the exercise mimetic SLU-PP-332 enables insight into estrogen-related receptor signaling",
+   "journal": "Int J Biol Macromol",
+   "year": "2026",
+   "quotes": [
+    "SLU-PP-332 is a well-established exercise mimetic and widely used chemical probe for ERR activation"
+   ]
+  },
+  "41588687": {
+   "title": "In Vitro Metabolism and Analytical Characterization of SLU-PP-332 and SLU-PP-915: Novel Pan-ERR Agonists With Doping Potential",
+   "journal": "Rapid Commun Mass Spectrom",
+   "year": "2026",
+   "quotes": [
+    "This capability prompted the consideration of these compounds as drugs potentially relevant for sports drug testing programs.",
+    "human liver S9 fraction",
+    "A total of nine metabolites were identified for SLU-PP-332",
+    "This may help to uncover the illicit use of these novel compounds as potential performance-enhancing substances."
+   ]
+  },
+  "41688415": {
+   "title": "Analysis and Identification of In Vitro Metabolites of Exercise Mimetic SLU-PP-332 ERRα/β/γ Agonist for Doping-Control Purposes",
+   "journal": "Drug Test Anal",
+   "year": "2026",
+   "quotes": [
+    "The World Anti-Doping Agency (WADA) prohibits the use of exercise mimetics and metabolic modulators in sports.",
+    "The identification of metabolites of this emerging therapeutic molecule is a critical step towards detecting its misuse.",
+    "the 22 metabolites"
+   ]
+  },
+  "42024694": {
+   "title": "[Pharmacological Activation of ERRα/β/γ as an Exercise Mimetic: Potential Therapeutic Applications]",
+   "journal": "Rev Med Chil",
+   "year": "2026",
+   "quotes": [
+    "including experimental studies in animals and cell models",
+    "SLU-PP-332 and SLU-PP-915 reduce adiposity, improve glycemic control, and increase basal energy expenditure in obesity models, without evident toxicity.",
+    "Clinical trials are needed to confirm their efficacy and safety in humans."
+   ]
+  },
+  "41475667": {
+   "title": "Estrogen-related receptor α in breast cancer: From molecular insights to targeted therapy",
+   "journal": "Biochim Biophys Acta Rev Cancer",
+   "year": "2026",
+   "quotes": [
+    "has emerged as a key regulator of tumor energy metabolism and a crucial driver of breast cancer progression"
+   ]
+  }
+ },
+ "full_text_quotes": {
+  "pmc_11584170.txt": [
+   "mice treated with the ERR agonist were able to run ∼70% longer and ∼45% further than vehicle-treated mice",
+   "(n = 6 per group)",
+   "we treated sedentary mice with SLU-PP-332 or vehicle for 7 days",
+   "We observed no overt toxicity in mice administered SLU-PP-332",
+   "which is consistent with the normal complete blood count and electrolyte levels",
+   "the mERRα−/− treated with SLU-PP-332 displayed exercise endurance equivalent to vehicle-treated mERRα−/− mice",
+   "intraperitoneal (i.p.) administration in mice",
+   "T.P.B., B.E., and J.K.W. are stockholders in Myonid Therapeutics, Inc., which focuses on ERR based therapeutics."
+  ],
+  "pmc_10801787_page.txt": [
+   "after 28 days of treatment the drug treated mice weighed ∼12% less",
+   "vehicle-treated mice had gained ∼5 g of fat mass while drug-treated mice had gained less than 0.5 g of fat mass",
+   "No difference in total body weight was observed after 28 days of treatment with SLU-PP-332",
+   "Three weeks of SLU-PP-332 treatment did not affect glucose tolerance",
+   "8 to 10 male C57BL6/J or ob/ob mice per group",
+   "T.P.B., J.K.W., and B.E. are stockholders in Myonid Therapeutics, Inc. and Pelagos Pharmaceuticals, Inc."
+  ],
+  "pmc_10842599.txt": [
+   "Lilei Zhang is the co-founder and consultant for Pelagos Pharmaceuticals Inc."
+  ]
+ },
+ "competing_interest_statements": {
+  "37421886": "John K. Walker has patent #WO2019036562; Heteroaromatics as ERR inverse agonists and their preparation licensed to Myonid Therapeutics.",
+  "37717940": "None declared.",
+  "41421047": "SLU-PP-915 is covered under the intellectual property of Saint Louis University, with Thomas P. Burris as an inventor. Thomas P. Burris is also a stockholder in Myonid Therapeutics, Inc, and Pelagos Pharmaceuticals, Inc, which are both active in developing ERR agonists.",
+  "41850449": "B.E. and T.P.B. are cofounders and hold stock in Pelagos Pharmaceuticals, Inc.",
+  "41588687": "The authors declare no conflicts of interest."
+ },
+ "press_releases": {
+  "uf_news_2023_09_27": {
+   "url": "https://news.ufl.edu/2023/09/exercise-mimicking-drug/",
+   "quotes": [
+    "The new treatment is in the early stages of development but could one day be tested in people",
+    "So far, the drug hasn’t generated any severe side effects.",
+    "The next step in developing SLU-PP-332 into a drug candidate will be to refine its structure, ideally making it available as a pill instead of an injection.",
+    "Then the drug would be tested for side effects in more animal models before making the jump to human trials.",
+    "This compound is basically telling skeletal muscle to make the same changes you see during endurance training"
+   ]
+  },
+  "acs_2024_03_18": {
+   "url": "https://www.acs.org/pressroom/presspacs/2024/march/mimicking-exercise-with-a-pill.html",
+   "quotes": [
+    "appear capable of mimicking the physical boost of working out — at least within rodent cells",
+    "We cannot replace exercise; exercise is important on all levels",
+    "While SLU-PP-332 cannot pass into the brain",
+    "Elgendy and his colleagues hope to test the new compounds in animal models through Pelagos Pharmaceuticals, a startup company they have co-founded."
+   ]
+  }
+ },
+ "wada_2027": {
+  "list_url": "https://www.wada-ama.org/sites/default/files/2026-09/2027list_en_final_clean_26_august_2026_2.pdf",
+  "read_from": "FIS mirror of the identical file (wada-ama.org returned an empty 202 to the box)",
+  "section": "S4.4.1 Metabolic modulators",
+  "quotes": [
+   "SLU-PP-332, SLU-PP-915 and related substances",
+   "METABOLIC MODULATORS",
+   "This List shall come into effect on 1 January 2027."
+  ],
+  "news_url": "https://www.wada-ama.org/en/news/wada-publishes-2027-prohibited-list",
+  "news_published": "2026-09-21",
+  "news_quote": "enters into force on 1 January 2027"
+ },
+ "usada": {
+  "url": "https://www.usada.org/spirit-of-sport/athlete-advisory-2027-prohibited-list/",
+  "quotes": [
+   "SLU-PP-332 and SLU-PP-915 (metabolic modulators acting on oxidative metabolism)",
+   "January 1, 2027"
+  ]
+ },
+ "fda": {
+  "drugsfda_matches": 0,
+  "faers_reports": 0,
+  "enforcement_reports": 0,
+  "ndc_last_updated": "2026-10-23",
+  "ndc_bulk_listings": {
+   "total": 5,
+   "distinct_labelers": 5,
+   "by_category": {
+    "BULK INGREDIENT": 3,
+    "BULK INGREDIENT FOR HUMAN PRESCRIPTION COMPOUNDING": 2
+   },
+   "by_start_year": {
+    "2025": 3,
+    "2026": 2
+   },
+   "substance_field_matches_published_structure": 2,
+   "substance_field_other": 3,
+   "note": "Labelers counted, not named. A listing is a registration, not an FDA approval or quality finding, and says nothing about what any product contains."
+  },
+  "cats_503a_mentions": 0,
+  "cats_503a_updated": "2026-05-14"
+ },
+ "clinicaltrials_gov": {
+  "SLU-PP-332": 0,
+  "SLU-PP-915": 0
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Every SLU-PP-332 result we found comes from mice or cells in a dish; no human has been given it in any published or registered trial. The headline endurance result came from 6 mice per group given injections; the developers later reported it lacks oral bioavailability and built an oral successor (SLU-PP-915). Developers disclose stock in companies working on ERR drugs. WADA bans it at all times from January 1, 2027."
+ }
+}
