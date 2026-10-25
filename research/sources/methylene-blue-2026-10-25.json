@@ -1,0 +1,371 @@
+{
+ "checked": "2026-10-25",
+ "page": "https://jabbitapp.com/research/methylene-blue-nootropic-longevity-mitochondria-evidence-teardown.html",
+ "fda_label": {
+  "name": "PROVAYBLUE (methylene blue) injection",
+  "setid": "4f6848e5-35ed-4046-b13c-3032b5ba3232",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f6848e5-35ed-4046-b13c-3032b5ba3232",
+  "quotes": [
+   "PROVAYBLUE is indicated for the treatment of pediatric and adult patients with acquired methemoglobinemia.",
+   "PROVAYBLUE may cause serious or fatal serotonergic syndrome when used in combination with serotonergic drugs and opioids.",
+   "Avoid concomitant use of PROVAYBLUE with selective serotonin reuptake inhibitors (SSRIs), serotonin norepinephrine reuptake inhibitors (SNRIs), monoamine oxidase inhibitors (MAOIs) and opioids.",
+   "Patients with glucose-6-phosphate dehydrogenase deficiency (G6PD) due to the risk of hemolytic anemia",
+   "The presence of methylene blue in the blood may result in an underestimation of the oxygen saturation reading by pulse oximetry.",
+   "PROVAYBLUE may cause fetal harm when administered to a pregnant woman.",
+   "Treatment with PROVAYBLUE may cause confusion, dizziness and disturbances in vision",
+   "Advise patients that PROVAYBLUE may cause a blue discoloration of the skin and body fluids",
+   "Initial U.S. Approval: 2016",
+   "PROVAYBLUE (methylene blue) injection, USP"
+  ],
+  "boxed_warning": "Serotonin syndrome with concomitant use of serotonergic drugs"
+ },
+ "drugsfda": {
+  "applications": 8,
+  "nda": "NDA204630",
+  "nda_original_approval": "2016-04-08",
+  "anda": 7,
+  "routes": {
+   "INTRAVENOUS": 12
+  }
+ },
+ "faers": {
+  "reports_naming_methylene_blue": 1605,
+  "reports_with_serotonin_syndrome": 518,
+  "last_updated": "2026-07-30",
+  "top_reactions": [
+   {
+    "term": "SEROTONIN SYNDROME",
+    "count": 518
+   },
+   {
+    "term": "DRUG INTERACTION",
+    "count": 401
+   },
+   {
+    "term": "DRUG INEFFECTIVE",
+    "count": 301
+   },
+   {
+    "term": "HYPOTENSION",
+    "count": 212
+   },
+   {
+    "term": "OFF LABEL USE",
+    "count": 194
+   }
+  ]
+ },
+ "tga_alert": {
+  "url": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/imported-unregistered-methylene-blue-products",
+  "published": "2025-09-25",
+  "quotes": [
+   "increasing importation and use of unregistered oral methylene blue (methylthioninium chloride) products in Australia",
+   "These products are being promoted for unapproved (off-label) uses, such as cognitive enhancement, mood improvement, and anti-ageing effects.",
+   "They have not been assessed by us for quality, safety or efficacy",
+   "may contain incorrect or undisclosed and harmful ingredients",
+   "Methylene blue should not be used during pregnancy.",
+   "Do not use oral methylene blue products unless advised or prescribed by a healthcare professional.",
+   "We will notify the Australian Border Force (ABF) to seize and destroy",
+   "Most methylene blue products imported from online stores do not include clear instructions or warnings.",
+   "Medicines that affect serotonin levels such as some painkillers and selective serotonin reuptake inhibitors (SSRIs), a common type of antidepressant, can cause serotonin syndrome when taken with methylene blue.",
+   "may experience red blood cell damage (haemolysis) if they take methylene blue."
+  ]
+ },
+ "taurx_company_statements": {
+  "faq": {
+   "url": "https://taurx.com/medical-professionals/frequently-asked-questions",
+   "quotes": [
+    "It is not approved or licensed by any medicines regulator and is not available to be prescribed.",
+    "HMTM was granted an Innovation Passport by the MHRA in 2022",
+    "a final decision on our Marketing Authorisation Application (MAA) expected in 2026"
+   ]
+  },
+  "mhra_response_2025_10_01": {
+   "url": "https://taurx.com/insights/industry-news/mhra-response-to-hmtm-marketing-authorisation-application",
+   "quote": "it requires some further information before a final determination on the suitability of hydromethylthionine mesylate (HMTM), as a potential oral treatment for Alzheimer’s disease, can be reached."
+  },
+  "rfi_2025_06_04": {
+   "url": "https://taurx.com/insights/industry-news/taurx-finalises-responses-to-mhra-request-for-information",
+   "quote": "TauRx can confirm it has completed the request for information (RFI) received from the Medicines and Healthcare products Regulatory Agency (MHRA)"
+  }
+ },
+ "registry": {
+  "clinicaltrials_gov_methylene_blue_records": 343,
+  "hmtm_lmtm_records": {
+   "NCT04370288": [
+    "UNKNOWN",
+    "PHASE1",
+    20
+   ],
+   "NCT02245568": [
+    "TERMINATED",
+    "PHASE3",
+    913
+   ],
+   "NCT01626378": [
+    "COMPLETED",
+    "PHASE3",
+    220
+   ],
+   "NCT01689233": [
+    "COMPLETED",
+    "PHASE3",
+    800
+   ],
+   "NCT01689246": [
+    "COMPLETED",
+    "PHASE3",
+    891
+   ],
+   "NCT03539380": [
+    "AVAILABLE",
+    "NA",
+    null
+   ],
+   "NCT03446001": [
+    "COMPLETED",
+    "PHASE3",
+    598
+   ],
+   "NCT01626391": [
+    "TERMINATED",
+    "PHASE2",
+    9
+   ]
+  }
+ },
+ "pubmed": {
+  "rct_methylene_blue_cognition_memory": 8,
+  "rct_methylene_blue_aging_longevity": 2,
+  "rct_aging_note": "Both hits are dental/photodynamic studies, not trials of taking methylene blue for aging."
+ },
+ "key_trials": [
+  {
+   "trial": "Lancet 2016, mild-moderate Alzheimer's",
+   "n": 891,
+   "result": "Main goals not met",
+   "pmid": "27863809"
+  },
+  {
+   "trial": "2018 mild Alzheimer's trial",
+   "n": 800,
+   "result": "Plan revised; non-randomized comparison",
+   "pmid": "29154277"
+  },
+  {
+   "trial": "LUCIDITY 2026, Alzheimer's/MCI",
+   "n": 598,
+   "result": "Main goals not met at 52 weeks",
+   "pmid": "41570392"
+  },
+  {
+   "trial": "Phase 2 2015, Alzheimer's",
+   "n": 321,
+   "result": "Mixed, dose-finding",
+   "pmid": "25550228"
+  },
+  {
+   "trial": "Surgery 2021, IV, open-label",
+   "n": 248,
+   "result": "Less delirium after surgery",
+   "pmid": "33091706"
+  },
+  {
+   "trial": "PTSD 2017, with exposure therapy",
+   "n": 42,
+   "result": "Some gains; mixed at 3 months",
+   "pmid": "28686823"
+  },
+  {
+   "trial": "Claustrophobia 2014",
+   "n": 42,
+   "result": "Helped or hurt, depending",
+   "pmid": "25018057"
+  },
+  {
+   "trial": "Bipolar 2017, add-on",
+   "n": 37,
+   "result": "Mood better; cognition not",
+   "pmid": "27284082"
+  },
+  {
+   "trial": "Healthy adults 2016, one dose",
+   "n": 26,
+   "result": "7% more correct memory answers",
+   "pmid": "27351678"
+  }
+ ],
+ "key_trials_total_n": 3005,
+ "abstract_quotes": {
+  "27863809": {
+   "title": "Efficacy and safety of tau-aggregation inhibitor therapy in patients with mild or moderate Alzheimer's disease: a randomised, controlled, double-blind, parallel-arm, phase 3 trial",
+   "journal": "Lancet",
+   "year": "2016",
+   "quotes": [
+    "we recruited and randomly assigned 891 participants",
+    "The prespecified primary analyses did not show any treatment benefit at either of the doses tested for the coprimary outcomes",
+    "the results do not suggest benefit of LMTM as an add-on treatment for patients with mild to moderate Alzheimer's disease.",
+    "Gastrointestinal and urinary effects were the most common adverse events"
+   ]
+  },
+  "29154277": {
+   "title": "Potential of Low Dose Leuco-Methylthioninium Bis(Hydromethanesulphonate) (LMTM) Monotherapy for Treatment of Mild Alzheimer's Disease: Cohort Analysis as Modified Primary Outcome in a Phase III Clinical Trial",
+   "journal": "J Alzheimers Dis",
+   "year": "2018",
+   "quotes": [
+    "Mild AD patients (n = 800)",
+    "Prior to unblinding, the Statistical Analysis Plan was revised",
+    "non-randomized cohort analyses",
+    "A further suitably randomized trial is required to test this hypothesis."
+   ]
+  },
+  "41570392": {
+   "title": "Clinical, imaging and blood biomarker outcomes in a Phase 3 clinical trial of tau aggregation inhibitor hydromethylthionine mesylate in mild cognitive impairment and mild to moderate dementia due to Alzheimer's disease",
+   "journal": "J Prev Alzheimers Dis",
+   "year": "2026",
+   "quotes": [
+    "A total of 598 amyloid β-PET positive participants were included",
+    "intended as an inactive urinary colourant",
+    "It was not possible to demonstrate significant differences on the co-primary clinical endpoints (ADAS-cog11 and ADCS-ADL23) at 52 weeks due to symptomatic activity in the control arm.",
+    "In participants with MCI, significant clinical separation was seen only at 78 and 104 weeks.",
+    "Headache (1·5%) and diarrhoea (1·2%) were the most frequent adverse effects."
+   ]
+  },
+  "36281683": {
+   "title": "Oral Tau Aggregation Inhibitor for Alzheimer's Disease: Design, Progress and Basis for Selection of the 16 mg/day Dose in a Phase 3, Randomized, Placebo-Controlled Trial of Hydromethylthionine Mesylate",
+   "journal": "J Prev Alzheimers Dis",
+   "year": "2022",
+   "quotes": [
+    "The trial comprises a 12-month double-blind, placebo-controlled phase"
+   ]
+  },
+  "42000569": {
+   "title": "Assessment of clinical and neuroimaging efficacy of treatment targeting tau pathology in mild cognitive impairment and mild to moderate Alzheimer's disease with hydromethylthionine mesylate using external control data",
+   "journal": "J Prev Alzheimers Dis",
+   "year": "2026",
+   "quotes": [
+    "A traditional randomised placebo-controlled trial (RCT) was precluded by loss of blinding due to urinary colouration and therapeutic activity",
+    "Propensity score matching yielded 127 pairs"
+   ]
+  },
+  "41917677": {
+   "title": "Atypical population pharmacokinetics of hydromethylthionine in patients with Alzheimer's disease explains unexpected phase 3 trial results",
+   "journal": "Br J Clin Pharmacol",
+   "year": "2026",
+   "quotes": [
+    "The data suggest it is not possible to maintain comparable urinary discolouration without therapeutic activity in a standard placebo-controlled trial design."
+   ]
+  },
+  "25550228": {
+   "title": "Tau aggregation inhibitor therapy: an exploratory phase 2 study in mild or moderate Alzheimer's disease",
+   "journal": "J Alzheimers Dis",
+   "year": "2015",
+   "quotes": [
+    "An exploratory double-blind, randomized, placebo-controlled, dose-finding trial",
+    "conducted in 321 mild/moderate AD subjects",
+    "The delivery of the highest dose was impaired due to dose-dependent dissolution and absorption limitations.",
+    "further study of MT is warranted in AD."
+   ]
+  },
+  "42702342": {
+   "title": "From target engagement to translational disconnect: A systematic review and narrative synthesis of direct tau-targeted clinical trials in Alzheimer's disease and primary tauopathies",
+   "journal": "Pharmacol Res",
+   "year": "2026",
+   "quotes": [
+    "the small-molecule aggregation inhibitor LMTM did not demonstrate consistent clinical benefit in phase 3 trials."
+   ]
+  },
+  "32037892": {
+   "title": "An evaluation of hydromethylthionine as a treatment option for Alzheimer's disease",
+   "journal": "Expert Opin Pharmacother",
+   "year": "2020",
+   "quotes": [
+    "Derived from methylene blue, hydromethylthionine is a tau aggregation inhibitor",
+    "Randomized clinical trials with hydromethylthionine failed to show any impact of the doses used on the disease course."
+   ]
+  },
+  "27351678": {
+   "title": "Multimodal Randomized Functional MR Imaging of the Effects of Methylene Blue in the Human Brain",
+   "journal": "Radiology",
+   "year": "2016",
+   "quotes": [
+    "Twenty-six subjects (age range, 22-62 years) were enrolled.",
+    "Methylene blue was also associated with a 7% increase in correct responses during memory retrieval (P = .01)."
+   ]
+  },
+  "27284082": {
+   "title": "Methylene blue treatment for residual symptoms of bipolar disorder: randomised crossover study",
+   "journal": "Br J Psychiatry",
+   "year": "2017",
+   "quotes": [
+    "Thirty-seven participants were enrolled",
+    "The effects of methylene blue on cognitive symptoms were not significant."
+   ]
+  },
+  "28686823": {
+   "title": "Enhancing Extinction Learning in Posttraumatic Stress Disorder With Brief Daily Imaginal Exposure and Methylene Blue: A Randomized Controlled Trial",
+   "journal": "J Clin Psychiatry",
+   "year": "2017",
+   "quotes": [
+    "Patients with chronic PTSD (DSM-IV-TR; N = 42)",
+    "Both IE + MB and IE + PBO showed strong clinical gains that did not differ from standard PE at 3-month follow-up.",
+    "The findings provide preliminary efficacy for a brief IE treatment for PTSD"
+   ]
+  },
+  "25018057": {
+   "title": "Effects of post-session administration of methylene blue on fear extinction and contextual memory in adults with claustrophobia",
+   "journal": "Am J Psychiatry",
+   "year": "2014",
+   "quotes": [
+    "(N=23)",
+    "(N=19)",
+    "participants displaying moderate to high levels of posttraining fear tended to fare worse at the follow-up if they received methylene blue posttraining.",
+    "may have a deleterious effect on extinction when administered after an unsuccessful exposure session."
+   ]
+  },
+  "33091706": {
+   "title": "Methylene blue reduces incidence of early postoperative cognitive disorders in elderly patients undergoing major non-cardiac surgery: An open-label randomized controlled clinical trial",
+   "journal": "J Clin Anesth",
+   "year": "2021",
+   "quotes": [
+    "Prospective, randomized, open-label clinical trial.",
+    "Two hundred and forty-eight elderly patients",
+    "(7.3% vs. 24.2%, OR = 0.24"
+   ]
+  },
+  "17721552": {
+   "title": "Methylene blue and serotonin toxicity: inhibition of monoamine oxidase A (MAO A) confirms a theoretical prediction",
+   "journal": "Br J Pharmacol",
+   "year": "2007",
+   "quotes": [
+    "MB was a potent (tight binding) inhibitor for MAO A.",
+    "MB is a potent reversible inhibitor of MAO A with implications for gut uptake of amines when administered orally.",
+    "This inhibition of MAO A would be expected to lead to perturbations of 5-hydroxytryptamine metabolism and hence account for ST occurring when administered to patients on SSRI treatment."
+   ]
+  },
+  "28840449": {
+   "title": "From Mitochondrial Function to Neuroprotection-an Emerging Role for Methylene Blue",
+   "journal": "Mol Neurobiol",
+   "year": "2018",
+   "quotes": [
+    "MB can reroute electrons in the mitochondrial electron transfer chain directly from NADH to cytochrome c",
+    "In both in vitro and in vivo studies, MB has shown impressive efficacy in mitigating neurodegeneration"
+   ]
+  }
+ },
+ "title_only": {
+  "37828274": {
+   "title": "Methylene Blue-Induced Serotonin Toxicity: Case Files of the Medical Toxicology Fellowship at the New York City Poison Control Center",
+   "journal": "J Med Toxicol",
+   "year": "2024"
+  },
+  "41725094": {
+   "title": "Methylene blue and the social media phenomenon: Key information for nurses",
+   "journal": "Nursing",
+   "year": "2026"
+  }
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Methylene blue is an FDA-approved intravenous drug for acquired methemoglobinemia with a boxed warning for serotonin syndrome. Its nootropic and longevity claims rest on lab and animal work and a handful of small human studies; the derivative drug tested in three phase 3 Alzheimer's trials missed its main goals as designed and is not approved anywhere, with a UK decision pending per the company."
+ }
+}
