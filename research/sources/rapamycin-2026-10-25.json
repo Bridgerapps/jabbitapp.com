@@ -1,0 +1,400 @@
+{
+ "checked": "2026-10-25",
+ "page": "https://jabbitapp.com/research/rapamycin-sirolimus-longevity-anti-aging-evidence-teardown.html",
+ "fda_label": {
+  "name": "Sirolimus tablets (generic of RAPAMUNE), Glenmark",
+  "setid": "57fb4d90-3ccb-4a69-af1e-53be83f7a504",
+  "effective": "2026-01-28",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57fb4d90-3ccb-4a69-af1e-53be83f7a504",
+  "quotes": [
+   "WARNING: IMMUNOSUPPRESSION, USE IS NOT RECOMMENDED IN LIVER OR LUNG TRANSPLANT PATIENTS",
+   "Increased susceptibility to infection and the possible development of lymphoma and other malignancies may result from immunosuppression",
+   "Sirolimus tablets are indicated for the prophylaxis of organ rejection in patients aged 13 years or older receiving renal transplants.",
+   "Sirolimus tablets are indicated for the treatment of patients with lymphangioleiomyomatosis (LAM).",
+   "Oversuppression of the immune system can also increase susceptibility to infection, including opportunistic infections such as tuberculosis, fatal infections, and sepsis.",
+   "There have been reports of impaired or delayed wound healing in patients receiving sirolimus",
+   "Increased serum cholesterol and triglycerides requiring treatment occurred more frequently in patients treated with sirolimus",
+   "Patients on immunosuppressive therapy are at increased risk for skin cancer.",
+   "The use of live vaccines should be avoided during treatment with sirolimus",
+   "Because grapefruit juice inhibits the CYP3A4-mediated metabolism of sirolimus, it must not be taken with or be used for dilution of sirolimus",
+   "sirolimus can cause fetal harm when administered to a pregnant woman",
+   "Azoospermia or oligospermia may be observed",
+   "Cases of interstitial lung disease (including pneumonitis, bronchiolitis obliterans organizing pneumonia [BOOP], and pulmonary fibrosis), some fatal",
+   "stomatitis, diarrhea, abdominal pain, nausea, nasopharyngitis, acne, chest pain, peripheral edema",
+   "hypophosphatemia, hyperglycemia, diabetes mellitus"
+  ]
+ },
+ "hyftor_label": {
+  "setid": "edb3ea90-5adc-48ec-99f5-ab963e302f18",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=edb3ea90-5adc-48ec-99f5-ab963e302f18",
+  "quote": "HYFTOR is indicated for the treatment of facial angiofibroma associated with tuberous sclerosis in adults and pediatric patients 6 years of age and older."
+ },
+ "drugsfda": {
+  "applications": 16,
+  "anda": 11,
+  "nda": {
+   "NDA021083": "RAPAMUNE oral solution, 1999-09-15",
+   "NDA021110": "RAPAMUNE tablets, 2000-08-25",
+   "NDA213312": "FYARRO IV, 2021-11-22",
+   "NDA213478": "HYFTOR topical gel, 2022-03-22",
+   "NDA218528": "SCOMARA topical cream, 2026-07-20"
+  }
+ },
+ "registry": {
+  "clinicaltrials_gov_rapamycin_sirolimus_with_aging_terms": 83,
+  "note": "Broad search; most records are transplant, cancer or stent studies. We did not classify them all.",
+  "selected": {
+   "NCT04488601": [
+    "COMPLETED",
+    129,
+    "AgelessRx"
+   ],
+   "NCT06550271": [
+    "COMPLETED",
+    67,
+    "AgelessRx"
+   ],
+   "NCT07475546": [
+    "ACTIVE_NOT_RECRUITING",
+    30,
+    "AgelessRx"
+   ],
+   "NCT06658093": [
+    "RECRUITING",
+    194,
+    "The University of Texas Health Science Center at San Antonio"
+   ],
+   "NCT04629495": [
+    "ACTIVE_NOT_RECRUITING",
+    40,
+    "The University of Texas Health Science Center at San Antonio"
+   ],
+   "NCT05835999": [
+    "COMPLETED",
+    106,
+    "University of Wisconsin, Madison"
+   ],
+   "NCT04200911": [
+    "COMPLETED",
+    10,
+    "The University of Texas Health Science Center at San Antonio"
+   ],
+   "NCT06022068": [
+    "COMPLETED",
+    14,
+    "Karolinska Institutet"
+   ],
+   "NCT03373903": [
+    "ACTIVE_NOT_RECRUITING",
+    652,
+    "Restorbio Inc."
+   ],
+   "NCT04139915": [
+    "WITHDRAWN",
+    0,
+    "Restorbio Inc."
+   ],
+   "NCT05237687": [
+    "RECRUITING",
+    10,
+    "Irina Timofte"
+   ],
+   "NCT07728175": [
+    "RECRUITING",
+    225,
+    "University of Missouri-Columbia"
+   ]
+  }
+ },
+ "pubmed": {
+  "query": "(rapamycin[tiab] OR sirolimus[tiab]) AND (aging[tiab] OR ageing[tiab] OR longevity[tiab] OR healthspan[tiab] OR lifespan[tiab]) AND randomized controlled trial[pt]",
+  "count": 18,
+  "idlist": [
+   "41985884",
+   "40188830",
+   "35914953",
+   "33977284",
+   "33888596",
+   "31761958",
+   "31095313",
+   "30932134",
+   "29997249",
+   "29408453",
+   "28732480",
+   "28482746",
+   "28374166",
+   "27798330",
+   "25540326",
+   "25332468",
+   "22859389",
+   "20150565"
+  ],
+  "human_trials_of_rapamycin_type_drugs_for_aging_outcomes": [
+   "25540326",
+   "29408453",
+   "29997249",
+   "31761958",
+   "33977284",
+   "40188830",
+   "41985884"
+  ],
+  "note": "The other records are dog, mouse, nutrition or exercise-signaling studies, or other drugs."
+ },
+ "utsa_release": {
+  "url": "https://news.utsa.edu/2026/03/large-rapamycin-clinical-trial-launches-at-ut-health-san-antonio/",
+  "published": "2026-03-16",
+  "quotes": [
+   "It is a randomized, placebo-controlled clinical trial involving approximately 84 older adults",
+   "Rapamycin is widely discussed in popular culture as a longevity drug",
+   "But there’s a difference between something that is biologically plausible and something that has been rigorously tested in people.",
+   "Some individuals are experimenting with the drug on their own, often without medical supervision or reliable information about dosing or risks."
+  ]
+ },
+ "key_trials": [
+  {
+   "trial": "RTB101 phase 3, 2021 (related drug)",
+   "n": 1024,
+   "result": "Main goal not met",
+   "pmid": "33977284"
+  },
+  {
+   "trial": "RTB101 phase 2b, 2021 (related drug)",
+   "n": 652,
+   "result": "First analysis missed; pooled analysis hit",
+   "pmid": "33977284"
+  },
+  {
+   "trial": "Phase 2a, 2018 (two related drugs)",
+   "n": 264,
+   "result": "Fewer infections reported",
+   "pmid": "29997249"
+  },
+  {
+   "trial": "PEARL, 2025 (registry count)",
+   "n": 129,
+   "result": "Main goal not met; some gains in women",
+   "pmid": "40188830"
+  },
+  {
+   "trial": "RAPA-EX-01, 2026",
+   "n": 40,
+   "result": "No benefit; may blunt exercise gains",
+   "pmid": "41985884"
+  },
+  {
+   "trial": "Topical skin cream, 2019",
+   "n": 36,
+   "result": "Skin aging markers improved",
+   "pmid": "31761958"
+  },
+  {
+   "trial": "Older-adult safety pilot, 2018",
+   "n": 25,
+   "result": "No clear changes; red-cell dips",
+   "pmid": "29408453"
+  }
+ ],
+ "key_trials_total_n": 2170,
+ "abstract_quotes": {
+  "1102508": {
+   "title": "Rapamycin (AY-22,989), a new antifungal antibiotic. I. Taxonomy of the producing streptomycete and isolation of the active principle",
+   "journal": "J Antibiot (Tokyo)",
+   "year": "1975",
+   "quotes": [
+    "A streptomycete was isolated from an Easter Island soil sample",
+    "isolated in crystalline form and named rapamycin"
+   ]
+  },
+  "19587680": {
+   "title": "Rapamycin fed late in life extends lifespan in genetically heterogeneous mice",
+   "journal": "Nature",
+   "year": "2009",
+   "quotes": [
+    "extends lifespan in invertebrates, including yeast, nematodes and fruitflies",
+    "rapamycin, an inhibitor of the mTOR pathway, extends median and maximal lifespan of both male and female mice when fed beginning at 600 days of age",
+    "On the basis of age at 90% mortality, rapamycin led to an increase of 14% for females and 9% for males.",
+    "The effect was seen at three independent test sites in genetically heterogeneous mice",
+    "Rapamycin may extend lifespan by postponing death from cancer, by retarding mechanisms of ageing, or both."
+   ]
+  },
+  "24341993": {
+   "title": "Rapamycin-mediated lifespan increase in mice is dose and sex dependent and metabolically distinct from dietary restriction",
+   "journal": "Aging Cell",
+   "year": "2014",
+   "quotes": [
+    "Rapamycin increased lifespan more in females than in males at each dose evaluated"
+   ]
+  },
+  "27549339": {
+   "title": "Transient rapamycin treatment can increase lifespan and healthspan in middle-aged mice",
+   "journal": "Elife",
+   "year": "2016",
+   "quotes": [
+    "3 months of rapamycin treatment is sufficient to increase life expectancy by up to 60% and improve measures of healthspan in middle-aged mice",
+    "a striking shift in cancer prevalence toward aggressive hematopoietic cancers"
+   ]
+  },
+  "25540326": {
+   "title": "mTOR inhibition improves immune function in the elderly",
+   "journal": "Sci Transl Med",
+   "year": "2014",
+   "quotes": [
+    "RAD001 enhanced the response to the influenza vaccine by about 20% at doses that were relatively well tolerated.",
+    "These results raise the possibility that mTOR inhibition may have beneficial effects on immunosenescence in the elderly."
+   ]
+  },
+  "29997249": {
+   "title": "TORC1 inhibition enhances immune function and reduces infections in the elderly",
+   "journal": "Sci Transl Med",
+   "year": "2018",
+   "quotes": [
+    "264 elderly subjects given the study drugs for 6 weeks",
+    "was safe and was associated with a significant (P = 0.001) decrease in the rate of infections reported by elderly subjects for a year after study drug initiation"
+   ]
+  },
+  "33977284": {
+   "title": "Targeting the biology of ageing with mTOR inhibitors to improve immune function in older adults: phase 2b and phase 3 randomised trials",
+   "journal": "Lancet Healthy Longev",
+   "year": "2021",
+   "quotes": [
+    "we recruited 652 participants in total",
+    "we enrolled 1024 patients",
+    "did not meet statistical significance but, in our second prespecified analysis, which included data from part 1 and part 2, we found a statistically significant reduction in the proportion of patients who had one or more laboratory-confirmed RTIs",
+    "RTB101 did not reduce the proportion of patients with clinically symptomatic respiratory illness",
+    "The study drug was found to be safe and well-tolerated across trials and treatment groups.",
+    "In both trials, significantly more IFN-induced antiviral genes were upregulated in patients treated with RTB101 as compared with placebo"
+   ]
+  },
+  "29408453": {
+   "title": "A randomized control trial to establish the feasibility and safety of rapamycin treatment in an older human cohort: Immunological, physical performance, and cognitive effects",
+   "journal": "Exp Gerontol",
+   "year": "2018",
+   "quotes": [
+    "placebo-controlled pilot study in 25 generally healthy older adults (aged 70-95 years)",
+    "these were limited to facial rash (1 subject), stomatitis (1 subject) and gastrointestinal issues (2 subjects)",
+    "statistically significant decrements in several erythrocyte parameters including hemoglobin (HgB) and hematocrit (Hct)",
+    "no changes were noted in any other clinical laboratory, cognitive, physical performance, or self-perceived health status measure over the study period",
+    "the OGTTs revealed no RAPA-induced change in blood glucose concentration, insulin secretion, and insulin sensitivity"
+   ]
+  },
+  "40188830": {
+   "title": "Influence of rapamycin on safety and healthspan metrics after one year: PEARL trial results",
+   "journal": "Aging (Albany NY)",
+   "year": "2025",
+   "quotes": [
+    "This 48-week decentralized, double-blinded, randomized, placebo-controlled trial (NCT04488601)",
+    "The primary outcome measure was visceral adiposity (by DXA scan)",
+    "Adverse and serious adverse events were similar across all groups.",
+    "and was associated with significant improvements in lean tissue mass and pain in women",
+    "Visceral adiposity did not change significantly",
+    "Low-dose, intermittent rapamycin administration over 48 weeks is relatively safe in healthy, normative-aging adults",
+    "Future work will evaluate benefits of a broader range of rapamycin doses on healthspan metrics for longevity, and will aim to more comprehensively establish efficacy."
+   ]
+  },
+  "41985884": {
+   "title": "Exercise and Weekly Sirolimus (Rapamycin) in Older Adults: RAPA-EX-01 Randomised, Double-Blind, Placebo-Controlled Trial",
+   "journal": "J Cachexia Sarcopenia Muscle",
+   "year": "2026",
+   "quotes": [
+    "40 sedentary adults aged 65-85 years",
+    "Both groups improved chair-stand performance.",
+    "Sensitivity analyses favoured placebo and reached statistical significance",
+    "Seventeen participants (85%) in each arm reported ≥ 1 adverse event, but the total burden was higher with sirolimus (99 vs. 63 events), including one possibly drug-related serious adverse event (pneumonia).",
+    "in sensitivity analyses, it may have modestly attenuated short-term functional improvements from a home exercise programme in older adults"
+   ]
+  },
+  "40394335": {
+   "title": "Rapamycin treatment for Alzheimer's disease and related dementias: a pilot phase 1 clinical trial",
+   "journal": "Commun Med (Lond)",
+   "year": "2025",
+   "quotes": [
+    "single-site open-label phase 1 clinical trial",
+    "In ten participants (mean age 74 ± 4 years, 60% female), we find that rapamycin is not detectable in the CSF before or after treatment.",
+    "systolic blood pressure and hemoglobin A1c increase, multiple erythrocyte parameters decrease, and there are no significant cognitive changes",
+    "several Alzheimer's disease and inflammatory biomarkers increase after treatment"
+   ]
+  },
+  "41046300": {
+   "title": "Pharmacokinetic analysis of intermittent rapamycin administration in early-stage Alzheimer's Disease",
+   "journal": "Geroscience",
+   "year": "2026",
+   "quotes": [
+    "the pharmacokinetic properties of weekly oral rapamycin in 13 patients with early-stage AD",
+    "Blood concentrations at Cmin were below immunosuppressive levels in all participants."
+   ]
+  },
+  "40971115": {
+   "title": "Short-term mTOR inhibition by rapamycin improves cardiac and endothelial function in older men: a proof-of concept pilot study",
+   "journal": "Geroscience",
+   "year": "2026",
+   "quotes": [
+    "the open-label study",
+    "In all 6 subjects, transmitral blood flow, peak flow rate, and maximal blood acceleration showed statistically significant improvements while endothelial function also improved",
+    "support future placebo-controlled studies in larger cohorts"
+   ]
+  },
+  "31761958": {
+   "title": "Topical rapamycin reduces markers of senescence and aging in human skin: an exploratory, prospective, randomized trial",
+   "journal": "Geroscience",
+   "year": "2019",
+   "quotes": [
+    "Thirty-six participants were enrolled in the study, and nineteen discontinued or were lost to follow-up.",
+    "A significant (P = 0.008) reduction in p16INK4A protein levels and an increase in collagen VII protein levels (P = 0.0077) were observed"
+   ]
+  },
+  "38310895": {
+   "title": "Targeting ageing with rapamycin and its derivatives in humans: a systematic review",
+   "journal": "Lancet Healthy Longev",
+   "year": "2024",
+   "quotes": [
+    "resulting in 19 included studies",
+    "Overall, no significant effects on the endocrine, muscular, or neurological systems were found.",
+    "No serious adverse events attributed to rapamycin and its derivatives were reported in healthy individuals; however, there were increased numbers of infections and increases in total cholesterol, LDL cholesterol, and triglycerides in individuals with ageing-related diseases.",
+    "Future studies should assess the remaining unexamined systems and test the effects of long-term exposure to rapamycin and its derivatives."
+   ]
+  },
+  "39951177": {
+   "title": "Test of Rapamycin in Aging Dogs (TRIAD): study design and rationale for a prospective, parallel-group, double-masked, randomized, placebo-controlled, multicenter trial of rapamycin in healthy middle-aged dogs from the Dog Aging Project",
+   "journal": "Geroscience",
+   "year": "2025",
+   "quotes": [
+    "The Test of Rapamycin In Aging Dogs (TRIAD) randomized clinical trial is a parallel-group, double-masked, randomized, placebo-controlled, multicenter trial",
+    "the first rigorous test of a pharmacologic intervention against biological aging with lifespan and healthspan metrics as endpoints to be performed outside of the laboratory in any species"
+   ]
+  },
+  "28374166": {
+   "title": "A randomized controlled trial to establish effects of short-term rapamycin treatment in 24 middle-aged companion dogs",
+   "journal": "Geroscience",
+   "year": "2017",
+   "quotes": [
+    "24 middle-aged healthy dogs",
+    "Our results showed no clinical side effects in the rapamycin-treated group compared to dogs receiving the placebo."
+   ]
+  },
+  "27883166": {
+   "title": "Effect of Low-Dose Rapamycin on Senescence Markers and Physical Functioning in Older Adults with Coronary Artery Disease: Results of a Pilot Study",
+   "journal": "J Frailty Aging",
+   "year": "2016",
+   "quotes": [
+    "13 patients;",
+    "elderly undergoing cardiac rehabilitation (CR)",
+    "no improvement in frailty with rapamycin was noted"
+   ]
+  }
+ },
+ "conflict_statements": {
+  "33977284": "were employees of, and had equity in, resTORbio who manufactured RTB101",
+  "40188830": "are employees and shareholders of AgelessRx",
+  "39951177": "MK is a scientific advisor for TriviumVet"
+ },
+ "title_only": {
+  "42759606": {
+   "title": "Rapamycin in Frail Older Subjects with Heart Failure with Preserved Ejection Fraction",
+   "journal": "Mayo Clin Proc",
+   "year": "2026"
+  }
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Rapamycin (sirolimus) is an FDA-approved immunosuppressant with a boxed warning, approved for kidney-transplant rejection prevention and LAM. It extends lifespan in mice, but no human trial has tested lifespan; the human aging trials are small or short, used surrogate measures, and gave mixed results, and the largest trials tested related drugs rather than rapamycin itself."
+ }
+}
