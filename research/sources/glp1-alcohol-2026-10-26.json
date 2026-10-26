@@ -1,0 +1,440 @@
+{
+ "checked": "2026-10-26",
+ "page": "https://jabbitapp.com/research/glp1-ozempic-wegovy-zepbound-alcohol-drinking-evidence-teardown.html",
+ "news": {
+  "guardian_2026_10_23_heineken": {
+   "url": "https://www.theguardian.com/business/2026/oct/23/weight-loss-drugs-beer-sales-heineken-british-pubs-wegovy",
+   "quotes": [
+    "Heineken has warned British bars and pubs that the boom in popularity of weight-loss drugs could lead to a fall in sales of beer and cider.",
+    "could reduce the desire to drink alcohol",
+    "fullness and fewer serves",
+    "The document, revealed by Reuters",
+    "We see some changes in consumption behaviour among (GLP-1) users and will continue to monitor how these behaviours evolve in 2027",
+    "GLP-1 is one of the developments we are monitoring.",
+    "Carlsberg told Reuters that data did not support the view that the use of weight-loss drugs affected beer consumption trends",
+    "Diageo, has told investors that any impact from GLP-1 drugs becoming mainstream should be manageable"
+   ]
+  },
+  "nih_2026_04_30": {
+   "url": "https://www.nih.gov/news-events/news-releases/adding-weekly-glp-1-cognitive-behavioral-therapy-further-reduces-heavy-drinking",
+   "quotes": [
+    "Thursday, April 30, 2026",
+    "enrolled 108 treatment-seeking patients with alcohol use disorder and comorbid obesity",
+    "participants receiving semaglutide experienced a 41.1% reduction in heavy drinking days, a 13.7% greater reduction than that of the placebo group",
+    "Measurements of blood-alcohol biomarkers supported the self-reported-data-based findings.",
+    "its number needed to treat (NNT) — a metric of clinical efficacy — in this study was 4.3, while the NNT of approved medications is 7 or higher",
+    "Questions remain but this is nonetheless very encouraging",
+    "Next, the authors would like to examine the effects of GLP-1s over a longer duration and in a larger population to confirm their findings here."
+   ]
+  },
+  "altimmune_2026_07_28_topline": {
+   "url": "https://www.sec.gov/Archives/edgar/data/1326190/000132619026000044/alt-20260728xex99d1.htm",
+   "note": "Company topline press release; not peer reviewed.",
+   "quotes": [
+    "July 28, 2026",
+    "an investigational balanced glucagon/GLP-1 dual receptor agonist",
+    "Change from baseline in HDD/Week at Week 24 (Primary Endpoint) -2.75 (LS mean) -4.20 (LS mean) -1.45 (LS mean difference) 0.0014",
+    "Zero HDD in Week 21 through Week 24 17.4% (8/46) 42.2% (19/45)",
+    "Nausea 12 (24%) 22 (44%)",
+    "Vomiting 3 (6%) 9 (18%)",
+    "Study drug-related AEs leading to treatment discontinuation 0 (0%) 5 (10%)*",
+    "There was one serious adverse event (SAE) (hyponatremia) in the pemvidutide arm that was deemed possibly related to treatment drug by the principal investigator.",
+    "Results from the RECLAIM trial will be submitted for presentation at a forthcoming medical conference and for publication in a peer-reviewed journal.",
+    "The Company plans to request an End-of-Phase 2 meeting with the U.S. Food and Drug Administration (FDA)"
+   ]
+  },
+  "biospace_2026_09_22": {
+   "url": "https://www.biospace.com/drug-development/lilly-presents-early-data-supporting-glp-1-gip-candidates-potential-in-depression-alcohol-use-disorder",
+   "quotes": [
+    "September 22, 2026",
+    "Topline data for both studies are expected in early 2028.",
+    "Brenipatide is the first GIP/GLP-1 receptor agonist to be investigated globally across AUD, Lilly said in its presentation.",
+    "the RENEW-ALC-1 trial’s primary endpoint is not complete abstinence from alcohol but a change in drinking patterns"
+   ]
+  }
+ },
+ "registry": {
+  "clinicaltrials_gov_alcohol_x_incretin_drugs": 29,
+  "note": "Condition 'alcohol' and intervention list of GLP-1-type drugs; includes some non-AUD studies; we did not classify every record.",
+  "selected": {
+   "NCT05895643": [
+    "COMPLETED",
+    108,
+    "Psychiatric Centre Rigshospitalet",
+    "2025-07-31",
+    false
+   ],
+   "NCT05892432": [
+    "COMPLETED",
+    50,
+    "University of Colorado, Denver",
+    "2025-11-04",
+    false
+   ],
+   "NCT05520775": [
+    "COMPLETED",
+    48,
+    "University of North Carolina, Chapel Hill",
+    "2024-04-12",
+    true
+   ],
+   "NCT03232112": [
+    "COMPLETED",
+    152,
+    "Anders Fink-Jensen, MD, DMSci",
+    "2020-03-15",
+    false
+   ],
+   "NCT06987513": [
+    "COMPLETED",
+    100,
+    "Altimmune, Inc.",
+    "2026-07-30",
+    false
+   ],
+   "NCT07219953": [
+    "RECRUITING",
+    1100,
+    "Eli Lilly and Company",
+    "2028-04",
+    false
+   ],
+   "NCT07219966": [
+    "RECRUITING",
+    1100,
+    "Eli Lilly and Company",
+    "2028-04",
+    false
+   ],
+   "NCT06817356": [
+    "COMPLETED",
+    308,
+    "Eli Lilly and Company",
+    "2026-03-19",
+    false
+   ],
+   "NCT07218354": [
+    "RECRUITING",
+    622,
+    "VA Office of Research and Development",
+    "2029-03-31",
+    false
+   ],
+   "NCT07046819": [
+    "RECRUITING",
+    120,
+    "National Institute on Alcohol Abuse and Alcoholism (NIAAA)",
+    "2027-07-30",
+    false
+   ],
+   "NCT06994338": [
+    "RECRUITING",
+    42,
+    "University of Southern California",
+    "2026-08-31",
+    false
+   ],
+   "NCT07009860": [
+    "ACTIVE_NOT_RECRUITING",
+    121,
+    "Altimmune, Inc.",
+    "2027-09-30",
+    false
+   ],
+   "NCT06015893": [
+    "ACTIVE_NOT_RECRUITING",
+    63,
+    "National Institute on Drug Abuse (NIDA)",
+    "2027-03-31",
+    false
+   ],
+   "NCT05891587": [
+    "COMPLETED",
+    80,
+    "Oklahoma State University Center for Health Sciences",
+    "2025-07-30",
+    false
+   ],
+   "NCT07559500": [
+    "RECRUITING",
+    176,
+    "National Institute on Alcohol Abuse and Alcoholism (NIAAA)",
+    "2031-12-31",
+    false
+   ]
+  }
+ },
+ "pubmed": {
+  "aud_query": "(\"semaglutide\"[Supplementary Concept] OR \"semaglutide\"[All Fields] OR \"semaglutide\"[MeSH Terms] OR (\"tirzepatide\"[Supplementary Concept] OR \"tirzepatide\"[All Fields] OR \"tirzepatide\"[MeSH Terms]) OR (\"liraglutid\"[All Fields] OR \"liraglutide\"[Supplementary Concept] OR \"liraglutide\"[All Fields] OR \"liraglutide\"[MeSH Terms] OR \"liraglutide s\"[All Fields]) OR (\"exenatide\"[Supplementary Concept] OR \"exenatide\"[All Fields] OR \"exenatide\"[MeSH Terms] OR \"exenatide s\"[All Fields]) OR (\"dulaglutide\"[Supplementary Concept] OR \"dulaglutide\"[All Fields]) OR \"GLP-1 receptor agonist\"[Title/Abstract]) AND \"alcohol use disorder\"[Title/Abstract]",
+  "aud_count": 101
+ },
+ "key_trials": [
+  {
+   "trial": "Exenatide, Denmark, 2022",
+   "n": 127,
+   "result": "Main goal missed",
+   "design": "Placebo + CBT",
+   "id": "36066977"
+  },
+  {
+   "trial": "Dulaglutide, Switzerland, 2023*",
+   "n": 151,
+   "result": "29% less alcohol",
+   "design": "Placebo",
+   "id": "37991022"
+  },
+  {
+   "trial": "Semaglutide, Denmark, 2026",
+   "n": 108,
+   "result": "Main goal met",
+   "design": "Placebo + CBT",
+   "id": "42070571"
+  },
+  {
+   "trial": "Pemvidutide (RECLAIM), 2026",
+   "n": 100,
+   "result": "Main goal met (topline)",
+   "design": "Placebo",
+   "id": "NCT06987513"
+  },
+  {
+   "trial": "Oral semaglutide, US, 2026",
+   "n": 50,
+   "result": "Main goal missed",
+   "design": "Placebo",
+   "id": "42522065"
+  },
+  {
+   "trial": "Semaglutide, US, 2025",
+   "n": 48,
+   "result": "Main goal met (lab test)",
+   "design": "Placebo",
+   "id": "39937469"
+  },
+  {
+   "trial": "Mazdutide (Lilly), 2025-26",
+   "n": 308,
+   "result": "Finished; no results posted",
+   "design": "Placebo",
+   "id": "NCT06817356"
+  }
+ ],
+ "key_trials_note": "* Secondary analysis of a smoking-cessation trial (people who drank at baseline and completed 12 weeks). RECLAIM n is registry enrollment; results are company topline. Mazdutide n is registry enrollment.",
+ "abstract_quotes": {
+  "42070571": {
+   "title": "Once-weekly semaglutide versus placebo in patients with alcohol use disorder and comorbid obesity: a randomised, double-blind, placebo-controlled trial",
+   "journal": "Lancet",
+   "year": "2026",
+   "quotes": [
+    "In a 26-week, single-centre, randomised, double-blinded, placebo-controlled trial",
+    "From June 10, 2023, to Feb 4, 2025, 108 participants (53 women and 55 men) were enrolled",
+    "Overall, 88 participants (81%) completed the full intervention.",
+    "Semaglutide was associated with a reduction in heavy drinking days (-41·1 percentage points from baseline, 95% CI -48·7 to -33·5) compared with placebo (-26·4, -34·1 to -18·6; estimated treatment difference -13·7 percentage points, -22·0 to -5·4; p=0·0015)",
+    "Adverse events were transient, generally mild to moderate gastrointestinal effects, and occurred more frequently in the semaglutide group.",
+    "the Novo Nordisk Foundation"
+   ]
+  },
+  "42522065": {
+   "title": "Oral Semaglutide for Alcohol Use Disorder: A Randomized Clinical Trial",
+   "journal": "Am J Psychiatry",
+   "year": "2026",
+   "quotes": [
+    "Fifty individuals with moderate to severe AUD were randomized",
+    "The primary outcome was laboratory-based alcohol cue-elicited craving at week 6.",
+    "Semaglutide did not significantly reduce laboratory-assessed craving or drinks per day compared with placebo, but significantly reduced heavy drinking days",
+    "Semaglutide reduced alcohol-related consequences at a significantly greater rate than placebo",
+    "suggest that continued development of semaglutide for AUD is warranted"
+   ]
+  },
+  "39937469": {
+   "title": "Once-Weekly Semaglutide in Adults With Alcohol Use Disorder: A Randomized Clinical Trial",
+   "journal": "JAMA Psychiatry",
+   "year": "2025",
+   "quotes": [
+    "48 non-treatment-seeking participants with AUD were randomized",
+    "This was a phase 2, double-blind, randomized, parallel-arm trial involving 9 weeks of outpatient treatment.",
+    "Semaglutide treatment did not affect average drinks per calendar day or number of drinking days, but significantly reduced drinks per drinking day",
+    "justifying larger clinical trials to evaluate GLP-1RAs for alcohol use disorder"
+   ]
+  },
+  "36066977": {
+   "title": "Exenatide once weekly for alcohol use disorder investigated in a randomized, placebo-controlled clinical trial",
+   "journal": "JCI Insight",
+   "year": "2022",
+   "quotes": [
+    "A total of 127 patients were enrolled.",
+    "although exenatide did not significantly reduce the number of heavy drinking days compared with placebo",
+    "Exploratory analyses revealed that exenatide significantly reduced heavy drinking days and total alcohol intake in a subgroup of obese patients (BMI > 30 kg/m2).",
+    "Adverse events were mainly gastrointestinal."
+   ]
+  },
+  "40123107": {
+   "title": "Blood phosphatidylethanol measurements indicate GLP-1 receptor stimulation causes delayed decreases in alcohol consumption",
+   "journal": "Alcohol Clin Exp Res (Hoboken)",
+   "year": "2025",
+   "quotes": [
+    "A significant interaction between time and treatment was observed at Week 26",
+    "the difference in PEth blood levels between the exenatide and placebo groups was not significant at earlier time points"
+   ]
+  },
+  "37991022": {
+   "title": "Effects of dulaglutide on alcohol consumption during smoking cessation",
+   "journal": "JCI Insight",
+   "year": "2023",
+   "quotes": [
+    "This is a predefined secondary analysis of a double-blind, randomized, placebo-controlled trial evaluating the GLP-1 agonist dulaglutide as a therapy for smoking cessation.",
+    "(n = 151; placebo n = 75, dulaglutide n = 76)",
+    "At week 12, participants receiving dulaglutide drank 29% less (relative effect = 0.71, 95% CI 0.52-0.97, P = 0.04) than participants receiving placebo."
+   ]
+  },
+  "39535805": {
+   "title": "Repurposing Semaglutide and Liraglutide for Alcohol Use Disorder",
+   "journal": "JAMA Psychiatry",
+   "year": "2025",
+   "quotes": [
+    "The cohort included 227 866 individuals with AUD",
+    "Semaglutide (4321 users) was associated with the lowest risk (AUD: adjusted hazard ratio [aHR], 0.64; 95% CI, 0.50-0.83",
+    "Use of any AUD medication was associated with a modestly decreased risk (aHR, 0.98; 95% CI, 0.96-1.00).",
+    "clinical trials are urgently needed to confirm these findings"
+   ]
+  },
+  "38806481": {
+   "title": "Associations of semaglutide with incidence and recurrence of alcohol use disorder in real-world population",
+   "journal": "Nat Commun",
+   "year": "2024",
+   "quotes": [
+    "In this retrospective cohort study of electronic health records of 83,825 patients with obesity",
+    "semaglutide compared with other anti-obesity medications is associated with a 50%-56% lower risk for both the incidence and recurrence of alcohol use disorder for a 12-month follow-up period"
+   ]
+  },
+  "42456704": {
+   "title": "Association of GLP-1 receptor agonists with alcohol use disorder-related and substance use disorder-related hospital admissions during treatment and after discontinuation: a Swedish register-based within-individual observational study",
+   "journal": "Lancet Psychiatry",
+   "year": "2026",
+   "quotes": [
+    "167 026 individuals with type 2 diabetes",
+    "GLP-1 exposure was associated with lower rates of hospitalisations related to alcohol use disorder (RR 0·55, 95% CI 0·43-0·70)",
+    "the association with hospitalisation rate reduction persisted during days 1-182 after discontinuation of GLP-1 receptor agonists (0·70, 0·50-0·98) but was no longer evident during days 183-364 after discontinuation (1·07, 0·71-1·63)",
+    "Findings support clinical monitoring of substance use when GLP-1 receptor agonist treatment is stopped."
+   ]
+  },
+  "42481079": {
+   "title": "Association between GLP-1 receptor agonists and alcohol-related hospitalisations among adults with alcohol use disorder: multi-target trial emulation study",
+   "journal": "BMJ Open",
+   "year": "2026",
+   "quotes": [
+    "A total of 40 703 adults met study criteria",
+    "the MAUD-T2D trial (HR 0.37, 95% CI 0.29 to 0.46) and the MAUD-obesity trial (HR 0.35, 95% CI 0.26 to 0.47)",
+    "initiation of newer GLP-1 RAs was associated with a lower observed risk of alcohol-related hospitalisation"
+   ]
+  },
+  "41813606": {
+   "title": "Real-World Alcohol Use Disorder Outcomes in Patients With Concurrent Metabolic Dysfunction: GLP-1 Receptor Agonists Versus FDA-Approved AUD Medications",
+   "journal": "Aliment Pharmacol Ther",
+   "year": "2026",
+   "quotes": [
+    "GLP-1RA therapy was associated with lower 1-year AUD relapse [IRR 0.55, 95% CI 0.42-0.73; p < 0.01]",
+    "Patients exposed to GLP-1RA had higher BMI (35.5 vs. 30.1) and more T2DM (66% vs. 14%).",
+    "Mortality was similar."
+   ]
+  },
+  "42423024": {
+   "title": "Association of GLP-1 Receptor Agonist Prescriptions and Alcohol Consumption in the National Institutes of Health's All of Us Cohort",
+   "journal": "Alcohol Clin Exp Res (Hoboken)",
+   "year": "2026",
+   "quotes": [
+    "Those with current GLP-1RA prescriptions had statistically significant but modestly lower AUDIT-C scores compared with those with future prescriptions (incidence rate ratio [IRR] = 0.95; 95% CI: 0.91-0.99; p = 0.01).",
+    "significant association with GLP-1RA prescriptions and frequency of drinking but not drinks per occasion or binge drinking"
+   ]
+  },
+  "42486225": {
+   "title": "Alcohol Use Following GLP-1 Receptor Agonist Therapy in the Cooper Center Longitudinal Study",
+   "journal": "Mayo Clin Proc",
+   "year": "2026",
+   "quotes": [
+    "The GLP-1RA treatment group had a greater reduction in weekly alcohol intake than the control group (-1.0 drinks/week; 95% CI -1.6 to -0.4; P =.002), which became non-significant after adjusting for weight change (P =.10)."
+   ]
+  },
+  "41506148": {
+   "title": "Tirzepatide reduces alcohol drinking and relapse-like behaviours in rodents",
+   "journal": "EBioMedicine",
+   "year": "2026",
+   "quotes": [
+    "dose-dependently reduced voluntary alcohol consumption (P < 0.001), prevented binge (P < 0.01) and relapse-like drinking (P < 0.001)"
+   ]
+  },
+  "40699363": {
+   "title": "Semaglutide, tirzepatide, and retatrutide attenuate the interoceptive effects of alcohol in male and female rats",
+   "journal": "Psychopharmacology (Berl)",
+   "year": "2026",
+   "quotes": [
+    "Acute administration of semaglutide, tirzepatide, and retatrutide each attenuated alcohol discrimination",
+    "alcohol discrimination returned to control levels three days after treatment cessation"
+   ]
+  },
+  "42486217": {
+   "title": "Therapeutic Potential of Incretin-Based Therapies for Alcohol Use Disorder: A Narrative Review of Available Clinical Evidence",
+   "journal": "Biol Psychiatry",
+   "year": "2026",
+   "quotes": [
+    "To date, only 3 randomized controlled trials have examined GLP-1RAs in AUD, showing reductions in alcohol cue brain reactivity and alcohol consumption, particularly among individuals with overweight or obesity."
+   ]
+  },
+  "42880142": {
+   "title": "Exploring semaglutide for alcohol use disorder: A review of clinical efficacy and neurobiological mechanisms",
+   "journal": "Addict Behav",
+   "year": "2026",
+   "quotes": [
+    "No GLP-1 receptor agonist currently carries FDA approval for alcohol use disorder, and all discussed clinical applications still remain investigational.",
+    "Current evidence remains limited by small sample sizes, brief follow-up periods, self-reported outcomes, and potential confounding from weight loss."
+   ]
+  },
+  "42144979": {
+   "title": "GLP-1 Receptor Agonists for Treating Alcohol Use Disorder: A Critical Review",
+   "journal": "Alcohol Clin Exp Res (Hoboken)",
+   "year": "2026",
+   "quotes": [
+    "This yielded a total of 13 preclinical studies, 14 clinical studies, 4 published interventional trials, and 19 interventional trials in progress or completed but unpublished."
+   ]
+  },
+  "41696398": {
+   "title": "Glucagon-like peptide 1 receptor agonists in substance use disorders: A systematic review of ClinicalTrials.Gov",
+   "journal": "Addict Behav Rep",
+   "year": "2026",
+   "quotes": [
+    "Of 192 records, 33 met criteria: alcohol use disorder (n = 15)"
+   ]
+  },
+  "42395251": {
+   "title": "Longitudinal 18F-Fluorodeoxyglucose Positron Emission Tomography (18F-FDG PET) Findings in Korsakoff Syndrome After Rapid Weight Loss During Tirzepatide Therapy: A Case Report",
+   "journal": "Cureus",
+   "year": "2026",
+   "quotes": [
+    "a 50-year-old man with obesity and chronic alcohol use disorder who developed Korsakoff syndrome in the setting of rapid weight loss temporally associated with tirzepatide therapy",
+    "Despite intravenous thiamine replacement, cognitive deficits persisted.",
+    "underscores the importance of nutritional assessment and consideration of thiamine supplementation when initiating these treatments"
+   ]
+  },
+  "42776095": {
+   "title": "AGA Clinical Practice Update on the Evaluation and Management of Metabolic Dysfunction- and Alcohol-Associated Liver Disease: Expert Review",
+   "journal": "Clin Gastroenterol Hepatol",
+   "year": "2026",
+   "quotes": [
+    "preliminary data suggests that glucagon-like peptide-1 and glucose-dependent insulinotropic polypeptide receptor agonists may reduce alcohol cravings and consumption and improve hepatic parameters",
+    "Medical management of patients with MetALD and moderate or severe alcohol use disorder should include use of alcohol use disorder pharmacotherapy and behavioral approaches to reduce alcohol consumption."
+   ]
+  }
+ },
+ "conflict_statements": {
+  "42070571": "AFJ has received an unrestricted grant from Novo Nordisk",
+  "42522065": "Alcohol Clinical Trials Initiative, which is currently supported by Eli Lilly and Imbrium Therapeutics",
+  "39937469": "Dr Klein reported consulting fees from Novo Nordisk outside the submitted work",
+  "42481079": "PJR is a former employee of Truveta and a current employee of Eli Lilly. This work was conducted and submitted prior to her employment with Eli Lilly. Eli Lilly had no role in this study.",
+  "42144979": "Dr. Kranzler is a member of advisory boards for Altimmune",
+  "37991022": "The authors have declared that no conflict of interest exists.",
+  "38806481": "The authors declare no competing interests."
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Six randomized human tests of GLP-1-type drugs on drinking have reported (exenatide 2022 missed its main goal; dulaglutide 2023 secondary analysis; semaglutide 2025 lab study; semaglutide 2026 Lancet in AUD plus obesity met; oral semaglutide 2026 missed its craving goal but cut heavy drinking days; pemvidutide 2026 company topline met). All were small (48 to 151 people) and 8 to 26 weeks. Observational studies consistently link these drugs to fewer alcohol-related hospital visits, but cannot prove cause, and one found the drinking change shrank after accounting for weight loss. No GLP-1 drug is approved for alcohol use disorder; Lilly's two 1,100-person brenipatide phase 3 trials and a 622-person VA semaglutide trial are the first large tests. The Heineken warning is a business forecast reported by The Guardian citing Reuters, not evidence about health."
+ }
+}
