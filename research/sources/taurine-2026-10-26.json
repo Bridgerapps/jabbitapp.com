@@ -1,0 +1,376 @@
+{
+ "checked": "2026-10-26",
+ "page": "https://jabbitapp.com/research/taurine-aging-longevity-inflammaging-evidence-teardown.html",
+ "japan_drug": {
+  "product": "Taurine Powder 98% \"Taisho\" (タウリン散98%「大正」)",
+  "holder": "Taisho Pharmaceutical",
+  "indications": [
+   "liver function in hyperbilirubinemia (excluding obstructive jaundice)",
+   "congestive heart failure",
+   "suppression of stroke-like episodes in MELAS (added 2019; orphan drug)"
+  ],
+  "pmda_review": "https://www.pmda.go.jp/drugs/2019/P20190215002/400059000_21900AMX00674_A100_1.pdf",
+  "amed_release": "https://www.amed.go.jp/news/release_20190219-01.html",
+  "quotes": [
+   "タウリン散98%「大正」",
+   "大正製薬株式会社",
+   "うっ血性心不全",
+   "MELAS）症候群における脳卒中様発作の抑制",
+   "希少疾病用医薬品",
+   "平成 31 年１月 31 日",
+   "1987年：うっ血性心不全",
+   "タウリンは、日本で初めて、ミトコンドリア病の一種MELASに対して保険適用された治療薬となる予定です。",
+   "平成31年1月31⽇"
+  ]
+ },
+ "efsa_2009": {
+  "url": "https://www.efsa.europa.eu/en/news/efsa-adopts-opinion-two-ingredients-commonly-used-some-energy-drinks",
+  "opinion": "https://doi.org/10.2903/j.efsa.2009.935",
+  "quotes": [
+   "Published : 12 February 2009",
+   "was not of safety concern",
+   "This opinion evaluated the safety of these two ingredients as constituents of energy drinks, rather than energy drinks themselves"
+  ]
+ },
+ "news": {
+  "yale_2026_10_23": {
+   "url": "https://medicine.yale.edu/news-article/amino-acid-diminishes-age-related-inflammation/",
+   "quotes": [
+    "In a new study published Oct. 23 in Cell , researchers at Yale School of Medicine found that the amino acid taurine is key to the way the innate immune system senses danger signals.",
+    "By comparing the blood serum of young (20- to 40-year-old) and older (60- to 99-year-old) people, his team found that taurine actually increased with age.",
+    "The finding was surprising and suggested that taurine does not drive aging",
+    "Surprisingly, as the complexes were forming, macrophages released up to 80% of their taurine.",
+    "Dixit first became interested in taurine after finding that it increased as people restricted their calorie intake for up to one year as part of the CALERIE study.",
+    "whether these findings could translate to something that can benefit older adults",
+    "supported by the National Institutes of Health"
+   ]
+  },
+  "columbia_2023_06_08": {
+   "url": "https://www.eurekalert.org/news-releases/990909",
+   "quotes": [
+    "taurine increased average lifespan by 12% in female mice and 10% in males",
+    "The researchers started with close to 250 14-month-old female and male mice",
+    "Only a randomized clinical trial in people will determine if taurine truly has health benefits, Yadav adds."
+   ]
+  }
+ },
+ "registry": {
+  "clinicaltrials_gov_intervention_taurine": 154,
+  "note": "Broad search; includes energy-drink, multi-ingredient and infant-nutrition studies.",
+  "selected": {
+   "NCT00497978": [
+    "COMPLETED",
+    236,
+    "Medical Center Alkmaar",
+    "2011-10",
+    false
+   ],
+   "NCT06613542": [
+    "COMPLETED",
+    90,
+    "Technical University of Munich",
+    "2025-11-13",
+    false
+   ],
+   "NCT05149716": [
+    "COMPLETED",
+    24,
+    "University of Sao Paulo",
+    "2020-06-15",
+    false
+   ]
+  }
+ },
+ "pubmed": {
+  "rct_query": "\"taurine\"[Title] AND \"randomized controlled trial\"[Publication Type]",
+  "rct_count": 123,
+  "lifespan_query": "\"taurine\"[Title/Abstract] AND (\"lifespan\"[Title/Abstract] OR \"longevity\"[Title/Abstract])",
+  "lifespan_count": 76,
+  "meta_query": "\"taurine\"[Title] AND (\"meta-analysis\"[Publication Type] OR \"systematic review\"[Title] OR \"meta-analysis\"[Title])",
+  "meta_count": 29,
+  "note": "We did not classify every record; we found no trial measuring human lifespan."
+ },
+ "key_trials": [
+  {
+   "trial": "Cirrhosis fatigue, 2026",
+   "n": 220,
+   "result": "Main goal missed",
+   "design": "Open-label",
+   "id": "42043864"
+  },
+  {
+   "trial": "Hip fracture, older adults, 2015",
+   "n": 236,
+   "result": "No fewer complications or deaths",
+   "design": "Placebo",
+   "id": "26035756"
+  },
+  {
+   "trial": "Prehypertension, 2016",
+   "n": 120,
+   "result": "Blood pressure lower",
+   "design": "Placebo",
+   "id": "26781281"
+  },
+  {
+   "trial": "Biological-age trial, 2024-25",
+   "n": 90,
+   "result": "Finished; no results posted",
+   "design": "Placebo",
+   "id": "NCT06613542"
+  },
+  {
+   "trial": "Women 55 to 70, 2022",
+   "n": 24,
+   "result": "Antioxidant marker held",
+   "design": "Placebo",
+   "id": "35700594"
+  },
+  {
+   "trial": "Heart failure, 1985",
+   "n": 14,
+   "result": "Symptoms improved",
+   "design": "Placebo, crossover",
+   "id": "3888464"
+  },
+  {
+   "trial": "MELAS, Japan, 2019",
+   "n": 10,
+   "result": "6 of 10 had no episodes",
+   "design": "Open-label",
+   "id": "29666206"
+  }
+ ],
+ "key_trials_total_n": 714,
+ "abstract_quotes": {
+  "42914977": {
+   "title": "Taurine lowers inflammaging by regulating the NLRP3 inflammasome in macrophages",
+   "journal": "Cell",
+   "year": "2026",
+   "quotes": [
+    "Whether a decline in taurine drives aging is debated",
+    "Here, we show that aging increases circulating taurine concentrations in humans and mice.",
+    "Further elevating taurine in aged mice enhances health span",
+    "reduces mortality from sepsis and inflammasome-mediated inflammation",
+    "diverse NLRP3-specific \"danger signals\" induce taurine efflux from macrophages as a proximal step to activate the inflammasome",
+    "In humans, sustained caloric restriction elevates adipose tissue taurine and is accompanied by lower inflammation.",
+    "suggesting taurine-based strategies to alleviate inflammaging and inflammasomopathies"
+   ]
+  },
+  "37289866": {
+   "title": "Taurine deficiency as a driver of aging",
+   "journal": "Science",
+   "year": "2023",
+   "quotes": [
+    "We find that concentrations of circulating taurine decline with aging in mice, monkeys, and humans.",
+    "increased the health span (the period of healthy living) and life span in mice and health span in monkeys",
+    "In humans, lower taurine concentrations correlated with several age-related diseases",
+    "Clinical trials in humans seem warranted to test whether taurine deficiency might drive aging in humans."
+   ]
+  },
+  "40472098": {
+   "title": "Is taurine an aging biomarker?",
+   "journal": "Science",
+   "year": "2025",
+   "quotes": [
+    "We found that circulating taurine concentrations increased or remained unchanged with age in three geographically distinct human cohorts as well as in nonhuman primates and mice",
+    "Our results suggest that changes in circulating taurine are not a universal feature of aging"
+   ]
+  },
+  "40369079": {
+   "title": "Taurine from tumour niche drives glycolysis to promote leukaemogenesis",
+   "journal": "Nature",
+   "year": "2025",
+   "quotes": [
+    "These analyses identify the taurine-taurine transporter (TAUT) axis as a critical dependency of aggressive myeloid leukaemias.",
+    "Blocking CDO1 expression in osteolineage cells impairs LSC growth and improves survival outcomes.",
+    "identifies taurine as a key regulator of myeloid malignancies"
+   ]
+  },
+  "1138364": {
+   "title": "Retinal degeneration associated with taurine deficiency in the cat",
+   "journal": "Science",
+   "year": "1975",
+   "quotes": [
+    "A degeneration of the retinal photoreceptor cells develops in cats when casein is the source of dietary protein.",
+    "selective decrease in plasma and retinal taurine concentrations"
+   ]
+  },
+  "3616607": {
+   "title": "Myocardial failure in cats associated with low plasma taurine: a reversible cardiomyopathy",
+   "journal": "Science",
+   "year": "1987",
+   "quotes": [
+    "Thousands of pet cats die each year with dilated cardiomyopathy, the cause of which is unknown.",
+    "Oral supplementation of taurine resulted in increased plasma taurine concentrations and was associated with normalization of left ventricular function in both groups of cats."
+   ]
+  },
+  "3888464": {
+   "title": "Therapeutic effect of taurine in congestive heart failure: a double-blind crossover trial",
+   "journal": "Clin Cardiol",
+   "year": "1985",
+   "quotes": [
+    "14 patients with congestive heart failure for a 4-week period",
+    "No patient worsened during taurine administration, but four patients did during placebo."
+   ]
+  },
+  "35855073": {
+   "title": "Effect of taurine administration on symptoms, severity, or clinical outcome of dilated cardiomyopathy and heart failure in humans: a systematic review",
+   "journal": "Wellcome Open Res",
+   "year": "2022",
+   "quotes": [
+    "it is currently unlicensed in Europe and the United States for human medical treatment",
+    "Only one paper was deemed \"high quality\" using the NOQAS tool.",
+    "no study was specific to DCM",
+    "No significant safety concerns were reported.",
+    "A formal clinical trial is needed"
+   ]
+  },
+  "29666206": {
+   "title": "Taurine supplementation for prevention of stroke-like episodes in MELAS: a multicentre, open-label, 52-week phase III trial",
+   "journal": "J Neurol Neurosurg Psychiatry",
+   "year": "2019",
+   "quotes": [
+    "multicentre, open-label, phase III trial in which 10 patients with recurrent stroke-like episodes",
+    "The proportion of patients who reached the primary endpoint (100% responder rate) was 60% (95% CI 26.2% to 87.8%).",
+    "Taurine reduced the annual relapse rate of stroke-like episodes from 2.22 to 0.72 (P=0.001).",
+    "No severe adverse events were associated with taurine."
+   ]
+  },
+  "26781281": {
+   "title": "Taurine Supplementation Lowers Blood Pressure and Improves Vascular Function in Prehypertension: Randomized, Double-Blind, Placebo-Controlled Study",
+   "journal": "Hypertension",
+   "year": "2016",
+   "quotes": [
+    "We randomly assigned 120 eligible prehypertensive individuals",
+    "for 12 weeks",
+    "Mean clinic systolic BP reduction for taurine/placebo was 7.2/2.6 mm Hg, and diastolic BP was 4.7/1.3 mm Hg."
+   ]
+  },
+  "41275513": {
+   "title": "Effects of Oral Taurine Supplementation on Cardiometabolic Risk Factors: A Meta-analysis and Systematic Review of Randomized Clinical Trials",
+   "journal": "Nutr Rev",
+   "year": "2026",
+   "quotes": [
+    "Thirty-four eligible RCTs were analyzed.",
+    "systolic blood pressure (MD, -4.38 mmHg; 95% CI, -7.26 to -1.50)",
+    "glycated hemoglobin A1c (MD, -0.21%; 95% CI, -0.37 to -0.05)",
+    "Taurine supplementation may effectively improve cardiometabolic risk factors in adults"
+   ]
+  },
+  "39148075": {
+   "title": "Insights into the cardiovascular benefits of taurine: a systematic review and meta-analysis",
+   "journal": "Nutr J",
+   "year": "2024",
+   "quotes": [
+    "The analysis included a pooled sample of 808 participants from 20 randomized controlled trials.",
+    "No significant adverse effects were observed compared to cont"
+   ]
+  },
+  "38755142": {
+   "title": "Taurine reduces the risk for metabolic syndrome: a systematic review and meta-analysis of randomized controlled trials",
+   "journal": "Nutr Diabetes",
+   "year": "2024",
+   "quotes": [
+    "Taurine supplementation exhibits positive effects on multiple MetS-related factors"
+   ]
+  },
+  "40320621": {
+   "title": "Effects of taurine supplementation on cognitive function: a systematic review and meta-analysis of randomised controlled trials",
+   "journal": "Int J Food Sci Nutr",
+   "year": "2025",
+   "quotes": [
+    "A total of 7 RCTs with 9 intervention trials involving 402 individuals were included.",
+    "the findings of the present meta-analysis do not provide sufficient evidence to support the efficacy of taurine supplementation in enhancing cognitive function"
+   ]
+  },
+  "41750826": {
+   "title": "Cognitive Effects of Taurine and Related Sulphur-Containing Amino Acids: A Systematic Review of Human Trials and Considerations for Plant-Based Dietary Transitions",
+   "journal": "Foods",
+   "year": "2026",
+   "quotes": [
+    "Eight RCTs involving 244 healthy participants met the inclusion criteria.",
+    "Most cognitive outcomes showed no effect.",
+    "Trials that combined taurine with caffeine showed more reliable performance benefits, but they did not isolate taurine's independent effects."
+   ]
+  },
+  "40852891": {
+   "title": "Does One Shot Work? The Acute Impact of a Single Taurine Dose on Exercise Performance: A Meta-Analytic Review",
+   "journal": "Scand J Med Sci Sports",
+   "year": "2025",
+   "quotes": [
+    "23 eligible randomized trials (k = 69, N = 308)",
+    "The overall certainty of evidence, assessed using GRADE, was rated low to very low"
+   ]
+  },
+  "35700594": {
+   "title": "Taurine as a possible antiaging therapy: A controlled clinical trial on taurine antioxidant activity in women ages 55 to 70",
+   "journal": "Nutrition",
+   "year": "2022",
+   "quotes": [
+    "A double-blind study was conducted with 24 women (61.4 ± 4.2 y",
+    "for 16 wk",
+    "Taurine supplementation prevented the decrease in the antioxidant enzyme SOD"
+   ]
+  },
+  "42043864": {
+   "title": "A randomized controlled trial of L-taurine for fatigue in decompensated cirrhosis",
+   "journal": "Hepatol Commun",
+   "year": "2026",
+   "quotes": [
+    "This single-center, parallel-arm, open-label randomized controlled trial",
+    "Of 220 randomized patients, 202 completed the study",
+    "L-taurine did not improve fatigue in unselected patients with decompensated cirrhosis.",
+    "this finding should be considered hypothesis-generating",
+    "Adverse events occurred in 11.8% of patients treated with taurine, all of which were mild."
+   ]
+  },
+  "26035756": {
+   "title": "Effect of oral taurine on morbidity and mortality in elderly hip fracture patients: a randomized trial",
+   "journal": "Int J Mol Sci",
+   "year": "2015",
+   "quotes": [
+    "A double blind randomized, placebo controlled, clinical trial was conducted on elderly hip fracture patients.",
+    "Taurine supplementation did not improve in-hospital morbidity, medical comorbidities during the first year, or mortality during the first year.",
+    "Taurine supplementation lowered postoperative oxidative stress"
+   ]
+  },
+  "42834262": {
+   "title": "Genome-wide meta-analysis dissects the genetic basis and health implications of circulating taurine",
+   "journal": "Funct Integr Genomics",
+   "year": "2026",
+   "quotes": [
+    "circulating taurine levels in 36,490 European individuals",
+    "genetically predicted circulating taurine shows evidence consistent with potential causal impacts on cancers, hypertension, neurodevelopment",
+    "highlights high-priority disease phenotypes requiring subsequent experimental validation"
+   ]
+  },
+  "2496406": {
+   "title": "Taurine: an overview of its role in preventive medicine",
+   "journal": "Prev Med",
+   "year": "1989",
+   "quotes": [
+    "Accordingly, proprietary milk formulas are now supplemented with taurine."
+   ]
+  },
+  "29631391": {
+   "title": "Effects and Mechanisms of Taurine as a Therapeutic Agent",
+   "journal": "Biomol Ther (Seoul)",
+   "year": "2018",
+   "quotes": [
+    "Today, taurine has been approved for the treatment of congestive heart failure in Japan"
+   ]
+  }
+ },
+ "conflict_statements": {
+  "42914977": "The authors declare no competing interests.",
+  "37289866": "Columbia University has filed provisional patent applications for which VKY is an inventor.",
+  "40369079": "The authors declare no competing interests.",
+  "35855073": "J.S.W. has consulted for MyoKardia, Inc. and Foresite Labs.",
+  "41750826": "received research funding from Viridian Nutrition for unrelated work on taurine",
+  "42043864": "The authors have no conflicts to report."
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Taurine is a sulfur-containing amino acid made in the body and found in meat, fish and dairy. In mice, a 2023 study reported 10-12% longer average life; whether blood taurine falls with age is disputed (2025 NIA-led and Oct 2026 Yale-led studies found it rises or stays flat). The Oct 23, 2026 Cell paper is a mouse and cell mechanism study linking taurine to the NLRP3 inflammasome. No human trial has measured lifespan; one 6-month biological-age trial finished in Nov 2025 with no results posted. Human trials are mostly small and short, with modest cardiometabolic signals in meta-analyses, no clear cognitive effect, and negative or mixed results in hip fracture and cirrhosis trials. It is a prescription drug in Japan for heart failure, a liver indication and MELAS. Short-term tolerability looks good; a 2025 Nature mouse and cell study raised a question about taurine and myeloid leukemia that has not been tested in people taking supplements."
+ }
+}
