@@ -1,0 +1,473 @@
+{
+ "checked": "2026-10-26",
+ "page": "https://jabbitapp.com/research/ara-290-cibinetide-neuropathy-peptide-evidence-teardown.html",
+ "fda_orphan": {
+  "url": "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=349111",
+  "record": "L-pyr-L-glu-L-gln-L-leu-L-glu-L-arg-L-ala-L-leu-L-asn-L-ser-L-ser Date Designated: 09/13/2011 Orphan Designation: Treatment of neuropathic pain in patients with sarcoidosis. Orphan Designation Status: Designated FDA Orphan Approval Status: Not FDA Approved for Orphan Indication Sponsor: Araim Pharmaceuticals, Inc. (address as last reported by the sponsor to OOPD)"
+ },
+ "araim_press_releases": {
+  "2016-07-05": {
+   "url": "https://www.prnewswire.com/news-releases/araim-pharmaceuticals-receives-orphan-drug-designation-from-the-us-fda-for-ara-290-for-the-treatment-of-sarcoidosis-300293773.html",
+   "quote": "today announced that the US Food and Drug Administration (FDA) has granted Orphan Drug Designation for its lead product candidate, Innate Repair Receptor activator ARA 290, for the treatment of sarcoidosis."
+  },
+  "2014-10-28": {
+   "url": "https://www.prnewswire.com/news-releases/araim-pharmaceuticals-given-fda-fast-track-designation-to-ara-290-for-the-treatment-of-sarcoidosis-associated-small-fiber-neuropathy-280635872.html",
+   "quote": "today announced a Fast Track Designation from the FDA for its lead compound ARA290, for treatment of Sarcoidosis-associated Small Fiber Neuropathy (SFN)."
+  }
+ },
+ "ema_orphan": {
+  "url": "https://www.ema.europa.eu/en/medicines/human/orphan-designations/eu-3-13-1191",
+  "quotes": [
+   "On 7 October 2013, orphan designation (EU/3/13/1191) was granted by the European Commission to Araim Pharma Europe Ltd, United Kingdom",
+   "This medicine is now known as cibinetide.",
+   "The sponsorship was transferred to Araim Pharmaceuticals Europe Limited, Ireland, in April 2019."
+  ]
+ },
+ "fda_503a": {
+  "url": "https://www.fda.gov/media/94155/download",
+  "updated": "2026-05-14",
+  "category": "Category 3: Bulk Drug Substances Nominated Without Adequate Support",
+  "entry": "Cibinetide (ARA-290)"
+ },
+ "wada_2027": {
+  "list_url": "https://www.wada-ama.org/sites/default/files/2026-09/2027list_en_final_clean_26_august_2026_2.pdf",
+  "quotes": [
+   "S2.1.5 Innate repair receptor agonists, e.g. asialo EPO; carbamylated EPO (CEPO).",
+   "PROHIBITED AT ALL TIMES (IN- AND OUT-OF-COMPETITION)",
+   "The following substances, and other substances with similar chemical structure or similar biological effect(s), are prohibited."
+  ],
+  "named": false,
+  "note": "ARA-290/cibinetide is not named on the list; it is described as an innate repair receptor agonist in the papers cited, and an anti-doping lab paper (PMID 28941172) calls it prohibited."
+ },
+ "registry": {
+  "records": {
+   "NCT01933529": {
+    "status": "UNKNOWN",
+    "enrollment": 24,
+    "enrollment_type": "ESTIMATED",
+    "sponsor": "Claes-Göran Östenson",
+    "start": "2013-10",
+    "completion": "2015-12",
+    "why_stopped": null,
+    "has_results": false
+   },
+   "NCT02039687": {
+    "status": "COMPLETED",
+    "enrollment": 64,
+    "enrollment_type": "ACTUAL",
+    "sponsor": "Araim Pharmaceuticals, Inc.",
+    "start": "2014-01",
+    "completion": "2015-02",
+    "why_stopped": null,
+    "has_results": true
+   },
+   "NCT02070783": {
+    "status": "COMPLETED",
+    "enrollment": 36,
+    "enrollment_type": "ACTUAL",
+    "sponsor": "Leiden University Medical Center",
+    "start": "2012-02",
+    "completion": "2014-02",
+    "why_stopped": null,
+    "has_results": false
+   },
+   "NCT06626971": {
+    "status": "TERMINATED",
+    "enrollment": 9,
+    "enrollment_type": "ACTUAL",
+    "sponsor": "Belfast Health and Social Care Trust",
+    "start": "2016-04",
+    "completion": "2017-08",
+    "why_stopped": "Expiry of study drug - no replacement available.",
+    "has_results": false
+   }
+  },
+  "NCT02039687_posted_results": {
+   "outcomes_by_group": {
+    "Change in Corneal Nerve Fiber Area": {
+     "low": -64.3,
+     "middle": 533.8,
+     "high": 203.8,
+     "placebo": -170.0
+    },
+    "Change in the 6 Minute Walk Test": {
+     "low": 19.3,
+     "middle": 17.7,
+     "high": 18.2,
+     "placebo": 1.2
+    },
+    "Change in Intra-epidermal Nerve Fiber Density (IENFD)": {
+     "low": 0.5,
+     "middle": 0.4,
+     "high": -0.3,
+     "placebo": 0.8
+    },
+    "Change in the Scores of the SFNSL, BPI, NPSI, and FAS Questionnaires - BPI - Pain Severity": {
+     "low": -0.594,
+     "middle": -1.167,
+     "high": -1.115,
+     "placebo": -0.922
+    },
+    "Change in the Scores of the SFNSL, BPI, NPSI, and FAS Questionnaires - BPI - Pain Interference": {
+     "low": -1.187,
+     "middle": -1.657,
+     "high": -1.308,
+     "placebo": -1.732
+    },
+    "Change in the Scores of the SFNSL, BPI, NPSI, and FAS Questionnaires - SFNSL": {
+     "low": -4.9,
+     "middle": -8.7,
+     "high": -5.5,
+     "placebo": -7.3
+    },
+    "Change in the Scores of the SFNSL, BPI, NPSI, and FAS Questionnaires - NPSI": {
+     "low": -12.31,
+     "middle": -14.5,
+     "high": -8.38,
+     "placebo": -12.88
+    },
+    "Change in the Scores of the SFNSL, BPI, NPSI, and FAS Questionnaires - FAS": {
+     "low": -2.6,
+     "middle": -2.1,
+     "high": -3.1,
+     "placebo": -2.2
+    },
+    "Frequency of Adverse Events, Serious Adverse Events, and Laboratory Parameters - Patients reporting at least one TEAE": {
+     "low": 14.0,
+     "middle": 11.0,
+     "high": 12.0,
+     "placebo": 12.0
+    },
+    "Frequency of Adverse Events, Serious Adverse Events, and Laboratory Parameters - Patients reporting at least one serious TEAE": {
+     "low": 2.0,
+     "middle": 0.0,
+     "high": 1.0,
+     "placebo": 0.0
+    }
+   },
+   "statistical_analyses_posted": false,
+   "serious_adverse_events": {
+    "ara290_groups": "3 of 46",
+    "placebo": "0 of 16",
+    "terms": [
+     "Chest Tightness",
+     "Headache",
+     "Shortness of Breath",
+     "Small Bowel Enteritis",
+     "Suicidal Ideation",
+     "Syncope"
+    ]
+   },
+   "group_labels": "low, middle and high dose groups (amounts omitted by Jabbit policy)"
+  },
+  "note": "ClinicalTrials.gov API v2 term searches for ARA-290, ARA 290, ARA290 and cibinetide; one unrelated record (NCT06483620, a questionnaire study with 290 participants) excluded."
+ },
+ "pubmed": {
+  "all": {
+   "count": 76,
+   "idlist": [
+    "42876687",
+    "42693836",
+    "42635865",
+    "41933665",
+    "41659975",
+    "41092772",
+    "40680515",
+    "40216181",
+    "39996752",
+    "39968520",
+    "38943972",
+    "38907076",
+    "38612664",
+    "38488446",
+    "36741836",
+    "36085231",
+    "36046815",
+    "35317117",
+    "35008482",
+    "34498509",
+    "34478930",
+    "34343617",
+    "34155874",
+    "34134477",
+    "33423557",
+    "32674280",
+    "32345869",
+    "32335150",
+    "31580542",
+    "30876881",
+    "30127368",
+    "29880388",
+    "29570934",
+    "29549285",
+    "29223734",
+    "29026145",
+    "28941172",
+    "28688286",
+    "28652140",
+    "28475703",
+    "27507833",
+    "29392190",
+    "27219509",
+    "27172159",
+    "27028159",
+    "26774587",
+    "26736179",
+    "26683514",
+    "26578461",
+    "26431906",
+    "25740187",
+    "25728128",
+    "25549226",
+    "25387363",
+    "25382550",
+    "25373867",
+    "24676641",
+    "24603865",
+    "24555851",
+    "24529189",
+    "24518674",
+    "24225194",
+    "24136731",
+    "24055514",
+    "23964738",
+    "23936499",
+    "23615965",
+    "23456872",
+    "23401545",
+    "23304492",
+    "23302512",
+    "23262243",
+    "23168581",
+    "21873879",
+    "21872588",
+    "21410562"
+   ]
+  },
+  "trials": {
+   "count": 5,
+   "idlist": [
+    "28475703",
+    "26431906",
+    "25387363",
+    "24136731",
+    "23168581"
+   ]
+  },
+  "queries": {
+   "all": "ARA290[tiab] OR \"ARA 290\"[tiab] OR ARA-290[tiab] OR cibinetide[tiab]",
+   "trials": "(ARA290[tiab] OR \"ARA 290\"[tiab] OR ARA-290[tiab] OR cibinetide[tiab]) AND (randomized controlled trial[pt] OR clinical trial[pt])"
+  }
+ },
+ "key_trials": [
+  {
+   "trial": "Sarcoidosis pilot, 2012",
+   "n": 22,
+   "control": "Placebo",
+   "result": "Symptom score improved",
+   "id": "23168581"
+  },
+  {
+   "trial": "Sarcoidosis, 2013",
+   "n": 38,
+   "control": "Placebo",
+   "result": "Symptoms improved",
+   "id": "24136731"
+  },
+  {
+   "trial": "Type 2 diabetes, 2015",
+   "n": 49,
+   "control": "Placebo",
+   "result": "Symptom score improved",
+   "id": "25387363"
+  },
+  {
+   "trial": "Healthy adults (mood), 2015",
+   "n": 36,
+   "control": "Placebo",
+   "result": "No mood effect",
+   "id": "26431906"
+  },
+  {
+   "trial": "Sarcoidosis phase 2b, 2017",
+   "n": 64,
+   "control": "Placebo",
+   "result": "Goal met in 1 of 3 groups",
+   "id": "28475703"
+  },
+  {
+   "trial": "Diabetic eye swelling, 2020",
+   "n": 9,
+   "control": "None",
+   "result": "No vision benefit",
+   "id": "32674280"
+  }
+ ],
+ "key_trials_total_n": 218,
+ "abstract_quotes": {
+  "15247477": {
+   "title": "Derivatives of erythropoietin that are tissue protective but not erythropoietic",
+   "journal": "Science",
+   "year": "2004",
+   "quotes": [
+    "Carbamylated EPO (CEPO) or certain EPO mutants did not bind to the classical EPO receptor (EPOR) and did not show any hematopoietic activity"
+   ]
+  },
+  "18676614": {
+   "title": "Nonerythropoietic, tissue-protective peptides derived from the tertiary structure of erythropoietin",
+   "journal": "Proc Natl Acad Sci U S A",
+   "year": "2008",
+   "quotes": [
+    "an 11-aa peptide composed of adjacent amino acids forming the aqueous face of helix B is also tissue protective",
+    "neither helix B nor the 11-aa peptide is erythropoietic in vitro or in vivo"
+   ]
+  },
+  "21873879": {
+   "title": "ARA290, a peptide derived from the tertiary structure of erythropoietin, produces long-term relief of neuropathic pain: an experimental study in rats and β-common receptor knockout mice",
+   "journal": "Anesthesiology",
+   "year": "2011",
+   "quotes": [
+    "ARA290 produced effective, long-term (as long as 15 weeks) relief of tactile and cold allodynia",
+    "In contrast, in βcR mice no effect of ARA290 was observed."
+   ]
+  },
+  "24529189": {
+   "title": "ARA 290, a peptide derived from the tertiary structure of erythropoietin, produces long-term relief of neuropathic pain coupled with suppression of the spinal microglia response",
+   "journal": "Mol Pain",
+   "year": "2014",
+   "quotes": [
+    "ARA290 exerted a dose-response effect by significantly reducing mechanical allodynia up to 20 weeks when compared to vehicle."
+   ]
+  },
+  "23168581": {
+   "title": "Safety and efficacy of ARA 290 in sarcoidosis patients with symptoms of small fiber neuropathy: a randomized, double-blind pilot study",
+   "journal": "Mol Med",
+   "year": "2012",
+   "quotes": [
+    "A total of 22 patients diagnosed with sarcoidosis and symptoms of SFN were enrolled in a double-blind, placebo-controlled exploratory trial",
+    "The ARA 290 group showed significant (p < 0.05) improvement at wk 4 in SFNSL score compared with placebo",
+    "The mean BPI and FAS scores improved significantly but equivalently in both patient groups.",
+    "No change was observed in the IDS.",
+    "ARA 290 appears to be safe in patients with sarcoidosis and can reduce neuropathic symptoms."
+   ]
+  },
+  "24136731": {
+   "title": "ARA 290 improves symptoms in patients with sarcoidosis-associated small nerve fiber loss and increases corneal nerve fiber density",
+   "journal": "Mol Med",
+   "year": "2013",
+   "quotes": [
+    "Here we show in a blinded, placebo-controlled trial that 28 d of daily subcutaneous administration of ARA 290 in a group of patients with documented SNFLD significantly improves neuropathic symptoms.",
+    "ARA 290 administration was also associated with a significant increase in corneal small nerve fiber density",
+    "ARA 290 is a potential disease-modifying agent for treatment of sarcoidosis-associated SNFLD."
+   ]
+  },
+  "25387363": {
+   "title": "ARA 290, a nonerythropoietic peptide engineered from erythropoietin, improves metabolic control and neuropathic symptoms in patients with type 2 diabetes",
+   "journal": "Mol Med",
+   "year": "2015",
+   "quotes": [
+    "No potential safety issues were identified.",
+    "Neuropathic symptoms as assessed by the PainDetect questionnaire improved significantly in the ARA 290 group.",
+    "These observations suggest that ARA 290 may benefit both metabolic control and neuropathy in subjects with type 2 diabetes and deserves continued clinical evaluation."
+   ]
+  },
+  "26431906": {
+   "title": "Testing the antidepressant properties of the peptide ARA290 in a human neuropsychological model of drug action",
+   "journal": "Eur Neuropsychopharmacol",
+   "year": "2015",
+   "quotes": [
+    "Healthy participants (N=36) received ARA290",
+    "No effects were observed on mood and affective symptoms.",
+    "the direction and the strength of its effects do not unequivocally support an antidepressant-like profile for ARA290"
+   ]
+  },
+  "28475703": {
+   "title": "Cibinetide Improves Corneal Nerve Fiber Abundance in Patients With Sarcoidosis-Associated Small Nerve Fiber Loss and Neuropathic Pain",
+   "journal": "Invest Ophthalmol Vis Sci",
+   "year": "2017",
+   "quotes": [
+    "This phase 2b, 28-day, randomized trial of 64 subjects with sarcoid-associated SNFL and neuropathic pain",
+    "The primary study endpoint was a change in CNFA at 28 days.",
+    "Pain improved significantly in all groups",
+    "Cibinetide significantly increased small nerve fiber abundance in the cornea and skin, consistent with a disease modifying effect."
+   ]
+  },
+  "32674280": {
+   "title": "A Phase 2 Clinical Trial on the Use of Cibinetide for the Treatment of Diabetic Macular Edema",
+   "journal": "J Clin Med",
+   "year": "2020",
+   "quotes": [
+    "Nine patients were recruited; eight completed the study.",
+    "There was no improvement in mean change baseline-week 12 in BCVA (-2.9 + 5.0), CRT (10 + 94.6 microns), central retinal sensitivity (-0.53 + 1.9 dB) or tear production (-0.13 + 7.7 mm)",
+    "No serious adverse events/reactions or anti-cibinetide antibodies were seen."
+   ]
+  },
+  "24555851": {
+   "title": "ARA 290 for treatment of small fiber neuropathy in sarcoidosis",
+   "journal": "Expert Opin Investig Drugs",
+   "year": "2014",
+   "quotes": [
+    "ARA 290 treatment was consistently associated with a significant improvement of neuropathic pain symptoms in sarcoidosis patients"
+   ]
+  },
+  "29392190": {
+   "title": "Targeting the innate repair receptor to treat neuropathy",
+   "journal": "Pain Rep",
+   "year": "2016",
+   "quotes": [
+    "Further clinical trials with long-term treatment and follow-up are needed to assess the full potential of IRR activation by ARA290 as a disease-modifying therapy in neuropathy of various etiologies."
+   ]
+  },
+  "42635865": {
+   "title": "Peptides in Regenerative Medicine: A Comprehensive Review of Clinical Applications in Tissue Repair and Chronic Pain Management",
+   "journal": "Curr Pain Headache Rep",
+   "year": "2026",
+   "quotes": [
+    "evidence regarding the role of regenerative peptides in chronic pain management remains limited",
+    "because most of these therapies remain unapproved by the U.S. Food and Drug Administration (FDA) and clinical evidence in humans is limited"
+   ]
+  },
+  "42693836": {
+   "title": "Pharmacological Management of Diabetic Neuropathy: Current Evidence, Clinical Positioning, and Emerging Therapeutic Targets",
+   "journal": "Curr Neuropharmacol",
+   "year": "2026",
+   "quotes": [
+    "Acetyl-L-carnitine and Cibinetide (ara290) also show improvement in the Neuropathic score"
+   ]
+  },
+  "42876687": {
+   "title": "Case Report: Regenerative peptides for Inferior alveolar nerve injury: a narrative review with hypothesis-generating three clinical cases",
+   "journal": "Front Oral Health",
+   "year": "2026",
+   "quotes": [
+    "three hypothesis-generating clinical cases",
+    "spontaneous recovery and other confounding factors cannot be excluded, and causality cannot be established",
+    "peptide-based interventions remain investigational, with unresolved questions concerning safety, delivery, optimal dosing, and long-term outcomes"
+   ]
+  },
+  "28941172": {
+   "title": "Characterization of in vitro generated metabolites of selected peptides <2 kDa prohibited in sports",
+   "journal": "Drug Test Anal",
+   "year": "2017",
+   "quotes": [
+    "The prohibited peptides ARA-290, GHRP-3, and Peforelin, with a to-date unknown metabolism, were chosen as model compounds"
+   ]
+  }
+ },
+ "disclosures": {
+  "23168581": "A Dunne, M Brines and A Cerami are employees and officers of Araim Pharmaceuticals and own stock and/or stock options.",
+  "24136731": "A Dunne, A Cerami and M Brines are employees of Araim Pharmaceuticals and have stock or stock options in the company.",
+  "25387363": "M Brines, AN Dunne, and A Cerami are officers of Araim Pharmaceuticals and own stock and/or stock options.",
+  "32674280": "This research was funded in part by Araim Pharmaceuticals",
+  "29392190": "Leiden University received financial support from ARAIM Pharmaceuticals, Inc, to perform experimental and clinical studies on ARA290."
+ },
+ "t2d_2015_safety_section_quotes": [
+  "Four serious adverse events were observed in the ARA 290 treatment arm.",
+  "The remaining two were judged to be possibly related to ARA 290 administration.",
+  "The safety committee stopped ARA 290 administration.",
+  "suffered a fatal myocardial infarction. The safety committee judged the event to be unrelated to ARA 290 treatment."
+ ],
+ "analysis": {
+  "note": "Jabbit analysis. ARA-290 (cibinetide) is an 11-amino-acid peptide designed from erythropoietin (EPO) to keep EPO's tissue-protective effects without raising red blood cells. Rodent studies reported long-lasting relief of nerve pain. Six small human trials (9 to 64 people, 218 in all, mostly 4 weeks of treatment) tested it in sarcoidosis nerve damage, type 2 diabetes neuropathy, a mood model and diabetic eye swelling. Early trials reported symptom gains; in the largest, a 64-person phase 2b, the main nerve-fiber goal was met in one of three dose groups, pain improved in all groups including placebo, and posted registry averages for pain were similar to placebo. The diabetic eye trial found no vision benefit and was terminated after its study drug expired. No trial is active on ClinicalTrials.gov. It holds FDA and EU orphan designations for sarcoidosis-related uses but is not approved anywhere we found; FDA lists it in 503A category 3. Most trials were run with, funded by or co-authored by staff of the developer, Araim Pharmaceuticals, per the papers' disclosures."
+ }
+}
