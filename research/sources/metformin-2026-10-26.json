@@ -1,0 +1,404 @@
+{
+ "checked": "2026-10-26",
+ "page": "https://jabbitapp.com/research/metformin-longevity-anti-aging-tame-evidence-teardown.html",
+ "label": {
+  "source": "DailyMed metformin hydrochloride tablet, film coated, Zydus Pharmaceuticals USA Inc., setid c82a10fa-1e8e-46b6-890a-737de3f34ee1, SPL version 17, effective 2026-07-15",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfoBySetId.cfm?setid=c82a10fa-1e8e-46b6-890a-737de3f34ee1",
+  "quotes": [
+   "WARNING: LACTIC ACIDOSIS",
+   "Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias.",
+   "Risk factors for metformin-associated lactic acidosis include renal impairment, concomitant use of certain drugs (e.g. carbonic anhydrase inhibitors such as topiramate), age 65 years old or greater, having a radiological study with contrast, surgery and other procedures, hypoxic states (e.g., acute congestive heart failure), excessive alcohol intake, hepatic impairment",
+   "Metformin hydrochloride tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults and pediatric patients 10 years of age and older with type 2 diabetes mellitus.",
+   "Metformin may lower vitamin B12 levels.",
+   "Increased risk of hypoglycemia when used in combination with insulin and/or an insulin secretagogue.",
+   "the most common adverse reactions (>5.0%) are diarrhea, nausea/vomiting, flatulence, asthenia, indigestion, abdominal discomfort, and headache."
+  ],
+  "boxed_warning": "lactic acidosis"
+ },
+ "registry": {
+  "query": "ClinicalTrials.gov API v2, query.intr=metformin, query.cond=aging OR frailty OR sarcopenia OR longevity OR healthspan",
+  "records": 31,
+  "status_counts": {
+   "RECRUITING": 5,
+   "COMPLETED": 13,
+   "TERMINATED": 2,
+   "UNKNOWN": 5,
+   "ACTIVE_NOT_RECRUITING": 2,
+   "NOT_YET_RECRUITING": 1,
+   "ENROLLING_BY_INVITATION": 1,
+   "WITHDRAWN": 2
+  },
+  "records_with_posted_results": [
+   "NCT01804049",
+   "NCT02308228",
+   "NCT02432287",
+   "NCT02570672",
+   "NCT03309007",
+   "NCT03451006",
+   "NCT03861767",
+   "NCT04221750",
+   "NCT04264897"
+  ],
+  "tame": {
+   "phrase_search": "\"Targeting Aging with Metformin\" returned only NCT05651620 (CALERIE Legacy Study)",
+   "acronym_search": "TAME AND metformin returned NCT05651620 and NCT02656017 (a polycystic kidney disease trial that shares the acronym)",
+   "note": "We found no ClinicalTrials.gov record for the aging trial called TAME."
+  },
+  "selected": {
+   "NCT02570672": [
+    "COMPLETED",
+    141,
+    "The University of Texas Health Science Center at San Antonio",
+    "2024-02-07",
+    true,
+    "2016-04"
+   ],
+   "NCT02432287": [
+    "COMPLETED",
+    16,
+    "Albert Einstein College of Medicine",
+    "2015-09",
+    true,
+    "2014-10"
+   ],
+   "NCT04221750": [
+    "COMPLETED",
+    114,
+    "VA Office of Research and Development",
+    "2025-07-31",
+    true,
+    "2021-05-14"
+   ],
+   "NCT02308228": [
+    "COMPLETED",
+    109,
+    "Philip Kern",
+    "2017-12-14",
+    true,
+    "2015-01-14"
+   ],
+   "NCT01101438": [
+    "COMPLETED",
+    3649,
+    "Canadian Cancer Trials Group",
+    "2021-09-21",
+    true,
+    "2010-08-13"
+   ],
+   "NCT02915198": [
+    "RECRUITING",
+    7410,
+    "VA Office of Research and Development",
+    "2029-09-28",
+    false,
+    "2023-04-03"
+   ],
+   "NCT04264897": [
+    "COMPLETED",
+    166,
+    "Oklahoma Medical Research Foundation",
+    "2025-03-12",
+    true,
+    "2020-07-29"
+   ],
+   "NCT07302932": [
+    "COMPLETED",
+    112,
+    "Diabetes Foundation, India",
+    "2025-01-30",
+    false,
+    "2023-02-01"
+   ],
+   "NCT03309007": [
+    "COMPLETED",
+    25,
+    "University of New Mexico",
+    "2020-08-20",
+    true,
+    "2017-09-01"
+   ],
+   "NCT01804049": [
+    "COMPLETED",
+    120,
+    "VA Office of Research and Development",
+    "2018-08-31",
+    true,
+    "2014-04-08"
+   ]
+  }
+ },
+ "pubmed": {
+  "human_lifespan": {
+   "count": 5,
+   "idlist": [
+    "37675817",
+    "35914953",
+    "28732480",
+    "25921843",
+    "24194506"
+   ],
+   "query": "metformin[tiab] AND (lifespan[tiab] OR life span[tiab] OR longevity[tiab]) AND randomized controlled trial[pt]",
+   "note": "None of the 5 records measured lifespan in people (one is a mouse study, one a design paper)."
+  }
+ },
+ "key_trials": [
+  {
+   "trial": "Diabetes prevention (DPP), 2002",
+   "n": 3234,
+   "result": "Main goal met; lifestyle did better",
+   "id": "11832527"
+  },
+  {
+   "trial": "Breast cancer (MA.32), 2022",
+   "n": 3649,
+   "result": "Main goal missed",
+   "id": "35608580"
+  },
+  {
+   "trial": "Strength training, 65+ (MASTERS), 2019",
+   "n": 94,
+   "result": "Less muscle gain than placebo",
+   "id": "31557380"
+  },
+  {
+   "trial": "Frail, mean age 80 (MET-PREVENT), 2025",
+   "n": 72,
+   "result": "Main goal missed; poorly tolerated",
+   "id": "40147475"
+  },
+  {
+   "trial": "Obese 65+ with lifestyle (DEMFOS), 2026",
+   "n": 114,
+   "result": "No added benefit",
+   "id": "42532077"
+  },
+  {
+   "trial": "HIV, epigenetic age (METFORAGING), 2026",
+   "n": 40,
+   "result": "Main goal missed",
+   "id": "42023167"
+  },
+  {
+   "trial": "Prediabetes, frailty (preprint), 2026",
+   "n": 145,
+   "result": "Mixed; not peer reviewed",
+   "id": "42620010"
+  }
+ ],
+ "key_trials_total_n": 7348,
+ "abstract_quotes": {
+  "23900241": {
+   "title": "Metformin improves healthspan and lifespan in mice",
+   "journal": "Nat Commun",
+   "year": "2013",
+   "quotes": [
+    "starting at middle age extends healthspan and lifespan in male mice",
+    "Treatment with metformin mimics some of the benefits of calorie restriction",
+    "raise the possibility of metformin-based interventions to promote healthy aging"
+   ]
+  },
+  "27312235": {
+   "title": "Longer lifespan in male mice treated with a weakly estrogenic agonist, an antioxidant, an α-glucosidase inhibitor or a Nrf2-inducer",
+   "journal": "Aging Cell",
+   "year": "2016",
+   "quotes": [
+    "Metformin alone,",
+    "did not significantly extend lifespan.",
+    "robustly extended lifespan, suggestive of an added benefit",
+    "based on historical comparison with earlier studies of rapamycin given alone"
+   ]
+  },
+  "38630424": {
+   "title": "The Gehan test identifies life-extending compounds overlooked by the log-rank test in the NIA Interventions Testing Program: Metformin, Enalapril, caffeic acid phenethyl ester, green tea extract, and 17-dimethylaminoethylamino-17-demethoxygeldanamycin hydrochloride",
+   "journal": "Geroscience",
+   "year": "2024",
+   "quotes": [
+    "We therefore reanalyzed all data collected by the ITP from 2004-2022 using the Gehan test",
+    "Three (metformin, enalapril, and 17-DMAG) were only effective in males"
+   ]
+  },
+  "27304507": {
+   "title": "Metformin as a Tool to Target Aging",
+   "journal": "Cell Metab",
+   "year": "2016",
+   "quotes": [
+    "will be tested in the TAME (Targeting Aging with Metformin) trial"
+   ]
+  },
+  "25041462": {
+   "title": "Can people with type 2 diabetes live longer than those without? A comparison of mortality in people initiated with metformin or sulphonylurea monotherapy and matched, non-diabetic controls",
+   "journal": "Diabetes Obes Metab",
+   "year": "2014",
+   "quotes": [
+    "We identified 78,241 subjects treated with metformin",
+    "Patients with type 2 diabetes initiated with metformin monotherapy had longer survival than did matched, non-diabetic controls."
+   ]
+  },
+  "36287641": {
+   "title": "Reassessing the evidence of a survival advantage in Type 2 diabetes treated with metformin compared with controls without diabetes: a retrospective cohort study",
+   "journal": "Int J Epidemiol",
+   "year": "2022",
+   "quotes": [
+    "these associations were attenuated to 1.32 (95% CI: 1.16, 1.50) and 1.64 (95% CI: 1.10, 2.46), respectively.",
+    "Treatment initiation by metformin monotherapy in Type 2 diabetes was not associated with survival equal or superior to that of the general population without diabetes."
+   ]
+  },
+  "40388602": {
+   "title": "Comparative Effectiveness of Metformin Versus Sulfonylureas on Exceptional Longevity in Women With Type 2 Diabetes: Target Trial Emulation",
+   "journal": "J Gerontol A Biol Sci Med Sci",
+   "year": "2025",
+   "quotes": [
+    "Among 438 propensity score-matched women with type 2 diabetes",
+    "(hazard ratio, 0.70; 95% CI: 0.56-0.88)",
+    "causality cannot be inferred"
+   ]
+  },
+  "11832527": {
+   "title": "Reduction in the incidence of type 2 diabetes with lifestyle intervention or metformin",
+   "journal": "N Engl J Med",
+   "year": "2002",
+   "quotes": [
+    "We randomly assigned 3234 nondiabetic persons",
+    "metformin by 31 percent",
+    "The lifestyle intervention reduced the incidence by 58 percent",
+    "The lifestyle intervention was more effective than metformin."
+   ]
+  },
+  "35608580": {
+   "title": "Effect of Metformin vs Placebo on Invasive Disease-Free Survival in Patients With Breast Cancer: The MA.32 Randomized Clinical Trial",
+   "journal": "JAMA",
+   "year": "2022",
+   "quotes": [
+    "enrolled 3649 patients with high-risk nonmetastatic breast cancer",
+    "(21.5% vs 17.5%, respectively, P = .003)",
+    "the addition of metformin vs placebo to standard breast cancer treatment did not significantly improve invasive disease-free survival"
+   ]
+  },
+  "31557380": {
+   "title": "Metformin blunts muscle hypertrophy in response to progressive resistance exercise training in older adults: A randomized, double-blind, placebo-controlled, multicenter trial: The MASTERS trial",
+   "journal": "Aging Cell",
+   "year": "2019",
+   "quotes": [
+    "placebo gained more lean body mass (p = .003) and thigh muscle mass (p < .001) than metformin",
+    "metformin negatively impacts the hypertrophic response to resistance training in healthy older individuals"
+   ]
+  },
+  "29383869": {
+   "title": "Metformin regulates metabolic and nonmetabolic pathways in skeletal muscle and subcutaneous adipose tissues of older adults",
+   "journal": "Aging Cell",
+   "year": "2018",
+   "quotes": [
+    "~70-year-old participants (n = 14)",
+    "treated with 6 weeks each of metformin and placebo",
+    "This study provides the first evidence that, in older adults, metformin has metabolic and nonmetabolic effects linked to aging."
+   ]
+  },
+  "40147475": {
+   "title": "Metformin and physical performance in older people with probable sarcopenia and physical prefrailty or frailty in England (MET-PREVENT): a double-blind, randomised, placebo-controlled trial",
+   "journal": "Lancet Healthy Longev",
+   "year": "2025",
+   "quotes": [
+    "72 participants were randomly assigned",
+    "Mean age was 80·4 years",
+    "p=0·96",
+    "108 adverse events occurred in 35 (100%) of 35 participants who received metformin and 77 adverse events occurred in 33 (92%) of 36 participants who received placebo",
+    "12 (34%) of 35 participants had hospital admissions in the metformin group versus three (8%) of 36 participants in the placebo group",
+    "Metformin did not improve 4-m walk speed and was poorly tolerated in this population."
+   ]
+  },
+  "42532077": {
+   "title": "Metformin added to lifestyle intervention for physical function in older adults with obesity (DEMFOS trial): a randomised controlled trial",
+   "journal": "Lancet Healthy Longev",
+   "year": "2026",
+   "quotes": [
+    "114 were included in this study",
+    "(0·1 points, -1·2 to 1·4; p=0·92)",
+    "metformin does not provide additional improvement in physical function",
+    "These results support prioritising lifestyle-based strategies to improve functional outcomes in this population."
+   ]
+  },
+  "42023167": {
+   "title": "Metformin and epigenetic age in non-diabetic older people with HIV in Madrid (METFORAGING): a double-blind, randomised, placebo-controlled, pilot trial",
+   "journal": "EClinicalMedicine",
+   "year": "2026",
+   "quotes": [
+    "40 were randomly assigned",
+    "Enrolment was closed at 40 participants because of slow recruitment",
+    "-1.02 years (95% confidence interval [CI] -5.30 to 3.26; p = 0.627)",
+    "no significant difference was noted in the primary outcome"
+   ]
+  },
+  "42609624": {
+   "title": "Metformin and Weight Changes in Non-diabetic Older People With HIV (METFORAGING): A Double-Blind, Randomized, Placebo-Controlled, Pilot Trial",
+   "journal": "Open Forum Infect Dis",
+   "year": "2026",
+   "quotes": [
+    "(between-group difference -2.8 kg [95% CI -5.2 to -0.4]; P = .025)",
+    "After discontinuation, weight in the metformin group returned toward baseline"
+   ]
+  },
+  "42620010": {
+   "title": "A Randomized Clinical Trial of Metformin to Reduce Frailty in Older Adults with Glucose Intolerance",
+   "journal": "medRxiv",
+   "year": "2026",
+   "quotes": [
+    "145 non-frail or pre-frail older adults",
+    "an upward trajectory in year 1",
+    "when assessing effect on Fried score without the weight loss criterion, no difference was observed",
+    "metformin caused a steady improvement in the frailty index",
+    "Metformin was well tolerated.",
+    "metformin led to a significant reduction in the deficit accumulation frailty index but not the Fried frailty phenotype"
+   ]
+  },
+  "42692117": {
+   "title": "Metformin therapy increases leukocyte telomere length, telomerase activity, and longevity gene expression in Asian Indians with prediabetes: A 24-week participant-blind, outcome-assessor-blinded randomized controlled trial",
+   "journal": "Mech Ageing Dev",
+   "year": "2026",
+   "quotes": [
+    "127 participants met the eligibility criteria",
+    "for 24 weeks",
+    "29.6% vs 4.4% elongation",
+    "the marked LTL response requires cautious interpretation"
+   ]
+  },
+  "42841129": {
+   "title": "Impact of metformin use on neurocognitive functions in older people: a systematic review and meta-analysis",
+   "journal": "Dement Neuropsychol",
+   "year": "2026",
+   "quotes": [
+    "Thirteen articles met the eligibility criteria",
+    "five provided sufficient data for the meta-analysis",
+    "metformin has a small but positive effect on overall cognitive function in older adults"
+   ]
+  },
+  "34865016": {
+   "title": "Antecedent Metabolic Health and Metformin (ANTHEM) Aging Study: Rationale and Study Design for a Randomized Controlled Trial",
+   "journal": "J Gerontol A Biol Sci Med Sci",
+   "year": "2022",
+   "quotes": [
+    "The antidiabetic medication metformin has been proposed to be the first drug tested to target aging and extend healthspan in humans.",
+    "it is not clear if these protective effects apply to those free of age-related disease"
+   ]
+  },
+  "42710703": {
+   "title": "Geroprotective potential of anti-diabetic medications: Bridging type 2 diabetes and accelerated aging",
+   "journal": "Pharmacol Res",
+   "year": "2026",
+   "quotes": [
+    "translational relevance remains uncertain due to model heterogeneity, limited randomized clinical evidence, and insufficient long-term follow-up"
+   ]
+  }
+ },
+ "conflict_statements": {
+  "38630424": "The authors declare no competing interests.",
+  "40388602": "declare no conflicts of interest.",
+  "31557380": "The authors have no conflict of interests to disclose.",
+  "40147475": "MDW reports receiving consultancy fees from Rejuvenate Biomed for work on sarcopenia trials.",
+  "42532077": "We declare no competing interests.",
+  "42532078": "MDW has received consultancy fees from Rejuvenate Biomed, Istesso, and Novo Nordisk for sarcopenia trial design",
+  "42841129": "The authors report no conflicts of interest."
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Metformin is a cheap, decades-old prescription diabetes drug. In mice, one NIA lab study reported longer life in males, but the multi-site NIA Interventions Testing Program found metformin alone did not significantly extend lifespan (a 2024 reanalysis with a different test found a male-only effect). In people, the famous survival signal comes from observational data: a 2014 UK study found people with diabetes on metformin outlived matched people without diabetes, but a 2022 Danish register study including twins did not find that. No human trial has measured lifespan; TAME, proposed in 2016, has no ClinicalTrials.gov record. Randomized trials in older adults (MASTERS, MET-PREVENT, DEMFOS, METFORAGING) mostly missed their main goals, and MASTERS found less muscle gain from strength training. Metformin carries a boxed warning for lactic acidosis and can lower vitamin B12."
+ }
+}
