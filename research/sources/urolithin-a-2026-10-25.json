@@ -1,0 +1,427 @@
+{
+ "checked": "2026-10-25",
+ "page": "https://jabbitapp.com/research/urolithin-a-mitopure-mitophagy-longevity-evidence-teardown.html",
+ "fda_gras": {
+  "notice": "GRN 000791",
+  "notifier": "Amazentis SA",
+  "filed": "2018-06-15",
+  "closed": "2018-12-20",
+  "response": "FDA has no questions",
+  "inventory": "https://cfsanappsexternal.fda.gov/scripts/fdcc/index.cfm?set=GRASNotices&id=791",
+  "letter": "https://www.fda.gov/media/120300/download",
+  "quotes": [
+   "The Food and Drug Administration (FDA, we) completed our evaluation of GRN 000791.",
+   "The notice informs us of Amazentis’ view that this use of urolithin A is GRAS through scientific procedures.",
+   "Urolithin A is chemically synthesized using one of two alternative processes",
+   "we have no questions at this time regarding Amazentis’ conclusion that urolithin A is GRAS under its intended conditions of use.",
+   "This letter is not an affirmation that urolithin A is GRAS under 21 CFR 170.35.",
+   "If products containing urolithin A bear any nutrient content or health claims on the label or in labeling, such claims are subject to the applicable requirements",
+   "Food ingredient manufacturers and food producers are responsible for ensuring that marketed products are safe and compliant with all applicable legal and regulatory requirements."
+  ]
+ },
+ "eu_novel_food_application": {
+  "submitted": "2018-08-31",
+  "url": "https://food.ec.europa.eu/system/files/2019-05/novel-food_sum_ongoing-app_2018-0538.pdf",
+  "quotes": [
+   "APPLICATION FOR THE APPROVAL OF UROLITHIN A AS A NOVEL FOOD INGREDIENT IN THE EUROPEAN UNION",
+   "Amazentis SA’s ingredient is a synthetic version of urolithin A that is identical in structure to the compound formed endogenously following consumption of ellagic acid and ellagitannins."
+  ],
+  "note": "We found no EU authorisation or published EFSA opinion; status not confirmed."
+ },
+ "uk_fsa": {
+  "application": "RP-1777",
+  "applicant": "Amazentis SA",
+  "status": "In progress",
+  "phase": "Risk assessment",
+  "url": "https://data.food.gov.uk/regulated-product-applications/products-list/RP-1777"
+ },
+ "swiss_fsvo": {
+  "date": "2025-07-29",
+  "url": "https://www.blv.admin.ch/dam/en/sd-web/b0gsH3ZLYwUB/einstufung-als-neuartiges-lebensmittel-urolithin-a-2025-en.pdf",
+  "quotes": [
+   "is not known to be found in any food source",
+   "Urolithin A is therefore subject to the authorisation requirement for novel foods under Article 17 FUAO."
+  ]
+ },
+ "registry": {
+  "clinicaltrials_gov_intervention_urolithin": 38,
+  "lead_sponsor_amazentis": 13,
+  "note": "Broad search; includes pomegranate, walnut and pecan studies that measure urolithins.",
+  "selected": {
+   "NCT06274749": [
+    "RECRUITING",
+    180,
+    "National Institute on Aging (NIA)",
+    "2027-03-31",
+    false
+   ],
+   "NCT07060898": [
+    "ACTIVE_NOT_RECRUITING",
+    650,
+    "Amazentis SA",
+    "2025-11-20",
+    false
+   ],
+   "NCT07842146": [
+    "RECRUITING",
+    60,
+    "University Hospital, Akershus",
+    "2028-10-15",
+    false
+   ],
+   "NCT06022822": [
+    "RECRUITING",
+    90,
+    "National Cancer Institute (NCI)",
+    "2026-11-01",
+    false
+   ],
+   "NCT07231783": [
+    "RECRUITING",
+    120,
+    "Amazentis SA",
+    "2027-10-31",
+    false
+   ],
+   "NCT05921266": [
+    "COMPLETED",
+    50,
+    "University of Oklahoma",
+    "2025-05-14",
+    false
+   ],
+   "NCT03283462": [
+    "COMPLETED",
+    66,
+    "Amazentis SA",
+    "2020-09-25",
+    false
+   ],
+   "NCT03464500": [
+    "COMPLETED",
+    90,
+    "Amazentis SA",
+    "2019-09-30",
+    false
+   ],
+   "NCT05735886": [
+    "COMPLETED",
+    50,
+    "Amazentis SA",
+    "2024-03-31",
+    false
+   ],
+   "NCT04783207": [
+    "COMPLETED",
+    42,
+    "Amazentis SA",
+    "2022-05-30",
+    false
+   ],
+   "NCT06556706": [
+    "COMPLETED",
+    26,
+    "Amazentis SA",
+    "2025-04-25",
+    false
+   ]
+  }
+ },
+ "pubmed": {
+  "query": "urolithin[tiab] AND randomized controlled trial[pt]",
+  "count": 37,
+  "idlist": [
+   "42853569",
+   "42808314",
+   "42371155",
+   "42023516",
+   "41794475",
+   "41642121",
+   "41408634",
+   "41305622",
+   "41174221",
+   "40944126",
+   "40839339",
+   "40255128",
+   "39487653",
+   "39179206",
+   "38415449",
+   "37743489",
+   "36175997",
+   "35940768",
+   "35584623",
+   "35050355",
+   "35021194",
+   "34117375",
+   "33458928",
+   "33095939",
+   "31496244",
+   "30690879",
+   "29802820",
+   "29318244",
+   "28513179",
+   "27879044",
+   "26412215",
+   "24532260",
+   "24410903",
+   "23985577",
+   "23934737",
+   "22631214",
+   "19885850"
+  ],
+  "lifespan_query": "urolithin[tiab] AND (lifespan[tiab] OR longevity[tiab] OR survival[tiab]) AND (mice[tiab] OR mouse[tiab] OR rats[tiab])",
+  "lifespan_count": 30,
+  "lifespan_note": "Of these, the abstracts reporting a lifespan result for urolithin A were the 2016 and 2025 worm studies and one 2023 mouse study (Buck Institute); we did not read every full text."
+ },
+ "key_trials": [
+  {
+   "trial": "Middle-aged adults, 2022",
+   "n": 88,
+   "result": "Main goal missed; strength up",
+   "maker_funded": "Yes",
+   "pmid": "35584623"
+  },
+  {
+   "trial": "Older adults, 2022",
+   "n": 66,
+   "result": "Main goals missed; endurance up",
+   "maker_funded": "Yes",
+   "pmid": "35050355"
+  },
+  {
+   "trial": "Immune aging, 2025",
+   "n": 50,
+   "result": "Immune-cell shifts",
+   "maker_funded": "Yes",
+   "pmid": "41174221"
+  },
+  {
+   "trial": "Adults with obesity, 2026",
+   "n": 50,
+   "result": "Main goal missed",
+   "maker_funded": "No",
+   "pmid": "42853569"
+  },
+  {
+   "trial": "Elite runners, 2025",
+   "n": 42,
+   "result": "Race time not improved",
+   "maker_funded": "Yes",
+   "pmid": "40839339"
+  },
+  {
+   "trial": "Strength athletes, 2024",
+   "n": 20,
+   "result": "Some strength gains",
+   "maker_funded": "None reported",
+   "pmid": "39487653"
+  },
+  {
+   "trial": "Heart failure, 2024",
+   "n": 10,
+   "result": "No heart benefit",
+   "maker_funded": "Not stated",
+   "pmid": "38415449"
+  }
+ ],
+ "key_trials_total_n": 326,
+ "full_text_quotes": {
+  "PMC8777576": [
+   "Funding/Support: This research was supported by Amazentis SA.",
+   "After the study started, the original primary end points of change from baseline of hand maximal ATP production and of hand muscle endurance were replaced by change from baseline of 6-minute walk distance and hand maximal ATP production",
+   "The funder had a role in the design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the manuscript; and decision to submit the manuscript for publication."
+  ],
+  "PMC13653284": [
+   "Conflict of Interest Disclosures: None reported.",
+   "Research reported in this publication was supported by the American Heart Association",
+   "The sponsor had no role in the design and conduct of the study",
+   "Published: October 9, 2026.",
+   "Second, this study had a small sample size, short duration, and was conducted at a single site."
+  ]
+ },
+ "abstract_quotes": {
+  "27400265": {
+   "title": "Urolithin A induces mitophagy and prolongs lifespan in C. elegans and increases muscle function in rodents",
+   "journal": "Nat Med",
+   "year": "2016",
+   "quotes": [
+    "In C. elegans, UA prevented the accumulation of dysfunctional mitochondria with age and extended lifespan.",
+    "UA improved exercise capacity in two different mouse models of age-related decline of muscle function, as well as in young rats"
+   ]
+  },
+  "28757461": {
+   "title": "Safety assessment of Urolithin A, a metabolite produced by the human gut microbiota upon dietary intake of plant derived ellagitannins and ellagic acid",
+   "journal": "Food Chem Toxicol",
+   "year": "2017",
+   "quotes": [
+    "The battery of genotoxicity assays demonstrated that UA is not genotoxic.",
+    "showed no alterations in clinical parameters, blood chemistry, or hematology, and did not indicate any target organs, or any specific toxic mechanisms"
+   ]
+  },
+  "32694802": {
+   "title": "The mitophagy activator urolithin A is safe and induces a molecular signature of improved mitochondrial and cellular health in humans",
+   "journal": "Nat Metab",
+   "year": "2019",
+   "quotes": [
+    "first-in-human clinical trial",
+    "to healthy, sedentary elderly individuals",
+    "We show that UA has a favourable safety profile (primary outcome)."
+   ]
+  },
+  "34117375": {
+   "title": "Direct supplementation with Urolithin A overcomes limitations of dietary exposure and gut microbiome variability in healthy adults to achieve consistent levels across the population",
+   "journal": "Eur J Clin Nutr",
+   "year": "2022",
+   "quotes": [
+    "Only 12% of subjects had detectable levels of UA at baseline.",
+    "Following PJ intake ~40% of the subjects converted significantly the precursor compounds into UA.",
+    "provided a >6-fold exposure to UA vs. PJ (p < 0.0001)"
+   ]
+  },
+  "35050355": {
+   "title": "Effect of Urolithin A Supplementation on Muscle Endurance and Mitochondrial Health in Older Adults: A Randomized Clinical Trial",
+   "journal": "JAMA Netw Open",
+   "year": "2022",
+   "quotes": [
+    "A total of 66 participants were randomized",
+    "were predominantly women (50 [75.8%]), and were all White individuals",
+    "The mean (SD) increase from baseline in the 6-minute walk distance was 60.8 (67.2) m in the urolithin A group and 42.5 (73.3) m in the placebo group.",
+    "These results showed no significant improvement with urolithin A supplementation compared with placebo.",
+    "Urolithin A, compared with placebo, significantly improved muscle endurance",
+    "No statistical differences in adverse events were observed between the 2 groups.",
+    "however, future work is needed to confirm this finding"
+   ]
+  },
+  "35584623": {
+   "title": "Urolithin A improves muscle strength, exercise performance, and biomarkers of mitochondrial health in a randomized trial in middle-aged adults",
+   "journal": "Cell Rep Med",
+   "year": "2022",
+   "quotes": [
+    "The data show significant improvements in muscle strength (∼12%) with intake of Urolithin A.",
+    "but do not notice a significant improvement on peak power output (primary endpoint)",
+    "We observe clinically meaningful improvements with Urolithin A on aerobic endurance (peak oxygen oxygen consumption [VO2]) and physical performance (6 min walk test)"
+   ]
+  },
+  "38415449": {
+   "title": "Evaluation of Urolithin A Efficacy in Heart Failure Patients with Reduced Ejection Fraction: A Randomized, Double-blind, Crossover, Placebo-controlled Clinical Trial",
+   "journal": "Rev Recent Clin Trials",
+   "year": "2024",
+   "quotes": [
+    "conducted on 10 patients with HF with reduced ejection fraction (HFrEF)",
+    "The results failed to reveal any significant effect of UA supplementation on echocardiographic measures",
+    "The results of the present study do not support any positive effect of UA supplementation in improving echocardiographic and biochemical indices of HFrEF."
+   ]
+  },
+  "39487653": {
+   "title": "Assessment of Urolithin A effects on muscle endurance, strength, inflammation, oxidative stress, and protein metabolism in male athletes with resistance training: an 8-week randomized, double-blind, placebo-controlled study",
+   "journal": "J Int Soc Sports Nutr",
+   "year": "2024",
+   "quotes": [
+    "with twenty resistance-trained male athletes",
+    "although statistical significance was not reached",
+    "the group receiving UA supplementation, compared to the placebo group, showed significant improvements in MVIC and RTF"
+   ]
+  },
+  "40839339": {
+   "title": "Evaluating the Impact of Urolithin A Supplementation on Running Performance, Recovery, and Mitochondrial Biomarkers in Highly Trained Male Distance Runners",
+   "journal": "Sports Med",
+   "year": "2025",
+   "quotes": [
+    "competitive male distance runners (n = 42",
+    "Running performance (3000 m time trial) was not significantly improved in either treatment group",
+    "reduced indirect markers of post-exercise muscle damage",
+    "UA supplementation did not further enhance performance in highly trained male endurance athletes"
+   ]
+  },
+  "41174221": {
+   "title": "Effect of the mitophagy inducer urolithin A on age-related immune decline: a randomized, placebo-controlled trial",
+   "journal": "Nat Aging",
+   "year": "2025",
+   "quotes": [
+    "50 healthy middle-aged adults",
+    "UA expanded peripheral naive-like, less terminally exhausted CD8+ cells (treatment difference 0.50 percentage points; 95% CI = 0.16 to 0.83; P = 0.0437)",
+    "supporting its potential to counteract age-related immune decline and inflammaging"
+   ]
+  },
+  "42853569": {
+   "title": "Urolithin A and Endothelial and Cerebrovascular Function in Middle-Aged Adults With Obesity: A Randomized Clinical Trial",
+   "journal": "JAMA Netw Open",
+   "year": "2026",
+   "quotes": [
+    "Overall, 50 participants were included",
+    "Seven participants were lost to follow-up (14% dropout rate).",
+    "Change in mean (SD) FMD did not differ significantly based on group allocation",
+    "there was no significant treatment effect on secondary peripheral endothelial function outcomes",
+    "while task performance remained unchanged",
+    "4 weeks of UA supplementation did not significantly improve peripheral endothelial function in middle-aged adults with obesity",
+    "supplementation was well tolerated and feasible, and its effect on task-evoked cerebrovascular hemodynamic responses warrants further investigation"
+   ]
+  },
+  "42559151": {
+   "title": "Effects of Urolithin A supplementation on muscle health outcomes in humans from randomized controlled trials",
+   "journal": "Front Nutr",
+   "year": "2026",
+   "quotes": [
+    "Five randomized controlled trials (n = 236) were included.",
+    "The certainty of evidence for the 6MWT outcome was rated as low (GRADE).",
+    "showed a directionally favorable but statistically inconclusive effect with low GRADE certainty",
+    "are exploratory and hypothesis-generating, not reproducible evidence of efficacy",
+    "Larger, longer, and methodologically standardized trials in better-defined populations are required before firm clinical recommendations can be made."
+   ]
+  },
+  "39002645": {
+   "title": "Targeting aging with urolithin A in humans: A systematic review",
+   "journal": "Ageing Res Rev",
+   "year": "2024",
+   "quotes": [
+    "In five studies including 250 healthy individuals",
+    "It did not affect mitochondrial maximal adenosine triphosphate production, biogenesis, dynamics, or gut microbiota composition.",
+    "UA increased muscle strength and endurance, however, had no effect on anthropometrics, cardiovascular outcomes, and physical function.",
+    "Unrelated adverse events were mild or moderate."
+   ]
+  },
+  "36576642": {
+   "title": "Urolithin A reduces amyloid-beta load and improves cognitive deficits uncorrelated with plaque burden in a mouse model of Alzheimer's disease",
+   "journal": "Geroscience",
+   "year": "2023",
+   "quotes": [
+    "WT and 3xTg-AD mice were administered long-term intermittent dietary supplementation with UA.",
+    "UA was also found to extend lifespan in normal aging mice."
+   ]
+  },
+  "40944367": {
+   "title": "Urolithin Α modulates inter-organellar communication via calcium-dependent mitophagy to promote healthy ageing",
+   "journal": "Autophagy",
+   "year": "2025",
+   "quotes": [
+    "Calcium chelation abolishes UA-induced mitophagy, blocking its beneficial impact on muscle function and lifespan"
+   ]
+  },
+  "42866687": {
+   "title": "Topical application of urolithin A activates mitophagy and enhances mitochondrial function to promote skin longevity",
+   "journal": "iScience",
+   "year": "2026",
+   "quotes": [
+    "In randomized, placebo-controlled clinical studies, UA reduced periorbital wrinkle depth after 8 weeks and attenuated UVB-induced erythema."
+   ]
+  }
+ },
+ "conflict_statements": {
+  "34117375": "Amazentis SA, who is the sponsor of this clinical study",
+  "35584623": "Amazentis SA, who is the sponsor of this clinical study",
+  "41174221": "Amazentis SA, which funded this clinical study and provided the investigational product (Mitopure)",
+  "40839339": "This work was supported by research funding from Amazentis SA",
+  "42866687": "commercializes its products under the brand Timeline",
+  "39487653": "No potential conflict of interest was reported by the author(s).",
+  "36576642": "The authors declare no competing interests.",
+  "42559151": "conducted in the absence of any commercial or financial relationships"
+ },
+ "amazentis_affiliated_authors": [
+  "27400265",
+  "28757461",
+  "32694802"
+ ],
+ "analysis": {
+  "note": "Jabbit analysis. Urolithin A is a gut-microbe metabolite of ellagitannins sold as a supplement ingredient (Mitopure). It extended lifespan in worms, and one 2023 mouse study reported longer life in normal aging mice; no human trial has measured lifespan. Human trials are small (10 to 88 people) and short (4 weeks to 4 months); most were funded by the ingredient's maker; several missed their main goals while reporting secondary signals in strength, endurance, inflammation or immune markers. Reported tolerability was good, but long-term safety data are lacking."
+ }
+}
