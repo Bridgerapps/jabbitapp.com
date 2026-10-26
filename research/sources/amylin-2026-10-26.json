@@ -1,0 +1,589 @@
+{
+ "checked": "2026-10-26",
+ "page": "https://jabbitapp.com/research/amylin-weight-loss-drugs-petrelintide-eloralintide-cagrilintide-teardown.html",
+ "registry": {
+  "petrelintide": {
+   "query": "ClinicalTrials.gov API v2, query.intr=petrelintide",
+   "records": 9,
+   "phase_counts": {
+    "PHASE1": 3,
+    "PHASE2": 3,
+    "PHASE3": 3
+   },
+   "selected": {
+    "NCT06662539": {
+     "acronym": "ZUPREME",
+     "phase": [
+      "PHASE2"
+     ],
+     "status": "COMPLETED",
+     "enrollment": 493,
+     "enrollment_type": "ACTUAL",
+     "sponsor": "Zealand Pharma",
+     "start": "2024-12-09",
+     "primary_completion": "2025-09-30",
+     "first_posted": "2024-10-29",
+     "primary_outcome_timeframe": "From Baseline (Day 1) to Week 28",
+     "has_results": false
+    },
+    "NCT06926842": {
+     "acronym": null,
+     "phase": [
+      "PHASE2"
+     ],
+     "status": "COMPLETED",
+     "enrollment": 221,
+     "enrollment_type": "ACTUAL",
+     "sponsor": "Zealand Pharma",
+     "start": "2025-04-22",
+     "primary_completion": "2026-08-13",
+     "first_posted": "2025-04-15",
+     "primary_outcome_timeframe": "From Baseline (Day 1) to Weeks 28",
+     "has_results": false
+    },
+    "NCT07843498": {
+     "acronym": "ZUPREME-3",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "RECRUITING",
+     "enrollment": 3900,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Hoffmann-La Roche",
+     "start": "2026-09-30",
+     "primary_completion": "2028-12-21",
+     "first_posted": "2026-09-28",
+     "primary_outcome_timeframe": "From Baseline to Week 64",
+     "has_results": false
+    },
+    "NCT07843485": {
+     "acronym": "ZUPREME-4",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "RECRUITING",
+     "enrollment": 600,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Hoffmann-La Roche",
+     "start": "2026-09-30",
+     "primary_completion": "2028-10-20",
+     "first_posted": "2026-09-28",
+     "primary_outcome_timeframe": "From Baseline to Week 64",
+     "has_results": false
+    },
+    "NCT07843472": {
+     "acronym": "ZUPREME-5",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "RECRUITING",
+     "enrollment": 2500,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Hoffmann-La Roche",
+     "start": "2026-09-30",
+     "primary_completion": "2030-07-28",
+     "first_posted": "2026-09-28",
+     "primary_outcome_timeframe": "From Baseline to Week 64",
+     "has_results": false
+    },
+    "NCT07589686": {
+     "acronym": "ZYNERGY",
+     "phase": [
+      "PHASE2"
+     ],
+     "status": "NOT_YET_RECRUITING",
+     "enrollment": 486,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Hoffmann-La Roche",
+     "start": "2026-09-30",
+     "primary_completion": "2027-11-12",
+     "first_posted": "2026-05-15",
+     "primary_outcome_timeframe": "From Baseline to Week 40",
+     "has_results": false
+    }
+   }
+  },
+  "eloralintide": {
+   "query": "ClinicalTrials.gov API v2, query.intr=eloralintide",
+   "records": 20,
+   "phase_counts": {
+    "PHASE1": 9,
+    "PHASE2": 4,
+    "PHASE3": 7
+   },
+   "selected": {
+    "NCT06230523": {
+     "acronym": null,
+     "phase": [
+      "PHASE2"
+     ],
+     "status": "COMPLETED",
+     "enrollment": 263,
+     "enrollment_type": "ACTUAL",
+     "sponsor": "Eli Lilly and Company",
+     "start": "2024-02-05",
+     "primary_completion": "2025-05-30",
+     "first_posted": "2024-01-30",
+     "primary_outcome_timeframe": "Baseline, Week 48",
+     "has_results": true
+    },
+    "NCT07282600": {
+     "acronym": "ENLIGHTEN-2",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "RECRUITING",
+     "enrollment": 1035,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Eli Lilly and Company",
+     "start": "2025-12-15",
+     "primary_completion": "2028-01",
+     "first_posted": "2025-12-15",
+     "primary_outcome_timeframe": "Baseline, Week 64",
+     "has_results": false
+    },
+    "NCT07321886": {
+     "acronym": "ENLIGHTEN-1",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "RECRUITING",
+     "enrollment": 1980,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Eli Lilly and Company",
+     "start": "2026-02-06",
+     "primary_completion": "2028-03",
+     "first_posted": "2026-01-07",
+     "primary_outcome_timeframe": "Baseline, Week 64",
+     "has_results": false
+    },
+    "NCT07369011": {
+     "acronym": "ENLIGHTEN-3",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "RECRUITING",
+     "enrollment": 800,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Eli Lilly and Company",
+     "start": "2026-02-10",
+     "primary_completion": "2028-03",
+     "first_posted": "2026-01-27",
+     "primary_outcome_timeframe": "Baseline, Week 64",
+     "has_results": false
+    },
+    "NCT07353931": {
+     "acronym": "ENLIGHTEN-4",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "RECRUITING",
+     "enrollment": 900,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Eli Lilly and Company",
+     "start": "2026-02-09",
+     "primary_completion": "2028-03",
+     "first_posted": "2026-01-21",
+     "primary_outcome_timeframe": "Baseline, Week 64",
+     "has_results": false
+    },
+    "NCT07392190": {
+     "acronym": "ENLIGHTEN-6",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "RECRUITING",
+     "enrollment": 900,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Eli Lilly and Company",
+     "start": "2026-02-10",
+     "primary_completion": "2028-06",
+     "first_posted": "2026-02-06",
+     "primary_outcome_timeframe": "Baseline, Week 64",
+     "has_results": false
+    },
+    "NCT07881432": {
+     "acronym": "AMPLIFY-1",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "NOT_YET_RECRUITING",
+     "enrollment": 2115,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Eli Lilly and Company",
+     "start": "2026-12",
+     "primary_completion": "2029-10",
+     "first_posted": "2026-10-19",
+     "primary_outcome_timeframe": "Baseline, Week 100",
+     "has_results": false
+    },
+    "NCT07881458": {
+     "acronym": "AMPLIFY-2",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "NOT_YET_RECRUITING",
+     "enrollment": 1000,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Eli Lilly and Company",
+     "start": "2026-11",
+     "primary_completion": "2029-10",
+     "first_posted": "2026-10-19",
+     "primary_outcome_timeframe": "Baseline, Week 100",
+     "has_results": false
+    }
+   }
+  },
+  "cagrilintide": {
+   "query": "ClinicalTrials.gov API v2, query.intr=cagrilintide",
+   "records": 44,
+   "phase_counts": {
+    "PHASE3": 22,
+    "PHASE1": 17,
+    "PHASE2": 5
+   },
+   "selected": {
+    "NCT05567796": {
+     "acronym": "REDEFINE 1",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "ACTIVE_NOT_RECRUITING",
+     "enrollment": 3400,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Novo Nordisk A/S",
+     "start": "2022-11-01",
+     "primary_completion": "2024-10-30",
+     "first_posted": "2022-10-05",
+     "primary_outcome_timeframe": "From baseline (week 0) to end of treatment (week 68)",
+     "has_results": false
+    },
+    "NCT07220642": {
+     "acronym": "RENEW 1",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "ACTIVE_NOT_RECRUITING",
+     "enrollment": 300,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Novo Nordisk A/S",
+     "start": "2025-11-05",
+     "primary_completion": "2027-05-11",
+     "first_posted": "2025-10-24",
+     "primary_outcome_timeframe": "From baseline (week 0) to end of treatment (week 64)",
+     "has_results": false
+    },
+    "NCT07220759": {
+     "acronym": "RENEW 2",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "ACTIVE_NOT_RECRUITING",
+     "enrollment": 330,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Novo Nordisk A/S",
+     "start": "2025-11-05",
+     "primary_completion": "2027-05-12",
+     "first_posted": "2025-10-24",
+     "primary_outcome_timeframe": "From baseline (week 0) to end of treatment (week 64)",
+     "has_results": false
+    },
+    "NCT07745504": {
+     "acronym": "RENEW 4",
+     "phase": [
+      "PHASE3"
+     ],
+     "status": "RECRUITING",
+     "enrollment": 285,
+     "enrollment_type": "ESTIMATED",
+     "sponsor": "Novo Nordisk A/S",
+     "start": "2026-08-04",
+     "primary_completion": "2027-05-18",
+     "first_posted": "2026-08-04",
+     "primary_outcome_timeframe": "From baseline (week 0) to end of treatment (week 26)",
+     "has_results": false
+    }
+   }
+  }
+ },
+ "weight_loss_best_arm_vs_placebo": [
+  {
+   "trial": "Petrelintide · ZUPREME 1 · 28 wk",
+   "drug_pct": 9.8,
+   "placebo_pct": 1.7,
+   "estimand": "efficacy estimand",
+   "status": "Peer reviewed",
+   "ref": "zup1"
+  },
+  {
+   "trial": "Petrelintide · ZUPREME-2 (type 2 diabetes) · 28 wk",
+   "drug_pct": 9.2,
+   "placebo_pct": 2.0,
+   "estimand": "efficacy estimand",
+   "status": "Company topline",
+   "ref": "zup2pr"
+  },
+  {
+   "trial": "Eloralintide · phase 2 · 48 wk",
+   "drug_pct": 20.0,
+   "placebo_pct": 0.4,
+   "estimand": "efficacy estimand",
+   "status": "Peer reviewed",
+   "ref": "elo2"
+  },
+  {
+   "trial": "Eloralintide alone (type 2 diabetes) · 48 wk",
+   "drug_pct": 12.3,
+   "placebo_pct": 3.0,
+   "estimand": "efficacy estimand",
+   "status": "Company topline",
+   "ref": "eloratzp"
+  },
+  {
+   "trial": "Cagrilintide · phase 2 · 26 wk",
+   "drug_pct": 10.8,
+   "placebo_pct": 3.0,
+   "estimand": "trial product estimand",
+   "status": "Peer reviewed",
+   "ref": "cagri2"
+  },
+  {
+   "trial": "Cagrilintide alone · REDEFINE 1 · 68 wk",
+   "drug_pct": 11.5,
+   "placebo_pct": 3.0,
+   "estimand": "treatment policy estimand",
+   "status": "Peer reviewed",
+   "ref": "redef1"
+  },
+  {
+   "trial": "CagriSema · REDEFINE 1 · 68 wk",
+   "drug_pct": 20.4,
+   "placebo_pct": 3.0,
+   "estimand": "treatment policy estimand",
+   "status": "Peer reviewed",
+   "ref": "redef1"
+  },
+  {
+   "trial": "Wegovy · STEP 1 · 68 wk",
+   "drug_pct": 14.9,
+   "placebo_pct": 2.4,
+   "estimand": "treatment policy estimand",
+   "status": "Peer reviewed",
+   "ref": "step1"
+  },
+  {
+   "trial": "Zepbound · SURMOUNT-1 · 72 wk",
+   "drug_pct": 20.9,
+   "placebo_pct": 3.1,
+   "estimand": "treatment regimen estimand",
+   "status": "Peer reviewed",
+   "ref": "surm1"
+  }
+ ],
+ "nausea_drug_vs_placebo": [
+  {
+   "trial": "Petrelintide, ZUPREME 1 (all arms pooled)",
+   "drug": "20%",
+   "placebo": "6%",
+   "ref": "zup1"
+  },
+  {
+   "trial": "Eloralintide, phase 2 (range across arms)",
+   "drug": "11%-64%",
+   "placebo": "14%",
+   "ref": "elo2"
+  },
+  {
+   "trial": "Cagrilintide, phase 2 (range across arms)",
+   "drug": "20%-47%",
+   "placebo": "18%",
+   "ref": "cagri2"
+  },
+  {
+   "trial": "Wegovy, label pool",
+   "drug": "44%",
+   "placebo": "16%",
+   "ref": "wegovy"
+  },
+  {
+   "trial": "Zepbound, label pool (range across doses)",
+   "drug": "25%-29%",
+   "placebo": "8%",
+   "ref": "zepbound"
+  },
+  {
+   "trial": "Pramlintide (Symlin), type 1 diabetes label pool",
+   "drug": "48%",
+   "placebo": "17%",
+   "ref": "symlin"
+  }
+ ],
+ "abstract_quotes": {
+  "42810355": {
+   "title": "Petrelintide, a human amylin analogue for the treatment of obesity (ZUPREME 1): a randomised, double-blind, placebo-controlled, phase 2 trial",
+   "journal": "Lancet Diabetes Endocrinol",
+   "year": "2026",
+   "quotes": [
+    "493 were randomly assigned and 485 received at least one dose",
+    "The primary endpoint was percentage change in bodyweight from baseline after 28 weeks.",
+    "versus -1·7% (-2·8 to -0·5) with placebo",
+    "Bodyweight continued to decline to week 42, with reductions of up to -10·7% with petrelintide.",
+    "The most common adverse event with petrelintide was nausea (79 [20%] of 404 participants vs five [6%] participants with placebo).",
+    "Vomiting was infrequent with petrelintide (12 [3%] participants vs five [6%] with placebo)",
+    "No deaths were reported.",
+    "had similar gastrointestinal tolerability to that of placebo apart from predominantly mild nausea during dose escalation",
+    "Zealand Pharma."
+   ]
+  },
+  "42017294": {
+   "title": "Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of Petrelintide for Weight Management: Two Randomized, Controlled Phase 1 Trials",
+   "journal": "Diabetes Obes Metab",
+   "year": "2026",
+   "quotes": [
+    "had a half-life of ~10 days",
+    "reduced body weight by up to 8.6% after 16 weeks",
+    "with no serious or severe treatment-emergent adverse events (TEAEs)"
+   ]
+  },
+  "41207310": {
+   "title": "Eloralintide, a selective amylin receptor agonist for the treatment of obesity: a 48-week phase 2, multicentre, double-blind, randomised, placebo-controlled trial",
+   "journal": "Lancet",
+   "year": "2025",
+   "quotes": [
+    "We enrolled 263 participants from 46 research centres in the USA.",
+    "for 48 weeks",
+    "compared with -0·4% (-2·2 to 1·4) in the placebo group",
+    "The most common adverse events with eloralintide were nausea",
+    "and fatigue",
+    "Eli Lilly."
+   ]
+  },
+  "41559929": {
+   "title": "Eloralintide, a selective, long-acting amylin receptor agonist for treatment of obesity: Phase 1 proof of concept",
+   "journal": "Diabetes Obes Metab",
+   "year": "2026",
+   "quotes": [
+    "100 participants",
+    "the least squares mean percent reduction in body weight across the dose groups ranged from 2.6% to 11.3%",
+    "Gastrointestinal adverse events, including diarrhoea (10% of participants), nausea (8%), and vomiting (4%), were infrequent in those receiving eloralintide."
+   ]
+  },
+  "34798060": {
+   "title": "Once-weekly cagrilintide for weight management in people with overweight and obesity: a multicentre, randomised, double-blind, placebo-controlled and active-controlled, dose-finding phase 2 trial",
+   "journal": "Lancet",
+   "year": "2021",
+   "quotes": [
+    "we randomly assigned 706 participants to cagrilintide",
+    "versus placebo (3·0% [3·3 kg]",
+    "The trial had a 26-week treatment period",
+    "More participants receiving cagrilintide 0·3-4·5 mg had gastrointestinal adverse events compared with placebo (41%-63% vs 32%), primarily nausea (20%-47% vs 18%).",
+    "Novo Nordisk A/S."
+   ]
+  },
+  "40544433": {
+   "title": "Coadministered Cagrilintide and Semaglutide in Adults with Overweight or Obesity",
+   "journal": "N Engl J Med",
+   "year": "2025",
+   "quotes": [
+    "A total of 3417 participants underwent randomization",
+    "was -20.4% with cagrilintide-semaglutide as compared with -3.0% with placebo",
+    "Gastrointestinal adverse events (affecting 79.6% in the cagrilintide-semaglutide group and 39.9% in the placebo group)",
+    "Funded by Novo Nordisk"
+   ]
+  },
+  "33567185": {
+   "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity",
+   "journal": "N Engl J Med",
+   "year": "2021",
+   "quotes": [
+    "we enrolled 1961 adults",
+    "was -14.9% in the semaglutide group as compared with -2.4% with placebo",
+    "discontinued treatment owing to gastrointestinal events (59 [4.5%] vs. 5 [0.8%])",
+    "Funded by Novo Nordisk"
+   ]
+  },
+  "35658024": {
+   "title": "Tirzepatide Once Weekly for the Treatment of Obesity",
+   "journal": "N Engl J Med",
+   "year": "2022",
+   "quotes": [
+    "we assigned 2539 adults",
+    "-3.1% (95% CI, -4.3 to -1.9) with placebo",
+    "Supported by Eli Lilly"
+   ]
+  },
+  "42452898": {
+   "title": "Amylin Analogs: The Next Major Class of Weight Loss Therapy: A Review of Experimental Data and Early-Phase Clinical Trials",
+   "journal": "Diabetes Obes Metab",
+   "year": "2026",
+   "quotes": [
+    "Pramlintide, the first approved amylin analogue, established proof of concept but was limited by modest efficacy and frequent dosing.",
+    "slows gastric emptying, suppresses glucagon secretion, and promotes meal termination through central mechanisms"
+   ]
+  },
+  "42586227": {
+   "title": "Beyond GLP-1: Amylin-based pharmacotherapy and the search for better-tolerated weight-loss drugs",
+   "journal": "Pharmacol Res",
+   "year": "2026",
+   "quotes": [
+    "calcitonin receptor engagement, exposure kinetics, and downstream neural circuit recruitment may influence whether reduced food intake reflects physiological satiation or aversive signaling"
+   ]
+  }
+ },
+ "press_release_quotes": {
+  "zealand_zupreme2": [
+   "Petrelintide achieved up to 9.2% mean body weight reduction at week 28 versus 2.0% with placebo",
+   "Very low discontinuation rates due to gastrointestinal adverse events (1.9% for petrelintide versus 1.7% in placebo group)",
+   "in 220 people living with overweight or obesity and type 2 diabetes",
+   "(range across treatment arms: 7.4-9.2%)",
+   "At week 28, petrelintide demonstrated a HbA1c reduction of up to 0.65% versus an increase of 0.23% with placebo",
+   "No unexpected safety signals were observed with petrelintide treatment.",
+   "The full trial results from ZUPREME-2 are expected to be presented at an upcoming scientific conference."
+  ],
+  "zealand_zupreme1": [
+   "The treatment discontinuation rate due to adverse events (AEs) was 4.8% with petrelintide in the maximally effective treatment arm versus 4.9% with placebo.",
+   "Notably, female participants lost considerably more weight than male participants in this trial."
+  ],
+  "zealand_ph3": [
+   "The three trials are expected to enroll approximately 7,000 participants in total.",
+   "The primary endpoint in the Phase 3 ZUPREME trials is percentage change in body weight from baseline to week 64.",
+   "In 2025, Zealand Pharma and Roche entered into an exclusive collaboration and licensing agreement"
+  ],
+  "lilly_elora_ph2": [
+   "The most common adverse events were mild to moderate gastrointestinal symptoms and fatigue, which were seen more frequently in the higher dose arms."
+  ],
+  "lilly_eloratzp": [
+   "Treatment discontinuation rates due to adverse events were 10.8% to 27.0% with EloraTZP, 0% to 10.8% with eloralintide, 2.9% with tirzepatide and 16.7% with placebo.",
+   "Eloralintide is already being evaluated as a single agent in Phase 3 trials for the treatment of obesity.",
+   "Eloralintide alone reduced body weight by up to an average of 28.6 lbs (12.3%)",
+   "in 367 adults with obesity or overweight and type 2 diabetes"
+  ],
+  "novo_easd": [
+   "A decision is expected in Q4 2026.",
+   "CagriSema is a fixed-dose combination of a long-acting amylin receptor agonist, cagrilintide, and a GLP-1 receptor agonist, semaglutide."
+  ]
+ },
+ "conflict_statements": {
+  "42810355": "Zealand Pharma",
+  "42017294": "Zealand Pharma A/S has sponsored the trials described in this manuscript and funded the preparation of the manuscript.",
+  "41559929": "are employees and stockholders of Eli Lilly and Company, USA.",
+  "34798060": "are employees and shareholders at Novo Nordisk A/S.",
+  "42810353": "SM has served on advisory boards for Novo Nordisk"
+ },
+ "labels": {
+  "symlin": {
+   "source": "openFDA drug label, SymlinPen (pramlintide), AstraZeneca, set id 4aea30ff-eb0d-45c1-b114-3127966328ff, version 18, effective 2019-12-18",
+   "quotes": [
+    "SYMLIN use with insulin increases the risk of severe hypoglycemia, particularly in patients with type 1 diabetes.",
+    "SYMLIN is indicated as an adjunctive treatment in patients with type 1 or type 2 diabetes who use mealtime insulin therapy and who have failed to achieve desired glucose control despite optimal insulin therapy.",
+    "nausea, vomiting, anorexia, headache"
+   ]
+  },
+  "wegovy": "FDA label 215256s025 (revised 06/2026): nausea 44% vs 16% placebo; 6.8% vs 3.2% stopped for adverse reactions",
+  "zepbound": "FDA label 217806s042: nausea 25-29% vs 8% placebo; 4.8-6.7% vs 3.4% stopped for adverse reactions"
+ },
+ "optum": "Optum Rx Notable New Drugs report, fall 2026: CagriSema expected FDA decision December 18, 2026",
+ "analysis": {
+  "note": "Jabbit analysis. Cross-trial comparisons are rough: trials differ in length, population, escalation and estimand, and the best arm is shown. Amylin drugs alone (petrelintide, cagrilintide) have produced roughly 9-12% weight loss in phase 2 and 3 trials of 26-68 weeks, below Wegovy and Zepbound in their pivotal trials; eloralintide's best phase 2 arm reached about 20% at 48 weeks in 263 people. Nausea is still the most common side effect; petrelintide's rates look lower than GLP-1 labels but trials are not head to head. No amylin drug is approved for weight loss; CagriSema (cagrilintide plus semaglutide) has an FDA decision expected in Q4 2026 per Novo. Stand-alone phase 3 readouts per registry estimates: cagrilintide RENEW 1/2 around May 2027, eloralintide ENLIGHTEN from January 2028, petrelintide ZUPREME-3/4 in late 2028."
+ }
+}

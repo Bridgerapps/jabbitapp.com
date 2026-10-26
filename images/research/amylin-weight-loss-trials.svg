@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 582" width="760" height="582" role="img" aria-labelledby="t2 d2">
+<title id="t2">Weight loss in key trials: best arm vs placebo</title>
+<desc id="d2">Weight loss in key trials: best arm vs placebo. Petrelintide · ZUPREME 1 · 28 wk: 9.8% vs 1.7% on placebo (Peer reviewed). Petrelintide · ZUPREME-2 (type 2 diabetes) · 28 wk: 9.2% vs 2.0% on placebo (Company topline). Eloralintide · phase 2 · 48 wk: 20.0% vs 0.4% on placebo (Peer reviewed). Eloralintide alone (type 2 diabetes) · 48 wk: 12.3% vs 3.0% on placebo (Company topline). Cagrilintide · phase 2 · 26 wk: 10.8% vs 3.0% on placebo (Peer reviewed). Cagrilintide alone · REDEFINE 1 · 68 wk: 11.5% vs 3.0% on placebo (Peer reviewed). CagriSema · REDEFINE 1 · 68 wk: 20.4% vs 3.0% on placebo (Peer reviewed). Wegovy · STEP 1 · 68 wk: 14.9% vs 2.4% on placebo (Peer reviewed). Zepbound · SURMOUNT-1 · 72 wk: 20.9% vs 3.1% on placebo (Peer reviewed).</desc>
+<rect width="760" height="582" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Weight loss in key trials: best arm vs placebo</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Cross-trial comparison: lengths, people and methods differ. Wegovy and Zepbound shown for scale.</text>
+<rect x="360" y="78" width="12" height="10" rx="2" fill="#0f766e"/><text x="376" y="87" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Amylin-based (best arm)</text>
+<rect x="520" y="78" width="12" height="10" rx="2" fill="#0f172a" fill-opacity="0.55"/><text x="536" y="87" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Wegovy / Zepbound</text>
+<rect x="660" y="78" width="12" height="10" rx="2" fill="#94a3b8"/><text x="676" y="87" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Placebo</text>
+<text x="24" y="116" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Petrelintide · ZUPREME 1 · 28 wk</text>
+<text x="24" y="131" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Peer reviewed, efficacy estimand</text>
+<rect x="360" y="104" width="134" height="16" rx="3" fill="#0f766e" fill-opacity="1"/>
+<text x="500" y="116" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">9.8%</text>
+<rect x="360" y="123" width="23" height="8" rx="2" fill="#94a3b8"/>
+<text x="389" y="131" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">1.7%</text>
+<line x1="24" y1="142" x2="736" y2="142" stroke="#e2e8f0"/>
+<text x="24" y="162" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Petrelintide · ZUPREME-2 (type 2 diabetes) · 28 wk</text>
+<text x="24" y="177" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Company topline, efficacy estimand</text>
+<rect x="360" y="150" width="125" height="16" rx="3" fill="#0f766e" fill-opacity="1"/>
+<text x="491" y="162" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">9.2%</text>
+<rect x="360" y="169" width="27" height="8" rx="2" fill="#94a3b8"/>
+<text x="393" y="177" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">2.0%</text>
+<line x1="24" y1="188" x2="736" y2="188" stroke="#e2e8f0"/>
+<text x="24" y="208" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Eloralintide · phase 2 · 48 wk</text>
+<text x="24" y="223" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Peer reviewed, efficacy estimand</text>
+<rect x="360" y="196" width="273" height="16" rx="3" fill="#0f766e" fill-opacity="1"/>
+<text x="639" y="208" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">20%</text>
+<rect x="360" y="215" width="5" height="8" rx="2" fill="#94a3b8"/>
+<text x="371" y="223" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">0.4%</text>
+<line x1="24" y1="234" x2="736" y2="234" stroke="#e2e8f0"/>
+<text x="24" y="254" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Eloralintide alone (type 2 diabetes) · 48 wk</text>
+<text x="24" y="269" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Company topline, efficacy estimand</text>
+<rect x="360" y="242" width="168" height="16" rx="3" fill="#0f766e" fill-opacity="1"/>
+<text x="534" y="254" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">12.3%</text>
+<rect x="360" y="261" width="41" height="8" rx="2" fill="#94a3b8"/>
+<text x="407" y="269" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">3.0%</text>
+<line x1="24" y1="280" x2="736" y2="280" stroke="#e2e8f0"/>
+<text x="24" y="300" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Cagrilintide · phase 2 · 26 wk</text>
+<text x="24" y="315" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Peer reviewed, trial product estimand</text>
+<rect x="360" y="288" width="147" height="16" rx="3" fill="#0f766e" fill-opacity="1"/>
+<text x="513" y="300" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">10.8%</text>
+<rect x="360" y="307" width="41" height="8" rx="2" fill="#94a3b8"/>
+<text x="407" y="315" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">3.0%</text>
+<line x1="24" y1="326" x2="736" y2="326" stroke="#e2e8f0"/>
+<text x="24" y="346" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Cagrilintide alone · REDEFINE 1 · 68 wk</text>
+<text x="24" y="361" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Peer reviewed, treatment policy estimand</text>
+<rect x="360" y="334" width="157" height="16" rx="3" fill="#0f766e" fill-opacity="1"/>
+<text x="523" y="346" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">11.5%</text>
+<rect x="360" y="353" width="41" height="8" rx="2" fill="#94a3b8"/>
+<text x="407" y="361" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">3.0%</text>
+<line x1="24" y1="372" x2="736" y2="372" stroke="#e2e8f0"/>
+<text x="24" y="392" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">CagriSema · REDEFINE 1 · 68 wk</text>
+<text x="24" y="407" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Peer reviewed, treatment policy estimand</text>
+<rect x="360" y="380" width="278" height="16" rx="3" fill="#0f766e" fill-opacity="1"/>
+<text x="644" y="392" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">20.4%</text>
+<rect x="360" y="399" width="41" height="8" rx="2" fill="#94a3b8"/>
+<text x="407" y="407" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">3.0%</text>
+<line x1="24" y1="418" x2="736" y2="418" stroke="#e2e8f0"/>
+<text x="24" y="438" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Wegovy · STEP 1 · 68 wk</text>
+<text x="24" y="453" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Peer reviewed, treatment policy estimand</text>
+<rect x="360" y="426" width="203" height="16" rx="3" fill="#0f172a" fill-opacity="0.55"/>
+<text x="569" y="438" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">14.9%</text>
+<rect x="360" y="445" width="33" height="8" rx="2" fill="#94a3b8"/>
+<text x="399" y="453" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">2.4%</text>
+<line x1="24" y1="464" x2="736" y2="464" stroke="#e2e8f0"/>
+<text x="24" y="484" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Zepbound · SURMOUNT-1 · 72 wk</text>
+<text x="24" y="499" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Peer reviewed, treatment regimen estimand</text>
+<rect x="360" y="472" width="285" height="16" rx="3" fill="#0f172a" fill-opacity="0.55"/>
+<text x="651" y="484" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">20.9%</text>
+<rect x="360" y="491" width="42" height="8" rx="2" fill="#94a3b8"/>
+<text x="408" y="499" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">3.1%</text>
+<line x1="24" y1="510" x2="736" y2="510" stroke="#e2e8f0"/>
+<text x="24" y="536" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Sources: Lancet Diabetes Endocrinol 2026; Lancet 2021, 2025; NEJM 2021, 2022, 2025; Zealand Pharma Oct 7, 2026; Lilly Sep 30, 2026.</text>
+<text x="24" y="552" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Company figures are topline, not peer reviewed. Mean % body weight lost from baseline. Selection is Jabbit's.</text>
+<text x="24" y="568" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>
