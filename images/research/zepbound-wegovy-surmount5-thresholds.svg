@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 418" width="760" height="418" role="img" aria-labelledby="t2 d2">
+<title id="t2">SURMOUNT-5: share of people reaching each weight-loss goal</title>
+<desc id="d2">SURMOUNT-5: share of people reaching each weight-loss goal. At least 10% weight loss: tirzepatide 81.6%, semaglutide 60.5%. At least 15%: tirzepatide 64.6%, semaglutide 40.1%. At least 20%: tirzepatide 48.4%, semaglutide 27.3%. At least 25%: tirzepatide 31.6%, semaglutide 16.1%.</desc>
+<rect width="760" height="418" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">SURMOUNT-5: share of people reaching each weight-loss goal</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">751 adults with obesity, no diabetes, 72 weeks, open-label. Highest tolerated dose of each drug.</text>
+<rect x="24" y="78" width="14" height="14" rx="2" fill="#0f766e"/>
+<text x="44" y="90" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Tirzepatide (Zepbound)</text>
+<rect x="244" y="78" width="14" height="14" rx="2" fill="#1d4ed8"/>
+<text x="264" y="90" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Semaglutide (Wegovy)</text>
+<text x="24" y="134" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">At least 10% weight loss</text>
+<rect x="200" y="112" width="384" height="18" rx="3" fill="#0f766e"/>
+<text x="590" y="125" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">81.6%</text>
+<rect x="200" y="134" width="284" height="18" rx="3" fill="#1d4ed8"/>
+<text x="490" y="147" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">60.5%</text>
+<line x1="24" y1="162" x2="736" y2="162" stroke="#e2e8f0"/>
+<text x="24" y="196" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">At least 15%</text>
+<rect x="200" y="174" width="304" height="18" rx="3" fill="#0f766e"/>
+<text x="510" y="187" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">64.6%</text>
+<rect x="200" y="196" width="188" height="18" rx="3" fill="#1d4ed8"/>
+<text x="394" y="209" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">40.1%</text>
+<line x1="24" y1="224" x2="736" y2="224" stroke="#e2e8f0"/>
+<text x="24" y="258" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">At least 20%</text>
+<rect x="200" y="236" width="227" height="18" rx="3" fill="#0f766e"/>
+<text x="433" y="249" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">48.4%</text>
+<rect x="200" y="258" width="128" height="18" rx="3" fill="#1d4ed8"/>
+<text x="334" y="271" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">27.3%</text>
+<line x1="24" y1="286" x2="736" y2="286" stroke="#e2e8f0"/>
+<text x="24" y="320" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">At least 25%</text>
+<rect x="200" y="298" width="149" height="18" rx="3" fill="#0f766e"/>
+<text x="355" y="311" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">31.6%</text>
+<rect x="200" y="320" width="76" height="18" rx="3" fill="#1d4ed8"/>
+<text x="282" y="333" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">16.1%</text>
+<line x1="24" y1="348" x2="736" y2="348" stroke="#e2e8f0"/>
+<text x="24" y="372" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Source: Eli Lilly release, May 11, 2025 (key secondary endpoints, which Lilly reports as superior for Zepbound at every threshold).</text>
+<text x="24" y="388" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Average weight loss 20.2% vs 13.7% (treatment-regimen estimand; NEJM 2025). Lilly-funded, open-label trial.</text>
+<text x="24" y="404" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>

@@ -1,0 +1,234 @@
+{
+ "checked": "2026-10-26",
+ "page": "https://jabbitapp.com/research/zepbound-vs-wegovy-tirzepatide-semaglutide-head-to-head-teardown.html",
+ "news": {
+  "reuters_2026_10_26": {
+   "url": "https://www.streetinsider.com/Reuters/US+judge+wont+block+Eli+Lilly+ads+for+weight-loss+drugs%2C+rules+against+Novo+Nordisk/27234058.html",
+   "note": "Reuters report (Jonathan Stempel), syndicated by StreetInsider. The 25-page decision itself was not yet on the public docket when checked.",
+   "quotes": [
+    "said Novo Nordisk did not deserve a preliminary injunction, having failed to show that Eli Lilly's ads threatened sales, undermined its goodwill, or caused lasting damage to its clinical reputation.",
+    "\"inadequate to warrant the extraordinary relief it seeks.\"",
+    "by comparing higher doses of those products with lower doses of Novo Nordisk's Wegovy and Ozempic.",
+    "people using Zepbound on average lost 50 pounds (23 kg) while people using Wegovy on average lost 33 pounds (15 kg).",
+    "Eli Lilly, based in Indianapolis, has denied wrongdoing and said it was pleased with the decision.",
+    "Novo Nordisk and its lawyers did not immediately respond to requests for comment.",
+    "In his 25-page decision",
+    "with prescriptions for Novo Nordisk's products remaining stable",
+    "money damages could compensate Novo Nordisk for any \"nontrivial harm\""
+   ]
+  },
+  "docket_3_26_cv_09027": {
+   "url": "https://dockets.justia.com/docket/new-jersey/njdce/3:2026cv09027/603726",
+   "quotes": [
+    "Filed: July 21, 2026",
+    "15 U.S.C. § 1125",
+    "STEP UP Publication",
+    "SURMOUNT-5 Publication",
+    "FDA Approval Letter Wegovy 7.2 mg",
+    "FDA Approval Letter Ozempic 2 mg",
+    "SURPASS 2 Publication",
+    "Decision Reserved."
+   ]
+  },
+  "lilly_2025_05_11": {
+   "url": "https://investor.lilly.com/news-releases/news-release-details/zepbound-tirzepatide-showed-superior-weight-loss-over-wegovy",
+   "quotes": [
+    "Participants using Zepbound lost an average of 50.3 lbs (22.8 kg) and participants on Wegovy lost an average of 33.1 lbs (15.0 kg).",
+    "However, the study was not powered to compare the safety and tolerability of Zepbound and the safety and tolerability of Wegovy.",
+    "Dr. Aronne also serves as a paid advisory board member for Novo Nordisk",
+    "Not controlled for family-wise type 1 error rate."
+   ]
+  },
+  "fda_2026_03_19": {
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-fourth-product-under-national-priority-voucher-program-higher-dose-semaglutide",
+   "quotes": [
+    "the higher dose resulted in additional average weight reduction compared to previously approved doses",
+    "Reports of altered skin sensation (described as sensitivity, pain, or burning) were common, occurred more frequently at the higher Wegovy dosage than lower dosages",
+    "The FDA is currently conducting further investigations regarding this drug reaction."
+   ]
+  }
+ },
+ "labels": {
+  "zepbound_dailymed_setid": "487cd7e7-434c-4925-99fa-aa80b1cc776b",
+  "zepbound_quotes": [
+   "WARNING: RISK OF THYROID C-CELL TUMORS",
+   "It is unknown whether ZEPBOUND causes thyroid C-cell tumors",
+   "to treat moderate to severe obstructive sleep apnea (OSA) in adults with obesity."
+  ],
+  "wegovy_dailymed_setid": "ee06186f-2aa3-4990-a760-757579d8f77b",
+  "wegovy_quotes": [
+   "WARNING: RISK OF THYROID C-CELL TUMORS",
+   "It is unknown whether WEGOVY causes thyroid C-cell tumors",
+   "to reduce the risk of major adverse cardiovascular (CV) events (CV death, non-fatal myocardial infarction, or non-fatal stroke) in adults with established CV disease and either obesity or overweight.",
+   "for the treatment of noncirrhotic metabolic dysfunction-associated steatohepatitis (MASH)"
+  ],
+  "note": "Zepbound's Indications section (checked Oct 26, 2026) lists weight reduction and OSA; it does not list a cardiovascular-event indication."
+ },
+ "surmount5_full_text_table3": [
+  "Serious adverse events 18 (4.8) 13 (3.5) 31 (4.1)",
+  "Adverse events leading to death 0 0 0",
+  "Discontinuation of the trial treatment because of adverse events 23 (6.1) 30 (8.0) 53 (7.1)",
+  "Nausea 163 (43.6) 167 (44.4)",
+  "Vomiting 56 (15.0) 80 (21.3)",
+  "Injection-site reaction 32 (8.6) 1 (0.3)",
+  "is that the trial was not blinded"
+ ],
+ "surmount5_thresholds_lilly": [
+  {
+   "threshold": "At least 10% weight loss",
+   "tirzepatide_pct": 81.6,
+   "semaglutide_pct": 60.5
+  },
+  {
+   "threshold": "At least 15%",
+   "tirzepatide_pct": 64.6,
+   "semaglutide_pct": 40.1
+  },
+  {
+   "threshold": "At least 20%",
+   "tirzepatide_pct": 48.4,
+   "semaglutide_pct": 27.3
+  },
+  {
+   "threshold": "At least 25%",
+   "tirzepatide_pct": 31.6,
+   "semaglutide_pct": 16.1
+  }
+ ],
+ "surmount5_mean_pct": {
+  "tirzepatide": -20.2,
+  "semaglutide": -13.7
+ },
+ "registry": {
+  "NCT05556512": {
+   "acronym": "SURMOUNT-MMO",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 15374,
+   "primary_completion_estimated": "2027-10",
+   "sponsor": "Eli Lilly and Company"
+  }
+ },
+ "abstract_quotes": {
+  "40353578": {
+   "title": "Tirzepatide as Compared with Semaglutide for the Treatment of Obesity",
+   "journal": "N Engl J Med",
+   "quotes": [
+    "In this phase 3b, open-label, controlled trial",
+    "A total of 751 participants underwent randomization.",
+    "-20.2% (95% confidence interval [CI], -21.4 to -19.1) with tirzepatide and -13.7% (95% CI, -14.9 to -12.6) with semaglutide (P<0.001)",
+    "The most common adverse events in both treatment groups were gastrointestinal, and most were mild to moderate in severity and occurred primarily during dose escalation.",
+    "Funded by Eli Lilly; SURMOUNT-5"
+   ]
+  },
+  "34170647": {
+   "title": "Tirzepatide versus Semaglutide Once Weekly in Patients with Type 2 Diabetes",
+   "journal": "N Engl J Med",
+   "quotes": [
+    "we randomly assigned 1879 patients",
+    "In an open-label, 40-week, phase 3 trial",
+    "Tirzepatide at all doses was noninferior and superior to semaglutide.",
+    "Serious adverse events were reported in 5 to 7% of the patients who received tirzepatide and in 3% of those who received semaglutide.",
+    "Funded by Eli Lilly; SURPASS-2"
+   ]
+  },
+  "42670242": {
+   "title": "Comparative Efficacy of Tirzepatide Versus Semaglutide for Weight Loss in Adults With Overweight or Obesity: A Systematic Review and Meta-Analysis of Head-to-Head Studies",
+   "journal": "Clin Obes",
+   "quotes": [
+    "Ten studies including 41 381 participants were analysed.",
+    "(MD -4.28 percentage points; 95% CI -5.28 to -3.28; p < 0.00001)",
+    "There was no significant difference in treatment discontinuation due to adverse events (RR 1.28; p = 0.54), whereas serious adverse events were more frequent with tirzepatide (RR 1.83; p = 0.007).",
+    "Overall and gastrointestinal adverse events were similar between groups.",
+    "We included randomised controlled trials and observational studies"
+   ]
+  },
+  "42897521": {
+   "title": "Current status of anti-obesity medications and performance, an EHR based survey",
+   "journal": "BMC Endocr Disord",
+   "quotes": [
+    "Tirzepatide and Semaglutide outperformed other AOMs and were associated with up to 9·6[IQR:11]% and 6·2[IQR:11]% weight loss, respectively",
+    "The median exposure durations were approximately 4·6 months for the two GLP-1/GIP AOMs, far short of the 72-week duration typically required for peak therapeutic benefit in RCTs.",
+    "while Tirzepatide led both cohorts, nearly 50% and 25% of individuals didn't achieve the 10% and 5% weight loss target respectively, after a minimum 72 weeks exposure",
+    "71,318 (11·7%) and 1 M (27·9%) individuals documented AOM exposures"
+   ]
+  },
+  "42673585": {
+   "title": "Efficacy and Safety of Glucagon-like Peptide-1 Receptor Agonists and Co-agonists for Weight Loss Among Adults Without Diabetes : An Updated Systematic Review",
+   "journal": "Ann Intern Med",
+   "quotes": [
+    "Thirty-eight RCTs (n = 25 816) were included",
+    "-14.8% (CI, -16.2% to -13.4%) for subcutaneous semaglutide",
+    "-19.0% (CI, -21.6% to -16.4%) for tirzepatide",
+    "greater weight loss with tirzepatide and cagrilintide-semaglutide (CagriSema; Novo Nordisk) than semaglutide",
+    "Heterogeneity precluded quantitative synthesis."
+   ]
+  },
+  "42688617": {
+   "title": "Comparative efficacy and safety of glucagon-like peptide 1 based drugs for weight loss in adults with overweight or obesity without diabetes: network meta-analysis of randomised controlled trials",
+   "journal": "BMJ Med",
+   "quotes": [
+    "58 trials of 24 214 participants were analysed.",
+    "followed by tirzepatide (-19.28%, -20.39% to -18.16%)",
+    "Differences in tolerability, limited head-to-head evidence, and residual uncertainty, however, should be considered when interpreting comparative treatment effects."
+   ]
+  },
+  "42806056": {
+   "title": "Indirect comparative efficacy and safety of tirzepatide vs semaglutide for the treatment of obesity or overweight in patients without type 2 diabetes",
+   "journal": "Int J Obes (Lond)",
+   "quotes": [
+    "This indirect treatment comparison (ITC) assessed the relative efficacy and safety of tirzepatide versus the GLP-1 RA semaglutide.",
+    "Safety profiles of tirzepatide and semaglutide were generally similar."
+   ]
+  },
+  "42002673": {
+   "title": "Reversion to normoglycemia with tirzepatide vs semaglutide in participants with obesity and prediabetes: a post hoc analysis of SURMOUNT-5",
+   "journal": "J Endocrinol Invest",
+   "quotes": [
+    "A greater proportion of tirzepatide-treated participants reverted to normoglycemia (89.9%) vs semaglutide (76.2%).",
+    "Participants (N = 425) with baseline prediabetes"
+   ]
+  },
+  "41865857": {
+   "title": "Relationship of early rapid weight loss to efficacy and safety of tirzepatide and semaglutide for obesity: SURMOUNT-5 post hoc analysis",
+   "journal": "Am J Med",
+   "quotes": [
+    "Overall, 32.3% were rapid responders (tirzepatide: 44%, semaglutide: 21%).",
+    "this did not affect rates of study treatment completion relative to non-rapid responders"
+   ]
+  },
+  "42434924": {
+   "title": "Tirzepatide compared with semaglutide in obesity disease: a subpopulation analysis applying Japan Society for the Study of Obesity criteria in the global SURMOUNT-5 trial",
+   "journal": "Curr Med Res Opin",
+   "quotes": [
+    "Of 750 participants, 383 met the criteria for obesity disease"
+   ]
+  },
+  "42768828": {
+   "title": "Real-World Adverse Event Reporting Patterns of Tirzepatide Versus Semaglutide: A Stratified Study of General and Healthcare Professional Cohorts in FAERS",
+   "journal": "Diabetes Obes Metab",
+   "quotes": [
+    "tirzepatide showed higher hypoglycaemia reporting (RORR 1.91, 95% CI 1.49-2.44)",
+    "all findings are hypothesis-generating and require confirmation with defined exposure denominators"
+   ]
+  },
+  "40961952": {
+   "title": "Once-weekly semaglutide 7·2 mg in adults with obesity (STEP UP): a randomised, controlled, phase 3b trial",
+   "journal": "Lancet Diabetes Endocrinol",
+   "quotes": [
+    "STEP UP was a phase 3b, randomised, double-blind, placebo-controlled and active-controlled trial conducted across 95 hospitals, specialist clinics, and medical centres in 11 countries in adults with BMI 30 kg/m2 or greater, without diabetes.",
+    "1407 participants were randomly assigned",
+    "Serious adverse events were reported by 68 (6·8%) of 1004 participants",
+    "FUNDING] Novo Nordisk"
+   ]
+  }
+ },
+ "conflict_statements": {
+  "42670242": "The authors declare no conflicts of interest.",
+  "42897521": "Competing interests: The authors declare no competing interests.",
+  "42806056": "Employee and shareholder of Eli Lilly and Company",
+  "41865857": "Louis J. Aronnereports receiving grants or personal fees from"
+ },
+ "analysis": {
+  "note": "Jabbit analysis. The only randomized head-to-head trial in obesity without diabetes (SURMOUNT-5, Lilly-funded, open-label, 751 people, 72 weeks) favored tirzepatide by 6.5 points of body weight; a 10-study meta-analysis (41,381 people, trials and observational studies) found 4.28 points; real-world records show a smaller absolute gap and short median use. Serious adverse events were numerically higher on tirzepatide in SURMOUNT-5 and SURPASS-2 and significantly higher in the meta-analysis; discontinuation for side effects was not different. Wegovy HD (FDA, Mar 19, 2026) has not been tested head-to-head against tirzepatide. No trial has compared deaths, heart attacks or strokes between the two drugs."
+ }
+}
