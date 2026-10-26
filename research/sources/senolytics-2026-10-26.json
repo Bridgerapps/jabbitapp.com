@@ -1,0 +1,571 @@
+{
+ "checked": "2026-10-26",
+ "page": "https://jabbitapp.com/research/senolytics-fisetin-dasatinib-quercetin-longevity-evidence-teardown.html",
+ "dasatinib_label": {
+  "source": "DailyMed SPRYCEL (dasatinib) tablet, E.R. Squibb & Sons, setid 4764f37b-c9e6-4ede-bcc2-8a03b7c521df, SPL version 49, published 2026-09-21",
+  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfoBySetId.cfm?setid=4764f37b-c9e6-4ede-bcc2-8a03b7c521df",
+  "quotes": [
+   "SPRYCEL (dasatinib) is indicated for the treatment of adult patients with",
+   "newly diagnosed Philadelphia chromosome-positive (Ph+) chronic myeloid leukemia (CML) in chronic phase.",
+   "Philadelphia chromosome-positive acute lymphoblastic leukemia (Ph+ ALL) with resistance or intolerance to prior therapy.",
+   "Severe thrombocytopenia, neutropenia, and anemia may occur.",
+   "Use caution if used concomitantly with medications that inhibit platelet function or anticoagulants.",
+   "Fluid retention, sometimes severe, including pleural effusions.",
+   "SPRYCEL may increase the risk of developing PAH which may be reversible on discontinuation.",
+   "Use SPRYCEL with caution in patients who have or may develop prolongation of the QT interval.",
+   "Individual cases of severe mucocutaneous dermatologic reactions have been reported.",
+   "Can cause fetal harm.",
+   "Assess liver function before initiation of treatment and monthly thereafter or as clinically indicated.",
+   "Avoid the use of concomitant strong CYP3A4 inhibitors and grapefruit juice.",
+   "SPRYCEL is a prescription medicine used to treat:"
+  ],
+  "boxed_warning": false
+ },
+ "fda_dietary_supplements": {
+  "url": "https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements",
+  "quote": "Under DSHEA, FDA does not have the authority to approve dietary supplements before they are marketed."
+ },
+ "registry": {
+  "clinicaltrials_gov_intervention_fisetin": 37,
+  "clinicaltrials_gov_intervention_dasatinib_and_quercetin": 22,
+  "unique_records": 55,
+  "lead_sponsor_mayo_clinic": 10,
+  "status_counts": {
+   "ACTIVE_NOT_RECRUITING": 9,
+   "UNKNOWN": 5,
+   "RECRUITING": 12,
+   "TERMINATED": 2,
+   "COMPLETED": 15,
+   "WITHDRAWN": 4,
+   "ENROLLING_BY_INVITATION": 3,
+   "SUSPENDED": 2,
+   "NOT_YET_RECRUITING": 3
+  },
+  "records_with_posted_results": [
+   "NCT02909686",
+   "NCT04063124",
+   "NCT04210986",
+   "NCT04313634",
+   "NCT04537299",
+   "NCT04771611",
+   "NCT05416515",
+   "NCT05422885"
+  ],
+  "selected": {
+   "NCT04313634": [
+    "COMPLETED",
+    74,
+    "Sundeep Khosla, M.D.",
+    "2023-06-06",
+    true,
+    "2020-06-09"
+   ],
+   "NCT04210986": [
+    "COMPLETED",
+    75,
+    "Steadman Philippon Research Institute",
+    "2023-01-05",
+    true,
+    "2020-01-06"
+   ],
+   "NCT05422885": [
+    "COMPLETED",
+    15,
+    "Lewis Lipsitz",
+    "2024-01-24",
+    true,
+    "2022-05-20"
+   ],
+   "NCT03430037": [
+    "ENROLLING_BY_INVITATION",
+    40,
+    "Mayo Clinic",
+    "2026-11",
+    false,
+    "2018-02-06"
+   ],
+   "NCT03675724": [
+    "ENROLLING_BY_INVITATION",
+    40,
+    "Mayo Clinic",
+    "2026-11",
+    false,
+    "2018-11-15"
+   ],
+   "NCT04685590": [
+    "ACTIVE_NOT_RECRUITING",
+    48,
+    "Washington University School of Medicine",
+    "2028-01",
+    false,
+    "2021-12-22"
+   ],
+   "NCT05506488": [
+    "COMPLETED",
+    30,
+    "Academisch Medisch Centrum - Universiteit van Amsterdam (AMC-UvA)",
+    "2026-02-26",
+    false,
+    "2023-07-05"
+   ],
+   "NCT02874989": [
+    "COMPLETED",
+    26,
+    "Wake Forest University Health Sciences",
+    "2019-06-03",
+    false,
+    "2016-12-16"
+   ],
+   "NCT02848131": [
+    "ENROLLING_BY_INVITATION",
+    30,
+    "Mayo Clinic",
+    "2027-04",
+    false,
+    "2016-07"
+   ],
+   "NCT04063124": [
+    "COMPLETED",
+    5,
+    "The University of Texas Health Science Center at San Antonio",
+    "2021-12-10",
+    true,
+    "2020-02-14"
+   ],
+   "NCT05416515": [
+    "COMPLETED",
+    40,
+    "Peter C. Amadio, M.D.",
+    "2024-12-31",
+    true,
+    "2022-10-09"
+   ],
+   "NCT04946383": [
+    "UNKNOWN",
+    25,
+    "TruDiagnostic",
+    "2021-12-31",
+    false,
+    "2020-12-16"
+   ],
+   "NCT06018467": [
+    "COMPLETED",
+    120,
+    "Odense University Hospital",
+    "2026-04-24",
+    false,
+    "2023-09-06"
+   ],
+   "NCT07279714": [
+    "COMPLETED",
+    5,
+    "Sunnybrook Health Sciences Centre",
+    "2026-07-21",
+    false,
+    "2026-01-27"
+   ],
+   "NCT06133634": [
+    "ACTIVE_NOT_RECRUITING",
+    70,
+    "University of Colorado, Boulder",
+    "2026-03-31",
+    false,
+    "2023-09-25"
+   ]
+  },
+  "fisetin_knee_oa_NCT04210986": {
+   "p_values": {
+    "Number of Participants Experiencing One or More Treatment-Emergent Adverse Event": [
+     ">0.9"
+    ],
+    "Change in Levels of Pro-inflammatory Markers Associated With Senescence": [
+     "0.9728",
+     "0.9728",
+     "0.0829",
+     "0.9728"
+    ],
+    "Change in Levels of Cartilage Degenerating Markers Associated With OA": [
+     ">0.99",
+     ">0.99",
+     "0.6594",
+     ">0.99"
+    ],
+    "Change in Physical Function of the Study Knee (6 Min Walk)": [
+     "0.7480",
+     "0.9572"
+    ],
+    "Change in Physical Function of the Study Knee (Timed-up-and-go Test)": [
+     ">0.99",
+     ">0.99"
+    ],
+    "Change in Physical Function of the Study Knee (Fast 4-meter Walk)": [
+     ">0.99",
+     ">0.99"
+    ],
+    "Change in Physical Function of the Study Knee (LEK)": [
+     "0.130",
+     "0.130"
+    ],
+    "Change in Physical Function of the Study Knee (Stair-Climbing Test)": [
+     "0.9584",
+     "0.9584"
+    ],
+    "Change in Muscle Strength (Isokinetic Dynamometry)": [
+     "0.5905",
+     "0.5414"
+    ],
+    "Evaluation of Patient Reported Outcomes (PROs) for Knee Pain": [
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99",
+     ">0.99"
+    ],
+    "Evaluation of Patient Reported Outcomes (PROs) for Knee Function": [
+     "0.9106",
+     "0.4424",
+     "0.9901"
+    ],
+    "Change in the Quality of Articular Cartilage in the Study Knee With Quantitative Magnetic Resonance Imaging (MRI)": [
+     ">0.99",
+     ">0.99"
+    ],
+    "Number of Participants Who Convert to Alterative Treatment Within Each Group.": [
+     "0.474"
+    ]
+   },
+   "adverse_event_groups": [
+    [
+     "Fisetin",
+     2,
+     28,
+     34
+    ],
+    [
+     "Placebo",
+     2,
+     33,
+     40
+    ]
+   ],
+   "lowest_p": 0.0829
+  },
+  "note": "Two API v2 searches (query.intr=fisetin; query.intr=dasatinib AND quercetin), merged by NCT ID. Some records test the drugs for cancer, not aging."
+ },
+ "pubmed": {
+  "dq": {
+   "count": 7,
+   "idlist": [
+    "40274471",
+    "39823170",
+    "38956196",
+    "37679434",
+    "36857968",
+    "35098970",
+    "30616998"
+   ]
+  },
+  "fisetin": {
+   "count": 8,
+   "idlist": [
+    "42218768",
+    "41683255",
+    "36304817",
+    "34809689",
+    "34648968",
+    "33802381",
+    "31434498",
+    "29541713"
+   ]
+  },
+  "senolytic": {
+   "count": 20,
+   "idlist": [
+    "42196384",
+    "41619174",
+    "40855191",
+    "40274471",
+    "40261111",
+    "40004995",
+    "39823170",
+    "38956196",
+    "38752873",
+    "38321220",
+    "37679434",
+    "36857968",
+    "36585923",
+    "35914953",
+    "35098970",
+    "34648968",
+    "34181580",
+    "33206062",
+    "33125520",
+    "30616998"
+   ]
+  },
+  "human_lifespan": {
+   "count": 1,
+   "idlist": [
+    "35914953"
+   ]
+  },
+  "queries": {
+   "dq": "(dasatinib[tiab] AND quercetin[tiab]) AND (randomized controlled trial[pt] OR clinical trial[pt])",
+   "fisetin": "fisetin[tiab] AND (randomized controlled trial[pt] OR clinical trial[pt])",
+   "senolytic": "senolytic*[tiab] AND (randomized controlled trial[pt] OR clinical trial[pt])",
+   "human_lifespan": "(senolytic*[tiab] OR dasatinib[tiab] OR fisetin[tiab]) AND (lifespan[tiab] OR life span[tiab] OR longevity[tiab]) AND humans[mh] AND (randomized controlled trial[pt])"
+  }
+ },
+ "key_trials": [
+  {
+   "trial": "Lung fibrosis, 2019",
+   "n": 14,
+   "drug": "D+Q",
+   "control": "None",
+   "result": "Walking tests improved",
+   "id": "30616998"
+  },
+  {
+   "trial": "Kidney disease, 2019",
+   "n": 9,
+   "drug": "D+Q",
+   "control": "None",
+   "result": "Fewer senescent cells",
+   "id": "31542391"
+  },
+  {
+   "trial": "Lung fibrosis, 2023",
+   "n": 12,
+   "drug": "D+Q",
+   "control": "Placebo",
+   "result": "Feasible; no clear benefit",
+   "id": "36857968"
+  },
+  {
+   "trial": "Alzheimer's, 2023",
+   "n": 5,
+   "drug": "D+Q",
+   "control": "None",
+   "result": "No change in thinking tests",
+   "id": "37679434"
+  },
+  {
+   "trial": "Bone, 2024",
+   "n": 60,
+   "drug": "D+Q",
+   "control": "No treatment",
+   "result": "Main goal missed",
+   "id": "38956196"
+  },
+  {
+   "trial": "Knee arthritis, 2024",
+   "n": 75,
+   "drug": "Fisetin",
+   "control": "Placebo",
+   "result": "No difference vs placebo",
+   "id": "NCT04210986"
+  },
+  {
+   "trial": "Fatty liver (MASH), 2026",
+   "n": 31,
+   "drug": "D+Q",
+   "control": "Placebo",
+   "result": "Main goal met",
+   "id": "42823536"
+  }
+ ],
+ "key_trials_total_n": 206,
+ "abstract_quotes": {
+  "25754370": {
+   "title": "The Achilles' heel of senescent cells: from transcriptome to senolytic drugs",
+   "journal": "Aging Cell",
+   "year": "2015",
+   "quotes": [
+    "we describe the rationale for identification and validation of a new class of drugs termed senolytics, which selectively kill senescent cells",
+    "Dasatinib eliminated senescent human fat cell progenitors, while quercetin was more effective against senescent human endothelial cells and mouse BM-MSCs.",
+    "In old mice, cardiac function and carotid vascular reactivity were improved 5 days after a single dose.",
+    "the efficacy of senolytics for alleviating symptoms of frailty and extending healthspan"
+   ]
+  },
+  "29988130": {
+   "title": "Senolytics improve physical function and increase lifespan in old age",
+   "journal": "Nat Med",
+   "year": "2018",
+   "quotes": [
+    "intermittent oral administration of senolytics to both senescent cell-transplanted young mice and naturally aged mice alleviated physical dysfunction and increased post-treatment survival by 36% while reducing mortality hazard to 65%",
+    "senolytics can enhance remaining health- and lifespan in old mice"
+   ]
+  },
+  "30279143": {
+   "title": "Fisetin is a senotherapeutic that extends health and lifespan",
+   "journal": "EBioMedicine",
+   "year": "2018",
+   "quotes": [
+    "Of the 10 flavonoids tested, fisetin was the most potent senolytic.",
+    "Administration of fisetin to wild-type mice late in life restored tissue homeostasis, reduced age-related pathology, and extended median and maximum lifespan.",
+    "These characteristics suggest the feasibility to translation to human clinical studies."
+   ]
+  },
+  "35953721": {
+   "title": "Cellular senescence and senolytics: the path to the clinic",
+   "journal": "Nat Med",
+   "year": "2022",
+   "quotes": [
+    "In preclinical models, interventions targeting those senescent cells that are persistent and cause tissue damage have been shown to delay, prevent or alleviate multiple disorders."
+   ]
+  },
+  "40437670": {
+   "title": "Intermittent Supplementation With Fisetin Improves Physical Function and Decreases Cellular Senescence in Skeletal Muscle With Aging: A Comparison to Genetic Clearance of Senescent Cells and Synthetic Senolytic Approaches",
+   "journal": "Aging Cell",
+   "year": "2025",
+   "quotes": [
+    "We found that fisetin mitigated the adverse changes in frailty and grip strength with aging.",
+    "Fisetin had no effects in young mice."
+   ]
+  },
+  "30616998": {
+   "title": "Senolytics in idiopathic pulmonary fibrosis: Results from a first-in-human, open-label, pilot study",
+   "journal": "EBioMedicine",
+   "year": "2019",
+   "quotes": [
+    "participants with IPF (n = 14)",
+    "The retention rate was 100% with no DQ discontinuation",
+    "One serious adverse event was reported.",
+    "respiratory symptoms (n = 16 total events), skin irritation/bruising (n = 14), and gastrointestinal discomfort (n = 12) being most frequent",
+    "Physical function evaluated as 6-min walk distance, 4-m gait speed, and chair-stands time was significantly and clinically-meaningfully improved (p < .05).",
+    "Pulmonary function, clinical chemistries, frailty index (FI-LAB), and reported health were unchanged.",
+    "warranting evaluation of DQ in larger randomized controlled trials"
+   ]
+  },
+  "31542391": {
+   "title": "Senolytics decrease senescent cells in humans: Preliminary report from a clinical trial of Dasatinib plus Quercetin in individuals with diabetic kidney disease",
+   "journal": "EBioMedicine",
+   "year": "2019",
+   "quotes": [
+    "In an open label Phase 1 pilot study",
+    "D + Q reduced adipose tissue senescent cell burden within 11 days",
+    "Skin epidermal p16INK4A+ and p21CIP1+ cells were reduced, as were circulating SASP factors"
+   ]
+  },
+  "36857968": {
+   "title": "Senolytics dasatinib and quercetin in idiopathic pulmonary fibrosis: results of a phase I, single-blind, single-center, randomized, placebo-controlled pilot trial on feasibility and tolerability",
+   "journal": "EBioMedicine",
+   "year": "2023",
+   "quotes": [
+    "Twelve participants with IPF aged >50 years were blinded and randomized at a 1:1 ratio",
+    "While the placebo arm reported fewer overall non-serious AEs (65 vs 22), there were no serious adverse events related to D + Q.",
+    "Sleep disturbances and anxiety were disproportionately represented in the D + Q arm (4/6 vs 0/6).",
+    "these measures do not appear to differ meaningfully between groups",
+    "Intermittently-dosed D + Q in patients with IPF is feasible and generally well-tolerated."
+   ]
+  },
+  "37679434": {
+   "title": "Senolytic therapy in mild Alzheimer's disease: a phase 1 feasibility trial",
+   "journal": "Nat Med",
+   "year": "2023",
+   "quotes": [
+    "Five participants (mean age = 76 + 5 years; 40% female) completed the 12-week pilot study.",
+    "D levels were detected in four participants (80%)",
+    "Q was not detected",
+    "The treatment was well-tolerated, with no early discontinuation.",
+    "Secondary cognitive and neuroimaging endpoints did not significantly differ from baseline to post-treatment",
+    "need to be confirmed in fully powered, placebo-controlled studies"
+   ]
+  },
+  "40274471": {
+   "title": "Evaluation of exploratory fluid biomarkers from a phase 1 senolytic trial in mild Alzheimer's disease",
+   "journal": "Neurotherapeutics",
+   "year": "2025",
+   "quotes": [
+    "Targeted cytokine and chemokine analyses revealed increases in plasma fractalkine and MMP-7 and CSF IL-6 from baseline to post-treatment.",
+    "Independent validation will be necessary"
+   ]
+  },
+  "38956196": {
+   "title": "Effects of intermittent senolytic therapy on bone metabolism in postmenopausal women: a phase 2 randomized controlled trial",
+   "journal": "Nat Med",
+   "year": "2024",
+   "quotes": [
+    "(n = 60 participants)",
+    "did not differ between groups",
+    "(+16%, P = 0.020)",
+    "No serious adverse events were observed.",
+    "intermittent D + Q treatment did not reduce bone resorption in the overall group of postmenopausal women",
+    "increased radius bone mineral density (+2.7%, P = 0.004) at 20 weeks",
+    "the underlying senescent cell burden may dictate the clinical response to senolytics"
+   ]
+  },
+  "42823536": {
+   "title": "Senolytics dasatinib and quercetin in metabolic dysfunction-associated steatohepatitis: a proof-of-principle randomized, controlled trial",
+   "journal": "Nat Metab",
+   "year": "2026",
+   "quotes": [
+    "phase-2, double-blind, randomized, placebo-controlled trial",
+    "Thirty-one participants (median age 56 years; 76% male; 58% with type 2 diabetes) were randomized (1:1)",
+    "is achieved in 47% of D + Q-treated participants versus 7% with placebo (P = 0.02)",
+    "MASH resolution occurs more frequently with D + Q than placebo (53% versus 7%; P = 0.02)",
+    "Although adverse events are more frequent in the D + Q group (82% versus 43%), these are all self-limiting.",
+    "this proof-of-principle trial supports the need for future trials of senolytic therapy in fibrotic MASH"
+   ]
+  },
+  "42834340": {
+   "title": "Therapeutic reversal of cellular senescence: A systematic review of senolytics, senomorphics and anti-ageing therapies in human clinical trials",
+   "journal": "Br J Clin Pharmacol",
+   "year": "2026",
+   "quotes": [
+    "Six completed clinical studies were included in the evidence synthesis",
+    "evidence remains insufficient to establish clinical efficacy or long-term safety",
+    "Senolytic and senomorphic strategies should therefore be considered investigational rather than established therapies."
+   ]
+  },
+  "42796982": {
+   "title": "Clinical Translation of Fisetin for Age-Related Diseases: Current Evidence and Future Opportunities",
+   "journal": "Nutrients",
+   "year": "2026",
+   "quotes": [
+    "we evaluated 34 registered clinical trials",
+    "4 completed trials with available results",
+    "the completed trials indicate that clinical evidence for fisetin remains limited and heterogeneous",
+    "others found no clear or significant clinical benefit"
+   ]
+  },
+  "42218768": {
+   "title": "12‑weeks fisetin supplementation and interval resistance with aerobic training: changes in Maresin‑1 and inflammatory markers in men with obesity: a randomized controlled trial",
+   "journal": "J Int Soc Sports Nutr",
+   "year": "2026",
+   "quotes": [
+    "44 obese adult males",
+    "fisetin's anti‑inflammatory properties"
+   ]
+  }
+ },
+ "conflict_statements": {
+  "29988130": "Patents on senolytic drugs (PCT/US2016/041646) are held by Mayo Clinic.",
+  "31542391": "Patents on senolytic drugs are held by Mayo Clinic.",
+  "36857968": "TT and JK have a financial interest related to this research including patents and pending patents on senolytic drugs, and their uses are held by Mayo Clinic.",
+  "37679434": "J.L.K. and T.T. have a patent for Killing Senescent Cells and Treating Senescence-Associated Conditions Using an SRC Inhibitor and a Flavonoid with royalties paid to Mayo Clinic by Unity Biotechnologies",
+  "38956196": "N.K.L., T.T. and J.L.K. have a financial interest related to this research, including patents and pending patents covering senolytic drugs and their uses that are held by Mayo Clinic.",
+  "42823536": "T.T. and J.L.K. have a financial interest related to this research, including patents and pending patents covering senolytic drugs and their uses held by Mayo Clinic.",
+  "40437670": "The authors declare no conflicts of interest.",
+  "42796982": "The authors declare no conflicts of interest.",
+  "42218768": "No potential conflict of interest was reported by the author(s)."
+ },
+ "analysis": {
+  "note": "Jabbit analysis. Senolytics are drugs meant to clear senescent ('zombie') cells. The best-known are dasatinib plus quercetin (D+Q) and fisetin. In mice, D+Q increased post-treatment survival in old animals and fisetin extended median and maximum lifespan. No human trial has measured lifespan. Human trials are small (5 to 75 people): early open-label pilots reported better walking tests and fewer senescent cells; a 60-woman bone trial missed its main goal; a 75-person fisetin knee-arthritis trial posted no difference from placebo; an Oct 2026 phase 2 trial in 31 people with fibrotic MASH met its main goal on liver biopsies, with more side effects on D+Q. Dasatinib is a prescription leukemia drug with serious label warnings; quercetin and fisetin are sold as supplements, which FDA does not approve before sale. Patents on senolytic drugs are held by Mayo Clinic, and several trial authors disclose financial interests."
+ }
+}
