@@ -63,3 +63,12 @@ a:hover{color:var(--link-hover)}
 .article figure img{display:block;width:100%;height:auto;border-radius:8px}
 .article figcaption{font-size:.88rem;line-height:1.55;color:var(--muted);margin-top:.7em;padding:0 4px}
 .article .dateline{font-size:.9rem;color:var(--muted);margin:0 0 .4em}
+
+/* In-page App Store CTA on research/guide landers */
+.article .app-cta{margin:2em 0 0;padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:var(--soft)}
+.article .app-cta p{margin:0 0 .55em}
+.article .app-cta p:last-child{margin:0}
+.article .app-cta .app-cta-title{color:var(--ink);font-weight:700;font-size:1.05rem}
+.article .app-cta .app-cta-body{color:var(--body);font-size:.95rem}
+.article .app-cta a.app-cta-btn{display:inline-block;margin-top:.35em;padding:.65em 1.1em;background:var(--brand);color:#fff;font-weight:650;border-radius:10px;text-decoration:none}
+.article .app-cta a.app-cta-btn:hover{background:#0d9488;color:#fff}

@@ -32,6 +32,21 @@
   // ---------
   // Analytics
   // ---------
+  
+  // App Store campaign URL (provider token + placement ct). Keep ct ≤40 chars.
+  const APP_STORE_PT = '128391762';
+  const APP_STORE_ID = '6756848719';
+  function appStoreUrl(ct) {
+    const safe = String(ct || 'site_cta').replace(/[^a-zA-Z0-9_]/g, '_').slice(0, 40);
+    return `https://apps.apple.com/app/apple-store/id${APP_STORE_ID}?pt=${APP_STORE_PT}&ct=${safe}&mt=8`;
+  }
+  function appStoreCtFromPath(path) {
+    let p = String(path || '/').replace(/\.html$/i, '').replace(/\/$/, '') || 'home';
+    p = p.replace(/^\//, '').replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_|_$/g, '');
+    if (!p || p === 'index') p = 'home';
+    return ('banner_' + p).slice(0, 40);
+  }
+
   const APP_STORE_RE = /apps\.apple\.com\/.*\/id6756848719/i;
   const suppressGlobalCta = document.body && document.body.getAttribute('data-suppress-global-cta') === 'true';
   const recentTrackKeys = new Map();
@@ -275,7 +290,7 @@
       text.appendChild(sub);
 
       const cta = document.createElement('a');
-      cta.href = 'https://apps.apple.com/app/id6756848719';
+      cta.href = appStoreUrl(appStoreCtFromPath(path));
       cta.target = '_blank';
       cta.rel = 'noopener noreferrer';
       cta.dataset.track = 'inline_top_banner';
@@ -406,7 +421,7 @@
         inner.style.gap = '10px';
 
         const cta = document.createElement('a');
-        cta.href = 'https://apps.apple.com/app/id6756848719';
+        cta.href = appStoreUrl(appStoreCtFromPath(path));
         cta.target = '_blank';
         cta.rel = 'noopener noreferrer';
         cta.dataset.track = isHome ? 'sticky_cta_home' : 'sticky_cta';
