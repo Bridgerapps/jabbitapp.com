@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 490" width="760" height="490" role="img" aria-labelledby="t2 d2">
+<title id="t2">Pooled estimates: atrial fibrillation on GLP-1 drugs</title>
+<desc id="d2">Pooled estimates: atrial fibrillation on GLP-1 drugs. Semaglutide vs placebo (network meta-analysis, 2026): RR 0.82 (95% interval 0.68 to 0.99). Semaglutide vs tirzepatide (network meta-analysis, 2026): RR 0.57 (95% interval 0.37 to 0.88). Semaglutide vs placebo (10 trials, 2024): RR 0.58 (95% interval 0.4 to 0.85). GLP-1 drugs in obesity vs placebo (24 trials, 2026): RR 0.82 (95% interval 0.7 to 0.96). GLP-1 drugs in obesity vs placebo (EHJ, 2026): RR 0.79 (95% interval 0.63 to 0.99). GLP-1 heart-outcome trials in diabetes (8 trials, 2022): RR 0.96 (95% interval 0.86 to 1.07). Tirzepatide vs placebo (10 trials, 2026): OR 2.2 (95% interval 0.81 to 6.75).</desc>
+<rect width="760" height="490" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Pooled estimates: atrial fibrillation on GLP-1 drugs</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Left of the line = fewer AF reports than the comparison. Bars show 95% intervals. Log scale.</text>
+<line x1="380.0" y1="92" x2="380.0" y2="384" stroke="#e2e8f0" stroke-width="1"/>
+<text x="380.0" y="400" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0.25</text>
+<line x1="442.0" y1="92" x2="442.0" y2="384" stroke="#e2e8f0" stroke-width="1"/>
+<text x="442.0" y="400" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0.5</text>
+<line x1="504.0" y1="92" x2="504.0" y2="384" stroke="#0f172a" stroke-width="1.5"/>
+<text x="504.0" y="400" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">1</text>
+<line x1="566.0" y1="92" x2="566.0" y2="384" stroke="#e2e8f0" stroke-width="1"/>
+<text x="566.0" y="400" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">2</text>
+<line x1="628.0" y1="92" x2="628.0" y2="384" stroke="#e2e8f0" stroke-width="1"/>
+<text x="628.0" y="400" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">4</text>
+<line x1="690.0" y1="92" x2="690.0" y2="384" stroke="#e2e8f0" stroke-width="1"/>
+<text x="690.0" y="400" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">8</text>
+<text x="442.0" y="416" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f766e">fewer AF</text>
+<text x="566.0" y="416" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#b91c1c">more AF</text>
+<text x="24" y="120" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Semaglutide vs placebo (network meta-analysis, 2026)</text>
+<line x1="469.5" y1="116" x2="503.1" y2="116" stroke="#0f766e" stroke-width="3"/>
+<rect x="481.2" y="111" width="10" height="10" fill="#0f766e"/>
+<text x="698" y="120" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">0.82</text>
+<text x="24" y="160" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Semaglutide vs tirzepatide (network meta-analysis, 2026)</text>
+<line x1="415.1" y1="156" x2="492.6" y2="156" stroke="#0f766e" stroke-width="3"/>
+<rect x="448.7" y="151" width="10" height="10" fill="#0f766e"/>
+<text x="698" y="160" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">0.57</text>
+<text x="24" y="200" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Semaglutide vs placebo (10 trials, 2024)</text>
+<line x1="422.0" y1="196" x2="489.5" y2="196" stroke="#0f766e" stroke-width="3"/>
+<rect x="450.3" y="191" width="10" height="10" fill="#0f766e"/>
+<text x="698" y="200" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">0.58</text>
+<text x="24" y="240" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">GLP-1 drugs in obesity vs placebo (24 trials, 2026)</text>
+<line x1="472.1" y1="236" x2="500.3" y2="236" stroke="#0f766e" stroke-width="3"/>
+<rect x="481.2" y="231" width="10" height="10" fill="#0f766e"/>
+<text x="698" y="240" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">0.82</text>
+<text x="24" y="280" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">GLP-1 drugs in obesity vs placebo (EHJ, 2026)</text>
+<line x1="462.7" y1="276" x2="503.1" y2="276" stroke="#0f766e" stroke-width="3"/>
+<rect x="477.9" y="271" width="10" height="10" fill="#0f766e"/>
+<text x="698" y="280" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">0.79</text>
+<text x="24" y="320" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">GLP-1 heart-outcome trials in diabetes (8 trials, 2022)</text>
+<line x1="490.5" y1="316" x2="510.1" y2="316" stroke="#94a3b8" stroke-width="3"/>
+<rect x="495.3" y="311" width="10" height="10" fill="#94a3b8"/>
+<text x="698" y="320" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">0.96</text>
+<text x="24" y="360" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Tirzepatide vs placebo (10 trials, 2026)</text>
+<line x1="485.2" y1="356" x2="674.8" y2="356" stroke="#d97706" stroke-width="3"/>
+<rect x="569.5" y="351" width="10" height="10" fill="#d97706"/>
+<text x="698" y="360" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">2.2</text>
+<text x="24" y="444" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Risk ratios, except tirzepatide (odds ratio, Bayesian). AF was mostly recorded as a side effect; no trial was powered for it.</text>
+<text x="24" y="460" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Sources: Heart Rhythm 2026; Eur J Clin Invest 2024; Metabolism 2026; Eur Heart J 2026; Front Endocrinol 2022; JAHA 2026.</text>
+<text x="24" y="476" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>

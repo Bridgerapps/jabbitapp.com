@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 564" width="760" height="564" role="img" aria-labelledby="t1 d1">
+<title id="t1">GLP-1 drugs and atrial fibrillation: what the evidence shows</title>
+<desc id="d1">GLP-1 drugs and atrial fibrillation: what the evidence shows. Newest network meta-analysis (Oct 26, 2026): 94 trials, 155,989 people: injected semaglutide 18% fewer AF reports vs placebo. Verdict: Signal: less AF. Pooled trials in obesity: 24 trials, 40,694 people: 18% fewer AF reports on GLP-1-based drugs. Verdict: Signal: less AF. Heart-outcome trials in diabetes: 8 trials, 60,081 people: no significant change in AF. Verdict: No clear effect. Tirzepatide vs placebo: 10 trials, 6,515 people: AF not significant, wide range; more arrhythmias overall. Verdict: Unclear. Health records: Obesity plus kidney disease: 1.63% vs 2.62% new AF at 1 year on GLP-1 drugs. Verdict: Association only. After AF ablation: 6 mostly observational studies: fewer AF returns on GLP-1 drugs. Verdict: Low certainty. Heart rate (FDA labels): Resting heart rate rises 1 to 4 beats a minute on average. Verdict: Known effect. Trials powered for AF: None of 249 drug trials; placebo trials in people with AF due 2026-27. Verdict: Not yet done.</desc>
+<rect width="760" height="564" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">GLP-1 drugs and atrial fibrillation: what the evidence shows</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Semaglutide (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound) and related drugs. Checked Oct 27, 2026.</text>
+<text x="24" y="86" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#64748b">Evidence</text>
+<text x="550" y="86" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#64748b">Verdict</text>
+<text x="24" y="112" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Newest network meta-analysis (Oct 26, 2026)</text>
+<text x="24" y="130" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">94 trials, 155,989 people: injected semaglutide 18% fewer AF reports vs placebo</text>
+<rect x="550" y="97" width="186" height="22" rx="4" fill="#0f766e" fill-opacity="0.92"/>
+<text x="643" y="112" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Signal: less AF</text>
+<line x1="24" y1="140" x2="736" y2="140" stroke="#e2e8f0"/>
+<text x="24" y="162" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Pooled trials in obesity</text>
+<text x="24" y="180" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">24 trials, 40,694 people: 18% fewer AF reports on GLP-1-based drugs</text>
+<rect x="550" y="147" width="186" height="22" rx="4" fill="#0f766e" fill-opacity="0.92"/>
+<text x="643" y="162" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Signal: less AF</text>
+<line x1="24" y1="190" x2="736" y2="190" stroke="#e2e8f0"/>
+<text x="24" y="212" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Heart-outcome trials in diabetes</text>
+<text x="24" y="230" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">8 trials, 60,081 people: no significant change in AF</text>
+<rect x="550" y="197" width="186" height="22" rx="4" fill="#94a3b8" fill-opacity="0.92"/>
+<text x="643" y="212" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">No clear effect</text>
+<line x1="24" y1="240" x2="736" y2="240" stroke="#e2e8f0"/>
+<text x="24" y="262" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Tirzepatide vs placebo</text>
+<text x="24" y="280" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">10 trials, 6,515 people: AF not significant, wide range; more arrhythmias overall</text>
+<rect x="550" y="247" width="186" height="22" rx="4" fill="#d97706" fill-opacity="0.92"/>
+<text x="643" y="262" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Unclear</text>
+<line x1="24" y1="290" x2="736" y2="290" stroke="#e2e8f0"/>
+<text x="24" y="312" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Health records</text>
+<text x="24" y="330" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Obesity plus kidney disease: 1.63% vs 2.62% new AF at 1 year on GLP-1 drugs</text>
+<rect x="550" y="297" width="186" height="22" rx="4" fill="#d97706" fill-opacity="0.92"/>
+<text x="643" y="312" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Association only</text>
+<line x1="24" y1="340" x2="736" y2="340" stroke="#e2e8f0"/>
+<text x="24" y="362" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">After AF ablation</text>
+<text x="24" y="380" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">6 mostly observational studies: fewer AF returns on GLP-1 drugs</text>
+<rect x="550" y="347" width="186" height="22" rx="4" fill="#d97706" fill-opacity="0.92"/>
+<text x="643" y="362" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Low certainty</text>
+<line x1="24" y1="390" x2="736" y2="390" stroke="#e2e8f0"/>
+<text x="24" y="412" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Heart rate (FDA labels)</text>
+<text x="24" y="430" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Resting heart rate rises 1 to 4 beats a minute on average</text>
+<rect x="550" y="397" width="186" height="22" rx="4" fill="#94a3b8" fill-opacity="0.92"/>
+<text x="643" y="412" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Known effect</text>
+<line x1="24" y1="440" x2="736" y2="440" stroke="#e2e8f0"/>
+<text x="24" y="462" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Trials powered for AF</text>
+<text x="24" y="480" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">None of 249 drug trials; placebo trials in people with AF due 2026-27</text>
+<rect x="550" y="447" width="186" height="22" rx="4" fill="#b91c1c" fill-opacity="0.92"/>
+<text x="643" y="462" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">Not yet done</text>
+<line x1="24" y1="490" x2="736" y2="490" stroke="#e2e8f0"/>
+<text x="24" y="518" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Sources: Heart Rhythm 2026; Metabolism 2026; Front Endocrinol 2022; JAHA 2026; Int J Cardiol 2026; PACE 2026; Eur Heart J 2026;</text>
+<text x="24" y="534" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Wegovy and Zepbound labels on DailyMed; ClinicalTrials.gov. Verdicts are Jabbit's analysis. AF = atrial fibrillation.</text>
+<text x="24" y="550" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>

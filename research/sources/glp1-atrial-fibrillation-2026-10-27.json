@@ -1,0 +1,377 @@
+{
+ "checked": "2026-10-27",
+ "page": "https://jabbitapp.com/research/glp1-ozempic-wegovy-zepbound-atrial-fibrillation-afib-teardown.html",
+ "why_now": "Heart Rhythm network meta-analysis (Barbosa et al.), published online October 26, 2026, doi 10.1016/j.hrthm.2026.10.052, PMID 42933519. Abstract read; full text paywalled; the PubMed record lists no disclosure statement.",
+ "abstract_quotes": {
+  "42933519": {
+   "title": "Glucagon-Like Peptide-1 Receptor Agonists and Risk of Arrhythmias: A Network Meta-Analysis",
+   "journal": "Heart Rhythm",
+   "quotes": [
+    "A total of 94 RCTs involving 155,989 patients were included, comparing 12 GLP-1 RAs and co-agonists.",
+    "A comprehensive search of databases was conducted from inception to December 2025.",
+    "significantly reducing AF incidence compared with placebo (RR 0.82; 95% CI: 0.68 to 0.99), and compared with tirzepatide (RR 0.57; 95% CI: 0.37 to 0.88)",
+    "dulaglutide was associated with an increased risk of AF, while lixisenatide was associated with a decreased risk in atrioventricular blocks",
+    "For AF, semaglutide presented a p-score of 0.7885, while tirzepatide and dulaglutide scored 0.1830 and 0.1750, respectively.",
+    "Further studies focusing on arrhythmic outcomes are needed to confirm these findings."
+   ]
+  },
+  "42714458": {
+   "title": "Tirzepatide and the Incidence of Atrial Fibrillation in Adults With Overweight or Obesity: An Updated Meta-Analysis of Randomized Controlled Trials",
+   "journal": "J Am Heart Assoc",
+   "quotes": [
+    "Our meta-analysis included 10 randomized controlled trials, including 6515 individuals, of whom 4491 (68.9%) were randomized to tirzepatide.",
+    "The pooled OR was 2.20 (95% CrI, 0.81-6.75) for atrial fibrillation, 2.16 (95% CrI, 0.90-5.87) for atrial arrhythmia, and 1.84 (95% CrI, 1.04-3.90) for any arrhythmia.",
+    "Tirzepatide was not associated with atrial fibrillation or atrial arrhythmia. Although higher odds of overall arrhythmias were observed, event rates were low and the findings should be interpreted cautiously."
+   ]
+  },
+  "41349790": {
+   "title": "Effect of GLP-1 receptor agonists and co-agonists on atrial fibrillation risk in overweight or obesity: systematic review and meta-analysis of randomized controlled trials",
+   "journal": "Metabolism",
+   "quotes": [
+    "Twenty-four RCTs encompassing 40,694 participants were included.",
+    "(Risk Ratio = 0.82; 95 % confidence interval, 0.70-0.96; P = 0.012; I2 = 0 %)",
+    "No significant between-subgroup differences were observed according to agent type (single-, dual-, or triple-receptor agonists)",
+    "This cardioprotective benefit may, at least in part, operate independently of the magnitude of weight loss."
+   ]
+  },
+  "41603358": {
+   "title": "Non-antiarrhythmic pharmacotherapy in cardio-renal-metabolic disease and incident atrial fibrillation: a trial meta-analysis",
+   "journal": "Eur Heart J",
+   "quotes": [
+    "Two hundred and forty-nine RCTs involving 745 041 patients were included",
+    "treatment of obesity with glucagon-like peptide-1 receptor agonists (RR 0.79, 95% CI 0.63-0.99)",
+    "However, the number of AF events per trial was low and none were adequately powered for incident AF."
+   ]
+  },
+  "42668799": {
+   "title": "Glucagon-Like Peptide-1 Receptor Agonists, Semaglutide, and Atrial Fibrillation: An Umbrella Review With Methodological Appraisal of Overlapping Meta-Analyses",
+   "journal": "Cureus",
+   "quotes": [
+    "Ten meta-analyses were included",
+    "AMSTAR 2 ratings indicated low confidence in five reviews and critically low confidence in four; none achieved moderate or high confidence.",
+    "GLP-1 RAs/semaglutide are plausibly associated with lower AF burden, but certainty is low (incident AF) to very low (recurrence).",
+    "Adequately powered randomized trials with adjudicated, systematically monitored AF endpoints are required."
+   ]
+  },
+  "39058274": {
+   "title": "Glucagon-like peptide-1 receptor agonist semaglutide reduces atrial fibrillation incidence: A systematic review and meta-analysis",
+   "journal": "Eur J Clin Invest",
+   "quotes": [
+    "Ten RCTs were included in the analysis.",
+    "Semaglutide reduces the risk of AF by 42% (RR .58, 95% CI .40-.85)"
+   ]
+  },
+  "36034440": {
+   "title": "Effects of GLP-1 receptor agonists on arrhythmias and its subtypes in patients with type 2 diabetes: A systematic review and meta-analysis",
+   "journal": "Front Endocrinol (Lausanne)",
+   "quotes": [
+    "A total of 60,081 randomized participants were included",
+    "atrial fibrillation [RR=0.96, 95% CI (0.86, 1.07), p =0.43]",
+    "8 GLP-1RA cardiovascular outcomes trials"
+   ]
+  },
+  "35699112": {
+   "title": "Meta-analysis of cardiovascular outcome trials assessing the impact of glucagon-like peptide-1 receptor agonists on major cardiac arrhythmias",
+   "journal": "Acta Cardiol",
+   "quotes": [
+    "Treatment with GLP-1RAs did not provide significant benefit in the risk for atrial fibrillation (RR = 0.81, 95%CI; 0.78-1.15, I2 = 51%)"
+   ]
+  },
+  "42455922": {
+   "title": "Network and Pairwise Meta-Analysis of the Association Between Novel Hypoglycemic Agents and Atrial Fibrillation Risk in Patients With Type 2 Diabetes Mellitus",
+   "journal": "Diabetes Metab Res Rev",
+   "quotes": [
+    "4 RCTs and 21 cohort studies involving 2,171,267 patients were included.",
+    "SGLT-2i significantly reduced the risk of AF and new-onset AF"
+   ]
+  },
+  "39217565": {
+   "title": "Atrial Fibrillation and Semaglutide Effects in Obesity-Related Heart Failure With Preserved Ejection Fraction: STEP-HFpEF Program",
+   "journal": "J Am Coll Cardiol",
+   "quotes": [
+    "Of the 1,145 participants, 518 (45%) had a history of AF",
+    "Semaglutide led to larger improvements in KCCQ-CSS (11.5 points [95% CI: 8.3-14.8] vs 4.3 points [95% CI: 1.3-7.2]; P interaction = 0.001)",
+    "There were fewer serious adverse events and serious cardiac disorders in participants treated with semaglutide vs placebo irrespective of AF history."
+   ]
+  },
+  "42892471": {
+   "title": "GLP-1 receptor agonist therapy and incident atrial fibrillation in non-diabetic adults with obesity and chronic kidney disease: a propensity matched cohort study",
+   "journal": "Int J Cardiol",
+   "quotes": [
+    "Using the TriNetX US Collaborative Network (66 healthcare organizations), we conducted a retrospective target trial emulation",
+    "GLP-1RA use was associated with significantly lower incident AF (1.63% vs. 2.62%; HR 0.655, 95% CI 0.508-0.844; p = 0.001)",
+    "support prioritizing this phenotype for dedicated randomized trials"
+   ]
+  },
+  "42033283": {
+   "title": "Effect of GLP-1 Receptor Agonists on Post-Ablation Atrial Fibrillation Recurrence: A Meta‑Analysis",
+   "journal": "Pacing Clin Electrophysiol",
+   "quotes": [
+    "Six studies met the inclusion criteria",
+    "A random-effects meta-analysis of five studies confirmed this benefit (HR 0.78, 95% CI: 0.61-0.99; I2 = 75%).",
+    "GLP-1 RA therapy was associated with reduced AF recurrence after ablation, but methodological limitations warrant cautious interpretation."
+   ]
+  },
+  "25792361": {
+   "title": "Long-Term Effect of Goal-Directed Weight Management in an Atrial Fibrillation Cohort: A Long-Term Follow-Up Study (LEGACY)",
+   "journal": "J Am Coll Cardiol",
+   "quotes": [
+    "Of 1,415 consecutive patients with AF, 825 had a body mass index ≥ 27 kg/m(2) and were offered weight management.",
+    "Weight loss ≥ 10% resulted in a 6-fold (95% confidence interval: 3.4 to 10.3; p < 0.001) greater probability of arrhythmia-free survival compared with the other 2 groups.",
+    "Weight fluctuation >5% partially offset this benefit"
+   ]
+  },
+  "42930907": {
+   "title": "Cardiometabolic Substrate Modification in Atrial Fibrillation: Obesity and Epicardial Adipose Tissue in the Era of Incretin-Based Therapies and Catheter Ablation",
+   "journal": "J Cardiovasc Dev Dis",
+   "quotes": [
+    "Epicardial adipose tissue (EAT), particularly the peri-left-atrial depot, may provide a local mechanistic bridge",
+    "evidence for reduced post-ablation recurrence remains predominantly non-randomized and is susceptible to residual confounding, treatment-selection effects, and healthy-user bias"
+   ]
+  }
+ },
+ "conflict_statements": {
+  "41349790": "None is related to this manuscript.",
+  "39217565": "This trial was funded by Novo Nordisk A/S.",
+  "42892471": "All authors had no conflict of interest to declare.",
+  "42668799": "no financial relationships"
+ },
+ "guideline_2023_acc_aha_accp_hrs_af": {
+  "pmcid": "PMC11095842",
+  "pmid": "38033089",
+  "quotes": [
+   "Overall lifetime risk is about 30% to 40% in White individuals",
+   "AF is associated with a 1.5- to 2-fold increased risk of death",
+   "In patients with AF who are overweight or obese (with body mass index [BMI] >27 kg/m2), weight loss is recommended, with an ideal target of at least 10% weight loss to reduce AF symptoms, burden, recurrence, and progression to persistent AF."
+  ],
+  "weight_loss_recommendation_class": "COR 1, LOE B-R",
+  "names_glp1_drugs": false
+ },
+ "labels": {
+  "wegovy_dailymed_setid": "ee06186f-2aa3-4990-a760-757579d8f77b",
+  "wegovy_quotes": [
+   "5.9 Heart Rate Increase Treatment with WEGOVY was associated with increases in resting heart rate.",
+   "Mean increases in resting heart rate of 1 to 4 beats per minute (bpm) were observed in WEGOVY injection-treated adult patients compared to placebo in clinical trials for weight reduction.",
+   "More adult patients treated with WEGOVY injection compared with placebo had maximum changes from baseline at any visit of 10 to 19 bpm (41% versus 34%, respectively) and 20 bpm or more (26% versus 16%, respectively).",
+   "Instruct patients to inform their healthcare providers of palpitations or feelings of a racing heartbeat while at rest during WEGOVY treatment.",
+   "If patients experience a sustained increase in resting heart rate, discontinue WEGOVY."
+  ],
+  "zepbound_dailymed_setid": "487cd7e7-434c-4925-99fa-aa80b1cc776b",
+  "zepbound_quotes": [
+   "Heart Rate Increase In a pool of Study 1 and 2, treatment with ZEPBOUND resulted in a mean increase in heart rate of 1 to 3 beats per minute compared to no increase in placebo-treated patients."
+  ],
+  "note": "Wegovy lists Heart Rate Increase as Warnings and Precautions 5.9; Zepbound's highlights list no heart-rate warning, and its label reports the increase under adverse reactions (checked Oct 27, 2026)."
+ },
+ "registry": {
+  "NCT06184633": {
+   "title": "DUTCH Weight Control in Atrial Fibrillation Study",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "sponsor": "Rijnstate Hospital",
+   "enrollment": 280,
+   "masking": "TRIPLE",
+   "interventions": [
+    "Semaglutide 3.2 MG/ML",
+    "Placebo"
+   ],
+   "primary_completion": "2027-04-10",
+   "why_stopped": ""
+  },
+  "NCT06499857": {
+   "title": "Semaglutide for Metabolic Intervention and Adipose Loss to Treat Atrial Fibrillation",
+   "status": "RECRUITING",
+   "sponsor": "University of Chicago",
+   "enrollment": 200,
+   "masking": "TRIPLE",
+   "interventions": [
+    "Semaglutide",
+    "Placebo"
+   ],
+   "primary_completion": "2027-12",
+   "why_stopped": ""
+  },
+  "NCT06802081": {
+   "title": "TIRzepatide for the Treatment of Obesity in Patients With Atrial Fibrillation",
+   "status": "RECRUITING",
+   "sponsor": "The Cleveland Clinic",
+   "enrollment": 100,
+   "masking": "TRIPLE",
+   "interventions": [
+    "Tirzepatide",
+    "Placebo"
+   ],
+   "primary_completion": "2026-12-31",
+   "why_stopped": ""
+  },
+  "NCT05209165": {
+   "title": "Semaglutide to Reduce Atrial Fibrillation Burden",
+   "status": "SUSPENDED",
+   "sponsor": "San Francisco Veterans Affairs Medical Center",
+   "enrollment": 132,
+   "masking": "QUADRUPLE",
+   "interventions": [
+    "Semaglutide",
+    "Placebo"
+   ],
+   "primary_completion": "2027-05",
+   "why_stopped": "Company decision"
+  },
+  "NCT07275697": {
+   "title": "Waiting on Atrial Fibrillation Intervention Therapy (WAIT) Study",
+   "status": "RECRUITING",
+   "sponsor": "Emma Svennberg",
+   "enrollment": 200,
+   "masking": "SINGLE",
+   "interventions": [
+    "Semaglutide 2.4 mg",
+    "Standard medical treatment"
+   ],
+   "primary_completion": "2028-12-30",
+   "why_stopped": ""
+  },
+  "NCT07389941": {
+   "title": "Semaglutide PrIor to CathEeter Ablation in Patients With Atrial Fibrillation",
+   "status": "NOT_YET_RECRUITING",
+   "sponsor": "University of Luebeck",
+   "enrollment": 240,
+   "masking": "SINGLE",
+   "interventions": [
+    "Semaglutide (SEMA)"
+   ],
+   "primary_completion": "2029-04",
+   "why_stopped": ""
+  },
+  "NCT07382024": {
+   "title": "Tirzepatide to Reduce rEcurrence And Burden After Ablation of Atrial Fibrillation",
+   "status": "NOT_YET_RECRUITING",
+   "sponsor": "National Taiwan University Hospital",
+   "enrollment": 200,
+   "masking": "NONE",
+   "interventions": [
+    "Tirzepatide",
+    "Standard Care (in control arm)"
+   ],
+   "primary_completion": "2027-12-31",
+   "why_stopped": ""
+  },
+  "NCT07630454": {
+   "title": "Tirzepatide on Atrial Fibrillation Recurrence After Catheter Ablation in Patients With Obesity and HFpEF",
+   "status": "NOT_YET_RECRUITING",
+   "sponsor": "Yunlong Wang",
+   "enrollment": 602,
+   "masking": "SINGLE",
+   "interventions": [
+    "Tirzepatide",
+    "Structured Lifestyle Intervention"
+   ],
+   "primary_completion": "2029-08-01",
+   "why_stopped": ""
+  },
+  "NCT07715929": {
+   "title": "Effect of Tirzepatide on Recurrence of Atrial Fibrillation After Catheter Ablation in Obese Patients",
+   "status": "NOT_YET_RECRUITING",
+   "sponsor": "Yunlong Wang",
+   "enrollment": 710,
+   "masking": "SINGLE",
+   "interventions": [
+    "Tirzepatide",
+    "Structured Lifestyle Intervention"
+   ],
+   "primary_completion": "2029-09-01",
+   "why_stopped": ""
+  },
+  "NCT03856632": {
+   "title": "Liraglutide Effect in Atrial Fibrillation",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "sponsor": "University of Miami",
+   "enrollment": 60,
+   "masking": "NONE",
+   "interventions": [
+    "Liraglutide",
+    "RFM",
+    "Anti Arrhythmics",
+    "Afib Catheter Ablation"
+   ],
+   "primary_completion": "2026-12-31",
+   "why_stopped": ""
+  },
+  "NCT04885634": {
+   "title": "Semaglutide for the Reduction of Arrhythmia Burden in Overweight AF Patients",
+   "status": "WITHDRAWN",
+   "sponsor": "Axel Brandes",
+   "enrollment": 0,
+   "masking": "QUADRUPLE",
+   "interventions": [
+    "Semaglutide Injectable Product",
+    "Placebo"
+   ],
+   "primary_completion": "2024-01",
+   "why_stopped": "Not received funding."
+  }
+ },
+ "registry_placebo_controlled_active": [
+  "NCT06184633",
+  "NCT06499857",
+  "NCT06802081"
+ ],
+ "forest_chart": [
+  {
+   "label": "Semaglutide vs placebo (network meta-analysis, 2026)",
+   "estimate": 0.82,
+   "low": 0.68,
+   "high": 0.99,
+   "measure": "RR",
+   "pmid": "42933519"
+  },
+  {
+   "label": "Semaglutide vs tirzepatide (network meta-analysis, 2026)",
+   "estimate": 0.57,
+   "low": 0.37,
+   "high": 0.88,
+   "measure": "RR",
+   "pmid": "42933519"
+  },
+  {
+   "label": "Semaglutide vs placebo (10 trials, 2024)",
+   "estimate": 0.58,
+   "low": 0.4,
+   "high": 0.85,
+   "measure": "RR",
+   "pmid": "39058274"
+  },
+  {
+   "label": "GLP-1 drugs in obesity vs placebo (24 trials, 2026)",
+   "estimate": 0.82,
+   "low": 0.7,
+   "high": 0.96,
+   "measure": "RR",
+   "pmid": "41349790"
+  },
+  {
+   "label": "GLP-1 drugs in obesity vs placebo (EHJ, 2026)",
+   "estimate": 0.79,
+   "low": 0.63,
+   "high": 0.99,
+   "measure": "RR",
+   "pmid": "41603358"
+  },
+  {
+   "label": "GLP-1 heart-outcome trials in diabetes (8 trials, 2022)",
+   "estimate": 0.96,
+   "low": 0.86,
+   "high": 1.07,
+   "measure": "RR",
+   "pmid": "36034440"
+  },
+  {
+   "label": "Tirzepatide vs placebo (10 trials, 2026)",
+   "estimate": 2.2,
+   "low": 0.81,
+   "high": 6.75,
+   "measure": "OR",
+   "pmid": "42714458"
+  }
+ ],
+ "analysis": {
+  "note": "Jabbit analysis. Several overlapping meta-analyses of the same trials point to fewer AF reports on GLP-1 drugs, especially semaglutide, in people with obesity; diabetes-only heart-outcome trial pools found no clear effect; a 2026 tirzepatide-only meta-analysis found no clear AF signal but a wide interval leaning the other way and more arrhythmias overall. AF was mostly recorded as an adverse event, not a planned outcome; no trial was powered for it; an umbrella review rates certainty low. Semaglutide vs tirzepatide in the network meta-analysis is largely an indirect comparison. Placebo-controlled trials in people who already have AF are registered, with primary completion dates from Dec 2026 to Dec 2027."
+ }
+}
