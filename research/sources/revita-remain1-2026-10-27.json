@@ -1,0 +1,159 @@
+{
+ "page": "https://jabbitapp.com/research/revita-dmr-weight-regain-after-stopping-zepbound-ozempic-teardown.html",
+ "checked": "2026-10-27 (America/New_York)",
+ "notes": "REMAIN-1 data are company-reported (press release and investor presentation filed with the SEC), from an ongoing study, not peer-reviewed. No prices, doses, sellers or stacking.",
+ "fractyl_press_release_quotes": {
+  "url": "https://www.sec.gov/Archives/edgar/data/1572616/000119312526423377/guts-ex99_1.htm",
+  "quotes": [
+   "October 16, 2026 (GLOBE NEWSWIRE)",
+   "In the modified intention-to-treat (mITT) population (N=308), Revita participants maintained approximately 80% of their GLP-1-induced weight loss after a single treatment at six months, compared with 67% in sham participants (least-squares mean weight regain of 5.1% versus 8.2% of body weight; n=176 versus 74), with high statistical significance (p=0.0023).",
+   "32% of Revita participants were either weight stable or had further weight loss at 6-months post GLP-1 discontinuation (<2% regain or incremental loss), versus 18% for sham (post hoc; nominal p=0.020).",
+   "participants who received 12 to 18 cm of duodenal ablation had 43% less regain than sham (observed mean weight regain of 4.7% versus 8.2%; n=107 versus 74). Participants who received 20 cm or more had 53% less regain than sham (mean regain of 3.8%; n=47).",
+   "There have been no device- or procedure-related serious adverse events, no deaths, and no unanticipated adverse device effects observed as of the September 24, 2026, data cut-off date.",
+   "Related adverse events were predominantly mild and peri-procedural, with 94% occurring within seven days of the procedure",
+   "The second prespecified co-primary endpoint, the percentage of participants who maintain 5% or greater total body weight loss, will be assessed at 12 months.",
+   "Revita has received FDA Breakthrough Device designation for weight maintenance in people with obesity who discontinue GLP-1 therapies.",
+   "Revita is for investigational use only in the United States and is CE marked in the European Union and United Kingdom.",
+   "Late Q4 2026 : Potential U.S. Food and Drug Administration (FDA) De Novo marketing application submission in post-GLP-1 weight maintenance.",
+   "Q1 2027 : Anticipated topline one-year data from the REMAIN-1 Pivotal Cohort, including the second co-primary endpoint.",
+   "Late 2027 : Potential FDA marketing authorization.",
+   "Early 2028 : Potential U.S. commercial launch.",
+   "the FDA indicated that final pathway determinations will be made following review of the complete safety dataset",
+   "via a one-time, minimally invasive endoscopic procedure intended to restore healthy nutrient sensing and signaling disrupted by chronic metabolic disease"
+  ]
+ },
+ "fractyl_presentation_quotes": {
+  "url": "https://www.sec.gov/Archives/edgar/data/1572616/000119312526423377/guts-ex99_2.htm",
+  "quotes": [
+   "Female, n (%) 164 (80%) 83 (81%) 247 (80%)",
+   "Run-in weight loss, % of pre-tirzepatide weight, mean (SD) 2 18.3 (2.6) 18.3 (3.5) 18.3 (2.9)",
+   "Run-in duration, weeks, mean (SD) 24.7 (6.0) 25.1 (6.3) 24.9 (6.1)",
+   "Weight at randomization (V07), kg, mean (SD) 2 84.1 (13.9) 80.9 (11.9) 83.0 (13.3)",
+   "Primary analysis MMRM, RWL = 20% 8.2% vs 5.1% -3.06 (-5.02, -1.10) p = 0.0023",
+   "Primary sensitivity MMRM, RWL = 18.3% 8.3% vs 5.1% -3.19 (-4.83, -1.55) p = 0.0001",
+   "Observed means Unadjusted, participants with a Week 26 weight 8.1% vs 4.8% -3.38 (-5.07, -1.70) p = 0.0001",
+   "Flagged intercurrent events before the Week 26 visit, participants, n (%) 18 (9%) 23 (22%) 41 (13%) Anti-obesity medication 13 22 35",
+   "Week 26 weight contributing to the efficacy analysis, n (%) 176 (86%) 74 (72%) 250 (81%)",
+   "6% Revita vs 21% sham restarted anti-obesity medication (post hoc, nominal p<0.001)",
+   "Efficacy estimand: weights after an intercurrent event (GLP-1 receptor agonist or other weight-affecting medication, systemic corticosteroid, pregnancy) set to missing.",
+   "Exploratory ablation length dose analysis",
+   "6.9% Revita ≤10 cm n=22 16% less vs sham p = 0.46",
+   "9.2% Modeled sham1 8.2% Sham n=74",
+   "sham outperforming historical data",
+   "Patients with any TEAE, n (%) 144 (70%) 57 (55%) 201 (65%)",
+   "Patients, n (%) 2 (1%) 4 (4%) 6 (2%)",
+   "Related TEAEs (probably/definitely related to device or procedure) Patients, n (%) 86 (42%) 31 (30%) 117 (38%)",
+   "Oropharyngeal pain 39 (19%) 18 (17%) 57 (19%) Nausea 32 (16%) 3 (3%) 35 (11%) Abdominal pain 31 (15%) 6 (6%) 37 (12%) Vomiting 17 (8%) 0 (0%) 17 (6%)",
+   "Revita: GI hemorrhage and acute blood-loss anaemia in one participant with dual NSAID use and no evidence of duodenal bleeding on endoscopy, acute cholecystitis (Day 79)",
+   "Deaths, n 0 0 0",
+   "The prespecified CP#2 assessment is at Week 52; this Week 26 application is post hoc.",
+   "REMAIN-1 is an ongoing study; final data rely on database lock at 12 months.",
+   "80% of GLP-1 weight loss retained with Revita vs 67% with sham (mITT; n=176 vs 76)"
+  ]
+ },
+ "fractyl_midpoint_quotes": {
+  "url": "https://www.sec.gov/Archives/edgar/data/1572616/000119312526303948/guts-ex99_1.htm",
+  "quotes": [
+   "July 15, 2026 (GLOBE NEWSWIRE)",
+   "In the full modified intention-to-treat (mITT) population (N=45), a single Revita procedure reduced weight regain by approximately 40% versus sham at one year (least-squares mean weight regain of 7.8% versus 13.0% of body weight; n=29 versus 16 for Revita versus sham).",
+   "The Midpoint Cohort is not powered for formal statistical significance; results are descriptive",
+   "Overall TEAE rates were comparable between arms through one year (24% Revita versus 25% sham)"
+  ]
+ },
+ "clinicaltrials_gov": {
+  "nct": "NCT06484114",
+  "acronym": "REMAIN-1",
+  "sponsor": "Fractyl Health Inc.",
+  "status": "ACTIVE_NOT_RECRUITING",
+  "start": "2024-09-01",
+  "primary_completion_estimated": "2027-02-15",
+  "enrollment_estimated": 315,
+  "last_update_posted": "2026-03-03",
+  "primary_outcomes": [
+   "To demonstrate that Revita DMR is superior to sham in percent change in body weight from baseline to week 26",
+   "To demonstrate that a majority of Revita DMR participants maintain clinically significant weight loss 52 weeks (1 year) after discontinuing tirzepatide therapy"
+  ],
+  "results_posted": false
+ },
+ "pubmed_remain1_search": {
+  "query": "\"REMAIN-1\"[tiab] AND (Revita OR duodenal)",
+  "count": 0
+ },
+ "pubmed": {
+  "38078870": {
+   "title": "Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity: The SURMOUNT-4 Randomized Clinical Trial",
+   "quotes": [
+    "The mean percent weight change from week 36 to week 88 was -5.5% with tirzepatide vs 14.0% with placebo",
+    "experienced a mean weight reduction of 20.9%",
+    "In participants with obesity or overweight, withdrawing tirzepatide led to substantial regain of lost weight, whereas continued treatment maintained and augmented initial weight reduction."
+   ]
+  },
+  "35441470": {
+   "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension",
+   "quotes": [
+    "One year after withdrawal of once-weekly subcutaneous semaglutide 2.4 mg and lifestyle intervention, participants regained two-thirds of their prior weight loss",
+    "Extension analyses included 327 participants.",
+    "suggest ongoing treatment is required to maintain improvements in weight and health"
+   ]
+  },
+  "27519448": {
+   "title": "Endoscopic Duodenal Mucosal Resurfacing for the Treatment of Type 2 Diabetes: 6-Month Interim Analysis From the First-in-Human Proof-of-Concept Study",
+   "quotes": [
+    "A total of 39 patients with type 2 diabetes",
+    "Three patients experienced duodenal stenosis treated successfully by balloon dilation.",
+    "Long-term safety, efficacy, and durability and possible mechanisms of action require further investigation."
+   ]
+  },
+  "31331994": {
+   "title": "Endoscopic duodenal mucosal resurfacing for the treatment of type 2 diabetes mellitus: one year results from the first international, open-label, prospective, multicentre study",
+   "quotes": [
+    "Twenty-four patients had at least one AE (52%) related to DMR. Of these, 81% were mild. One SAE and no unanticipated AEs were reported.",
+    "weight was modestly reduced (-2.5±0.6 kg, p<0.001)",
+    "bariatric surgery learnings"
+   ]
+  },
+  "33597157": {
+   "title": "Safety and efficacy of hydrothermal duodenal mucosal resurfacing in patients with type 2 diabetes: the randomised, double-blind, sham-controlled, multicentre REVITA-2 feasibility trial",
+   "quotes": [
+    "median (IQR) HbA1c change was -10.4 (18.6) mmol/mol in DMR group versus -7.1 (16.4) mmol/mol in sham group (p=0.147)",
+    "Most adverse events were mild and transient.",
+    "showed heterogeneity between European (DMR n=39; sham n=37) and Brazilian (DMR n=17; sham n=16) populations"
+   ]
+  },
+  "35032562": {
+   "title": "Durable metabolic improvements 2 years after duodenal mucosal resurfacing (DMR) in patients with type 2 diabetes (REVITA-1 Study)",
+   "quotes": [
+    "No device- or procedure-related serious adverse events, unanticipated device effects, or hypoglycemic events were noted between 12 and 24 months post-DMR."
+   ]
+  },
+  "33417100": {
+   "title": "Metabolic Effects of Endoscopic Duodenal Mucosal Resurfacing: a Systematic Review and Meta-analysis",
+   "quotes": [
+    "Four studies were selected for qualitative and quantitative analysis."
+   ]
+  }
+ },
+ "regain_chart_pct_body_weight": {
+  "pivotal_6mo": {
+   "sham": 8.2,
+   "revita": 5.1
+  },
+  "post_hoc_by_ablation_length": {
+   "le_10cm_n22": 6.9,
+   "12_18cm_n107": 4.7,
+   "ge_20cm_n47": 3.8
+  }
+ },
+ "context_chart": {
+  "surmount4_placebo_52wk": 14.0,
+  "surmount4_tirzepatide_52wk": -5.5,
+  "midpoint_12mo": {
+   "sham": 13.0,
+   "revita": 7.8
+  },
+  "pivotal_6mo": {
+   "sham": 8.2,
+   "revita": 5.1
+  }
+ }
+}
