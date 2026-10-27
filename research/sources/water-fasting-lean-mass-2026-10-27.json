@@ -1,0 +1,263 @@
+{
+ "page": "https://jabbitapp.com/research/water-fasting-vs-ozempic-zepbound-muscle-loss-lean-mass-teardown.html",
+ "checked": "2026-10-27 (America/New_York)",
+ "notes": "Fasting studies are small, mostly uncontrolled, and use different body-composition methods (DXA, BIA, BIS, air displacement). The viral post's numbers are as reported by the post and were not verified. GLP-1 range from Jabbit's muscle-loss teardown (control arms of QUALITY, EMBRAZE, COURAGE, BELIEVE). No prices, doses, sellers or stacking.",
+ "x_post": {
+  "id": "2114816804166176827",
+  "created_at": "2026-10-26T20:29:52.000Z",
+  "read_at_et": "2026-10-27 ~6:03 PM ET",
+  "public_metrics": {
+   "bookmark_count": 813,
+   "impression_count": 988584,
+   "like_count": 1500,
+   "quote_count": 17,
+   "reply_count": 208,
+   "retweet_count": 86
+  },
+  "text_excerpt_quoted": [
+   "did a 14-day water-only fast and got a DEXA scan before and after.",
+   "about 13 lbs of fat lost, and about 7 lbs of lean mass lost.",
+   "That means roughly 1 in every 3 pounds he lost wasn’t fat.",
+   "The internet keeps saying extended fasting “spares muscle,”"
+  ],
+  "note": "Poster (a private individual) and the person described are not named on the page."
+ },
+ "x_counts": {
+  "query": "(\"water fast\" OR \"water fasting\") lang:en -is:retweet",
+  "read_at_et": "2026-10-27 ~6:03 PM ET",
+  "granularity": "day (UTC)",
+  "days": {
+   "2026-10-21": 69,
+   "2026-10-22": 86,
+   "2026-10-23": 90,
+   "2026-10-24": 56,
+   "2026-10-25": 41,
+   "2026-10-26": 70,
+   "2026-10-27_partial_to_22:03Z": 78
+  },
+  "total_7d": 496
+ },
+ "pubmed_search_fasting_glp1": {
+  "term": "(\"prolonged fasting\"[Title/Abstract] OR \"water-only fasting\"[Title/Abstract] OR \"water fasting\"[Title/Abstract]) AND (\"semaglutide\"[Title/Abstract] OR \"tirzepatide\"[Title/Abstract] OR \"liraglutide\"[Title/Abstract] OR \"GLP-1\"[Title/Abstract])",
+  "run": "2026-10-27 ~6:30 PM ET",
+  "count": 21,
+  "idlist": [
+   "42783483",
+   "42553740",
+   "42538551",
+   "42502140",
+   "42069389",
+   "41998348",
+   "41922235",
+   "41266825",
+   "41036293",
+   "41007653",
+   "40807216",
+   "40142805",
+   "25905318",
+   "39418085",
+   "39187641",
+   "35730880",
+   "30714432",
+   "29105987",
+   "23997935",
+   "19094067",
+   "10490778"
+  ],
+  "note": "Jabbit screened titles: one case report (41998348) combined prolonged water fasting with a GLP-1 drug; the rest are about perioperative fasting, endoscopy, Ramadan or lab studies."
+ },
+ "pubmed": {
+  "37377031": {
+   "title": "Efficacy and safety of prolonged water fasting: a narrative review of human trials",
+   "quotes": [
+    "prolonged fasting for 5-20 days produces potent increases in circulating ketones, and mild to moderate weight loss of 2-10%",
+    "Approximately two-thirds of the weight lost is lean mass, and one-third is fat mass.",
+    "The excessive lean mass loss suggests that prolonged fasting may increase the breakdown of muscle proteins, which is a concern.",
+    "3-4 months after the fast was completed, all metabolic benefits were no longer observed, even when weight loss was maintained",
+    "metabolic acidosis, headaches, insomnia, and hunger were observed in some studies"
+   ]
+  },
+  "42440276": {
+   "title": "Duration-Dependent Changes in Body Composition During Prolonged Fasting: A Systematic Review and Meta-Analysis",
+   "quotes": [
+    "A total of 49 studies met the inclusion criteria",
+    "fat mass (g = -0.25), fat-free mass (g = -0.51), total body water (g = -0.68)",
+    "is also associated with substantial losses in fat-free mass and total body water, indicating that fasting-induced weight loss reflects complex changes in body composition rather than isolated fat loss",
+    "No clear duration-dependent effects were observed for most outcomes."
+   ]
+  },
+  "34668663": {
+   "title": "Is muscle and protein loss relevant in long-term fasting in healthy men? A prospective trial on physiological adaptations",
+   "quotes": [
+    "Sixteen men (44 ± 14 years; 26.2 ± 0.9 kg/m2 ) fasted with a supplement of 200-250 kcal/day",
+    "The 10 day fast decreased BW by 7% (-5.9 ± 0.2 kg, P < 0.001) and BMR by 12% (P < 0.01).",
+    "Fat mass and lean soft tissues (LST) accounted for about 40% and 60% of weight loss, respectively",
+    "LST loss was explained by the reduction in extracellular water (44%), muscle and liver glycogen and associated water (14%), and metabolic active lean tissue (42%).",
+    "Strength was maintained in non-weight-bearing muscles and increased in weight-bearing muscles (+33%, P < 0.001).",
+    "Protein loss occurs in early fast but decreases as ketogenesis increases."
+   ]
+  },
+  "38429390": {
+   "title": "Systemic proteome adaptions to 7-day complete caloric restriction in humans",
+   "quotes": [
+    "a 7-day water-only fast leads to an average weight loss of 5.7 kg (±0.8 kg) among 12 volunteers (5 women, 7 men)",
+    "systemic changes evident only after 3 days of complete calorie restriction"
+   ]
+  },
+  "40268190": {
+   "title": "Prolonged fasting promotes systemic inflammation and platelet activation in humans: A medically supervised, water-only fasting and refeeding study",
+   "quotes": [
+    "a medically supervised water-only fast (mean duration: 9.8 ± 3.1 days)",
+    "Fasting resulted in a 7.7% mean weight loss",
+    "PF induced an acute inflammatory response, characterized by elevated plasma C-reactive protein (CRP)",
+    "it raises concerns regarding potential cardiometabolic effects that could persist after refeeding"
+   ]
+  },
+  "42754908": {
+   "title": "Machine learning identifies microbiome and clinical predictors of sustained weight loss following prolonged fasting",
+   "quotes": [
+    "38 healthy adults completed a 5-day fasting intervention with 12-week follow-up (LEANER study)",
+    "Fasting reduced body mass index acutely, predominantly driven by loss of fat mass, and these improvements partially persisted at 12 weeks."
+   ]
+  },
+  "29458369": {
+   "title": "Is fasting safe? A chart review of adverse events during medically supervised, water-only fasting",
+   "quotes": [
+    "Out of 2539 charts, 768 visits met our inclusion and exclusion criteria.",
+    "in 212 visits it was a grade 3 event, in 1 visit it was a grade 4 event, and there were no grade 5 events",
+    "There were 2 (0.002%) visits with a serious adverse event (SAE)."
+   ]
+  },
+  "30601864": {
+   "title": "Safety, health improvement and well-being during a 4 to 21-day fasting period in an observational study including 1422 subjects",
+   "quotes": [
+    "1422 subjects participated in a fasting program consisting of fasting periods of between 4 and 21 days",
+    "with a daily caloric intake of 200-250 kcal",
+    "Adverse effects were reported in less than 1% of the participants.",
+    "Buchinger periodic fasting within a specialised clinic"
+   ]
+  },
+  "24447775": {
+   "title": "Weight loss composition is one-fourth fat-free mass: a critical review and critique of this widely cited rule",
+   "quotes": [
+    "approximately one-fourth of weight loss will be FFM (i.e. ΔFFM/ΔWeight = ∼0.25)"
+   ]
+  },
+  "5454322": {
+   "title": "Prolonged starvation--a dangerous procedure?",
+   "quotes": [
+    "Experience with 18 obese patients who have undergone prolonged (60 days) therapeutic starvation shows that in general this is a safe procedure, but there are significant associated hazards, particularly a breakdown in electrolyte homoeostasis."
+   ]
+  },
+  "6061736": {
+   "title": "Brain metabolism during fasting",
+   "quotes": [
+    "beta-hydroxybutyrate and acetoacetate replaced glucose as the predominant fuel for brain metabolism"
+   ]
+  },
+  "5773094": {
+   "title": "Amino acid metabolism during prolonged starvation",
+   "quotes": [
+    "protein catabolism is minimized in prolonged fasting"
+   ]
+  },
+  "1615908": {
+   "title": "Glycogen storage: illusions of easy weight loss, excessive weight regain, and distortions in estimates of body composition",
+   "quotes": [
+    "Glycogen is stored in the liver, muscles, and fat cells in hydrated form (three to four parts water)",
+    "Potassium released from glycogen can distort estimates of body composition during dieting."
+   ]
+  },
+  "4803438": {
+   "title": "Features of a successful therapeutic fast of 382 days' duration",
+   "quotes": [
+    "A 27-year-old male patient fasted under supervision for 382 days",
+    "Decreased plasma magnesium concentrations were a consistent feature from the first month onwards."
+   ]
+  },
+  "41998348": {
+   "title": "Combination of prolonged water fasting and GLP-1 for refractory morbid obesity: Case report",
+   "quotes": [
+    "none focused on patients with severe obesity (body mass index ≥ 40) or utilized treatment with glucagon-like peptide-1 receptor agonists (GLP-1)",
+    "He underwent a 27 day inpatient fast with weekly tirzepatide, including 21 day water fast with structured refeeding.",
+    "The patient lost 125 pounds during the fast.",
+    "the only complication was mild transaminitis"
+   ]
+  },
+  "38937282": {
+   "title": "Changes in lean body mass with glucagon-like peptide-1-based therapies and mitigation strategies",
+   "quotes": [
+    "in some studies, reductions in lean mass range between 40% and 60% as a proportion of total weight lost, while other studies show lean mass reductions of approximately 15% or less of total weight lost",
+    "includes not only muscle but also organs, bone, fluids, and water in fat tissue"
+   ]
+  }
+ },
+ "full_text_quotes": {
+  "PMC11494232.txt": [
+   "Only 2 studies 17 , 21 measured changes in fat mass and lean mass during prolonged fasting",
+   "After 8 days of water-only fasting, body weight decreased by 6 kg, fat mass by 2 kg, and lean mass by 4 kg.",
+   "In the study by Dai et al 17 changes in body composition were quantified by dual-energy X-ray absorptiometry (DXA).",
+   "Following a 10-day water fast, body weight decreased by 7 kg, fat mass by 3 kg, and lean mass by 4 kg.",
+   "In the study by Ogłodek et al 21 changes in body composition were measured by bioelectrical impedance analysis (BIA).",
+   "Reductions in lean mass can translate into lower resting metabolic rate after fasting, which can put individuals at risk for future weight regain.",
+   "the effects of refeeding on these body composition parameters remain unknown",
+   "No serious adverse events or deaths were reported in any of the studies reviewed here."
+  ],
+  "PMC8718030.txt": [
+   "for 42% by metabolic active (liver, kidneys, heart, intestine, muscles, etc.) tissues (1.5 ± 0.1 kg representing 25% of weight loss)",
+   "explained for 44% (−1.6 ± 0.1 kg) by extracellular water loss (which includes loss of faeces by enemas), for 14% (0.50 ± 0.01 kg) by early glycogen loss and its associated water",
+   "Weight loss during fasting was explained by changes in both FM and LST (−2.34 ± 0.18 kg and −3.53 ± 0.13 kg, respectively, after 10 days of fasting",
+   "we observed that body mass and LST, but not FM, remained lower at Fup",
+   "We cannot specifically ascertain how much muscle mass breakdown explained the LST decrease.",
+   "This study was funded by the CNRS and Amplius GmbH, Überlingen, Germany.",
+   "is managing director of Amplius GmbH, a company that coordinates the scientific documentation for the Buchinger Wilhelmi Clinics and is co‐worker of the Buchinger Wilhelmi Clinic",
+   "Franziska Grundler is co‐worker at the Buchinger Wilhelmi Clinic.",
+   "in 16 healthy men",
+   "This longitudinal non‐controlled intervention was conducted between November and December 2016 at the Buchinger Wilhelmi Clinic"
+  ],
+  "PMC5819235.txt": [
+   "The median fasting length was 7 (IQR 6) days; the shortest fast was 2 days and longest fast was 41 days.",
+   "fatigue ( n = 370, 48.2%), nausea ( n = 247, 32.2%), insomnia ( n = 257, 33.5%), headache ( n = 231, 30.1%), hypertension ( n = 224, 29.2%), presyncope ( n = 217, 28.3%)",
+   "Of the 77 visits with a grade 3 hypertension AE, 75 had hypertension as a chief complaint upon arrival.",
+   "One was a grade 3 dehydration event that occurred on fasting day 3 in a 73-year-old, male patient.",
+   "The other was a grade 4 hyponatremia event that occurred on fasting day 9 in a 70-year-old, male patient.",
+   "Additional support was provided by the TrueNorth Health Foundation."
+  ],
+  "PMC12088818.txt": [
+   "women losing 6.3 ± 1.7 kg and men losing 6.9 ± 2.2 kg",
+   "is the founder of TrueNorth Health Center, a private facility that offers medically supervised fasting interventions"
+  ],
+  "PMC13587497.txt": [
+   "The fasting intervention consisted of a 5-day period with 250 kcal/day",
+   "determined body composition (lean and fat mass) by air displacement plethysmography",
+   "the absolute and relative reduction of body fat was accompanied by a reduction in lean mass during fasting that completely reverted at follow-up",
+   "the absence of an active dietary comparator in LEANER",
+   "Exclusion criteria were heart, lung, liver, and kidney diseases requiring medical intervention, prescribed medication (except oral contraceptives)"
+  ],
+  "PMC2440847.txt": [
+   "The hallmark biochemical feature of refeeding syndrome is hypophosphataemia.",
+   "Little or no nutritional intake for >5 days",
+   "The NICE guidelines recommend that refeeding is started at no more than 50% of energy requirements in “patients who have eaten little or nothing for more than 5 days."
+  ]
+ },
+ "charts": {
+  "lean_share_pct_of_weight_lost": {
+   "water_fast_8d_BIA_Oglodek_via_Ezpeleta": 67,
+   "water_fast_10d_DXA_Dai_via_Ezpeleta": 57,
+   "buchinger_10d_Laurens_lean_soft_tissue": 60.7,
+   "buchinger_10d_Laurens_metabolically_active_only": 25,
+   "viral_post_14d_reported": 35,
+   "glp1_trial_control_arms_DXA_range": [
+    28.9,
+    34
+   ],
+   "quarter_rule_Heymsfield": 25
+  },
+  "laurens_breakdown_kg": {
+   "fat": 2.34,
+   "extracellular_water": 1.6,
+   "glycogen_and_water": 0.5,
+   "metabolically_active_tissue": 1.5
+  }
+ }
+}
