@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 514" width="760" height="514" role="img" aria-labelledby="t2 d2">
+<title id="t2">Stomach side effects: drug vs placebo, from each label</title>
+<desc id="d2">Stomach side effects: drug vs placebo, from each label. Efpeglenatide (Eppe), 40 wk: nausea 16.6% vs 5.4% on placebo, diarrhea 17.6% vs 4.8% on placebo, vomiting 11.6% vs 2.0% on placebo. Wegovy, US label: nausea 44% vs 16% on placebo, diarrhea 30% vs 16% on placebo, vomiting 24% vs 6% on placebo. Zepbound highest dose, US label: nausea 28% vs 8% on placebo, diarrhea 23% vs 8% on placebo, vomiting 13% vs 2% on placebo.</desc>
+<rect width="760" height="514" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Stomach side effects: drug vs placebo, from each label</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Percent of people reporting each effect. Separate trials; not a head-to-head comparison.</text>
+<rect x="250" y="70" width="12" height="12" fill="#0f766e"/><text x="268" y="80" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Drug</text>
+<rect x="330" y="70" width="12" height="12" fill="#cbd5e1"/><text x="348" y="80" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Placebo</text>
+<text x="24" y="112" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Efpeglenatide (Eppe), 40 wk</text>
+<text x="40" y="137" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Nausea</text>
+<rect x="250" y="122" width="146.1" height="11" fill="#0f766e"/><text x="402.1" y="132" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">16.6%</text>
+<rect x="250" y="134" width="47.5" height="9" fill="#cbd5e1"/><text x="303.5" y="143" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">5.4%</text>
+<text x="40" y="165" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Diarrhea</text>
+<rect x="250" y="150" width="154.9" height="11" fill="#0f766e"/><text x="410.9" y="160" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">17.6%</text>
+<rect x="250" y="162" width="42.2" height="9" fill="#cbd5e1"/><text x="298.2" y="171" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">4.8%</text>
+<text x="40" y="193" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Vomiting</text>
+<rect x="250" y="178" width="102.1" height="11" fill="#0f766e"/><text x="358.1" y="188" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">11.6%</text>
+<rect x="250" y="190" width="17.6" height="9" fill="#cbd5e1"/><text x="273.6" y="199" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">2%</text>
+<line x1="24" y1="206" x2="736" y2="206" stroke="#e2e8f0"/>
+<text x="24" y="230" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Wegovy, US label</text>
+<text x="40" y="255" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Nausea</text>
+<rect x="250" y="240" width="387.2" height="11" fill="#0f766e"/><text x="643.2" y="250" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">44%</text>
+<rect x="250" y="252" width="140.8" height="9" fill="#cbd5e1"/><text x="396.8" y="261" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">16%</text>
+<text x="40" y="283" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Diarrhea</text>
+<rect x="250" y="268" width="264.0" height="11" fill="#0f766e"/><text x="520.0" y="278" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">30%</text>
+<rect x="250" y="280" width="140.8" height="9" fill="#cbd5e1"/><text x="396.8" y="289" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">16%</text>
+<text x="40" y="311" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Vomiting</text>
+<rect x="250" y="296" width="211.2" height="11" fill="#0f766e"/><text x="467.2" y="306" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">24%</text>
+<rect x="250" y="308" width="52.8" height="9" fill="#cbd5e1"/><text x="308.8" y="317" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">6%</text>
+<line x1="24" y1="324" x2="736" y2="324" stroke="#e2e8f0"/>
+<text x="24" y="348" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Zepbound highest dose, US label</text>
+<text x="40" y="373" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Nausea</text>
+<rect x="250" y="358" width="246.4" height="11" fill="#0f766e"/><text x="502.4" y="368" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">28%</text>
+<rect x="250" y="370" width="70.4" height="9" fill="#cbd5e1"/><text x="326.4" y="379" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">8%</text>
+<text x="40" y="401" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Diarrhea</text>
+<rect x="250" y="386" width="202.4" height="11" fill="#0f766e"/><text x="458.4" y="396" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">23%</text>
+<rect x="250" y="398" width="70.4" height="9" fill="#cbd5e1"/><text x="326.4" y="407" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">8%</text>
+<text x="40" y="429" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Vomiting</text>
+<rect x="250" y="414" width="114.4" height="11" fill="#0f766e"/><text x="370.4" y="424" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#0f172a">13%</text>
+<rect x="250" y="426" width="17.6" height="9" fill="#cbd5e1"/><text x="273.6" y="435" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" fill="#64748b">2%</text>
+<line x1="24" y1="442" x2="736" y2="442" stroke="#e2e8f0"/>
+<text x="24" y="468" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Eppe: Korean label, 40-week placebo-controlled period, 301 vs 147 people. Wegovy: US label, pooled adult weight-reduction trials.</text>
+<text x="24" y="484" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Zepbound: US label, Studies 1 and 2, highest dose, 72 weeks. Lower rates may reflect slower dose increases and less weight loss.</text>
+<text x="24" y="500" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Comparison across trials is Jabbit's analysis. Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>

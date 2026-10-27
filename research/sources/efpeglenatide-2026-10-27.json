@@ -1,0 +1,385 @@
+{
+ "page": "https://jabbitapp.com/research/efpeglenatide-eppe-korea-approval-vs-wegovy-zepbound-teardown.html",
+ "checked": "2026-10-27",
+ "note": "Korean quotes are verbatim from the MFDS and Hanmi documents; English summaries on the page are Jabbit translations. Doses, strengths and prices intentionally omitted.",
+ "documents": {
+  "mfds_release": {
+   "title": "Ministry of Food and Drug Safety (Korea) press release, Oct 7, 2026 (Korean; attached PDF read)",
+   "url": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50399",
+   "quotes": [
+    "국내에서 개발된 45번째 신약",
+    "당뇨를 동반하지 않은 성인 비만 및 과체중 환자의 만성 체중 관리를 위해 저열량 식이요법 및 운동요법의 보조제로 투여되는 주사제로",
+    "품목전담팀 구성(19명)"
+   ]
+  },
+  "mfds_label": {
+   "title": "MFDS drug database (nedrug) label for efpeglenatide auto-injector, approved 2026-10-07 (Korean)",
+   "url": "https://nedrug.mfds.go.kr/pbp/CCBBB01/getItemDetail?itemSeq=202603057",
+   "quotes": [
+    "기저 평균 체중은 89kg, BMI는 32kg/m 2 였다.",
+    "모두 아시아인(한국인)이었다.",
+    "체중 변화율의 최소 제곱평균(표준오차)(%) -9.02 (0.43) -0.89 (0.56) 위약과의 차이[95% CI](%) -8.13 [-9.43, -6.82]",
+    "전체분석군(Full Analysis Set, FAS)",
+    "다중 대체법을 이용하여 ANCOVA 분석 수행",
+    "체중 감소율이 5% 이상인 환자 수(%) 75.05% 13.53%",
+    "이러한 체중 감소 수준은 64주 차까지 유지되는 경향을 보였다.",
+    "각각 8.4% 및 8.7%였다",
+    "설사 53명(17.6%) 7명(4.8%)",
+    "구역 a 50명(16.6%) 8명(5.4%)",
+    "구토 35명(11.6%) 3명(2.0%)",
+    "변비 44명(14.6%) 3명(2.0%)",
+    "위장관 이상사례로 인해 투여를 영구 중단한 환자는 1.2%(5/434명)였다.",
+    "담석증은 이 약을 투여한 환자의 1.4%(6/434명)에서 발생했다.",
+    "갑상선 장애는 1.4%(6명/434명)에서 발생했다.",
+    "6.8회/분 증가하였으며",
+    "이 약 투여군 8.4%(25/299명), 위약 투여군 0.7%(1/145명)이었다.",
+    "17.5%(76/434명)에서 이 약에 대한 항체가 발생하였고",
+    "이 약에 대한 중화항체는 이 약을 투여한 환자의 3%(13/434명)에서 발생하였다.",
+    "암수 모두 모든 용량 수준에서 갑상선 C-세포 종양이 용량 의존적으로 증가하였다.",
+    "인체에서의 관련성은 밝혀지지 않았으나, 완전히 배제할 수는 없다.",
+    "임신 예정 최소 9주 전에 이 약의 투여를 중단하고",
+    "중등증~중증의 신장애가 있는 환자 - 당뇨병 환자 - 간장애가 있는 환자 - 중증의 정신질환의 병력이 있는 환자",
+    "(이 약 투여군 1.3%, 위약 투여군 0%)"
+   ]
+  },
+  "hanmi_2025": {
+   "title": "Hanmi Pharmaceutical press release, Oct 27, 2025 (English)",
+   "url": "https://www.hanmipharm.com/about/investor-relations/press/detail-3763.hm",
+   "quotes": [
+    "The mean percent change in body weight from baseline in the efpeglenatide group was -9.75%, compared with -0.95% in the placebo group.",
+    "Hanmi released the Week 40 interim topline data",
+    "efpeglenatide demonstrated a substantially lower incidence of these adverse events―by double-digit percentage points compared with previously reported rates"
+   ]
+  },
+  "hanmi_2026": {
+   "title": "Hanmi Pharmaceutical press release, Oct 7, 2026 (Korean)",
+   "url": "https://www.hanmi.co.kr/about/news-media/press/detail-5083.hm",
+   "quotes": [
+    "40주 중간 톱라인 결과",
+    "사노피와 함께 약 6000명의 제2형 당뇨병 환자를 대상으로 글로벌 임상을 진행하며",
+    "2+4주 간격의 단계적 용량 증량"
+   ]
+  },
+  "kbr": {
+   "title": "Korea Biomedical Review, Oct 8, 2026",
+   "url": "https://www.koreabiomed.com/news/articleView.html?idxno=33438",
+   "quotes": [
+    "Hanmi has yet to disclose the drug's price.",
+    "Kim noted that trials of imported obesity drugs generally enrolled patients with an average body mass index (BMI) of around 38 kg/m², compared with approximately 32 kg/m² in the Korean efpeglenatide trial",
+    "although they do not establish equivalent outcomes among patients receiving Eppe specifically for obesity"
+   ]
+  },
+  "aju": {
+   "title": "Aju Press, Oct 23, 2026",
+   "url": "https://www.ajupress.com/view/20261023104607573",
+   "quotes": [
+    "will become available at some clinics from Oct. 29, just three weeks after winning regulatory approval.",
+    "Hanmi disclosed the Oct. 29 prescription date at a medical symposium in Seoul on Thursday."
+   ]
+  },
+  "wegovy_label": {
+   "title": "DailyMed: Wegovy US prescribing information",
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b",
+   "quotes": [
+    "Mean increases in resting heart rate of 1 to 4 beats per minute (bpm) were observed",
+    "Nausea 16 44 Diarrhea 16 30 Vomiting 6 24",
+    "% change from baseline (LSMean) -2.4 -14.9",
+    "% difference from placebo (LSMean) (95% CI) -12.4"
+   ]
+  },
+  "zepbound_label": {
+   "title": "DailyMed: Zepbound US prescribing information",
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b",
+   "quotes": [
+    "mean increase in heart rate of 1 to 3 beats per minute compared to no increase in placebo-treated patients",
+    "Nausea 8 25 29 28 Diarrhea a 8 19 21 23 Vomiting 2 8 11 13",
+    "% Change from baseline b -3.1 -15.0 -19.5 -20.9",
+    "-17.8 (-19.3, -16.3)"
+   ]
+  }
+ },
+ "pubmed": {
+  "34215025": {
+   "title": "Cardiovascular and Renal Outcomes with Efpeglenatide in Type 2 Diabetes",
+   "journal": "N Engl J Med",
+   "year": "2021",
+   "doi": "10.1056/NEJMoa2108269",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34215025/",
+   "quotes": [
+    "A total of 4076 participants were enrolled; 2717 were assigned to receive efpeglenatide and 1359 to receive placebo.",
+    "(hazard ratio, 0.73; 95% confidence interval [CI], 0.58 to 0.92; P<0.001 for noninferiority; P = 0.007 for superiority)",
+    "occurred in 353 participants (13.0%) assigned to receive efpeglenatide and in 250 participants (18.4%) assigned to receive placebo (hazard ratio, 0.68; 95% CI, 0.57 to 0.79; P<0.001)",
+    "Diarrhea, constipation, nausea, vomiting, or bloating occurred more frequently with efpeglenatide than with placebo.",
+    "(Funded by Sanofi;"
+   ]
+  },
+  "37013892": {
+   "title": "Efficacy and safety of once-weekly efpeglenatide in people with suboptimally controlled type 2 diabetes: The AMPLITUDE-D, AMPLITUDE-L and AMPLITUDE-S randomized controlled trials",
+   "journal": "Diabetes Obes Metab",
+   "year": "2023",
+   "doi": "10.1111/dom.15079",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/37013892/",
+   "quotes": [
+    "All trials were terminated early by the sponsor because of funding rather than safety or efficacy concerns."
+   ]
+  },
+  "31264757": {
+   "title": "Body weight management and safety with efpeglenatide in adults without diabetes: A phase II randomized study",
+   "journal": "Diabetes Obes Metab",
+   "year": "2019",
+   "doi": "10.1111/dom.13824",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31264757/",
+   "quotes": [
+    "Rates of study discontinuations as a result of adverse events ranged from 5% to 19% with efpeglenatide."
+   ]
+  },
+  "36802715": {
+   "title": "Exploring the Relationship Between Efpeglenatide Dose and Cardiovascular Outcomes in Type 2 Diabetes: Insights From the AMPLITUDE-O Trial",
+   "journal": "Circulation",
+   "year": "2023",
+   "doi": "10.1161/CIRCULATIONAHA.122.063716",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/36802715/",
+   "quotes": [
+    "A clear dose-response was noted for all primary and secondary outcomes (all P for trend ≤0.018)."
+   ]
+  },
+  "42387302": {
+   "title": "Potential Mediators of Efpeglenatide's Cardiovascular Benefit: An Exploratory Analysis of the AMPLITUDE-O Trial",
+   "journal": "Diabetes Obes Metab",
+   "year": "2026",
+   "doi": "10.1111/dom.71062",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42387302/",
+   "quotes": [
+    "changes in LDL cholesterol together with UACR but not weight were estimated to statistically account for a modest portion of the reduction in risk of MACE with efpeglenatide."
+   ]
+  },
+  "35131037": {
+   "title": "Semaglutide once a week in adults with overweight or obesity, with or without type 2 diabetes in an east Asian population (STEP 6): a randomised, double-blind, double-dummy, placebo-controlled, phase 3a trial",
+   "journal": "Lancet Diabetes Endocrinol",
+   "year": "2022",
+   "doi": "10.1016/S2213-8587(22)00008-0",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/35131037/",
+   "quotes": [
+    "was done at 28 outpatient clinics in Japan and South Korea.",
+    "(estimated treatment difference [ETD] -11·1 percentage points [95% CI -12·9 to -9·2]"
+   ]
+  },
+  "40031941": {
+   "title": "Efficacy and safety of once-weekly tirzepatide in Japanese patients with obesity disease (SURMOUNT-J): a multicentre, randomised, double-blind, placebo-controlled phase 3 trial",
+   "journal": "Lancet Diabetes Endocrinol",
+   "year": "2025",
+   "doi": "10.1016/S2213-8587(24)00377-2",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/40031941/",
+   "quotes": [
+    "Estimated treatment differences relative to placebo in change in bodyweight at week 72 were -16·1% (95% CI -18·7 to -13·5; p<0·0001) and -21·1% (95% CI -23·6 to -18·5; p<0·0001)",
+    "using the efficacy estimand",
+    "Eli Lilly and Company."
+   ]
+  }
+ },
+ "clinicaltrials": {
+  "NCT06174779": {
+   "title": "A Study to Evaluate Efficacy and Safety of HM11260C in Adult Obesity Patients Without Diabetes Mellitus",
+   "sponsor": "Hanmi Pharmaceutical Company Limited",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "start": "2024-01-03",
+   "primary_completion": "2025-08-14",
+   "completion": "2026-03-13",
+   "enrollment": 448,
+   "countries": [
+    "South Korea"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT06174779"
+  },
+  "NCT07379333": {
+   "title": "A Study to Evaluate Efficacy and Safety of HM11260C in Patients With Type 2 Diabetes Mellitus Inadequately Controlled With Metformin and Dapagliflozin",
+   "sponsor": "Hanmi Pharmaceutical Company Limited",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "start": "2026-04-13",
+   "primary_completion": "2027-11",
+   "completion": "2028-01",
+   "enrollment": 118,
+   "countries": [
+    "South Korea"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07379333"
+  },
+  "NCT03496298": {
+   "title": "Effect of Efpeglenatide on Cardiovascular Outcomes",
+   "sponsor": "Sanofi",
+   "status": "TERMINATED",
+   "why_stopped": "Sponsor decision to cancel TRIAL, not related to safety concern",
+   "start": "2018-04-27",
+   "primary_completion": "2020-12-10",
+   "completion": "2020-12-10",
+   "enrollment": 4076,
+   "countries": [
+    "Argentina",
+    "Bulgaria",
+    "Canada",
+    "Chile",
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "Germany",
+    "Hungary",
+    "India",
+    "Italy",
+    "Latvia",
+    "Lithuania",
+    "Mexico",
+    "Norway",
+    "Peru",
+    "Poland",
+    "Romania",
+    "Russia",
+    "Serbia",
+    "Slovakia",
+    "South Africa",
+    "South Korea",
+    "Spain",
+    "Sweden",
+    "Turkey (Türkiye)",
+    "Ukraine",
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT03496298"
+  },
+  "NCT03684642": {
+   "title": "Efficacy and Safety of Efpeglenatide Versus Dulaglutide in Patients With Type 2 Diabetes Mellitus Inadequately Controlled With Metformin",
+   "sponsor": "Sanofi",
+   "status": "TERMINATED",
+   "why_stopped": "Sponsor decision to cancel TRIAL, not related to safety concern.",
+   "start": "2018-09-26",
+   "primary_completion": "2020-10-13",
+   "completion": "2020-11-17",
+   "enrollment": 908,
+   "countries": [
+    "Hungary",
+    "Poland",
+    "Ukraine",
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT03684642"
+  },
+  "NCT03770728": {
+   "title": "Efficacy and Safety of Efpeglenatide Versus Placebo in Patients With Type 2 Diabetes Mellitus Inadequately Controlled With Metformin Alone or in Combination With Sulfonylurea",
+   "sponsor": "Sanofi",
+   "status": "TERMINATED",
+   "why_stopped": "Sponsor decision to cancel TRIAL, not related to safety concern",
+   "start": "2019-08-01",
+   "primary_completion": "2020-11-28",
+   "completion": "2020-12-27",
+   "enrollment": 312,
+   "countries": [
+    "China",
+    "Taiwan",
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT03770728"
+  },
+  "NCT03713684": {
+   "title": "Efficacy and Safety of Efpeglenatide Versus Placebo in Patients With Type 2 Diabetes Mellitus Inadequately Controlled With Basal Insulin Alone or in Combination With Oral Antidiabetic Drug(s)",
+   "sponsor": "Sanofi",
+   "status": "TERMINATED",
+   "why_stopped": "Sponsor decision to cancel TRIAL, not related to safety concern",
+   "start": "2018-11-09",
+   "primary_completion": "2020-11-20",
+   "completion": "2021-01-04",
+   "enrollment": 370,
+   "countries": [
+    "China",
+    "South Korea",
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT03713684"
+  }
+ },
+ "fda_check": {
+  "query": "https://api.fda.gov/drug/drugsfda.json?search=openfda.generic_name:efpeglenatide",
+  "result": "No matches (Drugs@FDA via openFDA), checked Oct 27, 2026."
+ },
+ "chart_weight": [
+  {
+   "label": "Efpeglenatide (Eppe), Korea",
+   "weeks": 40,
+   "placebo_adjusted_pct": -8.13,
+   "source": "mfds_label",
+   "analysis": "full analysis set, multiple imputation"
+  },
+  {
+   "label": "Semaglutide (Wegovy), STEP 6, Japan and Korea",
+   "weeks": 68,
+   "placebo_adjusted_pct": -11.1,
+   "source": "35131037",
+   "analysis": "intention to treat"
+  },
+  {
+   "label": "Semaglutide (Wegovy), US label Study 1",
+   "weeks": 68,
+   "placebo_adjusted_pct": -12.4,
+   "source": "wegovy_label",
+   "analysis": "label"
+  },
+  {
+   "label": "Tirzepatide (Zepbound), US label Study 1, highest dose",
+   "weeks": 72,
+   "placebo_adjusted_pct": -17.8,
+   "source": "zepbound_label",
+   "analysis": "label"
+  },
+  {
+   "label": "Tirzepatide, SURMOUNT-J, Japan, highest dose",
+   "weeks": 72,
+   "placebo_adjusted_pct": -21.1,
+   "source": "40031941",
+   "analysis": "efficacy estimand"
+  }
+ ],
+ "chart_gi": {
+  "Efpeglenatide (Eppe), 40 wk": {
+   "nausea": [
+    16.6,
+    5.4
+   ],
+   "diarrhea": [
+    17.6,
+    4.8
+   ],
+   "vomiting": [
+    11.6,
+    2.0
+   ]
+  },
+  "Wegovy, US label": {
+   "nausea": [
+    44,
+    16
+   ],
+   "diarrhea": [
+    30,
+    16
+   ],
+   "vomiting": [
+    24,
+    6
+   ]
+  },
+  "Zepbound highest dose, US label": {
+   "nausea": [
+    28,
+    8
+   ],
+   "diarrhea": [
+    23,
+    8
+   ],
+   "vomiting": [
+    13,
+    2
+   ]
+  }
+ }
+}
