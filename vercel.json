@@ -3,6 +3,26 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/privacy",
+      "destination": "https://www.bridgerapps.com/jabbit/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy/index.html",
+      "destination": "https://www.bridgerapps.com/jabbit/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "https://www.bridgerapps.com/jabbit/terms/",
+      "permanent": true
+    },
+    {
+      "source": "/terms/index.html",
+      "destination": "https://www.bridgerapps.com/jabbit/terms/",
+      "permanent": true
+    },
+    {
       "source": "/peptide-reconstitution-calculator.html",
       "destination": "/peptide-reconstitution-calculator",
       "permanent": true

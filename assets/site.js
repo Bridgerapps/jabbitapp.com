@@ -281,7 +281,7 @@
       title.style.color = '#0f172a';
 
       const sub = document.createElement('div');
-      sub.textContent = 'Dose log, side effects, progress, and reminders in one place. No account. Syncs through your iCloud.';
+      sub.textContent = 'Dose log, side effects, progress, and reminders in one place. No account. Stays on your iPhone.';
       sub.style.fontSize = '13px';
       sub.style.color = '#334155';
       sub.style.marginTop = '2px';

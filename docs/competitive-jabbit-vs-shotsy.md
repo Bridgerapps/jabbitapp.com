@@ -19,7 +19,7 @@ Purpose: give Jabby a factual, repeatable positioning doc for Reddit and other c
   - serum level visualization
   - peptide library (65+ compounds)
   - progress tracking (photos/weight) + Apple Health sync
-  - privacy-first iCloud model (no third-party server storage claim)
+  - records stay on the iPhone; no iCloud sync since 1.0.4 (no third-party server storage claim)
 - Pricing references:
   - App Store fetch: `Jabbit Pro $9.99`
   - site/schema references: `$9.99/year` founding price
@@ -38,7 +38,7 @@ Sources:
   - side effect/weight/nutrition tracking
   - detailed charts incl. estimated medication levels
   - Apple Health integration
-  - private iCloud storage positioning
+  - private iCloud storage positioning (Shotsy iOS)
 - Pricing references from App Store fetch:
   - `Monthly $9.99`
   - `Yearly $39.99`
@@ -64,7 +64,7 @@ Sources:
 - Avoid absolute evergreen claims like "always cheaper".
 
 4) **Privacy framing**
-- Both products use privacy-first language around iCloud/private storage.
+- Both products use privacy-first language: Jabbit keeps records on the iPhone (since 1.0.4), Shotsy iOS uses the user's private iCloud.
 - Don’t claim exclusive privacy advantage.
 
 ---

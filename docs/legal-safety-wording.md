@@ -47,6 +47,12 @@ policy page: `/research/editorial-standards.html`.
 - [ ] **Interest disclosure:** footer says Jabbit sells the app it links to. Keep it.
 - [ ] **Product claims:** describe only app features listed on the current App Store
       listing (id6756848719). No "never miss a dose", no trial-data features.
+- [ ] **Storage claims (since Jabbit 1.0.4, released 2026-10-27):** records stay on
+      the user's iPhone; there is no iCloud sync. Say "stays on your iPhone" or "stored on
+      your iPhone, not on our servers"; mention Export My Data (Settings) for copies. Never
+      write "syncs through iCloud", "private iCloud" or "on your devices". The privacy
+      policy and terms live at bridgerapps.com/jabbit/privacy/ and /terms/ (jabbitapp.com
+      /privacy and /terms redirect there); link those, don't recreate them here.
 - [ ] **Dated facts:** "only", "first", "no one else" claims about a live record
       (meeting logs, registries) must carry an "as of" date, and get re-checked
       before any X post that repeats them.

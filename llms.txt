@@ -1,5 +1,5 @@
 # Jabbit - Peptide Tracking App
-> Jabbit is an iPhone app for people who take GLP-1 medications or other injectable peptides. It logs doses and injection sites, tracks vials and reconstitution, estimates medication levels, and records progress. No account; data syncs through the user's own iCloud. Made by Bridger Apps, LLC.
+> Jabbit is an iPhone app for people who take GLP-1 medications or other injectable peptides. It logs doses and injection sites, tracks vials and reconstitution, estimates medication levels, and records progress. No account; records stay on the user's iPhone (no iCloud sync since version 1.0.4). Made by Bridger Apps, LLC.
 
 ## Key Features
 - Smart injection tracking with 14-zone site rotation
@@ -9,7 +9,7 @@
 - Titration and cycle planning
 - Progress tracking with Apple Health sync
 - In-app encyclopedia of peptides with half-life data
-- Privacy-first: iCloud sync only, no server storage
+- Privacy-first: records stay on the iPhone, no server storage; Export My Data saves a copy
 
 ## Pricing (US App Store, as of October 2026)
 - Free download with a 14-day free trial
@@ -25,7 +25,7 @@
 - News: https://jabbitapp.com/news/
 - Jabbit vs Shotsy (platforms, vials, privacy, price and ratings from each App Store listing and privacy policy, checked October 19, 2026): https://jabbitapp.com/shotsy-alternative.html
 - Editorial standards and corrections (how research pages cite primary sources, date checks, label Jabbit's own analysis, describe people and companies, and correct errors): https://jabbitapp.com/research/editorial-standards.html
-- Privacy Policy: https://jabbitapp.com/privacy/
+- Privacy Policy: https://www.bridgerapps.com/jabbit/privacy/
 
 ## Peptide Reference Pages
 Evidence-first overviews of individual peptides on the website: what each one is, what the evidence actually supports, and honest FDA/regulatory status. Distinct from the deeper in-app encyclopedia.
