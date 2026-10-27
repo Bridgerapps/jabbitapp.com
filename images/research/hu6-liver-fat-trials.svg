@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" width="760" height="430" role="img" aria-labelledby="t1 d1">
+<title id="t1">HU6 in two liver-fat trials: change in liver fat vs placebo</title>
+<desc id="d1">HU6 in two liver-fat trials: change in liver fat vs placebo. Phase 2a, 80 adults, 61 days: placebo +5.4%, HU6 dose groups -26.8%, -35.6%, -33.0%. M-ACCEL Phase 2, 228 adults with MASH, 26 weeks: placebo -6.7%, HU6 dose groups -29.4%, -31.2%, -27.0%.</desc>
+<rect width="760" height="430" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">HU6 in two liver-fat trials: change in liver fat vs placebo</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Relative change in liver fat on MRI. Three HU6 dose groups per trial (doses not shown). Both trials Rivus-funded.</text>
+<text x="24" y="92" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Phase 2a, 80 adults, 61 days</text>
+<text x="24" y="108" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Lancet Gastroenterol Hepatol 2023 (peer-reviewed)</text>
+<line x1="24" y1="175" x2="364" y2="175" stroke="#e2e8f0" stroke-width="2"/>
+<rect x="32" y="151.2" width="64" height="23.8" rx="3" fill="#94a3b8"/>
+<text x="64" y="145.2" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">+5.4%</text>
+<text x="64" y="191" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Placebo</text>
+<rect x="116" y="175.0" width="64" height="117.9" rx="3" fill="#0f766e"/>
+<text x="148" y="308.9" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">-26.8%</text>
+<text x="148" y="167" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">HU6 group 1</text>
+<rect x="200" y="175.0" width="64" height="156.6" rx="3" fill="#0f766e"/>
+<text x="232" y="347.6" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">-35.6%</text>
+<text x="232" y="167" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">HU6 group 2</text>
+<rect x="284" y="175.0" width="64" height="145.2" rx="3" fill="#0f766e"/>
+<text x="316" y="336.2" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">-33.0%</text>
+<text x="316" y="167" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">HU6 group 3</text>
+<text x="392" y="92" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">M-ACCEL Phase 2, 228 adults with MASH, 26 weeks</text>
+<text x="392" y="108" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Company-reported, AASLD 2025 late-breaker</text>
+<line x1="392" y1="175" x2="732" y2="175" stroke="#e2e8f0" stroke-width="2"/>
+<rect x="400" y="175.0" width="64" height="29.5" rx="3" fill="#94a3b8"/>
+<text x="432" y="220.5" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">-6.7%</text>
+<text x="432" y="167" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Placebo</text>
+<rect x="484" y="175.0" width="64" height="129.4" rx="3" fill="#0f766e"/>
+<text x="516" y="320.4" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">-29.4%</text>
+<text x="516" y="167" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">HU6 group 1</text>
+<rect x="568" y="175.0" width="64" height="137.3" rx="3" fill="#0f766e"/>
+<text x="600" y="328.3" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">-31.2%</text>
+<text x="600" y="167" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">HU6 group 2</text>
+<rect x="652" y="175.0" width="64" height="118.8" rx="3" fill="#0f766e"/>
+<text x="684" y="309.8" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">-27.0%</text>
+<text x="684" y="167" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">HU6 group 3</text>
+<text x="24" y="384" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Phase 2a: mean relative change at day 61 (NCT04874233). M-ACCEL: least-squares mean at 6 months, p&lt;0.005 each vs placebo</text>
+<text x="24" y="400" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">(NCT05979779); no peer-reviewed M-ACCEL paper in PubMed as of Oct 27, 2026. Liver fat is not body weight.</text>
+<text x="24" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>
