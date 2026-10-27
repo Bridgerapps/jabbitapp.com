@@ -1,0 +1,383 @@
+{
+ "checked": "2026-10-27",
+ "page": "https://jabbitapp.com/research/glp1-ozempic-wegovy-zepbound-cancer-risk-evidence-teardown.html",
+ "why_now": "Breast Cancer Research and Treatment retrospective cohort (Mount Sinai), PubMed record dated October 26, 2026, doi 10.1007/s10549-026-08096-z, PMID 42932003; Obesity Reviews review, PubMed record dated October 22, 2026, doi 10.1111/obr.70247, PMID 42906947; Diabetology & Metabolic Syndrome tirzepatide endometrial cancer cohort, published October 13, 2026, doi 10.1186/s13098-026-02329-3.",
+ "abstract_quotes": {
+  "42932003": {
+   "title": "GLP-1 receptor agonist-associated weight loss in breast cancer patients receiving concurrent endocrine therapy: a retrospective cohort analysis",
+   "journal": "Breast Cancer Res Treat",
+   "quotes": [
+    "We conducted a retrospective cohort analysis of 269 breast cancer patients at a single academic center receiving concurrent GLP-1 RA and adjuvant endocrine therapy.",
+    "Mean one-year percentage weight loss was - 4.5% (95% CI: -6.0% to - 3.0%; -3.9 kg; 95% CI: -4.96 to - 2.93 kg), significantly below the 10-20% observed in postmenopausal subgroups of GLP-1 randomized trials (all p < 0.001).",
+    "Only 21.3% achieved ≥ 10% and 10.4% achieved ≥ 15% weight loss.",
+    "semaglutide (- 5.8%) and tirzepatide (- 4.7%) outperformed dulaglutide (+ 0.1%), which is approved for type 2 diabetes only.",
+    "PR-negative patients lost more than PR-positive patients (- 8.2% vs. -4.2%; p = 0.021, d = 0.46).",
+    "Type 2 diabetes was present in 70.6% of patients",
+    "Given emerging evidence of oncologic benefit, prospective trials are needed."
+   ]
+  },
+  "42906947": {
+   "title": "GLP-1 Receptor Agonists and Cancer Risk in Obesity Treatment",
+   "journal": "Obes Rev",
+   "quotes": [
+    "To date, data suggest that GLP-1 RAs do not increase overall cancer risk and may reduce the risk of certain obesity-related cancers",
+    "questions remain about the beneficial effects of weight loss and the sustainability of health benefits if weight is regained after stopping treatment",
+    "specific safety concerns (e.g., increased risk of medullary thyroid carcinoma)"
+   ]
+  },
+  "41359966": {
+   "title": "Risk for Cancer With Glucagon-Like Peptide-1 Receptor Agonists and Dual Agonists : A Systematic Review and Meta-analysis",
+   "journal": "Ann Intern Med",
+   "quotes": [
+    "The review included 48 trials involving 94 245 participants.",
+    "GLP-1RAs probably have little or no effect on risk for thyroid cancer (OR, 1.37 [95% CI, 0.82 to 2.31]; 1 fewer to 9 more cases per 10 000 patients treated), pancreatic cancer (OR, 0.84 [CI, 0.53 to 1.35]; 9 fewer to 6 more per 10 000), breast cancer (OR, 0.95 [CI, 0.60 to 1.49]; 10 fewer to 12 more per 10 000), or kidney cancer (OR, 1.12 [CI, 0.78 to 1.60]; 5 fewer to 13 more per 10 000) (moderate certainty).",
+    "GLP-1RAs may have little or no effect on colorectal, esophageal, liver, gallbladder, ovarian, or endometrial cancer; multiple myeloma; or meningioma (low certainty).",
+    "The effect on gastric cancer is very uncertain.",
+    "Results were consistent in sensitivity analyses of trials with low risk of bias and studies of semaglutide or tirzepatide",
+    "The included trials were not designed to evaluate cancer outcomes and had short follow-up.",
+    "Longer-term studies are needed to clarify potential risks or benefits. None. (PROSPERO: CRD42024608365)."
+   ]
+  },
+  "40437949": {
+   "title": "GLP-1 receptor agonists and the risk for cancer: A meta-analysis of randomized controlled trials",
+   "journal": "Diabetes Obes Metab",
+   "quotes": [
+    "Fifty trials were included.",
+    "GLP-1RA treatment was not associated with a significant difference in risk for overall cancer (MH-OR 1.05, 95% confidence interval [CI] [0.98, 1.13]).",
+    "Uterine cancer was significantly reduced in the GLP-1RA arm in trials performed in subjects with obesity (MH-OR 0.24, 95% CI [0.06, 0.94]), but not in those aimed at diabetes treatment (MH-OR 0.92, [0.58, 1.47]).",
+    "We detected an increase in the risk for thyroid cancer (MH-OR 1.55, [1.05, 2.27]), more evident in longer-term trials, and in the risk for colorectal cancer (MH-OR 1.27 [1.03, 1.57]), which, conversely, was significant only in shorter-term trials.",
+    "the small increase observed in colorectal cancer in shorter-term trials may be the effect of a disproportionate increase in diagnostic procedures in the GLP-1 RA arm"
+   ]
+  },
+  "41189318": {
+   "title": "Weight Loss, Obesity Medication, and Risk of Obesity-Associated Cancer: A Meta-Analysis of Randomized Controlled Trials",
+   "journal": "Obesity (Silver Spring)",
+   "quotes": [
+    "The analysis included 25 randomized controlled trials with 40,731 participants.",
+    "Compared with placebo, AOMs showed no association with the risk of overall obesity-related cancer (RR = 1.03, 95% CI: 0.78 to 1.37) or site-specific cancer.",
+    "subgroup analysis revealed that coagonists (tirzepatide, cotadutide, and cagrilintide) significantly reduced overall obesity-associated cancer risk (RR = 0.43, 95% CI: 0.19 to 0.97)"
+   ]
+  },
+  "42221413": {
+   "title": "Incretin-Based Therapy and Thyroid Cancer Risk: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+   "journal": "AACE Endocrinol Diabetes",
+   "quotes": [
+    "Fifteen RCTs enrolling 84 237 participants were included.",
+    "Across all trials, 28 thyroid cancer events occurred in the incretin-based therapy groups and 15 in the control groups.",
+    "Meta-analysis showed no statistically significant association between incretin-based therapy use and thyroid cancer risk (odds ratio 1.52, 95% CI 0.86-2.68; I2 = 0.0%).",
+    "Certainty of evidence was rated very low due to serious imprecision related to rare events.",
+    "limited follow-up and imprecision prevent exclusion of a clinically relevant increase, supporting the need for long-term surveillance."
+   ]
+  },
+  "38018310": {
+   "title": "Glucagon-like peptide-1 receptor agonists and risk of thyroid cancer: A systematic review and meta-analysis of randomized controlled trials",
+   "journal": "Diabetes Obes Metab",
+   "quotes": [
+    "We retrieved 64 trials, 26 of which reported at least one incident case of thyroid cancer.",
+    "GLP-1RA treatment was associated with a significant increase in the risk of overall thyroid cancer (Mantel-Haenzel odds ratio [MH-OR] 1.52 [95% confidence interval {CI} 1.01, 2.29]; P = 0.04, I2 = 0%), with a fragility index of 1, and a 5-year number needed to harm of 1349.",
+    "No significant association was found for papillary thyroid cancer (MH-OR 1.54 [95% CI 0.77, 3.06]; P = 0.22) or medullary thyroid cancer (MH-OR 1.44 [95% CI 0.23, 9.16]; P = 0.55)."
+   ]
+  },
+  "38683947": {
+   "title": "Glucagon-like peptide 1 receptor agonist use and risk of thyroid cancer: Scandinavian cohort study",
+   "journal": "BMJ",
+   "quotes": [
+    "76 of 145 410 patients (incidence rate 1.33 events per 10 000 person years) treated with GLP1 receptor agonists and 184 of 291 667 patients (incidence rate 1.46 events per 10 000 person years) treated with DPP4 inhibitors developed thyroid cancer.",
+    "GLP1 receptor agonist use was not associated with increased risk of thyroid cancer (hazard ratio 0.93, 95% confidence interval 0.66 to 1.31; rate difference -0.13, 95% confidence interval -0.61 to 0.36 events per 10 000 person years).",
+    "The hazard ratio for medullary thyroid cancer was 1.19 (0.37 to 3.86)."
+   ]
+  },
+  "36356111": {
+   "title": "GLP-1 Receptor Agonists and the Risk of Thyroid Cancer",
+   "journal": "Diabetes Care",
+   "quotes": [
+    "A total of 2,562 case subjects with thyroid cancers were included in the study and matched with 45,184 control subjects.",
+    "Use of GLP-1 RA for 1-3 years was associated with increased risk of all thyroid cancer (adjusted hazard ratio [HR] 1.58, 95% CI 1.27-1.95) and medullary thyroid cancer (adjusted HR 1.78, 95% CI 1.04-3.05)."
+   ]
+  },
+  "42252247": {
+   "title": "GLP-1 receptor agonist use and cancer risk in obese nondiabetic adults",
+   "journal": "Ann Oncol",
+   "quotes": [
+    "Patients prescribed GLP-1RAs were 1:1 propensity score matched to those receiving diet or exercise counseling",
+    "the study cohort included 161 798 patients: 80 899 GLP-1RA users versus 80 899 patients on diet or exercise consultation.",
+    "With a median follow-up of 2 years (interquartile range 1-2 years), the propensity score matching analysis showed a significantly lower incidence of any OACs among GLP-1RA users (hazard ratio 0.59, 95% confidence interval 0.53-0.67).",
+    "in all subgroups, except for black race, GLP-1RA use was associated with a lower cumulative incidence of OACs.",
+    "Prospective trials are needed to confirm causality."
+   ]
+  },
+  "38967919": {
+   "title": "Glucagon-Like Peptide 1 Receptor Agonists and 13 Obesity-Associated Cancers in Patients With Type 2 Diabetes",
+   "journal": "JAMA Netw Open",
+   "quotes": [
+    "GLP-1RAs compared with insulin were associated with a significant risk reduction in 10 of 13 OACs",
+    "GLP-1RAs were not associated with a reduced risk of postmenopausal breast cancer or thyroid cancer.",
+    "Compared with metformin, GLP-1RAs were not associated with a decreased risk of any cancers, but were associated with an increased risk of kidney cancer (HR, 1.54; 95% CI, 1.27-1.87)."
+   ]
+  },
+  "40903861": {
+   "title": "Weight loss interventions and obesity-associated cancers in people with type 2 diabetes and overweight/obesity: A real-world observational study",
+   "journal": "Diabetes Obes Metab",
+   "quotes": [
+    "In 64,178 matched pairs (mean follow-up 911 days), semaglutide (vs. DPP-4i) was associated with lower rates of composite OAC (HR: 0.88; 95% CI: 0.82-0.95)",
+    "tirzepatide (vs. DPP-4i) was associated with a non-significant lower rate of composite OAC (0.84; 0.69-1.01)"
+   ]
+  },
+  "42447648": {
+   "title": "Cancer risk of glucagon-like peptide-1 receptor agonists for obesity: comparison with bariatric surgery and other weight-loss drugs",
+   "journal": "J Gastrointest Surg",
+   "quotes": [
+    "Compared with bariatric surgery, therapeutic-dose GLP-1 RA use was associated with a lower incidence of CRC (hazard ratio [HR], 0.72; P =.038) and pancreatic cancer (HR, 0.63; P =.041), but not HCC.",
+    "The use of any dose was not associated with significant differences."
+   ]
+  }
+ },
+ "conflict_statements": {
+  "42932003": "The authors declare no competing interests.",
+  "42252247": "The authors have declared no conflicts of interest.",
+  "42221413": "The authors have no conflicts of interest to disclose.",
+  "40437949": "GAS has received speaking or consultancy fees from Astra Zeneca, Eli‐Lilly and Novo Nordisk, outside the submitted work.",
+  "41189318": "Linong Ji has received fees for lecture presentations and for consulting from AstraZeneca, Merck, Metabasis, MSD, Novartis, Eli Lilly, Roche, Sanofi‐Aventis, and Takeda."
+ },
+ "obr_grants_listed_in_pubmed": [
+  "NCI NIH HHS",
+  "NIGMS NIH HHS"
+ ],
+ "endometrial_2026_springer": {
+  "doi": "10.1186/s13098-026-02329-3",
+  "quotes": [
+   "Using the TriNetX US Collaborative Network, we identified women with overweight or obesity who initiated tirzepatide (study group) or lifestyle modification interventions (control group) between January 1, 2022, and December 31, 2025.",
+   "Tirzepatide use was associated with a lower short-term hazard of newly recorded EC diagnoses among women with overweight or obesity.",
+   "After matching, 176,981 patients were included in each group.",
+   "tirzepatide use was associated with a lower hazard of newly recorded EC diagnoses compared with the comparator cohort (HR, 0.717; 95% CI, 0.593–0.867)",
+   "These observational findings do not establish a preventive effect, and longer-term studies are needed to assess whether the association persists.",
+   "This research received no external funding.",
+   "The author declare no competing interests.",
+   "Published: 13 October 2026"
+  ]
+ },
+ "labels": {
+  "wegovy_dailymed_setid": "ee06186f-2aa3-4990-a760-757579d8f77b",
+  "wegovy_quotes": [
+   "In rodents, semaglutide causes dose-dependent and treatment-duration-dependent thyroid C-cell tumors at clinically relevant exposures.",
+   "It is unknown whether WEGOVY causes thyroid C-cell tumors, including medullary thyroid carcinoma (MTC), in humans as human relevance of semaglutide-induced rodent thyroid C-cell tumors has not been determined",
+   "WEGOVY is contraindicated in patients with a personal or family history of MTC or in patients with Multiple Endocrine Neoplasia syndrome type 2 (MEN 2)",
+   "inform them of symptoms of thyroid tumors (e.g., a mass in the neck, dysphagia, dyspnea, persistent hoarseness).",
+   "Routine monitoring of serum calcitonin or using thyroid ultrasound is of uncertain value for early detection of MTC in patients treated with WEGOVY"
+  ],
+  "zepbound_dailymed_setid": "487cd7e7-434c-4925-99fa-aa80b1cc776b",
+  "zepbound_quotes": [
+   "In rats, tirzepatide causes dose-dependent and treatment-duration-dependent thyroid C-cell tumors at clinically relevant exposures.",
+   "It is unknown whether ZEPBOUND causes thyroid C-cell tumors, including medullary thyroid carcinoma (MTC), in humans as human relevance of tirzepatide-induced rodent thyroid C-cell tumors has not been determined",
+   "ZEPBOUND is contraindicated in patients with a personal or family history of MTC or in patients with Multiple Endocrine Neoplasia syndrome type 2 (MEN 2)",
+   "Routine monitoring of serum calcitonin or using thyroid ultrasound is of uncertain value for early detection of MTC in patients treated with ZEPBOUND"
+  ]
+ },
+ "registry": {
+  "NCT07676331": {
+   "title": "Clinical Study of Local and Systemic Biological Impact of GLP1/GIP-Receptor Agonists in Patients With Breast Cancer: The CLARA Trial",
+   "status": "NOT_YET_RECRUITING",
+   "sponsor": "Universitaire Ziekenhuizen KU Leuven",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 168,
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "interventions": [
+    "Tirzepatide",
+    "Letrozole (Aromatase Inhibitors)"
+   ],
+   "primary_outcomes": [
+    "Ki67 proliferation marker"
+   ],
+   "primary_completion": "2028-03-01"
+  },
+  "NCT06518837": {
+   "title": "Tirzepatide for Weight Loss Intervention in Early-Stage Hormone Receptor Positive/HER2 Negative Breast Cancer",
+   "status": "RECRUITING",
+   "sponsor": "Rutgers, The State University of New Jersey",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 40,
+   "allocation": "NA",
+   "masking": "NONE",
+   "interventions": [
+    "Tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Weight Loss Reduction with Tirzepatide during Adjuvant Treatment for HR+/Her2- Breast Cancer (Measured by Body Weight Reduction)"
+   ],
+   "primary_completion": "2027-09-30"
+  },
+  "NCT07257484": {
+   "title": "Tirzepatide's Role in Postmenopausal HR+ Breast Cancer Survivors",
+   "status": "RECRUITING",
+   "sponsor": "Weill Medical College of Cornell University",
+   "phases": [
+    "PHASE4"
+   ],
+   "enrollment": 30,
+   "allocation": "NA",
+   "masking": "NONE",
+   "interventions": [
+    "Tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Percentage of participants completing week 24 visit with all required assessments"
+   ],
+   "primary_completion": "2027-12-03"
+  },
+  "NCT06517212": {
+   "title": "Tirzepatide Weight Loss for MRD+ Early Breast Cancer",
+   "status": "RECRUITING",
+   "sponsor": "Baylor Research Institute",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 48,
+   "allocation": "NA",
+   "masking": "NONE",
+   "interventions": [
+    "Tirzepatide"
+   ],
+   "primary_outcomes": [
+    "ctDNA efficacy",
+    "distant disease-free survival efficacy"
+   ],
+   "primary_completion": "2029-08-31"
+  },
+  "NCT07349641": {
+   "title": "A Study of Weight Loss Intervention With Tirzepatide and Progestin Intrauterine Device to Treat Endometrial Hyperplasia and Grade 1 Endometrial Cancer",
+   "status": "NOT_YET_RECRUITING",
+   "sponsor": "National Cancer Institute (NCI)",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 55,
+   "allocation": "NA",
+   "masking": "NONE",
+   "interventions": [
+    "Medical Device Usage and Evaluation",
+    "Tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Weighted pathological complete response (pCR)"
+   ],
+   "primary_completion": "2029-10-31"
+  },
+  "NCT07078838": {
+   "title": "Tirzepatide in Women With Obesity and Endometrial Intra-epithelial Neoplasia or Grade 1 Endometrial Cancer",
+   "status": "NOT_YET_RECRUITING",
+   "sponsor": "UNC Lineberger Comprehensive Cancer Center",
+   "phases": [
+    "PHASE2"
+   ],
+   "enrollment": 40,
+   "allocation": "RANDOMIZED",
+   "masking": "NONE",
+   "interventions": [
+    "Tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Anti-proliferative effect of Tirzepatide"
+   ],
+   "primary_completion": "2029-03"
+  },
+  "NCT06485089": {
+   "title": "Effects of Tirzepatide on Blood, Imaging and Breast Tissue Biomarkers",
+   "status": "COMPLETED",
+   "sponsor": "University of Kansas Medical Center",
+   "phases": null,
+   "enrollment": 25,
+   "allocation": null,
+   "masking": null,
+   "interventions": [
+    "tirzepatide"
+   ],
+   "primary_outcomes": [
+    "Feasibility of design as assessed by accrual rate of 1 or more per month over 12 months",
+    "Completion rate of 70% or more"
+   ],
+   "primary_completion": "2026-03-25"
+  }
+ },
+ "forest_chart": [
+  {
+   "label": "Breast cancer (48 trials, 2026)",
+   "estimate": 0.95,
+   "low": 0.6,
+   "high": 1.49,
+   "measure": "OR",
+   "pmid": "41359966"
+  },
+  {
+   "label": "Pancreatic cancer (48 trials, 2026)",
+   "estimate": 0.84,
+   "low": 0.53,
+   "high": 1.35,
+   "measure": "OR",
+   "pmid": "41359966"
+  },
+  {
+   "label": "Kidney cancer (48 trials, 2026)",
+   "estimate": 1.12,
+   "low": 0.78,
+   "high": 1.6,
+   "measure": "OR",
+   "pmid": "41359966"
+  },
+  {
+   "label": "Thyroid cancer (48 trials, 2026)",
+   "estimate": 1.37,
+   "low": 0.82,
+   "high": 2.31,
+   "measure": "OR",
+   "pmid": "41359966"
+  },
+  {
+   "label": "Thyroid cancer (15 trials, 2026)",
+   "estimate": 1.52,
+   "low": 0.86,
+   "high": 2.68,
+   "measure": "OR",
+   "pmid": "42221413"
+  },
+  {
+   "label": "All cancers (50 trials, 2025)",
+   "estimate": 1.05,
+   "low": 0.98,
+   "high": 1.13,
+   "measure": "OR",
+   "pmid": "40437949"
+  },
+  {
+   "label": "Uterine cancer, obesity trials (2025)",
+   "estimate": 0.24,
+   "low": 0.06,
+   "high": 0.94,
+   "measure": "OR",
+   "pmid": "40437949"
+  },
+  {
+   "label": "Colorectal cancer (50 trials, 2025)",
+   "estimate": 1.27,
+   "low": 1.03,
+   "high": 1.57,
+   "measure": "OR",
+   "pmid": "40437949"
+  },
+  {
+   "label": "Obesity-related cancer, weight drugs (25 trials)",
+   "estimate": 1.03,
+   "low": 0.78,
+   "high": 1.37,
+   "measure": "RR",
+   "pmid": "41189318"
+  }
+ ],
+ "analysis": {
+  "note": "Jabbit analysis. Pooled randomized trials (not designed for cancer, short follow-up) show little or no effect of GLP-1 drugs on most obesity-related cancers, with a possible thyroid signal that is imprecise and conflicts with a large Scandinavian cohort. Health-record studies report fewer cancers on GLP-1 drugs, but results depend on the comparison group and follow-up is short, so they cannot show prevention. Registered cancer trials of tirzepatide we found are small, mostly single-arm, and none is placebo-controlled."
+ }
+}
