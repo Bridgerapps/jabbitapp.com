@@ -1,0 +1,232 @@
+{
+ "page": "https://jabbitapp.com/research/lilly-retatrutide-lawsuits-peptide-sellers-med-spas-teardown.html",
+ "checked": "2026-10-27 (America/New_York)",
+ "note": "Quotes verified against cached copies. Complaint statements are Lilly's allegations, not findings; no court has ruled on the merits. Individual defendants not named.",
+ "cases": [
+  {
+   "short": "Aesthetic Envy",
+   "type": "med spa",
+   "court": "E.D. Cal.",
+   "no": "2:26-cv-02764",
+   "filed": "2026-08-12",
+   "status": "dismissed with prejudice",
+   "end": "2026-09-11",
+   "docket": 74642491
+  },
+  {
+   "short": "Astra",
+   "type": "online “research use” seller",
+   "court": "W.D. Tex.",
+   "no": "5:26-cv-05147",
+   "filed": "2026-08-12",
+   "status": "open; amended Aug 31 to add an unidentified operator; Lilly notice of voluntary dismissal Sept 2; Sept 30 motion for discovery to identify the defendant",
+   "end": null,
+   "docket": 74538839
+  },
+  {
+   "short": "Legendary Peptides",
+   "type": "online “research use” seller",
+   "court": "E.D. Tex.",
+   "no": "1:26-cv-00347",
+   "filed": "2026-08-12",
+   "status": "open; motion to dismiss filed Oct 2; case management conference Nov 30",
+   "end": null,
+   "docket": 74513889
+  },
+  {
+   "short": "Striker Pharmacy",
+   "type": "compounding pharmacy",
+   "court": "S.D. Tex.",
+   "no": "4:26-cv-06563",
+   "filed": "2026-08-12",
+   "status": "open; response to complaint due Oct 30; discovery through Aug 10, 2027",
+   "end": null,
+   "docket": 74518163
+  },
+  {
+   "short": "Texas Peptides",
+   "type": "online seller",
+   "court": "W.D. Tex.",
+   "no": "5:26-cv-05146",
+   "filed": "2026-08-12",
+   "status": "dismissed with prejudice",
+   "end": "2026-10-15",
+   "docket": 74534297
+  },
+  {
+   "short": "Lone Star Peptide",
+   "type": "online seller",
+   "court": "S.D. Tex.",
+   "no": "4:26-cv-06562",
+   "filed": "2026-08-12",
+   "status": "dismissed with prejudice",
+   "end": "2026-10-16",
+   "docket": 74513992
+  },
+  {
+   "short": "American Peptides",
+   "type": "online seller",
+   "court": "W.D. La.",
+   "no": "5:26-cv-04146",
+   "filed": "2026-10-08",
+   "status": "open; summons issued Oct 16",
+   "end": null,
+   "docket": 74935388
+  },
+  {
+   "short": "Individual seller (LiveWell Peptides)",
+   "type": "online seller",
+   "court": "N.D. Tex.",
+   "no": "3:26-cv-03514",
+   "filed": "2026-10-08",
+   "status": "open",
+   "end": null,
+   "docket": 74935394
+  },
+  {
+   "short": "Cenexa Labs",
+   "type": "online “research” peptide seller",
+   "court": "S.D. Tex.",
+   "no": "4:26-cv-08806",
+   "filed": "2026-10-08",
+   "status": "open",
+   "end": null,
+   "docket": 74935400
+  },
+  {
+   "short": "Southlake Mhya (Medrein)",
+   "type": "med spa",
+   "court": "N.D. Tex.",
+   "no": "4:26-cv-01294",
+   "filed": "2026-10-08",
+   "status": "open",
+   "end": null,
+   "docket": 74935411
+  },
+  {
+   "short": "MedShape Weight Loss Clinic",
+   "type": "weight-loss clinic",
+   "court": "D. Ariz.",
+   "no": "2:26-cv-07361",
+   "filed": "2026-10-08",
+   "status": "open; service executed Oct 15",
+   "end": null,
+   "docket": 74940371
+  }
+ ],
+ "poison_center_exposures_cbs": {
+  "Q1 2026": 249,
+  "Q2 2026": 460,
+  "Q3 2026": 862
+ },
+ "quotes": {
+  "lilly_release": [
+   "Aug. 12, 2026 /PRNewswire/",
+   "said David A. Hyman, M.D., Lilly's chief medical officer",
+   "filing six new lawsuits against U.S. entities selling black-market products in addition to having referred hundreds of bad actors to regulators and law enforcement worldwide",
+   "No medicine containing retatrutide has yet been approved for human use by any regulatory agency in the world. It cannot be sold to consumers.",
+   "What is being sold on the black market is not a medicine – it is entirely unverified, unapproved and not worth the risk.",
+   "Lilly's lawsuits target U.S. entities selling illegal retatrutide products, including compounding pharmacies, medical spas, and online sellers that falsely claim their drugs are for \"research-use only\" when they are actually intended for human use.",
+   "Lilly has also referred more than 200 individuals and entities to FDA",
+   "The company has reported more than 14,000 websites, advertisements, social media posts and product listings that unlawfully market retatrutide in over 100 countries",
+   "Eli Lilly & Co. v. Aesthetic Envy Cosmetic Centers LLC, d/b/a Aesthetic Envy (N.D. Cal.)"
+  ],
+  "bl26": [
+   "Eli Lilly Toughens Legal Game Plan Over Next Weight Loss Drug Oct. 26, 2026, 9:05 AM UTC",
+   "The pharmaceutical giant has filed at least 11 federal lawsuits against a range of online vendors and wellness clinics making copycat versions of its experimental drug retatrutide, accusing them of illegally selling or facilitating access to a product not approved by any regulator in the world."
+  ],
+  "bl08": [
+   "Eli Lilly Sues More Vendors Selling ‘Illicit’ Weight Loss Drugs Oct. 8, 2026, 2:14 PM UTC",
+   "The lawsuits target American Peptides LLC, LiveWell Peptides, Cenexa Labs LLC, Medrein Health & Aesthetics, and Medshape Weight Loss Clinic LLC."
+  ],
+  "fda": [
+   "Retatrutide and cagrilintide cannot be used in compounding under federal law. Additionally, these are not components of FDA-approved drugs and have not been found safe and effective for any condition.",
+   "Telehealth companies for marketing unapproved drugs such as retatrutide, including instances of direct marketing to consumers.",
+   "Content current as of: 10/01/2026"
+  ],
+  "vic": [
+   "Date issued: 19 June 2026",
+   "Since January 2026, there have been six cases of acute liver injury in Victoria in people who have used an unapproved peptide product, labelled as Retatrutide.",
+   "These toxic effects are possibly associated with a contaminant in the products labelled as ‘Retatrutide’ and all such products are at risk."
+  ],
+  "cbs": [
+   "October 13, 2026 / 1:38 PM EDT",
+   "The reports link the deaths to products claiming to be retatrutide",
+   "though the details aren't verified and it is unclear whether the drug was to blame",
+   "Though the reports alone don't prove that the drugs caused or contributed to patient deaths",
+   "The centers logged 862 exposures to retatrutide in the three months ending in September, up from 460 in the three months prior and 249 in the first three months of 2026."
+  ],
+  "tp_dismiss": [
+   "NOTICE OF VOLUNTARY DISMISSAL WITH PREJUDICE",
+   "Dated: October 15, 2026",
+   "To date, Defendant Texas Peptides Inc. has not served an answer or motion for summary judgment."
+  ],
+  "ls_dismiss": [
+   "NOTICE OF VOLUNTARY DISMISSAL WITH PREJUDICE",
+   "Dated: October 16, 2026"
+  ],
+  "ae_dismiss": [
+   "NOTICE OF VOLUNTARY DISMISSAL WITH PREJUDICE",
+   "Dated: September 11, 2026",
+   "Case No.: 2:26-cv-02764-TLN-SCR"
+  ],
+  "striker_order": [
+   "The response of Defendant Striker Pharmacy, LLC to the Complaint is due to be filed on or before October 30, 2026."
+  ],
+  "striker_sched": [
+   "Discovery to be completed by: August 10, 2027",
+   "Docket call to be held at 11:30 AM on: November 1, 2027"
+  ],
+  "striker_cmp": [
+   "is a compounding pharmacy in Katy, Texas",
+   "sells these unapproved products to medical practices, including med spas, and also ships them directly to consumers",
+   "EIGHTH CAUSE OF ACTION",
+   "Unfair Competition in Violation of Texas Common Law"
+  ],
+  "leg_mtd": [
+   "MOTION TO DISMISS COMPLAINT UNDER FEDERAL RULES OF CIVIL PROCEDURE 12(b)(1) AND 12(b)(6)",
+   "Filed 10/02/26",
+   "Lilly does not sell retatrutide, and on its own allegations it cannot.",
+   "That is the whole case: Lilly seeks damages for lost sales due to a product it does not and cannot lawfully sell.",
+   "Texas does not recognize a common-law unfair-competition claim built on a violation of the Texas Food, Drug, and Cosmetic Act, as two courts have already held in Lilly’s own cases."
+  ],
+  "leg_order": [
+   "Rule 16 Case Management Conference"
+  ],
+  "leg_docket": [
+   "pltf shall file any response to that motion withing 44 days after the motion is served",
+   "Rule 16 Case Management Conference set for 11/30/2026"
+  ],
+  "astra_amended": [
+   "FIRST AMENDED COMPLAINT",
+   "whose true legal identity is presently unknown",
+   "claim to be an online seller of purportedly “research use only” products"
+  ],
+  "astra_docket": [
+   "NOTICE of Voluntary Dismissal by Eli Lilly and Company",
+   "MOTION To Allow Pre-Service Discovery to Determine Defendant's Identity"
+  ],
+  "medrein_cmp": [
+   "is a Southlake “med spa”",
+   "False or Misleading Advertising in Violation of 15 U.S.C. § 1125(a)(1)(B)",
+   "Neither the U.S. Food and Drug Administration (“FDA”) nor any other regulatory agency in the world has approved a medicine containing retatrutide for any use.",
+   "An Order requiring Medrein to undertake corrective advertising"
+  ],
+  "medshape_cmp": [
+   "MedShape Weight Loss Clinic, LLC (“MedShape”)",
+   "enjoining MedShape from representing or implying"
+  ],
+  "amp_cmp": [
+   "EIGHTH CAUSE OF ACTION",
+   "Unfair Competition in Violation of Texas Common Law",
+   "disgorgement of profits"
+  ],
+  "livewell_cmp": [
+   "Case 3:26-cv-03514"
+  ],
+  "cenexa_cmp": [
+   "Case 4:26-cv-08806"
+  ]
+ },
+ "docket_base": "https://www.courtlistener.com/docket/"
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-labelledby="t2 d2">
+<title id="t2">Retatrutide exposures logged by U.S. poison centers, 2026</title>
+<desc id="d2">Retatrutide exposures logged by U.S. poison centers, 2026. Q1 2026: 249; Q2 2026: 460; Q3 2026: 862.</desc>
+<rect width="760" height="360" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Retatrutide exposures logged by U.S. poison centers, 2026</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Reported exposures per quarter. An exposure is not proof of harm. Figures as reported by CBS News, Oct 13, 2026.</text>
+<line x1="60" y1="290" x2="700" y2="290" stroke="#e2e8f0" stroke-width="2"/>
+<rect x="120" y="240.2" width="120" height="49.8" rx="3" fill="#d97706"/>
+<text x="180" y="232.2" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">249</text>
+<text x="180" y="308" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Q1 2026</text>
+<rect x="320" y="198.0" width="120" height="92.0" rx="3" fill="#d97706"/>
+<text x="380" y="190.0" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">460</text>
+<text x="380" y="308" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Q2 2026</text>
+<rect x="520" y="117.6" width="120" height="172.4" rx="3" fill="#b91c1c"/>
+<text x="580" y="109.6" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">862</text>
+<text x="580" y="308" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Q3 2026</text>
+<text x="24" y="330" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Source: CBS News (Daniel Gilbert), Oct 13, 2026, citing America’s Poison Centers. Q3 = three months ending September.</text>
+<text x="24" y="346" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>
