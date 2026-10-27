@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/consumer-health-data",
+      "destination": "https://www.bridgerapps.com/jabbit/consumer-health-data/",
+      "permanent": true
+    },
+    {
       "source": "/privacy",
       "destination": "https://www.bridgerapps.com/jabbit/privacy/",
       "permanent": true

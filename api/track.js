@@ -1,4 +1,38 @@
 const fs = require('fs');
+const net = require('net');
+
+// Visitors' full IP addresses and browser strings never leave this function. The analytics
+// daemon gets the network part of the address (IPv4 /24, IPv6 /48), a coarse device and
+// browser label, and page addresses without query strings. The privacy policy
+// (bridgerapps.com/jabbit/privacy/, section 8.5) describes exactly this, so keep them in step.
+function truncateIp(raw) {
+  let ip = String(raw || '').split(',')[0].trim();
+  if (ip.startsWith('::ffff:') && net.isIPv4(ip.slice(7))) ip = ip.slice(7);
+  if (net.isIPv4(ip)) return ip.replace(/\.\d+$/, '.0');
+  if (!net.isIPv6(ip)) return '';
+  const [head, tail = ''] = ip.split('::');
+  const left = head ? head.split(':') : [];
+  const right = tail ? tail.split(':') : [];
+  const groups = ip.includes('::')
+    ? [...left, ...Array(Math.max(0, 8 - left.length - right.length)).fill('0'), ...right]
+    : left;
+  return `${groups.slice(0, 3).join(':')}::`;
+}
+
+function coarseUserAgent(ua) {
+  ua = String(ua || '');
+  // Crawlers keep their name so the daemon can still filter them out; they are not people.
+  if (/bot|crawl|spider|slurp|preview|monitor|curl|wget|python|headless/i.test(ua)) return ua.slice(0, 120);
+  const device = /iPhone|iPod/.test(ua) ? 'iPhone' : /iPad/.test(ua) ? 'iPad' : /Android/.test(ua) ? 'Android'
+    : /Macintosh/.test(ua) ? 'Mac' : /Windows/.test(ua) ? 'Windows' : /Linux|CrOS/.test(ua) ? 'Linux' : 'Other';
+  const browser = /Edg\//.test(ua) ? 'Edge' : /Firefox|FxiOS/.test(ua) ? 'Firefox'
+    : /Chrome|CriOS/.test(ua) ? 'Chrome' : /Safari/.test(ua) ? 'Safari' : 'Other';
+  return `Mozilla/5.0 (${device}) ${browser}`;
+}
+
+function stripQuery(url) {
+  try { const u = new URL(url); return (u.origin + u.pathname).slice(0, 240); } catch { return ''; }
+}
 
 function loadAnalyticsSecret() {
   if (process.env.ANALYTICS_SECRET) return String(process.env.ANALYTICS_SECRET);
@@ -46,9 +80,9 @@ module.exports = async (req, res) => {
 
     const payload = {
       event: String(body.event || 'pageview'),
-      page: String(body.page || '/'),
+      page: String(body.page || '/').split(/[?#]/)[0].slice(0, 240),
       target: String(body.target || ''),
-      ref: String(body.ref || ''),
+      ref: stripQuery(String(body.ref || '')),
     };
     for (const k of ['utm_source', 'utm_medium', 'utm_campaign']) {
       const v = String(body[k] || '').replace(/[^A-Za-z0-9._-]/g, '').slice(0, 60);
@@ -57,14 +91,14 @@ module.exports = async (req, res) => {
 
     const headers = {
       'content-type': 'application/json',
-      'user-agent': req.headers['user-agent'] || 'jabbit-proxy',
-      'x-forwarded-for': req.headers['x-forwarded-for'] || req.socket?.remoteAddress || '',
+      'user-agent': req.headers['user-agent'] ? coarseUserAgent(req.headers['user-agent']) : 'jabbit-proxy',
+      'x-forwarded-for': truncateIp(req.headers['x-forwarded-for'] || req.socket?.remoteAddress),
     };
     if (ANALYTICS_SECRET) {
       headers['x-analytics-secret'] = ANALYTICS_SECRET;
     }
     if (req.headers.origin) headers.origin = req.headers.origin;
-    if (req.headers.referer) headers.referer = req.headers.referer;
+    if (req.headers.referer) headers.referer = stripQuery(req.headers.referer);
 
     const r = await fetch(`${ANALYTICS_BASE}${upstreamPath}`, {
       method: 'POST',

@@ -53,6 +53,14 @@ policy page: `/research/editorial-standards.html`.
       write "syncs through iCloud", "private iCloud" or "on your devices". The privacy
       policy and terms live at bridgerapps.com/jabbit/privacy/ and /terms/ (jabbitapp.com
       /privacy and /terms redirect there); link those, don't recreate them here.
+- [ ] **Footer legal links and tracking:** every page's footer links Privacy, Consumer
+      health data (`/consumer-health-data`, which Washington's My Health My Data Act
+      requires on the homepage) and Terms. Add no third-party scripts, pixels, ad tags,
+      embeds or session replay (Meta Pixel, GA4, Hotjar, YouTube embeds and the like); Google
+      Fonts is the only outside host allowed. Visit counting goes only through
+      `assets/site.js` and `api/track.js`, which section 8.5 of the privacy policy describes:
+      changing what they send means updating that section first. Tools compute in the
+      browser and never put what the user typed into the URL or a tracked event.
 - [ ] **Dated facts:** "only", "first", "no one else" claims about a live record
       (meeting logs, registries) must carry an "as of" date, and get re-checked
       before any X post that repeats them.

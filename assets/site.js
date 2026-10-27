@@ -91,7 +91,14 @@
     try { if (!r) return ''; const u = new URL(r); return (u.origin + u.pathname).slice(0, 240); } catch (_) { return ''; }
   };
 
+  // Browsers that send Global Privacy Control or Do Not Track are not counted at all
+  // (the privacy policy says so, section 8.5).
+  const optedOut = (() => {
+    try { return navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1'; } catch (_) { return false; }
+  })();
+
   const sendTrack = (event, target = '') => {
+    if (optedOut) return;
     const payload = {
       event,
       page: location.pathname || '/',
