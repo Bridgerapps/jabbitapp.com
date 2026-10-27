@@ -1,0 +1,218 @@
+{
+ "page": "https://jabbitapp.com/research/tradipitant-nereus-ozempic-wegovy-nausea-vomiting-pill-teardown.html",
+ "checked": "2026-10-27",
+ "note": "Quotes asserted against cached copies. Tradipitant doses are deliberately not reproduced on the page. No sellers, prices or stacking. Vanda results are company-reported topline data.",
+ "press_releases": {
+  "vanda_2026-10-27_study_3601": [
+   "Oct. 27, 2026",
+   "Study 3601 (VP-VLY-686-3601), a Phase III randomized, placebo-controlled study",
+   "Vomiting occurred in 43.0% of NEREUS™-treated participants (61/142) compared with 58.5% on placebo (96/164) (p=0.006, adjusted for site), a 27% relative reduction.",
+   "33.1% of participants on NEREUS™ (47/142) versus 50.6% on placebo (83/164) (p=0.002, adjusted for site), a 35% relative reduction.",
+   "was 6.3% with NEREUS™ versus 15.9% with placebo (p=0.008, site-adjusted), a 60% relative reduction.",
+   "The proportion with extreme vomiting (greater than 10 total episodes) was 2.8% with NEREUS™ versus 14.6% with placebo (p=0.0003, site-adjusted)",
+   "These analyses are post hoc and are presented as supportive evidence",
+   "Almost all vomiting episodes in either group occurred by Day 2.",
+   "without the gradual titration used in clinical practice.",
+   "This design provides a rigorous test of prevention when the emetogenic stimulus is strong.",
+   "supporting extrapolation of the effect to real-world dosing of semaglutide",
+   "NEREUS™ is expected to be applicable across all available GLP-1 receptor agonist therapies.",
+   "Vanda plans to discuss the results with the FDA and intends to submit an sNDA",
+   "NEREUS™ was generally well tolerated, with a safety profile consistent with previous studies. No new safety signals were observed.",
+   "approved in December of 2025 for the prevention of motion-induced vomiting",
+   "the FDA's willingness to meet with Vanda to discuss and provide feedback on Vanda's proposed sNDA submission during 2027"
+  ],
+  "vanda_2025-11-17_study_2601": [
+   "Nov. 17, 2025",
+   "(VP-VLY-686-2601)",
+   "with only 29.3% of tradipitant-treated participants (17/58) experiencing vomiting compared to 58.6% on placebo (34/58) (p=0.0016), representing a 50% relative reduction",
+   "at 22.4% in the tradipitant group (13/58) versus 48.3% on placebo (28/58) (p=0.0039)",
+   "a dose that normally takes 9 weeks of titration to reach",
+   "studied 116 healthy overweight or obese adults (BMI 25–40 kg/m²) without prior GLP-1 agonist experience",
+   "for 1 week, followed by 1 week of continued treatment post-dosing"
+  ],
+  "vanda_2025-12-30_approval": [
+   "Dec. 30, 2025",
+   "has approved NEREUS™ (tradipitant), an oral neurokinin-1 (NK-1) receptor antagonist, for the prevention of vomiting induced by motion",
+   "In Motion Syros (n=365), vomiting incidence was 18.3–19.5% with NEREUS™ versus 44.3% with placebo (p<0.0001).",
+   "In Motion Serifos (n=316), vomiting rates were 10.4–18.3% with NEREUS™ versus 37.7% with placebo (p≤0.0014)"
+  ]
+ },
+ "fda_label_nereus": [
+  "Revised: 12/2025",
+  "NEREUS is a substance P/neurokinin-1 (NK-1) receptor antagonist indicated",
+  "somnolence (6%, 12%) and fatigue (6%, 8%) were adverse",
+  "Tradipitant is a CYP3A4 substrate. Strong CYP3A4 inhibitors may increase tradipitant exposure,",
+  "Avoid NEREUS in patients with mild, moderate, or severe hepatic impairment.",
+  "Monitor breastfed infants for somnolence.",
+  "for more than 90 doses has not been established",
+  "Most common adverse reactions (incidence ≥5%) are: somnolence, headache,"
+ ],
+ "fda_approval_letter": [
+  "December 30, 2025",
+  "NDA 220152"
+ ],
+ "labels": {
+  "wegovy_setid_ee06186f_2026-06-18": [
+   "Placebo N=1,261 % WEGOVY Injection (2.4 mg Once Weekly) N=2,116 % Nausea 16 44 Diarrhea 16 30 Vomiting 6 24",
+   "Permanent discontinuation of treatment as a result of a gastrointestinal adverse reaction occurred in 4.3% of WEGOVY injection-treated adult patients versus 0.7% of placebo-treated patients.",
+   "Follow the dosage escalation in Table 1 to reduce the risk of gastrointestinal adverse reactions",
+   "If patients do not tolerate a dose during dosage escalation, consider delaying dosage escalation for 4 weeks.",
+   "The majority of the reported events occurred in patients who experienced gastrointestinal adverse reactions leading to dehydration such as nausea, vomiting, or diarrhea"
+  ],
+  "zepbound_setid_487cd7e7_2026-08-28": [
+   "Nausea 8 25 29 28 Diarrhea a 8 19 21 23 Vomiting 2 8 11 13",
+   "discontinued treatment due to gastrointestinal adverse reactions than patients receiving placebo (0.5%).",
+   "ZEPBOUND 15 mg (4.3%)",
+   "The majority of nausea, vomiting, and/or diarrhea events occurred during dose escalation and decreased over time.",
+   "Follow the dosage escalation below for all indications to reduce the risk of gastrointestinal adverse reactions"
+  ]
+ },
+ "pubmed": {
+  "34514682": {
+   "title": "Gastrointestinal tolerability of once-weekly semaglutide 2.4 mg in adults with overweight or obesity, and the relationship between gastrointestinal adverse events and weight loss",
+   "quotes": [
+    "nausea (43.9% vs. 16.1% of participants)",
+    "vomiting (24.5% vs. 6.3%)",
+    "Most GI AEs with semaglutide were non-serious (99.5% of AEs), mild-to-moderate (98.1%), transient and occurred most frequently during/shortly after dose escalation.",
+    "Few semaglutide-treated participants (4.3%) permanently discontinued treatment for GI AEs.",
+    "<1 percentage point was mediated by GI AEs"
+   ]
+  },
+  "41039650": {
+   "title": "Reasons for Discontinuation of Obesity Pharmacotherapy With Semaglutide or Tirzepatide in Clinical Practice",
+   "quotes": [
+    "We randomly selected 288 patients",
+    "137 patients (47.6%) discontinued their medication due to cost or insurance-related issues",
+    "42 (14.6%) due to inability to tolerate the side effects",
+    "34 (11.8%) as they were unable to fill the medication due to shortages"
+   ]
+  },
+  "42504813": {
+   "title": "Discontinuation of glucagon-like peptide-1 receptor agonists among US adults: A national survey",
+   "quotes": [
+    "440 respondents met eligibility criteria",
+    "The most frequently cited reasons for discontinuation were cost (36.1%), side effects (33.3%), no insurance coverage (28.2%), and achieving a weight-loss goal (26.1%)."
+   ]
+  },
+  "40103934": {
+   "title": "Motion Syros: tradipitant effective in the treatment of motion sickness; a multicenter, randomized, double-blind, placebo-controlled study",
+   "quotes": [
+    "A total of 365 adult participants with a history of motion sickness",
+    "placebo = 44.3%, p < 0.0001 for both dose comparisons against placebo",
+    "ClinicalTrials.gov, identifier NCT04327661"
+   ]
+  },
+  "41945307": {
+   "title": "Tradipitant: First Approval",
+   "quotes": [
+    "Tradipitant received its first approval in the USA in December 2025 for the prevention of vomiting induced by motion in adults, and is also being developed for the treatment of gastroparesis and prevention of vomiting induced by GLP-1 receptor agonists."
+   ]
+  },
+  "42150111": {
+   "title": "Tradipitant: A Novel Neurokinin-1 Receptor Antagonist for Motion Sickness",
+   "quotes": [
+    "The half-life is 34 hours.",
+    "Tradipitant is predominately metabolized by CYP450-mediated pathways and through glucuronidation."
+   ]
+  }
+ },
+ "clinicaltrials_gov": {
+  "phase3": {
+   "nct": "NCT07446439",
+   "status": "RECRUITING",
+   "phase": [
+    "PHASE3"
+   ],
+   "enrollment": {
+    "count": 280,
+    "type": "ESTIMATED"
+   },
+   "start": "2026-03-27",
+   "primary_completion": {
+    "date": "2026-12-01",
+    "type": "ESTIMATED"
+   },
+   "last_update": "2026-04-20",
+   "sponsor": "Vanda Pharmaceuticals"
+  },
+  "phase2": {
+   "nct": "NCT06804603",
+   "status": "COMPLETED",
+   "phase": [
+    "PHASE2"
+   ],
+   "enrollment": {
+    "count": 124,
+    "type": "ACTUAL"
+   },
+   "start": "2025-02-25",
+   "primary_completion": {
+    "date": "2025-10-06",
+    "type": "ACTUAL"
+   },
+   "last_update": "2025-11-12",
+   "sponsor": "Vanda Pharmaceuticals"
+  },
+  "tradipitant_search_count": 17
+ },
+ "vomiting_chart_pct": {
+  "phase2_2601": {
+   "placebo": 58.6,
+   "tradipitant": 29.3,
+   "n": "58 vs 58"
+  },
+  "phase3_3601": {
+   "placebo": 58.5,
+   "tradipitant": 43.0,
+   "n": "164 vs 142"
+  }
+ },
+ "phase3_endpoints_pct": [
+  [
+   "Any vomiting (primary)",
+   58.5,
+   43.0,
+   "p=0.006"
+  ],
+  [
+   "Vomiting + worst nausea 3 or more (key secondary)",
+   50.6,
+   33.1,
+   "p=0.002"
+  ],
+  [
+   "Frequent multi-day vomiting (post hoc)",
+   15.9,
+   6.3,
+   "p=0.008"
+  ],
+  [
+   "Extreme vomiting, >10 episodes (post hoc)",
+   14.6,
+   2.8,
+   "p=0.0003"
+  ]
+ ],
+ "label_gi_pct": {
+  "Wegovy (STEP pool)": {
+   "nausea": [
+    16,
+    44
+   ],
+   "vomiting": [
+    6,
+    24
+   ]
+  },
+  "Zepbound 15 mg (SURMOUNT pool)": {
+   "nausea": [
+    8,
+    28
+   ],
+   "vomiting": [
+    2,
+    13
+   ]
+  }
+ }
+}
