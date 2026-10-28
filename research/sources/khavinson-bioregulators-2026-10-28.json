@@ -1,0 +1,322 @@
+{
+ "page": "https://jabbitapp.com/research/vilon-vesugen-cartalax-bronchogen-khavinson-bioregulator-peptides-teardown.html",
+ "checked": "2026-10-28",
+ "note": "Quotes asserted against cached copies. PubMed name searches (vilon, vesugen OR vezugen, cartalax, bronchogen) run October 28, 2026; every record hand-classified by Jabbit as given to people, lab or animal study, or review; off-topic hits (surnames, bronchogenic cysts, unrelated chemistry) excluded and listed. 'Khavinson listed author' = an author last name beginning 'Khav' in the PubMed record (catches one misspelling); older records can omit authors, so this is a floor. Records can count under more than one peptide. X counts: recent-count endpoint, English, no reposts, query on the peptide names plus 'khavinson' and 'bioregulator(s)'; posters not named.",
+ "pubmed_abstract_quotes": {
+  "9637345": [
+   "Pharmaceutical containing natural peptides (Thymalin) was put into practice as immunocorrector.",
+   "A novel immunomodulatory dipeptide was synthesized and termed Vilon."
+  ],
+  "11140587": [
+   "Subcutaneous administration of vilon (Lys-Glu) to female CBA mice starting from the 6th month of life increased physical activity and endurance, decreased body temperature, prolonged the lifespan, and prevented the development of spontaneous neoplasms.",
+   "Vilon had no effect on age-related changes of estrous function and free radical processes."
+  ],
+  "19830585": [
+   "It was shown that long-term treatment with some peptide preparations increased mean life span by 20-40%",
+   "in rodents"
+  ],
+  "16075684": [
+   "The obtained preliminary results of investigation suggest recommendation of Vilon application to increase 2-year survival of patients"
+  ],
+  "17152731": [
+   "administration of thymomimetic Vilon (Lys-Glu) in these patients significantly reduces or even totally diminishes DIC syndrome"
+  ],
+  "18306698": [
+   "the administration of Vilon as an addition to the complex therapy for this cohort of patients resulted in optimization of coagulation hemostasis"
+  ],
+  "25051774": [
+   "Treatment results of erectile dysfunction in 41 patients were studied.",
+   "A comparative analysis of clinical and instrumental parameters of blood flow in the main penile arteries before and after monotherapy was undertaken."
+  ],
+  "26390612": [
+   "32 people (18 men, 12 women) aged 41-83 years",
+   "At the same time we've found the prooxidant activity through chemiluminescence.",
+   "Decrease of markers CD34+ positive hematopoietic polypotent cells in blood has shown significant inhibition of hemopoiesis.",
+   "This property should be studied in future."
+  ],
+  "28539017": [
+   "110 representatives of different age groups",
+   "dry carbon dioxide baths, hyperbaric oxygen therapy, therapeutic massage"
+  ],
+  "28509489": [
+   "small peptides (cytogens) used as geroprotectors in the system of preventive medical nutrition"
+  ],
+  "23734521": [
+   "combined application of several cytogens (pinealon and vezugen)"
+  ],
+  "12881997": [
+   "a bimodal curve with the second maximum were detected at super-low doses (10(-17)-10(-15) mol/l)",
+   "Authors propose a hypothesis that for superlow concentrations the formation and distance transmission of a signal from ligand to a target cell without the formation of any ligand-receptor complex take place."
+  ],
+  "22117547": [
+   "short biologically active peptides are able to penetrate into an animal cell and its nucleus",
+   "bronchogen (Ala-Glu-Asp-Leu) bind preferentially with deoxyribooligonucleotides containing CNG sequence"
+  ],
+  "15105581": [
+   "The effect of the synthetic peptide bioregulator Vilon on structural and facultative heterochromatin of cultured lymphocytes from old people has been studied."
+  ],
+  "26468022": [
+   "Rats with Obstru"
+  ],
+  "19895477": [
+   "A total of 228 dipeptides were synthesized",
+   "intestinal permeability using Caco-2 cells",
+   "postabsorptive ACE inhibitory activities of dipeptides in vivo are most likely limited due to the very low intestinal permeability of dipeptides"
+  ]
+ },
+ "pmc8619776_quotes": [
+  "KE, Vilon regulation of immune system function, antioxidant effect, stress-protective effect, geroprotection",
+  "KED, Vesugen regulation of cardiovascular system function, neuroprotector",
+  "AED, Cartalax regulation of cartilage and skin fibroblasts functions, neuronal cell differentiation",
+  "AEDL, Bronchogen regulation of lung cells’ function and differentiation"
+ ],
+ "pmc9323678_quotes": [
+  "when administered orally, peptides must be absorbed into the bloodstream through the intestinal barrier in their active forms. It is important to study the absorption mechanism of bioactive peptides",
+  "KE peptide (to a greater extent) and AEDG peptide (to a lesser extent) were hydrolyzed in solutions and partially in tissues",
+  "there is a high probability of their transport into cells of various organs and tissues with the participation of LAT1 transporter, POT family and L-system transporters",
+  "Thymogen (EW) −24.72 Immunoprotector, medicinal product",
+  "Saint Petersburg Institute of Bioregulation and Gerontology"
+ ],
+ "patent_quotes": {
+  "US7851449B2": [
+   "Peptide, pharmaceutical composition, and a method of treating microcirculation disorders",
+   "1. An isolated peptide of the formula H-Lys-Glu-Asp-OH.",
+   "SIA Peptides OOO",
+   "Prior art date 2006-05-23",
+   "Publication date 2010-12-14",
+   "parenteral administration"
+  ],
+  "US6642201B1": [
+   "Use of a dipeptide for stimulating repair processes",
+   "Klinika Instituta Bioregulyatsii Gerontologii",
+   "Prior art date 1998-06-23",
+   "Publication date 2003-11-04",
+   "parenteral, oral, intranasal or local"
+  ]
+ },
+ "fda_safety_risk_page": {
+  "name_counts": {
+   "Vilon": 0,
+   "Vesugen": 0,
+   "Vezugen": 0,
+   "Cartalax": 0,
+   "Bronchogen": 0,
+   "Lys-Glu": 0,
+   "Khavinson": 0
+  },
+  "quotes": [
+   "Compounded drugs containing epitalon may pose risk for immunogenicity",
+   "Content current as of: 04/22/2026"
+  ]
+ },
+ "clinicaltrials_gov": {
+  "vilon": {
+   "query.intr": 0,
+   "query.term": 1
+  },
+  "vesugen": {
+   "query.intr": 0,
+   "query.term": 0
+  },
+  "cartalax": {
+   "query.intr": 0,
+   "query.term": 1
+  },
+  "bronchogen": {
+   "query.intr": 1,
+   "query.term": 1
+  },
+  "note": "Only non-zero hits are unrelated: NCT02580799 (vilon term), NCT06852014 (cartalax term), NCT00746759 (bronchogen; bronchoscopy study). ctgov_khavinson and ctgov_peptide_bioregulator: [0, 0]"
+ },
+ "drugs_at_fda": "openFDA drugsfda search: no matches for vilon, vesugen, cartalax, bronchogen",
+ "x_daily_counts_utc": [
+  [
+   "2026-10-22",
+   68
+  ],
+  [
+   "2026-10-23",
+   80
+  ],
+  [
+   "2026-10-24",
+   57
+  ],
+  [
+   "2026-10-25",
+   89
+  ],
+  [
+   "2026-10-26",
+   86
+  ],
+  [
+   "2026-10-27",
+   98
+  ],
+  [
+   "2026-10-28",
+   30
+  ]
+ ],
+ "x_top_posts": [
+  {
+   "created_at_utc": "2026-10-23T16:18:38.000Z",
+   "impressions": 241577
+  },
+  {
+   "created_at_utc": "2026-10-20T13:26:28.000Z",
+   "impressions": 848
+  },
+  {
+   "created_at_utc": "2026-10-25T13:52:00.000Z",
+   "impressions": 20854
+  }
+ ],
+ "curation": {
+  "vilon": {
+   "pubmed_hits": 80,
+   "excluded_off_topic": [
+    "38032009",
+    "36395816",
+    "28959869",
+    "28556182",
+    "8378656",
+    "1575790",
+    "1780662",
+    "1780649",
+    "1647546"
+   ],
+   "relevant": 71,
+   "given_to_people": [
+    "16075684",
+    "17152731",
+    "18306698"
+   ],
+   "reviews": [
+    "32362097",
+    "25826983",
+    "24003726",
+    "19670728",
+    "9637345"
+   ],
+   "lab_or_animal": 63,
+   "khavinson_listed_author": 52,
+   "years": [
+    1997,
+    2023
+   ]
+  },
+  "vesugen": {
+   "pubmed_hits": 27,
+   "excluded_off_topic": [
+    "29226462",
+    "25702411"
+   ],
+   "relevant": 25,
+   "given_to_people": [
+    "25051774",
+    "26390612",
+    "28539017",
+    "28509489",
+    "23734521"
+   ],
+   "reviews": [
+    "34173097"
+   ],
+   "lab_or_animal": 19,
+   "khavinson_listed_author": 15,
+   "years": [
+    2008,
+    2024
+   ]
+  },
+  "cartalax": {
+   "pubmed_hits": 6,
+   "excluded_off_topic": [],
+   "relevant": 6,
+   "given_to_people": [],
+   "reviews": [],
+   "lab_or_animal": 6,
+   "khavinson_listed_author": 5,
+   "years": [
+    2011,
+    2020
+   ]
+  },
+  "bronchogen": {
+   "pubmed_hits": 12,
+   "excluded_off_topic": [
+    "20724242",
+    "16637389",
+    "2643787",
+    "3185576",
+    "13324990"
+   ],
+   "relevant": 7,
+   "given_to_people": [],
+   "reviews": [],
+   "lab_or_animal": 7,
+   "khavinson_listed_author": 4,
+   "years": [
+    2006,
+    2017
+   ]
+  }
+ },
+ "union": {
+  "distinct_relevant_records": 97,
+  "khavinson_listed_author": 65,
+  "in_bull_exp_biol_med_or_adv_gerontol": 70
+ },
+ "chart_data": {
+  "evidence": [
+   [
+    "Vilon",
+    3,
+    63,
+    5
+   ],
+   [
+    "Vesugen",
+    5,
+    19,
+    1
+   ],
+   [
+    "Cartalax",
+    0,
+    6,
+    0
+   ],
+   [
+    "Bronchogen",
+    0,
+    7,
+    0
+   ]
+  ],
+  "khavinson": [
+   [
+    "Vilon",
+    52,
+    71
+   ],
+   [
+    "Vesugen",
+    15,
+    25
+   ],
+   [
+    "Cartalax",
+    5,
+    6
+   ],
+   [
+    "Bronchogen",
+    4,
+    7
+   ]
+  ]
+ }
+}

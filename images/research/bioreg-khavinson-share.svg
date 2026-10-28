@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t2 d2">
+<title id="t2">How much of the research comes from one group?</title>
+<desc id="d2">How much of the research comes from one group?. Vilon: 52 of 71 records. Vesugen: 15 of 25 records. Cartalax: 5 of 6 records. Bronchogen: 4 of 7 records.</desc>
+<rect width="760" height="380" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">How much of the research comes from one group?</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Share of each peptide's PubMed records that list Vladimir Khavinson as an author.</text>
+<text x="24" y="105" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Vilon</text>
+<rect x="130" y="86" width="480" height="28" fill="#e2e8f0"/><rect x="130" y="86" width="351.5" height="28" fill="#0f766e"/>
+<text x="620" y="105" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">73% (52 of 71)</text>
+<text x="24" y="163" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Vesugen</text>
+<rect x="130" y="144" width="480" height="28" fill="#e2e8f0"/><rect x="130" y="144" width="288.0" height="28" fill="#0f766e"/>
+<text x="620" y="163" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">60% (15 of 25)</text>
+<text x="24" y="221" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Cartalax</text>
+<rect x="130" y="202" width="480" height="28" fill="#e2e8f0"/><rect x="130" y="202" width="400.0" height="28" fill="#0f766e"/>
+<text x="620" y="221" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">83% (5 of 6)</text>
+<text x="24" y="279" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Bronchogen</text>
+<rect x="130" y="260" width="480" height="28" fill="#e2e8f0"/><rect x="130" y="260" width="274.3" height="28" fill="#0f766e"/>
+<text x="620" y="279" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">57% (4 of 7)</text>
+<text x="24" y="334" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Author-name match in the PubMed record (one misspelling included); variant spellings could make the true share higher.</text>
+<text x="24" y="350" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Jabbit analysis. A single dominant group is common in niche fields; it is not by itself a judgment on quality.</text>
+<text x="24" y="366" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Source: PubMed, October 28, 2026. Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>
