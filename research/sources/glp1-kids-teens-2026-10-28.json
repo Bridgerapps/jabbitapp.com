@@ -1,0 +1,302 @@
+{
+ "page": "https://jabbitapp.com/research/wegovy-zepbound-ozempic-kids-teens-children-safety-evidence-teardown.html",
+ "checked": "2026-10-27",
+ "note": "Quotes asserted against cached copies. Chart values: Wegovy label Tables 3 and 5 and section 6.1 (gallbladder), Saxenda label Table 3, STEP TEENS NEJM 2022 abstract and Wegovy Table 18, SURPASS-PEDS Lancet 2025 abstract. Placebo arm first, drug second. Separate trials; not head-to-head. STEP Young figures are company-reported (Novo Nordisk, Sep 7 2026) and not peer-reviewed.",
+ "pubmed_abstract_quotes": {
+  "36322838": [
+   "A total of 201 participants underwent randomization, and 180 (90%) completed treatment.",
+   "The mean change in BMI from baseline to week 68 was -16.1% with semaglutide and 0.6% with placebo (estimated difference, -16.7 percentage points",
+   "a total of 95 of 131 participants (73%) in the semaglutide group had weight loss of 5% or more, as compared with 11 of 62 participants (18%) in the placebo group",
+   "The incidence of gastrointestinal adverse events was greater with semaglutide than with placebo (62% vs. 42%).",
+   "Five participants (4%) in the semaglutide group and no participants in the placebo group had cholelithiasis.",
+   "Serious adverse events were reported in 15 of 133 participants (11%) in the semaglutide group and in 6 of 67 participants (9%) in the placebo group.",
+   "(Funded by Novo Nordisk; STEP TEENS ClinicalTrials.gov number, NCT04102189.)"
+  ],
+  "37196421": [
+   "44.9% of participants receiving semaglutide achieved weight reduction resulting in reclassification to a normal-weight or overweight BMI category versus 12.1% receiving placebo at week 68",
+   "The proportion of semaglutide-treated participants in obesity class III decreased from 37.3% to 13.6% but increased with placebo."
+  ],
+  "41296499": [
+   "homeostatic model assessment for insulin resistance (HOMA-IR) score (-35.0% vs. -5.3%; P = 0.0002)",
+   "alanine aminotransferase (ALT; -17.9% vs. -3.3%; P = 0.0232)"
+  ],
+  "32233338": [
+   "A total of 125 participants were assigned to the liraglutide group and 126 to the placebo group.",
+   "A greater reduction was observed with liraglutide than with placebo for BMI (estimated difference, -4.64 percentage points)",
+   "After discontinuation, a greater increase in the BMI standard-deviation score was observed with liraglutide than with placebo (estimated difference, 0.15; 95% CI, 0.07 to 0.23).",
+   "(81 of 125 [64.8%] vs. 46 of 126 [36.5%])",
+   "adverse events that led to discontinuation of the trial treatment (13 [10.4%] vs. 0)",
+   "One suicide, which occurred in the liraglutide group, was assessed by the investigator as unlikely to be related to the trial treatment.",
+   "a 56-week treatment period and a 26-week follow-up period",
+   "(Funded by Novo Nordisk; NN8022-4180 ClinicalTrials.gov number, NCT02918279.)"
+  ],
+  "40952752": [
+   "In this systematic review and meta-analysis of 18 trials",
+   "Other AEs, including suicidal ideation or behaviors, showed no significant differences.",
+   "Available data over a relatively short follow-up suggested suicidal ideation or behaviors were not significantly different, although GI AEs warrant attention in long-term management."
+  ],
+  "39401009": [
+   "Propensity score matching resulted in 3456 participants in each balanced cohort.",
+   "(1.45% vs 2.26%; hazard ratio [HR], 0.67; 95% CI, 0.47-0.95; P = .02)"
+  ],
+  "42115753": [
+   "We included 11 studies (9 RCTs, n = 1253; 2 observational, n = 8922; total n = 10 175).",
+   "GLP-1 RAs were not associated with higher rates of suicidal behaviour or depression in adolescents.",
+   "although this finding should be interpreted cautiously"
+  ],
+  "42736027": [
+   "After propensity score matching, 9222 adolescents were included in each group.",
+   "lower risks of suicide-related events (HR, 0.74; 95% CI, 0.57-0.95)",
+   "No significant differences were observed for suicide attempt, insomnia, depression, or eating disorders.",
+   "this finding should be interpreted cautiously given potential selection bias and the lack of a significant difference in the active-comparator analysis with metformin"
+  ],
+  "42508693": [
+   "However, the developmental implications and long-term effects have yet to be evaluated.",
+   "critical knowledge gaps remain regarding long-term effects of GLP-1RAs on growth, pubertal development, cognition, neural reward processing, and lifelong energy balance regulation"
+  ],
+  "40975112": [
+   "99 (60 [61%] female, 39 [39%] male; mean age 14·7 years [SD 1·8]",
+   "(estimated treatment difference -2·28%; 95% CI -2·87 to -1·69; p<0·0001)",
+   "Tirzepatide also resulted in significant reductions in BMI of 7·4% and 11·2% for the 5 mg and 10 mg groups, respectively, compared with 0·4% in the placebo group at 30 weeks."
+  ]
+ },
+ "jama_2024_dispensing_quotes": [
+  "Between 2020 and 2023, the number of adolescents and young adults with GLP-1RA dispensing increased from 8722 to 60 567 (594.4%).",
+  "The number of male adolescents with GLP-1RA dispensing increased from 692 to 4178 (503.8%) and the number of female adolescents increased from 961 to 6607 (587.5%).",
+  "the absence of data regarding the health effects of long-term use",
+  "IQVIA Longitudinal Prescri",
+  "The first 3 are approved for type 2 diabetes in adolescents.",
+  "Limitations of this study include lack of data on prescription indication, including whether it was used off label."
+ ],
+ "who_2026_10_07_quotes": [
+  "7 October 2026",
+  "WHO does not recommend pharmacological treatment, bariatric surgery (weight-loss surgery that changes the stomach or digestive tract) or weight-loss devices for children aged 0–9 years.",
+  "For adolescents aged 10–19 years, treatment with approved medicines may be considered only when a supervized multimodal lifestyle programme has not achieved the desired results.",
+  "In 2024, 170 million children and adolescents aged 5–19 years were living with obesity",
+  "Obesity prevalence in this age group has quadrupled since 1990, rising from 2% to 8%.",
+  "WHO strongly recommends structured dietary, physical activity and behaviour-changing interventions",
+  "“The foundation of obesity care for children and adolescents is not medicine or surgery, but access to comprehensive support that enables healthy eating, physical activity and sustainable behaviour change,”"
+ ],
+ "novo_2026_09_07_quotes": [
+  "40.4% * of those treated with semaglutide were no longer classified as having obesity ** at week 68, compared with none of those treated with placebo.",
+  "At baseline, more than 85% of the children had either class II or III severe obesity",
+  "Furthermore, no safety concerns were identified for growth or pubertal development.",
+  "Detailed STEP Young results will be presented at The Obesity Society’s annual meeting ObesityWeek 2026, 14-17 November in Washington DC",
+  "* Based on the trial product estimand: treatment effect if all children adhered to treatment",
+  "The STEP Young trial is conducted according to regulatory authorities’ post marketing requirements",
+  "investigating safety and efficacy of semaglutide compared with placebo in 165 children with obesity aged 6 to <12 years"
+ ],
+ "uga_2026_10_26_quotes": [
+  "Oct 26, 2026",
+  "They’re approved for 12-year-olds and older, but sometimes people are actually prescribing them even younger in special circumstances",
+  "When these medications cause weight loss, are these kids also losing muscle mass?",
+  "it’s also important to know that weight loss often rebounds when you go off the medication"
+ ],
+ "wegovy_label_2026_06_quotes": [
+  "Revised: 06/2026",
+  "Reference ID: 5819850",
+  "Adults and pediatric patients aged 12 years and older with obesity.",
+  "Pediatric patients aged 12 years and older treated with WEGOVY injection had greater incidences of cholelithiasis, cholecystitis, hypotension, rash, and urticaria compared to adults treated with WEGOVY",
+  "The safety of WEGOVY tablets and WEGOVY 7.2 mg injection have not been established in pediatric patients",
+  "cholelithiasis was reported by 3.8% of WEGOVY injection-treated patients and 0% placebo-treated patients. Cholecystitis was reported by 0.8% of WEGOVY injection-treated pediatric patients and 0% placebo-treated patients.",
+  "cholelithiasis was reported by 1.6% of WEGOVY injection-treated patients and 0.7% of placebo-treated patients",
+  "N=67 Injection (2.4 mg % Once Weekly) N=133 % Nausea 18 42 Vomiting 10 36 Diarrhea 19 22 Headache 16 17 Abdominal Pain 6 15",
+  "N=1,261 Injection (2.4 mg % Once Weekly) N=2,116 % Nausea 16 44 Diarrhea 16 30 Vomiting 6 24",
+  "201 pubertal pediatric patients aged 12 years and older",
+  "After a 12-week lifestyle run-in period",
+  "% change from baseline (LSMean)a 2.7 -14.7"
+ ],
+ "saxenda_label": {
+  "set_id": "3946d389-0926-4f77-a708-0acb8153b143",
+  "effective": "20260225",
+  "quotes": [
+   "Adults and pediatric patients aged 12 years and older with body weight greater than 60 kg and obesity.",
+   "Placebo N=126 % SAXENDA N=125 % Nausea 14.3 42.4 Vomiting 4 34.4",
+   "Pancreatitis was reported in 1 (0.8%) SAXENDA-treated patient and resulted in treatment discontinuation."
+  ]
+ },
+ "zepbound_label": {
+  "set_id": "487cd7e7-434c-4925-99fa-aa80b1cc776b",
+  "effective": "20260828",
+  "quotes": [
+   "The safety and effectiveness of ZEPBOUND have not been established in pediatric patients."
+  ]
+ },
+ "mounjaro_label": {
+  "set_id": "d2d7da5d-ad07-4228-955f-cf7e355c8cc0",
+  "effective": "20260827",
+  "quotes": [
+   "Pediatric Patients 10 Years of Age and Older with Type 2 Diabetes Mellitus",
+   "with the exception of a higher incidence of vomiting, abdominal pain, and hypoglycemia"
+  ]
+ },
+ "ozempic_injection_label": {
+  "set_id": "adec4fd2-6858-4c99-91d4-531f5f2a2d79",
+  "quotes": [
+   "Safety and efficacy of OZEMPIC have not been established in pediatric patients."
+  ]
+ },
+ "clinicaltrials_gov": {
+  "NCT04102189": {
+   "title": "A Research Study on How Well Semaglutide Works in Adolescents With Overweight or Obesity",
+   "status": "COMPLETED",
+   "enrollment": {
+    "count": 201,
+    "type": "ACTUAL"
+   },
+   "primary_completion": {
+    "date": "2022-03-25",
+    "type": "ACTUAL"
+   },
+   "completion": {
+    "date": "2022-03-28",
+    "type": "ACTUAL"
+   },
+   "sponsor": "Novo Nordisk A/S",
+   "ages": [
+    "12 Years",
+    "17 Years"
+   ]
+  },
+  "NCT05726227": {
+   "title": "A Research Study on How Well Semaglutide Helps Children and Teenagers With Excess Body Weight Lose Weight",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": {
+    "count": 212,
+    "type": "ACTUAL"
+   },
+   "primary_completion": {
+    "date": "2025-10-15",
+    "type": "ACTUAL"
+   },
+   "completion": {
+    "date": "2026-12-07",
+    "type": "ESTIMATED"
+   },
+   "sponsor": "Novo Nordisk A/S",
+   "ages": [
+    "6 Years",
+    "18 Years"
+   ]
+  },
+  "NCT06075667": {
+   "title": "A Study of Tirzepatide (LY3298176) Once Weekly in Adolescent Participants Who Have Obesity or Overweight With Weight-Related Comorbidities",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": {
+    "count": 160,
+    "type": "ACTUAL"
+   },
+   "primary_completion": {
+    "date": "2026-06-02",
+    "type": "ACTUAL"
+   },
+   "completion": {
+    "date": "2029-07",
+    "type": "ESTIMATED"
+   },
+   "sponsor": "Eli Lilly and Company",
+   "ages": [
+    "12 Years",
+    "17 Years"
+   ]
+  },
+  "NCT06439277": {
+   "title": "A Study of Tirzepatide in Adolescents With Obesity and Weight-Related Comorbidities (SURMOUNT-ADOLESCENTS-2)",
+   "status": "RECRUITING",
+   "enrollment": {
+    "count": 300,
+    "type": "ESTIMATED"
+   },
+   "primary_completion": {
+    "date": "2027-10",
+    "type": "ESTIMATED"
+   },
+   "completion": {
+    "date": "2030-12",
+    "type": "ESTIMATED"
+   },
+   "sponsor": "Eli Lilly and Company",
+   "ages": [
+    "12 Years",
+    "17 Years"
+   ]
+  },
+  "NCT06571383": {
+   "title": "STEP TEENS Weight Maintenance: A Research Study on How Well Semaglutide Helps Teenagers With Excess Body Weight to Lose Weight and Maintain Weight Loss",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": {
+    "count": 500,
+    "type": "ESTIMATED"
+   },
+   "primary_completion": {
+    "date": "2028-11-15",
+    "type": "ESTIMATED"
+   },
+   "completion": {
+    "date": "2031-11-15",
+    "type": "ESTIMATED"
+   },
+   "sponsor": "Novo Nordisk A/S",
+   "ages": [
+    "12 Years",
+    "15 Years"
+   ]
+  }
+ },
+ "chart_data": {
+  "side_effects_pct": [
+   [
+    "Vomiting, Wegovy (teens, STEP TEENS)",
+    10,
+    36
+   ],
+   [
+    "Vomiting, Wegovy (adults)",
+    6,
+    24
+   ],
+   [
+    "Vomiting, Saxenda (teens)",
+    4,
+    34.4
+   ],
+   [
+    "Nausea, Wegovy (teens)",
+    18,
+    42
+   ],
+   [
+    "Nausea, Wegovy (adults)",
+    16,
+    44
+   ],
+   [
+    "Gallstones, Wegovy (teens)",
+    0,
+    3.8
+   ],
+   [
+    "Gallstones, Wegovy (adults)",
+    0.7,
+    1.6
+   ]
+  ],
+  "bmi_change_pct": [
+   [
+    "STEP TEENS: Wegovy, ages 12-17, 68 wk",
+    0.6,
+    -16.1
+   ],
+   [
+    "SURPASS-PEDS: tirzepatide 5 mg, ages 10-17 with T2D, 30 wk",
+    -0.4,
+    -7.4
+   ],
+   [
+    "SURPASS-PEDS: tirzepatide 10 mg, ages 10-17 with T2D, 30 wk",
+    -0.4,
+    -11.2
+   ]
+  ]
+ }
+}
