@@ -52,6 +52,21 @@ Practical, non-promotional guides for people tracking peptide and GLP-1 injectio
 - GLP-1 Side Effects Guide: https://jabbitapp.com/glp-1-side-effects-guide.html
 - GLP-1 Serum Levels Explained: https://jabbitapp.com/glp1-serum-levels-explained.html
 
+## IVF Medications (US label facts)
+Label facts only, cited to each medicine's US prescribing information on DailyMed with the label's revision date: what it is, US indications, how it's supplied, storage, side effects and warnings, with the label's dosing statement as a quote. No suggested doses, timing, protocols or mixing instructions; pages say plainly when a common IVF use isn't on the US label. Jabbit keeps the clinic's calendar and reminds at the times the user sets; it doesn't suggest doses or timing.
+- IVF hub (track IVF medications and appointments): https://jabbitapp.com/ivf
+- Menotropins (Menopur): side effects, storage (refrigeration), label facts: https://jabbitapp.com/ivf/menopur.html
+- Follitropin alfa (Gonal-f, Gonal-f RFF Redi-ject): https://jabbitapp.com/ivf/gonal-f.html
+- Follitropin beta (Follistim AQ Cartridge): https://jabbitapp.com/ivf/follistim.html
+- Cetrorelix acetate (Cetrotide): https://jabbitapp.com/ivf/cetrotide.html
+- Ganirelix acetate: https://jabbitapp.com/ivf/ganirelix.html
+- Trigger shot: choriogonadotropin alfa (Ovidrel), with the Novarel and Pregnyl hCG labels; the trigger time comes from the clinic: https://jabbitapp.com/ivf/ovidrel-trigger-shot.html
+- Progesterone in oil (Progesterone Injection USP; IVF luteal support isn't on its US label): https://jabbitapp.com/ivf/progesterone-in-oil.html
+- Cetrorelix (Cetrotide) vs ganirelix, US labels side by side, no recommendation: https://jabbitapp.com/ivf/cetrotide-vs-ganirelix.html
+- Follitropin beta (Follistim) vs follitropin alfa (Gonal-f), US labels side by side, no recommendation: https://jabbitapp.com/ivf/follistim-vs-gonal-f.html
+- IVF trigger shot calendar file (.ics) built in the browser from the date and exact time the clinic gave, with alarms the user picks; nothing typed is sent: https://jabbitapp.com/tools/ivf-trigger-shot-calendar.html
+- Printable blank IVF medication calendar (date, cycle day, medicine, dose from clinic, time, site, notes, appointments): https://jabbitapp.com/tools/ivf-medication-calendar.html
+
 ## Study Teardowns
 Critical single-study reads: design, comparator, funding, dropout, effect size, enrollment, and durability, with charts rebuilt from published numbers.
 - Study teardowns hub: https://jabbitapp.com/research
