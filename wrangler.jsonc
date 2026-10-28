@@ -1,5 +1,6 @@
 {
-  // Cloudflare Worker with static assets. Deploy: npx wrangler deploy (after `npx wrangler login`).
+  // Cloudflare Worker with static assets. Publishes automatically from GitHub (Workers Builds) on every
+  // push to main; the Worker in the dashboard must keep this exact name.
   // Pages are served exactly as written (html_handling "none"), so every .html URL stays the same.
   "name": "jabbitapp",
   "main": "worker/index.js",

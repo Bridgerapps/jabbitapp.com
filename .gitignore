@@ -76,3 +76,11 @@ USER.md
 DREAMS.md
 .openclaw/
 skills/
+
+# Wrangler local dev state (wrangler dev)
+.wrangler/
+
+# Nested checkouts on the publishing machine; their old pointers had no .gitmodules and break clean clones
+/jabbit/
+/jabbitapp.com/
+/tools/asr/whisper.cpp/
