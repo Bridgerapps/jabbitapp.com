@@ -75,6 +75,8 @@ for page in ROOT.rglob("*.html"):
         continue
     t = original = page.read_text()
     t = t.replace('<a href="/peptides">Peptides</a>', nav_new)
+    if has_ivf and '<nav class="site-nav"' in t and 'href="/ivf"' not in t.split('</nav>')[0]:
+        t = t.replace('<a href="/guides">Guides</a>', '<a href="/guides">Guides</a><a href="/ivf">IVF</a>', 1)
     if rel.startswith("peptides/"):
         t = re.sub(r'<a href="/peptides/?">Peptides</a>', '<a href="/glp1">GLP-1</a>', t)
     if rel == "research/index.html":
