@@ -1,0 +1,300 @@
+{
+ "page": "https://jabbitapp.com/research/retatrutide-sleep-apnea-vs-zepbound-triumph-osa-teardown.html",
+ "checked": "2026-10-27",
+ "note": "Quotes asserted against cached copies. NEJM article cited by DOI 10.1056/NEJMoa2611477. Table columns: retatrutide 4, 9, 12 mg, placebo (TRIUMPH-1-OSA) then the same for TRIUMPH-2-OSA. Cross-trial chart values are from different trials (52 vs 80 weeks, different populations and estimands) and are not a head-to-head comparison.",
+ "nejm_quotes": [
+  "This article was published on October 21, 2026, at NEJM.org.",
+  "DOI: 10.1056/NEJMoa2611477",
+  "Presented at the 28th Congress of the European Sleep Research Society, October 20–23, 2026.",
+  "Supported by Eli Lilly.",
+  "The sponsor (Eli Lilly) designed and oversaw the conduct of the trials",
+  "A total of 243 participants underwent randomization in TRIUMPH-1-OSA and 448 in TRIUMPH-2-OSA.",
+  "The baseline mean AHI was 58.6 and 55.9 events per hour, respectively, and the mean body weight was 119.6 and 115.9 kg.",
+  "a hybridtreatment estimand was applied",
+  "We also report intention-to-trea",
+  "The effects of retatrutide at a dose of 4 mg did not reach statistical significance under the testing hierarchy in either trial for these end points.",
+  "in such participants, PAP therapy may no longer be recommended.",
+  "The observed reductions in the AHI with retatrutide are similar to those associated with this degree of weight loss in meta-analyses",
+  "patients with OSA who had a BMI below 27 were not included.",
+  "On average, the participants had a low-to-mild sleep-related symptom burden at baseline, which limits generalizability.",
+  "The current trials do not provide information on long-term cardiovascular outcomes.",
+  "The potential effect of treatment interventions on adherence to PAP treatment was not measured.",
+  "Prospective studies are needed to determine whether reductions in the hypoxic burden in both TRIUMPH-OSA trials translate into improved long-term cardiovascular outcomes.",
+  "Although studies have shown reductions in cardiovascular morbidity and mortality with the use of PAP,23 these reductions have not been shown in randomized, controlled trials.",
+  "Dysesthesias were reported more frequently with retatrutide than with placebo in both trials.",
+  "Serious adverse events were reported by 14 participants (8%) who received retatrutide and 6 participants (10%) who received placebo in TRIUMPH-1-OSA; the corresponding numbers in TRIUMPH-2-OSA were 28 (8%) and 11 (10%).",
+  "the peak increase was 5 to 7 beats per minute across the trials",
+  "One participant in TRIUMPH-2-OSA died during receipt of retatrutide at the 9-mg dose",
+  "There were no cases of medullary thyroid cancer or druginduced liver injury.",
+  "occurred most frequently during dose escalation"
+ ],
+ "nejm_table2": {
+  "ahi_change": [
+   "−22.9",
+   "−34.3",
+   "−31.7",
+   "−9.9",
+   "−19.2",
+   "−24.7",
+   "−25.4",
+   "−10.3"
+  ],
+  "ahi_pct": [
+   "−38.5",
+   "−57.3",
+   "−53.3",
+   "−11.1",
+   "−27.6",
+   "−39.5",
+   "−40.9",
+   "−13.3"
+  ],
+  "ahi_50": [
+   "45.9",
+   "65.7",
+   "61.4",
+   "23.9",
+   "39.1",
+   "52.3",
+   "52.5",
+   "24.4"
+  ],
+  "remission_mild": [
+   "26.3",
+   "51.6",
+   "42.3",
+   "12.5",
+   "24.3",
+   "39.5",
+   "38.9",
+   "12.6"
+  ],
+  "weight_pct": [
+   "−12.5",
+   "−22.2",
+   "−20.6",
+   "−4.8",
+   "−12.1",
+   "−17.9",
+   "−18.5",
+   "−5.6"
+  ],
+  "sashb_pct": [
+   "−56.4",
+   "−75.0",
+   "−70.2",
+   "−25.5",
+   "−43.9",
+   "−62.8",
+   "−64.1",
+   "−30.0"
+  ]
+ },
+ "nejm_table2_placebo_diff_ahi": [
+  "−13.0",
+  "−24.4",
+  "−21.9",
+  "−8.9",
+  "−14.4",
+  "−15.1"
+ ],
+ "nejm_table3": {
+  "Any adverse event after the start of treatment": [
+   "56 (93)",
+   "56 (92)",
+   "53 (88)",
+   "47 (76)",
+   "85 (73)",
+   "86 (79)",
+   "92 (84)",
+   "80 (71)"
+  ],
+  "Serious adverse event": [
+   "6 (10)",
+   "1 (2)",
+   "7 (12)",
+   "6 (10)",
+   "5 (4)",
+   "12 (11)",
+   "11 (10)",
+   "11 (10)"
+  ],
+  "Adverse event leading to discontinuation of": [
+   "4 (7)",
+   "0",
+   "5 (8)",
+   "4 (6)",
+   "3 (3)",
+   "10 (9)",
+   "2 (2)",
+   "4 (4)"
+  ],
+  "Diarrhea": [
+   "18 (30)",
+   "27 (44)",
+   "21 (35)",
+   "9 (15)",
+   "29 (25)",
+   "40 (37)",
+   "38 (35)",
+   "11 (10)"
+  ],
+  "Dysesthesia (skin burning sensation or": [
+   "1 (2)",
+   "8 (13)",
+   "5 (8)",
+   "1 (2)",
+   "5 (4)",
+   "5 (5)",
+   "8 (7)",
+   "0"
+  ],
+  "Death": [
+   "0",
+   "0",
+   "0",
+   "2 (3)",
+   "0",
+   "1 (1)",
+   "0",
+   "1 (1)"
+  ]
+ },
+ "pubmed_abstract_quotes": {
+  "42814954": [
+   "The mean percent change in body weight in the retatrutide groups was -17.6% (4-mg dose), -23.7% (9-mg dose), and -25.0% (12-mg dose) versus -3.9% in the placebo group",
+   "the change in the apnea-hypopnea index in the 243 participants with obstructive sleep apnea"
+  ],
+  "42810372": [
+   "We aimed to assess the efficacy and safety of retatrutide in adults with obesity and type 2 diabetes."
+  ],
+  "41090431": [
+   "A novel basket trial design simultaneously evaluates retatrutide treatment across these multiple adiposity-related disease states."
+  ],
+  "38912654": [
+   "In trial 1, the mean change in AHI at week 52 was -25.3 events per hour",
+   "with placebo, for an estimated treatment difference of -20.0 events per hour",
+   "for an estimated treatment difference of -23.8 events per hour",
+   "(Funded by Eli Lilly; SURMOUNT-OSA ClinicalTrials.gov number, NCT05412004.)"
+  ],
+  "31300334": [
+   "425 million (399-450) adults aged 30-69 years have moderate to severe obstructive sleep apnoea globally",
+   "ResMed."
+  ],
+  "27571048": [
+   "the mean duration of adherence to CPAP therapy was 3.3 hours per night",
+   "hazard ratio with CPAP, 1.10; 95% confidence interval, 0.91 to 1.32; P=0.34",
+   "did not prevent cardiovascular events in patients with moderate-to-severe obstructive sleep apnea and established cardiovascular disease",
+   "CPAP significantly reduced snoring and daytime sleepiness and improved health-related quality of life and mood."
+  ]
+ },
+ "zepbound_label_quotes": [
+  "to treat moderate to severe obstructive sleep apnea (OSA) in adults with obesity.",
+  "Patients with type 2 diabetes mellitus were excluded",
+  "The clinical studies for OSA did not evaluate the timing or appropriateness of PAP discontinuation in patients who were previously compliant with PAP therapy.",
+  "Change from baseline b -5.3 -25.3 -5.5 -29.3",
+  "Difference from placebo b (95% CI) -20 (-25.8, -14.2) e -23.8 (-29.6, -17.9) e",
+  "% of Patients with AHI <5 or AHI 5-14 and ESS≤10 d 15.9 42.2 14.3 50.2",
+  "% change from baseline b -1.6 -17.7 -2.3 -19.6",
+  "(BMI ≥30 kg/m 2 )",
+  "of 52 weeks duration"
+ ],
+ "fda_2024_quotes": [
+  "For Immediate Release: December 20, 2024",
+  "Today’s approval marks the first drug treatment option for certain patients with obstructive sleep apnea",
+  "The improvement in AHI in participants with OSA is likely related to body weight reduction with Zepbound."
+ ],
+ "medscape_2026_10_26_quotes": [
+  "October 26, 2026",
+  "He noted that without head-to-head trials it’s not possible to know whether retatrutide offers any advantages over tirzepatide.",
+  "“We don’t want to miss residual OSA,” she said",
+  "She recommended repeat sleep testing after significant weight loss to guide future treatment decisions.",
+  "One case of adjudication-confirmed pancreatitis occurred with retatrutide.",
+  "Patel reported receiving consulting fees from Apnimed, SleepRes, Bayer Pharmaceuticals, and Powell Mansfield, among other industry relationships.",
+  "Gurubhagavatula had no relevant disclosures."
+ ],
+ "lilly_2026_07_23_quotes": [
+  "support global submissions for retatrutide as a potential treatment for obesity, knee osteoarthritis pain, and obstructive sleep apnea",
+  "plans to submit a Biologics License Application (BLA) for retatrutide to FDA in Q1 2027"
+ ],
+ "clinicaltrials_gov": {
+  "NCT05929066": {
+   "title": "A Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight",
+   "status": "COMPLETED",
+   "enrollment": 2335,
+   "primary_completion": "2026-04-06"
+  },
+  "NCT05929079": {
+   "title": "A Study of Retatrutide (LY3437943) in Participants With Type 2 Diabetes Mellitus Who Have Obesity or Overweight",
+   "status": "COMPLETED",
+   "enrollment": 1152,
+   "primary_completion": "2026-06-16"
+  },
+  "NCT06383390": {
+   "title": "The Effect of Retatrutide Once Weekly on Cardiovascular Outcomes and Kidney Outcomes in Adults Living With Obesity (TRIUMPH-Outcomes)",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 10000,
+   "primary_completion": "2029-02"
+  }
+ },
+ "chart_data": {
+  "placebo_adjusted_ahi": [
+   [
+    "Zepbound, SURMOUNT-OSA trial 1 (no PAP), 52 wk",
+    -20.0
+   ],
+   [
+    "Zepbound, SURMOUNT-OSA trial 2 (on PAP), 52 wk",
+    -23.8
+   ],
+   [
+    "Retatrutide 9 mg, TRIUMPH-1-OSA, 80 wk",
+    -24.4
+   ],
+   [
+    "Retatrutide 12 mg, TRIUMPH-1-OSA, 80 wk",
+    -21.9
+   ],
+   [
+    "Retatrutide 9 mg, TRIUMPH-2-OSA (type 2 diabetes), 80 wk",
+    -14.4
+   ],
+   [
+    "Retatrutide 12 mg, TRIUMPH-2-OSA (type 2 diabetes), 80 wk",
+    -15.1
+   ]
+  ],
+  "remission_mild_pct": [
+   [
+    "SURMOUNT-OSA trial 1",
+    15.9,
+    42.2
+   ],
+   [
+    "SURMOUNT-OSA trial 2",
+    14.3,
+    50.2
+   ],
+   [
+    "TRIUMPH-1-OSA, 9 mg",
+    12.5,
+    51.6
+   ],
+   [
+    "TRIUMPH-1-OSA, 12 mg",
+    12.5,
+    42.3
+   ],
+   [
+    "TRIUMPH-2-OSA, 9 mg",
+    12.6,
+    39.5
+   ],
+   [
+    "TRIUMPH-2-OSA, 12 mg",
+    12.6,
+    38.9
+   ]
+  ]
+ }
+}
