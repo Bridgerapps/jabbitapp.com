@@ -1,0 +1,303 @@
+{
+ "page": "https://jabbitapp.com/research/creatine-soft-tissue-injury-cramps-athletes-glp1-evidence-teardown.html",
+ "checked": "2026-10-27 (America/New_York)",
+ "notes": "Football injury studies are open-label and observational (players chose whether to take creatine). Several reviews are by authors who disclose creatine-industry ties, per their own statements. The poster is a public account and is not named on the page. Pre-workout products are multi-ingredient and vary; no single product is assessed. No prices, doses, sellers or stacking.",
+ "x_posts": [
+  {
+   "id": "2115039881600655427",
+   "created_at": "2026-10-27T11:16:17.000Z",
+   "public_metrics": {
+    "bookmark_count": 368,
+    "impression_count": 1092289,
+    "like_count": 1385,
+    "quote_count": 153,
+    "reply_count": 701,
+    "repost_count": 56
+   },
+   "url": "https://x.com/i/status/2115039881600655427"
+  },
+  {
+   "id": "2114890996823531655",
+   "created_at": "2026-10-27T01:24:41.000Z",
+   "public_metrics": {
+    "bookmark_count": 81,
+    "impression_count": 384201,
+    "like_count": 667,
+    "quote_count": 95,
+    "reply_count": 287,
+    "repost_count": 28
+   },
+   "url": "https://x.com/i/status/2114890996823531655"
+  }
+ ],
+ "x_posts_read_at_et": "2026-10-27 ~7:55 PM",
+ "x_counts": {
+  "query": "creatine (injury OR injuries OR \"soft tissue\")",
+  "by_utc_day_from_2026-10-20": [
+   0,
+   3,
+   3,
+   5,
+   5,
+   3,
+   4,
+   145
+  ],
+  "total_7d": 168,
+  "read_at_et": "2026-10-27 ~7:55 PM"
+ },
+ "clinicaltrials_NCT07625202": {
+  "status": "RECRUITING",
+  "primary_completion_estimated": "2027-05-30",
+  "enrollment_estimated": 40
+ },
+ "pubmed": {
+  "14608430": {
+   "title": "Cramping and Injury Incidence in Collegiate Football Players Are Reduced by Creatine Supplementation",
+   "quotes": [
+    "Thirty-eight of 72 athletes (53.0%) participating in the 1999 Division IA collegiate football season from the same university volunteered to take creatine in this study.",
+    "In an open-label manner",
+    "Creatine users had significantly less cramping",
+    "There were no significant differences between groups regarding noncontact joint injuries",
+    "The incidence of cramping or injury in Division IA football players was significantly lower or proportional for creatine users compared with nonusers."
+   ]
+  },
+  "12701814": {
+   "title": "Creatine supplementation during college football training does not increase the incidence of cramping or injury",
+   "quotes": [
+    "athletes participating in the 1998-2000 football seasons elected to take creatine or non-creatine containing supplements",
+    "ranged between 34-56% of players during the course of the study",
+    "The incidence of cramping (37/96, 39%), heat/dehydration (8/28, 36%), muscle tightness (18/42, 43%), muscle pulls/strains (25/51, 49%), non-contact joint injuries (44/132, 33%), contact injuries (39/104, 44%), illness (12/27, 44%), number of missed practices due to injury (19/41, 46%), players lost for the season (3/8, 38%), and total injuries/missed practices (205/529, 39%) were generally lower or proportional to the creatine use rate among players.",
+    "Creatine supplementation does not appear to increase the incidence of injury or cramping in Division IA college football players."
+   ]
+  },
+  "12701816": {
+   "title": "Long-term creatine supplementation does not significantly affect clinical markers of health in athletes",
+   "quotes": [
+    "Over a 21-month period, 98 Division IA college football players",
+    "a 69-item panel of serum, whole blood, and urinary markers",
+    "does not appear to adversely effect markers of health status in athletes undergoing intense training"
+   ]
+  },
+  "28615996": {
+   "title": "International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine",
+   "quotes": [
+    "These studies show that short and long-term supplementation (up to 30 g/day for 5 years) is safe and well-tolerated in healthy individuals",
+    "can play a role in preventing and/or reducing the severity of injury, enhancing rehabilitation from injuries"
+   ]
+  },
+  "33557850": {
+   "title": "Common questions and misconceptions about creatine supplementation: what does the scientific evidence really show?",
+   "quotes": [
+    "5. Does creatine lead to dehydration and muscle cramping?"
+   ]
+  },
+  "18184753": {
+   "title": "Putting to rest the myth of creatine supplementation leading to muscle cramps and dehydration",
+   "quotes": [
+    "a fallacy appears to exist among the general public, driven by media claims and anecdotal reports, that creatine supplementation can result in muscle cramps and dehydration",
+    "a recent position statement by the American College of Sports Medicine (ACSM) in 2000 advised individuals who are managing their weight and exercising intensely or in hot environments to avoid creatine supplementation",
+    "little evidence exists that creatine supplementation in the heat presents additional risk"
+   ]
+  },
+  "19295968": {
+   "title": "Does creatine supplementation hinder exercise heat tolerance or hydration status? A systematic review with meta-analyses",
+   "quotes": [
+    "Ten studies were selected on the basis of inclusion and exclusion criteria.",
+    "No evidence supports the concept that creatine supplementation either hinders the body's ability to dissipate heat or negatively affects the athlete's body fluid balance."
+   ]
+  },
+  "11403120": {
+   "title": "The effects of creatine dietary supplementation on anterior compartment pressure in the lower leg during rest and following exercise",
+   "quotes": [
+    "14 college-age males received creatine or placebo supplementation for 34 days",
+    "Subjects and investigators were blinded as to treatment administration.",
+    "These data indicate that creatine supplementation abnormally increases anterior compartment pressure in the lower leg at rest and following 20 minutes of level running at 80% of maximal aerobic power."
+   ]
+  },
+  "12937519": {
+   "title": "Elevated Anterior Compartment Pressure in the Leg After Creatine Supplementation: A Controlled Case Report",
+   "quotes": [
+    "To report abnormal changes in lower leg anterior compartment pressure in 1 subject who consumed creatine as a dietary supplement.",
+    "Anterior compartment pressure decreased after cessation of creatine supplementation.",
+    "These data indicate that creatine supplementation can substantially increase anterior compartment pressure in the leg."
+   ]
+  },
+  "16619092": {
+   "title": "Creatine supplementation and anterior compartment pressure during exercise in the heat in dehydrated men",
+   "quotes": [
+    "Double-blind, randomized, crossover design.",
+    "Eleven well-trained, non- heat-acclimated, healthy males",
+    "but the changes did not induce symptoms and the pressure changes were transient."
+   ]
+  },
+  "12937471": {
+   "title": "Creatine Supplementation Increases Total Body Water Without Altering Fluid Distribution",
+   "quotes": [
+    "Sixteen men",
+    "16 women",
+    "The Cr supplementation protocol was effective for increasing muscle Cr concentrations, body mass, and TBW; however, fluid distribution was not changed."
+   ]
+  },
+  "32916658": {
+   "title": "Creatine Supplementation Does Not Influence the Ratio Between Intracellular Water and Skeletal Muscle Mass in Resistance-Trained Men",
+   "quotes": [
+    "Twenty-seven resistance-trained men received either Cr (n = 14) or placebo (n = 13) over 8 weeks.",
+    "The SMM/ICW ratio did not change in either group (p > .05)",
+    "the increase in muscle mass induced by Cr combined with resistance training occurs without alteration of the ratio of ICW to SMM in resistance-trained men"
+   ]
+  },
+  "36960692": {
+   "title": "Creatine monohydrate supplementation changes total body water and DXA lean mass estimates in female collegiate dancers",
+   "quotes": [
+    "CR demonstrated a significant increase in TBW",
+    "larger samples sizes with resistance training are needed to determine if CR supplementation increases muscle mass"
+   ]
+  },
+  "40198156": {
+   "title": "Safety of creatine supplementation: analysis of the prevalence of reported side effects in clinical trials and adverse event reports",
+   "quotes": [
+    "This study evaluated side effects reported from 685 human clinical trials on creatine supplementation",
+    "A total of 13,452 participants in 652 studies ingested placebos (PLA), while 12,839 participants in 685 studies consumed creatine (Cr).",
+    "Side effects were reported in 13.2% of studies in the PLA groups and 13.7% of studies in the Cr-supplemented groups, with no significant differences observed between the groups (p = 0.776).",
+    "muscle cramping/pain (PLA 0.9%, Cr 2.9%, p = 0.008)",
+    "muscle cramping/pain: PLA 0.07%, Cr 0.52%, p = 0.085; GI issues: PLA 4.05%, Cr 5.51%, p = 0.820",
+    "no significant difference in the total frequency of side effects reported among participants (PLA 4.21%, Cr 4.60%, p = 0.828)",
+    "63% of AERs with Cr in the product involved the use of other types of Cr or ingestion with other supplements or drugs"
+   ]
+  },
+  "42043069": {
+   "title": "Creatine Supplementation Dose and Duration Are Not Associated with Increased Side Effects: A Structured Review and Study-Level Dose-Response Analysis of Randomized Controlled Trials",
+   "quotes": [
+    "Data from trials involving more than 12,800 participants within CrM and placebo study arms of 684 randomized clinical trials were analyzed.",
+    "does not increase the risk of gastrointestinal, renal, liver, musculoskeletal, or other SEs compared to placebo, even at high doses or longer durations"
+   ]
+  },
+  "10959929": {
+   "title": "Creatine supplementation patterns and perceived effects in select division I collegiate athletes",
+   "quotes": [
+    "Of the 219 athletes surveyed, 90 (41%) reported using creatine",
+    "Creatine users (34 athletes, 38%) reporting perceived negative effects",
+    "the perceived negative effects (cramping/gastrointestinal distress) were consistent with anecdotal reports surrounding creatine supplementation"
+   ]
+  },
+  "41952948": {
+   "title": "Exercise-Induced Rhabdomyolysis With Supplements (Creatine, β-Alanine, Citrulline Malate, and β-Ecdysterone)",
+   "quotes": [
+    "We report the case of a 23-year-old physically active man admitted with severe myalgia, muscle weakness, fever, and dark brown urine following a prolonged (>4 hours) resistance training session.",
+    "This case highlights the potential risk of severe rhabdomyolysis associated with intensive exercise combined with multi-ingredient supplementation."
+   ]
+  },
+  "40304760": {
+   "title": "Acute kidney injury with cast nephropathy following creatine loading in a 17-year-old",
+   "quotes": [
+    "This case highlights a 17-year-old male who developed acute kidney injury (AKI) with cast nephropathy following a 6-day high-dose creatine loading regimen.",
+    "the absence of rhabdomyolysis markers"
+   ]
+  },
+  "41704196": {
+   "title": "Effectiveness of a soccer injury prevention program based on creatine supplementation and internal load monitoring: a randomized controlled pilot study",
+   "quotes": [
+    "A 14-week randomized controlled pilot trial was conducted with 23 amateur soccer players",
+    "Injury incidence was lower with creatine (8.3%) than placebo (36.4%) (RR = 0.23, 95% CI 0.03-1.75; p = 0.155)."
+   ]
+  },
+  "41328005": {
+   "title": "Safety of long-term creatine supplementation in women's football players: a real-world in-season study",
+   "quotes": [
+    "in 71 female athletes from youth and professional football teams",
+    "All analytes, except creatine phosphokinase (CPK), remained within reference ranges.",
+    "CPK levels variation likely reflected training load rather than supplementation effects."
+   ]
+  },
+  "35218552": {
+   "title": "The Paradoxical Effect of Creatine Monohydrate on Muscle Damage Markers: A Systematic Review and Meta-Analysis",
+   "quotes": [
+    "In total, 23 studies were included",
+    "the CrM group exhibited significantly lower indirect muscle damage markers (i.e., creatine kinase, lactate dehydrogenase, and/or myoglobin) at 48-90 h post-exercise for the acute training response (SMD - 1.09; p = 0.03)",
+    "However, indirect muscle damage markers were significantly greater in the CrM group at 24 h post-exercise (SMD 0.95; p = 0.04) for the chronic training response.",
+    "although training-induced stress could be exacerbated following long-term supplementation of CrM"
+   ]
+  },
+  "30089501": {
+   "title": "Multi-ingredient pre-workout supplements, safety implications, and performance outcomes: a brief review",
+   "quotes": [
+    "many formulations may intentionally contain banned substances as ingredients or unintentionally as contaminants",
+    "the widespread use of \"proprietary blends\" that do not disclose specific amounts of ingredients",
+    "most studies that have assessed the safety of MIPS are relatively short (less than eight weeks)"
+   ]
+  },
+  "36639595": {
+   "title": "Review of Case Reports on Adverse Events Related to Pre-workout Supplements Containing Synephrine",
+   "quotes": [
+    "We obtained 30 case reports describing a total of 35 patients who suffered from medical complaints following use of synephrine-containing supplements.",
+    "However, we cannot exclude a role of possible confounding factors such as caffeine."
+   ]
+  }
+ },
+ "full_text_quotes": {
+  "PMC11983583.txt": [
+   "he serves as Chair of the Scientific Advisory Board for AlzChem (a company that makes creatine monohydrate)",
+   "charges for the publication of this paper will be funded by Alzchem Group AG",
+   "found that creatine supplementation did not increase the incidence of musculoskeletal injuries"
+  ],
+  "PMC13120166.txt": [
+   "he serves as Chair of the Scientific Advisory Board for AlzChem (a company that makes creatine monohydrate)"
+  ],
+  "PMC7871530.txt": [
+   "JA is Chief Executive Officer of the ISSN, an academic non-profit that receives support and/or sponsorship from companies that manufacture and/or sell creatine or creatine-containing products.",
+   "DGC serves on the Scientific Advisory Board for Alzchem (a company which manufactures creatine)",
+   "found no increase in serum creatinine in 12 studies, 8 studies showed an increase that remained within the normal range",
+   "these additional case reports were confounded by medications, pre-existing kidney disease, concomitant supplement ingestion",
+   "In the early 2000’s, with limited data and based primarily on speculation, the American College of Sports Medicine (ACSM) recommended that individuals controlling their weight and exercising intensely or in hot environments should avoid the use of creatine supplementation"
+  ],
+  "PMC5469049.txt": [
+   "Support to prepare this manuscript was provided by the Council for Responsible Nutrition.",
+   "is a university approved scientific advisor for Nutrabolt"
+  ],
+  "PMC12918267.txt": [
+   "The authors declare no financial or other conflicts of interest related to this work.",
+   "The study received no external funding."
+  ]
+ },
+ "charts": {
+  "greenwood_3season_share_of_injuries_in_creatine_users_pct": {
+   "use_rate_range": [
+    34,
+    56
+   ],
+   "cramping": 39,
+   "heat_dehydration": 36,
+   "muscle_tightness": 43,
+   "muscle_strains": 49,
+   "noncontact_joint": 33,
+   "contact": 44,
+   "illness": 44,
+   "missed_practices": 46,
+   "lost_for_season": 38,
+   "total": 39
+  },
+  "kreider2025_participants_reporting_pct": {
+   "any_side_effect": [
+    4.21,
+    4.6
+   ],
+   "muscle_cramping_pain": [
+    0.07,
+    0.52
+   ],
+   "gi_issues": [
+    4.05,
+    5.51
+   ],
+   "studies_reporting_any": [
+    13.2,
+    13.7
+   ],
+   "order": [
+    "placebo",
+    "creatine"
+   ]
+  }
+ }
+}
