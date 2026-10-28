@@ -3,6 +3,306 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/peptide-reconstitution-calculator",
+      "destination": "https://millenaut.com/peptide-reconstitution-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-reconstitution-calculator.html",
+      "destination": "https://millenaut.com/peptide-reconstitution-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-reconstitution-calculator/",
+      "destination": "https://millenaut.com/peptide-reconstitution-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/peptide-reconstitution-calculator/index.html",
+      "destination": "https://millenaut.com/peptide-reconstitution-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/peptides",
+      "destination": "https://millenaut.com/peptides",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/",
+      "destination": "https://millenaut.com/peptides",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/bpc-157.html",
+      "destination": "https://millenaut.com/peptides/bpc-157.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/cjc-1295.html",
+      "destination": "https://millenaut.com/peptides/cjc-1295.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/epitalon.html",
+      "destination": "https://millenaut.com/peptides/epitalon.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/ghk-cu.html",
+      "destination": "https://millenaut.com/peptides/ghk-cu.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/index.html",
+      "destination": "https://millenaut.com/peptides",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/ipamorelin.html",
+      "destination": "https://millenaut.com/peptides/ipamorelin.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/kpv.html",
+      "destination": "https://millenaut.com/peptides/kpv.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/mots-c.html",
+      "destination": "https://millenaut.com/peptides/mots-c.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/selank.html",
+      "destination": "https://millenaut.com/peptides/selank.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/semax.html",
+      "destination": "https://millenaut.com/peptides/semax.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/ss-31.html",
+      "destination": "https://millenaut.com/peptides/ss-31.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/tb-500.html",
+      "destination": "https://millenaut.com/peptides/tb-500.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/tesamorelin.html",
+      "destination": "https://millenaut.com/peptides/tesamorelin.html",
+      "permanent": true
+    },
+    {
+      "source": "/peptides/thymalin.html",
+      "destination": "https://millenaut.com/peptides/thymalin.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/aod-9604-fat-loss-peptide-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/aod-9604-fat-loss-peptide-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/ara-290-cibinetide-neuropathy-peptide-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/ara-290-cibinetide-neuropathy-peptide-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/bpc-157-origins-teardown.html",
+      "destination": "https://millenaut.com/research/bpc-157-origins-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/cerebrolysin-brain-peptide-nootropic-stroke-dementia-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/cerebrolysin-brain-peptide-nootropic-stroke-dementia-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/cjc-1295-ipamorelin-growth-hormone-teardown.html",
+      "destination": "https://millenaut.com/research/cjc-1295-ipamorelin-growth-hormone-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/dihexa-nootropic-peptide-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/dihexa-nootropic-peptide-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/dmso-dimethyl-sulfoxide-als-pain-cancer-teardown.html",
+      "destination": "https://millenaut.com/research/dmso-dimethyl-sulfoxide-als-pain-cancer-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/dsip-emideltide-delta-sleep-inducing-peptide-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/dsip-emideltide-delta-sleep-inducing-peptide-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/epitalon-thymalin-khavinson-teardown.html",
+      "destination": "https://millenaut.com/research/epitalon-thymalin-khavinson-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/fda-peptide-compounding-policy-2026.html",
+      "destination": "https://millenaut.com/research/fda-peptide-compounding-policy-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/fda-peptide-compounding-status-tracker-2026.html",
+      "destination": "https://millenaut.com/research/fda-peptide-compounding-status-tracker-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/folic-acid-uk-flour-fortification-cancer-b12-petition.html",
+      "destination": "https://millenaut.com/research/folic-acid-uk-flour-fortification-cancer-b12-petition.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/ghk-cu-copper-peptide-teardown.html",
+      "destination": "https://millenaut.com/research/ghk-cu-copper-peptide-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/glutathione-iv-drip-injection-outbreak-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/glutathione-iv-drip-injection-outbreak-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/ivermectin-mebendazole-cancer-review-retractions-evidence.html",
+      "destination": "https://millenaut.com/research/ivermectin-mebendazole-cancer-review-retractions-evidence.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/kisspeptin-10-testosterone-fertility-libido-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/kisspeptin-10-testosterone-fertility-libido-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/kpv-peptide-gut-inflammation-teardown.html",
+      "destination": "https://millenaut.com/research/kpv-peptide-gut-inflammation-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/ll-37-cathelicidin-peptide-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/ll-37-cathelicidin-peptide-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/melanotan-ii-mt2-tanning-nasal-spray-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/melanotan-ii-mt2-tanning-nasal-spray-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/metformin-longevity-anti-aging-tame-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/metformin-longevity-anti-aging-tame-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/methylene-blue-nootropic-longevity-mitochondria-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/methylene-blue-nootropic-longevity-mitochondria-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/mk-677-ibutamoren-growth-hormone-secretagogue-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/mk-677-ibutamoren-growth-hormone-secretagogue-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/mots-c-exercise-in-a-shot-teardown.html",
+      "destination": "https://millenaut.com/research/mots-c-exercise-in-a-shot-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/nad-plus-injections-iv-anti-aging-teardown.html",
+      "destination": "https://millenaut.com/research/nad-plus-injections-iv-anti-aging-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/oral-minoxidil-vdphl01-veradermics-hair-loss-pill.html",
+      "destination": "https://millenaut.com/research/oral-minoxidil-vdphl01-veradermics-hair-loss-pill.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/peg-mgf-mechano-growth-factor-peptide-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/peg-mgf-mechano-growth-factor-peptide-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/peptide-policy-white-house-meeting-aapm.html",
+      "destination": "https://millenaut.com/research/peptide-policy-white-house-meeting-aapm.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/pt-141-bremelanotide-vyleesi-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/pt-141-bremelanotide-vyleesi-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/rapamycin-sirolimus-longevity-anti-aging-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/rapamycin-sirolimus-longevity-anti-aging-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/selank-anxiety-teardown.html",
+      "destination": "https://millenaut.com/research/selank-anxiety-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/semax-ischemic-stroke-teardown.html",
+      "destination": "https://millenaut.com/research/semax-ischemic-stroke-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/senolytics-fisetin-dasatinib-quercetin-longevity-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/senolytics-fisetin-dasatinib-quercetin-longevity-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/sermorelin-growth-hormone-peptide-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/sermorelin-growth-hormone-peptide-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/slu-pp-332-exercise-pill-err-agonist-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/slu-pp-332-exercise-pill-err-agonist-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/ss-31-elamipretide-mitochondria-aging-teardown.html",
+      "destination": "https://millenaut.com/research/ss-31-elamipretide-mitochondria-aging-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/taurine-aging-longevity-inflammaging-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/taurine-aging-longevity-inflammaging-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/tb-500-thymosin-beta-4-teardown.html",
+      "destination": "https://millenaut.com/research/tb-500-thymosin-beta-4-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/thymosin-alpha-1-ta1-zadaxin-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/thymosin-alpha-1-ta1-zadaxin-evidence-teardown.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/tiktok-peptide-search-block-bpc-157-tb-500-semaglutide-evidence.html",
+      "destination": "https://millenaut.com/research/tiktok-peptide-search-block-bpc-157-tb-500-semaglutide-evidence.html",
+      "permanent": true
+    },
+    {
+      "source": "/research/urolithin-a-mitopure-mitophagy-longevity-evidence-teardown.html",
+      "destination": "https://millenaut.com/research/urolithin-a-mitopure-mitophagy-longevity-evidence-teardown.html",
+      "permanent": true
+    },
+    {
       "source": "/consumer-health-data",
       "destination": "https://www.bridgerapps.com/jabbit/consumer-health-data/",
       "permanent": true
@@ -28,28 +328,23 @@
       "permanent": true
     },
     {
-      "source": "/peptide-reconstitution-calculator.html",
-      "destination": "/peptide-reconstitution-calculator",
-      "permanent": true
-    },
-    {
       "source": "/bpc-157-complete-guide.html",
-      "destination": "/peptides/bpc-157.html",
+      "destination": "https://millenaut.com/peptides/bpc-157.html",
       "permanent": true
     },
     {
       "source": "/bpc-157-complete-guide",
-      "destination": "/peptides/bpc-157.html",
+      "destination": "https://millenaut.com/peptides/bpc-157.html",
       "permanent": true
     },
     {
       "source": "/tb-500-thymosin-beta-guide.html",
-      "destination": "/peptides/tb-500.html",
+      "destination": "https://millenaut.com/peptides/tb-500.html",
       "permanent": true
     },
     {
       "source": "/tb-500-thymosin-beta-guide",
-      "destination": "/peptides/tb-500.html",
+      "destination": "https://millenaut.com/peptides/tb-500.html",
       "permanent": true
     },
     {
@@ -94,12 +389,12 @@
     },
     {
       "source": "/peptide-reconstitution-guide.html",
-      "destination": "/peptide-reconstitution-calculator",
+      "destination": "https://millenaut.com/peptide-reconstitution-calculator",
       "permanent": true
     },
     {
       "source": "/peptide-reconstitution-guide",
-      "destination": "/peptide-reconstitution-calculator",
+      "destination": "https://millenaut.com/peptide-reconstitution-calculator",
       "permanent": true
     },
     {
@@ -194,12 +489,12 @@
     },
     {
       "source": "/biological-age-test-tracker.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/biological-age-test-tracker",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
@@ -524,12 +819,12 @@
     },
     {
       "source": "/glp1-longevity-labs-tracker.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/glp1-longevity-labs-tracker",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
@@ -664,12 +959,12 @@
     },
     {
       "source": "/life-extension-protocol-tracker.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/life-extension-protocol-tracker",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
@@ -684,12 +979,12 @@
     },
     {
       "source": "/longevity-biomarker-tracker.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/longevity-biomarker-tracker",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
@@ -924,52 +1219,52 @@
     },
     {
       "source": "/peptide-appetite-energy-log.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-appetite-energy-log",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-batch-lot-vendor-notes-log.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-batch-lot-vendor-notes-log",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-dose-log.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-dose-log",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-injection-schedule-tracker.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-injection-schedule-tracker",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-missed-dose-tracker.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-missed-dose-tracker",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
@@ -984,22 +1279,22 @@
     },
     {
       "source": "/peptide-protocol-tracker.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-protocol-tracker",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-recovery-sleep-log.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-recovery-sleep-log",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
@@ -1014,52 +1309,52 @@
     },
     {
       "source": "/peptide-side-effect-log.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-side-effect-log",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-side-effect-timeline.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-side-effect-timeline",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-storage-stability-guide.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-storage-stability-guide",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-tracker.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-tracker",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-what-to-track.html",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
       "source": "/peptide-what-to-track",
-      "destination": "/peptides",
+      "destination": "https://millenaut.com/peptides",
       "permanent": true
     },
     {
@@ -1264,12 +1559,12 @@
     },
     {
       "source": "/retatrutide-storage-stability-guide.html",
-      "destination": "/peptide-reconstitution-calculator",
+      "destination": "https://millenaut.com/peptide-reconstitution-calculator",
       "permanent": true
     },
     {
       "source": "/retatrutide-storage-stability-guide",
-      "destination": "/peptide-reconstitution-calculator",
+      "destination": "https://millenaut.com/peptide-reconstitution-calculator",
       "permanent": true
     },
     {

@@ -1,4 +1,4 @@
-// Shared JS: mobile nav + lightweight analytics
+// Shared JS: mobile nav, App Store link handling
 (() => {
   // -----------------
   // Mobile nav toggle
@@ -97,56 +97,9 @@
     try { return navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1'; } catch (_) { return false; }
   })();
 
-  const sendTrack = (event, target = '') => {
-    if (optedOut) return;
-    const payload = {
-      event,
-      page: location.pathname || '/',
-      target,
-      ref: cleanRef(document.referrer || ''),
-      ...utm,
-      ts: Date.now(),
-    };
-
-    // Guard against duplicate click events from nested handlers or rapid taps.
-    const dedupeKey = `${payload.event}|${payload.page}|${payload.target}`;
-    const now = Date.now();
-    const lastSentAt = recentTrackKeys.get(dedupeKey) || 0;
-    if (now - lastSentAt < 1500) return;
-    recentTrackKeys.set(dedupeKey, now);
-
-    // Prefer same-origin proxy endpoint to avoid mixed-content issues.
-    const url = '/api/track';
-
-    try {
-      if (navigator.sendBeacon) {
-        const blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
-        navigator.sendBeacon(url, blob);
-        return;
-      }
-    } catch (_) {}
-
-    // Keepalive fetch for non-Beacon browsers.
-    fetch(url, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify(payload),
-      keepalive: true,
-      credentials: 'omit',
-    }).catch(() => {
-      // Fallback: GET "pixel" hit to our same-origin proxy endpoint.
-      // (No secrets in the browser; server will attach secret when forwarding.)
-      const q = new URLSearchParams({
-        event,
-        page: payload.page,
-        target: target || '',
-        ref: payload.ref || '',
-        ...utm,
-      });
-      const img = new Image();
-      img.src = `/api/track?${q.toString()}`;
-    });
-  };
+  // Visits are counted by Cloudflare Web Analytics at the edge (cookieless; privacy policy 8.5).
+  // Page code sends nothing: the old /api/track counter went with the move off Vercel.
+  const sendTrack = () => {};
 
   // One pageview per page load
   // Skip internal health-check/test routes so we don't pollute funnel metrics.

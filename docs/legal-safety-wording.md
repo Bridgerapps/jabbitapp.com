@@ -57,10 +57,18 @@ policy page: `/research/editorial-standards.html`.
       health data (`/consumer-health-data`, which Washington's My Health My Data Act
       requires on the homepage) and Terms. Add no third-party scripts, pixels, ad tags,
       embeds or session replay (Meta Pixel, GA4, Hotjar, YouTube embeds and the like); Google
-      Fonts is the only outside host allowed. Visit counting goes only through
-      `assets/site.js` and `api/track.js`, which section 8.5 of the privacy policy describes:
-      changing what they send means updating that section first. Tools compute in the
-      browser and never put what the user typed into the URL or a tracked event.
+      Fonts is the only outside host allowed. The site is hosted on Cloudflare (`wrangler.jsonc`,
+      `worker/index.js`); visits are counted only by Cloudflare Web Analytics, set up in the
+      Cloudflare dashboard (cookieless, no page code), as section 8.5 of the privacy policy
+      describes. Don't add tracking code to pages. Tools compute in the browser and never put
+      what the user typed into the URL.
+- [ ] **What belongs here (since 2026-10-28):** jabbitapp.com covers GLP-1 and other
+      obesity medicines, TRT, IVF medicines, injection tracking and the app. Peptide, longevity,
+      nootropic and wellness-trend teardowns belong on millenaut.com (repo
+      Bridgerapps/millenaut.com), an independent site with no Jabbit links or CTAs; never
+      publish them here. Pages that moved are listed in `_redirects` and `vercel.json`; don't
+      recreate them. IVF pages follow the Jabbit app's `docs/IVF_DEVICE_BOUNDARY.md`: FDA label
+      facts only (cited and dated), no dose or timing calculations, no technique guides.
 - [ ] **Dated facts:** "only", "first", "no one else" claims about a live record
       (meeting logs, registries) must carry an "as of" date, and get re-checked
       before any X post that repeats them.

@@ -1,0 +1,19 @@
+{
+  // Cloudflare Worker with static assets. Deploy: npx wrangler deploy (after `npx wrangler login`).
+  // Pages are served exactly as written (html_handling "none"), so every .html URL stays the same.
+  "name": "jabbitapp",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "none",
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "jabbitapp.com", "custom_domain": true },
+    { "pattern": "www.jabbitapp.com", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
