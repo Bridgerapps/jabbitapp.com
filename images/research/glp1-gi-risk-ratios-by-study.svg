@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 648" width="760" height="648" role="img" aria-labelledby="t2 d2">
+<title id="t2">Same question, different answers: GLP-1 GI risk by study</title>
+<desc id="d2">Same question, different answers: GLP-1 GI risk by study. Pancreatitis, JAMA 2023 letter (vs bupropion-naltrexone): 9.09 (1.25-66.0). Pancreatitis, Dig Dis Sci 2026 (TriNetX, vs no GLP-1): 2.85 (1.82-4.48). Pancreatitis, Shanghai preprint 2026 (vs DPP-4i): 1.31 (0.74-2.34). Pancreatitis, Meta-analysis, 52 obesity studies (2026): 1.29 (0.91-1.84). Bowel obstruction, JAMA 2023 letter (vs bupropion-naltrexone): 4.22 (1.02-17.4). Bowel obstruction, Meta-analysis, 6 studies (2026): 1.95 (0.43-8.79). Bowel obstruction, Shanghai preprint 2026 (vs DPP-4i): 1.02 (0.6-1.74). Bowel obstruction, Dig Dis Sci 2026 (TriNetX, vs no GLP-1): 0.86 (0.8-0.92). Gastroparesis, JAMA 2023 letter (vs bupropion-naltrexone): 3.67 (1.15-11.9). Gastroparesis, Shanghai preprint 2026 (vs DPP-4i): 1.99 (1.4-2.81). Gastroparesis, Dig Dis Sci 2026 (TriNetX, vs no GLP-1): 1.57 (1.43-1.73).</desc>
+<rect width="760" height="648" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Same question, different answers: GLP-1 GI risk by study</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Reported hazard or odds ratio with 95% CI (log scale). Right of the line = higher risk on GLP-1.</text>
+<line x1="380.0" y1="84" x2="380.0" y2="564" stroke="#e2e8f0" stroke-width="1"/>
+<text x="380.0" y="580" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0.25</text>
+<line x1="423.1" y1="84" x2="423.1" y2="564" stroke="#e2e8f0" stroke-width="1"/>
+<text x="423.1" y="580" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0.5</text>
+<line x1="466.1" y1="84" x2="466.1" y2="564" stroke="#0f172a" stroke-width="1.5"/>
+<text x="466.1" y="580" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">1</text>
+<line x1="509.2" y1="84" x2="509.2" y2="564" stroke="#e2e8f0" stroke-width="1"/>
+<text x="509.2" y="580" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">2</text>
+<line x1="566.1" y1="84" x2="566.1" y2="564" stroke="#e2e8f0" stroke-width="1"/>
+<text x="566.1" y="580" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">5</text>
+<line x1="609.1" y1="84" x2="609.1" y2="564" stroke="#e2e8f0" stroke-width="1"/>
+<text x="609.1" y="580" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">10</text>
+<line x1="666.0" y1="84" x2="666.0" y2="564" stroke="#e2e8f0" stroke-width="1"/>
+<text x="666.0" y="580" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">25</text>
+<line x1="730.0" y1="84" x2="730.0" y2="564" stroke="#e2e8f0" stroke-width="1"/>
+<text x="730.0" y="580" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">70</text>
+<text x="24" y="110" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Pancreatitis</text>
+<text x="24" y="144" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">JAMA 2023 letter (vs bupropion-naltrexone)</text>
+<line x1="480.0" y1="140" x2="726.3" y2="140" stroke="#0f766e" stroke-width="2.5"/>
+<rect x="598.2" y="135" width="10" height="10" fill="#0f766e"/>
+<text x="726.0" y="132" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="end">9.09 (1.25-66)</text>
+<text x="24" y="174" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Dig Dis Sci 2026 (TriNetX, vs no GLP-1)</text>
+<line x1="503.3" y1="170" x2="559.3" y2="170" stroke="#0f766e" stroke-width="2.5"/>
+<rect x="526.2" y="165" width="10" height="10" fill="#0f766e"/>
+<text x="565.3" y="162" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">2.85 (1.82-4.48)</text>
+<text x="24" y="204" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Shanghai preprint 2026 (vs DPP-4i)</text>
+<line x1="447.4" y1="200" x2="518.9" y2="200" stroke="#94a3b8" stroke-width="2.5"/>
+<rect x="477.9" y="195" width="10" height="10" fill="#94a3b8"/>
+<text x="524.9" y="192" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">1.31 (0.74-2.34)</text>
+<text x="24" y="234" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Meta-analysis, 52 obesity studies (2026)</text>
+<line x1="460.3" y1="230" x2="504.0" y2="230" stroke="#94a3b8" stroke-width="2.5"/>
+<rect x="476.9" y="225" width="10" height="10" fill="#94a3b8"/>
+<text x="510.0" y="222" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">1.29 (0.91-1.84)</text>
+<text x="24" y="264" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Bowel obstruction</text>
+<text x="24" y="298" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">JAMA 2023 letter (vs bupropion-naltrexone)</text>
+<line x1="467.3" y1="294" x2="643.5" y2="294" stroke="#0f766e" stroke-width="2.5"/>
+<rect x="550.5" y="289" width="10" height="10" fill="#0f766e"/>
+<text x="649.5" y="286" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">4.22 (1.02-17.4)</text>
+<text x="24" y="328" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Meta-analysis, 6 studies (2026)</text>
+<line x1="413.7" y1="324" x2="601.1" y2="324" stroke="#94a3b8" stroke-width="2.5"/>
+<rect x="502.6" y="319" width="10" height="10" fill="#94a3b8"/>
+<text x="607.1" y="316" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">1.95 (0.43-8.79)</text>
+<text x="24" y="358" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Shanghai preprint 2026 (vs DPP-4i)</text>
+<line x1="434.4" y1="354" x2="500.5" y2="354" stroke="#94a3b8" stroke-width="2.5"/>
+<rect x="462.3" y="349" width="10" height="10" fill="#94a3b8"/>
+<text x="506.5" y="346" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">1.02 (0.6-1.74)</text>
+<text x="24" y="388" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Dig Dis Sci 2026 (TriNetX, vs no GLP-1)</text>
+<line x1="452.2" y1="384" x2="460.9" y2="384" stroke="#94a3b8" stroke-width="2.5"/>
+<rect x="451.7" y="379" width="10" height="10" fill="#94a3b8"/>
+<text x="466.9" y="376" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">0.86 (0.8-0.92)</text>
+<text x="24" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Gastroparesis</text>
+<text x="24" y="452" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">JAMA 2023 letter (vs bupropion-naltrexone)</text>
+<line x1="474.8" y1="448" x2="619.9" y2="448" stroke="#0f766e" stroke-width="2.5"/>
+<rect x="541.9" y="443" width="10" height="10" fill="#0f766e"/>
+<text x="625.9" y="440" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">3.67 (1.15-11.9)</text>
+<text x="24" y="482" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Shanghai preprint 2026 (vs DPP-4i)</text>
+<line x1="487.0" y1="478" x2="530.3" y2="478" stroke="#0f766e" stroke-width="2.5"/>
+<rect x="503.9" y="473" width="10" height="10" fill="#0f766e"/>
+<text x="536.3" y="470" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">1.99 (1.4-2.81)</text>
+<text x="24" y="512" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Dig Dis Sci 2026 (TriNetX, vs no GLP-1)</text>
+<line x1="488.3" y1="508" x2="500.2" y2="508" stroke="#0f766e" stroke-width="2.5"/>
+<rect x="489.1" y="503" width="10" height="10" fill="#0f766e"/>
+<text x="506.2" y="500" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="start">1.57 (1.43-1.73)</text>
+<text x="24" y="602" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Teal = whole CI above 1; gray = CI includes 1 or is below 1. Not pooled: comparators, populations and designs differ.</text>
+<text x="24" y="618" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Shanghai study: Research Square preprint, not peer-reviewed. Also JAMA 2023, Dig Dis Sci 2026, Horm Metab Res 2026, EODS 2026.</text>
+<text x="24" y="634" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>

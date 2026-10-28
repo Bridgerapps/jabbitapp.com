@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="760" height="520" role="img" aria-labelledby="t1 d1">
+<title id="t1">Behind the viral '9x pancreatitis' number: the case counts</title>
+<desc id="d1">Behind the viral '9x pancreatitis' number: the case counts. Pancreatitis: semaglutide 4.6 (2 cases), liraglutide 7.9 (71 cases), bupropion-naltrexone 1.0 (1 cases). Bowel obstruction: semaglutide 0 (0 cases), liraglutide 8.1 (73 cases), bupropion-naltrexone 1.7 (2 cases). Gastroparesis: semaglutide 9.1 (4 cases), liraglutide 7.3 (66 cases), bupropion-naltrexone 3.1 (3 cases).</desc>
+<rect width="760" height="520" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Behind the viral '9x pancreatitis' number: the case counts</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Cases per 1,000 person-years (number of cases), JAMA 2023 claims study. Comparator: 1 pancreatitis case.</text>
+<rect x="24" y="72" width="12" height="12" rx="2" fill="#0f766e"/><text x="42" y="82" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Semaglutide (613 users)</text>
+<rect x="215" y="72" width="12" height="12" rx="2" fill="#6366f1"/><text x="233" y="82" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Liraglutide (4,144)</text>
+<rect x="378" y="72" width="12" height="12" rx="2" fill="#94a3b8"/><text x="396" y="82" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Bupropion-naltrexone (654)</text>
+<text x="24" y="116" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Pancreatitis</text>
+<rect x="24" y="124" width="220.8" height="20" rx="3" fill="#0f766e"/>
+<text x="252.8" y="139" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">4.6 (2 cases)</text>
+<rect x="24" y="150" width="379.2" height="20" rx="3" fill="#6366f1"/>
+<text x="411.2" y="165" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">7.9 (71 cases)</text>
+<rect x="24" y="176" width="48.0" height="20" rx="3" fill="#94a3b8"/>
+<text x="80.0" y="191" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">1.0 (1 case)</text>
+<text x="24" y="228" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Bowel obstruction</text>
+<rect x="24" y="236" width="2.0" height="20" rx="3" fill="#0f766e"/>
+<text x="34.0" y="251" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">0.0 (0 cases)</text>
+<rect x="24" y="262" width="388.8" height="20" rx="3" fill="#6366f1"/>
+<text x="420.8" y="277" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">8.1 (73 cases)</text>
+<rect x="24" y="288" width="81.6" height="20" rx="3" fill="#94a3b8"/>
+<text x="113.6" y="303" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">1.7 (2 cases)</text>
+<text x="24" y="340" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Gastroparesis</text>
+<rect x="24" y="348" width="436.8" height="20" rx="3" fill="#0f766e"/>
+<text x="468.8" y="363" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">9.1 (4 cases)</text>
+<rect x="24" y="374" width="350.4" height="20" rx="3" fill="#6366f1"/>
+<text x="382.4" y="389" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">7.3 (66 cases)</text>
+<rect x="24" y="400" width="148.8" height="20" rx="3" fill="#94a3b8"/>
+<text x="180.8" y="415" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">3.1 (3 cases)</text>
+<text x="24" y="474" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Sodhi et al., JAMA 2023;330(18):1795-1797, Table 1. US claims (PharMetrics Plus), 2006-2020, users with obesity and no diabetes.</text>
+<text x="24" y="490" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Adjusted HR for pancreatitis 9.09 (95% CI 1.25-66.00). Few events in the comparator make the ratio very imprecise.</text>
+<text x="24" y="506" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>

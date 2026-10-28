@@ -1,0 +1,242 @@
+{
+ "page": "https://jabbitapp.com/research/ozempic-zepbound-gastroparesis-pancreatitis-bowel-obstruction-risk-teardown.html",
+ "checked": "2026-10-28",
+ "note": "Quotes asserted against cached copies. Chart 1: Sodhi et al. JAMA 2023 Table 1 (incidence per 1000 person-years, event counts in brackets: semaglutide, liraglutide, bupropion-naltrexone). Chart 2: hazard/odds ratios with 95% CIs as reported in each abstract; different designs, comparators and populations, not pooled. The Shanghai study is a preprint and not peer-reviewed. JPML counts are pending civil actions (allegations), not findings.",
+ "pubmed_abstract_quotes": {
+  "42851139": [
+   "Gallbladder and biliary disease has the most consistent evidence supporting a causal association.",
+   "For thyroid cancer, NAION, suicidal behaviour and self-harm, acute pancreatitis and intestinal obstruction, evidence regarding causality remains uncertain.",
+   "Because these events are rare, even substantial relative risk increases generally correspond to small absolute risk increases in broad populations but may become relevant in patients with high baseline risk."
+  ],
+  "42894471": [
+   "Among 78,277 patients, 87% reported no baseline GI symptoms.",
+   "At 60 months, 53% reported at least one GISE, most commonly abdominal pain (28%) and nausea (25%).",
+   "Women were at higher risk of GISE than men (Kaplan-Meier HR 1.4).",
+   "Among 696 symptomatic patients clinically referred for GES after GLP-1RA initiation, 34.6% (N = 241) exhibited delayed GE.",
+   "Among the small, symptom-selected subgroup referred for testing, only a third had delayed GE."
+  ],
+  "42418075": [
+   "After matching, 164,987 patients were included in each cohort.",
+   "de-novo gastroparesis being 13%, 8.7%, and 0.7% respectively",
+   "gastroparesis (HR 1.57 [1.43, 1.73]), drug-induced pancreatitis (HR 2.85 [1.82, 4.48]) and a decreased risk of bowel obstruction (HR 0.86 [0.80, 0.92])",
+   "but emergency room (ER) visits (HR 0.96 [0.95, 0.98]) and hospital admissions (HR 0.92 [0.91, 0.94]) were lower in the GLP-1 cohort"
+  ],
+  "42244136": [
+   "Among 313 342 matched pairs of GLP-1 based therapies and SGLT-2i initiators",
+   "followed on treatment for a median of 5.2 months",
+   "incidence rates of the composite outcome were 1.02 among GLP-1 based therapies versus 0.75 among SGLT-2i initiators per 100 person-years",
+   "(rate difference 0.27 per 100 person-years; HR 1.37, 95% CI 1.30, 1.45) for the composite event and each individual component",
+   "The absolute risk of motility-related gastrointestinal adverse events was 1% or less but was higher among initiators of GLP-1 based therapies compared to SGLT-2i."
+  ],
+  "42684335": [
+   "The weighted 30-day absolute risk of motility-related GI events was 0.51% for oxycodone, 0.35% for hydrocodone, and 0.33% for tramadol.",
+   "We did not observe differences in the risk of gastroparesis."
+  ],
+  "40499738": [
+   "We included 55 randomized controlled trials involving 106,395 participants.",
+   "GLP-1RAs increased the risk of cholelithiasis (risk ratio [RR], 1.46; 95% CI, 1.09-1.97; 2 more cases per 1000)",
+   "probably increased the risk of GERD (RR, 2.19; 95% CI, 1.48-3.25; 4 more cases per 1000)",
+   "GLP-1RAs probably have little or no effect on the risk of other gastrointestinal or biliary events."
+  ],
+  "42600634": [
+   "This meta-analysis included 52 studies.",
+   "pancreatitis (odds ratio=1.29; 95% confidence interval: 0.91-1.84; p>0.05)"
+  ],
+  "39964295": [
+   "The use of GLP-1 RA did not show an incremental risk of bowel obstruction or ileus compared to controls (OR 1.95, 95% CI 0.43-8.79). However, the studies had high heterogeneity (I2 = 94%).",
+   "liraglutide was associated with a significantly high risk of bowel obstruction or ileus (OR 3.0, 95% CI 2.03-4.45; I2 = 0%)"
+  ],
+  "41596262": [
+   "Fifty RCTs (47 publications; 192,359 participants) met inclusion criteria.",
+   "liraglutide was associated with a lower risk of intestinal obstruction (OR 0.44, 95% CI 0.24-0.81)",
+   "No other GLP-1 receptor agonist or SGLT2 inhibitor demonstrated a statistically significant increase in obstruction risk."
+  ],
+  "38634551": [
+   "with a pooled mean difference of 36.0 minutes (95% CI 17.0-55.0, P < 0.01, I2 = 79.4%)",
+   "Ten studies (n = 411) utilized the acetaminophen absorption test, with no significant delay in gastric emptying"
+  ],
+  "35344001": [
+   "A total of 76 RCTs involving 103 371 patients",
+   "increased risks of gallbladder or biliary diseases (RR, 1.37; 95% CI, 1.23-1.52)",
+   "in trials for weight loss (n = 13; RR, 2.29; 95% CI, 1.64-3.18)"
+  ]
+ },
+ "sodhi_jama_2023_quotes": [
+  "We used a random sample of 16 million patients (2006-2020) from the PharMetrics Plus database (IQVIA)",
+  "Our cohort included 4144 liraglutide, 613 semaglutide, and 654 bupropion-naltrexone users.",
+  "Pancreatitis 4.6 (2) 7.9 (71) 1.0 (1) Bowel obstruction 0 8.1 (73) 1.7 (2) Gastroparesis 9.1 (4) 7.3 (66) 3.1 (3)",
+  "increased risk of pancreatitis (adjusted HR, 9.09 [95% CI, 1.25-66.00]), bowel obstruction (HR, 4.22 [95% CI, 1.02-17.40]), and gastroparesis (HR, 3.67 [95% CI, 1.15-11.90) but not biliary disease (HR, 1.50 [95% CI, 0.89-2.53])",
+  "Male 55.8 61.0 82.4",
+  "Limitations include that although all GLP-1 agonist users had a record for obesity without diabetes, whether GLP-1 agonists were all used for weight loss is uncertain.",
+  "Conflict of Interest Disclosures: None reported."
+ ],
+ "preprint_rs_11029518_quotes": [
+  "This is a preprint; it has not been peer reviewed by a journal",
+  "After 1:10 propensity score matching, 29,216 patients were included, comprising 2,656 GLP-1RA initiators and 26,560 DPP-4i initiators.",
+  "(hazard ratio [HR] 1.32, 95% confidence interval [CI] 1.08 to 1.61; P=0.006)",
+  "Gastroparesis showed the strongest signal (HR 1.99, 95% CI 1.40 to 2.81; P<0.001).",
+  "pancreatitis (HR 1.31, 95% CI 0.74 to 2.34), and intestinal obstruction (HR 1.02, 95% CI 0.60 to 1.74) were not significantly elevated"
+ ],
+ "wegovy_label_2026_06_quotes": [
+  "Revised: 06/2026",
+  "acute pancreatitis was confirmed by adjudication in 4 WEGOVY-treated patients (0.2 cases per 100 patient years) and 1 in placebo-treated patients (less than 0.1 cases per 100 patient years)",
+  "Severe gastrointestinal adverse reactions were reported in 4.1% and 0.9% of WEGOVY injection and placebo-treated patients, respectively",
+  "WEGOVY is not recommended in patients with severe gastroparesis.",
+  "ileus, intestinal obstruction, severe constipation including fecal impaction",
+  "cholelithiasis was reported by 1.6% of WEGOVY injection-treated patients and 0.7% of placebo-treated patients",
+  "which may include persistent or severe abdominal pain (sometimes radiating to the back), and which may or may not be accompanied by nausea or vomiting",
+  "There have been rare postmarketing reports of pulmonary aspiration in patients receiving GLP-1 receptor agonists undergoing elective surgeries or",
+  "it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure"
+ ],
+ "ozempic_injection_label": {
+  "set_id": "adec4fd2-6858-4c99-91d4-531f5f2a2d79",
+  "quotes": [
+   "acute pancreatitis was confirmed by adjudication in 7 OZEMPIC-treated patients (0.3 cases per 100 patient years) versus 3 in comparator-treated patients (0.2 cases per 100 patient years)",
+   "severe gastrointestinal adverse reactions were reported more frequently among patients receiving OZEMPIC (0.5 mg 0.4%, 1 mg 0.8%) than placebo (0%)",
+   "OZEMPIC is not recommended in patients with severe gastroparesis.",
+   "ileus, intestinal obstruction, severe constipation including fecal impaction"
+  ]
+ },
+ "zepbound_label": {
+  "set_id": "487cd7e7-434c-4925-99fa-aa80b1cc776b",
+  "effective": "20260828",
+  "quotes": [
+   "0.2% of ZEPBOUND-treated patients had acute pancreatitis confirmed by adjudication (0.14 patients per 100 years of exposure) versus 0.2% of placebo-treated patients (0.15 patients per 100 years of exposure)",
+   "severe gastrointestinal adverse reactions were reported more frequently among patients receiving ZEPBOUND (5 mg 1.7%, 10 mg 2.5%, 15 mg 3.1%) than placebo (1%)",
+   "ZEPBOUND is not recommended in patients with severe gastroparesis.",
+   "ileus, intestinal obstruction, severe constipation including fecal impaction"
+  ]
+ },
+ "jpml_2026_10_01_quotes": [
+  "Report Date: 10/1/2026",
+  "MDL -3094 IN RE: Glucagon-like Peptide-1 Receptor Agonists (GLP-1 RAs) Products Liability Litigation 4,025 4,139"
+ ],
+ "chart_data": {
+  "sodhi_per_1000py": [
+   [
+    "Pancreatitis",
+    [
+     4.6,
+     2
+    ],
+    [
+     7.9,
+     71
+    ],
+    [
+     1.0,
+     1
+    ]
+   ],
+   [
+    "Bowel obstruction",
+    [
+     0,
+     0
+    ],
+    [
+     8.1,
+     73
+    ],
+    [
+     1.7,
+     2
+    ]
+   ],
+   [
+    "Gastroparesis",
+    [
+     9.1,
+     4
+    ],
+    [
+     7.3,
+     66
+    ],
+    [
+     3.1,
+     3
+    ]
+   ]
+  ],
+  "forest": [
+   [
+    "Pancreatitis",
+    "JAMA 2023 letter (vs bupropion-naltrexone)",
+    9.09,
+    1.25,
+    66.0
+   ],
+   [
+    "Pancreatitis",
+    "Dig Dis Sci 2026 (TriNetX, vs no GLP-1)",
+    2.85,
+    1.82,
+    4.48
+   ],
+   [
+    "Pancreatitis",
+    "Shanghai preprint 2026 (vs DPP-4i)",
+    1.31,
+    0.74,
+    2.34
+   ],
+   [
+    "Pancreatitis",
+    "Meta-analysis, 52 obesity studies (2026)",
+    1.29,
+    0.91,
+    1.84
+   ],
+   [
+    "Bowel obstruction",
+    "JAMA 2023 letter (vs bupropion-naltrexone)",
+    4.22,
+    1.02,
+    17.4
+   ],
+   [
+    "Bowel obstruction",
+    "Meta-analysis, 6 studies (2026)",
+    1.95,
+    0.43,
+    8.79
+   ],
+   [
+    "Bowel obstruction",
+    "Shanghai preprint 2026 (vs DPP-4i)",
+    1.02,
+    0.6,
+    1.74
+   ],
+   [
+    "Bowel obstruction",
+    "Dig Dis Sci 2026 (TriNetX, vs no GLP-1)",
+    0.86,
+    0.8,
+    0.92
+   ],
+   [
+    "Gastroparesis",
+    "JAMA 2023 letter (vs bupropion-naltrexone)",
+    3.67,
+    1.15,
+    11.9
+   ],
+   [
+    "Gastroparesis",
+    "Shanghai preprint 2026 (vs DPP-4i)",
+    1.99,
+    1.4,
+    2.81
+   ],
+   [
+    "Gastroparesis",
+    "Dig Dis Sci 2026 (TriNetX, vs no GLP-1)",
+    1.57,
+    1.43,
+    1.73
+   ]
+  ]
+ }
+}
