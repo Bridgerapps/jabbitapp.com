@@ -1,0 +1,211 @@
+{
+ "page": "https://jabbitapp.com/research/retatrutide-vs-ozempic-semaglutide-transcend-t2d-2-head-to-head-teardown.html",
+ "checked": "2026-10-28",
+ "note": "Quotes asserted against cached copies. TRANSCEND-T2D-2 figures are topline, efficacy-estimand values from Lilly's October 28, 2026 press release; not peer reviewed. Jabbit arithmetic (differences between arms, approximate arm sizes) is computed from these rounded figures. Cross-trial comparisons with SURPASS-2 and SUSTAIN FORTE are Jabbit analysis, not head-to-head.",
+ "lilly_2026_10_28_quotes": [
+  "Oct 28, 2026 /PRNewswire/",
+  "today announced positive topline results from TRANSCEND-T2D-2, a head-to-head Phase 3 trial comparing retatrutide with injectable Ozempic 2 mg in adults with type 2 diabetes.",
+  "At 80 weeks, retatrutide met the primary and all key secondary endpoints",
+  "In TRANSCEND-T2D-2, the first Phase 3 trial comparing retatrutide with another incretin medicine",
+  "we believe retatrutide, if approved, could shift the treatment paradigm for people living with type 2 diabetes, obesity and related cardiometabolic conditions.",
+  "both doses of retatrutide lowered A1C by an average of 2.2% compared to 1.8% with Ozempic at 80 weeks.",
+  "Participants taking retatrutide lost an average of 44.3 lbs (19.5%; 9 mg) and 47.4 lbs (20.9%; 12 mg) compared to 20.9 lbs (9.4%) with Ozempic.",
+  "Retatrutide also delivered greater improvements than Ozempic across certain cardiovascular risk factors, including non-HDL cholesterol, triglycerides and systolic blood pressure.",
+  "Change in A1C from avg. baseline of 8.3% -2.2% i,ii -2.2% iii -1.8 %",
+  "Percent change in body weight from avg. baseline of 102.4 kg (225.8 lbs; BMI of 36.8 kg/m²) -19.5% iii (-20.1 kg; -44.3 lbs) -20.9% iii (-21.5 kg; -47.4 lbs) -9.4% (-9.5 kg; -20.9 lbs)",
+  "diarrhea (28.3%, 32.7% vs. 26.4%), nausea (21.2%, 23.8% vs. 21.3%), constipation (14.2%, 13.1% vs. 19.8%), vomiting (10.2%, 15.0% vs. 13.2%) and dyspepsia (10.4%, 8.5% vs. 11.6%).",
+  "The incidence of dysesthesia with retatrutide (9 mg, 12 mg vs. Ozempic) was 4.8%, 6.5% vs. 2.7%, while the incidence of urinary tract infections was 5.8%, 4.2% vs. 5.8%.",
+  "The majority of these events were mild-to-moderate and typically resolved during treatment.",
+  "Treatment discontinuation rates due to adverse events were 4.8%, 7.9% vs. 2.7% with retatrutide 9 mg and 12 mg vs. Ozempic, respectively.",
+  "Detailed results from TRANSCEND-T2D-2 will be presented at a future medical meeting and published in a peer-reviewed journal.",
+  "because it is the highest approved dose, making it a meaningful point of comparison.",
+  "Lilly is also comparing retatrutide head-to-head with tirzepatide in TRIUMPH-5, an ongoing Phase 3 trial in adults with obesity with or without type 2 diabetes.",
+  "In TRIUMPH-2, people with type 2 diabetes and obesity taking the highest dose lost an average of 49.6 lbs (20.8%).",
+  "Retatrutide is an investigational molecule that has not been approved by FDA or any regulatory organization anywhere in the world. Anyone purporting to sell retatrutide to consumers is breaking the law.",
+  "TRANSCEND-T2D-2 (NCT06260722) is a Phase 3, randomized, open-label trial comparing once-weekly retatrutide (9 mg and 12 mg) with once-weekly Ozempic 2 mg in 1,298 adults with type 2 diabetes inadequately controlled with metformin, with or without an SGLT2 inhibitor.",
+  "were randomized 2:2:1 to retatrutide 9 mg, retatrutide 12 mg or Ozempic 2 mg.",
+  "The primary objective was to demonstrate that retatrutide 12 mg is noninferior to Ozempic 2 mg in A1C reduction at 80 weeks.",
+  "approximately 650 participants continue treatment with retatrutide for an additional 24 weeks",
+  "has enrolled more than 2,050 participants.",
+  "except superiority of retatrutide 9 mg vs. Ozempic 2 mg in change in A1C and in systolic blood pressure, which were prespecified secondary endpoints and showed nominal statistical significance.",
+  "All data included in this press release are for the efficacy estimand.",
+  "The efficacy estimand represents efficacy had all randomized participants remained on study intervention (with possible dose interruptions and modifications) for 80 weeks without initiating additional antihyperglycemic medication (>14 days of use).",
+  "TRANSCEND-T2D-2 marks the sixth Phase 3 trial in which retatrutide has delivered powerful efficacy"
+ ],
+ "pubmed_abstract_quotes": {
+  "34293304": [
+   "Mean baseline HbA1c was 8·9%",
+   "Mean change in HbA1c from baseline at week 40 was -2·2 percentage points with semaglutide 2·0 mg and -1·9 percentage points with semaglutide 1·0 mg",
+   "-2·1 percentage points with semaglutide 2·0 mg and -1·9 percentage points with semaglutide 1·0 mg (ETD -0·18 percentage points [-0·31 to -0·04]; p=0·0098; treatment policy estimand)",
+   "Mean change in bodyweight from baseline at week 40 was -6·9 kg with semaglutide 2·0 mg",
+   "-6·4 kg with semaglutide 2·0 mg and -5·6 kg with semaglutide 1·0 mg",
+   "Novo Nordisk."
+  ],
+  "34170647": [
+   "In an open-label, 40-week, phase 3 trial, we randomly assigned 1879 patients",
+   "the mean glycated hemoglobin level was 8.28%",
+   "-0.45 percentage points (95% CI, -0.57 to -0.32; P<0.001)",
+   "least-squares mean estimated treatment difference, -1.9 kg, -3.6 kg, and -5.5 kg, respectively",
+   "(Funded by Eli Lilly; SURPASS-2 ClinicalTrials.gov number, NCT03987919.)"
+  ],
+  "37385280": [
+   "-2·02% (0·11; -22·07 mmol/mol [1·21]) for the 12 mg escalation group",
+   "-1·41% (0·12; -15·40 mmol/mol [1·29]) for the 1·5 mg dulaglutide group",
+   "16·94% (1·30) for the 12 mg escalation group, versus 3·00% (0·86) with placebo and 2·02% (0·72) with 1·5 mg dulaglutide"
+  ],
+  "42250575": [
+   "For the treatment regimen estimand, the mean change from baseline in HbA1c concentration was -1·69% (SE 0·11) with retatrutide 4 mg, -1·86% (0·10) with 9 mg, and -1·94% (0·08) with 12 mg, versus -0·81% (0·12) with placebo",
+   "-15·3% (0·8) with 12 mg, versus -2·6% (0·5) with placebo",
+   "No severe hypoglycaemia was reported.",
+   "Eli Lilly and Company."
+  ],
+  "42810372": [
+   "For the treatment regimen estimand, the mean percentage change from baseline in bodyweight at week 80 was -11·9% (SE 0·6) with retatrutide 4 mg, -16·8% (0·7) with retatrutide 9 mg, -18·8% (0·7) with retatrutide 12 mg, and -5·1% (0·7) with placebo.",
+   "13 [4%], 16 [6%], and 21 [7%] vs two [1%] in the placebo group with dysesthesia",
+   "Permanent treatment discontinuation due to adverse events or death was more frequent in participants treated with retatrutide 9 mg (33 [12%]) and 12 mg (22 [8%])",
+   "Hypotension and dysesthesia were more frequent with retatrutide than with placebo"
+  ]
+ },
+ "ozempic_label_quotes": [
+  "to reduce the risk of major adverse cardiovascular events (cardiovascular death, non-fatal myocardial infarction or non-fatal stroke) in adults with type 2 diabetes mellitus and established cardiovascular disease.",
+  "to reduce the risk of sustained eGFR decline, end-stage kidney disease, and cardiovascular death in adults with type 2 diabetes mellitus and chronic kidney disease.",
+  "Change at week 40 b -1.9 -2.1",
+  "The mean changes from baseline to week 40 were -5.6 kg and -6.4 kg in the OZEMPIC 1 mg and OZEMPIC 2 mg arms, respectively.",
+  "Rapid improvement in glucose control has been associated with a temporary worsening of diabetic retinopathy.",
+  "more events of diabetic retinopathy complications occurred in patients treated with OZEMPIC (3.0%) compared to placebo (1.8%)"
+ ],
+ "business_insider_2026_10_28_quotes": [
+  "2026-10-28T10:45:01.259Z",
+  "The clinical trial results have not yet been peer-reviewed or published in a medical journal, but were released as the company prepares to announce its quarterly earnings on Thursday.",
+  "People on retatrutide also had slightly higher rates of a rare side effect called dysesthesia, triggering tingling, skin-on-fire type sensations."
+ ],
+ "lilly_2026_07_23_quotes": [
+  "plans to submit a Biologics License Application (BLA) for retatrutide to FDA in Q1 2027"
+ ],
+ "clinicaltrials_gov": {
+  "NCT06260722": {
+   "title": "Effect of Retatrutide Compared With Semaglutide in Adult Participants With Type 2 Diabetes and Inadequate Glycemic Control With Metformin With or Without SGLT2 Inhibitor (TRANSCEND-T2D-2)",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 1250,
+   "primary_completion": {
+    "date": "2026-08-27",
+    "type": "ACTUAL"
+   },
+   "masking": "NONE",
+   "sponsor": "Eli Lilly and Company"
+  },
+  "NCT06662383": {
+   "title": "A Study of Retatrutide (LY3437943) Compared to Tirzepatide (LY3298176) in Adults Who Have Obesity",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 800,
+   "primary_completion": {
+    "date": "2026-11",
+    "type": "ESTIMATED"
+   },
+   "masking": "DOUBLE",
+   "sponsor": "Eli Lilly and Company"
+  },
+  "NCT06297603": {
+   "title": "Effect of Retatrutide Compared With Placebo in Participants With Type 2 Diabetes and Moderate or Severe Renal Impairment, With Inadequate Glycemic Control on Basal Insulin, With or Without Metformin and/or SGLT2 Inhibitor (TRANSCEND-T2D-3)",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 320,
+   "primary_completion": {
+    "date": "2026-10",
+    "type": "ESTIMATED"
+   },
+   "masking": "DOUBLE",
+   "sponsor": "Eli Lilly and Company"
+  },
+  "NCT06383390": {
+   "title": "The Effect of Retatrutide Once Weekly on Cardiovascular Outcomes and Kidney Outcomes in Adults Living With Obesity (TRIUMPH-Outcomes)",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "enrollment": 10000,
+   "primary_completion": {
+    "date": "2029-02",
+    "type": "ESTIMATED"
+   },
+   "masking": "DOUBLE",
+   "sponsor": "Eli Lilly and Company"
+  }
+ },
+ "transcend_t2d_2_registered_secondary_outcomes": [
+  "Change from Baseline in HbA1c (%)",
+  "Percentage of Participants Who Achieve HbA1c ≤ 6.5%",
+  "Percentage of Participants Who Achieve HbA1c < 5.7%",
+  "Percent Change from Baseline in Body Weight",
+  "Change from Baseline in Body Weight",
+  "Percentage of Participants Who Achieve Weight Reduction of ≥ 5%",
+  "Percentage of Participants Who Achieve Weight Reduction of ≥ 10%",
+  "Percentage of Participants Who Achieve Weight Reduction of ≥ 15%",
+  "Percentage of Participants Who Achieve HbA1c ≤ 6.5% and ≥ 10% Weight Reduction",
+  "Percent Change from Baseline in Triglycerides",
+  "Percent Change from Baseline in Non- high-density lipoprotein (HDL) Cholesterol",
+  "Change from Baseline in Systolic Blood Pressure (SBP)"
+ ],
+ "chart_data": {
+  "head_to_head_efficacy_estimand_80wk": {
+   "arms": [
+    "Retatrutide 9 mg",
+    "Retatrutide 12 mg",
+    "Ozempic 2 mg"
+   ],
+   "a1c_change_pts": [
+    -2.2,
+    -2.2,
+    -1.8
+   ],
+   "weight_change_pct": [
+    -19.5,
+    -20.9,
+    -9.4
+   ],
+   "weight_change_kg": [
+    -20.1,
+    -21.5,
+    -9.5
+   ]
+  },
+  "adverse_events_pct": {
+   "arms": [
+    "Retatrutide 9 mg",
+    "Retatrutide 12 mg",
+    "Ozempic 2 mg"
+   ],
+   "Diarrhea": [
+    28.3,
+    32.7,
+    26.4
+   ],
+   "Nausea": [
+    21.2,
+    23.8,
+    21.3
+   ],
+   "Constipation": [
+    14.2,
+    13.1,
+    19.8
+   ],
+   "Vomiting": [
+    10.2,
+    15.0,
+    13.2
+   ],
+   "Dyspepsia": [
+    10.4,
+    8.5,
+    11.6
+   ],
+   "Dysesthesia": [
+    4.8,
+    6.5,
+    2.7
+   ],
+   "Stopped for side effects": [
+    4.8,
+    7.9,
+    2.7
+   ]
+  }
+ }
+}
