@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 630" width="760" height="630" role="img" aria-labelledby="t2 d2">
+<title id="t2">Of 11 outcomes, only the insomnia score separated from placebo</title>
+<desc id="d2">Of 11 outcomes, only the insomnia score separated from placebo. Insomnia severity (ISI), primary: d = 0.2, p = 0.049. Regensburg Insomnia Scale: d = 0.13, p = 0.186. Single-item sleep quality: d = 0.18, p = 0.069. Daytime sleepiness (Epworth): d = 0.05, p = 0.624. Fatigue severity: d = 0.09, p = 0.391. Perceived stress: d = 0.04, p = 0.708. Positive mood (PANAS): d = 0.03, p = 0.771. Negative mood (PANAS): d = 0.01, p = 0.894. Anxiety + depression (PHQ-4): d = 0.05, p = 0.634. PHQ-4 depression items: d = 0.04, p = 0.711. PHQ-4 anxiety items: d = 0.02, p = 0.86.</desc>
+<rect width="760" height="630" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Of 11 outcomes, only the insomnia score separated from placebo</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Same 4-week trial. Effect size (Cohen’s d) for each outcome; 0.2 is conventionally a “small” effect.</text>
+<line x1="290.0" y1="86" x2="290.0" y2="510" stroke="#e2e8f0" stroke-width="1"/>
+<text x="290.0" y="526" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0</text>
+<line x1="420.0" y1="86" x2="420.0" y2="510" stroke="#e2e8f0" stroke-width="1"/>
+<text x="420.0" y="526" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0.1</text>
+<line x1="550.0" y1="86" x2="550.0" y2="510" stroke="#d97706" stroke-width="2"/>
+<text x="550.0" y="526" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0.2</text>
+<line x1="680.0" y1="86" x2="680.0" y2="510" stroke="#e2e8f0" stroke-width="1"/>
+<text x="680.0" y="526" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0.3</text>
+<text x="556.0" y="82" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#d97706">“small” = 0.2</text>
+<text x="24" y="112" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Insomnia severity (ISI), primary</text>
+<rect x="290" y="98" width="260.0" height="22" rx="3" fill="#0f766e"/>
+<rect x="554.0" y="100" width="146" height="18" fill="#fff"/>
+<text x="558.0" y="114" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.20, p = 0.049</text>
+<text x="24" y="150" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">Regensburg Insomnia Scale</text>
+<rect x="290" y="136" width="169.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="463.0" y="138" width="146" height="18" fill="#fff"/>
+<text x="467.0" y="152" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.13, p = 0.186</text>
+<text x="24" y="188" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">Single-item sleep quality</text>
+<rect x="290" y="174" width="234.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="528.0" y="176" width="146" height="18" fill="#fff"/>
+<text x="532.0" y="190" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.18, p = 0.069</text>
+<text x="24" y="226" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">Daytime sleepiness (Epworth)</text>
+<rect x="290" y="212" width="65.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="359.0" y="214" width="146" height="18" fill="#fff"/>
+<text x="363.0" y="228" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.05, p = 0.624</text>
+<text x="24" y="264" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">Fatigue severity</text>
+<rect x="290" y="250" width="117.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="411.0" y="252" width="146" height="18" fill="#fff"/>
+<text x="415.0" y="266" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.09, p = 0.391</text>
+<text x="24" y="302" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">Perceived stress</text>
+<rect x="290" y="288" width="52.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="346.0" y="290" width="146" height="18" fill="#fff"/>
+<text x="350.0" y="304" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.04, p = 0.708</text>
+<text x="24" y="340" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">Positive mood (PANAS)</text>
+<rect x="290" y="326" width="39.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="333.0" y="328" width="146" height="18" fill="#fff"/>
+<text x="337.0" y="342" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.03, p = 0.771</text>
+<text x="24" y="378" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">Negative mood (PANAS)</text>
+<rect x="290" y="364" width="13.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="307.0" y="366" width="146" height="18" fill="#fff"/>
+<text x="311.0" y="380" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.01, p = 0.894</text>
+<text x="24" y="416" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">Anxiety + depression (PHQ-4)</text>
+<rect x="290" y="402" width="65.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="359.0" y="404" width="146" height="18" fill="#fff"/>
+<text x="363.0" y="418" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.05, p = 0.634</text>
+<text x="24" y="454" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">PHQ-4 depression items</text>
+<rect x="290" y="440" width="52.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="346.0" y="442" width="146" height="18" fill="#fff"/>
+<text x="350.0" y="456" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.04, p = 0.711</text>
+<text x="24" y="492" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0f172a">PHQ-4 anxiety items</text>
+<rect x="290" y="478" width="26.0" height="22" rx="3" fill="#94a3b8"/>
+<rect x="320.0" y="480" width="146" height="18" fill="#fff"/>
+<text x="324.0" y="494" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">d = 0.02, p = 0.860</text>
+<text x="24" y="554" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Stress, anxiety and mood scores did not differ from placebo in this trial. Teal = statistically significant.</text>
+<text x="24" y="600" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Schuster J et al, Nat Sci Sleep 2025 (PMID 40918053). 4 weeks, self-reported outcomes, one product. One co-author directs a contract</text>
+<text x="24" y="616" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">research organization that receives funding from nutraceutical companies, per the paper. Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>

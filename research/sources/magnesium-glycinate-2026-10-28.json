@@ -1,0 +1,281 @@
+{
+ "page": "https://jabbitapp.com/research/magnesium-glycinate-sleep-anxiety-evidence-teardown.html",
+ "checked": "2026-10-28 (America/New_York)",
+ "notes": "The widely shared '248 mg' trial (Tarleton 2017) used magnesium chloride, was open-label and had no placebo. The only placebo-controlled bisglycinate sleep trial found (Schuster 2025) was 4 weeks with self-reported outcomes. Pieter Levels is named because he is a public figure and the trending story names him; his own posts are linked and he called his result one day of data. Doses appear only as trial arms or official reference values.",
+ "x_posts": [
+  {
+   "id": "2115406004297077033",
+   "author": "levelsio",
+   "created_at": "2026-10-28T11:31:08.000Z",
+   "public_metrics": {
+    "bookmark_count": 194,
+    "impression_count": 49763,
+    "like_count": 324,
+    "quote_count": 8,
+    "reply_count": 63,
+    "retweet_count": 5
+   },
+   "url": "https://x.com/levelsio/status/2115406004297077033"
+  },
+  {
+   "id": "2115155070706720857",
+   "author": "levelsio",
+   "created_at": "2026-10-27T18:54:01.000Z",
+   "public_metrics": {
+    "bookmark_count": 435,
+    "impression_count": 137656,
+    "like_count": 636,
+    "quote_count": 7,
+    "reply_count": 103,
+    "retweet_count": 13
+   },
+   "url": "https://x.com/levelsio/status/2115155070706720857"
+  }
+ ],
+ "x_stories": [
+  {
+   "id": "2115165543208825089",
+   "name": "Magnesium Glycinate Gains Popularity for Stress Relief and Better Sleep",
+   "updated_at": "2026-10-28T00:22:18.000Z",
+   "summary_excerpt": "a trial showed 248 mg daily cut depression and anxiety scores noticeably in weeks",
+   "url": "https://x.com/i/trending/2115165543208825089"
+  },
+  {
+   "id": "2115438265822290265",
+   "name": "Pieter Levels Sees REM Sleep Boost from Magnesium Glycinate",
+   "updated_at": "2026-10-28T16:57:47.000Z",
+   "url": "https://x.com/i/trending/2115438265822290265"
+  }
+ ],
+ "x_posts_read_at_et": "2026-10-28 ~8:00 PM",
+ "x_counts": {
+  "query": "\"magnesium glycinate\" -is:retweet",
+  "by_utc_day_from_2026-10-22": [
+   126,
+   154,
+   158,
+   138,
+   214,
+   261,
+   234
+  ],
+  "total_7d": 1285,
+  "read_at_et": "2026-10-28 ~8:00 PM"
+ },
+ "pubmed": {
+  "40918053": {
+   "title": "Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial",
+   "quotes": [
+    "enrolled 155 adults aged 18-65 years with self-reported poor sleep quality",
+    "250 mg elemental magnesium, daily",
+    "(-3.9 [95% CI: -5.8 to -2.0] vs -2.3 [95% CI: -4.1 to -0.4], respectively; p = 0.049)",
+    "The effect size was small (Cohen's d = 0.2), indicating a modest benefit.",
+    "Exploratory analyses suggested notably greater improvements among participants reporting lower baseline dietary magnesium intake",
+    "No significant differences were observed in other psychological outcomes."
+   ]
+  },
+  "42661485": {
+   "title": "Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials",
+   "quotes": [
+    "Twelve randomized controlled trials were included in the main synthesis on sleep, insomnia, or poor sleep",
+    "Findings were inconsistent across subjective outcomes, EEG, research-grade actigraphy, consumer wearable-derived estimates, and physiological markers.",
+    "Certainty of evidence was low to very low.",
+    "Current evidence does not support oral magnesium as a routine treatment for insomnia.",
+    "It may provide modest benefits for selected subjective outcomes in some adults"
+   ]
+  },
+  "33865376": {
+   "title": "Oral magnesium supplementation for insomnia in older adults: a Systematic Review & Meta-Analysis",
+   "quotes": [
+    "Three randomized control trials (RCT) were identified comparing oral magnesium to placebo in 151 older adults in three countries.",
+    "post-intervention sleep onset latency time was 17.36 min less after magnesium supplementation compared to placebo",
+    "Total sleep time improved by 16.06 min in the magnesium supplementation group but was statistically insignificant.",
+    "All trials were at moderate-to-high risk of bias and outcomes were supported by low to very low quality of evidence."
+   ]
+  },
+  "38817505": {
+   "title": "Examining the Effects of Supplemental Magnesium on Self-Reported Anxiety and Sleep Quality: A Systematic Review",
+   "quotes": [
+    "Magnesium, in particular, is popular on social media for the treatment of anxiety and insomnia.",
+    "This query returned 860 articles of which 15 met full inclusion criteria.",
+    "Five out of eight sleep-related studies reported improvements in sleep parameters",
+    "Five out of seven studies measuring anxiety-related outcomes reported improvements in self-reported anxiety.",
+    "Firm conclusions were limited by the heterogeneity of the data and the small number of participants involved in most of the studies."
+   ]
+  },
+  "28445426": {
+   "title": "The Effects of Magnesium Supplementation on Subjective Anxiety and Stress-A Systematic Review",
+   "quotes": [
+    "18 studies were included in the review.",
+    "No study administered a validated measure of subjective stress as an outcome.",
+    "However, the quality of the existing evidence is poor."
+   ]
+  },
+  "28654669": {
+   "title": "Role of magnesium supplementation in the treatment of depression: A randomized clinical trial",
+   "quotes": [
+    "supplementation with over-the-counter magnesium chloride improves symptoms of depression",
+    "An open-label, blocked, randomized, cross-over trial was carried out in outpatient primary care clinics on 126 adults",
+    "6 weeks of active treatment (248 mg of elemental magnesium per day) compared to 6 weeks of control (no treatment)",
+    "net improvement in PHQ-9 scores of -6.0 points (CI -7.9, -4.2; P<0.001)",
+    "net improvement in Generalized Anxiety Disorders-7 scores of -4.5 points (CI -6.6, -2.4; P<0.001)"
+   ]
+  },
+  "23853635": {
+   "title": "The effect of magnesium supplementation on primary insomnia in elderly: A double-blind placebo-controlled clinical trial",
+   "quotes": [
+    "A double-blind randomized clinical trial was conducted in 46 elderly subjects",
+    "Although total sleep time (P = 0.37) did not show any significant between-group differences."
+   ]
+  },
+  "7815675": {
+   "title": "Bioavailability of magnesium diglycinate vs magnesium oxide in patients with ileal resection",
+   "quotes": [
+    "a double-blind, randomized crossover trial with 12 patients who had ileal resections",
+    "(23.5% vs 22.8% for magnesium chelate and MgO, respectively)",
+    "better tolerated by all patients"
+   ]
+  },
+  "22529837": {
+   "title": "The effects of glycine on subjective daytime performance in partially sleep-restricted healthy volunteers",
+   "quotes": [
+    "3 g of glycine or placebo were ingested"
+   ]
+  }
+ },
+ "full_text_quotes": {
+  "PMC12412596": [
+   "corresponding to 125 mg of magnesium and 761.5 mg of glycine, providing a total daily dose of 250 mg of magnesium and 1523 mg of glycine",
+   "some studies suggest that glycine supplementation at a dose of 3 g can enhance sleep quality",
+   "Two participants in the placebo group withdrew due to stomach pain",
+   "no participants discontinued the trial due to adverse events",
+   "fewer than 10% of participants provided complete entries",
+   "Given the non-validated nature of the dietary assessment tool",
+   "This four-week, placebo-controlled study was conducted as a large, nationwide trial across Germany.",
+   "Adrian Lopresti is the managing director of Clinical Research Australia, a contract research organization that receives research funding from nutraceutical companies."
+  ],
+  "PMC5487054": [
+   "There was no placebo arm and randomization was not blinded for either the study team or the volunteer.",
+   "Participants were instructed to take four 500 mg tablets of magnesium chloride daily for a total of 248 mg of elemental magnesium per day."
+  ],
+  "PMC3703169": [
+   "Magnesium was administered as magnesium oxide tablets twice a day (each tablet containing 414 mg magnesium oxide as 250 mg elemental magnesium) for 8 weeks."
+  ],
+  "PMC8053283": [
+   "two formulations (magnesium oxide and magnesium citrate tablets)"
+  ],
+  "ods": [
+   "These values range from 310 to 420 mg for adults",
+   "48% of Americans of all ages ingest less magnesium from food and beverages than their respective EARs",
+   "There is no current data on magnesium status among people who live in the United States",
+   "Symptomatic magnesium deficiency due to low dietary intake in otherwise healthy people is uncommon",
+   "Small studies have found that magnesium in the aspartate, citrate, lactate, and chloride forms is absorbed more completely and is more bioavailable than magnesium oxide and magnesium sulfate",
+   "The Tolerable Upper Intake Level for supplemental magnesium is 350 mg for adults",
+   "The ULs only include magnesium from dietary supplements and medications; they do not include magnesium found naturally in food and beverages.",
+   "The forms of magnesium that are most commonly reported to cause diarrhea include magnesium carbonate, chloride, gluconate, and oxide",
+   "The risk of magnesium toxicity increases with impaired renal function or kidney failure",
+   "These antibiotics should be taken at least 2 hours before or 4 to 6 hours after a magnesium-containing supplement",
+   "Magnesium-rich supplements or medications can decrease the absorption of oral bisphosphonates",
+   "can cause hypomagnesemia when taken for prolonged periods (typically more than a year)",
+   "Older adults have lower dietary intakes of magnesium than younger adults",
+   "magnesium absorption from the gut decreases and renal magnesium excretion increases with age",
+   "Updated: January 6, 2026"
+  ]
+ },
+ "charts": {
+  "schuster2025_isi": {
+   "placebo": [
+    -2.3,
+    -4.1,
+    -0.4
+   ],
+   "bisglycinate": [
+    -3.9,
+    -5.8,
+    -2.0
+   ],
+   "p": 0.049,
+   "d": 0.2,
+   "n": [
+    76,
+    77
+   ]
+  },
+  "schuster2025_table2": {
+   "ISI": [
+    -2.3,
+    -3.9,
+    0.049,
+    0.2
+   ],
+   "RIS": [
+    -1.1,
+    -2.0,
+    0.186,
+    0.13
+   ],
+   "SQS": [
+    0.3,
+    1.0,
+    0.069,
+    0.18
+   ],
+   "ESS": [
+    -1.8,
+    -2.0,
+    0.624,
+    0.05
+   ],
+   "FSS": [
+    -1.8,
+    -3.0,
+    0.391,
+    0.09
+   ],
+   "PSS": [
+    -2.0,
+    -2.4,
+    0.708,
+    0.04
+   ],
+   "PANAS (+)": [
+    1.3,
+    1.0,
+    0.771,
+    0.03
+   ],
+   "PANAS (-)": [
+    -3.0,
+    -2.9,
+    0.894,
+    0.01
+   ],
+   "PHQ-4 Total": [
+    0.1,
+    -0.0,
+    0.634,
+    0.05
+   ],
+   "PHQ-4 (D)": [
+    -0.1,
+    -0.2,
+    0.711,
+    0.04
+   ],
+   "PHQ-4 (A)": [
+    0.2,
+    0.2,
+    0.86,
+    0.02
+   ]
+  },
+  "adverse_events_total": {
+   "placebo": 7,
+   "bisglycinate": 2
+  },
+  "glycine_g_per_day": {
+   "schuster2025_bisglycinate_arm": 1.523,
+   "bannai2012_glycine_arm": 3.0
+  }
+ }
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t1 d1">
+<title id="t1">Magnesium glycinate vs placebo: a 1.6-point gap on an insomnia scale</title>
+<desc id="d1">Magnesium glycinate vs placebo: a 1.6-point gap on an insomnia scale. Placebo: -2.3 points (95% CI -4.1 to -0.4). Bisglycinate: -3.9 points (95% CI -5.8 to -2.0). p = 0.049, Cohen's d = 0.2, a small effect.</desc>
+<rect width="760" height="380" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Magnesium glycinate vs placebo: a 1.6-point gap on an insomnia scale</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">155 adults with poor sleep, 4 weeks. Drop in Insomnia Severity Index (ISI) score; bars show 95% confidence intervals.</text>
+<line x1="675.0" y1="100" x2="675.0" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+<text x="675.0" y="266" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">0</text>
+<line x1="535.0" y1="100" x2="535.0" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+<text x="535.0" y="266" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">-2</text>
+<line x1="395.0" y1="100" x2="395.0" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+<text x="395.0" y="266" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">-4</text>
+<line x1="255.0" y1="100" x2="255.0" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+<text x="255.0" y="266" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">-6</text>
+<text x="465.0" y="284" text-anchor="middle" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">← bigger drop in insomnia score (better)</text>
+<text x="24" y="130" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Placebo</text>
+<text x="24" y="148" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">n = 76</text>
+<rect x="514.0" y="116" width="161.0" height="28" rx="3" fill="#94a3b8"/>
+<line x1="388.0" y1="130" x2="647.0" y2="130" stroke="#0f172a" stroke-width="2"/>
+<line x1="388.0" y1="122" x2="388.0" y2="138" stroke="#0f172a" stroke-width="2"/>
+<line x1="647.0" y1="122" x2="647.0" y2="138" stroke="#0f172a" stroke-width="2"/>
+<text x="683.0" y="135" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">-2.3</text>
+<text x="24" y="200" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">Magnesium bisglycinate</text>
+<text x="24" y="218" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">n = 77</text>
+<rect x="402.0" y="186" width="273.0" height="28" rx="3" fill="#1d4ed8"/>
+<line x1="269.0" y1="200" x2="535.0" y2="200" stroke="#0f172a" stroke-width="2"/>
+<line x1="269.0" y1="192" x2="269.0" y2="208" stroke="#0f172a" stroke-width="2"/>
+<line x1="535.0" y1="192" x2="535.0" y2="208" stroke="#0f172a" stroke-width="2"/>
+<text x="683.0" y="205" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">-3.9</text>
+<text x="24" y="310" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Both groups improved. The gap between them was 1.6 points (p = 0.049); the authors call the effect small (d = 0.2).</text>
+<text x="24" y="350" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Schuster J et al, Nat Sci Sleep 2025 (PMID 40918053). 4 weeks, self-reported outcomes, one product. One co-author directs a contract</text>
+<text x="24" y="366" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">research organization that receives funding from nutraceutical companies, per the paper. Rebuilt by Jabbit · jabbitapp.com</text>
+</svg>
