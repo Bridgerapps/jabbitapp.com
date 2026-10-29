@@ -36,6 +36,14 @@
       "file": "fda-semaglutide-shortage-ended-compounding-legal-update-2026-04.html",
       "links": [
         {
+          "href": "/fda-compounded-glp1-enforcement-2026.html",
+          "text": "FDA enforcement on non-approved compounded GLP-1s (2026)"
+        },
+        {
+          "href": "/research/compounded-glp1-peptide-powder-supply-chain-teardown.html",
+          "text": "Who makes the powder in compounded GLP-1s? FDA\u2019s own files"
+        },
+        {
           "href": "/glp-1-injection-tracking-guide.html",
           "text": "GLP-1 injection tracking guide (log shots, sites, notes)"
         },
@@ -44,8 +52,8 @@
           "text": "Organize a protocol history for your prescriber"
         },
         {
-          "href": "/guides",
-          "text": "Guides hub"
+          "href": "/news",
+          "text": "News"
         }
       ]
     },
