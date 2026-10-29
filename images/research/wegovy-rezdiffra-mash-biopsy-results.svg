@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 634" width="760" height="634" role="img" aria-labelledby="t1 d1">
+<title id="t1">MASH biopsy results: drug vs placebo, in separate trials</title>
+<desc id="d1">MASH biopsy results: drug vs placebo, in separate trials. Steatohepatitis (MASH) resolved, fibrosis not worse: Wegovy 2.4 mg (ESSENCE, 72 wk) 62.9% vs placebo 34.3%; Rezdiffra 100 mg (MAESTRO-NASH F2-F3, 52 wk) 29.9% vs placebo 9.5%; Rezdiffra 80 mg (MAESTRO-NASH F2-F3, 52 wk) 25.7% vs placebo 9.5%; Tirzepatide 15 mg (SYNERGY-NASH phase 2, 52 wk) 62% vs placebo 10%. Fibrosis improved 1+ stage, MASH not worse: Wegovy 2.4 mg (ESSENCE, 72 wk) 36.8% vs placebo 22.4%; Rezdiffra 100 mg (MAESTRO-NASH F2-F3, 52 wk) 28.9% vs placebo 17.3%; Rezdiffra 80 mg (MAESTRO-NASH F2-F3, 52 wk) 26.5% vs placebo 17.3%; Tirzepatide 15 mg (SYNERGY-NASH phase 2, 52 wk) 51% vs placebo 30%. Tirzepatide is not approved for MASH. Rezdiffra figures are the F2-F3 reanalysis of MAESTRO-NASH.</desc>
+<rect width="760" height="634" fill="#fff"/>
+<text x="24" y="32" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">MASH biopsy results: drug vs placebo, in separate trials</text>
+<text x="24" y="54" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b">Share of patients reaching each endpoint, %. Not a head-to-head comparison: trials differ in length and design.</text>
+<rect x="24" y="74" width="12" height="12" rx="2" fill="#0f766e"/>
+<text x="42" y="84" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Drug</text>
+<rect x="94" y="74" width="12" height="12" rx="2" fill="#cbd5e1"/>
+<text x="112" y="84" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Placebo in the same trial</text>
+<text x="24" y="118" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Steatohepatitis (MASH) resolved, fibrosis not worse</text>
+<text x="24" y="144" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Wegovy 2.4 mg (ESSENCE, 72 wk)</text>
+<rect x="24" y="149" width="402.6" height="12" rx="2" fill="#0f766e"/>
+<text x="432.6" y="160" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">62.9%</text>
+<rect x="24" y="163" width="219.5" height="10" rx="2" fill="#cbd5e1"/>
+<text x="249.5" y="172" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">34.3%</text>
+<text x="24" y="194" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Rezdiffra 100 mg (MAESTRO-NASH F2-F3, 52 wk)</text>
+<rect x="24" y="199" width="191.4" height="12" rx="2" fill="#0f766e"/>
+<text x="221.4" y="210" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">29.9%</text>
+<rect x="24" y="213" width="60.8" height="10" rx="2" fill="#cbd5e1"/>
+<text x="90.8" y="222" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">9.5%</text>
+<text x="24" y="244" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Rezdiffra 80 mg (MAESTRO-NASH F2-F3, 52 wk)</text>
+<rect x="24" y="249" width="164.5" height="12" rx="2" fill="#0f766e"/>
+<text x="194.5" y="260" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">25.7%</text>
+<rect x="24" y="263" width="60.8" height="10" rx="2" fill="#cbd5e1"/>
+<text x="90.8" y="272" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">9.5%</text>
+<text x="24" y="294" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Tirzepatide 15 mg (SYNERGY-NASH phase 2, 52 wk)</text>
+<rect x="24" y="299" width="396.8" height="12" rx="2" fill="#0f766e"/>
+<text x="426.8" y="310" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">62%</text>
+<rect x="24" y="313" width="64.0" height="10" rx="2" fill="#cbd5e1"/>
+<text x="94.0" y="322" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">10%</text>
+<text x="24" y="348" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f172a">Fibrosis improved 1+ stage, MASH not worse</text>
+<text x="24" y="374" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Wegovy 2.4 mg (ESSENCE, 72 wk)</text>
+<rect x="24" y="379" width="235.5" height="12" rx="2" fill="#0f766e"/>
+<text x="265.5" y="390" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">36.8%</text>
+<rect x="24" y="393" width="143.4" height="10" rx="2" fill="#cbd5e1"/>
+<text x="173.4" y="402" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">22.4%</text>
+<text x="24" y="424" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Rezdiffra 100 mg (MAESTRO-NASH F2-F3, 52 wk)</text>
+<rect x="24" y="429" width="185.0" height="12" rx="2" fill="#0f766e"/>
+<text x="215.0" y="440" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">28.9%</text>
+<rect x="24" y="443" width="110.7" height="10" rx="2" fill="#cbd5e1"/>
+<text x="140.7" y="452" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">17.3%</text>
+<text x="24" y="474" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Rezdiffra 80 mg (MAESTRO-NASH F2-F3, 52 wk)</text>
+<rect x="24" y="479" width="169.6" height="12" rx="2" fill="#0f766e"/>
+<text x="199.6" y="490" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">26.5%</text>
+<rect x="24" y="493" width="110.7" height="10" rx="2" fill="#cbd5e1"/>
+<text x="140.7" y="502" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">17.3%</text>
+<text x="24" y="524" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Tirzepatide 15 mg (SYNERGY-NASH phase 2, 52 wk)</text>
+<rect x="24" y="529" width="326.4" height="12" rx="2" fill="#0f766e"/>
+<text x="356.4" y="540" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">51%</text>
+<rect x="24" y="543" width="192.0" height="10" rx="2" fill="#cbd5e1"/>
+<text x="222.0" y="552" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">30%</text>
+<text x="24" y="588" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Sources: ESSENCE (NEJM 2025, Novo Nordisk-funded); MAESTRO-NASH F2-F3 reanalysis (Aliment Pharmacol Ther 2026);</text>
+<text x="24" y="604" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">SYNERGY-NASH phase 2 (NEJM 2024, Lilly-funded). Wegovy and Rezdiffra have FDA accelerated approval for MASH;</text>
+<text x="24" y="620" font-family="Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">tirzepatide does not. Definitions, biopsy reading and trial length differ, so compare each drug with its own placebo.</text>
+</svg>

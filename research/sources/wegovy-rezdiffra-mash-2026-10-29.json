@@ -1,0 +1,166 @@
+{
+ "page": "https://jabbitapp.com/research/wegovy-semaglutide-fatty-liver-mash-vs-rezdiffra-teardown.html",
+ "checked": "2026-10-29",
+ "note": "Quotes asserted against cached copies opened October 29, 2026. No trial has compared Wegovy and Rezdiffra head to head; any side-by-side numbers are Jabbit's cross-trial analysis. Placebo-adjusted differences for Rezdiffra and tirzepatide are Jabbit arithmetic from the rounded published percentages.",
+ "novo_2026_10_28_quotes": [
+  "Novo Nordisk today announced that 12 new abstracts on semaglutide real-world and clinical data will be presented at the American Association for the Study of Liver Diseases congress, The Liver Meeting ® 2026, from November 5-9 in Denver, Colorado.",
+  "MASH often goes unrecognized and undiagnosed, allowing liver damage to progress over time. Earlier diagnosis and treatment are needed,",
+  "PLATINUM-Truveta study was a retrospective cohort analysis using de-identified electronic health records that compared the effectiveness of semaglutide 2.4 mg and resmetirom on liver enzymes and cardiometabolic markers in patients with MASH treated in routine clinical practice.",
+  "This study assessed changes in liver enzymes, body weight, HbA 1c , and other cardiometabolic measures at three and six-month timepoints. Full findings will be presented during a poster session on Friday, November 6, from 13:00–14:00.",
+  "Real-world data analyses also have several limitations; while associations can be demonstrated, causal relationships cannot be definitively established.",
+  "Exploratory post hoc analyses are hypothesis generating, and further work investigating the clinical validity of these results would be of value.",
+  "Adults with MASH were grouped according to whether they initiated semaglutide 2.4 mg (n=2,479) or did not initiate semaglutide (n=70,702).",
+  "Four posters, including one oral presentation, on investigational efruxifermin research and new analyses from the phase 2b SYMMETRY trial in compensated MASH cirrhosis"
+ ],
+ "fda_wegovy_mash_2025_08_15_quotes": [
+  "The U.S. Food and Drug Administration has approved Wegovy (semaglutide) injection to treat metabolic-associated steatohepatitis (MASH) in adults with moderate-to-advanced fibrosis (excessive scar tissue in the liver).",
+  "Approximately 6% of U.S. adults (14.9 million people) have MASH, and its prevalence is expanding.",
+  "Wegovy promotes weight loss and potentially other mechanisms not fully understood, which may improve liver inflammation and scarring.",
+  "The trial will continue for a total of 240 weeks to determine whether inflammation and scarring improvements seen after 72 weeks translate into decreases in death, liver transplant, and other liver-related events.",
+  "Content current as of: 08/15/2025"
+ ],
+ "fda_rezdiffra_2024_03_14_quotes": [
+  "For Immediate Release: March 14, 2024",
+  "Today, the U.S. Food and Drug Administration approved Rezdiffra (resmetirom) for the treatment of adults with noncirrhotic non-alcoholic steatohepatitis (NASH) with moderate to advanced liver scarring (fibrosis), to be used along with diet and exercise.",
+  "Rezdiffra is a partial activator of a thyroid hormone receptor; activation of this receptor by Rezdiffra in the liver reduces liver fat accumulation."
+ ],
+ "wegovy_label_2026_06_quotes": [
+  "This indication is approved under accelerated approval based on improvement of MASH and fibrosis. Continued approval for this indication may be contingent upon the verification and description of clinical benefit in a confirmatory trial.",
+  "In a clinical trial in adults with MASH, fractures occurred in 4.4% of WEGOVY® -treated patients (2.6 cases per 100 patient years) compared to 3.3% of placebo-treated patients (2 cases per 100 patient years).",
+  "In a clinical trial in adults with MASH, increases in lipase greater than 3 times the upper limit of normal (ULN) occurred in 4.7% (35/750) of WEGOVY® -treated patients compared with 1.3% (5/374) of placebo-treated patients.",
+  "There is limited information in patients with MASH and a BMI <25 kg/m2.",
+  "The safety of WEGOVY® tablets and WEGOVY® 7.2 mg injection have not been established in pediatric patients or patients with MASH.",
+  "WEGOVY® for the treatment of MASH with advanced liver fibrosis should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+  "Lean MASH, n (%)b 22 (3) Type 2 Diabetes, n (%) 447 (56)"
+ ],
+ "rezdiffra_label_2026_07_quotes": [
+  "This indication is approved under accelerated approval based on improvement of MASH and fibrosis",
+  "Avoid use of REZDIFFRA in patients with decompensated cirrhosis",
+  "Peak values observed were 58 x upper limit of normal (ULN) for ALT, 66 x ULN for AST, 15 x ULN for TB, with no elevation of alkaline phosphatase (ALP).",
+  "suggesting drug-induced autoimmune-like hepatitis (DI-ALH)",
+  "In clinical trials, cholelithiasis, acute cholecystitis, and obstructive pancreatitis (gallstone) were observed more often in REZDIFFRA-treated patients than in placebo-treated patients.",
+  "The most common adverse reactions with REZDIFFRA (reported in at least 5% of patients and higher compared to placebo) are: diarrhea, nausea, pruritus, vomiting, constipation, abdominal pain, and dizziness.",
+  "4 per 100 PY, 5 per 100 PY, and 8 per 100 PY in placebo, REZDIFFRA 80 mg once daily, and REZDIFFRA 100 mg once daily arms, respectively."
+ ],
+ "rezdiffra_label_effective_time": "20260729",
+ "pubmed_abstract_quotes": {
+  "40305708_ESSENCE": [
+   "Resolution of steatohepatitis without worsening of fibrosis occurred in 62.9% of the 534 patients in the semaglutide group and in 34.3% of the 266 patients in the placebo group (estimated difference, 28.7 percentage points; 95% confidence interval [CI], 21.1 to 36.2; P<0.001).",
+   "A reduction in liver fibrosis without worsening of steatohepatitis was reported in 36.8% of the patients in the semaglutide group and in 22.4% of those in the placebo group (estimated difference, 14.4 percentage points; 95% CI, 7.5 to 21.3; P<0.001).",
+   "The mean change in body weight was -10.5% with semaglutide and -2.0% with placebo",
+   "Gastrointestinal adverse events were more common in the semaglutide group.",
+   "(Funded by Novo Nordisk; ClinicalTrials.gov number, NCT04822181.)"
+  ],
+  "38324483_MAESTRO_NASH": [
+   "NASH resolution with no worsening of fibrosis was achieved in 25.9% of the patients in the 80-mg resmetirom group and 29.9% of those in the 100-mg resmetirom group, as compared with 9.7% of those in the placebo group",
+   "Diarrhea and nausea were more frequent with resmetirom than with placebo.",
+   "10.9% in the 80-mg resmetirom group, 12.7% in the 100-mg resmetirom group, and 11.5% in the placebo group.",
+   "(Funded by Madrigal Pharmaceuticals; MAESTRO-NASH ClinicalTrials.gov number, NCT03900429.)"
+  ],
+  "42527732_MAESTRO_F2F3": [
+   "MASH resolution was achieved by 25.7% in the 80-mg group, 29.9% in the 100-mg group, and 9.5% in the placebo group",
+   "Respective percentages with fibrosis improvement were 26.5%, 28.9%, and 17.3%"
+  ],
+  "38856224_SYNERGY_NASH": [
+   "62% in the 15-mg tirzepatide group (difference, 53 percentage points; 95% CI, 37 to 69)",
+   "51% in the 15-mg tirzepatide group (difference, 21 percentage points; 95% CI, 1 to 42)",
+   "Larger and longer trials are needed to further assess the efficacy and safety of tirzepatide for the treatment of MASH.",
+   "(Funded by Eli Lilly; SYNERGY-NASH ClinicalTrials.gov number, NCT04166773.)"
+  ],
+  "42805503_EASL_EASD_EASO": [
+   "Pharmacotherapy is recommended for adults with non-cirrhotic MASH and fibrosis stages 2-3 (based on NITs or biopsy), alongside structured lifestyle intervention and optimised comorbidity management.",
+   "may be preferred in adults with obesity or T2D as well as with established cardiovascular disease or high cardiovascular risk because of its cardiometabolic benefits, whereas resmetirom may be prioritised in individuals without obesity or those already receiving or intolerant to GLP-1RAs.",
+   "nutritional and sarcopenia assessment during semaglutide",
+   "In adults with MASH cirrhosis, resmetirom or semaglutide appear safe but should not be used as MASH-targeted treatment, until further data establish liver-related benefits."
+  ],
+  "40341827_SYMMETRY": [
+   "In patients with compensated cirrhosis caused by MASH, efruxifermin did not significantly reduce fibrosis at 36 weeks.",
+   "in 18 of 63 patients (29%) in the 50-mg efruxifermin group (difference from placebo, 16 percentage points; 95% CI, 2 to 30)",
+   "(Funded by Akero Therapeutics; SYMMETRY ClinicalTrials.gov number, NCT05039450.)"
+  ]
+ },
+ "clinicaltrials_gov": {
+  "NCT04822181": {
+   "title": "The Effect of Semaglutide in Subjects With Non-cirrhotic Non-alcoholic Steatohepatitis",
+   "sponsor": "Novo Nordisk A/S",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "primary_completion": {
+    "date": "2029-04-25",
+    "type": "ESTIMATED"
+   },
+   "enrollment": {
+    "count": 1205,
+    "type": "ACTUAL"
+   }
+  },
+  "NCT05500222": {
+   "title": "A Randomized Double-blind Placebo-controlled Phase 3 Study to Evaluate the Effect of Resmetirom on Liver-related Outcomes in Patients With Well-compensated (Child-Pugh A) Non-alcoholic Steatohepatitis (NASH) Cirrhosis (MAESTRO-NASH-OUTCOMES)",
+   "sponsor": "Madrigal Pharmaceuticals, Inc.",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "primary_completion": {
+    "date": "2026-12",
+    "type": "ESTIMATED"
+   },
+   "enrollment": {
+    "count": 845,
+    "type": "ESTIMATED"
+   }
+  },
+  "NCT06215716": {
+   "title": "A Phase 3, Randomized, Double-Blind, Placebo-Controlled Study Evaluating the Safety and Efficacy of Efruxifermin in Subjects With Non-Cirrhotic Nonalcoholic Steatohepatitis (NASH)/Metabolic Dysfunction-Associated Steatohepatitis (MASH) and Fibrosis",
+   "sponsor": "Akero Therapeutics, Inc",
+   "status": "RECRUITING",
+   "primary_completion": {
+    "date": "2033-02",
+    "type": "ESTIMATED"
+   },
+   "enrollment": {
+    "count": 1650,
+    "type": "ESTIMATED"
+   }
+  },
+  "NCT07165028": {
+   "title": "A Master Protocol of Multiple Agents in Adults With Metabolic Dysfunction-Associated Steatotic Liver Disease (SYNERGY-Outcomes)",
+   "sponsor": "Eli Lilly and Company",
+   "status": "RECRUITING",
+   "primary_completion": {
+    "date": "2030-08"
+   },
+   "enrollment": {
+    "count": 4500
+   }
+  }
+ },
+ "chart_data": {
+  "arms": [
+   "Wegovy 2.4 mg (ESSENCE, 72 wk)",
+   "Rezdiffra 100 mg (MAESTRO-NASH F2-F3, 52 wk)",
+   "Rezdiffra 80 mg (MAESTRO-NASH F2-F3, 52 wk)",
+   "Tirzepatide 15 mg (SYNERGY-NASH phase 2, 52 wk)"
+  ],
+  "mash_resolution_drug_pct": [
+   62.9,
+   29.9,
+   25.7,
+   62
+  ],
+  "mash_resolution_placebo_pct": [
+   34.3,
+   9.5,
+   9.5,
+   10
+  ],
+  "fibrosis_improvement_drug_pct": [
+   36.8,
+   28.9,
+   26.5,
+   51
+  ],
+  "fibrosis_improvement_placebo_pct": [
+   22.4,
+   17.3,
+   17.3,
+   30
+  ]
+ }
+}
