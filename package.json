@@ -1,0 +1,13 @@
+{
+  "name": "jabbitapp-com",
+  "private": true,
+  "scripts": {
+    "build": "node cloudflare/build.mjs",
+    "dev:cloudflare": "npm run build && wrangler dev",
+    "deploy:cloudflare": "npm run build && wrangler deploy",
+    "verify:cloudflare": "node cloudflare/verify.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.156.0"
+  }
+}

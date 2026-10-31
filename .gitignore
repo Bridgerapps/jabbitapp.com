@@ -76,3 +76,11 @@ USER.md
 DREAMS.md
 .openclaw/
 skills/
+
+# Cloudflare build and local secrets
+dist/
+.wrangler/
+.dev.vars*
+.env*
+
+cloudflare/assets.json
