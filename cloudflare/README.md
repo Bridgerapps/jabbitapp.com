@@ -42,3 +42,17 @@ to the existing server, because Workers cannot fetch a literal IP address.
 Outbound Cloudflare client-IP headers are explicitly reduced to the same
 network prefix as `x-forwarded-for`. The server and retained analytics data
 have not been migrated or removed.
+
+## Bot publishing
+
+The marketing bot continues pushing content to `Bridgerapps/jabbitapp.com`
+`main`. The company Mac mini LaunchAgent `com.bridgerapps.cloudflare-hosting`
+checks main every five minutes and deploys changed commits to Cloudflare using
+the existing authorized Wrangler login. The bot's DigitalOcean server and SSH
+configuration are unchanged. There were no GitHub Actions workflows or repo
+secrets at migration. The watcher implementation is versioned in
+`Bridgerapps/website/cloudflare/watch-deploy.mjs`; operational state and logs
+are in `~/Projects/hosting-migration-2026-10-31/automation` on the Mac mini.
+The Mac must stay on with this user logged in. A cloud-native Git integration
+requires its own GitHub app/build token grant before replacing the watcher.
+Use `npm run deploy:cloudflare` for immediate manual publication.
