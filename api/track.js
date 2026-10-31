@@ -94,6 +94,12 @@ module.exports = async (req, res) => {
       'user-agent': req.headers['user-agent'] ? coarseUserAgent(req.headers['user-agent']) : 'jabbit-proxy',
       'x-forwarded-for': truncateIp(req.headers['x-forwarded-for'] || req.socket?.remoteAddress),
     };
+    // Keep Cloudflare subrequest IP headers as coarse as the analytics payload.
+    // Same-zone Worker fetches derive CF-Connecting-IP from x-real-ip.
+    const networkIp = headers['x-forwarded-for'] || '0.0.0.0';
+    headers['x-real-ip'] = networkIp;
+    headers['cf-connecting-ip'] = networkIp;
+    headers['cf-connecting-ipv6'] = networkIp.includes(':') ? networkIp : '';
     if (ANALYTICS_SECRET) {
       headers['x-analytics-secret'] = ANALYTICS_SECRET;
     }

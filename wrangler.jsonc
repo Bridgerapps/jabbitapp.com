@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jabbitapp-com",
+  "account_id": "a829203d7d24484af6fcd3946b93712b",
+  "main": "cloudflare/worker.mjs",
+  "compatibility_date": "2026-10-30",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "assets": {
+    "directory": "dist",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "run_worker_first": true
+  },
+  "vars": {
+    "ANALYTICS_BASE": "http://analytics-origin.jabbitapp.com:9000"
+  },
+  "routes": [
+    {
+      "pattern": "jabbitapp.com/*",
+      "zone_id": "5c4c4ec3d453fe55dd423a817989db3d"
+    },
+    {
+      "pattern": "www.jabbitapp.com/*",
+      "zone_id": "5c4c4ec3d453fe55dd423a817989db3d"
+    }
+  ]
+}
