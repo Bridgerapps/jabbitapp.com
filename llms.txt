@@ -1,12 +1,11 @@
 # Jabbit - Peptide Tracking App
-> Jabbit is an iPhone app for people who take GLP-1 medications or other injectable peptides. It logs doses and injection sites, tracks vials and reconstitution, estimates medication levels, and records progress. No account; records stay on the user's iPhone (no iCloud sync since version 1.0.4). Made by Bridger Apps, LLC.
+> Jabbit is an iPhone app for people who take GLP-1 medications or other injectable peptides. It logs doses and injection sites, keeps a vial log, shows modelled level estimates from logged doses (up to now; an estimate, not a measurement), and records progress. No account; records stay on the user's iPhone (no iCloud sync since version 1.0.4). Made by Bridger Apps, LLC.
 
 ## Key Features
 - Smart injection tracking with 14-zone site rotation
-- Vial management with reconstitution calculator
-- Real-time serum level visualization (pharmacokinetic curves)
+- Vial log with amount left, worked out from the doses you log
+- Modelled level estimates from logged doses, up to now (an estimate, not a measurement)
 - Flexible dosing schedules (daily, EOD, 2x/week, 5-on-2-off, custom)
-- Titration and cycle planning
 - Progress tracking with Apple Health sync
 - In-app encyclopedia of peptides with half-life data
 - Privacy-first: records stay on the iPhone, no server storage; Export My Data saves a copy
