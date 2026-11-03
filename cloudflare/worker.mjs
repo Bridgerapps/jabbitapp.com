@@ -5,6 +5,19 @@ import stats from '../api/stats.js';
 
 const assets = new Set(files.map(p => `/${p}`));
 const redirects = new Map(config.redirects.filter(r => !r.source.includes(':')).map(r => [r.source, r]));
+const TRACK_ORIGINS = new Set(['https://jabbitapp.com', 'https://www.jabbitapp.com']);
+
+// /api/track gate (v1.1): only POST reaches the handler and the daemon.
+// GET/HEAD: legacy pixel fallback, answered 204 and never forwarded or stored.
+// Any other method: 405 with Allow: POST. A present but non-allowlisted Origin: 403.
+function trackGate(request) {
+  const method = request.method;
+  if (method === 'GET' || method === 'HEAD') return new Response(null, { status: 204, headers: { 'cache-control': 'no-store' } });
+  if (method !== 'POST') return new Response(null, { status: 405, headers: { allow: 'POST', 'cache-control': 'no-store' } });
+  const origin = request.headers.get('origin');
+  if (origin !== null && !TRACK_ORIGINS.has(origin)) return new Response(null, { status: 403, headers: { 'cache-control': 'no-store' } });
+  return null;
+}
 
 async function api(handler, request) {
   const url = new URL(request.url);
@@ -44,7 +57,8 @@ export default {
       for (const [key, value] of url.searchParams) if (!target.searchParams.has(key)) target.searchParams.append(key, value);
       return Response.redirect(target, redirect.permanent ? 308 : 307);
     }
-    if (path === '/api/track' || path === '/api/stats') return api(path === '/api/track' ? track : stats, request);
+    if (path === '/api/track') return trackGate(request) || api(track, request);
+    if (path === '/api/stats') return api(stats, request);
     if (path !== '/' && path.endsWith('/')) {
       url.pathname = path.slice(0, -1);
       return Response.redirect(url, 308);
