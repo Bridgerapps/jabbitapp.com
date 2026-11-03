@@ -2,17 +2,17 @@
 > Jabbit is an iPhone logbook for the injections your prescriber has planned. Log each injection with its site, time and the amount you enter, keep track of vials, set reminders at the times you choose, and record your progress. Made by Bridger Apps, LLC.
 
 ## Key Features
-- Smart injection tracking with 14-zone site rotation
+- Injection log with site history across 14 zones
 - Vial log with amount left, worked out from the doses you log
 - Modelled level estimates from logged doses, up to now (an estimate, not a measurement)
-- Flexible dosing schedules (daily, EOD, 2x/week, 5-on-2-off, custom)
-- Progress tracking with Apple Health sync
-- In-app encyclopedia of peptides with half-life data
+- Schedules you enter: daily, every other day, twice a week, 5 days on and 2 off, or custom
+- Progress tracking, with optional read-only import from Apple Health
+- Reference entries on 85 compounds with regulatory status, safety warnings and sources
 - Your records: Export your records to a file, or delete everything, at any time.
 
-## Pricing (US App Store, as of October 2026)
-- Free download • In-app purchases • iPhone
-- $9.99/year (the App Store lists one in-app purchase, "Jabbit Pro", at $9.99)
+## Pricing (US App Store, checked November 3, 2026)
+- Free download • Jabbit Pro subscription required • iPhone
+- Jabbit Pro subscription: $9.99 a year (US App Store, checked November 3, 2026)
 - iPhone app (iOS 17 or later; the listing says it also runs on iPad); no Android app
 
 ## Links
@@ -26,7 +26,7 @@
 - Privacy Policy: https://www.bridgerapps.com/jabbit/privacy/
 
 ## Peptide Reference Pages
-Evidence-first overviews of individual peptides on the website: what each one is, what the evidence actually supports, and honest FDA/regulatory status. Distinct from the deeper in-app encyclopedia.
+Evidence-first overviews of individual peptides on the website: what each one is, what the evidence actually supports, and honest FDA/regulatory status.
 - Semaglutide: https://jabbitapp.com/peptides/semaglutide.html
 - Tirzepatide: https://jabbitapp.com/peptides/tirzepatide.html
 - Retatrutide research review (all five phase 3 trials, side effects incl. dysesthesia, what trials measured about food noise/appetite, Jabbit ClinicalTrials.gov check of 33 studies, Australian lab test of gray-market vials, Q1 2027 filing plan): https://jabbitapp.com/peptides/retatrutide.html
