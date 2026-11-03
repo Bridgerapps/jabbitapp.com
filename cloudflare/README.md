@@ -8,8 +8,10 @@ Use Node.js 22 or later. Run `npm ci`, then `npm run deploy:cloudflare` from the
 repository root with an authenticated Wrangler session. Wrangler is pinned in
 the lockfile. `npm run dev:cloudflare` runs the same Worker runtime locally.
 
-Run `npm run verify:cloudflare -- https://DEPLOYMENT.workers.dev` after the build
-to check published asset hashes and routing before cutover.
+Run `npm run verify:cloudflare -- https://jabbitapp.com` after a deploy (or against
+the local `npm run dev:cloudflare` URL before one) to check published asset hashes and
+routing. The workers.dev route and Version/Preview URLs are disabled (`workers_dev` and
+`preview_urls` are false), so they are not verification targets.
 
 The build publishes versioned public assets, including the research library,
 and excludes source tooling, internal reports, local state and secrets.
