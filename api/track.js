@@ -113,8 +113,8 @@ module.exports = async (req, res) => {
     });
 
     if (!r.ok) {
-      const t = await r.text();
-      res.status(502).json({ ok: false, error: 'upstream', detail: t.slice(0, 200) });
+      await r.text().catch(() => '');
+      res.status(502).json({ ok: false, error: 'upstream' });
       return;
     }
 
@@ -122,6 +122,6 @@ module.exports = async (req, res) => {
     res.setHeader('cache-control', 'no-store');
     res.status(200).json({ ok: true, upstream: out });
   } catch (e) {
-    res.status(500).json({ ok: false, error: String(e.message || e) });
+    res.status(500).json({ ok: false, error: 'internal' });
   }
 };
