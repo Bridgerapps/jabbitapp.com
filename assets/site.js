@@ -301,7 +301,7 @@
       cta.target = '_blank';
       cta.rel = 'noopener noreferrer';
       cta.dataset.track = 'inline_top_banner';
-      cta.textContent = 'Start free trial';
+      cta.textContent = 'Get Jabbit on the App Store';
       cta.style.display = 'inline-flex';
       cta.style.alignItems = 'center';
       cta.style.justifyContent = 'center';
