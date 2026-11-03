@@ -1,4 +1,4 @@
-> **SUPERSEDED (2026-11-03).** Stale: iCloud sync ended in 1.0.4, and the "No account" / "private" framing is held under Legal L11. Do not use these scripts. Never post (standing rule).
+> **Archived (2026-11-03).** Out of date and not in use.
 
 # Distribution Ops — 2026-03-05 (Bootstrap / Non-SEO)
 
