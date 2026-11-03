@@ -1,3 +1,5 @@
+> **SUPERSEDED (2026-11-03).** Stale: iCloud sync ended in 1.0.4, and the "No account" / "private" framing is held under Legal L11. Do not use these scripts. Never post (standing rule).
+
 # Distribution Ops — 2026-03-05 (Bootstrap / Non-SEO)
 
 Goal today: **more App Store taps** from warm, high-intent audiences (no SEO work, no automated posting).

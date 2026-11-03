@@ -283,12 +283,12 @@
       text.style.minWidth = '220px';
 
       const title = document.createElement('div');
-      title.textContent = 'Track GLP-1 doses + symptoms privately on iPhone';
+      title.textContent = 'Log your injections on iPhone';
       title.style.fontWeight = '750';
       title.style.color = '#0f172a';
 
       const sub = document.createElement('div');
-      sub.textContent = 'Dose log, side effects, progress, and reminders in one place. No account. Stays on your iPhone.';
+      sub.textContent = 'Injection log, site history, vials, progress and reminders in one place.';
       sub.style.fontSize = '13px';
       sub.style.color = '#334155';
       sub.style.marginTop = '2px';
