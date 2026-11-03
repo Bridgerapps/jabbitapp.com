@@ -320,28 +320,6 @@
       links.style.fontSize = '13px';
       links.style.color = '#0f766e';
 
-      const mkLink = (label, href) => {
-        const a = document.createElement('a');
-        a.href = href;
-        a.textContent = label;
-        a.style.fontWeight = '700';
-        a.style.color = '#0f766e';
-        a.style.textDecoration = 'none';
-        a.setAttribute('data-track-internal', 'inline_banner_popular_tracker');
-        return a;
-      };
-
-      const linksLabel = document.createElement('span');
-      linksLabel.textContent = 'Popular trackers:';
-      linksLabel.style.color = '#475569';
-      linksLabel.style.fontWeight = '600';
-
-      links.appendChild(linksLabel);
-      links.appendChild(mkLink('Ozempic', '/ozempic-injection-tracker.html'));
-      links.appendChild(mkLink('Wegovy', '/wegovy-injection-tracker.html'));
-      links.appendChild(mkLink('Mounjaro', '/mounjaro-injection-tracker.html'));
-      links.appendChild(mkLink('Zepbound', '/zepbound-injection-tracker.html'));
-
       const close = document.createElement('button');
       close.type = 'button';
       close.setAttribute('aria-label', 'Dismiss');
