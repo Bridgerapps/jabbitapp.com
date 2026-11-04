@@ -23,7 +23,7 @@ for (const rule of config.redirects) {
   const response = await fetch(url, { redirect: 'manual' });
   const expected = new URL(destination, base);
   expected.searchParams.set('hosting_check', '1');
-  if (response.status !== 308 || response.headers.get('location') !== expected.href) throw new Error(`Redirect mismatch: ${source}`);
+  if (response.status !== (rule.statusCode || 308) || response.headers.get('location') !== expected.href) throw new Error(`Redirect mismatch: ${source}`);
   redirectCount++;
 }
 for (const path of ['/.git/config', '/.env', '/package.json', '/cloudflare/worker.mjs', '/scripts/appstore.env', '/data/seo/page-tracker.json']) {

@@ -55,7 +55,7 @@ export default {
     if (redirect) {
       const target = new URL(redirect.destination, url);
       for (const [key, value] of url.searchParams) if (!target.searchParams.has(key)) target.searchParams.append(key, value);
-      return Response.redirect(target, redirect.permanent ? 308 : 307);
+      return Response.redirect(target, redirect.statusCode || (redirect.permanent ? 308 : 307));
     }
     if (path === '/api/track') return trackGate(request) || api(track, request);
     if (path === '/api/stats') return api(stats, request);

@@ -28,9 +28,28 @@
       "permanent": true
     },
     {
+      "source": "/peptide-reconstitution-calculator",
+      "destination": "/",
+      "permanent": true,
+      "statusCode": 301
+    },
+    {
       "source": "/peptide-reconstitution-calculator.html",
-      "destination": "/peptide-reconstitution-calculator",
-      "permanent": true
+      "destination": "/",
+      "permanent": true,
+      "statusCode": 301
+    },
+    {
+      "source": "/peptide-reconstitution-calculator/",
+      "destination": "/",
+      "permanent": true,
+      "statusCode": 301
+    },
+    {
+      "source": "/peptide-reconstitution-calculator/index.html",
+      "destination": "/",
+      "permanent": true,
+      "statusCode": 301
     },
     {
       "source": "/bpc-157-complete-guide.html",
@@ -94,12 +113,12 @@
     },
     {
       "source": "/peptide-reconstitution-guide.html",
-      "destination": "/peptide-reconstitution-calculator",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/peptide-reconstitution-guide",
-      "destination": "/peptide-reconstitution-calculator",
+      "destination": "/",
       "permanent": true
     },
     {
@@ -1264,12 +1283,12 @@
     },
     {
       "source": "/retatrutide-storage-stability-guide.html",
-      "destination": "/peptide-reconstitution-calculator",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/retatrutide-storage-stability-guide",
-      "destination": "/peptide-reconstitution-calculator",
+      "destination": "/",
       "permanent": true
     },
     {
