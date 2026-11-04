@@ -21,7 +21,7 @@ def _default_site_dir() -> pathlib.Path:
 
 SITE_DIR = pathlib.Path(os.environ.get("JABBIT_SITE_DIR", _default_site_dir()))
 OUT = SITE_DIR / "sitemap.xml"
-SKIP = re.compile(r"^(node_modules|output|jabbit|jabbitapp\.com|docs|_includes|api|data|scripts|tools/asr)(/|$)")
+SKIP = re.compile(r"^(node_modules|dist|output|jabbit|jabbitapp\.com|docs|_includes|api|data|scripts|tools/asr)(/|$)")
 
 def lastmod(p: pathlib.Path) -> str:
     try:
