@@ -73,3 +73,5 @@ a:hover{color:var(--link-hover)}
 .article .app-cta a.app-cta-btn{display:inline-block;margin-top:.35em;padding:.65em 1.1em;background:var(--brand);color:#fff;font-weight:650;border-radius:10px;text-decoration:none}
 .article .app-cta a.app-cta-btn:hover{background:#0d9488;color:#fff}
 .article .app-cta.app-cta--top{margin:1em 0 1.4em;padding:12px 16px}
+
+.article .app-cta-bar{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;margin:.4em 0 .8em;padding:6px 10px;border:1px solid #e2e2e2;border-radius:8px;font-size:13px;line-height:1.35}.article .app-cta-bar-btn{font-weight:600;white-space:nowrap}
